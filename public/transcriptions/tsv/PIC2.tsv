@@ -1,0 +1,80 @@
+start	end	text
+4880	9840	Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+20680	26660	Salve a tutti ragazzi e bentornati su Pensieri in codice. Per la puntata di oggi vorrei parlare
+26660	34100	di bug. Noi tutti siamo abituati ai bug nei nostri videogame, nei nostri social o nei nostri
+34100	40480	smartphone. Tuttavia nel corso della storia ci sono stati alcuni bug che seppur molto piccoli
+40480	45580	hanno causato danni economici enormi. Per questo episodio ho quindi pensato di stilare
+45580	49100	la lista dei 10 bug più costosi della storia.
+55400	63900	1962 Cape Canaveral. La NASA lancia il Mariner One verso Venere. Dopo soli 290 secondi dalla
+63900	70280	partenza, la navicella inizia a deviare dalla rotta prestabilita. La situazione è irrecuperabile,
+70540	75880	l'ingegnere a terra è costretto ad attivare il sistema di autodistruzione. Inizialmente
+75880	80960	si pensa ad un sabotaggio, ma ad una seconda analisi ci si accorge che il tecnico che ha
+80960	86300	ricopiato il software dal blocco note su di un calcolatore ha omesso un simbolo di
+86300	92520	punteggiatura, molto probabilmente un trattino. Per questo motivo il software a bordo della
+92520	97780	navicella non è stato in grado di compensare alcuna variazione di velocità. Il costo
+97780	103600	della navicella andata completamente distrutta fu all'epoca di 18 milioni di dollari.
+108440	118080	19 giugno 1978. Connecticut. Il tetto del Hartford Coliseum crolla sotto il peso di una coltre
+118080	124900	di neve bagnata. Dalle indagini emerge che il software CAD utilizzato per la progettazione
+124900	130200	non era in grado di gestire più di una variabile per volta. Per questo motivo aveva
+130200	134860	calcolato la struttura del tetto tenendo in considerazione solamente il peso dei
+134860	143020	materiali stessi. Fortunatamente non ci furono vittime, ma i danni stimati furono di oltre 90 milioni di dollari.
+148540	153140	1988. Uno studente della Cornell University, tale Robert Morris,
+153800	159520	decise di scrivere un software per qualcosa che definì lui stesso un innocuo esperimento.
+160660	164840	Questo software però mandò in crash centinaia di computer a causa di un errore di
+164840	171280	codifica. Lo studente fu multato per 10.000 dollari, ma il costo per sistemare i danni fu
+171280	177960	di oltre 100 milioni di dollari. Attualmente Morris è professore al MIT e il codice
+177960	182000	del suo innocuo esperimento è custodito presso l'università di Boston.
+186320	195340	Nel gennaio del 1990, 60.000 utenti della AT&T, una delle più grandi società di telecomunicazioni
+195340	199880	americane, si trovò nell'impossibilità di effettuare chiamate long distance,
+200300	204540	quelle che noi conosciamo come interurbane. Inizialmente si pensò ad un accheraggio,
+205040	209500	successivamente però ci si rese conto che la AT&T, circa un mese prima,
+209500	215400	aveva effettuato alcune modifiche sui propri sistemi per rincrementarne le performance e la
+215400	221360	velocità. Questo incremento di velocità però aveva portato a destabilizzare il sistema di
+221360	225800	bilanciamento del carico tra gli switch, causando il blocco a cascata di tutti e
+225800	233300	114 gli switch disponibili. Le perdite estimate per AT&T furono di circa 60 milioni di dollari.
+238560	246400	Nel 1994 fu invece il turno di Intel. La nota società produttrice di processori lanciò
+246400	251880	sul mercato una linea di Pentium che risentiva di un problema nel calcolo delle operazioni
+251880	257040	matematiche che coinvolgevano i numeri in virgola mobile. In pratica c'era la
+257040	263140	possibilità di sbagliare il calcolo della decima cifra dopo la virgola. Dopo l'insurrezione
+263140	269580	dei consumatori, la Intel si offri di sostituire tutti i processori a coloro che ne avessero
+269580	277820	fatto richiesta. Così il costo totale dell'operazione ammontò a circa 475 milioni di dollari.
+281880	289480	Nel 1996 invece l'ESA, l'agenzia spaziale europea, riuscì a battere il record del
+290540	296780	Il responsabile a terra fu infatti costretto a premere il tasto di autodistruzione in ben
+296780	304540	36 secondi dal lancio. Il software di controllo di volo dell'Aerion 5 infatti tentò di convertire
+304540	311000	un numero in virgola mobile a 64 bit in un intero a 16 bit causando il crash del computer
+311000	316340	principale e di quello di riserva che era perfettamente identico e montava lo stesso
+316340	324900	software. Il costo per lo sviluppo del razzo era stato di 8 miliardi di dollari e inoltre
+324900	329780	esso portava con sé come carico un satellite del valore di 500 milioni di dollari.
+336000	342620	1998, di nuovo protagonista alla NASA. Il Mars Climate Orbiter era una sonda progettata
+342620	348080	per studiare il clima e l'atmosfera di Marte. Questa sonda avrebbe dovuto appunto orbitare
+348080	353020	attorno al pianeta rosso ma si schiantò sulla sua superficie poiché tentò di orbitare
+353020	358380	troppo in basso. Dalle indagini venne fuori che il problema fu banalmente dovuto ad
+358380	363760	un errore di conversione tra il sistema inglese e quello metrico decimale. A montare
+363760	366340	del danno 125 milioni di dollari.
+371640	379660	2004, Regno Unito. Due agenzie governative, il Child Support Agency e il Department of
+379660	385640	Work and Pensions, decisero di ristrutturare contemporaneamente i propri sistemi informatici.
+386940	392380	I software che ne risultarono furono talmente incompatibili da causare milioni di transazioni
+392380	398180	errate sia in eccesso che in difetto, riscossioni non effettuate e rallentamenti burocratici.
+399500	403420	Il costo per i contribuenti inglesi ammonto a un miliardo di dollari.
+408600	415080	Nell'agosto del 2009, una Lexus ES 350 si schiantò a oltre 150 miglia orarie
+415080	419660	causando la morte di quattro persone. Prima dell'incidente, uno dei passeggeri
+419660	424340	chiamò il 911 dicendo che l'auto era priva di freni e senza controllo.
+425240	430200	A novembre dello stesso anno, la Toyota dovette richiamare nove milioni di auto da tutto il
+430200	433980	mondo per correggere un bug nel software del sistema antibloccaggio dei freni.
+434960	439700	Il costo totale stimato per l'operazione fu di oltre 3 miliardi di dollari.
+444900	450340	Nell'agosto del 2012, in Knight Capital Group, una delle più grandi società americane di
+450340	456240	servizi finanziari, inviò in automatico una serie di ordini di acquisto in contemporanea
+456240	459220	invece che nell'arco di giornico, siccome era stato previsto.
+459840	463480	Le perdite di questa operazione furono di ben 4 volte superiori ai guadagni.
+464660	469660	L'errore fu causato da un server all'interno della farm che non era stato aggiornato e
+469660	472020	pertanto eseguiva del codice obsoleto.
+473440	478500	Nell'arco di due giorni, le azioni della società persano ben il 75% e il totale delle
+478500	481940	perdite stimate fu di 440 milioni di dollari.
+487500	492220	Con questo siamo arrivati alla fine della nostra lista dei 10 bug più costosi
+492220	493460	della storia.
+493500	498180	Come abbiamo visto, anche dei minimi errori possono provocare danni enormi.
+498180	504400	Spero che l'episodio vi sia piaciuto e come al solito vi invito a lasciare un commento
+504400	511000	per farmi sapere cosa vi è piaciuto, cosa no e se magari conoscete voi dei bug
+511000	513580	che ho dimenticato di inserire in questa lista.
+514380	519220	Per ora vi saluto e ci sentiamo al prossimo episodio di Pensieri in Codice.
+528180	531500	Sottotitoli creati dalla comunità Amara.org
