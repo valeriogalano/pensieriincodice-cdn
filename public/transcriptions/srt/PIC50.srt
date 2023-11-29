@@ -1,0 +1,316 @@
+1
+00:00:00,000 --> 00:00:09,960
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:09,960 --> 00:00:27,640
+Ciao ragazzi, in queste ultime settimane abbiamo avuto modo un po' tutti di sperimentare cosa
+
+3
+00:00:27,640 --> 00:00:33,920
+accade quando uno o più servizi che siamo abituati a utilizzare su internet viene meno.
+
+4
+00:00:33,920 --> 00:00:41,360
+Prima Google, poi poste italiane, Telegram, Spotify e molti altri. I problemi riscontrati
+
+5
+00:00:41,360 --> 00:00:49,640
+da almeno uno di questi servizi sicuramente avrà avuto impatto sulla vita di ognuno di noi e questo
+
+6
+00:00:49,640 --> 00:00:56,840
+ci dovrebbe far riflettere un po' su tutte quelle cose che siamo abituati a dare per scontate.
+
+7
+00:00:57,640 --> 00:01:04,320
+Quindi, insieme a un po' di amici che gestiscono altri progetti sull'informatica sia su YouTube che
+
+8
+00:01:04,320 --> 00:01:11,400
+via podcast, abbiamo deciso di fare qualche riflessione su ciò che per noi è importante
+
+9
+00:01:11,400 --> 00:01:18,880
+sul web e per augurarvi Buon Natale e provare a strapparvi un sorriso in questo catastrofico
+
+10
+00:01:18,880 --> 00:01:25,960
+2020 abbiamo deciso di proporveli sotto forma di piccoli sketch. Buon ascolto!
+
+11
+00:01:26,840 --> 00:01:52,240
+Ancora una volta una giornata da schifo sul lavoro. Niente, non ce la faccio. Questo lavoro
+
+12
+00:01:52,240 --> 00:02:00,800
+non mi soddisfa, non sono valorizzato, mi fanno lavorare su cose che non mi piacciono. Mi
+
+13
+00:02:00,800 --> 00:02:08,920
+servirebbe proprio un cambio di carriera. Potrei provare a studiare una nuova tecnologia, ma quale?
+
+14
+00:02:08,920 --> 00:02:21,320
+E se poi non sono adeguato? E se quella tecnologia non è richiesta? Non so cosa fare, ci vorrebbe
+
+15
+00:02:21,520 --> 00:02:28,960
+un mentore. Parlano di Battlestar Galattica, ma non so cosa sia. Ogni volta che ho bisogno
+
+16
+00:02:28,960 --> 00:02:33,160
+di sapere qualcosa devo sfogliare i libroni dell'enciclopedia di casa di mamma o fare
+
+17
+00:02:33,160 --> 00:02:38,480
+chilometri per trovare una biblioteca. Se solo il buon Tim Bernerly avesse condiviso la sua idea
+
+18
+00:02:38,480 --> 00:02:45,160
+di internet probabilmente mi basterebbero pochi clic. Esatto, come ti dicevo stiamo facendo questa
+
+19
+00:02:45,160 --> 00:02:53,400
+applicazione fighissima con Vue. Abbiamo dei labirinti generati dinamicamente dove l'utente
+
+20
+00:02:53,400 --> 00:02:58,640
+deve risolverli a tempo. Poi abbiamo inserito anche la creazione di ostacoli, tutta una serie
+
+21
+00:02:58,640 --> 00:03:04,000
+di cose fighissime, non ti sto qui a dire. Ci abbiamo messo un bel po', sì, ci abbiamo messo
+
+22
+00:03:04,000 --> 00:03:11,680
+due anni. Perché praticamente, come tu pensai, ci possiamo affidare soltanto alle documentazioni,
+
+23
+00:03:11,680 --> 00:03:18,080
+quindi poi è tutta faria del nostro sacco. Sì, è dura, senza tutorial è veramente un mondo
+
+24
+00:03:18,080 --> 00:03:27,800
+difficile. Ah scusa, mi è arrivato un nuovo task. Allora, implementare ricerca depth first con
+
+25
+00:03:27,800 --> 00:03:37,680
+backtracking approccio a stack e da risolvere con algoritmo a star. Scusa, ti richiamo più tardi.
+
+26
+00:03:41,800 --> 00:03:48,560
+E adesso che faccio? Ah, ma chiamami, per questo progetto ci devi fare un progetto open source,
+
+27
+00:03:48,560 --> 00:03:58,480
+voglio utilizzare la mia libreria. Sentiamo che c'ha da dire. Eccoci. Allora? E la? Senti,
+
+28
+00:03:58,480 --> 00:04:05,760
+allora ho visto che avevi fatto questa libreria open source se non sbaglio e ho un progetto che
+
+29
+00:04:06,360 --> 00:04:14,360
+farebbe proprio al caso. Quindi te vorresti usare la mia libreria open source? Sì, sì, esatto. Non
+
+30
+00:04:14,360 --> 00:04:19,600
+c'è problema, c'è assolutissimo problema, la puoi usare, è liberissima. Poi, certo, non è che
+
+31
+00:04:19,600 --> 00:04:25,480
+veni in mente, ovviamente, magari ci posso citare nel caso in cui il progetto vada bene. Mi sembra
+
+32
+00:04:25,480 --> 00:04:30,720
+il minimo, per qualche parte, insomma, un po' di riconoscimento per il creatore, insomma,
+
+33
+00:04:30,720 --> 00:04:38,920
+nella libreria. Ma, cioè, ora non è che sono, diciamo, un progetto così, però, ora, non prendermi,
+
+34
+00:04:38,920 --> 00:04:43,920
+non fai intendermi, eh, non sono come le hotbait che girano adesso e dicono, eh, prendiamo questa
+
+35
+00:04:43,920 --> 00:04:50,160
+libreria open source che ci fa le cose e poi si dimentica. No, io non sono quel tipo di persona
+
+36
+00:04:50,160 --> 00:04:54,960
+lì, eh, voglio, cioè, io ti do il credito che magari in basso, di minuscolo, 10 pixel... Ma
+
+37
+00:04:54,960 --> 00:05:04,320
+te sai che cos'è l'open source? Sai come funziona? Ma io... Ma io, guarda, come sarebbe il mondo
+
+38
+00:05:04,320 --> 00:05:10,800
+senza l'open source? Come sarebbe? Dopo una lunga giornata lavorativa, finalmente si torna a casa,
+
+39
+00:05:10,800 --> 00:05:17,680
+stasera devo cercare e studiare nuove tecnologie. Purtroppo dovrò farlo da solo e so già che sarà
+
+40
+00:05:17,680 --> 00:05:24,080
+noiosissimo. Sarebbe fantastico se nel mondo e nella mia città esistessero delle community,
+
+41
+00:05:24,520 --> 00:05:30,080
+probabilmente ci sarebbero un sacco di eventi e meetup a cui partecipare. Eventi dove le persone,
+
+42
+00:05:30,080 --> 00:05:35,240
+in maniera volontaria, possono condividere conoscenza in maniera amichevole. Probabilmente
+
+43
+00:05:35,240 --> 00:05:40,320
+dopo il talk si potrebbe anche restare a chiacchierare e, perché no, magari bere una
+
+44
+00:05:40,320 --> 00:05:47,360
+cosa insieme. È domenica e, finalmente, dopo una settimana di duro lavoro, ho un po' di tempo
+
+45
+00:05:47,360 --> 00:05:55,720
+libero. Da sempre mi appassionano le scienze, chimica, fisica, biologia, ma tra il lavoro e la
+
+46
+00:05:55,720 --> 00:06:01,960
+famiglia non ho tutto questo tempo da dedicare allo studio. Senza contare che molti concetti
+
+47
+00:06:01,960 --> 00:06:08,280
+scientifici non sono facilissimi da capire da soli. Se solo esistessero i divulgatori che
+
+48
+00:06:08,280 --> 00:06:14,720
+condividono video e podcast spiegando i vari argomenti in modo semplice e accattivante,
+
+49
+00:06:15,320 --> 00:06:23,320
+allora potrei trascorrere il mio tempo divertendomi, imparando cose nuove e appassionandomi a materie
+
+50
+00:06:23,320 --> 00:06:30,040
+che non conoscevo. L'acqua sta per bollire, finalmente posso prepararmi il pranzo. Certo
+
+51
+00:06:30,040 --> 00:06:36,560
+che mi piacerebbe poter cercare qualche ricetta, avere qualche consiglio da chi conosce la materia
+
+52
+00:06:36,560 --> 00:06:42,920
+meglio di me, da chi ha studiato cucina o magari da chi ha cucinato una vita per dare da mangiare
+
+53
+00:06:42,920 --> 00:06:47,120
+alla famiglia o magari semplicemente da chi ha fatto esperimenti perché è un appassionato,
+
+54
+00:06:47,120 --> 00:06:53,680
+magari vedendo i risultati di questi esperimenti e andando a scoprire quali sono i passaggi per
+
+55
+00:06:53,680 --> 00:06:58,960
+poter ripetere io quegli esperimenti, per poter arrivare anch'io a quel risultato, sarebbe una
+
+56
+00:06:58,960 --> 00:07:05,240
+cosa bella. Magari sarebbe bello anche poter mostrare quali sono i propri risultati, magari
+
+57
+00:07:05,240 --> 00:07:12,880
+anche vantarsi se il risultato è un buon risultato e sarebbe bello poter andare a cercare quali sono
+
+58
+00:07:13,600 --> 00:07:17,240
+gli ingredienti che stanno bene con altri ingredienti e quali sono invece gli ingredienti
+
+59
+00:07:17,240 --> 00:07:23,160
+che insieme non stanno bene per evitare di cucinare delle schifezze. Sarebbe bello però
+
+60
+00:07:23,160 --> 00:07:30,360
+purtroppo così non è e quindi anche oggi pasta col tonno. Ragazzi ho appena finito di inserire
+
+61
+00:07:30,360 --> 00:07:35,120
+la sezione dei pagamenti all'interno dell'applicazione, a chi devo passarla? Passalo a me che faccio il
+
+62
+00:07:35,120 --> 00:07:41,040
+frontend al volo. No ragazzi serve anche a me, devo aggiungere i casi se no esplode tutto. Ragazzi
+
+63
+00:07:41,040 --> 00:07:44,560
+l'applicazione è un po' troppo pesa quindi non ve la posso passare come facciamo di solito per
+
+64
+00:07:44,560 --> 00:07:52,080
+mail e non potete venire a lavorarci in contemporanea. Vabbè al solito spedisci una
+
+65
+00:07:52,080 --> 00:07:59,880
+chiavetta. Eh ma il corriere passerebbe prima da Eugenio e appena fatto la invia a me. Poi la
+
+66
+00:07:59,880 --> 00:08:05,160
+devo rimandare a Alessandro che è l'unico che ha le chiavi per l'upload dell'app. Ragazzi
+
+67
+00:08:05,160 --> 00:08:09,200
+purtroppo siamo un po' troppo lontani e il corriere non ce la farà mai a consegnarli in
+
+68
+00:08:09,200 --> 00:08:21,720
+tempo. Perché? Eh deve andare in produzione domani. Cosa? Eh però calmi calmi sapete la
+
+69
+00:08:21,720 --> 00:08:33,240
+teoria dei tunnel Einstein-Rose? Di Wormhole? Esattamente. Ma che stai facendo? Arriva!
+
+70
+00:08:33,800 --> 00:08:45,240
+No fermo fermo. Che mondo sarebbe senza Git? Sicuramente un mondo con i Wormhole.
+
+71
+00:08:45,240 --> 00:08:55,320
+Ricomincia il lavoro è dura bisognerà cercare informazioni risolvere nuovi enigmi e capire
+
+72
+00:08:55,320 --> 00:09:03,080
+nel caso in cui qualcosa non vada cos'è che non va. Sarebbe bello avere qualcuno o qualcosa
+
+73
+00:09:03,480 --> 00:09:10,160
+che possa darci tutte le risposte che cerchiamo. Ma che mi frega io ce l'ho
+
+74
+00:09:10,160 --> 00:09:14,360
+si chiama Batcomputer. Tanti auguri!
+
+75
+00:09:14,360 --> 00:09:32,200
+Avete appena ascoltato le voci dei progetti TomorrowDevs, Gitbar, Carmack, SchrödingerHut,
+
+76
+00:09:32,360 --> 00:09:40,640
+Developers Life, Pensieri in Codice, Mondo Computazionale, Pointer Podcast e DevMy. Se
+
+77
+00:09:40,640 --> 00:09:46,400
+siete interessati trovate in descrizione tutti i link ai vari progetti. Non mi resta quindi che
+
+78
+00:09:46,400 --> 00:09:53,960
+augurarvi buone feste e buon Natale e ricordarvi come sempre che un informatico risolve problemi
+
+79
+00:09:53,960 --> 00:09:56,200
+a volte anche usando il computer.
+

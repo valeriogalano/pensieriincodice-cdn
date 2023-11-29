@@ -1,0 +1,676 @@
+1
+00:00:00,000 --> 00:00:24,540
+Salve a tutti e bentrovati per un nuovo episodio di Pensieri in Codice.
+
+2
+00:00:24,540 --> 00:00:29,800
+Prima di iniziare vi ricordo rapidamente che in descrizione trovate tutti i link
+
+3
+00:00:29,800 --> 00:00:36,560
+inerenti al progetto, sia per sostenerlo sia per partecipare unendovi al canale e
+
+4
+00:00:36,560 --> 00:00:41,720
+al gruppo telegram che ormai conta più di una sessantina di iscritti.
+
+5
+00:00:41,720 --> 00:00:47,440
+Vi ricordo inoltre che per tutto il mese di aprile potete, se vi va, prenotare delle
+
+6
+00:00:47,440 --> 00:00:52,800
+lezioni private gratuite sulla piattaforma Docety, quindi se avete
+
+7
+00:00:52,800 --> 00:00:56,640
+bisogno di ripassare qualcosa di informatica o di programmazione mi
+
+8
+00:00:56,640 --> 00:01:01,000
+trovate lì, come al solito link in descrizione.
+
+9
+00:01:01,440 --> 00:01:06,240
+Tutti sappiamo cosa sia un motore di ricerca, tutti nella vita ne abbiamo
+
+10
+00:01:06,240 --> 00:01:11,160
+utilizzato almeno uno che si chiama Google e molti magari ne hanno utilizzati
+
+11
+00:01:11,160 --> 00:01:14,840
+anche altri. Alcuni funzionano meglio, altri hanno
+
+12
+00:01:14,840 --> 00:01:19,480
+funzioni speciali, altri prediligono particolari aspetti come il rispetto
+
+13
+00:01:19,480 --> 00:01:24,600
+della privacy o della protezione dell'ambiente, tutti però sono in grado
+
+14
+00:01:24,600 --> 00:01:29,400
+di restituire in pochi centesimi di secondo la lista di pagine web relative
+
+15
+00:01:29,400 --> 00:01:34,440
+alle parole che abbiamo digitato scavando in archivi di miliardi di
+
+16
+00:01:34,440 --> 00:01:40,480
+documenti. E come possono fare una cosa del genere?
+
+17
+00:01:40,480 --> 00:01:45,080
+Di certo non possiamo pensare che basti solo avere centinaia di server
+
+18
+00:01:45,080 --> 00:01:49,160
+potentissimi sparsi per il mondo per essere in grado di verificare in un
+
+19
+00:01:49,160 --> 00:01:54,480
+batter d'occhio se una parola è presente o meno in un'immensa lista di pagine web.
+
+20
+00:01:55,000 --> 00:01:59,640
+E per immensa intendo proprio immensa. Vi lascio in descrizione un link per
+
+21
+00:01:59,640 --> 00:02:06,560
+avere un'idea delle attuali dimensioni del web, escludendo ovviamente il deep e
+
+22
+00:02:06,560 --> 00:02:11,560
+il dark web. Al momento in cui sto registrando Google indicizza qualcosa
+
+23
+00:02:11,560 --> 00:02:17,960
+come 65 miliardi di pagine. Com'è possibile dunque anche avendo una
+
+24
+00:02:17,960 --> 00:02:22,600
+potenza di calcolo sconfinata cercare una parola in tutti questi documenti in
+
+25
+00:02:22,640 --> 00:02:27,720
+così poco tempo? E' ovvio che qualsiasi sia il motore di ricerca di cui stiamo
+
+26
+00:02:27,720 --> 00:02:32,960
+parlando è necessario che esso possa contare su un algoritmo che riduca
+
+27
+00:02:32,960 --> 00:02:35,600
+enormemente il carico di lavoro necessario.
+
+28
+00:02:35,600 --> 00:02:41,160
+Questo algoritmo è appunto quello che viene comunemente chiamato algoritmo di
+
+29
+00:02:41,160 --> 00:02:47,400
+indicizzazione. In effetti però qui la parola indicizzazione viene utilizzata
+
+30
+00:02:47,400 --> 00:02:52,320
+per semplicità ma in realtà essa nasconde due concetti ben distinti che
+
+31
+00:02:52,320 --> 00:02:58,720
+sono l'indicizzazione appunto e la classificazione. La prima ci permette di
+
+32
+00:02:58,720 --> 00:03:03,600
+individuare la lista di documenti che contengono una o più parole e la seconda
+
+33
+00:03:03,600 --> 00:03:08,600
+ci permette di ordinare questa lista posizionando per primi i risultati più
+
+34
+00:03:08,600 --> 00:03:13,360
+attinenti alla nostra ricerca. Cerchiamo però di non correre troppo e
+
+35
+00:03:13,360 --> 00:03:18,000
+proviamo ad affrontare un po' di questioni partendo dalla più semplice per
+
+36
+00:03:18,000 --> 00:03:22,640
+proseguire poi via via verso quelle più complesse.
+
+37
+00:03:29,200 --> 00:03:33,720
+Alla base del funzionamento di un qualsiasi motore di ricerca ci sono
+
+38
+00:03:33,720 --> 00:03:38,520
+quindi due concetti chiave e noi li analizzeremo separatamente in modo da
+
+39
+00:03:38,520 --> 00:03:42,160
+provare a capire al meglio come funziona l'algoritmo che li racchiude
+
+40
+00:03:42,160 --> 00:03:45,960
+entrambi. Iniziamo quindi con il chiederci come
+
+41
+00:03:45,960 --> 00:03:51,240
+funziona l'indicizzazione e in effetti dalla parola possiamo già intuire che il
+
+42
+00:03:51,240 --> 00:03:56,960
+segreto è tutto nell'utilizzo di un indice. Esattamente come l'indice
+
+43
+00:03:56,960 --> 00:04:01,680
+analitico di un libro infatti ogni motore di ricerca costruisce e mantiene
+
+44
+00:04:01,680 --> 00:04:06,640
+aggiornato un enorme elenco nel quale tiene traccia delle parole presenti
+
+45
+00:04:06,640 --> 00:04:12,360
+nelle pagine web. Semplificando all'osso possiamo immaginare che questo indice
+
+46
+00:04:12,360 --> 00:04:16,800
+proprio come quello che troviamo in fondo ad un libro sia composto da un
+
+47
+00:04:16,800 --> 00:04:22,320
+elenco ordinato alfabeticamente di parole ciascuna delle quali è seguita dal
+
+48
+00:04:22,320 --> 00:04:27,360
+numero di ciascuna pagina in cui la parola è presente.
+
+49
+00:04:27,360 --> 00:04:31,440
+Ovviamente rispetto ad un libro per un motore di ricerca la lista sarà
+
+50
+00:04:31,440 --> 00:04:37,160
+enormemente lunga e i numeri di pagina saranno in realtà degli identificativi
+
+51
+00:04:37,160 --> 00:04:42,880
+con i quali è possibile riconoscere la pagina web ma per noi come al solito è
+
+52
+00:04:42,880 --> 00:04:48,160
+il concetto quello che conta. Con una soluzione del genere quando noi
+
+53
+00:04:48,160 --> 00:04:53,600
+inseriamo una parola nel campo di ricerca il motore non deve cercarla in tutti i
+
+54
+00:04:53,600 --> 00:04:58,400
+documenti dell'archivio ma solo nell'indice che ha preparato precedentemente
+
+55
+00:04:58,400 --> 00:05:03,840
+e questo rappresenta un'operazione particolarmente semplice perché trovare
+
+56
+00:05:03,840 --> 00:05:08,520
+un elemento in un elenco ordinato alfabeticamente è una di quelle cose
+
+57
+00:05:08,520 --> 00:05:14,080
+che i calcolatori sanno fare benissimo. Sfruttando quindi un'idea piuttosto
+
+58
+00:05:14,080 --> 00:05:19,760
+comune si risolve brillantemente il problema di cercare una parola in una
+
+59
+00:05:19,760 --> 00:05:24,440
+sconfinata mole di documenti e per estensione potremmo anche pensare di
+
+60
+00:05:24,440 --> 00:05:30,200
+usare la stessa tecnica per cercarne due di parole o anche tre o quattro eccetera.
+
+61
+00:05:31,040 --> 00:05:35,960
+Con il nostro indice se proviamo a cercare due parole ad esempio un motore di
+
+62
+00:05:35,960 --> 00:05:40,440
+ricerca può rapidamente trovare la lista delle pagine che contengono la prima
+
+63
+00:05:40,440 --> 00:05:44,680
+parola e altrettanto rapidamente la lista di quelle che contengono la
+
+64
+00:05:44,680 --> 00:05:49,760
+seconda parola e restituirci solo le pagine che si trovano in entrambe le
+
+65
+00:05:49,760 --> 00:05:55,040
+liste e lo stesso potrebbe valere se cercassimo tre parole o quattro e così via.
+
+66
+00:05:55,200 --> 00:06:00,800
+In tutto questo processo però c'è solo un piccolo problema. Il risultato che
+
+67
+00:06:00,800 --> 00:06:05,720
+otteniamo in questo modo non ha un gran valore per chi sta effettuando la ricerca.
+
+68
+00:06:05,720 --> 00:06:11,760
+Se ci riflettiamo un attimo infatti ci accorgiamo che il solo fatto che due
+
+69
+00:06:11,760 --> 00:06:16,760
+parole si trovino nello stesso testo non è automaticamente sufficiente ad
+
+70
+00:06:16,760 --> 00:06:21,120
+affermare che quel testo soddisfi la ricerca di quelle due parole.
+
+71
+00:06:22,080 --> 00:06:26,400
+Cosa voglio dire? Pensiamo ad esempio a come siamo soliti usare un motore di
+
+72
+00:06:26,400 --> 00:06:31,280
+ricerca. Se scriviamo due parole ci aspettiamo che i risultati presentino
+
+73
+00:06:31,280 --> 00:06:38,400
+quelle due parole vicine o almeno nella stessa frase. In generale è più probabile
+
+74
+00:06:38,400 --> 00:06:43,000
+che un testo che contiene le due parole vicine sia più interessante per noi
+
+75
+00:06:43,000 --> 00:06:47,920
+rispetto ad uno che contiene quelle stesse due parole ma in due paragrafi
+
+76
+00:06:48,200 --> 00:06:53,680
+differenti. In pratica quando noi mettiamo due o più parole in un motore
+
+77
+00:06:53,680 --> 00:06:58,480
+di ricerca stiamo implicitamente richiedendo non semplicemente di ottenere
+
+78
+00:06:58,480 --> 00:07:03,400
+le pagine che contengono quelle due parole quanto piuttosto vogliamo le
+
+79
+00:07:03,400 --> 00:07:07,560
+pagine che hanno quelle due parole il più vicine possibile.
+
+80
+00:07:08,560 --> 00:07:12,840
+Nel momento in cui ci rendiamo conto che non tutte le pagine che contengono le
+
+81
+00:07:12,840 --> 00:07:16,960
+parole che cerchiamo hanno lo stesso valore ai fini di un buon risultato di
+
+82
+00:07:16,960 --> 00:07:21,800
+ricerca fa il suo ingresso il secondo concetto a cui abbiamo accennato prima e
+
+83
+00:07:21,800 --> 00:07:26,600
+cioè la classificazione. All'interno della lista dei documenti che un motore
+
+84
+00:07:26,600 --> 00:07:31,640
+di ricerca è in grado di restituire gli elementi vengono inseriti in un
+
+85
+00:07:32,360 --> 00:07:35,800
+All'interno della lista dei documenti che un motore di ricerca è in grado di
+
+86
+00:07:35,800 --> 00:07:40,920
+restituire gli elementi vengono fondamentalmente ordinati posizionando
+
+87
+00:07:40,920 --> 00:07:45,600
+in testa quello che sembra il più pertinente come secondo quello un po'
+
+88
+00:07:45,600 --> 00:07:50,600
+meno pertinente e così via. Ora capiamoci nella realtà la classificazione
+
+89
+00:07:50,600 --> 00:07:55,560
+dei risultati non si basa unicamente sulla distanza tra due parole ma su
+
+90
+00:07:55,560 --> 00:07:59,800
+moltissime variabili che per forza di cose non possiamo analizzare in un
+
+91
+00:07:59,800 --> 00:08:03,600
+podcast di un quarto d'ora. Oltre a ciò gli algoritmi di
+
+92
+00:08:03,600 --> 00:08:09,840
+classificazione sono spesso complessi e differiscono da motore a motore. Il famoso
+
+93
+00:08:09,840 --> 00:08:14,440
+algoritmo PageRank ad esempio ha moltissime regole che contribuiscono al
+
+94
+00:08:14,440 --> 00:08:19,120
+posizionamento di ogni singolo risultato e ciò ha permesso a google di
+
+95
+00:08:19,120 --> 00:08:23,400
+sovrastare letteralmente tutti i suoi concorrenti nel corso degli anni.
+
+96
+00:08:23,400 --> 00:08:27,800
+Noi però come al solito siamo interessati a capire come funzionano le
+
+97
+00:08:27,840 --> 00:08:31,880
+cose e quindi prendiamo in considerazione gli aspetti base della
+
+98
+00:08:31,880 --> 00:08:36,920
+classificazione dei risultati e cioè la distanza tra le parole e il loro peso
+
+99
+00:08:36,920 --> 00:08:42,560
+all'interno del testo. Come abbiamo già accennato qualche minuto fa minore è la
+
+100
+00:08:42,560 --> 00:08:47,480
+distanza fra le parole cercate maggiore è da considerare il valore della pagina
+
+101
+00:08:47,480 --> 00:08:52,200
+che esse identificano. Quindi ci serve un meccanismo per valutare questa distanza
+
+102
+00:08:52,200 --> 00:08:56,720
+che sia al tempo stesso preciso e permetta di effettuare i calcoli in
+
+103
+00:08:56,800 --> 00:09:02,240
+pochi istanti. La soluzione a questo problema in realtà è più semplice di
+
+104
+00:09:02,240 --> 00:09:05,760
+quanto possa sembrare. Ci basta potenziare il nostro indice,
+
+105
+00:09:05,760 --> 00:09:10,240
+quello che utilizziamo per trovare le pagine che contengono le parole cercate,
+
+106
+00:09:10,240 --> 00:09:15,600
+aggiungendovi un'ulteriore informazione e cioè la posizione della parola nel
+
+107
+00:09:15,600 --> 00:09:18,880
+testo. Con questa modifica il nostro indice è
+
+108
+00:09:18,880 --> 00:09:24,000
+diventato una lista di parole in ordine alfabetico per ciascuna delle quali è
+
+109
+00:09:24,000 --> 00:09:30,080
+indicato in quali pagine si trovano e per ciascuna pagina in quali posizioni la
+
+110
+00:09:30,080 --> 00:09:35,080
+parola compare. Mi rendo conto che può sembrare un concetto un po' complicato
+
+111
+00:09:35,080 --> 00:09:39,800
+ma in realtà non lo è. In pratica volendo fare un esempio prendete un qualsiasi
+
+112
+00:09:39,800 --> 00:09:44,880
+libro con indice analitico, leggete la prima parola dell'indice, trovatela nelle
+
+113
+00:09:44,880 --> 00:09:50,240
+pagine indicate e contate dopo quante parole dall'inizio della pagina essa
+
+114
+00:09:50,320 --> 00:09:56,840
+compare. Ora aggiungete questo numero all'indice dopo il numero di pagina. Se
+
+115
+00:09:56,840 --> 00:10:01,360
+lo fate per tutte le parole vi troverete con un indice che contiene informazioni
+
+116
+00:10:01,360 --> 00:10:07,560
+di questo tipo. La parola codice compare nella pagina 10 come ventitresima parola,
+
+117
+00:10:07,560 --> 00:10:15,680
+nella pagina 60 come diciottesima parola, nella pagina 200 come quarantesima. La
+
+118
+00:10:15,680 --> 00:10:21,040
+parola pensieri invece compare nella pagina 10 come venticinquesima parola e
+
+119
+00:10:21,040 --> 00:10:27,520
+nella pagina 50 come ottava e trentesima e così via fino ad ottenere l'indice di
+
+120
+00:10:27,520 --> 00:10:34,000
+tutte le parole del libro con la pagina e la posizione in cui compaiono. Il nostro
+
+121
+00:10:34,000 --> 00:10:39,080
+motore di ricerca con un indice del genere diventa in grado di individuare
+
+122
+00:10:39,080 --> 00:10:44,520
+le pagine che contengono tutte le parole cercate e anche di classificarle
+
+123
+00:10:44,520 --> 00:10:50,520
+calcolando le differenze tra i numeri di posizione. Minore sarà il risultato di
+
+124
+00:10:50,520 --> 00:10:55,960
+questa operazione di sottrazione e maggiore sarà la vicinanza tra le due
+
+125
+00:10:55,960 --> 00:11:01,000
+parole e quindi maggiore sarà il valore della pagina ai fini della nostra
+
+126
+00:11:01,000 --> 00:11:03,760
+ricerca.
+
+127
+00:11:03,760 --> 00:11:14,960
+Abbiamo dunque capito come creare un meccanismo veloce per cercare tra
+
+128
+00:11:14,960 --> 00:11:20,040
+l'immensa quantità di documenti presenti nel web e abbiamo anche scogitato un
+
+129
+00:11:20,040 --> 00:11:25,200
+modo per dare una risposta più efficace alle ricerche di più parole
+
+130
+00:11:25,200 --> 00:11:29,560
+contemporaneamente. Ora però come ultimo sforzo ci resta da
+
+131
+00:11:29,560 --> 00:11:34,000
+chiederci se pensiamo che tutte le parole di un testo abbiano lo stesso
+
+132
+00:11:34,000 --> 00:11:39,280
+valore. La risposta a questa domanda è ovviamente no. Se ad esempio cerchiamo la
+
+133
+00:11:39,280 --> 00:11:43,960
+frase pensieri in codice e abbiamo una pagina web in cui le parole pensieri e
+
+134
+00:11:43,960 --> 00:11:49,680
+codice compaiono nel titolo beh questa sarà probabilmente più attinente alla
+
+135
+00:11:49,680 --> 00:11:54,880
+nostra ricerca rispetto ad una pagina in cui queste stesse parole appaiono ad
+
+136
+00:11:54,880 --> 00:11:59,280
+esempio in un elenco puntato. Se vogliamo quindi che il nostro motore di
+
+137
+00:11:59,280 --> 00:12:04,240
+ricerca produca dei risultati migliori ci tocca trovare un modo di valutare
+
+138
+00:12:04,240 --> 00:12:10,080
+questo diverso peso fra le varie parti del testo. Per ottenere ciò come prima
+
+139
+00:12:10,080 --> 00:12:14,880
+cosa serve un meccanismo per individuare le varie parti di una pagina web
+
+140
+00:12:14,880 --> 00:12:21,760
+titolo, paragrafi, sezioni, liste, parole evidenziate eccetera. Ma guarda caso
+
+141
+00:12:21,760 --> 00:12:27,040
+questo lavoro di valorizzazione dei testi è proprio l'obiettivo primario del
+
+142
+00:12:27,040 --> 00:12:32,920
+linguaggio html, cioè quel linguaggio che compone praticamente ogni pagina
+
+143
+00:12:32,920 --> 00:12:38,160
+web. L'html è infatti un linguaggio di markup, ne abbiamo già parlato in altri
+
+144
+00:12:38,160 --> 00:12:42,260
+episodi, e ci permette di dare uno specifico valore alle varie parti del
+
+145
+00:12:42,260 --> 00:12:48,360
+testo utilizzando delle parole chiave che prendono il nome di tag. Il titolo di una
+
+146
+00:12:48,360 --> 00:12:52,760
+pagina web ad esempio sarà racchiusa tra due parole speciali che aprono e
+
+147
+00:12:52,880 --> 00:12:58,720
+chiudono il tag title e la stessa cosa varrà per i sottotitoli, i paragrafi, le
+
+148
+00:12:58,720 --> 00:13:02,200
+didascalie e tutti gli altri elementi del testo.
+
+149
+00:13:02,200 --> 00:13:07,040
+Questo vuol dire che ogni pagina contiene già le informazioni di cui abbiamo
+
+150
+00:13:07,040 --> 00:13:11,080
+bisogno per effettuare la nostra classificazione. Ci occorre solo un
+
+151
+00:13:11,080 --> 00:13:15,760
+meccanismo che sia efficace e veloce nel consultarle e che non ci costringa a
+
+152
+00:13:15,760 --> 00:13:21,080
+ricontrollare ogni pagina per capire se la parola individuata si trova nel titolo
+
+153
+00:13:21,080 --> 00:13:26,240
+o in un paragrafo o in una nota. Ancora una volta la soluzione è nel nostro
+
+154
+00:13:26,240 --> 00:13:30,960
+fedele indice e non ci richiede nemmeno di modificarlo, ci basta semplicemente
+
+155
+00:13:30,960 --> 00:13:37,360
+indicizzare anche le parole speciali che derimitano i tag html. In questo modo
+
+156
+00:13:37,360 --> 00:13:42,120
+possiamo usare l'indice per sapere anche la posizione dei tag all'interno della
+
+157
+00:13:42,120 --> 00:13:47,040
+pagina e molto facilmente quando valutiamo il peso di una parola possiamo
+
+158
+00:13:47,040 --> 00:13:51,120
+capire se si trova in mezzo tra la parola chiave che apre un tag e quella
+
+159
+00:13:51,120 --> 00:13:55,880
+che lo chiude. Fatto questo quando effettuiamo una ricerca non ci resta
+
+160
+00:13:55,880 --> 00:14:01,080
+altro che assegnare un valore alle pagine risultanti in base alla vicinanza
+
+161
+00:14:01,080 --> 00:14:06,120
+delle parole trovate e alla loro posizione nel testo e il gioco è fatto.
+
+162
+00:14:06,120 --> 00:14:11,040
+La pagina col punteggio maggiore sarà la prima, quella con il secondo punteggio
+
+163
+00:14:11,360 --> 00:14:15,080
+sarà la seconda e così via.
+
+164
+00:14:20,600 --> 00:14:25,040
+Mi rendo conto che parlare in modo astratto di questi concetti possa
+
+165
+00:14:25,040 --> 00:14:29,240
+risultare un po' complicato e nel caso vogliate approfondire vi metto in
+
+166
+00:14:29,240 --> 00:14:34,080
+descrizione il link affiliato a amazon del libro 9 algoritmi che hanno cambiato
+
+167
+00:14:34,080 --> 00:14:39,040
+il futuro dal quale ho preso l'idea per questo e per altri episodi del podcast.
+
+168
+00:14:39,800 --> 00:14:44,480
+Detto questo vi ringrazio per aver ascoltato, vi saluto e vi ricordo che il
+
+169
+00:14:44,480 --> 00:14:48,560
+programmatore risolve problemi, a volte anche usando il computer.
+

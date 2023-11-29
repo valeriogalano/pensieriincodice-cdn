@@ -1,0 +1,448 @@
+1
+00:00:00,000 --> 00:00:09,960
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,960 --> 00:00:24,920
+Buongiorno a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice,
+
+3
+00:00:24,920 --> 00:00:28,720
+il podcast in cui parliamo di argomenti presi dal mondo del software,
+
+4
+00:00:28,720 --> 00:00:35,360
+di internet e della programmazione. E' passata quasi una settimana da quando ho registrato
+
+5
+00:00:35,360 --> 00:00:39,960
+l'ultimo episodio, ma la voce invece di migliorare è peggiorata ancora un po',
+
+6
+00:00:39,960 --> 00:00:46,160
+ma non fa niente. Va bene così, ce la faremo andar bene, anche perché molto probabilmente
+
+7
+00:00:46,160 --> 00:00:52,760
+l'episodio della prossima settimana non uscirà e quindi non volevo risultare assente per troppo
+
+8
+00:00:52,760 --> 00:00:59,880
+tempo. Inoltre ci tenevo a ricordarvi l'appuntamento del 12 ottobre a Milano per il
+
+9
+00:00:59,880 --> 00:01:05,480
+Festival del Podcasting, dove sarò presente anch'io insieme a tutta una serie di podcaster
+
+10
+00:01:05,480 --> 00:01:11,760
+e appassionati di podcast. Sarà una gran bella occasione per incontrarci e stare un po' insieme,
+
+11
+00:01:11,760 --> 00:01:19,080
+quindi se vi va di partecipare trovate tutte le informazioni sul sito festivaldelpodcasting.it
+
+12
+00:01:19,080 --> 00:01:25,640
+e potete unirvi al gruppo Telegram di Pensieri in Codice o scrivermi su Instagram per accordarci
+
+13
+00:01:25,640 --> 00:01:32,080
+magari su come incontrarci lì. Infine vi ricordo che tutti i link che ho nominato e che nominerò
+
+14
+00:01:32,080 --> 00:01:39,000
+nell'episodio li trovate in descrizione in modo da poterli consultare in modo più agevole. Ora
+
+15
+00:01:39,000 --> 00:01:44,600
+però basta con le comunicazioni di servizio e iniziamo a parlare dell'argomento dell'episodio
+
+16
+00:01:44,600 --> 00:01:51,280
+di oggi che, come avrete letto dal titolo, è parte della rubrica informatica vintage che tengo
+
+17
+00:01:51,280 --> 00:01:57,760
+in collaborazione con la pagina Facebook Italian Developers. Ne approfitto quindi per ringraziare
+
+18
+00:01:57,760 --> 00:02:04,080
+Andrea Chanot di Italian Developers per aver raccolto le informazioni e redatto il testo che
+
+19
+00:02:04,080 --> 00:02:11,200
+sentirete letto nel prossimo blocco. In descrizione trovate anche il link al post Facebook corrispondente,
+
+20
+00:02:11,240 --> 00:02:16,240
+mi raccomando andatelo a guardare anche perché ci sono varie immagini molto interessanti
+
+21
+00:02:16,240 --> 00:02:23,160
+sull'argomento e non dimenticate di iscrivervi alla pagina Italian Developers. Ultimissima cosa
+
+22
+00:02:23,160 --> 00:02:29,440
+prima di cominciare il testo che andrò a leggere è pienissimo di nomi di persone e di aziende
+
+23
+00:02:29,440 --> 00:02:34,760
+straniere quindi mi scuso già in anticipo se sbaglierò qualche pronuncia. Andiamo quindi a
+
+24
+00:02:34,760 --> 00:02:40,920
+parlare di word processor e cioè tutti quei software che ci permettono di scrivere e modificare
+
+25
+00:02:40,960 --> 00:02:46,880
+una lettera o un documento. In pratica sono quei software che noi oggi conosciamo con il nome di
+
+26
+00:02:46,880 --> 00:02:55,120
+Microsoft Word o Libre Office Writer ma quelli che utilizziamo noi oggi sono in realtà l'ultimo
+
+27
+00:02:55,120 --> 00:02:59,920
+stadio di un processo evolutivo molto particolare e che sono sicuro vi sorprenderà.
+
+28
+00:02:59,920 --> 00:03:12,280
+Un word processor è un programma o dispositivo che permette la modifica, la formattazione e
+
+29
+00:03:12,280 --> 00:03:19,080
+l'elaborazione di un testo. I primi word processor erano dispositivi autonomi dedicati a tale
+
+30
+00:03:19,080 --> 00:03:24,360
+funzione. Fortunatamente ora non abbiamo più bisogno di comprare un computer dedicato per
+
+31
+00:03:24,360 --> 00:03:29,160
+svolgere questa attività. Gli attuali word processor infatti sono programmi di elaborazione
+
+32
+00:03:29,200 --> 00:03:35,720
+e testo eseguiti su computer di uso generale. I word processor inoltre non nascono con l'informatica
+
+33
+00:03:35,720 --> 00:03:42,080
+ma si sono sviluppati ed evoluti grazie a quelle che erano le esigenze degli scrittori per poi
+
+34
+00:03:42,080 --> 00:03:48,120
+solo in seguito congiungersi con il mondo dei computer. La storia degli elaboratori di testo
+
+35
+00:03:48,120 --> 00:03:53,480
+è la storia della graduale automazione riguardo agli aspetti fisici della scrittura e del
+
+36
+00:03:53,520 --> 00:03:59,240
+perfezionamento della tecnologia per renderla disponibile alla società. Il termine word
+
+37
+00:03:59,240 --> 00:04:04,400
+processor è entrato negli uffici americani nei primi anni 70 e si basava sull'idea di
+
+38
+00:04:04,400 --> 00:04:10,040
+riorganizzare i dattilografi. Questo concetto si è poi pian piano trasformato ponendo
+
+39
+00:04:10,040 --> 00:04:17,120
+l'attenzione sull'editing automatico dei testi. Inizialmente i progettisti di word processor
+
+40
+00:04:17,120 --> 00:04:23,160
+combinavano tecnologie esistenti con quelle emergenti in modo da sviluppare apparecchiature
+
+41
+00:04:23,160 --> 00:04:29,840
+autonome e creando un nuovo business distinto dal mondo emergente dei personal computer. Nel
+
+42
+00:04:29,840 --> 00:04:38,640
+corso della storia distinguiamo tre tipi di word processor meccanico elettronico e software. Il
+
+43
+00:04:38,640 --> 00:04:44,480
+primo dispositivo per l'elaborazione dei testi simile ad una macchina da scrivere fu brevettato
+
+44
+00:04:44,480 --> 00:04:51,440
+da Henry Mill ed era in grado di, citando, scrivere in modo così chiaro e accurato da
+
+45
+00:04:51,440 --> 00:04:59,000
+non poterlo distinguere da una macchina da stampa. Siamo alla fine del XIX secolo e Christopher
+
+46
+00:04:59,000 --> 00:05:05,720
+Scholz crea quella che si può in effetti definire la prima macchina da scrivere, sebbene essa fosse
+
+47
+00:05:05,720 --> 00:05:12,200
+ancora di grandi dimensioni. Questi sistemi meccanici non potevano propriamente elaborare
+
+48
+00:05:12,200 --> 00:05:18,240
+il testo, potevano giusto cambiare spaziature, riempire vuoti e saltare linee. Fu solo decenni
+
+49
+00:05:18,240 --> 00:05:23,400
+dopo che l'introduzione dell'elettricità e quindi dell'elettronica nelle macchine da scrivere
+
+50
+00:05:23,400 --> 00:05:30,680
+cominciò ad aiutare lo scrittore in modo sostanziale. Alla fine degli anni 60 IBM aveva
+
+51
+00:05:30,680 --> 00:05:38,400
+sviluppato la IBM MTSD e cioè un modello di macchina da scrivere IBM Selectric modificato
+
+52
+00:05:38,400 --> 00:05:44,080
+in modo che contenesse una propria scrivania, integrando funzionalità di registrazione e di
+
+53
+00:05:44,080 --> 00:05:49,760
+riproduzione di un nastro magnetico. Questo dispositivo permetteva di riscrivere il testo
+
+54
+00:05:49,760 --> 00:05:55,160
+che era stato registrato su un nastro e l'utilizzatore poteva anche passare il nastro
+
+55
+00:05:55,160 --> 00:06:00,880
+ad un'altra persona per consentirne la modifica o la copia, cioè una specie di antenato di Google
+
+56
+00:06:00,880 --> 00:06:07,720
+Doc. E questa fu una vera e propria rivoluzione per l'industria degli elaboratori di testo. Nel
+
+57
+00:06:07,720 --> 00:06:15,520
+1969 i nastri furono sostituiti da schede di memoria magnetiche e all'inizio degli anni 70
+
+58
+00:06:15,520 --> 00:06:21,760
+l'elaborazione di testi si spostò su computer. Anche se essi erano dispositivi appositi, come
+
+59
+00:06:21,760 --> 00:06:27,880
+detto in precedenza, non vi era la possibilità di eseguire altri tipi di programmi. Poco prima
+
+60
+00:06:27,880 --> 00:06:34,520
+dell'arrivo dei personal computer IBM sviluppò il floppy disk e sempre nello stesso periodo furono
+
+61
+00:06:34,600 --> 00:06:40,040
+progettati sistemi di elaborazione testi con display CRT, cioè i vecchi monitor a tubo
+
+62
+00:06:40,040 --> 00:06:47,840
+catodico, per la modifica su schermo. A quel tempo questi sistemi stand-alone di elaborazione
+
+63
+00:06:47,840 --> 00:06:54,840
+testi erano progettati, costruiti e commercializzati da aziende pioneristiche. Una di queste aziende era
+
+64
+00:06:54,840 --> 00:07:03,960
+la Linolex System, fondata nel 1970 da James Lincoln e Robert Oleksiak, la quale basava la
+
+65
+00:07:03,960 --> 00:07:11,360
+sua tecnologia su microprocessori, unità floppy e software. Con circa 500 sistemi installati presso
+
+66
+00:07:11,360 --> 00:07:19,360
+i propri clienti, la Linolex System vendette 3 milioni di unità nel 1975, ben un anno prima
+
+67
+00:07:19,360 --> 00:07:26,480
+della nascita della Apple Computer. Un'altra azienda pionieristica fu la VDEC, che creò nel
+
+68
+00:07:26,480 --> 00:07:34,600
+1973 il primo elaboratore di testi moderno, il VDEC Word Processing System. Esso aveva funzioni
+
+69
+00:07:34,600 --> 00:07:39,320
+multiple integrate, come la possibilità di condividere il contenuto tramite dischetto e
+
+70
+00:07:39,320 --> 00:07:46,960
+stamparlo. Il sistema veniva venduto all'epoca per 12 mila dollari, e cioè circa 60 mila dollari di
+
+71
+00:07:46,960 --> 00:07:57,360
+oggi. La Redactron Corporation, fondata da Evelyn Berzin nel 1969, progettò e realizzò sistemi di
+
+72
+00:07:57,360 --> 00:08:04,920
+editing, tra cui macchine da scrivere e macchine da correggere, unità cassette e schede, e infine
+
+73
+00:08:04,920 --> 00:08:11,880
+un elaboratore di testi chiamato Data Secretary. La Barogs Corporation acquisì la Redactron nel
+
+74
+00:08:11,920 --> 00:08:21,120
+1976. Nel post Facebook potrete ammirare una foto del Word Processor Redactron 2. La svolta però
+
+75
+00:08:21,120 --> 00:08:27,800
+si ebbe con un sistema basato su monitor CRT, creato da Wang Laboratories, che divenne uno dei
+
+76
+00:08:27,800 --> 00:08:35,040
+più popolari negli anni 70 e nei primi anni 80. Wang mostrava il testo su schermo e incorporava
+
+77
+00:08:35,040 --> 00:08:40,520
+praticamente tutte le caratteristiche fondamentali dei word processor così come li conosciamo oggi.
+
+78
+00:08:40,920 --> 00:08:46,560
+Era una vera macchina da ufficio, accessibile da organizzazioni come studi legali di medie
+
+79
+00:08:46,560 --> 00:08:53,640
+dimensioni e facilmente apprendibile e gestibile da personale di segreteria. E' in questa fase che
+
+80
+00:08:53,640 --> 00:08:59,440
+l'espressione word processor inizia rapidamente a riferirsi a macchine basate su CRT simile a
+
+81
+00:08:59,440 --> 00:09:04,880
+quelle di Wang. E quindi ne emersero numerose di questo tipo, in genere commercializzate
+
+82
+00:09:04,880 --> 00:09:12,920
+da società già famose per le loro apparecchiature d'ufficio come IBM o Lanier. Tutti erano sistemi
+
+83
+00:09:12,920 --> 00:09:19,160
+specializzati, dedicati e proprietari, con prezzi che si aggiravano intorno ai 10.000 dollari. I
+
+84
+00:09:19,160 --> 00:09:25,600
+personal computer per uso generico e a basso costo infatti erano ancora degli hobby. Lo step
+
+85
+00:09:25,600 --> 00:09:31,880
+finale nell'elaborazione dei testi arriva con l'avvento del pc alla fine degli anni 80 e con
+
+86
+00:09:31,960 --> 00:09:40,480
+il relativo sviluppo del software. Nel dicembre del 1976 infatti veniva messo in vendita Electric
+
+87
+00:09:40,480 --> 00:09:48,000
+Pencil di Michael Schreier Software, il primo word processor appositamente sviluppato per
+
+88
+00:09:48,000 --> 00:09:55,880
+microcomputer. Nel 1978 WordStar fa il suo esordio sul mercato per diventarne immediatamente il
+
+89
+00:09:55,880 --> 00:10:01,360
+dominatore e a metà degli anni 80 WordPerfect prende il suo posto grazie ad una importante
+
+90
+00:10:01,360 --> 00:10:07,200
+caratteristica che lo rendeva differente dal suo predecessore. Esso infatti manteneva i comandi
+
+91
+00:10:07,200 --> 00:10:13,280
+chiave fuori dallo schermo ponendo invece l'attenzione sulle parole. La maggior parte
+
+92
+00:10:13,280 --> 00:10:18,720
+dei primi software di questo tipo richiedeva che gli utenti memorizzassero combinazioni di
+
+93
+00:10:18,720 --> 00:10:25,040
+tasti semi-mnemonici anziché avere comodi bottoni come copia o grassetto così come siamo abituati
+
+94
+00:10:25,040 --> 00:10:31,000
+oggi e come se non bastasse si deve anche ricordare che molti dei primi pc non avevano
+
+95
+00:10:31,120 --> 00:10:37,600
+nemmeno un cursore. Tuttavia la differenza di prezzo tra gli elaboratori dedicati esclusivamente
+
+96
+00:10:37,600 --> 00:10:43,680
+al word processing e i pc generici, il valore aggiunto che portavano alcuni software come i
+
+97
+00:10:43,680 --> 00:10:51,760
+primi fogli di calcolo antenati di Excel quali VisiCalc e Lotus123 erano così avvincenti che
+
+98
+00:10:51,760 --> 00:10:57,280
+i personal computer e i software di elaborazione testo diventarono una seria concorrenza per le
+
+99
+00:10:57,280 --> 00:11:04,400
+macchine dedicate fino a prendersi il controllo del mercato. Alla fine degli anni 80 poi uscirono
+
+100
+00:11:04,400 --> 00:11:12,480
+varie innovazioni come ad esempio la stampante laser o un approccio tipografico all'elaborazione
+
+101
+00:11:12,480 --> 00:11:19,040
+dei testi che in gergo si chiama WYSIWYG acronimo di what you see is what you get e che vuol dire
+
+102
+00:11:19,040 --> 00:11:26,040
+che ciò che vedi sullo schermo è ciò che poi otterrai come risultato e poi ci furono i display
+
+103
+00:11:26,040 --> 00:11:32,480
+bitmap con più caratteri introdotti dal computer Xerox Alto e dal programma word processor Bravo
+
+104
+00:11:32,480 --> 00:11:38,960
+e infine interfacce grafiche con funzionalità avanzate quali copia e incolla, altra innovazione
+
+105
+00:11:38,960 --> 00:11:46,600
+introdotta da Xerox con il Parc e il suo word processor Gypsy. In definitiva l'esplosione dei
+
+106
+00:11:46,600 --> 00:11:55,240
+word processor si ebbe con i mitici MacWrite su Apple Macintosh nel 1983 e Microsoft Word
+
+107
+00:11:55,400 --> 00:12:03,120
+su PC IBM nel 1984. Entrambi questi pezzi di storia sono probabilmente i primi veri
+
+108
+00:12:03,120 --> 00:12:06,560
+word processor WYSIWYG conosciuti in tutto il mondo.
+
+109
+00:12:06,560 --> 00:12:18,720
+Anche per oggi termina qui questo secondo episodio della rubrica informatica vintage. Io come al
+
+110
+00:12:18,720 --> 00:12:25,040
+solito vi invito a farmi sapere cosa ne pensate, a lasciare un commento, un like, unirvi al gruppo
+
+111
+00:12:25,360 --> 00:12:31,880
+Telegram e alla pagina di Italian Developers e sempre ringraziandovi per l'ascolto vi do
+
+112
+00:12:31,880 --> 00:12:34,360
+appuntamento a tra un paio di settimane.
+

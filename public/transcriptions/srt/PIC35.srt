@@ -1,0 +1,564 @@
+1
+00:00:00,000 --> 00:00:10,040
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:10,040 --> 00:00:25,760
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice. Sappiamo tutti
+
+3
+00:00:25,760 --> 00:00:31,200
+che ci sono delle attività che richiedono di applicare una forte dose di riflessione e di
+
+4
+00:00:31,200 --> 00:00:36,920
+ragionamento anche per lunghi periodi. Questo tipo di attività sono ben conosciute ad esempio dagli
+
+5
+00:00:36,920 --> 00:00:43,280
+studenti ma anche da molte figure professionali tra le quali sicuramente non manca il programmatore.
+
+6
+00:00:43,280 --> 00:00:50,160
+Chiunque però si sia trovato nella condizione di dover mantenere un alto grado di concentrazione
+
+7
+00:00:50,160 --> 00:00:56,160
+magari per tutto il giorno o magari per più giorni sa benissimo che non è sempre facile. A
+
+8
+00:00:56,160 --> 00:01:02,600
+volte infatti è difficile concentrarsi, altre volte l'obiettivo sembra così fuori portata da
+
+9
+00:01:02,600 --> 00:01:08,920
+apparire raggiungibile, altre volte ancora molto banalmente non si ha voglia magari di fare quella
+
+10
+00:01:08,920 --> 00:01:16,320
+determinata attività. Le tecniche di organizzazione del tempo sono delle strategie studiate apposta
+
+11
+00:01:16,360 --> 00:01:21,680
+per argenare questo tipo di problemi e fare in modo quindi che chi le utilizza riesca ad essere
+
+12
+00:01:21,680 --> 00:01:28,040
+più produttivo e al tempo stesso a diminuire i propri sforzi. Fra le moltissime esistenti la
+
+13
+00:01:28,040 --> 00:01:33,960
+tecnica del pomodoro è senza dubbio una di quelle che ho sempre trovato tra le più interessanti.
+
+14
+00:01:33,960 --> 00:01:39,160
+Forse qualcuno l'avrà già sentita nominare e magari la conoscerà per la caratteristica
+
+15
+00:01:39,160 --> 00:01:44,920
+suddivisione del tempo di lavoro in blocchi di 25 minuti chiamati appunto pomodori ma in realtà
+
+16
+00:01:45,240 --> 00:01:50,800
+vedremo oggi essa è molto più di questo. Qualche tempo fa infatti ho avuto la possibilità di
+
+17
+00:01:50,800 --> 00:01:56,360
+studiare il documento originale di Francesco Cirillo, l'inventore di questa tecnica e poi
+
+18
+00:01:56,360 --> 00:02:02,160
+negli ultimi mesi ho anche avuto l'occasione di applicarla in modo continuativo e devo dire
+
+19
+00:02:02,160 --> 00:02:09,080
+che l'ho trovata un'ottima tecnica potenzialmente molto utile in fase di studio e di lavoro anche se
+
+20
+00:02:09,080 --> 00:02:14,760
+con qualche limite. Non voglio però correre troppo quindi nei prossimi minuti proverò ad
+
+21
+00:02:14,760 --> 00:02:20,520
+illustrare un po' le basi della tecnica e gli obiettivi che si prefigge e al tempo stesso a
+
+22
+00:02:20,520 --> 00:02:25,360
+raccontarvi la mia esperienza personale e l'opinione che me ne sono fatte.
+
+23
+00:02:25,360 --> 00:02:39,760
+La tecnica del pomodoro ha vari obiettivi più o meno complessi da conseguire però essenzialmente
+
+24
+00:02:39,760 --> 00:02:45,800
+alla base di tutto c'è l'intenzione di migliorare il rapporto della persona con il proprio tempo. Ne
+
+25
+00:02:45,800 --> 00:02:51,200
+esiste una versione leggermente diversa che si applica al lavoro in team ma noi per questo
+
+26
+00:02:51,200 --> 00:02:57,040
+podcast ci limiteremo a parlare della versione per persona singola diciamo così. L'idea alla
+
+27
+00:02:57,040 --> 00:03:03,880
+base è abbastanza ovvia e cioè quando si hanno da svolgere attività lunghe e impegnative e magari
+
+28
+00:03:03,880 --> 00:03:10,160
+si hanno anche delle scadenze da rispettare il trascorrere del tempo diventa un fattore di ansia.
+
+29
+00:03:10,160 --> 00:03:15,440
+Si ha sempre l'impressione di non aver fatto abbastanza, di non riuscire a finire in tempo
+
+30
+00:03:15,440 --> 00:03:22,200
+e di non essere in grado di fare passi avanti. In pratica si subisce il trascorrere del tempo
+
+31
+00:03:22,200 --> 00:03:27,160
+invece di utilizzarlo in maniera proficua. Lo scopo di questa tecnica è dunque proprio quello
+
+32
+00:03:27,160 --> 00:03:33,000
+di permettere a chi la impiega di dominare il proprio tempo eliminando almeno riducendo
+
+33
+00:03:33,000 --> 00:03:39,520
+l'ansia e migliorando di conseguenza la propria produttività e serenità. Il concetto è che alleviare
+
+34
+00:03:39,520 --> 00:03:44,920
+la mente dalle preoccupazioni inutili e magari infondate permette di focalizzarsi su ciò che
+
+35
+00:03:44,920 --> 00:03:50,960
+davvero conta e cioè la realizzazione degli obiettivi prefissati e tutto ciò va conseguito
+
+36
+00:03:50,960 --> 00:03:56,120
+come vedremo fra poco tramite un misto di compartimentazione del tempo, dinamiche di
+
+37
+00:03:56,120 --> 00:04:02,640
+gioco e semplici strumenti sia materiali che cognitivi. La tecnica del pomodoro nella sua
+
+38
+00:04:02,640 --> 00:04:08,520
+versione più basilare si articola dunque in cinque fasi pianificazione, rilevazione,
+
+39
+00:04:08,840 --> 00:04:16,000
+registrazione, elaborazione e visualizzazione e solitamente queste fasi coprono l'arco di
+
+40
+00:04:16,000 --> 00:04:21,440
+una intera giornata o frazione di essa perché non è detto che si possa lavorare tutto il giorno
+
+41
+00:04:21,440 --> 00:04:27,720
+o che lo si possa fare applicando il pomodoro dall'inizio alla fine. Ora non mi dilungherò
+
+42
+00:04:27,720 --> 00:04:33,000
+sui dettagli perché non è questa la sede per spiegare come si applica la tecnica,
+
+43
+00:04:33,520 --> 00:04:39,120
+per quello basta e avanza il pdf che trovate in descrizione e poi nel caso potremo approfondire
+
+44
+00:04:39,120 --> 00:04:45,000
+il discorso su twitch. Quello che invece vorrei fare è sottolineare alcuni aspetti che secondo
+
+45
+00:04:45,000 --> 00:04:50,760
+me sono importanti per capire l'utilità del pomodoro. Una prima cosa interessante secondo
+
+46
+00:04:50,760 --> 00:04:56,320
+me da notare è che ben quattro delle cinque fasi del processo e mi riferisco in particolare alla
+
+47
+00:04:56,320 --> 00:05:02,760
+prima, terza, quarta e quinta sono dedicate o a decidere quante e quale attività svolgere e
+
+48
+00:05:02,760 --> 00:05:08,880
+in quanto tempo oppure alla verifica di quanto si è effettivamente riusciti a realizzare. In
+
+49
+00:05:08,880 --> 00:05:15,640
+questo modo si ha sempre il controllo sullo stato di avanzamento dei lavori diciamo così e inoltre
+
+50
+00:05:15,640 --> 00:05:21,080
+ci si ferma anche a guardare quanto si è fatto durante la giornata, cosa che normalmente viene
+
+51
+00:05:21,080 --> 00:05:27,160
+semplicemente ignorata. Quindi una giornata di lavoro tipo della quale si applica la tecnica
+
+52
+00:05:27,160 --> 00:05:33,880
+del pomodoro si svolge più o meno in questo modo. Fase 1 pianificazione. Si decidono quale attività
+
+53
+00:05:33,880 --> 00:05:39,800
+andranno svolte durante la giornata e le si suddivide in unità di tempo di 25 minuti che
+
+54
+00:05:39,800 --> 00:05:45,280
+vengono appunto chiamate pomodori. Ad esempio controllare e rispondere alle email potrebbe
+
+55
+00:05:45,280 --> 00:05:50,880
+essere la prima attività della durata di un pomodoro, poi leggere la documentazione del
+
+56
+00:05:50,880 --> 00:05:57,080
+progetto potrebbe invece essere un'attività da due pomodori e così via. La fase stessa di
+
+57
+00:05:57,080 --> 00:06:02,720
+pianificazione di solito è considerata un'attività da un pomodoro. Già questo secondo me è uno dei
+
+58
+00:06:02,720 --> 00:06:09,120
+punti più interessanti della tecnica perché spinge la persona a stabilire un massimo di attività che
+
+59
+00:06:09,120 --> 00:06:16,160
+potrà svolgere durante la giornata e questo aiuta a rendersi conto che il tempo è limitato e che non
+
+60
+00:06:16,160 --> 00:06:23,360
+ha senso mettersi nello stato d'animo nel quale si cerca di fare tutto e subito. Capisco che possa
+
+61
+00:06:23,360 --> 00:06:29,040
+sembrare sciocco ma almeno per me darsi degli obiettivi realistici aumenta enormemente il
+
+62
+00:06:29,040 --> 00:06:34,720
+senso di soddisfazione a fine giornata nel caso in cui li si riesca a conseguire tutti o almeno
+
+63
+00:06:34,720 --> 00:06:42,880
+in buona parte. Segue poi la fase 2 la rilevazione. Questa è la fase più lunga e personalmente è
+
+64
+00:06:42,960 --> 00:06:48,280
+anche quella che ho trovato più complicata da applicare in modo rigoroso. In pratica si tratta
+
+65
+00:06:48,280 --> 00:06:55,360
+di svolgere le attività pianificate ma nel farlo si devono rispettare in modo ferreo le unità di
+
+66
+00:06:55,360 --> 00:07:01,960
+tempo di 25 minuti. Si utilizza un vero e proprio timer, possibilmente meccanico. Nella prima versione
+
+67
+00:07:01,960 --> 00:07:07,840
+l'autore utilizzava proprio un timer da cucina a forma di pomodoro ed ecco da dove viene il nome
+
+68
+00:07:07,840 --> 00:07:14,160
+della tecnica. Comunque si carica il timer a 25 minuti e si inizia a svolgere l'attività. Nel
+
+69
+00:07:14,160 --> 00:07:20,120
+momento esatto in cui il tempo scade si è completato un pomodoro, lo si annota accanto al
+
+70
+00:07:20,120 --> 00:07:25,840
+nome dell'attività e ci si alza per fare una pausa di 5 minuti nei quali si può pensare ad altro.
+
+71
+00:07:25,840 --> 00:07:32,000
+Trascorsa la pausa ci si rimette al lavoro per un altro pomodoro. Ora detta così sembra una cosa
+
+72
+00:07:32,000 --> 00:07:37,800
+banale ma la difficoltà maggiore sta nel fatto che per tutti i 25 minuti del pomodoro ci si
+
+73
+00:07:37,800 --> 00:07:44,120
+deve sforzare di non interrompere mai il lavoro e vi assicuro che non è affatto semplice. Se
+
+74
+00:07:44,120 --> 00:07:49,120
+proverete ad applicare questa tecnica scoprirete infatti che le distrazioni sono ovunque e sono
+
+75
+00:07:49,120 --> 00:07:54,560
+frequentissime. Messaggi, telefonate, email, colleghi, persino il nostro stesso cervello
+
+76
+00:07:54,560 --> 00:08:00,280
+tutti proveranno a farci fallire nel nostro compito e proprio qui secondo me c'è la trovata
+
+77
+00:08:00,280 --> 00:08:07,000
+geniale della tecnica. Ogni volta che una qualsiasi interruzione minaccia la nostra concentrazione il
+
+78
+00:08:07,040 --> 00:08:13,920
+pomodoro prevede solo due possibilità o si gestisce l'interruzione prendendo magari un appunto e
+
+79
+00:08:13,920 --> 00:08:20,440
+rimandandola oppure si interrompe il lavoro, si annota l'interruzione, si azzera il timer e si
+
+80
+00:08:20,440 --> 00:08:27,700
+perde il pomodoro in corso non importa se mancano 2 o 20 minuti al termine. Questa regola trasforma
+
+81
+00:08:27,700 --> 00:08:33,280
+di fatto tutto il processo in una sorta di gioco. A fine giornata si potranno contare i pomodori
+
+82
+00:08:33,280 --> 00:08:38,800
+completati e confrontare la quantità con i giorni precedenti o con i colleghi. Così come
+
+83
+00:08:38,800 --> 00:08:45,000
+accade con gli obiettivi di un qualsiasi videogioco la volontà di completare più pomodori ci spingerà
+
+84
+00:08:45,000 --> 00:08:51,560
+naturalmente a migliorarci in modo divertente. Le successive tre fasi sono quindi una sorta di
+
+85
+00:08:51,560 --> 00:08:57,640
+raccolta dati e reportistica che permettono di calcolare il punteggio, evidenziare carenze ed
+
+86
+00:08:57,860 --> 00:09:03,480
+elaborare strategie di miglioramento. Per tutti i dettagli vi rimando sempre al pdf in
+
+87
+00:09:03,480 --> 00:09:10,200
+descrizione. Una volta acquisita poi padronanza con le basi la tecnica del pomodoro si evolve
+
+88
+00:09:10,200 --> 00:09:16,360
+in più livelli di difficoltà crescente che portano benefici sempre maggiori. Nel momento
+
+89
+00:09:16,360 --> 00:09:22,240
+in cui si applicano correttamente le varie fasi infatti si può passare al secondo livello e iniziare
+
+90
+00:09:22,240 --> 00:09:28,040
+a lavorare sulla gestione delle interruzioni. La tecnica prevede infatti di annotare le varie
+
+91
+00:09:28,040 --> 00:09:33,380
+interruzioni quando si presentano dividendole a seconda del fatto che siano state causate
+
+92
+00:09:33,380 --> 00:09:39,360
+dalla persona stessa o da eventi al di fuori del suo controllo e di conseguenza nella reportistica
+
+93
+00:09:39,360 --> 00:09:44,480
+sarà anche possibile misurare l'andamento. Sforzandosi quindi di applicare diverse
+
+94
+00:09:44,480 --> 00:09:49,680
+strategie per ridurre le interruzioni sarà poi più facile analizzare i risultati ottenuti e
+
+95
+00:09:49,680 --> 00:09:55,800
+verificare quali approcci portano i benefici maggiori. Una volta risolti questi problemi a
+
+96
+00:09:55,800 --> 00:10:01,920
+livello successivo si impara a pianificare meglio i tempi necessari per svolgere le attività e a
+
+97
+00:10:01,920 --> 00:10:07,440
+suddividerle in attività più semplici quando necessario. Questo grazie al fatto che sempre
+
+98
+00:10:07,440 --> 00:10:13,200
+in fase di reportistica è possibile capire quando sono stati necessari più o meno pomodori del
+
+99
+00:10:13,200 --> 00:10:19,400
+previsto per completare un compito e quindi sapere dove e quando sono stati commessi errori per
+
+100
+00:10:19,400 --> 00:10:24,800
+eccesso o per difetto aiuta ad essere più accurati quando ci si trova di fronte alla
+
+101
+00:10:24,800 --> 00:10:29,920
+formulazione di nuove stime. Infine l'ultimo livello permette addirittura di aumentare la
+
+102
+00:10:29,920 --> 00:10:36,080
+propria efficienza nell'unità di tempo questo perché la persona una volta diventata esperta
+
+103
+00:10:36,080 --> 00:10:41,000
+della tecnica può modificare la durata dei singoli pomodori e delle pause per rendere il
+
+104
+00:10:41,000 --> 00:10:46,680
+tutto più congeniale alle proprie capacità. La cosa che trovo interessantissima di questa
+
+105
+00:10:46,680 --> 00:10:52,280
+tecnica è che in pratica permette di trasformare la gestione del tempo quasi in un gioco in una
+
+106
+00:10:52,280 --> 00:10:58,240
+sorta di gara contro se stessi inoltre fa un ampio uso della psicologia per rendere il tutto più
+
+107
+00:10:58,240 --> 00:11:04,360
+semplice automatico e piacevole e per questo motivo se la volete provare il mio consiglio
+
+108
+00:11:04,360 --> 00:11:10,480
+è quello di seguire le regole nel modo più preciso possibile almeno all'inizio poi sarete liberi di
+
+109
+00:11:10,480 --> 00:11:17,160
+esplorarla e adattarla a vostro piacimento ma soprattutto inizialmente consigli banali come
+
+110
+00:11:17,160 --> 00:11:23,440
+quello di utilizzare carta e matita per la pianificazione e un timer fisico per tracciare
+
+111
+00:11:23,440 --> 00:11:29,640
+il tempo invece di un'app per smartphone per me si sono rivelati punti chiave e mi hanno aiutato
+
+112
+00:11:29,640 --> 00:11:35,800
+moltissimo ad aumentare il senso di soddisfazione chiamiamolo così. Ma quindi stiamo parlando della
+
+113
+00:11:35,840 --> 00:11:41,640
+tecnica definitiva che risolverà tutti i nostri problemi? Beh come al solito le cose sono un po'
+
+114
+00:11:41,640 --> 00:11:47,720
+più complicate di così pur essendo un'ottima tecnica io però ci ho trovato un paio di limiti
+
+115
+00:11:47,720 --> 00:11:53,680
+che voglio condividere con voi perché penso che possa essere utile conoscerli soprattutto se siete
+
+116
+00:11:53,680 --> 00:12:00,080
+intenzionati a sperimentarla. Il primo limite secondo me è dovuto al concetto di incapsulamento del
+
+117
+00:12:00,120 --> 00:12:06,440
+tempo che può risultare in verità difficile in ambienti che non sono troppo organizzati nei
+
+118
+00:12:06,440 --> 00:12:11,920
+quali magari risulta troppo complicato gestire le interruzioni. Quello che sto cercando di dire
+
+119
+00:12:11,920 --> 00:12:16,960
+è che se lavoro ad esempio a contatto con il cliente il quale può chiamarmi in qualsiasi
+
+120
+00:12:16,960 --> 00:12:24,120
+momento senza darmi la possibilità di rimandare forse la continua perdita di pomodori può
+
+121
+00:12:24,120 --> 00:12:29,280
+rappresentare un elemento di frustrazione piuttosto che di piacere. E la stessa cosa
+
+122
+00:12:29,280 --> 00:12:35,480
+potrebbe valere se la mia azienda magari lavora alla giornata senza una pianificazione e piazzando
+
+123
+00:12:35,480 --> 00:12:42,200
+le riunioni quando capita o cambiando repentinamente le priorità. Benché come avrete modo di leggere
+
+124
+00:12:42,200 --> 00:12:48,840
+Cirillo suggerisca tutta una serie di contromisure a questo tipo di problemi noi sappiamo bene che
+
+125
+00:12:48,840 --> 00:12:55,680
+nel mondo reale non è mai così facile applicare la teoria. Detto questo il secondo limite invece
+
+126
+00:12:55,680 --> 00:13:01,880
+deriva proprio dalla mia esperienza personale. Come freelance infatti io ho bisogno di pianificare
+
+127
+00:13:01,880 --> 00:13:08,680
+attività anche molto lunghe e molto avanti nel tempo e poi ho bisogno di gestire interi progetti
+
+128
+00:13:08,680 --> 00:13:15,240
+e attività ripetitive settimanali o mensili e benché la tecnica del pomodoro non impedisca
+
+129
+00:13:15,240 --> 00:13:20,280
+esplicitamente la gestione di questo tipo di attività non implementa nemmeno metodologie
+
+130
+00:13:20,280 --> 00:13:26,000
+specifiche per farlo. Si può pensare certamente di modificarla o estenderla in qualche modo ma
+
+131
+00:13:26,000 --> 00:13:32,440
+appare abbastanza chiaro che essa è pensata per risolvere problemi imminenti o con scadenze di
+
+132
+00:13:32,440 --> 00:13:37,920
+poche settimane o un mese al massimo. Da questo punto di vista io la trovo veramente perfetta
+
+133
+00:13:37,920 --> 00:13:44,200
+per lo studio soprattutto quello universitario ma nel mio caso personale cioè la consulenza per
+
+134
+00:13:44,200 --> 00:13:50,800
+lo sviluppo software la trovo invece ottima per specifiche parti del lavoro ad esempio quando c'è
+
+135
+00:13:50,800 --> 00:13:56,600
+da fare analisi o progettare e sviluppare codice. In questo senso la utilizzo abitualmente in
+
+136
+00:13:56,600 --> 00:14:02,720
+congiunzione con un'altra tecnica la GTD ma di questo magari parleremo un'altra volta. Detto
+
+137
+00:14:02,720 --> 00:14:08,360
+questo spero che quanto vi ho raccontato finora sia stato interessante e magari vi spinga a provare
+
+138
+00:14:08,360 --> 00:14:13,920
+la tecnica che secondo me merita ed è anche abbastanza divertente da conoscere e da applicare.
+
+139
+00:14:14,400 --> 00:14:19,560
+Io come al solito vi ringrazio per aver ascoltato fin qui vi invito a condividere il podcast con i
+
+140
+00:14:19,560 --> 00:14:26,000
+vostri contatti per far crescere questo progetto e vi ringrazio e vi saluto con le ormai solite
+
+141
+00:14:26,000 --> 00:14:32,200
+parole del professor Degli Antoni un informatico risolve i problemi a volte anche usando il computer.
+

@@ -1,0 +1,340 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:20,000 --> 00:00:25,000
+Buongiorno a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice.
+
+3
+00:00:25,000 --> 00:00:33,000
+Per la serie Informatica Vintage oggi parliamo di un linguaggio che ha fatto la storia della programmazione, il FORTRAN.
+
+4
+00:00:33,000 --> 00:00:38,000
+Prima di iniziare però vi ricordo che, come per tutti gli altri episodi di Informatica Vintage,
+
+5
+00:00:38,000 --> 00:00:51,000
+trovate i testi originali, le immagini riguardanti gli argomenti e molti altri articoli sul blog di Andrea Chanot all'indirizzo chano.net, mi raccomando senza l'accento.
+
+6
+00:00:51,000 --> 00:00:56,000
+Vi lascio quindi tutti i link in descrizione, mi raccomando andate a visitarlo.
+
+7
+00:00:56,000 --> 00:01:06,000
+Vi ricordo che se volete parlare degli argomenti di cui discutiamo nel podcast potete lasciare un commento o unirvi al gruppo Telegram che trovate sempre in descrizione.
+
+8
+00:01:06,000 --> 00:01:09,000
+E iniziamo con l'episodio di oggi.
+
+9
+00:01:09,000 --> 00:01:27,000
+FORTRAN è l'acronimo di FORMULA TRANSLATION oppure FORMULA TRANSLATOR che significa traduzione o traduttore di formule ed è uno dei primi linguaggi di programmazione.
+
+10
+00:01:27,000 --> 00:01:38,000
+Il primo compilatore FORTRAN fu sviluppato a partire dal 1954 per il calcolatore IBM 704 da un gruppo di lavoro guidato da John Bacus.
+
+11
+00:01:38,000 --> 00:01:54,000
+Si trattava di un compilatore ottimizzato poiché i progettisti dell'epoca ritenevano che nessuno avrebbe mai usato un linguaggio di programmazione la cui efficienza non era paragonabile a quella dei linguaggi assembler in voga in quel periodo.
+
+12
+00:01:54,000 --> 00:02:07,000
+Il primo manuale di riferimento per programmatori FORTRAN 1 scritto dallo stesso Bacus è del 1956 mentre il compilatore sopraccitato fu pubblicato nel 1957.
+
+13
+00:02:07,000 --> 00:02:20,000
+Grazie agli innumerevoli programmi applicativi sviluppati nel corso degli anni e alle immense librerie di funzioni richiamabili anche da programmi scritti con altri linguaggi FORTRAN è tuttora un linguaggio utilizzato.
+
+14
+00:02:20,000 --> 00:02:31,000
+Esistono delle sue varianti per supportare il calcolo parallelo, utili alla simulazione di fluidi, interazioni fra particelle, previsioni meteorologiche, ecc.
+
+15
+00:02:31,000 --> 00:02:41,000
+Progettato originariamente come linguaggio procedurale, alcune sue versioni più recenti consentono di utilizzare costrutti derivati dalla programmazione ad oggetti.
+
+16
+00:02:41,000 --> 00:02:54,000
+Veniva usato su larga scala soprattutto per scrivere programmi che eseguivano molti calcoli matematici e questo incoraggiò i progettisti a creare compilatori che generavano codice molto velocemente.
+
+17
+00:02:54,000 --> 00:03:03,000
+L'inclusione di un tipo apposito per la rappresentazione dei numeri complessi rese FORTRAN il linguaggio de facto della comunità scientifica.
+
+18
+00:03:03,000 --> 00:03:10,000
+Al giorno d'oggi vengono ancora progettati nuovi compilatori FORTRAN con prestazioni sempre più alte.
+
+19
+00:03:10,000 --> 00:03:23,000
+Non si deve dimenticare infatti che molti progressi nella teoria e nella progettazione di traduttori e compilatori sono proprio derivati dalla necessità di ottenere compilatori FORTRAN in grado di generare codice migliore.
+
+20
+00:03:23,000 --> 00:03:43,000
+Diverse sono le versioni prodotte nel corso del tempo FORTRAN 1 nel 1957 FORTRAN 2 nel 1958 FORTRAN 3 sempre nel 58 usato da una ventina di clienti IBM ma mai pubblicato come prodotto commerciale per la sua mancanza di portabilità
+
+21
+00:03:43,000 --> 00:04:02,000
+FORTRAN 4 nel 61 ad oggi la versione più conosciuta e diffusa FORTRAN 66 nel 1966 FORTRAN 77 nel 77 FORTRAN 90 indovinate un po' nel 90 FORTRAN 95 2003 e 2008
+
+22
+00:04:03,000 --> 00:04:22,000
+FORTRAN 2 introdusse la possibilità di avere compilazioni separate FORTRAN 3 la possibilità di usare espressioni booleane o logiche e di inserire codice assembly in line cioè di poter mescolare istruzioni FORTRAN e istruzioni in linguaggio assembler
+
+23
+00:04:22,000 --> 00:04:36,000
+e proprio quest'ultima modifica lo rese non portabile poiché come forse saprete ciascun linguaggio assembler è specifico di un dato calcolatore non essendo altro che la forma simbolica del suo linguaggio macchina
+
+24
+00:04:37,000 --> 00:04:51,000
+le espressioni booleane furono mantenute anche in FORTRAN 4 mentre al tempo stesso vide alla luce un nuovo costrutto condizionale chiamato IF logico in grado di eseguire un test sulla veridicità di un'espressione booleana
+
+25
+00:04:52,000 --> 00:05:07,000
+quest'ultimo si andava ad aggiungere alla già presente istruzione IF aritmetico introdotta in FORTRAN 1 capace di valutare un'espressione numerica prevedendo tre diversi salti a seconda che il suo valore fosse negativo nullo o positivo
+
+26
+00:05:08,000 --> 00:05:17,000
+i primi programmi in FORTRAN erano creati su schede perforate a 80 colonne con regole molto stringenti sul formato della singola istruzione
+
+27
+00:05:17,000 --> 00:05:25,000
+in particolare una riga di codice non poteva superare i 72 caratteri che venivano perforati nelle colonne da 1 a 72
+
+28
+00:05:26,000 --> 00:05:31,000
+se la colonna 1 conteneva una C i successivi caratteri costituivano un commento
+
+29
+00:05:32,000 --> 00:05:36,000
+le colonne da 7 a 72 contenevano l'istruzione vera e propria
+
+30
+00:05:36,000 --> 00:05:47,000
+la colonna 6, normalmente vuota, se conteneva un carattere qualsiasi, spesso un asterisco, indicava che l'istruzione era il seguito dell'istruzione perforata nella scheda precedente
+
+31
+00:05:48,000 --> 00:05:59,000
+d'altra parte le colonne da 73 a 80 venivano spesso usate per numerare le schede e permettere così di riordinarle nel caso in cui fossero accidentalmente state mescolate
+
+32
+00:06:00,000 --> 00:06:09,000
+nell'articolo di Andrea trovate una bellissima immagine di una scheda perforata dell'IBM System 3 del 1969
+
+33
+00:06:10,000 --> 00:06:21,000
+con l'avvento del FORTRAN 90, una revisione massiccia del codice sino a quel momento esistente, tutte queste regole stringenti furono abbandonate in favore di codice in formato libero
+
+34
+00:06:21,000 --> 00:06:35,000
+altre notevoli innovazioni introdotte da FORTRAN 90 sono l'allocazione dinamica della memoria, le operazioni sugli array, i tipi di dati astratti, l'overloading degli operatori, i puntatori e i moduli
+
+35
+00:06:36,000 --> 00:06:40,000
+questi ultimi consentono di raggruppare sottoprogrammi e dati correlati
+
+36
+00:06:41,000 --> 00:06:50,000
+il FORTRAN 95, una revisione minore del suo predecessore, ha introdotto essenzialmente la possibilità di effettuare programmazione parallela
+
+37
+00:06:51,000 --> 00:07:00,000
+FORTRAN 2003, anche se il documento che lo definisce è stato pubblicato nel 2004, è un'estensione propria del FORTRAN 95
+
+38
+00:07:01,000 --> 00:07:13,000
+essa include l'aritmetica in virgola mobile, la gestione delle eccezioni, costrutti per la programmazione orientata agli oggetti e una migliorata interoperabilità con il linguaggio C
+
+39
+00:07:14,000 --> 00:07:22,000
+la pozza finale dello standard FORTRAN 2008 è stata rilasciata il 7 gennaio 2010 ed introduce parecchie novità
+
+40
+00:07:22,000 --> 00:07:32,000
+mentre lo standard formale più recente del linguaggio è il FORTRAN 2018 ed è nuovamente una revisione minore del fratello nato 10 anni prima
+
+41
+00:07:42,000 --> 00:07:45,000
+ma com'è la situazione odierna del FORTRAN?
+
+42
+00:07:46,000 --> 00:07:55,000
+nel 2017 la NASA aveva annunciato una specie di hackathon, lanciando una sfida da risolvere in FORTRAN, per poi annullarlo poco dopo
+
+43
+00:07:56,000 --> 00:08:02,000
+vi era una semplice regola, esiste un risolutore sotto determinate condizioni per le equazioni di Navier-Stokes
+
+44
+00:08:03,000 --> 00:08:12,000
+le quali sono un sistema di equazioni differenziali alle derivate parziali che descrivono il comportamento di un fluido dal punto di vista macroscopico
+
+45
+00:08:12,000 --> 00:08:20,000
+e in sostanza chi fosse riuscito ad eseguirlo in modo più veloce sul supercomputer PLAY ADDESS avrebbe vinto il primo premio
+
+46
+00:08:21,000 --> 00:08:26,000
+dato che FORTRAN non è il linguaggio più popolare all'interno della comunità di programmatori
+
+47
+00:08:27,000 --> 00:08:38,000
+molti credono che sia complesso e obsoleto e la programmazione in FORTRAN è percepita come andare in giro con una carrozza trainata da cavalli in un mondo di automobili
+
+48
+00:08:38,000 --> 00:08:47,000
+tanti pensavano che la competizione non avrebbe mai avuto luogo per mancanza di candidati, mentre avvenne esattamente l'opposto
+
+49
+00:08:48,000 --> 00:08:58,000
+il numero estremamente elevato di candidati, oltre 1800, unito alla difficoltà nel soddisfare i requisiti di controllo per la distribuzione pubblica del software
+
+50
+00:08:59,000 --> 00:09:01,000
+fece fare un passo indietro agli organizzatori
+
+51
+00:09:02,000 --> 00:09:06,000
+FORTRAN non è ovviamente né obsoleto né complesso
+
+52
+00:09:07,000 --> 00:09:15,000
+in realtà questi pregiudizi sono nati perché è stato progettato per rendere più semplice ed efficiente la compressione dei numeri
+
+53
+00:09:16,000 --> 00:09:21,000
+i suoi utilizzatori sono scienziati e ingegneri, non informatici o ingegneri del software
+
+54
+00:09:22,000 --> 00:09:24,000
+così iniziò il mito della complessità
+
+55
+00:09:25,000 --> 00:09:32,000
+la maggior parte del codice che si vede in FORTRAN è davvero complesso, questo perché il problema alla base è complesso
+
+56
+00:09:33,000 --> 00:09:38,000
+ed il codice è stato scritto da specialisti del problema stesso e non da programmatori
+
+57
+00:09:39,000 --> 00:09:43,000
+FORTRAN è sufficientemente semplice per queste figure non informatiche
+
+58
+00:09:44,000 --> 00:09:51,000
+ultra specializzate riguardo il dominio del problema a cui non interessa scrivere del buon codice organizzato
+
+59
+00:09:52,000 --> 00:09:56,000
+ma necessitano comunque di scrivere del codice ed ottenere dei buoni risultati
+
+60
+00:09:57,000 --> 00:10:04,000
+come abbiamo visto nella cronologia delle uscite anche il pregiudizio riguardante la vecchiaia del linguaggio è infondato
+
+61
+00:10:05,000 --> 00:10:10,000
+FORTRAN viene costantemente modernizzato passo dopo passo senza tradire la sua mission
+
+62
+00:10:10,000 --> 00:10:15,000
+e cioè rimanere un linguaggio semplice agli occhi di utilizzatori non informatici
+
+63
+00:10:16,000 --> 00:10:24,000
+tuttavia il FORTRAN moderno contiene moduli, oggetti, tipi generici e supporto integrato al calcolo parallelo
+
+64
+00:10:25,000 --> 00:10:30,000
+nuove funzionalità che lo fanno crescere costantemente per soddisfare le esigenze del mondo attuale
+
+65
+00:10:31,000 --> 00:10:35,000
+per certi versi eccele ancora nella buona vecchia programmazione strutturata
+
+66
+00:10:35,000 --> 00:10:41,000
+a caratteristiche peculiari che mancano persino nei linguaggi mainstream come il C
+
+67
+00:10:42,000 --> 00:10:46,000
+ad esempio si può uscire o continuare un ciclo da un ciclo annidato
+
+68
+00:10:56,000 --> 00:11:01,000
+ma quindi se FORTRAN come abbiamo detto non è complesso né obsoleto
+
+69
+00:11:01,000 --> 00:11:03,000
+come mai è sparito dai nostri radar?
+
+70
+00:11:04,000 --> 00:11:11,000
+la risposta a questa domanda è la stessa che daremmo se dovessimo chiederci dove sono finiti i vecchi programmatori
+
+71
+00:11:12,000 --> 00:11:19,000
+possiamo immaginare che banalmente essi rimangano in attività e poiché il loro numero raddoppia ogni 5 anni
+
+72
+00:11:20,000 --> 00:11:25,000
+sono notevolmente sommersi dall'esercito di persone più giovani che si affaccia su questo mondo
+
+73
+00:11:26,000 --> 00:11:32,000
+d'altro canto c'è anche da considerare che gli utenti di FORTRAN sono scienziati e ingegneri
+
+74
+00:11:33,000 --> 00:11:36,000
+ed il loro numero non cresce esponenzialmente
+
+75
+00:11:37,000 --> 00:11:42,000
+per cui possiamo dedurre che abbiamo più o meno la stessa quantità di utilizzatori vecchi e giovani
+
+76
+00:11:43,000 --> 00:11:48,000
+che esisteva circa 30 o 40 anni fa quando il FORTRAN era al suo apice
+
+77
+00:11:48,000 --> 00:11:55,000
+in un certo senso lasciatemi affermare che FORTRAN è stato al suo apice per tutto questo tempo
+
+78
+00:11:56,000 --> 00:12:01,000
+e se vogliamo usare un'esagerazione è il mondo attorno ad essere impazzito
+
+79
+00:12:02,000 --> 00:12:05,000
+linguaggi che compaiono e spariscono in un batter d'occhio
+
+80
+00:12:06,000 --> 00:12:08,000
+paradigmi che maturano e spariscono
+
+81
+00:12:09,000 --> 00:12:13,000
+l'intera industria del software è molto più simile a quella della moda
+
+82
+00:12:13,000 --> 00:12:19,000
+ma quando si vuole far volare un aereo si devono ancora fare i conti con il fidato FORTRAN
+
+83
+00:12:20,000 --> 00:12:23,000
+questa è la bellezza delle cose che funzionano
+
+84
+00:12:24,000 --> 00:12:27,000
+forse non serve che esse cambino molto
+
+85
+00:12:28,000 --> 00:12:32,000
+grazie a tutti, grazie Andrea e ci sentiamo al prossimo episodio
+

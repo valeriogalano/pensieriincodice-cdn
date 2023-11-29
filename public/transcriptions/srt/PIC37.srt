@@ -1,0 +1,740 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:20,000 --> 00:00:25,000
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice.
+
+3
+00:00:25,000 --> 00:00:30,000
+Chi lavora nel campo dello sviluppo software lo avrà almeno sentito nominare,
+
+4
+00:00:30,000 --> 00:00:34,000
+sempre che non si sia trovato ad utilizzarlo in modo attivo.
+
+5
+00:00:34,000 --> 00:00:39,000
+Docker è uno strumento che negli ultimi anni ha avuto una enorme diffusione
+
+6
+00:00:39,000 --> 00:00:43,000
+e si è inserito in molti aspetti della produzione del software.
+
+7
+00:00:43,000 --> 00:00:47,000
+Nasce inizialmente come un sistema per agevolare il deployment,
+
+8
+00:00:47,000 --> 00:00:52,000
+cioè quella parte del ciclo di vita in cui i programmi vengono installati
+
+9
+00:00:52,000 --> 00:00:54,000
+sui vari ambienti di destinazione.
+
+10
+00:00:54,000 --> 00:01:00,000
+Nel corso degli anni però si è iniziato ad utilizzare questo strumento anche per altri scopi,
+
+11
+00:01:00,000 --> 00:01:05,000
+alcuni dei quali hanno notevolmente semplificato la vita a noi sviluppatori.
+
+12
+00:01:05,000 --> 00:01:10,000
+In questo episodio vorrei dunque dare uno sguardo d'insieme al sistema Docker
+
+13
+00:01:10,000 --> 00:01:15,000
+ed esaminare alcuni degli utilizzi che possono risultare interessanti per noi programmatori.
+
+14
+00:01:15,000 --> 00:01:18,000
+Prima di proseguire però lasciatemi dire un paio di cose.
+
+15
+00:01:18,000 --> 00:01:25,000
+Innanzitutto grazie ad Aldo per aver suggerito l'argomento dell'episodio di oggi nel gruppo Telegram di Pensieri in Codice.
+
+16
+00:01:25,000 --> 00:01:31,000
+Se anche voi volete fare lo stesso o semplicemente volete chiacchierare di argomenti legati al podcast
+
+17
+00:01:31,000 --> 00:01:34,000
+vi ricordo che in descrizione trovate il link per unirvi al gruppo.
+
+18
+00:01:34,000 --> 00:01:41,000
+Inoltre ci tengo anche a ringraziare i ragazzi della pagina Facebook Vita da Informatici la Rinascita
+
+19
+00:01:41,000 --> 00:01:44,000
+con i quali ho trascorso una divertentissima oretta
+
+20
+00:01:44,000 --> 00:01:49,000
+a registrare un episodio della serie Pezzi di Megahertz del podcast Vita da Informatici.
+
+21
+00:01:49,000 --> 00:01:54,000
+Abbiamo parlato di privacy, di immuni, di TikTok e tanto altro.
+
+22
+00:01:54,000 --> 00:01:56,000
+E abbiamo riso tantissimo.
+
+23
+00:01:56,000 --> 00:02:01,000
+Non perdetevi quindi l'episodio perché vi assicuro che non ve ne pentirete.
+
+24
+00:02:01,000 --> 00:02:03,000
+Trovate sempre il link in descrizione.
+
+25
+00:02:03,000 --> 00:02:10,000
+Detto questo veniamo a noi e cerchiamo un po' di capire come funziona Docker e in cosa può esserci d'aiuto.
+
+26
+00:02:14,000 --> 00:02:18,000
+DOCKER
+
+27
+00:02:18,000 --> 00:02:24,000
+Docker è quello che comunemente viene definito un sistema di virtualizzazione
+
+28
+00:02:24,000 --> 00:02:30,000
+anche se a breve vedremo che ha delle caratteristiche molto particolari che lo differenziano dai propri concorrenti.
+
+29
+00:02:30,000 --> 00:02:37,000
+Per chi non lo sapesse in parole molto semplici virtualizzare in informatica vuol dire simulare un qualcosa
+
+30
+00:02:37,000 --> 00:02:43,000
+a cui non si ha realmente accesso o di cui non si ha la vera disponibilità.
+
+31
+00:02:43,000 --> 00:02:48,000
+Si può trattare di un qualcosa di hardware, di un sistema operativo, di una piattaforma
+
+32
+00:02:48,000 --> 00:02:52,000
+o di qualsiasi altro componente non realmente disponibile.
+
+33
+00:02:52,000 --> 00:02:57,000
+Virtualizzando un qualcosa la si può utilizzare come se la si avesse a disposizione
+
+34
+00:02:57,000 --> 00:03:01,000
+anche se in realtà esso soffrirà di alcuni limiti
+
+35
+00:03:01,000 --> 00:03:09,000
+che nella maggior parte dei casi si traducono in una riduzione delle prestazioni rispetto alla propria controparte reale.
+
+36
+00:03:09,000 --> 00:03:14,000
+Un esempio classico di questa pratica consiste nel virtualizzare interi pc
+
+37
+00:03:14,000 --> 00:03:20,000
+per installarvi sistemi operativi differenti da quello ospitato sulla macchina che si sta utilizzando.
+
+38
+00:03:20,000 --> 00:03:26,000
+Magari vi sarà capitato di utilizzare un software come VirtualBox o VMware
+
+39
+00:03:26,000 --> 00:03:30,000
+per creare una di quelle che vengono comunemente chiamate macchine virtuali
+
+40
+00:03:30,000 --> 00:03:35,000
+e utilizzarla per installarvi un sistema operativo che volevate provare
+
+41
+00:03:35,000 --> 00:03:38,000
+o di cui avevate bisogno per una specifica attività.
+
+42
+00:03:38,000 --> 00:03:44,000
+Infatti è una pratica così comune che la stessa Microsoft ha integrato in Windows 10
+
+43
+00:03:44,000 --> 00:03:47,000
+uno strumento apposito chiamato WSL
+
+44
+00:03:47,000 --> 00:03:52,000
+proprio per semplificare la virtualizzazione di macchine con sistema Linux.
+
+45
+00:03:52,000 --> 00:03:57,000
+Ora, i vantaggi di avere due o più sistemi operativi che lavorano contemporaneamente sulla stessa macchina
+
+46
+00:03:57,000 --> 00:03:59,000
+sono innumerevoli.
+
+47
+00:03:59,000 --> 00:04:02,000
+Dallo sviluppare software complessi multipiattaforma
+
+48
+00:04:02,000 --> 00:04:04,000
+al condividere delle risorse
+
+49
+00:04:04,000 --> 00:04:11,000
+al mettere in piedi ambienti molto differenti da quello che è nativamente ospitato sulla macchina.
+
+50
+00:04:11,000 --> 00:04:15,000
+Ma di tutto questo parleremo più approfonditamente tra un po'.
+
+51
+00:04:15,000 --> 00:04:18,000
+Quello che è importante capire è che, come accennavo prima,
+
+52
+00:04:18,000 --> 00:04:24,000
+questa grande comodità ha tuttavia un risvolto piuttosto importante
+
+53
+00:04:24,000 --> 00:04:26,000
+e cioè il calo delle prestazioni.
+
+54
+00:04:26,000 --> 00:04:30,000
+Questo calo dipende da tutta una serie di implicazioni tecniche
+
+55
+00:04:30,000 --> 00:04:33,000
+che non sono argomento di questo podcast.
+
+56
+00:04:33,000 --> 00:04:36,000
+Tuttavia, quello che ci basta tenere a mente è che,
+
+57
+00:04:36,000 --> 00:04:41,000
+a meno che non si parli di infrastrutture appositamente progettate per la virtualizzazione
+
+58
+00:04:41,000 --> 00:04:45,000
+come ad esempio quelle tipicamente utilizzate per i servizi cloud,
+
+59
+00:04:45,000 --> 00:04:51,000
+qualsiasi macchina virtuale avrà sempre delle prestazioni notevolmente inferiori
+
+60
+00:04:51,000 --> 00:04:55,000
+ad una macchina reale con le stesse caratteristiche su carta.
+
+61
+00:04:55,000 --> 00:05:00,000
+Ed è proprio su questo aspetto che Docker, pur essendo un sistema di virtualizzazione,
+
+62
+00:05:00,000 --> 00:05:04,000
+fa un passo in più rispetto a quanto descritto fino ad ora.
+
+63
+00:05:04,000 --> 00:05:08,000
+Esso, infatti, virtualizza a livello di sistema operativo.
+
+64
+00:05:08,000 --> 00:05:13,000
+In gergo si dice che containerizza, cioè crea dei container virtuali.
+
+65
+00:05:13,000 --> 00:05:18,000
+La differenza tra una macchina virtuale ed un container virtuale
+
+66
+00:05:18,000 --> 00:05:22,000
+sta nel fatto che la prima simula l'hardware di un intero computer
+
+67
+00:05:22,000 --> 00:05:27,000
+con un certo processore, con una certa quantità di RAM, di spazio disco, eccetera.
+
+68
+00:05:27,000 --> 00:05:31,000
+Mentre il secondo simula solamente un'area di esecuzione
+
+69
+00:05:31,000 --> 00:05:36,000
+per un processo all'interno di un sistema operativo solitamente basato su Linux.
+
+70
+00:05:37,000 --> 00:05:43,000
+Ok, il concetto sembra complicato, ma in effetti quello che c'è da capire in parole povere è questo.
+
+71
+00:05:43,000 --> 00:05:47,000
+Un software o un processo che opera all'interno di un container
+
+72
+00:05:47,000 --> 00:05:53,000
+vede e può utilizzare un sottoinsieme delle risorse del sistema originale
+
+73
+00:05:53,000 --> 00:05:58,000
+e in più può anche utilizzare alcuni altri componenti virtualizzati.
+
+74
+00:05:58,000 --> 00:06:02,000
+Il container definisce dunque dove il software può leggere o scrivere
+
+75
+00:06:02,000 --> 00:06:07,000
+di quali altri software può fare uso, quali connessioni può stabilire, e così via.
+
+76
+00:06:07,000 --> 00:06:12,000
+In ogni controller si possono poi ovviamente installare specifici programmi
+
+77
+00:06:12,000 --> 00:06:17,000
+con una loro specifica versione in modo da rendere l'ambiente interno al container
+
+78
+00:06:17,000 --> 00:06:22,000
+adatto all'obiettivo che si intende raggiungere o al processo che si vuole farci girare.
+
+79
+00:06:23,000 --> 00:06:26,000
+In pratica, in un qualsiasi computer su cui è installato docker
+
+80
+00:06:26,000 --> 00:06:32,000
+si possono avviare una serie di container con all'interno differenti versioni di vari software,
+
+81
+00:06:32,000 --> 00:06:37,000
+differenti accessi al filesystem, differenti servizi attivi,
+
+82
+00:06:37,000 --> 00:06:44,000
+il tutto senza creare macchine virtuali ma sfruttando parte dei processi del sistema operativo di base.
+
+83
+00:06:44,000 --> 00:06:49,000
+Ovviamente l'assenza di macchine virtuali e di un secondo strato di sistemi operativi
+
+84
+00:06:49,000 --> 00:06:53,000
+rende un container molto più leggero in termini di utilizzo di risorse
+
+85
+00:06:53,000 --> 00:06:58,000
+e risulta anche molto più flessibile da gestire per il sistema ospitante.
+
+86
+00:06:58,000 --> 00:07:02,000
+In pratica ciò vuol dire che anche con delle risorse limitate
+
+87
+00:07:02,000 --> 00:07:06,000
+si possono avere molti container attivi contemporaneamente.
+
+88
+00:07:07,000 --> 00:07:11,000
+Ok dunque bellissima questa containerizzazione dei processi
+
+89
+00:07:11,000 --> 00:07:14,000
+ma ora immagino starete anche pensando
+
+90
+00:07:14,000 --> 00:07:18,000
+si ma tutto sommato a cosa serve tutto ciò?
+
+91
+00:07:18,000 --> 00:07:25,000
+Bene la sua idea iniziale docker è stato pensato per facilitare il deploy del software
+
+92
+00:07:25,000 --> 00:07:29,000
+in particolare quello che deve girare su server linux
+
+93
+00:07:29,000 --> 00:07:33,000
+invece di sviluppare un software da installare poi su un dato sistema
+
+94
+00:07:33,000 --> 00:07:37,000
+lo si sviluppa direttamente all'interno di un container
+
+95
+00:07:37,000 --> 00:07:41,000
+successivamente invece di installare il software di server in server
+
+96
+00:07:41,000 --> 00:07:46,000
+dovendo quindi soddisfare i vari requisiti configurare i sistemi eccetera
+
+97
+00:07:46,000 --> 00:07:52,000
+si installa direttamente il container che portando con sé la maggior parte delle caratteristiche
+
+98
+00:07:53,000 --> 00:07:57,000
+riduce enormemente le operazioni da compiere in ogni deploy
+
+99
+00:07:57,000 --> 00:08:02,000
+tralasciando però il suo obiettivo ufficiale docker può risultare di grande utilità
+
+100
+00:08:02,000 --> 00:08:06,000
+anche nelle fasi di sviluppo di molte tipologie di software
+
+101
+00:08:06,000 --> 00:08:13,000
+anche nei casi in cui questi non siano destinati a rilascio su infrastrutture basate su virtualizzazione a container
+
+102
+00:08:13,000 --> 00:08:19,000
+io stesso utilizzo la virtualizzazione a container per praticamente tutti i miei progetti
+
+103
+00:08:19,000 --> 00:08:25,000
+perché mi porta a moltissimi vantaggi anche solo nella fase di sviluppo in locale sul mio pc
+
+104
+00:08:25,000 --> 00:08:30,000
+il primo di questi vantaggi è che posso avere un ambiente su misura per ciascun progetto
+
+105
+00:08:30,000 --> 00:08:34,000
+che sia il più possibile simile a quello di produzione
+
+106
+00:08:34,000 --> 00:08:38,000
+per esempio se io voglio sviluppare un progetto per un pc
+
+107
+00:08:38,000 --> 00:08:43,000
+io lavoro infatti come consulente per lo sviluppo di software per il web
+
+108
+00:08:43,000 --> 00:08:48,000
+e di norma un progetto web si basa almeno su un paio di applicativi
+
+109
+00:08:48,000 --> 00:08:56,000
+solitamente un web server come apache o nginx e un database spesso mysql o mariadb
+
+110
+00:08:56,000 --> 00:09:02,000
+per non parlare poi di architetture più complesse che possono includere server cache come redis
+
+111
+00:09:02,000 --> 00:09:07,000
+microservizi scritti in node.js o altri componenti di ogni sorta
+
+112
+00:09:07,000 --> 00:09:12,000
+con docker ed in particolare con un tool che prende il nome di docker compose
+
+113
+00:09:12,000 --> 00:09:18,000
+risulta abbastanza semplice configurare interi ambienti totalmente indipendenti
+
+114
+00:09:18,000 --> 00:09:24,000
+che includono combinazioni varie dei servizi necessari a far girare qualsiasi web application
+
+115
+00:09:24,000 --> 00:09:28,000
+dalle più comuni basate magari su wordpress o google
+
+116
+00:09:29,000 --> 00:09:32,000
+nelle più complicate anche completamente custom
+
+117
+00:09:32,000 --> 00:09:38,000
+nel lab ufficiale di docker si trovano centinaia di container già pronti per le varie necessità
+
+118
+00:09:38,000 --> 00:09:43,000
+si possono trovare container ufficiali rilasciati dai produttori dei vari servizi
+
+119
+00:09:43,000 --> 00:09:47,000
+e container personalizzati dalla community per esigenze particolari
+
+120
+00:09:47,000 --> 00:09:52,000
+se ho bisogno quindi di avviare un sito in wordpress posso semplicemente configurare
+
+121
+00:09:52,000 --> 00:09:57,000
+un docker file così si chiama il file che contiene le istruzioni di base
+
+122
+00:09:57,000 --> 00:10:02,000
+con un container ufficiale wordpress scegliendo la versione del CMS che preferisco
+
+123
+00:10:02,000 --> 00:10:06,000
+e poi avviarlo lanciando il comando docker start
+
+124
+00:10:06,000 --> 00:10:11,000
+a questo punto il sistema di containerizzazione si occuperà da solo
+
+125
+00:10:11,000 --> 00:10:15,000
+di scaricare il container con i servizi necessari e il software di base
+
+126
+00:10:15,000 --> 00:10:16,000
+e di avviarlo
+
+127
+00:10:16,000 --> 00:10:21,000
+se invece voglio simulare in modo più accurato l'ambiente di destinazione del mio software
+
+128
+00:10:21,000 --> 00:10:24,000
+magari per una web application più complessa
+
+129
+00:10:24,000 --> 00:10:29,000
+posso configurare docker con un container per ciascuno dei server
+
+130
+00:10:29,000 --> 00:10:33,000
+scegliendo le stesse versioni di sistema operativo che troverò in produzione
+
+131
+00:10:33,000 --> 00:10:36,000
+e installando le stesse versioni dei servizi
+
+132
+00:10:36,000 --> 00:10:40,000
+quindi docker scaricherà dei container per ciascuno dei server
+
+133
+00:10:40,000 --> 00:10:43,000
+e poi sarà a noi configurarle a dovere
+
+134
+00:10:43,000 --> 00:10:47,000
+oppure ancora posso scegliere di simulare direttamente i servizi
+
+135
+00:10:47,000 --> 00:10:50,000
+come il web server e il database
+
+136
+00:10:50,000 --> 00:10:53,000
+e allora configurerò docker di conseguenza
+
+137
+00:10:53,000 --> 00:10:59,000
+e lui scaricherà dei container con questo o quell'altra versione di apache o nginx o mysql
+
+138
+00:10:59,000 --> 00:11:04,000
+e poi docker scaricherà le stesse versioni dei servizi
+
+139
+00:11:04,000 --> 00:11:10,000
+e lui scaricherà dei container con questo o quell'altra versione di apache o nginx o mysql
+
+140
+00:11:10,000 --> 00:11:16,000
+ovviamente tutte le operazioni aggiuntive da effettuare su uno o più container di base
+
+141
+00:11:16,000 --> 00:11:21,000
+possono essere facilmente automatizzate nel docker file o nel docker compose
+
+142
+00:11:21,000 --> 00:11:25,000
+e quindi una volta trovata la configurazione che ci soddisfa
+
+143
+00:11:25,000 --> 00:11:29,000
+è possibile riprodurla in modo facile e veloce
+
+144
+00:11:29,000 --> 00:11:35,000
+per questo stesso motivo risulta anche molto semplice spostare un ambiente da un computer ad un altro
+
+145
+00:11:35,000 --> 00:11:40,000
+in linea di massima se vogliamo spostare un applicativo che gira completamente su docker
+
+146
+00:11:40,000 --> 00:11:44,000
+ci basta installare il motore docker su un secondo sistema
+
+147
+00:11:44,000 --> 00:11:49,000
+trasferire i file di configurazione e il contenuto di eventuali cartelle condivise
+
+148
+00:11:49,000 --> 00:11:50,000
+e il gioco è fatto
+
+149
+00:11:50,000 --> 00:11:53,000
+le possibilità sono dunque tantissime
+
+150
+00:11:53,000 --> 00:11:56,000
+i container che si possono condividere sulla stessa macchina
+
+151
+00:11:56,000 --> 00:12:01,000
+possono essere davvero molti perché essi occupano pochissimo spazio
+
+152
+00:12:01,000 --> 00:12:05,000
+sia in termini di memoria fisica che memoria ram quando sono in esecuzione
+
+153
+00:12:05,000 --> 00:12:12,000
+la ricostruzione di un ambiente una volta che i docker file e docker compose sono scritti a dovere
+
+154
+00:12:12,000 --> 00:12:15,000
+è un'operazione quasi completamente automatica
+
+155
+00:12:15,000 --> 00:12:20,000
+e tutto questo semplifica enormemente la vita dello sviluppatore
+
+156
+00:12:20,000 --> 00:12:24,000
+soprattutto se questi si trova a lavorare su più progetti per volta
+
+157
+00:12:24,000 --> 00:12:28,000
+ora so bene che nella vita reale non sono ancora tantissime le realtà
+
+158
+00:12:28,000 --> 00:12:33,000
+che utilizzano docker o un altro qualsiasi sistema di containerizzazione
+
+159
+00:12:33,000 --> 00:12:36,000
+per i propri ambienti di produzione
+
+160
+00:12:36,000 --> 00:12:41,000
+il passaggio ad una simile tecnologia richiede competenze e impiego di risorse
+
+161
+00:12:41,000 --> 00:12:45,000
+che non tutti possono o vogliono mettere in campo
+
+162
+00:12:45,000 --> 00:12:47,000
+l'applicazione della strategia DevOps
+
+163
+00:12:47,000 --> 00:12:52,000
+che poi sarebbe quella ideale in cui utilizzare questi strumenti
+
+164
+00:12:52,000 --> 00:12:56,000
+è ancora lontana dall'essere diffusa nella maggior parte delle realtà
+
+165
+00:12:56,000 --> 00:12:59,000
+e se non sapete cos'è la DevOps
+
+166
+00:12:59,000 --> 00:13:03,000
+vi lascio il link in descrizione dell'episodio in cui ne abbiamo parlato
+
+167
+00:13:03,000 --> 00:13:07,000
+tuttavia secondo me la conoscenza di docker
+
+168
+00:13:07,000 --> 00:13:11,000
+non può mancare tra le competenze di un qualsiasi programmatore
+
+169
+00:13:11,000 --> 00:13:17,000
+primo perché come abbiamo visto i vantaggi sono notevoli anche a livello di sviluppo personale
+
+170
+00:13:17,000 --> 00:13:21,000
+secondo perché è una strategia in grandissima espansione
+
+171
+00:13:21,000 --> 00:13:26,000
+e per come la vedo io farsi trovare preparati è sempre la strategia migliore
+
+172
+00:13:26,000 --> 00:13:31,000
+ora se vi ho convinto a sperimentare docker e docker compose
+
+173
+00:13:31,000 --> 00:13:36,000
+vi lascio in descrizione i link a un paio di articoli molto interessanti
+
+174
+00:13:36,000 --> 00:13:38,000
+del blog di Antonio Porcelli
+
+175
+00:13:38,000 --> 00:13:44,000
+un altro dei ragazzi che potrete sempre trovare nel gruppo Telegram di Pensieri in Codice
+
+176
+00:13:44,000 --> 00:13:49,000
+in questi articoli Antonio spiega in modo semplice e con vari esempi
+
+177
+00:13:49,000 --> 00:13:54,000
+come installare il sistema docker e come creare il vostro primo container
+
+178
+00:13:54,000 --> 00:13:57,000
+sono sicuro che saranno un ottimo punto di partenza
+
+179
+00:13:57,000 --> 00:14:01,000
+per chi si approccia per la prima volta a questo mondo
+
+180
+00:14:01,000 --> 00:14:04,000
+bene con questo direi che per oggi è tutto
+
+181
+00:14:04,000 --> 00:14:07,000
+io vi ringrazio per aver ascoltato fin qui
+
+182
+00:14:07,000 --> 00:14:10,000
+vi chiedo di darmi una mano condividendo questo podcast
+
+183
+00:14:10,000 --> 00:14:14,000
+con chi pensate che possa essere interessato all'argomento
+
+184
+00:14:14,000 --> 00:14:17,000
+e vi do appuntamento al prossimo episodio
+
+185
+00:14:17,000 --> 00:14:23,000
+ricordandovi che un informatico risolve i problemi a volte anche usando il computer
+

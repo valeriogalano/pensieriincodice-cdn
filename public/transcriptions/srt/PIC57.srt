@@ -1,0 +1,504 @@
+1
+00:00:00,000 --> 00:00:09,900
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,900 --> 00:00:27,060
+Salve a tutti ragazzi e bentornati su Pensieri in codice. Oggi vi racconto una storia ed in
+
+3
+00:00:27,060 --> 00:00:34,340
+particolare la storia della famiglia di processori conosciuta come ARM. Sono sicuro che già tutti
+
+4
+00:00:34,340 --> 00:00:40,460
+sappiate che più o meno in ogni strumento elettronico che utilizziamo sono presenti
+
+5
+00:00:40,460 --> 00:00:46,820
+uno o più componenti chiamati processori, i quali hanno il compito di eseguire alcune
+
+6
+00:00:46,820 --> 00:00:53,660
+operazioni di base sulle quali poi sono costruite tutte le varie funzionalità dello strumento. Ma
+
+7
+00:00:53,660 --> 00:00:59,540
+quello che forse non tutti sanno è che esistono tanti tipi di processori diversi, i quali
+
+8
+00:00:59,540 --> 00:01:06,260
+appartengono a varie famiglie, ognuna delle quali si distingue per particolari caratteristiche e
+
+9
+00:01:06,260 --> 00:01:12,940
+applicazioni in ambiti differenti. Ci basta anche solo pensare al nostro computer che se non è un
+
+10
+00:01:12,940 --> 00:01:19,140
+modello molto vecchio o con applicazioni particolari sicuramente è dotato di almeno due
+
+11
+00:01:19,260 --> 00:01:25,020
+processori, uno per gestire il calcolo e i software, l'altro per gestire tutto il
+
+12
+00:01:25,020 --> 00:01:32,180
+comparto grafico. La protagonista della nostra storia e cioè la famiglia di processori ARM è
+
+13
+00:01:32,180 --> 00:01:39,060
+invece particolarmente adatta per applicazioni in mobilità e questo perché i suoi processori
+
+14
+00:01:39,060 --> 00:01:45,820
+consumano poca energia e si scaldano molto poco. Per questo motivo sono utilizzati pressoché in
+
+15
+00:01:45,820 --> 00:01:52,140
+qualsiasi dispositivo mobile. Se avete uno smartphone avete un processore ARM, se avete
+
+16
+00:01:52,140 --> 00:01:58,860
+uno smartwatch un processore ARM. Anche molti moderni computer funzionano utilizzando processori
+
+17
+00:01:58,860 --> 00:02:07,020
+ARM, ad esempio i Chromebook o la nuovissima linea di computer Apple con processore M1. Grazie a
+
+18
+00:02:07,020 --> 00:02:12,740
+questa tipologia di processori possiamo quindi avere nelle nostre tasche dei dispositivi che
+
+19
+00:02:12,740 --> 00:02:18,900
+hanno enormi potenze di calcolo e che al tempo stesso hanno delle batterie che durano anche un
+
+20
+00:02:18,900 --> 00:02:24,740
+paio di giorni, cosa attualmente impossibile con gli altri processori in commercio. Insomma se
+
+21
+00:02:24,740 --> 00:02:31,820
+non esistessero i processori ARM il mondo sarebbe differente da come lo conosciamo. E se vi dicessi
+
+22
+00:02:31,820 --> 00:02:39,660
+che c'è stato il rischio che ciò accadesse davvero? Che il progetto del predecessore di ARM sarebbe
+
+23
+00:02:39,660 --> 00:02:47,260
+potuto essere ignorato e dimenticato? Parliamo dunque di come è nato e di come funziona questo
+
+24
+00:02:47,260 --> 00:02:52,060
+piccolo pezzo di silicio che ha contribuito a cambiare la nostra vita.
+
+25
+00:02:52,060 --> 00:03:10,140
+La nostra storia ha inizio nei primi anni 80 quando con l'imminente rivoluzione informatica
+
+26
+00:03:10,140 --> 00:03:18,780
+il governo inglese decide di dare il via ad un progetto di alfabetizzazione informatica. Lo
+
+27
+00:03:18,780 --> 00:03:25,820
+scopo è quello di formare i cittadini all'utilizzo di quello che già si intuisce essere lo strumento
+
+28
+00:03:25,820 --> 00:03:32,820
+che sarà più importante negli anni successivi. E proprio in questo senso nel progetto viene anche
+
+29
+00:03:32,820 --> 00:03:39,540
+inserito uno show televisivo che andrà in onda sulla BBC e che si chiamerà The Computer Program.
+
+30
+00:03:39,540 --> 00:03:46,260
+Questo show avrà il compito di insegnare ai telespettatori vari aspetti dell'utilizzo del
+
+31
+00:03:46,260 --> 00:03:52,700
+computer. A partire dai concetti fondamentali e un po' di programmazione in basic per poi
+
+32
+00:03:52,700 --> 00:03:59,780
+arrivare a concetti più complessi come l'utilizzo delle reti, della grafica, dell'audio e persino
+
+33
+00:03:59,780 --> 00:04:08,260
+di sintesi vocale e di una rudimentale intelligenza artificiale. Ora come dicevamo prima non tutti i
+
+34
+00:04:08,260 --> 00:04:16,980
+processori sono adatti a tutte le attività e al tempo stesso nel 1980 non c'era grande disponibilità
+
+35
+00:04:16,980 --> 00:04:24,660
+di tipologie di processori diversi. Quindi è facile immaginare che per gli scopi di The Computer
+
+36
+00:04:24,660 --> 00:04:31,300
+Program servisse un processore molto molto all'avanguardia. Così all'avanguardia che per
+
+37
+00:04:31,300 --> 00:04:38,060
+l'epoca non esisteva neanche uno in commercio. Fu così che la BBC dovette rivolgersi all'industria
+
+38
+00:04:38,460 --> 00:04:45,620
+inglese per commissionare un processore su misura, diciamo così. E alla fine il compito di produrre
+
+39
+00:04:45,620 --> 00:04:53,140
+questo processore fu affidato ad una giovanissima azienda di nome Acron. La Acron era nata pochi
+
+40
+00:04:53,140 --> 00:04:59,820
+anni prima e aveva iniziato la propria attività producendo processori per slot machine. Solo
+
+41
+00:04:59,820 --> 00:05:06,220
+in un secondo momento aveva poi iniziato a produrre processori per computer per scopo
+
+42
+00:05:06,220 --> 00:05:12,460
+non professionale ed in particolare lo stesso tipo di processore che poi era utilizzato anche
+
+43
+00:05:12,460 --> 00:05:20,860
+dal Atari 2600 o dal Commodore 64. Quando arrivò la richiesta della BBC la Acron produceva un
+
+44
+00:05:20,860 --> 00:05:28,900
+computer casalingo chiamato Atom e stava appunto progettando un suo successore. Tuttavia le richieste
+
+45
+00:05:28,900 --> 00:05:35,700
+della BBC erano così spinte che l'originale progetto per il successore dell'Atom non era
+
+46
+00:05:35,700 --> 00:05:42,780
+sufficiente a coprirle tutte. Quindi gli ingegneri abbandonarono il progetto iniziale e mantennero
+
+47
+00:05:42,780 --> 00:05:50,540
+solamente un'interfaccia che chiamavano Tube, che serviva per collegare più unità di elaborazione
+
+48
+00:05:50,540 --> 00:05:57,220
+alla stessa macchina. Rifecero quindi tutti i progetti spingendo quella che era la loro tecnologia
+
+49
+00:05:57,220 --> 00:06:04,900
+al massimo possibile e riuscirono a realizzare quello che prese il nome di BBC Micro e che si
+
+50
+00:06:04,900 --> 00:06:12,100
+affermò come il computer più utilizzato per la didattica in tutto il Regno Unito. Giusto per
+
+51
+00:06:12,100 --> 00:06:18,220
+capire quanto complessa fosse questa nuova architettura, sappiate che è passata alla
+
+52
+00:06:18,220 --> 00:06:25,660
+storia per avere un componente chiamato il dito dell'ingegnere. E questo perché i primi prototipi
+
+53
+00:06:25,660 --> 00:06:33,060
+non funzionavano a meno che qualcuno non poggiasse il dito in un particolare punto. Ma siccome gli
+
+54
+00:06:33,060 --> 00:06:39,780
+ingegneri non riuscirono a capire il perché di questo fenomeno, semplicemente piazzarono in quel
+
+55
+00:06:39,780 --> 00:06:46,180
+punto un insieme di resistenze che simulassero il tocco di un dito. Ad ogni modo visto il clima
+
+56
+00:06:46,180 --> 00:06:53,380
+di innovazione che si respirava in quel periodo, ricordiamoci che in quegli anni la IBM dettava
+
+57
+00:06:53,380 --> 00:07:01,740
+gli standard per i cosiddetti personal computer, la Acron provò a contattare la Intel per far sì
+
+58
+00:07:01,740 --> 00:07:09,100
+che questa implementasse il proprio nuovissimo processore 286 all'interno dell'architettura
+
+59
+00:07:09,100 --> 00:07:17,100
+della piccola azienda inglese. Ma il futuro colosso americano li ignorò completamente e,
+
+60
+00:07:17,100 --> 00:07:20,980
+con il senno di poi, questo fu un enorme errore.
+
+61
+00:07:32,100 --> 00:07:38,540
+Per capire come mai questa scelta di Intel si rivelò poi un errore, dobbiamo descrivere,
+
+62
+00:07:38,540 --> 00:07:45,660
+almeno a grandi linee e a livello concettuale, come funziona un processore. Quando pensiamo al
+
+63
+00:07:45,660 --> 00:07:52,340
+software dobbiamo sempre ricordarci che le interfacce e i dati che utilizziamo e inseriamo
+
+64
+00:07:52,340 --> 00:08:00,060
+sono pensate per essere comprensibili a degli umani e così anche i linguaggi di programmazione
+
+65
+00:08:00,060 --> 00:08:06,020
+che si utilizzano per scrivere i software sono fatti per essere scritti da umani. Ma
+
+66
+00:08:06,020 --> 00:08:11,380
+ciò vuol dire che non sono direttamente comprensibili per il processore che deve
+
+67
+00:08:11,380 --> 00:08:18,020
+eseguirli. In generale, infatti, quando si scrive un software per farlo effettivamente funzionare è
+
+68
+00:08:18,020 --> 00:08:25,540
+necessario che questo venga compilato e compilare non vuol dire altro che trasformare un linguaggio
+
+69
+00:08:25,540 --> 00:08:31,900
+di programmazione comprensibile ad un umano in una serie di istruzioni comprensibili al
+
+70
+00:08:31,900 --> 00:08:39,420
+processore. E queste istruzioni non sono altro che delle operazioni relativamente semplici che,
+
+71
+00:08:39,420 --> 00:08:47,020
+se eseguite, permettono di ottenere un risultato utile al funzionamento del software. Ok, per chi
+
+72
+00:08:47,020 --> 00:08:53,420
+ha studiato informatica so che sto semplificando enormemente ma cerco di rendermi comprensibile
+
+73
+00:08:53,500 --> 00:09:00,260
+anche a chi non ha particolari conoscenze in materia. Quindi abbiate pazienza! Comunque,
+
+74
+00:09:00,260 --> 00:09:06,620
+fingiamo di voler far svolgere ad un processore un'operazione relativamente semplice, la
+
+75
+00:09:06,620 --> 00:09:12,700
+moltiplicazione di due numeri. All'atto pratico, per fare ciò, il processore dovrà fare le
+
+76
+00:09:12,700 --> 00:09:19,940
+seguenti operazioni. Caricare il primo numero in un registro, che è un piccolo spazio di memoria
+
+77
+00:09:19,980 --> 00:09:25,940
+che il processore può utilizzare direttamente per svolgere le proprie operazioni. Caricare
+
+78
+00:09:25,940 --> 00:09:32,420
+anche il secondo numero in un altro registro, eseguire la moltiplicazione di questi due
+
+79
+00:09:32,420 --> 00:09:40,620
+numeri e salvare il risultato in un terzo registro. In tutto si tratta di quattro operazioni. Ora,
+
+80
+00:09:40,620 --> 00:09:47,820
+dovete sapere che all'epoca della nostra storia i processori Intel, che erano i famosi 286,
+
+81
+00:09:47,820 --> 00:09:56,420
+si basavano su di un approccio definito SISC, acronimo di Complex Instruction Set Computing.
+
+82
+00:09:56,420 --> 00:10:02,500
+Ciò vuol dire che un processore di questo tipo avrebbe eseguito la nostra operazione di
+
+83
+00:10:02,500 --> 00:10:09,100
+moltiplicazione con una sola istruzione. Quindi un eventuale compilatore di un linguaggio di
+
+84
+00:10:09,100 --> 00:10:14,940
+programmazione avrebbe tradotto direttamente un'operazione di moltiplicazione in una singola
+
+85
+00:10:14,940 --> 00:10:22,020
+operazione per il processore. Al contrario, invece, i processori della Acron si basavano
+
+86
+00:10:22,020 --> 00:10:30,260
+su un approccio detto RISC, che era acronimo di Reduced Instruction Set Computing. Un processore
+
+87
+00:10:30,260 --> 00:10:37,020
+RISC avrebbe richiesto al compilatore di tradurre l'operazione di moltiplicazione in quattro
+
+88
+00:10:37,020 --> 00:10:42,980
+operazioni per il processore, e cioè due per il caricamento delle due variabili nei registri,
+
+89
+00:10:42,980 --> 00:10:48,340
+una per la moltiplicazione vera e propria e un'altra per il salvataggio del risultato in
+
+90
+00:10:48,340 --> 00:10:54,660
+un terzo registro. In pratica, i processori RISC della Acron erano più semplici perché
+
+91
+00:10:54,660 --> 00:11:00,540
+spostavano parte della complessità sul software. E questo potrebbe sembrare uno svantaggio,
+
+92
+00:11:00,540 --> 00:11:08,220
+costringendo i compilatori a lavorare di più e produrre software più lunghi. Ma in realtà ciò
+
+93
+00:11:08,220 --> 00:11:15,540
+permetteva di ridurre enormemente la complessità del processore stesso e con essa il consumo
+
+94
+00:11:15,540 --> 00:11:23,180
+energetico e il riscaldamento. La Acron decise quindi di unire questo nuovo approccio RISC
+
+95
+00:11:23,180 --> 00:11:34,140
+alla interfaccia del BBC Micro e creò un nuovo processore chiamato Acron RISC Machine, cioè ARM.
+
+96
+00:11:34,700 --> 00:11:42,700
+Questa famiglia di processori vide la sua prima versione commerciale montata sul Acron Archimedes,
+
+97
+00:11:42,700 --> 00:11:51,300
+cioè il primo computer basato su approccio RISC. Tutto questo nel 1987, anno in cui il
+
+98
+00:11:51,300 --> 00:11:58,740
+processore ARM dimostrò di essere più performante di un Intel 286 nonostante la sua maggiore
+
+99
+00:11:58,740 --> 00:12:16,260
+semplicità. Abbiamo detto quindi che i processori della famiglia ARM sono un tantino più complessi
+
+100
+00:12:16,260 --> 00:12:22,660
+da utilizzare per gli sviluppatori e richiedono maggiore utilizzo di memoria, ma al tempo stesso
+
+101
+00:12:22,980 --> 00:12:30,300
+consumano molta meno energia e richiedono anche meno raffreddamento. E la cosa interessante è
+
+102
+00:12:30,300 --> 00:12:36,580
+che nessuna di queste caratteristiche faceva all'epoca parte di un progetto, semplicemente
+
+103
+00:12:36,580 --> 00:12:45,100
+vennero fuori per caso a valle della realizzazione del prodotto e si sa che la vita a volte è strana
+
+104
+00:12:45,100 --> 00:12:52,060
+e col passare degli anni il costo della memoria continuò a scendere, mentre il mondo dell'informatica
+
+105
+00:12:52,060 --> 00:12:59,700
+iniziò a spostarsi sui prodotti mobile e tutto questo rese questo tipo di processore
+
+106
+00:12:59,700 --> 00:13:06,700
+particolarmente appetibile. Già negli anni 90 infatti il processore ARM fu integrato nel
+
+107
+00:13:06,700 --> 00:13:14,500
+Apple Newton, anche se questo prodotto non ebbe grande successo. Poi nel 2001 ci fu il boom, il
+
+108
+00:13:14,500 --> 00:13:22,740
+processore ARM 7 faceva funzionare sia l'iPod di Apple che il Game Boy Advance di Nintendo. Da
+
+109
+00:13:22,740 --> 00:13:30,420
+lì poi nel 2004 il Nintendo DS utilizzava un processore ARM per ciascuno dei suoi monitor
+
+110
+00:13:30,420 --> 00:13:39,740
+e infine nel 2007 il primo iPhone uscì con un processore ARM 11. Da lì in poi la storia la
+
+111
+00:13:39,740 --> 00:13:46,540
+conosciamo. Più o meno qualsiasi tablet o smartphone in commercio utilizza un processore
+
+112
+00:13:46,540 --> 00:13:56,180
+ARM e così anche alcuni notebook come il Chromebook o il nuovissimo Apple di serie M1. Insomma il
+
+113
+00:13:56,180 --> 00:14:02,660
+processore ARM è adatto a tutti quei tipi di utilizzi in mobilità dove è necessario risparmiare
+
+114
+00:14:02,780 --> 00:14:10,900
+energia e avere degli strumenti che non scaldino troppo. E se non fosse stato per la caparbietà di
+
+115
+00:14:10,900 --> 00:14:17,540
+una piccola azienda inglese, beh io sono sicuro che molto probabilmente il mondo così come oggi
+
+116
+00:14:17,820 --> 00:14:35,300
+lo conosciamo e sarebbe un po' diverso. Bene ragazzi, io spero che la storia di oggi vi sia
+
+117
+00:14:35,300 --> 00:14:41,260
+piaciuta. Io l'ho trovata subito molto interessante e quindi ho pensato di raccontarvela. Come al
+
+118
+00:14:41,260 --> 00:14:46,580
+solito io vi invito a farmi sapere la vostra e vi ricordo che in descrizione trovate tutti i
+
+119
+00:14:46,580 --> 00:14:53,660
+link per contattarmi e mi raccomando iscrivetevi al canale e al gruppo Telegram che sono i metodi
+
+120
+00:14:53,660 --> 00:15:00,140
+migliori per restare in contatto. Se poi vi andasse di aiutare questo piccolo progetto vi
+
+121
+00:15:00,140 --> 00:15:06,780
+ricordo sempre che una condivisione è utile per tutti. E' probabile che voi abbiate conosciuto
+
+122
+00:15:06,780 --> 00:15:13,500
+Pensieri in Codice in questo modo e allora perché non fare lo stesso? Avrete certamente notato che in
+
+123
+00:15:13,500 --> 00:15:18,700
+questo periodo ho attivato la monetizzazione e questo perché vorrei dedicare un po' più di
+
+124
+00:15:18,700 --> 00:15:26,500
+tempo al podcast ma serve l'aiuto di tutti. Detto questo vi ringrazio per aver ascoltato fin qui,
+
+125
+00:15:26,500 --> 00:15:32,340
+vi saluto, vi do appuntamento al prossimo episodio e vi ricordo che un informatico
+
+126
+00:15:32,340 --> 00:15:35,940
+risolve problemi a volte anche usando il computer.
+

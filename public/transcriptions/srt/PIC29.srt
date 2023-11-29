@@ -1,0 +1,920 @@
+1
+00:00:00,000 --> 00:00:09,680
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,680 --> 00:00:25,520
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice. Lo so è un
+
+3
+00:00:25,520 --> 00:00:31,120
+po' che non ci sentiamo. I episodi di marzo purtroppo sono saltati a causa di alcuni impegni
+
+4
+00:00:31,120 --> 00:00:37,280
+lavorativi ma per farmi perdonare ho deciso che proverò nel mese di aprile a pubblicare
+
+5
+00:00:37,280 --> 00:00:43,440
+quattro episodi invece di due in modo da poter recuperare sulla tabella di marcia. Sempre per
+
+6
+00:00:43,440 --> 00:00:50,600
+il mese di aprile sarò disponibile gratuitamente presso la piattaforma di e-learning docety per
+
+7
+00:00:50,600 --> 00:00:57,280
+chiunque vorrà qualche lezione privata o qualche ripetizione di informatica o di programmazione
+
+8
+00:00:57,280 --> 00:01:03,160
+per le scuole superiori o l'università. In descrizione trovate il link al mio profilo
+
+9
+00:01:03,160 --> 00:01:10,520
+docety presso il quale è possibile prenotare le ripetizioni. Detto questo passiamo a parlare
+
+10
+00:01:10,520 --> 00:01:17,240
+dell'argomento di oggi che potremmo anche definire abbastanza attuale vista la quarantena forzata
+
+11
+00:01:17,400 --> 00:01:25,480
+dovuta al problema coronavirus. C'è chi lo chiama remote working, chi smart working o chi
+
+12
+00:01:25,480 --> 00:01:30,880
+semplicemente lavorare a casa. In pratica si tratta di svolgere il proprio lavoro stando
+
+13
+00:01:30,880 --> 00:01:36,520
+lontani dal luogo in cui si lavora abitualmente che poi solitamente è un ufficio, uno studio o
+
+14
+00:01:36,520 --> 00:01:41,240
+qualcosa del genere. E siccome in quanto programmatore freelance questa è praticamente
+
+15
+00:01:41,240 --> 00:01:46,760
+la mia condizione abituale di lavoro quello che voglio fare oggi è provare a condividere con voi
+
+16
+00:01:47,280 --> 00:01:53,000
+alcune abitudini e consigli che possano rendere questa attività più semplice da svolgere e
+
+17
+00:01:53,000 --> 00:02:00,020
+soprattutto che aiutino a farlo nel modo meno stressante e più produttivo possibile. Non vi
+
+18
+00:02:00,020 --> 00:02:05,280
+parlerò di questioni legate ad un lavoro piuttosto che ad un altro, d'altronde lo smart
+
+19
+00:02:05,280 --> 00:02:11,360
+working può riguardare mestieri anche abbastanza diversi fra loro. Non vi parlerò di software di
+
+20
+00:02:11,360 --> 00:02:17,360
+controllo remoto o di strumenti di comunicazione e di collaborazione. Altri lo hanno già fatto
+
+21
+00:02:17,360 --> 00:02:24,240
+meglio di me e vi lascio in descrizione qualche link. Quello che invece vorrei fare è raccontarvi
+
+22
+00:02:24,240 --> 00:02:30,840
+un po' come io svolgo abitualmente questa attività e quali sono le strategie che ho adottato nel
+
+23
+00:02:30,840 --> 00:02:37,280
+corso del tempo per renderla meno faticosa dal punto di vista fisico e psicologico. Prima di
+
+24
+00:02:37,280 --> 00:02:43,360
+proseguire però ci tengo a precisare che tutto quello che dirò in questo episodio non è supportato
+
+25
+00:02:43,360 --> 00:02:49,840
+da ricerche scientifiche o almeno non che io sappia ed è semplicemente frutto di esperienza e opinioni
+
+26
+00:02:49,840 --> 00:02:56,240
+personali. Quindi ve lo dico fin da subito, se voi avete altre tecniche o abitudini condividetele
+
+27
+00:02:56,240 --> 00:03:02,480
+nei commenti o sul gruppo telegram che trovate in descrizione. Magari potranno essere d'aiuto sia
+
+28
+00:03:02,480 --> 00:03:08,120
+per me che per qualcun altro che si approccia per la prima volta a questa pratica. Se poi una
+
+29
+00:03:08,120 --> 00:03:13,280
+volta terminato l'episodio sarete interessati ad uno sguardo diverso sullo stesso argomento
+
+30
+00:03:13,280 --> 00:03:20,400
+vi consiglio l'episodio numero 136 del podcast Pillole di Bit nel quale Francesco Tucci illustra
+
+31
+00:03:20,400 --> 00:03:34,920
+i problemi tecnici dello smartworking. Dunque le misure che io solitamente metto in campo per
+
+32
+00:03:34,920 --> 00:03:41,200
+lo smartworking si possono dividere essenzialmente in due tipi. Da un lato mantengo le abitudini e la
+
+33
+00:03:41,200 --> 00:03:47,400
+routine di una qualsiasi giornata d'ufficio e dall'altro faccio il possibile per rendere il mio
+
+34
+00:03:47,400 --> 00:03:54,680
+ambiente di lavoro casalingo il più sano possibile. Quindi facciamo così. Prima parliamo delle
+
+35
+00:03:54,680 --> 00:04:00,480
+abitudini, poi nel prossimo blocco parliamo di come attrezzare una postazione che non ci faccia
+
+36
+00:04:00,480 --> 00:04:07,040
+impazzire dopo i primi tre giorni di lavoro remoto. Innanzitutto io credo che quando si
+
+37
+00:04:07,040 --> 00:04:12,320
+lavora da casa si rischia di cadere in due principali trappole dal punto di vista psicologico.
+
+38
+00:04:13,120 --> 00:04:18,880
+La prima è abbastanza ovvia ed è rappresentata dal fatto che si rischia di lavorare troppo poco
+
+39
+00:04:18,880 --> 00:04:26,360
+cedendo alle molteplici distrazioni che noi tutti abbiamo in casa, la tv, i videogame, la fidanzata
+
+40
+00:04:26,360 --> 00:04:34,040
+o la moglie, i figli eccetera. La seconda invece è molto meno intuitiva ed è costituita paradossalmente
+
+41
+00:04:34,040 --> 00:04:39,800
+dal pericolo di lavorare troppo. Rispondere alle email a qualsiasi ora del giorno e della notte,
+
+42
+00:04:40,120 --> 00:04:47,040
+restare incollati allo schermo per ore, lavorare fino e anche dopo cena. Entrambi questi comportamenti
+
+43
+00:04:47,040 --> 00:04:53,360
+sono deleteri ed entrambi vanno combattuti per evitare che a lungo termine abbiano
+
+44
+00:04:53,360 --> 00:05:00,020
+ripercussioni negative o sulla nostra produttività o sulla nostra salute. Quindi la prima cosa da
+
+45
+00:05:00,020 --> 00:05:05,560
+fare quando si lavora in smart working è mantenere o acquisire, dipende dai casi,
+
+46
+00:05:05,600 --> 00:05:12,720
+una routine giornaliera. Ad esempio lavarsi, radersi, pettinarsi e vestirsi nei giorni di
+
+47
+00:05:12,720 --> 00:05:18,280
+smart working esattamente come nei giorni di lavoro in ufficio è un ottimo modo per
+
+48
+00:05:18,280 --> 00:05:24,160
+mantenere il cervello incarreggiata, oltre che per non sembrare dei senza tetto nei meeting online.
+
+49
+00:05:24,160 --> 00:05:30,600
+E no, non vale mettersi in camicia e in cravatta e poi rimanere in mutande e ciabatte perché tanto
+
+50
+00:05:30,600 --> 00:05:36,800
+nell'inquadratura non si vede. Ricordiamoci che al di là delle battute lo facciamo per noi e non
+
+51
+00:05:36,800 --> 00:05:43,200
+per gli altri. Un'altra cosa molto importante è rispettare la separazione tra vita privata e
+
+52
+00:05:43,200 --> 00:05:49,400
+professionale, quindi se abbiamo degli orari d'ufficio cerchiamo di rispettarli. Iniziamo
+
+53
+00:05:49,400 --> 00:05:56,600
+all'orario in cui normalmente entreremo in ufficio e smettiamo all'ora in cui normalmente usciremo.
+
+54
+00:05:57,200 --> 00:06:02,880
+Non c'è nulla di più sbagliato che iniziare un'attività alle 11 del mattino e trascinarsela
+
+55
+00:06:02,880 --> 00:06:10,680
+fino alle 8 di sera. Ovviamente per mantenere questi ritmi in maniera efficace dobbiamo
+
+56
+00:06:10,680 --> 00:06:17,200
+appunto bandire le distrazioni durante l'orario di lavoro, altrimenti non riusciremo a concentrarci
+
+57
+00:06:17,200 --> 00:06:24,920
+ed assolvere ai nostri compiti in modo adeguato. Quindi per le 7 o 8 ore circa in cui dobbiamo
+
+58
+00:06:25,120 --> 00:06:32,280
+lavorare la tv e videogame non devono esistere, le faccende di casa possono aspettare, il telefono
+
+59
+00:06:32,280 --> 00:06:38,440
+se non serve per lavoro va messo in modalità aereo. Al massimo potremo controllarlo quando
+
+60
+00:06:38,440 --> 00:06:44,960
+facciamo una pausa. E dal momento che la maggior parte delle distrazioni potrebbe arrivare dalle
+
+61
+00:06:44,960 --> 00:06:50,920
+persone che abbiamo in casa, dobbiamo spiegare loro che lo smart working è lavoro a tutti gli
+
+62
+00:06:50,920 --> 00:06:57,760
+effetti, quindi mentre stiamo lavorando devono fingere che non ci siamo esattamente come accade
+
+63
+00:06:57,760 --> 00:07:04,920
+quando siamo in ufficio. Dovranno quindi fare un piccolo sforzo ed evitare di interromperci ogni
+
+64
+00:07:04,920 --> 00:07:10,280
+due minuti e a questo proposito la scelta del luogo della casa in cui lavorare è un fattore
+
+65
+00:07:10,280 --> 00:07:17,120
+molto importante. Se abbiamo un piccolo studio o una stanza in cui isolarci allora siamo già a
+
+66
+00:07:17,200 --> 00:07:24,080
+cavallo da questo punto di vista ma se dobbiamo condividere gli spazi allora ci viene in aiuto un
+
+67
+00:07:24,080 --> 00:07:30,480
+po' di inventiva. Possiamo ad esempio usare un paio di cuffie per isolarci dal resto della
+
+68
+00:07:30,480 --> 00:07:36,360
+casa e al tempo stesso in questo modo stabiliremo anche un segnale visivo per far capire agli altri
+
+69
+00:07:36,360 --> 00:07:42,720
+quando siamo impegnati. Una volta diminuite o addirittura eliminate tutte queste distrazioni
+
+70
+00:07:42,720 --> 00:07:48,520
+però dobbiamo fare attenzione a non cadere nell'errore opposto e cioè esagerare con i
+
+71
+00:07:48,520 --> 00:07:54,760
+nostri sforzi, cosa questa che porterebbe in breve tempo ad una condizione di stress eccessivo
+
+72
+00:07:54,760 --> 00:08:02,120
+influendo su umore e produttività. Dobbiamo quindi ricordarci di fare delle pause, almeno una ogni
+
+73
+00:08:02,120 --> 00:08:09,120
+due ore, magari per uno spuntino o un bicchier d'acqua mentre si fa riposare la mente. Queste
+
+74
+00:08:09,120 --> 00:08:14,440
+pause andrebbero possibilmente trascorse in un'altra zona della casa magari su un balcone
+
+75
+00:08:14,440 --> 00:08:22,120
+guardando una zona verde o il mare. Se possibile insomma devono essere pause veramente riposanti.
+
+76
+00:08:22,120 --> 00:08:28,200
+Normalmente vi direi anche di andare a prendere un caffè al bar sotto casa ma in questi tempi di
+
+77
+00:08:28,200 --> 00:08:34,560
+quarantena accontentiamoci di guardare il panorama. Altra cosa importante dobbiamo cercare di non
+
+78
+00:08:34,560 --> 00:08:41,040
+saltare o rendere eccessivamente breve la pausa pranzo, un'ora almeno sarebbe l'ideale,
+
+79
+00:08:41,040 --> 00:08:47,040
+qualche minuto in più se il nostro lavoro lo permette. Durante questa pausa ovviamente
+
+80
+00:08:47,040 --> 00:08:53,880
+cerchiamo di non ingozzarci e di non spalmarci davanti alla tv ma magari scambiamo due chiacchiere
+
+81
+00:08:53,880 --> 00:08:59,640
+con le persone che abbiamo a tavola. Se questo non è possibile perché siamo soli, un podcast
+
+82
+00:08:59,640 --> 00:09:05,920
+durante il pranzo e un libro subito dopo quando avremo le mani libere possono essere una buona
+
+83
+00:09:05,920 --> 00:09:12,680
+soluzione. Infine quando abbiamo finito di lavorare verso le 18 in generale all'orario
+
+84
+00:09:12,680 --> 00:09:20,160
+in cui termina la nostra sessione è importante interrompere tutte le interferenze lavorative
+
+85
+00:09:20,160 --> 00:09:26,840
+non indispensabili. Spegniamo il cellulare aziendale, spegniamo il pc o chiudiamo tutti
+
+86
+00:09:26,840 --> 00:09:32,600
+i software che utilizziamo per lavoro e dedichiamoci alla nostra vita privata. Facciamo
+
+87
+00:09:32,600 --> 00:09:38,840
+esattamente come faremmo una volta usciti dall'ufficio. Nel mio caso siccome la vita
+
+88
+00:09:38,840 --> 00:09:44,200
+privata si svolge in gran parte nel mondo digitale al pari di quella professionale io
+
+89
+00:09:44,200 --> 00:09:50,640
+utilizzo due pc diversi, uno per il lavoro l'altro per le faccende private, per il gaming eccetera.
+
+90
+00:09:50,640 --> 00:09:56,640
+Se lavorate per un'azienda dovreste essere più o meno nelle mie stesse condizioni perché il
+
+91
+00:09:56,640 --> 00:10:03,080
+pc ve lo forniscono loro. Se invece siete liberi professionisti e non vi potete permettere due pc
+
+92
+00:10:03,080 --> 00:10:09,560
+o non volete avere un doppio ingombro in casa io vi consiglio semplicemente di spegnere il pc e
+
+93
+00:10:09,560 --> 00:10:15,440
+riaccenderlo. In questo modo non solo sarete costretti a chiudere tutti i programmi e riaprire
+
+94
+00:10:15,440 --> 00:10:21,760
+solo quelli che vi interessano per svago ma avrete anche in un certo senso riavviato il vostro
+
+95
+00:10:21,760 --> 00:10:28,080
+cervello cancellando tutti i pensieri riguardanti il lavoro per fare spazio a cose più rilassanti.
+
+96
+00:10:28,080 --> 00:10:35,600
+Oltre a tutto questo poi c'è da tenere presente un'altra strana dinamica dello smartworking. Dato
+
+97
+00:10:35,600 --> 00:10:41,200
+che non si sta seduti nella stessa stanza e non ci si incontra per i corridoi o a menza,
+
+98
+00:10:41,200 --> 00:10:47,640
+l'impressione è quella di lavorare da soli. Si tende a dimenticarsi dei colleghi anche per
+
+99
+00:10:47,640 --> 00:10:55,080
+lunghi periodi e spesso questo porta ad una certa deriva nell'organizzazione. A volte infatti capita
+
+100
+00:10:55,080 --> 00:11:01,400
+di fare lavoro inutile, magari perché siamo in due a fare la stessa cosa. Capita di svolgere delle
+
+101
+00:11:01,400 --> 00:11:07,760
+attività che non servono più o che non sono mai servite ma la nostra testa ha deciso diversamente.
+
+102
+00:11:07,760 --> 00:11:13,240
+È vero che esistono tanti strumenti per l'organizzazione dei compiti ma non saranno
+
+103
+00:11:13,440 --> 00:11:19,840
+mai come uno scambio di battute con un collega. Quindi al di là del fatto che secondo me un
+
+104
+00:11:19,840 --> 00:11:25,160
+meeting giornaliero è indispensabile per la squadra, l'ufficio, il dipartimento eccetera,
+
+105
+00:11:25,160 --> 00:11:31,760
+è anche buona norma mantenere un certo livello di contatto con i colleghi durante tutta la giornata
+
+106
+00:11:31,760 --> 00:11:37,360
+lavorativa. Quale che sia il nostro lavoro se facciamo smartworking abbiamo sicuramente un
+
+107
+00:11:37,360 --> 00:11:43,120
+metodo per comunicare, uno strumento di chat aziendale o nel peggiore dei casi un gruppo
+
+108
+00:11:43,120 --> 00:11:51,280
+whatsapp. Beh allora è bene usarlo anche per fare qualche domanda o comunicare cose di un'importanza
+
+109
+00:11:51,280 --> 00:11:57,320
+relativa. Questo semplicemente per dare la sensazione di essere più vicini. Quarantena o no
+
+110
+00:11:57,320 --> 00:12:03,280
+non è il caso di isolarsi nel proprio mondo così come non ci si isola alla propria scrivania quando
+
+111
+00:12:03,280 --> 00:12:09,040
+si è in ufficio e si lavora in loco. Ovviamente capiamoci bene non sto dicendo di invadere la
+
+112
+00:12:09,040 --> 00:12:15,960
+chat aziendale con catene di sant'antonio o meme ma giusto di un modo per scambiare due battute
+
+113
+00:12:15,960 --> 00:12:22,000
+così come facciamo quando siamo di persona. E sempre a questo proposito una cosa che ritengo
+
+114
+00:12:22,000 --> 00:12:29,240
+molto importante è che se si deve discutere qualcosa di appunto importante come una decisione
+
+115
+00:12:29,240 --> 00:12:35,600
+da prendere o un problema da risolvere è meglio cercare di farlo a voce se possibile anche
+
+116
+00:12:35,600 --> 00:12:42,360
+utilizzando il video. Lo so che appare strano ma secondo me non è il caso di discutere argomenti
+
+117
+00:12:42,360 --> 00:12:50,800
+importanti via chat. Le chat anche usando gli emoji, gli sticker e tutto il resto non restituiscono le
+
+118
+00:12:50,800 --> 00:12:57,120
+intonazioni, le inflessioni e tutte le espressioni che la voce e il viso riescono a trasmettere.
+
+119
+00:12:57,760 --> 00:13:04,200
+Quindi discutere in chat è difficile e se gli argomenti in ballo portano con sé anche un minimo
+
+120
+00:13:04,200 --> 00:13:11,520
+di tensione e necessitano di un confronto sul piano professionale beh si rischia che il discorso
+
+121
+00:13:11,520 --> 00:13:18,040
+degeneri in maniera rapidissima e che alcuni dettagli importanti passino in sordine. In
+
+122
+00:13:18,040 --> 00:13:24,240
+definitiva secondo me la chat è ok per argomenti frivoli o per una domanda secca ma se il discorso
+
+123
+00:13:24,400 --> 00:13:29,000
+è già un po' più articolato passare alla chiamata vocale è la scelta più saggia.
+
+124
+00:13:29,000 --> 00:13:44,000
+Ora che abbiamo illustrato qualche idea su come evitare da una parte le distrazioni e dall'altra
+
+125
+00:13:44,000 --> 00:13:50,480
+l'overburning proviamo ad organizzare il nostro spazio di lavoro per essere produttivi e al tempo
+
+126
+00:13:50,480 --> 00:13:56,640
+stesso non affaticarci più del dovuto. Partiamo da un concetto base e cioè che quando pratichiamo
+
+127
+00:13:56,640 --> 00:14:04,000
+smartworking dobbiamo avere un luogo ben definito in cui lavorare. Dobbiamo sceglierci una postazione
+
+128
+00:14:04,000 --> 00:14:10,960
+e considerarla al pari del nostro luogo di lavoro proprio per mantenere mentalmente separate vita
+
+129
+00:14:10,960 --> 00:14:17,240
+professionale e vita privata. L'ideale sarebbe che questo spazio possa essere adibito in modo
+
+130
+00:14:17,360 --> 00:14:23,600
+permanente allo smartworking quindi il tavolo della sala da pranzo non è la scelta migliore
+
+131
+00:14:23,600 --> 00:14:29,960
+mentre una scrivania magari dedicata solo a questo scopo potrebbe essere già un'area
+
+132
+00:14:29,960 --> 00:14:36,640
+sufficiente. E se ve lo steste chiedendo divano e letto non sono neanche da prendere in considerazione
+
+133
+00:14:36,640 --> 00:14:42,680
+ok? Ad ogni modo però assicuriamoci che la nostra postazione sia relativamente comoda.
+
+134
+00:14:43,280 --> 00:14:49,080
+Del migliore dei casi dovremo trascorrerci parecchie ore risolvere problemi, effettuare
+
+135
+00:14:49,080 --> 00:14:55,960
+operazioni a volte complesse e quindi non possiamo doverci preoccupare anche del fatto che la sedia
+
+136
+00:14:55,960 --> 00:15:02,360
+è scomoda e ci costringe ad alzarci ogni dieci minuti o che il ripiano è troppo piccolo per
+
+137
+00:15:02,360 --> 00:15:09,360
+la quantità di strumenti documenti e appunti di cui abbiamo bisogno. In ultimo facciamo bene caso
+
+138
+00:15:09,360 --> 00:15:15,960
+all'orientamento della nostra postazione. Una finestra alle spalle infatti può creare in certe
+
+139
+00:15:15,960 --> 00:15:22,160
+ore del giorno fastidiosi riflessi sul monitor e mandare in tilt una qualsiasi webcam. Mentre
+
+140
+00:15:22,160 --> 00:15:27,880
+se la finestra l'abbiamo di faccia in una giornata di sole non esisterà monitor con luminosità
+
+141
+00:15:27,880 --> 00:15:33,800
+sufficiente a permetterci di distinguere chiaramente immagini e caratteri. Posizionata
+
+142
+00:15:33,800 --> 00:15:39,800
+quindi la nostra scrivania nel migliore dei modi decidere che cosa sia necessario mettervi sopra
+
+143
+00:15:39,800 --> 00:15:45,520
+può essere complicato anche perché dipende moltissimo dal tipo di lavoro che si svolge.
+
+144
+00:15:45,520 --> 00:15:50,800
+Ad ogni modo ci sono alcuni oggetti che mi sento di consigliare un po' a tutti,
+
+145
+00:15:50,800 --> 00:15:58,360
+sarete poi voi a decidere se fanno al caso vostro o meno. Inoltre in descrizione trovate una lista
+
+146
+00:15:58,360 --> 00:16:04,640
+di questi accessori acquistabili su Amazon tramite link sponsorizzati. Se volete sostenere questo
+
+147
+00:16:04,640 --> 00:16:09,560
+progetto questa potrebbe essere una buona occasione senza spendere un centesimo in
+
+148
+00:16:09,560 --> 00:16:16,240
+più del normale e acquistando su Amazon. Partiamo dunque dalle cose ovvie. L'hardware
+
+149
+00:16:16,240 --> 00:16:22,600
+che utilizziamo ogni giorno per otto ore al giorno non deve essere scadente. È proprio
+
+150
+00:16:22,600 --> 00:16:27,160
+una questione pratica. Se il nostro pc si impunta, se la stampante non risponde,
+
+151
+00:16:27,160 --> 00:16:33,480
+se il monitor non ha luminosità sufficiente o se manca lo spazio disco. Questi sono tutti
+
+152
+00:16:33,480 --> 00:16:39,160
+motivi di frustrazione che vanno a sommarsi a quelli che già normalmente sono presenti per il
+
+153
+00:16:39,160 --> 00:16:46,600
+nostro lavoro. È ovvio che in condizioni di lavoro precarie non potremo mai essere efficienti e i
+
+154
+00:16:46,600 --> 00:16:53,200
+vari tentativi porteranno alle stelle i nostri livelli di stress. Nel corso degli anni mi è
+
+155
+00:16:53,200 --> 00:16:59,840
+capitato di vedere persone lavorare con portatili a cui mancavano dei tasti o mouse che si muovevano
+
+156
+00:16:59,840 --> 00:17:07,000
+a scatti. In condizioni del genere è ovvio che lo smart working diventi una sofferenza. Al giorno
+
+157
+00:17:07,000 --> 00:17:13,360
+d'oggi si trovano computer più che rispettabili anche per 5 o 600 euro, senza contare che le
+
+158
+00:17:13,360 --> 00:17:20,000
+vostre aziende dovrebbero fornirvene uno se siete impiegati. Se invece siete freelance o autonomi
+
+159
+00:17:20,000 --> 00:17:26,360
+provo anche in questo caso a mettervi qualche link in descrizione, ma tenete presente che se
+
+160
+00:17:26,360 --> 00:17:32,840
+state ascoltando questo episodio già qualche mese dall'uscita potreste trovare anche molto di meglio.
+
+161
+00:17:32,840 --> 00:17:39,920
+Lo stesso discorso su uno standard minimo di qualità si applica ovviamente anche al collegamento ad
+
+162
+00:17:39,920 --> 00:17:46,600
+internet. Poiché buona parte dello smart working si svolge online, occorre disporre di una connessione
+
+163
+00:17:46,720 --> 00:17:52,640
+sufficientemente performante ma soprattutto stabile. Se il vostro router disconnette il
+
+164
+00:17:52,640 --> 00:17:58,840
+wi-fi ogni 5 minuti potete chiedere al gestore telefonico di sostituirlo o meglio ancora potete
+
+165
+00:17:58,840 --> 00:18:05,280
+collegarvi direttamente con un cavo di rete. Se poi la vostra linea non è molto stabile e vi
+
+166
+00:18:05,280 --> 00:18:11,280
+capita spesso di rimanere offline alcuni gestori telefonici ad esempio forniscono contratti a dsl o
+
+167
+00:18:11,280 --> 00:18:17,560
+fibre corredati di una chiavetta 4g per le connessioni di emergenza. Purtroppo mi rendo
+
+168
+00:18:17,560 --> 00:18:24,160
+conto che ogni caso è un caso a sé e non si può generalizzare, però questi a mio parere sono i
+
+169
+00:18:24,160 --> 00:18:30,080
+requisiti minimi per poter pensare di lavorare decentemente da casa. Se non siamo in grado di
+
+170
+00:18:30,080 --> 00:18:36,080
+soddisfarli la nostra esperienza di smart working sarà probabilmente poco fruttuosa e più che
+
+171
+00:18:36,080 --> 00:18:50,840
+esasperante. Bene ora che abbiamo raggiunto per così dire il livello base dello smart working
+
+172
+00:18:50,840 --> 00:18:56,800
+proviamo ad elencare brevemente un po di accessori che possono rendere più piacevole e serena la
+
+173
+00:18:56,800 --> 00:19:03,920
+nostra esperienza di lavoro casalingo. Innanzitutto se utilizziamo un portatile cerchiamo di collegarlo
+
+174
+00:19:03,920 --> 00:19:09,800
+ad un monitor esterno. La dimensione dello schermo dipende molto dalla distanza alla quale
+
+175
+00:19:09,800 --> 00:19:16,160
+intendiamo posizionarlo quindi possiamo consultare una qualsiasi guida che si può trovare facilmente
+
+176
+00:19:16,160 --> 00:19:23,920
+online ma la cosa importante è che sia regolabile in altezza. C'è chi compra un monitor con piede
+
+177
+00:19:23,920 --> 00:19:30,200
+regolabile, chi compra supporti che si avvitano alla scrivania e chi semplicemente piazza una
+
+178
+00:19:30,200 --> 00:19:36,520
+pila di libri sotto un monitor standard. La cosa importante però è che il nostro monitor
+
+179
+00:19:36,520 --> 00:19:42,200
+possa essere piazzato sufficientemente in alto da permetterci di lavorare tenendo lo
+
+180
+00:19:42,200 --> 00:19:50,440
+sguardo dritto di fronte a noi. Questo aiuterà a mantenere la postura corretta. Il passo subito
+
+181
+00:19:50,440 --> 00:19:57,560
+successivo è poi quello di acquistare mouse e tastiera di buona fattura o addirittura ergonomici.
+
+182
+00:19:58,400 --> 00:20:04,520
+Dopotutto stiamo parlando di periferiche che utilizzeremo per tantissime ore al giorno e che
+
+183
+00:20:04,520 --> 00:20:11,520
+devono affaticarci il meno possibile quindi niente tastiere compatte o meccaniche e niente mouse da
+
+184
+00:20:11,520 --> 00:20:18,480
+viaggio. La tastiera deve avere i tasti reattivi e con una corsa piuttosto breve. Il mouse deve
+
+185
+00:20:18,480 --> 00:20:24,320
+produrre un movimento fluido e scivolare leggero sulle superfici ed entrambi devono essere il più
+
+186
+00:20:24,320 --> 00:20:31,160
+possibile comodi. Io personalmente mi trovo molto bene con i mouse della Logitech della serie MX
+
+187
+00:20:31,160 --> 00:20:39,640
+e con le tastiere Microsoft ergonomiche. Se è pur vero che hanno un costo non trascurabile dobbiamo
+
+188
+00:20:39,640 --> 00:20:45,960
+prima di tutto tenere presente che se trattate decentemente possono durare anni e che un'operazione
+
+189
+00:20:45,960 --> 00:20:52,240
+al tunnel carpale può costare molto di più e quindi può valere la pena spendere qualche soldo
+
+190
+00:20:52,280 --> 00:21:06,240
+per i nostri dispositivi. Una volta che ci siamo finalmente messi comodi poi possiamo passare a
+
+191
+00:21:06,240 --> 00:21:11,480
+qualche accessorio che renda la vita meno complicata a noi, ai nostri colleghi e a chi
+
+192
+00:21:11,480 --> 00:21:17,800
+ci sta intorno. Delle belle cuffie con microfono ad esempio possono risultare comode sia per
+
+193
+00:21:17,800 --> 00:21:24,400
+ascoltare un po' di musica o del rumore bianco se preferiamo e quindi isolarci dalle distrazioni
+
+194
+00:21:24,400 --> 00:21:31,560
+esterne sia per partecipare al meglio ai vari meeting online. Per questo scopo io personalmente
+
+195
+00:21:31,560 --> 00:21:37,720
+utilizzo il Blue Yeti, il microfono con cui registro i podcast insieme con delle cuffie
+
+196
+00:21:37,720 --> 00:21:45,240
+della Sony ma per non spendere una fortuna trovo che delle cuffie da gaming siano l'ideale. Comode
+
+197
+00:21:45,240 --> 00:21:51,440
+e con buoni microfoni possono essere indossate per molto tempo e permettono agli altri di sentire
+
+198
+00:21:51,440 --> 00:21:58,360
+la nostra voce in modo più che decente. Nei meeting infatti una delle cose peggiori è dover
+
+199
+00:21:58,360 --> 00:22:04,360
+ripetere in continuazione le stesse cose perché gli altri non ci capiscono o perché la voce arriva
+
+200
+00:22:04,360 --> 00:22:11,560
+in termittenza o perché è coperta dai rumori ambientali ed è certamente una buona idea cercare
+
+201
+00:22:11,560 --> 00:22:17,880
+di non far soffrire agli altri la nostra presenza in un meeting. Per questo stesso motivo sarebbe
+
+202
+00:22:17,880 --> 00:22:23,720
+anche una buona idea dotarsi di una webcam decente in modo da evitare a chiunque ci guardi di dover
+
+203
+00:22:23,720 --> 00:22:32,040
+perdere tre gradi di vista ad ogni videochiamata. La Logitech C920 ad esempio è un modello vecchio
+
+204
+00:22:32,040 --> 00:22:36,320
+ma fa egregiamente il suo dovere e ormai costa anche molto poco.
+
+205
+00:22:42,560 --> 00:22:51,440
+Infine ora che siamo attrezzati di tutto punto per lavorare e comunicare possiamo
+
+206
+00:22:51,440 --> 00:22:57,560
+dedicarci ad un po' di accessori da disporre sulla nostra postazione che potrebbero renderci
+
+207
+00:22:57,560 --> 00:23:02,960
+la vita in smartworking più facile. Magari possiamo considerarli una sorta di livello
+
+208
+00:23:02,960 --> 00:23:08,960
+avanzato. Come abbiamo accennato già nei blocchi precedenti ad esempio le pause sono molto
+
+209
+00:23:08,960 --> 00:23:16,040
+importanti e quando siamo in smartworking è facile che capiti di dimenticarsene. Perché dunque
+
+210
+00:23:16,040 --> 00:23:21,480
+non dotare la nostra postazione di un piccolo timer che ci ricordi di fare una pausa ogni tanto?
+
+211
+00:23:21,480 --> 00:23:28,520
+Io ad esempio ne utilizzo uno molto piccolo a forma di cubo molto compatto e versatile. Si carica
+
+212
+00:23:28,520 --> 00:23:34,800
+usb e ha una batteria che dura mesi. Oltre a questo abbiamo anche detto che stare comodi è
+
+213
+00:23:34,800 --> 00:23:40,680
+molto importante sia per la salute mentale che per quella fisica. Quindi perché non dotarci di
+
+214
+00:23:40,680 --> 00:23:46,960
+una sedia da ufficio e magari di una scrivania ad altezza regolabile? Così possiamo lavorare sia
+
+215
+00:23:46,960 --> 00:23:53,760
+seduti che in piedi. In questo senso sia Amazon che Ikea offrono varie soluzioni molto interessanti.
+
+216
+00:23:53,760 --> 00:24:00,280
+E ancora se ci capita di lavorare in condizioni di scarsa luminosità ad esempio nel tardo pomeriggio
+
+217
+00:24:00,800 --> 00:24:07,600
+una striscia di led dietro al monitor o dietro alla scrivania unita con una luce che punta
+
+218
+00:24:07,600 --> 00:24:15,480
+sulla tastiera sono un ottimo modo per affaticare molto meno la nostra vista. E sempre per rilassare
+
+219
+00:24:15,480 --> 00:24:21,520
+gli occhi e la mente sulla nostra postazione ci sarebbe bene anche qualcosa di analogico. Una
+
+220
+00:24:21,520 --> 00:24:27,840
+piantina o uno di quei pupazzetti che si muovono a energia solare ad esempio. Così giusto per
+
+221
+00:24:27,960 --> 00:24:34,560
+poterli osservare mentre riflettiamo. E poi una lavagnetta magari o alla peggio un blocco note
+
+222
+00:24:34,560 --> 00:24:43,440
+per poter così annotare qualcosa a mano libera diciamo in maniera analogica. Infine se siamo
+
+223
+00:24:43,440 --> 00:24:49,600
+pratici e vogliamo risparmiarci un po di fatica con calcoli annotazioni appuntamenti eccetera
+
+224
+00:24:49,600 --> 00:24:56,480
+un assistente vocale potrebbe completare la nostra dotazione e darci quel piccolo aiuto in
+
+225
+00:24:56,600 --> 00:25:03,640
+più che fa la differenza. Ci sarebbe molto altro da dire però l'episodio sta durando molto più del
+
+226
+00:25:03,640 --> 00:25:09,920
+solito e quindi direi di chiuderla qui. Spero che quello che abbiamo detto possa risultare
+
+227
+00:25:09,920 --> 00:25:14,480
+utile per qualcuno. Vi lascio in descrizione il link a tutti gli accessori di cui abbiamo
+
+228
+00:25:14,480 --> 00:25:20,880
+parlato in modo da potervi fare un'idea e nel caso acquistare ciò che fa per voi. Spero di
+
+229
+00:25:20,880 --> 00:25:26,120
+avervi dato qualche idea interessante su come gestire lo smartworking e per oggi vi saluto,
+
+230
+00:25:26,120 --> 00:25:29,280
+vi ringrazio e vi do appuntamento al prossimo episodio.
+

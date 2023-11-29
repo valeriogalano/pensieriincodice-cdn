@@ -1,0 +1,560 @@
+1
+00:00:00,000 --> 00:00:09,960
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:09,960 --> 00:00:26,240
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in Codice. Ci sono tanti
+
+3
+00:00:26,240 --> 00:00:32,640
+aspetti da tenere presenti quando si intende valutare la qualità di un sito web. Sicuramente
+
+4
+00:00:32,640 --> 00:00:38,960
+i contenuti, l'estetica, la chiarezza, l'accessibilità e molti altri. Ma tra tutti questi un aspetto
+
+5
+00:00:38,960 --> 00:00:45,240
+che secondo me risulta essere molto interessante è la velocità. La particolarità della velocità
+
+6
+00:00:45,240 --> 00:00:52,080
+infatti non è solo che è tra quei pochi indicatori che hanno un duplice valore sia
+
+7
+00:00:52,080 --> 00:00:57,120
+per l'utente che per i motori di ricerca, ma sta anche nel fatto che per agire su di
+
+8
+00:00:57,120 --> 00:01:04,680
+essa bisogna lavorare a due livelli, sia sul codice e sui contenuti del sito web che
+
+9
+00:01:04,680 --> 00:01:10,840
+addirittura sull'infrastruttura che lo ospita. E nell'episodio di oggi vorrei parlare proprio
+
+10
+00:01:10,840 --> 00:01:17,680
+di questo, cioè dei meccanismi che si possono inserire nell'infrastruttura di un sito web
+
+11
+00:01:17,680 --> 00:01:24,400
+per renderlo più veloce. I più conosciuti e utilizzati tra questi meccanismi sono la
+
+12
+00:01:24,400 --> 00:01:32,360
+webcache e la cdn e come nello spirito di pensieri in codice oggi proveremo a capire
+
+13
+00:01:32,360 --> 00:01:39,320
+come funzionano e come influiscono sul nostro utilizzo dei siti web. Al solito tralasceremo
+
+14
+00:01:39,320 --> 00:01:47,160
+i dettagli tecnici per concentrarci sulla logica di funzionamento, ma se siete sviluppatori
+
+15
+00:01:47,160 --> 00:01:54,120
+o aspiranti sviluppatori o appassionati di programmazione, beh allora sappiate che esiste
+
+16
+00:01:54,120 --> 00:02:02,160
+per voi un podcast dedicato a tutti i fullstack developer. Sto parlando di Gitbar, un prodotto
+
+17
+00:02:02,160 --> 00:02:09,340
+a cura di Mauro Murru, nel quale parla di tecnologie, linguaggi e framework legati al
+
+18
+00:02:09,340 --> 00:02:17,140
+mondo web anche in modo molto tecnico a volte e nel quale spesso intervista personaggi interessanti
+
+19
+00:02:17,140 --> 00:02:24,500
+e importanti nel campo dello sviluppo software. Insomma se siete sviluppatori Gitbar non ve lo
+
+20
+00:02:24,500 --> 00:02:29,260
+potete perdere, vi lascio il link in descrizione. E ora passiamo all'argomento di oggi.
+
+21
+00:02:47,140 --> 00:02:57,860
+Per capire come funzionano webcache e cdn dobbiamo prima ricordarci come funziona un sito
+
+22
+00:02:57,860 --> 00:03:06,020
+web. E dico ricordarci perché qui su Pensieri in Codice ne abbiamo già parlato nell'episodio 21
+
+23
+00:03:06,020 --> 00:03:12,500
+intitolato anatomia di un sito web, quindi mi rimando a quell'episodio per maggiori dettagli.
+
+24
+00:03:13,020 --> 00:03:19,780
+Adesso invece molto velocemente ricordiamo solo il concetto chiave e cioè che quando noi visitiamo
+
+25
+00:03:19,780 --> 00:03:28,940
+un sito web in realtà il nostro browser esegue tutta una serie di richieste al web server. Questo
+
+26
+00:03:28,940 --> 00:03:34,860
+perché una pagina, anche se a noi appare come un blocco unico, è in realtà formata da tutta una
+
+27
+00:03:34,860 --> 00:03:43,180
+serie di piccoli pezzi chiamati risorse e il nostro browser in maniera trasparente ha bisogno
+
+28
+00:03:43,180 --> 00:03:49,500
+di recuperare tutte queste risorse e poi combinarle insieme per mostrarci la pagina così come ci
+
+29
+00:03:49,500 --> 00:03:59,300
+appare. In linea generale queste risorse sono file html, file css, immagini, video, javascript eccetera.
+
+30
+00:03:59,860 --> 00:04:04,660
+Ma per quello di cui vogliamo parlare oggi dobbiamo sapere che tutte queste risorse,
+
+31
+00:04:04,660 --> 00:04:12,540
+a prescindere dal loro estensione, linguaggio o codifica, si possono logicamente dividere
+
+32
+00:04:12,540 --> 00:04:20,700
+in due macro-categorie risorse statiche e risorse dinamiche. Si tratta di una suddivisione a livello
+
+33
+00:04:20,740 --> 00:04:29,980
+logico perché l'appartenenza a una o all'altra categoria non dipende dal tipo di file ma dal
+
+34
+00:04:29,980 --> 00:04:37,340
+modo in cui il contenuto è utilizzato. Se infatti ci riferiamo a una risorsa come statica stiamo
+
+35
+00:04:37,340 --> 00:04:45,900
+parlando di una risorsa appunto che non cambia tra una richiesta e l'altra, quindi per quante
+
+36
+00:04:45,900 --> 00:04:54,020
+volte noi la scarichiamo otterremo sempre lo stesso file. Al contrario se parliamo di risorsa
+
+37
+00:04:54,020 --> 00:05:00,740
+dinamica parliamo di una risorsa che può cambiare tra una richiesta e l'altra e questo cambiamento
+
+38
+00:05:00,740 --> 00:05:09,060
+avviene sulla base di varie possibili condizioni ad esempio l'utente o il browser o la lingua del
+
+39
+00:05:09,100 --> 00:05:16,460
+sistema che sta interrogando il web server. L'immagine di un logo per esempio sarà tendenzialmente un
+
+40
+00:05:16,460 --> 00:05:23,380
+contenuto statico a prescindere infatti da chi visita il sito web o quali pagine sta visitando
+
+41
+00:05:23,380 --> 00:05:31,340
+tendenzialmente in logo rimarrà sempre perfettamente identico mentre al contrario la pagina
+
+42
+00:05:31,340 --> 00:05:38,740
+del nostro profilo all'interno di un qualsiasi sito nel quale siamo registrati è sicuramente un
+
+43
+00:05:38,740 --> 00:05:46,020
+contenuto dinamico se non altro perché la pagina conterrà il nostro nome e cognome mentre per un
+
+44
+00:05:46,020 --> 00:05:53,620
+altro utente conterrà il suo nome e cognome. Ovviamente nel mondo reale il discorso è abbastanza
+
+45
+00:05:53,620 --> 00:06:01,500
+più complicato con tantissime sfumature per capire se un contenuto è statico o dinamico ma diciamo
+
+46
+00:06:01,500 --> 00:06:07,780
+che per ora ci accontentiamo di aver capito questa distinzione e se il caso ne parleremo
+
+47
+00:06:07,900 --> 00:06:14,980
+più avanti. Con quanto detto finora infatti possiamo già capire che nonostante tutte le
+
+48
+00:06:14,980 --> 00:06:23,820
+risorse siano servite dal web server in linea molto generale possiamo immaginare che i contenuti
+
+49
+00:06:23,820 --> 00:06:33,100
+statici siano dei file che il web server semplicemente recupera e invia al browser mentre
+
+50
+00:06:33,100 --> 00:06:40,180
+i contenuti dinamici siano invece dei file scritti in un qualche linguaggio di programmazione o di
+
+51
+00:06:40,180 --> 00:06:49,140
+scripting che il web server recupera, elabora e poi invia al browser. E qui c'è il punto focale
+
+52
+00:06:49,140 --> 00:06:57,340
+della questione. In una configurazione minima dove il web server fa tutto il lavoro di fatto
+
+53
+00:06:57,340 --> 00:07:05,900
+questo software sta svolgendo due tipi diversi di operazioni una più complicata e pesante per i
+
+54
+00:07:05,900 --> 00:07:14,060
+contenuti dinamici e un'altra più semplice e leggera per i contenuti statici. Ora non serve
+
+55
+00:07:14,060 --> 00:07:20,700
+conoscere il funzionamento del processore o del file system per capire che se stiamo utilizzando
+
+56
+00:07:21,260 --> 00:07:29,220
+un software di una certa complessità per un'operazione molto più semplice di quelle
+
+57
+00:07:29,220 --> 00:07:37,500
+che è in grado effettivamente di svolgere allora stiamo sprecando delle risorse e anche se si tratta
+
+58
+00:07:37,500 --> 00:07:45,780
+di uno spreco minimo questo avviene ogni volta che viene richiesta una risorsa statica e come
+
+59
+00:07:45,780 --> 00:07:53,180
+ben sappiamo una pagina può contenere anche centinaia di risorse statiche ed è proprio in
+
+60
+00:07:53,180 --> 00:08:00,340
+questo punto che si inseriscono i meccanismi di webcache e di cdn con il preciso scopo di
+
+61
+00:08:00,340 --> 00:08:08,300
+da una parte alleggerire il lavoro del web server e dall'altra migliorare la distribuzione dei
+
+62
+00:08:08,300 --> 00:08:36,420
+contenuti statici. Una webcache è dunque un meccanismo realizzato ovviamente attraverso un
+
+63
+00:08:36,500 --> 00:08:43,620
+software che va posizionato in un qualche punto lungo il percorso tra il browser e il web server.
+
+64
+00:08:43,620 --> 00:08:50,500
+Se immaginiamo quindi la più semplice possibile delle architetture dove il browser contatta
+
+65
+00:08:50,500 --> 00:08:55,940
+direttamente il web server e il web server restituisce le risorse direttamente al browser
+
+66
+00:08:55,940 --> 00:09:03,460
+aggiungendo una web cache avremo che il browser contatta la web cache, la web cache contatta
+
+67
+00:09:03,500 --> 00:09:09,580
+il web server, il web server restituisce le risorse alla web cache e la web cache a sua
+
+68
+00:09:09,580 --> 00:09:15,860
+volta le restituisce al browser. In questo modo la web cache potrà tenere conto di tutte le
+
+69
+00:09:15,860 --> 00:09:22,980
+chiamate effettuate dal browser e di tutte le risorse che verranno restituite a seguito di
+
+70
+00:09:22,980 --> 00:09:30,540
+tali chiamate e distinguendo tra risorse statiche e risorse dinamiche attraverso una configurazione
+
+71
+00:09:30,980 --> 00:09:38,780
+o delle informazioni allegate dal web server alle risorse potrà costruire al proprio interno
+
+72
+00:09:38,780 --> 00:09:47,140
+una tabella di corrispondenze tra indirizzi url e risorse statiche. Contestualmente conserverà
+
+73
+00:09:47,140 --> 00:09:52,940
+anche queste risorse statiche all'interno di un proprio archivio basato sul meccanismo
+
+74
+00:09:52,940 --> 00:09:59,860
+di memorizzazione più veloce che ha a disposizione. A questo punto quando successivamente riceverà la
+
+75
+00:09:59,860 --> 00:10:05,660
+richiesta di una risorsa che identifica come statica e che già possiede al proprio interno
+
+76
+00:10:05,660 --> 00:10:13,100
+potrà restituirla direttamente al browser senza farne richiesta al web server alleggerendo così
+
+77
+00:10:13,100 --> 00:10:19,980
+il lavoro di quest'ultimo. Sulla base di questa strategia va da sé che maggiori saranno le
+
+78
+00:10:19,980 --> 00:10:25,860
+richieste di contenuti statici più velocemente crescerà la tabella all'interno della web cache
+
+79
+00:10:25,940 --> 00:10:32,380
+e maggiore sarà il lavoro che potrà essere spostato dal web server alla web cache. Ora
+
+80
+00:10:32,380 --> 00:10:40,780
+abbiamo detto che la web cache va posizionata in un punto lungo il percorso tra browser e server e
+
+81
+00:10:40,780 --> 00:10:48,940
+infatti a prescindere da il software o l'algoritmo utilizzato per realizzarle le web cache si possono
+
+82
+00:10:48,980 --> 00:10:56,340
+dividere in due macro categorie. Web cache lato client e lato server. La prima si trova
+
+83
+00:10:56,340 --> 00:11:03,980
+praticamente in tutti i browser che utilizziamo ogni giorno e infatti quando visitiamo un sito
+
+84
+00:11:03,980 --> 00:11:11,220
+per la prima volta noteremo sicuramente che al primo accesso ci risulta avere una certa velocità
+
+85
+00:11:11,220 --> 00:11:17,300
+ma dal secondo accesso in poi anche passando da una pagina all'altra il sito ci apparirà
+
+86
+00:11:17,300 --> 00:11:23,420
+più veloce e questo semplicemente perché il nostro browser ha già in cache gran parte dei
+
+87
+00:11:23,420 --> 00:11:29,940
+contenuti statici. Questo è anche il motivo per cui a volte è necessario svuotare la cache per
+
+88
+00:11:29,940 --> 00:11:37,460
+visualizzare alcuni aggiornamenti ad alcuni siti web. Il browser ha dei meccanismi per richiedere
+
+89
+00:11:37,460 --> 00:11:43,620
+a un web server se i contenuti statici sono cambiati anche senza farseli inviare ma questi
+
+90
+00:11:43,620 --> 00:11:49,380
+non sempre sono configurati nel migliore dei modi e a volte possono non funzionare. La web
+
+91
+00:11:49,380 --> 00:11:55,200
+cache lato server invece è un vero e proprio software all'interno dell'architettura del sito
+
+92
+00:11:55,200 --> 00:12:03,780
+web. Può essere installata sullo stesso server del sito web o su un bilanciatore o in un servizio
+
+93
+00:12:03,780 --> 00:12:10,540
+in cloud ma in ogni caso è abbastanza difficile che l'utente che sta utilizzando il sito riesca
+
+94
+00:12:10,540 --> 00:12:16,940
+a rendersi conto che è in funzione anche se in pratica ne ottiene enormi benefici in termini di
+
+95
+00:12:16,940 --> 00:12:23,620
+velocità. Web cache lato client e lato server possono tranquillamente convivere ed essere
+
+96
+00:12:23,620 --> 00:12:31,060
+entrambe attive sullo stesso sito. Infatti esse lavorano a livelli differenti. Lato client
+
+97
+00:12:31,060 --> 00:12:39,580
+essendo installata sul computer dell'utilizzatore porta benefici solo a quest'ultimo ma è anche da
+
+98
+00:12:39,900 --> 00:12:47,020
+egli controllabile. L'utente infatti la può disattivare, la può svuotare eccetera. Lato
+
+99
+00:12:47,020 --> 00:12:54,380
+server invece la web cache porta benefici a tutti gli utilizzatori e anche all'indicizzazione sui
+
+100
+00:12:54,380 --> 00:13:01,780
+motori di ricerca. L'aggiunta di un record nella tabella delle risorse infatti viene scatenata
+
+101
+00:13:01,780 --> 00:13:09,420
+solo dal primo utente che richiede quella risorsa. Già il secondo potrà usufruire della versione
+
+102
+00:13:09,500 --> 00:13:15,220
+archiviata nella web cache prodotta dal suo predecessore. Si tratta di un meccanismo molto
+
+103
+00:13:15,220 --> 00:13:22,300
+potente ma al tempo stesso richiede di essere configurato molto scrupolosamente. Se infatti
+
+104
+00:13:22,300 --> 00:13:29,580
+non si identificano correttamente risorse statiche e risorse dinamiche si rischia di archiviare in
+
+105
+00:13:29,580 --> 00:13:37,740
+cache una qualche pagina che è specifica di un determinato utente e mostrarla per errore ad un
+
+106
+00:13:37,740 --> 00:13:43,620
+utente successivo che richieda quello stesso indirizzo, restituendogli dunque la versione
+
+107
+00:13:43,620 --> 00:13:51,460
+in cache invece di quella elaborata con tutti i vari sistemi di sicurezza dal web server. So che
+
+108
+00:13:51,460 --> 00:13:57,820
+detta così potrebbe non sembrare un problema ma se questa pagina fosse ad esempio quella del profilo
+
+109
+00:13:57,820 --> 00:14:04,820
+con tutte le informazioni personali dell'utente... beh non vi ricorda per caso il problema del sito
+
+110
+00:14:04,900 --> 00:14:07,380
+dell'Inps ad aprile 2020?
+
+111
+00:14:07,380 --> 00:14:34,860
+Anche il meccanismo della CDN, agronimo per Content Delivery Network, sfrutta il concetto
+
+112
+00:14:35,100 --> 00:14:40,900
+delle risorse statiche. Queste infatti vengono archiviate invece che sul web server proprio
+
+113
+00:14:40,900 --> 00:14:47,980
+sulla CDN e quando viene richiesta una pagina web al browser viene detto di recuperare alcuni
+
+114
+00:14:47,980 --> 00:14:55,900
+contenuti dal web server e altri appunto quelli statici dalla CDN. A questo punto la CDN pur
+
+115
+00:14:55,900 --> 00:15:04,100
+esponendo un unico indirizzo per ogni risorsa in realtà maschera al proprio interno una rete di
+
+116
+00:15:04,100 --> 00:15:10,940
+server distribuiti per tutto il globo. Al momento della richiesta di una risorsa tramite un algoritmo
+
+117
+00:15:10,940 --> 00:15:18,300
+che valuta la distanza dell'utente rispetto ai vari nodi della CDN e il carico sulla rete presente
+
+118
+00:15:18,300 --> 00:15:24,740
+in quel momento, sceglie verso quale server indirizzare questa richiesta facendo sì che sia
+
+119
+00:15:24,740 --> 00:15:31,940
+appunto questo server a restituire la risorsa al browser dell'utente. In questo modo si ottengono
+
+120
+00:15:32,020 --> 00:15:38,660
+tutta una serie di vantaggi in termini di velocità. Prima di tutto perché come per la web cache si
+
+121
+00:15:38,660 --> 00:15:47,060
+alleggerisce il peso computazionale del web server e inoltre perché i vari server della CDN sono
+
+122
+00:15:47,060 --> 00:15:54,140
+ottimizzati per la gestione di contenuti statici e inoltre in linea di principio il server che
+
+123
+00:15:54,140 --> 00:16:00,060
+risponde a ciascun utente è quello a lui geograficamente più vicino e quindi con
+
+124
+00:16:00,140 --> 00:16:07,740
+teoricamente la minor latenza. A differenza delle web cache, le CDN sono servizi composti da
+
+125
+00:16:07,740 --> 00:16:14,020
+moltissimi server, moltissime risorse e tanta potenza sia in termini di elaborazione che di
+
+126
+00:16:14,020 --> 00:16:22,660
+connettività, quindi sono generalmente disponibili come servizi in cloud. Akamai, CloudFront o CloudFlare
+
+127
+00:16:22,660 --> 00:16:29,340
+ne sono alcuni esempi e molto spesso nei loro servizi già includono dei meccanismi di web
+
+128
+00:16:29,340 --> 00:16:36,420
+cache lato server. Nel utilizzo quotidiano come utenti del web possiamo dare per scontato che
+
+129
+00:16:36,420 --> 00:16:44,220
+i nostri browser abbiano un meccanismo di web cache lato client attivo, mentre a seconda del
+
+130
+00:16:44,220 --> 00:16:51,020
+sito che stiamo navigando i programmatori potrebbero avere attivato o meno meccanismi
+
+131
+00:16:51,020 --> 00:16:59,580
+di web cache lato server o CDN. In ogni caso, l'impiego di questi vari sistemi, da soli o in
+
+132
+00:16:59,580 --> 00:17:06,100
+combinazione fra loro, porta ad una drastica riduzione dei tempi di caricamento e di
+
+133
+00:17:06,100 --> 00:17:11,980
+conseguenza ad un enorme miglioramento dell'esperienza utente e anche del posizionamento sui
+
+134
+00:17:11,980 --> 00:17:18,380
+motori di ricerca. Però, soprattutto lato server, è importante sapere quello che si sta facendo.
+
+135
+00:17:21,020 --> 00:17:46,340
+Bene, molto probabilmente quest'episodio uscirà in ritardo sulla tabella di marcia, ma ci tenevo a
+
+136
+00:17:46,460 --> 00:17:52,460
+pubblicare un contenuto prima delle vacanze in modo da potervi augurare buone feste. Spero che
+
+137
+00:17:52,460 --> 00:17:58,020
+l'argomento vi abbia interessato, vi ricordo che in descrizione trovate il link al podcast
+
+138
+00:17:58,020 --> 00:18:05,100
+GitBar, mi raccomando seguitelo, recuperate tutti gli episodi in questo periodo dove tutti
+
+139
+00:18:05,100 --> 00:18:11,020
+abbiamo bene o male un po' più di tempo libero e a me non resta che augurarvi buone feste e
+
+140
+00:18:11,020 --> 00:18:16,620
+ricordarvi che un programmatore risolve i problemi, a volte anche usando il computer.
+

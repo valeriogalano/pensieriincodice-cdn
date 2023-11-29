@@ -1,0 +1,680 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:20,000 --> 00:00:25,000
+Salve a tutti ragazzi e bentornati per un nuovo episodio di Pensieri in codice.
+
+3
+00:00:25,000 --> 00:00:32,000
+Oggi parliamo un po' di linguaggi di programmazione ed in particolare dell'origine dei nomi di alcuni di essi.
+
+4
+00:00:32,000 --> 00:00:39,000
+Se infatti potrebbe sembrare che alcuni di questi nomi siano solamente acronimi o semplicemente parole prive di senso,
+
+5
+00:00:39,000 --> 00:00:48,000
+spesso nella mente dei loro inventori essi simboleggiavano intenzioni e speranze di un futuro successo delle proprie invenzioni.
+
+6
+00:00:48,000 --> 00:00:52,000
+O altre volte erano semplicemente un vezzo, come vedremo fra poco.
+
+7
+00:00:52,000 --> 00:01:01,000
+A proposito, questo episodio è pieno di parole e nomi stranieri, quindi mi scuso già in anticipo perché sicuramente sbaglierò qualche pronuncia, ok?
+
+8
+00:01:01,000 --> 00:01:03,000
+Procediamo.
+
+9
+00:01:10,000 --> 00:01:15,000
+Il FORTRAN è uno tra i primi linguaggi di programmazione mai creati.
+
+10
+00:01:15,000 --> 00:01:24,000
+Esso infatti nasce nel 1954, principalmente con lo scopo di implementare programmi per svolgere complessi calcoli matematici.
+
+11
+00:01:24,000 --> 00:01:30,000
+Il primo compilatore FORTRAN fu sviluppato per il calcolatore IBM 704.
+
+12
+00:01:30,000 --> 00:01:35,000
+Sì, perché all'epoca i compilatori venivano sviluppati per singoli calcolatori,
+
+13
+00:01:35,000 --> 00:01:40,000
+anche se noi oggi ci lamentiamo perché un programma gira solo su Mac o solo su Windows.
+
+14
+00:01:40,000 --> 00:01:45,000
+Ad ogni modo, questo compilatore era studiato per ottimizzare il codice compilato.
+
+15
+00:01:45,000 --> 00:01:53,000
+Questo perché i progettisti dell'epoca erano certi che nessuno avrebbe mai voluto utilizzare un linguaggio di programmazione ad alto livello.
+
+16
+00:01:53,000 --> 00:02:01,000
+Grazie ad un continuo processo di evoluzione ed un'enorme quantità di librerie e programmi sviluppati nel corso degli anni,
+
+17
+00:02:01,000 --> 00:02:07,000
+FORTRAN risulta tuttora un linguaggio utilizzato per specifiche applicazioni matematiche.
+
+18
+00:02:08,000 --> 00:02:14,000
+Il nome FORTRAN rispecchia appunto questo suo carattere spiccatamente volto al calcolo matematico.
+
+19
+00:02:14,000 --> 00:02:19,000
+Infatti, esso è l'acronimo di FORMULA TRANSLATION. FORTRAN.
+
+20
+00:02:28,000 --> 00:02:33,000
+Anche il COBOL è uno tra i più vecchi linguaggi di programmazione mai sviluppati.
+
+21
+00:02:33,000 --> 00:02:39,000
+Nato nei primi anni Sessanta negli Stati Uniti, da un lavoro congiunto tra varie aziende e agenzie governative,
+
+22
+00:02:39,000 --> 00:02:45,000
+il suo impiego primario era lo sviluppo di software per l'elaborazione dei dati commerciali.
+
+23
+00:02:45,000 --> 00:02:51,000
+Non a caso, moltissime applicazioni bancarie erano e sono tutt'oggi scritte in COBOL.
+
+24
+00:02:51,000 --> 00:02:57,000
+Nel corso degli anni, questo linguaggio ha subito molte evoluzioni e, per via della sua grande stabilità
+
+25
+00:02:57,000 --> 00:03:03,000
+e del suo esteso impiego in settori nei quali non è semplicissimo ristrutturare le infrastrutture software,
+
+26
+00:03:03,000 --> 00:03:07,000
+come banche, assicurazioni, bancomat, eccetera,
+
+27
+00:03:07,000 --> 00:03:14,000
+esso è ancora tutt'oggi ampiamente supportato da una buona comunità di programmatori.
+
+28
+00:03:14,000 --> 00:03:21,000
+Nel 2014 IBM stimava ancora una popolazione di circa un milione di programmatori COBOL.
+
+29
+00:03:21,000 --> 00:03:26,000
+E proprio questa sua natura, da subito ben definita, ne determinò il nome.
+
+30
+00:03:26,000 --> 00:03:31,000
+COBOL, infatti, è l'acronimo di Common Business Oriented Language,
+
+31
+00:03:31,000 --> 00:03:36,000
+cioè linguaggio comunemente orientato alle applicazioni commerciali.
+
+32
+00:03:45,000 --> 00:03:49,000
+PERL è un linguaggio di programmazione procedurale e interpretato.
+
+33
+00:03:49,000 --> 00:03:56,000
+Pensato come ausilio per i sistemisti, è ampiamente utilizzato per la realizzazione di CGI e Script Shell,
+
+34
+00:03:56,000 --> 00:04:01,000
+vista anche la sua estrema potenza nella manipolazione delle stringhe.
+
+35
+00:04:01,000 --> 00:04:04,000
+È un linguaggio progettato per la praticità.
+
+36
+00:04:04,000 --> 00:04:08,000
+Compattezza ed eleganza non sono tra i suoi principali obiettivi
+
+37
+00:04:08,000 --> 00:04:13,000
+e questo rende di fatto possibile eseguire le stesse operazioni in molti modi diversi.
+
+38
+00:04:14,000 --> 00:04:19,000
+È talmente flessibile che alcuni si divertono ad utilizzarlo per scrivere poesie,
+
+39
+00:04:19,000 --> 00:04:26,000
+programmando veri e propri codici che possono essere letti sia come poesie, appunto, che eseguiti come script.
+
+40
+00:04:27,000 --> 00:04:33,000
+Il PERL venne creato nel 1987 da Larry Wall e, vista la sua destinazione d'uso,
+
+41
+00:04:33,000 --> 00:04:40,000
+il suo nome viene comunemente interpretato come acronimo di Practical Extraction and Report Language,
+
+42
+00:04:40,000 --> 00:04:46,000
+nonostante sia la stessa documentazione ufficiale a cercare di scoraggiare l'utilizzo di questo acronimo.
+
+43
+00:04:54,000 --> 00:04:59,000
+Gli anni 60 furono un periodo che vide la nascita di moltissimi linguaggi di programmazione,
+
+44
+00:04:59,000 --> 00:05:04,000
+alcuni dei quali sono sopravvissuti fino a pochi anni fa o sono tuttora ancora in uso.
+
+45
+00:05:04,000 --> 00:05:09,000
+In quegli anni l'accesso ad un computer non era qualcosa di banale come oggi.
+
+46
+00:05:09,000 --> 00:05:15,000
+Era necessario inserire il proprio programma in una lista e aspettare che esso venisse eseguito,
+
+47
+00:05:15,000 --> 00:05:18,000
+e ciò poteva richiedere anche giorni d'attesa.
+
+48
+00:05:18,000 --> 00:05:23,000
+I principali utilizzi erano quindi di tipo governativo, industriale e universitario,
+
+49
+00:05:23,000 --> 00:05:29,000
+e i linguaggi di programmazione dell'epoca erano appunto pensati per questi specifici utilizzi.
+
+50
+00:05:29,000 --> 00:05:34,000
+Il BASIC è invece uno dei primi linguaggi utilizzabile per scoprire i codici,
+
+51
+00:05:34,000 --> 00:05:38,000
+non qualcosa di fortemente legato alla matematica come il FORTRAN,
+
+52
+00:05:38,000 --> 00:05:41,000
+né qualcosa di legato al business come il COBOL,
+
+53
+00:05:41,000 --> 00:05:48,000
+ma un linguaggio che avesse applicazioni più ampie e fosse più semplice da imparare e da utilizzare.
+
+54
+00:05:48,000 --> 00:05:54,000
+La creazione del BASIC risale dunque al 1964 ad opera di due professori,
+
+55
+00:05:54,000 --> 00:05:59,000
+Kemeny e Kurtz, che gli diedero come nome la cronologia di BASIC.
+
+56
+00:05:59,000 --> 00:06:03,000
+Per la precisione, come da buona abitudine dei programmatori nerd,
+
+57
+00:06:03,000 --> 00:06:10,000
+il primo programma in BASIC venne eseguito il 1 maggio 1964 alle 4 del mattino.
+
+58
+00:06:15,000 --> 00:06:20,000
+Il BASIC è un programma che è stato realizzato da parte di un gruppo di studenti
+
+59
+00:06:20,000 --> 00:06:22,000
+che si chiamano i BASIC.
+
+60
+00:06:22,000 --> 00:06:27,000
+Il BASIC è un programma che è stato realizzato da parte di un gruppo di studenti
+
+61
+00:06:27,000 --> 00:06:29,000
+che si chiamano i BASIC.
+
+62
+00:06:35,000 --> 00:06:42,000
+PHP è un linguaggio di scripting che supporta la programmazione ad oggetti.
+
+63
+00:06:42,000 --> 00:06:47,000
+Il suo autore lo creò come metodo per aggiungere dinamicità al proprio sito web
+
+64
+00:06:47,000 --> 00:06:52,000
+e solo successivamente fu rilasciato come linguaggio di programmazione open source.
+
+65
+00:06:52,000 --> 00:06:55,000
+Può essere utilizzato per la realizzazione di script shell,
+
+66
+00:06:55,000 --> 00:07:01,000
+ma la sua applicazione più comune e performante è la scrittura di software per il web.
+
+67
+00:07:01,000 --> 00:07:08,000
+WordPress, Magento, Prestashop, Jamla sono solo alcune delle tantissime applicazioni realizzate con PHP.
+
+68
+00:07:08,000 --> 00:07:13,000
+Questa enorme diffusione è dovuta sicuramente alla curva di apprendimento molto ripida,
+
+69
+00:07:13,000 --> 00:07:15,000
+ma anche all'estrema flessibilità.
+
+70
+00:07:15,000 --> 00:07:21,000
+Lo sviluppo dello stesso linguaggio non è infatti stato strettamente disciplinato fino al 2014,
+
+71
+00:07:21,000 --> 00:07:25,000
+dando da un lato una grande libertà di utilizzo agli sviluppatori,
+
+72
+00:07:25,000 --> 00:07:30,000
+ma generando dall'altro anche molta disomogeneità fra prodotti e versioni.
+
+73
+00:07:30,000 --> 00:07:38,000
+Viste le sue iniziali intenzioni, Rasmus Lerdorf creò la prima versione di PHP nel 1994
+
+74
+00:07:38,000 --> 00:07:41,000
+pensando all'acronimo di Personal Homepage.
+
+75
+00:07:41,000 --> 00:07:48,000
+Successivamente però il passaggio al PHP Group trasformò il nome del linguaggio in un acronimo ricorsivo.
+
+76
+00:07:48,000 --> 00:07:54,000
+Quindi oggi PHP sta per PHP Hypertext Processor.
+
+77
+00:08:02,000 --> 00:08:07,000
+Sempre nel corso degli anni 60, un docente svizzero tale Niklaus Wirth,
+
+78
+00:08:07,000 --> 00:08:12,000
+frustrato dall'assenza di un linguaggio di programmazione adatto all'insegnamento,
+
+79
+00:08:12,000 --> 00:08:14,000
+decise di creare il Pascal.
+
+80
+00:08:15,000 --> 00:08:18,000
+Più avanzato del BASIC e più comprensibile del FORTRAN,
+
+81
+00:08:18,000 --> 00:08:23,000
+il Pascal aveva una sintassi chiara e rigida, e una struttura forzata.
+
+82
+00:08:23,000 --> 00:08:27,000
+Era anche necessario dichiarare in anticipo le variabili e con una precisa forma,
+
+83
+00:08:27,000 --> 00:08:31,000
+e soprattutto non contemplava l'istruzione GOTO,
+
+84
+00:08:31,000 --> 00:08:34,000
+ampiamente utilizzata dagli altri linguaggi dell'epoca,
+
+85
+00:08:34,000 --> 00:08:39,000
+ma assolutamente sconsigliata per la corretta scrittura del codice.
+
+86
+00:08:39,000 --> 00:08:43,000
+Il Pascal non è un linguaggio utilizzabile nel mondo reale,
+
+87
+00:08:43,000 --> 00:08:47,000
+anche per la mancanza di varie funzionalità avanzate.
+
+88
+00:08:47,000 --> 00:08:52,000
+Tuttavia, è un ottimo punto di partenza per iniziare a programmare nel modo corretto.
+
+89
+00:08:52,000 --> 00:08:56,000
+A differenza di molti linguaggi moderni, è pensato per insegnare le basi
+
+90
+00:08:56,000 --> 00:09:00,000
+e non per perseguire obiettivi in tempi brevi.
+
+91
+00:09:00,000 --> 00:09:07,000
+Creato nel 1964, il nome Pascal gli fu dato in onore dello scienziato Blaise Pascal,
+
+92
+00:09:07,000 --> 00:09:11,000
+che nel 1644 inventò la Pascalina,
+
+93
+00:09:11,000 --> 00:09:15,000
+una macchina considerata l'antenato della moderna calcolatrice.
+
+94
+00:09:23,000 --> 00:09:26,000
+Python è un linguaggio di programmazione ad alto livello
+
+95
+00:09:26,000 --> 00:09:28,000
+che supporta la programmazione ad oggetti
+
+96
+00:09:28,000 --> 00:09:32,000
+e permette di creare sia script da eseguire a riga di comando
+
+97
+00:09:32,000 --> 00:09:35,000
+che applicazioni con interfaccia grafica.
+
+98
+00:09:35,000 --> 00:09:40,000
+Ricorda un po' il Perl, ma con una sintassi volutamente più semplice e leggibile.
+
+99
+00:09:40,000 --> 00:09:46,000
+Tra i suoi punti di forza ci sono sicuramente una curva di apprendimento abbastanza ripida
+
+100
+00:09:46,000 --> 00:09:50,000
+e un ottimo set di strumenti per il calcolo numerico,
+
+101
+00:09:50,000 --> 00:09:55,000
+caratteristica quest'ultima che lo rende particolarmente adatto alle applicazioni di machine learning
+
+102
+00:09:55,000 --> 00:10:00,000
+che, come ben sappiamo, in questi ultimi anni stanno vivendo un periodo di forte prosperità.
+
+103
+00:10:01,000 --> 00:10:05,000
+Fu inventato nel 1991 da Guido van Rossum
+
+104
+00:10:05,000 --> 00:10:10,000
+e prese il suo nome, Python, dalla passione di Guido per i Monty Python.
+
+105
+00:10:19,000 --> 00:10:21,000
+Java. Che dire di Java?
+
+106
+00:10:21,000 --> 00:10:28,000
+Ad alto livello, orientato agli oggetti, con una sconfinata community e una grandissima quantità di librerie.
+
+107
+00:10:28,000 --> 00:10:31,000
+Il linguaggio di programmazione per eccellenza
+
+108
+00:10:31,000 --> 00:10:34,000
+tra i più conosciuti, tra i più utilizzati dalle grandi aziende,
+
+109
+00:10:34,000 --> 00:10:37,000
+tra i più diffusi su tantissime piattaforme.
+
+110
+00:10:38,000 --> 00:10:42,000
+Inventato all'inizio degli anni 90 come un successore di C
+
+111
+00:10:42,000 --> 00:10:46,000
+che potesse essere utilizzato per programmare piccoli device,
+
+112
+00:10:46,000 --> 00:10:49,000
+Java ebbe la sua fortuna anche perché durante quel periodo
+
+113
+00:10:49,000 --> 00:10:54,000
+iniziò la diffusione di internet al di fuori degli ambienti governativi e universitari.
+
+114
+00:10:55,000 --> 00:10:59,000
+E il browser Netscape integrava il supporto alla Java Virtual Machine
+
+115
+00:10:59,000 --> 00:11:05,000
+rendendo così, di fatto, Java adatto allo sviluppo di applet per pagine web.
+
+116
+00:11:06,000 --> 00:11:09,000
+Alla nascita il nome iniziale era Oac
+
+117
+00:11:09,000 --> 00:11:14,000
+ma poi dovette essere cambiato perché un linguaggio di nome Oac esisteva già
+
+118
+00:11:14,000 --> 00:11:16,000
+e si optò così per Java
+
+119
+00:11:16,000 --> 00:11:22,000
+in quanto i suoi ideatori amavano ritrovarsi spesso a discutere del progetto presso un bar
+
+120
+00:11:22,000 --> 00:11:28,000
+davanti ad una tazza di caffè della qualità Java proveniente dall'omonima isola indonesiana.
+
+121
+00:11:29,000 --> 00:11:32,000
+Una leggenda metropolitana mai confermata vuole invece
+
+122
+00:11:32,000 --> 00:11:36,000
+che il nome Java sia l'acronimo di Just Another Vacuum Acronym
+
+123
+00:11:36,000 --> 00:11:42,000
+questo come un modo per scherzare sullo smodato utilizzo di acronimi in campo informatico.
+
+124
+00:11:50,000 --> 00:11:55,000
+C Sharp è un linguaggio di programmazione a oggetti sviluppato da Microsoft.
+
+125
+00:11:55,000 --> 00:12:00,000
+Nasce come un misto di Delphi, C++, Java e Visual Basic
+
+126
+00:12:00,000 --> 00:12:03,000
+e come parte del progetto .NET Framework.
+
+127
+00:12:03,000 --> 00:12:08,000
+Inizialmente definito come un'imitazione più limitata di Java
+
+128
+00:12:08,000 --> 00:12:15,000
+viene in realtà dalla stessa Microsoft considerato più vicino al C++ come struttura e sintassi
+
+129
+00:12:15,000 --> 00:12:18,000
+e questa ipotesi è anche avvalorata dal fatto che
+
+130
+00:12:18,000 --> 00:12:23,000
+con il passare del tempo C Sharp e Java si sono progressivamente allontanate
+
+131
+00:12:23,000 --> 00:12:26,000
+dal punto di vista delle caratteristiche simili.
+
+132
+00:12:26,000 --> 00:12:32,000
+Ad ogni modo il linguaggio nasce nel 2000 ad opera di Anders Heilsberg
+
+133
+00:12:32,000 --> 00:12:39,000
+e in lingua inglese il suo nome si pronuncia C Sharp che vuol dire vedere nitidamente.
+
+134
+00:12:40,000 --> 00:12:44,000
+Javascript è un linguaggio di scripting ad eventi
+
+135
+00:12:44,000 --> 00:12:48,000
+che nelle sue versioni più recenti supporta anche la programmazione ad oggetti.
+
+136
+00:12:48,000 --> 00:12:53,000
+Il suo maggiore e più conosciuto utilizzo consiste nella programmazione di script
+
+137
+00:12:53,000 --> 00:12:55,000
+eseguiti nei browser come Chrome o Firefox
+
+138
+00:12:55,000 --> 00:12:59,000
+per arricchire l'esperienza utente nei siti web e nelle web applications
+
+139
+00:12:59,000 --> 00:13:02,000
+ma negli ultimi anni e nelle ultime versioni
+
+140
+00:13:02,000 --> 00:13:05,000
+il linguaggio è diventato un po' più complesso
+
+141
+00:13:06,000 --> 00:13:09,000
+La storia del nome Javascript è un po' travagliata
+
+142
+00:13:09,000 --> 00:13:14,000
+anche perché in realtà il linguaggio non si chiama Javascript o almeno non più.
+
+143
+00:13:14,000 --> 00:13:19,000
+Fu inventato nel 1995 e rilasciato per la prima volta nel 96
+
+144
+00:13:19,000 --> 00:13:23,000
+all'interno di Netscape 2 con il nome LiveScript.
+
+145
+00:13:23,000 --> 00:13:27,000
+Dopo pochi mesi, poiché in quel periodo il linguaggio conosciuto come Java
+
+146
+00:13:27,000 --> 00:13:30,000
+era un po' diventato un po' più difficile
+
+147
+00:13:31,000 --> 00:13:35,000
+Dopo pochi mesi, poiché in quel periodo il linguaggio conosciuto come Java
+
+148
+00:13:35,000 --> 00:13:38,000
+viveva un periodo di grande prosperità
+
+149
+00:13:38,000 --> 00:13:41,000
+con una zeccatissima manovra di marketing
+
+150
+00:13:41,000 --> 00:13:45,000
+si decise di rinominare LiveScript in Javascript
+
+151
+00:13:45,000 --> 00:13:50,000
+e il linguaggio fu perfino modificato per farlo assomigliare di più a quello di Sun.
+
+152
+00:13:50,000 --> 00:13:53,000
+Poiché però all'epoca anche Microsoft stava lavorando
+
+153
+00:13:53,000 --> 00:13:56,000
+su un suo linguaggio simile chiamato Jscript
+
+154
+00:13:56,000 --> 00:14:02,000
+si rese necessario trovare uno standard che facesse in modo da non complicare troppo la situazione
+
+155
+00:14:02,000 --> 00:14:08,000
+non era pensabile che Netscape utilizzasse un linguaggio di scripting e Internet Explorer un altro
+
+156
+00:14:08,000 --> 00:14:11,000
+quindi Javascript fu affidato all'ECMA
+
+157
+00:14:11,000 --> 00:14:14,000
+un'organizzazione europea per gli standard
+
+158
+00:14:14,000 --> 00:14:19,000
+Il risultato di questa operazione fu la nascita nel 1997 dell'ECMAScript
+
+159
+00:14:19,000 --> 00:14:23,000
+che attraverso vari aggiornamenti è diventato lo standard di oggi
+
+160
+00:14:23,000 --> 00:14:26,000
+cioè ECMAScript 6 o anche ES6
+
+161
+00:14:26,000 --> 00:14:32,000
+nonostante ciò però la mossa di marketing del 1996 ebbe un tale effetto positivo
+
+162
+00:14:32,000 --> 00:14:38,000
+che tutt'oggi il nome Javascript continua ad essere utilizzato molto più di ECMAScript
+
+163
+00:14:45,000 --> 00:14:52,000
+Bene ragazzi, spero che questa breve carrellata su un po' di curiosità sui linguaggi di programmazione vi sia piaciuta
+
+164
+00:14:52,000 --> 00:14:56,000
+ovviamente vista la quantità di linguaggi esistenti ho dovuto fare una scelta
+
+165
+00:14:56,000 --> 00:15:02,000
+ma ciò non toglie che si possa pensare ad un secondo episodio per parlare dei nomi di altri linguaggi
+
+166
+00:15:02,000 --> 00:15:08,000
+voi potete utilizzare i commenti o unirvi al gruppo Telegram che trovate in descrizione
+
+167
+00:15:08,000 --> 00:15:15,000
+per farmi sapere se ho dimenticato qualcosa o se volete che parli di un qualche linguaggio in particolare
+
+168
+00:15:15,000 --> 00:15:21,000
+io per ora vi saluto, come al solito vi ringrazio e vi do appuntamento al prossimo episodio
+
+169
+00:15:22,000 --> 00:15:24,000
+a presto
+
+170
+00:15:52,000 --> 00:15:54,000
+utilizzabile?
+

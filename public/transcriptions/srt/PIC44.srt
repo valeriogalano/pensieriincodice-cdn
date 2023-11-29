@@ -1,0 +1,828 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:20,000 --> 00:00:24,000
+Salve a tutti e ben ritrovati su Pensieri in codice.
+
+3
+00:00:24,000 --> 00:00:28,000
+Nell'episodio di oggi torniamo a parlare di Web
+
+4
+00:00:28,000 --> 00:00:33,000
+e in particolare di come funzionano alcune parti del Web
+
+5
+00:00:33,000 --> 00:00:39,000
+e ancora più in particolare in questo episodio parleremo del protocollo HTTPS.
+
+6
+00:00:40,000 --> 00:00:46,000
+Molto probabilmente in percentuale sono pochi gli utenti del Web che lo hanno sentito nominare
+
+7
+00:00:46,000 --> 00:00:50,000
+e ancora meno quelli che fanno caso alla sua presenza.
+
+8
+00:00:50,000 --> 00:00:56,000
+Ma questo protocollo è proprio quello che ci permette di svolgere in sicurezza
+
+9
+00:00:56,000 --> 00:01:02,000
+tutte quelle operazioni che sono ormai entrate a far parte della nostra routine giornaliera.
+
+10
+00:01:02,000 --> 00:01:07,000
+Dalle operazioni bancarie, ai accessi alle aree riservate,
+
+11
+00:01:07,000 --> 00:01:12,000
+la consultazione dell'email, il caricamento di file nel cloud,
+
+12
+00:01:12,000 --> 00:01:15,000
+gli acquisti online e tanto altro.
+
+13
+00:01:15,000 --> 00:01:22,000
+In pratica stiamo sfruttando il protocollo HTTPS ogni volta che visitiamo quei siti
+
+14
+00:01:22,000 --> 00:01:25,000
+che il nostro browser definisce sicuri
+
+15
+00:01:25,000 --> 00:01:32,000
+o per i quali ci mostra un piccolo lucchetto verde in alto vicino alla barra dell'indirizzo.
+
+16
+00:01:32,000 --> 00:01:38,000
+Prima però di tuffarci nell'argomento di oggi avrei una piccola richiesta da farvi.
+
+17
+00:01:38,000 --> 00:01:44,000
+Come probabilmente già sapete, ne ho già parlato in un vecchio episodio,
+
+18
+00:01:44,000 --> 00:01:50,000
+sto cercando di farmi confermare la cosiddetta Affiliazione Amazon.
+
+19
+00:01:50,000 --> 00:01:55,000
+Si tratta di un programma di affiliazione grazie al quale posso condividere dei link
+
+20
+00:01:55,000 --> 00:01:58,000
+utilizzando i miei contenuti social
+
+21
+00:01:58,000 --> 00:02:03,000
+e i eventuali acquisti fatti dagli utenti attraverso quei link
+
+22
+00:02:03,000 --> 00:02:07,000
+generano senza caricare sul prezzo per l'acquirente
+
+23
+00:02:07,000 --> 00:02:12,000
+un piccolo profitto per il creatore di contenuti, cioè me,
+
+24
+00:02:12,000 --> 00:02:18,000
+che utilizzo questi, chiamiamoli, fondi per acquistare materiale per il podcast.
+
+25
+00:02:18,000 --> 00:02:22,000
+Ora, se avete ascoltato quel vecchio episodio sapete già che per un podcaster
+
+26
+00:02:22,000 --> 00:02:26,000
+non è così semplice farsi confermare l'affiliazione
+
+27
+00:02:26,000 --> 00:02:31,000
+in quanto quasi tutte le piattaforme di podcasting non sono contemplate da Amazon
+
+28
+00:02:31,000 --> 00:02:36,000
+e l'unica su cui posso effettivamente contare è YouTube,
+
+29
+00:02:36,000 --> 00:02:40,000
+che poi non è esattamente una piattaforma di podcast, ma lasciamo stare.
+
+30
+00:02:40,000 --> 00:02:45,000
+Detto questo, il mio problema è che Amazon mi ha chiuso di nuovo l'affiliazione
+
+31
+00:02:45,000 --> 00:02:48,000
+per la decima o undicesima volta.
+
+32
+00:02:48,000 --> 00:02:52,000
+Quindi, poiché vorrei evitare che me la chiudessero di nuovo
+
+33
+00:02:52,000 --> 00:02:56,000
+semplicemente perché riaprirla e riaggiornare tutti i link
+
+34
+00:02:56,000 --> 00:03:01,000
+comincia a diventare una perdita di tempo notevole,
+
+35
+00:03:01,000 --> 00:03:06,000
+la mia richiesta è, oltre ovviamente a diffondere il più possibile il podcast,
+
+36
+00:03:06,000 --> 00:03:12,000
+quella di iscrivervi, se potete, al canale YouTube di Pensieri in Codice.
+
+37
+00:03:12,000 --> 00:03:16,000
+Questo perché, una volta raggiunti i 500 iscritti,
+
+38
+00:03:16,000 --> 00:03:22,000
+in teoria Amazon dovrebbe verificare e confermare questa affiliazione.
+
+39
+00:03:22,000 --> 00:03:28,000
+A quel punto avrò qualche risorsa in più sia economica sia di tempo, diciamo così,
+
+40
+00:03:28,000 --> 00:03:31,000
+da dedicare alla produzione dei contenuti.
+
+41
+00:03:31,000 --> 00:03:35,000
+Se potete ve ne sarei grato, trovate il link in descrizione.
+
+42
+00:03:35,000 --> 00:03:39,000
+Ora però bando alle ciance e iniziamo con l'argomento di oggi.
+
+43
+00:03:42,000 --> 00:03:46,000
+L'argomento di oggi
+
+44
+00:03:59,000 --> 00:04:02,000
+Lo abbiamo già detto un sacco di volte,
+
+45
+00:04:02,000 --> 00:04:08,000
+quando navighiamo sul web le informazioni che inviamo e che riceviamo da un sito
+
+46
+00:04:08,000 --> 00:04:12,000
+non vanno direttamente dal nostro computer al sito e viceversa,
+
+47
+00:04:12,000 --> 00:04:15,000
+ma sia all'andata che al ritorno
+
+48
+00:04:15,000 --> 00:04:20,000
+passano attraverso tutta una serie di sistemi intermedi
+
+49
+00:04:20,000 --> 00:04:23,000
+che vengono definiti nodi.
+
+50
+00:04:23,000 --> 00:04:28,000
+Ognuno di questi nodi vede quindi passare le nostre informazioni
+
+51
+00:04:28,000 --> 00:04:31,000
+e chi può avere accesso ad uno di questi nodi,
+
+52
+00:04:31,000 --> 00:04:33,000
+non importa se in modo legale o meno,
+
+53
+00:04:33,000 --> 00:04:38,000
+quindi non importa se l'amministratore legittimo del nodo
+
+54
+00:04:38,000 --> 00:04:42,000
+o un hacker che è riuscito a prenderne il controllo,
+
+55
+00:04:42,000 --> 00:04:48,000
+potrebbe sia tentare di leggere le nostre informazioni da e verso il sito web,
+
+56
+00:04:48,000 --> 00:04:54,000
+sia tentare addirittura di manipolarle per ottenere un qualche tipo di vantaggio.
+
+57
+00:04:54,000 --> 00:05:01,000
+Immaginate ad esempio che stiate effettuando un acquisto su un sito di e-commerce.
+
+58
+00:05:01,000 --> 00:05:05,000
+Avete riempito il vostro carrello, siete arrivati alla cassa
+
+59
+00:05:05,000 --> 00:05:11,000
+e state inserendo le informazioni della vostra carta di credito per pagare.
+
+60
+00:05:11,000 --> 00:05:17,000
+Se un nodo intermedio alla comunicazione potesse avere accesso a questi dati
+
+61
+00:05:17,000 --> 00:05:19,000
+della vostra carta di credito,
+
+62
+00:05:19,000 --> 00:05:23,000
+nulla gli impedirebbe di effettuare una serie di transazioni
+
+63
+00:05:23,000 --> 00:05:25,000
+e svuotarvi il conto in banca.
+
+64
+00:05:25,000 --> 00:05:27,000
+Allora voi potreste dire
+
+65
+00:05:27,000 --> 00:05:32,000
+bene, nessun problema, pago il mio ordine con un bonifico.
+
+66
+00:05:32,000 --> 00:05:36,000
+A quel punto, selezionando l'opzione bonifico sul sito che state visitando,
+
+67
+00:05:36,000 --> 00:05:42,000
+sarà il sito stesso a mandarvi il proprio IBAN in modo che voi possiate pagare.
+
+68
+00:05:42,000 --> 00:05:49,000
+E se un nodo intermedio potesse leggere questo IBAN e cambiarlo durante il transito
+
+69
+00:05:49,000 --> 00:05:53,000
+e farvi arrivare un altro IBAN, magari il proprio,
+
+70
+00:05:53,000 --> 00:06:00,000
+so che sembrano due scenari impossibili, ma in realtà sono impossibili
+
+71
+00:06:00,000 --> 00:06:04,000
+proprio grazie al protocollo HTTPS.
+
+72
+00:06:04,000 --> 00:06:07,000
+La comunicazione attraverso tale protocollo,
+
+73
+00:06:07,000 --> 00:06:14,000
+che vi ricordo si verifica semplicemente controllando che il browser indichi il sito come sicuro,
+
+74
+00:06:14,000 --> 00:06:19,000
+garantisce ben 3 vantaggi rispetto ad una comunicazione non sicura
+
+75
+00:06:19,000 --> 00:06:22,000
+tramite il normale protocollo HTTP.
+
+76
+00:06:22,000 --> 00:06:26,000
+Il primo di questi vantaggi è proprio la privacy.
+
+77
+00:06:26,000 --> 00:06:32,000
+Il protocollo HTTPS utilizza infatti un algoritmo di criptografia
+
+78
+00:06:32,000 --> 00:06:38,000
+per cifrare la comunicazione tra il nostro browser ed il sito web.
+
+79
+00:06:38,000 --> 00:06:45,000
+In questo modo, qualsiasi nodo intermedio, nonostante continui a vedere passare il nostro traffico,
+
+80
+00:06:46,000 --> 00:06:53,000
+non avendo le chiavi criptografiche non potrà decifrare nessuna delle informazioni che vedrà passare
+
+81
+00:06:53,000 --> 00:06:59,000
+e ciò renderà di fatto inutili i tentativi di intercettare le comunicazioni.
+
+82
+00:06:59,000 --> 00:07:06,000
+Allo stesso modo, il protocollo HTTPS garantisce anche l'integrità dei dati
+
+83
+00:07:06,000 --> 00:07:09,000
+e questo sempre grazie alla criptografia.
+
+84
+00:07:09,000 --> 00:07:14,000
+Difatti, non potendo interpretare le informazioni che transitano,
+
+85
+00:07:14,000 --> 00:07:18,000
+nessun nodo sarà in grado di modificarle in nessun modo
+
+86
+00:07:18,000 --> 00:07:24,000
+e se dovesse provarci queste non sarebbero più decifrabili dal nostro browser o dal sito web
+
+87
+00:07:24,000 --> 00:07:27,000
+rendendo di fatto inutile questo tentativo di attacco
+
+88
+00:07:27,000 --> 00:07:33,000
+che per inciso prende il nome di Attacco Man in the Middle.
+
+89
+00:07:34,000 --> 00:07:39,000
+In terzo luogo, questo protocollo permette anche di identificare in modo univoco
+
+90
+00:07:39,000 --> 00:07:42,000
+destinatario e emittente della comunicazione
+
+91
+00:07:42,000 --> 00:07:48,000
+e ciò avviene grazie all'utilizzo dei cosiddetti certificati SSL.
+
+92
+00:07:48,000 --> 00:07:52,000
+Questi certificati sono sostanzialmente delle chiavi criptografiche
+
+93
+00:07:52,000 --> 00:07:56,000
+che vengono rilasciate da delle autorità preposte
+
+94
+00:07:56,000 --> 00:08:00,000
+e che vengono poi utilizzati dai browser e dai web server
+
+95
+00:08:00,000 --> 00:08:04,000
+per aggiungere una firma digitale ai messaggi inviati.
+
+96
+00:08:04,000 --> 00:08:08,000
+In tal modo, chiunque riceva un messaggio grazie a tale firma
+
+97
+00:08:08,000 --> 00:08:15,000
+può verificare che esso sia stato effettivamente inviato da quel particolare emittente.
+
+98
+00:08:31,000 --> 00:08:36,000
+Abbiamo dunque visto cosa è in grado di fare il protocollo HTTPS.
+
+99
+00:08:36,000 --> 00:08:41,000
+Ora, in questo blocco, proviamo a capire quale tecniche sono state utilizzate
+
+100
+00:08:41,000 --> 00:08:44,000
+per ottenere questi risultati.
+
+101
+00:08:44,000 --> 00:08:49,000
+Di criptografia abbiamo già parlato più volte su Pensieri in Codice.
+
+102
+00:08:49,000 --> 00:08:53,000
+Vi lascio in descrizione un po' di link a vecchi episodi
+
+103
+00:08:53,000 --> 00:08:56,000
+mentre per chi vuole un po' di ricerca
+
+104
+00:08:56,000 --> 00:08:59,000
+teniamo a mente solo un paio di nozioni
+
+105
+00:08:59,000 --> 00:09:03,000
+e cioè che criptografare un messaggio
+
+106
+00:09:03,000 --> 00:09:07,000
+significa prendere questo messaggio e modificarlo
+
+107
+00:09:07,000 --> 00:09:11,000
+utilizzando un algoritmo e una cosiddetta chiave
+
+108
+00:09:11,000 --> 00:09:14,000
+che di solito è una stringa di testo.
+
+109
+00:09:14,000 --> 00:09:17,000
+L'algoritmo è solitamente qualcosa di standard,
+
+110
+00:09:17,000 --> 00:09:21,000
+di condiviso tra tutti quelli che devono essere utilizzati.
+
+111
+00:09:21,000 --> 00:09:25,000
+Nel caso del web si parla di protocollo TLS.
+
+112
+00:09:25,000 --> 00:09:28,000
+Per quanto riguarda la chiave, invece,
+
+113
+00:09:28,000 --> 00:09:34,000
+questa è conosciuta solamente dal mittente e dal destinatario della comunicazione.
+
+114
+00:09:34,000 --> 00:09:40,000
+Questo perché, anche se tutti sanno in che modo è stato criptografato il messaggio,
+
+115
+00:09:40,000 --> 00:09:43,000
+la chiave non è stata utilizzata.
+
+116
+00:09:43,000 --> 00:09:47,000
+La chiave è stata utilizzata solo per il messaggio.
+
+117
+00:09:47,000 --> 00:09:51,000
+Anche se tutti sanno in che modo è stato criptografato il messaggio,
+
+118
+00:09:51,000 --> 00:09:56,000
+solamente mittente e destinatario devono essere in grado di poterlo decifrare.
+
+119
+00:09:56,000 --> 00:10:00,000
+Descritta in questo modo sembra tutto molto semplice.
+
+120
+00:10:00,000 --> 00:10:05,000
+Il mio browser, quando comunica ad esempio con Amazon,
+
+121
+00:10:05,000 --> 00:10:10,000
+utilizzerà una chiave per criptare e decriptare i messaggi.
+
+122
+00:10:10,000 --> 00:10:13,000
+Quando invece comunica con eBay,
+
+123
+00:10:13,000 --> 00:10:16,000
+utilizzerà una chiave diversa.
+
+124
+00:10:16,000 --> 00:10:20,000
+Così il computer di Antonio, quando comunica con Amazon,
+
+125
+00:10:20,000 --> 00:10:25,000
+userà ancora un'altra chiave e un'altra con eBay e così via.
+
+126
+00:10:25,000 --> 00:10:31,000
+Tutte chiavi diverse fra loro, tutte comunicazioni criptografate diversamente.
+
+127
+00:10:31,000 --> 00:10:38,000
+C'è solo un piccolo problema in questo scenario ed è al tempo zero, diciamo così.
+
+128
+00:10:38,000 --> 00:10:42,000
+Cioè quando ancora il browser ed il sito web
+
+129
+00:10:42,000 --> 00:10:45,000
+non hanno preso accordi sulla chiave da utilizzare.
+
+130
+00:10:45,000 --> 00:10:48,000
+Cioè la prima volta che un browser si collega ad un sito web
+
+131
+00:10:48,000 --> 00:10:52,000
+e deve instaurare in qualche modo una comunicazione protetta,
+
+132
+00:10:52,000 --> 00:10:56,000
+dovrà concordare con il sito una chiave da utilizzare.
+
+133
+00:10:56,000 --> 00:10:59,000
+E se la comunicazione non è ancora protetta,
+
+134
+00:10:59,000 --> 00:11:04,000
+occorre un metodo per prendere accordi sulla chiave
+
+135
+00:11:04,000 --> 00:11:07,000
+o in realtà sulle chiavi da utilizzare,
+
+136
+00:11:07,000 --> 00:11:10,000
+facendo in modo però che nessuno dei nodi in ascolto
+
+137
+00:11:10,000 --> 00:11:13,000
+possa carpire tale chiave,
+
+138
+00:11:13,000 --> 00:11:17,000
+altrimenti sarebbe anch'esso in grado di decifrare i nostri messaggi.
+
+139
+00:11:17,000 --> 00:11:22,000
+E per fare ciò viene utilizzato un algoritmo che io ritengo geniale
+
+140
+00:11:22,000 --> 00:11:26,000
+e che prende il nome di criptografia asimmetrica.
+
+141
+00:11:26,000 --> 00:11:30,000
+Lo abbiamo già descritto abbastanza in dettaglio in un altro episodio
+
+142
+00:11:30,000 --> 00:11:33,000
+che vi lascio in descrizione.
+
+143
+00:11:33,000 --> 00:11:38,000
+Però il succo del discorso è che nella criptografia asimmetrica
+
+144
+00:11:38,000 --> 00:11:41,000
+si utilizzano due chiavi.
+
+145
+00:11:41,000 --> 00:11:46,000
+Una, la chiave pubblica, viene utilizzata per cifrare i messaggi.
+
+146
+00:11:46,000 --> 00:11:51,000
+Un'altra, la chiave privata, viene invece utilizzata per decifrarli.
+
+147
+00:11:51,000 --> 00:11:54,000
+La chiave pubblica è appunto pubblica
+
+148
+00:11:54,000 --> 00:12:00,000
+e può essere data a tutti coloro che devono comunicare con uno specifico destinatario.
+
+149
+00:12:00,000 --> 00:12:04,000
+La chiave privata invece è in possesso del solo destinatario,
+
+150
+00:12:04,000 --> 00:12:08,000
+quindi in pratica chiunque è in grado di cifrare dei messaggi
+
+151
+00:12:08,000 --> 00:12:11,000
+al fine di mandarli a quello specifico destinatario,
+
+152
+00:12:11,000 --> 00:12:16,000
+ma solo quel destinatario sarà in grado di leggerli.
+
+153
+00:12:35,000 --> 00:12:40,000
+In ultimo, è interessante capire anche come viene sfruttato
+
+154
+00:12:40,000 --> 00:12:43,000
+il certificato nel protocollo HTTPS.
+
+155
+00:12:43,000 --> 00:12:49,000
+In effetti, i certificati sono proprio le chiavi di criptografia
+
+156
+00:12:49,000 --> 00:12:54,000
+e pertanto si compongono di una chiave pubblica e una chiave privata,
+
+157
+00:12:54,000 --> 00:12:57,000
+che poi in realtà non sono altro che due stringhe di testo.
+
+158
+00:12:57,000 --> 00:13:00,000
+La cosa interessante però è che i certificati
+
+159
+00:13:01,000 --> 00:13:04,000
+vengono anche utilizzati, come abbiamo detto prima,
+
+160
+00:13:04,000 --> 00:13:09,000
+per verificare l'identità del sito con il quale si sta interagendo.
+
+161
+00:13:09,000 --> 00:13:14,000
+Questa identificazione avviene per mezzo di un meccanismo
+
+162
+00:13:14,000 --> 00:13:17,000
+che viene definito catena di fiducia.
+
+163
+00:13:17,000 --> 00:13:24,000
+Ogni certificato infatti viene rilasciato da un ente certificatore,
+
+164
+00:13:24,000 --> 00:13:26,000
+una Certificate Authority,
+
+165
+00:13:26,000 --> 00:13:32,000
+fra le più conosciute ci sono Symantec, Let's Encrypt, GoDaddy, Comodo.
+
+166
+00:13:32,000 --> 00:13:36,000
+E in pratica queste organizzazioni si occupano sia di generare
+
+167
+00:13:36,000 --> 00:13:40,000
+i vari certificati dei vari domini dei siti web,
+
+168
+00:13:40,000 --> 00:13:44,000
+sia di permettere ai nostri browser di riconoscere
+
+169
+00:13:44,000 --> 00:13:48,000
+che quel determinato certificato che gli è stato inviato
+
+170
+00:13:48,000 --> 00:13:52,000
+appartiene effettivamente a quel determinato sito web.
+
+171
+00:13:52,000 --> 00:13:55,000
+Ora, il processo funziona più o meno in questo modo.
+
+172
+00:13:55,000 --> 00:14:00,000
+Le Certification Authorities hanno dei particolari certificati
+
+173
+00:14:00,000 --> 00:14:03,000
+che vengono definiti Root Certificates,
+
+174
+00:14:03,000 --> 00:14:05,000
+cioè certificati radice.
+
+175
+00:14:05,000 --> 00:14:09,000
+Utilizzando questi certificati generano altri certificati
+
+176
+00:14:09,000 --> 00:14:13,000
+e li assegnano ai siti web e ai domini che ne fanno richiesta.
+
+177
+00:14:13,000 --> 00:14:17,000
+In questo modo, quando i nostri browser si connettono ad un sito web
+
+178
+00:14:17,000 --> 00:14:19,000
+utilizzato da un'altra organizzazione,
+
+179
+00:14:19,000 --> 00:14:22,000
+quando i nostri browser si connettono ad un sito web
+
+180
+00:14:22,000 --> 00:14:25,000
+utilizzando il protocollo HTTPS,
+
+181
+00:14:25,000 --> 00:14:28,000
+ne scaricano il certificato e verificano
+
+182
+00:14:28,000 --> 00:14:32,000
+che questo sia o meno un certificato radice.
+
+183
+00:14:32,000 --> 00:14:35,000
+Se, come nella maggior parte dei casi,
+
+184
+00:14:35,000 --> 00:14:39,000
+il certificato di un sito web non è un certificato radice,
+
+185
+00:14:39,000 --> 00:14:43,000
+allora scarica il certificato intermedio
+
+186
+00:14:43,000 --> 00:14:47,000
+grazie al quale è stato firmato il certificato del sito web.
+
+187
+00:14:47,000 --> 00:14:50,000
+Se anche questo non è un certificato radice,
+
+188
+00:14:50,000 --> 00:14:55,000
+di nuovo scarica il certificato usato per firmare il certificato intermedio
+
+189
+00:14:55,000 --> 00:14:58,000
+e così via, finché ad un certo punto,
+
+190
+00:14:58,000 --> 00:15:01,000
+risalendo la catena delle firme dei certificati,
+
+191
+00:15:01,000 --> 00:15:04,000
+raggiungerà un certificato radice.
+
+192
+00:15:04,000 --> 00:15:06,000
+A quel punto, e solo a quel punto,
+
+193
+00:15:06,000 --> 00:15:10,000
+il nostro browser potrà essere sicuro che il certificato è autentico
+
+194
+00:15:10,000 --> 00:15:15,000
+e ci mostrerà il sito web che stiamo visitando come sicuro.
+
+195
+00:15:15,000 --> 00:15:18,000
+Ovviamente, se questa catena di fiducia
+
+196
+00:15:18,000 --> 00:15:23,000
+dovesse interrompersi o non dovesse mai portare ad un certificato radice,
+
+197
+00:15:23,000 --> 00:15:27,000
+beh, allora il sito verrà contrassegnato come pericoloso.
+
+198
+00:15:46,000 --> 00:15:50,000
+Bene, anche oggi siamo giunti al termine dell'episodio.
+
+199
+00:15:50,000 --> 00:15:53,000
+Io spero di aver descritto questi concetti
+
+200
+00:15:53,000 --> 00:15:58,000
+che in realtà sono molto complicati nel modo più chiaro possibile.
+
+201
+00:15:58,000 --> 00:16:01,000
+In ogni caso, vi lascio in descrizione
+
+202
+00:16:01,000 --> 00:16:04,000
+un po' di materiale che potete recuperarvi.
+
+203
+00:16:04,000 --> 00:16:06,000
+Per oggi quindi è proprio tutto,
+
+204
+00:16:06,000 --> 00:16:10,000
+voi fate tutte quelle cose che devono fare gli ascoltatori di podcast,
+
+205
+00:16:10,000 --> 00:16:14,000
+commentate, mettete like, iscrivetevi, eccetera, eccetera, eccetera,
+
+206
+00:16:14,000 --> 00:16:18,000
+e non dimenticate che un informatico risolve problemi,
+
+207
+00:16:18,000 --> 00:16:21,000
+a volte anche usando il computer.
+

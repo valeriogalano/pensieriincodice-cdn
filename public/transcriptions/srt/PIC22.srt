@@ -1,0 +1,556 @@
+1
+00:00:00,000 --> 00:00:09,960
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:19,960 --> 00:00:24,040
+Buongiorno a tutti ragazzi e ben ritrovati per un nuovo episodio di Pensieri in codice,
+
+3
+00:00:24,040 --> 00:00:27,800
+il podcast in cui parliamo di argomenti presi dal mondo del software,
+
+4
+00:00:27,800 --> 00:00:34,680
+di internet e della programmazione. L'episodio di oggi uscirà con un certo ritardo rispetto alla
+
+5
+00:00:34,680 --> 00:00:41,760
+tabella di marcia ed ecco perché sto registrando in questo orario in fausto nonostante il traffico,
+
+6
+00:00:41,760 --> 00:00:48,680
+la pioggia, le campane e tutti i disturbi audio possibili e immaginabili. Purtroppo però l'argomento
+
+7
+00:00:48,680 --> 00:00:56,120
+di oggi è un territorio abbastanza nuovo anche per me e quindi ho riscritto questo episodio almeno
+
+8
+00:00:56,120 --> 00:01:01,200
+due volte. Spero però che ne venga fuori qualcosa di abbastanza comprensibile e che
+
+9
+00:01:01,200 --> 00:01:07,160
+tutti questi rumori non ci diano troppo fastidio. In caso contrario vi invito a farmelo sapere nei
+
+10
+00:01:07,160 --> 00:01:12,080
+commenti oppure venendomelo a dire sul gruppo Telegram di Pensieri in codice di cui trovate
+
+11
+00:01:12,080 --> 00:01:18,360
+il link in descrizione. Prima di procedere però con l'argomento di oggi vi rubo giusto un minuto
+
+12
+00:01:18,360 --> 00:01:25,160
+per fare un paio di avvisi. Innanzitutto sabato 16 11 ho avuto il piacere di partecipare in qualità
+
+13
+00:01:25,160 --> 00:01:31,240
+di ospite ad un episodio del podcast l'intelligenza artificiale spiegata semplice con Giacinto Fiore
+
+14
+00:01:31,240 --> 00:01:37,120
+e Pasquale Viscanti. Abbiamo parlato di auto a guida autonoma, acquisti tramite voce, app per
+
+15
+00:01:37,120 --> 00:01:42,320
+bambini non udenti e molto altro. Vi lascio quindi il link della puntata in descrizione e mi
+
+16
+00:01:42,320 --> 00:01:49,520
+raccomando andate a recuperarla. Secondo avviso nell'episodio precedente il numero 21 sull'anatomia
+
+17
+00:01:49,520 --> 00:01:56,320
+di un sito web abbiamo accennato al concetto di indirizzo IP e come mi faceva notare Cristiano
+
+18
+00:01:56,320 --> 00:02:01,640
+nel gruppo Telegram di Pensieri in codice ho detto che i numeri che compongono gli indirizzi IP vanno
+
+19
+00:02:01,640 --> 00:02:12,120
+da 1 a 255. In realtà però questo non è vero perché essi possono variare da 0 a 255 e quindi
+
+20
+00:02:12,120 --> 00:02:18,840
+mi scuso per aver fatto confusione. Fatta quindi questa doverosa precisazione possiamo ora procedere
+
+21
+00:02:18,840 --> 00:02:32,480
+e provare insieme a capire che cosa si intende e a cosa serve la DevOps. Negli ultimi tempi la
+
+22
+00:02:32,480 --> 00:02:38,400
+parola DevOps sta iniziando a diffondersi anche al di fuori degli ambienti prettamente tecnici
+
+23
+00:02:38,400 --> 00:02:44,000
+dello sviluppo software e di sicuro chiunque abbia mai avuto contatti con il mondo del software o con
+
+24
+00:02:44,000 --> 00:02:51,040
+i suoi relativi processi di produzione avrà almeno sentito nominare questa parola. Ora per
+
+25
+00:02:51,040 --> 00:02:56,880
+chi lavora in un contesto moderno di produzione del software il concetto sarà o almeno dovrebbe
+
+26
+00:02:56,880 --> 00:03:04,040
+essere ben chiaro ma per chi invece ne viene in contatto solo marginalmente magari perché non
+
+27
+00:03:04,040 --> 00:03:09,600
+si occupa principalmente di software o perché si trova ancora in ambienti che implementano
+
+28
+00:03:09,600 --> 00:03:15,560
+processi di tipo tradizionale o ancora perché è agli inizi della propria carriera di programmatore
+
+29
+00:03:15,560 --> 00:03:24,280
+beh allora forse l'idea di DevOps potrebbe essere un po' confusa se non addirittura oscura. Questo
+
+30
+00:03:24,280 --> 00:03:29,160
+episodio sarà quindi principalmente dedicato a chi di DevOps conosce fondamentalmente solo il
+
+31
+00:03:29,160 --> 00:03:35,280
+termine ed è interessato a capire perché scegliere i propri fornitori tra coloro che utilizzano questa
+
+32
+00:03:35,280 --> 00:03:41,620
+metodologia oppure implementare i propri processi di sviluppo tramite DevOps sia al momento la
+
+33
+00:03:41,620 --> 00:03:49,080
+scelta migliore. Come abbiamo anticipato la DevOps è dunque una metodologia il che significa che è
+
+34
+00:03:49,080 --> 00:03:56,040
+essenzialmente un modo particolare di svolgere determinate attività un insieme cioè di direttive
+
+35
+00:03:56,040 --> 00:04:02,880
+la cui applicazione ha effetti benefici su di uno o più processi. Nel discorso che andremo a fare è
+
+36
+00:04:03,000 --> 00:04:08,760
+importante tenere a mente che questa metodologia può essere applicata essenzialmente al processo di
+
+37
+00:04:08,760 --> 00:04:14,880
+sviluppo dei software in cloud. Quei software cioè che per funzionare hanno bisogno di essere
+
+38
+00:04:14,880 --> 00:04:22,080
+installati su infrastrutture server più o meno complesse in gergo si dice deployati. Nel metodo
+
+39
+00:04:22,080 --> 00:04:27,960
+tradizionale di sviluppo del software la produzione passa attraverso le mani di varie figure professionali
+
+40
+00:04:28,720 --> 00:04:35,520
+l'analista o programmatore che scrive il codice sulla base delle richieste del cliente, il collaudatore
+
+41
+00:04:35,520 --> 00:04:40,800
+che fa i test, l'amministratore di sistema che installa il software nei vari ambienti di testing
+
+42
+00:04:40,800 --> 00:04:47,080
+produzione eccetera. Come però abbiamo detto più volte fin dai primi episodi di questo podcast un
+
+43
+00:04:47,080 --> 00:04:54,320
+software difficilmente è un'entità statica. Esso infatti può essere affetto da bug o può essere
+
+44
+00:04:54,320 --> 00:05:01,160
+necessario implementare nuove funzionalità e quindi un prodotto che tuttora è in produzione va
+
+45
+00:05:01,160 --> 00:05:07,720
+sia monitorato per identificare eventuali problematiche sia se necessario vanno pianificate
+
+46
+00:05:07,720 --> 00:05:14,120
+delle modifiche o correzioni che dovranno essere sviluppate, testate e installate a loro volta
+
+47
+00:05:14,120 --> 00:05:20,560
+dando così via ad una sorta di processo a ciclo continuo. Lo scopo della metodologia DevOps è
+
+48
+00:05:20,560 --> 00:05:26,040
+essenzialmente quello di rendere il più agile possibile l'intero processo di produzione a
+
+49
+00:05:26,040 --> 00:05:31,360
+partire dallo sviluppo del software fino ad arrivare al monitoraggio in produzione passando
+
+50
+00:05:31,360 --> 00:05:37,720
+ovviamente per i test e i deploy sui vari server dell'infrastruttura. L'idea alla base è rendere
+
+51
+00:05:37,720 --> 00:05:43,880
+più fluido il rapporto di collaborazione tra chi scrive il codice, chi lo testa, chi gestisce le
+
+52
+00:05:43,880 --> 00:05:50,000
+infrastrutture su cui verrà deploiato e chi ne monitora il funzionamento e l'efficienza. Tutto
+
+53
+00:05:50,000 --> 00:05:55,080
+questo spingendo sui vari meccanismi di collaborazione fino ad arrivare al caso ottimale
+
+54
+00:05:55,080 --> 00:06:00,760
+in cui le figure coinvolte nel processo si fondono in un'unica professionalità. Le aziende che
+
+55
+00:06:00,760 --> 00:06:06,280
+applicano quindi l'approccio DevOps allo stato dell'arte possono contare su di un insieme di
+
+56
+00:06:06,280 --> 00:06:13,880
+tecnici che formano un unico team, quello appunto di DevOps, le cui competenze spaziano lungo tutto
+
+57
+00:06:13,880 --> 00:06:19,440
+il processo produttivo del software, differentemente dalle aziende tradizionali che hanno i classici
+
+58
+00:06:19,480 --> 00:06:32,160
+team che operano separatamente. La metodologia DevOps punta quindi a snellire l'intero processo
+
+59
+00:06:32,160 --> 00:06:36,720
+di sviluppo del software e per ottenere questo risultato prescrive l'impiego di una serie di
+
+60
+00:06:36,720 --> 00:06:42,720
+prassi, che in inglese prendono il nome di best practice, che agiscono sulle varie fasi del ciclo
+
+61
+00:06:42,720 --> 00:06:49,320
+di produzione. La prima e sicuramente fondamentale fra queste prassi consiste nell'aumentare la
+
+62
+00:06:49,320 --> 00:06:55,120
+frequenza degli aggiornamenti del software e diminuirne al tempo stesso le dimensioni. In
+
+63
+00:06:55,120 --> 00:07:00,280
+questo modo le modifiche al codice saranno più circoscritte rispetto agli aggiornamenti monolitici
+
+64
+00:07:00,280 --> 00:07:05,560
+previsti dal processo tradizionale, ma grazie alla maggiore frequenza sarà comunque possibile
+
+65
+00:07:05,560 --> 00:07:11,240
+preservare, se non addirittura aumentare, la quantità di funzionalità e correzioni rilasciate
+
+66
+00:07:11,240 --> 00:07:16,720
+nel tempo. Contemporaneamente, per via delle minori dimensioni dei rilasci, diventerà
+
+67
+00:07:16,720 --> 00:07:22,800
+automaticamente più difficile introdurre nuovi bug e più semplice risolvere quelli che eventualmente
+
+68
+00:07:22,800 --> 00:07:29,640
+dovessero presentarsi. Nella stessa direzione è orientata anche la seconda best practice della
+
+69
+00:07:29,640 --> 00:07:36,320
+DevOps, che consiste nell'utilizzo dei microservizi. In un'architettura a microservizi, infatti, un
+
+70
+00:07:36,320 --> 00:07:42,120
+sistema complesso viene suddiviso in parti più piccole, che funzionano singolarmente e che poi
+
+71
+00:07:42,120 --> 00:07:48,440
+comunicano fra loro per riprodurre il comportamento del sistema iniziale. Ognuna di queste parti
+
+72
+00:07:48,440 --> 00:07:54,240
+prende appunto il nome di microservizio e si adopera al fine di svolgere un'unica funzione.
+
+73
+00:07:54,240 --> 00:07:59,960
+All'occorrenza, poi, è in grado di interloquire con gli altri microservizi tramite interfacce
+
+74
+00:07:59,960 --> 00:08:07,040
+personalizzate e a basso impatto sulle prestazioni. Come per la riduzione dei rilasci, il principio
+
+75
+00:08:07,040 --> 00:08:12,440
+di base è sempre quello della semplificazione. Infatti un'architettura del genere, innanzitutto,
+
+76
+00:08:12,440 --> 00:08:17,320
+riduce le dimensioni dei singoli componenti, diminuendo anche la quantità di codice da
+
+77
+00:08:17,320 --> 00:08:22,520
+manutenere e da lavorare. E inoltre riduce il carico necessario per lo sviluppo, perché è
+
+78
+00:08:22,520 --> 00:08:28,280
+possibile affidare il compito di gestire ogni microservizio ad un team che potrà essere di
+
+79
+00:08:28,280 --> 00:08:34,960
+minori dimensioni e potrà quindi lavorare in modo più reattivo. Come molti avranno già intuito però,
+
+80
+00:08:34,960 --> 00:08:40,000
+il fatto di effettuare aggiornamenti più frequenti e quello di affidarsi ad una struttura
+
+81
+00:08:40,000 --> 00:08:47,080
+a microservizi avranno anche delle ripercussioni negative sulle operazioni. La quantità dei rilasci
+
+82
+00:08:47,080 --> 00:08:52,680
+necessari per gestire tutta l'infrastruttura, infatti, aumenteranno notevolmente. Al posto di
+
+83
+00:08:52,680 --> 00:08:58,080
+un unico grande aggiornamento se ne avranno tanti più piccoli e non sarà più necessario rilasciare
+
+84
+00:08:58,080 --> 00:09:03,880
+un unico software monolitico, ma un certo numero, anche abbastanza sostenuto, di microservizi.
+
+85
+00:09:04,520 --> 00:09:09,760
+Questo potrebbe apparire come un problema dal punto di vista delle prestazioni dell'intero team,
+
+86
+00:09:09,760 --> 00:09:14,880
+ma ovviamente DevOps ha una serie di best practice anche per risolvere questa tipologia
+
+87
+00:09:14,880 --> 00:09:22,040
+di problema. La continuous integration, ad esempio, che in italiano diventa integrazione
+
+88
+00:09:22,040 --> 00:09:27,640
+continua, consiste proprio in un metodo di sviluppo secondo cui i programmatori caricano
+
+89
+00:09:27,640 --> 00:09:33,640
+le modifiche al codice su di un unico repository centralizzato e da questo vengono poi create le
+
+90
+00:09:33,640 --> 00:09:40,560
+build e i relativi test in maniera automatica. Adottare una soluzione automatizzata del genere
+
+91
+00:09:40,560 --> 00:09:45,640
+significa abbattere notevolmente i tempi rispetto al modello tradizionale nel quale
+
+92
+00:09:45,640 --> 00:09:51,560
+queste operazioni di impacchettamento e verifica vengono normalmente svolte a mano e pertanto sono
+
+93
+00:09:51,560 --> 00:09:57,640
+sicuramente più lente e soggette a possibili errori umani. Come estensione dell'integrazione
+
+94
+00:09:57,640 --> 00:10:04,240
+continua poi esiste la distribuzione continua o continuous delivery in cui oltre alla preparazione
+
+95
+00:10:04,240 --> 00:10:09,600
+delle build e dei test il codice aggiunto al repository centralizzato viene anche rilasciato
+
+96
+00:10:09,600 --> 00:10:14,960
+nei vari ambienti compresa la produzione, eliminando così ulteriori passaggi manuali
+
+97
+00:10:14,960 --> 00:10:21,360
+e velocizzando ancora di più il processo. Come accade per i rilasci però anche l'infrastruttura
+
+98
+00:10:21,360 --> 00:10:26,680
+richiesta da DevOps cresce e si complica notevolmente rispetto a quella tradizionale.
+
+99
+00:10:27,320 --> 00:10:33,520
+Questo perché diventa necessario supportare l'intero ecosistema dei microservizi e ciascuno
+
+100
+00:10:33,520 --> 00:10:39,440
+di essi potrebbe avere requisiti differenti e sicuramente un server o un contenitore apposito.
+
+101
+00:10:39,440 --> 00:10:46,400
+Quindi l'approccio DevOps prevede una prassi specifica anche per ciò che riguarda la gestione
+
+102
+00:10:46,400 --> 00:10:52,120
+degli ambienti e dei relativi server. Questa prassi prende il nome di Code Infrastructure
+
+103
+00:10:52,400 --> 00:10:58,800
+o in italiano infrastruttura come codice e consiste nell'applicare le metodologie di controllo
+
+104
+00:10:58,800 --> 00:11:04,080
+di versione e integrazione continua anche ai processi di provisioning e gestione e
+
+105
+00:11:04,080 --> 00:11:10,480
+configurazione dell'infrastruttura. Nella DevOps infatti vengono ampiamente utilizzati
+
+106
+00:11:10,480 --> 00:11:16,320
+i servizi in cloud che espongono interfacce automatiche sia per la creazione che per la
+
+107
+00:11:16,320 --> 00:11:22,280
+gestione di server e contenitori virtuali sui quali verranno poi deploiati i microservizi e i
+
+108
+00:11:22,280 --> 00:11:28,520
+vari componenti software. I programmatori possono quindi sviluppare proprio del software che
+
+109
+00:11:28,520 --> 00:11:34,800
+comunichi con i servizi in cloud dicendo loro quali e quanti server istanziare, quali servizi
+
+110
+00:11:34,800 --> 00:11:40,480
+attivare, come collegarli fra loro e come configurarli. Questo codice che di fatto
+
+111
+00:11:40,480 --> 00:11:44,800
+descrive le caratteristiche dell'intera infrastruttura e non delle funzionalità
+
+112
+00:11:44,800 --> 00:11:50,400
+potrà essere esso stesso archiviato in un repository centralizzato, testato e lanciato
+
+113
+00:11:50,400 --> 00:11:56,560
+in maniera automatica al pari del codice vero e proprio del software. I vantaggi di un approccio
+
+114
+00:11:56,560 --> 00:12:02,120
+simile sono che innanzitutto è possibile configurare più ambienti perfettamente identici
+
+115
+00:12:02,120 --> 00:12:07,800
+ridurre così il rischio di sviluppare software incompatibile con le destinazioni finali sulle
+
+116
+00:12:07,800 --> 00:12:14,120
+quali dovrà essere deploiato. In secondo luogo diventa molto più semplice scalare cioè variare
+
+117
+00:12:14,120 --> 00:12:21,680
+il numero di server o container per i microservizi o le risorse che essi hanno a disposizione. A valle
+
+118
+00:12:21,680 --> 00:12:27,880
+poi di tutti questi processi la DevOps prescrive anche delle best practice riguardanti il monitoraggio
+
+119
+00:12:27,880 --> 00:12:35,040
+delle risorse e l'archiviazione dei log. In questa nuova ottica di rapidità infatti eventuali problemi
+
+120
+00:12:35,040 --> 00:12:40,880
+come errori del software o cali di prestazioni vanno evidenziati il prima possibile e questo
+
+121
+00:12:40,880 --> 00:12:47,560
+può avvenire tramite configurazione di allarmi automatici o di analisi in tempo reale. Solo in
+
+122
+00:12:47,560 --> 00:12:52,360
+questo modo il team potrà essere al corrente dell'esperienza vissuta dall'utente finale e
+
+123
+00:12:52,360 --> 00:12:57,800
+potrà intervenire per correggere malfunzionamenti o scalare risorse all'interno del sistema nel
+
+124
+00:12:57,800 --> 00:13:04,640
+minor tempo possibile. In ultimo ma non certo per importanza affinché tutto quello che abbiamo
+
+125
+00:13:04,640 --> 00:13:10,400
+finora descritto possa funzionare in modo corretto DevOps prescrive anche l'adozione
+
+126
+00:13:10,400 --> 00:13:16,240
+di strumenti dedicati alla collaborazione interna e alla condivisione delle informazioni. Se ai
+
+127
+00:13:16,240 --> 00:13:22,320
+vari membri del team è infatti richiesto di sapere agire su tutta la catena di produzione è anche
+
+128
+00:13:22,320 --> 00:13:28,320
+necessario che essi siano al corrente di ogni informazione importante riguardante i processi e
+
+129
+00:13:28,320 --> 00:13:33,560
+all'occorrenza abbiano un modo ben definito per reperire documentazione e dettagli sui vari
+
+130
+00:13:33,560 --> 00:13:39,880
+componenti, sull'infrastruttura, sugli strumenti eccetera. L'applicazione di una o più delle
+
+131
+00:13:39,880 --> 00:13:45,560
+meccaniche di cui abbiamo parlato in questo episodio hanno un enorme impatto sia sul
+
+132
+00:13:45,560 --> 00:13:52,240
+prodotto finale che sulle performance dell'intero team coinvolto nel processo. In definitiva più si
+
+133
+00:13:52,240 --> 00:13:57,480
+sarà in grado di adottare e rispettare la metodologia DevOps e maggiori saranno i vantaggi
+
+134
+00:13:57,480 --> 00:14:04,400
+che ne deriveranno. Velocità, affidabilità, aggiornamenti continui e bug fix più semplici e veloci.
+
+135
+00:14:10,400 --> 00:14:17,240
+Bene ragazzi siamo dunque giunti alla fine di questo episodio. Io mi rendo conto che forse
+
+136
+00:14:17,240 --> 00:14:23,600
+l'argomento è un po' complicato. Voi fatemi sapere se vi interessa, se vi è piaciuto e se
+
+137
+00:14:23,600 --> 00:14:29,680
+l'episodio è stato sufficientemente comprensibile. Io vi ricordo che in descrizione trovate tutti i
+
+138
+00:14:29,680 --> 00:14:35,520
+link alle fonti, ai vari social e al programma di affiliazione amazon se volete sostenere questo
+
+139
+00:14:35,520 --> 00:14:41,680
+progetto. Per ora quindi è tutto, vi saluto e vi do appuntamento al prossimo episodio.
+

@@ -1,0 +1,568 @@
+1
+00:00:00,000 --> 00:00:09,900
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,900 --> 00:00:25,440
+Salve a tutti e bentornati su Pensieri in codice. Quello di oggi è un episodio un po'
+
+3
+00:00:25,440 --> 00:00:32,440
+speciale che nasce dalla congiunzione di due eventi. Il primo è un fatto di cronaca che
+
+4
+00:00:32,440 --> 00:00:39,200
+è accaduto qualche giorno fa e si tratta del Data Breach ai danni del Consorzio Unico Campania. Il
+
+5
+00:00:39,200 --> 00:00:45,880
+secondo evento invece è rappresentato dal fatto che nell'ultimo mese o poco più ho recuperato più
+
+6
+00:00:45,880 --> 00:00:52,280
+di 60 episodi delle vecchie stagioni di Data Nightmare e quindi diciamo che mi sento molto
+
+7
+00:00:52,280 --> 00:00:59,760
+ispirato. Se non sapete cosa sia Data Nightmare, molto male. Si tratta di uno dei migliori secondo
+
+8
+00:00:59,760 --> 00:01:06,160
+me podcast in circolazione a cura di Walter Vannini. Se non lo avete mai ascoltato vi lascio
+
+9
+00:01:06,160 --> 00:01:12,800
+in descrizione il link al progetto, è assolutamente da recuperare. Ora prima di procedere ci tengo a
+
+10
+00:01:12,800 --> 00:01:18,760
+precisare che la scelta di trattare questo argomento non dipende da una certa qual simpatia
+
+11
+00:01:18,760 --> 00:01:25,760
+o antipatia verso la particolare società coinvolta ma semplicemente è un'occasione per
+
+12
+00:01:25,760 --> 00:01:32,520
+esaminare un evento di questo genere e quale è stata la successiva reazione da parte di
+
+13
+00:01:32,520 --> 00:01:37,520
+un'azienda di dimensioni considerevoli. Cerchiamo quindi di analizzare al meglio
+
+14
+00:01:37,520 --> 00:01:43,480
+le poche informazioni disponibili al momento e soprattutto proviamo a leggere tra le righe.
+
+15
+00:01:48,760 --> 00:02:03,560
+Il giorno 19 agosto 2020, alle 12 circa, il sito fanpage.it pubblica un articolo che titola in
+
+16
+00:02:03,560 --> 00:02:10,840
+questo modo. Unico Campania ha creato il sito 160.000 email e password di utenti in rete
+
+17
+00:02:11,400 --> 00:02:18,320
+fra virgolette subito disattivati. Ok ora innanzitutto da una rapida occhiata allo
+
+18
+00:02:18,320 --> 00:02:23,360
+slug cioè all'indirizzo web dell'articolo si nota immediatamente che il titolo originale
+
+19
+00:02:23,360 --> 00:02:33,120
+parlava di 65.000 email e password e poi è stato modificato in 165.000. Questo di per sé non vale
+
+20
+00:02:33,120 --> 00:02:39,320
+molto però ci fa capire che c'è stata un po' di confusione e una certa qualcorsa alla pubblicazione
+
+21
+00:02:39,320 --> 00:02:46,280
+della notizia ma lasciamo perdere. Nell'articolo si legge, aperte virgolette, dati sensibili privati
+
+22
+00:02:46,280 --> 00:02:52,400
+alla merced di tutti. Il file con le password e le email sta circolando in queste ore sulla rete,
+
+23
+00:02:52,400 --> 00:02:59,000
+chiuse virgolette. Appare quindi subito chiaro che ci sia stato quello che il GDPR definisce
+
+24
+00:02:59,000 --> 00:03:05,120
+un data breach. Tuttavia leggendo un po' più a fondo si può anche apprendere che, cito
+
+25
+00:03:05,120 --> 00:03:11,840
+testualmente, la macchina della sicurezza è già scattata e poi sempre secondo fan page dalla
+
+26
+00:03:11,840 --> 00:03:18,800
+società spiegano che, aperte virgolette, già ora non è più possibile accedere agli account con
+
+27
+00:03:18,800 --> 00:03:25,880
+quelle password. Si tratta di dati che comunque erano insufficienti ad entrare nelle posizioni
+
+28
+00:03:25,880 --> 00:03:32,840
+personali. Ora se ci fermiamo un attimo a riflettere già questa prima ricostruzione suona un po' strana.
+
+29
+00:03:33,320 --> 00:03:38,840
+Nella frase prima si dice che non è possibile accedere con quelle password e poi nella frase
+
+30
+00:03:38,840 --> 00:03:46,000
+subito dopo si ribadisce che comunque non erano sufficienti per entrare nei profili. Quindi in
+
+31
+00:03:46,000 --> 00:03:52,320
+realtà a che servono queste password? Ma le frasi successive dell'articolo sono ancora più confuse.
+
+32
+00:03:52,320 --> 00:03:59,840
+Scrive infatti il giornalista. Il consiglio agli utenti, anche se il consorzio unico campania ha già
+
+33
+00:03:59,840 --> 00:04:06,960
+disattivato le password, è comunque quello di cambiarle. E ok, qui da tecnico la domanda mi
+
+34
+00:04:06,960 --> 00:04:13,000
+sorge spontanea e dovrebbe essere lo stesso per chiunque abbia mai utilizzato un servizio web
+
+35
+00:04:13,000 --> 00:04:20,880
+protetto da password. Infatti se le password sono state disattivate come posso io non cambiarle?
+
+36
+00:04:20,880 --> 00:04:26,960
+Cioè se le hanno disattivate mi aspetto di non potermi più autenticare con quelle password e
+
+37
+00:04:26,960 --> 00:04:32,280
+allora l'unico modo di autenticarmi dovrebbe essere quello di utilizzare la procedura di
+
+38
+00:04:32,280 --> 00:04:39,240
+recupero password e in tal caso è la procedura stessa che dovrebbe impormi il cambio di password.
+
+39
+00:04:39,240 --> 00:04:46,480
+No? Non funziona così la loro procedura di recupero password? Ma andiamo avanti. L'articolo conclude
+
+40
+00:04:46,480 --> 00:04:53,480
+poi il primo paragrafo con, cito testualmente, capita spesso infatti che si usino sempre le
+
+41
+00:04:53,480 --> 00:05:00,120
+stesse password anche per diversi profili. Non è escluso che l'attacco hacker possa risalire a
+
+42
+00:05:00,120 --> 00:05:08,680
+diversi giorni fa, anche forse mesi. Fine citazione. E finalmente ecco qui un seppur timido accenno a
+
+43
+00:05:08,680 --> 00:05:15,040
+quello che è il vero problema. Cioè che sarà pur vero che unico campania ha bloccato l'accesso ai
+
+44
+00:05:15,040 --> 00:05:20,800
+propri sistemi con le credenziali rubate, ma in realtà il danno è ben più grave per gli utenti
+
+45
+00:05:20,800 --> 00:05:26,320
+coinvolti, perché ora chiunque sia entrato in possesso di questa lista di credenziali può, o
+
+46
+00:05:26,320 --> 00:05:32,200
+forse ha potuto per mesi, accedere ad altri servizi ai quali tutti gli utenti accedevano con quelle
+
+47
+00:05:32,200 --> 00:05:37,800
+stesse credenziali. Se insomma qualche utente utilizzava la stessa password per accedere al
+
+48
+00:05:37,800 --> 00:05:43,120
+sito di unico campania e a quello della propria posta elettronica, allora chi ha ottenuto il file
+
+49
+00:05:43,120 --> 00:05:49,120
+delle email e password perso dal consorzio ha avuto libero accesso anche alla mail di tali utenti.
+
+50
+00:05:49,480 --> 00:05:56,120
+Tra l'altro per un tempo imprecisato. Bello eh? Ma andiamo avanti. Il secondo paragrafo è
+
+51
+00:05:56,120 --> 00:06:01,800
+sostanzialmente una dichiarazione del consorzio unico campania che fanpage afferma di aver
+
+52
+00:06:01,800 --> 00:06:08,600
+contattato nella quale si ribadisce quanto siano stati veloci ad attivarsi per far fronte a questo
+
+53
+00:06:08,600 --> 00:06:14,600
+problema. Leggo con qualche omissis ma trovate in descrizione il link all'articolo completo.
+
+54
+00:06:15,080 --> 00:06:19,880
+Aperte virgolette stiamo facendo delle verifiche, non è possibile entrare in
+
+55
+00:06:19,880 --> 00:06:25,520
+pagine personali degli utenti, al momento non ci risultano violazioni se non l'acquisizione di
+
+56
+00:06:25,520 --> 00:06:31,200
+questi dati di password e in ogni caso non sono sufficienti ad accedere a qualunque posizione
+
+57
+00:06:31,200 --> 00:06:38,080
+personale. Peraltro sono funzionalità che abbiamo già neutralizzato, le password sono state azzerate,
+
+58
+00:06:38,080 --> 00:06:43,160
+gli utenti già non possono più accedere con quelle password. Fine citazione.
+
+59
+00:06:43,560 --> 00:06:49,600
+Ok al netto della confusione nell'ordine delle varie affermazioni tradotto un po' così a naso a
+
+60
+00:06:49,600 --> 00:06:55,880
+me sembra di leggere qualcosa del genere. Stiamo verificando però per ora ci siamo solo persi
+
+61
+00:06:55,880 --> 00:07:02,320
+160 mila email e password che in realtà però non servivano per accedere ai nostri servizi e
+
+62
+00:07:02,320 --> 00:07:09,440
+tuttavia abbiamo comunque deciso di azzerare tutte quelle password degli account collegati. Ora a
+
+63
+00:07:09,680 --> 00:07:15,520
+me sembra un po' sospetto e a voi? Cioè se le password trafugate non servono per accedere ai
+
+64
+00:07:15,520 --> 00:07:20,960
+profili allora perché azzerarle e soprattutto quali profili hanno azzerato se non corrispondono
+
+65
+00:07:20,960 --> 00:07:36,080
+a profili effettivamente raggiungibili? Fortunatamente però dopo qualche ora sul
+
+66
+00:07:36,080 --> 00:07:41,880
+sito ufficiale di UnicoCampania appare un comunicato ufficiale sempre datato 19 agosto
+
+67
+00:07:41,880 --> 00:07:47,040
+che ha certamente lo scopo di chiarire la situazione e rassicurare le centinaia di
+
+68
+00:07:47,040 --> 00:07:52,760
+utenti che nel frattempo si sono scatenati sulla pagina facebook del consorzio. Tale comunicato
+
+69
+00:07:52,760 --> 00:07:58,680
+recita aperte virgolette comunicazione agli utenti scriviamo per rassicurare sulle notizie che stanno
+
+70
+00:07:58,680 --> 00:08:04,000
+circolando nelle ultime ore in merito al presunto attacco informatico che avrebbe colpito alcuni
+
+71
+00:08:04,000 --> 00:08:10,720
+degli utenti del consorzio unico campania chiuse virgolette e già qui direi che l'attacco in realtà
+
+72
+00:08:10,720 --> 00:08:17,200
+non è poi molto presunto e in ogni caso non ha colpito gli utenti del consorzio unico campania
+
+73
+00:08:17,200 --> 00:08:22,480
+ha colpito proprio il consorzio secondo me ma procediamo aperte virgolette a tal proposito
+
+74
+00:08:22,480 --> 00:08:27,880
+vogliamo ricordare che la protezione dei dati personali è sempre una nostra priorità alla
+
+75
+00:08:27,880 --> 00:08:33,960
+quale dedichiamo tempo e risorse con l'obiettivo di fornire un servizio costantemente efficiente
+
+76
+00:08:33,960 --> 00:08:40,520
+e sicuro e risponderemo tempestivamente a ogni possibile evenienza chiuse virgolette e di questo
+
+77
+00:08:40,520 --> 00:08:47,040
+come dire noi utenti ringraziamo sulla fiducia e in realtà lasciatemi anche dire che senza ironia
+
+78
+00:08:47,040 --> 00:08:54,080
+un errore può capitare a chiunque riapriamo virgolette infatti non appena abbiamo avuto
+
+79
+00:08:54,080 --> 00:08:58,840
+conoscenza della vicenda siamo intervenuti immediatamente coinvolgendo le competenti
+
+80
+00:08:58,840 --> 00:09:04,800
+funzioni aziendali oltre ai nostri consulenti specializzati in materia per acquisire tutte le
+
+81
+00:09:04,800 --> 00:09:10,280
+informazioni utili a ricostruire la vicenda e agire di conseguenza nel minor tempo possibile
+
+82
+00:09:10,280 --> 00:09:15,720
+tutta questa frase può essere tradotta come stiamo verificando e in realtà questo mi sembra
+
+83
+00:09:15,720 --> 00:09:22,480
+chiaro e il minimo dovuto sempre dal comunicato al riguardo riteniamo opportuno comunicare sin
+
+84
+00:09:22,480 --> 00:09:30,160
+da ora che tale piattaforma non è più in uso da alcuni anni ed è stata ormai dismessa eliminando
+
+85
+00:09:30,160 --> 00:09:36,960
+nel contenuto informativo già a partire dall'anno 2018 abbiamo adottato una nuova piattaforma dotata
+
+86
+00:09:36,960 --> 00:09:42,240
+di meccanismi di autenticazione e di sicurezza ancora più avanzati per proteggere i dati
+
+87
+00:09:42,240 --> 00:09:48,640
+personali dei nostri utenti chiuse virgolette oh bene quindi la nuova piattaforma è più sicura
+
+88
+00:09:48,640 --> 00:09:54,040
+della vecchia e visto l'accaduto mi viene da dire che sarebbe il minimo ma il dubbio resta
+
+89
+00:09:54,040 --> 00:10:02,280
+dismessa vuol dire rimossa dal web o semplicemente abbandonata a se stessa e poi che senso ha rimuovere
+
+90
+00:10:02,280 --> 00:10:08,040
+il contenuto informativo e lasciare i dati di accesso e a questo proposito sempre nel comunicato
+
+91
+00:10:08,040 --> 00:10:14,200
+si legge di conseguenza sulla base delle informazioni disponibili confermiamo che le credenziali diffuse
+
+92
+00:10:14,200 --> 00:10:19,000
+si riferiscono esclusivamente alla vecchia piattaforma e non possono essere utilizzate per
+
+93
+00:10:19,000 --> 00:10:24,520
+accedere alla nuova piattaforma online del consorzio che pertanto resta perfettamente
+
+94
+00:10:24,520 --> 00:10:32,320
+sicura e funzionante fine citazione perfetto ora io non so cosa sia stato fatto nel 2018
+
+95
+00:10:32,320 --> 00:10:38,200
+quando si è passati dalla vecchia alla nuova piattaforma ma da sviluppatore mi sento almeno
+
+96
+00:10:38,200 --> 00:10:43,520
+di azzardare l'ipotesi che nel passaggio le vecchie utenze siano state travasate nella
+
+97
+00:10:43,520 --> 00:10:48,960
+nuova piattaforma così da evitare a tutti gli utilizzatori già iscritti di doversi iscrivere
+
+98
+00:10:48,960 --> 00:10:53,520
+nuovamente magari questo me lo può confermare qualcuno di voi che state ascoltando e che
+
+99
+00:10:53,520 --> 00:10:59,600
+all'epoca era già iscritto alla vecchia piattaforma ma se la mia ipotesi dovesse corrispondere a
+
+100
+00:10:59,600 --> 00:11:06,320
+realtà diciamo così non è possibile che alcune o addirittura io direi molte delle vecchie password
+
+101
+00:11:06,320 --> 00:11:12,960
+essendo state travasate ora corrispondano esattamente alle nuove voglio dire sappiamo bene che molti
+
+102
+00:11:12,960 --> 00:11:19,160
+utenti non cambiano le password molto spesso anzi si potrebbe dire quasi mai e quindi non ci
+
+103
+00:11:19,160 --> 00:11:25,480
+sarebbe da stupirsi se nel 2020 per un dato servizio utilizzassero le stesse password che
+
+104
+00:11:25,480 --> 00:11:32,560
+utilizzavano che so nel 2017 qualcuno potrebbe obiettare che nella nuova piattaforma ci sia
+
+105
+00:11:32,560 --> 00:11:38,800
+autentica con il codice fiscale e non con la mail che è stata trafugata in questo data breach ma
+
+106
+00:11:38,800 --> 00:11:44,040
+diciamocela tutta quanto ci vuole a calcolare il codice fiscale di qualcuno alla fine basta
+
+107
+00:11:44,040 --> 00:11:50,400
+chiedergli l'amicizia su facebook scoprire nome cognome data di nascita dai post di auguri sul
+
+108
+00:11:50,400 --> 00:11:56,200
+profilo e infine scoprire il comune di nascita provando a validare il codice fiscale sul sito
+
+109
+00:11:56,200 --> 00:12:01,880
+dell'agenzia delle entrate magari non è proprio un processo automatico ma se c'è interesse a fare
+
+110
+00:12:01,880 --> 00:12:07,960
+un danno a qualcuno con un po di impegno si riesce tranquillamente a entrare nel suo profilo ad ogni
+
+111
+00:12:07,960 --> 00:12:14,080
+modo il comunicato prosegue affermando che sia le app che le campagne di abbonamento sono sicure
+
+112
+00:12:14,080 --> 00:12:19,280
+e non verranno intaccate da questo problema e noi questo non lo mettiamo in dubbio e poi conclude
+
+113
+00:12:19,280 --> 00:12:26,240
+con aperte virgolette in ogni caso come buona prassi ricordiamo che è sempre opportuno modificare
+
+114
+00:12:26,240 --> 00:12:31,520
+periodicamente le credenziali di accesso e o di autenticazione ad ogni sistema informatico
+
+115
+00:12:31,520 --> 00:12:37,600
+applicativo compresa la piattaforma del consorzio così da minimizzare i possibili rischi connessi
+
+116
+00:12:37,960 --> 00:12:44,320
+ad accessi non autorizzati chiuse virgolette qui sinceramente non posso non essere d'accordo in
+
+117
+00:12:44,320 --> 00:12:50,480
+pieno con questa affermazione anche se direi che evitare di perdersi database con le password in
+
+118
+00:12:50,480 --> 00:12:57,000
+giro per il web magari anche aiuterebbe in ultimo vale la pena di notare che sempre il 19 agosto
+
+119
+00:12:57,000 --> 00:13:04,080
+inserata alla pagina facebook del consorzio unico campania pubblicava un post in cui affermava che
+
+120
+00:13:04,080 --> 00:13:10,120
+cito testualmente in merito alla pubblicazione delle mail e password di accesso alla piattaforma
+
+121
+00:13:10,120 --> 00:13:16,800
+abbonamenti il consorzio unico campania precisa che si tratta di dati di archiviazione delle
+
+122
+00:13:16,800 --> 00:13:24,720
+pregresse campagne 2016 e 2017 e che gli stessi dati erano criptati all'interno dei database
+
+123
+00:13:24,720 --> 00:13:30,480
+chiuse virgolette si è scelto quindi di usare un altro canale ma sempre ufficiale per dare
+
+124
+00:13:30,480 --> 00:13:36,760
+una versione leggermente diversa in cui si parla di dati criptati all'interno di un database così
+
+125
+00:13:36,760 --> 00:13:53,720
+giusto per confondere un po di più le idee ad oggi domenica 30 agosto giorno in cui sto registrando
+
+126
+00:13:53,720 --> 00:13:59,920
+non ho trovato altre informazioni ufficiali anche se potete divertirvi ad andare a leggere
+
+127
+00:13:59,920 --> 00:14:05,840
+le centinaia di messaggi di utenti infuriati sulla pagina facebook del consorzio una cosa
+
+128
+00:14:05,840 --> 00:14:11,600
+però secondo me è interessante e cioè che su twitter lo stesso giorno dei comunicati cioè il
+
+129
+00:14:11,600 --> 00:14:18,760
+19 agosto è comparso un tweet di gabriel 89 chiaramente esperto di informatica con allegata
+
+130
+00:14:18,760 --> 00:14:27,320
+un'immagine che testimonierebbe il fatto che queste 166.184 coppie di mail e password sarebbero già
+
+131
+00:14:27,320 --> 00:14:35,000
+disponibili sui forum specializzati da gennaio del 2020 se questa informazione fosse vera ciò
+
+132
+00:14:35,000 --> 00:14:42,040
+smentirebbe la dichiarazione ufficiale che il file stesse circolando in queste ore mentre in realtà
+
+133
+00:14:42,040 --> 00:14:49,560
+sarebbe online già da otto mesi ad ogni modo quello che è certo è che un qualche tipo di
+
+134
+00:14:49,560 --> 00:14:56,520
+data bridge c'è stato e come e qualsiasi siano le dichiarazioni di unico campania qui siamo nel
+
+135
+00:14:56,520 --> 00:15:03,720
+territorio del garante per la protezione dei dati personali e sicuramente è a lui che spetterà
+
+136
+00:15:03,720 --> 00:15:09,480
+l'ultima parola sulla questione il consorzio unico campania può infatti mettere in campo tutti i
+
+137
+00:15:09,480 --> 00:15:14,800
+consulenti e gli esperti che vuole ma alla fine quello che ci dirà veramente come sono andate
+
+138
+00:15:14,800 --> 00:15:20,400
+le cose sarà l'indagine del nucleo antifrodi telematiche e privacy della guardia di finanza
+
+139
+00:15:20,400 --> 00:15:26,880
+per ora direi quindi che noi ci possiamo fermare qui tutte le fonti citate le trovate in descrizione
+
+140
+00:15:26,880 --> 00:15:33,520
+se dovessero esserci novità magari ne riparleremo nel frattempo io vi saluto e mi raccomando usate
+
+141
+00:15:33,520 --> 00:15:39,120
+password diverse per tutti i vari servizi cambiatele spesso e non dimenticate che
+
+142
+00:15:39,120 --> 00:15:43,440
+un informatico risolve problemi a volte anche usando il computer
+

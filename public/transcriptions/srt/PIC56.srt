@@ -1,0 +1,620 @@
+1
+00:00:00,000 --> 00:00:09,840
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:19,840 --> 00:00:26,120
+Salve a tutti e bentornati su Pensieri in codice. Essendo questo un podcast a tema
+
+3
+00:00:26,120 --> 00:00:32,640
+informatica ci capita ovviamente molto spesso di parlare di algoritmi. A volte descriviamo come
+
+4
+00:00:32,640 --> 00:00:39,200
+sono implementati, altre volte come si è arrivati ad una certa implementazione e altre volte ancora
+
+5
+00:00:39,200 --> 00:00:45,400
+quali impatti essi hanno sulla nostra vita quotidiana. E in generale quando ci riferiamo
+
+6
+00:00:45,400 --> 00:00:51,760
+ad un algoritmo lo facciamo pensando ad un computer, ad uno smartphone, ad un'intelligenza
+
+7
+00:00:51,760 --> 00:00:58,120
+artificiale. Nel fare questo però spesso dimentichiamo una parte importante della storia
+
+8
+00:00:58,120 --> 00:01:04,880
+e c'è che, se è pur vero che esistono tutta una serie di algoritmi che influenzano la nostra vita
+
+9
+00:01:04,880 --> 00:01:11,200
+digitale, le nostre ricerche, i nostri acquisti eccetera, quando poi siamo lì fuori nel mondo
+
+10
+00:01:11,200 --> 00:01:18,400
+digitale siamo comunque esposti ad una enorme quantità di algoritmi. A volte questi sono insiti
+
+11
+00:01:18,480 --> 00:01:24,840
+all'interno di strumenti che utilizziamo o in procedure alle quali prendiamo parte, ma in
+
+12
+00:01:24,840 --> 00:01:30,840
+ogni caso hanno un effetto enorme sulla nostra vita quotidiana. Un esempio molto comune è quello
+
+13
+00:01:30,840 --> 00:01:37,320
+delle assicurazioni. Quando infatti ci richiamo in agenzia per stipulare una polizza o in banca
+
+14
+00:01:37,320 --> 00:01:44,560
+per chiedere un prestito, di fatto è un algoritmo a decidere se possiamo avere quel tipo di servizio
+
+15
+00:01:44,560 --> 00:01:51,640
+e quanto lo dobbiamo pagare. Dunque l'episodio di oggi parla di algoritmi che governano il
+
+16
+00:01:51,640 --> 00:01:57,160
+funzionamento di un mezzo di trasporto. In particolare un mezzo di trasporto che bene
+
+17
+00:01:57,160 --> 00:02:03,560
+o male tutti abbiamo utilizzato almeno qualche volta e cioè l'ascensore. Vi siete mai chiesti
+
+18
+00:02:03,560 --> 00:02:10,520
+come ragiona un ascensore? Cosa accade dopo che avete premuto il pulsante di chiamata o perché
+
+19
+00:02:10,520 --> 00:02:16,840
+la cabina non si muove quando le porte sono aperte? Beh, io sì! E quindi in questo episodio
+
+20
+00:02:16,840 --> 00:02:23,280
+vedremo quali sono gli algoritmi che guidano il movimento e la sicurezza degli ascensori.
+
+21
+00:02:33,280 --> 00:02:39,920
+Cominciamo subito col dire che il compito di un ascensore è quello di trasportare
+
+22
+00:02:39,960 --> 00:02:46,240
+le persone da un piano all'altro e questo è ovvio. Quello che però è un po' meno ovvio è che un
+
+23
+00:02:46,240 --> 00:02:52,760
+impianto può svolgere questo suo compito con un maggiore o minore grado di ottimizzazione. Ci
+
+24
+00:02:52,760 --> 00:02:59,520
+sono infatti tre valori da tenere il più possibile sotto controllo e sono il costo
+
+25
+00:02:59,520 --> 00:03:08,000
+di installazione e manutenzione, i consumi e l'indice di sofferenza dei passeggeri. I primi
+
+26
+00:03:08,000 --> 00:03:14,880
+due valori dovrebbero essere abbastanza intuitivi. Banalmente è lecito pensare che più un impianto
+
+27
+00:03:14,880 --> 00:03:22,640
+sia complicato dal punto di vista sia meccanico che logico, maggiori saranno i costi per
+
+28
+00:03:22,640 --> 00:03:29,440
+l'installazione iniziale e per la successiva manutenzione. E allo stesso modo appare banale
+
+29
+00:03:29,440 --> 00:03:36,480
+il fatto che questo impianto consumerà un qualche tipo di energia la quale avrà un costo e che
+
+30
+00:03:36,480 --> 00:03:42,840
+quindi minore sarà il dispendio di energia per movimenti non necessari, minore sarà anche il
+
+31
+00:03:42,840 --> 00:03:49,560
+costo per il funzionamento. Diverso invece è il ragionamento quando si parla di indice di sofferenza
+
+32
+00:03:49,560 --> 00:03:55,360
+dei passeggeri. Non ne parleremo in modo approfondito perché probabilmente richiederebbe un
+
+33
+00:03:55,360 --> 00:04:03,280
+podcast a sé, ma vi basti sapere che è un concetto abbastanza controintuitivo. Pare infatti che un
+
+34
+00:04:03,280 --> 00:04:10,000
+utente di un ascensore sia molto più disposto a attendere all'interno della cabina piuttosto
+
+35
+00:04:10,000 --> 00:04:17,160
+che al piano. Giusto per fare un esempio sembra che gli utenti siano più felici di trascorrere
+
+36
+00:04:17,160 --> 00:04:26,520
+10 secondi al piano e 50 all'interno della cabina piuttosto che 30 al piano e 30 nella
+
+37
+00:04:26,520 --> 00:04:42,960
+cabina anche se la somma di questi tempi è uguale. Ora dunque che sappiamo quali sono gli obiettivi
+
+38
+00:04:42,960 --> 00:04:51,080
+della nostra ottimizzazione proviamo a descrivere i principali algoritmi del mondo degli ascensori
+
+39
+00:04:51,080 --> 00:04:58,520
+e cominciamo subito col dire che gli ascensori non sono sempre stati guidati da algoritmi. Fino
+
+40
+00:04:58,520 --> 00:05:06,760
+al 1950 infatti la cabina era pilotata da un operatore, cioè proprio una persona che muoveva
+
+41
+00:05:06,760 --> 00:05:13,160
+una leva a seconda della direzione in cui doveva muoversi e che aveva anche la responsabilità di
+
+42
+00:05:13,160 --> 00:05:20,400
+fermarsi precisamente al piano, nonché a volte anche di aprire e chiudere le porte. Successivamente
+
+43
+00:05:20,400 --> 00:05:26,880
+a questo periodo iniziarono a diffondersi gli switch elettrici i quali permettevano di
+
+44
+00:05:26,880 --> 00:05:34,320
+automatizzare alcune funzioni e che quindi portarono all'eliminazione dell'operatore. La
+
+45
+00:05:34,320 --> 00:05:42,160
+cabina iniziò quindi a muoversi autonomamente ma con una logica molto basica. Essa infatti vuota
+
+46
+00:05:42,160 --> 00:05:48,160
+o piena che fosse si spostava continuamente da un piano all'altro procedendo fino a fine
+
+47
+00:05:48,160 --> 00:05:55,560
+corsa e poi tornando indietro. Se al piano erano presenti dei passeggeri questi salivano nel momento
+
+48
+00:05:55,560 --> 00:06:03,160
+in cui la cabina si presentava appunto al loro piano e poi attendevano tutte le fermate fino
+
+49
+00:06:03,160 --> 00:06:09,760
+al piano al quale dovevano scendere. In pratica l'ascensore si comportava un po' come un autobus
+
+50
+00:06:09,760 --> 00:06:16,400
+che va da una fermata all'altra fino a fine corsa e poi torna indietro. E come potete immaginare
+
+51
+00:06:16,880 --> 00:06:24,240
+questo algoritmo era piuttosto inefficiente sotto il punto di vista dei consumi. Pertanto non ebbe
+
+52
+00:06:24,240 --> 00:06:32,480
+vita molto lunga e dopo pochi anni fu rimpiazzato dal sistema di manovra. Ora il sistema di manovra
+
+53
+00:06:32,480 --> 00:06:38,600
+è quello che conosciamo un po' tutti. C'è una pulsantiera ad ogni piano ed una pulsantiera
+
+54
+00:06:38,600 --> 00:06:45,040
+all'interno della cabina. In questo modo gli utenti che devono salire possono chiamare l'ascensore
+
+55
+00:06:45,040 --> 00:06:50,840
+al proprio piano mentre quelli che sono già a bordo possono specificare il piano di destinazione.
+
+56
+00:06:50,840 --> 00:06:56,920
+E quindi il discorso sembrerebbe terminare qui ma in realtà è proprio qui che c'è la parte più
+
+57
+00:06:56,920 --> 00:07:02,960
+interessante. Dietro quelle pulsantiere infatti si possono nascondere vari algoritmi che guidano
+
+58
+00:07:02,960 --> 00:07:10,320
+il movimento della cabina e in particolare in Italia i più diffusi sono tre e sono anche quelli
+
+59
+00:07:10,320 --> 00:07:16,800
+di cui parleremo più approfonditamente in questo podcast. Il primo prende il nome di manovra
+
+60
+00:07:16,800 --> 00:07:23,240
+universale ed è anche il più semplice dei tre. Con questo tipo di manovra infatti l'ascensore
+
+61
+00:07:23,240 --> 00:07:30,560
+si trova in soli due stati possibili libero e occupato. Se l'ascensore è libero allora risponde
+
+62
+00:07:30,560 --> 00:07:37,720
+immediatamente alle chiamate e si dirige al piano del chiamante. Se invece l'ascensore è occupato
+
+63
+00:07:37,720 --> 00:07:44,960
+allora risponde solo ai comandi della pulsantiera interna e si dirige al piano indicato dal
+
+64
+00:07:44,960 --> 00:07:51,480
+passeggero. Chiaramente si tratta di un algoritmo di manovra piuttosto semplice e non ottimizza
+
+65
+00:07:51,480 --> 00:07:58,400
+né il tempo di attesa dei passeggeri né il risparmio energetico. Con esso infatti si rischia
+
+66
+00:07:58,400 --> 00:08:05,960
+che la cabina viaggi spesso con poco carico e contemporaneamente lasci gli utenti ad attendere
+
+67
+00:08:06,080 --> 00:08:12,560
+al proprio piano mentre i passeggeri raggiungono la loro destinazione. E questo anche se magari
+
+68
+00:08:12,560 --> 00:08:19,000
+tutti i passeggeri devono raggiungere lo stesso piano come ad esempio è il caso del piano terra.
+
+69
+00:08:19,000 --> 00:08:25,320
+Tuttavia questo tipo di impianti risulta essere piuttosto economico e quindi ottimizza il terzo
+
+70
+00:08:25,320 --> 00:08:31,160
+dei nostri parametri, quello che riguarda il costo di installazione e di manutenzione.
+
+71
+00:08:31,720 --> 00:08:36,680
+Dunque questo algoritmo di manovra è particolarmente indicato per contesti
+
+72
+00:08:36,680 --> 00:08:44,000
+residenziali non troppo grandi dove l'utilizzo dell'ascensore non è troppo intenso e al tempo
+
+73
+00:08:44,000 --> 00:08:50,880
+stesso non ci sono troppi piani da raggiungere. Un meccanismo di manovra invece sicuramente più
+
+74
+00:08:50,880 --> 00:08:59,320
+evoluto è detto collettivo per scendere. In questo sistema l'ascensore occupato si comporta
+
+75
+00:08:59,320 --> 00:09:05,680
+diversamente a seconda che stia andando verso l'alto o verso il basso. In particolare quando
+
+76
+00:09:05,680 --> 00:09:12,160
+si muove verso il basso se chiamato da uno dei piani che si trovano ancora al di sotto della
+
+77
+00:09:12,160 --> 00:09:19,720
+cabina questa si ferma a caricare passeggeri finché non raggiunge il pieno carico. Poi una
+
+78
+00:09:19,720 --> 00:09:26,040
+volta piena prosegue finché non raggiunge il primo dei piani prenotati dai passeggeri per la discesa.
+
+79
+00:09:26,560 --> 00:09:33,000
+Rispetto all'algoritmo di manovra universale con il quale ancora condivide il comportamento in
+
+80
+00:09:33,000 --> 00:09:41,200
+caso di movimento verso l'alto o di cabina libera, questo algoritmo collettivo per scendere risulta
+
+81
+00:09:41,200 --> 00:09:50,160
+più efficace nel ridurre i tempi di attesa dei passeggeri e del consumo energetico, ma anche
+
+82
+00:09:50,160 --> 00:09:56,840
+dei costi di installazione e di manutenzione maggiori. E dato che dà una maggiore priorità
+
+83
+00:09:56,840 --> 00:10:04,400
+al movimento verso il basso è particolarmente indicata per palazzi che contengono uffici dove
+
+84
+00:10:04,400 --> 00:10:12,640
+il traffico si concentra verso il piano terra ed in determinati orari. Infine la manovra più
+
+85
+00:10:12,680 --> 00:10:21,040
+complessa è detta collettiva selettiva per salita e discesa. In pratica è molto simile alla manovra
+
+86
+00:10:21,040 --> 00:10:28,560
+precedente ma si ferma a caricare passeggeri sia che la cabina stia procedendo verso l'alto
+
+87
+00:10:28,560 --> 00:10:36,320
+che verso il basso. Di questo algoritmo di manovra la cosa più interessante secondo me è che ai vari
+
+88
+00:10:36,320 --> 00:10:43,720
+piani sono presenti delle pulsantiere leggermente diverse. Se per le manovre precedenti infatti
+
+89
+00:10:43,720 --> 00:10:51,240
+avevamo un solo pulsante di chiamata in questo caso ne abbiamo due. Uno che indica la volontà
+
+90
+00:10:51,240 --> 00:10:58,760
+del passeggero di salire e l'altro che indica la volontà di scendere. So che sembra una differenza
+
+91
+00:10:58,760 --> 00:11:06,640
+da poco ma avere questa informazione in più da gestire cambia di gran lunga il funzionamento
+
+92
+00:11:06,640 --> 00:11:14,320
+dell'impianto. Per la cabina sapere che l'utente all'esterno vuole andare in basso o in alto
+
+93
+00:11:14,320 --> 00:11:23,520
+significa sapere se deve fermarsi oppure no. Mentre per l'utente significa verificare che la
+
+94
+00:11:23,520 --> 00:11:30,720
+cabina che si è fermata al suo piano stia andando nella direzione desiderata. Se infatti ad un
+
+95
+00:11:30,720 --> 00:11:37,320
+determinato piano sono presenti due utenti che vogliono andare in direzioni opposte o peggio
+
+96
+00:11:37,320 --> 00:11:44,080
+ancora l'utente non conosce la differenza tra i due pulsanti e li preme entrambi, quando le porte
+
+97
+00:11:44,080 --> 00:11:50,600
+si aprono occorre verificare che la direzione sia quella giusta altrimenti si rischia di salire e
+
+98
+00:11:50,640 --> 00:11:58,760
+doversi fare tutto il percorso fino al piano estremo e poi ritorno. In pratica quindi se
+
+99
+00:11:58,760 --> 00:12:05,280
+volessimo fare un parallelismo con lo sviluppo del software potremmo dire che aumentando la
+
+100
+00:12:05,280 --> 00:12:12,960
+complessità dell'algoritmo di movimento aumenta anche la complessità dell'interfaccia utente. Ad
+
+101
+00:12:12,960 --> 00:12:19,840
+ogni modo come avrete intuito questa è sicuramente la manovra più efficiente per passeggeri e consumi
+
+102
+00:12:20,360 --> 00:12:26,080
+ma ovviamente è anche quella che rende l'impianto molto più costoso.
+
+103
+00:12:26,080 --> 00:12:42,480
+Quante volte hai preso l'ascensore nella tua vita? Premi un tasto, arriva la cabina,
+
+104
+00:12:42,480 --> 00:12:49,440
+le porte si aprono, entri, un altro tasto e arrivi a destinazione. Una routine,
+
+105
+00:12:49,440 --> 00:12:57,440
+un gesto normale fatto senza pensare. E se qualcosa andasse storto? Se la cabina partisse
+
+106
+00:12:57,440 --> 00:13:02,760
+mentre stai entrando? Se le porte si aprissero mentre l'ascensore si muove o se la corsa non
+
+107
+00:13:02,760 --> 00:13:09,520
+si arrestasse fino a farti schiantare oltre l'ultimo piano? Dietro quel gesto così automatico
+
+108
+00:13:09,560 --> 00:13:16,320
+c'è una logica complessa che oltre a portarti a destinazione si prende cura della tua sicurezza.
+
+109
+00:13:16,320 --> 00:13:21,880
+Ma per ora non preoccuparti e goditi il tuo viaggio in ascensore.
+
+110
+00:13:21,880 --> 00:13:32,080
+La logica della sicurezza di un ascensore può essere gestita in maniera molto semplice attraverso
+
+111
+00:13:32,080 --> 00:13:37,960
+quella che in gergo si chiama la catena delle sicurezze. Che altro non è che un buon numero
+
+112
+00:13:38,160 --> 00:13:44,440
+di contatti collegati elettricamente in serie tra loro in modo che l'apertura di uno solo di essi
+
+113
+00:13:44,440 --> 00:13:50,880
+causi l'interruzione di tutto il circuito e l'arresto dell'impianto andando ad agire
+
+114
+00:13:50,880 --> 00:13:56,480
+direttamente sul circuito di alimentazione del motore e del freno. Esempi di contatti
+
+115
+00:13:56,480 --> 00:14:02,000
+che formano la catena delle sicurezze sono i contatti posti sulle porte di piano che
+
+116
+00:14:02,000 --> 00:14:08,360
+risultano chiusi solo se le porte sono a loro volta chiuse o i contatti di extracorsa che
+
+117
+00:14:08,360 --> 00:14:14,760
+bloccano l'impianto in caso di superamento dei piani estremi. Questi contatti sono detti di
+
+118
+00:14:14,760 --> 00:14:21,040
+sicurezza perché per la loro conformazione quando devono aprirsi lo fanno anche nel caso
+
+119
+00:14:21,040 --> 00:14:28,360
+malaugurato in cui si fossero saldati tra loro. Per esempio tornando alle porte di piano di solito
+
+120
+00:14:28,360 --> 00:14:34,640
+esse sono dotate di contatti detti a ponte asportabile costituiti di due parti una fissata
+
+121
+00:14:34,640 --> 00:14:40,780
+al telaio della porta e l'altra all'anta in modo che l'azione di apertura della porta comporti
+
+122
+00:14:40,780 --> 00:14:46,920
+l'allontanamento di una delle due parti detta ponte e l'apertura del circuito. La catena
+
+123
+00:14:46,920 --> 00:14:52,360
+delle sicurezze proprio per la sua importanza fondamentale è un canale che si tende a tenere
+
+124
+00:14:52,360 --> 00:14:57,880
+il più possibile separato dalle altre parti del circuito di comando che presiedono al controllo
+
+125
+00:14:57,880 --> 00:15:03,720
+delle funzioni di un ascensore. La scheda madre può leggere le informazioni che provengono dalla
+
+126
+00:15:03,720 --> 00:15:09,960
+catena delle sicurezze di solito da alcuni punti ritenuti di particolare importanza e utili per la
+
+127
+00:15:09,960 --> 00:15:16,520
+diagnostica ma ciò deve essere fatto a particolari condizioni come ad esempio l'impiego di foto
+
+128
+00:15:16,520 --> 00:15:22,840
+accoppiatori e in una zona della scheda isolata dal resto della circuiteria in modo che un guasto
+
+129
+00:15:22,840 --> 00:15:28,720
+sulla scheda madre non possa mai compromettere l'integrità della catena delle sicurezze. Ci
+
+130
+00:15:28,720 --> 00:15:34,800
+sono però casi in cui un circuito elettronico deve interagire con la catena delle sicurezze
+
+131
+00:15:34,800 --> 00:15:41,960
+ad esempio andando a cortocircuitarne una parte e quello che accade quando si deve riportare al
+
+132
+00:15:41,960 --> 00:15:49,720
+piano una cabina che si abbassa mentre viene caricata con le porte aperte. In questo caso per
+
+133
+00:15:49,720 --> 00:15:56,080
+muovere la cabina con le porte aperte è necessario cortocircuitare il contatto della porta che essendo
+
+134
+00:15:56,080 --> 00:16:02,480
+aperto non consentirebbe il movimento della cabina. E' ovvio che questa operazione è piuttosto rischiosa
+
+135
+00:16:02,480 --> 00:16:08,480
+muovere la cabina mentre le persone stanno entrando o uscendo espone a pericoli che sono
+
+136
+00:16:08,480 --> 00:16:15,120
+facilmente immaginabili quindi circuiti di questo tipo devono avere caratteristiche speciali come
+
+137
+00:16:15,120 --> 00:16:20,840
+essere ridondanti rispondere a specifiche caratteristiche per quanto riguarda i materiali
+
+138
+00:16:20,840 --> 00:16:27,440
+impiegati per la loro costruzione e sottostare ad una severa analisi dei guasti in modo tale
+
+139
+00:16:27,440 --> 00:16:34,520
+che un cambiamento di stato di qualsiasi componente non comprometta la sicurezza dell'impianto. Inoltre
+
+140
+00:16:34,520 --> 00:16:40,440
+il software che definisce la logica di funzionamento di questi particolari circuiti elettronici detti
+
+141
+00:16:40,480 --> 00:16:46,840
+di sicurezza deve risultare inaccessibile dall'esterno a chi non sia autorizzato dunque
+
+142
+00:16:46,840 --> 00:16:53,800
+deve essere protetto da un codice di accesso oppure risiedere su EPROM. A questo punto forse
+
+143
+00:16:53,800 --> 00:16:59,760
+quell'azione così semplice che hai fatto tante volte di entrare in ascensore e premere un pulsante
+
+144
+00:16:59,760 --> 00:17:06,480
+ti apparirà sotto una luce diversa. Forse starai pensando a quali pericoli tu possa andare incontro
+
+145
+00:17:06,480 --> 00:17:13,760
+entrando in un ascensore beh puoi stare tranquillo l'ascensore oggi è uno dei mezzi di trasporto più
+
+146
+00:17:13,760 --> 00:17:19,920
+sicuri al mondo difficilmente un passeggero potrà subire qualsiasi tipo di inconveniente mentre si
+
+147
+00:17:19,920 --> 00:17:25,800
+trova al suo interno neanche se si rompessero tutte le funiche sostengono la cabina questa
+
+148
+00:17:25,800 --> 00:17:47,040
+potrebbe precipitare e anche oggi siamo giunti al termine dell'episodio prima di chiudere ringrazio
+
+149
+00:17:47,040 --> 00:17:53,600
+rinaldo papa che ci ha prestato la sua voce e le sue competenze se non conoscete il suo
+
+150
+00:17:53,600 --> 00:18:01,000
+podcast ascensori ed intorni andatelo a recuperare e scoprirete quanto può essere interessante il
+
+151
+00:18:01,000 --> 00:18:06,960
+mondo degli ascensori vi lascio il link in descrizione oltre a ciò vi ricordo che sempre
+
+152
+00:18:06,960 --> 00:18:13,400
+in descrizione trovate tutti i miei contatti se volete parlarmi o chiedermi consulenze il
+
+153
+00:18:13,400 --> 00:18:20,680
+link al gruppo telegram se volete interagire con la community e il link al canale telegram
+
+154
+00:18:20,680 --> 00:18:26,280
+per rimanere aggiornati su tutte le novità e con questo direi che non c'è altro se non
+
+155
+00:18:26,280 --> 00:18:33,760
+salutarvi e ricordarvi che un informatico risolve problemi a volte anche usando il computer
+

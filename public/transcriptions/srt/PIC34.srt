@@ -1,0 +1,976 @@
+1
+00:00:00,000 --> 00:00:25,000
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in Codice.
+
+2
+00:00:25,000 --> 00:00:30,760
+Come forse alcuni di voi già sapranno, nella vita vera, quella al di fuori di internet,
+
+3
+00:00:30,760 --> 00:00:37,640
+dei podcast eccetera, io lavoro come analista e programmatore all'incirca dal 2006 e da
+
+4
+00:00:37,640 --> 00:00:44,080
+circa 10 anni fornisco consulenza come freelance, quindi progetto e realizzo software, siti
+
+5
+00:00:44,080 --> 00:00:46,000
+web e altre soluzioni del genere.
+
+6
+00:00:46,000 --> 00:00:52,040
+Nel corso di questi anni ho quindi avuto l'opportunità di lavorare con molte tipologie di clienti
+
+7
+00:00:52,040 --> 00:00:57,080
+e credo di aver sviluppato un certo fiuto per capire quando è il caso di lanciarsi
+
+8
+00:00:57,080 --> 00:01:01,680
+in una nuova avventura e quando invece è il caso di lasciare che il lavoro lo svolga
+
+9
+00:01:01,680 --> 00:01:03,480
+un altro professionista.
+
+10
+00:01:03,480 --> 00:01:09,000
+Ho pensato dunque di realizzare questo episodio per realizzare una sorta di mio personalissimo
+
+11
+00:01:09,000 --> 00:01:14,520
+campionario dei clienti da evitare, o di quelli almeno dai quali prendere le distanze.
+
+12
+00:01:14,520 --> 00:01:20,800
+Prima però di lanciarci nel folkloristico mondo del professionista freelance vorrei
+
+13
+00:01:20,800 --> 00:01:22,520
+che fossero chiare un paio di cose.
+
+14
+00:01:22,520 --> 00:01:27,800
+Innanzitutto, per come la vedo io, allontanare un cattivo cliente non è semplicemente un
+
+15
+00:01:27,800 --> 00:01:32,080
+capriccio, anzi è un dovere verso tutti gli altri clienti.
+
+16
+00:01:32,080 --> 00:01:38,600
+Questa tipologia di personaggi, infatti, rappresenta un fattore che peggiora in generale la qualità
+
+17
+00:01:38,600 --> 00:01:44,960
+di tutto il lavoro del professionista, generano stress, provocano problemi totalmente superflui
+
+18
+00:01:44,960 --> 00:01:51,480
+che provano comunque risolti e in questo modo sprecano le risorse del professionista
+
+19
+00:01:51,480 --> 00:01:56,920
+che come ben sappiamo sono limitate e in questo modo danneggiano anche i clienti virtuosi.
+
+20
+00:01:56,920 --> 00:02:02,560
+La seconda cosa poi che dovete tenere bene a mente è che le considerazioni che andrò
+
+21
+00:02:02,560 --> 00:02:08,800
+a fare sono strettamente legate alla mia personale esperienza e potrebbero non valere per tutti.
+
+22
+00:02:08,800 --> 00:02:14,360
+Per questo motivo, prima di prendere il telefono e chiudere con tutti i vostri clienti, valutate
+
+23
+00:02:14,360 --> 00:02:19,200
+bene il fatto che quanto dirò potrebbe non essere applicabile alla vostra tipologia
+
+24
+00:02:19,200 --> 00:02:23,000
+di lavoro o alla vostra particolare situazione, ok?
+
+25
+00:02:23,000 --> 00:02:27,920
+Bene, ora che mi sono messo al riparo da eventuali querele, possiamo iniziare.
+
+26
+00:02:27,920 --> 00:02:33,560
+Ah, e a proposito, se sei un mio cliente e stai ascoltando questa puntata, non preoccuparti,
+
+27
+00:02:33,560 --> 00:02:34,560
+non si parla di te.
+
+28
+00:02:34,560 --> 00:02:38,360
+Se così fosse, non saresti più un mio cliente da molto tempo.
+
+29
+00:02:44,360 --> 00:02:53,840
+Quando ho iniziato a raccogliere materiale per questa puntata, mi sono reso conto di
+
+30
+00:02:53,840 --> 00:02:59,680
+aver messo insieme una lista di tipologie di pessimi clienti molto più lunga di quanto
+
+31
+00:02:59,680 --> 00:03:00,680
+mi aspettassi.
+
+32
+00:03:00,680 --> 00:03:05,880
+Ci sarebbe da parlarne per ore, ma siccome voglio mantenere l'episodio nella lunghezza
+
+33
+00:03:05,880 --> 00:03:10,960
+media o almeno sotto i 30 minuti, ho deciso di organizzare in questo modo.
+
+34
+00:03:11,480 --> 00:03:17,120
+Oggi facciamo un elenco non troppo dettagliato, suddividendo i soggetti in categorie, iniziando
+
+35
+00:03:17,120 --> 00:03:22,600
+da quelle che secondo me sono le più scontate per procedere via via verso quelle più particolari.
+
+36
+00:03:22,600 --> 00:03:28,640
+Poi, se l'argomento è di vostro interesse, organizziamo un approfondimento in live su
+
+37
+00:03:28,640 --> 00:03:32,160
+Twitch, nel quale potremo anche invitare altri professionisti.
+
+38
+00:03:32,160 --> 00:03:35,440
+Partiamo dunque togliendoci subito il pensiero.
+
+39
+00:03:35,440 --> 00:03:40,720
+Il primo tipo di cliente da evitare è, ovviamente, quello che non paga.
+
+40
+00:03:41,120 --> 00:03:42,520
+O che comunque paga in ritardo.
+
+41
+00:03:42,520 --> 00:03:49,360
+Potreste pensare che sia un'affermazione banale, ma in realtà sembra che moltissime
+
+42
+00:03:49,360 --> 00:03:51,120
+persone se la dimentichino.
+
+43
+00:03:51,120 --> 00:03:57,720
+Il fatto di amare il proprio lavoro non implica che lo si possa o lo si debba fare gratis,
+
+44
+00:03:57,720 --> 00:04:01,280
+oppure che si possa aspettare un anno o due prima di essere pagati.
+
+45
+00:04:01,280 --> 00:04:08,400
+Non si può certo pagare la spesa al supermercato con la passione, o neanche le bollette o le
+
+46
+00:04:08,400 --> 00:04:09,400
+tasse.
+
+47
+00:04:09,400 --> 00:04:13,000
+Ma nonostante ciò, esiste quello che io chiamo il non pagatore.
+
+48
+00:04:13,000 --> 00:04:17,720
+Colui, cioè, che ha il vizio di sparire quando riceve una fattura.
+
+49
+00:04:17,720 --> 00:04:23,240
+Dice che a breve pagherà e poi smette di rispondere all'email, al telefono, eccetera.
+
+50
+00:04:23,240 --> 00:04:28,600
+Se va bene, si deve insistere per mesi per ottenere il saldo della fattura, mentre se
+
+51
+00:04:28,600 --> 00:04:33,400
+va male si deve ricorrere all'avvocato con tutto ciò che ne consegue in termini di costi
+
+52
+00:04:33,400 --> 00:04:34,400
+e tempi.
+
+53
+00:04:34,400 --> 00:04:39,480
+Sempre che poi ne valga la pena, perché a volte sono più le spese che il possibile
+
+54
+00:04:39,480 --> 00:04:40,480
+guadagno.
+
+55
+00:04:40,480 --> 00:04:46,080
+In questa categoria, per quella che è la mia esperienza, ricadono sicuramente gli enti
+
+56
+00:04:46,080 --> 00:04:47,080
+pubblici.
+
+57
+00:04:47,080 --> 00:04:52,120
+Ogni volta in cui ho dovuto lavorare per un comune, l'unico modo per essere pagato è
+
+58
+00:04:52,120 --> 00:04:58,320
+stato o chiamare l'avvocato, o avere conoscenze all'interno, e nonostante ciò ho ancora fatture
+
+59
+00:04:58,320 --> 00:05:00,240
+del 2015 non pagate.
+
+60
+00:05:00,240 --> 00:05:02,760
+Ma gli enti pubblici non sono gli unici.
+
+61
+00:05:03,280 --> 00:05:08,760
+Per esempio, a me sono capitate anche persone che al lavoro ultimato hanno inviato una mail
+
+62
+00:05:08,760 --> 00:05:13,360
+scrivendo che non avevano più bisogno del sito e quindi non lo volevano più e non l'avrebbero
+
+63
+00:05:13,360 --> 00:05:14,360
+pagato.
+
+64
+00:05:14,360 --> 00:05:20,000
+Questo tipo di cliente purtroppo non è facile da individuare per tempo, perché scopre le
+
+65
+00:05:20,000 --> 00:05:25,200
+proprie carte solo dopo aver ricevuto la fattura, e quindi potenzialmente dopo che il lavoro
+
+66
+00:05:25,200 --> 00:05:26,360
+è stato già fatto.
+
+67
+00:05:26,360 --> 00:05:31,800
+Ci sono però alcune possibili contromisure che possiamo mettere in atto per evitare di
+
+68
+00:05:31,800 --> 00:05:37,480
+trovarci in difficoltà troppo grandi quando uno dei nostri clienti si rivela un non pagatore.
+
+69
+00:05:37,480 --> 00:05:40,960
+Il segreto è lavorare solo su incarico scritto.
+
+70
+00:05:40,960 --> 00:05:46,880
+Prima di iniziare si stipula un contratto o un preventivo, se possibile conviene anche
+
+71
+00:05:46,880 --> 00:05:52,160
+fissare un acconto e chiarire bene che non si inizia finché questo non viene saldato.
+
+72
+00:05:52,160 --> 00:05:58,440
+Questo non ci garantirà di evitare tutti i non pagatori, ma almeno se non pagheranno
+
+73
+00:05:58,440 --> 00:06:03,880
+l'acconto sapremo che non è il caso di mettere mano al lavoro, e se invece fossimo costretti
+
+74
+00:06:03,880 --> 00:06:09,440
+a dover tirare in ballo l'avvocato, gli potremmo almeno dare dei documenti solidi su cui lavorare.
+
+75
+00:06:09,440 --> 00:06:15,560
+Parlando sempre dell'aspetto economico, la seconda categoria di cattivo cliente che ho
+
+76
+00:06:15,560 --> 00:06:18,920
+individuato è quella che ho definito l'intrallazzatore.
+
+77
+00:06:18,920 --> 00:06:25,600
+L'intrallazzatore è quello che o vuole pagare in nero per risparmiare, oppure vuole approfittare
+
+78
+00:06:25,600 --> 00:06:31,160
+di un qualche incentivo statale, pretendendo che gli realizziamo un sito web e poi glielo
+
+79
+00:06:31,160 --> 00:06:37,160
+fatturiamo il triplo scrivendo in fattura che gli abbiamo installato l'impianto di condizionamento.
+
+80
+00:06:37,160 --> 00:06:40,120
+E allora procediamo con ordine.
+
+81
+00:06:40,120 --> 00:06:41,120
+1.
+
+82
+00:06:41,120 --> 00:06:43,880
+Non si lavora in nero, punto e basta.
+
+83
+00:06:43,880 --> 00:06:47,960
+Non è solo una questione etica, fiscale e legale, ma proprio pratica.
+
+84
+00:06:47,960 --> 00:06:53,840
+Se ad esempio dovessero sorgere dei problemi, magari il tizio non ci paga, come gli mandiamo
+
+85
+00:06:53,840 --> 00:06:56,760
+un decreto ingiuntivo se non esiste nemmeno la fattura.
+
+86
+00:06:56,760 --> 00:06:57,760
+2.
+
+87
+00:06:57,760 --> 00:07:02,320
+Non c'è nulla di male ad approfittare di un bonus o di un incentivo statale, a patto
+
+88
+00:07:02,320 --> 00:07:07,640
+però che questo riguardi un tipo di bene o servizio che noi siamo in grado di fornire
+
+89
+00:07:07,640 --> 00:07:10,640
+e che poi la cifra non sia gonfiata in modo artificioso.
+
+90
+00:07:10,640 --> 00:07:13,680
+Anche qui si tratta di una questione pratica.
+
+91
+00:07:13,680 --> 00:07:16,680
+Poniamo ad esempio che ci siano dei controlli.
+
+92
+00:07:16,680 --> 00:07:21,960
+Come giustifichiamo il fatto che tutte le nostre fatture riguardano lo sviluppo di siti
+
+93
+00:07:21,960 --> 00:07:28,040
+web e software e poi stranamente quella finanziata con l'incentivo riguarda l'installazione di
+
+94
+00:07:28,040 --> 00:07:29,040
+condizionatori?
+
+95
+00:07:29,040 --> 00:07:34,440
+Oppure come giustifichiamo quel sito di 3 pagine e 4 immagini in croce che però abbiamo
+
+96
+00:07:34,440 --> 00:07:36,800
+fatturato 10 mila euro?
+
+97
+00:07:36,800 --> 00:07:41,420
+Ecco, siccome questo soggetto si riconosce immediatamente appena si inizia a parlare
+
+98
+00:07:41,420 --> 00:07:46,760
+di compensi, secondo me il modo migliore per difendersi è semplicemente quello di stargli
+
+99
+00:07:46,760 --> 00:07:47,760
+alla larga.
+
+100
+00:07:47,760 --> 00:07:48,760
+3.
+
+101
+00:07:48,760 --> 00:07:52,960
+Passiamo quindi alla terza tipologia, il wannabe socio.
+
+102
+00:07:52,960 --> 00:07:59,280
+Il wannabe socio è quello che arriva da noi con le idee più belle del mondo ma purtroppo
+
+103
+00:07:59,280 --> 00:08:01,080
+senza il budget per realizzarle.
+
+104
+00:08:01,080 --> 00:08:06,560
+Questo tipo di cliente si riconosce dal fatto che nonostante sia convinto che il prodotto
+
+105
+00:08:06,560 --> 00:08:12,640
+che ha in mente sia potenzialmente un grandissimo successo, non sembra intenzionato a voler
+
+106
+00:08:12,640 --> 00:08:14,040
+investire in esso.
+
+107
+00:08:14,120 --> 00:08:19,080
+In pratica si vede che non vuole scommettere in prima persona sulla propria idea.
+
+108
+00:08:19,080 --> 00:08:25,120
+Per questo motivo dopo avercela illustrata in lungo e in largo e dopo aver cercato di
+
+109
+00:08:25,120 --> 00:08:30,240
+convincerci che sarà un grande successo, ci fa la fatidica proposta.
+
+110
+00:08:30,240 --> 00:08:36,320
+Lui ci mette l'idea, noi la realizziamo e quando lui la venderà divideremo i ricavi.
+
+111
+00:08:36,320 --> 00:08:42,440
+Ora, capiamoci bene, solo voi potete decidere se imbarcarvi o meno in un'avventura del genere
+
+112
+00:08:42,440 --> 00:08:48,240
+ma per quella che è la mia esperienza 99 volte su 100 si tratterà di tempo e risorse
+
+113
+00:08:48,240 --> 00:08:49,240
+buttate.
+
+114
+00:08:49,240 --> 00:08:54,640
+In linea generale però io penso che se si lavora come freelance già ci si assume un
+
+115
+00:08:54,640 --> 00:09:00,800
+certo rischio d'impresa e si investe su se stessi, sulla propria formazione ed esperienza.
+
+116
+00:09:00,800 --> 00:09:07,200
+Per questo motivo io trovo sbagliato assumersi altri rischi investendo anche su idee di altri,
+
+117
+00:09:07,200 --> 00:09:12,240
+soprattutto perché molto spesso non si è sufficientemente preparati a giudicare la
+
+118
+00:09:12,240 --> 00:09:13,560
+bontà di tali idee.
+
+119
+00:09:13,560 --> 00:09:19,240
+Quello insomma che sto cercando di dire è che se faccio un lavoro per qualcuno è giusto
+
+120
+00:09:19,240 --> 00:09:25,280
+che questo qualcuno paghi il lavoro e sia dunque lui ad assumersi gli eventuali rischi
+
+121
+00:09:25,280 --> 00:09:27,200
+legati alla propria attività.
+
+122
+00:09:27,200 --> 00:09:33,120
+Altra tipologia di cliente da evitare è poi il sospettoso.
+
+123
+00:09:34,120 --> 00:09:40,360
+A me è capitato più di una volta, incontri un cliente, ascolti le sue richieste, prepari
+
+124
+00:09:40,360 --> 00:09:46,000
+il preventivo, glielo illustri, glielo mandi via email richiedendo una copia firmata e
+
+125
+00:09:46,000 --> 00:09:49,280
+lui ti risponde via whatsapp ok possiamo cominciare.
+
+126
+00:09:49,280 --> 00:09:55,360
+Tu allora gli rispondi dicendo che hai bisogno di una copia firmata del preventivo prima
+
+127
+00:09:55,360 --> 00:10:00,920
+di iniziare e lui sparisce per 3 settimane e poi ti scrive di nuovo via whatsapp a che
+
+128
+00:10:00,920 --> 00:10:03,120
+punto siamo con il sito.
+
+129
+00:10:03,120 --> 00:10:08,560
+Esiste anche una variante di questo soggetto ed è quello che firma ma non salda l'acconto
+
+130
+00:10:08,560 --> 00:10:13,600
+nonostante sul preventivo ci sia ben specificato che non si comincia prima che la prima fattura
+
+131
+00:10:13,600 --> 00:10:14,600
+sia pagata.
+
+132
+00:10:14,600 --> 00:10:20,960
+Io credo che questo genere di persone semplicemente non si fidi del consulente al quale si è
+
+133
+00:10:20,960 --> 00:10:23,720
+rivolto e per questo motivo non voglia esporsi.
+
+134
+00:10:23,720 --> 00:10:30,640
+Ora a me sta benissimo che tu non ti fidi di me ma se è così sono io che preferisco non
+
+135
+00:10:30,640 --> 00:10:31,760
+lavorare con te.
+
+136
+00:10:31,760 --> 00:10:37,800
+Per me è fondamentale che i clienti si fidino sotto ogni aspetto del piano lavorativo se
+
+137
+00:10:37,800 --> 00:10:42,080
+percepisco che non è così allora sono io il primo a tirarmi indietro.
+
+138
+00:10:42,080 --> 00:10:47,560
+Bene esaurite dunque le categorie legate ai compensi che in realtà credo che bene o
+
+139
+00:10:47,560 --> 00:10:54,080
+male tutti in prima persona abbiamo avuto modo di conoscere passiamo a parlare di soggetti
+
+140
+00:10:54,080 --> 00:10:55,520
+un po più particolari.
+
+141
+00:10:55,960 --> 00:11:01,840
+Le prossime categorie si riconoscono ben prima che sia possibile riuscire a formulare un'offerta
+
+142
+00:11:01,840 --> 00:11:06,440
+o un preventivo ed è bene sapere che queste potrebbero rivelarsi fonte di guai.
+
+143
+00:11:06,440 --> 00:11:10,600
+La prima tipologia di cliente in questo gruppo è l'indeciso.
+
+144
+00:11:10,600 --> 00:11:18,160
+L'indeciso arriva con poche idee e ben confuse chiede se è possibile fare tutto e il contrario
+
+145
+00:11:18,160 --> 00:11:19,160
+di tutto.
+
+146
+00:11:19,160 --> 00:11:24,760
+In pratica appare subito chiaro che si è rivolto al consulente troppo presto prima
+
+147
+00:11:24,760 --> 00:11:29,960
+ancora di mettere in ordine i propri pensieri per questo motivo non è in grado di esporre
+
+148
+00:11:29,960 --> 00:11:35,920
+le proprie necessità in modo sufficientemente coerente da permetterci di elaborare una soluzione
+
+149
+00:11:35,920 --> 00:11:41,640
+di valore e sempre per questo motivo non è il caso di iniziare un lavoro in queste condizioni
+
+150
+00:11:41,640 --> 00:11:47,320
+ma questo cliente non è necessariamente da evitare probabilmente va solo rimandato nel
+
+151
+00:11:47,320 --> 00:11:48,320
+tempo.
+
+152
+00:11:48,320 --> 00:11:54,400
+L'ideale sarebbe provare ad aiutarlo a fare ordine nelle proprie idee magari dandogli qualche
+
+153
+00:11:54,440 --> 00:12:00,520
+informazione che gli possa essere utile e lasciandogli il tempo per ragionare ulteriormente
+
+154
+00:12:00,520 --> 00:12:01,520
+sulle proprie necessità.
+
+155
+00:12:01,520 --> 00:12:07,640
+Diverso invece è il discorso per quello che ho battezzato l'esperto solitamente arriva
+
+156
+00:12:07,640 --> 00:12:12,800
+già con la soluzione in tasca gli serve solo qualcuno che la realizzi nella sua versione
+
+157
+00:12:12,800 --> 00:12:18,600
+plus l'esperto addirittura ha anche intenzione di realizzarselo da solo il proprio software
+
+158
+00:12:18,600 --> 00:12:22,840
+o il proprio sito web gli serve solo una mano perché da solo non ce la fa.
+
+159
+00:12:23,840 --> 00:12:29,880
+Qui la situazione si fa un po complicata il modo migliore che ho trovato per affrontare
+
+160
+00:12:29,880 --> 00:12:36,160
+questo tipo di soggetto è cercare di capire se effettivamente si tratta di un esperto
+
+161
+00:12:36,160 --> 00:12:40,320
+se parliamo infatti di un professionista in gamba che ci sta chiedendo una mano allora
+
+162
+00:12:40,320 --> 00:12:46,020
+non c'è nulla di male a proporgli una offerta adeguata se invece si tratta di qualcuno
+
+163
+00:12:46,020 --> 00:12:51,920
+che crede di essere un esperto beh allora il mio consiglio è quello di scappare a gambe
+
+164
+00:12:51,920 --> 00:12:58,360
+elevate il rischio è quello di ritrovarsi a dover lavorare male e troppo per soddisfare
+
+165
+00:12:58,360 --> 00:13:04,240
+richieste mal formulate e magari venire anche criticati l'esperto comunque si riconosce
+
+166
+00:13:04,240 --> 00:13:09,680
+abbastanza facilmente nel momento in cui arriva ci dice cosa c'è da fare come si deve
+
+167
+00:13:09,680 --> 00:13:15,520
+fare in quanto tempo si deve fare e quanto saremo pagati per farlo un'altra tipologia
+
+168
+00:13:15,520 --> 00:13:22,200
+di cliente che mi sta molto simpatico è quello che vuole vedere come verrà il lavoro
+
+169
+00:13:22,200 --> 00:13:28,320
+io lo definisco il furbo solitamente mi è capitato soprattutto con i preventivi di siti
+
+170
+00:13:28,320 --> 00:13:34,640
+web non bastano i wireframe non bastano i mockup e non basta nemmeno una demo del tema
+
+171
+00:13:34,640 --> 00:13:41,240
+di wordpress lui ci dirà invece che per decidere se farci fare il sito vuole vedere la home
+
+172
+00:13:41,240 --> 00:13:48,620
+page funzionante con i suoi colori il suo logo 10 articoli di esempio magari con i testi e le
+
+173
+00:13:48,620 --> 00:13:54,440
+immagini prese dal suo vecchio sito e magari con la pagina dei contatti e quella dell'azienda non
+
+174
+00:13:54,440 --> 00:14:00,840
+ci vuole quindi un genio per capire che vuole che facciamo il lavoro prima di decidere se
+
+175
+00:14:00,840 --> 00:14:07,080
+comprarlo o meno bene sta a noi decidere se assumerci o meno un rischio del genere non
+
+176
+00:14:07,080 --> 00:14:12,360
+necessariamente questo individuo ci farà lavorare a vuoto ma d'altro canto se non
+
+177
+00:14:12,360 --> 00:14:16,960
+dovesse piacergli il risultato noi avremo sprecato il nostro tempo per trovarci con
+
+178
+00:14:16,960 --> 00:14:22,440
+un prodotto che non potremo vendere a nessun altro l'ultima categoria di questo secondo
+
+179
+00:14:22,440 --> 00:14:28,560
+gruppo è una sorta di bonus perché mi è capitata proprio mentre scrivevo questo episodio si tratta
+
+180
+00:14:28,560 --> 00:14:35,560
+dell'impegnato anche questo secondo me non è necessariamente un soggetto da escludere a priori
+
+181
+00:14:36,000 --> 00:14:43,920
+però va comunque tenuto sotto stretta sorveglianza l'impegnato è quello che ci contatta per un'idea
+
+182
+00:14:43,920 --> 00:14:50,000
+di cui non ci dà i dettagli e ci dà però appuntamento il giorno e allora che decide lui
+
+183
+00:14:50,000 --> 00:14:56,480
+nel suo ufficio o sul suo posto di lavoro ora anche qui cerchiamo di capirci non c'è nulla
+
+184
+00:14:56,480 --> 00:15:02,360
+di male ad andare da un cliente anzi se si tratta di un'azienda nel proprio settore o di
+
+185
+00:15:02,360 --> 00:15:09,440
+consulenze continuative è anche normale andare nei loro uffici il freelance ovviamente si sposta
+
+186
+00:15:09,440 --> 00:15:15,160
+più facilmente di un intero team aziendale o di un dirigente l'idea di fondo dell'impegnato
+
+187
+00:15:15,160 --> 00:15:21,680
+però è questa se ci stiamo appena conoscendo e tu mi vuoi parlare del tuo progetto e non sei
+
+188
+00:15:21,680 --> 00:15:27,400
+nemmeno un professionista o un'azienda che abbia delle competenze nel mio campo sarebbe il caso
+
+189
+00:15:27,400 --> 00:15:32,760
+che almeno per l'incontro preliminare come si fa con un avvocato o con un commercialista venissi
+
+190
+00:15:32,760 --> 00:15:38,280
+tu nel mio ufficio non che io debba venire da te con la concreta possibilità di buttare il mio
+
+191
+00:15:38,280 --> 00:15:44,080
+tempo al massimo se proprio ti è complicato spostarti almeno per il primo incontro potresti
+
+192
+00:15:44,080 --> 00:15:49,880
+accettare una chiamata o una videoconferenza se però hai così poco rispetto del mio tempo da
+
+193
+00:15:49,880 --> 00:15:56,760
+pensare che possa essere sprecato al contrario del tuo beh allora penso proprio che sia difficile
+
+194
+00:15:56,760 --> 00:16:02,280
+che andremo d'accordo ed è meglio che questo lavoro lo faccia qualcun altro con questo arriviamo
+
+195
+00:16:02,280 --> 00:16:08,920
+al terzo ed ultimo gruppo di categorie di soggetti questi di solito si rivelano per quello che sono
+
+196
+00:16:08,920 --> 00:16:15,960
+durante lo svolgimento del lavoro e la situazione è quindi abbastanza complicata e va gestita con
+
+197
+00:16:15,960 --> 00:16:22,320
+intelligenza perché è necessario sia arginare i problemi ma anche non mandare a monte il lavoro
+
+198
+00:16:22,320 --> 00:16:28,480
+prima categoria di questo gruppo è il confuso il classico cliente che ad ogni meeting chiede
+
+199
+00:16:28,480 --> 00:16:34,800
+qualcosa di diverso io non ho mai capito se il problema è che non capisce le soluzioni che gli
+
+200
+00:16:34,800 --> 00:16:41,200
+vengono illustrate e non vuole ammetterlo per cui non fa ulteriori domande oppure se al termine
+
+201
+00:16:41,200 --> 00:16:46,840
+della riunione dimentica tutto quello di cui si è parlato fatto sta che una volta chiede di
+
+202
+00:16:46,840 --> 00:16:51,920
+fare qualcosa e la volta successiva chiede di smontare quel qualcosa che aveva chiesto la
+
+203
+00:16:51,920 --> 00:16:58,760
+volta prima e procede così in casi estremi il confuso è perfino capace di fare contemporaneamente
+
+204
+00:16:58,760 --> 00:17:06,000
+più richieste che vanno in conflitto fra loro cose del tipo che vuole spedire un prodotto all'utente
+
+205
+00:17:06,000 --> 00:17:14,120
+ma poi i form del profilo devono essere semplici e quindi chiedere solo nome e cognome e tu sei
+
+206
+00:17:14,120 --> 00:17:20,960
+lì che mentre lo ascolti con un attimo di smarrimento ti chiedi sì ok ma io l'indirizzo
+
+207
+00:17:20,960 --> 00:17:26,120
+dell'utente da qualche parte lo dovrò pure inserire o lo indovino un comportamento del
+
+208
+00:17:26,120 --> 00:17:32,280
+genere è molto pericoloso perché fa lievitare enormemente i tempi di realizzazione di un
+
+209
+00:17:32,280 --> 00:17:38,080
+progetto questo perché causa un continuo fare e disfare tant'è vero che il confuso è anche
+
+210
+00:17:38,080 --> 00:17:44,240
+quel tipo di cliente che usa continuamente la frase ti costa fare un piccolo extra per questo
+
+211
+00:17:44,240 --> 00:17:50,800
+motivo io penso che sia proprio su questo concetto che si deve tentare di arginarlo ogni riunione
+
+212
+00:17:50,800 --> 00:17:56,200
+deve terminare con la lista delle nuove richieste fatte e la promessa di inviare a breve le nuove
+
+213
+00:17:56,200 --> 00:18:01,920
+quotazioni da approvare per ciascuna modifica a quel punto secondo me l'esborso di denaro extra
+
+214
+00:18:01,920 --> 00:18:09,080
+aiuta sia lui a far luce sulla propria confusione che noi a sopportare meglio la situazione in
+
+215
+00:18:09,080 --> 00:18:15,360
+ultimo ho lasciato e non saprei neanche dirvi se in modo conscio o meno le due categorie che odio
+
+216
+00:18:15,360 --> 00:18:22,960
+di più le definirei l'ansioso e il mio cugino mi ha detto che cugino scritto proprio con due g
+
+217
+00:18:22,960 --> 00:18:27,840
+l'ansioso è quello che chiama a qualsiasi ora del giorno o della notte per chiedere un documento
+
+218
+00:18:27,840 --> 00:18:35,360
+una verifica per fare una domanda nel 99,9 per cento dei casi qualsiasi cosa voglia può essere
+
+219
+00:18:35,360 --> 00:18:41,320
+tranquillamente rimandata anche di due o tre giorni senza alcuna conseguenza ma lui sente la
+
+220
+00:18:41,320 --> 00:18:47,320
+necessità e il bisogno di scrivercela su whatsapp alle due del mattino si tratta di quello stesso
+
+221
+00:18:47,320 --> 00:18:54,880
+soggetto che chiama in pieno panico perché il sito o il software non funziona e una volta verificato
+
+222
+00:18:54,880 --> 00:19:01,080
+scopriamo che ha semplicemente scritto male il link modificando una pagina di wordpress o ha
+
+223
+00:19:01,080 --> 00:19:06,960
+cliccato sulla voce sbagliata nel menu del gestionale questo è un genere di cliente che
+
+224
+00:19:06,960 --> 00:19:13,840
+personalmente non riesco a gestire o a tollerare e quando mi è capitato ho sempre approfittato
+
+225
+00:19:13,840 --> 00:19:20,680
+della prima occasione possibile per liberarmene se ognuno di noi ha un tallone da kill sicuramente
+
+226
+00:19:20,680 --> 00:19:27,920
+l'ansioso è il mio resta infine un tipo di cattivo cliente che forse a molti nemmeno apparirà
+
+227
+00:19:27,920 --> 00:19:34,520
+problematico ma per me lo è l'ho chiamato il mio cugino ha detto che si tratta in pratica di quello
+
+228
+00:19:34,520 --> 00:19:39,960
+che mentre noi siamo lì che facciamo il nostro lavoro va in giro a raccogliere consigli e
+
+229
+00:19:39,960 --> 00:19:47,600
+suggerimenti da chiunque esperti non esperti nel campo e poi torna da noi dicendo tizio mi ha detto
+
+230
+00:19:47,600 --> 00:19:54,560
+che dobbiamo fare così caio ha detto di fare la tale cosa eccetera ora chiunque ha il diritto di
+
+231
+00:19:54,560 --> 00:20:00,320
+informarsi e chiedere consiglio a chi vuole e possiamo anche fingere che non sia irritante
+
+232
+00:20:00,320 --> 00:20:05,840
+il fatto che tu venga da me a dirmi come fare il mio lavoro sulla base di qualche sentito dire qui
+
+233
+00:20:05,840 --> 00:20:12,080
+e lì però la questione è un'altra come ho già detto in precedenza per come la vedo io la fiducia
+
+234
+00:20:12,080 --> 00:20:18,520
+nel consulente è una cosa fondamentale se tu mi hai affidato un lavoro io presuppongo che tutti sia
+
+235
+00:20:18,520 --> 00:20:24,560
+affidato del fatto che io lo potessi portare a termine nel migliore dei modi e allora perché
+
+236
+00:20:24,560 --> 00:20:30,240
+adesso devi andare a chiedere a un altro come fare questo stesso lavoro il concetto è molto
+
+237
+00:20:30,240 --> 00:20:36,240
+semplice se hai più fiducia nelle capacità di un altro ed è la soluzione che lui ti propone allora
+
+238
+00:20:36,240 --> 00:20:41,400
+sei liberissimo di rivolgerti direttamente a lui per fartela realizzare per farla breve
+
+239
+00:20:41,400 --> 00:20:48,400
+personalmente io non ho mai rinnovato un contratto con questo tipo di cliente bene io spero che
+
+240
+00:20:48,400 --> 00:20:54,760
+ascoltare la mia personalissima classifica dei cattivi clienti vi abbia divertito almeno quanto
+
+241
+00:20:54,760 --> 00:21:01,440
+ha divertito me stilarla se è così vi chiedo di diffondere questo podcast fra i vostri contatti mi
+
+242
+00:21:01,440 --> 00:21:07,240
+sarebbe davvero di grande aiuto per far crescere il progetto come al solito vi ringrazio per avere
+
+243
+00:21:07,240 --> 00:21:13,600
+ascoltato fin qui e vi saluto con le parole del professor giovanni degli antoni un informatico
+
+244
+00:21:13,600 --> 00:21:16,680
+risolve problemi a volte anche usando il computer
+

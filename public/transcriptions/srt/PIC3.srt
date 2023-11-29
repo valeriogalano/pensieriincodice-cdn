@@ -1,0 +1,432 @@
+1
+00:00:00,000 --> 00:00:10,040
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:20,040 --> 00:00:26,920
+Salve a tutti ragazzi e bentornati per questo nuovo episodio di Pensieri in codice. Nella
+
+3
+00:00:26,920 --> 00:00:33,520
+puntata di oggi vorrei parlarvi di privacy e sì lo so cosa starete pensando ma non mi interessa
+
+4
+00:00:33,520 --> 00:00:40,120
+fare uno spiegone su come vengono gestite le informazioni eccetera. Vorrei piuttosto individuare
+
+5
+00:00:40,120 --> 00:00:47,360
+alcuni stratagemmi che possiamo usare noi in prima persona e consigliare a chi ci è vicino
+
+6
+00:00:47,360 --> 00:00:54,120
+per limitare la nostra footprint digitale. Dobbiamo infatti tenere a mente che le nostre
+
+7
+00:00:54,120 --> 00:00:59,960
+informazioni hanno un valore enorme e ogni volta che su internet ci iscriviamo ad un servizio,
+
+8
+00:00:59,960 --> 00:01:07,520
+scarichiamo un'app o utilizziamo un social network o un sito di e-commerce andiamo a rilasciare tutta
+
+9
+00:01:07,520 --> 00:01:13,000
+una serie di informazioni in modo più o meno consapevole. Se infatti quando ci registriamo
+
+10
+00:01:13,000 --> 00:01:19,120
+ad un servizio siamo più o meno consci di lasciare informazioni come il nome, il cognome, l'email,
+
+11
+00:01:19,400 --> 00:01:25,560
+il numero di telefono, indirizzo eccetera. Quando invece semplicemente navighiamo tra un sito
+
+12
+00:01:25,560 --> 00:01:31,600
+e l'altro abbiamo una percezione molto inferiore del fatto che stiamo rilasciando informazioni
+
+13
+00:01:31,600 --> 00:01:39,720
+sulle nostre abitudini di navigazione, di consumo, di ascolto audiovisivo eccetera. Ora lungi da me
+
+14
+00:01:39,720 --> 00:01:45,320
+consigliarvi di rinunciare a tutti i vostri servizi e a tutte le comodità che utilizzate
+
+15
+00:01:45,320 --> 00:01:50,960
+tutti i giorni però vorrei parlare insieme a voi di qualche piccola contromisura che
+
+16
+00:01:50,960 --> 00:01:56,780
+potremmo adottare senza stravolgere la nostra routine quotidiana. Quelli che vi andrò a
+
+17
+00:01:56,780 --> 00:02:03,600
+descrivere sono cinque consigli di difficoltà crescente ma ad ogni modo tutti molto semplici
+
+18
+00:02:03,600 --> 00:02:17,800
+da implementare. Ora bando alle ciance e cominciamo. Consiglio numero uno cambiare
+
+19
+00:02:17,800 --> 00:02:24,840
+motore di ricerca. Benché al giorno d'oggi sembri impossibile pensare ad un mondo senza google e
+
+20
+00:02:24,840 --> 00:02:32,200
+senza il suo motore di ricerca è pur vero che in giro esistono varie alternative. Ora pensate
+
+21
+00:02:32,200 --> 00:02:38,520
+a come normalmente andate a utilizzare un motore di ricerca. Viene automatico capire che esso sarà
+
+22
+00:02:38,520 --> 00:02:45,040
+un grandissimo accentratore delle vostre abitudini di navigazione e infatti attraverso il motore di
+
+23
+00:02:45,040 --> 00:02:51,920
+ricerca che voi trovate la ricetta, la pagina, il social network, l'informazione, la notizia,
+
+24
+00:02:51,920 --> 00:02:58,040
+l'immagine, la mappa per il viaggio eccetera di cui avete bisogno. Da questo punto di vista
+
+25
+00:02:58,400 --> 00:03:03,520
+potremmo pensare di utilizzare un motore di ricerca alternativo come potrebbe ad esempio
+
+26
+00:03:03,520 --> 00:03:11,880
+essere DuckDuckGo. Questo motore infatti oltre ad avere un buon set di funzioni fa del rispetto
+
+27
+00:03:11,880 --> 00:03:17,000
+della privacy e del fatto di non memorizzare le vostre informazioni il suo cavallo di battaglia.
+
+28
+00:03:17,000 --> 00:03:25,120
+Tramite DuckDuckGo infatti potrete ricercare pagine web, immagini, notizie e anche eseguire
+
+29
+00:03:25,120 --> 00:03:30,440
+una serie di operazioni come calcoli, conversioni eccetera senza dover passare attraverso Google e
+
+30
+00:03:30,440 --> 00:03:37,400
+senza che i vostri dati e le vostre informazioni siano memorizzate in alcun modo. Se poi non sarete
+
+31
+00:03:37,400 --> 00:03:43,120
+in grado di trovare l'informazione che state cercando attraverso questo motore di ricerca
+
+32
+00:03:43,120 --> 00:03:48,320
+potrete sempre utilizzare le sue funzioni di criptografia per cercare in modo anonimo
+
+33
+00:03:48,320 --> 00:03:59,680
+all'interno di altri motori come ad esempio Google. Consiglio numero 2 utilizzare Firefox.
+
+34
+00:03:59,680 --> 00:04:08,040
+Al momento in cui sto registrando oltre il 61% degli utenti di internet utilizza come browser
+
+35
+00:04:08,040 --> 00:04:14,760
+Chrome. Questo non è di per sé un male perché Chrome è un ottimo browser pieno di funzionalità
+
+36
+00:04:14,760 --> 00:04:23,720
+e componenti aggiuntivi ma risente degli stessi chiamiamoli problemi del motore di ricerca di
+
+37
+00:04:23,720 --> 00:04:31,960
+Google e cioè varie funzionalità come ad esempio il precaricamento delle pagine o la ricerca
+
+38
+00:04:31,960 --> 00:04:38,680
+predittiva sfrutta una serie di servizi di Google per svolgere il proprio lavoro e quindi invia le
+
+39
+00:04:38,680 --> 00:04:43,960
+nostre informazioni ai server di Google. In particolare le pagine che stiamo visitando,
+
+40
+00:04:43,960 --> 00:04:49,120
+quelle che potenzialmente potremo andare a visitare e quelle che effettivamente andiamo
+
+41
+00:04:49,120 --> 00:04:57,080
+a vedere. Inoltre per la ricerca predittiva ad esempio invia tutti i caratteri che andiamo a
+
+42
+00:04:57,080 --> 00:05:05,080
+battere all'interno della barra dell'indirizzo quindi anche se stiamo scrivendo una frase poi
+
+43
+00:05:05,080 --> 00:05:11,600
+magari siamo indecisi la cancelliamo quella battitura sarà comunque arrivata sui server di
+
+44
+00:05:11,600 --> 00:05:17,840
+Google. Il mio consiglio è quindi quello di installare Firefox e iniziare ad utilizzarlo
+
+45
+00:05:17,840 --> 00:05:24,720
+al posto del browser che si utilizza di solito abitualmente quindi Chrome o Internet Explorer
+
+46
+00:05:24,720 --> 00:05:33,320
+o Safari se si utilizza macOS. Questo perché Firefox implementa più o meno le stesse funzionalità,
+
+47
+00:05:33,360 --> 00:05:40,120
+le stesse caratteristiche di Chrome ma anche a detta degli sviluppatori di Mozilla ha un
+
+48
+00:05:40,120 --> 00:05:46,640
+occhio di riguardo per quella che è la privacy dell'utilizzatore. Infatti accedendo al menu
+
+49
+00:05:46,640 --> 00:05:53,120
+delle impostazioni nella sezione privacy e sicurezza si potranno trovare varie impostazioni
+
+50
+00:05:53,120 --> 00:05:59,400
+come ad esempio il sistema di antitracciamento o il blocco dei contenuti esterni che contribuiranno
+
+51
+00:05:59,520 --> 00:06:03,520
+a ridurre la nostra footprint quando andremo a navigare su internet.
+
+52
+00:06:03,520 --> 00:06:14,400
+Il terzo consiglio riguarda sempre i browser anche se potrebbe risultare un tantino più
+
+53
+00:06:14,400 --> 00:06:23,680
+faticoso da mettere in pratica, l'attivazione della funzionalità incognito. Questa è una
+
+54
+00:06:23,680 --> 00:06:29,800
+funzionalità che hanno praticamente tutti i browser e che ci permette di navigare in modo
+
+55
+00:06:29,800 --> 00:06:36,240
+fra virgolette anonimo senza conservare sul nostro computer all'interno del nostro browser le
+
+56
+00:06:36,240 --> 00:06:43,360
+informazioni scaricate dai vari siti visitati. In questo modo nel passaggio da un sito all'altro
+
+57
+00:06:43,360 --> 00:06:50,400
+il sito in questione che stiamo visitando non potrà recuperare le informazioni incrociandole
+
+58
+00:06:50,400 --> 00:06:59,760
+con i nostri dati di navigazione. Questa soluzione tuttavia risulta un tantino più onerosa in quanto
+
+59
+00:06:59,760 --> 00:07:08,240
+se imposteremo i nostri browser per non accettare o non conservare in realtà le informazioni dei
+
+60
+00:07:08,240 --> 00:07:18,000
+siti web ci ritroveremo a dover reinserire le password, le configurazioni eccetera per ogni
+
+61
+00:07:18,000 --> 00:07:26,800
+sito che andremo a visitare dopo ogni chiusura del browser. Se quindi deciderete di adottare
+
+62
+00:07:26,800 --> 00:07:34,200
+questa strategia il consiglio è quello di affiancarla con un piccolo software che possa
+
+63
+00:07:34,200 --> 00:07:40,360
+conservare tutte le vostre password nel quale andrete a salvare username e password di ogni
+
+64
+00:07:40,360 --> 00:07:47,760
+vostro servizio. Io ad esempio utilizzo KeePass questo piccolo strumento infatti mi permette
+
+65
+00:07:47,760 --> 00:07:54,760
+oltre a conservare le password di modo sicuro di inserirle in modo automatico con una semplice
+
+66
+00:07:54,760 --> 00:08:01,240
+combinazione di tasti. Questo riduce notevolmente la scocciatura di doversi riautenticare ogni
+
+67
+00:08:01,240 --> 00:08:13,000
+volta che dovremo accedere ai nostri servizi. Quarto suggerimento multi account container per
+
+68
+00:08:13,000 --> 00:08:22,040
+Firefox. Questo consiglio è leggermente più impegnativo di quelli precedenti. Si tratta
+
+69
+00:08:22,040 --> 00:08:30,480
+infatti di installare un componente Firefox che andrà poi configurato e che andrà a gestire una
+
+70
+00:08:30,480 --> 00:08:38,320
+serie di containers cioè di aree totalmente separate all'interno delle quali far girare
+
+71
+00:08:38,320 --> 00:08:47,320
+i vari siti social network prodotti google eccetera. Sarà infatti possibile creare un container per
+
+72
+00:08:47,320 --> 00:08:54,840
+Facebook, uno per Amazon, uno per Twitter, uno per i prodotti Google e via discorrendo in modo che
+
+73
+00:08:54,840 --> 00:09:01,800
+ogni volta che andremo a visitare uno di questi siti esso si aprirà all'interno del suo specifico
+
+74
+00:09:01,800 --> 00:09:08,760
+container. E quale sarà il vantaggio? Il vantaggio sarà che i vari siti caricati all'interno di
+
+75
+00:09:08,760 --> 00:09:16,920
+container distinti non potranno accedere l'uno alle informazioni rilasciate dagli altri. Se
+
+76
+00:09:16,920 --> 00:09:22,800
+andremo a configurare un container specifico per Facebook ad esempio dal punto di vista dell'utente
+
+77
+00:09:22,800 --> 00:09:29,640
+non si tratterà di altro che di una tab colorata in modo differente mentre dal punto di vista del
+
+78
+00:09:29,640 --> 00:09:38,080
+social network quello sarà un Firefox completamente pulito e utilizzato solo ed unicamente per navigare
+
+79
+00:09:38,080 --> 00:09:46,840
+su Facebook. Questo isolamento tra i vari siti soprattutto tra i maggiori siti di tracciamento
+
+80
+00:09:46,840 --> 00:09:56,080
+Google, Facebook, Amazon eccetera farà in modo che diventi più difficile per loro identificare
+
+81
+00:09:56,080 --> 00:10:04,600
+le nostre abitudini di navigazione. Benché i vantaggi appaiono evidenti è innegabile anche
+
+82
+00:10:04,600 --> 00:10:11,800
+il fatto che questo richieda una certa dose di configurazione prima di poter iniziare a utilizzare
+
+83
+00:10:11,800 --> 00:10:19,960
+i container. Tuttavia il plugin è molto semplice da configurare e può essere fatto in qualsiasi
+
+84
+00:10:19,960 --> 00:10:26,560
+momento. In qualsiasi momento potremmo spostare un sito da un container all'altro e decidere
+
+85
+00:10:26,560 --> 00:10:33,200
+che esso dovrà essere aperto sempre all'interno di quel container. Quindi il consiglio è quello
+
+86
+00:10:33,200 --> 00:10:39,480
+di provare questa estensione e magari iniziare a utilizzarla a partire dai siti più importanti
+
+87
+00:10:39,600 --> 00:10:52,840
+Facebook, Twitter, Google eccetera. Quinto suggerimento chiudere gli account inutilizzati.
+
+88
+00:10:52,840 --> 00:11:01,680
+Questa dovrebbe essere una buona norma da tenere sempre a mente. Tutti noi abbiamo sicuramente
+
+89
+00:11:02,160 --> 00:11:10,160
+degli account a servizi o app che volevamo provare e per i quali ci siamo iscritti e che poi abbiamo
+
+90
+00:11:10,160 --> 00:11:16,920
+dimenticato e non abbiamo mai più utilizzato. Magari perché non ci interessavano. Mentre noi
+
+91
+00:11:16,920 --> 00:11:21,560
+ci siamo dimenticati di questi servizi, questi servizi sicuramente non si sono dimenticati di
+
+92
+00:11:21,560 --> 00:11:28,600
+noi e avranno ancora tutte le nostre informazioni archiviate da qualche parte. Fortunatamente in
+
+93
+00:11:28,680 --> 00:11:35,120
+Europa è da poco attiva la normativa sul GDPR e quindi possiamo sfruttarla per andare a richiedere
+
+94
+00:11:35,120 --> 00:11:42,840
+a tutti questi servizi la cancellazione dei nostri dati in modo permanente. Il modo migliore per
+
+95
+00:11:42,840 --> 00:11:49,160
+farlo solitamente è quello di andare nella propria casella email e fare una ricerca per scovare tutti
+
+96
+00:11:49,160 --> 00:11:55,280
+quei servizi ai quali ci siamo iscritti e dei quali ci siamo poi completamente dimenticati. A quel
+
+97
+00:11:55,280 --> 00:12:01,040
+punto ci basterà andare sul sito di ognuno di questi servizi, autenticarci e trovare la
+
+98
+00:12:01,040 --> 00:12:07,600
+procedura di cancellazione dell'account. Sebbene questo sia il più impegnativo dei suggerimenti visti
+
+99
+00:12:07,600 --> 00:12:13,880
+oggi, esso ci può però tornare molto utile per recuperare tutta una serie di informazioni che
+
+100
+00:12:13,880 --> 00:12:18,360
+abbiamo lasciato in giro e che non vogliamo rimangano in archivi sparsi per la rete.
+
+101
+00:12:25,880 --> 00:12:33,480
+Queste piccole strategie possono essere adottate pressoché tutte allo stesso tempo, anche se il
+
+102
+00:12:33,480 --> 00:12:39,600
+suggerimento è quello di partire dalla prima, provare, sperimentare per qualche giorno, vedere
+
+103
+00:12:39,600 --> 00:12:46,000
+se è il caso di portarla avanti ed eventualmente poi aggiungere la seconda, la terza e così via.
+
+104
+00:12:46,000 --> 00:12:53,200
+Con questo siamo giunti alla fine dell'episodio di oggi. Come al solito vi ricordo che queste
+
+105
+00:12:53,200 --> 00:12:58,440
+sono le mie idee e che sono molto interessato a conoscere le vostre. Vi invito quindi a lasciare
+
+106
+00:12:58,440 --> 00:13:04,520
+un commento e farmi sapere se avete delle strategie per proteggere la vostra privacy
+
+107
+00:13:04,520 --> 00:13:11,280
+e se quelle che vi ho raccontato vi sembrano utilizzabili e adatte alle vostre esigenze.
+
+108
+00:13:11,280 --> 00:13:14,840
+Per ora vi saluto e alla prossima!
+

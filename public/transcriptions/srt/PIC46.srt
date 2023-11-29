@@ -1,0 +1,428 @@
+1
+00:00:00,000 --> 00:00:09,900
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,900 --> 00:00:26,580
+Salve a tutti e ben ritrovati su Pensieri in codice. Se siete assidui ascoltatori del podcast
+
+3
+00:00:26,580 --> 00:00:33,140
+magari lo sapete già e se non lo sapete ve lo dico io adesso. Professionalmente parlando io mi
+
+4
+00:00:33,140 --> 00:00:41,580
+occupo di sviluppo software ed in particolare di sviluppo di back-end in php. Tuttavia sempre se
+
+5
+00:00:41,580 --> 00:00:47,940
+siete ascoltatori del podcast saprete anche che mi piace sperimentare nuovi strumenti e nuove
+
+6
+00:00:47,940 --> 00:00:54,980
+tecnologie. Per questo motivo qualche settimana fa ho chiesto ai ragazzi del gruppo telegram di
+
+7
+00:00:54,980 --> 00:01:00,660
+Pensieri in codice di suggerirmi una qualche tecnologia interessante da sperimentare per lo
+
+8
+00:01:00,660 --> 00:01:06,420
+sviluppo di back-end. Tra le varie risposte, tutte abbastanza interessanti, quella che però
+
+9
+00:01:06,420 --> 00:01:12,940
+mi ha colpito di più è stata quella di Gaetano che mi ha suggerito di sperimentare Deno. Da una
+
+10
+00:01:12,940 --> 00:01:20,740
+rapida ricerca sul web infatti il prodotto mi è sembrato molto interessante e pertanto nei
+
+11
+00:01:20,740 --> 00:01:27,940
+giorni successivi mi sono dedicato a studiarne la teoria e a fare qualche piccolo esperimento e
+
+12
+00:01:27,940 --> 00:01:34,460
+quindi eccoci qui oggi per parlarne insieme in questo episodio. Ovviamente come nello spirito
+
+13
+00:01:34,460 --> 00:01:41,900
+di questo podcast non è mia intenzione elencarvi semplicemente caratteristiche tecniche o tecnologie
+
+14
+00:01:41,900 --> 00:01:48,940
+su cui è basato Deno, piuttosto vorrei provare a fare delle osservazioni personali e darvi le mie
+
+15
+00:01:48,940 --> 00:01:55,140
+impressioni. Cercherò quindi di non scendere troppo nel tecnico ma di illustrarvi quella che
+
+16
+00:01:55,140 --> 00:02:01,380
+secondo me è la filosofia di Deno, almeno per come l'ho capito io sempre tenendo presente che non sono
+
+17
+00:02:01,380 --> 00:02:07,980
+certo un esperto. Se invece siete interessati a qualcosa di più tecnico in rete si trovano articoli
+
+18
+00:02:07,980 --> 00:02:13,860
+abbastanza interessanti, ve ne metto qualcuno in descrizione e in particolare vi consiglio di andare
+
+19
+00:02:13,860 --> 00:02:21,620
+a guardare i video di Francesco Sciuti del canale Academy che in pochissimi minuti vi daranno un'idea
+
+20
+00:02:21,620 --> 00:02:27,660
+generale del funzionamento di questo strumento. Ovviamente già che siete lì mi raccomando
+
+21
+00:02:27,660 --> 00:02:34,980
+iscrivetevi al suo canale che è molto interessante e sul quale trovate moltissimo materiale a tema
+
+22
+00:02:34,980 --> 00:02:42,380
+sviluppo software, javascript, angular, interviste e molto altro. Mi raccomando iscrivetevi. Detto
+
+23
+00:02:42,420 --> 00:02:44,540
+questo passiamo all'argomento di oggi.
+
+24
+00:02:44,540 --> 00:03:11,940
+Iniziamo dunque col chiederci che cos'è in effetti Deno? Beh come riportato nella
+
+25
+00:03:12,020 --> 00:03:19,940
+documentazione ufficiale Deno è un ambiente di esecuzione sicuro per javascript e typescript.
+
+26
+00:03:19,940 --> 00:03:25,380
+Questi due linguaggi infatti, che poi non sono proprio due linguaggi sono uno all'estensione
+
+27
+00:03:25,380 --> 00:03:32,300
+dell'altro ma non è importante in questo momento, sono dicevo linguaggi che inizialmente potevano
+
+28
+00:03:32,300 --> 00:03:40,540
+essere eseguiti solo all'interno di browser e quindi sulle macchine client ma grazie ad ambienti
+
+29
+00:03:40,580 --> 00:03:47,180
+di esecuzione come Deno, ma forse l'avrete sentito nominare come Node.js, è diventato
+
+30
+00:03:47,180 --> 00:03:53,860
+possibile eseguire i linguaggi come javascript anche lato server quindi per lo sviluppo di
+
+31
+00:03:53,860 --> 00:04:01,660
+backend, microservizi o altri prodotti del genere. Ciò ha dato la possibilità a moltissimi sviluppatori
+
+32
+00:04:01,660 --> 00:04:07,980
+javascript che prima potevano lavorare solo in frontend di passare anche allo sviluppo lato
+
+33
+00:04:07,980 --> 00:04:13,820
+server e quindi di backend e ovviamente con il sempre più massiccio utilizzo di questo ambiente
+
+34
+00:04:13,820 --> 00:04:22,300
+di runtime, mi riferisco a Node.js, a poco a poco nell'arco di circa una decina d'anni sono venuti
+
+35
+00:04:22,300 --> 00:04:30,020
+fuori un po' quelli che erano i limiti progettuali iniziali. Per questo motivo lo stesso sviluppatore
+
+36
+00:04:30,060 --> 00:04:39,500
+che nel 2009 aveva creato Node.js, nel 2018 ha annunciato la nascita di Deno con la dichiarata
+
+37
+00:04:39,500 --> 00:04:46,940
+intenzione di sopperire a quegli errori e quelle mancanze che si sono rivelate in Node. Ora dopo
+
+38
+00:04:46,940 --> 00:04:52,940
+un paio di settimane nelle quali ho potuto studiare la documentazione ufficiale e fare
+
+39
+00:04:52,940 --> 00:04:58,780
+qualche esperimento, a mio modesto parere direi che l'obiettivo è stato pienamente centrato ma
+
+40
+00:04:58,780 --> 00:05:04,780
+probabilmente non sono io la persona più adatta a fare una valutazione del genere. Per questo motivo
+
+41
+00:05:04,780 --> 00:05:12,380
+come vi dicevo all'inizio piuttosto che soffermarmi nel fare una distinzione tra Node.js e Deno.js preferisco
+
+42
+00:05:12,380 --> 00:05:19,820
+parlarvi di quello che io ho percepito utilizzando quest'ultimo. E dunque fin da subito ho percepito
+
+43
+00:05:19,820 --> 00:05:26,500
+una particolare attenzione per tre aspetti. Il primo, come riportato praticamente dovunque
+
+44
+00:05:26,500 --> 00:05:33,060
+nella documentazione, è la sicurezza che si concretizza in una serie di strumenti atti a
+
+45
+00:05:33,060 --> 00:05:40,900
+proteggere l'ambiente, il server nel quale il software sta girando. Il secondo è la velocità
+
+46
+00:05:40,900 --> 00:05:47,700
+di messa in produzione del codice. Iniziare infatti a scrivere un software con Deno è veramente
+
+47
+00:05:47,700 --> 00:05:54,620
+rapido, ci sono veramente pochissimi passaggi da fare e si è subito pronti e operativi. Infine il
+
+48
+00:05:54,620 --> 00:06:00,980
+terzo, e questo devo dire che mi ha sorpreso più di tutti, è una forte attenzione per gli
+
+49
+00:06:00,980 --> 00:06:09,100
+sviluppatori. Utilizzare Deno infatti richiede quasi zero sforzo aggiuntivo, ovviamente rispetto
+
+50
+00:06:09,100 --> 00:06:15,140
+allo sviluppo del software che stiamo producendo, e anzi in vari casi permette anche allo
+
+51
+00:06:15,140 --> 00:06:20,300
+sviluppatore di non doversi preoccupare di alcuni aspetti dell'implementazione.
+
+52
+00:06:24,620 --> 00:06:45,260
+Una volta però individuati i punti di forza di questo ambiente di esecuzione,
+
+53
+00:06:45,260 --> 00:06:52,860
+mi sono chiesto come abbia fatto l'autore ad ottenerli, o anche come mai siano apparsi
+
+54
+00:06:52,860 --> 00:06:59,620
+così evidenti ai miei occhi, e sono arrivato alla conclusione che Deno rispetto ai suoi
+
+55
+00:06:59,620 --> 00:07:08,380
+predecessori faccia fondamentalmente tre cose, tre operazioni, potremmo definirli tre passi
+
+56
+00:07:08,380 --> 00:07:16,740
+avanti, ed in particolare semplifica, esplicita e include strumenti. Ora vediamo subito che
+
+57
+00:07:16,740 --> 00:07:23,340
+intendo per ognuno di questi passi, però è importante che teniate a mente che non c'è un
+
+58
+00:07:23,340 --> 00:07:30,620
+legame diretto rispetto alle tre caratteristiche elencate nel blocco precedente. Piuttosto io
+
+59
+00:07:30,620 --> 00:07:38,900
+ritengo che sia l'insieme di questi passi avanti che va a formare uno strumento il quale poi presenta
+
+60
+00:07:38,900 --> 00:07:44,900
+le caratteristiche di sicurezza, di velocità di messa in produzione e di attenzione per lo
+
+61
+00:07:44,900 --> 00:07:51,580
+sviluppatore. Cominciamo dunque dalla semplificazione. In che senso Deno semplifica?
+
+62
+00:07:51,580 --> 00:07:58,820
+Beh nel senso che proprio diminuisce il numero di operazioni necessarie per sviluppare. Ad esempio
+
+63
+00:07:58,820 --> 00:08:05,140
+supporta TypeScript in modo nativo e di default, quindi non c'è bisogno di fare inclusioni o
+
+64
+00:08:05,140 --> 00:08:10,940
+configurazioni per chi desidera utilizzarlo. Un altro esempio è che gestisce autonomamente il
+
+65
+00:08:11,020 --> 00:08:17,300
+download e l'installazione di eventuali dipendenze. Basta infatti specificare l'indirizzo di un
+
+66
+00:08:17,300 --> 00:08:23,460
+package da utilizzare e alla prima esecuzione del software sarà Deno stesso a scaricarlo e
+
+67
+00:08:23,460 --> 00:08:31,460
+installarlo. E ancora implementa e si impegna a mantenere il più possibile la compatibilità con
+
+68
+00:08:31,460 --> 00:08:38,580
+i browser in modo che lo stesso codice scritto per il frontend funzioni esattamente senza modifiche
+
+69
+00:08:38,620 --> 00:08:44,820
+anche nel backend. Ora questi sono solo alcuni esempi ma se siete sviluppatori vi renderete
+
+70
+00:08:44,820 --> 00:08:52,220
+subito conto del fatto che tutti questi piccoli aiuti diciamo così allo sviluppo rappresentano
+
+71
+00:08:52,220 --> 00:08:58,420
+in realtà una spinta in termini di velocità della produzione del software e al tempo stesso
+
+72
+00:08:58,420 --> 00:09:04,140
+permettono anche una migliore esperienza per lo sviluppatore. La seconda operazione,
+
+73
+00:09:04,660 --> 00:09:12,700
+che prima ho definito il secondo passo in avanti che fa Deno, è quello di esplicitare determinate
+
+74
+00:09:12,700 --> 00:09:18,180
+operazioni e configurazioni. Questo rispetto a quanto abbiamo detto prima potrebbe sembrare
+
+75
+00:09:18,180 --> 00:09:26,700
+un passo indietro cioè si dà al programmatore più lavoro da fare ma in realtà queste particolari
+
+76
+00:09:26,700 --> 00:09:33,460
+esplicitazioni si trasformano in un vantaggio perché permettono allo sviluppatore di non
+
+77
+00:09:33,460 --> 00:09:39,740
+doversi preoccupare di alcuni aspetti molto importanti fra tutti il primo è la sicurezza.
+
+78
+00:09:39,740 --> 00:09:46,060
+Infatti il maggiore esempio di questa esplicitazione delle configurazioni si trova
+
+79
+00:09:46,060 --> 00:09:53,980
+nel fatto che per permettere ad un qualsiasi software che gira in Deno di accedere a filesystem,
+
+80
+00:09:53,980 --> 00:10:02,020
+connessioni di rete o ambiente nel quale sta girando è necessario specificare un speciale
+
+81
+00:10:02,140 --> 00:10:09,980
+flag, un parametro, al momento dell'esecuzione del software. Ciò seppur richiedendo di specificare
+
+82
+00:10:09,980 --> 00:10:16,940
+parametri in più dà il vantaggio di non doversi preoccupare di determinati aspetti di sicurezza,
+
+83
+00:10:16,940 --> 00:10:22,660
+ad esempio nell'accesso ai file, se il proprio software non è proprio pensato per accedere
+
+84
+00:10:22,660 --> 00:10:29,300
+ai file. E sempre nell'ottica della sicurezza anche un eventuale aggiornamento delle dipendenze
+
+85
+00:10:29,340 --> 00:10:36,420
+deve essere eseguito in maniera esplicita, altrimenti di default ogni libreria verrà
+
+86
+00:10:36,420 --> 00:10:42,340
+scaricata nel momento della prima esecuzione e non sarà più aggiornata a meno che non sia
+
+87
+00:10:42,340 --> 00:10:50,100
+lo sviluppatore a volerlo. Ciò ha il vantaggio che una volta trovata una libreria stabile non
+
+88
+00:10:50,100 --> 00:10:56,260
+si avrà il rischio di trovarsi con delle versioni differenti che potrebbero dare problemi di
+
+89
+00:10:56,260 --> 00:11:03,660
+funzionamento o introdurre problemi di sicurezza. Infine il terzo aspetto innovativo di Deno è
+
+90
+00:11:03,660 --> 00:11:10,620
+quello che include al proprio interno tutta una serie di strumenti. Infatti in un eseguibile che
+
+91
+00:11:10,620 --> 00:11:17,820
+alla fine pesa circa 15 megabyte è possibile trovare non solo il motore di esecuzione del
+
+92
+00:11:17,820 --> 00:11:25,780
+javascript ma anche strumenti come il Package Manager, un Dependency Inspector, un Framework
+
+93
+00:11:25,860 --> 00:11:35,460
+di Test e persino il Debug e il Formatter del codice. Potrebbe sembrare banale, d'altronde
+
+94
+00:11:35,460 --> 00:11:42,580
+questi sono tutti strumenti presenti per qualsiasi linguaggio o qualsiasi ambiente di sviluppo, ma
+
+95
+00:11:42,580 --> 00:11:48,900
+l'aspetto interessante è che in Deno sono già tutti presenti all'interno dell'unico eseguibile
+
+96
+00:11:48,900 --> 00:11:55,780
+necessario. Questo risparmia agli sviluppatori di andarsi a cercare strumenti esterni integrativi,
+
+97
+00:11:55,780 --> 00:12:02,580
+di dover fare tutta una serie di configurazioni e ovviamente tutto ciò gioca in favore della
+
+98
+00:12:02,580 --> 00:12:08,140
+velocità di produzione del codice e ovviamente dell'esperienza per lo sviluppatore.
+
+99
+00:12:18,900 --> 00:12:33,660
+Bene, siamo giunti dunque alla fine di questo episodio. Io spero di essere riuscito a trasmettervi
+
+100
+00:12:33,660 --> 00:12:41,540
+quello che ho percepito io utilizzando Deno e di avervi dato un'angolazione diversa rispetto
+
+101
+00:12:41,540 --> 00:12:47,740
+a quelle che si possono trovare qui e là su internet. Ovviamente voi potete contribuire
+
+102
+00:12:47,740 --> 00:12:53,700
+con la vostra visione, le vostre esperienze, sia con un commento, se la piattaforma che state
+
+103
+00:12:53,700 --> 00:13:01,380
+utilizzando per ascoltare il podcast ve lo permette, ma anche e soprattutto nel gruppo Telegram nel
+
+104
+00:13:01,380 --> 00:13:07,860
+quale si svolgono tante conversazioni interessanti e del quale trovate il link in descrizione. Non mi
+
+105
+00:13:07,860 --> 00:13:13,220
+resta quindi che chiedervi, come al solito, di condividere il più possibile gli episodi in modo
+
+106
+00:13:13,220 --> 00:13:19,820
+da far crescere il progetto e salutarvi e darvi appuntamento alla prossima settimana ricordandovi
+
+107
+00:13:19,820 --> 00:13:24,820
+che un programmatore risolve i problemi, a volte anche usando il computer.
+

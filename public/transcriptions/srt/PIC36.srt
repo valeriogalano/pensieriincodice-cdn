@@ -1,0 +1,628 @@
+1
+00:00:00,000 --> 00:00:09,900
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,900 --> 00:00:25,420
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice. Non so se
+
+3
+00:00:25,420 --> 00:00:33,220
+lo sapete o lo immaginate o ve lo siete anche mai chiesto ma un podcast anche uno semplice come
+
+4
+00:00:33,220 --> 00:00:39,380
+Pensieri in codice ha in realtà tutta una serie di costi sia in termini di attrezzature che di
+
+5
+00:00:39,380 --> 00:00:46,620
+hosting e volendo anche in termini di dispendio di tempo e di energie. Nonostante questo come
+
+6
+00:00:46,620 --> 00:00:53,020
+penso molti di voi abbiano già notato Pensieri in codice fin dalla sua prima puntata che risale
+
+7
+00:00:53,020 --> 00:00:59,460
+ormai ha più di un anno e mezzo fa non ha mai avuto meccanismi di donazione come Patreon, Paypal,
+
+8
+00:00:59,460 --> 00:01:07,020
+sponsorizzazioni eccetera. Si tratta di una mia precisa scelta editoriale chiamiamola così e si
+
+9
+00:01:07,020 --> 00:01:12,860
+fonda principalmente su due principi. Il primo è molto semplice in pratica non voglio ricevere
+
+10
+00:01:12,860 --> 00:01:18,300
+soldi dagli ascoltatori non è per questo che è nato questo progetto e voglio sperare di mantenere
+
+11
+00:01:18,580 --> 00:01:23,980
+cose così il più a lungo possibile. Il secondo motivo invece è che non voglio forzare in nessun
+
+12
+00:01:23,980 --> 00:01:29,340
+caso nessuno di voi a contribuire in alcun modo cosa che invece accadrebbe se vi costringessi ad
+
+13
+00:01:29,340 --> 00:01:34,980
+ascoltare una pubblicità prima o dopo la puntata o se sponsorizzassi questo o quell'altro prodotto.
+
+14
+00:01:34,980 --> 00:01:41,340
+Io invece voglio che ciascuno di voi si senta libero di contribuire se e quando vuole per
+
+15
+00:01:41,340 --> 00:01:46,580
+questo motivo l'unica opzione che rimane per dare la possibilità a chi di voi voglia dare il
+
+16
+00:01:46,580 --> 00:01:53,220
+proprio sostegno al progetto è l'affiliazione Amazon cosa che in effetti è attiva già fin dalla
+
+17
+00:01:53,220 --> 00:01:59,220
+prima puntata. Per chi non lo sapesse l'affiliazione Amazon consiste in una sorta di contratto con
+
+18
+00:01:59,220 --> 00:02:05,420
+Amazon appunto grazie al quale un content creator può generare dei link personalizzati ai vari
+
+19
+00:02:05,420 --> 00:02:11,140
+prodotti e piazzarli nelle pagine web, nelle descrizioni dei video, dei podcast eccetera.
+
+20
+00:02:11,140 --> 00:02:15,980
+Quando gli utenti acquistano un prodotto arrivando sul sito Amazon attraverso uno di
+
+21
+00:02:15,980 --> 00:02:22,340
+questi link il creator riceve una piccola percentuale sugli introiti una roba tipo il 3 o
+
+22
+00:02:22,340 --> 00:02:28,420
+il 5 per cento. Se ve lo state chiedendo ve lo dico subito l'utente che acquista non paga un centesimo
+
+23
+00:02:28,420 --> 00:02:34,620
+in più del normale prezzo del prodotto e sempre se ve lo state chiedendo no non si tratta di un
+
+24
+00:02:34,620 --> 00:02:40,140
+business milionario almeno non per me ma comunque voglio cogliere l'occasione per ringraziare tutti
+
+25
+00:02:40,140 --> 00:02:45,220
+quelli che si sono sbattuti per acquistare qualcosa tramite i miei link. Se ho potuto
+
+26
+00:02:45,260 --> 00:02:50,580
+acquistare un nuovo filtro antipop e delle nuove cuffie è merito vostro. Ad ogni modo attivare
+
+27
+00:02:50,580 --> 00:02:56,380
+questa affiliazione è davvero molto semplice ma quello che non è poi così semplice è mantenerla
+
+28
+00:02:56,380 --> 00:03:02,980
+attiva soprattutto per chi come me ha una community piuttosto piccola e questo non è affatto un
+
+29
+00:03:02,980 --> 00:03:09,540
+problema da poco. Oggi quindi ho pensato di raccontarvi un po' come funziona l'affiliazione,
+
+30
+00:03:09,540 --> 00:03:15,540
+quale difficoltà comporta per i piccolissimi creator come me e cosa mi sono dovuto inventare
+
+31
+00:03:15,540 --> 00:03:21,540
+per se non proprio risolvere almeno mitigare le scocciature dovute alla chiusura di questo
+
+32
+00:03:21,540 --> 00:03:26,940
+servizio. Chissà che magari un giorno vi possa tornare utile e se non altro la soluzione che
+
+33
+00:03:26,940 --> 00:03:32,340
+ho messo in campo per risolvere questo problema potrebbe essere d'aiuto anche per risolverne altri
+
+34
+00:03:32,340 --> 00:03:38,340
+diversi ma simili a questo. Prima di procedere però volevo avvisarvi di una cosa. Dopo aver
+
+35
+00:03:38,340 --> 00:03:46,620
+sperimentato un po' il funzionamento di Twitch ho deciso che non seguirò più un palinzesto fisso
+
+36
+00:03:46,620 --> 00:03:53,340
+questo perché ho deciso di concentrare il più possibile le energie sul podcast e lasciare Twitch
+
+37
+00:03:53,340 --> 00:03:59,460
+solamente per le live con ospiti. Per questo motivo non trovate più la programmazione sul
+
+38
+00:03:59,460 --> 00:04:05,540
+canale ma quando ci sarà una live verrà annunciata con largo anticipo su Telegram,
+
+39
+00:04:05,540 --> 00:04:12,460
+su Twitter e su Instagram quindi iscrivetevi ai miei social di cui trovate il link in descrizione.
+
+40
+00:04:12,460 --> 00:04:18,500
+Nel frattempo se non l'avete ancora fatto vi consiglio di recuperare la live su PowerSides
+
+41
+00:04:18,500 --> 00:04:23,980
+con Giuseppe Pugliese ed Alex Racuglia, un paio d'ore davvero interessanti nelle quali abbiamo
+
+42
+00:04:23,980 --> 00:04:31,100
+non solo mostrato l'app sviluppata da Alex ma ne abbiamo analizzato anche molte caratteristiche a
+
+43
+00:04:31,260 --> 00:04:37,060
+livello di codice sorgente. Anche di questa trovate il link in descrizione anche se poiché non mi è
+
+44
+00:04:37,060 --> 00:04:42,900
+ancora chiaro come Twitch intenda gestire l'archivio delle live potrebbe essere sia un
+
+45
+00:04:42,900 --> 00:04:56,940
+link al mio canale Twitch che al mio canale YouTube. Innanzitutto chiariamo velocemente
+
+46
+00:04:56,940 --> 00:05:02,380
+come funziona l'affiliazione Amazon così sarà anche più semplice capire perché è un problema
+
+47
+00:05:02,380 --> 00:05:09,540
+quando viene chiusa. Tutto comincia accedendo al sito affiliazione.amazon.it ovviamente è necessario
+
+48
+00:05:09,540 --> 00:05:14,300
+essere già registrati ad Amazon e una volta richiesta l'affiliazione il sito ci permette di
+
+49
+00:05:14,300 --> 00:05:19,860
+inserire varie informazioni legate a noi e alla nostra attività che svolgiamo online come creator
+
+50
+00:05:19,860 --> 00:05:26,300
+ad esempio il nostro blog o i nostri profili social. La cosa importante da sapere è che tutti
+
+51
+00:05:26,340 --> 00:05:32,580
+possono fare richiesta e il sistema concede sempre una sorta di affiliazione temporanea della durata
+
+52
+00:05:32,580 --> 00:05:38,260
+di sei mesi. Durante questo periodo quando l'utente accede al sito di Amazon vede una piccola
+
+53
+00:05:38,260 --> 00:05:44,260
+barra grigia in alto dalla quale può amministrare la propria affiliazione. In poche parole l'utente
+
+54
+00:05:44,260 --> 00:05:50,180
+affiliato può navigare l'intero sito di Amazon e per qualsiasi prodotto creare dei link personali
+
+55
+00:05:50,180 --> 00:05:57,460
+da condividere nei propri progetti. Siano questi podcast, blog, video, social eccetera. Successivamente
+
+56
+00:05:57,460 --> 00:06:03,500
+tutti i clienti che faranno acquisti approdando su Amazon a partire da uno di questi link produrranno
+
+57
+00:06:03,500 --> 00:06:10,060
+dei piccoli compensi per l'utente affiliato. Detta così sembra una cosa molto semplice e in effetti
+
+58
+00:06:10,060 --> 00:06:18,220
+lo è almeno all'inizio ma come sempre tutto nella vita è più complicato di come appare. Nel corso
+
+59
+00:06:18,260 --> 00:06:23,420
+dei primi sei mesi dall'apertura infatti è necessario che l'affiliato produca almeno tre
+
+60
+00:06:23,420 --> 00:06:29,980
+acquisti affinché Amazon prenda in considerazione l'ipotesi di rendere la sua affiliazione definitiva.
+
+61
+00:06:29,980 --> 00:06:36,380
+E tutto sommato questa è ancora la parte facile perché il difficile arriva quando una volta
+
+62
+00:06:36,380 --> 00:06:42,940
+conseguiti questi tre acquisti quello che io suppongo essere un operatore in carne ed ossa
+
+63
+00:06:43,260 --> 00:06:50,380
+effettua una verifica dei vari indirizzi dei social e dei siti forniti in fase di registrazione e
+
+64
+00:06:50,380 --> 00:06:57,820
+giudica se il creator è degno o meno di essere promosso ad affiliato stabile. Ora la documentazione
+
+65
+00:06:57,820 --> 00:07:04,420
+di Amazon elenca quali sono i social riconosciuti per la verifica e ovviamente nessuno di questi
+
+66
+00:07:04,420 --> 00:07:10,260
+è una piattaforma di podcast. Ci sono solo un po' di indicazioni generiche sul fatto che i profili
+
+67
+00:07:10,260 --> 00:07:17,460
+social accettati fondamentalmente Facebook Instagram Twitter eccetera dovrebbero avere almeno
+
+68
+00:07:17,460 --> 00:07:26,060
+500 iscritti e inoltre su un generico suggerimento di mantenere i contenuti del proprio blog aggiornati
+
+69
+00:07:26,060 --> 00:07:33,340
+almeno negli ultimi sei mesi. Ora volendo anche sorvolare sul fatto che 1 gli iscritti ai like
+
+70
+00:07:33,340 --> 00:07:38,820
+ad un profilo soprattutto se parliamo di piccoli numeri non sono indicativi della qualità del
+
+71
+00:07:38,820 --> 00:07:44,740
+contenuto. 2 un operatore non può certamente avere le conoscenze sufficienti a giudicare la
+
+72
+00:07:44,740 --> 00:07:50,500
+qualità dei contenuti di un blog che potrebbe trattare dei più disparati argomenti. 3 il
+
+73
+00:07:50,500 --> 00:07:56,380
+suddetto operatore non può conoscere il traffico generato da uno qualsiasi di questi siti di cui
+
+74
+00:07:56,380 --> 00:08:02,660
+non è gestore e 4 non vedo perché siano ammessi siti e blog generici ma non le piattaforme di
+
+75
+00:08:02,660 --> 00:08:10,100
+podcasting nonostante tutto questo dicevo al quarto acquisto confermato l'operatore verifica
+
+76
+00:08:10,100 --> 00:08:16,540
+e decide se consolidare l'affiliazione o eliminarla completamente senza nessuna possibilità di appello
+
+77
+00:08:16,540 --> 00:08:25,180
+nel mio caso anzi nei miei casi indovinate un po la eliminata credo almeno 6 o 7 volte nell'ultimo
+
+78
+00:08:25,180 --> 00:08:30,940
+anno e mezzo ma in realtà non ne sono sicuro perché non pensavo di dover portare il conto a
+
+79
+00:08:30,940 --> 00:08:45,660
+saperlo avrei preso appunti e quindi sì fino ad ora è andata male ma io ci ho riprovato tutte le
+
+80
+00:08:45,660 --> 00:08:51,260
+volte anche perché non vi è nessun tipo di ban e appena chiusa l'affiliazione può essere subito
+
+81
+00:08:51,260 --> 00:08:57,940
+riaperta e allora forse vi starete chiedendo perché sono qui a parlare di questa cosa qual
+
+82
+00:08:57,940 --> 00:09:02,980
+è il problema se appena chiusa posso subito riaprire la mia affiliazione con pochi clic
+
+83
+00:09:02,980 --> 00:09:09,660
+beh il problema è molto semplice alla chiusura della pratica tutti i link generati vengono
+
+84
+00:09:09,660 --> 00:09:15,900
+invalidati o meglio i link continuano a funzionare e se qualcuno li clicca si ritrova sul sito di
+
+85
+00:09:15,900 --> 00:09:21,700
+amazon e può anche acquistare il prodotto ma l'ex affiliato non viene più riconosciuta alcuna
+
+86
+00:09:21,700 --> 00:09:27,020
+commissione anche se questi si è nuovamente iscritto con lo stesso account amazon la
+
+87
+00:09:27,020 --> 00:09:32,860
+questione quindi è questa quando il creator è costretto a riaprire l'affiliazione ha solo
+
+88
+00:09:32,860 --> 00:09:39,740
+due scelte o lascia tutti i link vecchi nei propri contenuti lasciando di fatto credere a
+
+89
+00:09:39,740 --> 00:09:44,580
+tutti gli utenti che acquistando da lì daranno una mano al progetto quando in realtà non è vero
+
+90
+00:09:44,580 --> 00:09:52,260
+oppure si mette d'impegno riapre uno per uno tutti i link non più validi genera un nuovo link che
+
+91
+00:09:52,260 --> 00:09:58,380
+questa volta è valido e lo va a sostituire al vecchio in tutte le descrizioni e tutti i testi
+
+92
+00:09:58,380 --> 00:10:04,140
+in cui lo aveva precedentemente piazzato vi assicuro che si tratta di un lavoro che porta
+
+93
+00:10:04,140 --> 00:10:09,900
+via molto tempo anche avendo un esiguo numero di contenuti fosse anche solo per il fatto che
+
+94
+00:10:09,900 --> 00:10:15,500
+bisogna effettuare vari passaggi per ogni link e inoltre più si va avanti nella creazione dei
+
+95
+00:10:15,500 --> 00:10:21,100
+contenuti più i link aumentano e ogni volta il processo diventa sempre più pesante per questo
+
+96
+00:10:21,100 --> 00:10:26,660
+motivo dopo le prime due fregature quindi dopo aver capito che questo lavoro mi sarebbe toccato
+
+97
+00:10:26,660 --> 00:10:31,980
+probabilmente parecchie volte ho deciso che sarebbe servita una soluzione che se proprio
+
+98
+00:10:31,980 --> 00:10:39,340
+non risolvesse l'intera situazione almeno ne limitasse i danni quindi poiché questi link
+
+99
+00:10:39,340 --> 00:10:45,340
+per forza di cose vanno a finire di volta in volta nelle più svariate posizioni le descrizioni di
+
+100
+00:10:45,340 --> 00:10:51,260
+spreaker quelle di youtube gli articoli del blog le email della newsletter i gruppi telegram eccetera
+
+101
+00:10:51,260 --> 00:10:57,420
+da buon informatico ho pensato che la prima cosa da fare fosse quella di inserire un layer
+
+102
+00:10:57,420 --> 00:11:03,980
+aggiuntivo un livello intermedio cioè che si potesse controllare più facilmente e che soprattutto
+
+103
+00:11:03,980 --> 00:11:10,180
+accentrasse tutti i link in un unico punto in questo modo quando si sarebbe presentata la
+
+104
+00:11:10,180 --> 00:11:17,260
+necessità di rigenerare tutti i link mi sarei dovuto preoccupare di andare in un unico elenco e
+
+105
+00:11:17,260 --> 00:11:23,580
+rigenerare e sostituire solo i link in esso contenuti l'idea in realtà è abbastanza banale
+
+106
+00:11:23,580 --> 00:11:29,020
+e in generale la si può applicare in qualsiasi situazione in cui sia un link da condividere da
+
+107
+00:11:29,020 --> 00:11:36,140
+qualche parte che però potrebbe cambiare nel corso del tempo in pratica si fa così si crea un
+
+108
+00:11:36,140 --> 00:11:42,380
+indirizzo sul quale si può avere il pieno controllo e si distribuisce quello tale indirizzo
+
+109
+00:11:42,380 --> 00:11:49,300
+lo si fa puntare all'indirizzo che ci interessa ma che può cambiare nel corso del tempo nel caso
+
+110
+00:11:49,300 --> 00:11:54,660
+in cui questo cambiamento dovesse avvenire realmente noi avremo la possibilità di aggiustare i
+
+111
+00:11:54,660 --> 00:11:59,420
+puntamenti e fare in modo che l'indirizzo che abbiamo distribuito continui a funzionare
+
+112
+00:11:59,420 --> 00:12:05,540
+correttamente puntando alla nuova versione dell'indirizzo che ci interessa ok lo so non
+
+113
+00:12:05,540 --> 00:12:10,900
+si è capito granché però proviamo a fare un esempio e vedremo che sarà tutto più semplice
+
+114
+00:12:10,900 --> 00:12:17,140
+prendiamo ad esempio il link ad amazon per un libro che vi ho consigliato in un episodio di
+
+115
+00:12:17,140 --> 00:12:23,620
+questo podcast questo link una volta generato in forma affiliata sarà qualcosa del tipo amazon.it
+
+116
+00:12:23,620 --> 00:12:30,820
+slash abc una volta generato se dovesse saltare l'affiliazione amazon per qualsiasi motivo e
+
+117
+00:12:30,820 --> 00:12:36,500
+io fossi costretto ad aprirne una nuova questo link continuerebbe a funzionare per l'utente che
+
+118
+00:12:36,500 --> 00:12:41,780
+acquista ma non porterebbe più entrate perché l'account in cui è stato generato non esiste più
+
+119
+00:12:41,780 --> 00:12:47,460
+normalmente dovrei quindi generare un nuovo link con il nuovo account da cui dovrebbe venire fuori
+
+120
+00:12:47,460 --> 00:12:55,260
+qualcosa del tipo amazon.it slash xyz poi dovrei andare nella descrizione dell'episodio e sostituire
+
+121
+00:12:55,260 --> 00:13:03,900
+il vecchio amazon.it slash abc con il nuovo xyz e questo processo dovrebbe avvenire per qualsiasi
+
+122
+00:13:03,900 --> 00:13:09,740
+link affiliato in qualsiasi descrizione e cosa ovviamente impossibile dovrebbe avvenire anche
+
+123
+00:13:09,740 --> 00:13:15,020
+per il link che ho inviato magari in chat o via mail è dunque chiaro che si tratta di un lavoro
+
+124
+00:13:15,020 --> 00:13:21,500
+lungo e in certi casi semplicemente improponibile con lo strato intermedio di cui parlavo prima
+
+125
+00:13:21,500 --> 00:13:28,460
+invece si può semplicemente fare così ogni volta che si genera un link come il nostro amazon.it
+
+126
+00:13:28,460 --> 00:13:35,020
+slash abc tramite un sistema di cui abbiamo il pieno controllo si genera anche un secondo link
+
+127
+00:13:35,020 --> 00:13:41,060
+che punta al primo e si utilizza il secondo nelle descrizioni nelle mail e nelle chat nel mio caso
+
+128
+00:13:41,060 --> 00:13:47,740
+io ho utilizzato il sito web di pensieriincodice.it di cui gestisco dominio e hosting e ho quindi
+
+129
+00:13:47,740 --> 00:13:56,180
+generato un secondo link del tipo pensieriincodice.it slash abc che punta ad amazon.it slash abc
+
+130
+00:13:56,180 --> 00:14:03,180
+nelle descrizioni dei miei contenuti vado quindi a mettere il link pensieriincodice.it slash abc
+
+131
+00:14:03,180 --> 00:14:11,180
+e quando poi amazon mi costringe a cambiare l'indirizzo da amazon.it slash abc in amazon.it
+
+132
+00:14:11,180 --> 00:14:17,540
+slash xyz non sono più costretto ad andare a cercarmi tutti i punti in cui ho scritto il link
+
+133
+00:14:17,540 --> 00:14:24,340
+perché mi basta andare nel sito di pensieriincodice e cambiare la destinazione di pensieriincodice.it
+
+134
+00:14:24,340 --> 00:14:31,500
+slash abc ed ecco che ho corretto tutte le istanze di un link in una volta sola riducendo enormemente
+
+135
+00:14:31,500 --> 00:14:36,940
+il numero di operazioni necessarie ripeto poi l'operazione per tutta la lista dei link di
+
+136
+00:14:36,940 --> 00:14:42,900
+pensieriincodice.it e il gioco è fatto ho ottenuto il mio risultato risparmiando tempo e fatica ora
+
+137
+00:14:42,900 --> 00:14:48,820
+io lo so che la soluzione è molto semplice quasi banale ma vi assicuro che è molto molto pratica e
+
+138
+00:14:48,820 --> 00:14:55,660
+funzionale in questo modo tutti i link mai generati si trovano tutti insieme nello stesso punto se è
+
+139
+00:14:55,660 --> 00:15:00,700
+necessario cambiarle tutti lo si può fare concentrandosi su un unico elenco e alla fine
+
+140
+00:15:00,700 --> 00:15:06,740
+si può anche essere sicuri di non averle lasciato indietro nessuno dal punto di vista pratico se si
+
+141
+00:15:06,740 --> 00:15:11,220
+possiede un sito web come nel mio caso l'implementazione di questa soluzione è veramente
+
+142
+00:15:11,220 --> 00:15:16,820
+semplice basta utilizzare il meccanismo di redirect che praticamente qualsiasi provider
+
+143
+00:15:16,820 --> 00:15:22,740
+di hosting decente è in grado di supportare si individua quindi il file di configurazione del
+
+144
+00:15:22,740 --> 00:15:28,740
+web server che nel mio caso come per molti di voi sarà appunto htaccess e si aggiunge una riga
+
+145
+00:15:28,740 --> 00:15:34,100
+per ogni link al quale si vuole creare un redirect al termine di questa operazione si avranno una
+
+146
+00:15:34,100 --> 00:15:42,660
+serie di righe in cui c'è il percorso del nostro sito web quindi slash abc e il link remoto al
+
+147
+00:15:42,660 --> 00:15:49,540
+quale puntare quindi amazon.it slash abc ogni volta che sarà necessario cambiare i link basterà
+
+148
+00:15:49,540 --> 00:15:55,780
+aprirli uno per uno riga per riga e sostituire la seconda parte con il nuovo link generato se
+
+149
+00:15:55,780 --> 00:16:02,460
+invece non si possiede un hosting web si possono utilizzare dei servizi apposta fatti per abbreviare
+
+150
+00:16:02,460 --> 00:16:09,220
+i collegamenti uno ad esempio è bit.li ad ogni modo vi assicuro che è una tecnica molto più
+
+151
+00:16:09,220 --> 00:16:15,060
+difficile da spiegare che da realizzare in pratica ma in ogni caso se voleste approfondire l'argomento
+
+152
+00:16:15,060 --> 00:16:20,980
+mi trovate sul gruppo telegram di pensieri in codice e poi a tutti i vari contatti presenti
+
+153
+00:16:20,980 --> 00:16:26,940
+in descrizione detto questo spero che questa mia piccola soluzione sia risultata interessante o
+
+154
+00:16:26,940 --> 00:16:33,180
+addirittura utile chissà magari per risolvere uno dei piccoli problemi di tutti i giorni e in tal
+
+155
+00:16:33,180 --> 00:16:39,180
+caso vi chiedo di condividere l'episodio per farlo sentire a chi potrebbe trarne beneficio e per ora
+
+156
+00:16:39,180 --> 00:16:44,900
+vi ringrazio vi do appuntamento al prossimo episodio e vi ricordo che un informatico risolve
+
+157
+00:16:44,900 --> 00:16:48,140
+i problemi a volte anche usando il computer
+

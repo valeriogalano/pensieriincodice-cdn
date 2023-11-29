@@ -1,0 +1,516 @@
+1
+00:00:00,000 --> 00:00:09,920
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:19,920 --> 00:00:27,040
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice. Episodio numero 51,
+
+3
+00:00:27,040 --> 00:00:34,080
+il primo del 2021. Siamo in un periodo nel quale normalmente ci si guarda indietro e si prova a
+
+4
+00:00:34,080 --> 00:00:41,120
+capire com'è andato l'anno appena trascorso e al tempo stesso si scelgono nuovi propositi da
+
+5
+00:00:41,120 --> 00:00:47,440
+perseguire nell'anno che verrà. Qui su Pensieri in codice noi non saremo da meno, prima di tutto
+
+6
+00:00:47,440 --> 00:00:53,640
+perché sono molto soddisfatto di com'è andato questo secondo anno del podcast e poi perché è
+
+7
+00:00:53,640 --> 00:00:59,360
+una buona occasione per parlare un po' di come rispettare i buoni propositi. Vi racconterò
+
+8
+00:00:59,360 --> 00:01:05,520
+quindi la mia esperienza e poi vi darò qualche piccolo consiglio nel caso vogliate anche voi
+
+9
+00:01:05,520 --> 00:01:22,160
+provare a fare come me. Prendiamoci dunque giusto due minuti per parlare di Pensieri in codice.
+
+10
+00:01:22,680 --> 00:01:28,800
+Come vi accennavo prima, questo 2020 secondo me è stato un ottimo anno per il podcast. Prima di
+
+11
+00:01:28,800 --> 00:01:35,720
+tutto perché oggettivamente gli ascolti sono decuplicati. Se infatti a febbraio del 2020
+
+12
+00:01:35,720 --> 00:01:44,320
+festeggiavamo i 5.000 download, secondo le mie stime attuali a febbraio del 2021 festeggeremo
+
+13
+00:01:44,320 --> 00:01:51,520
+i 50.000. Ma a parte il mero conteggio dei numeri questa crescita si è rispecchiata sulla
+
+14
+00:01:51,680 --> 00:01:59,120
+community. Il gruppo Telegram infatti è cresciuto in termini sia di numeri che di qualità dei
+
+15
+00:01:59,120 --> 00:02:06,320
+discorsi e delle interazioni. Di giorno in giorno infatti si alternano discorsi tecnici a scambi di
+
+16
+00:02:06,320 --> 00:02:13,560
+battute e di opinioni sempre molto interessanti, che sono anche spesso state fonte di ispirazione
+
+17
+00:02:13,560 --> 00:02:20,360
+per alcuni episodi. E da questo punto di vista io credo che anche gli episodi in sé siano migliorati,
+
+18
+00:02:20,800 --> 00:02:27,680
+sia per la qualità degli argomenti trattati, sia per il fatto che è migliorato anche il processo
+
+19
+00:02:27,680 --> 00:02:34,520
+di produzione. E spero che su questo punto siate d'accordo con me, perché se da un lato ho provato
+
+20
+00:02:34,520 --> 00:02:41,440
+a migliorare la qualità dell'audio, dall'altro ho anche provato a non scrivere più il testo di
+
+21
+00:02:41,440 --> 00:02:47,400
+tutti gli episodi, ma di prepararmi solamente una scaletta di argomenti al fine di cercare di
+
+22
+00:02:47,400 --> 00:02:54,040
+rendere il discorso meno robotico e un po' più naturale. Per quanto riguarda invece questo 2021,
+
+23
+00:02:54,040 --> 00:03:00,520
+ho riflettuto a lungo su cosa avrei potuto fare per migliorare il podcast e la prima idea che mi
+
+24
+00:03:00,520 --> 00:03:06,920
+era venuta in mente era quella di incrementare il numero di episodi, provando quindi a pubblicarne
+
+25
+00:03:06,920 --> 00:03:14,160
+magari 3 o addirittura 4 al mese. Poi però ho cambiato idea. Primo perché probabilmente non
+
+26
+00:03:14,160 --> 00:03:22,920
+avrò il tempo di registrare così tanti episodi. Secondo perché a pensarci bene mi sembra un ottimo
+
+27
+00:03:22,920 --> 00:03:30,320
+modo per peggiorare la qualità del singolo episodio e questo non mi va perché sarebbe uno spreco sia
+
+28
+00:03:30,320 --> 00:03:35,880
+del mio sia del vostro tempo. Allora ho deciso che il numero di episodi resterà nella media,
+
+29
+00:03:35,880 --> 00:03:44,040
+quindi circa 26 in tutto l'anno, mentre un po' di impegno in più sarà profuso nel ricercare più
+
+30
+00:03:44,040 --> 00:03:51,840
+informazioni interessanti, nell'inserire più aneddoti e magari più spunti di riflessione. E ho
+
+31
+00:03:51,840 --> 00:03:58,080
+inoltre intenzione anche di inserire qualche collaborazione con altri podcaster o youtuber.
+
+32
+00:03:58,080 --> 00:04:05,560
+Se poi dovesse rivelarsi una strada percorribile forse stavo pensando anche di inserire qualche
+
+33
+00:04:05,560 --> 00:04:12,520
+mini puntata, qualche pillola diciamo così, che racconti un'informazione, un esempio in pochissimi
+
+34
+00:04:12,520 --> 00:04:18,720
+minuti. Questa però per ora è solo un'idea e quindi staremo a vedere come si evolverà nel
+
+35
+00:04:18,720 --> 00:04:35,520
+corso dell'anno. Abbiamo quindi delineato i nostri buoni propositi per il nuovo anno. Se voi non lo
+
+36
+00:04:35,520 --> 00:04:42,040
+avete mai fatto vi consiglio di farlo anche perché è un ottimo modo per misurare i propri progressi
+
+37
+00:04:42,040 --> 00:04:49,440
+di anno in anno. Se invece lo fate abitualmente saprete meglio di me che da soli i propositi non
+
+38
+00:04:49,440 --> 00:04:57,640
+bastano. Che si tratti infatti di vita lavorativa o vita personale non sempre è facile portare avanti
+
+39
+00:04:57,640 --> 00:05:04,320
+gli obiettivi che ci si è prefissati. Se infatti si studia o si lavora come libero professionista
+
+40
+00:05:04,320 --> 00:05:11,440
+o in generale si hanno delle scadenze a medio o lungo termine non sempre è facile organizzare il
+
+41
+00:05:11,440 --> 00:05:17,080
+proprio lavoro. Ci sono persone che lo fanno naturalmente ma il più delle volte si finisce
+
+42
+00:05:17,080 --> 00:05:25,520
+col fare poco o quasi niente quando la scadenza è lontana per poi incrementare il lavoro e anche lo
+
+43
+00:05:25,520 --> 00:05:32,560
+stress e le corse man mano che la scadenza si avvicina. Nei casi peggiori nell'ultima settimana
+
+44
+00:05:32,560 --> 00:05:39,880
+si fanno le nottate o addirittura non si riesce a consegnare il lavoro in tempo. Se poi si parla
+
+45
+00:05:39,880 --> 00:05:46,600
+della vita privata allora è ancora peggio. Tempo libero, progetti personali, il cosiddetto tempo
+
+46
+00:05:46,600 --> 00:05:52,360
+di qualità, quello che trascorriamo con i nostri amici e i nostri cari, sono in generale i primi
+
+47
+00:05:52,360 --> 00:06:00,320
+a saltare dandoci così quella sensazione di stare trascorrendo la nostra vita soltanto a lavorare.
+
+48
+00:06:00,320 --> 00:06:07,080
+Ora ci sono persone per le quali tutto questo non è un problema o perché non gli importa dei
+
+49
+00:06:07,080 --> 00:06:14,040
+ritardi e non si fanno prendere dall'ansia o dallo stress o perché riescono naturalmente ad essere
+
+50
+00:06:14,040 --> 00:06:21,200
+organizzati a svolgere le attività al momento giusto ma io e credo anche tanti altri là fuori
+
+51
+00:06:21,200 --> 00:06:28,840
+non apparteniamo a nessuna di queste due categorie. Personalmente ho bisogno di organizzarmi, di tenere
+
+52
+00:06:28,840 --> 00:06:35,520
+sotto controllo lo stato di avanzamento dei lavori, di pianificare e soprattutto di contenere
+
+53
+00:06:35,520 --> 00:06:41,280
+lo stress. Per questo motivo la mia vita è letteralmente cambiata nel momento in cui ho
+
+54
+00:06:41,280 --> 00:06:48,640
+iniziato ad applicare in modo continuativo e proficuo una tecnica di gestione e pianificazione
+
+55
+00:06:48,640 --> 00:06:55,600
+del tempo e se sono qui oggi a parlarvene è perché essa mi ha permesso di riacquistare
+
+56
+00:06:55,600 --> 00:07:02,400
+il controllo sulle mie giornate e di non stare semplicemente lì a reagire agli eventi.
+
+57
+00:07:05,520 --> 00:07:20,240
+Di tecniche di gestione del tempo ne esistono davvero tantissime ed è subito fondamentale
+
+58
+00:07:20,240 --> 00:07:27,560
+capire che non ce n'è una migliore di un'altra. Anche più avanti infatti vi descriverò quella
+
+59
+00:07:27,560 --> 00:07:34,120
+che ho utilizzato fino ad ora e quella che intendo utilizzare d'ora in poi ma ciò non vuol dire che
+
+60
+00:07:34,120 --> 00:07:39,840
+queste due tecniche siano migliori di altre, semplicemente sono quelle che io ritengo più
+
+61
+00:07:39,840 --> 00:07:46,520
+adatte a me. Per qualcun altro infatti potrebbero essere inutili o addirittura controproducenti ma
+
+62
+00:07:46,520 --> 00:07:53,520
+ne parleremo più avanti. Dicevamo dunque che le tecniche sono moltissime e alcune si assomigliano
+
+63
+00:07:53,520 --> 00:07:59,720
+e hanno delle piccole varianti perché magari nate tutte dalla stessa tecnica madre, diciamo così.
+
+64
+00:08:00,200 --> 00:08:05,800
+Altre invece possono essere radicalmente diverse fra loro ma un altro aspetto molto
+
+65
+00:08:05,800 --> 00:08:12,520
+importante da capire è che non tutte sono applicabili a tutti i casi. Ce ne sono infatti
+
+66
+00:08:12,520 --> 00:08:19,320
+di più adatte per chi lavora maggiormente in solitaria e si contrappongono a quelle pensate
+
+67
+00:08:19,320 --> 00:08:26,240
+per chi fa lavori in cui c'è un maggior rapporto con gli altri. Oppure ce ne sono di specifiche
+
+68
+00:08:26,240 --> 00:08:32,800
+per chi segue per molto tempo progetti molto grandi e queste si contrappongono a chi invece
+
+69
+00:08:32,800 --> 00:08:39,400
+svolge contemporaneamente molti progetti con attività più piccole. Ci sono poi tecniche
+
+70
+00:08:39,400 --> 00:08:45,640
+specifiche per lavorare a determinati progetti, se siete ad esempio informatici pensate alle
+
+71
+00:08:45,640 --> 00:08:52,060
+metodologie Agile o al Kanban, o ce ne sono di molto adatte allo studio ad esempio come la
+
+72
+00:08:52,060 --> 00:08:57,660
+tecnica del pomodoro di cui abbiamo già parlato qualche episodio fa. Tutti questi metodi però hanno
+
+73
+00:08:57,660 --> 00:09:05,020
+in comune un obiettivo che è quello di migliorare la qualità della vita di chi li utilizza e tale
+
+74
+00:09:05,020 --> 00:09:11,580
+obiettivo viene solitamente perseguito in due modi aumentando la produttività della persona e
+
+75
+00:09:11,580 --> 00:09:19,060
+diminuendone al contempo lo stress. Per la produttività ogni tecnica ha il suo mix di
+
+76
+00:09:19,060 --> 00:09:26,340
+regole e consigli per incrementare la disciplina, la concentrazione e soprattutto la consapevolezza.
+
+77
+00:09:26,340 --> 00:09:33,700
+Mentre per lo stress di solito si lavora su quella che è la percezione del fallimento cercando di
+
+78
+00:09:33,700 --> 00:09:40,580
+diminuirla o di addirittura azzerarla. In ogni caso qualunque sia la tecnica l'idea di fondo
+
+79
+00:09:40,580 --> 00:09:48,740
+resta sempre la stessa e cioè che non si può fare tutto. Il tempo nonché la nostra attenzione
+
+80
+00:09:48,740 --> 00:09:56,100
+sono risorse limitate e certamente non le possiamo creare dal nulla. Applicando però la giusta
+
+81
+00:09:56,100 --> 00:10:03,380
+tecnica possiamo impegnarci per sfruttarle al meglio. Personalmente ho utilizzato per più di
+
+82
+00:10:03,380 --> 00:10:11,220
+tre anni e mezzo la Getting Things Done anche nota come GTD che è una tecnica che si basa su
+
+83
+00:10:11,220 --> 00:10:17,220
+una pianificazione delle attività e dei progetti su base giornaliera e settimanale. Come ho detto
+
+84
+00:10:17,220 --> 00:10:24,980
+è una delle tante tecniche disponibili e all'epoca la scelsi perché sembrava soddisfare al meglio il
+
+85
+00:10:24,980 --> 00:10:31,820
+mio bisogno di fare ordine. Quello era infatti un periodo nel quale avevo tante attività da
+
+86
+00:10:31,820 --> 00:10:40,340
+svolgere anche molto diverse fra loro sia in ambito privato che lavorativo e avevo notato
+
+87
+00:10:40,340 --> 00:10:47,700
+che la mia attenzione iniziava a frammentarsi, iniziavo a dimenticare di fare determinate cose
+
+88
+00:10:47,700 --> 00:10:54,420
+e quindi ho sentito il bisogno di fare qualcosa in merito. Con il senno di poi devo dire che è
+
+89
+00:10:54,420 --> 00:11:02,900
+stata un'ottima idea, infatti man mano che il tempo passava e che io personalizzavo anche la
+
+90
+00:11:02,900 --> 00:11:08,900
+tecnica per adattarla meglio alle mie esigenze, perché vi ricordo che queste tecniche sono sempre
+
+91
+00:11:08,900 --> 00:11:15,740
+solo un'impostazione, poi dipende da chi le utilizza, decidere qual è il modo migliore. Con
+
+92
+00:11:15,740 --> 00:11:22,900
+il tempo dicevo ho imparato tantissime cose sia su me stesso sia sul modo in cui si organizza
+
+93
+00:11:22,900 --> 00:11:29,100
+il proprio tempo e le proprie attività. Una delle cose più importanti che ho capito ad esempio di me
+
+94
+00:11:29,100 --> 00:11:37,260
+stesso è che per me il multitasking non funziona. Svolgere infatti due o più attività contemporaneamente
+
+95
+00:11:37,260 --> 00:11:45,500
+non solo mi fa stancare di più ma mi richiede più tempo di quanto me ne occorrerebbe per svolgere
+
+96
+00:11:45,500 --> 00:11:52,340
+quelle stesse attività in sequenza. Un'altra cosa che ho imparato è non reagire immediatamente agli
+
+97
+00:11:52,340 --> 00:11:59,380
+eventi, a meno che non ce ne sia effettivamente bisogno, ma semplicemente annotarli e successivamente
+
+98
+00:11:59,380 --> 00:12:06,260
+analizzarli e pianificare eventualmente il da farsi. E ancora ho imparato a conoscere i miei
+
+99
+00:12:06,260 --> 00:12:14,500
+limiti e quindi a pianificare le mie attività di conseguenza, in modo da evitare la procrastinazione
+
+100
+00:12:14,500 --> 00:12:21,700
+e da poter gestire eventualmente degli imprevisti. Ma forse la cosa più importante è che fino a
+
+101
+00:12:22,100 --> 00:12:29,140
+quattro anni fa praticamente non riuscivo assolutamente a comprendere è il valore di dire
+
+102
+00:12:29,140 --> 00:12:36,100
+di no. Imparando infatti a capire quanto vale il mio tempo o la mia attenzione e contemporaneamente
+
+103
+00:12:36,100 --> 00:12:42,340
+imparando a valutare quante di queste risorse sono necessarie per svolgere una determinata
+
+104
+00:12:42,340 --> 00:12:50,420
+attività e dove vengono normalmente impiegate, ho automaticamente sviluppato la capacità di
+
+105
+00:12:50,580 --> 00:13:00,340
+rifiutare o abbandonare quelle attività che non hanno un adeguato rapporto costi benefici. Il
+
+106
+00:13:00,340 --> 00:13:06,660
+risultato di tutto questo è che nel corso di questi anni la mia produttività è aumentata
+
+107
+00:13:06,660 --> 00:13:16,100
+moltissimo. Ovviamente non dimentico più di fare le cose e poco per volta ho iniziato a migliorare
+
+108
+00:13:16,100 --> 00:13:22,820
+e limare qui e lì i vari aspetti della tecnica. Sono entrato così in una sorta di circolo
+
+109
+00:13:22,820 --> 00:13:30,020
+virtuoso che mi ha portato a spingere la tecnica io credo al limite. Oramai infatti porto avanti
+
+110
+00:13:30,020 --> 00:13:38,100
+così tante attività contemporaneamente che questo tipo di organizzazione non credo faccia più per me
+
+111
+00:13:38,100 --> 00:13:46,500
+e quando dico tante intendo che in tre anni e mezzo circa di sole attività personali e
+
+112
+00:13:46,500 --> 00:13:53,060
+side project, perché i progetti di lavoro vengono gestiti con degli strumenti appositi,
+
+113
+00:13:53,060 --> 00:14:01,780
+ho totalizzato più di 13.200 attività svolte. Per quest'anno quindi ho deciso di passare ad
+
+114
+00:14:01,820 --> 00:14:09,180
+una tecnica chiamata Commitment Inventory che si basa su principi diversi che permettono di
+
+115
+00:14:09,180 --> 00:14:17,060
+pianificare in modo meno stringente suddividendo le attività per categoria e non per progetto.
+
+116
+00:14:17,060 --> 00:14:23,860
+Sinceramente io spero che questo possa permettermi di migliorare ancora. Tuttavia per ora non ho
+
+117
+00:14:23,860 --> 00:14:29,900
+granché da dirvi sui risultati perché la sto utilizzando da soli pochi giorni. Magari,
+
+118
+00:14:30,020 --> 00:14:35,540
+vedremo, potrebbe essere un buon argomento per l'ultimo episodio di quest'anno.
+
+119
+00:14:35,540 --> 00:14:53,020
+Bene, io spero di essere riuscito a trasmettervi quanto è importante per me organizzare le
+
+120
+00:14:53,020 --> 00:15:01,380
+attività. Praticamente parlando lo faccio tutti i giorni in modo abbastanza minuzioso e questo mi
+
+121
+00:15:01,380 --> 00:15:09,900
+permette sia di essere efficiente sia di non sentirmi troppo oppresso dalle incombenze della
+
+122
+00:15:09,900 --> 00:15:16,380
+giornata. Siccome quindi questo argomento mi sta molto a cuore, ho pensato di condividerlo
+
+123
+00:15:16,380 --> 00:15:22,180
+con tutti voi e se vi ho convinto a provare almeno una di queste tecniche vi lascio in
+
+124
+00:15:22,180 --> 00:15:29,020
+descrizione un interessante test che potete svolgere per capire qual è quella più adatta
+
+125
+00:15:29,020 --> 00:15:36,060
+a voi, almeno dal punto di vista teorico. Vi lascio anche il referral all'app che utilizzo
+
+126
+00:15:36,060 --> 00:15:44,740
+io per la mia organizzazione. Se volete registrarvi a partire da quel link credo che il sistema dia
+
+127
+00:15:44,740 --> 00:15:51,820
+una specie di sconto a entrambi, ma sinceramente non ho approfondito perché l'app può essere
+
+128
+00:15:51,860 --> 00:15:58,900
+utilizzata anche in modo gratuito. Direi quindi che non mi resta altro che salutarvi, augurarvi
+
+129
+00:15:58,900 --> 00:16:06,780
+un buon 2021 e ricordarvi che un informatico risolve problemi, a volte anche usando il computer.
+

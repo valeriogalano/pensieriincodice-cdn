@@ -1,0 +1,708 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:10,000 --> 00:00:24,440
+Buongiorno a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice,
+
+3
+00:00:24,440 --> 00:00:29,040
+il podcast in cui parliamo di argomenti presi dal mondo del software, di internet
+
+4
+00:00:29,040 --> 00:00:35,400
+e della programmazione. Come è andata questa settimana senza pensieri in codice? Spero che
+
+5
+00:00:35,400 --> 00:00:41,560
+a voi sia mancato ascoltare il podcast almeno quanto a me è mancato registrarlo. Come molti
+
+6
+00:00:41,560 --> 00:00:47,320
+di voi già sapranno però ho trascorso il weekend a Milano perché nella giornata di sabato ho preso
+
+7
+00:00:47,320 --> 00:00:53,240
+parte a quella bellissima manifestazione che è il festival del podcasting dove ho incontrato tanta
+
+8
+00:00:53,240 --> 00:00:59,960
+bella gente sia podcaster che appassionati e dove ho anche stretto tante nuove amicizie. Se mi
+
+9
+00:00:59,960 --> 00:01:05,480
+seguite anche sui social saprete inoltre che ho avuto l'occasione di presentare Pensieri in
+
+10
+00:01:05,480 --> 00:01:11,480
+codice sul palco del festival nella categoria podcast emergenti e per questo ringrazio davvero
+
+11
+00:01:11,480 --> 00:01:17,600
+di cuore le oltre 380 persone che hanno speso un po' del proprio tempo per andare su Instagram a
+
+12
+00:01:17,600 --> 00:01:23,320
+mettere il cuoricino e votare il podcast e che quindi mi hanno permesso di essere sul palco. E
+
+13
+00:01:23,320 --> 00:01:28,360
+visto che questo progetto mi sta regalando sempre più soddisfazioni ne approfitto anche per ringraziare
+
+14
+00:01:28,360 --> 00:01:34,640
+tutti voi che ascoltate gli episodi ogni settimana ed in particolare gli utenti del gruppo Telegram
+
+15
+00:01:34,640 --> 00:01:40,240
+che sono persone meravigliose e con le quali abbiamo spesso conversazioni interessanti sia a
+
+16
+00:01:40,240 --> 00:01:46,520
+tema informatico che non. Se tu che stai ascoltando non ti sei ancora iscritto allora ti consiglio di
+
+17
+00:01:46,520 --> 00:01:53,240
+farlo immediatamente. Trovi il link in descrizione o sul sito pensieriincodice.it oppure puoi
+
+18
+00:01:53,240 --> 00:01:59,480
+semplicemente andare su Telegram e cercare il gruppo Pensieri in codice. Ora però basta con
+
+19
+00:01:59,480 --> 00:02:05,160
+l'introduzione e con i ringraziamenti e passiamo all'argomento di oggi cioè la crittografia a
+
+20
+00:02:05,160 --> 00:02:11,400
+chiave pubblica. Tantissimi non avranno mai sentito nominare questo algoritmo né con il nome di
+
+21
+00:02:11,400 --> 00:02:16,920
+crittografia a chiave pubblica ma nemmeno come crittografia simmetrica o crittografia a chiave
+
+22
+00:02:16,920 --> 00:02:23,240
+pubblico privata o crittografia a coppia di chiavi. Tutti nomi che in realtà indicano fondamentalmente
+
+23
+00:02:23,240 --> 00:02:29,040
+la stessa cosa. Stiamo parlando però di uno di quegli algoritmi che tutti ma proprio tutti
+
+24
+00:02:29,040 --> 00:02:34,880
+utilizziamo ogni giorno e senza saperlo. E questo perché al di là dei suoi impieghi un po' più
+
+25
+00:02:34,880 --> 00:02:40,760
+tecnici e professionali come l'autenticazione delle firme digitali ad esempio, la crittografia
+
+26
+00:02:40,840 --> 00:02:47,120
+a chiave pubblica è alla base del protocollo HTTPS e cioè quel protocollo versione sicura
+
+27
+00:02:47,120 --> 00:02:53,540
+del normale HTTP che ci permette di scambiare informazioni private sul web senza che queste
+
+28
+00:02:53,540 --> 00:02:59,360
+possono essere carpite da malintenzionati. Cerchiamo però di procedere con ordine e proviamo
+
+29
+00:02:59,360 --> 00:03:05,520
+a capire innanzitutto a cosa serve questo algoritmo e poi come funziona. Come abbiamo
+
+30
+00:03:05,600 --> 00:03:11,800
+già accennato negli episodi numero 10 e 18 in cui abbiamo parlato rispettivamente di data bridge e
+
+31
+00:03:11,800 --> 00:03:19,080
+di crittografia in generale, la trasmissione di informazioni sul web e su internet è assimilabile
+
+32
+00:03:19,080 --> 00:03:25,480
+alla spedizione di una serie di cartoline tramite il servizio postale. Si parla cioè di messaggi che
+
+33
+00:03:25,480 --> 00:03:30,640
+potranno facilmente essere letti da chiunque ne entri fisicamente in possesso. Postini,
+
+34
+00:03:30,640 --> 00:03:38,080
+addetti allo smistamento, impiegati eccetera. Detto questo se i dati che io voglio spedire hanno
+
+35
+00:03:38,080 --> 00:03:44,320
+un minimo di rilevanza per me allora preferirei che non fossero consultabili da chiunque e in un
+
+36
+00:03:44,320 --> 00:03:50,600
+meccanismo del genere in effetti tutti i dati che vengono scambiati tra il nostro pc e un qualsiasi
+
+37
+00:03:50,600 --> 00:03:57,480
+sito web o tra due smartphone o più in generale tra due qualsiasi dispositivi fisici o virtuali
+
+38
+00:03:57,480 --> 00:04:03,400
+che siano, vengono prima suddivisi in pacchetti e poi spediti attraverso una serie di nodi che
+
+39
+00:04:03,400 --> 00:04:09,120
+via via li indirizzeranno verso il giusto destinatario. Ciascuno di questi nodi, che poi in
+
+40
+00:04:09,120 --> 00:04:14,920
+realtà sono i router, i server e tutti i dispositivi che formano la rete internet, avrà però la
+
+41
+00:04:14,920 --> 00:04:21,280
+facoltà di leggere il messaggio che sta smistando esattamente come un postino può leggere una
+
+42
+00:04:21,280 --> 00:04:27,280
+cartolina che sta consegnando. Mentre però di norma noi non siamo soliti scrivere informazioni
+
+43
+00:04:27,280 --> 00:04:32,520
+delicate su di una cartolina, quando navighiamo sul web abbiamo spesso bisogno di trasmettere
+
+44
+00:04:32,520 --> 00:04:38,020
+informazioni sensibili come dati personali, password, numeri di carta di credito e codici
+
+45
+00:04:38,020 --> 00:04:43,040
+identificativi. Pensiamo solo a quando per la prima volta abbiamo effettuato un acquisto su
+
+46
+00:04:43,040 --> 00:04:49,040
+Amazon. Oltre al nostro nome e indirizzo abbiamo anche inviato al sito il nostro numero di carta
+
+47
+00:04:49,040 --> 00:04:53,960
+di credito e tutti i dati sufficienti ad accreditarci le somme corrispondenti ai nostri
+
+48
+00:04:53,960 --> 00:05:00,520
+ordini. Se chiunque nel percorso tra il nostro pc e il server di Amazon avesse potuto leggere
+
+49
+00:05:00,520 --> 00:05:05,960
+tali informazioni, probabilmente oggi ci ritroveremo con delle belle somme mancanti dai nostri conti
+
+50
+00:05:05,960 --> 00:05:11,560
+correnti. E il motivo per cui ciò non è accaduto, per cui nessuno ha potuto rubare i nostri dati,
+
+51
+00:05:11,560 --> 00:05:17,000
+è proprio quell'algoritmo così semplice e al tempo stesso geniale che prende il nome di
+
+52
+00:05:17,000 --> 00:05:32,840
+crittografia a chiave pubblica. Per capire come funziona l'algoritmo di crittografia a chiave
+
+53
+00:05:32,840 --> 00:05:38,440
+pubblica dobbiamo procedere per gradi e provare a suddividere il problema della trasmissione sicura
+
+54
+00:05:38,440 --> 00:05:43,920
+in problemi più semplici. Questa è una tecnica ampiamente utilizzata in programmazione e noi ne
+
+55
+00:05:43,920 --> 00:05:50,320
+abbiamo già parlato nell'episodio numero 1. Innanzitutto diciamo che possiamo simulare il
+
+56
+00:05:50,320 --> 00:05:56,200
+problema della trasmissione di un dato immaginando tre persone in una stanza. In realtà le persone
+
+57
+00:05:56,200 --> 00:06:01,120
+potrebbero essere anche 30 milioni, ma per il nostro esempio ne bastano 3 e le chiameremo A,
+
+58
+00:06:01,120 --> 00:06:08,920
+B e C. La persona A si trova nella condizione di dover comunicare a B il proprio numero di
+
+59
+00:06:08,920 --> 00:06:14,800
+carta di credito ma senza farlo sapere a C. Purtroppo per lei però non può né scriverlo
+
+60
+00:06:14,800 --> 00:06:19,880
+né bisbigliarlo all'orecchio di B. L'unica possibilità che ha è quella di parlare ad
+
+61
+00:06:19,880 --> 00:06:25,600
+alta voce in modo che tutti nella stanza possano sentire. In questo esempio A rappresenta il nostro
+
+62
+00:06:25,600 --> 00:06:32,080
+computer, B è il server di Amazon a cui dobbiamo inviare i nostri dati e C rappresenta il resto
+
+63
+00:06:32,080 --> 00:06:37,120
+dei nodi del mondo che non deve in alcun modo poter intercettare tali dati. Bene,
+
+64
+00:06:37,280 --> 00:06:43,120
+nel caso descritto il metodo più semplice per inviare il numero da A a B senza che C possa
+
+65
+00:06:43,120 --> 00:06:49,200
+appropriarsene è quello di pronunciare il numero ad alta voce modificandolo secondo un criterio
+
+66
+00:06:49,200 --> 00:06:56,040
+che solo A e B condividono, quindi in pratica criptandolo. Ad esempio per semplicità fingiamo
+
+67
+00:06:56,040 --> 00:07:02,400
+che il numero di carta di credito da trasmettere sia 150. Per criptarlo supponiamo che A e B
+
+68
+00:07:02,400 --> 00:07:10,520
+sappiano che il numero verrà inviato sommandovi la cifra 25. In questo caso A potrà pronunciare
+
+69
+00:07:10,520 --> 00:07:17,760
+ad alta voce il numero 175 e B saprà che a questo numero dovrà sottrarre il numero concordato e
+
+70
+00:07:17,760 --> 00:07:25,240
+quindi il vero valore sarà 150. In questo tipo di scambio di informazioni il numero concordato
+
+71
+00:07:25,240 --> 00:07:32,840
+frammittente e destinatario che nel nostro esempio è 25 viene definito segreto condiviso. La persona
+
+72
+00:07:32,840 --> 00:07:39,440
+C avrà dunque anche gli sentito pronunciare il numero 175 ma non essendo a conoscenza del segreto
+
+73
+00:07:39,440 --> 00:07:46,080
+condiviso non saprà come decifrare l'informazione carpita e quindi non la potrà utilizzare. Ovviamente
+
+74
+00:07:46,080 --> 00:07:51,200
+nella realtà i meccanismi di trasformazione dei dati sono molto più complessi però la logica di
+
+75
+00:07:51,200 --> 00:07:57,440
+base della criptografia è quella descritta finora e la criptografia applicata al protocollo HTTP, cioè
+
+76
+00:07:57,440 --> 00:08:04,280
+quel protocollo utilizzato dai browser per navigare sul web, ci porta al protocollo HTTPS che rende
+
+77
+00:08:04,280 --> 00:08:09,080
+possibile interagire con i vari siti criptando la maggior parte delle informazioni trasmesse.
+
+78
+00:08:09,080 --> 00:08:25,320
+Se il ragionamento fin qui risulta chiaro possiamo provare a salire di livello e tentare di risolvere
+
+79
+00:08:25,320 --> 00:08:31,680
+un problema un tantino più complesso. Infatti se è pur vero che con quanto abbiamo visto nell'esempio
+
+80
+00:08:31,680 --> 00:08:37,080
+precedente siamo in grado di criptare le comunicazioni tra due nodi abbiamo però dato
+
+81
+00:08:37,080 --> 00:08:42,480
+per scontato che essi si conoscessero già e avessero avuto la possibilità di accordarsi sul
+
+82
+00:08:42,480 --> 00:08:49,520
+segreto condiviso ma in realtà non sempre questo è vero. Da bravi programmatori noi dobbiamo considerare
+
+83
+00:08:49,520 --> 00:08:55,520
+il caso peggiore che si possa presentare che poi in queste situazioni è anche quello che si verifica
+
+84
+00:08:55,520 --> 00:09:00,920
+nella stragrande maggioranza dei casi e cioè che i due interlocutori non abbiano mai scambiato
+
+85
+00:09:00,920 --> 00:09:06,560
+contatti prima d'ora. In questo caso essi saranno costretti a prendere accordi sul segreto da
+
+86
+00:09:06,560 --> 00:09:12,080
+condividere ma dovranno farlo davanti agli occhi di tutti gli altri nodi e senza che questi ultimi
+
+87
+00:09:12,080 --> 00:09:16,920
+siano in grado di capirlo. Se infatti un qualsiasi altro nodo entrasse in possesso del segreto
+
+88
+00:09:16,920 --> 00:09:22,800
+condiviso questo sarebbe poi in grado di decifrare tutte le informazioni scambiate fra mittente e
+
+89
+00:09:22,800 --> 00:09:29,720
+destinatario. In pratica ci serve un sistema di comunicazione che seppur perfettamente in chiaro
+
+90
+00:09:29,720 --> 00:09:35,480
+produca un risultato valido solo per il mittente ed il destinatario ed è proprio in questo passaggio
+
+91
+00:09:35,720 --> 00:09:42,040
+che è racchiusa la genialità dell'algoritmo a chiave pubblica. Per provare a capire come calcolare
+
+92
+00:09:42,040 --> 00:09:48,080
+un segreto condiviso utilizzeremo il concetto dello scambio di vernici illustrato da John McCormick
+
+93
+00:09:48,080 --> 00:09:53,280
+nel libro nove algoritmi che hanno cambiato il futuro. Come al solito vi lascio il link amazon
+
+94
+00:09:53,280 --> 00:10:00,000
+in descrizione. Torniamo quindi all'esempio di prima. A, B e C sono sempre nella stanza solo che
+
+95
+00:10:00,000 --> 00:10:05,440
+ora l'obiettivo di A e B è quello di stabilire un segreto condiviso senza che C possa carpire.
+
+96
+00:10:06,440 --> 00:10:12,000
+Ora però le tre persone nella stanza hanno a disposizione un enorme numero di vernici colorate
+
+97
+00:10:12,000 --> 00:10:17,440
+e un angolino sicuro nel quale possono mescolarle senza che gli altri possano vedere i loro movimenti.
+
+98
+00:10:17,440 --> 00:10:24,280
+Innanzitutto A e B si accordano ad alta voce per un colore ad esempio il giallo che noi
+
+99
+00:10:24,280 --> 00:10:30,040
+chiameremo colore pubblico o chiave pubblica volendo utilizzare la nomenclatura dell'algoritmo.
+
+100
+00:10:30,800 --> 00:10:36,840
+Ovviamente essendo stato pronunciato ad alta voce il colore pubblico è conosciuto anche da C. Ora
+
+101
+00:10:36,840 --> 00:10:42,200
+però sia A che B si regano al proprio angolo e mescolano in un recipiente uguali quantità del
+
+102
+00:10:42,200 --> 00:10:47,360
+colore pubblico, il giallo, ed un altro colore a loro scelta che chiameremo colore privato.
+
+103
+00:10:47,360 --> 00:10:53,080
+Supponiamo dunque che A scelga come colore privato il rosso e B invece scelga il blu.
+
+104
+00:10:53,080 --> 00:10:59,280
+Ognuno dei due avrà quindi una propria miscela di colori pubblico privata rispettivamente giallo
+
+105
+00:10:59,280 --> 00:11:06,120
+e rosso e giallo e blu. A questo punto è arrivato il momento di scambiarsi le miscele di colori ma
+
+106
+00:11:06,120 --> 00:11:12,120
+siccome è necessario rispettare il criterio di visibilità da parte di tutti i nodi sia A che B
+
+107
+00:11:12,120 --> 00:11:19,080
+preparano un po' della propria miscela per C e poi se la scambiano. In questo modo A avrà la miscela
+
+108
+00:11:19,080 --> 00:11:25,880
+di B, B avrà la miscela di A e C avrà la miscela di entrambi così da poter provare a individuare il
+
+109
+00:11:25,880 --> 00:11:30,920
+segreto condiviso fra gli altri due. Una volta scambiate le due miscele però i due legittimi
+
+110
+00:11:30,920 --> 00:11:36,440
+interlocutori avranno vita facile. Gli basterà infatti aggiungere il proprio colore privato alla
+
+111
+00:11:36,440 --> 00:11:43,040
+miscela ricevuta per ottenere entrambi la stessa combinazione. C invece si troverà con due miscele
+
+112
+00:11:43,040 --> 00:11:49,200
+perfettamente inutili. La persona A infatti avrà in mano la miscela giallo-blu di B e vi aggiungerà
+
+113
+00:11:49,200 --> 00:11:55,600
+il proprio colore privato cioè il rosso ottenendo così la miscela giallo-blu-rosso. Allo stesso modo
+
+114
+00:11:55,800 --> 00:12:01,400
+la persona B che avrà la miscela giallo-rosso di A aggiungerà il proprio colore privato il
+
+115
+00:12:01,400 --> 00:12:08,200
+blu ottenendo così la miscela gialla-rossa e blu la stessa miscela di A. Alla fine del processo
+
+116
+00:12:08,200 --> 00:12:13,880
+dunque A e B si troveranno con una miscela perfettamente identica e la chiameranno segreto
+
+117
+00:12:13,880 --> 00:12:20,440
+condiviso. La persona C dal canto suo avrà due miscele incomplete e una miriade di possibili
+
+118
+00:12:20,440 --> 00:12:26,160
+altri colori da poter combinare, troppi per provare a indovinare. Se poi anche provassi
+
+119
+00:12:26,160 --> 00:12:31,720
+a mescolare le due miscele avute da A e B otterrebbe un colore composto da rosso,
+
+120
+00:12:31,720 --> 00:12:38,440
+blu e due parti di giallo, quindi comunque un colore diverso dal segreto condiviso di A e B.
+
+121
+00:12:38,440 --> 00:12:43,920
+Ovviamente anche in questo caso abbiamo semplificato un po' il discorso ma la
+
+122
+00:12:43,920 --> 00:12:48,600
+logica utilizzata dall'algoritmo a chiave pubblica è esattamente quella che abbiamo descritto.
+
+123
+00:12:50,440 --> 00:13:05,320
+Se fin qui il ragionamento risulta chiaro non ci resta che affrontare l'ultimo passaggio che
+
+124
+00:13:05,320 --> 00:13:10,880
+riguarda in particolare il fatto che ovviamente i computer non ragionano per vernici o per colori.
+
+125
+00:13:10,880 --> 00:13:16,320
+Quello che abbiamo descritto fino ad ora era un esempio atto solo a capire il ragionamento
+
+126
+00:13:16,320 --> 00:13:21,720
+alla base del processo, però funzionava. E funzionava principalmente per due motivi.
+
+127
+00:13:21,720 --> 00:13:27,720
+Il primo è che la quantità di colori disponibile è abbastanza grande da impedire un approccio di
+
+128
+00:13:27,720 --> 00:13:33,320
+forza bruta per indovinare il segreto condiviso. Il secondo motivo invece è che le vernici,
+
+129
+00:13:33,320 --> 00:13:39,680
+una volta mescolate, non possono più essere separate. Considerando quindi che i computer
+
+130
+00:13:39,680 --> 00:13:45,360
+possono ragionare solo in termini di numeri e calcoli, ora non ci serve altro che individuare
+
+131
+00:13:45,400 --> 00:13:51,040
+degli strumenti matematici che abbiano le stesse caratteristiche delle vernici. E c'è che siano
+
+132
+00:13:51,040 --> 00:13:57,360
+difficili da indovinare e che, una volta applicati, calcolarne l'inverso senza le giuste informazioni
+
+133
+00:13:57,360 --> 00:14:03,400
+sia sufficientemente complicato dal punto di vista computazionale da renderlo virtualmente
+
+134
+00:14:03,400 --> 00:14:08,680
+impossibile. E un risultato del genere si può ottenere attraverso due idee matematiche abbastanza
+
+135
+00:14:08,680 --> 00:14:14,640
+comuni, che sono l'aritmetica dell'orologio e la notazione delle potenze. Entrambe sono idee
+
+136
+00:14:14,640 --> 00:14:20,680
+che applichiamo quotidianamente. L'aritmetica dell'orologio infatti entra in gioco tutte le
+
+137
+00:14:20,680 --> 00:14:27,280
+volte che calcoliamo le ore pomeridiane su di un classico orologio a lancette. Le 14 ad esempio
+
+138
+00:14:27,280 --> 00:14:35,960
+sono le 2, cioè le 14 meno 12. Le 18 sono le 6 e così via. Se poi volessimo esprimere numeri più
+
+139
+00:14:35,960 --> 00:14:44,000
+grandi potremmo astrarre il concetto e dire che 30 corrisponde a 4, cioè a 30 meno 12 meno 12.
+
+140
+00:14:44,680 --> 00:14:49,640
+In questo caso avremo fatto due volte il giro completo dell'orologio e ci saremo fermati sul
+
+141
+00:14:49,640 --> 00:14:55,960
+4. Matematicamente parlando possiamo anche estendere ulteriormente il concetto cambiando
+
+142
+00:14:55,960 --> 00:15:01,640
+anche il numero delle ore dell'orologio. Ad esempio potremmo considerare un orologio di 11
+
+143
+00:15:01,640 --> 00:15:09,360
+ore. In tal caso il numero 14 non corrisponderebbe più a 2, bensì a 3, cioè a 14 meno 11. La
+
+144
+00:15:09,360 --> 00:15:14,440
+notazione delle potenze invece è semplicemente quella che ci permette di esprimere n prodotti di
+
+145
+00:15:14,440 --> 00:15:20,960
+un numero base come quel numero elevato ad n. In pratica invece di dover dire 5 per 5 per 5
+
+146
+00:15:20,960 --> 00:15:26,920
+possiamo dire 5 alla terza. Combinando insieme questi due concetti si possono produrre dei
+
+147
+00:15:26,920 --> 00:15:33,040
+calcoli dei quali sia quasi impossibile eseguire le operazioni inverse. Per capirlo proviamo a fare
+
+148
+00:15:33,040 --> 00:15:39,640
+qualche esempio. Applichiamo la potenza di una base 6 elevato alla terza su di un orologio di
+
+149
+00:15:39,640 --> 00:15:47,520
+dimensione 11. 6 alla terza fa 216, che su un orologio di dimensione 11 fa 19 giri e poi si
+
+150
+00:15:47,520 --> 00:15:54,600
+ferma sul 7. Ora immaginiamo di applicare lo stesso calcolo. La base è sempre 6, l'orologio sempre di
+
+151
+00:15:54,600 --> 00:16:01,480
+dimensioni 11, ma questa volta sappiamo già il risultato senza doverlo calcolare, e cioè 3. Voi
+
+152
+00:16:01,480 --> 00:16:08,760
+riuscite a calcolare la potenza n della base 6 che ho utilizzato per arrivare al risultato 3? No?
+
+153
+00:16:08,760 --> 00:16:15,760
+Beh, in realtà è perfettamente normale e questo non tanto perché non sia possibile tirare fuori
+
+154
+00:16:15,760 --> 00:16:21,600
+un numero. In realtà perdendo un po' di tempo potreste ottenere un n uguale 2 e sarebbe un
+
+155
+00:16:21,600 --> 00:16:28,520
+valore corretto. Il problema è però che anche n uguale 12 è un valore valido per ottenere lo stesso
+
+156
+00:16:28,720 --> 00:16:34,960
+risultato e continuando a provare ne potremmo trovare tantissimi altri. Ecco, questo vuol dire
+
+157
+00:16:34,960 --> 00:16:40,200
+che abbiamo appena messo insieme un algoritmo matematico simile alla miscela tra due vernici,
+
+158
+00:16:40,200 --> 00:16:46,360
+e cioè qualcosa di cui non è possibile ripristinare gli ingredienti originali. Riprendendo
+
+159
+00:16:46,360 --> 00:16:52,160
+quindi l'esempio di A, B e C nella nostra stanza, la dimensione dell'orologio e la base della potenza
+
+160
+00:16:52,160 --> 00:16:57,920
+diventano il nostro colore pubblico, o chiave pubblica. Quello cioè che A e B concordano
+
+161
+00:16:57,920 --> 00:17:04,760
+ad alta voce. Il valore n di elevamento a potenza diventa il colore privato, quello cioè che A e B
+
+162
+00:17:04,760 --> 00:17:10,400
+scelgono indipendentemente e che non dicono a nessuno, ma che utilizzano per calcolare la
+
+163
+00:17:10,400 --> 00:17:16,680
+potenza e poi esprimerla per mezzo dell'orologio, ottenendo così un numero che va a rappresentare
+
+164
+00:17:16,680 --> 00:17:23,320
+la miscela pubblico-privata. Questo risultato pubblico-privato potrà quindi essere comunicato
+
+165
+00:17:23,320 --> 00:17:30,080
+ad alta voce e servirà ai legittimi interlocutori per calcolare il segreto condiviso. Al tempo stesso
+
+166
+00:17:30,080 --> 00:17:36,320
+esso continuerà ad essere totalmente inutile per C, che non potrà utilizzarlo nonostante
+
+167
+00:17:36,320 --> 00:17:42,560
+egli conosca anche la dimensione dell'orologio e la base della potenza. L'ultimissimo dettaglio a cui
+
+168
+00:17:42,560 --> 00:17:48,680
+dobbiamo fare attenzione è che questo algoritmo va applicato a numeri particolarmente grandi. In
+
+169
+00:17:48,680 --> 00:17:53,760
+questo modo potremo simulare la disponibilità di tantissime vernici colorate dell'esempio
+
+170
+00:17:53,760 --> 00:17:59,200
+precedente e in questo modo saremo riusciti a soddisfare tutti i requisiti che ci eravamo posti.
+
+171
+00:17:59,200 --> 00:18:14,000
+Bene ragazzi, siamo così giunti alla fine di questo episodio. Lo so che è stato un episodio
+
+172
+00:18:14,000 --> 00:18:19,400
+un po' più lungo del solito ma l'argomento non era proprio dei più banali e necessitava di
+
+173
+00:18:19,400 --> 00:18:26,040
+un po' di spiegazioni in più. A questo proposito spero di essere stato abbastanza chiaro ma in caso
+
+174
+00:18:26,040 --> 00:18:32,200
+contrario vi esorto a farmelo sapere sia con un commento sia nel gruppo Telegram. Come al solito
+
+175
+00:18:32,200 --> 00:18:38,080
+vi ringrazio di essere arrivati fin qui e vi invito a condividere il podcast con chi pensate
+
+176
+00:18:38,080 --> 00:18:43,000
+possa essere interessato agli argomenti che trattiamo. Ora però non vi rubo altro tempo,
+
+177
+00:18:43,000 --> 00:18:46,000
+vi saluto e vi do appuntamento al prossimo episodio.
+

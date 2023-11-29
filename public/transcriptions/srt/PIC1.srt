@@ -28,7 +28,8 @@ Ora però basta con le presentazioni e passiamo a parlare del nostro primo argom
 
 8
 00:01:11,280 --> 00:01:20,720
-I think everyone in this country should learn to program a computer, they should learn a computer language because it teaches you how to think
+I think everyone in this country should learn to program a computer,
+
 9
 00:01:42,240 --> 00:01:47,120
 they should learn a programming language because that teaches them how to think

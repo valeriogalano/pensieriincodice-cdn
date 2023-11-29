@@ -1,0 +1,348 @@
+1
+00:00:00,000 --> 00:00:09,960
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:09,960 --> 00:00:25,240
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice,
+
+3
+00:00:25,240 --> 00:00:30,680
+il podcast in cui parliamo di argomenti presi dal mondo del software, di internet e della
+
+4
+00:00:30,680 --> 00:00:37,640
+programmazione. Nonostante il caldo afoso e la speranza che il rumore del condizionatore non
+
+5
+00:00:37,640 --> 00:00:45,000
+disturbi questo podcast, proverò a parlarvi di qualcosa che abbiamo costantemente sotto gli occhi
+
+6
+00:00:45,000 --> 00:00:51,840
+che utilizziamo tutti i giorni ma di cui forse non ci siamo mai chiesti l'origine. Sto parlando
+
+7
+00:00:51,840 --> 00:00:59,800
+della tastiera QWERTY. Nel caso non lo sapeste, la tastiera QWERTY è semplicemente quella tastiera
+
+8
+00:00:59,800 --> 00:01:04,760
+per computer nella quale i tasti, sia quelli che rappresentano le lettere che quelli che
+
+9
+00:01:04,760 --> 00:01:10,200
+rappresentano i numeri, sono organizzati nella disposizione tipica utilizzata nel nostro paese
+
+10
+00:01:10,200 --> 00:01:16,840
+e anche ampiamente diffusa in tanti paesi anglofoni. Quella particolare disposizione,
+
+11
+00:01:16,840 --> 00:01:23,280
+cioè in cui le prime sei lettere della prima riga, se lette da sinistra verso destra, formano
+
+12
+00:01:23,280 --> 00:01:30,360
+appunto la parola QWERTY. Molti di noi sono ormai abituati ad utilizzarla tutti i giorni sul pc,
+
+13
+00:01:30,360 --> 00:01:35,520
+sullo smartphone, sul tablet e probabilmente, se mai dovessimo trovarci davanti ad una tastiera
+
+14
+00:01:35,520 --> 00:01:41,400
+diversa da quella che conosciamo, troveremmo grandi difficoltà ad utilizzarla. Ma al di là di ciò,
+
+15
+00:01:41,400 --> 00:01:47,280
+vi è mai capitato di fermarvi a chiedervi perché la tastiera QWERTY ha la forma che conosciamo?
+
+16
+00:01:47,280 --> 00:01:53,280
+Perché le lettere, i numeri e gli altri caratteri sono posizionati in quel modo e non ad esempio in
+
+17
+00:01:53,280 --> 00:02:00,440
+ordine alfabetico? Beh, nonostante la nascita di tale tastiera risalga a poco più di 150 anni fa,
+
+18
+00:02:00,440 --> 00:02:07,480
+non vi sono esplicite testimonianze documentate sul perché sia stata scelta tale disposizione
+
+19
+00:02:07,480 --> 00:02:13,240
+e di conseguenza su questo argomento esistono varie leggende metropolitane che si sono susseguite
+
+20
+00:02:13,240 --> 00:02:19,520
+nel tempo. Tra le più famose e diffuse va sicuramente ricordata la leggenda secondo cui
+
+21
+00:02:19,520 --> 00:02:25,160
+la disposizione dei tasti della tastiera QWERTY sia stata studiata per rallentare la velocità
+
+22
+00:02:25,160 --> 00:02:31,520
+di scrittura dell'operatore. Questo perché, sempre secondo la leggenda, con i tasti in ordine
+
+23
+00:02:31,520 --> 00:02:38,000
+alfabetico gli operatori avrebbero potuto digitare dei testi così velocemente da riuscire a bloccare
+
+24
+00:02:38,000 --> 00:02:44,680
+il meccanismo delle macchine da scrivere facendo incastrare due o più martelletti. Una seconda
+
+25
+00:02:44,680 --> 00:02:50,600
+leggenda metropolitana invece, conosciuta almeno quanto la precedente, vuole che i tasti della
+
+26
+00:02:50,600 --> 00:02:57,040
+tastiera QWERTY siano stati così disposti per permettere ai venditori di macchine da scrivere
+
+27
+00:02:57,080 --> 00:03:02,640
+di impressionare i potenziali clienti scrivendo nel modo più rapido e semplice possibile la parola
+
+28
+00:03:02,640 --> 00:03:09,680
+typewriter che in inglese vuol dire appunto macchina da scrivere. Purtroppo però, come
+
+29
+00:03:09,680 --> 00:03:15,400
+detto prima, le informazioni sulle motivazioni che hanno portato alla forma che noi tutti oggi
+
+30
+00:03:15,400 --> 00:03:22,200
+conosciamo sono andate perdute nel tempo ma un interessante studio della Kyoto University
+
+31
+00:03:22,200 --> 00:03:27,760
+sembra invece ricostruire i fatti in modo sufficientemente coerente da poter spiegare
+
+32
+00:03:27,760 --> 00:03:37,440
+realmente la questione. Nel 1868 a Milwaukee fece la sua comparsa la prima versione di macchina da
+
+33
+00:03:37,440 --> 00:03:44,680
+scrivere. Tale Christopher Scholz, assieme ad un gruppo di colleghi, creò appunto uno strumento
+
+34
+00:03:44,680 --> 00:03:50,680
+che permettesse di scrivere dei testi in modo più semplice e rapido di quanto fosse stato possibile
+
+35
+00:03:50,680 --> 00:03:57,600
+fino ad allora. Nella sua prima forma la tastiera della macchina da scrivere era un qualcosa di
+
+36
+00:03:57,600 --> 00:04:04,680
+molto simile ad un piccolo pianoforte in cui le 28 lettere disponibili, tutte maiuscole,
+
+37
+00:04:04,680 --> 00:04:12,680
+erano disposte su due file in ordine alfabetico. La prima fila dalla A alla N guardando da sinistra
+
+38
+00:04:12,680 --> 00:04:20,000
+verso destra e la seconda fila dalla O alla Z spostandosi da destra verso sinistra. I primi
+
+39
+00:04:20,000 --> 00:04:25,520
+acquirenti della typewriter furono, neanche a dirlo, i telegrafisti che avevano bisogno di un
+
+40
+00:04:25,520 --> 00:04:31,040
+sistema semplice per trascrivere i messaggi ricevuti. Essendo dunque almeno agli inizi gli
+
+41
+00:04:31,040 --> 00:04:38,920
+unici utilizzatori del prodotto essi poterono condizionarne fortemente l'evoluzione. Nel 1870
+
+42
+00:04:38,920 --> 00:04:44,800
+infatti chiesero ed ottennero varie modifiche funzionali al loro tipo di utilizzo come ad
+
+43
+00:04:44,800 --> 00:04:50,080
+esempio l'aggiunta dei caratteri minuscoli, dei numeri e di alcuni segni di punteggiatura che
+
+44
+00:04:50,080 --> 00:04:57,440
+portarono il totale dei tasti a 38 disposti su quattro file. Negli anni a seguire la typewriter
+
+45
+00:04:57,440 --> 00:05:02,120
+si diffuse sempre di più nell'ambiente dei telegrafisti e di conseguenza la sua evoluzione
+
+46
+00:05:02,120 --> 00:05:09,640
+continua ad essere guidata dalle loro richieste. Infatti secondo Koichi e Matoko Yasuka, autori
+
+47
+00:05:09,640 --> 00:05:16,040
+dello studio, le lettere più frequenti come ad esempio la T che è la consonante più utilizzata
+
+48
+00:05:16,040 --> 00:05:21,960
+nella lingua inglese vennero spostate nella parte centrale della tastiera mentre quelle
+
+49
+00:05:21,960 --> 00:05:27,600
+meno frequenti come ad esempio la Q furono spostate ai margini. Allo stesso tempo a causa
+
+50
+00:05:27,600 --> 00:05:34,640
+del fatto che nel codice Morse, il codice appunto utilizzato dai telegrafisti, la Z si scrive in modo
+
+51
+00:05:34,640 --> 00:05:42,120
+molto simile alla coppia S-E, queste tre lettere furono piazzate vicine per dover minimizzare lo
+
+52
+00:05:42,120 --> 00:05:48,480
+spostamento della mano in attesa di capire quale lettera fosse stata trasmessa. Queste e molte
+
+53
+00:05:48,480 --> 00:05:53,680
+altre modifiche furono richieste appunto per velocizzare la scrittura da parte degli operatori
+
+54
+00:05:53,680 --> 00:05:58,440
+e di conseguenza ciò smentisce la leggenda metropolitana di cui abbiamo parlato prima,
+
+55
+00:05:58,680 --> 00:06:04,600
+secondo la quale la disposizione dei tasti fosse stata studiata apposta per rallentare
+
+56
+00:06:04,600 --> 00:06:10,800
+l'operatore. D'altronde nella trasmissione dei messaggi Morse l'operatore che riceve il messaggio
+
+57
+00:06:10,800 --> 00:06:17,360
+deve essere veloce nello scriverlo almeno quanto lo è il mittente altrimenti rischierebbe nel caso
+
+58
+00:06:17,360 --> 00:06:24,200
+di messaggi lunghi di rimanere indietro e perdere delle informazioni. Ad ogni modo sempre in contrasto
+
+59
+00:06:24,200 --> 00:06:30,800
+con la leggenda metropolitana nel frattempo che la tastiera della Typewriter si evolveva iniziavano
+
+60
+00:06:30,800 --> 00:06:36,320
+anche a nascere delle figure specializzate nell'utilizzarla e con esse anche varie
+
+61
+00:06:36,320 --> 00:06:42,080
+tecniche come la scrittura 6 dita o la scrittura 8 dita, tutte tecniche appunto che servivano a
+
+62
+00:06:42,080 --> 00:06:49,760
+sfruttare in maniera sempre più efficiente lo strumento. Nel 1878 nasce ad opera della
+
+63
+00:06:49,760 --> 00:06:55,800
+Remington & Sons la Remington Typewriter 2, la cui disposizione dei tasti è ormai quasi quella
+
+64
+00:06:55,800 --> 00:07:01,400
+che conosciamo oggi ad eccezione di poche lettere come la M, la C o la X. Il nome di
+
+65
+00:07:01,400 --> 00:07:06,840
+questo nuovo modello tuttavia è già sufficiente a sfatare la seconda leggenda che vuole che la
+
+66
+00:07:06,840 --> 00:07:12,000
+disposizione dei tasti sia pensata per rendere veloce la scrittura della parola Typewriter
+
+67
+00:07:12,000 --> 00:07:18,200
+davanti ai clienti per ragioni di marketing. Perché infatti tutta la tastiera dovrebbe essere
+
+68
+00:07:18,200 --> 00:07:26,000
+mai studiata per scrivere Typewriter e non ad esempio Remington oppure Remington & Sons o
+
+69
+00:07:26,000 --> 00:07:35,080
+Typewriter number 2? Ad ogni modo col passare del tempo continuarono a susseguirsi versioni e piccoli
+
+70
+00:07:35,080 --> 00:07:40,520
+adattamenti delle posizioni delle lettere e varie compagnie iniziarono a produrre i propri modelli
+
+71
+00:07:40,520 --> 00:07:47,400
+di macchina da scrivere con quella che a tutti gli effetti è la tastiera QWERTY odierna. Questo finché
+
+72
+00:07:47,400 --> 00:07:54,200
+nel 1910 la stessa disposizione di tasti fu infine adottata per il modernissimo sistema di
+
+73
+00:07:54,200 --> 00:08:01,160
+comunicazione che prendeva il nome di Telescrivente. La Telescrivente venne poi largamente utilizzata
+
+74
+00:08:01,160 --> 00:08:07,760
+come terminale per computer tra gli anni 40 e 70 portando così di fatto la tastiera QWERTY
+
+75
+00:08:07,760 --> 00:08:15,560
+nel mondo dell'informatica moderna. Dal codice Morse per il telegrafo ai nostri computer passando
+
+76
+00:08:15,560 --> 00:08:21,680
+per la Telescrivente dunque questa ad oggi è con maggior probabilità la storia della tastiera che
+
+77
+00:08:21,680 --> 00:08:28,360
+tutti noi utilizziamo ogni giorno. In descrizione vi lascio il link allo studio della Kyoto University
+
+78
+00:08:28,360 --> 00:08:33,920
+nel quale potrete trovare oltre a ulteriori dettagli e un'accurata descrizione delle varie
+
+79
+00:08:33,920 --> 00:08:38,400
+versioni di tastiera e delle motivazioni che hanno portato allo spostamento dei vari caratteri
+
+80
+00:08:38,800 --> 00:08:45,800
+anche le illustrazioni dei vari modelli susseguitisi nel tempo. Con questo siamo giunti al
+
+81
+00:08:45,800 --> 00:08:51,360
+termine di questo tredicesimo episodio di Pensieri in Codice. Io come al solito vi ringrazio di aver
+
+82
+00:08:51,360 --> 00:08:57,920
+ascoltato fin qui e spero che l'argomento vi sia piaciuto. Vi ricordo che potete ascoltare
+
+83
+00:08:57,920 --> 00:09:04,760
+questo podcast su tutte le maggiori piattaforme e su Alexa. Vi basterà dire Alexa apri pensieri
+
+84
+00:09:04,760 --> 00:09:10,840
+in codice. Come al solito vi ricordo che queste sono le mie idee sull'argomento e quindi vi
+
+85
+00:09:10,840 --> 00:09:16,680
+invito a farmi conoscere le vostre con un commento oppure unendovi al gruppo telegram di cui trovate
+
+86
+00:09:16,680 --> 00:09:22,280
+il link in descrizione. Vi ringrazio ancora per l'ascolto e ci sentiamo ad un prossimo episodio
+
+87
+00:09:34,760 --> 00:09:35,760
+di Pensieri in Codice.
+

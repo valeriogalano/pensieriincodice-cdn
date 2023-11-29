@@ -1,0 +1,620 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:20,680 --> 00:00:26,240
+Salve a tutti e ben ritrovati su Pensieri in codice. Oggi parliamo di chatbot, cioè
+
+3
+00:00:26,240 --> 00:00:32,480
+quei piccoli software, e in certi casi nemmeno tanto piccoli, con i quali chattiamo e parliamo
+
+4
+00:00:32,480 --> 00:00:37,040
+ogni giorno, e molto spesso senza nemmeno rendercene conto.
+
+5
+00:00:37,040 --> 00:00:42,600
+Prima di addentrarci nell'argomento di oggi, lasciatemi fare un paio di ringraziamenti.
+
+6
+00:00:42,600 --> 00:00:48,800
+Innanzitutto ci tengo a ringraziare Giuseppe Pugliese del podcast Glitch per via del supporto
+
+7
+00:00:48,800 --> 00:00:53,960
+tecnico che mi sta dando nell'ultimo periodo. Avrete infatti notato che l'audio di Pensieri
+
+8
+00:00:53,960 --> 00:00:59,840
+in codice è molto migliorato nelle ultime 4-5 puntate. Il merito è di Giuseppe, che
+
+9
+00:00:59,840 --> 00:01:05,840
+mi ha dato vari consigli su come migliorare i vari step della produzione del podcast.
+
+10
+00:01:05,840 --> 00:01:11,040
+Prossimamente passeremo anche a migliorare l'attrezzatura in modo da poter portare una
+
+11
+00:01:11,040 --> 00:01:15,400
+qualità sempre maggiore. In secondo luogo, poi, vorrei anche ringraziare
+
+12
+00:01:15,400 --> 00:01:20,640
+un'altra persona senza la quale varie puntate di questo podcast non sarebbero mai venute
+
+13
+00:01:20,640 --> 00:01:24,880
+fuori. Lui è Alex Racuia ed ha un podcast, in realtà
+
+14
+00:01:24,880 --> 00:01:30,720
+ha molti podcast, ma quello che io preferisco è TechnoPeels, nel quale racconta, oltre
+
+15
+00:01:30,720 --> 00:01:35,960
+ad una marea di cose interessanti, anche l'evoluzione dei suoi vari side-projects.
+
+16
+00:01:35,960 --> 00:01:42,160
+Beh, ascoltare TechnoPeels semplicemente mantiene sempre alta la mia voglia di fare
+
+17
+00:01:42,160 --> 00:01:49,160
+e questo mi aiuta a produrre podcast, a portare sempre avanti i miei side-project e di conseguenza
+
+18
+00:01:49,160 --> 00:01:54,680
+a trovare nuovi argomenti di cui parlare. Ho avuto il piacere di conoscere Alex e sua
+
+19
+00:01:54,680 --> 00:01:58,680
+moglie Miki quest'estate e devo dire che sono delle persone stupende.
+
+20
+00:01:58,680 --> 00:02:01,960
+Quindi, molto semplicemente, ciao Alex e grazie.
+
+21
+00:02:01,960 --> 00:02:05,720
+Bene, detto questo, passiamo al tema dell'episodio di oggi.
+
+22
+00:02:05,720 --> 00:02:09,120
+I chatbot. È da un bel po' che sto facendo esperimenti
+
+23
+00:02:09,120 --> 00:02:14,400
+creando chatbot su Telegram. Come al mio solito modus operandi, ho iniziato
+
+24
+00:02:14,400 --> 00:02:19,320
+subito mettendo le mani in pasta per capire a grandi linee come funzionasse il tutto dal
+
+25
+00:02:19,320 --> 00:02:24,520
+punto di vista tecnico. Poi, dopo aver creato alcuni bot in PHP e
+
+26
+00:02:24,520 --> 00:02:31,000
+in Node.js che funzionavano poco e male, devo dire, ho cominciato pian piano a migliorare
+
+27
+00:02:31,000 --> 00:02:36,480
+l'approccio tecnologico fino a raggiungere un grado di consapevolezza sufficiente per
+
+28
+00:02:36,480 --> 00:02:40,640
+scrivere un po' di codice solido e farlo girare su varie piattaforme.
+
+29
+00:02:41,080 --> 00:02:46,360
+Raggiunto quindi un livello sufficiente ad estreggiarmi tra linguaggi, framework, servizi
+
+30
+00:02:46,360 --> 00:02:53,120
+di hosting, deploy, ho iniziato un vero e proprio studio proprio riguardante la progettazione
+
+31
+00:02:53,120 --> 00:02:57,320
+di questo genere di software. E allora mi sono convinto del fatto che i
+
+32
+00:02:57,320 --> 00:03:02,240
+bot rappresenteranno molto probabilmente una grossa fetta del futuro delle interazioni
+
+33
+00:03:02,240 --> 00:03:06,300
+tra software e umani. Ho pensato allora di provare a riassumere
+
+34
+00:03:06,300 --> 00:03:11,420
+un po' di quello che ho imparato in questi mesi, sperando che possa risultare interessante
+
+35
+00:03:11,420 --> 00:03:16,820
+per voi e anche per il futuro me stesso che magari potrebbe decidere di riascoltare questo
+
+36
+00:03:16,820 --> 00:03:18,340
+episodio fra qualche anno.
+
+37
+00:03:36,300 --> 00:03:44,700
+Dal punto di vista programmatico, i chatbot non sono altro che dei software, così come
+
+38
+00:03:44,700 --> 00:03:51,020
+un sito web o un'app per cellulare, ma si differenziano da questi per il tipo di interfaccia
+
+39
+00:03:51,020 --> 00:03:58,380
+grazie alla quale gli utenti possono interagire con essi. Tale interfaccia viene definita conversazionale
+
+40
+00:03:58,380 --> 00:04:04,060
+ed è, in due parole, un qualsiasi metodo grazie al quale noi possiamo sottoporre al
+
+41
+00:04:04,060 --> 00:04:09,980
+software le nostre richieste in forma di frasi di testo. In alcuni casi le richieste
+
+42
+00:04:09,980 --> 00:04:15,460
+possono perfino essere dettate, l'interfaccia vocale infatti trasforma le nostre parole
+
+43
+00:04:15,460 --> 00:04:21,260
+in testo e le elabora come se le avessimo scritte, e le risposte, in modo speculare,
+
+44
+00:04:21,260 --> 00:04:27,060
+vengono poi lette da un sintetizzatore vocale. Un chatbot è quindi in grado di interagire
+
+45
+00:04:27,060 --> 00:04:33,220
+tramite app di messaggistica, tramite email, tramite i social e tramite interfacce appositamente
+
+46
+00:04:33,220 --> 00:04:38,300
+progettate o addirittura tramite microfono e casse. I maggiori esempi che abbiamo tutti
+
+47
+00:04:38,300 --> 00:04:43,820
+i giorni sotto gli occhi sono sicuramente i bot dei grandi attori di internet, chi di
+
+48
+00:04:43,820 --> 00:04:50,540
+noi non ha mai provato uno speaker di Alexa, o chi non chiede a Siri o a Google di ricordargli
+
+49
+00:04:50,540 --> 00:04:55,800
+una scadenza o di comporre un numero. Beh, questo tipo di assistenti personali rappresenta
+
+50
+00:04:55,800 --> 00:05:01,980
+perfettamente la categoria di chatbot cosiddetti generalisti o superbot, degli automi cioè
+
+51
+00:05:01,980 --> 00:05:07,860
+che sono stati progettati per soddisfare una grande serie di necessità molto comuni
+
+52
+00:05:07,860 --> 00:05:14,460
+e per interagire con vari servizi di utilizzo generico, ad esempio navigatori GPS, previsioni
+
+53
+00:05:14,460 --> 00:05:20,700
+meteo, calendari, eccetera. Questi pochi esempi però rappresentano solo la punta dell'iceberg,
+
+54
+00:05:20,700 --> 00:05:26,360
+perché in realtà su moltissime piattaforme l'uso dei bot con le più disparate funzioni
+
+55
+00:05:26,360 --> 00:05:31,980
+è già una realtà che si sta disfondendo a macchia d'olio. Uno degli esempi più interessanti
+
+56
+00:05:31,980 --> 00:05:36,600
+in questo senso è sicuramente Slack, il sistema di messaggistica ampiamente diffuso
+
+57
+00:05:36,600 --> 00:05:42,100
+in ambito professionale, presso il quale è possibile trovare bot che forniscono ad esempio
+
+58
+00:05:42,100 --> 00:05:47,340
+informazioni su altri sistemi, o bot che aiutano a gestire le attività e gli appuntamenti,
+
+59
+00:05:47,340 --> 00:05:52,900
+o addirittura bot che facilitano la richiesta di ferie, l'ordine del pranzo e molto altro.
+
+60
+00:05:52,900 --> 00:05:59,180
+Ma non sono certo questi gli unici casi. Amy, ad esempio, è un bot in grado di concordare
+
+61
+00:05:59,180 --> 00:06:03,820
+appuntamenti con i clienti via email. Basta collegarla al proprio calendario, mettere
+
+62
+00:06:03,820 --> 00:06:08,940
+il suo indirizzo in copia in un'email e lei si occuperà di discutere con il cliente fino
+
+63
+00:06:08,940 --> 00:06:16,300
+a trovare un accordo su data e ora dell'appuntamento. RemindMeTweet, invece, è un bot che serve
+
+64
+00:06:16,300 --> 00:06:21,780
+a ricordare ad un utente un certo tweet in una certa data. Basta infatti rispondere al
+
+65
+00:06:21,780 --> 00:06:28,380
+tweet che ci interessa taggando il bot e specificando una data o un lasso di tempo, e lui si occuperà
+
+66
+00:06:28,380 --> 00:06:31,500
+di segnalarci nuovamente quel tweet al momento giusto.
+
+67
+00:06:31,500 --> 00:06:37,580
+Ma la cosa non finisce qui. Esistono infatti bot anche per Facebook, per Instagram, per
+
+68
+00:06:37,580 --> 00:06:43,940
+WhatsApp e per Telegram e perfino bot che funzionano via SMS e via telefono. Qualsiasi
+
+69
+00:06:43,940 --> 00:06:50,380
+sia l'interfaccia, se permette l'interazione tra esseri umani, allora essa è conversazionale
+
+70
+00:06:50,380 --> 00:06:54,220
+e quindi è possibile sviluppare dei chatbot che ne facciano uso.
+
+71
+00:06:58,380 --> 00:07:02,060
+CREARE UNA UTILITÀ
+
+72
+00:07:15,100 --> 00:07:21,140
+Definito quindi cosa sia un bot e per quali piattaforme può essere sviluppato, il passo
+
+73
+00:07:21,140 --> 00:07:26,980
+successivo sta nel capire che utilità possa avere crearne uno. E qui il discorso si fa
+
+74
+00:07:26,980 --> 00:07:32,940
+davvero ampio. A costo di sembrare banale mi viene da dire che l'unico limite è la
+
+75
+00:07:32,940 --> 00:07:39,180
+fantasia di chi lo progetta, il bot intendo. Quello che possiamo provare a fare è elencare
+
+76
+00:07:39,180 --> 00:07:44,940
+un po' di funzionalità tipiche dei chatbot raggruppandole magari per tipologie di utilizzatori.
+
+77
+00:07:44,940 --> 00:07:50,060
+E ragionando proprio in questo modo, la prima idea che mi viene in mente è un chatbot che
+
+78
+00:07:50,060 --> 00:07:55,540
+possa essere ad esempio di supporto per il rapporto tra l'azienda e i clienti. Tale
+
+79
+00:07:55,540 --> 00:07:59,420
+supporto potrebbe essere infatti presente sulle piattaforme preferite dai clienti di
+
+80
+00:07:59,420 --> 00:08:04,420
+tale azienda e offrire servizi di risposta alle domande più frequenti. O in aggiunta
+
+81
+00:08:04,420 --> 00:08:10,100
+potrebbe integrare un sistema di customer care di primo livello, per gestire le richieste
+
+82
+00:08:10,100 --> 00:08:15,100
+più semplici prima di mettere in contatto con un operatore. O ancora potrebbe offrire
+
+83
+00:08:15,100 --> 00:08:20,740
+servizi di e-commerce e offerte speciali, magari interagendo anche con il sistema di
+
+84
+00:08:20,740 --> 00:08:25,060
+pagamento della specifica piattaforma, per rendere così gli acquisti più semplici.
+
+85
+00:08:25,060 --> 00:08:30,140
+Cambiando poi ambito, si potrebbe pensare ad un bot che implementa un sistema di
+
+86
+00:08:30,140 --> 00:08:35,380
+prenotazione per le attività come ristoranti, uffici, parrucchieri, dentisti, eccetera.
+
+87
+00:08:35,380 --> 00:08:40,780
+O in casi completamente differenti si può pensare a servizi erogati internamente ad
+
+88
+00:08:40,780 --> 00:08:45,820
+un'azienda, che possano essere di supporto per i dipendenti, come non lo so, la revisione
+
+89
+00:08:45,820 --> 00:08:51,460
+automatica dei documenti ad esempio, o la richiesta di ferie, l'apertura di segnalazioni,
+
+90
+00:08:51,460 --> 00:08:56,740
+e così via. Se invece ragioniamo a livello personale, si può pensare ad un bot che non
+
+91
+00:08:56,740 --> 00:09:01,860
+lo so, aiuti la produttività, ricordando all'utente le cose da fare. O un chatbot
+
+92
+00:09:01,860 --> 00:09:08,620
+per lo svago, che suggerisca film, che permetta addirittura di avviare veri e propri minigiochi.
+
+93
+00:09:08,620 --> 00:09:14,460
+E ancora si potrebbe implementare un bot che notifica specifici eventi, o che aiuta la
+
+94
+00:09:14,460 --> 00:09:20,300
+gestione dei gruppi. Insomma, come dicevo poc'anzi, le possibilità sono veramente infinite e sta ai
+
+95
+00:09:20,300 --> 00:09:26,020
+progettisti individuare quelle più adatte ai propri scopi. Io ad esempio sto sviluppando un
+
+96
+00:09:26,020 --> 00:09:31,380
+bot che possa essere d'aiuto a podcaster e youtuber per la gestione dei propri gruppi,
+
+97
+00:09:31,380 --> 00:09:35,980
+dei propri canali telegram. Ma di questo magari parleremo in un prossimo episodio.
+
+98
+00:09:44,460 --> 00:10:01,980
+Ora, io sono sicuro che molti di voi si staranno chiedendo per quale motivo uno
+
+99
+00:10:01,980 --> 00:10:06,820
+sviluppatore o un'azienda dovrebbe impiegare risorse per sviluppare un bot che faccia
+
+100
+00:10:06,820 --> 00:10:12,340
+sostanzialmente cose che può fare con un'app o con un sito web. Beh, io sono convinto che
+
+101
+00:10:12,340 --> 00:10:18,140
+nei prossimi anni tantissima dell'interazione tra uomo e software si sposterà verso i chatbot,
+
+102
+00:10:18,140 --> 00:10:24,900
+e ciò per un semplice motivo. Potremmo definirlo come l'evoluzione dell'utenza,
+
+103
+00:10:24,900 --> 00:10:30,980
+e mi riferisco soprattutto a quella non tecnica. Se ci pensiamo, infatti, durante il boom di
+
+104
+00:10:30,980 --> 00:10:38,100
+internet e del web, le persone hanno iniziato a scoprire e apprezzare i siti web. Con un po' di
+
+105
+00:10:38,100 --> 00:10:43,420
+sforzo e un po' di spirito di adattamento, essi potevano infatti fornire informazioni,
+
+106
+00:10:43,420 --> 00:10:49,380
+servizi e prodotti in modo spesso più rapido ed efficiente rispetto ai metodi tradizionali.
+
+107
+00:10:49,380 --> 00:10:55,020
+Le persone hanno quindi iniziato ad aspettarsi che aziende, professionisti, enti, eccetera,
+
+108
+00:10:55,020 --> 00:11:00,860
+avessero il proprio sito web e offrissero tutta una serie di servizi correlati alle
+
+109
+00:11:00,860 --> 00:11:06,180
+proprie attività. Quando poi, dopo qualche anno, sono arrivati gli smartphone, pian piano l'utenza
+
+110
+00:11:06,180 --> 00:11:11,500
+si è spostata dal sito web tradizionale a quello mobile, o nel migliore dei casi,
+
+111
+00:11:11,500 --> 00:11:17,540
+alle app direttamente installate sul dispositivo. Anche in questo caso, il mondo dei produttori di
+
+112
+00:11:17,540 --> 00:11:24,100
+software ha un po' spinto e un po' seguito, diciamo così, il trend. E oggi ci ritroviamo
+
+113
+00:11:24,100 --> 00:11:30,100
+con una ampissima scelta di servizi e prodotti pensati per essere utilizzati direttamente dal
+
+114
+00:11:30,100 --> 00:11:37,180
+nostro smartphone. Ma proprio per questo il mercato mobile è ormai enorme. Quante app abbiamo già
+
+115
+00:11:37,180 --> 00:11:42,580
+installate nel nostro smartphone? Quante pensiamo di poterne installare ancora? Quanti aggiornamenti
+
+116
+00:11:42,580 --> 00:11:48,300
+dobbiamo scaricare ogni giorno? Beh, per i bot tutte queste domande semplicemente non sono
+
+117
+00:11:48,300 --> 00:11:54,100
+necessarie. In effetti, se ci pensiamo, le app e i servizi ai quali maggiormente le persone sono
+
+118
+00:11:54,180 --> 00:12:01,020
+legate sono proprio gli stessi che sono in grado di ospitare i bot. Le app di messaggistica e i
+
+119
+00:12:01,020 --> 00:12:06,340
+social, nella maggior parte dei casi, sono già installati nei nostri smartphone e ci permettono
+
+120
+00:12:06,340 --> 00:12:12,820
+di accedere contemporaneamente ai vari bot senza bisogno di ulteriori installazioni o aggiornamenti
+
+121
+00:12:12,820 --> 00:12:19,260
+e senza preoccuparci della memoria occupata. Esatto, un chatbot non si installa, lo si
+
+122
+00:12:19,260 --> 00:12:26,020
+contatta direttamente tramite Telegram, Facebook, Whatsapp o quello che è. E così l'aggiornamento
+
+123
+00:12:26,020 --> 00:12:32,100
+di un bot, non essendo esso installato sul device, è un problema del solo gestore, non
+
+124
+00:12:32,100 --> 00:12:37,820
+dell'utilizzatore. Un bot può anche inviarci notifiche, contattandoci direttamente sull'app
+
+125
+00:12:37,820 --> 00:12:42,860
+della piattaforma che lo ospita, senza bisogno di installare altro o di dare permessi speciali.
+
+126
+00:12:42,860 --> 00:12:49,060
+E oltre a tutto questo, un chatbot interagirà con noi nello stesso identico modo in cui noi
+
+127
+00:12:49,340 --> 00:12:55,740
+interagiamo con i nostri contatti. Potremo poi bloccarlo, silenziarlo, contattarlo esattamente
+
+128
+00:12:55,740 --> 00:13:00,340
+come facciamo con le persone reali e non sarà necessario imparare un nuovo menu o una nuova
+
+129
+00:13:00,340 --> 00:13:06,140
+schermata o un nuovo paradigma. L'interazione arriverà nello stesso identico modo in cui
+
+130
+00:13:06,140 --> 00:13:10,780
+noi scriviamo o inviamo foto o video ai nostri amici e conoscenti.
+
+131
+00:13:20,060 --> 00:13:36,980
+Ora, tutte le potenzialità di cui abbiamo parlato però saranno tali solo se chi sviluppa
+
+132
+00:13:36,980 --> 00:13:42,820
+un chatbot sarà in grado di progettarlo nel modo corretto. Così come per la transizione
+
+133
+00:13:42,820 --> 00:13:50,020
+da BBS a Web e poi da Web a Mobile, anche per il passaggio da Mobile ai chatbot sarà
+
+134
+00:13:50,020 --> 00:13:56,180
+necessario capire e studiare le dinamiche del mezzo. I bot designer dovranno progettare
+
+135
+00:13:56,180 --> 00:14:01,380
+correttamente i percorsi di interazione, la gestione degli errori e dovranno persino
+
+136
+00:14:01,380 --> 00:14:07,260
+implementare una specifica personalità per ciascuno dei loro prodotti. Dato infatti che
+
+137
+00:14:07,260 --> 00:14:12,700
+questo nuovo canale di interazione è utilizzato dagli umani per comunicare con gli umani,
+
+138
+00:14:12,700 --> 00:14:19,140
+i chatbot dovranno, pur rimanendo visibilmente degli automi, essere però in grado di comportarsi
+
+139
+00:14:19,140 --> 00:14:24,700
+come degli umani in modo sufficiente da non disturbare la percezione dei propri utenti.
+
+140
+00:14:24,700 --> 00:14:28,940
+E in questo discorso potrebbero, ma non è obbligatorio attenzione, rientrare anche i
+
+141
+00:14:28,940 --> 00:14:35,140
+concetti di Machine Learning e Natural Language Understanding. Insomma, si parla di un nuovo
+
+142
+00:14:35,140 --> 00:14:41,060
+e interessante mondo da esplorare. Per quel che mi riguarda io mi ci sto divertendo moltissimo.
+
+143
+00:14:41,060 --> 00:14:46,260
+Sono del parere che per uno sviluppatore di back-end come me questo sia sicuramente il
+
+144
+00:14:46,260 --> 00:14:51,740
+campo d'azione dei prossimi anni. Infatti, dal punto di vista tecnico, i chatbot sono
+
+145
+00:14:51,740 --> 00:14:57,580
+delle vere e proprie API, in grado di gestire i messaggi che vengono loro inoltrati dalle
+
+146
+00:14:57,580 --> 00:15:03,340
+piattaforme. Ma questo magari è un altro discorso ed è anche abbastanza ampio e lo
+
+147
+00:15:03,340 --> 00:15:08,340
+vorrei approfondire in un prossimo episodio. Ora, se avete voglia di sviluppare un chatbot
+
+148
+00:15:08,340 --> 00:15:12,700
+per la vostra attività o per risolvere uno specifico problema, trovate tutti i miei
+
+149
+00:15:12,700 --> 00:15:17,980
+contatti in descrizione. Io, come al solito, vi chiedo di condividere l'episodio se vi
+
+150
+00:15:17,980 --> 00:15:22,940
+è piaciuto o se conoscete qualcuno a cui possa interessare l'argomento. Per curiosità
+
+151
+00:15:22,940 --> 00:15:27,380
+vi avviso anche che se vi unite al gruppo Telegram di Pensieri in Codice, di cui trovate sempre
+
+152
+00:15:27,380 --> 00:15:32,860
+il link in descrizione, sarete accolti da uno dei miei bot che vi darà il benvenuto.
+
+153
+00:15:33,180 --> 00:15:34,540
+Così, se lo volete provare.
+
+154
+00:15:34,540 --> 00:15:41,140
+E ora non mi resta che salutarvi e ricordarvi che un informatico risolve problemi, a volte
+
+155
+00:15:41,140 --> 00:15:42,340
+anche usando il computer.
+

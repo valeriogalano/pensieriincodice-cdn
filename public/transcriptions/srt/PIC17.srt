@@ -1,0 +1,456 @@
+1
+00:00:00,000 --> 00:00:09,960
+Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,960 --> 00:00:25,560
+Buongiorno a tutti e ben ritrovati qui su Pensieri in codice, il podcast in cui parliamo
+
+3
+00:00:25,560 --> 00:00:31,920
+di argomenti presi dal mondo del software, di internet e della programmazione. Prima di iniziare
+
+4
+00:00:31,920 --> 00:00:37,040
+con l'argomento di oggi volevo ricordarvi un paio di cose. La prima è che Pensieri in codice è
+
+5
+00:00:37,040 --> 00:00:43,960
+candidato come podcast emergente del 2019 e se volete darmi una mano a scalare la classifica
+
+6
+00:00:43,960 --> 00:00:51,160
+allora mettete un attimo in pausa questo episodio e andate sul sito vota.pensieriincodice.it,
+
+7
+00:00:51,160 --> 00:00:57,040
+vi lascio anche il link in descrizione e vi apparirà un post Instagram al quale non dovrete
+
+8
+00:00:57,040 --> 00:01:05,120
+fare altro che mettere un like. Vi ricordo inoltre che il 12 ottobre 2019 sarò a Milano per il
+
+9
+00:01:05,120 --> 00:01:10,560
+festival del podcasting, quindi se vi va può essere un'occasione per incontrarci e passare
+
+10
+00:01:10,560 --> 00:01:16,760
+un po' di tempo insieme. Per organizzarci potete contattarmi sia su Instagram che sul gruppo
+
+11
+00:01:16,800 --> 00:01:22,880
+Telegram, trovate tutti i link in descrizione. Ora però bando alle ciance e iniziamo con
+
+12
+00:01:22,880 --> 00:01:35,640
+l'argomento di oggi. Qualsiasi programmatore che si sia mai trovato nella condizione di
+
+13
+00:01:35,640 --> 00:01:43,080
+dover modificare del codice scritto tempo addietro sa bene che molto spesso tale codice
+
+14
+00:01:43,080 --> 00:01:49,360
+può rivelarsi piuttosto complicato da mantenere e può richiedere un tempo considerevole per
+
+15
+00:01:49,360 --> 00:01:55,320
+l'aggiunta di nuove funzionalità. Non importa che magari siamo stati noi stessi a scrivere il codice
+
+16
+00:01:55,320 --> 00:02:00,880
+che ora stiamo cercando di modificare, se non abbiamo messo in atto delle strategie necessarie
+
+17
+00:02:00,880 --> 00:02:07,360
+per renderlo leggibile allora probabilmente incontreremo un bel po' di difficoltà. Noi ne
+
+18
+00:02:07,360 --> 00:02:12,320
+abbiamo già parlato nell'episodio numero 5, quello sulla qualità del codice, che nel caso non
+
+19
+00:02:12,320 --> 00:02:17,840
+abbiate ascoltato vi invito a recuperare e vi metto il link in descrizione. In questo episodio
+
+20
+00:02:17,840 --> 00:02:24,040
+abbiamo detto che un codice poco chiaro rallenta lo sviluppatore e addirittura in casi estremi può
+
+21
+00:02:24,040 --> 00:02:30,920
+portare persino i progetti al fallimento. In quello stesso episodio parlavamo anche del fatto che ci
+
+22
+00:02:30,920 --> 00:02:36,440
+fossero delle tecniche da tenere a mente e da applicare durante la scrittura del codice così da
+
+23
+00:02:36,440 --> 00:02:42,360
+poter evitare di avere eccessivi problemi in futuro. Tuttavia se ormai ci troviamo a lavorare
+
+24
+00:02:42,360 --> 00:02:48,400
+su un codice già esistente che però soffre di queste limitazioni dovute alla scarsa qualità è
+
+25
+00:02:48,400 --> 00:02:55,560
+il refactoring, quell'attività che può venirci in aiuto e salvarci la giornata. Il refactoring è
+
+26
+00:02:55,560 --> 00:03:03,360
+infatti quella fase del processo di sviluppo che consiste nel operare sul codice al fine di
+
+27
+00:03:03,360 --> 00:03:09,840
+migliorarlo e renderlo più leggibile. Si tratta in pratica di una serie di piccole operazioni da
+
+28
+00:03:09,840 --> 00:03:16,400
+applicare una dopo l'altra per trasformare quello che è un codice confuso e magari poco comprensibile
+
+29
+00:03:16,400 --> 00:03:22,680
+in qualcosa che sia facilmente leggibile da chi dovrà lavorarci su. E attenzione io ho usato le
+
+30
+00:03:22,680 --> 00:03:28,520
+parole serie di piccole operazioni ma non lasciatevi ingannare perché Martin Fowler nel suo
+
+31
+00:03:28,520 --> 00:03:35,000
+libro Refactoring, di cui vi lascio un link in descrizione, individua e descrive approfonditamente
+
+32
+00:03:35,000 --> 00:03:42,600
+e con abbondanti esempi oltre 70 tecniche diverse che possono essere applicate ad un codice per
+
+33
+00:03:42,600 --> 00:03:49,080
+migliorarne la leggibilità. Ovviamente non tutte queste tecniche possono essere applicate insieme
+
+34
+00:03:49,080 --> 00:03:54,840
+e serve una chiara comprensione di ciascuna per capire quando esse siano necessarie, quando sia
+
+35
+00:03:54,840 --> 00:04:01,440
+possibile applicarle e quando valga effettivamente la pena di farlo. Questa serie di cambiamenti però
+
+36
+00:04:01,440 --> 00:04:08,160
+interessano solo specifiche porzioni del codice e devono essere eseguite in modo da non intaccare
+
+37
+00:04:08,160 --> 00:04:14,840
+né il funzionamento né l'utilizzo da parte degli altri e per altri intendo sia i programmatori che
+
+38
+00:04:14,840 --> 00:04:20,240
+quel codice lo utilizzano sia altro codice che si appoggia ad esso per elaborare un qualcosa.
+
+39
+00:04:20,240 --> 00:04:27,720
+Questo vuol dire che quando io faccio Refactoring su una porzione di codice allora potrò modificare
+
+40
+00:04:27,720 --> 00:04:33,560
+solo la struttura interna di tale codice, salvo ovviamente particolari casi che approfondiremo
+
+41
+00:04:33,560 --> 00:04:40,040
+magari in un altro episodio. Ad esempio se ho una libreria che prende in input una serie di dati e
+
+42
+00:04:40,040 --> 00:04:46,520
+sulla base di essi restituisce un certo output, dopo che ne avrò ristrutturato il codice molto
+
+43
+00:04:46,520 --> 00:04:53,560
+probabilmente questa libreria sarà estremamente differente al proprio interno ma dovrà comunque
+
+44
+00:04:53,560 --> 00:05:00,600
+continuare a prendere in input quei dati e restituire quello stesso output. Per semplificare
+
+45
+00:05:00,600 --> 00:05:06,680
+al massimo immaginiamo un software che calcola il perimetro di un quadrato prendendo in input la
+
+46
+00:05:06,680 --> 00:05:12,040
+lunghezza del lato. Ovviamente è difficile sbagliare il codice di un programma così semplice
+
+47
+00:05:12,040 --> 00:05:17,560
+ma fingiamo che sia stato scritto in modo poco chiaro. Se noi volessimo applicare un'operazione
+
+48
+00:05:17,560 --> 00:05:23,640
+di refactoring potremmo cambiare completamente il codice del software a patto che esso continui
+
+49
+00:05:23,640 --> 00:05:29,320
+a prendere la larghezza del lato in input e continui a restituire il perimetro del quadrato
+
+50
+00:05:29,320 --> 00:05:37,120
+corrispondente. Dunque la definizione che anche lo stesso Fowler dà nel proprio libro è qualcosa del
+
+51
+00:05:37,120 --> 00:05:43,480
+genere. Il refactoring è quell'operazione di ristrutturazione della struttura interna di un
+
+52
+00:05:43,480 --> 00:05:50,400
+codice che ha il fine di renderlo più facile da capire e da modificare senza cambiarne il comportamento
+
+53
+00:05:50,400 --> 00:05:57,760
+osservabile. Dal punto di vista pratico per poter ottenere un risultato del genere magari operando
+
+54
+00:05:57,760 --> 00:06:04,000
+su un codice complesso e senza provocare danni il refactoring si applica come un susseguirsi di
+
+55
+00:06:04,000 --> 00:06:11,520
+piccole modifiche seguite da test completi delle funzionalità. Quindi va da sé che disporre di una
+
+56
+00:06:11,520 --> 00:06:17,280
+buona batteria di test automatizzati può aiutare enormemente nelle operazioni perché in pratica
+
+57
+00:06:17,280 --> 00:06:22,760
+quando ristruttureremo il nostro codice opereremo nel seguente modo. Applicheremo una modifica
+
+58
+00:06:22,760 --> 00:06:28,240
+magari estrarremo un parametro da una funzione o sposteremo delle righe in un metodo esterno
+
+59
+00:06:28,280 --> 00:06:34,680
+e poi lancieremo tutti i test per assicurarci che tutto funzioni ancora come prima. Poi faremo
+
+60
+00:06:34,680 --> 00:06:40,240
+un'altra piccola modifica e via di nuovo con i test e così via fino al termine delle modifiche.
+
+61
+00:06:40,240 --> 00:06:47,360
+A seconda della quantità di codice da ristrutturare quindi l'attività di refactoring può richiedere un
+
+62
+00:06:47,360 --> 00:06:54,200
+impegno non indifferente e portare via molto tempo allo sviluppatore. Per questo motivo e anche perché
+
+63
+00:06:54,200 --> 00:06:59,000
+non stiamo parlando di un'attività meccanica ma di qualcosa che richiede molta concentrazione è
+
+64
+00:06:59,000 --> 00:07:04,160
+sconsigliato cercare di affiancarla ad altri processi come ad esempio la scrittura di nuovo
+
+65
+00:07:04,160 --> 00:07:11,040
+codice. Secondo Fowler, ma su questo anch'io mi trovo perfettamente d'accordo, lo sviluppatore
+
+66
+00:07:11,040 --> 00:07:18,200
+deve dedicarsi separatamente alle operazioni di aggiunta di funzionalità e a quella di refactoring
+
+67
+00:07:18,200 --> 00:07:24,960
+senza cercare di sistemare un po' di codice vecchio qui e là mentre lavora il codice nuovo. Ciò
+
+68
+00:07:24,960 --> 00:07:31,520
+renderebbe infatti più pesante lo sviluppo nonché rischierebbe di introdurre nuovi bug e rendere
+
+69
+00:07:31,520 --> 00:07:37,360
+anche più difficile identificarne l'origine che a questo punto potrebbe essere imputabile sia al
+
+70
+00:07:37,360 --> 00:07:44,040
+nuovo codice che a quello ristrutturato. Questa separazione tuttavia è la ragione principale per
+
+71
+00:07:44,080 --> 00:07:50,120
+cui il refactoring viene considerato un'attività di secondo ordine rispetto allo sviluppo e viene
+
+72
+00:07:50,120 --> 00:07:56,400
+spesso bisfrattata e ignorata in fase di pianificazione. D'altronde ad un occhio poco
+
+73
+00:07:56,400 --> 00:08:01,840
+attento un'attività che impiega lo sviluppatore per giorni ma non produce alcuna modifica evidente
+
+74
+00:08:01,840 --> 00:08:07,160
+nel comportamento del codice può facilmente apparire come inutile ed essere etichettata
+
+75
+00:08:07,160 --> 00:08:13,760
+come una perdita di tempo. Tuttavia la verità è che il refactoring anche se non produce nuove
+
+76
+00:08:13,800 --> 00:08:20,560
+funzionalità ha il grande merito di trasformare cattivo codice in codice di qualità e ciò
+
+77
+00:08:20,560 --> 00:08:27,560
+esattamente come dicevamo nell'episodio 5 porta a enormi risparmi di tempo quando si deve appunto
+
+78
+00:08:27,560 --> 00:08:34,160
+manutenere o modificare quel codice. Perdere un po' di tempo a ristrutturare un codice oggi può
+
+79
+00:08:34,160 --> 00:08:39,640
+significare risparmiare tantissimo quando poi sarà necessario aggiungere delle funzionalità a quel
+
+80
+00:08:39,640 --> 00:08:45,400
+codice o quando sarà necessario aggiornarlo e questo miglioramento in fase di sviluppo e
+
+81
+00:08:45,400 --> 00:08:52,480
+manutenzione è la conseguenza di tre principali effetti del refactoring. Il primo di questi effetti
+
+82
+00:08:52,480 --> 00:08:58,200
+consiste nel fatto che le operazioni di ristrutturazione conducono quasi automaticamente
+
+83
+00:08:58,200 --> 00:09:04,960
+ad una rimozione delle duplicazioni nel codice. Isolare le responsabilità dei metodi, diminuire
+
+84
+00:09:04,960 --> 00:09:10,840
+il numero di istruzioni, trasferire i dati tramite parametri e tante altre piccole trasformazioni del
+
+85
+00:09:10,840 --> 00:09:18,480
+genere portano ad ottenere un codice più facile da riutilizzare e quindi diminuisce la necessità di
+
+86
+00:09:18,480 --> 00:09:25,200
+avere più codice ogni qual volta si debbano eseguire due operazioni simili. Capita spesso
+
+87
+00:09:25,200 --> 00:09:30,520
+infatti che quando si sviluppa non si abbia una conoscenza totale della codebase cioè
+
+88
+00:09:30,520 --> 00:09:36,920
+dell'insieme di codice che compone il progetto e senza saperlo si scriva un codice molto simile
+
+89
+00:09:36,920 --> 00:09:43,480
+ad uno già esistente oppure capita di dover fare in più punti operazioni molto simili ma di non
+
+90
+00:09:43,480 --> 00:09:49,280
+avere la possibilità di eseguire lo stesso codice dappertutto e quindi lo si riscrive quasi uguale.
+
+91
+00:09:49,280 --> 00:09:56,560
+In fase di refactoring tutte queste piccole imperfezioni vengono sistemate e il risultato è
+
+92
+00:09:56,560 --> 00:10:02,280
+quello di avere le stesse funzionalità con meno righe di codice e questo ci porta direttamente
+
+93
+00:10:02,280 --> 00:10:08,400
+alla seconda conseguenza del processo di refactoring. Meno codice più isolato e
+
+94
+00:10:08,400 --> 00:10:14,200
+meglio descritto rende il tutto più leggibile e comprensibile all'occhio umano. In questo modo
+
+95
+00:10:14,200 --> 00:10:20,160
+lo sviluppatore che capiterà a lavorare su quella porzione di codice non dovrà dannarsi per capire
+
+96
+00:10:20,160 --> 00:10:24,560
+quali funzionalità svolge, potrà essere più produttivo e il suo lavoro sarà anche più
+
+97
+00:10:24,560 --> 00:10:30,920
+piacevole. Infine la terza conseguenza dell'applicazione del refactoring renderà anche
+
+98
+00:10:30,920 --> 00:10:37,520
+più evidenti eventuali bug. Infatti in una funzione circoscritta che ha un unico compito da svolgere
+
+99
+00:10:37,520 --> 00:10:42,880
+e lo fa con poche istruzioni è molto più semplice individuare un errore di logica nelle operazioni.
+
+100
+00:10:42,880 --> 00:10:49,440
+In definitiva per come la vedo io fare refactoring conviene sempre ed è un'attività da prevedere
+
+101
+00:10:49,440 --> 00:10:55,440
+pianificare al pari dell'analisi dello sviluppo dei test eccetera. Applicandola nei miei progetti
+
+102
+00:10:55,440 --> 00:11:01,280
+ho anche potuto notare che è più conveniente se fatta a distanza di qualche tempo dall'inizio
+
+103
+00:11:01,280 --> 00:11:07,560
+dei lavori. Questo perché scrivere del codice e subito dopo ristrutturarlo spesso porta alla
+
+104
+00:11:07,560 --> 00:11:13,200
+necessità di altre ristrutturazioni in futuro mentre attendere di aver compreso al meglio il
+
+105
+00:11:13,200 --> 00:11:19,320
+dominio del progetto e di aver scritto una buona parte della codebase secondo me rende più
+
+106
+00:11:19,440 --> 00:11:25,200
+produttivo l'impiego di tempo perché c'è più materiale su cui lavorare e una maggiore visione d'insieme.
+
+107
+00:11:33,200 --> 00:11:39,000
+Anche per oggi siamo giunti alla fine di questo episodio io vi ringrazio per essere arrivati fin
+
+108
+00:11:39,000 --> 00:11:47,040
+qui e vi invito a farmi sapere la vostra opinione sull'argomento sia commentando che unendovi al
+
+109
+00:11:47,040 --> 00:11:53,600
+gruppo telegram sul quale stiamo avendo un sacco di discussioni interessanti trovate tutti i link
+
+110
+00:11:53,600 --> 00:11:59,880
+in descrizione. Se il podcast vi piace inoltre vi chiedo di condividerlo il più possibile e di farlo
+
+111
+00:11:59,880 --> 00:12:05,440
+conoscere a chi potrebbe essere interessato. Vi ricordo di andare a votare pensieri in codice
+
+112
+00:12:05,440 --> 00:12:12,320
+per il contest e se volete maggiori informazioni sul festival del podcasting potete visitare il
+
+113
+00:12:12,320 --> 00:12:19,520
+sito festivaldelpodcasting.it. Direi che per oggi è tutto io vi saluto vi ringrazio e vi do
+
+114
+00:12:19,520 --> 00:12:21,520
+appuntamento ad un prossimo episodio.
+

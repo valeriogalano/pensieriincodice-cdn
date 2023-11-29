@@ -1,0 +1,624 @@
+1
+00:00:00,000 --> 00:00:09,680
+Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,680 --> 00:00:25,760
+Salve a tutti ragazzi e bentornati qui su Pensieri in codice. È un po' che non ci sentiamo e questo
+
+3
+00:00:25,760 --> 00:00:31,760
+è il primo episodio ufficiale del 2020. Ne voglio quindi approfittare per ringraziare tutti voi che
+
+4
+00:00:31,760 --> 00:00:39,920
+ascoltate il podcast e per dare il benvenuto a tutti i nuovi iscritti. Ormai siete tantissimi e
+
+5
+00:00:39,920 --> 00:00:46,280
+questo non può che riempirmi d'orgoglio. Spero che per voi questo 2020 sia iniziato nel migliore
+
+6
+00:00:46,280 --> 00:00:52,000
+dei modi. Per me le ultime settimane sono trascorse all'insegna del cambiamento, con tante
+
+7
+00:00:52,000 --> 00:00:57,120
+novità e tanti propositi per il futuro sia nei confronti di questo progetto che della sfera
+
+8
+00:00:57,120 --> 00:01:03,480
+professionale e privata. Ad esempio ho programmato di dedicarmi allo studio più approfondito di
+
+9
+00:01:03,480 --> 00:01:10,040
+framework basati su JavaScript come Node.js, Angular e React. Ho anche iniziato un processo
+
+10
+00:01:10,040 --> 00:01:15,480
+di semplificazione dei miei flussi di lavoro e della gestione delle mie risorse. Ho ripreso
+
+11
+00:01:15,480 --> 00:01:21,480
+finalmente a scrivere sul mio blog e ho intenzione di pubblicare almeno un articolo tecnico al mese.
+
+12
+00:01:22,320 --> 00:01:28,120
+Soprattutto ho intenzione di portare un po' di tutte queste nuove esperienze qui nel podcast
+
+13
+00:01:28,120 --> 00:01:34,240
+in modo da poterne discutere insieme e condividere il percorso di miglioramento. Nell'episodio di
+
+14
+00:01:34,240 --> 00:01:38,760
+oggi quindi voglio proprio provare a parlare di uno di questi cambiamenti e di ciò che mi ha
+
+15
+00:01:38,760 --> 00:01:54,760
+portato a scoprire e imparare. Tutto è iniziato quando ho deciso di semplificare il mio blog. Ve
+
+16
+00:01:54,760 --> 00:01:59,880
+l'ho detto che stavo lavorando alla semplificazione dei miei processi. Comunque come tutti quelli che
+
+17
+00:01:59,880 --> 00:02:05,080
+gestiscono un'attività anche io ho un sito professionale nel quale è possibile trovare
+
+18
+00:02:05,080 --> 00:02:10,280
+un po' di informazioni su ciò che so fare e i miei contatti in caso si voglia ottenere una
+
+19
+00:02:10,280 --> 00:02:16,880
+consulenza. Lavorando poi come consulente alla programmazione dal 2011 ho anche aperto un blog
+
+20
+00:02:16,880 --> 00:02:23,400
+tecnico nel quale pubblico più o meno regolarmente articoli che contengono tutorial, guide, soluzioni
+
+21
+00:02:23,400 --> 00:02:28,760
+implementative oltre a tre o quattro articoli divulgativi che per la verità non hanno avuto
+
+22
+00:02:29,000 --> 00:02:35,200
+grande successo ma hanno poi portato alla nascita di questo podcast. Ad ogni modo come accennavo
+
+23
+00:02:35,200 --> 00:02:41,280
+prima negli ultimi mesi iniziavo a sentire eccessivo il peso di alcune operazioni ripetitive
+
+24
+00:02:41,280 --> 00:02:47,240
+come ad esempio appunto la manutenzione di questo piccolo blog. Se infatti da una parte erano circa
+
+25
+00:02:47,240 --> 00:02:53,320
+due anni che non pubblicavo praticamente più nulla, dall'altra il costo in termini di risorse
+
+26
+00:02:53,320 --> 00:02:58,120
+per mantenere aggiornato e attivo il sito rimanevano costanti e a mio parere troppo
+
+27
+00:02:58,120 --> 00:03:04,600
+alte dal momento che esso era implementato per mezzo del CMS chiamato WordPress. Quindi
+
+28
+00:03:04,600 --> 00:03:10,760
+aggiornamento del core e dei plugin del tema, spazio occupato e database impegnato sul servizio
+
+29
+00:03:10,760 --> 00:03:18,040
+di hosting, lentezza di caricamento e conseguente punteggio disastroso su google page speed. Questi
+
+30
+00:03:18,040 --> 00:03:23,600
+erano i principali problemi di cui soffriva il sito valeriogalano.it fino a un paio di mesi fa
+
+31
+00:03:23,600 --> 00:03:29,040
+e che mi hanno fatto decidere che era giunto il momento di trovare una soluzione alternativa.
+
+32
+00:03:29,040 --> 00:03:35,520
+Nella mia testa una vaga idea di tale soluzione aleggiava già da mesi ma non c'era mai stata
+
+33
+00:03:35,520 --> 00:03:41,560
+occasione di fermarsi a riflettere su come poterla implementare effettivamente. L'idea
+
+34
+00:03:41,640 --> 00:03:48,160
+era più o meno che semplici funzionalità come una pagina di presentazione e un blog con aggiunta
+
+35
+00:03:48,160 --> 00:03:54,000
+occasionale di una o due immagini di un video da youtube o di un tweet potessero essere realizzate
+
+36
+00:03:54,000 --> 00:04:00,960
+utilizzando tecnologie essenzialmente statiche e attenzione per tecnologie statiche qui intendo
+
+37
+00:04:00,960 --> 00:04:07,600
+quelle che permettono essenzialmente di realizzare un sito fondamentalmente privo di database e di un
+
+38
+00:04:07,600 --> 00:04:13,280
+linguaggio di programmazione e di scripting lato server. Mi riferisco quindi a un qualcosa che
+
+39
+00:04:13,280 --> 00:04:21,520
+utilizzi i soli linguaggi di html, css e javascript. Un sito statico realizzato in questo modo mi
+
+40
+00:04:21,520 --> 00:04:27,600
+avrebbe portato essenzialmente due grandi vantaggi. Prima di tutto sarebbe stato molto più leggero e
+
+41
+00:04:27,600 --> 00:04:32,640
+veloce facendomi risparmiare sul servizio di hosting e migliorando i tempi di risposta che
+
+42
+00:04:32,640 --> 00:04:37,600
+soprattutto negli ultimi tempi sono diventati veramente fondamentali agli occhi dei motori di
+
+43
+00:04:37,600 --> 00:04:44,360
+ricerca come google. In secondo luogo poi avrebbe azzerato il costo di manutenzione. Niente più
+
+44
+00:04:44,360 --> 00:04:50,160
+wordpress da aggiornare, niente più versioni del tema da controllare, niente più licenze dei plug-in
+
+45
+00:04:50,160 --> 00:04:56,400
+da rinnovare e soprattutto niente più bug di sicurezza perché un sito che non ha né database
+
+46
+00:04:56,520 --> 00:05:04,240
+né interprete lato server è molto meno esposto alla possibilità di hacking. Mi sono quindi messo
+
+47
+00:05:04,240 --> 00:05:10,000
+alla ricerca di una soluzione sufficientemente evoluta per implementare un sito statico. Avrei
+
+48
+00:05:10,000 --> 00:05:15,160
+potuto ovviamente scrivere tutto il codice da zero ma ciò avrebbe richiesto moltissimo tempo
+
+49
+00:05:15,160 --> 00:05:21,840
+senza contare che io con il design grafico e il css sono abbastanza impedito e che l'obiettivo era
+
+50
+00:05:21,840 --> 00:05:27,400
+realizzare un sito che sì fosse semplice ma non certo un cazzotto in un occhio dal punto di vista
+
+51
+00:05:27,400 --> 00:05:34,040
+estetico. E poi anche perché un sito nel 2020 deve comunque implementare un set minimo di
+
+52
+00:05:34,040 --> 00:05:39,240
+funzionalità tecniche per essere considerato accettabile e mi riferisco al fatto che ad
+
+53
+00:05:39,240 --> 00:05:45,120
+esempio deve essere responsive anzi oggi come oggi deve essere addirittura mobile first quindi più
+
+54
+00:05:45,120 --> 00:05:50,800
+curato ancora per la visualizzazione da smartphone che da pc o che deve essere compatibile con tutti
+
+55
+00:05:50,800 --> 00:05:56,840
+i maggiori browser o ancora che deve utilizzare delle url semplificate e tanti altri dettagli
+
+56
+00:05:56,840 --> 00:06:03,280
+che hanno un notevole costo implementativo. Ho iniziato quindi a documentarmi e ho trovato editor
+
+57
+00:06:03,280 --> 00:06:09,360
+per progettare e realizzare l'ending page, plugin per convertire siti wordpress in codice statico,
+
+58
+00:06:09,360 --> 00:06:17,400
+temi in html e css da acquistare e poi personalizzare. Poi però un giorno parlando con il
+
+59
+00:06:17,440 --> 00:06:23,760
+mio amico Giuseppe Pugliese è venuta fuori una soluzione che io non avevo mai sentito e che
+
+60
+00:06:23,760 --> 00:06:30,800
+subito mi è parsa molto interessante. Giuseppe è un designer web che un po' come ho fatto anche
+
+61
+00:06:30,800 --> 00:06:36,320
+io in passato si occupa di progettazione e sviluppo di siti in wordpress, argomento di cui
+
+62
+00:06:36,320 --> 00:06:41,960
+tratta ampiamente anche nel suo podcast Glitch. Vi lascio in descrizione il link, mi raccomando
+
+63
+00:06:41,960 --> 00:06:47,080
+andate a recuperarlo perché nonostante la giovane età Giuseppe dimostra di essere molto competente
+
+64
+00:06:47,080 --> 00:06:53,160
+in materia. Quel giorno però dopo aver ascoltato le mie perplessità mi ha buttato lì un link che in
+
+65
+00:06:53,160 --> 00:07:02,200
+poco tempo avrebbe risolto tutti i problemi del mio sito web. Yugo si autodefinisce il framework
+
+66
+00:07:02,200 --> 00:07:07,800
+più veloce al mondo per la costruzione di siti web. Si tratta di un software scritto in linguaggio Go
+
+67
+00:07:07,800 --> 00:07:13,120
+che permette di creare siti di complessità ridotta sfruttando la sintassi markdown per
+
+68
+00:07:13,120 --> 00:07:18,120
+organizzare i contenuti all'interno di file e cartelle e inserendoli poi all'interno di un
+
+69
+00:07:18,120 --> 00:07:25,880
+tema grafico molto spesso basato su bootstrap. In pratica si sceglie uno fra gli oltre 300 temi
+
+70
+00:07:25,880 --> 00:07:31,200
+attualmente disponibili, si inseriscono un po' di dati in un file di configurazione, si crea una
+
+71
+00:07:31,200 --> 00:07:37,040
+struttura di cartelle e file per rappresentare ad esempio gli articoli di un blog e le varie
+
+72
+00:07:37,040 --> 00:07:43,560
+pagine e il gioco è fatto. Yugo è in grado di produrre il codice html css finale del sito.
+
+73
+00:07:43,560 --> 00:07:49,520
+Nel mio caso specifico sono bastate un paio d'ore per capire come far funzionare il tutto
+
+74
+00:07:49,520 --> 00:07:55,360
+e produrre un sito personalizzato senza avere alcuna conoscenza pregressa del framework. Non
+
+75
+00:07:55,360 --> 00:08:01,000
+serve neanche conoscere Go a meno che non si voglia implementare un proprio tema da zero o
+
+76
+00:08:01,000 --> 00:08:05,720
+adattare un template che già si possiede. L'installazione dell'ambiente di sviluppo è
+
+77
+00:08:05,840 --> 00:08:12,440
+semplicissima sia che si utilizzi windows linux o mac os. La creazione del progetto richiede
+
+78
+00:08:12,440 --> 00:08:17,720
+l'esecuzione di un semplice comando e l'aggiunta di un tema può essere fatta utilizzando git o
+
+79
+00:08:17,720 --> 00:08:22,840
+banalmente scaricando il codice del tema e copiandolo nella cartella teams del progetto.
+
+80
+00:08:22,840 --> 00:08:29,200
+L'eseguibile di yugo permette quindi di avviare un piccolo server locale che rende il sito
+
+81
+00:08:29,200 --> 00:08:35,120
+navigabile in fase di sviluppo e mostra le modifiche ai contenuti in tempo reale. Una
+
+82
+00:08:35,120 --> 00:08:40,160
+volta che si è soddisfatti del risultato con un altro comando si può avviare la compilazione e
+
+83
+00:08:40,160 --> 00:08:46,160
+generare così la versione statica del sito che potrà quindi essere caricata su un servizio hosting
+
+84
+00:08:46,160 --> 00:08:53,240
+o su un server. Tornando quindi al caso del mio blog una volta preparato il progetto installato
+
+85
+00:08:53,240 --> 00:08:59,640
+e configurato il tema è stato necessario riportare tutti i vecchi contenuti. Per farlo ho utilizzato
+
+86
+00:08:59,640 --> 00:09:05,760
+un plugin per wordpress che ha esportato l'intero sito in versione yugo. L'unico problema è che
+
+87
+00:09:05,760 --> 00:09:12,520
+questo plugin doveva avere qualche tipo di bug perché prima ha sbagliato alcune conversioni e
+
+88
+00:09:12,520 --> 00:09:18,560
+poi non solo mi ha riempito e bloccato il servizio di hosting ma ha anche prodotto una serie infinita
+
+89
+00:09:18,560 --> 00:09:24,400
+degli stessi contenuti in forma ricorsiva. Mi sono quindi ritrovato con un hosting bloccato e
+
+90
+00:09:24,400 --> 00:09:30,400
+una cartella che conteneva articoli, pagine, immagini e una strana cartella che a sua volta
+
+91
+00:09:30,400 --> 00:09:36,200
+conteneva di nuovo articoli, pagine, immagini e un'altra cartella che conteneva articoli,
+
+92
+00:09:36,200 --> 00:09:42,940
+pagine, immagini e così via finché l'operazione non ha saturato lo spaziodisco sull'hosting. Mi
+
+93
+00:09:42,940 --> 00:09:49,280
+è toccato quindi sistemare alcuni testi in modo manuale, rimuovere tutti i file inutili e sistemare
+
+94
+00:09:49,280 --> 00:09:55,520
+i vari contenuti in una forma più semplice ma tutto sommato me la sono cavata in meno di 4
+
+95
+00:09:55,520 --> 00:10:01,000
+ore di lavoro. Una volta terminata la parte dei contenuti ho integrato la privacy policy
+
+96
+00:10:01,000 --> 00:10:08,480
+utilizzando il servizio di Yubenda e qui sono iniziati i problemi veri. Yugo è perfetto per
+
+97
+00:10:08,480 --> 00:10:14,720
+realizzare siti semplici, è facilissimo e velocissimo da utilizzare ma tutto questo finché
+
+98
+00:10:14,720 --> 00:10:21,280
+non si tenta di realizzare qualcosa per cui non è stato progettato. A quel punto bisogna mettere
+
+99
+00:10:21,280 --> 00:10:27,760
+mano al codice e la situazione si complica un tantino. Nella fattispecie mi sto riferendo
+
+100
+00:10:27,760 --> 00:10:33,960
+al fatto che Yugo, a differenza di Wordpress, non ha il meccanismo dei plugin e quindi non
+
+101
+00:10:33,960 --> 00:10:40,400
+permette di integrare facilmente una funzionalità di cui il mio sito non può fare a meno e cioè
+
+102
+00:10:40,400 --> 00:10:47,000
+il blocco dei cookie di Yubenda. In pratica Yubenda permette di bloccare i servizi esterni
+
+103
+00:10:47,000 --> 00:10:52,960
+come YouTube, Twitter eccetera se l'utente non accetta l'utilizzo dei cookie di terze parti.
+
+104
+00:10:52,960 --> 00:11:00,200
+Questo meccanismo non è direttamente utilizzabile in Yugo almeno per il tema che ho scelto io poi
+
+105
+00:11:00,200 --> 00:11:06,000
+non so se altri temi lo supportano in modo nativo e quindi mi è toccato sviluppare una serie di
+
+106
+00:11:06,000 --> 00:11:11,840
+personalizzazioni che mi hanno portato via un altro po' di tempo. Se vi interessa il risultato
+
+107
+00:11:11,840 --> 00:11:17,760
+di questo lavoro è visibile all'indirizzo valeriogalano.it dove al termine di una manciata
+
+108
+00:11:17,760 --> 00:11:23,280
+di ore di lavoro ho potuto ottenere una versione convertita in Yugo del mio blog originale in
+
+109
+00:11:23,280 --> 00:11:30,000
+Wordpress. Tuttavia nonostante abbia deciso di realizzare il mio sito con tecnologie statiche
+
+110
+00:11:30,120 --> 00:11:36,920
+avevo e ho tuttora anche l'intenzione di continuare a pubblicare articoli e al punto in cui ero per
+
+111
+00:11:36,920 --> 00:11:43,560
+farciò avrei dovuto semplicemente aggiungere un nuovo file al progetto Yugo, scrivervi all'interno
+
+112
+00:11:43,560 --> 00:11:49,480
+il testo e i dettagli dell'articolo, ricompilare il sito statico e ricaricare il tutto sull'hosting
+
+113
+00:11:49,480 --> 00:11:56,880
+via FTP. Io però sono un programmatore e quindi non sopporto l'idea di dover fare manualmente tutto
+
+114
+00:11:56,960 --> 00:12:02,160
+ciò che è ripetitivo, noioso e può essere chiaramente fatto in modo automatico e quindi
+
+115
+00:12:02,160 --> 00:12:07,320
+ho pensato di sfruttare un altro interessante servizio, cioè le actions di GitHub, per
+
+116
+00:12:07,320 --> 00:12:13,520
+automatizzare tutta la parte di compilazione e copia via FTP in modo da dovermi preoccupare
+
+117
+00:12:13,520 --> 00:12:18,840
+ogni volta che voglio aggiungere o modificare un contenuto solo della parte creativa e potendo
+
+118
+00:12:18,840 --> 00:12:26,000
+quindi lasciare alle macchine il resto dei compiti. A questo proposito vi ricordo che di DevOps abbiamo
+
+119
+00:12:26,000 --> 00:12:31,760
+parlato giusto qualche settimana fa e se non avete idea di cosa stia dicendo beh vi consiglio
+
+120
+00:12:31,760 --> 00:12:39,120
+di recuperare l'episodio numero 22 di Pensieri in Codice. Le GitHub Actions, dicevo, sono meccanismi
+
+121
+00:12:39,120 --> 00:12:45,320
+di automazione configurabili che GitHub mette a disposizione dei propri utenti, ma magari di
+
+122
+00:12:45,320 --> 00:12:51,440
+questo parleremo in un prossimo episodio. La morale della storia è che allo stato attuale se voglio
+
+123
+00:12:51,440 --> 00:12:58,800
+aggiornare il sito mi basta modificare uno o più file e fare push sul repository git e GitHub si
+
+124
+00:12:58,800 --> 00:13:04,920
+preoccuperà di compilare la versione statica e portarla direttamente online. Se qualcuno
+
+125
+00:13:04,920 --> 00:13:10,080
+dovesse essere interessato nei prossimi mesi ho intenzione di pubblicare proprio su valeriogalano.it
+
+126
+00:13:10,080 --> 00:13:17,800
+vari articoli riguardanti i dettagli tecnici sia delle personalizzazioni per Ubenda che
+
+127
+00:13:17,800 --> 00:13:23,680
+delle configurazioni delle GitHub Actions. Ad ogni modo il risultato di questa conversione
+
+128
+00:13:23,680 --> 00:13:30,680
+da WordPress a Yugo è un sito che pesa meno di 5 megabyte quando prima ne pesava oltre 150,
+
+129
+00:13:30,680 --> 00:13:38,080
+che totalizza un punteggio di oltre 95 su Google PageSpeed quando prima arrivava a malapena a 40
+
+130
+00:13:38,080 --> 00:13:44,040
+e che non necessita di alcuna manutenzione salvo nel caso in cui io voglia cambiare o aggiungere
+
+131
+00:13:44,040 --> 00:13:50,600
+qualcosa. Per quel che mi riguarda il giudizio finale su Yugo è estremamente positivo tanto
+
+132
+00:13:50,600 --> 00:13:55,880
+che ho persino deciso che convertirò anche l'attuale sito di pensieri in codice.it in
+
+133
+00:13:55,880 --> 00:14:11,040
+una pagina statica. Ma quindi vi sto dicendo di buttare via tutti i vostri siti WordPress e
+
+134
+00:14:11,040 --> 00:14:17,160
+sostituirli con siti realizzati con Yugo? Assolutamente no. Al di là della mia esperienza
+
+135
+00:14:17,160 --> 00:14:24,040
+personalmente positiva bisogna anche tenere presente alcuni fattori. Io ho potuto operare
+
+136
+00:14:24,040 --> 00:14:29,760
+questo passaggio principalmente per due motivi. Il primo è che le funzioni di cui ha bisogno il mio
+
+137
+00:14:29,760 --> 00:14:35,360
+sito non sono particolarmente complesse. Se avessi dovuto implementare ad esempio un'area
+
+138
+00:14:35,360 --> 00:14:40,440
+utenti privata o un e-commerce allora la situazione sarebbe stata completamente diversa.
+
+139
+00:14:41,000 --> 00:14:46,120
+Il secondo motivo che mi ha permesso di effettuare questa conversione da WordPress a Yugo è che
+
+140
+00:14:46,120 --> 00:14:53,240
+comunque io sono in possesso di alcune conoscenze che l'utente medio magari non ha. Voglio dire non
+
+141
+00:14:53,240 --> 00:14:58,720
+mi sognerei mai di consigliare ad un cliente magari non particolarmente esperto di informatica
+
+142
+00:14:58,720 --> 00:15:05,200
+di realizzare il proprio sito con Yugo almeno non senza fornirgli una certa assistenza. Per
+
+143
+00:15:05,200 --> 00:15:11,440
+poter ottenere un risultato soddisfacente senza impazzire infatti serve sapere un minimo come
+
+144
+00:15:11,440 --> 00:15:20,720
+funziona un sito web, l'html, il css, sapere usare un terminale e un client ftp, magari git e
+
+145
+00:15:20,720 --> 00:15:27,360
+soprattutto non spaventarsi davanti a un po' di codice o ad un editor. In definitiva i vantaggi
+
+146
+00:15:27,360 --> 00:15:32,960
+di questo approccio a mio parere sono molti ma è comunque necessario avere o un po' di competenza
+
+147
+00:15:33,280 --> 00:15:39,840
+tecnica o farsi seguire da un esperto. E qui voi non potete vedermi fare l'occhiolino blink blink
+
+148
+00:15:39,840 --> 00:15:44,880
+ma in descrizione trovate tutti i miei contatti anche nel caso in cui voleste usufruire di un'
+
+149
+00:15:44,880 --> 00:15:51,400
+eventuale consulenza. Bene con questo si conclude l'episodio di oggi io spero che questa piccola
+
+150
+00:15:51,400 --> 00:15:57,800
+cronaca vi sia risultata interessante e come al solito vi ricordo di mettere like, commentare,
+
+151
+00:15:57,800 --> 00:16:02,600
+condividere, unirvi al gruppo telegram e fare tutto quello che un buon podcaster dice di fare
+
+152
+00:16:03,400 --> 00:16:07,480
+vi ringrazio per aver ascoltato fin qui e vi do appuntamento al prossimo episodio
+
+153
+00:16:07,480 --> 00:16:27,280
+Poi un giorno parlando con il mio amico Giuseppe Pugliese è venuta fuori una
+
+154
+00:16:27,280 --> 00:16:34,000
+soluzione che io non avevo mai sentito ma quindi vi sto dicendo di buttare via tutti
+
+155
+00:16:34,000 --> 00:16:42,680
+i vostri siti wordpress e sostituirli con... e quindi mi è toccato sviluppare una serie
+
+156
+00:16:42,680 --> 00:16:44,880
+di personalizzazioni che mi hanno portato...
+

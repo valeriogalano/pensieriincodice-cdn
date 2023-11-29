@@ -1,0 +1,324 @@
+1
+00:00:00,000 --> 00:00:27,320
+Salve a tutti e bentornati su Pensieri in Codice, il podcast in cui parliamo di argomenti
+
+2
+00:00:27,320 --> 00:00:33,520
+presi dal mondo del software, di internet e della programmazione. Nella puntata della scorsa
+
+3
+00:00:33,520 --> 00:00:40,480
+settimana, che se non avete ascoltato vi consiglio assolutamente di recuperare, abbiamo parlato di
+
+4
+00:00:40,480 --> 00:00:48,040
+vari strati del web e quindi abbiamo visto quali sono le differenze tra web di superficie, deep web
+
+5
+00:00:48,040 --> 00:00:55,120
+e dark web. Nel farlo abbiamo anche accennato al fatto che il web si basa principalmente su due
+
+6
+00:00:55,160 --> 00:01:01,000
+tecnologie fondamentali, un protocollo di trasmissione e un linguaggio di codifica dei
+
+7
+00:01:01,000 --> 00:01:09,920
+documenti che prendono rispettivamente il nome di HTTP e HTML. In entrambi questi acronimi la H e
+
+8
+00:01:09,920 --> 00:01:18,640
+la T rappresentano l'abbreviazione del termine hypertext, cioè ipertesto. Un ipertesto, concetto
+
+9
+00:01:18,640 --> 00:01:27,920
+definito dal filosofo statunitense Ted Nelson nel 1965, è in pratica un documento formato da più
+
+10
+00:01:27,920 --> 00:01:34,320
+documenti che vengono collegati fra loro tramite parole chiave. In questi termini il web che noi
+
+11
+00:01:34,320 --> 00:01:40,600
+tutti i giorni utilizziamo è di fatto la più grande, diffusa e conosciuta applicazione pratica
+
+12
+00:01:40,600 --> 00:01:49,240
+del concetto di ipertesto. Google è un ipertesto, Facebook è un ipertesto, Wikipedia, Instagram, il
+
+13
+00:01:49,240 --> 00:01:55,880
+sito delle poste, il sito della banca, il sito della vostra azienda, il sito il vostro sito
+
+14
+00:01:55,880 --> 00:02:03,080
+personale. Sono tutti ipertesti e fanno parte di un unico grande ipertesto. Ma al di là della sua
+
+15
+00:02:03,080 --> 00:02:09,280
+applicazione tecnica, che pur l'ha portato ad essere lo strumento più utilizzato al mondo,
+
+16
+00:02:10,040 --> 00:02:17,080
+l'ipertesto rappresenta anche un momento di svolta nell'intera concezione dell'informatica
+
+17
+00:02:17,080 --> 00:02:21,320
+e un punto di intersezione tra la cultura umanistica e quella scientifica.
+
+18
+00:02:21,320 --> 00:02:33,000
+L'idea di un testo che si discosti dalla sua definizione classica inizia a muovere i primi
+
+19
+00:02:33,000 --> 00:02:39,600
+passi dalla mente di un ingegnere di nome Vannevar Bush che propone un sistema di catalogazione
+
+20
+00:02:39,600 --> 00:02:46,360
+dei documenti che non deve più essere limitato dalla rigidità dovuta all'utilizzo delle categorie.
+
+21
+00:02:46,360 --> 00:02:53,160
+Poiché la mente umana lavora per associazione di idee e non per indicizzazione, secondo Bush il
+
+22
+00:02:53,160 --> 00:02:59,240
+sistema di catalogazione del sapere umano deve essere caratterizzato, piuttosto che dalle categorie,
+
+23
+00:02:59,240 --> 00:03:08,080
+da collegamenti logici fra le varie informazioni. In un articolo del 1945 intitolato As we may
+
+24
+00:03:08,080 --> 00:03:15,400
+think, come possiamo pensare, Bush non si limita ad esprimere questa sua idea ma addirittura
+
+25
+00:03:15,400 --> 00:03:22,160
+illustra il progetto di una macchina che sia in grado di organizzare la conoscenza seguendo
+
+26
+00:03:22,160 --> 00:03:29,360
+schemi non lineari. Il nome che dà a questa sua invenzione è MEMEX. Il MEMEX permette di
+
+27
+00:03:29,360 --> 00:03:35,360
+recuperare le informazioni non attraverso un sistema di classificazione ma basandosi sulla
+
+28
+00:03:35,360 --> 00:03:42,200
+riproduzione dei percorsi associativi della mente umana permettendo così di spostarsi rapidamente da
+
+29
+00:03:42,200 --> 00:03:47,600
+un'idea all'altra, da un argomento all'altro, muovendosi fra i documenti senza rimanere
+
+30
+00:03:47,600 --> 00:03:54,440
+legati alla linearità del testo. Purtroppo la tecnologia di quegli anni non permette veramente
+
+31
+00:03:54,440 --> 00:04:01,000
+a Bush di realizzare il MEMEX perché lo strumento di cui egli avrebbe avuto bisogno, e cioè il
+
+32
+00:04:01,000 --> 00:04:07,480
+computer, non era ancora sufficientemente diffuso. Per questo motivo l'ingegnere statunitense può
+
+33
+00:04:07,480 --> 00:04:14,200
+solo costruire una versione piuttosto limitata della sua macchina utilizzando una tecnologia in
+
+34
+00:04:14,280 --> 00:04:21,760
+voga in quel periodo, e cioè il microfilm. Il massimo quindi che riesce a realizzare è un
+
+35
+00:04:21,760 --> 00:04:28,000
+macchinario costruito nel corpo di un vecchio jukebox che per mezzo di un complicato sistema
+
+36
+00:04:28,000 --> 00:04:34,120
+di leve e pulsanti permette all'utente di spostarsi da un microfilm all'altro seguendo
+
+37
+00:04:34,120 --> 00:04:41,440
+poche e predeterminate biforcazioni. Nonostante ciò però l'idea del MEMEX avrà enormi impatti
+
+38
+00:04:41,520 --> 00:04:48,200
+concettuali. Innanzitutto esso libera il testo dal legame fino ad allora imprescindibile con
+
+39
+00:04:48,200 --> 00:04:54,040
+la carta. Almeno dal punto di vista teorico ogni accesso alle informazioni genera un percorso
+
+40
+00:04:54,040 --> 00:05:01,800
+narrativo a sé stante e svincolato dalla linearità dei singoli documenti nell'archivio. In secondo
+
+41
+00:05:01,800 --> 00:05:09,200
+luogo l'idea del MEMEX rende possibile almeno concettualmente l'accesso diretto alle informazioni,
+
+42
+00:05:09,520 --> 00:05:15,840
+cosa che per noi oggi rappresenta la normalità e l'unico modo di districarsi all'interno di una
+
+43
+00:05:15,840 --> 00:05:22,720
+mole immensa di dati disponibili. Il progetto del MEMEX nasce quindi come un'estensione della
+
+44
+00:05:22,720 --> 00:05:29,320
+mente umana, uno strumento che ne completa e ne amplia le potenzialità. Quando Bush pubblica il
+
+45
+00:05:29,320 --> 00:05:36,280
+suo articolo nel 1945 conosce già le potenzialità dei computer e immagina un mondo in cui quella
+
+46
+00:05:36,280 --> 00:05:41,880
+tecnologia sarà alla portata di tutti e ritiene che ciò avverrà proprio in virtù del fatto che
+
+47
+00:05:41,880 --> 00:05:47,120
+le informazioni saranno facilmente accessibili tramite rappresentazioni simili a quelle del
+
+48
+00:05:47,120 --> 00:05:57,640
+pensiero umano. Nei pochi anni successivi il computer vive un periodo di grande espansione,
+
+49
+00:05:57,640 --> 00:06:03,040
+soprattutto perché viene impiegato in campo scientifico grazie alle sue enormi capacità di
+
+50
+00:06:03,040 --> 00:06:12,760
+calcolo. Questo finché nel 1965 un filosofo di nome Ted Nelson presenta una relazione dal titolo
+
+51
+00:06:12,760 --> 00:06:19,040
+Una struttura di archivio per l'insieme, per il cambiamento e l'indeterminato. In questa relazione
+
+52
+00:06:19,040 --> 00:06:27,520
+appare per la prima volta la parola ipertesto. Nelson illustra innanzitutto la sua idea di
+
+53
+00:06:27,520 --> 00:06:33,320
+utilizzare i computer non solo come strumenti di calcolo ma anche per archiviare informazioni
+
+54
+00:06:33,320 --> 00:06:40,080
+in documenti che possono poi essere modificati e le cui modifiche vengono anche storicizzate.
+
+55
+00:06:40,080 --> 00:06:47,480
+In secondo luogo estende il pensiero di Bush proponendo un nuovo sistema di accesso a tali
+
+56
+00:06:47,480 --> 00:06:53,080
+informazioni che sfrutti dei collegamenti, e cioè quelli che noi oggi conosciamo come link,
+
+57
+00:06:53,080 --> 00:07:01,120
+per saltare da un argomento all'altro. Un tale sistema di gestione delle informazioni non dovrà
+
+58
+00:07:01,120 --> 00:07:07,240
+soltanto mimare il comportamento del pensiero umano, come diceva Bush, ma dovrà anche dare
+
+59
+00:07:07,240 --> 00:07:13,280
+la possibilità di modificare, espandere e collegare le informazioni all'infinito superando
+
+60
+00:07:13,280 --> 00:07:21,320
+così i limiti tecnologici del memex. Tutto ciò ben quattro anni prima della nascita della prima
+
+61
+00:07:21,320 --> 00:07:28,600
+rete di calcolatori. A partire da questo momento il concetto di informatica si trasforma da scienza
+
+62
+00:07:28,600 --> 00:07:35,520
+del calcolo a scienza dell'informazione. Il computer infatti non è più solo da intendere
+
+63
+00:07:35,520 --> 00:07:41,680
+come un mero strumento di calcolo ma anche come un supporto alla creatività dell'uomo e un archivio
+
+64
+00:07:41,680 --> 00:07:47,600
+in continua espansione di tutto il sapere umano. Quello che si va delineando con queste teorie è
+
+65
+00:07:47,600 --> 00:07:54,360
+un nuovo mondo permeato da una nuova disciplina e cioè l'informatica che è destinata a ricalcare
+
+66
+00:07:54,360 --> 00:08:01,200
+ma anche a modificare l'attività del pensiero umano. La definizione di ipertesto di Nelson risulta
+
+67
+00:08:01,200 --> 00:08:06,440
+dunque essere un metodo di gestione della conoscenza tramite l'utilizzo di calcolatori
+
+68
+00:08:06,440 --> 00:08:12,680
+informatici che rendono possibile raggiungere le informazioni seguendo percorsi associativi. Tale
+
+69
+00:08:12,680 --> 00:08:18,640
+ipertesto è un sistema modificabile costellato di relazioni e in continua espansione in cui la
+
+70
+00:08:18,640 --> 00:08:25,160
+scrittura viene ad essere un processo in divenire. Non parliamo solo di una nuova tecnologia ma di
+
+71
+00:08:25,160 --> 00:08:30,920
+un vero e proprio cambiamento nel modo di scrivere il sapere che fino a quel momento era considerato
+
+72
+00:08:30,920 --> 00:08:39,560
+lineare e categorizzato. Nel 1972 con un palese riferimento all'articolo di Bush Nelson pubblica
+
+73
+00:08:39,560 --> 00:08:46,640
+una relazione dal titolo as we will think cioè come penseremo nel quale afferma che l'ipertesto
+
+74
+00:08:46,640 --> 00:08:53,400
+e cito testualmente dovrebbe diventare la forma di pubblicazione del futuro con la memorizzazione
+
+75
+00:08:53,400 --> 00:09:00,320
+su computer non è necessario imporre nessuna sequenza al materiale il creatore di ipertesti
+
+76
+00:09:00,320 --> 00:09:11,520
+può lasciare all'utente varie opzioni di salto e di ramazione. Ebbene ragazzi come al solito vi
+
+77
+00:09:11,520 --> 00:09:16,480
+ringrazio per essere arrivati fino a questo punto e spero che l'episodio di oggi vi sia piaciuto e
+
+78
+00:09:16,480 --> 00:09:22,160
+vi invito a condividere il vostro pensiero nei commenti. Prima di lasciarvi ne approfitto per
+
+79
+00:09:22,160 --> 00:09:27,400
+ricordarvi che se volete potete unirvi al gruppo telegram di pensieri in codice e potete ascoltare
+
+80
+00:09:27,400 --> 00:09:33,280
+tutte le puntate su speaker youtube spotify e itunes trovate tutti i link in descrizione
+
+81
+00:09:33,280 --> 00:09:37,520
+per il momento vi saluto e vi auguro una buona giornata e alla prossima
+

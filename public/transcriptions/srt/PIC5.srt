@@ -1,0 +1,420 @@
+1
+00:00:00,000 --> 00:00:10,040
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:20,040 --> 00:00:26,520
+Salve a tutti e bentornati su Pensieri in codice, il podcast in cui parliamo di idee
+
+3
+00:00:26,520 --> 00:00:31,560
+prese dal mondo del software, di internet e della programmazione. Nell'episodio di oggi
+
+4
+00:00:31,560 --> 00:00:36,600
+mi piacerebbe parlarvi di un argomento che mi sta particolarmente a cuore e che sono convinto
+
+5
+00:00:36,600 --> 00:00:42,680
+che debba stare a cuore ad ogni buon programmatore. Qualcosa che fin troppo spesso viene sacrificato
+
+6
+00:00:42,680 --> 00:00:48,840
+in nome di altre priorità considerate più importanti, cioè la qualità del codice.
+
+7
+00:00:48,840 --> 00:00:56,000
+Per capire prima di tutto cosa significa qualità del codice e perché è fondamentale cercare di
+
+8
+00:00:56,000 --> 00:01:00,880
+mantenerla il più alta possibile quando si programma, dobbiamo tenere a mente un concetto
+
+9
+00:01:00,880 --> 00:01:08,080
+molto importante e cioè che il mondo del software ci ha abituato all'idea di aggiornamento. Se
+
+10
+00:01:08,080 --> 00:01:13,560
+pensiamo ai nostri pc o ai nostri smartphone ad esempio, ci rendiamo conto che siamo abituati
+
+11
+00:01:13,560 --> 00:01:20,240
+ad aspettarci aggiornamenti molto frequenti, sistemi operativi, programmi, app, tutto si
+
+12
+00:01:20,240 --> 00:01:25,680
+aggiorna con cadenza mensile, settimanale o addirittura giornaliera. La correzione dei bug,
+
+13
+00:01:25,680 --> 00:01:31,520
+l'implementazione di nuove funzioni che causano un continuo susseguirsi di nuove versioni da
+
+14
+00:01:31,520 --> 00:01:38,800
+installare sono cose che ormai non solo sopportiamo ma anzi ci aspettiamo e vengono percepite come
+
+15
+00:01:38,800 --> 00:01:45,600
+qualcosa di positivo. Quasi che la loro assenza faccia apparire quel programma o quell'app che
+
+16
+00:01:45,600 --> 00:01:51,720
+non si aggiorna frequentemente come se fosse stata abbandonata dai propri sviluppatori. E
+
+17
+00:01:51,720 --> 00:01:58,600
+quindi per questo motivo che chi sviluppa software deve essere ben conscio del fatto che la propria
+
+18
+00:01:58,600 --> 00:02:05,160
+codebase e cioè l'insieme di tutte le librerie, le istruzioni, i metodi, le funzioni che vanno a
+
+19
+00:02:05,160 --> 00:02:11,160
+comporre il proprio software è un qualcosa che deve restare in un continuo stato di evoluzione
+
+20
+00:02:11,160 --> 00:02:18,320
+e sarà interessata giorno dopo giorno da modifiche, correzioni, implementazioni eccetera. D'altra
+
+21
+00:02:18,320 --> 00:02:24,040
+parte però qualsiasi programmatore con qualche anno di esperienza alle spalle sa bene che effettuare
+
+22
+00:02:24,040 --> 00:02:29,200
+una modifica o un'implementazione al codice di un software non è sempre qualcosa di così semplice.
+
+23
+00:02:29,200 --> 00:02:35,520
+In effetti ci sono casi in cui per effettuare una modifica all'apparenza semplice si è costretti
+
+24
+00:02:35,520 --> 00:02:42,160
+a spendere molto più tempo di quanto in realtà necessario. Esistono casi in cui modifiche che
+
+25
+00:02:42,160 --> 00:02:48,360
+normalmente dovrebbero richiedere qualche ora rischiano di portar via anche giorni per essere
+
+26
+00:02:48,360 --> 00:02:55,320
+completate e questi tipicamente sono i casi in cui ci si trova ad operare su di un codice cattivo,
+
+27
+00:02:55,320 --> 00:03:08,040
+un codice sporco. Già perché è proprio in questo che si distingue un codice di scarsa qualità, non
+
+28
+00:03:08,040 --> 00:03:15,840
+nei bug, non nelle scarse funzionalità. I bug si correggono, le funzionalità assenti o incomplete
+
+29
+00:03:15,840 --> 00:03:22,440
+si implementano ma un codice di scarsa qualità invece ha proprio la caratteristica di rallentare
+
+30
+00:03:22,560 --> 00:03:29,760
+il lavoro dello sviluppatore. Estendere, modificare o correggere un codice cattivo è un lavoro difficile,
+
+31
+00:03:29,760 --> 00:03:36,080
+lungo e molto spesso poco proficuo. E da dove viene fuori questo codice di scarsa qualità?
+
+32
+00:03:36,080 --> 00:03:42,760
+La prima idea che potrebbe venire in mente è che esso sia frutto di incompetenza o di inesperienza.
+
+33
+00:03:42,760 --> 00:03:49,000
+In effetti entrambe queste componenti possono avere un peso nella qualità del codice prodotto.
+
+34
+00:03:49,800 --> 00:03:57,000
+Tuttavia io mi riferisco in particolare a codice qualitativamente scarso sviluppato però da
+
+35
+00:03:57,000 --> 00:04:02,200
+programmatori con buone conoscenze del progetto e del linguaggio e soprattutto con una certa
+
+36
+00:04:02,200 --> 00:04:08,640
+esperienza. In questo caso la vera causa che ci porta ad avere una codebase disordinata e un
+
+37
+00:04:08,640 --> 00:04:14,400
+pessimo codice è semplicemente la fretta. Sì perché noi programmatori abbiamo attività da
+
+38
+00:04:14,400 --> 00:04:19,200
+svolgere e scadenze da rispettare, dobbiamo sviluppare nuove funzionalità, dobbiamo
+
+39
+00:04:19,200 --> 00:04:24,720
+correggere i bug e spesso questo ci porta ad avere la percezione che non ci sia tempo
+
+40
+00:04:24,720 --> 00:04:31,440
+sufficiente per fare tutto. Da qui la conseguenza è quella di lavorare in modo approssimativo e
+
+41
+00:04:31,440 --> 00:04:37,920
+frettoloso ed ecco che il codice che viene fuori è di scarsa qualità. Quello che può derivare da
+
+42
+00:04:37,920 --> 00:04:44,120
+questo processo e vi assicuro che l'ho visto accadere più di una volta è una drastica diminuzione
+
+43
+00:04:44,320 --> 00:04:49,600
+della produttività del team di sviluppo. Sì perché se ogni volta che devo apportare una
+
+44
+00:04:49,600 --> 00:04:55,960
+modifica al mio codice esso risulta problematico, mi ostacola e mi porta a perdere tempo prezioso,
+
+45
+00:04:55,960 --> 00:05:03,240
+io sarò costretto a correre per portare a termine la mia attività e questo mi indurrà a produrre
+
+46
+00:05:03,240 --> 00:05:09,600
+altro codice di cattiva qualità. Una volta entrati in questo circolo vizioso poi si arriverà al punto
+
+47
+00:05:09,800 --> 00:05:15,560
+in cui le mie risorse o quelle del mio team non saranno più sufficienti per soddisfare le
+
+48
+00:05:15,560 --> 00:05:21,720
+necessità. Se arrivati a questo punto non avremo ancora intrapreso una strada verso il miglioramento
+
+49
+00:05:21,720 --> 00:05:27,360
+della qualità del nostro codice e a questo punto già sarà molto difficile visto il tempo richiesto
+
+50
+00:05:27,360 --> 00:05:33,960
+per farlo, l'unica altra alternativa sarà quella di aggiungere risorse al nostro team di sviluppo,
+
+51
+00:05:33,960 --> 00:05:40,320
+ma saranno risorse alle quali non avremo il tempo di fare formazione e che quindi opereranno
+
+52
+00:05:40,320 --> 00:05:46,920
+sulla codebase senza una corretta conoscenza. Per forza di cose anche loro andranno a produrre
+
+53
+00:05:46,920 --> 00:05:53,280
+codice cattivo e questo non farà altro che incrementare il caos. Un bel giorno si arriverà
+
+54
+00:05:53,280 --> 00:05:59,840
+al punto in cui semplicemente la codebase non sarà più manutenibile e sarà necessario ricominciare la
+
+55
+00:05:59,840 --> 00:06:11,400
+scrittura del progetto pressoché da zero. Ora però vi starete chiedendo, sì ma come è fatto un
+
+56
+00:06:11,400 --> 00:06:17,640
+codice di qualità e come si fa a scriverlo? Beh sappiate che se farete questa domanda a 100
+
+57
+00:06:17,640 --> 00:06:23,200
+programmatori diversi è molto probabile che otteniate 100 risposte diverse. Ci sarà chi vi
+
+58
+00:06:23,200 --> 00:06:29,280
+dirà che un buon codice è scritto in modo semplice e diretto o in modo elegante o che un buon codice
+
+59
+00:06:29,280 --> 00:06:35,320
+è un codice efficiente. Per come la vedo io quello che più si avvicina all'idea di un codice di
+
+60
+00:06:35,320 --> 00:06:41,960
+qualità è la definizione data da Robert Martin nel libro Clean Code di cui vi lascio un link in
+
+61
+00:06:41,960 --> 00:06:49,360
+descrizione. Piccola parentesi, vi lascio entrambi i link sia della versione inglese che è quella che
+
+62
+00:06:49,360 --> 00:06:55,480
+ho letto io sia di quella italiana perché in giro ho letto che è particolarmente fedele e quindi se
+
+63
+00:06:55,480 --> 00:07:02,080
+la preferite penso che possa andar bene comunque. In questo libro dicevamo Martin ci dice in pratica
+
+64
+00:07:02,080 --> 00:07:07,880
+che un codice di qualità è un codice che può essere riletto e compreso in modo semplice sia
+
+65
+00:07:07,880 --> 00:07:13,600
+dall'autore anche a distanza di tempo sia da altri programmatori che non l'abbiano mai visto prima.
+
+66
+00:07:13,600 --> 00:07:20,280
+Se scriveremo il nostro codice puntando a questo obiettivo otterremo qualcosa che sarà più facile
+
+67
+00:07:20,280 --> 00:07:27,040
+da estendere o da modificare sia per noi sia per quelli che verranno dopo di noi. E se ora vi
+
+68
+00:07:27,040 --> 00:07:33,680
+state chiedendo sì ok ma come si fa a scrivere codice di qualità? Tenete presente che scrivere
+
+69
+00:07:33,680 --> 00:07:38,840
+codice di qualità non è affatto semplice. Si tratta di un'attività che richiede un costante
+
+70
+00:07:38,840 --> 00:07:45,240
+impegno perché proprio per i motivi espressi in precedenza saremo naturalmente portati a
+
+71
+00:07:45,240 --> 00:07:50,520
+cercare scorciatoie che ci permettano di risparmiare tempo nell'immediato senza curarci
+
+72
+00:07:50,520 --> 00:07:58,680
+del risultato finale e della sua riutilizzabilità nel futuro. Il primo passo da fare è capire che
+
+73
+00:07:58,680 --> 00:08:04,840
+se percepiamo di non avere tempo a sofficienza per sviluppare un buon codice è probabile che la colpa
+
+74
+00:08:04,840 --> 00:08:12,360
+sia nostra e con nostra intendo di noi sviluppatori. Questo perché in generale i nostri manager o i
+
+75
+00:08:12,520 --> 00:08:17,920
+nostri clienti chiedono a noi quanto tempo è necessario per realizzare un software o un'
+
+76
+00:08:17,920 --> 00:08:24,040
+implementazione e se il nostro primo impulso è quello di rispondere con tempistiche molto strette
+
+77
+00:08:24,040 --> 00:08:30,520
+per raccontentarli o per far vedere che siamo veloci e capaci nel nostro lavoro allora cadiamo
+
+78
+00:08:30,520 --> 00:08:36,280
+nell'errore descritto prima e in realtà li stiamo semplicemente prendendo in giro e li stiamo
+
+79
+00:08:36,440 --> 00:08:42,880
+spingendo ad imboccare la strada del fallimento. Quindi stabilito che sviluppare un buon codice
+
+80
+00:08:42,880 --> 00:08:49,080
+non è un'operazione banale e richiede impegno e attenzione teniamo a mente che esistono tutta
+
+81
+00:08:49,080 --> 00:08:54,080
+una serie di strategie e regole che possono essere applicate al netto del linguaggio di
+
+82
+00:08:54,080 --> 00:08:59,840
+programmazione utilizzato e che permettono di mantenere un certo rigore e ordine all'interno
+
+83
+00:08:59,840 --> 00:09:06,200
+del codice. Queste regole vanno dalla scelta dei nomi degli oggetti alla strutturazione delle
+
+84
+00:09:06,200 --> 00:09:12,120
+funzioni passando per la gestione degli errori i commenti e persino la formatazione e la densità
+
+85
+00:09:12,120 --> 00:09:18,880
+dei testi. Di sicuro approfondiremo vari di questi aspetti nei prossimi episodi del podcast tuttavia
+
+86
+00:09:18,880 --> 00:09:25,320
+per ora cerchiamo di concentrarci sui due concetti di base che ci suggerisce Martin. Il primo è
+
+87
+00:09:25,320 --> 00:09:31,280
+quello di considerare noi stessi come degli autori di romanzi saggi o articoli. Quando si
+
+88
+00:09:31,280 --> 00:09:38,080
+scrive un testo infatti si vuole trasmettere un messaggio e per farlo è giusto che l'autore
+
+89
+00:09:38,080 --> 00:09:44,080
+compia uno sforzo per scrivere qualcosa che i suoi lettori possano fruire e comprendere senza
+
+90
+00:09:44,080 --> 00:09:50,880
+doversi impegnare a decifrare il testo stesso. L'idea è che la parte importante del testo sia
+
+91
+00:09:50,880 --> 00:09:56,800
+il messaggio e il senso che vuole trasmettere e allo stesso modo nel codice la parte importante
+
+92
+00:09:56,800 --> 00:10:04,040
+è il funzionamento e la logica che esso implementa. Tenendo a mente questa regola mentre scriviamo il
+
+93
+00:10:04,040 --> 00:10:11,480
+nostro codice oggi un domani esso risulterà più facile da rileggere sia per noi sia per gli altri
+
+94
+00:10:11,480 --> 00:10:18,200
+e ci si potrà quindi concentrare sul modificarlo ed estenderlo e non sul doverlo decifrare. Il
+
+95
+00:10:18,200 --> 00:10:24,680
+secondo concetto fondamentale invece è quello che Martin definisce la regola dei boy scout. In
+
+96
+00:10:24,680 --> 00:10:31,240
+generale i boy scout hanno questa abitudine quando si recano in mezzo alla natura si impegnano a
+
+97
+00:10:31,240 --> 00:10:37,760
+lasciare i posti che visitano in condizioni migliori di quelle in cui li hanno trovati. Allo
+
+98
+00:10:37,760 --> 00:10:43,720
+stesso modo quando un programmatore si trova a dover modificare un codice non troppo chiaro
+
+99
+00:10:43,720 --> 00:10:50,480
+dovrebbe sforzarsi di migliorarne la leggibilità e la chiarezza per fare in modo che il prossimo
+
+100
+00:10:50,480 --> 00:10:55,560
+lettore di quel codice, che non è detto che sarà qualcun altro ma potrebbe essere lui stesso a
+
+101
+00:10:55,560 --> 00:11:01,200
+doverci ritornare, incontri meno difficoltà di quante ne incontrate lui la prima volta.
+
+102
+00:11:01,200 --> 00:11:12,680
+Anche per oggi siamo giunti al termine di questo episodio. Io spero che l'argomento sia stato
+
+103
+00:11:12,680 --> 00:11:18,760
+interessante. Vi ringrazio per aver ascoltato fin qui e vi ricordo che pensieri in codice è un
+
+104
+00:11:18,760 --> 00:11:24,480
+dibattito e non un monologo quindi mi aspetto i vostri commenti e le vostre opinioni. Nel
+
+105
+00:11:24,480 --> 00:11:28,240
+frattempo vi saluto e vi do appuntamento alla prossima settimana. Ciao!
+

@@ -1,0 +1,532 @@
+1
+00:00:00,000 --> 00:00:10,040
+Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:10,040 --> 00:00:26,640
+Buongiorno a tutti e ben ritrovati per un nuovo episodio di Pensieri in Codice, il podcast
+
+3
+00:00:26,640 --> 00:00:31,720
+in cui parliamo di argomenti presi dal mondo del software, di internet e della programmazione.
+
+4
+00:00:31,720 --> 00:00:38,920
+Come state? Io purtroppo oggi ho un po' di mal di gola e spero che la voce mi assista
+
+5
+00:00:38,920 --> 00:00:45,040
+fino a fine puntata, però ci tenevo a registrare questo episodio, prima di tutto perché quello
+
+6
+00:00:45,040 --> 00:00:50,340
+della settimana scorsa è saltato a causa di alcuni impegni lavorativi, ma soprattutto
+
+7
+00:00:50,340 --> 00:00:56,980
+per ringraziare tutti quelli che hanno votato Pensieri in Codice come miglior podcast emergente
+
+8
+00:00:56,980 --> 00:01:04,180
+del 2019. Se non lo sapete, infatti, Pensieri in Codice è candidato al festival del podcasting
+
+9
+00:01:04,180 --> 00:01:10,500
+di Milano nella categoria podcast emergenti e c'è tempo fino al 10 ottobre per andarlo
+
+10
+00:01:10,500 --> 00:01:17,940
+a votare su Instagram. Vi basterà collegarvi al sito vota.pensieriincodice.it, di cui trovate
+
+11
+00:01:17,940 --> 00:01:23,020
+anche il link in descrizione, e vi si aprirà il post Instagram al quale mettere un like
+
+12
+00:01:23,020 --> 00:01:29,540
+per dare il vostro voto. Fino ad ora siete stati più di 350 e vi ringrazio tutti uno
+
+13
+00:01:29,540 --> 00:01:36,140
+per uno e in particolare ringrazio due ascoltatori, Vincenzo e Gianfranco, che si sono impegnati
+
+14
+00:01:36,140 --> 00:01:41,900
+particolarmente a pubblicizzare il podcast. Invito quindi tutti quelli che non hanno ancora
+
+15
+00:01:41,900 --> 00:01:48,340
+votato a farlo al più presto e vi ricordo anche che il 12 sarò presente anch'io al festival del
+
+16
+00:01:48,340 --> 00:01:54,260
+podcasting, quindi sarà una buona occasione per incontrarci e scambiare quattro chiacchiere. Se
+
+17
+00:01:54,260 --> 00:02:00,500
+vi va di partecipare e volete organizzarvi con me e gli altri ascoltatori potete unirvi al gruppo
+
+18
+00:02:00,500 --> 00:02:06,900
+Telegram di Pensieri in Codice cercando su Telegram appunto Pensieri in Codice o cercando
+
+19
+00:02:06,900 --> 00:02:12,660
+il link in descrizione. Ora però bando alle ciance e diamo inizio all'episodio di oggi.
+
+20
+00:02:12,660 --> 00:02:24,060
+Nella nostra epoca l'informatica e la crittografia sono due scienze che vivono
+
+21
+00:02:24,060 --> 00:02:30,180
+uno straordinario rapporto simbiotico. Ogni giorno noi utilizziamo meccanismi di crittografia
+
+22
+00:02:30,180 --> 00:02:35,660
+estremamente avanzati senza nemmeno rendercene conto. Quando navighiamo sul web ad esempio,
+
+23
+00:02:35,700 --> 00:02:41,940
+quando inviamo messaggi con whatsapp o telegram, quando ci colleghiamo a una rete wifi, ognuno di
+
+24
+00:02:41,940 --> 00:02:47,540
+questi gesti che per noi sono ormai azioni perfettamente normali mette in moto una serie
+
+25
+00:02:47,540 --> 00:02:54,500
+di algoritmi che criptano e decriptano in modo a noi del tutto trasparente tutti o buona parte
+
+26
+00:02:54,500 --> 00:03:00,660
+dei dati che trasmettiamo e riceviamo. In questo senso possiamo tranquillamente affermare che senza
+
+27
+00:03:00,660 --> 00:03:07,180
+crittografia internet così come noi lo conosciamo non esisterebbe e quindi l'informatica moderna non
+
+28
+00:03:07,180 --> 00:03:13,180
+potrebbe mai in alcun modo fare a meno della crittografia. Per contro anche la crittografia ha
+
+29
+00:03:13,180 --> 00:03:18,460
+ricevuto un enorme giovamento dalla diffusione dell'informatica. La scienza che studia il modo
+
+30
+00:03:18,460 --> 00:03:24,460
+di nascondere le informazioni ad occhi indiscreti infatti ha una storia molto lunga che inizia
+
+31
+00:03:24,460 --> 00:03:30,460
+addirittura tra i 6.000 e i 5.000 anni fa e nel corso dei secoli ha ovviamente attraversato un
+
+32
+00:03:30,460 --> 00:03:36,820
+susseguirsi di cambiamenti e miglioramenti ma con l'avvento dell'informatica essa ha subito un'enorme
+
+33
+00:03:36,820 --> 00:03:42,420
+spinta sul piano tecnologico e ha potuto fare e sta ancora facendo enormi passi in avanti.
+
+34
+00:03:42,420 --> 00:03:49,100
+Cerchiamo però di non correre troppo e proviamo a capire almeno a grandi linee cosa si intende
+
+35
+00:03:49,100 --> 00:03:55,500
+in generale per criptografia e come questa scienza si sia evoluta nel corso della storia. A questo
+
+36
+00:03:55,500 --> 00:04:02,180
+proposito in descrizione trovate il link ad amazon del libro De Cifrare di Mark Frary che
+
+37
+00:04:02,180 --> 00:04:07,060
+vi consiglio assolutamente di leggere e che racconta la storia ed il funzionamento dei più
+
+38
+00:04:07,060 --> 00:04:15,020
+famosi cifrari conosciuti. Come accennavamo prima la crittografia nasce più di 5.000 anni fa nella
+
+39
+00:04:15,020 --> 00:04:21,020
+valle dell'indo. La sua utilità è banalmente chiara fin da subito. Da sempre l'uomo produce
+
+40
+00:04:21,020 --> 00:04:26,140
+e utilizza informazioni quindi possedere determinate informazioni che altri non hanno
+
+41
+00:04:26,140 --> 00:04:32,260
+può rappresentare un vantaggio competitivo. Per questo motivo avere la capacità di celare
+
+42
+00:04:32,260 --> 00:04:38,180
+informazioni quando è necessario archiviarle o trasmetterle ad altri contribuisce enormemente
+
+43
+00:04:38,180 --> 00:04:44,460
+a migliorare la propria condizione strategica. Ora che si parli di un generale romano che deve
+
+44
+00:04:44,460 --> 00:04:49,460
+pianificare l'attacco con i suoi alleati in accampamenti distanti o di un telegrafista della
+
+45
+00:04:49,460 --> 00:04:55,300
+seconda guerra mondiale che deve comunicare gli ordini ai soldati in campo o di un utente amazon
+
+46
+00:04:55,300 --> 00:05:01,020
+che deve inviare i dati della propria carta di credito per completare un pagamento, è chiaro
+
+47
+00:05:01,020 --> 00:05:06,540
+che nessuno dei tre vorrebbe che nemici o malintenzionati potessero leggere le informazioni
+
+48
+00:05:06,540 --> 00:05:13,500
+che stanno trasmettendo. E crittografia vuol dire proprio scrittura nascosta. Infatti essa ha lo
+
+49
+00:05:13,500 --> 00:05:18,900
+scopo di scrivere le informazioni in modo tale che solo chi è in possesso dei giusti strumenti sia
+
+50
+00:05:18,900 --> 00:05:24,700
+poi in grado di leggerle. Come ampiamente descritto nel libro De Cifrare, nel corso dei
+
+51
+00:05:24,700 --> 00:05:30,140
+secoli i metodi per ottenere questo risultato si sono susseguiti sempre più ingegnosi e sempre più
+
+52
+00:05:30,140 --> 00:05:37,100
+complessi e alcuni di essi rimangono tutt'oggi misteriosi e incompresi. Dischi d'argilla che
+
+53
+00:05:37,100 --> 00:05:42,900
+permettevano di convertire i pittogrammi, bastoni intorno ai quali arrotolare strisce di stoffa su
+
+54
+00:05:42,980 --> 00:05:49,860
+cui erano scritti i messaggi. Cifrari via via sempre più complessi. Codici studiati sia per
+
+55
+00:05:49,860 --> 00:05:55,940
+uso militare che commerciale. Macchine da scrivere con complicatissimi meccanismi interni.
+
+56
+00:05:55,940 --> 00:06:03,300
+Algoritmi sempre più avanzati. Dall'antichità fino ai giorni nostri i crittografi hanno sempre
+
+57
+00:06:03,300 --> 00:06:09,580
+dovuto lavorare per migliorare le tecniche e renderle più efficienti e sicure. E questo per
+
+58
+00:06:09,620 --> 00:06:14,620
+un motivo molto semplice. Da quando esiste la figura del crittografo esiste anche quella del
+
+59
+00:06:14,620 --> 00:06:20,300
+crittoanalista il cui compito è appunto quello di tentare di rompere un metodo di crittografia
+
+60
+00:06:20,300 --> 00:06:26,860
+e quindi riuscire a decifrare i messaggi anche senza essere in possesso degli strumenti normalmente
+
+61
+00:06:26,860 --> 00:06:33,660
+necessari. Ogni volta che un decifratore riesce nel suo intento rende obsoleto il metodo di
+
+62
+00:06:33,660 --> 00:06:39,380
+crittografia che ha scardinato e di conseguenza se si vuole continuare a trasmettere informazioni
+
+63
+00:06:39,580 --> 00:06:46,100
+in sicurezza diventa necessario sostituire tale metodo con uno più robusto. E neanche a dirlo uno
+
+64
+00:06:46,100 --> 00:06:51,180
+dei più importanti crittoanalisti della storia è anche l'uomo il cui lavoro ha contribuito
+
+65
+00:06:51,180 --> 00:06:57,460
+enormemente alla nascita dell'informatica moderna. Il suo nome era Alan Turing e il suo lavoro al
+
+66
+00:06:57,460 --> 00:07:03,180
+Bletchley Park per decrittare i cifrari tedeschi contribuì con buona probabilità a ridurre
+
+67
+00:07:03,180 --> 00:07:07,980
+sensibilmente la durata della seconda guerra mondiale. Anche se questo è argomento per un
+
+68
+00:07:08,020 --> 00:07:14,300
+altro episodio e magari ne parleremo in futuro. Ad ogni modo l'avvento dei computer ha rivoluzionato
+
+69
+00:07:14,300 --> 00:07:20,860
+il mondo della crittografia. Infatti la potenza sempre crescente dei calcolatori ha permesso da
+
+70
+00:07:20,860 --> 00:07:26,780
+un lato di semplificare le procedure necessarie per codificare le informazioni quindi riducendo
+
+71
+00:07:26,780 --> 00:07:32,060
+lo sforzo e i tempi necessari e dall'altro ha portato alla creazione di metodi sempre più
+
+72
+00:07:32,060 --> 00:07:37,820
+complessi e più difficili da violare. Al tempo stesso molti dei cifrari che prima di allora
+
+73
+00:07:37,820 --> 00:07:43,700
+sembravano inviolabili diventarono improvvisamente obsoleti perché gli attacchi a forza bruta e cioè
+
+74
+00:07:43,700 --> 00:07:49,420
+quelli che necessitano di molti tentativi per trovare il modo di rompere la cifratura
+
+75
+00:07:49,420 --> 00:07:55,260
+divennero estremamente semplici da eseguire per mezzo di un computer. Il discorso crittografia
+
+76
+00:07:55,260 --> 00:08:00,700
+quindi si è ormai spostato in gran parte nel mondo virtuale e come dicevamo all'inizio di
+
+77
+00:08:00,700 --> 00:08:06,140
+questo podcast è proprio qui che ha dato un enorme contributo allo sviluppo delle funzionalità che
+
+78
+00:08:06,140 --> 00:08:12,300
+gli utenti utilizzano ogni giorno. Se non esistesse la crittografia infatti tutte le operazioni
+
+79
+00:08:12,300 --> 00:08:18,460
+quotidiane come acquistare da un e-commerce, accedere a un sito con username e password, inviare
+
+80
+00:08:18,460 --> 00:08:25,100
+un messaggio non sarebbero possibili e attenzione questo non perché sarebbe tecnicamente impossibile
+
+81
+00:08:25,100 --> 00:08:31,380
+eseguire tali operazioni quanto piuttosto perché farlo non sarebbe sicuro. Su internet infatti
+
+82
+00:08:31,380 --> 00:08:36,300
+l'abbiamo già accennato nell'episodio 10 su come creare un data bridge per errore che se non
+
+83
+00:08:36,300 --> 00:08:41,460
+l'avete sentito vi consiglio di farlo perché è un episodio davvero interessante. Inviare dati
+
+84
+00:08:41,460 --> 00:08:47,540
+verso una certa destinazione come ad esempio il server di amazon significa impacchettare questi
+
+85
+00:08:47,540 --> 00:08:53,500
+dati e affidarli ad una serie di computer che se li passano uno dopo l'altro facendo in modo da
+
+86
+00:08:53,500 --> 00:08:58,260
+recapitarli al destinatario. Ovviamente sto semplificando il discorso ma quello che ci
+
+87
+00:08:58,260 --> 00:09:04,060
+interessa è la logica. Ora quindi diventa ovvio che se non avessimo un sistema per crittare le
+
+88
+00:09:04,060 --> 00:09:09,740
+informazioni spedite chiunque lungo la strada potrebbe leggerle e impossessarsene e non devo
+
+89
+00:09:09,740 --> 00:09:15,220
+certo spiegarvi cosa potrebbe accadere se qualcuno entrasse in possesso dei dati della vostra carta
+
+90
+00:09:15,220 --> 00:09:21,900
+di credito no? In effetti il concetto è più o meno quello di una cartolina. Immaginate infatti
+
+91
+00:09:21,900 --> 00:09:26,300
+che le informazioni che viaggiano su internet sia quelle che inviamo che quelle che riceviamo
+
+92
+00:09:26,580 --> 00:09:32,420
+siano essenzialmente scritte su delle cartoline e spedite tramite il classico servizio postale
+
+93
+00:09:32,420 --> 00:09:37,620
+nazionale. E' ovvio che oltre al legittimo destinatario qualsiasi addetto della posta,
+
+94
+00:09:37,620 --> 00:09:43,620
+fattorino o postino che abbia sotto mano la cartolina potrebbe semplicemente girarla e
+
+95
+00:09:43,620 --> 00:09:48,860
+leggerne il messaggio. E voi scrivereste mai informazioni importanti su una cartolina?
+
+96
+00:09:48,860 --> 00:09:55,500
+Ovviamente no. In realtà però noi lo facciamo tutti i giorni e migliaia di volte al giorno.
+
+97
+00:09:55,860 --> 00:10:01,540
+Solo che lo facciamo in modo virtuale e proprio per garantire la nostra sicurezza quelle
+
+98
+00:10:01,540 --> 00:10:07,340
+informazioni sono cifrate e solo il destinatario ha gli strumenti necessari per decifrarle.
+
+99
+00:10:07,340 --> 00:10:12,580
+Ho già in programma di approfondire il concetto di criptografia applicata all'informatica nei
+
+100
+00:10:12,580 --> 00:10:17,820
+prossimi episodi di Pensieri in Codice poiché questo è un argomento piuttosto vasto e servirebbe
+
+101
+00:10:17,820 --> 00:10:22,580
+un podcast di almeno un'ora anche solo per descrivere sommariamente le varie applicazioni.
+
+102
+00:10:23,020 --> 00:10:28,100
+Tuttavia ci tengo a menzionare brevemente almeno gli algoritmi più utilizzati in modo
+
+103
+00:10:28,100 --> 00:10:33,380
+da renderci conto di quanto siano importanti per la nostra vita quotidiana. Anche se noi
+
+104
+00:10:33,380 --> 00:10:39,660
+neanche ci accorgiamo della loro presenza. Il primo di questi algoritmi prende il nome
+
+105
+00:10:39,660 --> 00:10:45,220
+di criptografia a chiave pubblica. Moltissimi non l'avranno mai sentito nominare ma esso è
+
+106
+00:10:45,220 --> 00:10:50,700
+alla base delle comunicazioni tra il nostro browser e i cosiddetti siti sicuri, cioè quelli
+
+107
+00:10:50,700 --> 00:10:57,140
+che utilizzano il protocollo HTTPS con certificato per stabilire una connessione protetta. In
+
+108
+00:10:57,140 --> 00:11:02,420
+pratica questi siti proteggono tutte le comunicazioni con il nostro browser criptando
+
+109
+00:11:02,420 --> 00:11:08,260
+tutti i dati che vengono trasmessi in entrambe le direzioni. Per ottenere questo risultato però è
+
+110
+00:11:08,260 --> 00:11:13,700
+necessario che sia il browser sia il sito destinatario abbiano degli strumenti in comune
+
+111
+00:11:13,700 --> 00:11:19,180
+e che tali strumenti non siano in possesso di nessun altro nel mondo e proprio per accordarsi
+
+112
+00:11:19,180 --> 00:11:25,000
+su questi strumenti, dato che i due non si conoscono, utilizzano la criptografia a chiave
+
+113
+00:11:25,000 --> 00:11:32,060
+pubblica. Una seconda applicazione di criptografia è la codifica della connessione wifi che prende
+
+114
+00:11:32,060 --> 00:11:38,700
+il nome di WPA, Wifi Protected Access, e di cui al momento esistono varie versioni più o meno
+
+115
+00:11:38,700 --> 00:11:45,060
+sicure. Parlando in generale però noi ogni giorno entriamo in contatto con moltissime reti wifi e
+
+116
+00:11:45,100 --> 00:11:51,060
+per accedere ad ognuna di esse di solito abbiamo bisogno di una password. Al momento della
+
+117
+00:11:51,060 --> 00:11:57,180
+connessione il nostro smartphone o il nostro pc e l'access point wireless si accordano diciamo
+
+118
+00:11:57,180 --> 00:12:05,100
+così fra loro e fanno sì che tutte le trasmissioni che effettuano siano criptografate per evitare
+
+119
+00:12:05,100 --> 00:12:11,580
+che un qualsiasi dispositivo presente nel raggio del segnale radio possa captare e decifrare alcun
+
+120
+00:12:11,700 --> 00:12:18,900
+tipo di informazione, compresi i servizi utilizzati e i siti visitati. Ed ecco perché è sconsigliatissimo
+
+121
+00:12:18,900 --> 00:12:24,820
+utilizzare reti wifi sprovvisse di password. Infine altri due algoritmi di criptografia
+
+122
+00:12:24,820 --> 00:12:32,020
+ampiamente utilizzati sono l'Advanced Encryption Standard e il Secure Hash Algorithm, entrambi
+
+123
+00:12:32,020 --> 00:12:38,700
+impiegati per le operazioni di cifratura e decifratura dei file delle trasmissioni e nel
+
+124
+00:12:38,700 --> 00:12:43,900
+caso del secondo anche utilizzato per la creazione e la verifica delle firme digitali.
+
+125
+00:12:43,900 --> 00:12:54,140
+Per ora direi che possiamo affermarci qui con questa introduzione alla criptografia informatica.
+
+126
+00:12:54,140 --> 00:12:59,580
+Nei prossimi episodi prenderemo in esame qualcuno di questi algoritmi e proveremo a capire un po'
+
+127
+00:12:59,580 --> 00:13:05,100
+più nel dettaglio come funzionano. Voi nel frattempo fatemi sapere se l'argomento vi
+
+128
+00:13:05,100 --> 00:13:10,540
+interessa e nel caso quale algoritmo preferireste sentire approfondito qui su Pensieri in Codice.
+
+129
+00:13:10,540 --> 00:13:16,700
+Come al solito io vi ringrazio per essere arrivati fin qui. Vi ricordo che potete aiutare
+
+130
+00:13:16,700 --> 00:13:22,780
+questo progetto votando il podcast, condividendo gli episodi sui vostri social ed entrando a far
+
+131
+00:13:22,780 --> 00:13:27,780
+parte del nostro gruppo Telegram che potete cercare direttamente come Pensieri in Codice
+
+132
+00:13:27,780 --> 00:13:33,740
+o che potete raggiungere dal link in descrizione. Infine vi ricordo che se volete potete trovarmi
+
+133
+00:13:33,740 --> 00:13:39,620
+come Valerio Galano su Instagram. Vi saluto e vi do appuntamento al prossimo episodio.
+

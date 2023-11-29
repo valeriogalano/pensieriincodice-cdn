@@ -1,0 +1,460 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:10,000 --> 00:00:25,640
+Salve a tutti ragazzi e ben ritrovati per un nuovo episodio di Pensieri in Codice,
+
+3
+00:00:25,640 --> 00:00:31,120
+il podcast in cui parliamo di argomenti presi dal mondo del software, di internet e della
+
+4
+00:00:31,120 --> 00:00:36,760
+programmazione. La salvaguardia dell'ambiente è una questione che interessa tutti o almeno
+
+5
+00:00:36,760 --> 00:00:42,440
+dovrebbe. Io nel mio piccolo mi ritrovo sempre più spesso ad effettuare le mie scelte personali
+
+6
+00:00:42,440 --> 00:00:48,200
+dando alle tematiche ambientali un peso sempre maggiore, però spesso mi rendo conto che alcune
+
+7
+00:00:48,200 --> 00:00:53,960
+questioni o semplicemente sono fuori dalla portata del singolo cittadino oppure possono
+
+8
+00:00:53,960 --> 00:00:59,880
+rivelarsi come azioni piuttosto onerose per chi magari vuole dare il suo contributo personalmente.
+
+9
+00:00:59,880 --> 00:01:04,800
+Penso ad esempio a sostituire l'auto a benzina con quella elettrica o installare pannelli
+
+10
+00:01:04,800 --> 00:01:09,920
+solari. Sono operazioni che hanno un loro costo e che non tutti possono permettersi. Tuttavia
+
+11
+00:01:09,920 --> 00:01:15,640
+nell'utilizzo quotidiano del pc e dello smartphone ci sono dei piccoli gesti che sono alla portata
+
+12
+00:01:15,640 --> 00:01:22,600
+di tutti e che da un lato permettono di ridurre un po' il nostro impatto ambientale e dall'altro ci
+
+13
+00:01:22,600 --> 00:01:27,000
+costano solamente qualche piccola variazione delle nostre abitudini. Nell'episodio di oggi
+
+14
+00:01:27,000 --> 00:01:33,120
+quindi andremo ad esaminare tre piccoli trucchi, ai quali forse non avete mai pensato, che fanno
+
+15
+00:01:33,120 --> 00:01:39,040
+bene all'ambiente e che vi assicuro non vi faranno rinunciare alle vostre comodità digitali.
+
+16
+00:01:44,040 --> 00:01:50,920
+Trucco numero 1. Utilizzare un browser più efficiente. Questo è un trucco che vale sia per il pc che per
+
+17
+00:01:50,960 --> 00:01:55,920
+lo smartphone e consiste semplicemente nell'installare un browser che sia prima di tutto
+
+18
+00:01:55,920 --> 00:02:01,640
+veloce nell'elaborare le pagine dei siti e che in secondo luogo blocchi tutte le pubblicità e gli
+
+19
+00:02:01,640 --> 00:02:08,080
+elementi superflui alla fruizione del sito, come ad esempio i codici traccianti, i banner e qualsiasi
+
+20
+00:02:08,080 --> 00:02:14,320
+altro elemento non fondamentale. I concetti alla base di questo piccolo accorgimento sono molto
+
+21
+00:02:14,320 --> 00:02:19,280
+semplici e basta rifletterci un attimo per capirne i vantaggi. Innanzitutto si deve tener presente
+
+22
+00:02:19,640 --> 00:02:25,520
+che il browser, per costruire e mostrare la pagina di un sito all'utente, utilizza la potenza di
+
+23
+00:02:25,520 --> 00:02:30,760
+calcolo del processore o della scheda grafica se si parla di elementi in 3d. Questo vuol dire
+
+24
+00:02:30,760 --> 00:02:36,600
+principalmente due cose. La prima è che meno oggetti ci saranno da mostrare, minori saranno
+
+25
+00:02:36,600 --> 00:02:42,520
+i cicli di clock impiegati per comporre l'output e cioè, semplificando tantissimo, minore sarà il
+
+26
+00:02:42,520 --> 00:02:48,680
+lavoro svolto dal processore. La seconda è che se il codice con cui è scritto il browser è un codice
+
+27
+00:02:48,880 --> 00:02:55,840
+efficiente, allora esso contribuirà a ridurre lo sforzo computazionale richiesto per le operazioni
+
+28
+00:02:55,840 --> 00:03:01,240
+necessarie alla navigazione. E siccome un processore consuma tanta più energia quanto
+
+29
+00:03:01,240 --> 00:03:06,680
+più lavoro è chiamato a svolgere, questa semplificazione e riduzione delle richieste
+
+30
+00:03:06,680 --> 00:03:12,720
+da parte del browser comporterà automaticamente un risparmio energetico. In pratica, grazie a
+
+31
+00:03:12,720 --> 00:03:18,280
+questo piccolo trucco, le pagine si caricheranno più rapidamente, le batterie si scaricheranno
+
+32
+00:03:18,440 --> 00:03:24,400
+più lentamente e i consumi di energia elettrica saranno minori, oltre al fatto che avremo anche
+
+33
+00:03:24,400 --> 00:03:29,480
+aumentato la protezione della nostra privacy online. Ma di questo parleremo in un altro
+
+34
+00:03:29,480 --> 00:03:35,840
+episodio. Un ottimo browser da utilizzare in tal senso è Brave. Brave è essenzialmente una versione
+
+35
+00:03:35,840 --> 00:03:42,360
+di Chrome, epurata di tutta una serie di funzioni superflue ed equipaggiato con sistemi per bloccare
+
+36
+00:03:42,360 --> 00:03:47,200
+i banner pubblicitari, gli elementi traccianti e i componenti esterni al sito che state visitando.
+
+37
+00:03:47,640 --> 00:03:54,040
+Su pc si può facilmente scaricare ed installare dal sito brave.org, di cui trovate anche il link
+
+38
+00:03:54,040 --> 00:03:59,680
+in descrizione. E' intuitivo ed efficiente da utilizzare almeno quanto Chrome, e vi si possono
+
+39
+00:03:59,680 --> 00:04:04,240
+installare anche le stesse estensioni. Io vi consiglio di provarlo e vi assicuro che non
+
+40
+00:04:04,240 --> 00:04:06,880
+ve ne pentirete e non ne potrete fare più a meno.
+
+41
+00:04:06,880 --> 00:04:17,480
+Trucco numero 2. Piantare alberi mentre si cerca sul web. Avete mai pensato di
+
+42
+00:04:17,480 --> 00:04:24,160
+piantare alberi per sostenere l'ambiente? Ecosia, scritto e-co-si-a, è un motore di
+
+43
+00:04:24,160 --> 00:04:29,640
+ricerca molto simile a Google, ma con un paio di differenze sostanziali. La prima è che a
+
+44
+00:04:29,640 --> 00:04:34,800
+differenza del colosso di Mountain View, gli annunci pubblicitari mostrati sono legati alla
+
+45
+00:04:34,800 --> 00:04:40,560
+ricerca effettuata e non ai dati dell'utente che è collegato. Cosa questa che va tutta a
+
+46
+00:04:40,560 --> 00:04:45,280
+vantaggio della nostra privacy, anche se come dicevo prima non è l'argomento di oggi. La
+
+47
+00:04:45,280 --> 00:04:51,000
+seconda invece riguarda il fatto che Ecosia si impegna ad investire il ricavato delle proprie
+
+48
+00:04:51,000 --> 00:04:57,000
+attività per migliorare l'ambiente piantando alberi. Esatto, avete capito bene. Oltre ad
+
+49
+00:04:57,000 --> 00:05:03,080
+alimentare i propri server con energie 100% rinnovabili, la fondazione che gestisce questo
+
+50
+00:05:03,120 --> 00:05:08,960
+motore di ricerca impiega i propri introiti non per pagare dividendi, ma per piantare alberi.
+
+51
+00:05:08,960 --> 00:05:16,400
+Questo rende Ecosia un motore di ricerca carbon negative, che vuol dire che utilizzarlo non
+
+52
+00:05:16,400 --> 00:05:22,520
+solo corrisponde a non emettere CO2, così come accade per Google, ma addirittura significa
+
+53
+00:05:22,520 --> 00:05:29,120
+rimuovere CO2 dall'atmosfera. Secondo il loro sito, infatti, ad oggi ad ogni ricerca effettuata
+
+54
+00:05:29,120 --> 00:05:35,640
+si rimuove in media 1 kg di CO2 dall'atmosfera. Al tempo stesso, utilizzandolo assiduamente,
+
+55
+00:05:35,640 --> 00:05:40,400
+vedremo incrementarsi un piccolo contatore in alto a destra, che terrà memoria del numero
+
+56
+00:05:40,400 --> 00:05:46,320
+di ricerche che abbiamo effettuato. Secondo la stima attuale, ogni 45 ricerche avremmo
+
+57
+00:05:46,320 --> 00:05:52,440
+contribuito a piantare un albero. Adottare quindi Ecosia come motore di ricerca può essere un buon
+
+58
+00:05:52,440 --> 00:05:58,040
+modo per aiutare l'ambiente senza dover spendere soldi di tasca propria e senza stravolgere le
+
+59
+00:05:58,040 --> 00:06:04,040
+proprie abitudini. Per un utilizzo sporadico basterà collegarsi al sito Ecosia.org, trovate
+
+60
+00:06:04,040 --> 00:06:09,320
+sempre il link in descrizione, e utilizzare il campo di ricerca. Mentre per adottarlo in modo
+
+61
+00:06:09,320 --> 00:06:15,680
+più assiduo, su PC potremo installare un'estensione specifica per il nostro browser, che ci viene
+
+62
+00:06:15,680 --> 00:06:22,920
+direttamente proposta sempre sul sito Ecosia.org, e per smartphone troveremo l'app Ecosia negli
+
+63
+00:06:22,920 --> 00:06:29,160
+appositi store ufficiali Apple e Android. Sul sito potremo inoltre trovare molte informazioni
+
+64
+00:06:29,160 --> 00:06:34,080
+se ci interessano maggiori dettagli sugli investimenti e le tecnologie adottate. Il
+
+65
+00:06:34,080 --> 00:06:40,520
+blocco ufficiale, infatti, riporta video e articoli sull'argomento, ed ogni mese viene
+
+66
+00:06:40,520 --> 00:06:43,000
+pubblicato un rapporto finanziario completo.
+
+67
+00:06:43,160 --> 00:06:46,440
+TRUCCO N.º3 STAMPARE SOLO QUELLO CHE CI SERVE
+
+68
+00:06:46,440 --> 00:06:53,680
+In teoria stampare dovrebbe ormai essere un'attività obsoleta. I documenti che leggiamo e scriviamo,
+
+69
+00:06:53,680 --> 00:06:59,760
+gli articoli, le news e i testi in generale andrebbero conservati e consultati in formato
+
+70
+00:06:59,760 --> 00:07:06,280
+digitale. Tuttavia, per molti risulta faticoso leggere a schermo, sia perché è più difficile
+
+71
+00:07:07,080 --> 00:07:11,800
+mantenere la concentrazione, sia perché la retroilluminazione dei monitor tende a stancare
+
+72
+00:07:11,800 --> 00:07:17,080
+maggiormente la vista e al contempo un ebook o un tablet non sono sempre disponibili o
+
+73
+00:07:17,080 --> 00:07:22,440
+possono non rappresentare un valido sostituto. Io stesso, quando ho bisogno di leggere testi
+
+74
+00:07:22,440 --> 00:07:28,360
+di una certa lunghezza o magari so di dover prendere appunti, preferisco stamparli e consultarli
+
+75
+00:07:28,360 --> 00:07:33,960
+in modo... in forma cartacea. Esiste però un'altra possibilità, che è la possibilità
+
+76
+00:07:33,960 --> 00:07:38,360
+di ridurre gli sprechi e al tempo stesso di non rinunciare alla comodità della lettura
+
+77
+00:07:38,360 --> 00:07:45,240
+su carta. Molto spesso, infatti, quando stampiamo testi presi da blog, quotidiane online o siti
+
+78
+00:07:45,240 --> 00:07:51,400
+in generale, capita che in realtà noi non siamo interessati all'intero testo. A volte
+
+79
+00:07:51,400 --> 00:07:56,840
+magari ci interessa solo un brano in particolare. Altre volte, soprattutto blog e news, sono
+
+80
+00:07:56,840 --> 00:08:03,080
+pieni di immagini e banner pubblicati. Inoltre, in molti casi, i testi che stiamo stampando
+
+81
+00:08:03,080 --> 00:08:07,960
+sono immagini e banner pubblicitari, collegamenti ad articoli correlati e tanti altri elementi
+
+82
+00:08:07,960 --> 00:08:13,880
+che alla fine sono inutili ai fini della lettura. E dunque, quando stampiamo questi articoli,
+
+83
+00:08:13,880 --> 00:08:18,520
+molto spesso ci ritroviamo con un mucchio di pagine dove il nostro testo è sparso qua
+
+84
+00:08:18,520 --> 00:08:23,640
+e là, magari tra una pubblicità e una ghiffa animata. Il risultato è che avremo sprecato
+
+85
+00:08:23,640 --> 00:08:28,280
+un sacco di carta e di inchiostro più del dovuto, perché ricordiamoci che anche le
+
+86
+00:08:28,280 --> 00:08:33,480
+immagini, soprattutto quelle a colori, consumano molto più inchiostro di un testo della stessa
+
+87
+00:08:33,480 --> 00:08:39,480
+dimensione. E questo farà male sia all'ambiente che al nostro portafoglio. Fortunatamente
+
+88
+00:08:39,480 --> 00:08:44,800
+però, esistono alcuni siti che possono venirci in aiuto. Fra i tanti, vi lascio in descrizione
+
+89
+00:08:44,800 --> 00:08:50,360
+il link a quello che io uso abitualmente e che si chiama Print Friendly. Print Friendly
+
+90
+00:08:50,360 --> 00:08:56,040
+è appunto un sito nel quale possiamo inserire l'indirizzo web di un articolo, di una news
+
+91
+00:08:56,040 --> 00:09:01,240
+o di una pagina wikipedia o di quello che ci pare, basta che sia pubblicamente accessibile,
+
+92
+00:09:01,240 --> 00:09:07,680
+e lui ce ne restituirà un'anteprima e purata di tutti gli elementi inutili. Da questa anteprima
+
+93
+00:09:07,680 --> 00:09:12,600
+sarà poi possibile eliminare manualmente i restanti elementi che non sono di nostro
+
+94
+00:09:12,600 --> 00:09:18,240
+interesse. Ogni blocchetto di testo, immagine o elemento grafico, infatti, avrà a fianco
+
+95
+00:09:18,240 --> 00:09:24,200
+un pulsantino che se cliccato lo farà sparire. Dopodiché, una volta sistemato il testo come
+
+96
+00:09:24,200 --> 00:09:29,200
+preferiamo, Print Friendly ci permetterà o di stamparlo direttamente o di scaricarne
+
+97
+00:09:29,200 --> 00:09:34,120
+una versione in pdf. Per rendere il tutto ancora più semplice, collegandoci al sito
+
+98
+00:09:34,120 --> 00:09:39,960
+di printfriendly.org, sarà anche possibile installare un'estensione per il nostro browser
+
+99
+00:09:39,960 --> 00:09:45,000
+preferito che ci permetterà di trasferire con un solo clic la pagina che stiamo visitando
+
+100
+00:09:45,000 --> 00:09:47,000
+direttamente a Print Friendly.
+
+101
+00:09:52,000 --> 00:09:56,960
+Quelli che abbiamo visto in questo episodio sono solo alcuni dei tantissimi espedienti
+
+102
+00:09:56,960 --> 00:10:01,480
+che possiamo mettere in atto per diminuire il nostro impatto ambientale quando utilizziamo
+
+103
+00:10:01,480 --> 00:10:07,640
+strumenti informatici. Ovviamente ce ne sono tanti altri e maggiore è l'impegno che vogliamo
+
+104
+00:10:07,640 --> 00:10:13,720
+metterci e maggiore sarà ovviamente il risultato. Potremmo ad esempio impostare i vari dispositivi
+
+105
+00:10:13,720 --> 00:10:19,080
+in modalità risparmio energetico, potremmo spegnere o almeno ibernare o sospendere il
+
+106
+00:10:19,080 --> 00:10:24,840
+pc quando non lo usiamo, o ancora potremmo spegnere lo smartphone durante la notte in
+
+107
+00:10:24,840 --> 00:10:30,000
+modo da risparmiare energia elettrica e aumentare la vita della batteria. Anche mantenere una
+
+108
+00:10:30,000 --> 00:10:34,600
+corretta luminosità degli schermi quando la luce ambientale diminuisce può essere
+
+109
+00:10:34,600 --> 00:10:40,320
+d'aiuto e cosa non banale riduce anche lo sforzo per gli occhi. E poi avendone la possibilità
+
+110
+00:10:40,320 --> 00:10:45,200
+potremmo acquistare hardware più moderno che in generale consuma meno e così via potremmo
+
+111
+00:10:45,200 --> 00:10:49,520
+sempre di più aumentare il tiro. Ma voi cosa ne pensate? Avete mai preso in considerazione
+
+112
+00:10:49,520 --> 00:10:55,680
+qualcuna di queste strategie? Ne conoscete altre che io non ho citato? O magari pensate
+
+113
+00:10:55,680 --> 00:11:00,920
+che non valga la pena di impegnarsi in questo senso? Voi fatemi sapere la vostra nei commenti
+
+114
+00:11:00,920 --> 00:11:06,240
+o nel gruppo telegram di cui trovate il link in descrizione. Io per oggi vi saluto, vi ringrazio
+
+115
+00:11:06,240 --> 00:11:11,120
+per aver ascoltato fin qui e vi do appuntamento al prossimo episodio di Pensieri in Codice.
+

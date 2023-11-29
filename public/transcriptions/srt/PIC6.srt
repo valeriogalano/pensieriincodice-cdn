@@ -1,0 +1,340 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:20,000 --> 00:00:25,720
+Salve a tutti e ben ritrovati per questo nuovo episodio di Pensieri in codice,
+
+3
+00:00:25,720 --> 00:00:30,640
+il podcast in cui parliamo di idee prese dal mondo del software, di internet e della
+
+4
+00:00:30,640 --> 00:00:36,760
+programmazione. Come forse già saprete, in questo mese, marzo 2019, ricorre il trentesimo
+
+5
+00:00:36,760 --> 00:00:42,200
+anniversario della nascita di uno strumento che, negli ultimi anni, è entrato prepotentemente a
+
+6
+00:00:42,200 --> 00:00:48,640
+far parte delle nostre vite, e cioè il web. In occasione di questa ricorrenza vorrei parlare
+
+7
+00:00:48,640 --> 00:00:54,080
+un po' con voi di quelli che sono gli strati che lo compongono e provare quindi a inquadrare il
+
+8
+00:00:54,080 --> 00:01:01,840
+più precisamente possibile i concetti di web, deep web e dark web. Iniziamo quindi subito col
+
+9
+00:01:01,840 --> 00:01:09,040
+chiarire un punto, e cioè nonostante molto spesso si parli in modo indifferente di internet e web,
+
+10
+00:01:09,040 --> 00:01:17,120
+essi in realtà non sono la stessa cosa. Internet, infatti, è una rete mondiale formata da miliardi
+
+11
+00:01:17,120 --> 00:01:23,440
+di nodi interconnessi fra loro. Questi nodi possono essere server, computer, smartphone,
+
+12
+00:01:23,440 --> 00:01:28,960
+dispositivi indossabili, dispositivi IoT e, in generale, qualsiasi apparecchio che possieda un
+
+13
+00:01:28,960 --> 00:01:37,360
+indirizzo IP. Le origini di internet vengono fatte risalire ufficialmente al 1982, anno in cui venne
+
+14
+00:01:37,360 --> 00:01:44,560
+per la prima volta utilizzata la parola internet, e fu definito il protocollo TCPIP, che è il
+
+15
+00:01:44,560 --> 00:01:50,040
+fondamento sul quale si basa la comunicazione tra i nodi della rete. Fino ad allora esistevano
+
+16
+00:01:50,040 --> 00:01:56,280
+già delle reti di computer interconnessi fra loro, ma erano localizzate in specifiche aree,
+
+17
+00:01:56,280 --> 00:02:02,640
+come gli Stati Uniti o la Francia, ed erano di proprietà nazionale. Fu proprio da una di queste
+
+18
+00:02:02,640 --> 00:02:07,840
+reti, conosciuta come ARPANET, e sviluppata dal Ministero della Difesa americano a partire dagli
+
+19
+00:02:07,840 --> 00:02:14,000
+anni 60, che prese vita quella che noi oggi conosciamo come internet. Per quanto riguarda
+
+20
+00:02:14,000 --> 00:02:22,680
+il web invece, esso nacque nel 1989 da un'idea di Tim Barners-Lee, che all'epoca lavorava come
+
+21
+00:02:22,680 --> 00:02:29,680
+stagista al CERN di Ginevra. Lee, anche basandosi su varie idee che già in quegli anni iniziavano
+
+22
+00:02:29,680 --> 00:02:36,040
+a circolare, avviò l'elaborazione di un software che permettesse di condividere documentazione tra
+
+23
+00:02:36,040 --> 00:02:42,000
+più computer in modo indipendente rispetto alla piattaforma utilizzata. Per ottenere ciò diede
+
+24
+00:02:42,000 --> 00:02:49,720
+il via alla definizione di quelli che oggi noi conosciamo come linguaggio HTML e protocollo HTTP.
+
+25
+00:02:49,720 --> 00:02:54,960
+Il primo serve ad implementare a livello informatico il concetto di ipertesto,
+
+26
+00:02:54,960 --> 00:03:00,480
+formulato da Ted Nelson negli anni 60 e di cui parleremo in modo più approfondito in un prossimo
+
+27
+00:03:00,480 --> 00:03:06,600
+episodio. Il secondo invece aveva il compito di rendere possibile la trasmissione degli ipertesti
+
+28
+00:03:06,600 --> 00:03:12,360
+tra computer interconnessi fra loro, in pratica quindi sulla rete internet. Dopo circa due anni,
+
+29
+00:03:12,360 --> 00:03:18,720
+nel 1991, ultimato lo sviluppo dei software necessari, Lee fu in grado di pubblicare il
+
+30
+00:03:18,720 --> 00:03:25,720
+primo sito web della storia visibile solo ai dipendenti del CERN e nel quale veniva definito
+
+31
+00:03:25,720 --> 00:03:34,520
+il progetto WWW, tant'è vero che il nome presteso del web è World Wide Web. Se siete curiosi di
+
+32
+00:03:34,520 --> 00:03:40,640
+vedere come fosse fatto il primo sito web della storia, in descrizione trovate un link al quale
+
+33
+00:03:40,640 --> 00:03:46,760
+è possibile visitare una riproduzione del sito web pubblicato da Lee nel 91. Da allora, come tutti
+
+34
+00:03:46,760 --> 00:03:52,680
+sappiamo, il web ha fatto enormi passi avanti con l'introduzione di moltissime nuove tecnologie
+
+35
+00:03:52,680 --> 00:03:58,600
+che permettono di sviluppare funzionalità sempre più avanzate. La diffusione è diventata tale che
+
+36
+00:03:58,600 --> 00:04:04,400
+ormai moltissime delle attività umane passano per il web e la rete internet. Con il passare
+
+37
+00:04:04,400 --> 00:04:10,760
+degli anni il web si è evoluto e ha sviluppato una stratificazione in tre livelli ben distinti.
+
+38
+00:04:10,760 --> 00:04:16,880
+A mio parere, conoscere questi strati, questi livelli e sapere come distinguerli è importante
+
+39
+00:04:16,880 --> 00:04:24,320
+anche solo per poter comprendere una notizia o partecipare ad un discorso al riguardo. Il primo
+
+40
+00:04:24,320 --> 00:04:31,400
+di questi livelli è conosciuto con il nome di Surface Web e si compone di tutti quei siti,
+
+41
+00:04:31,400 --> 00:04:38,080
+pagine, documenti, immagini e in generale le risorse che risultano direttamente accessibili
+
+42
+00:04:38,080 --> 00:04:44,840
+senza alcuna barriera o necessità di autorizzazione. Molto spesso esso viene anche definito come tutta
+
+43
+00:04:44,840 --> 00:04:52,520
+quella parte di web che è indicizzata dai motori di ricerca. Il secondo strato invece prende il nome
+
+44
+00:04:52,520 --> 00:04:57,920
+di Deep Web, ma contrariamente a quello che potrebbe sembrare dal nome e da quelle che
+
+45
+00:04:57,960 --> 00:05:03,600
+sono le idee comunemente diffuse, esso è semplicemente la parte di web che non è
+
+46
+00:05:03,600 --> 00:05:09,600
+direttamente accessibile se non si possiedono specifiche informazioni o autorizzazioni. Si
+
+47
+00:05:09,600 --> 00:05:16,280
+parla dunque di tutto ciò che, pur essendo sul web, non risulta indicizzato dai motori di ricerca.
+
+48
+00:05:16,280 --> 00:05:23,840
+In pratica è la parte più estesa del web, perché è composta da tutti quei contenuti protetti da un
+
+49
+00:05:23,840 --> 00:05:28,760
+qualche sistema di autenticazione o sottoposti a un qualche tipo di restrizione dell'accesso,
+
+50
+00:05:28,760 --> 00:05:37,320
+quindi non solo aree private, forum o web software, ma anche chat, email, post privati
+
+51
+00:05:37,320 --> 00:05:44,080
+sui social network ecc. Persino i siti troppo nuovi o quelli per i quali non esistono link
+
+52
+00:05:44,080 --> 00:05:50,080
+che vi facciano riferimento, tramite i quali uno spider di un motore di ricerca possa raggiungerli,
+
+53
+00:05:50,080 --> 00:05:56,600
+vanno catalogati nel deep web perché essi non possono o non sono ancora stati indicizzati.
+
+54
+00:05:56,600 --> 00:06:04,360
+Il terzo ed ultimo livello del web, quello più basso, è rappresentato dal dark web. Questa è
+
+55
+00:06:04,360 --> 00:06:12,040
+sicuramente la parte di web più difficile a cui accedere. Concettualmente è un sottoinsieme del
+
+56
+00:06:12,040 --> 00:06:18,480
+deep web perché è composta da una serie di risorse private, tuttavia per accedervi non
+
+57
+00:06:18,480 --> 00:06:23,840
+è sufficiente essere in possesso di informazioni, siano esse link privati o credenziali, ma è
+
+58
+00:06:23,840 --> 00:06:29,600
+necessario munirsi di speciali software e tecnologie apposite. Per accedere al dark web
+
+59
+00:06:29,600 --> 00:06:37,040
+infatti è necessario collegarsi a reti conosciute come darknet e per fare ciò occorre utilizzare
+
+60
+00:06:37,040 --> 00:06:43,680
+speciali software come browser appositamente modificati, ad esempio il browser tor o
+
+61
+00:06:43,720 --> 00:06:51,640
+particolari servizi vpn. Catalogare il contenuto del dark web è impresa impossibile, tuttavia dal
+
+62
+00:06:51,640 --> 00:06:57,960
+momento che ci si trova in un contesto dove non è possibile risalire ai gestori dei server o a chi
+
+63
+00:06:57,960 --> 00:07:05,320
+pubblica i siti è ragionevole supporre che siano presenti tutta una serie di contenuti digitali
+
+64
+00:07:05,320 --> 00:07:12,560
+che legalmente non dovrebbero essere condivisi. Sicuramente sarà possibile accedere a immagini
+
+65
+00:07:12,640 --> 00:07:19,760
+di ogni genere e poi a dati, password e informazioni sensibili sottratte grazie a
+
+66
+00:07:19,760 --> 00:07:27,880
+intrusioni nei grandi database di servizi come facebook, linkedin ecc. A questo proposito vi
+
+67
+00:07:27,880 --> 00:07:34,400
+lascio in descrizione un link che elenca un po' di queste frazioni giusto per farvi un'idea di
+
+68
+00:07:34,400 --> 00:07:40,160
+quante siano state confermate e immaginare quante ce ne potrebbero ancora essere che non sono state
+
+69
+00:07:41,040 --> 00:07:47,520
+ufficializzate. Su questo stesso sito potete anche verificare se le vostre credenziali siano mai state
+
+70
+00:07:47,520 --> 00:07:52,720
+sottratte in occasione di una di queste frazioni, ma di questo argomento parleremo in una prossima
+
+71
+00:07:52,720 --> 00:07:58,880
+puntata. Al di là di questi tipi di utilizzi, che poi sono anche i più diffusi nell'immaginario
+
+72
+00:07:58,880 --> 00:08:04,440
+comune, non va però sottovalutato il fatto che il dark web ha anche un'altra funzione molto
+
+73
+00:08:04,440 --> 00:08:10,680
+importante di protezione degli utenti e delle libertà individuali. Rendendo infatti sicuro lo
+
+74
+00:08:10,680 --> 00:08:17,360
+scambio di informazioni e non rintracciabili le fonti, esso protegge la libertà di espressione
+
+75
+00:08:17,360 --> 00:08:24,000
+di tante persone che per loro sfortuna si trovano a dover vivere in regimi che operano controlli di
+
+76
+00:08:24,000 --> 00:08:30,400
+massa. Per questi stessi motivi esso salvaguarda anche la sicurezza dei dissidenti politici e
+
+77
+00:08:30,440 --> 00:08:35,840
+permette la circolazione di quelle notizie che normalmente sarebbero sottoposte a censura.
+
+78
+00:08:35,840 --> 00:08:47,600
+Bene, fatta questa doverosa precisazione io vi ringrazio per avermi ascoltato fin qui e spero
+
+79
+00:08:47,600 --> 00:08:55,200
+che il concetto di deep web e dark web sia un po' più chiaro di prima. Vi rubo solo un ultimo
+
+80
+00:08:55,200 --> 00:09:00,440
+minuto per ringraziarvi di tutte le interazioni e tutti i suggerimenti che ad ogni puntata mi
+
+81
+00:09:00,440 --> 00:09:06,640
+state inviando e che io sto cercando di mettere in pratica. Inoltre vi annuncio la creazione
+
+82
+00:09:06,640 --> 00:09:12,680
+di un gruppo telegram dedicato a pensieri in codice nel quale potremmo confrontarci e scambiare
+
+83
+00:09:12,680 --> 00:09:18,680
+opinioni. Se vi va trovate il link in descrizione e potete liberamente unirvi per discutere degli
+
+84
+00:09:18,680 --> 00:09:24,880
+argomenti del podcast. Detto questo vi saluto e vi auguro una buona giornata e vi do appuntamento
+
+85
+00:09:24,880 --> 00:09:26,000
+alla prossima settimana.
+
