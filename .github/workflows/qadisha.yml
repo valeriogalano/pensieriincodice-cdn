@@ -1,9 +1,12 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Qadisha
+name: Deploy files to Qadisha
 
 on:
   # Runs on pushes targeting the default branch
   push:
+    branches: ["master"]
+
+  # Runs on pull requests to the default branch
+  pull_request:
     branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
