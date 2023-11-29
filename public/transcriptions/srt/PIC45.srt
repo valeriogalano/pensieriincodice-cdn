@@ -1,0 +1,228 @@
+1
+00:00:00,000 --> 00:00:09,840
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:19,840 --> 00:00:25,960
+Salve a tutti e ben ritrovati su Pensieri in codice. Quello che state ascoltando è una
+
+3
+00:00:25,960 --> 00:00:32,520
+sorta di episodio integrativo per la puntata della settimana scorsa, la numero 44 sul
+
+4
+00:00:32,520 --> 00:00:40,360
+protocollo HTTPS. Si tratta di una seconda parte non prevista che mi è sembrata necessaria a
+
+5
+00:00:40,360 --> 00:00:45,920
+seguito di una discussione che si è tenuta sul gruppo Telegram di Pensieri in codice. In questa
+
+6
+00:00:45,920 --> 00:00:51,760
+breve discussione uno degli utenti chiedeva alcune delucidazioni su un paio di concetti
+
+7
+00:00:51,760 --> 00:00:57,480
+sui quali forse non mi sono soffermato abbastanza. Prontamente un altro utente ha
+
+8
+00:00:57,480 --> 00:01:04,080
+affugato questi dubbi con un paio di esempi che mi sono sembrati molto interessanti. Dunque,
+
+9
+00:01:04,080 --> 00:01:11,520
+ho pensato di unirli a un altro paio di concetti e realizzare questo episodio. Quindi ringrazio
+
+10
+00:01:11,520 --> 00:01:17,520
+Pacca, questo è il nome dell'utente, per la pronta risposta e per gli esempi che sto per
+
+11
+00:01:17,640 --> 00:01:24,960
+rubargli. Consiglio a voi, nel caso non l'abbiate già fatto, di ascoltare prima l'episodio numero
+
+12
+00:01:24,960 --> 00:01:31,640
+44 che vi metto in descrizione, altrimenti è difficile che possiate seguire il discorso di
+
+13
+00:01:31,640 --> 00:01:37,320
+questo episodio. Ultima cosa prima di iniziare, grazie a tutti quegli utenti che si sono iscritti
+
+14
+00:01:37,320 --> 00:01:41,920
+al canale YouTube di Pensieri in codice e iniziamo!
+
+15
+00:01:47,520 --> 00:02:10,160
+Il primo concetto su cui dunque vorrei ritornare è quello delle chiavi pubbliche e private. È vero
+
+16
+00:02:10,160 --> 00:02:17,240
+che vi ho parlato di come vengono utilizzate, perché sono necessarie ed è vero anche che vi
+
+17
+00:02:17,240 --> 00:02:22,760
+ho linkato un vecchio episodio nel quale parlavamo in modo approfondito di come vengono
+
+18
+00:02:22,760 --> 00:02:30,280
+generate. Tuttavia, forse non mi sono soffermato abbastanza sul fascino e sulla potenza di questo
+
+19
+00:02:30,280 --> 00:02:38,040
+tipo di algoritmo. Queste chiavi, infatti, possono avere un duplice utilizzo e, in effetti,
+
+20
+00:02:38,040 --> 00:02:44,680
+entrambi questi utilizzi sono parte integrante del protocollo HTTPS. Il primo utilizzo,
+
+21
+00:02:44,680 --> 00:02:50,160
+l'abbiamo detto anche nel scorso episodio, è quello di crittografare le informazioni,
+
+22
+00:02:50,160 --> 00:02:56,320
+ma crittografarle in un modo molto particolare. Nella crittografia asimmetrica, infatti, come
+
+23
+00:02:56,320 --> 00:03:02,320
+faceva anche notare Pacca nel gruppo Telegram, la chiave pubblica può essere considerata come
+
+24
+00:03:02,320 --> 00:03:09,200
+un vero e proprio lucchetto. Metaforicamente parlando, questo lucchetto esiste in infinite
+
+25
+00:03:09,200 --> 00:03:15,760
+copie e può essere distribuito a tutta una serie di attori. Questi attori possono utilizzare
+
+26
+00:03:15,760 --> 00:03:21,640
+questi lucchetti, che hanno ricevuto, sempre metaforicamente parlando, aperti, per chiudere
+
+27
+00:03:21,640 --> 00:03:28,200
+informazioni all'interno di metaforiche scatole. Poiché quelli che sono stati distribuiti sono solo
+
+28
+00:03:28,200 --> 00:03:34,240
+lucchetti, una volta che le informazioni saranno chiuse all'interno di una scatola, nessuno potrà
+
+29
+00:03:34,240 --> 00:03:40,960
+più aprire tale scatola e leggere o modificare tali informazioni. L'unico che avrà questa
+
+30
+00:03:40,960 --> 00:03:47,480
+possibilità sarà colui che è in possesso della chiave che apre tutti questi lucchetti. E,
+
+31
+00:03:47,480 --> 00:03:53,920
+sempre nella nostra metafora, questa chiave è, appunto, la chiave privata. Quando il nostro
+
+32
+00:03:53,920 --> 00:04:02,960
+browser comunica, dunque, con un sito web tramite il protocollo HTTPS, riceve da questo un lucchetto
+
+33
+00:04:03,040 --> 00:04:09,880
+da utilizzare per proteggere le informazioni da inviargli. Siccome il lucchetto ricevuto potrà
+
+34
+00:04:09,880 --> 00:04:16,800
+essere aperto solamente dal sito in questione, noi possiamo essere sicuri che le informazioni
+
+35
+00:04:16,800 --> 00:04:18,880
+spedite saranno protette.
+
+36
+00:04:32,960 --> 00:04:47,560
+Come dicevo però poco fa, questo non è l'unico utilizzo per le chiavi pubblica e privata. Difatti,
+
+37
+00:04:47,560 --> 00:04:54,080
+anche nello scorso episodio abbiamo parlato di certificati e di catena di fiducia. In effetti,
+
+38
+00:04:54,080 --> 00:05:00,360
+anche questo meccanismo funziona grazie alle chiavi ed, in particolare, utilizzandole al
+
+39
+00:05:00,480 --> 00:05:09,520
+contrario. Se, infatti, si utilizza una chiave privata per crittografare un testo o un'informazione,
+
+40
+00:05:09,520 --> 00:05:17,240
+questa potrà essere decrittata grazie all'utilizzo delle chiavi pubbliche. In questo modo è possibile,
+
+41
+00:05:17,240 --> 00:05:22,840
+per gli attori che sono in possesso della chiave pubblica, essere sicuri che un determinato testo
+
+42
+00:05:22,840 --> 00:05:29,360
+sia stato crittografato solo dal soggetto in possesso della chiave privata. Questa operazione
+
+43
+00:05:29,680 --> 00:05:37,360
+di crittografare un testo con la chiave privata è detta proprio firma e si tratta di quella stessa
+
+44
+00:05:37,360 --> 00:05:45,720
+firma grazie alla quale ogni browser è in grado di risalire la catena di verità e verificare di
+
+45
+00:05:45,720 --> 00:05:54,000
+firma in firma che un certificato sia effettivamente autentico. Infine, questo ci porta all'ultimo
+
+46
+00:05:54,000 --> 00:05:59,440
+concetto di cui forse non abbiamo parlato abbastanza o che in realtà abbiamo solo accennato,
+
+47
+00:05:59,440 --> 00:06:06,560
+e cioè il concetto di certificato self-signed. Questo tipo di certificati viene utilizzato
+
+48
+00:06:06,560 --> 00:06:13,960
+soprattutto per lo sviluppo. È, infatti, possibile per chiunque generare un certificato e, a livello
+
+49
+00:06:13,960 --> 00:06:21,600
+tecnico, esso funziona esattamente allo stesso modo di un certificato rilasciato da un certification
+
+50
+00:06:21,600 --> 00:06:29,400
+authority. Tuttavia è gratis e quindi è più adatto allo sviluppo, ai test, eccetera. L'unica
+
+51
+00:06:29,400 --> 00:06:36,040
+cosa che lo distingue da un certificato rilasciato da una certification authority è proprio il fatto
+
+52
+00:06:36,040 --> 00:06:45,160
+di essere stato generato in maniera manuale e non da una chiave privata root o da una sua discendente.
+
+53
+00:06:51,600 --> 00:07:11,760
+Bene, io spero che questo piccolo episodio fuori programma vi abbia fatto piacere. In ogni caso,
+
+54
+00:07:11,760 --> 00:07:17,360
+vi invito sempre a unirvi al gruppo Telegram dove, come potete vedere, si svolgono belle
+
+55
+00:07:17,360 --> 00:07:25,000
+conversazioni e ci sono belle persone, a parte un paio che odiano il PHP. Ma li sopportiamo,
+
+56
+00:07:25,000 --> 00:07:31,240
+che ci volete fare? Detto questo, vi ringrazio di aver ascoltato fin qui, vi do appuntamento al
+
+57
+00:07:31,240 --> 00:07:38,080
+prossimo episodio e vi ricordo che un programmatore risolve i problemi, a volte anche usando il computer.
+

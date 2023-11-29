@@ -1,0 +1,744 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:10,000 --> 00:00:26,480
+Salve a tutti ragazzi e bentornati su Pensieri in codice. Al giorno d'oggi, in un mondo
+
+3
+00:00:26,480 --> 00:00:32,600
+in cui sempre più aspetti della vita si stanno spostando dalla sfera materiale a quella
+
+4
+00:00:32,600 --> 00:00:40,560
+digitale, la necessità di iscriversi a servizi online, siti web e anche di condividere informazioni
+
+5
+00:00:40,560 --> 00:00:46,720
+fra questi attori sta crescendo ad una velocità sempre maggiore, tanto che la si potrebbe
+
+6
+00:00:46,720 --> 00:00:53,360
+definire esponenziale. I social network aumentano, i servizi di streaming musicale o video on
+
+7
+00:00:53,360 --> 00:01:01,160
+demand aumentano, le piattaforme come G Suite o Office 365 aumentano, i siti di commerce aumentano
+
+8
+00:01:01,160 --> 00:01:08,760
+e molto spesso, vuoi per necessità, vuoi per moda, vuoi per semplice voglia di sperimentare e di
+
+9
+00:01:08,760 --> 00:01:17,160
+intrattenersi, noi siamo lì a rincorrere tanti di questi siti e servizi creando profili e
+
+10
+00:01:17,160 --> 00:01:23,400
+accumulando iscrizioni su iscrizioni. Il risvolto della medaglia però è che, insieme a tutti
+
+11
+00:01:23,400 --> 00:01:30,680
+questi nuovi account creati, arrivano anche altrettante nuove credenziali di accesso. In
+
+12
+00:01:30,680 --> 00:01:36,600
+linea di massima, infatti, ogni nuova iscrizione ad un servizio richiede la creazione di un nuovo
+
+13
+00:01:36,600 --> 00:01:42,440
+set, solitamente composto da un indirizzo email e una password o una username e una password,
+
+14
+00:01:43,040 --> 00:01:50,080
+che dovremo utilizzare per autenticarci e accedere proprio presso questo nuovo servizio. Oltre a ciò
+
+15
+00:01:50,080 --> 00:01:56,360
+c'è poi il problema delle informazioni, che solitamente sono più o meno sempre le stesse
+
+16
+00:01:56,360 --> 00:02:02,240
+e che siamo costretti a inserire e reinserire più volte ad ogni nuova iscrizione e ad ogni
+
+17
+00:02:02,240 --> 00:02:08,800
+utilizzo di un differente e nuovo servizio. Ora, c'è chi risolve questo tipo di problemi con
+
+18
+00:02:08,800 --> 00:02:14,200
+metodi caserecci, come ad esempio usare la stessa password per tutto, e l'abbiamo ormai
+
+19
+00:02:14,200 --> 00:02:20,080
+detto fino alla nausea che è una cosa assolutamente da non fare. C'è chi poi si sobbarca semplicemente
+
+20
+00:02:20,080 --> 00:02:26,640
+l'onere di gestire questa molteplicità in modo manuale, inserendo e reinserendo quello che serve,
+
+21
+00:02:26,640 --> 00:02:33,320
+dove serve e quando serve. E infine c'è chi utilizza delle funzioni specifiche messe proprio
+
+22
+00:02:33,320 --> 00:02:38,320
+a disposizione dalle varie piattaforme per ridurre enormemente il numero di informazioni
+
+23
+00:02:38,320 --> 00:02:44,280
+da inserire e di credenziali da ricordare. Avete presente quei pulsanti colorati che spesso si
+
+24
+00:02:44,280 --> 00:02:50,240
+trovano nelle pagine di autenticazione e che recitano frasi tipo iscriviti tramite facebook o
+
+25
+00:02:50,240 --> 00:02:57,200
+accedi tramite google o collega la tua casella di posta elettronica per scoprire quali dei tuoi
+
+26
+00:02:57,200 --> 00:03:03,160
+amici sono iscritti al nostro servizio e roba del genere? Beh, questi pulsanti sono pensati
+
+27
+00:03:03,200 --> 00:03:09,360
+proprio per far risparmiare tempo nell'attivazione di nuovi servizi e nello scambio di informazioni.
+
+28
+00:03:09,360 --> 00:03:15,600
+Ovviamente questi pulsanti non sono lì perché le piattaforme vogliono essere buone e gentili con
+
+29
+00:03:15,600 --> 00:03:22,320
+gli utenti. Il motivo è semplicemente che a loro fa comodo che l'utente possa iscriversi e inserire
+
+30
+00:03:22,320 --> 00:03:27,920
+le informazioni nel modo più semplice e veloce possibile, perché questo altrimenti costituirebbe
+
+31
+00:03:27,920 --> 00:03:34,080
+una barriera all'ingresso. Ma oggi non sono qui per analizzare il modo in cui le piattaforme usano
+
+32
+00:03:34,080 --> 00:03:40,520
+questi strumenti, quanto piuttosto perché trovo interessanti i meccanismi su cui essi si basano.
+
+33
+00:03:40,520 --> 00:03:47,800
+In questo episodio vedremo dunque come funzionano e su quali protocolli si basano quelle funzioni
+
+34
+00:03:47,800 --> 00:03:53,280
+che permettono agli utenti di condividere informazioni e persino l'autenticazione fra
+
+35
+00:03:53,280 --> 00:04:00,560
+più servizi. In pratica vedremo a grandi linee cosa sono e come funzionano gli standard OAUT e
+
+36
+00:04:00,560 --> 00:04:18,080
+OpenID Connect. Cominciamo dunque parlando della condivisione delle informazioni, che poi ci servirà
+
+37
+00:04:18,080 --> 00:04:23,480
+anche come punto di partenza per capire l'autenticazione. Il concetto di base, come
+
+38
+00:04:23,480 --> 00:04:30,560
+accennavamo nell'introduzione, è che in tanti dei siti web e dei servizi che utilizziamo sono spesso
+
+39
+00:04:30,560 --> 00:04:37,000
+conservate varie delle nostre informazioni e a volte noi possiamo aver bisogno di condividere
+
+40
+00:04:37,000 --> 00:04:44,680
+alcune di queste informazioni tra più servizi o più siti web. L'esempio più classico di questo
+
+41
+00:04:44,680 --> 00:04:51,720
+tipo di informazioni è la nostra rubrica telefonica o nello specifico la rubrica email. In linea
+
+42
+00:04:51,720 --> 00:04:57,120
+generale infatti se abbiamo uno smartphone è probabile che questa rubrica sia archiviata
+
+43
+00:04:57,120 --> 00:05:04,160
+sul cloud che sia di google o di apple a seconda che utilizziamo un android o un iphone. Se quindi
+
+44
+00:05:04,160 --> 00:05:09,880
+volessimo condividere questa nostra lista di indirizzi email e numeri di telefono con qualche
+
+45
+00:05:09,920 --> 00:05:16,040
+altro servizio, magari per scoprire quali dei nostri contatti sono già registrati al servizio
+
+46
+00:05:16,040 --> 00:05:22,120
+o quali possiamo invitare a iscriversi o a quanti possiamo richiedere l'amicizia o iniziare a
+
+47
+00:05:22,120 --> 00:05:29,760
+seguire, avremmo in realtà solo due alternative o eseguire la ricerca a mano cercando uno ad uno
+
+48
+00:05:29,760 --> 00:05:36,160
+tutti i contatti oppure permettere in qualche modo ai due sistemi di dialogare fra loro e
+
+49
+00:05:36,160 --> 00:05:43,040
+scambiarsi automaticamente le informazioni necessarie. Lo standard di sicurezza OAuth ha
+
+50
+00:05:43,040 --> 00:05:50,080
+proprio l'obiettivo di permettere ad un utente di autorizzare un sistema ad accedere alle proprie
+
+51
+00:05:50,080 --> 00:05:57,240
+informazioni contenute in un altro sistema. Si tratta di un tipo di protocolli molto complessi
+
+52
+00:05:57,240 --> 00:06:03,520
+e con varie estensioni e varie sfaccettature quindi per capire come funziona partiamo
+
+53
+00:06:03,520 --> 00:06:09,200
+direttamente da un esempio più o meno comune nel nostro quotidiano e proviamo a descrivere
+
+54
+00:06:09,200 --> 00:06:15,040
+qual è la comunicazione che avviene fra i vari attori in gioco. Immaginiamo quindi di voler
+
+55
+00:06:15,040 --> 00:06:21,720
+utilizzare una funzione di facebook chiamata trova i miei amici. Ora non sono sicuro che
+
+56
+00:06:21,720 --> 00:06:28,240
+questa funzione esista ancora perché non uso facebook da molto tempo però facciamo a capirci.
+
+57
+00:06:28,800 --> 00:06:35,800
+Una funzione di questo genere è implementata sul concetto di confrontare gli indirizzi mail
+
+58
+00:06:35,800 --> 00:06:43,680
+della nostra rubrica, nel nostro esempio poniamo quella di gmail, con quelli utilizzati dagli utenti
+
+59
+00:06:43,680 --> 00:06:50,800
+per registrarsi a facebook. Facendo ciò il social network potrebbe segnalarci le corrispondenze e
+
+60
+00:06:50,800 --> 00:06:56,240
+noi non dovremmo fare altro che richiedere l'amicizia agli utenti ai quali siamo interessati.
+
+61
+00:06:56,800 --> 00:07:03,880
+Badate bene per l'esempio ho usato i nomi dei servizi facebook e google ma giusto per fissare
+
+62
+00:07:03,880 --> 00:07:09,960
+le idee. Meccanismi di questo tipo se ne trovano a centinaia e se implementati correttamente
+
+63
+00:07:09,960 --> 00:07:16,280
+funzionano più o meno tutti allo stesso modo. Diciamo quindi che il concetto di base dell'operazione
+
+64
+00:07:16,280 --> 00:07:21,680
+che stiamo descrivendo è passare a facebook una lista di indirizzi presi dalla nostra casella
+
+65
+00:07:21,880 --> 00:07:28,960
+email. Ora ci sarebbero vari modi per fare questo potremmo ad esempio esportare la rubrica
+
+66
+00:07:28,960 --> 00:07:35,560
+dalla webmail e ricaricarla sul social ma ciò richiederebbe un certo sforzo e probabilmente
+
+67
+00:07:35,560 --> 00:07:41,000
+il tasso di rinuncia sarebbe alto e questo andrebbe a svantaggio sia dei siti che degli
+
+68
+00:07:41,000 --> 00:07:46,960
+utenti. Potremmo dare a facebook le credenziali della nostra casella gmail in modo che possa
+
+69
+00:07:46,960 --> 00:07:52,360
+collegarsi automaticamente e scaricare le informazioni ma voi vi fidereste mai a dare
+
+70
+00:07:52,360 --> 00:07:57,840
+le vostre credenziali di un sito a un altro sito soprattutto uno che custodisce informazioni
+
+71
+00:07:57,840 --> 00:08:03,960
+potenzialmente sensibili? Quello che invece accade nella realtà è che facebook utilizza
+
+72
+00:08:03,960 --> 00:08:11,880
+lo standard OAuth 2.0 per ottenere le informazioni di cui ha bisogno da gmail ma questo solo dopo
+
+73
+00:08:11,960 --> 00:08:17,680
+autorizzazione da parte dell'utente. In questo processo i vari attori in gioco assumono dei
+
+74
+00:08:17,680 --> 00:08:25,400
+nomi particolari. L'utente è definito proprietario dei dati, il server di facebook è definito client
+
+75
+00:08:25,400 --> 00:08:32,240
+e cerca di ottenere questi dati. Il server di gmail nel nostro esempio assume ben due ruoli
+
+76
+00:08:32,240 --> 00:08:38,400
+anche se nella realtà non è sempre così ed in particolare diventa authentication server perché
+
+77
+00:08:38,400 --> 00:08:45,160
+gestisce l'autorizzazione di accesso ai dati e anche il resource server perché conserva
+
+78
+00:08:45,160 --> 00:08:51,840
+materialmente questi dati. Quando clicchiamo sul pulsante trova i miei amici il processo
+
+79
+00:08:51,840 --> 00:08:57,480
+visibile a noi utenti è più o meno questo. Innanzitutto facebook ci chiede di scegliere
+
+80
+00:08:57,480 --> 00:09:04,080
+quale servizio custodisce i nostri dati e in questo esempio noi scegliamo gmail. Veniamo
+
+81
+00:09:04,080 --> 00:09:11,720
+quindi redirezionati verso una pagina di gmail che innanzitutto controlla se abbiamo una sessione
+
+82
+00:09:11,720 --> 00:09:18,400
+attiva e in caso contrario ci chiede username e password. Dopodiché ci mostra un moduletto in
+
+83
+00:09:18,400 --> 00:09:25,480
+cui ci avvisa che facebook sta cercando di accedere a certe particolari informazioni nel
+
+84
+00:09:25,480 --> 00:09:31,760
+nostro caso la rubrica e ci chiede se vogliamo accettare o rifiutare quest'operazione. Se
+
+85
+00:09:31,760 --> 00:09:38,240
+rifiutiamo ovviamente tutto si ferma ma se accettiamo veniamo redirezionati nuovamente
+
+86
+00:09:38,240 --> 00:09:45,840
+su facebook il quale inizia a travasare le nostre informazioni. Ora se si guarda solo alla
+
+87
+00:09:45,840 --> 00:09:52,040
+interfacce il processo non sembra particolarmente interessante ma se si analizzano anche le
+
+88
+00:09:52,040 --> 00:09:59,240
+comunicazioni che avvengono fra i server allora le cose cambiano. Ad esempio nel momento in cui
+
+89
+00:09:59,440 --> 00:10:07,400
+il server di facebook ci redireziona sul server di gmail in background passa anche tutta una serie
+
+90
+00:10:07,400 --> 00:10:13,600
+di informazioni che permettono il funzionamento del protocollo. In particolare fra tutti i dati
+
+91
+00:10:13,600 --> 00:10:20,640
+trasmessi i più interessanti secondo me sono il client id che permette al server di facebook di
+
+92
+00:10:20,640 --> 00:10:28,280
+identificarsi presso il server di gmail in modo da evitare che qualcun altro possa spacciarsi per
+
+93
+00:10:28,320 --> 00:10:34,960
+facebook e poi lo scope cioè l'ambito delle informazioni alle quali il server di facebook
+
+94
+00:10:34,960 --> 00:10:42,040
+vorrebbe accedere. Poi una volta che l'utente ha dato il proprio benestare per l'accesso
+
+95
+00:10:42,040 --> 00:10:50,120
+l'authorization server restituisce al client un codice di autorizzazione il quale lo dovrà
+
+96
+00:10:50,120 --> 00:10:57,480
+riutilizzare assieme alle proprie credenziali di accesso per ricontattare una seconda volta
+
+97
+00:10:57,480 --> 00:11:04,320
+l'authorization server e richiedere un token di accesso. Solo a questo punto il client potrà
+
+98
+00:11:04,320 --> 00:11:11,480
+utilizzare l'access token per effettuare un'ulteriore chiamata e richiedere le informazioni di cui ha
+
+99
+00:11:11,480 --> 00:11:19,600
+bisogno. In tutto questo giro il token di accesso avrà valore solamente per quell'utente e per
+
+100
+00:11:19,600 --> 00:11:25,960
+quelle informazioni autorizzate. In questo modo il facebook del nostro esempio non avrà accesso
+
+101
+00:11:25,960 --> 00:11:33,040
+ad altri dati. Ora mi rendo conto che comprendere questo processo descritto così a parole può essere
+
+102
+00:11:33,040 --> 00:11:40,400
+un po' complicato e quindi vi lascio in descrizione un articolo che descrive tutto in maniera grafica
+
+103
+00:11:40,400 --> 00:11:46,680
+molto molto chiara. Ma in effetti il processo è proprio complicato di per sé a livello tecnico.
+
+104
+00:11:46,680 --> 00:11:53,320
+Per farlo funzionare va gestita tutta una serie di algoritmi, di politiche, di sicurezza per fare
+
+105
+00:11:53,320 --> 00:11:58,920
+in modo che le chiavi di accesso siano univoche, non falsificabili eccetera e probabilmente
+
+106
+00:11:58,920 --> 00:12:05,240
+descriverle non sarebbe adatto ad un podcast. Ciò che però si può descrivere in modo piuttosto
+
+107
+00:12:05,240 --> 00:12:11,280
+chiaro sono i vantaggi dell'utilizzo di questo sistema. Sicuramente abbiamo già detto quanto
+
+108
+00:12:11,280 --> 00:12:17,720
+sia pratico e semplice da usare ma, e forse questo è un po' meno evidente a prima vista,
+
+109
+00:12:17,720 --> 00:12:24,600
+questo standard ci garantisce un interessantissimo livello di sicurezza per i nostri dati, per i
+
+110
+00:12:24,600 --> 00:12:29,400
+nostri accessi e per le nostre informazioni. Tanto per dirne una il fatto che durante il
+
+111
+00:12:29,400 --> 00:12:34,040
+processo ci venga mostrato l'ambito delle informazioni alle quali il client vuole
+
+112
+00:12:34,040 --> 00:12:40,800
+accedere già ci aiuta a fare in modo che questo non estragga più informazioni del necessario e in
+
+113
+00:12:40,800 --> 00:12:46,840
+generale ci permette di renderci conto di che cosa stiamo condividendo. Oltre a ciò se in un secondo
+
+114
+00:12:46,840 --> 00:12:53,240
+momento decidiamo che l'accesso a tali informazioni debba essere revocato, l'authorization server
+
+115
+00:12:53,240 --> 00:13:01,240
+solitamente tramite un'interfaccia ci permette di eliminare il token condiviso quindi bloccando il
+
+116
+00:13:01,240 --> 00:13:07,680
+client dall'effettuare qualsiasi accesso futuro e in questo modo l'estrazione di informazioni viene
+
+117
+00:13:07,680 --> 00:13:13,840
+bloccata senza bisogno né di accedere in alcun modo al client né di modificare le proprie
+
+118
+00:13:13,840 --> 00:13:19,840
+credenziali o altre operazioni che potrebbero risultare fastidiose. Insomma si tratta di uno
+
+119
+00:13:19,840 --> 00:13:25,680
+standard di sicurezza molto importante per il mondo di internet così come noi lo conosciamo
+
+120
+00:13:25,680 --> 00:13:32,800
+e se impiegato correttamente fa funzionare tanti siti e tante applicazioni senza che
+
+121
+00:13:32,800 --> 00:13:38,140
+quasi ce ne accorgiamo e soprattutto facendoci risparmiare tempo e fatica.
+
+122
+00:13:43,840 --> 00:13:55,520
+Un meccanismo come quello che abbiamo appena descritto getta le basi per moltissime applicazioni
+
+123
+00:13:55,520 --> 00:14:02,200
+software alcune anche molto complesse con scambi di dati che molto spesso esulano dai
+
+124
+00:14:02,200 --> 00:14:07,960
+contesti a cui siamo normalmente abituati come fruitori del web ma per restare in un ambito
+
+125
+00:14:07,960 --> 00:14:13,880
+il più possibile familiare noi acceneremo ad una di queste applicazioni che probabilmente
+
+126
+00:14:13,880 --> 00:14:20,280
+tutti abbiamo usato almeno una volta nella vita e che prende il nome di OpenID Connect.
+
+127
+00:14:20,280 --> 00:14:27,520
+OpenID Connect è uno strato software che funziona al di sopra dello standard OAUT di cui abbiamo
+
+128
+00:14:27,520 --> 00:14:35,960
+parlato prima. In informatica uno strato software è un certo programma o uno standard o un protocollo
+
+129
+00:14:35,960 --> 00:14:42,800
+che proprio come in una torta appoggia su di uno strato inferiore e sorregge uno strato superiore.
+
+130
+00:14:42,800 --> 00:14:49,320
+Per essere un po' più pragmatici uno strato software utilizza le funzioni dello strato al
+
+131
+00:14:49,320 --> 00:14:56,840
+di sotto per offrire altre funzioni più complesse allo strato sopra e nel nostro caso specifico
+
+132
+00:14:56,840 --> 00:15:04,400
+OpenID Connect utilizza le caratteristiche di OAUT per fornire ai vari servizi e ai siti web
+
+133
+00:15:04,640 --> 00:15:11,560
+un meccanismo per condividere l'autenticazione degli utenti. In pratica il server che nel
+
+134
+00:15:11,560 --> 00:15:19,160
+protocollo OAUT prendeva il nome di Authorization Server ora diventa l'Identity Provider e invece
+
+135
+00:15:19,160 --> 00:15:24,840
+di fornire l'autorizzazione ad accedere a determinate informazioni ha invece il compito
+
+136
+00:15:24,840 --> 00:15:31,200
+di certificare l'identità dell'utente che sta utilizzando il servizio. In gergo tecnico si dice
+
+137
+00:15:31,200 --> 00:15:38,000
+che il protocollo OpenID Connect permette un meccanismo di Single Sign-On cioè un'unica
+
+138
+00:15:38,000 --> 00:15:44,960
+autenticazione valida per più siti o più servizi. Ora so che può sembrare qualcosa di estremamente
+
+139
+00:15:44,960 --> 00:15:50,000
+complicato se raccontato così ma in pratica stiamo parlando di qualcosa che sicuramente
+
+140
+00:15:50,000 --> 00:15:56,920
+abbiamo incontrato tutti navigando sul web. Tra le varie cose infatti OpenID Connect è lo
+
+141
+00:15:56,920 --> 00:16:01,640
+standard che permette il funzionamento di tutti quei pulsantini accedi con Facebook,
+
+142
+00:16:01,640 --> 00:16:07,360
+accedi con Twitter che si trovano su tantissime pagine di login ai siti. Quando accediamo ad
+
+143
+00:16:07,360 --> 00:16:13,000
+Instagram tramite Facebook stiamo utilizzando OpenID Connect, quando accediamo a un qualsiasi
+
+144
+00:16:13,000 --> 00:16:19,440
+servizio tramite Twitter stiamo utilizzando OpenID Connect ma la cosa interessante è che
+
+145
+00:16:19,440 --> 00:16:25,040
+stiamo utilizzando questo protocollo anche quando non ce ne accorgiamo ad esempio quando ci spostiamo
+
+146
+00:16:25,160 --> 00:16:30,960
+tra i servizi di Google o di Apple. Questi fornitori infatti utilizzano OpenID Connect
+
+147
+00:16:30,960 --> 00:16:36,720
+per evitare ai propri utenti cioè noi di doversi autenticare ogni volta che accediamo ad uno dei
+
+148
+00:16:36,720 --> 00:16:42,480
+loro servizi. A pensarci un attimo infatti quando facciamo login su Gmail poi possiamo
+
+149
+00:16:42,480 --> 00:16:48,720
+anche accedere a Drive o a Meet o a tutti gli altri servizi e questi ci riconoscono automaticamente
+
+150
+00:16:49,200 --> 00:16:54,480
+nonostante siamo di fatto su applicazioni diverse su domini diversi e ciò è possibile
+
+151
+00:16:54,480 --> 00:17:01,160
+proprio perché questi condividono una single sign-on la quale funziona appunto per mezzo di
+
+152
+00:17:01,160 --> 00:17:09,440
+OpenID Connect. Tecnicamente parlando come tutte le cose software fatte bene OpenID Connect implementa
+
+153
+00:17:09,440 --> 00:17:16,520
+potenti funzionalità apportando piccole aggiunte allo strato inferiore nello specifico nel passaggio
+
+154
+00:17:16,520 --> 00:17:24,600
+in cui OAuth genera e trasmette l'access token al client ID OpenID Connect semplicemente, e si
+
+155
+00:17:24,600 --> 00:17:31,600
+fa per dire, aggiunge un ID token. Il flusso delle operazioni quindi per l'utente è quasi
+
+156
+00:17:31,600 --> 00:17:37,920
+identico a quello descritto prima e sta ai due server in comunicazione l'onere di scambiarsi
+
+157
+00:17:37,920 --> 00:17:44,480
+alcune informazioni in più le quali prendono appunto il nome di ID token. Alla fine si tratta
+
+158
+00:17:44,480 --> 00:17:50,480
+di una piccola stringa di dati formattati in formato JSON che contiene alcune informazioni
+
+159
+00:17:50,480 --> 00:17:58,000
+minime riguardanti l'utente ad esempio l'ID, lo username e alcune date di login e discadenza. Sono
+
+160
+00:17:58,000 --> 00:18:04,360
+pochissime informazioni ma ciò non importa perché una volta stabilita l'identità dell'utente il
+
+161
+00:18:04,360 --> 00:18:10,560
+client può recuperare tutto ciò di cui ha bisogno per svolgere le proprie funzioni semplicemente
+
+162
+00:18:10,560 --> 00:18:15,720
+utilizzando l'access token che ha ricevuto insieme all'ID token in fase di login.
+
+163
+00:18:25,720 --> 00:18:32,560
+Oggi abbiamo dunque visto come funzionano dei sistemi di autorizzazione e di autenticazione
+
+164
+00:18:32,560 --> 00:18:38,440
+centralizzati che probabilmente abbiamo tutti usato almeno una volta. Prima di concludere
+
+165
+00:18:38,440 --> 00:18:44,480
+però vorrei aggiungere giusto due parole per una riflessione personale. Di per sé i protocolli
+
+166
+00:18:44,480 --> 00:18:50,040
+che abbiamo descritto funzionano molto bene, sono comodi e sono anche molto sicuri. Se
+
+167
+00:18:50,040 --> 00:18:55,400
+implementati correttamente in generale non c'è da preoccuparsi che qualcuno possa intromettersi
+
+168
+00:18:55,400 --> 00:19:00,920
+nella comunicazione o sottrarre dati in transito o spacciarsi per noi nell'accesso ad un servizio.
+
+169
+00:19:00,920 --> 00:19:06,760
+Tuttavia almeno per come la vedo io bisogna fare attenzione al modo in cui si utilizza
+
+170
+00:19:06,760 --> 00:19:13,520
+questo strumento. Se infatti è vero che utilizzare i pulsanti accedi con facebook o con google o chi
+
+171
+00:19:13,520 --> 00:19:19,960
+che sia per autenticarsi ai vari siti a cui accediamo è comodo, è veloce e non ci costringe
+
+172
+00:19:19,960 --> 00:19:26,520
+a ricordare e inserire un gran numero di password, è anche vero che chiunque riesca ad accedere al
+
+173
+00:19:26,520 --> 00:19:33,280
+nostro account sull'authorization server o peggio ancora sull'identity provider avrà accesso
+
+174
+00:19:33,360 --> 00:19:38,160
+praticamente a tutti i servizi ai quali lo abbiamo collegato. Quello che voglio dire è
+
+175
+00:19:38,160 --> 00:19:44,120
+che se qualcuno riuscisse a scoprire la nostra password di facebook o avesse accesso al nostro
+
+176
+00:19:44,120 --> 00:19:49,920
+computer o al nostro smartphone potrebbe utilizzare i collegamenti che abbiamo creato fra i vari
+
+177
+00:19:49,920 --> 00:19:57,000
+servizi per accedere, leggere, scrivere, modificare, inviare messaggi e chissà che altro. In pratica
+
+178
+00:19:57,000 --> 00:20:02,200
+accentrando tutte le autorizzazioni dietro un unico meccanismo di difesa chiunque dovesse
+
+179
+00:20:02,200 --> 00:20:07,320
+riuscire a superare quella difesa avrebbe praticamente accesso a tutto. Ecco perché,
+
+180
+00:20:07,320 --> 00:20:13,560
+come vi accennavo a inizio episodio, personalmente preferisco non usare questi sistemi. Nessuno dei
+
+181
+00:20:13,560 --> 00:20:19,640
+miei servizi è collegato a google, a facebook, a twitter o ad altri. Ogni accesso ha la sua username
+
+182
+00:20:19,640 --> 00:20:26,960
+e la sua password e tutte le password sono diverse fra loro. Questo sì mi causa un po' di fatica in
+
+183
+00:20:27,080 --> 00:20:33,600
+più alla quale sopperisco utilizzando un password manager ma al tempo stesso mi dà molta molta più
+
+184
+00:20:33,600 --> 00:20:50,920
+sicurezza. Bene oggi puntata un pochino più lunga del solito quindi senza perdere altro tempo vi
+
+185
+00:20:50,920 --> 00:20:56,920
+ringrazio di aver ascoltato fin qui, vi chiedo di condividere come al solito il podcast e
+
+186
+00:20:56,920 --> 00:21:04,040
+vi saluto ricordandovi che un informatico risolve problemi a volte anche usando il computer.
+

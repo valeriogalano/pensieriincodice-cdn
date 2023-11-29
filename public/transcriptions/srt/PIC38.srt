@@ -1,0 +1,456 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:20,000 --> 00:00:25,000
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in Codice.
+
+3
+00:00:25,000 --> 00:00:34,000
+Oggi parliamo di Wordpress, un software sicuramente conosciuto come il più diffuso fra i content management system per la realizzazione di siti web.
+
+4
+00:00:34,000 --> 00:00:42,000
+Basato su tecnologie app HP e SQL, è supportato praticamente da ogni servizio di hosting, cloud, provider, eccetera.
+
+5
+00:00:42,000 --> 00:00:53,000
+Ai più, è noto come uno dei metodi più semplici per mettere su un sito web in modo veloce, completo, efficiente, in poco tempo e con poco sforzo.
+
+6
+00:00:53,000 --> 00:01:05,000
+Quello che però non tutti sanno è che Wordpress è un vero e proprio framework di sviluppo, con i suoi coding standard, le sue best practice ed una sua vera e propria logica di implementazione.
+
+7
+00:01:05,000 --> 00:01:17,000
+Conoscere la filosofia che ne ha la base e applicarne correttamente i concetti permette ad uno sviluppatore di realizzare nel migliore dei modi tutte le funzionalità di cui ha bisogno.
+
+8
+00:01:17,000 --> 00:01:29,000
+In questo episodio, dunque, vedremo come è strutturato un progetto in Wordpress e come funziona il codice al suo interno, questo per essere in grado di estenderlo nel migliore dei modi.
+
+9
+00:01:29,000 --> 00:01:46,000
+Innanzitutto, la prima cosa da tenere a mente quando si lavora su Wordpress è che tutto nel framework è pensato per essere esteso in modo semplice.
+
+10
+00:01:46,000 --> 00:01:58,000
+Il CMS si divide infatti in un motore centrale e due tipologie di componenti che, incastrati fra loro, danno vita al sito web con tutte le sue funzionalità.
+
+11
+00:01:58,000 --> 00:02:11,000
+Gli elementi grafici, le aree riservate agli utenti, la gestione di archivi e cataloghi, i meccanismi di importazione e esportazione, l'interfacciamento verso sistemi esterni e qualsiasi altra cosa vi possa venire in mente.
+
+12
+00:02:11,000 --> 00:02:20,000
+Tutto questo si ottiene appunto estendendo con dei componenti specifici un nucleo centrale di funzionalità minime che prende il nome di core.
+
+13
+00:02:20,000 --> 00:02:28,000
+Si tratta proprio come dice il nome del core del sistema, la parte più importante della quale non si può fare a meno.
+
+14
+00:02:28,000 --> 00:02:38,000
+In effetti, esso è il Wordpress. È la parte di software che possiamo trovare all'interno del pacchetto ufficiale scaricabile dal sito wordpress.org.
+
+15
+00:02:38,000 --> 00:02:47,000
+Realizzato e manutenuto dal team ufficiale del progetto, il core contiene appunto il framework e le funzionalità essenziali.
+
+16
+00:02:47,000 --> 00:02:53,000
+Già da solo permette di realizzare un sito con le caratteristiche minime standard.
+
+17
+00:02:53,000 --> 00:03:03,000
+Con l'installazione del solo core, infatti, si può tranquillamente tirare su un sito che includa semplici pagine, e in realtà dalle ultime versioni neanche poi tanto semplici,
+
+18
+00:03:03,000 --> 00:03:12,000
+oppure un blog, una grafica minima, la gestione degli utenti con i vari ruoli, la registrazione, un meccanismo di commenti e tanto altro.
+
+19
+00:03:12,000 --> 00:03:21,000
+In la maggior parte dei casi, però, tutto questo non è sufficiente perché, come ben sappiamo, ogni utilizzatore ha le proprie esigenze particolari
+
+20
+00:03:21,000 --> 00:03:26,000
+e proprio in questo si manifesta la grande forza di Wordpress.
+
+21
+00:03:26,000 --> 00:03:34,000
+Qualunque sia la funzionalità necessaria, il core è predisposto per dare la possibilità ad uno sviluppatore di scrivere il proprio codice
+
+22
+00:03:34,000 --> 00:03:40,000
+e modificare o aggiungere qualcosa ai comportamenti di default del software.
+
+23
+00:03:40,000 --> 00:03:49,000
+Questo tipo di codice viene organizzato in componenti e rappresenta la prima delle tipologie a cui accennavo prima e prende il nome di plugin.
+
+24
+00:03:49,000 --> 00:03:59,000
+Dunque, se ho bisogno di cambiare qualcosa nel mio Wordpress, posso scrivere il mio plugin, installarlo, attivarlo ed ottenere così la mia modifica facilmente.
+
+25
+00:03:59,000 --> 00:04:06,000
+Voglio aggiungere un campo al profilo dell'utente? Ad esempio voglio che egli possa inserire il proprio codice fiscale?
+
+26
+00:04:06,000 --> 00:04:08,000
+Scrivo un piccolo plugin.
+
+27
+00:04:08,000 --> 00:04:14,000
+Voglio gestire tipologia di contenuti più complessi rispetto alla semplice pagina o articolo del blog?
+
+28
+00:04:14,000 --> 00:04:15,000
+Scrivo un plugin.
+
+29
+00:04:15,000 --> 00:04:18,000
+Voglio trasformare il mio Wordpress in un sito di e-commerce?
+
+30
+00:04:18,000 --> 00:04:20,000
+Scrivo un plugin, e così via.
+
+31
+00:04:20,000 --> 00:04:28,000
+Più saranno le funzionalità di cui si ha bisogno, più plugin si potranno realizzare e aggiungere alla propria installazione.
+
+32
+00:04:28,000 --> 00:04:38,000
+E se invece le modifiche riguardassero gli aspetti grafici del sito web? Sappiamo per esperienza che i siti in Wordpress non sono tutti uguali.
+
+33
+00:04:38,000 --> 00:04:45,000
+Beh, in questo caso entra in gioco la seconda delle tipologie di componenti a cui accennavamo prima, e cioè i temi.
+
+34
+00:04:45,000 --> 00:04:52,000
+I temi, detto in parole molto semplici, gestiscono tutti gli aspetti grafici del nostro Wordpress.
+
+35
+00:04:52,000 --> 00:05:05,000
+Decidono quindi quali sono i colori del testo o degli elementi grafici, dove sono posizionate le immagini e i loghi, quali caratteri vengono utilizzati per i titoli, i corpi delle pagine, ecc.
+
+36
+00:05:05,000 --> 00:05:12,000
+A differenza dei plugin, però, per ogni installazione di Wordpress può esserci un solo tema attivo per volta.
+
+37
+00:05:12,000 --> 00:05:20,000
+Quindi, tutte le caratteristiche grafiche di cui abbiamo bisogno devono essere implementate all'interno dello stesso tema.
+
+38
+00:05:20,000 --> 00:05:23,000
+O quasi, più avanti ne parleremo più in dettaglio.
+
+39
+00:05:23,000 --> 00:05:34,000
+Ad ogni modo, questa suddivisione dei compiti, diciamo così, tra i vari componenti, concede allo sviluppatore o al designer grande flessibilità nell'utilizzo della piattaforma.
+
+40
+00:05:34,000 --> 00:05:46,000
+Sarà infatti possibile aggiungere o rimuovere funzionalità in modo molto semplice, attivando o disattivando un plugin, oppure cambiare l'intero aspetto del sito passando da un tema all'altro.
+
+41
+00:05:46,000 --> 00:05:54,000
+I componenti, plugin o temi che siano, possono essere sviluppati da chiunque sia in grado di programmare in PHP.
+
+42
+00:05:54,000 --> 00:06:04,000
+Oltre al fatto che ne esistono moltissimi già disponibili, più o meno potenti, gratuiti oppure commerciali, mantenuti dalla comunità o da aziende specializzate.
+
+43
+00:06:05,000 --> 00:06:17,000
+Ovviamente, una volta capita la strategia di un progetto WordPress, la nostra mente da sviluppatori ci porta immediatamente a chiederci come possa essere praticamente realizzata una logica del genere.
+
+44
+00:06:17,000 --> 00:06:24,000
+Beh, il core di WordPress implementa alcuni concetti di base su cui si fondano tutte le logiche di estendibilità.
+
+45
+00:06:24,000 --> 00:06:30,000
+Questi concetti sono i filtri, le azioni, la gerarchia dei template e il tema figlio.
+
+46
+00:06:30,000 --> 00:06:32,000
+Vediamoli uno per uno.
+
+47
+00:06:32,000 --> 00:06:42,000
+I filtri rappresentano un meccanismo grazie al quale gran parte delle informazioni gestite all'interno del CMS vengono fatte passare attraverso delle funzioni,
+
+48
+00:06:42,000 --> 00:06:45,000
+che, se necessario, vi apportano delle modifiche.
+
+49
+00:06:45,000 --> 00:06:51,000
+Tali funzioni sono dette appunto filtri e in linea di principio sono strutturate in questo modo.
+
+50
+00:06:51,000 --> 00:07:00,000
+Prendono in input il dato da filtrare ed eventuali altri dati di contesto e restituiscono in output il dato da filtrare.
+
+51
+00:07:00,000 --> 00:07:11,000
+E dal momento che può essere necessario applicare più filtri in successione ad una stessa informazione, per ciascuna funzione è anche possibile specificare un indice di priorità.
+
+52
+00:07:11,000 --> 00:07:14,000
+Questo per determinare un ordine di esecuzione.
+
+53
+00:07:14,000 --> 00:07:19,000
+L'applicazione dei filtri è un'attività che si può utilizzare in tutti i casi.
+
+54
+00:07:20,000 --> 00:07:26,000
+L'applicazione dei filtri riguardanti un certo dato avviene in momenti strategici del flusso.
+
+55
+00:07:26,000 --> 00:07:36,000
+Ad esempio, quando si salva una pagina nel backend di WordPress, tutti i dati inseriti dall'utente nelle varie maschere vengono filtrati prima del salvataggio,
+
+56
+00:07:36,000 --> 00:07:40,000
+in modo che il programmatore possa applicare eventuali modifiche.
+
+57
+00:07:41,000 --> 00:07:45,000
+Un altro esempio potrebbe essere il form di registrazione degli utenti.
+
+58
+00:07:45,000 --> 00:07:56,000
+Un programmatore che volesse eliminare la richiesta del nome utente potrebbe scrivere un primo filtro per eliminare il campo nome utente dalla lista di quelli mostrati nella maschera,
+
+59
+00:07:56,000 --> 00:08:01,000
+e poi un secondo filtro per generare il username in modo casuale.
+
+60
+00:08:02,000 --> 00:08:08,000
+Tecnicamente molto simili ai filtri, ma poi differenti a livello concettuale, sono le azioni.
+
+61
+00:08:08,000 --> 00:08:19,000
+Esse non permettono la modifica di dati preesistenti, ma danno allo sviluppatore la possibilità di lanciare delle funzioni in determinati punti del flusso di esecuzione.
+
+62
+00:08:19,000 --> 00:08:22,000
+Come per esempio, la modificazione del nome utente.
+
+63
+00:08:22,000 --> 00:08:30,000
+Immaginiamo ora di voler scrivere un apposito file che contenga le username degli utenti che falliscono l'operazione di login.
+
+64
+00:08:30,000 --> 00:08:34,000
+Per fare ciò scriveremo una funzione che si chiama login.
+
+65
+00:08:34,000 --> 00:08:43,000
+La funzione login è una funzione che permette di eseguire un numero di funzioni in determinati punti del flusso di esecuzione.
+
+66
+00:08:43,000 --> 00:08:51,000
+Sarà quindi WordPress occuparsi di eseguire tale funzione e passare ad essa le informazioni di contesto necessarie su cui lavorare.
+
+67
+00:08:51,000 --> 00:08:53,000
+Ora i punti di rispetto.
+
+68
+00:08:53,000 --> 00:08:58,000
+Per eseguire un numero di funzioni in determinati punti del flusso di esecuzione.
+
+69
+00:08:58,000 --> 00:09:03,000
+Per eseguire un numero di funzioni in determinati punti del flusso di esecuzione.
+
+70
+00:09:03,000 --> 00:09:08,000
+Per eseguire un numero di funzioni in determinati punti del flusso di esecuzione.
+
+71
+00:09:09,000 --> 00:09:18,000
+Ora i punti del codice che scatenano l'esecuzione di azioni o filtri prendono il nome generico di hooks, cioè uncini.
+
+72
+00:09:18,000 --> 00:09:27,000
+Proprio perché a livello concettuale rappresentano un modo di agganciare delle funzioni di modifica a punti specifici del flusso.
+
+73
+00:09:27,000 --> 00:09:34,000
+Il core di WordPress implementa moltissimi hook che sono elencati nella documentazione ufficiale.
+
+74
+00:09:34,000 --> 00:09:45,000
+Ma allo stesso modo ogni plugin o tema degno di questo nome implementa i propri hook per dare accesso ad un eventuale programmatore esterno alle proprie parti interne.
+
+75
+00:09:45,000 --> 00:09:48,000
+Ogni hook è identificato da un nome.
+
+76
+00:09:48,000 --> 00:09:56,000
+Se ad esempio si vuole eseguire un'azione al momento della login dell'utente si potrà dire a WordPress qualcosa di questo tipo.
+
+77
+00:09:57,000 --> 00:10:06,000
+Rispetto ai plugin però, quando si parla di temi, oltre al discorso degli hook c'è anche quello della gerarchia.
+
+78
+00:10:06,000 --> 00:10:14,000
+Come è facile immaginare, infatti, la gerarchia è una funzione che è fondamentale per l'utilizzo dei plugin.
+
+79
+00:10:15,000 --> 00:10:23,000
+Rispetto ai plugin però, quando si parla di temi, oltre al discorso degli hook c'è anche quello della gerarchia.
+
+80
+00:10:23,000 --> 00:10:36,000
+Come è facile immaginare, infatti, per determinare l'aspetto grafico di un sito il tema deve includere molti file contenenti codice HTML, CSS e JavaScript.
+
+81
+00:10:36,000 --> 00:10:48,000
+Senza sottovalutare il fatto che tutti questi codici di front-end, diciamo così, conterranno a loro volta molti inserti di codice PHP che servirà a rendere dinamici i contenuti.
+
+82
+00:10:48,000 --> 00:10:55,000
+Anche in questi file, che modellando soprattutto la struttura grafica prendono il nome di template,
+
+83
+00:10:55,000 --> 00:11:05,000
+deve essere possibile per uno sviluppatore applicare le proprie modifiche, anche a volte sostanziali, per poter rendere il sito rispondente alle specifiche.
+
+84
+00:11:05,000 --> 00:11:17,000
+Per questo motivo anche nei template vengono inclusi degli hook, ma nel caso in cui sia necessario modificare pesantemente un template entra in gioco il concetto di gerarchia.
+
+85
+00:11:17,000 --> 00:11:26,000
+I template, infatti, a livello di filesystem non sono altro che dei file PHP richiamati tramite alcune particolari funzioni,
+
+86
+00:11:26,000 --> 00:11:33,000
+e l'intera logica di recupero dei template è pensata in modo flessibile e funziona secondo un modello a cascata.
+
+87
+00:11:33,000 --> 00:11:42,000
+Ciò vuol dire, molto semplicemente, che i file che costituiscono i template possono essere posizionati in vari percorsi all'interno del progetto.
+
+88
+00:11:42,000 --> 00:11:51,000
+Quando è necessaria l'inclusione di uno di questi template, il sistema è in grado di esplorare tutti i percorsi secondo un ordine prestabilito
+
+89
+00:11:51,000 --> 00:11:57,000
+e ricercare il file secondo tutta una serie di regole che formano una vera e propria gerarchia.
+
+90
+00:11:57,000 --> 00:12:06,000
+Facciamo un esempio. Il plugin WooCommerce, uno dei più famosi per WordPress che permette di aggiungere al sito le funzionalità di commercio elettronico,
+
+91
+00:12:06,000 --> 00:12:14,000
+implementa ovviamente tutta una serie di pagine aggiuntive necessarie per gestire prodotti, ordini, profili, carrello, ecc.
+
+92
+00:12:14,000 --> 00:12:21,000
+Ognuna di queste pagine sarà composta da uno o più template che combinati insieme le danno un certo aspetto.
+
+93
+00:12:21,000 --> 00:12:29,000
+Immaginiamo però di installare un tema nel nostro sito che modifichi pesantemente l'aspetto di tutte queste pagine,
+
+94
+00:12:29,000 --> 00:12:35,000
+magari invertendo le posizioni degli elementi o spostando funzionalità da una pagina all'altra.
+
+95
+00:12:35,000 --> 00:12:38,000
+Come è possibile realizzare una cosa del genere?
+
+96
+00:12:38,000 --> 00:12:50,000
+Beh, in pratica è solo necessario che all'interno di una specifica cartella del tema siano presenti file con lo stesso nome dei file dei template originali di WooCommerce.
+
+97
+00:12:50,000 --> 00:13:01,000
+Il sistema di recupero dei template si occuperà, quando necessario, di cercare i file di un template prima nella cartella del tema e solo successivamente in quella del plugin.
+
+98
+00:13:01,000 --> 00:13:12,000
+In casi più complessi, invece, le posizioni in cui piazzare i template possono essere molte e perfino i nomi dei file possono influire sulla scelta da parte del sistema.
+
+99
+00:13:12,000 --> 00:13:32,000
+Ad esempio, solitamente il file del template per mostrare un articolo di un blog è nominato come post.php, quindi inserire un file post.php nel nostro tema ci permetterebbe di intercettare e sostituire il template originale per tutti gli articoli.
+
+100
+00:13:32,000 --> 00:13:58,000
+Tuttavia, se volessimo intercettare il template per uno solo degli articoli del nostro blog, potremmo, ad esempio, nominare il file come post-123.php, dove 123 è l'id dell'articolo, oppure come post-benvenuto.php, dove benvenuto è lo slug, cioè il percorso relativo dell'articolo.
+
+101
+00:13:58,000 --> 00:14:14,000
+Vi rimando sempre alla documentazione per tutti i dettagli, ma sappiate che le possibilità sono tantissime. Si possono specificare template per categorie, per tag, per archivi, per pagine e per ogni tipo specifico di contenuto.
+
+102
+00:14:14,000 --> 00:14:28,000
+Infine, l'ultimo concetto di estendibilità di WordPress è quello del tema figlio. Si tratta di un concetto fondamentale, anche se non capisco perché moltissimi designer lo ignorano totalmente.
+
+103
+00:14:28,000 --> 00:14:51,000
+Prendiamo uno dei casi d'uso più comuni. In pratica, la realizzazione di un sito web con WordPress si compone di almeno questi passaggi. L'installazione di WordPress, ovviamente, l'installazione o lo sviluppo di plugin necessari, l'installazione di un tema grafico di base e la personalizzazione del tema grafico secondo le esigenze del cliente.
+
+104
+00:14:51,000 --> 00:15:11,000
+Delle prime fasi abbiamo già discusso, ma per l'ultima la personalizzazione del tema serve un discorso a parte. I temi, come tutti gli altri componenti, sono molto spesso realizzati da altri sviluppatori, soffrono di bug e vengono migliorati e, pertanto, vanno aggiornati periodicamente.
+
+105
+00:15:11,000 --> 00:15:31,000
+Ora, non serve un genio per capire che se apportiamo le nostre personalizzazioni direttamente al codice di un tema, al primo aggiornamento rilasciato avremo solamente due possibilità. O aggiorniamo, perdendo tutte le modifiche e dovendo riapplicarle da capo, oppure rinunciamo all'aggiornamento.
+
+106
+00:15:31,000 --> 00:15:59,000
+Il tema figlio ci viene in aiuto proprio in questo caso. La logica è abbastanza semplice. Se dobbiamo apportare delle modifiche ad un tema, invece di modificarne direttamente il codice, implementiamo un secondo tema come figlio del primo. In questo modo il nostro tema figlio erediterà tutte le funzionalità del padre e le modifiche da noi apportate saranno gestite attraverso il concetto di gerarchia.
+
+107
+00:15:59,000 --> 00:16:26,000
+Serve un template diverso? Inserisco nel figlio un file con lo stesso nome del template originale del padre, ma con un contenuto diverso. Serve un elemento grafico in più o in meno? Inserisco il codice necessario nel tema figlio. In questo modo saremo liberi di aggiornare il padre quando ci pare e piace, senza intaccare però le nostre personalizzazioni che saranno tutte nel tema figlio.
+
+108
+00:16:29,000 --> 00:16:34,000
+Filosofia di sviluppo
+
+109
+00:16:59,000 --> 00:17:18,000
+Il sistema di hook e di ereditarietà rappresenta anche un sovraccarico dal punto di vista dell'elaborazione ed influisce enormemente sulle prestazioni del software. Ogni hook richiede infatti l'esecuzione di vari blocchi di codice, anche solo per valutare se esiste un filtro o un'azione da eseguire.
+
+110
+00:17:19,000 --> 00:17:33,000
+Gli hook poi possono essere posizionati in parti del codice richiamati anche molte volte. Non è raro vedere che un nostro filtro sia eseguito anche centinaia di volte, magari solo per cambiare un unico valore.
+
+111
+00:17:33,000 --> 00:17:48,000
+Allo stesso modo la ricerca di ogni file template può richiedere vari accessi al disco. Un template potrebbe infatti trovarsi nel tema figlio, o nel tema padre, o in uno qualsiasi dei plugin installati, o infine nel core di WordPress.
+
+112
+00:17:49,000 --> 00:18:15,000
+Insomma, come ogni cosa, questa logica di programmazione non è certo esente da difetti ed è la principale causa di eventuali problemi di performance del nostro sito. Per questo motivo esistono molti sistemi per incrementare l'efficienza di un progetto WordPress, come ad esempio l'utilizzo di CDN o di meccanismi di gestione della cache a vari livelli, ma questi saranno argomenti per un prossimo episodio.
+
+113
+00:18:16,000 --> 00:18:33,000
+Nel frattempo, se siete intenzionati ad approfondire la programmazione in WordPress, vi lascio in descrizione il link alla documentazione ufficiale, mentre se avete bisogno di una consulenza professionale e fatturata per il vostro progetto, trovate sempre in descrizione tutti i miei contatti.
+
+114
+00:18:33,000 --> 00:18:49,000
+Per oggi dunque è tutto. Io vi ringrazio per aver ascoltato fin qui, vi chiedo come al solito di condividere l'episodio con chi credete che possa trovarne beneficio e vi saluto ricordandovi che un informatico risolve problemi, a volte anche usando il computer.
+

@@ -1,0 +1,376 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:21,000 --> 00:00:27,000
+Buongiorno a tutti e ben ritrovati per un nuovo episodio di Pensieri in Codice, il podcast
+
+3
+00:00:27,000 --> 00:00:32,000
+in cui parliamo di argomenti presi dal mondo del software, di internet e della programmazione.
+
+4
+00:00:33,000 --> 00:00:42,000
+Al giorno d'oggi tutti siamo più o meno abituati a parlare con una certa scioltezza di kilobyte, megabyte, gigabyte o addirittura di terabyte.
+
+5
+00:00:43,000 --> 00:00:50,000
+Utilizziamo continuamente queste unità di misura sia per indicare la dimensione dei file che la quantità di memoria presente nei nostri dispositivi
+
+6
+00:00:50,000 --> 00:00:59,000
+e quindi ne sentiamo spesso parlare in termini di spazio di archiviazione sul nostro smartphone o capienza dell'hard disk del nostro pc
+
+7
+00:01:00,000 --> 00:01:04,000
+o a volte come quantità di memoria installata sulla nostra scheda video.
+
+8
+00:01:05,000 --> 00:01:11,000
+E allora siamo perfettamente in grado di capirci se vi dico ad esempio che il mio smartphone ha una memoria di 32GB,
+
+9
+00:01:11,000 --> 00:01:22,000
+che il mio pc monta 16GB di ram o che il NAS su cui faccio i backup ha due dischi da 3TB e così via.
+
+10
+00:01:23,000 --> 00:01:30,000
+Ma se invece vi chiedessi quanti GBB di memoria libera avete in questo momento sul vostro hard disk
+
+11
+00:01:31,000 --> 00:01:39,000
+o la dimensione in MB dell'ultimo file che avete spedito o ricevuto via email, che cosa mi rispondereste?
+
+12
+00:01:40,000 --> 00:01:48,000
+Beh, se non avete idea di come rispondere, forse è perché non avete mai sentito parlare di KBByte o di MBByte
+
+13
+00:01:49,000 --> 00:01:51,000
+o ancora di GBByte o TBByte.
+
+14
+00:01:52,000 --> 00:01:53,000
+E allora vi do un piccolo aiuto.
+
+15
+00:01:54,000 --> 00:01:59,000
+Molto spesso un megabyte non è un megabyte, bensì è un MBByte.
+
+16
+00:02:00,000 --> 00:02:06,000
+E allo stesso modo, spesso, un gigabyte è in realtà un GBByte.
+
+17
+00:02:07,000 --> 00:02:08,000
+Siete confusi?
+
+18
+00:02:09,000 --> 00:02:14,000
+Ottimo, proviamo allora a fare un po' d'ordine e cerchiamo di capire come ragiona un computer.
+
+19
+00:02:19,000 --> 00:02:25,000
+In informatica, l'unità più piccola per la memorizzazione di un dato è chiamata bit
+
+20
+00:02:26,000 --> 00:02:34,000
+ed è rappresentata tramite un sistema di numerazione binario, cioè con sole due cifre possibili, lo 0 e l'1.
+
+21
+00:02:35,000 --> 00:02:42,000
+Ogni bit può quindi assumere solo due valori, che rappresentano nello specifico due stati opposti,
+
+22
+00:02:43,000 --> 00:02:46,000
+ad esempio vero e falso, oppure on e off.
+
+23
+00:02:48,000 --> 00:02:52,000
+L'unità di misura che però utilizziamo per memorie e dimensioni dei file
+
+24
+00:02:53,000 --> 00:02:59,000
+prende il nome di byte ed equivale all'insieme di 8 bit, quindi ad 8 cifre binarie.
+
+25
+00:03:00,000 --> 00:03:05,000
+Ora, come per una qualsiasi altra unità di misura, ad esempio come i metri o i grammi,
+
+26
+00:03:06,000 --> 00:03:11,000
+anche per i byte esistono dei moltiplicatori che ne rendono più semplice l'utilizzo
+
+27
+00:03:12,000 --> 00:03:15,000
+in quei casi in cui i numeri si fanno o molto grandi o molto piccoli,
+
+28
+00:03:16,000 --> 00:03:20,000
+quando cioè, per scriverli, diventa necessario utilizzare un gran numero di cifre.
+
+29
+00:03:21,000 --> 00:03:26,000
+Quindi, così come per i metri esistono i chilometri e per i grammi esistono i chilogrammi,
+
+30
+00:03:26,000 --> 00:03:29,000
+per i byte esistono i kilobyte.
+
+31
+00:03:30,000 --> 00:03:35,000
+Tuttavia, tra i byte e le altre unità di misura esiste una differenza fondamentale
+
+32
+00:03:36,000 --> 00:03:39,000
+che nei primi anni dell'informatica si scelse volutamente di ignorare.
+
+33
+00:03:40,000 --> 00:03:45,000
+Questa differenza risiede nel fatto che grammi, metri e altre unità simili
+
+34
+00:03:46,000 --> 00:03:51,000
+sono pensati in termini di numeri decimali, mentre il byte, come dicevamo prima,
+
+35
+00:03:52,000 --> 00:03:55,000
+è nato da e per un sistema numerico binario.
+
+36
+00:03:56,000 --> 00:04:00,000
+Quindi, se il fattore di moltiplicazione per il prefisso chilo era di 1000,
+
+37
+00:04:01,000 --> 00:04:04,000
+e cioè di 10 alla terza per grammi, metri e simili,
+
+38
+00:04:05,000 --> 00:04:09,000
+per i byte sarebbe invece stato necessario un diverso prefisso,
+
+39
+00:04:10,000 --> 00:04:14,000
+proprio per indicare un fattore di moltiplicazione che era pari a 1024,
+
+40
+00:04:15,000 --> 00:04:17,000
+cioè a 2 elevato a 10.
+
+41
+00:04:18,000 --> 00:04:22,000
+Poiché all'epoca sembrava che bastassero poche migliaia di byte
+
+42
+00:04:22,000 --> 00:04:26,000
+per praticamente qualsiasi possibile necessità di archiviazione,
+
+43
+00:04:27,000 --> 00:04:32,000
+si scelse volutamente di ignorare la differenza di 24 unità tra i due numeri
+
+44
+00:04:33,000 --> 00:04:36,000
+e si iniziò ad utilizzare il termine kilobyte
+
+45
+00:04:37,000 --> 00:04:42,000
+per indicare un valore che in realtà sarebbe dovuto essere di 1024 byte.
+
+46
+00:04:43,000 --> 00:04:46,000
+Questa scelta fu dettata da vari fattori.
+
+47
+00:04:47,000 --> 00:04:49,000
+Prima di tutto si tenne in grande considerazione
+
+48
+00:04:49,000 --> 00:04:54,000
+la convenienza di utilizzare un sistema di moltiplicazione già esistente e consolidato,
+
+49
+00:04:55,000 --> 00:04:58,000
+di cui tutti già conoscevano i vari prefissi e valori.
+
+50
+00:04:59,000 --> 00:05:04,000
+In secondo luogo si ritenne che un errore del 2,4% fosse qualcosa di trascurabile
+
+51
+00:05:05,000 --> 00:05:09,000
+e che in ogni caso i professionisti del settore sarebbero stati consci delle differenze
+
+52
+00:05:10,000 --> 00:05:12,000
+nelle notazioni e avrebbero agito di conseguenza.
+
+53
+00:05:13,000 --> 00:05:16,000
+Ricordiamoci che si parla di anni in cui l'informatica e i computer
+
+54
+00:05:16,000 --> 00:05:21,000
+erano tutt'altro che diffusi e sicuramente non accessibili ai consumatori.
+
+55
+00:05:22,000 --> 00:05:27,000
+E infine si valutò che il termine kilobyte sarebbe stato più adatto alla vendita
+
+56
+00:05:28,000 --> 00:05:33,000
+poiché più comprensibile sia agli addetti alle vendite appunto che ai potenziali clienti.
+
+57
+00:05:34,000 --> 00:05:38,000
+Tuttavia, con il senno di poi, questa si è rivelata una scelta piuttosto miope.
+
+58
+00:05:39,000 --> 00:05:43,000
+Con il passare degli anni, infatti, l'informatica ebbe una crescita esponenziale.
+
+59
+00:05:43,000 --> 00:05:49,000
+Le possibilità iniziarono ad aumentare e con esse anche le dimensioni medie dei file
+
+60
+00:05:50,000 --> 00:05:51,000
+e le richieste di spazio.
+
+61
+00:05:52,000 --> 00:05:56,000
+Presto si iniziò a parlare non più in termini di kilobyte, bensì di megabyte
+
+62
+00:05:57,000 --> 00:06:00,000
+e qui le cose iniziarono a farsi un po' più complicate
+
+63
+00:06:01,000 --> 00:06:04,000
+perché un megabyte, che nominalmente vale un milione di byte,
+
+64
+00:06:05,000 --> 00:06:11,000
+dal punto di vista tecnico vale invece un milione quarantottomila cinquecentosettantasei byte.
+
+65
+00:06:12,000 --> 00:06:18,000
+Non si tratta più di una differenza di ventiquattro unità, bensì di quasi cinquantamila unità
+
+66
+00:06:19,000 --> 00:06:26,000
+e in percentuale siamo saliti da un errore del 2,4% ad uno di poco più del 4,8%.
+
+67
+00:06:27,000 --> 00:06:31,000
+E più si sale verso moltiplicatori più grandi, più aumenta l'errore.
+
+68
+00:06:32,000 --> 00:06:37,000
+Se infatti parliamo di terabyte, ad esempio, arriviamo ad un errore pari quasi al 10%.
+
+69
+00:06:38,000 --> 00:06:42,000
+Per porre rimedio a questo problema, nel dicembre del 1998
+
+70
+00:06:43,000 --> 00:06:48,000
+la Commissione Elettrotecnica Internazionale, che è un'organizzazione con sede a Ginevra
+
+71
+00:06:49,000 --> 00:06:53,000
+che opera nel campo della definizione di standard internazionali in materia di elettronica,
+
+72
+00:06:54,000 --> 00:06:57,000
+definì una nuova serie di multipli specifici per il byte
+
+73
+00:06:58,000 --> 00:07:01,000
+e per la misurazione delle informazioni e delle quantità di dati.
+
+74
+00:07:01,000 --> 00:07:08,000
+Questi multipli erano dunque il kbbyte, il mebbyte, il gbbyte e così via.
+
+75
+00:07:09,000 --> 00:07:16,000
+Il nome, ad esempio, del kbbyte deriva direttamente dalla contrazione di kilobinarybyte
+
+76
+00:07:17,000 --> 00:07:27,000
+e si indica con K, I e B, in pratica aggiungendo una I tra le lettere K e B che indicano il kilobyte.
+
+77
+00:07:28,000 --> 00:07:38,000
+Un kbbyte vale esattamente 1024 byte, a sua volta un mebbyte vale 1024 kbbyte e così via,
+
+78
+00:07:39,000 --> 00:07:44,000
+in questo modo di fatto azzerando l'errore di misurazione rispetto alla realtà.
+
+79
+00:07:45,000 --> 00:07:50,000
+Purtroppo, però, il fatto che per molti anni sia esistita una sola unità di misura
+
+80
+00:07:51,000 --> 00:07:55,000
+e che poi ve ne sia stata affiancata una seconda, ha generato una grossa ambiguità
+
+81
+00:07:55,000 --> 00:08:03,000
+che, di fatto, è presente ancora oggi, anche a causa del fatto che essa può essere sfruttata dai produttori di hardware.
+
+82
+00:08:04,000 --> 00:08:07,000
+A seconda del sistema operativo e dei software utilizzati, infatti,
+
+83
+00:08:08,000 --> 00:08:14,000
+è possibile che le misurazioni e le unità di misura indicate siano sbagliate o forvianti.
+
+84
+00:08:15,000 --> 00:08:23,000
+Se ad esempio utilizzate Windows 10, la dimensione del vostro harddisk è misurata in gbbyte ma viene indicata in gigabyte.
+
+85
+00:08:24,000 --> 00:08:29,000
+In pratica, questo significa che se acquistate un harddisk da 500 gigabyte,
+
+86
+00:08:30,000 --> 00:08:37,000
+dopo averlo montato nel vostro pc e averlo formattato, vi ritroverete con un disco di circa 488 gbbyte,
+
+87
+00:08:38,000 --> 00:08:41,000
+che poi è la dimensione effettivamente utilizzabile.
+
+88
+00:08:46,000 --> 00:08:51,000
+Siamo dunque giunti al termine di questo dodicesimo episodio di Pensieri in Codice.
+
+89
+00:08:51,000 --> 00:08:57,000
+Ringrazio Vincenzo, amico nonché ascoltatore di Pensieri in Codice, per aver suggerito l'argomento di oggi.
+
+90
+00:08:58,000 --> 00:09:02,000
+Io spero che il podcast vi sia piaciuto e vi invito a condividerlo sui social
+
+91
+00:09:03,000 --> 00:09:09,000
+e, se la piattaforma che state utilizzando per ascoltarlo lo permette, a mettere un like o lasciare un commento.
+
+92
+00:09:10,000 --> 00:09:15,000
+Nel frattempo io vi aspetto sul gruppo Telegram, di cui trovate il link in descrizione,
+
+93
+00:09:15,000 --> 00:09:20,000
+nel quale potremo chiacchierare sia dei argomenti del podcast che di quello che preferite.
+
+94
+00:09:21,000 --> 00:09:26,000
+Per ora io vi ringrazio per aver ascoltato e vi do appuntamento al prossimo episodio.
+

@@ -1,0 +1,300 @@
+1
+00:00:00,000 --> 00:00:10,040
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:10,040 --> 00:00:26,840
+Buongiorno a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice, il podcast
+
+3
+00:00:26,840 --> 00:00:31,840
+in cui parliamo di argomenti presi dal mondo del software, di internet e della programmazione.
+
+4
+00:00:31,840 --> 00:00:38,720
+Questo episodio è un esperimento, una sorta di episodio pilota per una nuova rubrica che
+
+5
+00:00:38,720 --> 00:00:45,520
+terrò in collaborazione con la pagina Facebook di Italian Developers nella quale vi parleremo
+
+6
+00:00:45,520 --> 00:00:51,400
+di argomenti della storia dell'informatica e che chiameremo Informatica Vintage.
+
+7
+00:00:51,880 --> 00:00:57,760
+Prima di passare però all'argomento di oggi vorrei fare un piccolo annuncio. Sabato 12
+
+8
+00:00:57,760 --> 00:01:03,960
+ottobre 2019 si terrà a Milano la quarta edizione del Festival del Podcasting,
+
+9
+00:01:03,960 --> 00:01:09,480
+il più grande evento italiano dedicato a podcaster e appassionati. Sarà un modo per
+
+10
+00:01:09,480 --> 00:01:14,480
+conoscere molte persone, scoprire nuovi podcast e magari incontrarci di persona.
+
+11
+00:01:14,480 --> 00:01:20,600
+Se siete interessati a partecipare potete andare sulla pagina festivaldelpodcasting.it,
+
+12
+00:01:20,600 --> 00:01:25,680
+vi lascio anche il link in descrizione. Io dal canto mio sarò presente e mi farebbe
+
+13
+00:01:25,680 --> 00:01:31,120
+piacere conoscere personalmente qualcuno di voi, quindi se decidete di partecipare fatemelo
+
+14
+00:01:31,120 --> 00:01:36,360
+sapere su Telegram o su Instagram. Ora però bando alle ciance e iniziamo a
+
+15
+00:01:36,360 --> 00:01:41,720
+parlare dell'argomento di oggi, vale a dire il primo computer da tavolo della storia.
+
+16
+00:01:41,720 --> 00:01:55,120
+Nel 1964 nasce l'Olivetti Programma 101, anche conosciuto come P101, il primo computer da tavolo
+
+17
+00:01:55,120 --> 00:02:01,320
+progettato dall'ingegner Pier Giorgio Perotto, venuto a mancare purtroppo nel 2002. Siamo
+
+18
+00:02:01,320 --> 00:02:06,200
+nell'epoca dei grossi elaboratori, ospitati nei centri di calcolo, mentre la Perottina,
+
+19
+00:02:06,200 --> 00:02:11,840
+soprannome con cui veniva chiamato il P101 negli ambienti della ditta di Ivrea sin dal
+
+20
+00:02:11,840 --> 00:02:17,360
+prototipo, non solo promette grandi prestazioni in rapporto alle sue dimensioni ultracompatte,
+
+21
+00:02:17,360 --> 00:02:23,280
+ma si presenta anche con una veste accattivante grazie al design di Mario Bellini, creativo
+
+22
+00:02:23,280 --> 00:02:28,520
+avviato a diventare una figura di punta nel suo ramo. L'obiettivo del gruppo è la realizzazione
+
+23
+00:02:28,520 --> 00:02:35,200
+di un calcolatore non destinato agli specialisti, di basso costo, che sia su una scrivania e che
+
+24
+00:02:35,200 --> 00:02:41,200
+offra un'interazione uomo-macchina assolutamente alla portata di tutti. Il P101 viene oggi
+
+25
+00:02:41,200 --> 00:02:46,880
+considerato come il precursore del personal computer, anche se in realtà la sua architettura
+
+26
+00:02:46,880 --> 00:02:52,600
+è al limite della definizione di computer, in quanto esso è una macchina a programma
+
+27
+00:02:52,600 --> 00:02:58,560
+memorizzabile, cioè il sistema dà la possibilità di inserire nella memoria operativa dei programmi,
+
+28
+00:02:58,560 --> 00:03:04,920
+rispettando così il modello di von Neumann. Il P101 introduce così il rivoluzionario
+
+29
+00:03:04,920 --> 00:03:11,200
+concetto di calcolatrice programmabile. La tecnologia dei transistor consente un grado
+
+30
+00:03:11,200 --> 00:03:16,040
+di miniaturizzazione che si ripercuote direttamente sulle dimensioni del piccolo gioiello di
+
+31
+00:03:16,040 --> 00:03:26,380
+Olivetti. Esso infatti misura soli 48x61x19 cm e ha un peso di circa 35,5 kg. Tutto questo
+
+32
+00:03:26,380 --> 00:03:32,000
+senza incidere sulle prestazioni, visto che il calcolatore è in grado di elaborare velocissimamente
+
+33
+00:03:32,000 --> 00:03:37,240
+varie operazioni aritmetiche elementari. Fondamentale è la scelta di dotare il sistema
+
+34
+00:03:37,240 --> 00:03:41,320
+di un linguaggio facile da apprendere anche da persone non specializzate, grazie alla
+
+35
+00:03:41,320 --> 00:03:47,400
+vasta libreria di programmi di tipo matematico, statistico, finanziario, eccetera. Ciò rende
+
+36
+00:03:47,400 --> 00:03:53,280
+agevole la programmazione, che avviene con un massimo di 120 istruzioni, scelte fra 15
+
+37
+00:03:53,280 --> 00:03:58,840
+funzioni disponibili, tra cui l'input-output, il salto condizionato e le già accennate
+
+38
+00:03:58,840 --> 00:04:04,640
+operazioni aritmetiche. Una delle più grandi innovazioni è la carta magnetica per la
+
+39
+00:04:04,640 --> 00:04:10,080
+memorizzazione dei dati, che va ad affiancare una veloce e compatta stampante a tamburo
+
+40
+00:04:10,080 --> 00:04:15,880
+da 30 colonne. Una vera e propria rivoluzione, insomma, in un mondo dove fino ad allora i
+
+41
+00:04:15,880 --> 00:04:20,840
+calcolatori erano accessibili solo da super specialisti in camice bianco ed esperti di
+
+42
+00:04:20,840 --> 00:04:27,840
+linguaggio macchina. Un anno dopo, nel 1965, vede la luce il primo desktop della storia.
+
+43
+00:04:28,440 --> 00:04:33,280
+Il lancio del gioiello di perrotto sul mercato d'oltreoceano è testimoniato con giusta enfasi
+
+44
+00:04:33,280 --> 00:04:39,400
+dal New York Times, il quale ne esalta qualità e quantità di funzioni generate dai programmi
+
+45
+00:04:39,400 --> 00:04:45,160
+informatici, a loro volta supportati da una memoria centrale o anche periferica, per usi
+
+46
+00:04:45,160 --> 00:04:50,760
+sia in campo scientifico che economico. Citando direttamente la testata statunitense possiamo
+
+47
+00:04:50,760 --> 00:04:56,600
+leggere. La programma 101 può automaticamente eseguire programmi in grado di svolgere una
+
+48
+00:04:56,640 --> 00:05:01,400
+serie di operazioni aritmetiche. Può anche conservare e ricordare questi programmi sia
+
+49
+00:05:01,400 --> 00:05:06,800
+al proprio interno sia all'esterno e attraverso di loro può prendere semplici decisioni logiche.
+
+50
+00:05:06,800 --> 00:05:12,240
+E poi ancora, le sue numerose funzioni ne consentono un utilizzo sia scientifico sia
+
+51
+00:05:12,240 --> 00:05:19,600
+per il business. A dispetto del prezzo molto elevato, 3200 dollari che sono pari circa a 17
+
+52
+00:05:19,600 --> 00:05:25,680
+mila euro attuali, la pioneristica invenzione di casa Olivetti vende in terra statunitense
+
+53
+00:05:25,680 --> 00:05:34,600
+qualcosa come 40 mila esemplari nel solo 1966. La principale novità era che la programma 101
+
+54
+00:05:34,600 --> 00:05:40,960
+stava sul tavolo e poteva essere utilizzata da chiunque per svolgere qualsiasi tipo di operazione
+
+55
+00:05:40,960 --> 00:05:45,600
+come ad esempio il calcolo degli stipendi. Questo modello catturò le attenzioni della
+
+56
+00:05:45,600 --> 00:05:51,760
+nasa tanto da far sì che essa ne acquistasse 45 esemplari che sarebbero poi stati molto utili
+
+57
+00:05:51,800 --> 00:05:56,720
+per studiare al meglio le possibili traiettorie dei percorsi per il viaggio della pollo 11,
+
+58
+00:05:56,720 --> 00:06:04,120
+la missione che portò il primo uomo sulla luna nel 1969. P101 mantenne il monopolio proprio fino
+
+59
+00:06:04,120 --> 00:06:13,640
+al 1969, anno in cui l'HP presentò il modello HP 9100. Ciò fruttò comunque oltre 900 mila dollari
+
+60
+00:06:13,640 --> 00:06:19,520
+alla Olivetti sotto forma di royalties in quanto il modello dell'HP utilizzava gran parte dei
+
+61
+00:06:19,520 --> 00:06:26,640
+principi dell'HP 101 che perotto aveva intelligentemente brevettato. Mario Bellini,
+
+62
+00:06:26,640 --> 00:06:33,120
+il già citato designer dell'HP 101, ricevette dopo qualche anno una telefonata da oltreoceano.
+
+63
+00:06:33,120 --> 00:06:39,440
+Steve Jobs lo invitava a disegnare per l'Apple sull'onda del grandioso successo ottenuto dall'HP
+
+64
+00:06:39,440 --> 00:06:47,440
+101 ma egli declinò l'offerta. Di tutte le unità vendute nel corso di quegli anni circa 44 mila,
+
+65
+00:06:47,600 --> 00:06:55,760
+il 90% venne destinato al mercato statunitense mentre sono solamente 8 le P101 ancora funzionanti
+
+66
+00:06:55,760 --> 00:07:06,640
+al mondo. Siamo dunque giunti al termine di questo primo episodio di Informatica Vintage,
+
+67
+00:07:06,640 --> 00:07:13,680
+una rubrica di pensieri in codice in collaborazione con Italian Developers. Io ringrazio tutti gli
+
+68
+00:07:13,680 --> 00:07:20,520
+ascoltatori per essere arrivati fin qui e Andrea Chanot di Italian Developers per aver raccolto
+
+69
+00:07:20,520 --> 00:07:28,200
+e organizzato le informazioni per questo podcast. In descrizione troverete il link alla pagina Italian
+
+70
+00:07:28,200 --> 00:07:34,160
+Developers e al post relativo appunto a questo episodio nel quale troverete anche delle simpatiche
+
+71
+00:07:34,160 --> 00:07:40,840
+immagini dell'HP 101 e del marketing dell'epoca. Sempre in descrizione trovate il link al gruppo
+
+72
+00:07:40,840 --> 00:07:46,920
+Telegram di Pensieri in Codice e dal mio profilo Instagram grazie al quale potrete rimanere
+
+73
+00:07:46,920 --> 00:07:53,360
+aggiornati sulle novità riguardanti il podcast. A questo punto non mi resta che ricordarvi di
+
+74
+00:07:53,360 --> 00:07:58,760
+condividere questo podcast, di farmi sapere quali sono gli argomenti che preferite e darvi
+
+75
+00:07:58,760 --> 00:08:00,680
+appuntamento alla prossima puntata.
+

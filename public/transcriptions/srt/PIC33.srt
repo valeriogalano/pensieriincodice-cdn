@@ -1,0 +1,448 @@
+1
+00:00:00,000 --> 00:00:24,680
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in Codice.
+
+2
+00:00:25,000 --> 00:00:30,240
+In queste settimane di quarantena ho potuto approfittare di un po' di tempo libero per
+
+3
+00:00:30,240 --> 00:00:36,160
+dedicarmi ad una di quelle attività che troppo spesso tendevo a rimandare, sempre perché
+
+4
+00:00:36,160 --> 00:00:38,560
+preso dagli impegni di tutti i giorni.
+
+5
+00:00:38,560 --> 00:00:42,200
+Mi riferisco, come starete immaginando, alla lettura.
+
+6
+00:00:42,200 --> 00:00:48,400
+Ho infatti recuperato alcuni dei libri che avevo nella mia coda da leggere, ne ho scoperti
+
+7
+00:00:48,400 --> 00:00:54,280
+vari di nuovi e durante questo periodo mi è anche venuta in mente l'idea di condividere
+
+8
+00:00:54,280 --> 00:00:57,360
+con voi quelli che ho trovato più interessanti.
+
+9
+00:00:57,360 --> 00:01:04,480
+Nasce così quindi questo episodio, nel quale vorrei proporvi tre libri più o meno inerenti
+
+10
+00:01:04,480 --> 00:01:09,040
+al mondo dell'informatica, ma tutti con un carattere molto divulgativo.
+
+11
+00:01:09,040 --> 00:01:15,880
+A voi, come al solito, chiedo di farmi sapere se la puntata vi piace in modo da poter decidere
+
+12
+00:01:15,880 --> 00:01:17,880
+se proporvene altre in futuro.
+
+13
+00:01:17,880 --> 00:01:23,800
+Se siete invece alla ricerca di qualcosa di più tecnico sulla programmazione, vi consiglio
+
+14
+00:01:23,800 --> 00:01:29,600
+di iscrivervi alla newsletter che trovate in descrizione, sul sito valeriogalano.it
+
+15
+00:01:29,600 --> 00:01:36,040
+e sul sito pensieriincodice.it, sì perché nel mese di aprile ho pensato anche di avviare
+
+16
+00:01:36,040 --> 00:01:38,120
+un progetto di newsletter.
+
+17
+00:01:38,120 --> 00:01:45,680
+Un progettino dedicato un po' più agli addetti ai lavori, nel quale provo a segnalare quello
+
+18
+00:01:45,680 --> 00:01:50,560
+che trovo di interessante nel corso delle attività legate al mio lavoro, che si tratti
+
+19
+00:01:50,560 --> 00:01:53,760
+di podcast, di libri, di tecnologie o di altro.
+
+20
+00:01:53,760 --> 00:01:59,800
+Ora però veniamo a noi e passiamo a parlare dei tre libri che ho scelto per questo episodio.
+
+21
+00:01:59,800 --> 00:02:03,040
+Per ciascuno trovate in descrizione il link ad Amazon.
+
+22
+00:02:03,040 --> 00:02:14,720
+Il primo libro che vorrei consigliarvi è Web Design Adaptivo, sottotitolo Come cambia
+
+23
+00:02:14,720 --> 00:02:17,840
+la user experience, di Aaron Gustafson.
+
+24
+00:02:18,400 --> 00:02:25,240
+Nonostante non sia un testo recentissimo, che risale al 2017, l'ho trovato davvero illuminante
+
+25
+00:02:25,240 --> 00:02:26,720
+sotto vari punti di vista.
+
+26
+00:02:26,720 --> 00:02:33,360
+Ho scoperto questo libro sul consiglio di Valentino Spataro, la voce dello storico podcast
+
+27
+00:02:33,360 --> 00:02:40,200
+Caffè 2.0, e quindi ne approfitto per ringraziarlo e consigliarvi di ascoltare il suo podcast
+
+28
+00:02:40,200 --> 00:02:41,200
+se già non lo fate.
+
+29
+00:02:41,200 --> 00:02:47,760
+Web Design Adaptivo è un viaggio attraverso le tre tecnologie fondanti del web, e cioè
+
+30
+00:02:47,760 --> 00:02:55,960
+HTML, CSS e JavaScript, ma è percorso attraverso gli occhi di un esperto di user experience.
+
+31
+00:02:55,960 --> 00:03:01,880
+Gustafson non si pone come obiettivo quello di insegnare dei linguaggi di programmazione,
+
+32
+00:03:01,880 --> 00:03:05,200
+quanto piuttosto quello di metterne in luce la filosofia.
+
+33
+00:03:05,200 --> 00:03:11,360
+Nel corso dell'intero testo illustra una serie di metodologie per mettere i contenuti
+
+34
+00:03:11,360 --> 00:03:16,600
+ed il rispetto dell'utente al centro della progettazione di un sito web.
+
+35
+00:03:16,760 --> 00:03:21,600
+Illustrando le caratteristiche peculiari di ciascuna delle tre tecnologie mostra inoltre
+
+36
+00:03:21,600 --> 00:03:27,600
+come ottenere i giusti risultati impiegando il minor quantitativo possibile di codice.
+
+37
+00:03:27,600 --> 00:03:35,320
+In un web ormai invaso dal codice superfluo, dove i siti funzionano solo con le ultimissime
+
+38
+00:03:35,320 --> 00:03:41,360
+versioni di browser e di sistemi operativi, e a volte nemmeno con quelli, il libro Web
+
+39
+00:03:41,360 --> 00:03:47,800
+in Adattivo ci riporta ad una progettazione pulita, intelligente e che consegue il vero
+
+40
+00:03:47,800 --> 00:03:53,160
+obiettivo di ogni sito web, e cioè fornire le informazioni ai propri utenti.
+
+41
+00:03:53,160 --> 00:03:59,840
+D'altronde sappiamo tutti che gli stessi motori di ricerca moderni, Google in primis, prediligono
+
+42
+00:03:59,840 --> 00:04:04,960
+ormai i siti web veloci, efficienti e chiari dal punto di vista dei contenuti.
+
+43
+00:04:05,520 --> 00:04:11,440
+Il testo di Gustafsson illustra come procedere per strati nella costruzione di un sito che
+
+44
+00:04:11,440 --> 00:04:14,480
+rispetti esattamente queste caratteristiche.
+
+45
+00:04:14,480 --> 00:04:21,000
+Il risultato di questo processo non è solo un sito ben indicizzato, ma anche un sito apprezzato
+
+46
+00:04:21,000 --> 00:04:27,680
+da tutti quegli utenti che non ricadono precisamente nelle poche categorie più diffuse, in pratica
+
+47
+00:04:27,680 --> 00:04:31,120
+le uniche su cui vengono fatti i soliti test.
+
+48
+00:04:31,320 --> 00:04:35,720
+Seguendo le semplici indicazioni riportate in questo libro, anche chi non usa Chrome
+
+49
+00:04:35,720 --> 00:04:42,560
+su Windows 10 o Safari su macOS potrà accedere con soddisfazione ai contenuti dei nostri siti.
+
+50
+00:04:42,560 --> 00:04:48,640
+Dunque, anche gli utenti che non possono permettersi l'ultimo modello di PC o di smartphone o
+
+51
+00:04:48,640 --> 00:04:53,920
+quelli con disabilità, potranno usufruire delle informazioni che abbiamo da offrire.
+
+52
+00:04:53,920 --> 00:04:59,360
+Insomma, il mio consiglio è quello di leggere assolutamente Web Design Adattivo.
+
+53
+00:04:59,600 --> 00:05:05,920
+Se siete web designer, troverete enormi benefici in fase di progettazione e vedrete che ciò
+
+54
+00:05:05,920 --> 00:05:09,760
+si ripercuoterà immediatamente sulla qualità del vostro lavoro.
+
+55
+00:05:09,760 --> 00:05:15,680
+Se invece siete fruitori del web, questo testo vi fornirà degli strumenti per misurare la
+
+56
+00:05:15,680 --> 00:05:22,400
+qualità dei siti che visitate e, soprattutto, vi farà smettere di sentire inadeguati ogni
+
+57
+00:05:22,400 --> 00:05:28,720
+volta che non riuscirete a trovare un'informazione o vi troverete di fronte al tipico messaggio
+
+58
+00:05:28,720 --> 00:05:32,560
+che il tuo browser non supporta questa o quell'altra funzione.
+
+59
+00:05:38,240 --> 00:05:43,600
+Il secondo libro che vi consiglio oggi è stato anche di ispirazione per molti degli
+
+60
+00:05:43,600 --> 00:05:45,440
+episodi di questo podcast.
+
+61
+00:05:45,440 --> 00:05:51,600
+Si tratta di 9 algoritmi che hanno cambiato il mondo, di John McCormick.
+
+62
+00:05:51,600 --> 00:05:57,440
+Anche questo non è un libro recentissimo perché risale al 2012, ma questo non è un fattore
+
+63
+00:05:57,520 --> 00:06:03,120
+importante per un testo del genere che ha lo scopo di descrivere, nel modo più semplice
+
+64
+00:06:03,120 --> 00:06:09,280
+possibile, alcuni degli algoritmi in assoluto più utilizzati dagli utenti di tutto il mondo.
+
+65
+00:06:09,280 --> 00:06:14,160
+La cosa più interessante, secondo me, di questo libro è che l'autore ha selezionato
+
+66
+00:06:14,160 --> 00:06:20,240
+i suoi algoritmi che hanno cambiato il futuro, scegliendo tra quelli che gli utenti possono
+
+67
+00:06:20,240 --> 00:06:24,960
+toccare con mano e non tra i codici sviluppati per gli addetti ai lavori.
+
+68
+00:06:25,440 --> 00:06:31,040
+Non vi troviamo quindi la descrizione di algoritmi come, ad esempio, l'ordinamento o la ricerca,
+
+69
+00:06:31,040 --> 00:06:36,480
+che pur essendo molto importanti, sono in realtà argomento di corsi di laurea, quanto
+
+70
+00:06:36,480 --> 00:06:41,840
+piuttosto algoritmi molto più riconoscibili per gli utenti, come la compressione, la
+
+71
+00:06:41,840 --> 00:06:47,200
+firma digitale, la criptografia, l'indicizzazione dei motori di ricerca, eccetera.
+
+72
+00:06:47,200 --> 00:06:54,400
+Altra cosa che appare straordinaria in questo libro è la capacità di McCormick di semplificare
+
+73
+00:06:54,400 --> 00:07:00,080
+i concetti espressi, in modo tale da renderli comprensibili anche a coloro che di informatica
+
+74
+00:07:00,080 --> 00:07:05,600
+non ne sanno molto, senza però banalizzarli e soprattutto senza farli apparire scontati.
+
+75
+00:07:05,600 --> 00:07:11,760
+Da queste pagine, infatti, traspare chiaramente la genialità che è alla base degli algoritmi
+
+76
+00:07:11,760 --> 00:07:17,760
+descritti, che risultano tutti, oltre che estremamente importanti, anche come le soluzioni
+
+77
+00:07:17,760 --> 00:07:23,520
+più semplici ed eleganti a problemi pratici che, se non risolti, non avrebbero permesso
+
+78
+00:07:23,520 --> 00:07:26,960
+la diffusione dell'informatica così come oggi la conosciamo.
+
+79
+00:07:26,960 --> 00:07:32,320
+Questo è un libro che mi sento di consigliare a tutti, sia ai più esperti, dal momento
+
+80
+00:07:32,320 --> 00:07:37,960
+che gli argomenti spaziano in molti ambiti e quindi essi troveranno sicuramente qualcosa
+
+81
+00:07:37,960 --> 00:07:44,440
+di nuovo, sia ai semplici curiosi che scopriranno come funzionano tante delle applicazioni che
+
+82
+00:07:44,440 --> 00:07:46,240
+utilizzano ogni giorno.
+
+83
+00:07:46,240 --> 00:07:51,600
+Secondo me è anche un'ottima idea regalo, molto istruttivo e al tempo stesso leggero
+
+84
+00:07:51,600 --> 00:07:52,600
+da leggere.
+
+85
+00:07:52,600 --> 00:08:03,080
+L'ultimo libro che vi consiglio non parla precisamente di informatica, ma di una scienza
+
+86
+00:08:03,080 --> 00:08:09,000
+che da sempre è legata all'informatica e che però esiste da migliaia di anni prima.
+
+87
+00:08:09,000 --> 00:08:11,480
+Mi riferisco alla crittografia.
+
+88
+00:08:11,480 --> 00:08:18,320
+Il libro è De Cifrare, di Mark Frary, ed è un vero e proprio viaggio attraverso l'evoluzione
+
+89
+00:08:18,480 --> 00:08:24,080
+della crittografia nel tempo, dalle prime testimonianze storiche fino alla password delle
+
+90
+00:08:24,080 --> 00:08:25,080
+nostre e-mail.
+
+91
+00:08:25,080 --> 00:08:30,520
+Frary guida questo viaggio descrivendo in ogni paragrafo il funzionamento di una diversa
+
+92
+00:08:30,520 --> 00:08:35,760
+tecnica o di un cifrario o di una macchina in grado di nascondere delle informazioni
+
+93
+00:08:35,760 --> 00:08:39,800
+agli occhi del nemico e permettere ai soli destinatari di leggerle.
+
+94
+00:08:39,800 --> 00:08:47,760
+Trasversalmente viene anche descritta la continua lotta tra crittografi e analisti, i primi
+
+95
+00:08:47,760 --> 00:08:53,040
+impegnati a inventare metodi di crittografia sempre più sicuri, i secondi nel tentativo
+
+96
+00:08:53,040 --> 00:08:55,840
+di forzare tali metodi uno dopo l'altro.
+
+97
+00:08:55,840 --> 00:09:02,080
+Alan Turing e Cesare sono forse i nomi più conosciuti menzionati in questo testo, ma
+
+98
+00:09:02,080 --> 00:09:05,600
+di certo non sono gli unici e nemmeno i più sorprendenti.
+
+99
+00:09:05,600 --> 00:09:11,640
+In queste pagine sono descritti metodi di crittografia astuti e insospettabili, da antichi
+
+100
+00:09:11,640 --> 00:09:17,840
+dischi di pietra o strisce di stoffa fino alla firma digitale, il wifi e gli algoritmi
+
+101
+00:09:17,840 --> 00:09:22,680
+quantistici, passando per codici e cifrari civili e militari.
+
+102
+00:09:22,680 --> 00:09:29,720
+Pagina dopo pagina si scopre una nuova tecnica di crittografia, il modo in cui essa va applicata
+
+103
+00:09:29,720 --> 00:09:36,360
+per mezzo di esempi e, quando esiste, il metodo da utilizzare per forzare tale tecnica.
+
+104
+00:09:36,920 --> 00:09:41,480
+Anche in questo caso si tratta di un libro chiaro e scorrevole, che per essere letto
+
+105
+00:09:41,480 --> 00:09:47,000
+e capito non necessita di particolari conoscenze né di informatica né di matematica.
+
+106
+00:09:47,000 --> 00:09:49,480
+Insomma, una lettura per tutti.
+
+107
+00:09:55,400 --> 00:10:00,440
+Bene, io spero che almeno uno di questi libri sia di vostro interesse, perché le ho trovati
+
+108
+00:10:00,440 --> 00:10:02,920
+tutti davvero delle piacevoli letture.
+
+109
+00:10:03,320 --> 00:10:06,840
+Ovviamente se li leggete fatemi poi sapere cosa ne pensate.
+
+110
+00:10:06,840 --> 00:10:11,560
+Io come al solito vi ringrazio per essere arrivati fin qui e vi saluto con le parole
+
+111
+00:10:11,560 --> 00:10:13,800
+del professor Giovanni degli Antoni.
+
+112
+00:10:13,800 --> 00:10:18,680
+Un informatico risolve i problemi, a volte anche usando il computer.
+

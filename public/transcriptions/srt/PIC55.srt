@@ -1,0 +1,380 @@
+1
+00:00:00,000 --> 00:00:09,900
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,900 --> 00:00:26,860
+Salve a tutti ragazzi e bentornati su Pensieri in codice. Come informatici siamo ormai abituati
+
+3
+00:00:26,860 --> 00:00:33,080
+ad avere sulla nostra scrivania o nel palmo della nostra mano un'enorme potenza di calcolo.
+
+4
+00:00:33,080 --> 00:00:41,080
+Strumenti come i tablet, i pc o gli smartphone sono ormai entrati stabilmente a far parte delle
+
+5
+00:00:41,080 --> 00:00:47,720
+nostre vite, ma c'è stato ovviamente un tempo in cui tutto questo non esisteva. Un tempo in cui
+
+6
+00:00:47,720 --> 00:00:55,320
+certi determinati problemi che oggi a noi appaiono così semplici richiedevano invece un enorme
+
+7
+00:00:55,320 --> 00:01:04,080
+dispendio di risorse ed è solo nel corso di molti secoli e grazie all'impegno di varie menti geniali
+
+8
+00:01:04,080 --> 00:01:11,460
+che si è poi potuto aggiungere a quello che noi oggi conosciamo come il computer. In questo
+
+9
+00:01:11,460 --> 00:01:18,600
+episodio dunque ripercorreremo brevemente le storie di inventori e invenzioni che possono
+
+10
+00:01:18,600 --> 00:01:22,800
+a tutti gli effetti essere considerati gli antenati del computer.
+
+11
+00:01:22,800 --> 00:01:50,240
+Per capire la storia che ha portato alla nascita di uno strumento come il computer
+
+12
+00:01:50,360 --> 00:01:57,600
+bisogna rendersi conto che fin dall'antichità l'umanità intesa come le più grandi menti
+
+13
+00:01:57,600 --> 00:02:05,200
+studiose hanno sempre inseguito il desiderio di automatizzare quelli che erano compiti e
+
+14
+00:02:05,200 --> 00:02:14,240
+calcoli lunghi e complicati di cui avevano bisogno per i propri studi. Se infatti ideare e sviluppare
+
+15
+00:02:14,240 --> 00:02:19,160
+un nuovo metodo di risoluzione di un problema, quello che noi oggi chiameremo algoritmo,
+
+16
+00:02:19,600 --> 00:02:27,160
+richiedeva una grande dose di ingegno e di inventiva. Allo stesso tempo applicare quelle
+
+17
+00:02:27,160 --> 00:02:35,120
+che erano operazioni monotone su grandi numeri e per un tempo anche a volte molto prolungato non
+
+18
+00:02:35,120 --> 00:02:40,360
+era affatto semplice e nemmeno appagante e molto spesso era causa di molti errori.
+
+19
+00:02:40,360 --> 00:02:48,040
+Testimonianze di questo desiderio ne abbiamo già dal 150 avanti cristo anno al quale si
+
+20
+00:02:48,040 --> 00:02:55,560
+fa risalire la più antica macchina automatica della storia, il planetario di Archimede e c'è
+
+21
+00:02:55,560 --> 00:03:03,160
+una macchina che serviva a calcolare il movimento degli astri. Non si tratta certo di un tipo di
+
+22
+00:03:03,160 --> 00:03:09,920
+calcolo generalista ma all'epoca il movimento degli astri era una delle scienze più importanti,
+
+23
+00:03:09,920 --> 00:03:17,640
+cosa che dimostra anche il di poco successivo meccanismo di Antichitera. Entrambe queste
+
+24
+00:03:17,720 --> 00:03:25,360
+macchine anche se di fattura abbastanza diversa erano dotate di una serie di meccanismi e ingranaggi
+
+25
+00:03:25,360 --> 00:03:32,200
+il cui scopo era quello di effettuare un calcolo automatico sulla posizione degli astri. Tra le
+
+26
+00:03:32,200 --> 00:03:39,200
+altre cose il planetario di Archimede era in grado di predire eclissi di luna e come da legge di
+
+27
+00:03:39,200 --> 00:03:48,240
+Zuboff i romani utilizzarono questa sua capacità per scopi bellici. Un secondo passo nel campo del
+
+28
+00:03:48,240 --> 00:03:58,440
+calcolo automatico si ebbe poi nel 1642. Erano trascorsi circa 500 anni da quando un matematico
+
+29
+00:03:58,440 --> 00:04:07,440
+conosciuto col nome di Fibonacci aveva portato in Europa un testo del matematico arabo Helhauarizmi
+
+30
+00:04:08,040 --> 00:04:14,520
+nel quale erano riportati i primi algoritmi conosciuti per la risoluzione delle operazioni
+
+31
+00:04:14,520 --> 00:04:20,680
+di base. Nel corso di questo mezzo millennio l'utilizzo del sistema di numerazione arabo
+
+32
+00:04:20,680 --> 00:04:26,720
+e delle operazioni ad esso collegate si era diffuso ormai in tutta Europa e appunto nel
+
+33
+00:04:26,720 --> 00:04:36,080
+1642 Blaise Pascal inventò una macchina in grado di fare somme e sottrazioni in modo automatico.
+
+34
+00:04:36,520 --> 00:04:42,240
+Questo proprio per aiutare il padre che all'epoca lavorava come riscossore delle tasse. Questa
+
+35
+00:04:42,240 --> 00:04:48,760
+macchina prodigiosa ovviamente per l'epoca era conosciuta come la Pascalina e funzionava con
+
+36
+00:04:48,760 --> 00:04:56,800
+tutta una serie di ingranaggi che permettevano di calcolare il riporto. Pare addirittura che con
+
+37
+00:04:56,800 --> 00:05:04,000
+l'aiuto di un orologiaio Pascal fosse riuscito a costruirne ben una ventina di esemplari. Esemplari
+
+38
+00:05:04,000 --> 00:05:11,200
+che poi finirono nelle mani di personaggi famosi. Questa Pascalina era così sorprendente per
+
+39
+00:05:11,200 --> 00:05:17,520
+l'epoca che nel corso degli anni successivi furono progettate e costruite tutta una serie
+
+40
+00:05:17,520 --> 00:05:25,120
+di macchine ispirate ad essa in grado di svolgere somme e sottrazioni. Ma la vera innovazione avvenne
+
+41
+00:05:25,160 --> 00:05:34,360
+quando il filosofo Leibniz nel 1672 presentò la propria macchina aritmetica. Cioè una macchina che
+
+42
+00:05:34,360 --> 00:05:41,640
+era in grado di fare anche moltiplicazioni e divisioni. Infatti esserà dotata di un meccanismo
+
+43
+00:05:41,640 --> 00:05:48,960
+chiamato tamburo a denti scalati il quale era in grado di memorizzare il numero da
+
+44
+00:05:48,960 --> 00:05:55,800
+moltiplicare o da dividere. A questo punto per avere un ulteriore passo avanti si dovranno
+
+45
+00:05:55,800 --> 00:06:04,040
+aspettare circa altri 150 anni ed in particolare gli anni 20 del 1800. In questo periodo un
+
+46
+00:06:04,040 --> 00:06:12,280
+problema molto sentito riguarda il calcolo delle rotte di navigazione. A quel tempo infatti le navi
+
+47
+00:06:12,280 --> 00:06:19,200
+che si trovavano in navigazione lontane dalle coste per calcolare le proprie rotte dovevano
+
+48
+00:06:19,200 --> 00:06:27,360
+fare una serie di operazioni che comprendevano la posizione del sole, della luna, dell'orizzonte e
+
+49
+00:06:27,360 --> 00:06:36,880
+una serie di numeri riportati su quelle che all'epoca erano conosciute come le tavole astronomiche e le
+
+50
+00:06:36,880 --> 00:06:45,040
+tavole matematiche. Il problema grosso di questi strumenti matematici è che tutti i calcoli venivano
+
+51
+00:06:45,040 --> 00:06:53,040
+effettuati a mano e pertanto queste tavole erano fondamentalmente piene di errori. Fu proprio questo
+
+52
+00:06:53,040 --> 00:07:02,160
+il motivo che spinse il Regno Unito a finanziare il progetto di un astronomo chiamato Charles
+
+53
+00:07:02,240 --> 00:07:10,000
+Babbage. Questi ideò una macchina in grado di calcolare le differenze di polinomi e grazie
+
+54
+00:07:10,000 --> 00:07:16,960
+ad uno studio del matematico Taylor si rese conto che esse potevano essere utilizzate per calcolare
+
+55
+00:07:16,960 --> 00:07:24,320
+qualsiasi tipo di funzione matematica. Realizzò quindi un prototipo ed ottenne i fondi dal governo
+
+56
+00:07:24,320 --> 00:07:31,200
+per costruire la propria macchina. Purtroppo però questa si rivelò davvero troppo complessa da
+
+57
+00:07:31,200 --> 00:07:39,920
+costruire. Dopo circa 10 anni di lavoro e 10.000 pezzi costruiti, il governo del Regno Unito decise
+
+58
+00:07:39,920 --> 00:07:46,200
+di interrompere i fondi. Pare infatti che per ultimare la macchina sarebbero servite altre
+
+59
+00:07:46,200 --> 00:07:54,280
+15.000 parti senza contare il tempo per assemblare il tutto e questo investimento era già costato
+
+60
+00:07:54,640 --> 00:08:02,600
+quasi 18.000 sterline. Fortunatamente però proprio mentre i fondi si stavano per esaurire Babbage
+
+61
+00:08:02,600 --> 00:08:09,400
+ebbe una seconda idea per una seconda macchina ancor più rivoluzionaria che chiamò macchina
+
+62
+00:08:09,400 --> 00:08:16,560
+analitica. Ora c'è un dettaglio importante da considerare. Tutte le invenzioni descritte finora
+
+63
+00:08:16,560 --> 00:08:23,480
+sono sì macchine automatiche ma in realtà nessuna di queste può essere considerata un vero e proprio
+
+64
+00:08:23,480 --> 00:08:29,600
+antenato del computer. Un computer infatti è una macchina che può svolgere qualsiasi tipo di
+
+65
+00:08:29,600 --> 00:08:36,120
+compito numerico, basta programmarla per farlo. Le macchine finora descritte invece sono in grado
+
+66
+00:08:36,120 --> 00:08:43,480
+di svolgere uno e un solo compito cioè quello per cui sono state costruite. La seconda macchina di
+
+67
+00:08:43,480 --> 00:08:50,400
+Babbage invece era un computer a tutti gli effetti, almeno nella teoria. A partire dal suo
+
+68
+00:08:50,400 --> 00:08:56,320
+progetto infatti fu scritto il primo vero e proprio programma della storia e fu anche ideato
+
+69
+00:08:56,320 --> 00:09:03,720
+il meccanismo di memorizzazione dei programmi su schede perforate, meccanismo che verrà utilizzato
+
+70
+00:09:03,720 --> 00:09:13,160
+fino all'incirca al 1970. L'unico piccolo problema della macchina analitica di Babbage è che in
+
+71
+00:09:13,160 --> 00:09:19,640
+realtà non fu mai realizzata e questo perché avrebbe necessitato per funzionare di un motore
+
+72
+00:09:19,680 --> 00:09:28,920
+a vapore e sarebbe stata lunga circa 30 metri e larga 10. Infine per arrivare a quello che viene
+
+73
+00:09:28,920 --> 00:09:38,160
+considerato il vero e proprio computer universale dobbiamo aspettare fino al 1936. In quest'anno
+
+74
+00:09:38,160 --> 00:09:46,160
+infatti il famoso matematico Alan Turing propone un suo progetto che oggi si chiama la macchina di
+
+75
+00:09:46,160 --> 00:09:53,520
+Turing il cui obiettivo era quello di risolvere un problema posto pochi anni prima da un altro
+
+76
+00:09:53,520 --> 00:10:00,880
+famoso matematico David Hilbert il quale si chiedeva se esistesse un algoritmo in grado
+
+77
+00:10:00,880 --> 00:10:08,000
+di dimostrare teoremi di matematica a partire dagli assiomi. Ora senza scendere nei dettagli
+
+78
+00:10:08,160 --> 00:10:16,480
+matematici quello che ci interessa è sapere che Turing per dimostrare che nessun algoritmo poteva
+
+79
+00:10:16,480 --> 00:10:26,400
+risolvere il problema richiesto da Hilbert dovette costruire un modello teorico di computer e questo
+
+80
+00:10:26,400 --> 00:10:34,160
+doveva essere abbastanza sofisticato da essere in grado di eseguire qualsiasi algoritmo e inoltre
+
+81
+00:10:34,200 --> 00:10:41,080
+Turing dovette anche dimostrare che questo suo teorico computer non era in grado di risolvere
+
+82
+00:10:41,080 --> 00:10:47,840
+il problema posto da Hilbert. Cercando quindi di risolvere tutto un altro problema Turing gettò
+
+83
+00:10:47,840 --> 00:10:54,840
+le basi per una macchina che fu realmente costruita a Bletchley Park nel 1944 e che
+
+84
+00:10:54,840 --> 00:11:02,560
+prese il nome di Colossus. Da quel momento in poi i passaggi successivi porteranno da computer grandi
+
+85
+00:11:02,560 --> 00:11:11,080
+quanto intere stanze ad apparecchi in grado di essere posizionati su di una scrivania. La Olivetti
+
+86
+00:11:11,080 --> 00:11:18,880
+programma 101 è infatti il primo personal computer della storia ed è stato anche utilizzato dalla
+
+87
+00:11:18,880 --> 00:11:45,880
+nasa per mandare l'uomo sulla luna. Per oggi il nostro viaggio fra gli antenati del computer
+
+88
+00:11:45,880 --> 00:11:53,160
+finisce qui. Avrei voluto parlare un po' anche della Olivetti e della sua 101 ma non lo faccio
+
+89
+00:11:53,160 --> 00:11:59,600
+per due motivi. Il primo è che ne abbiamo già parlato dal punto di vista storico in un vecchio
+
+90
+00:11:59,600 --> 00:12:06,000
+episodio e vi invito a recuperarlo. Il secondo è che la storia che c'è dietro questo computer e
+
+91
+00:12:06,000 --> 00:12:12,920
+l'azienda che lo produceva mi ha fatto molto incazzare e per questo voglio dedicarvi un'intera
+
+92
+00:12:12,920 --> 00:12:19,920
+puntata perché sono convinto che dobbiate incazzarvi anche voi. Per oggi quindi ci fermiamo
+
+93
+00:12:19,920 --> 00:12:26,240
+qui, io come al solito vi ringrazio per avermi ascoltato, spero che l'episodio vi sia piaciuto,
+
+94
+00:12:26,240 --> 00:12:32,720
+vi invito a commentare e unirvi al gruppo telegram, ormai lo sapete, e vi saluto
+
+95
+00:12:32,720 --> 00:12:38,400
+ricordandovi che un informatico risolve problemi a volte anche usando il computer.
+

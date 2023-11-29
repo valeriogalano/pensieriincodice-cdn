@@ -1,0 +1,380 @@
+1
+00:00:00,000 --> 00:00:09,960
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,960 --> 00:00:23,800
+Buongiorno a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice,
+
+3
+00:00:23,800 --> 00:00:29,160
+il podcast in cui parliamo di argomenti presi dal mondo del software, di internet e della
+
+4
+00:00:29,160 --> 00:00:35,120
+programmazione. Oggi raccontiamo una storia che non è direttamente legata all'informatica quanto
+
+5
+00:00:35,120 --> 00:00:41,200
+piuttosto ad un concetto che però dovrebbe essere caro ad ogni buon informatico. Per
+
+6
+00:00:41,200 --> 00:00:46,240
+l'episodio della rubrica informatica vintage di oggi, infatti, Andrea Chanot della pagina
+
+7
+00:00:46,240 --> 00:00:51,760
+Facebook Italian Developers ha deciso di raccontare una storia in cui i protagonisti sono stati in
+
+8
+00:00:51,760 --> 00:00:57,200
+grado di pensare fuori dagli schemi e di applicare cioè quello che viene comunemente definito il
+
+9
+00:00:57,200 --> 00:01:03,920
+pensiero laterale. Poiché lavorare con l'informatica, sia che si parli di programmatori o di analisti
+
+10
+00:01:03,920 --> 00:01:09,560
+o di tecnici o di qualsiasi altra figura mi venga in mente, significa trovarsi quotidianamente ad
+
+11
+00:01:09,560 --> 00:01:15,520
+affrontare la risoluzione di problemi che possono variare anche molto l'uno dall'altro, il pensiero
+
+12
+00:01:15,520 --> 00:01:20,200
+laterale è una tecnica di problem solving che può essere di grande aiuto quando ci sembra che
+
+13
+00:01:20,200 --> 00:01:26,760
+l'ostacolo che ci troviamo davanti sia insormontabile. Noi ne abbiamo già parlato nel primo episodio
+
+14
+00:01:27,120 --> 00:01:32,600
+di questo podcast, che ovviamente vi invito a recuperare se non l'avete già fatto, ma in
+
+15
+00:01:32,600 --> 00:01:38,920
+pratica applicare il pensiero laterale vuol dire analizzare un problema da angolazioni diverse,
+
+16
+00:01:38,920 --> 00:01:45,640
+cogliendo così dei dettagli che in una normale analisi potrebbero sfuggire. In questo modo sarà
+
+17
+00:01:45,640 --> 00:01:52,000
+possibile ragionare fuori dagli schemi ed elaborare così soluzioni che attingano a conoscenze e idee
+
+18
+00:01:52,080 --> 00:01:58,040
+al di fuori del dominio del problema. Prima di procedere dunque con la nostra storia ricordo
+
+19
+00:01:58,040 --> 00:02:03,560
+a voi di iscrivervi alla pagina facebook di Italian Developers dove troverete questa ed altre
+
+20
+00:02:03,560 --> 00:02:08,800
+storie sul mondo dell'informatica e ringrazio come al solito Andrea per aver raccolto le
+
+21
+00:02:08,800 --> 00:02:19,760
+informazioni e redatto il testo che ora andrò a leggervi. Quanto è importante guardare a ciò
+
+22
+00:02:19,760 --> 00:02:26,160
+che ci circonda con una prospettiva diversa? E soprattutto quando sembra che ogni cosa vada
+
+23
+00:02:26,160 --> 00:02:31,480
+per il verso sbagliato? Questa è la storia di una grande donna e della nascita di un'azienda
+
+24
+00:02:31,480 --> 00:02:38,040
+multimilionaria che ha dato vita ad uno dei giochi più famosi del mondo, Play Doh. Tutti da piccoli
+
+25
+00:02:38,040 --> 00:02:43,120
+ci abbiamo giocato ma pochi sanno che la sua creazione è del tutto casuale e soprattutto
+
+26
+00:02:43,120 --> 00:02:53,360
+dovuta alla carta da parati. Dal 1885 fino al 1950 circa il carbone era, ahimè povero ambiente,
+
+27
+00:02:53,360 --> 00:03:00,160
+il combustibile per riscaldamento più utilizzato negli Stati Uniti. Produceva il quadruplo dell'energia
+
+28
+00:03:00,160 --> 00:03:06,040
+rispetto al legno ma costava la metà. Oltre però al pessimo impatto ambientale vi era anche un altro
+
+29
+00:03:06,040 --> 00:03:11,640
+lato negativo per chi lo utilizzava e cioè la fuligine derivante dalla sua combustione. Per
+
+30
+00:03:11,640 --> 00:03:17,160
+le superfici non lavabili come la carta da parati, molto diffusa all'epoca, la fuligine era un vero
+
+31
+00:03:17,160 --> 00:03:24,000
+problema. Per le pulizie di primavera si usava un impasto di farina, acqua, sale e borace fatto in
+
+32
+00:03:24,000 --> 00:03:29,840
+casa e lo si faceva rotolare su e giù per le pareti tappezzate raccogliendo così la fuligine
+
+33
+00:03:29,840 --> 00:03:36,200
+depositata. Presto però le aziende iniziarono ad offrire detergenti per carta da parati premiscelati
+
+34
+00:03:36,200 --> 00:03:42,080
+ed in questo contesto si colloca appunto la Cootle Products Company, un'azienda manifattoriera
+
+35
+00:03:42,080 --> 00:03:50,080
+di prodotti per la pulizia ancora oggi esistente. Fondata nel 1920 a Cincinnati, Ohio, essa vive
+
+36
+00:03:50,080 --> 00:03:56,240
+una profonda crisi verso la fine degli anni 20, ma un giovane e brillante Cleo McVicker riesce
+
+37
+00:03:56,240 --> 00:04:02,760
+prima a risollevarne le sorti e dopo ad assumere suo fratello Noah. La svolta per loro avviene
+
+38
+00:04:02,760 --> 00:04:08,760
+quando i due siglano un accordo di fornitura con la catena di negozi Kroger, i quali chiedevano
+
+39
+00:04:08,760 --> 00:04:15,400
+un prodotto di pulizia per la loro carta da parati e toccò proprio a Noah inventare un composto morbido
+
+40
+00:04:15,400 --> 00:04:20,840
+e flessibile che fosse in grado di raccogliere tutta quella fastidiosa polvere. Il prodotto
+
+41
+00:04:20,840 --> 00:04:26,840
+Cootle divenne quindi il più grande detergente per carta da parati al mondo all'inizio del ventesimo
+
+42
+00:04:26,840 --> 00:04:34,720
+secolo, tuttavia le fortune iniziarono a cambiare negli anni 50. Cleo McVicker muore infatti in un
+
+43
+00:04:34,720 --> 00:04:42,880
+incidente aereo privato nel 1949. La moglie ormai vedova Irma eredita la compagnia e decide di
+
+44
+00:04:42,880 --> 00:04:48,880
+assumere suo figlio Joe e il suo genero Bill Rodenbaum per provare a colmare il vuoto che la
+
+45
+00:04:48,880 --> 00:04:54,960
+morte di Cleo aveva lasciato. Come se non bastasse dopo la seconda guerra mondiale con il passaggio
+
+46
+00:04:54,960 --> 00:05:01,280
+a riscaldamenti a petrolio, gas o elettricità, l'accumulo di fuligine sulla carta da parati non
+
+47
+00:05:01,280 --> 00:05:07,480
+è poi più questo gran problema ed il prodotto Cootle non viene più richiesto. Pure l'avvento
+
+48
+00:05:07,480 --> 00:05:12,880
+della carta da parati in vinile che può essere lavata con acqua e sapone concorre a complicare
+
+49
+00:05:12,880 --> 00:05:19,280
+ulteriormente le cose. E dato che apparentemente non c'è mai fine al peggio, mentre Cootle sta
+
+50
+00:05:19,280 --> 00:05:26,160
+praticamente fallendo, Joe ha una preoccupazione ben più grande. A 25 anni ha appena scoperto che
+
+51
+00:05:26,160 --> 00:05:32,560
+sta per morire. Gli viene infatti diagnosticata la malattia di Hodgkin, una rara forma di cancro,
+
+52
+00:05:32,560 --> 00:05:38,560
+e tutta la sua famiglia si stringe attorno a lui per aiutarlo compresa sua cognata Kai Zufall
+
+53
+00:05:38,560 --> 00:05:44,640
+che poi risulterà fondamentale nel proseguo di questa storia. Il marito di Kai è infatti un
+
+54
+00:05:44,680 --> 00:05:51,040
+dottore a Bellevue, New York, e convince Joe a farsi operare da loro. L'intervento purtroppo
+
+55
+00:05:51,040 --> 00:05:56,280
+non ha l'esito sperato e Joe viene subito rispedito a Cincinnati per passare lì i suoi ultimi giorni.
+
+56
+00:05:56,280 --> 00:06:02,360
+Mentre Joe effettuava cicli di terapia sperimentale a base di radiazioni che gli
+
+57
+00:06:02,360 --> 00:06:06,200
+permisero effettivamente di sconfiggere la malattia, nonostante dopo il trattamento i
+
+58
+00:06:06,200 --> 00:06:11,680
+medici gli abbiano sempre ricordato che sarebbe deceduto presto perché questi consideravano la
+
+59
+00:06:11,680 --> 00:06:19,280
+cura non sufficiente mentre in realtà egli non morì fino al 1992, di lì a poco nel New Jersey
+
+60
+00:06:19,280 --> 00:06:24,080
+sua cognata avrebbe avuto una brillante idea destinata a cambiare per sempre la sorte
+
+61
+00:06:24,080 --> 00:06:30,600
+dell'azienda. Kai è una maestra di scuola materna ed intenta a trovare metodi alternativi per la
+
+62
+00:06:30,600 --> 00:06:36,280
+modellazione dell'argilla, che risulta essere disordinata e troppo difficile da lavorare per
+
+63
+00:06:36,280 --> 00:06:41,800
+le piccole mani dei suoi giovani alunni e cerca dunque nuove idee per le decorazioni natalizie.
+
+64
+00:06:41,800 --> 00:06:46,400
+Quando legge un articolo riguardante la realizzazione di ornamenti per alberi di
+
+65
+00:06:46,400 --> 00:06:52,080
+Natale usando del semplice detergente per carta da parati, si chiede se Joe ne avesse mai sentito
+
+66
+00:06:52,080 --> 00:06:57,760
+parlare. Spinta da grande entusiasmo si reca nel primo negozio di ferramenta locale dove chiede
+
+67
+00:06:57,760 --> 00:07:03,640
+una confezione del detergente per carta da parati Cutol. Con estrema difficoltà, dato che il prodotto
+
+68
+00:07:03,640 --> 00:07:08,800
+era ormai in disuso, il negoziante riesce a trovare una lattina ed una volta appurata la non
+
+69
+00:07:08,800 --> 00:07:15,200
+tossicità della pasta, Kai chiede di testarla e darla ai bambini della sua classe. Essi adorano
+
+70
+00:07:15,200 --> 00:07:21,160
+modellarla creando le forme più svariate. In preda all'entusiasmo Kai chiama Joe e gli dice
+
+71
+00:07:21,160 --> 00:07:27,480
+puoi trasformare quella roba in un giocattolo. Spiazzato dalla stranezza di questa idea ma
+
+72
+00:07:27,480 --> 00:07:31,960
+subito intrigato dal suo potenziale, Joe si precipita fuori di casa e guardando gli
+
+73
+00:07:31,960 --> 00:07:38,560
+ordamenti dell'albero di Natale risponde mio dio lo faremo! Kai suggerisce persino il nome per la
+
+74
+00:07:38,560 --> 00:07:44,800
+sua scoperta, Play-Doh. Resasi conto della potenzialità dell'invenzione, intuisce che
+
+75
+00:07:44,800 --> 00:07:50,560
+avrebbe prodotto un giocattolo migliore del detergente originario. Così riesce a persuadere
+
+76
+00:07:50,560 --> 00:07:58,440
+i due a metter su una produzione in larga scala. Joe, suo zio Noah e Bill aprono una nuova filiale
+
+77
+00:07:58,440 --> 00:08:03,440
+chiamata Rainbow Craft Company con la quale iniziano a commercializzare il loro vecchio
+
+78
+00:08:03,440 --> 00:08:09,760
+prodotto con il nuovo nome suggerito. Woodward & Lothrop, grande magazzino di Washington DC,
+
+79
+00:08:09,760 --> 00:08:16,000
+è il primo a portare Play-Doh tra i propri scaffali. Macy e Marshall Field si interessano
+
+80
+00:08:16,000 --> 00:08:22,640
+presto al giocattolo e iniziano anche loro a proporlo ai propri clienti. Nel 1985 Play-Doh
+
+81
+00:08:22,640 --> 00:08:28,400
+compare nelle pubblicità televisive di Captain Kangaroo, Ding Dong School e Romper Room,
+
+82
+00:08:28,400 --> 00:08:35,000
+trasmissioni per bambini paragonabili alle nostre Bim Bom Bam, L'albero azzurro o Solletico. Ecco
+
+83
+00:08:35,000 --> 00:08:43,160
+che le vendite schizzano alle stelle. McVicker fa domanda di brevetto nel 1956 e questa viene
+
+84
+00:08:43,160 --> 00:08:50,840
+accolta il 26 gennaio 1965, lo stesso anno in cui Rainbow Craft viene venduta alla General Mills,
+
+85
+00:08:50,880 --> 00:08:58,040
+che la fonde poi con la Kenner Products nel 1971. Una nuova fusione con Tonka Corporation avviene
+
+86
+00:08:58,040 --> 00:09:04,880
+nel 1989 e due anni dopo Hasbro acquista quest'ultima, trasferendo Play-Doh e la sua
+
+87
+00:09:04,880 --> 00:09:11,000
+divisione Play School facendone quel fenomeno di ricreazione globale che tutti noi oggi conosciamo.
+
+88
+00:09:11,000 --> 00:09:23,320
+Bene, spero che questo episodio un po' diverso dal solito vi sia piaciuto. Voi fatemi sapere
+
+89
+00:09:23,320 --> 00:09:28,640
+cosa ne pensate con un commento o unendovi al gruppo Telegram di cui trovate il link in
+
+90
+00:09:28,640 --> 00:09:34,400
+descrizione. Sempre in descrizione trovate anche tutti i vari link per seguire questo progetto ed
+
+91
+00:09:34,400 --> 00:09:39,760
+eventualmente supportarlo. Io ne approfitto per avvisarvi che nel periodo natalizio non
+
+92
+00:09:39,800 --> 00:09:45,400
+usciranno episodi di Pensieri in Codice, quindi questo è l'ultimo per il 2019,
+
+93
+00:09:45,400 --> 00:09:50,720
+anche se in realtà stiamo provando a preparare una piccola sorpresa ma per ora non vi assicuro
+
+94
+00:09:50,720 --> 00:09:55,480
+nulla. Quindi come al solito vi ringrazio per aver speso un po' del vostro tempo ad
+
+95
+00:09:55,480 --> 00:10:01,400
+ascoltare questo podcast, vi auguro buone vacanze e vi do appuntamento a gennaio.
+

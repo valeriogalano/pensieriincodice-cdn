@@ -1,0 +1,420 @@
+1
+00:00:00,000 --> 00:00:10,040
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:20,040 --> 00:00:26,040
+Salve a tutti e ben ritrovati su Pensieri in codice, il podcast in cui parliamo di
+
+3
+00:00:26,080 --> 00:00:30,160
+argomenti presi dal mondo del software, di internet e della programmazione.
+
+4
+00:00:30,160 --> 00:00:35,280
+L'argomento di cui vorrei parlare oggi mi è venuto in mente a seguito di una conversazione
+
+5
+00:00:35,280 --> 00:00:40,920
+avuta durante la settimana scorsa. La persona con cui ho parlato e che mi ha scatenato questo
+
+6
+00:00:40,920 --> 00:00:47,760
+pensiero è un professionista che ha da poco adottato un gestionale in cloud per motivi
+
+7
+00:00:47,760 --> 00:00:52,800
+legati al proprio lavoro e il problema era configurare l'accesso a questo software su un
+
+8
+00:00:52,800 --> 00:01:00,200
+nuovo pc e pur essendo un utente abbastanza smaliziato mi ha chiesto aiuto perché semplicemente
+
+9
+00:01:00,200 --> 00:01:06,120
+non svolge normalmente attività legate all'utilizzo del computer e voleva un po' di supporto.
+
+10
+00:01:06,120 --> 00:01:12,000
+Ovviamente dopo un'installazione per far funzionare il software abbiamo dovuto inserire
+
+11
+00:01:12,000 --> 00:01:19,400
+le credenziali di autenticazione e quindi dopo che gliele ho chieste questa persona si è alzata
+
+12
+00:01:19,400 --> 00:01:26,560
+è andata a prendere un'agenda una di quelle compatte e un po' grassottelle piene di appunti
+
+13
+00:01:26,560 --> 00:01:33,520
+foglietti post it eccetera e dopo averla sfogliata un po' mi ha messo davanti una pagina con scritte
+
+14
+00:01:33,520 --> 00:01:39,880
+tutta una serie di credenziali. A quel punto è scattata la domanda e ho chiesto scusa ma tu le
+
+15
+00:01:39,880 --> 00:01:48,120
+password le annoti tutte sull'agenda e la risposta è stata beh dove altro dovrei annotarle? Da qui mi
+
+16
+00:01:48,120 --> 00:01:54,680
+è venuta l'idea che in effetti se magari per qualcuno è banale utilizzare uno strumento di
+
+17
+00:01:54,680 --> 00:02:00,880
+conservazione delle password è anche possibile che tanti altri non siano neanche a conoscenza
+
+18
+00:02:00,880 --> 00:02:06,200
+delle varie possibilità e quindi si affidino semplicemente alla prima che gli viene in mente.
+
+19
+00:02:06,200 --> 00:02:17,560
+Purtroppo nel mondo di oggi abbiamo tantissime password siamo iscritti a centinaia di servizi
+
+20
+00:02:17,560 --> 00:02:25,000
+account social, email, le app sullo smartphone, i gestionari vari, le web application. Ognuno di
+
+21
+00:02:25,000 --> 00:02:31,160
+questi servizi necessita almeno in generale di un username e una password per permetterci di
+
+22
+00:02:31,160 --> 00:02:37,720
+accedere. Dal momento che è impossibile ricordare tutte le password è indispensabile avere un metodo
+
+23
+00:02:37,720 --> 00:02:44,640
+per archiviarle e poterle recuperare all'occorrenza e prima che me lo scriviate nei commenti leviamoci
+
+24
+00:02:44,640 --> 00:02:50,600
+subito questo dente. Usare la stessa password per i vostri account per tutti i vostri account è
+
+25
+00:02:50,600 --> 00:02:57,440
+sbagliatissimo è una pratica assolutamente da evitare. Tra un servizio e l'altro la combinazione
+
+26
+00:02:57,440 --> 00:03:03,640
+di username e password deve essere assolutamente differente e questo per un motivo molto semplice
+
+27
+00:03:03,640 --> 00:03:10,080
+perché i database dei vari servizi anche quelli grandi come facebook e linkedin non sono sempre
+
+28
+00:03:10,280 --> 00:03:16,200
+sicuri al cento per cento. Può capitare ed è capitato che si verifichino grandi attacchi hacker
+
+29
+00:03:16,200 --> 00:03:24,160
+ai danni di questi servizi e che in questi attacchi vengano rubate anche milioni di credenziali oppure
+
+30
+00:03:24,160 --> 00:03:30,000
+può capitare che vengano creati e lasciati incustoditi per errore grossi archivi di
+
+31
+00:03:30,000 --> 00:03:37,000
+credenziali ad esempio a causa di un log generato male o anche per via di qualche applicazione per
+
+32
+00:03:37,000 --> 00:03:43,960
+uso interno dell'azienda che possa finire nelle mani sbagliate. Chiunque entri in possesso di
+
+33
+00:03:43,960 --> 00:03:49,400
+tali credenziali potrà facilmente accedere al vostro account e se avrete utilizzato la stessa
+
+34
+00:03:49,400 --> 00:03:54,120
+password e lo stesso username per un altro servizio allora quella stessa persona potrà
+
+35
+00:03:54,120 --> 00:03:58,920
+accedere anche a quest'altro servizio e va da sé che se avete utilizzato la stessa username
+
+36
+00:03:58,920 --> 00:04:05,880
+e password per tutti i vostri servizi beh allora potresti avere un problema. Per inciso se volete
+
+37
+00:04:05,880 --> 00:04:12,200
+verificare se le vostre credenziali sono mai state rubate o sono finite in una delle tante
+
+38
+00:04:12,200 --> 00:04:19,080
+frazioni digitali conosciute potete farvi un giro sul servizio firefox monitor che vi linko in
+
+39
+00:04:19,080 --> 00:04:25,120
+descrizione e che potete utilizzare anche per farvi avvisare in caso di nuovi furti di password.
+
+40
+00:04:25,120 --> 00:04:32,000
+Bene ora che abbiamo stabilito che le password devono essere tante e tutte diverse proprio per
+
+41
+00:04:32,000 --> 00:04:36,920
+la nostra sicurezza cerchiamo di capire come fare per archiviarle in modo da non diventare
+
+42
+00:04:36,920 --> 00:04:43,360
+matti. Opzione numero uno che ho anche scoperto essere una delle più gettonate tra i non informatici
+
+43
+00:04:43,360 --> 00:04:50,920
+la carta. Che sia un'agenda un quadernetto un block notice moltissimi annotano le proprie
+
+44
+00:04:50,920 --> 00:04:57,920
+password con carta e penna questa anche se secondo me non è la migliore delle soluzioni ha comunque
+
+45
+00:04:57,920 --> 00:05:05,800
+alcuni punti di forza innanzitutto è assolutamente inaccherabile nel senso stretto del termine nel
+
+46
+00:05:05,800 --> 00:05:12,560
+senso che essendo non digitale non vi è in modo di accedervi senza avere fisicamente sotto mano
+
+47
+00:05:12,560 --> 00:05:19,400
+il supporto cartaceo per contro è anche una soluzione abbastanza fragile a meno di scrivere
+
+48
+00:05:19,400 --> 00:05:25,560
+tutto in codice chiunque l'abbia a portata di mano anche solo per qualche secondo potrebbe farne
+
+49
+00:05:25,560 --> 00:05:32,040
+una foto e ne avrebbe comodamente a disposizione il contenuto quando e come vuole. Inoltre se
+
+50
+00:05:32,040 --> 00:05:38,760
+l'agenda dovesse per sbaglio andare persa o distrutta se il proprietario non si fosse premonito
+
+51
+00:05:38,760 --> 00:05:44,640
+di farne una copia allora non avrebbe alcuna possibilità di recuperarne il contenuto. Una
+
+52
+00:05:44,640 --> 00:05:51,560
+seconda soluzione anche questa molto gettonata è quella di utilizzare il gestore password del
+
+53
+00:05:51,560 --> 00:05:56,920
+browser avete presente quando accedete a un servizio e il browser vi chiede vuoi salvare
+
+54
+00:05:56,920 --> 00:06:02,960
+la password? beh questa è sicuramente una delle alternative più comode perché basta cliccare
+
+55
+00:06:02,960 --> 00:06:09,880
+salva si salva una password e in fase di autenticazione non è nemmeno più necessario
+
+56
+00:06:09,880 --> 00:06:17,200
+cercarle le credenziali dato che il browser stesso ha pre compilare i campi al posto nostro. Ultimamente
+
+57
+00:06:17,200 --> 00:06:22,400
+alcuni browser permettono anche di utilizzare servizi di sincronizzazione tra dispositivi
+
+58
+00:06:22,400 --> 00:06:28,120
+diversi quindi si possono sempre avere a disposizione le proprie password anche se
+
+59
+00:06:28,120 --> 00:06:34,000
+si utilizzano più computer o più smartphone. Il principale limite di questo approccio tuttavia
+
+60
+00:06:34,000 --> 00:06:40,000
+è che i sistemi di memorizzazione integrati nei browser non sono particolarmente noti per le
+
+61
+00:06:40,000 --> 00:06:46,640
+caratteristiche di sicurezza e pertanto potrebbero non essere il mezzo più adatto per proteggere le
+
+62
+00:06:46,640 --> 00:06:51,680
+nostre password da eventuali attacchi esterni. Se poi ci aggiungiamo anche la funzione di
+
+63
+00:06:51,680 --> 00:06:58,000
+sincronizzazione potremmo rischiare di esporre il nostro archivio di password a chiunque abbia
+
+64
+00:06:58,000 --> 00:07:03,280
+accesso ad uno qualsiasi dei computer che utilizziamo solitamente. Una terza soluzione
+
+65
+00:07:03,280 --> 00:07:11,960
+che ahimè è piuttosto in voga fra gli informatici è l'utilizzo di un file di testo. Un archivio in
+
+66
+00:07:12,040 --> 00:07:19,920
+txt seppur particolarmente semplice da modificare e da consultare rappresenta però un enorme problema
+
+67
+00:07:19,920 --> 00:07:26,360
+dal punto di vista della sicurezza. A parte il fatto che a chiunque basterebbero due minuti di
+
+68
+00:07:26,360 --> 00:07:34,080
+accesso alla tastiera del pc per rubarne una copia e nessuno se ne accorgerebbe mai c'è anche da
+
+69
+00:07:34,080 --> 00:07:39,840
+considerare il fatto che probabilmente questo file potrebbe essere sincronizzato per comodità
+
+70
+00:07:39,840 --> 00:07:46,360
+fra vari pc o addirittura rientrare in un qualche meccanismo di backup dei dati. In tal caso di
+
+71
+00:07:46,360 --> 00:07:51,480
+questo file esisterebbero più copie magari anche all'insaputa del proprietario distribuite
+
+72
+00:07:51,480 --> 00:07:57,920
+su più server di backup o sincronizzazione e diciamocela tutta non sarebbe poi così difficile
+
+73
+00:07:57,920 --> 00:08:04,000
+per chi ha accesso a tali server recuperarlo e utilizzarle il contenuto. Non sarebbe necessario
+
+74
+00:08:04,000 --> 00:08:10,840
+per forza un tentativo di hacking ma semplicemente basterebbe trovare chi ha accesso ai server per
+
+75
+00:08:10,840 --> 00:08:17,520
+manutenzione o configurazione. La soluzione invece che personalmente utilizzo io stesso e che
+
+76
+00:08:17,520 --> 00:08:24,520
+solitamente consiglio a tutti è quella di dotarsi di un apposito software per la gestione delle
+
+77
+00:08:24,520 --> 00:08:31,600
+password. Software del genere solitamente creano dei file criptografati sul pc e vi conservano
+
+78
+00:08:31,600 --> 00:08:37,040
+all'interno tutte le informazioni inserite nell'archivio criptandole con algoritmi di
+
+79
+00:08:37,040 --> 00:08:43,680
+cifratura che includono la password stessa dell'archivio. In questo modo si possono avere
+
+80
+00:08:43,680 --> 00:08:49,560
+anche migliaia di password differenti ma è necessario tenerne a mente solamente una,
+
+81
+00:08:49,560 --> 00:08:55,400
+solamente quella dell'archivio. Inoltre è possibile trasferire il file archivio e farne
+
+82
+00:08:55,400 --> 00:09:01,160
+copie di backup riducendo però drasticamente la possibilità che qualcuno lo recuperi e ne
+
+83
+00:09:01,160 --> 00:09:07,680
+utilizzi il contenuto a nostra insaputa. A corredo i software di password management
+
+84
+00:09:07,680 --> 00:09:14,080
+offrono anche tante piccole utility come la ricerca, la generazione automatica delle
+
+85
+00:09:14,080 --> 00:09:20,000
+password e l'inserimento automatico delle credenziali nei form di autenticazione. Se
+
+86
+00:09:20,000 --> 00:09:26,120
+vi va di provarne uno vi linko in descrizione il sito del password manager che sto utilizzando
+
+87
+00:09:26,440 --> 00:09:34,040
+ormai da anni, KeePassXC. Si tratta di un software open source e quindi gratuito e il cui codice
+
+88
+00:09:34,040 --> 00:09:39,640
+viene monitorato costantemente dalla comunità degli sviluppatori. Mi rendo conto che questa
+
+89
+00:09:39,640 --> 00:09:46,680
+soluzione suona un po' più complicata ma in realtà è solo una questione di abitudine. Secondo me si
+
+90
+00:09:46,680 --> 00:09:53,160
+tratta solo di un compromesso che a fronte di un piccolo sforzo in più però restituisce
+
+91
+00:09:53,160 --> 00:09:59,160
+grandi vantaggi sia in termini di sicurezza che di funzionalità che di efficienza. Infine giusto
+
+92
+00:09:59,160 --> 00:10:03,840
+per completezza vi segnalo che nell'ultimo periodo sono stati sviluppati anche molti
+
+93
+00:10:03,840 --> 00:10:10,440
+servizi di password management in cloud, dei software di gestione cioè che invece di essere
+
+94
+00:10:10,440 --> 00:10:17,120
+installati sul pc sono disponibili direttamente online. Ad essere del tutto sincero non ne ho
+
+95
+00:10:17,120 --> 00:10:22,720
+ancora provati tuttavia a livello generale mi sento un po' diffidente nei confronti di servizi
+
+96
+00:10:22,780 --> 00:10:28,240
+del genere e nel caso si abbia bisogno di avere il proprio archivio password sempre a portata di
+
+97
+00:10:28,240 --> 00:10:35,520
+mano consiglio più l'utilizzo di una semplice chiavetta usb oppure di spostare il file di
+
+98
+00:10:35,520 --> 00:10:41,680
+archivio tra i propri sistemi utilizzando un servizio di trasferimento che magari già si conosce.
+
+99
+00:10:41,680 --> 00:10:53,480
+Con questo si conclude l'episodio di oggi e come al solito vi ringrazio per aver ascoltato fin qui
+
+100
+00:10:53,480 --> 00:10:59,160
+spero che questa chiacchierata vi torni utile e vi invito a condividere le vostre opinioni con
+
+101
+00:10:59,160 --> 00:11:05,640
+un commento oppure unendovi al nuovissimo gruppo telegram di pensieri in codice di cui trovate
+
+102
+00:11:05,640 --> 00:11:11,840
+il link in descrizione. Se utilizzate un metodo differente per archiviare le vostre password o
+
+103
+00:11:11,840 --> 00:11:17,760
+volete aggiungere qualcosa a quanto detto non esitate a prendere parte alla discussione. Per
+
+104
+00:11:17,760 --> 00:11:24,040
+oggi è tutto vi ricordo che questo podcast è disponibile su Spreaker, YouTube, Spotify
+
+105
+00:11:24,040 --> 00:11:28,760
+ed iTunes e vi do appuntamento alla prossima settimana. Buona giornata a tutti!
+

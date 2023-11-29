@@ -1,0 +1,268 @@
+1
+00:00:00,000 --> 00:00:25,000
+Salve a tutti e ben ritrovati per un nuovo episodio di Pensieri in Codice.
+
+2
+00:00:25,000 --> 00:00:32,000
+Giusto un paio di episodi fa abbiamo visto a grandi linee come funziona l'algoritmo di indicizzazione di un generico motore di ricerca.
+
+3
+00:00:33,000 --> 00:00:39,000
+Se non l'avete già fatto vi consiglio di ascoltare la puntata numero 28 prima di continuare con l'ascolto di questa.
+
+4
+00:00:40,000 --> 00:00:49,000
+Senza infatti conoscere le nozioni di cui abbiamo discusso in quell'episodio potrebbe essere difficile capire i riferimenti che faremo in questo.
+
+5
+00:00:50,000 --> 00:01:02,000
+In quell'occasione abbiamo detto che in realtà il nome algoritmo di indicizzazione nasconde due concetti ben distinti che sono l'indicizzazione appunto e l'ordinamento.
+
+6
+00:01:03,000 --> 00:01:17,000
+Nella puntata numero 28 ho utilizzato la parola classificazione intendendo l'operazione di dare un voto e quindi creare una classifica ma in realtà la parola ordinamento risulta più adatta.
+
+7
+00:01:18,000 --> 00:01:27,000
+Mentre il meccanismo di indicizzazione al netto di qualche piccola variante può essere considerato più o meno comune per tutti i motori di ricerca,
+
+8
+00:01:28,000 --> 00:01:39,000
+quello di ordinamento può cambiare profondamente da motore a motore e la sua maggiore o minore efficienza può determinare il successo o il fallimento del motore che lo implementa.
+
+9
+00:01:39,000 --> 00:01:50,000
+Per questo motivo infatti quasi tutte le aziende che gestiscono un motore di ricerca tendono a mantenere segreti i dettagli riguardanti il funzionamento del proprio algoritmo.
+
+10
+00:01:51,000 --> 00:02:00,000
+Un esempio che è sotto gli occhi di tutti risale al 1990 ed è l'algoritmo chiamato PageRank ideato da Larry Page e Sergey Brin
+
+11
+00:02:00,000 --> 00:02:11,000
+che permise alla allora neonata Google di superare i propri maggiori concorrenti nonostante essi fossero entrati in attività ben 4 anni prima del motore di Mountain View.
+
+12
+00:02:12,000 --> 00:02:21,000
+Ed è proprio per questo motivo ed anche perché il funzionamento della prima versione di PageRank fu reso pubblico dagli stessi autori con un documento del 1998
+
+13
+00:02:22,000 --> 00:02:32,000
+che nell'episodio di oggi andremo a scoprire i principi base di questo algoritmo che ha ricoperto un ruolo così importante per la costruzione di internet così come oggi lo conosciamo.
+
+14
+00:02:32,000 --> 00:03:00,000
+Nell'episodio numero 28 abbiamo illustrato un metodo basilare per ordinare alcune pagine come più o meno attinenti rispetto a una ricerca basandoci su elementi come la distanza tra le parole cercate e il ruolo che tali parole assumono all'interno del testo.
+
+15
+00:03:01,000 --> 00:03:11,000
+Ora però con l'algoritmo PageRank facciamo un passo in più e aggiungiamo altri elementi che ci permettano di migliorare la precisione della nostra classificazione.
+
+16
+00:03:12,000 --> 00:03:19,000
+In pratica cerchiamo un modo per aumentare le probabilità di restituire la risposta più corretta possibile ai nostri utenti.
+
+17
+00:03:20,000 --> 00:03:29,000
+L'idea alla base di PageRank sta nel fatto che in generale le pagine web sono collegate fra loro.
+
+18
+00:03:30,000 --> 00:03:35,000
+Come ben sappiamo infatti tantissimi siti rimandano spesso e volentieri ad altri siti.
+
+19
+00:03:36,000 --> 00:03:49,000
+Pensiamo ad esempio ad un quotidiano online o a un blog o a un forum e noteremo che gli articoli in esso contenuti sono spesso pieni di link che fanno riferimento ad altre pagine sparse per il web.
+
+20
+00:03:50,000 --> 00:03:58,000
+L'intuizione di Breen e Page fu quella di utilizzare questi link per dare un valore di autorevolezza a ciascuna pagina.
+
+21
+00:03:58,000 --> 00:04:14,000
+In parole povere ogni pagina è più autorevole quanto più viene menzionata sotto forma di link ovviamente in tutte le altre pagine e più essa è autorevole più conferisce autorevolezza alle pagine a cui fa riferimento.
+
+22
+00:04:15,000 --> 00:04:23,000
+Ok lo so che detta così sembra qualcosa di molto complicato ma in realtà non lo è. Procediamo un passo alla volta e tutto ci apparirà chiaro.
+
+23
+00:04:24,000 --> 00:04:41,000
+Prima di tutto chiariamo il concetto di base. Per ogni pagina che Google indicizza nei propri archivi il page rank conta quanti link riesce a trovare in tutto il web che puntano a quella pagina e usa questo valore per calcolare l'autorevolezza della pagina.
+
+24
+00:04:42,000 --> 00:04:49,000
+In questo modo quando l'utente effettua una ricerca il motore può facilmente presentargli i risultati ordinati per autorevolezza.
+
+25
+00:04:49,000 --> 00:05:00,000
+Ora però chiunque utilizzi il web sa benissimo che non sempre un blog, un tweet o uno stato su Facebook contengono link a qualcosa che l'autore apprezza.
+
+26
+00:05:01,000 --> 00:05:15,000
+Se è infatti vero che ciascuno di noi può pubblicare un link a una pagina perché vuole farne conoscere i contenuti è però altrettanto vero che si possa fare riferimento a pagine che ci fanno indignare o che vogliamo criticare.
+
+27
+00:05:15,000 --> 00:05:23,000
+Oltre a questo nulla vieta a qualcuno di creare link a pagine perché gli autori gli hanno corrisposto un compenso per farlo.
+
+28
+00:05:24,000 --> 00:05:35,000
+O ancora è possibile per qualcuno creare una rete di centinaia di pagine che fanno riferimento l'una all'altra allo scopo di simulare un interesse per i contenuti che in realtà non esiste.
+
+29
+00:05:36,000 --> 00:05:45,000
+Siamo quindi sicuri che pur parlando in ognuno di questi casi di collegamenti essi abbiano tutti lo stesso valore dal punto di vista di una ricerca sul web?
+
+30
+00:05:46,000 --> 00:06:00,000
+Beh ovviamente la risposta a questa domanda è no e infatti l'algoritmo PageRank già nella sua prima versione era in grado di mitigare enormemente l'effetto di tutti questi disturbi nel calcolo dell'autorevolezza.
+
+31
+00:06:01,000 --> 00:06:08,000
+La soluzione a questo problema implementata da Breen e Page è al tempo stesso molto semplice ed efficace.
+
+32
+00:06:09,000 --> 00:06:22,000
+È bastato aggiungere la regola che nel calcolo dell'autorevolezza di una pagina i collegamenti provenienti da pagine più autorevoli hanno un valore maggiore rispetto a quelli provenienti da pagine meno autorevoli.
+
+33
+00:06:23,000 --> 00:06:39,000
+Questa semplice accortezza permette a PageRank di escludere o limitare l'influenza che i link poco utili o artificiosi producono nella classificazione e al tempo stesso crea una lista di pagine i cui valori di autorevolezza sono di tipo esponenziale.
+
+34
+00:06:40,000 --> 00:06:43,000
+Proviamo a fare un esempio per chiarire bene il concetto.
+
+35
+00:06:43,000 --> 00:06:59,000
+Fingiamo che in tutto il web esistano solo due podcast di informatica. Uno è Pensieri in Codice, l'altro è Pillole di Bit che a proposito è un bellissimo podcast e io vi consiglio caldamente di ascoltare, vi lascio un link in descrizione.
+
+36
+00:07:00,000 --> 00:07:18,000
+Ora, fingiamo anche che tutto il web sia composto da sole 27 pagine. Due appartengono ai due podcast appunto e delle restanti 25, 15 contengono link verso Pensieri in Codice e 10 verso Pillole di Bit.
+
+37
+00:07:19,000 --> 00:07:36,000
+Secondo quanto abbiamo detto all'inizio verrebbe automatico pensare che effettuando una ricerca per podcast di informatica debbano venire fuori i due risultati nell'ordine, prima Pensieri in Codice e poi Pillole di Bit con i rispettivi punteggi di 15 e 10.
+
+38
+00:07:37,000 --> 00:07:57,000
+Tuttavia consideriamo questa situazione. Tra le 10 pagine che puntano a Pillole di Bit ce n'è una che si intitola Esperto di Podcast. Di tutte le 27 pagine del nostro finto web ben 20 fanno riferimento all'esperto di podcast perché quasi tutti si fidano dei suoi pareri sui vari podcast.
+
+39
+00:07:57,000 --> 00:08:19,000
+Riapplicando quindi i calcoli la pagina Pillole di Bit non avrà più un punteggio di 10, bensì uno di 9, la somma delle 9 pagine generiche, più 21, il valore di autorevolezza della pagina Esperto di Podcast e quindi avrà un totale di 30 e questo la farà passare automaticamente in prima posizione.
+
+40
+00:08:28,000 --> 00:08:46,000
+Ora, sembrerebbe che tutti i problemi di ordinamento siano stati risolti con i meccanismi che abbiamo descritto nel blocco precedente, ma in realtà questo non è affatto vero. Un problema a questo punto è molto poco intuibile ma c'è ed è anche molto grave.
+
+41
+00:08:46,000 --> 00:09:03,000
+Per capirlo immaginiamo sempre di avere un web ridotto a poche pagine. Ad esempio immaginiamo di avere la pagina A che punta alla pagina B, B a C e C di nuovo ad A. E inoltre immaginiamo di avere una pagina D che punta sempre ad A.
+
+42
+00:09:04,000 --> 00:09:31,000
+In una condizione del genere, se proviamo a calcolare il valore di autorevolezza, ci troviamo in una strana situazione. La pagina D, infatti, causerà il ricalcolo del valore della pagina A, la quale a sua volta produrrà il ricalcolo di B, poi di C e poi C nuovamente produrrà il ricalcolo del valore di A, ma ricalcolando A dovremo ricalcolare anche B e poi C e poi di nuovo A e così via.
+
+43
+00:09:32,000 --> 00:09:50,000
+A questo punto dovrebbe essere chiaro che siamo entrati in una di quelle fastidiosissime condizioni dell'informatica che si chiamano loop. Una operazione ne condiziona un'altra che a sua volta ne condiziona una terza e questa terza condiziona di nuovo la prima e tutto si ripete all'infinito.
+
+44
+00:09:51,000 --> 00:09:59,000
+Ovviamente il PageRank non soffre nella realtà di questo problema e quindi noi ora proveremo a capire il perché.
+
+45
+00:10:00,000 --> 00:10:12,000
+La soluzione che Breen e Page scogitarono per questo problema è molto difficile da intuire e si basa sull'introduzione di un fattore di casualità all'interno dell'algoritmo.
+
+46
+00:10:12,000 --> 00:10:18,000
+In pratica i due inventori strutturarono il processo di assegnazione dell'autorevolezza nel seguente modo.
+
+47
+00:10:19,000 --> 00:10:29,000
+L'algoritmo parte da una pagina a caso tra quelle disponibili e segue casualmente uno dei link che questa possiede verso le altre pagine.
+
+48
+00:10:30,000 --> 00:10:38,000
+Arrivato alla seconda pagina ne incrementa il valore di autorevolezza e sceglie un nuovo link a caso e procede alla successiva.
+
+49
+00:10:39,000 --> 00:10:49,000
+Inoltre ad ogni passaggio di pagina in pagina esiste una probabilità del 15% che l'algoritmo si fermi e riparta da un'altra pagina a caso.
+
+50
+00:10:50,000 --> 00:10:59,000
+Ora capite bene che con un comportamento del genere non si rischia più di entrare in un loop perché prima o poi l'algoritmo si ferma e riparte altrove.
+
+51
+00:11:00,000 --> 00:11:09,000
+Ma quello che resta da capire è se il risultato di un processo del genere possa essere considerato equivalente a quello che abbiamo descritto nel blocco precedente.
+
+52
+00:11:10,000 --> 00:11:20,000
+Dal momento però che siamo in un podcast io non posso mostrarvi una dimostrazione scritta e per questo motivo proviamo ad affidarci a un po' di logica.
+
+53
+00:11:20,000 --> 00:11:29,000
+Fingiamo quindi che il nostro web sia formato da 100 pagine e tutte queste pagine siano interconnesse fra loro da 2 o 3 collegamenti.
+
+54
+00:11:30,000 --> 00:11:39,000
+Supponiamo poi che esista una sola pagina di queste 100 che chiameremo A alla quale fanno riferimento 50 delle nostre pagine.
+
+55
+00:11:40,000 --> 00:12:04,000
+In una situazione del genere è abbastanza facile intuire che se partissimo da una pagina a caso e ci muovessimo di collegamento in collegamento a caso le possibilità di capitare sulla pagina A sarebbero molto più alte che su qualsiasi altra pagina perché avremo almeno 50 strade che portano ad essa contro le 2 o 3 che portano a qualsiasi altra.
+
+56
+00:12:05,000 --> 00:12:24,000
+Se ripetessimo quindi il processo un numero sufficientemente alto di volte mediamente le pagine con più link in ingresso tenderebbero ad essere attraversate più volte perché ci sarebbero tante strade che portano ad esse e sarebbe quindi più facile raggiungerle per l'algoritmo che si muove casualmente.
+
+57
+00:12:25,000 --> 00:12:34,000
+In questo modo avremmo rispettato la condizione secondo cui pagine con più collegamenti in ingresso devono avere un valore più alto di autorevolezza.
+
+58
+00:12:35,000 --> 00:12:49,000
+Sempre ragionando da un punto di vista statistico le pagine con più link in ingresso tenderanno anche maggiormente a fare da ponte verso le pagine a cui puntano aumentando il numero di volte in cui queste ultime vengono raggiunte.
+
+59
+00:12:50,000 --> 00:12:58,000
+Basandoci quindi sull'esempio precedente immaginiamo che la pagina A abbia due collegamenti uno verso B e un altro verso C.
+
+60
+00:12:59,000 --> 00:13:14,000
+Siccome abbiamo detto poco fa c'è un'alta probabilità che procedendo a caso ci si trovi a passare per A allora è anche molto probabile che da A si arrivi a B o a C innalzando in questo modo la possibilità che queste due pagine vengano raggiunte.
+
+61
+00:13:15,000 --> 00:13:24,000
+Anche in questo caso quindi viene rispettato il vincolo secondo cui le pagine con un valore più alto conferiscono autorevolezza maggiore a quelle a cui puntano.
+
+62
+00:13:26,000 --> 00:13:31,000
+Bene, io spero di essere riuscito a spiegare al meglio questo importante algoritmo.
+
+63
+00:13:32,000 --> 00:13:37,000
+In caso contrario fatemi sapere cosa non è chiaro nei commenti oppure nel gruppo Telegram.
+
+64
+00:13:38,000 --> 00:13:41,000
+Io per ora vi ringrazio per essere arrivati fin qui.
+
+65
+00:13:42,000 --> 00:13:54,000
+Ringrazio Walter Vannini del podcast Data Nightmare per le informazioni sulla frase che avevo iniziato ad utilizzare a chiusura degli episodi e quindi vi saluto con le parole di Giovanni degli Antoni.
+
+66
+00:13:55,000 --> 00:13:58,000
+Un informatico risolve problemi, a volte anche usando il computer.
+
+67
+00:14:07,000 --> 00:14:08,000
+Grazie.
+

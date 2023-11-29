@@ -1,0 +1,616 @@
+1
+00:00:00,000 --> 00:00:09,840
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,840 --> 00:00:25,280
+Buongiorno a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice,
+
+3
+00:00:25,280 --> 00:00:30,720
+il podcast in cui parliamo di argomenti presi dal mondo del software, di internet e della
+
+4
+00:00:30,720 --> 00:00:39,840
+programmazione. Puntata numero 10. Ci è voluto un po', sia per questioni personali che lavorative
+
+5
+00:00:39,840 --> 00:00:45,600
+e per via dell'influenza, però finalmente riusciamo a pubblicare la decima puntata di
+
+6
+00:00:45,600 --> 00:00:53,320
+Pensieri in codice. Per questo motivo vi rubo qualche secondo per ringraziare tutti quelli
+
+7
+00:00:53,320 --> 00:01:01,520
+che ascoltano, condividono e interagiscono con il podcast tramite commenti o tramite il gruppo
+
+8
+00:01:01,520 --> 00:01:07,240
+Telegram, messaggi privati, social eccetera. In particolar modo vorrei ringraziare tutti
+
+9
+00:01:07,240 --> 00:01:13,200
+quelli che in questo periodo di stop forzato mi hanno fatto sentire il loro sostegno inviandomi
+
+10
+00:01:13,200 --> 00:01:19,280
+messaggi e chiedendomi quando avrei ricominciato a pubblicare. Grazie davvero a tutti che mi date
+
+11
+00:01:19,280 --> 00:01:26,000
+la spinta per continuare questo mio piccolo progetto. Ora bando alle ciance e iniziamo a
+
+12
+00:01:26,000 --> 00:01:31,560
+parlare dell'argomento di oggi. Come probabilmente avrete notato, nell'ultimo periodo si sono
+
+13
+00:01:31,560 --> 00:01:41,440
+moltiplicate le notizie di società che hanno ammesso di aver erroneamente lasciato incustodite
+
+14
+00:01:41,440 --> 00:01:47,720
+e accessibile a tutti informazioni riguardanti i propri utenti. Vi lascio in descrizione qualche
+
+15
+00:01:47,720 --> 00:01:56,680
+link a qualcuna di queste news giusto per capire la portata di questo fenomeno. Password, dati
+
+16
+00:01:56,680 --> 00:02:03,080
+personali, informazioni sulle abitudini di comportamento, dettagli dei profili sono solo
+
+17
+00:02:03,080 --> 00:02:10,720
+alcuni dei dati che per errore possono essere archiviati e lasciati su aree non protette e
+
+18
+00:02:10,720 --> 00:02:18,440
+quindi accessibili a chi non ne dovrebbe avere diritto. A poco servono tutte le legislazioni a
+
+19
+00:02:18,440 --> 00:02:27,360
+tutela degli utenti come il GDPR o le privacy policy perché seppure le aziende vengono costrette
+
+20
+00:02:27,360 --> 00:02:36,760
+legalmente o si impegnano a preservare la nostra privacy e i nostri dati, non sono immuni da
+
+21
+00:02:36,760 --> 00:02:42,280
+quelli che sono gli errori o i comportamenti scorretti che possono avere i singoli soggetti
+
+22
+00:02:42,280 --> 00:02:49,840
+al loro interno. Sì perché generalmente un database di informazioni o una lista di password in chiaro
+
+23
+00:02:49,840 --> 00:02:56,680
+non finiscono su internet pubblicamente accessibili intenzionalmente perché qualcuno effettivamente
+
+24
+00:02:56,680 --> 00:03:04,320
+vuole che siano lì ma solitamente ci finiscono a causa di errori disattenzioni o comportamenti
+
+25
+00:03:04,360 --> 00:03:11,640
+maldestri di qualcuno. Nell'episodio di oggi quindi voglio provare ad immaginare, ragionando così come
+
+26
+00:03:11,640 --> 00:03:18,640
+ragiona un programmatore, tutta una serie di scenari nei quali le informazioni vengono trattate
+
+27
+00:03:18,640 --> 00:03:24,920
+senza le dovute attenzioni e quindi finiscono per sbaglio accessibili a chi non dovrebbe poterle
+
+28
+00:03:24,920 --> 00:03:32,640
+vedere. Badate bene non parlerò di attacchi hacker ma semplicemente di dati diffusi per
+
+29
+00:03:32,720 --> 00:03:40,160
+errore e come vedremo disseminare involontariamente informazioni e dati gestiti tramite un software è
+
+30
+00:03:40,160 --> 00:03:51,720
+qualcosa di molto più semplice di quanto sembri. Cominciamo subito col dire che quelli che andrò
+
+31
+00:03:51,720 --> 00:03:59,680
+a fare sono esempi realistici ma pur sempre esempi. Io non sono a conoscenza delle cause
+
+32
+00:03:59,680 --> 00:04:05,960
+che hanno portato alle varie brecce informatiche descritte nelle news che anche vi lascio in
+
+33
+00:04:05,960 --> 00:04:12,000
+descrizione. Tuttavia quello che farò sarà limitarmi ad immaginare delle possibilità
+
+34
+00:04:12,000 --> 00:04:18,960
+sulla base delle mie conoscenze di sviluppatore di software per il web. La prima cosa da tenere
+
+35
+00:04:18,960 --> 00:04:26,480
+a mente quando si parla di dati scambiati su internet è che abbiamo sempre a che fare non
+
+36
+00:04:26,480 --> 00:04:34,560
+con un unico software ma con un sistema che viene detto client server. Cercando di semplificare al
+
+37
+00:04:34,560 --> 00:04:41,520
+massimo ciò vuol dire che chi accede ad un servizio utilizza un software che solitamente
+
+38
+00:04:41,520 --> 00:04:47,080
+è installato sul proprio pc o sul proprio smartphone e che si chiama client. Esso può
+
+39
+00:04:47,080 --> 00:04:54,440
+essere anche un sito un app o un semplice programma specifico e questo software si
+
+40
+00:04:54,440 --> 00:05:01,000
+collega ad un altro software che è solitamente chiamato server ed è in funzione da qualche parte
+
+41
+00:05:01,000 --> 00:05:08,200
+su internet. Dal momento che il client dovrà comunicare al server le informazioni inserite
+
+42
+00:05:08,200 --> 00:05:14,480
+dall'utente e al tempo stesso il server dovrà comunicare al client le informazioni da mostrare
+
+43
+00:05:14,480 --> 00:05:22,440
+all'utente risulta chiaro che tra client e server deve esistere un canale di comunicazione affinché
+
+44
+00:05:22,440 --> 00:05:29,200
+questi possano scambiare le informazioni in entrambe le direzioni. Tuttavia su internet la
+
+45
+00:05:29,200 --> 00:05:36,760
+comunicazione tra due device che siano computer smartphone server o dispositivi IOT o altro non è
+
+46
+00:05:36,760 --> 00:05:44,440
+mai diretta. I pacchetti di dati infatti vengono spediti a dei server intermedi che li smistano
+
+47
+00:05:44,440 --> 00:05:50,360
+nella direzione giusta fino a che essi non raggiungono il destinatario della trasmissione
+
+48
+00:05:51,080 --> 00:05:57,680
+esattamente come può accadere per un pacco o una lettera inviata tramite poste italiane o un
+
+49
+00:05:57,680 --> 00:06:03,200
+corriere che passa attraverso una serie di centri di smistamento fino a raggiungere il destinatario.
+
+50
+00:06:03,200 --> 00:06:10,200
+Questi server intermedi anche detti nodi analizzano parte del pacchetto di dati per
+
+51
+00:06:10,200 --> 00:06:16,760
+poter individuare il nodo successivo a cui spedirli. Ora sia per ragioni funzionali che
+
+52
+00:06:16,760 --> 00:06:23,120
+per ragioni di manutenzione e monitoraggio questi server memorizzano molte delle informazioni
+
+53
+00:06:23,120 --> 00:06:31,080
+contenute nei pacchetti all'interno di registri che vengono chiamati log. Ciò vuol dire che in
+
+54
+00:06:31,080 --> 00:06:38,280
+pratica parte o addirittura tutte le informazioni trasmesse vengono replicate un numero indefinito
+
+55
+00:06:38,280 --> 00:06:45,680
+di volte lungo il percorso fino a raggiungere il destinatario. Ora se la connessione tra client
+
+56
+00:06:45,680 --> 00:06:52,720
+e server è implementata utilizzando dei sistemi di criptografia, dei certificati e altre misure di
+
+57
+00:06:52,720 --> 00:06:58,720
+sicurezza del genere questo non dovrebbe essere un problema perché anche se vengono memorizzate la
+
+58
+00:06:58,720 --> 00:07:04,760
+maggior parte delle informazioni e soprattutto le informazioni sensibili restano criptate e
+
+59
+00:07:04,760 --> 00:07:11,880
+quindi non leggibili da chiunque. Tuttavia se chi ha sviluppato il software non è stato
+
+60
+00:07:11,920 --> 00:07:18,320
+sufficientemente attento a implementare un meccanismo del genere o addirittura per errore
+
+61
+00:07:18,320 --> 00:07:26,320
+ha inserito determinate informazioni in una zona del pacchetto dati che non è soggetta a criptografia
+
+62
+00:07:26,320 --> 00:07:34,120
+allora questi dati verranno involontariamente archiviati lungo il percorso. Per provare a
+
+63
+00:07:34,120 --> 00:07:40,120
+capire cosa intendo facciamo un esempio banale. Immaginiamo di stare modificando la password
+
+64
+00:07:40,120 --> 00:07:45,640
+dell'account del nostro sito di commerce preferito. Accediamo quindi alla pagina di cambio
+
+65
+00:07:45,640 --> 00:07:51,840
+password, inseriamo la vecchia password, di solito si fa così, inseriamo la nuova e clicchiamo salva.
+
+66
+00:07:51,840 --> 00:07:59,080
+A questo punto un pacchetto di dati contenente la nostra nuova password viene spedito verso il
+
+67
+00:07:59,080 --> 00:08:08,120
+server. Ora se il software è implementato nel modo giusto la password nuova sarà contenuta in una
+
+68
+00:08:08,120 --> 00:08:15,120
+zona del pacchetto dati che verrà criptata e quindi non sarà leggibile in chiaro da nessuno
+
+69
+00:08:15,120 --> 00:08:21,320
+lungo il percorso tranne il server di destinazione. Se invece la pagina non è implementata nel modo
+
+70
+00:08:21,320 --> 00:08:28,480
+giusto questa password potrebbe finire in una area del pacchetto che risulta in chiaro e che
+
+71
+00:08:28,480 --> 00:08:36,280
+quindi viene archiviata in modo automatico dai log lungo il percorso. Il risultato sarà che ci
+
+72
+00:08:36,280 --> 00:08:43,280
+saranno sparsi per la rete una serie di file di testo che conterranno la nostra password in chiaro.
+
+73
+00:08:43,280 --> 00:08:50,280
+A tutto ciò va anche aggiunto il fatto che la connessione tra il nostro client e il server non
+
+74
+00:08:50,280 --> 00:08:57,160
+è l'unica del sistema e cioè anche nella più piccola e la più semplice delle realtà il più
+
+75
+00:08:57,160 --> 00:09:03,880
+piccolo dei siti che possiamo immaginare è comunque composto di almeno due elementi e
+
+76
+00:09:03,880 --> 00:09:11,840
+cioè semplificando al massimo un software che è detto server applicativo che elabora i dati ed
+
+77
+00:09:11,840 --> 00:09:19,720
+un altro software che è detto database solitamente che archivia questi dati. Poi più il sito o il
+
+78
+00:09:19,720 --> 00:09:27,960
+software in questione cresce in termini di dati e di utenza più il sistema tende a crescere in
+
+79
+00:09:28,080 --> 00:09:35,760
+numero di server dando vita a ecosistemi sempre più complessi e tutti questi elementi solitamente
+
+80
+00:09:35,760 --> 00:09:44,120
+per ragioni di sicurezza ridondanza ed efficienza sono sparsi per il mondo e quindi sono interconnessi
+
+81
+00:09:44,120 --> 00:09:50,120
+fra loro tramite altri canali di comunicazione che vanno essi stessi adeguatamente protetti.
+
+82
+00:09:50,120 --> 00:09:57,400
+In definitiva basta un errore di programmazione nel flusso dei dati o una sbagliata configurazione
+
+83
+00:09:57,400 --> 00:10:03,680
+della connessione fra due o più server a far sì che le informazioni viaggino in formato leggibile
+
+84
+00:10:03,680 --> 00:10:10,520
+e che siano memorizzate anche non intenzionalmente andando a formare enormi archivi di dati in rete.
+
+85
+00:10:10,520 --> 00:10:22,560
+Un secondo metodo per perdersi informazioni in giro per la rete è quella di farne delle copie
+
+86
+00:10:22,560 --> 00:10:29,240
+e non proteggerle adeguatamente. Quando si parla di database infatti è più che normale avere tutta
+
+87
+00:10:29,240 --> 00:10:35,920
+una serie di copie di backup questo perché in caso di problemi di danneggiamento dei dati o
+
+88
+00:10:35,920 --> 00:10:42,800
+addirittura di cancellazione dell'intero database risulta poi semplice ripartire da una copia di
+
+89
+00:10:42,800 --> 00:10:48,880
+backup che sia il più aggiornata possibile e questo porta a fare tutta una serie di copie
+
+90
+00:10:48,880 --> 00:10:55,160
+con cadenza periodica. Se normalmente ci si preoccupa tanto di mettere in sicurezza i
+
+91
+00:10:55,160 --> 00:11:01,600
+database per evitare attacchi esterni e quindi si utilizzano firewall, meccanismi di restrizione
+
+92
+00:11:01,600 --> 00:11:07,320
+degli accessi e criptografia, non sempre si utilizza la stessa scrupolosità quando questi
+
+93
+00:11:07,320 --> 00:11:14,200
+dati si estrangono e si conservano in aree di backup. Immaginiamo quindi il nostro sito di
+
+94
+00:11:14,200 --> 00:11:20,000
+e-commerce, lo stesso dell'esempio precedente. Esso avrà probabilmente una procedura di backup
+
+95
+00:11:20,000 --> 00:11:25,920
+almeno giornaliera con la quale salverà tutti i dati inerenti gli utenti, gli acquisti e il
+
+96
+00:11:25,920 --> 00:11:33,520
+catalogo. Questo tipo di procedure nel 99,9% dei casi sono automatizzate e si compongono di una
+
+97
+00:11:33,520 --> 00:11:39,720
+serie di operazioni eseguite in sequenza. Ad esempio estrazione dei dati, magari compressione
+
+98
+00:11:39,720 --> 00:11:45,760
+di questi dati, trasmissione verso un sistema di stoccaggio e archiviazione su uno o più apparati
+
+99
+00:11:45,760 --> 00:11:52,480
+di stoccaggio. Ovviamente affinché i dati contenuti nel backup siano al sicuro è necessario che
+
+100
+00:11:52,480 --> 00:11:59,360
+ciascuna delle operazioni svolte per eseguire il backup sia a sua volta sicura. Se così non fosse
+
+101
+00:11:59,360 --> 00:12:07,000
+infatti allora si rischierebbe di lasciare i dati a stazionare magari in aree non protette o di far
+
+102
+00:12:07,160 --> 00:12:13,800
+che essi vengano catturati durante la trasmissione. Quindi quando la procedura di backup del nostro
+
+103
+00:12:13,800 --> 00:12:20,640
+sito e-commerce estrarrà i dati e successivamente li comprimerà si dovrà anche assicurare che non
+
+104
+00:12:20,640 --> 00:12:26,720
+ne rimanga una copia in qualche cartella magari temporanea del server nella quale ha svolto le
+
+105
+00:12:26,720 --> 00:12:32,680
+operazioni. Allo stesso tempo quando li trasmetterà si dovrà assicurare come descritto nel blocco
+
+106
+00:12:32,680 --> 00:12:39,360
+precedente che la trasmissione sia criptata e nessun nodo lungo la rete possa trattenere una
+
+107
+00:12:39,360 --> 00:12:47,560
+copia in chiaro di questi dati. Un'altra causa di creazione di copie di informazioni può essere
+
+108
+00:12:47,560 --> 00:12:54,240
+quella di avere la necessità di manipolare tali informazioni in formati differenti rispetto a
+
+109
+00:12:54,240 --> 00:13:00,040
+quelli con cui sono archiviate. Capita infatti a volte di dover compiere specifiche operazioni
+
+110
+00:13:00,680 --> 00:13:07,120
+magari manualmente, magari una tantum o poche volte nel corso di lunghi periodi di tempo,
+
+111
+00:13:07,120 --> 00:13:15,240
+operazioni per le quali è necessario riorganizzare i dati estraendoli e archiviandoli in una forma
+
+112
+00:13:15,240 --> 00:13:22,720
+differente. Questi casi sono ad esempio il calcolo di una particolare statistica che normalmente il
+
+113
+00:13:22,720 --> 00:13:29,640
+software non calcola automaticamente oppure una procedura di importazione ed esportazione verso
+
+114
+00:13:29,640 --> 00:13:36,720
+un altro software. Ad ogni modo in condizioni del genere vengono solitamente create copie ad
+
+115
+00:13:36,720 --> 00:13:43,600
+uso e consumo di una specifica operazione. Per questo motivo può capitare quindi di avere
+
+116
+00:13:43,600 --> 00:13:51,240
+database o file temporanei che vengono utilizzati per archiviare e rileggere gli stessi dati
+
+117
+00:13:51,240 --> 00:13:57,200
+presenti all'interno del database originale ma in un modo più semplice rispetto alla specifica
+
+118
+00:13:57,200 --> 00:14:03,600
+situazione. Ma anche qui c'è da chiedersi dove saranno archiviati questi file, attraverso quali
+
+119
+00:14:03,600 --> 00:14:10,240
+server transiteranno, quali e quanti operatori, programmatori, sistemisti, tecnici, analisti
+
+120
+00:14:10,240 --> 00:14:16,480
+avranno accesso a questi file e soprattutto una volta terminate le operazioni verranno effettivamente
+
+121
+00:14:16,480 --> 00:14:22,440
+rimosse tutte le copie esistenti? Sì perché basterà che anche una sola copia resti in giro,
+
+122
+00:14:22,440 --> 00:14:29,000
+magari dimenticata su un server o su un'area di stoccaggio non protetta perché non pensata per
+
+123
+00:14:29,000 --> 00:14:36,040
+contenere dati importanti a lungo termine ed ecco che avremo un database di migliaia o milioni di
+
+124
+00:14:36,040 --> 00:14:43,720
+informazioni in bella vista e pronto per essere scaricato da internet. Infine non va trascurato
+
+125
+00:14:43,720 --> 00:14:48,920
+il fatto che la maggior parte dei software al fine di incrementare le proprie performance
+
+126
+00:14:49,000 --> 00:14:55,320
+utilizza un sistema che prende il nome di caching e che consiste fondamentalmente nel
+
+127
+00:14:55,320 --> 00:15:02,120
+mantenere una copia delle informazioni più utilizzate in una sorta di area cuscinetto
+
+128
+00:15:02,120 --> 00:15:07,960
+che viene chiamata appunto cache in modo da limitare il numero di accessi al sistema di
+
+129
+00:15:07,960 --> 00:15:14,440
+archiviazione. Ciò vuol dire che a discrezione del software utilizzato esisteranno copie dei dati
+
+130
+00:15:14,440 --> 00:15:20,960
+contenuti nel database che saranno però archiviate in aree differenti da dove si trova
+
+131
+00:15:20,960 --> 00:15:27,600
+quest'ultimo e per periodi di tempo più o meno lunghi e questo sposta di fatto un numero
+
+132
+00:15:27,600 --> 00:15:33,840
+imprecisato di informazioni in aree differenti dell'architettura del sistema rendendole così
+
+133
+00:15:33,840 --> 00:15:38,720
+vulnerabili nel caso in cui non si proteggano anche questi altri spazi in modo adeguato.
+
+134
+00:15:44,440 --> 00:15:49,600
+Un terzo sistema per condividere involontariamente le informazioni dei propri utenti è quello di
+
+135
+00:15:49,600 --> 00:15:56,200
+comunicare con i soggetti coinvolti attraverso canali non protetti. Esistono infatti software
+
+136
+00:15:56,200 --> 00:16:03,040
+che implementano numerosi sistemi di sicurezza per proteggere i dati ma poi li inviano ai propri
+
+137
+00:16:03,040 --> 00:16:10,320
+utenti attraverso canali come l'email. Le email vengono letteralmente lette da tutti i nodi di
+
+138
+00:16:10,320 --> 00:16:16,160
+smistamento lungo il percorso dal mittente al destinatario e ciò vuol dire che inserire
+
+139
+00:16:16,160 --> 00:16:21,080
+informazioni di qualsiasi genere nelle email inviate ai propri utenti o ai propri operatori
+
+140
+00:16:21,080 --> 00:16:28,400
+significa letteralmente spargerle lungo tutto il percorso. Nonostante ciò sono moltissimi i siti
+
+141
+00:16:28,400 --> 00:16:35,000
+che vi reinviano a volte anche inutilmente le vostre stesse informazioni via email. Ad esempio
+
+142
+00:16:35,000 --> 00:16:41,880
+ci sono siti di e-commerce che ad ogni ordine vi inviano una email con il contenuto dell'ordine e
+
+143
+00:16:41,880 --> 00:16:47,840
+il vostro indirizzo al quale l'ordine verrà spedito. Oppure ci sono siti dai quali subito
+
+144
+00:16:47,840 --> 00:16:53,680
+dopo esservi registrati vi vedrete ricapitare una email contenente il vostro username e la
+
+145
+00:16:53,680 --> 00:16:59,520
+vostra password utilizzata per la registrazione. Ed è proprio questo il motivo per cui quando ci si
+
+146
+00:16:59,520 --> 00:17:05,880
+registra ad un nuovo sito conviene sempre utilizzare una password temporanea e poi
+
+147
+00:17:05,880 --> 00:17:12,520
+successivamente accedere al pannello del profilo e cambiare la propria password con quella definitiva,
+
+148
+00:17:12,520 --> 00:17:17,960
+questo per evitare che il sito spiattelli la vostra email e la vostra password a tutto il mondo.
+
+149
+00:17:17,960 --> 00:17:30,600
+Siamo dunque giunti al termine di questo decimo episodio. Io spero che l'argomento vi sia piaciuto
+
+150
+00:17:30,600 --> 00:17:37,320
+e vi ringrazio per essere arrivati fin qui e come al solito vi invito a condividere l'episodio sui
+
+151
+00:17:37,320 --> 00:17:44,720
+social, a commentare, a unirvi al gruppo telegram e vi ricordo che potete ascoltare il podcast su
+
+152
+00:17:44,760 --> 00:17:54,200
+Spreaker, YouTube, Spotify ed iTunes e da qualche settimana anche su Alexa. Vi basterà dire Alexa
+
+153
+00:17:54,200 --> 00:18:00,720
+apri pensieri in codice. Io intanto vi saluto, vi auguro una buona giornata e vi do appuntamento
+
+154
+00:18:00,720 --> 00:18:03,120
+alla prossima settimana per un nuovo episodio.
+

@@ -1,0 +1,392 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:20,000 --> 00:00:23,000
+Salve a tutti e bentornati su Pensieri in codice.
+
+3
+00:00:23,000 --> 00:00:30,000
+Oggi parliamo di bug. Viviamo in un'epoca nella quale ognuno di noi, chi più chi meno,
+
+4
+00:00:30,000 --> 00:00:37,000
+è abituato ogni giorno ad avere a che fare con decine, centinaia o anche migliaia di software.
+
+5
+00:00:37,000 --> 00:00:43,000
+Dagli smartphone ai computer, dagli elettrodomestici fino ai mezzi di trasporto,
+
+6
+00:00:43,000 --> 00:00:49,000
+siamo tutti a contatto con dei software con i quali interagiamo più o meno volontariamente.
+
+7
+00:00:49,000 --> 00:00:55,000
+Alcuni di questi software funzionano meglio, altri funzionano un po' peggio,
+
+8
+00:00:55,000 --> 00:01:02,000
+di alcuni non sappiamo neanche l'esistenza, mentre di altri abbiamo magari una conoscenza abbastanza approfondita.
+
+9
+00:01:02,000 --> 00:01:08,000
+Ed è per questo che a volte, o di tanto in tanto, o spesso, questo dipende dai casi,
+
+10
+00:01:08,000 --> 00:01:17,000
+ci capita di incappare in errori o comportamenti strani di tali software che comunemente vengono definiti bug.
+
+11
+00:01:17,000 --> 00:01:24,000
+Questa parola è entrata ormai a far parte del nostro dizionario in maniera piuttosto stabile.
+
+12
+00:01:24,000 --> 00:01:27,000
+Un'app va in crash? Allora c'è un bug.
+
+13
+00:01:27,000 --> 00:01:31,000
+Un programma non dà il risultato che ci aspettiamo? Allora c'è un bug.
+
+14
+00:01:31,000 --> 00:01:36,000
+Quel sito non si visualizza nel modo corretto? E allora c'è un bug.
+
+15
+00:01:36,000 --> 00:01:44,000
+In ogni caso, l'idea che c'è alla base del concetto di bug è che se in un software qualcosa non funziona,
+
+16
+00:01:44,000 --> 00:01:51,000
+qualcuno, probabilmente un programmatore, in qualche punto del processo di produzione ha commesso un errore.
+
+17
+00:01:51,000 --> 00:01:59,000
+Ma in realtà il concetto non è così semplice e nell'episodio di oggi vorrei provare a spiegarvi il perché.
+
+18
+00:01:59,000 --> 00:02:05,000
+Prima di procedere però un piccolo avviso. Siccome ho ricevuto parecchi messaggi da ascoltatori
+
+19
+00:02:05,000 --> 00:02:09,000
+che hanno difficoltà a seguire Pensieri in Codice da Spotify,
+
+20
+00:02:09,000 --> 00:02:15,000
+d'ora in poi proverò a pubblicare sui vari social il link agli episodi su Spreaker,
+
+21
+00:02:15,000 --> 00:02:20,000
+che in teoria non dovrebbe richiedere né login né altri passaggi fastidiosi.
+
+22
+00:02:20,000 --> 00:02:27,000
+In ogni caso, il consiglio è quello di evitare Spotify per ascoltare i podcast in generale.
+
+23
+00:02:27,000 --> 00:02:33,000
+Questo perché Spotify si sta attrezzando da poco tempo per supportare i podcast
+
+24
+00:02:33,000 --> 00:02:40,000
+e quindi manca di tante piccole funzionalità che in realtà praticamente tutte le altre app implementano senza problemi.
+
+25
+00:02:40,000 --> 00:02:45,000
+Pensieri in Codice lo trovate praticamente su tutte le piattaforme e tutte le app,
+
+26
+00:02:45,000 --> 00:02:53,000
+quindi vi conviene utilizzare qualcosa anche di molto semplice tipo Google Podcast o Apple Podcast o l'app di Spreaker.
+
+27
+00:02:53,000 --> 00:02:59,000
+Ma in ogni caso, se preferite, potete seguirmi su Twitter, su Telegram o su Instagram,
+
+28
+00:02:59,000 --> 00:03:06,000
+trovate tutti i link in descrizione, e semplicemente cliccare sui link che pubblicherò agli episodi di volta in volta.
+
+29
+00:03:06,000 --> 00:03:11,000
+Ora però bando alle ciance e iniziamo con l'argomento di oggi.
+
+30
+00:03:11,000 --> 00:03:32,000
+Come tutti sappiamo, i bug all'interno di un software sono qualcosa di molto fastidioso.
+
+31
+00:03:32,000 --> 00:03:38,000
+Fanno perdere tempo, potenzialmente fanno perdere soldi, sono frustranti
+
+32
+00:03:38,000 --> 00:03:44,000
+e in generale ci fanno sembrare che il software sia di cattiva qualità.
+
+33
+00:03:44,000 --> 00:03:50,000
+Non importa se si parla di un'app per smartphone o un programma per computer,
+
+34
+00:03:50,000 --> 00:03:57,000
+non importa quanto l'abbiamo pagato, non importa quante funzionalità ha, quanto è veloce o quanto è semplice.
+
+35
+00:03:57,000 --> 00:04:05,000
+Qualsiasi sia il software di cui stiamo parlando, è possibile, anzi probabile, che in esso si annidi qualche bug.
+
+36
+00:04:05,000 --> 00:04:14,000
+Ma visto che una volta scoperti, questi bug vengono puntualmente, o quasi sempre, fixati, corretti,
+
+37
+00:04:14,000 --> 00:04:19,000
+perché non li si corregge semplicemente tutti prima del lancio di un software?
+
+38
+00:04:19,000 --> 00:04:23,000
+O perché non si aspetta a lanciare finché tutti i bug sono stati corretti?
+
+39
+00:04:23,000 --> 00:04:33,000
+Beh, la risposta breve è che individuare e correggere tutti i bug è così complesso da essere praticamente impossibile.
+
+40
+00:04:33,000 --> 00:04:41,000
+Ma per capire come mai dobbiamo chiarire alcuni concetti, il primo dei quali è cos'è un bug e come è fatto.
+
+41
+00:04:41,000 --> 00:04:46,000
+Ora, a grandi linee cos'è un bug lo sappiamo un po' tutti.
+
+42
+00:04:46,000 --> 00:04:54,000
+In pratica stiamo parlando di un errore nel software da qualche parte che ne provoca dei comportamenti inaspettati.
+
+43
+00:04:54,000 --> 00:05:04,000
+Ma quello che non tutti sanno è che questi errori, questi bug, possono essere suddivisi principalmente in tre categorie distinte.
+
+44
+00:05:05,000 --> 00:05:15,000
+La prima di queste categorie è quella dei bug di sintassi, cioè quegli errori commessi dal programmatore mentre sta scrivendo il codice del software.
+
+45
+00:05:15,000 --> 00:05:29,000
+Si tratta di meri errori materiali nell'utilizzo del linguaggio, quindi ad esempio segni di punteggiatura mancanti o nomi di funzioni errate, utilizzo di variabili non dichiarate e cose del genere.
+
+46
+00:05:29,000 --> 00:05:35,000
+Nel 2020 questo tipo di errori sono davvero complicati da commettere.
+
+47
+00:05:35,000 --> 00:05:45,000
+Prima di tutto perché in caso ce ne fossero un software farebbe molta fatica ad essere eseguito o comunque soffrirebbe di malfunzionamenti piuttosto evidenti.
+
+48
+00:05:45,000 --> 00:06:01,000
+Senza contare che qualsiasi sia il linguaggio utilizzato, un ambiente di sviluppo avanzato o un compilatore sono perfettamente in grado di individuare questo tipo di errori e persino suggerire la giusta soluzione allo sviluppatore.
+
+49
+00:06:02,000 --> 00:06:10,000
+Decisamente più complessa, invece, è la seconda categoria di bug, che è quella degli errori logici.
+
+50
+00:06:10,000 --> 00:06:18,000
+In questo tipo di errori il codice risulta scritto correttamente e pertanto si esegue senza dare problemi.
+
+51
+00:06:18,000 --> 00:06:26,000
+Tuttavia l'errore sta nel fatto che il programma non svolge correttamente il compito per il quale è stato creato.
+
+52
+00:06:26,000 --> 00:06:37,000
+Per fare un esempio particolarmente semplice immaginiamo di scrivere un piccolo programma che prenda in input il lato di un quadrato e debba calcolarne il perimetro.
+
+53
+00:06:37,000 --> 00:06:44,000
+Si tratterebbe di un programma piuttosto banale che dovrebbe semplicemente prendere un numero e moltiplicarlo per 4.
+
+54
+00:06:45,000 --> 00:07:01,000
+Ma se nello scrivere il codice commettessimo un mero errore di battitura e al posto del numero 4 scrivessimo il numero 5 o il numero 3, a quel punto il nostro programma moltiplicherebbe la lunghezza del lato per 5 o per 3.
+
+55
+00:07:01,000 --> 00:07:10,000
+In un'istruzione del genere non c'è nessun errore di sintassi, è perfettamente lecito moltiplicare il valore di una variabile per 3 o per 5.
+
+56
+00:07:10,000 --> 00:07:31,000
+Tuttavia il risultato del nostro calcolo sarebbe errato dal punto di vista logico, perché con il nostro programma buggato un quadrato con lato uguale a 5 risulterebbe avere un perimetro uguale a 25 o a 15, in ogni caso diverso dal risultato corretto, cioè 20.
+
+57
+00:07:32,000 --> 00:07:47,000
+La terza e sicuramente più infida categoria di bug è quella degli errori di runtime. Questo tipo di errori si verifica solamente a volte, in presenza di determinate condizioni.
+
+58
+00:07:47,000 --> 00:08:02,000
+In pratica si parla di codice che a volte funziona e a volte no, a seconda ad esempio dei dati che sta elaborando o della disponibilità o meno di risorse esterne delle quali ha bisogno per lavorare.
+
+59
+00:08:03,000 --> 00:08:16,000
+Gli esempi più classici che mi vengono in mente sono ad esempio il caso in cui ci si trova a fare una divisione per un valore 0, che è un'operazione impossibile e spesso in molti linguaggi non è gestita.
+
+60
+00:08:16,000 --> 00:08:30,000
+Oppure un altro caso classico è quello in cui il valore all'interno di una variabile cresce e viene incrementato fino al punto di superare il limite gestibile da quel tipo di variabile.
+
+61
+00:08:30,000 --> 00:08:42,000
+O se vogliamo pensare a qualcosa di più complesso, possiamo immaginare un programma che abbia bisogno di scrivere un file ma trovi l'unità bloccata in scrittura oppure il disco pieno.
+
+62
+00:08:42,000 --> 00:08:46,000
+Anche in questo caso si parlerebbe di un errore di runtime.
+
+63
+00:08:46,000 --> 00:08:59,000
+Ad ogni modo però, come potreste ben immaginare, questo tipo di bug è il più complicato non tanto da risolvere, quanto piuttosto da individuare o addirittura da prevedere.
+
+64
+00:09:00,000 --> 00:09:14,000
+Sottotitoli e revisione a cura di QTSS
+
+65
+00:09:14,000 --> 00:09:29,000
+Ora, a prescindere da cosa possano immaginare i non addetti ai lavori, passatemi il termine, la guerra contro i bug per la maggior parte dei software coinvolge ogni giorno moltissime persone e varie figure professionali,
+
+66
+00:09:29,000 --> 00:09:37,000
+le quali hanno anche a disposizione un gran numero di tecniche atte appunto a scovare i bug.
+
+67
+00:09:37,000 --> 00:09:50,000
+Ovviamente in un podcast di pochi minuti non mi illudo neanche di poter scalfire la superficie di questo argomento, tuttavia vorrei che passasse almeno il concetto principale,
+
+68
+00:09:50,000 --> 00:10:02,000
+e cioè che nella maggior parte dei casi il problema di un bug non è tanto come risolverlo, per quello una soluzione si trova, il problema in realtà è individuarlo.
+
+69
+00:10:02,000 --> 00:10:09,000
+Ed è proprio per perseguire questo obiettivo che nel corso degli anni sono state sviluppate varie tecniche sempre più efficaci,
+
+70
+00:10:09,000 --> 00:10:19,000
+che chi si occupa di sviluppo del software può applicare in misura maggiore o minore a seconda delle risorse che ha a disposizione.
+
+71
+00:10:19,000 --> 00:10:33,000
+Accade quindi che a valle della produzione di un certo codice ci siano figure specializzate come gli sviluppatori senior che ispezionano e revisionano il codice alla ricerca di eventuali problemi,
+
+72
+00:10:33,000 --> 00:10:39,000
+o i tester che verificano le varie funzionalità di un programma alla ricerca di malfunzionamenti,
+
+73
+00:10:40,000 --> 00:10:50,000
+o ancora gli stessi programmatori che spesso utilizzano gli unit tests per assicurarsi che determinate porzioni di codice funzionino sempre nel modo corretto.
+
+74
+00:10:50,000 --> 00:10:58,000
+Esistono persino aziende specializzate nel fare audit per verificare la sicurezza o le performance di un certo software.
+
+75
+00:10:58,000 --> 00:11:06,000
+Insomma, anche senza scendere nei dettagli, appare chiaro che viene fatto un lavoro notevole per la ricerca ed eliminazione dei bug.
+
+76
+00:11:06,000 --> 00:11:13,000
+E allora, come mai alcuni di essi riescono comunque a sfuggire ai controlli ed arrivare agli utenti?
+
+77
+00:11:13,000 --> 00:11:17,000
+Beh, le risposte a questa domanda sono principalmente due.
+
+78
+00:11:17,000 --> 00:11:21,000
+La prima è banale, ma vale la pena di ricordarla.
+
+79
+00:11:21,000 --> 00:11:30,000
+E c'è che i programmatori, i analisti, i tester e tutte le figure che lavorano allo sviluppo di un software non sono perfetti.
+
+80
+00:11:30,000 --> 00:11:36,000
+E quindi, in realtà, non ha molto senso aspettarsi da loro un prodotto perfetto.
+
+81
+00:11:36,000 --> 00:11:49,000
+Banalmente, un programmatore può commettere un errore e, allo stesso modo, un tester può commettere un errore nel fare il test o nel programmarlo, se si tratta di test automatici.
+
+82
+00:11:49,000 --> 00:11:56,000
+E questo ci porta direttamente alla seconda motivazione per cui i bug riescono a superare tutti questi controlli.
+
+83
+00:11:56,000 --> 00:12:04,000
+E cioè che, tra tutti i prodotti dell'ingegno umano, il software è uno dei più complessi.
+
+84
+00:12:04,000 --> 00:12:10,000
+Come abbiamo visto nel primo blocco, un bug si può annidare in una semplice istruzione di moltiplicazione.
+
+85
+00:12:10,000 --> 00:12:18,000
+E allora che dire di un software che è composto da più di 50.000 righe? O di 100.000? O di un milione di righe?
+
+86
+00:12:18,000 --> 00:12:32,000
+Aspettarsi che qualcuno, leggendo un codice o lanciando dei test, possa essere in grado di individuare tutte le possibili esecuzioni di tale codice, in realtà non è poi cosa così sensata.
+
+87
+00:12:32,000 --> 00:12:47,000
+In questo caso, un software va visto come un insieme di percorsi, ognuno dei quali è frutto della combinazione di tutta una serie di valori, di eventi, di risorse, di interazione con gli utenti, eccetera.
+
+88
+00:12:47,000 --> 00:12:57,000
+In una visione del genere, già un piccolo software si compone di tantissimi percorsi. Immaginiamo quindi cosa potrebbe accadere al crasher di tale software.
+
+89
+00:12:57,000 --> 00:13:13,000
+Per avere un ordine di grandezza, dobbiamo pensare che, all'interno di un programma, ogni volta che aggiungiamo una semplice istruzione IF, stiamo in linea generale raddoppiando la quantità di percorsi disponibili.
+
+90
+00:13:13,000 --> 00:13:19,000
+Per non parlare, invece, se ad esempio inseriamo la possibilità di input da parte dell'utente.
+
+91
+00:13:19,000 --> 00:13:34,000
+In un contesto del genere, pensare di avere un approccio a forza bruta, quindi pensare di poter coprire qualsiasi possibile test per scovare qualsiasi possibile bug, semplicemente non ha senso.
+
+92
+00:13:34,000 --> 00:13:43,000
+Sarebbe necessario così tanto tempo da rendere impossibile la pubblicazione del software e quindi inutili gli stessi test.
+
+93
+00:13:43,000 --> 00:13:56,000
+Quindi, nel mondo reale, l'approccio è quello logico, cioè si cerca di immaginare quali siano i potenziali problemi e di produrre la maggior quantità possibile di test inerenti ad essi,
+
+94
+00:13:56,000 --> 00:14:03,000
+con la consapevolezza che esisterà sempre una certa probabilità che qualcosa sfuga.
+
+95
+00:14:04,000 --> 00:14:23,000
+E siamo giunti al termine dell'episodio di oggi.
+
+96
+00:14:23,000 --> 00:14:33,000
+Spero che l'argomento sia stato interessante, voi come al solito fatemi sapere cosa ne pensate nei commenti su Twitter, su Telegram, su Instagram o dove volete.
+
+97
+00:14:33,000 --> 00:14:50,000
+Condividete il più possibile questo episodio sui vostri social per far crescere la community, unitevi al gruppo Telegram Pensieri in Codice e non dimenticate che un informatico risolve problemi, a volte anche usando il computer.
+
+98
+00:15:03,000 --> 00:15:04,000
+A presto!
+

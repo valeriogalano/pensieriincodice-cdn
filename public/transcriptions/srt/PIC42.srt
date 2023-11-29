@@ -1,0 +1,432 @@
+1
+00:00:00,000 --> 00:00:09,840
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,840 --> 00:00:27,560
+Salve a tutti e bentornati su Pensieri in codice. Io non ho Whatsapp sul mio numero di cellulare e
+
+3
+00:00:27,560 --> 00:00:35,000
+chi se ne frega, direte voi. Effettivamente non è questa gran notizia, però ho pensato che potesse
+
+4
+00:00:35,000 --> 00:00:42,400
+essere interessante condividere con voi il motivo per il quale ho deciso di eliminare Whatsapp. In
+
+5
+00:00:42,400 --> 00:00:48,240
+effetti questo podcast si chiama Pensieri in codice proprio perché oltre a parlare di software e di
+
+6
+00:00:48,240 --> 00:00:54,200
+programmazione, quindi di codice, il mio obiettivo è anche quello di provare a condividere dei
+
+7
+00:00:54,320 --> 00:01:01,400
+ragionamenti, appunto dei pensieri, giusti o sbagliati che siano, per darvi degli spunti e
+
+8
+00:01:01,400 --> 00:01:07,960
+per permettere a chiunque ne abbia voglia di partecipare al discorso. Quindi visto che ci
+
+9
+00:01:07,960 --> 00:01:14,560
+crediate o no nella vita reale, diciamo così, moltissime persone mi chiedono perché io non
+
+10
+00:01:14,560 --> 00:01:21,720
+abbia Whatsapp installato, beh colgo l'occasione per mettere in ordine i miei pensieri ed esporli
+
+11
+00:01:21,720 --> 00:01:38,120
+anche a voi. Cominciamo subito parlando degli svantaggi perché sì, ovviamente non avere Whatsapp
+
+12
+00:01:38,120 --> 00:01:46,760
+ha tutta una serie di svantaggi. Ad esempio le persone care, i amici, i conoscenti fanno più
+
+13
+00:01:46,760 --> 00:01:52,520
+fatica a contattarci. Noi stessi facciamo più fatica nel momento in cui dobbiamo contattare
+
+14
+00:01:52,520 --> 00:01:59,480
+una di queste persone. Talvolta ho perfino avuto difficoltà ad interfacciarmi con professionisti,
+
+15
+00:01:59,480 --> 00:02:07,040
+come ad esempio l'idraulico o l'elettricista, che ti chiedono la foto del problema, del tubo,
+
+16
+00:02:07,160 --> 00:02:15,640
+dell'interruttore, eccetera. Senza contare poi che il mio numero è disponibile sia al network dei
+
+17
+00:02:15,640 --> 00:02:23,840
+miei contatti, dei miei collaboratori, sia sul mio sito web e quindi sui vari siti delle varie
+
+18
+00:02:23,840 --> 00:02:32,040
+attività. Molto spesso mi capita che alcuni clienti provino ugualmente a scrivermi su Whatsapp salvo
+
+19
+00:02:32,120 --> 00:02:38,000
+poi rendersi conto che i messaggi non vengono neanche consegnati, non essendoci un vero e
+
+20
+00:02:38,000 --> 00:02:47,680
+proprio account legato al numero. E quindi come mai ho optato per questa soluzione così drastica?
+
+21
+00:02:47,680 --> 00:02:55,680
+Beh, i motivi sono vari e alcuni più importanti di altri. Vediamo se riesco ad elencarli descrivendoli
+
+22
+00:02:56,200 --> 00:03:03,600
+in maniera sufficientemente esaustiva. Il primo e credo anche il maggiore dei problemi che ho
+
+23
+00:03:03,600 --> 00:03:10,880
+risolto liberandomi di Whatsapp è quello delle interruzioni continue. Sì, perché come tutti
+
+24
+00:03:10,880 --> 00:03:17,680
+sappiamo Whatsapp è una fonte continua di notifiche. Parenti, amici, collaboratori, gruppi.
+
+25
+00:03:17,680 --> 00:03:25,320
+Quando Whatsapp è attivo il telefono non smette praticamente mai di vibrare e in un lavoro come
+
+26
+00:03:25,440 --> 00:03:32,000
+il mio nel quale c'è bisogno di prendersi anche momenti abbastanza lunghi di riflessione e
+
+27
+00:03:32,000 --> 00:03:39,480
+ragionamento questo tipo di interferenza è assolutamente deleterio. E sì, lo so, basterebbe
+
+28
+00:03:39,480 --> 00:03:45,280
+mettere il telefono in modalità silenziosa o disattivare alcuni contatti o semplicemente
+
+29
+00:03:45,280 --> 00:03:52,640
+togliere le notifiche a Whatsapp. Il problema però è nel modo in cui le persone lo utilizzano.
+
+30
+00:03:53,080 --> 00:04:02,200
+Infatti Whatsapp è in realtà una sorta di ibrido tra la classica cara e vecchia telefonata e un
+
+31
+00:04:02,200 --> 00:04:08,360
+social network. Infatti esso ti spinge a stare il più possibile sulla piattaforma, a interagire con
+
+32
+00:04:08,360 --> 00:04:16,320
+i tuoi contatti, ma a differenza di un social gli utenti presuppongono una sorta di interazione
+
+33
+00:04:16,320 --> 00:04:23,400
+molto più stretta. Che cosa voglio dire? Se si pubblica un nuovo post su Instagram, su Facebook,
+
+34
+00:04:23,400 --> 00:04:29,840
+su Twitter o che so io, non ci si aspetta che le persone rispondano immediatamente. Mentre su
+
+35
+00:04:29,840 --> 00:04:36,600
+Whatsapp il concetto è quello di rispondere subito. La persona che ti scrive si aspetta
+
+36
+00:04:36,600 --> 00:04:42,640
+una risposta in tempi brevi. A chi non è capitato di contatti che magari fanno una domanda e dopo un
+
+37
+00:04:42,640 --> 00:04:48,720
+quarto d'ora la ripetono o chiedono spiegazioni o poi magari dopo qualche ora ti rinfacciano il
+
+38
+00:04:48,720 --> 00:04:55,360
+fatto che non hai risposto. E questo è un forte problema di percezione che con altri mezzi non
+
+39
+00:04:55,360 --> 00:05:01,480
+si verifica. Ad esempio se io invio un'email non mi aspetto una risposta in strettissimo giro. Se
+
+40
+00:05:01,480 --> 00:05:08,640
+invece ho fretta di parlare con una persona le telefono e ci parlo in tempo reale. Mentre su un
+
+41
+00:05:08,640 --> 00:05:15,960
+sistema di messaggistica come Whatsapp sono portato a interagire con un vocale, un messaggio o un video
+
+42
+00:05:15,960 --> 00:05:21,480
+e aspettarmi che la persona dall'altro lato sia reattiva come se l'avessi chiamata al telefono.
+
+43
+00:05:21,480 --> 00:05:28,840
+In secondo luogo un secondo problema risolto dall'eliminazione di Whatsapp è quello di aver
+
+44
+00:05:28,840 --> 00:05:36,440
+frapposto una certa barriera alle comunicazioni professionali. Attenzione mi rendo conto che
+
+45
+00:05:36,440 --> 00:05:42,040
+questo possa essere un discorso molto soggettivo ma è quello che effettivamente riguarda me e quindi
+
+46
+00:05:42,040 --> 00:05:49,040
+ve ne parlo. Voi ovviamente prendete queste mie affermazioni per quello che sono cioè un racconto
+
+47
+00:05:49,040 --> 00:05:55,400
+di un'esperienza personale. Quello che voglio intendere con barriera alle comunicazioni
+
+48
+00:05:55,400 --> 00:06:02,800
+professionali è il fatto che un qualsiasi cliente o collaboratore o insomma persona con la quale mi
+
+49
+00:06:02,800 --> 00:06:10,120
+rapporto nel mio percorso professionale sia costretta ad utilizzare un mezzo diverso da
+
+50
+00:06:10,120 --> 00:06:18,160
+Whatsapp per comunicare con me. Il vantaggio in una cosa del genere sta nel fatto che Whatsapp è
+
+51
+00:06:18,160 --> 00:06:25,680
+troppo immediato. Che cosa voglio dire? Quando si comunica tramite un sistema di chat si tende
+
+52
+00:06:25,680 --> 00:06:32,120
+a scrivere di getto, a esprimere un pensiero di getto, a trasmettere un'informazione il prima
+
+53
+00:06:32,120 --> 00:06:38,000
+possibile e questo in ambito professionale soprattutto del mio lavoro dove si parla molto
+
+54
+00:06:38,000 --> 00:06:46,320
+spesso di analisi, di scrittura di requisiti, insomma di operazioni che richiedono molto
+
+55
+00:06:46,320 --> 00:06:54,000
+ragionamento prima di essere completate ed esposte agli altri. Beh in questo caso il muoversi di
+
+56
+00:06:54,000 --> 00:07:02,080
+getto è assolutamente una cosa negativa. Significa molto spesso fare richieste prima di averci
+
+57
+00:07:02,080 --> 00:07:09,560
+ragionato abbastanza oppure segnalare problemi prima di aver fatto le dovute verifiche. Insomma
+
+58
+00:07:09,560 --> 00:07:16,240
+far sì che la comunicazione debba passare per forza in ambito professionale attraverso degli
+
+59
+00:07:16,240 --> 00:07:24,960
+strumenti che ti spingano a ragionare di più tipo l'email o il sistema di ticketing dove per esporre
+
+60
+00:07:24,960 --> 00:07:32,000
+il problema bisogna fermarsi un attimo e ragionare per scrivere la cosa nel modo più comprensibile
+
+61
+00:07:32,000 --> 00:07:39,000
+e chiaro possibile. A lungo andare risulta sicuramente un vantaggio. Si evitano le
+
+62
+00:07:39,000 --> 00:07:47,040
+comunicazioni inutili, si evitano le operazioni inutili e molto spesso si migliora l'intero
+
+63
+00:07:47,040 --> 00:07:53,280
+flusso di lavoro. Anche perché molte aziende implementano dei sistemi di tracciamento interno
+
+64
+00:07:53,280 --> 00:07:59,880
+delle operazioni e quindi utilizzare app di messaggistica esterne è il miglior modo per
+
+65
+00:08:00,000 --> 00:08:07,880
+perdere parti di informazioni e parti dei discorsi fatti tra i professionisti. Allo stesso modo molto
+
+66
+00:08:07,880 --> 00:08:16,200
+spesso può essere utile frapporre una sorta di piccola barriera fra sé e i propri clienti. Ad
+
+67
+00:08:16,200 --> 00:08:23,360
+esempio per ciò che riguarda il mio lavoro il tipo di servizi e di prodotti che sono in grado
+
+68
+00:08:23,560 --> 00:08:31,520
+di fornire non sono solitamente adatti a un tipo di cliente che non abbia nessuna competenza
+
+69
+00:08:31,520 --> 00:08:37,960
+tecnica. Cioè solitamente io lavoro o per aziende del settore o comunque per aziende
+
+70
+00:08:37,960 --> 00:08:44,240
+che hanno un minimo di conoscenza in ambito tecnico e che hanno bisogno di una consulenza
+
+71
+00:08:44,240 --> 00:08:51,720
+per potenziare quelle che sono le loro risorse interne. Quindi il genere di cliente che
+
+72
+00:08:51,760 --> 00:08:59,040
+interagisce solo e unicamente attraverso Whatsapp di solito non è quel tipo di cliente che ha
+
+73
+00:08:59,040 --> 00:09:06,960
+bisogno dei miei servizi. Quindi il fatto di diciamo così impedirgli una comunicazione
+
+74
+00:09:06,960 --> 00:09:13,760
+troppo semplificata funge letteralmente da preselezione per i clienti. Senza contare
+
+75
+00:09:13,760 --> 00:09:19,880
+poi che Whatsapp viene percepito come uno strumento per dialogare con amici e parenti
+
+76
+00:09:20,320 --> 00:09:26,840
+e con questi si può parlare a qualsiasi ora in qualsiasi giorno. E ciò spinge le persone a
+
+77
+00:09:26,840 --> 00:09:35,360
+contattare i professionisti magari ad orari strani o durante il weekend o durante le festività. Cosa
+
+78
+00:09:35,360 --> 00:09:40,880
+che normalmente non dovrebbe accadere. Prima di liberarmi di Whatsapp infatti mi è spesso
+
+79
+00:09:40,880 --> 00:09:48,040
+capitato di ricevere segnalazioni magari anche perfino alle 3 di notte o nei weekend o
+
+80
+00:09:48,040 --> 00:09:55,040
+segnalazioni chiaramente premature e confuse. Tant'è vero che bastava chiedere alla stessa
+
+81
+00:09:55,040 --> 00:10:02,440
+persona di riassumere il tutto via email e spesso essa stessa si rendeva conto di aver
+
+82
+00:10:02,440 --> 00:10:08,720
+sbagliato qualcosa o di non aver controllato qualcos'altro. O semplicemente il fatto di
+
+83
+00:10:08,720 --> 00:10:16,160
+dover mettere in fila due o tre frasi di senso compiuto gli permetteva di esporre il tutto in
+
+84
+00:10:16,200 --> 00:10:23,240
+modo molto più chiaro. Ora pur avendo eliminato Whatsapp non sono certo rimasto senza sistemi di
+
+85
+00:10:23,240 --> 00:10:29,720
+messaggistica. Infatti come vi dico sempre mi trovate su Telegram dove c'è persino un gruppo
+
+86
+00:10:29,720 --> 00:10:36,640
+e un canale dedicati a questo podcast. Ma ad essere sincero su Telegram questi problemi che
+
+87
+00:10:36,640 --> 00:10:43,840
+ho descritto finora tendono a non verificarsi o a verificarsi con molta minore frequenza. Ora
+
+88
+00:10:44,000 --> 00:10:51,480
+io sospetto che dipenda un po' dalla maggiore qualità tecnica del software ma anche dal
+
+89
+00:10:51,480 --> 00:10:58,120
+fatto che esso è molto meno diffuso. Passatemi il termine fra le persone normali diciamo i non
+
+90
+00:10:58,120 --> 00:11:05,520
+tecnici e quindi gli utenti Telegram tendono ad essere leggermente meno molesti diciamo così.
+
+91
+00:11:05,520 --> 00:11:13,280
+Oltre al fatto che si possono gestire in maniera più puntuale le impostazioni sulla privacy. Per
+
+92
+00:11:13,280 --> 00:11:20,880
+motivi professionali io continuo ad utilizzare sistemi come Slack o Skype ma qui questo tipo di
+
+93
+00:11:20,880 --> 00:11:27,080
+problemi sono molto più circoscritti perché in realtà basta non installarli sullo smartphone e
+
+94
+00:11:27,080 --> 00:11:33,480
+una volta spento il pc il problema è risolto e se ne parlerà alla prossima accensione.
+
+95
+00:11:33,480 --> 00:11:42,640
+Infine da questo ragionamento restano esclusi ovviamente amici e parenti che notoriamente ci
+
+96
+00:11:42,640 --> 00:11:50,600
+contattano solo e unicamente su WhatsApp. Beh per poter comunicare con loro esistono ancora molti
+
+97
+00:11:50,600 --> 00:11:56,280
+sistemi. Si possono utilizzare i social network ad esempio Facebook al quale saranno iscritti
+
+98
+00:11:56,280 --> 00:12:03,080
+probabilmente tutti i membri con più di 30 anni appartenenti alle nostre famiglie. Per quelli
+
+99
+00:12:03,080 --> 00:12:09,240
+invece sotto i 30 anni si può provare a fargli installare Telegram o nel peggiore dei casi si
+
+100
+00:12:09,240 --> 00:12:16,080
+può ancora ricorrere alla cara vecchia telefonata. Insomma da quando ho eliminato WhatsApp io ho
+
+101
+00:12:16,080 --> 00:12:21,800
+percepito un netto miglioramento nella qualità della mia giornata ma mi rendo conto che per
+
+102
+00:12:21,800 --> 00:12:27,960
+qualcun altro il discorso potrebbe essere molto diverso. Proprio per questo vi chiedo di contribuire
+
+103
+00:12:27,960 --> 00:12:34,480
+a questo podcast con il vostro pensiero con le vostre esperienze sia con un commento se
+
+104
+00:12:34,480 --> 00:12:41,040
+volete e se la vostra piattaforma lo permette sia cercandomi su Twitter, su Instagram, su Telegram
+
+105
+00:12:41,040 --> 00:12:47,360
+o nel gruppo del podcast. Trovate tutti i miei contatti in descrizione. Per oggi direi di aver
+
+106
+00:12:47,360 --> 00:12:54,960
+parlato abbastanza spero che questo ragionamento vi possa essere d'aiuto in qualche modo e vi
+
+107
+00:12:54,960 --> 00:13:00,640
+saluto dandovi appuntamento al prossimo episodio e ricordandovi che un informatico risolve i
+
+108
+00:13:00,640 --> 00:13:03,480
+problemi, a volte anche usando il computer.
+

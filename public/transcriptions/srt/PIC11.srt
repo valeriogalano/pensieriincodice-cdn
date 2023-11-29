@@ -1,0 +1,844 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:10,000 --> 00:00:26,440
+Salve a tutti e ben ritrovati su Pensieri in codice, il podcast in cui parliamo di
+
+3
+00:00:26,440 --> 00:00:30,720
+argomenti presi dal mondo del software, di internet e della programmazione.
+
+4
+00:00:30,720 --> 00:00:37,240
+Nell'episodio di oggi vorrei provare a fare con voi una recensione informatica ed in particolare
+
+5
+00:00:37,240 --> 00:00:43,320
+su di una serie tv da poco uscita su Netflix che è la quinta stagione di Black Mirror.
+
+6
+00:00:43,320 --> 00:00:49,760
+Ovviamente dal momento che sono già tantissimi quelli che ne hanno discusso e a dire la verità
+
+7
+00:00:49,760 --> 00:00:55,400
+hanno anche demolito questa stagione sia dal punto di vista della scrittura che della solidità dei
+
+8
+00:00:55,400 --> 00:01:01,440
+personaggi, degli eventi eccetera e inoltre poiché io non ho vere e proprie competenze per dare
+
+9
+00:01:01,440 --> 00:01:08,800
+giudizi dal punto di vista cinematografico, questa recensione vuole piuttosto essere una scusa per
+
+10
+00:01:08,800 --> 00:01:15,000
+parlare di come sono stati resi alcuni aspetti informatici e di come nel bene o nel male gli
+
+11
+00:01:15,000 --> 00:01:20,800
+sceneggiatori abbiano immaginato i software all'interno delle storie che hanno raccontato.
+
+12
+00:01:21,360 --> 00:01:26,560
+Fatemi sapere se questo tipo di podcast vi piace e vi interessa e in caso affermativo
+
+13
+00:01:26,560 --> 00:01:32,680
+sicuramente nel prossimo futuro ne pubblicherò altri. Prima di iniziare però vi devo avvisare
+
+14
+00:01:32,680 --> 00:01:39,200
+che dal prossimo blocco ci saranno spoiler quindi se siete spoilerofobici o semplicemente volete
+
+15
+00:01:39,200 --> 00:01:45,600
+ascoltare le osservazioni che andrò a fare conoscendo già gli eventi di cui parlerò vi consiglio di
+
+16
+00:01:45,600 --> 00:01:51,680
+fermare qui il podcast e magari riprenderlo dopo aver visto la quinta stagione di Black Mirror.
+
+17
+00:01:51,680 --> 00:02:03,360
+Prima di tuffarci nell'analisi delle tecnologie mostrate in questa serie è però necessario
+
+18
+00:02:03,360 --> 00:02:10,400
+farci un'idea di quali sono le storie raccontate e i contesti in cui vengono inseriti i vari software
+
+19
+00:02:10,400 --> 00:02:15,440
+di cui andremo a parlare a breve. A questo proposito ho una sorpresa per voi perché a
+
+20
+00:02:15,440 --> 00:02:21,840
+parlarvene non sarò io ma un super esperto in materia di film serie tv e fumetti. Frecht ci sei?
+
+21
+00:02:21,840 --> 00:02:29,760
+Weeei ragazzi io sono Frecht e di solito vi consiglio cose belle sul mio podcast. Mi trovate
+
+22
+00:02:29,760 --> 00:02:36,800
+sullo Spotify, sullo Spreaker e anche sullo Youtube ma oggi solo per Valerio vi parlo anche di cose
+
+23
+00:02:36,880 --> 00:02:44,080
+brutte, anzi di cose che prima erano belle e mosso brutte, insomma un brutto anotroccolo al contrario.
+
+24
+00:02:44,080 --> 00:02:52,120
+E chi è questo paperotto? Parliamo di Black Mirror la serie antologica e che vuol dire antologico?
+
+25
+00:02:52,120 --> 00:02:57,840
+Questo parolone vuol dire che ogni episodio è scollegato dal precedente cioè non ha nessun
+
+26
+00:02:57,840 --> 00:03:03,280
+collegamento col precedente, nessun personaggio simile o altro tipo dei mediometraggi che hanno
+
+27
+00:03:03,280 --> 00:03:08,560
+un unico filo conduttore uno con l'altro, la tecnologia e i suoi possibili riscontri negativi
+
+28
+00:03:08,560 --> 00:03:14,200
+nella nostra vita. Black Mirror sia dalla prima puntata è sempre stato questo, un pugno nello
+
+29
+00:03:14,200 --> 00:03:20,480
+stomaco allo spettatore, un guardare allo specchio il peggio che abbiamo, insomma un Black Mirror su
+
+30
+00:03:20,480 --> 00:03:25,800
+cui specchiarci, insomma ha un titolo azzeccato Black Mirror come serie e bravi quelli del
+
+31
+00:03:25,800 --> 00:03:30,920
+marketing. Comunque vi dicevo che per le prime tre stagioni Black Mirror ci ha regalati tanti di
+
+32
+00:03:30,920 --> 00:03:36,680
+quei pugni che neanche Kenshiro ha ai tempi belli, ma oggi no, oggi Black Mirror è soltanto uno
+
+33
+00:03:36,680 --> 00:03:41,600
+specchio sbiadito diciamo che è un grey mirror se vogliamo proprio fare una similitudine con i
+
+34
+00:03:41,600 --> 00:03:47,720
+colori. Infatti oggi vi parlo della orrenda quinta stagione dove i pugni hanno lasciato spazio alle
+
+35
+00:03:47,720 --> 00:03:53,560
+carezze e le riflessioni a banali trame da casa di carta o un muccino con il pallino
+
+36
+00:03:53,560 --> 00:04:00,040
+dell'informatica. Ma mi spiego peggio, vi parlo del primo episodio che non mi ricordo come si
+
+37
+00:04:00,040 --> 00:04:06,520
+chiama, ma per capirci meglio chiamerò l'amore ai tempi di Tekken. C'è il classico studentello
+
+38
+00:04:06,520 --> 00:04:11,480
+interpretato da Falcon, cos'è quello di film della Marvel, l'amico nero di Capitano America,
+
+39
+00:04:11,480 --> 00:04:16,320
+che se la fa con la sua coinquilina, perché lui in questo in questo episodio fa il ragazzotto di
+
+40
+00:04:16,320 --> 00:04:22,640
+27 anni, crediamoci. Comunque si fa la sua coinquilina, ma la sera appena lei si addormenta
+
+41
+00:04:22,640 --> 00:04:28,760
+lui scappa nel soggiorno per giocare al Tekken Taroko con il suo coinquilino figo, sapete no lo
+
+42
+00:04:29,040 --> 00:04:34,640
+femmine quello che come Dylan Dogg se ne fa una ogni sera. Insomma questi qui ogni notte si
+
+43
+00:04:34,640 --> 00:04:40,960
+sfondano giocando a Tekken. Poi abbiamo un time skip, sono passati 11 anni e il nostro protagonista
+
+44
+00:04:40,960 --> 00:04:46,400
+Falcon, che chiameremo Falcon per comodità, ormai sta sposato con la sua coinquilina, cioè che adesso
+
+45
+00:04:46,400 --> 00:04:51,560
+non è più coinquilina è moglie, però vivono sempre assieme. E' il giorno del suo compleanno e il suo
+
+46
+00:04:51,560 --> 00:04:56,120
+amico Shupa femmine anche lui è stato invitato e come regalo che cosa gli compra al nostro amico
+
+47
+00:04:56,120 --> 00:05:02,560
+Falcon? Gli compra una nuova copia di Tekken Taroko per OVR. E qui iniziano le prime magagne
+
+48
+00:05:02,560 --> 00:05:08,240
+di trama, la sospensione delle incredulità esplode, il nostro Falcon si ritrova in un picchiaduro in
+
+49
+00:05:08,240 --> 00:05:12,840
+una realtà virtuale che è uguale alla nostra, lui interpreta questo personaggio, questo cinesotto che
+
+50
+00:05:12,840 --> 00:05:18,640
+combatte, dove però se ti fai male, ti fai male anche nella realtà. E qui sorge una domanda, ma
+
+51
+00:05:18,640 --> 00:05:24,120
+perché dovrei comprare un gioco dove se mi faccio male, mi faccio male nella realtà? Chi se lo
+
+52
+00:05:24,120 --> 00:05:29,920
+comprerebbe? E soprattutto è legale? Comunque, passiamoci sopra. Durante uno scontro tra lui e
+
+53
+00:05:29,920 --> 00:05:34,960
+il suo amico Shupa femmine che invece interpreta un personaggio femminile, lui questo cinesotto,
+
+54
+00:05:34,960 --> 00:05:41,320
+lei questo personaggio femminile, lui e Falcon da amenarsi finiscono per ammucchiarsi. Insomma,
+
+55
+00:05:41,320 --> 00:05:45,560
+fanno sesso perché in questo gioco qui tutto quello che senti, lo senti nella realtà. E anche
+
+56
+00:05:45,560 --> 00:05:50,840
+qui io mi chiedo, ma che davvero hanno programmato dei personaggi virtuali con gli organi genitali?
+
+57
+00:05:50,840 --> 00:05:55,320
+Sarebbe la follia, tutti i manici sessuali giocherebbero a questo gioco, nessuno combatterebbe.
+
+58
+00:05:55,320 --> 00:06:00,680
+Comunque ragazzi tranquilli, tutte le questioni sul sesso virtuale, l'amore fra uomini e le
+
+59
+00:06:00,680 --> 00:06:05,520
+relazioni extracognugali vengono solo accennate in questo episodio e ci troviamo di fronte a
+
+60
+00:06:05,520 --> 00:06:10,320
+classico episodio floscio con un finale alla muccino, però con il palino dell'informatica,
+
+61
+00:06:10,320 --> 00:06:15,440
+come vi dicevo poc'anzi, ma non vi dico altro perché magari vi volete far del male e volete
+
+62
+00:06:15,440 --> 00:06:20,640
+vedere questo episodio e guardatevelo, mentre l'altro forse anche peggio. Lo possiamo chiamare
+
+63
+00:06:20,640 --> 00:06:26,240
+Anna Montana incontra Scoopy Doo. Insomma c'è Anna Montana, cioè identica a lei e pur la stessa
+
+64
+00:06:26,240 --> 00:06:32,040
+attrice, che è famosissima, tutti sono pazzi di lei e tutti comprano gli dischi, ma siamo in
+
+65
+00:06:32,040 --> 00:06:36,720
+Black Mirror e se non ci metti un'intelligenza artificiale non siamo contenti. Quindi per
+
+66
+00:06:36,720 --> 00:06:41,640
+sfruttare ancora di più la fama e la figura di Anna Montana, che si inventano questi geni del
+
+67
+00:06:41,640 --> 00:06:46,040
+marketing. Si inventano una specie di Emilio e il meglio, non so se vi ricordate il robottino
+
+68
+00:06:46,040 --> 00:06:52,040
+degli anni 90, comunque inventano questo robottino con un'intelligenza artificiale in stile Alexa di
+
+69
+00:06:52,040 --> 00:06:57,240
+Amazon, che risponde a tutte le domande facendo finta di essere Anna Montana e tutti fan che
+
+70
+00:06:57,240 --> 00:07:02,400
+bello lo voglio, voglio anche un stupo pazzetto orrendo. Comunque nel frattempo la zia e pure
+
+71
+00:07:02,400 --> 00:07:08,320
+manager di Anna Montana, che sembra una Laura Pausini malnutrita, ha un piano diabolico, vuole
+
+72
+00:07:08,320 --> 00:07:13,280
+mandare in coma Anna Montana, così che ormai è diventata ingestibile, lei adesso ha belle tavole
+
+73
+00:07:13,280 --> 00:07:18,800
+a fare dischi nuovi, sta impazzendo, un po' come Miley Cyrus, l'attrice di Anna Montana nella
+
+74
+00:07:18,800 --> 00:07:25,200
+realtà, che sia una frecciatina. Comunque che fa? La manda in coma con un apparecchio, li legge la
+
+75
+00:07:25,200 --> 00:07:32,040
+mente e leggendogli la mente estrapola nuove canzoni da far cantare al computer. Cioè avete capito? No
+
+76
+00:07:32,040 --> 00:07:39,200
+perché io no. Cioè esiste un estrattore di canzoni dal cervello? Eh? Ma che cazzo sto guardando? E non
+
+77
+00:07:39,200 --> 00:07:44,200
+è l'unico ma che cacchio sto guardando della puntata. Scopriamo infatti che l'Alexa di Anna
+
+78
+00:07:44,200 --> 00:07:50,240
+Montana ha all'interno l'intera coscienza di Anna Montana e che con un blocco la rendono più stupida,
+
+79
+00:07:50,240 --> 00:07:55,640
+cioè più stile Alexa. Comunque ad un certo punto, a caso proprio, trovano un modo per sbloccare questa
+
+80
+00:07:55,640 --> 00:08:00,720
+coscienza di Anna Montana dentro l'Alexa di Anna Montana e questo Alexa diventa finalmente Anna
+
+81
+00:08:00,720 --> 00:08:05,480
+Montana dentro un pupazzo che fanno, insieme a altre due ragazzotte di cui non vi ho parlato ma
+
+82
+00:08:05,480 --> 00:08:10,400
+che sono inutili, andranno insieme a questo robot alla ricerca della vera Anna Montana che nel
+
+83
+00:08:10,400 --> 00:08:15,840
+frattempo è imprigionata dalla zia Laura Pausini. Insomma un episodio di Scooby-Doo, anzi di Black
+
+84
+00:08:15,840 --> 00:08:21,120
+Scooby-Doo, così per fare Black Mirror e Scooby-Doo. Comunque basta di parlare di queste robe che mi
+
+85
+00:08:21,120 --> 00:08:25,880
+sono avvilito, fanno proprio schifo queste puntate di Black Mirror. Lascio la parola a Valerio. Vai
+
+86
+00:08:25,880 --> 00:08:33,080
+Valerio, pensaci tu. Grazie mille Frect, ero sicuro di poter contare su di te e prima di proseguire vi
+
+87
+00:08:33,080 --> 00:08:39,520
+informo che se vi piacciono le serie tv, i film o i fumetti o se vi piace Frect, che tutto sommato
+
+88
+00:08:39,520 --> 00:08:45,960
+i gusti sono gusti, allora potete trovare il suo podcast su Spreaker, YouTube o Spotify. Vi
+
+89
+00:08:45,960 --> 00:08:50,440
+basterà cercare consigli non richiesti o cliccare sul link che trovate in descrizione.
+
+90
+00:08:56,040 --> 00:09:01,480
+Come anticipava il buon Frect, in questa stagione sono principalmente due gli episodi che ci offrono
+
+91
+00:09:01,480 --> 00:09:07,560
+gli spunti più interessanti ed in particolare il primo ed il terzo, perché sono quelli ambientati
+
+92
+00:09:07,560 --> 00:09:13,480
+in un prossimo futuro e ci mostrano come gli sceneggiatori immaginano il progresso tecnologico
+
+93
+00:09:13,480 --> 00:09:20,360
+ed informatico nei prossimi anni. In entrambi questi episodi emerge piuttosto chiara l'idea di
+
+94
+00:09:20,360 --> 00:09:26,640
+una tecnologia in grado di collegare la mente umana a delle macchine e quindi di seguito a
+
+95
+00:09:26,640 --> 00:09:33,240
+dei software che permettono sia di elaborare le informazioni prodotte dal cervello dei protagonisti
+
+96
+00:09:33,240 --> 00:09:40,000
+sia di trasmettere a questi ultimi delle sensazioni e fargli vivere esperienze così come se si
+
+97
+00:09:40,000 --> 00:09:46,560
+trovassero in una sorta di realtà virtuale molto avanzata. Le tecnologie mostrate ed in particolare
+
+98
+00:09:46,600 --> 00:09:53,040
+i software impiegati però, come vedremo fra poco, presentano alcuni tratti che risultano
+
+99
+00:09:53,040 --> 00:09:59,720
+poco realistici. Non tanto perché non sembrano traguardi raggiungibili a breve, anzi io mi aspetto
+
+100
+00:09:59,720 --> 00:10:07,480
+di vedere questo tipo di tecnologie entro pochi anni, ma quanto piuttosto perché vengono impiegate
+
+101
+00:10:07,480 --> 00:10:15,960
+e rappresentate in modi piuttosto inverosimili, cioè modi poco logici, poco efficienti e diciamo
+
+102
+00:10:15,960 --> 00:10:22,720
+se anche tali tecnologie fossero effettivamente già disponibili nessun progettista o sviluppatore
+
+103
+00:10:22,720 --> 00:10:28,880
+le impiegherebbe così come mostrate negli episodi di Black Mirror. Cerchiamo però di procedere con
+
+104
+00:10:28,880 --> 00:10:35,400
+ordine e proviamo ad illustrare i punti controversi uno per volta. Il primo software di cui vorrei
+
+105
+00:10:35,400 --> 00:10:42,280
+parlare e che definirei piuttosto inverosimile è praticamente il protagonista di tutto il primo
+
+106
+00:10:42,280 --> 00:10:48,480
+episodio. Si tratta in effetti del videogame a cui i due protagonisti giocano, e non solo,
+
+107
+00:10:48,480 --> 00:10:55,120
+nel corso dell'intero episodio. In pratica si tratta di quello che noi chiameremmo un picchiaduro,
+
+108
+00:10:55,120 --> 00:11:03,160
+qualcosa di simile a Tekken o Mortal Kombat, ma che essendo estremamente più avanzato e tenendo
+
+109
+00:11:03,160 --> 00:11:08,600
+presente che la storia è ambientata circa una decina d'anni nel futuro, permette una estrema
+
+110
+00:11:08,680 --> 00:11:14,640
+libertà ben lontana da quelle che sono le meccaniche che ci si aspetterebbe da questo
+
+111
+00:11:14,640 --> 00:11:21,320
+tipo di videogioco. Viene mostrato infatti che dopo un paio di partite totalmente immersi in
+
+112
+00:11:21,320 --> 00:11:29,280
+queste aree virtuali i ragazzi capiscono di avere molta più libertà di quella che normalmente sarebbe
+
+113
+00:11:29,280 --> 00:11:37,120
+necessaria e sufficiente in un picchiaduro. Il secondo punto poi a mio parere abbastanza
+
+114
+00:11:37,200 --> 00:11:43,840
+inverosimile riguarda il terzo ed ultimo episodio della stagione. In questo episodio infatti l'intera
+
+115
+00:11:43,840 --> 00:11:51,320
+avventura delle due piccole protagoniste prende il via dal fatto che loro manomettono una bambola,
+
+116
+00:11:51,320 --> 00:11:58,600
+un piccolo robot, nel quale è stata caricata una copia digitale della personalità di una
+
+117
+00:11:58,600 --> 00:12:06,040
+famosissima cantante pop e così facendo riescono a sbloccare quello che potremmo
+
+118
+00:12:06,040 --> 00:12:12,560
+definire l'intero potenziale del robot. In pratica ci viene mostrato che le due ragazze
+
+119
+00:12:12,560 --> 00:12:20,600
+collegando il robot ad un pc si rendono conto che al suo interno sono state caricate sia la
+
+120
+00:12:20,600 --> 00:12:27,720
+personalità che tutti i ricordi appartenenti alla persona alla quale il robot è ispirato e
+
+121
+00:12:27,720 --> 00:12:34,800
+poi solo successivamente è stato applicato un blocco software per far sì che il personaggio
+
+122
+00:12:34,800 --> 00:12:40,440
+si comportasse come una bambola adatta ad un pubblico di ragazzi e adolescenti. Una volta
+
+123
+00:12:40,440 --> 00:12:47,640
+rimosso questo blocco inserito a posteriori quindi la bambola inizia a pensare e comportarsi
+
+124
+00:12:47,640 --> 00:12:54,080
+in tutto e per tutto come se si trattasse della persona da cui sono stati scaricati i dati. Ora,
+
+125
+00:12:54,080 --> 00:12:59,800
+pur volendo supporre che in futuro possano esistere delle tecnologie sufficientemente avanzate per
+
+126
+00:12:59,800 --> 00:13:06,520
+permettere di riprodurre le situazioni che vi ho descritto, va però considerato che esse violano
+
+127
+00:13:06,520 --> 00:13:11,680
+quello che è un principio fondamentale dello sviluppo del software e cioè il concetto di
+
+128
+00:13:11,680 --> 00:13:19,320
+ottimizzazione. L'ottimizzazione del software fa sì che esso svolga i propri compiti nel modo più
+
+129
+00:13:19,320 --> 00:13:25,360
+efficiente possibile e cioè quindi produca il risultato che ci si aspetta ma nel minor tempo
+
+130
+00:13:25,600 --> 00:13:31,720
+possibile e al tempo stesso utilizzando il minor quantitativo possibile di risorse a propria
+
+131
+00:13:31,720 --> 00:13:38,320
+disposizione. Quindi in parole povere, pesando il meno possibile su processore, memoria e tutti
+
+132
+00:13:38,320 --> 00:13:44,280
+gli altri componenti hardware. Traslando questo concetto ad esempio su di un videogioco, dato che
+
+133
+00:13:44,280 --> 00:13:50,440
+in fin dei conti un videogame è pur sempre un software, possiamo dire che esso dovrà essere
+
+134
+00:13:50,600 --> 00:13:57,320
+ottimizzato per permettere la migliore esperienza di gioco possibile ma al tempo stesso non dovrà
+
+135
+00:13:57,320 --> 00:14:03,440
+sprecare le risorse messe a disposizione della console che, se anche particolarmente estese,
+
+136
+00:14:03,440 --> 00:14:10,440
+saranno comunque limitate. Ora, lungi da me farvi credere che tutti i software siano
+
+137
+00:14:10,440 --> 00:14:16,560
+perfettamente ottimizzati ma deve essere chiaro che se a livello di ottimizzazione di un qualsiasi
+
+138
+00:14:16,560 --> 00:14:23,200
+programma non raggiunge una soglia minima che potremmo definire sufficienza, allora in
+
+139
+00:14:23,200 --> 00:14:29,160
+determinate condizioni esso potrebbe risultare semplicemente inutilizzabile. Pensiamo ad esempio
+
+140
+00:14:29,160 --> 00:14:37,120
+ad un browser per navigare sul web come sono Chrome o Firefox. Ottimizzare un browser è un'operazione
+
+141
+00:14:37,120 --> 00:14:44,560
+davvero molto complicata perché esso non è un software dall'utilizzo molto circoscritto. Con
+
+142
+00:14:44,560 --> 00:14:50,920
+un browser possiamo infatti ritrovarci a navigare su siti tremendamente diversi fra loro e che
+
+143
+00:14:50,920 --> 00:14:57,920
+implementano caratteristiche molto distanti e molto spesso le richieste in termini di risorse
+
+144
+00:14:57,920 --> 00:15:03,160
+da parte di un sito possono contrastare profondamente con quelle di un altro. Per questo
+
+145
+00:15:03,160 --> 00:15:09,320
+motivo, per via di questa complessità, il browser per funzionare e mostrare tutti i vari siti
+
+146
+00:15:09,440 --> 00:15:15,000
+richiesti dall'utente potrebbe arrivare a richiedere più risorse di quante effettivamente
+
+147
+00:15:15,000 --> 00:15:22,400
+disponibili e provocare così strani comportamenti. Chi ad esempio utilizza Chrome o Firefox aprendo
+
+148
+00:15:22,400 --> 00:15:27,920
+molte schede in contemporanea e magari senza trovarsi ad operare su di un computer di
+
+149
+00:15:27,920 --> 00:15:34,440
+ultimissima generazione può certamente sperimentare occasionalmente dei rallentamenti del sistema o dei
+
+150
+00:15:34,440 --> 00:15:42,240
+messaggi che avvertono che il sito sta impiegando troppo tempo per aprirsi. Beh, quelli sono sintomi
+
+151
+00:15:42,240 --> 00:15:47,640
+del fatto che le risorse di sistema sono arrivate al limite. Un altro esempio che potremmo aver
+
+152
+00:15:47,640 --> 00:15:53,960
+sperimentato tutti potrebbe essere quello dei videogame. Infatti esistono videogame che non
+
+153
+00:15:53,960 --> 00:16:00,080
+essendo ben ottimizzati per la console o per la scheda video su cui girano risentono di quei
+
+154
+00:16:00,080 --> 00:16:07,200
+classici rallentamenti che vengono definiti calo di framerate. Ora, quello che sto cercando di dire
+
+155
+00:16:07,200 --> 00:16:14,040
+non è che qualsiasi programma o videogame dovrebbe essere ottimizzato per hardware vecchio o con
+
+156
+00:16:14,040 --> 00:16:19,760
+scarse risorse, assolutamente no. Una cosa del genere rallenterebbe il progresso nel campo
+
+157
+00:16:19,760 --> 00:16:26,800
+dello sviluppo del software. Quello che invece vorrei che fosse chiaro è che maggiore è il
+
+158
+00:16:26,800 --> 00:16:33,160
+livello di ottimizzazione di un software, minori saranno le risorse necessarie affinché esso svolga
+
+159
+00:16:33,160 --> 00:16:39,160
+il suo lavoro in modo corretto. E dal fatto di utilizzare meno risorse deriva semplicemente che
+
+160
+00:16:39,160 --> 00:16:45,920
+tutte le risorse risparmiate possono essere impiegate per qualche altro scopo, per esempio
+
+161
+00:16:45,920 --> 00:16:51,440
+per aggiungere o migliorare qualche aspetto del software stesso. Pensiamo sempre al videogioco che
+
+162
+00:16:51,440 --> 00:16:56,920
+è uno dei casi più ovvi di questo tipo di impieghi. Se si riesce a ottimizzare il motore
+
+163
+00:16:56,920 --> 00:17:02,320
+grafico per consumare meno risorse, allora si ottiene un margine di miglioramento su altri
+
+164
+00:17:02,320 --> 00:17:08,640
+fronti. Magari si possono aggiungere dei dettagli o migliorare la gestione delle ombre o dei fluidi.
+
+165
+00:17:08,640 --> 00:17:15,920
+Ritornando a parlare però più in generale, per ottimizzare un software si può, e in realtà si
+
+166
+00:17:15,920 --> 00:17:22,120
+deve, operare su più livelli, i più importanti dei quali sono sicuramente una progettazione
+
+167
+00:17:22,120 --> 00:17:30,000
+oculata, la scelta di algoritmi e strutture dati efficienti, l'implementazione del codice
+
+168
+00:17:30,000 --> 00:17:35,440
+utilizzando i costrutti più performanti, ma anche la scelta del giusto linguaggio di
+
+169
+00:17:35,440 --> 00:17:42,040
+programmazione e dei giusti compilatori e così via. Per puntare ad ottimizzare effettivamente
+
+170
+00:17:42,040 --> 00:17:48,040
+il software è necessario spingere su tutti questi livelli. Sicuramente alcuni avranno un
+
+171
+00:17:48,040 --> 00:17:54,160
+peso maggiore rispetto ad altri sul risultato finale, però nessuno di questi può essere
+
+172
+00:17:54,160 --> 00:17:59,840
+semplicemente ignorato. Tornando quindi alle scelte fatte dagli sceneggiatori della quinta
+
+173
+00:17:59,840 --> 00:18:06,840
+stagione di Black Mirror, appaiono ora evidenti un paio di sviste notevoli. Qualunque sia la
+
+174
+00:18:06,840 --> 00:18:12,600
+casa produttrice del gioco Striking Vipers, che parte fondamentale del primo episodio,
+
+175
+00:18:12,600 --> 00:18:19,680
+ha effettuato una scelta piuttosto inverosimile e cioè ha implementato tutta una serie di
+
+176
+00:18:19,680 --> 00:18:24,960
+funzionalità estranee al tipo di gioco che permettono ai giocatori di interagire fra
+
+177
+00:18:24,960 --> 00:18:30,840
+loro ignorando completamente il combattimento, che è praticamente l'unica caratteristica
+
+178
+00:18:30,840 --> 00:18:37,680
+obbligatoria in un picchiaduro e di fare tutt'altro secondo la loro volontà. I protagonisti potranno
+
+179
+00:18:37,680 --> 00:18:43,760
+infatti avere rapporti utilizzando i propri avatar, trascorrere il tempo all'interno delle
+
+180
+00:18:43,760 --> 00:18:49,600
+ambientazioni, magari standosene in riva a un lago o sulle scale di un tempio, senza che il
+
+181
+00:18:49,600 --> 00:18:57,480
+timer di gioco scada e decreti la fine del round. In pratica in questo videogame tantissime risorse
+
+182
+00:18:57,480 --> 00:19:03,280
+che potevano essere utilizzate per migliorare le caratteristiche funzionali del gioco, come
+
+183
+00:19:03,280 --> 00:19:09,720
+mosse di combattimento o grafica, sono state invece dirottate su funzionalità che in teoria non
+
+184
+00:19:09,720 --> 00:19:16,840
+dovrebbero nemmeno essere presenti in questo tipo di gioco. L'altra violazione del processo di
+
+185
+00:19:16,840 --> 00:19:22,160
+ottimizzazione invece la possiamo trovare nel terzo episodio. Come accennavo prima in questo
+
+186
+00:19:22,160 --> 00:19:27,920
+episodio viene mostrato un piccolo robot, cioè una bambola commercializzata con il nome di Ashley
+
+187
+00:19:27,920 --> 00:19:36,120
+2, nella quale è stata copiata l'intera coscienza di una cantante pop che è stata poi limitata
+
+188
+00:19:36,120 --> 00:19:41,120
+nelle funzioni con l'utilizzo di un blocco implementato via software. Anche in questo
+
+189
+00:19:41,120 --> 00:19:48,440
+caso lo spreco di risorse è palese. Quando le due ragazze infatti collegano la bambola al
+
+190
+00:19:48,440 --> 00:19:53,000
+computer e rimuovono il blocco si riesce perfino a leggere su uno degli schermi che
+
+191
+00:19:53,000 --> 00:20:00,320
+esso limitava l'intero potenziale cognitivo al 4%. Inoltre, una volta rimosso il blocco,
+
+192
+00:20:00,320 --> 00:20:05,880
+l'hardware del piccolo robot si dimostra perfettamente in grado di sostenere l'elaborazione
+
+193
+00:20:05,880 --> 00:20:11,960
+del 100% delle funzioni cerebrali archiviate al suo interno. Questo significa, in parole povere,
+
+194
+00:20:11,960 --> 00:20:19,520
+che gli ingegneri che hanno progettato Ashley 2, che ricordiamolo è un prodotto commerciale quindi
+
+195
+00:20:19,520 --> 00:20:27,040
+venduto per ricavarne profitto, hanno ben pensato di dotarla di un quantitativo di memoria e di una
+
+196
+00:20:27,040 --> 00:20:33,560
+capacità di elaborazione sufficiente a gestire una certa molle di dati e poi successivamente
+
+197
+00:20:34,080 --> 00:20:42,280
+ridurre questa molle di più di 20 volte. Questo comportamento non solo non ha senso dal punto
+
+198
+00:20:42,280 --> 00:20:48,880
+di vista informatico e ingegneristico ma nemmeno da quello commerciale. Infatti è palese che dotare
+
+199
+00:20:48,880 --> 00:20:54,200
+un robot di una quantità di risorse hardware nettamente superiori a quelle necessarie per
+
+200
+00:20:54,200 --> 00:20:59,720
+il funzionamento designato non solo è inefficiente ma anche antieconomico.
+
+201
+00:21:04,560 --> 00:21:10,840
+Dunque ragazzi anche oggi siamo giunti al termine dell'episodio e io come al solito vi ringrazio per
+
+202
+00:21:10,840 --> 00:21:16,680
+essere arrivati fin qui. Abbiamo esaminato solo alcuni aspetti, quelli che mi sono sembrati i
+
+203
+00:21:16,680 --> 00:21:23,200
+più interessanti della stagione 5 di Black Mirror e anche così il podcast è durato molto più del
+
+204
+00:21:23,200 --> 00:21:29,120
+solito ma spero che l'analisi che ne è venuta fuori sia stata interessante. Come al solito vi
+
+205
+00:21:29,120 --> 00:21:33,720
+invito a farmi conoscere le vostre idee e le vostre opinioni al riguardo magari lasciando un
+
+206
+00:21:33,720 --> 00:21:39,280
+commento o unendovi al gruppo telegram di cui trovate il link in descrizione. Vi ricordo
+
+207
+00:21:39,280 --> 00:21:46,800
+sempre che potete ascoltare il podcast su Spreaker, YouTube, Spotify, iTunes e ora anche Alexa e se vi
+
+208
+00:21:46,800 --> 00:21:52,000
+va potreste condividerlo magari con chi ha visto la quinta stagione di Black Mirror per scoprire se
+
+209
+00:21:52,000 --> 00:21:58,240
+è d'accordo con quanto detto oppure ha opinioni differenti. Per ora io vi saluto voi non dimenticate
+
+210
+00:21:58,240 --> 00:22:04,320
+di iscrivervi al podcast consigli non richiesti di FRECT e noi ci sentiamo la prossima settimana.
+
+211
+00:22:04,320 --> 00:22:05,680
+Buona giornata a tutti!
+

@@ -1,0 +1,572 @@
+1
+00:00:00,000 --> 00:00:09,960
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,960 --> 00:00:25,800
+Buongiorno a tutti ragazzi e ben ritrovati per un nuovo episodio di Pensieri in codice,
+
+3
+00:00:25,800 --> 00:00:31,480
+il podcast in cui parliamo di argomenti presi dal mondo del software, di internet e della
+
+4
+00:00:31,480 --> 00:00:36,600
+programmazione. Prima di partire subito con l'argomento di oggi una piccola comunicazione
+
+5
+00:00:36,600 --> 00:00:43,240
+di servizio. Il 12 ottobre 2019 si terrà a Milano il festival del podcasting e Pensieri
+
+6
+00:00:43,240 --> 00:00:48,360
+in codice è candidato come miglior podcast emergente. I primi dieci classificati verranno
+
+7
+00:00:48,360 --> 00:00:53,960
+annunciati sul palco del festival, quindi se vi va di aiutarmi nel contest fermate un secondo
+
+8
+00:00:53,960 --> 00:01:00,080
+il podcast e collegatevi al link vota.pensierincodice.it, lo trovate anche in
+
+9
+00:01:00,080 --> 00:01:06,320
+descrizione. Si aprirà un post Instagram e non dovrete fare altro che mettere un like. Vi
+
+10
+00:01:06,320 --> 00:01:11,720
+ringrazio tutti per il supporto e ora procediamo con l'argomento del giorno. Come per l'episodio
+
+11
+00:01:11,720 --> 00:01:17,360
+della settimana scorsa, anche oggi diamo il via ad una nuova rubrica che chiameremo Algoritmi e
+
+12
+00:01:17,360 --> 00:01:22,840
+nella quale parleremo, indovinate un po', di algoritmi. Negli episodi di questa rubrica andremo
+
+13
+00:01:22,840 --> 00:01:28,120
+ad esaminare quali sono le logiche alla base dei più importanti algoritmi e proveremo a capire,
+
+14
+00:01:28,120 --> 00:01:34,600
+almeno a grandi linee, come funzionano. Questo perché in generale siamo ben abituati a parlare
+
+15
+00:01:34,600 --> 00:01:40,520
+dei progressi nel campo dell'hardware. Compriamo l'ultimo modello di smartphone che ha la fotocamera
+
+16
+00:01:40,520 --> 00:01:46,640
+con più megapixel, il pc con il doppio della memoria del suo predecessore e così via. Però
+
+17
+00:01:46,640 --> 00:01:52,240
+non pensiamo mai al fatto che nelle azioni che compiamo tutti i giorni un buon algoritmo è
+
+18
+00:01:52,240 --> 00:01:58,280
+altrettanto, se non addirittura più importante, dell'hardware che utilizziamo. Pensate a cosa
+
+19
+00:01:58,280 --> 00:02:04,320
+avete fatto ieri con il vostro smartphone o con il vostro pc. Magari avete trovato il percorso più
+
+20
+00:02:04,320 --> 00:02:10,320
+breve per raggiungere la vostra destinazione o forse avete inviato il video del vostro cagnolino
+
+21
+00:02:10,320 --> 00:02:15,960
+ad un parente distante molti chilometri o forse ancora avete individuato il documento che volevate
+
+22
+00:02:15,960 --> 00:02:21,520
+leggere in un archivio di svariati miliardi di documenti. Tutto questo l'avete potuto fare grazie
+
+23
+00:02:21,680 --> 00:02:27,560
+all'hardware di cui disponete, certo, ma anche grazie ad una serie di ingegnosi algoritmi che
+
+24
+00:02:27,560 --> 00:02:32,800
+vi hanno permesso di trovare la distanza minore tra un insieme di punti o di comprimere e
+
+25
+00:02:32,800 --> 00:02:38,000
+trasmettere file audio e video o ancora grazie ad algoritmi di indicizzazione dei motori di
+
+26
+00:02:38,000 --> 00:02:43,240
+ricerca. Allo stesso modo sono tantissimi gli algoritmi che tutti i giorni, senza che nemmeno
+
+27
+00:02:43,240 --> 00:02:48,400
+ce ne accorgiamo, ci semplificano continuamente la vita o in qualche caso ce la complicano,
+
+28
+00:02:48,400 --> 00:02:54,080
+ma di questo parleremo in futuro. Per questo motivo io credo che sia importante conoscere,
+
+29
+00:02:54,080 --> 00:02:59,440
+o almeno comprendere, come funzionano tutti i grandi algoritmi che nel corso della storia
+
+30
+00:02:59,440 --> 00:03:04,840
+hanno contribuito a costruire il mondo così come noi oggi lo viviamo. Chiunque abbia già
+
+31
+00:03:04,840 --> 00:03:10,280
+un'infarinatura di programmazione o di informatica in generale conoscerà già la definizione formale
+
+32
+00:03:10,280 --> 00:03:16,360
+di algoritmo e cioè qualcosa del tipo un algoritmo è un insieme finito di passi
+
+33
+00:03:16,360 --> 00:03:21,840
+sufficientemente semplici che se eseguiti nell'ordine permettono di trasformare un dato
+
+34
+00:03:21,840 --> 00:03:27,840
+input in un dato output. Tuttavia in questa rubrica vorrei mettere in luce il fatto che
+
+35
+00:03:27,840 --> 00:03:35,440
+un algoritmo, per come la vedo io, non è soltanto questo. Un algoritmo, secondo me, è la rappresentazione
+
+36
+00:03:35,440 --> 00:03:42,160
+di un'idea. Una descrizione precisa ed elegante di una soluzione ad un dato problema. Di
+
+37
+00:03:42,160 --> 00:03:47,680
+conseguenza potremmo definire un grande algoritmo come la più efficiente, la più elegante e, in
+
+38
+00:03:47,680 --> 00:03:52,760
+generale, la migliore delle soluzioni che al momento conosciamo per problemi reali che
+
+39
+00:03:52,760 --> 00:03:58,080
+affrontiamo ogni giorno. Tra gli argomenti che potenzialmente potranno entrare a far parte di
+
+40
+00:03:58,080 --> 00:04:03,240
+questa rubrica ci saranno dunque algoritmi di utilizzo quotidiano come quelli di criptografia,
+
+41
+00:04:03,240 --> 00:04:09,000
+di trasmissione, di ricerca, di ordinamento, di verifica della consistenza, varie tipologie di
+
+42
+00:04:09,040 --> 00:04:15,920
+machine learning e molto molto altro. Nell'episodio di oggi parleremo dell'algoritmo di compressione,
+
+43
+00:04:15,920 --> 00:04:21,920
+una funzionalità che magari crediamo di utilizzare di tanto in tanto ma che, come vedremo fra poco,
+
+44
+00:04:21,920 --> 00:04:25,760
+ci accompagna praticamente ogni giorno senza che nemmeno ce ne rendiamo conto.
+
+45
+00:04:25,760 --> 00:04:36,800
+Tutti i file che memorizziamo nei nostri dispositivi, che scambiamo ogni giorno e che archiviamo nel
+
+46
+00:04:36,800 --> 00:04:43,800
+cloud, hanno una caratteristica che prende il nome di dimensione o peso a seconda dei contesti e che
+
+47
+00:04:43,800 --> 00:04:50,920
+si esprime in byte e in relativi multipli come ad esempio il kilobyte o il kibibyte e, se non
+
+48
+00:04:50,920 --> 00:04:58,120
+avete mai sentito parlare di kibibyte, vi consiglio di ascoltare l'episodio numero 12 dal titolo
+
+49
+00:04:58,120 --> 00:05:04,080
+La storia del kibibyte. Questa dimensione rappresenta lo spazio che il file occupa nella
+
+50
+00:05:04,080 --> 00:05:08,480
+memoria di archiviazione. Maggiore sarà la dimensione del file, minore sarà il numero
+
+51
+00:05:08,480 --> 00:05:14,000
+di file che riusciremo ad archiviare nella memoria dei nostri dispositivi. Dal momento però che con
+
+52
+00:05:14,000 --> 00:05:19,760
+il passare del tempo le memorie sono progressivamente divenute sempre più grandi e al tempo stesso sempre
+
+53
+00:05:19,760 --> 00:05:25,640
+più economiche, noi non sentiamo effettivamente il bisogno di comprimere i file per ridurne la
+
+54
+00:05:25,640 --> 00:05:31,560
+dimensione così come accadeva di norma fino a qualche anno fa. Nonostante ciò la compressione
+
+55
+00:05:31,560 --> 00:05:35,920
+resta una parte fondamentale sia per la trasmissione che per l'archiviazione dei dati.
+
+56
+00:05:35,920 --> 00:05:40,960
+Tutte le grandi piattaforme di streaming ad esempio utilizzano la compressione sui propri
+
+57
+00:05:40,960 --> 00:05:46,240
+contenuti e questo diminuisce di gran lunga l'ampiezza di banda necessaria per noi per
+
+58
+00:05:46,240 --> 00:05:51,160
+guardare un film o per ascoltare la musica. Lo stesso discorso vale per i servizi di
+
+59
+00:05:51,160 --> 00:05:57,680
+sincronizzazione dei file come ad esempio Dropbox e simili, ma in più essi utilizzano la compressione
+
+60
+00:05:57,680 --> 00:06:02,600
+anche per conservare i nostri dati e quindi per risparmiare sulle quantità di memoria di
+
+61
+00:06:02,600 --> 00:06:08,400
+archiviazione necessarie. Le compagnie telefoniche anche comprimono la voce durante le chiamate per
+
+62
+00:06:08,400 --> 00:06:13,240
+poter sfruttare maggiormente le linee e si potrebbe andare avanti per molto perché gli esempi sono
+
+63
+00:06:13,240 --> 00:06:18,520
+tantissimi. Ma come funziona in effetti questa operazione che prende il nome di compressione?
+
+64
+00:06:18,520 --> 00:06:23,720
+Innanzitutto partiamo col chiarire che la compressione può essere di due tipi quella
+
+65
+00:06:23,720 --> 00:06:30,160
+senza perdita di informazione e quella con perdita di informazione. Per compressione senza perdita
+
+66
+00:06:30,160 --> 00:06:36,840
+si intende quel tipo di compressione in cui il file compresso, se decompresso, ritorna a essere
+
+67
+00:06:36,840 --> 00:06:42,720
+esattamente identico al file di partenza. Il formato più famoso di questo tipo di compressione
+
+68
+00:06:42,720 --> 00:06:49,920
+prende il nome di formato zip. Un file può essere infatti zippato e dezippato più volte senza che le
+
+69
+00:06:49,920 --> 00:06:56,280
+informazioni al suo interno vengano in alcun modo alterate. L'algoritmo del formato zip basa il
+
+70
+00:06:56,280 --> 00:07:01,760
+suo funzionamento sul fatto che i file vengono memorizzati sotto forma di stringhe di testo ed
+
+71
+00:07:01,760 --> 00:07:08,040
+applica a queste stringhe la combinazione di due operazioni. Badate bene, nella realtà l'algoritmo
+
+72
+00:07:08,040 --> 00:07:14,040
+non lavora direttamente sul testo ma a basso livello sulla codifica del file. Noi però cerchiamo
+
+73
+00:07:14,040 --> 00:07:19,640
+di semplificare perché ciò che ci interessa è il concetto alla base. Quindi prima di tutto dicevamo
+
+74
+00:07:19,840 --> 00:07:27,880
+l'algoritmo individua le ripetizioni all'interno del testo. Se ad esempio trova la sequenza abc abc abc
+
+75
+00:07:27,880 --> 00:07:36,080
+la sostituisce con la sequenza abc per 3 che sta a significare che la sequenza abc in origine
+
+76
+00:07:36,080 --> 00:07:42,120
+era ripetuta tre volte. Come possiamo vedere con questo semplice espediente un testo di lunghezza
+
+77
+00:07:42,360 --> 00:07:50,160
+9 caratteri si è già ridotto a 5. Siamo quindi già quasi ad una dimensione pari a metà di quella
+
+78
+00:07:50,160 --> 00:07:56,640
+del file originale anche se badate bene che è un esempio e sto semplificando estremamente. Il
+
+79
+00:07:56,640 --> 00:08:02,880
+secondo passo che l'algoritmo applica è quello di cercare le ripetizioni sparse per il testo quindi
+
+80
+00:08:02,880 --> 00:08:09,000
+non più quelle consecutive come nell'esempio precedente e le sostituisce con una rappresentazione
+
+81
+00:08:09,120 --> 00:08:15,520
+abbreviata. Quindi se ad esempio nel testo dovesse essere presente sette volte la parola carota
+
+82
+00:08:15,520 --> 00:08:22,760
+l'algoritmo potrebbe sostituire tutte e sette le occorrenze con il numero 1. Se trovasse 5 volte
+
+83
+00:08:22,760 --> 00:08:28,640
+la parola sedano la sostituirebbe magari con il numero 2 e zucca che compare due volte verrebbe
+
+84
+00:08:28,640 --> 00:08:35,000
+sostituita con il numero 3 e così via. Nel fare queste sostituzioni l'algoritmo produrrebbe anche
+
+85
+00:08:35,000 --> 00:08:40,360
+una piccola tabella per tenere conto dei collegamenti tra la parola originale e l'abbreviazione e la
+
+86
+00:08:40,360 --> 00:08:46,320
+inserirebbe all'interno del file zip risultante. Il risultato dell'applicazione di questi due
+
+87
+00:08:46,320 --> 00:08:52,880
+passaggi sul file ne rappresenta una compressione senza perdita. Ne produce infatti una versione
+
+88
+00:08:52,880 --> 00:08:59,840
+molto più piccola nella quale però sono contenute tutte le informazioni del file originale. Basterà
+
+89
+00:08:59,840 --> 00:09:05,760
+quindi applicare i passaggi precedentemente descritti in ordine inverso per ripristinare
+
+90
+00:09:05,760 --> 00:09:16,720
+il file di partenza. Diversa invece è la questione se si parla di algoritmi di compressione con
+
+91
+00:09:16,720 --> 00:09:23,360
+perdita di informazione. In questo caso infatti la procedura prevede di produrre una versione
+
+92
+00:09:23,360 --> 00:09:28,960
+compressa del file della quale non necessariamente è possibile ripristinare l'originale.
+
+93
+00:09:29,680 --> 00:09:34,960
+Questo tipo di compressione non viene applicato a file di testo o in generale a tutti quei file
+
+94
+00:09:34,960 --> 00:09:39,960
+in cui anche una sola virgola di differenza provocherebbe problemi in fase di utilizzo.
+
+95
+00:09:39,960 --> 00:09:46,480
+La compressione con perdita si applica invece principalmente ai file multimediali come ad
+
+96
+00:09:46,480 --> 00:09:53,720
+esempio le immagini, le tracce vocali o musicali, i film ecc. In questa tipologia di file infatti
+
+97
+00:09:53,720 --> 00:09:59,960
+non è indispensabile che la versione compressa sia identica all'originale. È sufficiente invece
+
+98
+00:09:59,960 --> 00:10:06,120
+che un'immagine o un suono compressi siano abbastanza simili all'originale da far sì che
+
+99
+00:10:06,120 --> 00:10:12,200
+non se ne noti la differenza. Non è importante che il dato sia perfetto ma che sia sufficientemente
+
+100
+00:10:12,200 --> 00:10:17,160
+fedele da impedire all'occhio o all'orecchio umano di avvertire la diminuzione di qualità.
+
+101
+00:10:17,680 --> 00:10:24,560
+E dunque nella compressione con perdita esiste questo concetto della qualità e cioè una misura
+
+102
+00:10:24,560 --> 00:10:31,560
+che esprime la quantità di informazioni conservate in fase di compressione. In pratica se la qualità
+
+103
+00:10:31,560 --> 00:10:38,440
+del file è alta allora l'algoritmo di compressione avrà scartato pochi dati. Man mano che si spinge
+
+104
+00:10:38,440 --> 00:10:44,480
+l'algoritmo a scartare più informazioni si riduce la dimensione del file compresso ma a discapito
+
+105
+00:10:44,480 --> 00:10:51,320
+della qualità dell'immagine o del suono. Ma come funziona dunque questo algoritmo di compressione?
+
+106
+00:10:51,320 --> 00:10:58,040
+Per capirlo concentriamoci innanzitutto sulla lavorazione delle immagini. Le immagini vengono
+
+107
+00:10:58,040 --> 00:11:04,560
+rappresentate in informatica come insiemi di pixel cioè di piccolissimi quadrati colorati che messi
+
+108
+00:11:04,560 --> 00:11:10,760
+uno di fianco all'altro vanno a comporre una foto o un disegno. In un normale televisore full hd ad
+
+109
+00:11:10,800 --> 00:11:18,840
+esempio le immagini di film che stiamo guardando sono composte da 1920 colonne e 1080 righe di
+
+110
+00:11:18,840 --> 00:11:26,440
+questi pixel. Abbiamo quindi in totale circa 2 milioni di pixel e cioè 2 megapixel. Sempre
+
+111
+00:11:26,440 --> 00:11:32,440
+semplificando al massimo diciamo che la compressione di un'immagine del genere funziona più o meno in
+
+112
+00:11:32,440 --> 00:11:40,400
+questo modo. Nel file compresso riportiamo i pixel del file di partenza prendendo una riga sì e una
+
+113
+00:11:40,520 --> 00:11:46,840
+no e contemporaneamente una colonna sì e una no. In pratica una volta finito avremmo escluso la metà
+
+114
+00:11:46,840 --> 00:11:53,000
+delle righe la metà delle colonne e quindi i tre quarti dei pixel. Pixel che sono di fatto andati
+
+115
+00:11:53,000 --> 00:11:59,160
+persi nella compressione e da qui il nome di compressione con perdita. Il file risultante
+
+116
+00:11:59,160 --> 00:12:05,080
+avrà quindi una dimensione di un quarto dell'originale. Va da sé che avendo perso il 75%
+
+117
+00:12:05,080 --> 00:12:10,800
+delle informazioni se tentassimo di ripristinare il file originale otterremo un risultato abbastanza
+
+118
+00:12:10,800 --> 00:12:17,000
+diverso. L'immagine probabilmente sarebbe comunque distinguibile ma non sarebbe affatto quella di
+
+119
+00:12:17,000 --> 00:12:23,080
+partenza. Ora la procedura che abbiamo descritto non è quella reale ma un qualcosa di simile che
+
+120
+00:12:23,080 --> 00:12:29,560
+ci è servito per comprendere il concetto di base. In un formato reale come ad esempio il jpeg che
+
+121
+00:12:29,560 --> 00:12:35,440
+anche se viene utilizzato direttamente dai software è di fatto un formato compresso la
+
+122
+00:12:35,440 --> 00:12:42,040
+tecnica prevede comunque la perdita di pixel ma la scelta di quali informazioni scartare viene
+
+123
+00:12:42,040 --> 00:12:47,800
+effettuata in modo molto più complesso. Non è possibile illustrare in un podcast l'intero
+
+124
+00:12:47,800 --> 00:12:54,480
+processo tuttavia possiamo dire che le porzioni di pixel su cui lavora l'algoritmo non sono righe
+
+125
+00:12:54,480 --> 00:13:00,360
+e colonne quanto piuttosto dei quadrati la cui dimensione aumenta o diminuisce in base al grado
+
+126
+00:13:00,360 --> 00:13:06,240
+di qualità che si vuole ottenere. Più grandi saranno i quadrati esaminati minore sarà la
+
+127
+00:13:06,240 --> 00:13:12,440
+qualità dell'immagine compressa. L'algoritmo infatti selezionerà tra tutti i pixel del
+
+128
+00:13:12,440 --> 00:13:17,520
+quadrato quelli il cui valore ritiene meno importante e semplicemente li eliminerà
+
+129
+00:13:17,520 --> 00:13:23,320
+durante la compressione. Da quanto abbiamo appena detto si può quindi dedurre una cosa e cioè che
+
+130
+00:13:23,320 --> 00:13:29,080
+tutte le scene dei film e delle serie tv in cui l'esperto della scientifica utilizza un non
+
+131
+00:13:29,080 --> 00:13:34,400
+meglio definito software per incrementare la risoluzione dell'immagine della telecamera
+
+132
+00:13:34,400 --> 00:13:41,320
+o di una macchina fotografica... beh sono cavolate non è possibile recuperare informazioni da file
+
+133
+00:13:41,320 --> 00:13:48,460
+in cui le informazioni semplicemente non ci sono. Per concludere il discorso anche i file audio come
+
+134
+00:13:48,460 --> 00:13:55,100
+gli mp3 sono in effetti formati compressi e utilizzano la stessa logica del formato jpeg in
+
+135
+00:13:55,100 --> 00:14:00,700
+pratica suddividono l'audio in varie porzioni e ne eliminano le parti che ritengono non fondamentali.
+
+136
+00:14:00,700 --> 00:14:05,900
+Anche in questo caso il risultato finale non sarà identico all'originale ma sarà
+
+137
+00:14:05,900 --> 00:14:11,020
+sufficientemente simile da essere apprezzabile e occuperà molto meno spazio in memoria.
+
+138
+00:14:11,020 --> 00:14:20,740
+E anche per oggi siamo giunti al termine dell'episodio. Io spero che questa nuova rubrica
+
+139
+00:14:20,740 --> 00:14:27,020
+vi piaccia perché ho in serbo molti altri episodi. Come al solito vi ringrazio per aver ascoltato fin
+
+140
+00:14:27,020 --> 00:14:31,780
+qui e vi chiedo di condividere il podcast e se vi va di unirvi al gruppo telegram che trovate
+
+141
+00:14:31,780 --> 00:14:38,860
+in descrizione. Vi ricordo che potete seguirmi su instagram e ascoltare il podcast sulle principali
+
+142
+00:14:38,860 --> 00:14:46,140
+piattaforme tra cui ad esempio spotify google podcast itunes e anche alexa. Vi basterà dire
+
+143
+00:14:46,140 --> 00:14:53,420
+alexa apri pensieri in codice. E dunque per oggi è tutto io vi saluto e vi do appuntamento al prossimo
+

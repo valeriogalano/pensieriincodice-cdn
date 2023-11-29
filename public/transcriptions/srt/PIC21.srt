@@ -1,0 +1,516 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:20,000 --> 00:00:25,200
+Buongiorno a tutti e ben ritrovati per un nuovo episodio di Pensieri in codice, il podcast
+
+3
+00:00:25,200 --> 00:00:29,880
+in cui parliamo di argomenti presi dal mondo del software, di internet e della programmazione.
+
+4
+00:00:30,760 --> 00:00:36,560
+Oggi parliamo di siti web. Ogni giorno ne navighiamo decine o centinaia, ma quanti di
+
+5
+00:00:36,560 --> 00:00:42,720
+noi si sono mai chiesti come è fatto un sito web? Cosa accade dal momento in cui scriviamo
+
+6
+00:00:42,720 --> 00:00:47,320
+un percorso nella barra degli indirizzi fino a quando pochi istanti dopo vediamo comparire
+
+7
+00:00:47,320 --> 00:00:52,760
+la pagina sul nostro sito? In questo episodio proveremo a capire innanzitutto di cosa si
+
+8
+00:00:52,760 --> 00:00:58,600
+compone una pagina web e poi in che modo essa viaggia attraverso internet per raggiungere
+
+9
+00:00:58,600 --> 00:01:10,940
+i nostri schermi. Per capire come funziona un sito web dobbiamo innanzitutto chiarire
+
+10
+00:01:10,940 --> 00:01:16,360
+una cosa e cioè che quando navighiamo il nostro browser svolge molte più operazioni
+
+11
+00:01:16,360 --> 00:01:22,520
+di quelle che normalmente riusciamo a percepire. Esso infatti per mostrare a noi la pagina
+
+12
+00:01:22,520 --> 00:01:27,960
+che abbiamo richiesto ha bisogno di recuperare tutta una serie di file e informazioni utili
+
+13
+00:01:27,960 --> 00:01:32,960
+così da poter costruire la pagina stessa e da poter anche realizzare tutte le varie
+
+14
+00:01:32,960 --> 00:01:38,040
+funzionalità che essa potrebbe essere in grado di svolgere. Ricordiamoci infatti che
+
+15
+00:01:38,040 --> 00:01:43,480
+anche le web application pur utilizzando le stesse identiche tecnologie dei siti web
+
+16
+00:01:43,480 --> 00:01:48,920
+ci permettono in realtà di fare operazioni anche molto più complesse. Pensiamo a qualcosa
+
+17
+00:01:48,920 --> 00:01:54,880
+che utilizziamo tutti come ad esempio il servizio gmail. Di fatto noi accediamo ad un sito web
+
+18
+00:01:54,880 --> 00:01:59,560
+con un browser ma esso ci permette di fare operazioni complesse come ad esempio inviare
+
+19
+00:01:59,560 --> 00:02:06,120
+e ricevere email. Inoltre avrete notato che sto utilizzando le parole sito e pagina in
+
+20
+00:02:06,120 --> 00:02:11,440
+modo più o meno indistinto. Questo perché in generale noi siamo abituati a ragionare
+
+21
+00:02:11,440 --> 00:02:16,680
+in termini di sito web ma in realtà tutto sommato un sito non è altro che un insieme
+
+22
+00:02:16,680 --> 00:02:22,280
+di pagine raggruppate secondo un criterio arbitrario stabilito da un web designer o basato sul
+
+23
+00:02:22,280 --> 00:02:29,080
+fatto che esse appartengono tutte allo stesso dominio o allo stesso indirizzo. Queste distinzioni
+
+24
+00:02:29,080 --> 00:02:33,840
+però non influiscono sulla tecnologia che compone le pagine che a loro volta compongono
+
+25
+00:02:33,840 --> 00:02:40,440
+i siti e dunque non è importante concentrarsi su tale distinzione ai fini del nostro discorso.
+
+26
+00:02:40,440 --> 00:02:47,440
+Semplificando quindi il più possibile possiamo dire che una pagina di un sito web è grossomodo
+
+27
+00:02:47,440 --> 00:02:53,360
+formata da un file principale, una sorta di struttura che lega insieme tutti i vari
+
+28
+00:02:53,360 --> 00:02:59,280
+pezzi e poi da una serie di file accessori che vanno ad aggiungere elementi funzionalità
+
+29
+00:02:59,280 --> 00:03:04,960
+e aspetto grafico. Il file che definisce la struttura della pagina ed il testo in essa
+
+30
+00:03:04,960 --> 00:03:10,960
+contenuto solitamente è un documento descritto utilizzando un particolare formato chiamato
+
+31
+00:03:10,960 --> 00:03:20,320
+HTML. HTML è l'acronimo di Hypertext Markup Language e si tratta di un linguaggio appunto
+
+32
+00:03:20,320 --> 00:03:26,560
+di markup, cioè una tipologia di linguaggio che permette di definire le funzioni delle
+
+33
+00:03:26,560 --> 00:03:32,920
+varie parti del testo all'interno del documento. Utilizzando tale linguaggio è infatti possibile
+
+34
+00:03:32,920 --> 00:03:39,520
+specificare quali parole di un testo ne compongono il titolo, quali il sottotitolo, quali un
+
+35
+00:03:39,520 --> 00:03:45,500
+paragrafo, una tabella e via discorrendo. Tutto questo raccogliendo le varie parti tra
+
+36
+00:03:45,500 --> 00:03:52,240
+due o più speciali parole chiave chiamate tag. Se l'autore del testo vorrà quindi dividere
+
+37
+00:03:52,240 --> 00:03:58,480
+varie parti di esso in paragrafi, gli basterà racchiuderle all'interno di tag p. Se invece
+
+38
+00:03:58,480 --> 00:04:04,160
+vorrà dare enfasi ad alcune parole potrà racchiuderle nei tag strong e così via per
+
+39
+00:04:04,240 --> 00:04:10,960
+tante altre possibilità. Come ben sappiamo però all'interno di una pagina web sono presenti
+
+40
+00:04:10,960 --> 00:04:17,720
+anche molti altri elementi per lo più multimediali come foto, video, tracce audio eccetera. La
+
+41
+00:04:17,720 --> 00:04:22,880
+posizione nella pagina di ciascuno di questi elementi viene anch'essa stabilita con i relativi
+
+42
+00:04:22,880 --> 00:04:29,720
+tag HTML ma il contenuto di ciascuno di essi è invece costituito da uno specifico file che
+
+43
+00:04:29,720 --> 00:04:36,040
+può essere codificato in vari formati come ad esempio jpeg, gif, mp3 e tanti altri. Il
+
+44
+00:04:36,040 --> 00:04:41,520
+documento HTML dunque non contiene questi elementi multimediali ma solo le indicazioni
+
+45
+00:04:41,520 --> 00:04:48,720
+riguardanti la loro posizione nel web. Il tag image posizionato in una pagina HTML per fare
+
+46
+00:04:48,720 --> 00:04:54,440
+un esempio indicherà la presenza di un'immagine e conterrà l'indirizzo remoto presso il quale
+
+47
+00:04:54,440 --> 00:05:00,440
+essa può essere recuperata. Un'altra tipologia di file che viene solitamente associata ad una
+
+48
+00:05:00,440 --> 00:05:08,960
+pagina web è quella dei file CSS. Essi si chiamano fogli di stile e contengono istruzioni destinate
+
+49
+00:05:08,960 --> 00:05:14,400
+al browser per specificare le caratteristiche grafiche dei vari elementi del testo. Con i
+
+50
+00:05:14,400 --> 00:05:20,480
+fogli di stile è ad esempio possibile cambiare tipografia e colore dei testi, riposizionare o
+
+51
+00:05:20,480 --> 00:05:26,960
+modificare la forma e il colore di vari elementi e tante tante altre operazioni anche molto più
+
+52
+00:05:26,960 --> 00:05:34,120
+complesse. In teoria la fusione di un documento HTML, dei file multimediali e dei fogli di stile
+
+53
+00:05:34,120 --> 00:05:39,400
+sarebbero sufficienti a definire l'intero aspetto della pagina web così come siamo abituati a
+
+54
+00:05:39,400 --> 00:05:45,560
+conoscerla. Tuttavia se questa pagina ha anche delle funzionalità avanzate ed è in grado di
+
+55
+00:05:45,560 --> 00:05:51,360
+effettuare operazioni o reagire a eventi che l'utente scatena cliccando o sorvolando specifici
+
+56
+00:05:51,360 --> 00:05:57,880
+elementi, allora quasi certamente nella pagina sono presenti anche una o più librerie javascript.
+
+57
+00:05:57,880 --> 00:06:04,040
+Javascript è un linguaggio di scripting che, detto in due parole, permette di aggiungere
+
+58
+00:06:04,040 --> 00:06:10,600
+alla pagina funzionalità interattive che reagiscono a determinati stimoli. Ormai è molto raro trovare
+
+59
+00:06:10,600 --> 00:06:16,440
+pagine web completamente prive di javascript, anche perché esso risulta molto utile per
+
+60
+00:06:16,440 --> 00:06:22,480
+effettuare operazioni completamente trasparenti all'utente, come ad esempio applicare piccoli
+
+61
+00:06:22,480 --> 00:06:28,080
+adattamenti basati sul browser utilizzato o raccogliere informazioni statistiche delle visite.
+
+62
+00:06:28,080 --> 00:06:34,640
+Se poi parliamo di web application come Gmail, Facebook, Amazon e tutti quei siti che non hanno
+
+63
+00:06:34,640 --> 00:06:40,200
+il semplice obiettivo di mostrare informazioni ma che possiedono meccanismi di interazione a
+
+64
+00:06:40,280 --> 00:06:45,720
+livello avanzato, allora possiamo star certi che la tecnologia javascript sarà presente nelle
+
+65
+00:06:45,720 --> 00:06:48,160
+pagine e anche in quantità notevole.
+
+66
+00:06:55,440 --> 00:07:01,360
+Ora che ci siamo fatti un'idea di massima delle componenti che formano una normale pagina web,
+
+67
+00:07:01,360 --> 00:07:07,200
+possiamo provare a capire in che modo essa arriva a noi pochi istanti dopo che ne abbiamo fatto richiesta.
+
+68
+00:07:07,840 --> 00:07:12,760
+Proviamo quindi ad analizzare come esercizio mentale che cosa accade quando richiamiamo una
+
+69
+00:07:12,760 --> 00:07:19,480
+pagina con il nostro browser. Supponiamo di voler richiamare la pagina di Wikipedia dedicata al
+
+70
+00:07:19,480 --> 00:07:25,480
+podcasting. Ora non ricordo ovviamente l'indirizzo della pagina ma supponiamo che sia qualcosa del
+
+71
+00:07:25,480 --> 00:07:33,160
+tipo www.wikipedia.org slash podcasting. Appena avremo scritto questo indirizzo nel browser e
+
+72
+00:07:33,160 --> 00:07:38,920
+avremo premuto il pulsante invio, il nostro computer contatterà una speciale tipologia di
+
+73
+00:07:38,920 --> 00:07:47,160
+server che prende il nome di DNS, cioè Domain Name Server. Adesso verrà richiesto l'indirizzo IP
+
+74
+00:07:47,160 --> 00:07:54,560
+corrispondente al dominio wikipedia.org. Ora per intenderci e semplificando molto il discorso,
+
+75
+00:07:54,560 --> 00:08:01,960
+l'indirizzo IP è quel numero composto da quattro cifre che vanno da 1 a 255 separate da punti.
+
+76
+00:08:02,680 --> 00:08:11,480
+Qualcosa del tipo 192.168.1.1. Probabilmente questo sarà l'indirizzo IP del vostro router.
+
+77
+00:08:11,480 --> 00:08:18,280
+Il motivo di questo passaggio è che nella realtà delle comunicazioni su internet tutti i nodi,
+
+78
+00:08:18,280 --> 00:08:23,240
+compresi quindi il nostro computer, il nostro router e i server di Wikipedia,
+
+79
+00:08:23,240 --> 00:08:29,520
+si spediscono le informazioni identificandosi non tramite il nome a dominio che serve per scopi
+
+80
+00:08:29,600 --> 00:08:37,160
+mnemonici umani, ma attraverso i reciproci indirizzi IP. Il nostro computer ha quindi
+
+81
+00:08:37,160 --> 00:08:42,360
+bisogno di conoscere l'indirizzo IP del server di Wikipedia così da poterlo utilizzare come
+
+82
+00:08:42,360 --> 00:08:48,240
+destinatario della comunicazione che sta per inviare. Una volta ottenuta questa informazione
+
+83
+00:08:48,240 --> 00:08:53,600
+quindi prepara una richiesta utilizzando un protocollo che prende il nome di HTTP,
+
+84
+00:08:53,600 --> 00:09:02,440
+Hyper Text Transfer Protocol, e la invia affidando ai vari nodi di internet il compito di recapitarla
+
+85
+00:09:02,440 --> 00:09:08,840
+all'indirizzo IP del destinatario. Concettualmente questa operazione è molto simile alla spedizione
+
+86
+00:09:08,840 --> 00:09:15,520
+di corrispondenza tramite il classico servizio postale in cui si scrive una lettera, nel nostro
+
+87
+00:09:15,520 --> 00:09:21,760
+caso è la richiesta di ricevere una determinata pagina web, si compila la sezione apposita con le
+
+88
+00:09:21,760 --> 00:09:28,160
+informazioni del destinatario, quindi l'indirizzo del server di Wikipedia, e si aggiungono le
+
+89
+00:09:28,160 --> 00:09:33,480
+informazioni sul mittente, nel nostro caso l'indirizzo IP del nostro pc, affinché gli
+
+90
+00:09:33,480 --> 00:09:41,280
+possa essere inviata la risposta. Questa lettera di richiesta verrà dunque consegnata al equivalente
+
+91
+00:09:41,280 --> 00:09:46,880
+del centro di smistamento più vicino, cioè il nodo direttamente collegato alla nostra rete che
+
+92
+00:09:46,880 --> 00:09:52,720
+di solito è il nostro router o il modem. A sua volta questo apparecchio inoltrerà la richiesta
+
+93
+00:09:52,720 --> 00:09:58,360
+verso il nodo successivo e così via, finché essa non avrà raggiunto il legittimo destinatario, che
+
+94
+00:09:58,360 --> 00:10:04,160
+nel nostro esempio è il server di Wikipedia. Una volta che il server di Wikipedia avrà ricevuto
+
+95
+00:10:04,160 --> 00:10:10,440
+la nostra richiesta, la interpreterà per leggerne sia il mittente, sia quella che viene chiamata la
+
+96
+00:10:10,440 --> 00:10:16,960
+risorsa, e cioè la pagina che abbiamo richiesto di visualizzare, e fatto ciò si adopererà per
+
+97
+00:10:16,960 --> 00:10:24,680
+produrre la risposta da inviarci. I siti moderni infatti sono praticamente tutti dinamici e ciascuna
+
+98
+00:10:24,680 --> 00:10:30,880
+pagina è composta da una struttura più o meno fissa, che viene riempita con informazioni archiviate
+
+99
+00:10:30,880 --> 00:10:37,040
+in database o in altri tipi di archivi. Il server web dovrà quindi letteralmente costruire una
+
+100
+00:10:37,040 --> 00:10:44,120
+risposta in forma di documento html prima di poter rispondere al mittente, cioè noi, utilizzando
+
+101
+00:10:44,120 --> 00:10:49,880
+lo stesso identico meccanismo che abbiamo illustrato finora. La risposta seguirà dunque
+
+102
+00:10:49,880 --> 00:10:55,560
+un percorso dal server fino al nostro computer, badate bene non necessariamente quello dell'andata
+
+103
+00:10:55,560 --> 00:11:01,120
+a ritroso, e a questo punto sarà al compito del nostro browser interpretare questo documento
+
+104
+00:11:01,120 --> 00:11:06,320
+assegnando la corretta impostazione alle varie parti del testo, aggiungendo quindi grassetti
+
+105
+00:11:06,320 --> 00:11:12,160
+dove servono, separando i paragrafi, evidenziando i titoli, eccetera. Nel frattempo però il browser
+
+106
+00:11:12,160 --> 00:11:18,400
+avrà anche un altro importante compito da svolgere. Dal momento che nel documento html saranno presenti,
+
+107
+00:11:18,400 --> 00:11:24,400
+come accennavamo prima, riferimenti a file esterni come immagini, fogli di stile, css o librerie
+
+108
+00:11:24,400 --> 00:11:30,040
+javascript, nel mentre che elabora il documento il browser dovrà anche continuare a effettuare
+
+109
+00:11:30,040 --> 00:11:36,760
+richieste allo stesso o ad altri server per recuperare tutte queste risorse esterne.
+
+110
+00:11:36,760 --> 00:11:43,360
+Nel frattempo quindi che la pagina viene analizzata e costruita, altri processi in background recupereranno
+
+111
+00:11:43,360 --> 00:11:49,600
+le immagini, i video, i css e i javascript, utilizzando a ripetizione un meccanismo di richiesta
+
+112
+00:11:49,600 --> 00:11:54,120
+perfettamente identico a quello che abbiamo descritto in precedenza per ottenere la pagina
+
+113
+00:11:54,120 --> 00:12:00,640
+html iniziale. In pratica ogni volta che noi apriamo una pagina web abbiamo l'impressione di
+
+114
+00:12:00,640 --> 00:12:05,520
+ricevere un unico documento fatto e finito, ma in realtà il nostro browser effettua per noi
+
+115
+00:12:05,520 --> 00:12:12,720
+centinaia di richieste per recuperare tutti i file accessori. Fatto questo, li analizza uno per uno,
+
+116
+00:12:12,720 --> 00:12:19,200
+li colloca nella giusta posizione, calcola e applica ad ogni elemento una complicata combinazione di
+
+117
+00:12:19,200 --> 00:12:25,480
+regole stilistiche e infine associa a tutta una serie di eventi che potrebbero essere scatenati
+
+118
+00:12:25,480 --> 00:12:32,800
+dall'utente altrettante operazioni automatizzate pronti a scattare. Il tutto in poche frazioni di secondo.
+
+119
+00:12:39,800 --> 00:12:45,160
+L'avreste mai detto che ad ogni spostamento da una pagina all'altra, da un sito all'altro,
+
+120
+00:12:45,200 --> 00:12:51,000
+si verificassero tutte queste operazioni? Nel ragionare su questo processo mi raccomando
+
+121
+00:12:51,000 --> 00:12:56,920
+sempre di ricordare che per poter esporre questi concetti sono sempre costretto a fare
+
+122
+00:12:56,920 --> 00:13:03,280
+tutta una serie di semplificazioni e omettere le parti più complicate del discorso. In questo caso
+
+123
+00:13:03,280 --> 00:13:08,080
+ad esempio abbiamo tralasciato il metodo che utilizzano i vari nodi per capire quale sia il
+
+124
+00:13:08,080 --> 00:13:13,480
+percorso più breve verso cui inoltrare un messaggio, oppure quale operazioni esegue il server per
+
+125
+00:13:13,480 --> 00:13:19,480
+costruire la pagina da inviare come risposta. A questi argomenti però sto pensando di dedicare
+
+126
+00:13:19,480 --> 00:13:25,400
+degli episodi futuri, quindi se siete interessati non esitate a farmelo sapere. Io per ora vi
+
+127
+00:13:25,400 --> 00:13:31,480
+ringrazio di essere arrivati fin qui, l'episodio è stato molto più lungo di quanto mi aspettassi,
+
+128
+00:13:31,480 --> 00:13:38,560
+quindi molto rapidamente vi invito a commentare, condividere, unirvi al gruppo Telegram e ci sentiamo
+
+129
+00:13:38,560 --> 00:13:40,080
+al prossimo episodio!
+

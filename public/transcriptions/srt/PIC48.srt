@@ -1,0 +1,424 @@
+1
+00:00:00,000 --> 00:00:09,880
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:19,880 --> 00:00:26,680
+Salve a tutti e ben ritrovati su Pensieri in codice. Oggi vi parlerò della mia personale
+
+3
+00:00:26,680 --> 00:00:33,960
+classifica dei gironi dell'inferno dedicati agli sviluppatori. Vi racconterò quindi quali sono i
+
+4
+00:00:33,960 --> 00:00:41,480
+cinque peggiori comportamenti che un developer può mettere in atto secondo me e quale ritengo
+
+5
+00:00:41,480 --> 00:00:47,000
+che dovrebbe essere la punizione dantesca nell'aldilà. Prima di procedere però ci tengo a
+
+6
+00:00:47,000 --> 00:00:56,640
+dirvi che questo episodio è una risposta al video di Mitch Murabito nel quale lui illustra i suoi
+
+7
+00:00:56,960 --> 00:01:03,240
+gironi dell'inferno per developers. Ho infatti visto il suo video qualche giorno fa e nel finale
+
+8
+00:01:03,240 --> 00:01:09,960
+lui invita i suoi spettatori a condividere la propria lista di gironi e ho pensato che potesse
+
+9
+00:01:09,960 --> 00:01:16,840
+essere carino farlo attraverso un episodio di Pensieri in codice. Se già non conosceste Mitch
+
+10
+00:01:16,840 --> 00:01:22,280
+per una delle innumerevoli conferenze sull'informatica alle quali ha preso parte come
+
+11
+00:01:22,280 --> 00:01:27,800
+speaker, sappiate che si tratta di uno sviluppatore di professione che da qualche
+
+12
+00:01:27,800 --> 00:01:34,280
+mese ha aperto anche un canale youtube chiamato Developers Life. In questo canale si parla di
+
+13
+00:01:34,280 --> 00:01:41,000
+tanti aspetti legati alla vita pratica dello sviluppatore, comportamenti da tenere o da
+
+14
+00:01:41,000 --> 00:01:47,960
+evitare, situazioni che si possono verificare o meno e consigli su come migliorare la propria
+
+15
+00:01:47,960 --> 00:01:54,440
+professionalità. Insomma se siete sviluppatori o aspiranti tali questo è uno di quei canali
+
+16
+00:01:54,440 --> 00:02:00,520
+youtube che assolutamente non potete perdere. Io vi lascio il link in descrizione, voi iscrivetevi
+
+17
+00:02:00,520 --> 00:02:16,720
+e vi assicuro che non ve ne pentirete. Al quinto posto della mia personalissima classifica sui
+
+18
+00:02:16,760 --> 00:02:22,480
+gironi infernali degli sviluppatori c'è il girone di quelli che usano un'infinità di
+
+19
+00:02:22,480 --> 00:02:31,800
+if indentati o a cascata. Ora capiamoci, gli if servono e vanno usati quando necessario. Cioè
+
+20
+00:02:31,800 --> 00:02:37,720
+avete presente quelle catene infinite di if else che potrebbero essere facilmente sostituite con
+
+21
+00:02:37,720 --> 00:02:44,400
+uno switch? O quelle sequenze di if uno dentro l'altro che a guardar bene non sono necessarie
+
+22
+00:02:44,400 --> 00:02:50,720
+ma comunque spingono il codice indentandolo verso destra fino a farlo uscire dal monitor? Sì ok lo
+
+23
+00:02:50,720 --> 00:02:57,280
+so non si tratta di questo comportamento poi così terribile ma io personalmente lo odio. Quindi? Per
+
+24
+00:02:57,280 --> 00:03:04,360
+quel che mi riguarda in questo girone gli sviluppatori dannati saranno costretti continuamente
+
+25
+00:03:04,360 --> 00:03:10,840
+a scrivere algoritmi con migliaia e migliaia di condizioni annidate utilizzando solo un editor
+
+26
+00:03:11,000 --> 00:03:19,240
+senza indentazione automatica senza folding e senza evidenziazione dei costrutti. Così imparano. Al
+
+27
+00:03:19,240 --> 00:03:25,680
+quarto posto poi c'è il girone di quelli che iniziano a scrivere il codice senza avere chiari
+
+28
+00:03:25,680 --> 00:03:32,680
+i requisiti. Secondo loro e secondo anche molti dei loro clienti in questo modo si risparmia tempo
+
+29
+00:03:32,960 --> 00:03:41,280
+ma in informatica non c'è cosa più falsa. Iniziare a sviluppare senza sapere bene cosa equivale ad
+
+30
+00:03:41,280 --> 00:03:47,840
+affidarsi alla fortuna. Il lavoro fatto potrebbe essere completamente inutile e da rifare. In questo
+
+31
+00:03:47,840 --> 00:03:55,600
+girone le anime dannate sviluppano un software di giorno in giorno ma ogni mattina viene lanciato
+
+32
+00:03:55,600 --> 00:04:02,360
+uno speciale cron che rivoluziona completamente tutti i requisiti. Il terzo posto è occupato dal
+
+33
+00:04:02,440 --> 00:04:08,900
+girone di quelli che risolvono tutti i problemi nello stesso modo. Non importa il tempo o le
+
+34
+00:04:08,900 --> 00:04:15,080
+risorse che hanno a disposizione non importa che esistano soluzioni già pronte questi sviluppatori
+
+35
+00:04:15,080 --> 00:04:21,240
+sanno utilizzare una e una sola tecnologia e qualsiasi siano le richieste le soddisfano
+
+36
+00:04:21,240 --> 00:04:28,400
+utilizzando quell'unica freccia al loro arco. In questo girone i dannati passano il loro tempo a
+
+37
+00:04:28,400 --> 00:04:37,880
+programmare software con un pc che ha una tastiera fatta di soli due tasti enormi uno 0 e un 1 così
+
+38
+00:04:37,880 --> 00:04:44,280
+visto che hanno scelto di fare tutto in un unico modo tanto vale che lo facciano in binario. Al
+
+39
+00:04:44,280 --> 00:04:51,520
+secondo posto c'è il girone di quelli che scelgono nomi di variabili e di funzioni che non hanno
+
+40
+00:04:51,520 --> 00:05:01,040
+senso. Scrivere il codice utilizzando nomi come xxx, pluto, pippo, iii o cose del genere innanzitutto
+
+41
+00:05:01,040 --> 00:05:07,320
+denota scarso rispetto per chi sarà costretto a manutenere quel codice che sia il programmatore
+
+42
+00:05:07,320 --> 00:05:13,640
+stesso nel futuro o qualcun altro. Oltre a ciò c'è la concreta possibilità che chi ha scritto quel
+
+43
+00:05:13,640 --> 00:05:20,800
+codice non ne abbia capito bene il senso. In questo girone tutti i dannati saranno costretti a
+
+44
+00:05:20,800 --> 00:05:27,520
+programmare utilizzando un solo carattere per tutti i nomi sia di funzioni che di variabili
+
+45
+00:05:27,520 --> 00:05:34,760
+quindi se hanno scelto il carattere x ad esempio tutto il loro codice sarà composto di variabili
+
+46
+00:05:34,760 --> 00:05:44,160
+e funzioni che si chiamano xxxxxx e così via. Infine in vetta alla classifica al primo posto
+
+47
+00:05:44,440 --> 00:05:50,920
+c'è il girone di quelli che non usano un sistema di versioning. Sì lo so che non ci credete ma
+
+48
+00:05:50,920 --> 00:05:56,680
+esistono e le ho anche incontrati. Mi rifiuto di spiegare perché il sistema di versioning sia
+
+49
+00:05:56,680 --> 00:06:04,840
+indispensabile però vi dico che in questo girone i dannati sono costretti a fare commit di ogni
+
+50
+00:06:04,840 --> 00:06:12,400
+singolo carattere che aggiungono e per di più questi commit sono anche soggetti a validazione
+
+51
+00:06:12,400 --> 00:06:29,820
+di sintassi quindi qualsiasi errore gli causa il riggetto del commit. Bene spero che questa
+
+52
+00:06:29,820 --> 00:06:34,880
+piccola lista scherzosa sia stata di vostro gradimento e come al solito vi invito a
+
+53
+00:06:34,880 --> 00:06:41,320
+condividere anche il vostro pensiero e perché no la vostra lista utilizzando i commenti il
+
+54
+00:06:41,320 --> 00:06:46,640
+gruppo telegram ormai l'ho ripetuto alla nausea sapete che c'è tutto in descrizione. Ora però
+
+55
+00:06:46,640 --> 00:06:53,760
+vorrei condividere con voi anche alcune riflessioni che guardare il video di Mitch e scrivere la
+
+56
+00:06:53,760 --> 00:07:01,520
+scaletta per questo episodio mi hanno suscitato. Innanzitutto non vi faccio spoiler ma vi dico
+
+57
+00:07:01,520 --> 00:07:07,840
+che quando ascolterete quando guarderete anzi il video di Mitch vi renderete conto che le nostre
+
+58
+00:07:07,840 --> 00:07:15,800
+liste sono molto diverse e questo può sembrare strano soprattutto considerando che anche se
+
+59
+00:07:15,800 --> 00:07:22,320
+utilizziamo magari tecnologie differenti sia io che Mitch siamo entrambi sviluppatori. Beh la
+
+60
+00:07:22,320 --> 00:07:29,680
+spiegazione che mi sono dato io per queste differenze sta nel fatto che abbiamo background
+
+61
+00:07:29,800 --> 00:07:38,600
+ed esperienze molto differenti. Mitch infatti lavora in un contesto aziendale dove ci sono
+
+62
+00:07:38,600 --> 00:07:45,600
+determinati problemi ma al tempo stesso altri problemi vengono mitigati ad esempio dalle
+
+63
+00:07:45,600 --> 00:07:52,760
+procedure e dagli accordi interni all'azienda. Io invece ho quasi sempre lavorato come freelance
+
+64
+00:07:52,760 --> 00:07:59,400
+il che comporta cambiare spesso progetto cambiare spesso cliente e persone con cui si collabora
+
+65
+00:07:59,800 --> 00:08:06,600
+da una parte quindi c'è una maggiore flessibilità e un minore impatto di determinati problemi che
+
+66
+00:08:06,600 --> 00:08:13,440
+invece sono più importanti in un contesto aziendale ma al tempo stesso diventa difficile
+
+67
+00:08:13,440 --> 00:08:20,120
+predire la qualità del progetto sul quale ci si troverà a lavorare e molto spesso ci si trova
+
+68
+00:08:20,120 --> 00:08:28,120
+ad unirsi a progetti già in corsa o a dover estendere software già iniziati da altri. Per
+
+69
+00:08:28,120 --> 00:08:33,360
+capire quello che sto cercando di dire consideriamo ad esempio il primo posto della mia
+
+70
+00:08:33,360 --> 00:08:41,560
+classifica. In un contesto aziendale soprattutto se si parla di aziende nel campo dell'IT è veramente
+
+71
+00:08:41,560 --> 00:08:49,960
+raro trovarsi a manipolare un progetto che non sia sotto un qualche sistema di versioning. Per
+
+72
+00:08:49,960 --> 00:08:57,000
+un freelance invece può capitare di trovarsi per le mani il progetto iniziato per quello stesso
+
+73
+00:08:57,200 --> 00:09:03,320
+cliente da un altro consulente che magari non utilizzava versioning o semplicemente non lo
+
+74
+00:09:03,320 --> 00:09:10,920
+vuole fornire. Al di là quindi delle battute di spirito secondo me quando si valuta un software
+
+75
+00:09:10,920 --> 00:09:18,920
+o un codice va sempre tenuto in considerazione il contesto nel quale esso è stato scritto. Voglio
+
+76
+00:09:18,920 --> 00:09:26,240
+dire a tutti noi è capitato di scovare qualche codice dell'orrore in qualche progetto e se ne
+
+77
+00:09:26,240 --> 00:09:34,840
+può anche ridere ma in generale trovo scorretto giudicare colui che ha scritto quel codice senza
+
+78
+00:09:34,840 --> 00:09:41,720
+essere a conoscenza di tutti i dettagli della situazione. Voglio dire magari la persona che
+
+79
+00:09:41,720 --> 00:09:47,360
+ha scritto il codice è veramente uno scarso programmatore oppure è possibile che in quel
+
+80
+00:09:47,360 --> 00:09:52,280
+momento avesse pochissimo tempo per scrivere quell'algoritmo. Magari con più tempo a
+
+81
+00:09:52,280 --> 00:09:58,240
+disposizione avrebbe potuto fare meglio o ancora in quel momento poteva non essere a conoscenza di
+
+82
+00:09:58,240 --> 00:10:04,880
+tutta una serie di dettagli che sono poi venuti fuori col tempo o magari ancora le richieste del
+
+83
+00:10:04,880 --> 00:10:13,760
+cliente sono cambiate o erano confuse. Insomma la lista è molto lunga ma in generale questo è il
+
+84
+00:10:13,760 --> 00:10:21,320
+motivo per cui quando mi trovo a lavorare con un nuovo cliente o quando un vecchio cliente mi
+
+85
+00:10:21,320 --> 00:10:28,560
+chiede un giudizio su di un progetto di qualche altro consulente o di un'azienda difficilmente
+
+86
+00:10:28,560 --> 00:10:34,840
+me la sento di sparare a zero su quelli che possono essere gli errori di stile o altro.
+
+87
+00:10:34,840 --> 00:10:42,760
+Al massimo quello che solitamente faccio è giudicare il codice ma non lo sviluppatore nel
+
+88
+00:10:42,760 --> 00:10:51,000
+senso che posso dopo una certa analisi tirare fuori la lista degli errori dei bug cioè della
+
+89
+00:10:51,000 --> 00:10:59,560
+serie questo calcolo è sbagliato oppure qui può esserci un crash o c'è un errore di logica nel
+
+90
+00:10:59,560 --> 00:11:06,840
+flusso ma in generale cerco sempre di evitare di dare giudizi sullo stile del codice o sulla
+
+91
+00:11:06,840 --> 00:11:14,000
+scelta implementativa del progetto e con questo non vuol dire che non propongo delle migliorie
+
+92
+00:11:14,200 --> 00:11:22,080
+semplicemente evito quei commenti del tipo questa scelta è sbagliata o questo codice fa schifo e
+
+93
+00:11:22,080 --> 00:11:28,400
+il motivo è appunto che ci sono degli aspetti soggettivi in un giudizio del genere e non
+
+94
+00:11:28,400 --> 00:11:35,440
+essendo io stato presente e non conoscendo le condizioni nelle quali è stato svolto il lavoro
+
+95
+00:11:35,440 --> 00:11:42,440
+non trovo corretto essere troppo duro nel giudizio d'altronde potrei io stesso trovarmi
+
+96
+00:11:42,440 --> 00:11:50,920
+nelle stesse condizioni ed essere costretto a fare un lavoro non del tutto perfetto e se
+
+97
+00:11:50,920 --> 00:11:57,840
+dovesse capitare sinceramente preferirei che il primo venuto evitasse di sparare a zero senza
+
+98
+00:11:57,840 --> 00:12:15,040
+conoscere la situazione bene anche oggi siamo giunti al termine di questo episodio spero come
+
+99
+00:12:15,040 --> 00:12:21,200
+al solito che l'argomento vi sia piaciuto e vi ricordo che queste sono le mie opinioni ma che io
+
+100
+00:12:21,200 --> 00:12:27,640
+sono anche interessato a conoscere le vostre quindi dopo esservi iscritti al canale di mich
+
+101
+00:12:27,640 --> 00:12:35,760
+developers life lasciate un commento e magari condividete questo episodio con qualcuno a cui
+
+102
+00:12:35,760 --> 00:12:42,680
+pensate possa interessare per me il podcast è un momento di condivisione ma anche di apprendimento
+
+103
+00:12:42,680 --> 00:12:49,600
+quindi ci tengo a raggiungere il maggior numero di persone possibili anche per avere indietro
+
+104
+00:12:49,880 --> 00:12:58,240
+un feedback questo è l'unico modo in cui io potrò crescere come creatore di contenuti e
+
+105
+00:12:58,240 --> 00:13:04,920
+di conseguenza far crescere questo progetto detto questo direi che per oggi non c'è altro e non mi
+
+106
+00:13:04,920 --> 00:13:11,720
+resta che salutarvi e ricordarvi che un informatico risolve problemi a volte anche usando il computer
+
