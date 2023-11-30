@@ -1,0 +1,752 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:20,000 --> 00:00:27,000
+Salve a tutti ragazzi e bentornati su Pensieri in codice. Quanto vi fidate voi di un algoritmo?
+
+3
+00:00:27,000 --> 00:00:33,960
+Nel marzo del 2009, il signor Robert Jones si trovava alla guida della sua BMW, quando
+
+4
+00:00:33,960 --> 00:00:40,480
+all'improvviso si accorse che il suo serbatoio era ormai quasi vuoto. Senza perdersi troppo
+
+5
+00:00:40,480 --> 00:00:46,440
+d'animo, fece semplicemente quello che probabilmente anche molti di noi avrebbero fatto, e cioè
+
+6
+00:00:46,440 --> 00:00:53,080
+cercò la stazione di servizio più vicina sul proprio navigatore TomTom. Impostò l'indirizzo
+
+7
+00:00:53,080 --> 00:00:59,280
+e iniziò a seguire le indicazioni della voce computerizzata. Tuttavia, più proseguiva
+
+8
+00:00:59,280 --> 00:01:06,120
+lungo il percorso prestabilito, più la situazione iniziava a diventare strana. Dapprima la via
+
+9
+00:01:06,120 --> 00:01:13,880
+principale si trasformò in una strada secondaria, poi l'asfalto divenne sterrato, poi iniziò
+
+10
+00:01:13,880 --> 00:01:19,280
+una salita che costeggiava una vallata, e poi lo sterrato iniziò a diventare praticamente
+
+11
+00:01:19,280 --> 00:01:26,120
+una mulattiera. Ma Mr. Jones non pensò di doversi preoccupare, d'altronde per lavoro
+
+12
+00:01:26,120 --> 00:01:31,760
+percorreva più di 8000 km a settimana, non sarebbe stata certo una strada di campagna
+
+13
+00:01:31,760 --> 00:01:38,360
+metterlo in difficoltà. Tuttavia, ad un certo punto la strada diventò davvero stretta,
+
+14
+00:01:38,360 --> 00:01:45,240
+così stretta che la BMW quasi non sembrava in grado di proseguire. E infatti, se in quel
+
+15
+00:01:45,240 --> 00:01:51,800
+momento avessimo potuto osservare noi la scena dalla vallata, avremmo visto il muso dell'auto
+
+16
+00:01:51,800 --> 00:01:58,920
+del signor Jones spuntare da un dirupo e affacciarsi nel vuoto. Questo scherzetto richiese quattro
+
+17
+00:01:58,920 --> 00:02:06,120
+quad e un trattore per salvare la BMW in bilico, e costò al signor Jones una bella accusa
+
+18
+00:02:06,120 --> 00:02:12,760
+per guida pericolosa. Quando più tardi Mr. Jones si trovò a dover giustificare l'accaduto
+
+19
+00:02:12,760 --> 00:02:18,480
+davanti a un giudice, affermò che non gli era proprio venuto in mente che il GPS potesse
+
+20
+00:02:18,480 --> 00:02:24,720
+sbagliarsi, ed era comunque certo che prima o poi, dietro una svolta, sarebbe apparsa una
+
+21
+00:02:24,720 --> 00:02:26,360
+stazione di rifornimento.
+
+22
+00:02:26,360 --> 00:02:44,880
+Ok, so benissimo cosa state pensando. Mr. Jones è un idiota, e non in accezione duferiana. Con il
+
+23
+00:02:44,880 --> 00:02:50,440
+senno di poi, è ovvio che nessuno di noi avrebbe seguito il TomTom letteralmente fino in capo al
+
+24
+00:02:50,440 --> 00:02:57,640
+mondo. Però se vi dicessi che non sempre la questione è così semplice? Sapete chi è Garry
+
+25
+00:02:57,640 --> 00:03:05,400
+Kasparov? Garry Kimovich Kasparov, che sono sicuro al cento per cento che non si pronunci così, è
+
+26
+00:03:05,400 --> 00:03:13,440
+stato campione del mondo di scacchi per oltre vent'anni, dal 1984 fino al 2005. Nel campo
+
+27
+00:03:13,440 --> 00:03:18,760
+dell'informatica, però, è probabilmente molto più conosciuto per il fatto di essere stata una
+
+28
+00:03:18,760 --> 00:03:24,880
+delle persone più sfidate in assoluto dalle maggiori aziende produttrici di intelligenze
+
+29
+00:03:24,880 --> 00:03:31,600
+artificiali. Nell'epoca in cui si trovava nel pieno della sua carriera, nell'immaginario comune
+
+30
+00:03:31,600 --> 00:03:38,440
+il gioco degli scacchi rappresentava una delle maggiori espressioni di intelligenza umana, e fin
+
+31
+00:03:38,440 --> 00:03:43,840
+dall'inizio Kasparov ha affrontato e sconfitto intelligenze artificiali e software appositamente
+
+32
+00:03:43,840 --> 00:03:51,640
+creati per il gioco degli scacchi fino al 1997, anno nel quale è stato per la prima volta battuto
+
+33
+00:03:51,640 --> 00:03:58,960
+da una macchina che era il supercomputer dell'IBM chiamato Deep Blue. Successivamente Deep Blue si
+
+34
+00:03:58,960 --> 00:04:04,320
+è evoluto, soprattutto grazie alla pubblicità e alla fama ottenuta proprio per questo evento,
+
+35
+00:04:04,320 --> 00:04:10,880
+per diventare la moderna intelligenza artificiale che tutt'oggi IBM utilizza per i propri scopi
+
+36
+00:04:10,880 --> 00:04:17,040
+commerciali, ma questa è un'altra storia e ne parleremo in un altro episodio. Ciò che invece
+
+37
+00:04:17,040 --> 00:04:23,560
+ha colpito particolarmente la mia attenzione è stato scoprire che questa storica sconfitta
+
+38
+00:04:23,560 --> 00:04:28,360
+che ha causato al campione tutta una serie di problemi reputazionali, nonché una perdita
+
+39
+00:04:28,360 --> 00:04:34,960
+economica di quasi un milione di dollari, è stata dovuta a una mal riposta fiducia
+
+40
+00:04:34,960 --> 00:04:41,160
+nell'efficienza di un algoritmo. Nel suo libro Deep Thinking, infatti, Kasparov oltre a esporre
+
+41
+00:04:41,160 --> 00:04:46,960
+tutta una serie di riflessioni sull'intelligenza umana e artificiale, sul loro rapporto e sulle
+
+42
+00:04:46,960 --> 00:04:52,480
+applicazioni future, racconta anche l'evento della sconfitta contro Deep Blue, spiegando
+
+43
+00:04:52,480 --> 00:04:58,360
+minuziosamente gli eventi dal suo punto di vista e lo stato d'animo con il quale ha vissuto quei
+
+44
+00:04:58,360 --> 00:05:04,360
+momenti. Si tratta di una lettura che ho trovato davvero interessante e che mi ha preso tantissimo,
+
+45
+00:05:04,720 --> 00:05:10,960
+probabilmente ne parlerò ancora in futuro, ma se siete curiosi vi lascio in descrizione il link e
+
+46
+00:05:10,960 --> 00:05:16,440
+vi ricordo che utilizzarlo per acquistare su Amazon è sempre un ottimo modo per sostenere
+
+47
+00:05:16,440 --> 00:05:22,640
+pensieri in codice senza spendere un centesimo in più di tasca vostra. Ad ogni modo il racconto
+
+48
+00:05:22,640 --> 00:05:28,480
+della sconfitta è davvero sorprendente. Il match, che si componeva di sei partite
+
+49
+00:05:28,480 --> 00:05:34,880
+suddivise in altrettanti giorni, ebbe il seguente risultato. Prima partita vinta per Kasparov,
+
+50
+00:05:34,880 --> 00:05:42,080
+seconda per Deep Blue, poi tre pareggi e ultima vinta da Deep Blue. Quindi un risultato finale
+
+51
+00:05:42,080 --> 00:05:50,800
+di 3,5 per la macchina e 2,5 per l'umano. Ma la cosa sorprendente è che, secondo Kasparov e poi
+
+52
+00:05:51,280 --> 00:05:58,440
+anche altri moltissimi esperti del campo, il campione perse il match alla seconda partita,
+
+53
+00:05:58,440 --> 00:06:03,480
+quando a causa di un gravissimo errore, che lui stesso scoprì poi solo il giorno successivo,
+
+54
+00:06:03,480 --> 00:06:11,560
+fu portato ad un calo di morale e di fiducia in se stesso, che poi pregiudicò tutte le
+
+55
+00:06:11,560 --> 00:06:16,960
+partite successive. Ora, innanzitutto c'è da capire che la pressione psicologica su quel
+
+56
+00:06:17,000 --> 00:06:23,600
+match era enorme, e se leggerete Deep Thinking ve ne renderete conto. Da un lato, Kasparov
+
+57
+00:06:23,600 --> 00:06:29,400
+rappresentava il paladino umano contro le macchine, per tutto un mondo che all'epoca
+
+58
+00:06:29,400 --> 00:06:36,720
+non era ancora molto informatizzato. Dall'altro, la IBM aveva investito somme folli e aveva fatto
+
+59
+00:06:36,720 --> 00:06:43,280
+di tutto per aumentare la pressione psicologica, elemento che ovviamente andava a discapito solo
+
+60
+00:06:43,280 --> 00:06:48,720
+del contendente umano, visto che la macchina non soffriva di questi problemi. Ma quindi,
+
+61
+00:06:48,720 --> 00:06:55,600
+quale fu questo enorme errore di Kasparov? Beh, proprio come il signor Jones, anche Kasparov si
+
+62
+00:06:55,600 --> 00:07:01,040
+fidò in maniera eccessiva di un algoritmo, in questo caso di un'intelligenza artificiale,
+
+63
+00:07:01,040 --> 00:07:08,800
+che poi non si rivelò così meritevole di fiducia. Se non siete degli esperti di scacchi, dovete
+
+64
+00:07:08,800 --> 00:07:15,560
+sapere che in questo gioco esiste una particolare regola che, detto in soldoni, dice che se la
+
+65
+00:07:15,560 --> 00:07:21,200
+posizione in cui si trovano i pezzi porta obbligatoriamente a ripetere un certo numero di
+
+66
+00:07:21,200 --> 00:07:28,160
+mosse uguali, allora la partita viene dichiarata automaticamente patta, cioè un pareggio. Dalle
+
+67
+00:07:28,160 --> 00:07:34,760
+verifiche fatte da una serie di esperti di tutto il mondo che seguivano l'evento, apparve chiaro
+
+68
+00:07:34,760 --> 00:07:41,880
+che quella famigerata seconda partita era palesemente una patta. Tuttavia Kasparov non
+
+69
+00:07:41,880 --> 00:07:48,120
+se ne accorse e, credendo di essere in svantaggio rispetto a Deep Blue, decise di arrendersi per
+
+70
+00:07:48,120 --> 00:07:54,680
+risparmiare le forze per le partite successive. Ora, parliamoci chiaro che un campione di quel
+
+71
+00:07:54,680 --> 00:08:00,600
+livello si faccia sfuggire ad una posizione del genere è un evento davvero raro. Stiamo
+
+72
+00:08:00,600 --> 00:08:07,200
+parlando di qualcuno che è arrivato a giocare contemporaneamente 35 partite contro altrettanti
+
+73
+00:08:07,200 --> 00:08:13,600
+software e terminare la giornata con un risultato di 35 a 0. Parliamo di qualcuno
+
+74
+00:08:13,600 --> 00:08:19,640
+che a colpo d'occhio è in grado di prevedere quale dei due contendenti di una partita sia
+
+75
+00:08:19,640 --> 00:08:26,240
+in vantaggio, chi vincerà e con quante mosse. L'unico caso in cui Kasparov si sarebbe potuto
+
+76
+00:08:26,240 --> 00:08:32,360
+fare sfuggire a una cosiddetta patta obbligata era quello in cui egli stesse completamente
+
+77
+00:08:32,360 --> 00:08:37,920
+ignorando la questione. E in realtà, stando alle sue parole, è proprio quello che accadde.
+
+78
+00:08:37,920 --> 00:08:43,440
+Il campione, infatti, reduce da centinaia di partite nel corso degli anni contro i
+
+79
+00:08:43,440 --> 00:08:48,840
+più disparati software scacchistici e contro la stessa Deep Blue che aveva già affrontato
+
+80
+00:08:48,840 --> 00:08:54,960
+e battuto pochi mesi prima, era assolutamente certo di una cosa. I programmi per il gioco
+
+81
+00:08:54,960 --> 00:09:01,120
+degli scacchi erano fortissimi nel valutare migliaia di posizioni al secondo. E una patta
+
+82
+00:09:01,120 --> 00:09:07,480
+obbligata o qualsiasi altro evento forzato dal regolamento sarebbe stato immediatamente
+
+83
+00:09:07,480 --> 00:09:13,920
+individuato e segnalato dalla macchina. Quindi lui sapeva di non doversene preoccupare, cosa
+
+84
+00:09:13,920 --> 00:09:19,200
+che invece avrebbe fatto certamente se avesse giocato contro un avversario umano. Kasparov
+
+85
+00:09:19,200 --> 00:09:24,640
+invece sapeva benissimo come funzionavano quei software, aveva contribuito a realizzarli,
+
+86
+00:09:24,640 --> 00:09:29,720
+ad allenare le intelligenze artificiali. Sapeva bene, ad esempio, che un gran maestro
+
+87
+00:09:29,720 --> 00:09:35,760
+era in grado di valutare due posizioni al secondo, in media, mentre Deep Blue poteva analizzarne
+
+88
+00:09:35,760 --> 00:09:42,240
+duecento milioni al secondo. Che senso avrebbe avuto sprecare tempo e risorse mentali a cercare
+
+89
+00:09:42,240 --> 00:09:48,000
+un evento che, per regolamento, andava segnalato dal primo giocatore che se ne rendeva conto?
+
+90
+00:09:48,000 --> 00:09:54,120
+Eppure, secondo i più, questo fu il suo errore. Deep Blue, probabilmente per via di
+
+91
+00:09:54,120 --> 00:10:00,600
+un bug o non si sa bene cosa, non segnalò la patta obbligata e Kasparov, credendo che
+
+92
+00:10:00,600 --> 00:10:07,080
+la partita fosse ormai persa, si arrese per poter risparmiare energie per le partite successive.
+
+93
+00:10:07,080 --> 00:10:14,560
+Esattamente come per il signor Jones, anche Garry Kasparov si è fidato di un algoritmo
+
+94
+00:10:14,560 --> 00:10:21,320
+e la sua fiducia si è tradotta in un disastro. Solo che, a differenza di come dicevamo prima
+
+95
+00:10:21,320 --> 00:10:27,800
+per mister Jones, voi ce l'avete abbastanza autostima da dare dell'idiota al più grande
+
+96
+00:10:27,800 --> 00:10:44,640
+campione di scacchi di tutti i tempi? Anche noi, ogni giorno, commettiamo errori come quelli che
+
+97
+00:10:44,640 --> 00:10:51,680
+hanno commesso Robert Jones e Garry Kasparov. Ogni giorno seguiamo le indicazioni del navigatore GPS
+
+98
+00:10:51,680 --> 00:10:57,560
+dando per scontato che la strada che ha calcolato sia la migliore. Ogni giorno visitiamo siti web,
+
+99
+00:10:57,960 --> 00:11:05,000
+a partire dai primi risultati mostrati da Google, dando per scontato che siano quelli migliori per
+
+100
+00:11:05,000 --> 00:11:10,800
+la ricerca che abbiamo fatto. E ogni giorno compriamo prodotti su Amazon, guardiamo film
+
+101
+00:11:10,800 --> 00:11:16,920
+su Netflix, ascoltiamo musica su Spotify, presupponendo che siano quelli che ci piaceranno
+
+102
+00:11:16,920 --> 00:11:22,880
+di più. E non parliamo dei social network, che selezionano i nostri contenuti sulla base di
+
+103
+00:11:22,880 --> 00:11:28,760
+criteri di cui in realtà sappiamo ben poco. Qualcuno va mai a controllare se la scelta
+
+104
+00:11:28,760 --> 00:11:34,040
+dei contenuti mostrati nel nostro feed corrisponde effettivamente a quello che è meglio per noi?
+
+105
+00:11:34,040 --> 00:11:39,920
+Certo, questi sono esempi neanche lontanamente paragonabili a quelli delle storie che vi ho
+
+106
+00:11:39,920 --> 00:11:45,080
+raccontato, ma hanno comunque un certo effetto sulle nostre vite. Ci sono studi che hanno
+
+107
+00:11:45,080 --> 00:11:51,480
+dimostrato che modificare la quantità di post positivi o negativi nei feed dei nostri social
+
+108
+00:11:51,480 --> 00:11:58,320
+network influisce attivamente sul nostro umore. Ci sono altri studi che dimostrano che ordinare
+
+109
+00:11:58,320 --> 00:12:05,200
+diversamente i risultati di un motore di ricerca può influire sulla nostra percezione della validità
+
+110
+00:12:05,200 --> 00:12:10,920
+e della importanza degli argomenti contenuti nelle pagine collegate a quei risultati. E fino
+
+111
+00:12:10,920 --> 00:12:16,040
+ad ora questo discorso vale a livello del singolo utente, se valutiamo la cosa come società i
+
+112
+00:12:16,040 --> 00:12:21,560
+risvolti si fanno anche ben più pesanti. Al giorno d'oggi ci sono algoritmi praticamente a
+
+113
+00:12:21,560 --> 00:12:28,760
+noi invisibili che prendono parte a decisioni come se possiamo avere un prestito o se possiamo
+
+114
+00:12:28,760 --> 00:12:34,280
+aprire un conto in banca o quanto costerà la nostra assicurazione. Negli Stati Uniti ci sono
+
+115
+00:12:34,280 --> 00:12:39,880
+addirittura algoritmi che concorrono alla decisione di quali cure fornire ad un paziente o come
+
+116
+00:12:39,960 --> 00:12:46,280
+giudicare un imputato. Per non parlare della Cina, dove un algoritmo può decidere che tipo di
+
+117
+00:12:46,280 --> 00:12:52,160
+cittadini siete, se potete avere accesso ad alcuni servizi, se potete guidare l'auto. A volte si
+
+118
+00:12:52,160 --> 00:12:58,280
+parla in modo altisonante di potenti intelligenze artificiali, altre volte si parla di algoritmi,
+
+119
+00:12:58,280 --> 00:13:04,600
+altre volte ancora semplicemente di fogli excel, ma il concetto resta lo stesso. Esiste un qualche
+
+120
+00:13:04,600 --> 00:13:11,400
+tipo di software che prende o almeno suggerisce determinate decisioni sulla base di determinati
+
+121
+00:13:11,400 --> 00:13:17,400
+criteri. E noi che ci vogliamo intendere come singoli o come società, possiamo fidarci ad occhi
+
+122
+00:13:17,400 --> 00:13:24,200
+chiusi di questi algoritmi? Ovviamente no. O meglio, possiamo seguire le loro indicazioni
+
+123
+00:13:24,200 --> 00:13:30,920
+in modo responsabile, facendoci affiancare nelle decisioni. Sicuramente come singoli possiamo
+
+124
+00:13:30,920 --> 00:13:36,720
+fermarci a riflettere su quali algoritmi governano ora la nostra vita e possiamo provare a capire
+
+125
+00:13:36,720 --> 00:13:42,440
+quali ci sono d'aiuto e quali invece ci stanno sfruttando, ci stanno pilotando in qualche modo.
+
+126
+00:13:42,440 --> 00:13:50,640
+Come società invece possiamo provare e pretendere di conoscerne il più possibile il funzionamento,
+
+127
+00:13:50,640 --> 00:13:56,440
+i criteri. E soprattutto possiamo impegnarci nel tentativo di rifiutare quelli che ci sono
+
+128
+00:13:56,560 --> 00:14:03,040
+scuri, quelli che non ci lasciano capire cosa fanno delle nostre informazioni, dei nostri dati. Noi
+
+129
+00:14:03,040 --> 00:14:10,040
+come cittadini europei siamo già più fortunati di altri, abbiamo il GDPR che ci dà un po' più
+
+130
+00:14:10,040 --> 00:14:16,720
+di garanzie, ma ci tocca comunque fare la nostra parte, informarci, capire, valutare, segnalare al
+
+131
+00:14:16,720 --> 00:14:22,640
+garante se necessario. Vi avverto che qui su Pensieri in Codice ne parleremo ancora perché
+
+132
+00:14:22,640 --> 00:14:29,480
+si tratta di un nuovo modo di pensare e che dobbiamo acquisire pian piano, un impegno che
+
+133
+00:14:29,480 --> 00:14:35,080
+dobbiamo prendere per noi e per gli altri, per migliorare il nostro presente e il nostro futuro.
+
+134
+00:14:45,080 --> 00:14:50,080
+Prima di concludere però l'episodio voglio raccontarvi un'altra storia,
+
+135
+00:14:50,080 --> 00:14:57,880
+questa volta un po' diversa dalle precedenti. Nel 1983 Stanislav Petrov, e anche questo non
+
+136
+00:14:57,880 --> 00:15:03,720
+si pronuncerà così, era un ufficiale dell'esercito russo che aveva il compito di monitorare il sistema
+
+137
+00:15:03,720 --> 00:15:09,760
+d'allarme nucleare dello spazio aereo sovietico. In pratica il suo lavoro consisteva nel controllare
+
+138
+00:15:09,760 --> 00:15:14,560
+il supercomputer e, in caso di allarmi o segnalazioni da parte di quest'ultimo,
+
+139
+00:15:14,560 --> 00:15:20,400
+allertare i suoi superiori per dar modo alla catena di comando di reagire alla minaccia nel
+
+140
+00:15:20,400 --> 00:15:27,400
+minor tempo possibile. Il 26 settembre di quell'anno, poco dopo mezzanotte, durante il turno
+
+141
+00:15:27,400 --> 00:15:33,840
+di Petrov, all'improvviso l'allarme iniziò a suonare. Ora, provate solo a immaginare la situazione.
+
+142
+00:15:33,840 --> 00:15:40,600
+Piena guerra fredda, i sistemi russi segnalano missili nucleari in avvicinamento diretti sul
+
+143
+00:15:40,600 --> 00:15:46,880
+territorio nazionale. Pochissimo tempo per reagire. Sembrano gli ingredienti perfetti per l'inizio
+
+144
+00:15:46,880 --> 00:15:52,840
+della terza guerra mondiale. Ma Petrov non era convintissimo. L'algoritmo del supercomputer
+
+145
+00:15:52,840 --> 00:15:58,520
+aveva lanciato l'allarme, ma al tempo stesso segnalava solo cinque missili in avvicinamento.
+
+146
+00:15:58,520 --> 00:16:05,600
+All'ufficiale la cosa non tornava. Cinque missili erano un numero decisamente strano per un attacco
+
+147
+00:16:05,600 --> 00:16:12,680
+che avesse senso. Pochi per mettere fuori gioco una nazione come la Russia, ma abbastanza da dare
+
+148
+00:16:12,680 --> 00:16:18,280
+il via a una rappresaglia che qualsiasi fosse la nazione attaccante doveva sapere perfettamente che
+
+149
+00:16:18,280 --> 00:16:23,760
+la Russia sarebbe stata in grado di scatenare. Quindi le alternative per Petrov erano due,
+
+150
+00:16:23,760 --> 00:16:28,680
+segnalare il tutto ai suoi superiori, dando praticamente il via alla terza guerra mondiale,
+
+151
+00:16:28,680 --> 00:16:34,840
+o attendere e cercare di capire meglio cosa stesse succedendo, sottraendo però
+
+152
+00:16:34,840 --> 00:16:40,880
+potenziali minuti preziosi alla propria patria per mettere in atto una qualsiasi tipo di
+
+153
+00:16:40,880 --> 00:16:46,680
+contromisura. Se vi è mai capitato di dover intervenire in emergenza su un servizio o su
+
+154
+00:16:46,680 --> 00:16:52,480
+un server di produzione di un cliente che è andato KO, potete provare a immaginare cosa
+
+155
+00:16:52,480 --> 00:16:58,280
+abbia provato l'ufficiale russo in quei 23 minuti spesi a verificare i calcoli del supercomputer.
+
+156
+00:16:58,280 --> 00:17:04,400
+Alla fine però l'intuizione di Petrov si rivelò fortunatamente corretta e la storia
+
+157
+00:17:04,400 --> 00:17:12,000
+è andata poi avanti come sappiamo. Se quel giorno l'ufficiale russo non avesse sentito il peso della
+
+158
+00:17:12,000 --> 00:17:18,380
+responsabilità di mettere in dubbio le affermazioni di quella macchina, oggi probabilmente il mondo
+
+159
+00:17:18,380 --> 00:17:20,700
+sarebbe diverso da come lo conosciamo.
+
+160
+00:17:20,700 --> 00:17:36,860
+Bene, anche oggi siamo giunti alla fine di questo episodio e come al solito vi ringrazio
+
+161
+00:17:36,860 --> 00:17:42,580
+per aver ascoltato fin qui e spero sia stato di vostro gradimento. Prima di lasciarvi però
+
+162
+00:17:42,580 --> 00:17:50,260
+questa volta devo dirvi una cosa. Pensieri in codice è giunto all'episodio numero 62 e dopo
+
+163
+00:17:50,260 --> 00:17:56,620
+circa due anni e mezzo di uscite più o meno regolari, di esperimenti, di tentativi andati
+
+164
+00:17:56,620 --> 00:18:04,700
+più o meno bene, credo sia arrivato il momento di tirare un po' le somme e cercare di capire
+
+165
+00:18:04,700 --> 00:18:12,780
+come far crescere questo progetto. È già da un bel po' di tempo che sto ragionando sul se e sul
+
+166
+00:18:12,780 --> 00:18:20,020
+come mettermi ancora più in gioco e a settembre sarà la resa dei conti. Per fare questo però
+
+167
+00:18:20,020 --> 00:18:26,740
+ho bisogno di te. Sì, mi rivolgo proprio a te che hai ascoltato fin qui. Per settembre ho in serbo
+
+168
+00:18:27,460 --> 00:18:35,620
+novità. Non posso ancora svelarti tutto ma la tua partecipazione sarà essenziale per la riuscita
+
+169
+00:18:35,620 --> 00:18:44,260
+della mia, ma anzi della nostra missione. E dico nostra perché ormai tu fai parte del progetto. Io
+
+170
+00:18:44,260 --> 00:18:51,140
+da te mi sento spronato a fare sempre meglio e tu che mi ascolti sei la linfa di questo mio
+
+171
+00:18:51,220 --> 00:18:58,020
+progetto di divulgazione. Per questo motivo ti sto coinvolgendo attivamente e non ti chiedo soldi,
+
+172
+00:18:58,020 --> 00:19:03,780
+o meglio se vorrai donare qualcosa potrei farlo sul sito pensieriincodice.it, mi raccomando con
+
+173
+00:19:03,780 --> 00:19:10,940
+due i pensieri in codice. Ed io te ne sarò ovviamente grato, ma ciò che è importante è
+
+174
+00:19:10,940 --> 00:19:18,980
+che da settembre tu ci sia nuovamente ad ascoltarmi e ancora più importante è che tu coinvolga qualche
+
+175
+00:19:18,980 --> 00:19:26,020
+amico. Io ci conto perché per fare grandi cose dobbiamo essere in tanti. Per prepararmi a questo
+
+176
+00:19:26,020 --> 00:19:34,420
+grande passo lavorerò al progetto per quasi tutto il mese di agosto, ma gli episodi si fermeranno e
+
+177
+00:19:34,420 --> 00:19:40,700
+ricominceranno probabilmente verso la fine di settembre. Quindi voglio approfittare un attimo
+
+178
+00:19:40,700 --> 00:19:46,660
+di questo momento anche per ringraziare tutti quelli che mi hanno aiutato e hanno reso possibile
+
+179
+00:19:47,260 --> 00:19:55,260
+tutto questo. Quindi grazie a tutti gli ospiti che hanno partecipato nel corso di questi episodi,
+
+180
+00:19:55,260 --> 00:20:04,740
+chi mi ha aiutato a scegliere l'attrezzatura, a risolvere i problemi tecnici, a sistemare l'audio
+
+181
+00:20:04,740 --> 00:20:11,140
+e soprattutto grazie a te che stai ascoltando perché anche tu sei tra quelli che mi hanno
+
+182
+00:20:11,260 --> 00:20:18,740
+incoraggiato, supportato più o meno attivamente, consigliato e magari anche criticato. Tutti voi
+
+183
+00:20:18,740 --> 00:20:28,780
+siete un costante aiuto, uno sprono e un sostegno ed ecco perché io voglio in qualche modo ricambiare
+
+184
+00:20:28,780 --> 00:20:37,420
+a questo contributo dando la possibilità a chi lo desidera di prendere parte in modo più attivo
+
+185
+00:20:37,460 --> 00:20:43,500
+al progetto. Insomma per adesso ti do semplicemente appuntamento a settembre,
+
+186
+00:20:43,500 --> 00:20:49,780
+ti invito a visitare pensieriincodice.it per scoprire un po' di novità che ti aspettano,
+
+187
+00:20:49,780 --> 00:20:57,860
+ti ringrazio per l'ascolto e ti ricordo che un informatico risolve problemi a volte anche
+
+188
+00:20:57,860 --> 00:20:58,780
+usando il computer.
+

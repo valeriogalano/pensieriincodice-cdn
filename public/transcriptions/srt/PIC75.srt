@@ -1,0 +1,184 @@
+1
+00:00:00,000 --> 00:00:16,640
+Ti do il benvenuto su Espresso, la rubrica di pensieri in codice in cui ci beviamo insieme
+
+2
+00:00:16,640 --> 00:00:21,340
+un caffè ed io ti racconto di un libro, di un gadget, di un videogame o di qualsiasi
+
+3
+00:00:21,340 --> 00:00:26,180
+altra cosa che mi ha colpito e che sono sicuro piacerà anche a te.
+
+4
+00:00:26,580 --> 00:00:31,340
+Al termine dell'episodio, se riterrai che ti abbia dato un buon consiglio e vorrai offrire
+
+5
+00:00:31,340 --> 00:00:37,400
+tu il prossimo caffè, potrai farlo acquistando dal link affiliato che trovi in descrizione
+
+6
+00:00:37,400 --> 00:00:43,140
+o addirittura pensando di inviare un piccolo contributo per supportare il progetto. Trovi
+
+7
+00:00:43,140 --> 00:00:46,820
+tutti i dettagli sul sito pensieriincodice.it, con due i.
+
+8
+00:00:46,820 --> 00:00:58,480
+Oggi torniamo a parlare di libri e, visto che questo è uno degli argomenti più interessanti
+
+9
+00:00:58,480 --> 00:01:04,700
+degli ultimi anni, torniamo anche a parlare di intelligenza artificiale. Il libro in questione,
+
+10
+00:01:04,700 --> 00:01:10,740
+vincitore tra gli altri del premio Asimov 2020, si intitola Hello World ed è scritto
+
+11
+00:01:10,740 --> 00:01:17,620
+da Anne Fry. Si tratta di un testo, ovviamente divulgativo, che si concentra nel descrivere
+
+12
+00:01:17,620 --> 00:01:23,460
+le conseguenze per la vita e le relazioni umane del fatto di vivere in un mondo in
+
+13
+00:01:23,460 --> 00:01:29,140
+cui l'intelligenza artificiale sta prendendo piede in un numero sempre maggiore di ambiti.
+
+14
+00:01:29,140 --> 00:01:34,900
+Iniziando da una semplice ma interessante trattazione del concetto di algoritmo, mette
+
+15
+00:01:34,900 --> 00:01:41,620
+subito in evidenza quelle che sono le differenze tra algoritmi basati su regole e quelli basati
+
+16
+00:01:41,620 --> 00:01:47,460
+su machine learning. E così facendo permette al lettore di farsi già una prima idea di
+
+17
+00:01:47,460 --> 00:01:55,260
+cosa sia in realtà e di come funzioni quella che nel gergo comune viene definita intelligenza
+
+18
+00:01:55,260 --> 00:02:02,060
+artificiale, ma che in realtà è un complesso sistema di matematica e statistica. Poi,
+
+19
+00:02:02,060 --> 00:02:07,860
+una volta poste le basi per la comprensione, ogni capitolo si addentra in uno specifico
+
+20
+00:02:07,860 --> 00:02:14,220
+ambito della società umana, analizzandone la presenza di algoritmi di machine learning,
+
+21
+00:02:14,220 --> 00:02:20,420
+le implicazioni sia tecniche che morali e anche le prospettive per il prossimo futuro.
+
+22
+00:02:20,420 --> 00:02:26,940
+In questo libro dunque si parla di medicina, di arte, di giustizia, di finanza e di vari
+
+23
+00:02:26,940 --> 00:02:34,500
+altri aspetti così prettamente umani, ma mettendo in luce quanto essi dipendano e dipenderanno
+
+24
+00:02:34,500 --> 00:02:41,200
+sempre di più dagli algoritmi. Leggendo questo libro potresti scoprire che esistono macchine
+
+25
+00:02:41,200 --> 00:02:48,040
+che prendono decisioni in campi che non avresti mai sospettato. E poi troverai anche la descrizione
+
+26
+00:02:48,040 --> 00:02:53,880
+di molti aneddoti e avvenimenti interessanti della storia dell'informatica, nonché tanti
+
+27
+00:02:53,880 --> 00:03:00,520
+spunti per eventuali letture future. Lo stile della F.R.A.I. è più che comprensibile, ma al
+
+28
+00:03:00,520 --> 00:03:07,000
+tempo stesso non diventa mai banale. L'intero testo è molto scorrevole, si legge veramente in pochi
+
+29
+00:03:07,000 --> 00:03:14,480
+giorni ed è adatto sia per i più maturi che magari sono interessati a capire come sta cambiando il
+
+30
+00:03:14,480 --> 00:03:21,480
+mondo intorno a loro, sia ai più giovani che di fatto vivranno tutta la loro vita nel mondo del
+
+31
+00:03:21,480 --> 00:03:27,080
+machine learning. Senza contare il fatto che i libri candidati al premio Asimov vengono appunto
+
+32
+00:03:27,080 --> 00:03:32,800
+recensiti da ragazzi delle scuole superiori. Personalmente leggendo Hello World ho scoperto
+
+33
+00:03:32,800 --> 00:03:39,660
+tante informazioni di cui non ero a conoscenza e questo mi ha ispirato per varie puntate di
+
+34
+00:03:39,660 --> 00:03:45,560
+Pensieri in Codice e anche per un altro paio di letture di cui magari ti parlerò prossimamente. E
+
+35
+00:03:45,560 --> 00:03:51,920
+questo per dirti che secondo me si tratta di un libro sia per tutti ma che farebbe bene anche a
+
+36
+00:03:51,920 --> 00:03:58,400
+tutti leggere. Conoscere e saper valutare gli aspetti della società in cui si vive non solo è
+
+37
+00:03:58,400 --> 00:04:04,080
+interessante di per sé ma può anche essere molto utile nella vita di tutti i giorni. Quando si
+
+38
+00:04:04,080 --> 00:04:09,480
+chiede un prestito ad esempio o quando si sostiene un colloquio di lavoro e se ti stai chiedendo
+
+39
+00:04:09,480 --> 00:04:15,040
+perché ti faccio proprio questi esempi allora è veramente il caso che tu legga questo libro.
+
+40
+00:04:15,600 --> 00:04:21,080
+Senza contare che potrebbe anche essere un'ottima idea regalo ad esempio per il Natale che si sta
+
+41
+00:04:21,080 --> 00:04:27,760
+avvicinando. Quindi io spero di averti convinto ad approcciare questa interessante lettura e ti
+
+42
+00:04:27,760 --> 00:04:34,000
+ricordo che in descrizione trovi il link affiliato per acquistare il libro da Amazon. In questo modo
+
+43
+00:04:34,000 --> 00:04:40,400
+potrai anche supportare questo progetto senza spendere un centesimo in più. Dunque ti ringrazio
+
+44
+00:04:40,400 --> 00:04:46,080
+per avermi ascoltato, ti auguro una buona lettura, ti ricordo che puoi visitare il sito
+
+45
+00:04:46,080 --> 00:04:53,040
+pensierincodice.it con due i per avere maggiori informazioni e trovare altri contenuti e infine
+
+46
+00:04:53,040 --> 00:04:59,520
+ti ringrazio per avermi tenuto compagnia oggi e ti do appuntamento al prossimo caffè. Ciao!
+

@@ -1,0 +1,1076 @@
+1
+00:00:00,000 --> 00:00:07,400
+Ormai è un fatto abbastanza chiaro, la nostra sempre più ampia presenza nel mondo digitale,
+
+2
+00:00:07,400 --> 00:00:13,140
+oltre ad offrire tutta una serie di indubbi vantaggi, porta però con sé anche un certo
+
+3
+00:00:13,140 --> 00:00:19,160
+numero di potenziali pericoli, pericoli che è necessario imparare a conoscere e ai quali
+
+4
+00:00:19,160 --> 00:00:22,560
+è sempre più importante porre una certa attenzione.
+
+5
+00:00:23,040 --> 00:00:30,560
+Dai virus ai malware, dal phishing alle fake news, avere un'idea di quali sono e come funzionano
+
+6
+00:00:30,560 --> 00:00:36,480
+i meccanismi, in questo caso malevoli, del web e di internet è diventata secondo me
+
+7
+00:00:36,480 --> 00:00:40,280
+una parte fondamentale di una buona consapevolezza digitale.
+
+8
+00:00:40,280 --> 00:00:46,280
+Oggi quindi ti vorrei parlare di un tipo di attacco informatico secondo me molto interessante
+
+9
+00:00:46,280 --> 00:00:49,960
+e forse poco conosciuto e anche un po' sottovalutato.
+
+10
+00:00:50,360 --> 00:00:55,600
+Una tecnica che sfrutta degli strumenti di cui bene o male un po' tutti tendiamo a
+
+11
+00:00:55,600 --> 00:01:01,880
+fidarci abbastanza, di cui in pratica non possiamo fare a meno e che spesso utilizziamo
+
+12
+00:01:01,880 --> 00:01:03,480
+in modo quasi automatico.
+
+13
+00:01:03,480 --> 00:01:10,440
+Nell'episodio di oggi quindi parliamo di che cos'è, come funziona e perché funziona
+
+14
+00:01:10,440 --> 00:01:12,360
+il SEO Poisoning.
+
+15
+00:01:12,360 --> 00:01:13,360
+Sigla!
+
+16
+00:01:14,360 --> 00:01:22,360
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galano.
+
+17
+00:01:27,360 --> 00:01:34,600
+In due parole, SEO Poisoning, che potremmo tradurre come avvelenamento della SEO, è
+
+18
+00:01:34,600 --> 00:01:40,120
+una particolare tecnica di attacco informatico che permette di attirare le vittime in trappola
+
+19
+00:01:40,120 --> 00:01:44,800
+sfruttando i motori di ricerca come Google, Bing, DuckDuckGo e simili.
+
+20
+00:01:44,800 --> 00:01:50,880
+Di per sé, utilizzata singolarmente, non è una tecnica poi così pericolosa, ma nella
+
+21
+00:01:50,880 --> 00:01:56,400
+stragrande maggioranza dei casi questa viene impiegata in congiunzione con qualche altro
+
+22
+00:01:56,400 --> 00:02:01,160
+tipo di attacco informatico più dannoso e più pericoloso, un po' come accade per le
+
+23
+00:02:01,160 --> 00:02:02,360
+email di phishing.
+
+24
+00:02:02,360 --> 00:02:08,280
+Riceverle di solito non è un grosso problema, ma seguirne i link e le istruzioni invece
+
+25
+00:02:08,280 --> 00:02:11,240
+potrebbe portare a ben più tristi conseguenze.
+
+26
+00:02:11,240 --> 00:02:16,760
+Nella pratica, con questa tecnica, l'utente viene spinto con l'inganno a compiere delle
+
+27
+00:02:16,760 --> 00:02:23,000
+azioni, azioni che poi lo porteranno a cadere vittima di un qualche tipo di cybercrimine,
+
+28
+00:02:23,000 --> 00:02:28,640
+che a seconda dei casi potrebbe riguardare sottrazione di credenziali o di dati, infezione
+
+29
+00:02:28,640 --> 00:02:34,040
+con virus o ransomware o qualsiasi altro comune tipo di attacco informatico.
+
+30
+00:02:34,480 --> 00:02:40,120
+Il CO poisoning però è già di per sé una tecnica piuttosto interessante, più complessa
+
+31
+00:02:40,120 --> 00:02:44,760
+per dire del phishing ed ecco perché ho avuto l'idea per questo episodio.
+
+32
+00:02:44,760 --> 00:02:51,000
+Per capire un po' più a fondo però le caratteristiche di questo particolare attacco è necessario
+
+33
+00:02:51,000 --> 00:02:56,520
+avere ben presenti alcuni concetti, quindi cercando di non correre troppo ora proverò
+
+34
+00:02:56,520 --> 00:02:58,680
+a fare una sorta di panoramica.
+
+35
+00:02:59,120 --> 00:03:05,440
+Innanzitutto facciamo un passo indietro e cerchiamo di capire come si possa sfruttare
+
+36
+00:03:05,440 --> 00:03:10,600
+per i propri scopi qualcosa di potente e complesso come può essere un motore di ricerca.
+
+37
+00:03:10,600 --> 00:03:16,120
+Dopotutto, se pensiamo ad esempio a Google, immaginiamo un colosso internazionale con
+
+38
+00:03:16,120 --> 00:03:22,040
+risorse pressoché infinite, come è possibile per un cybercriminale, ma anche per una banda
+
+39
+00:03:22,040 --> 00:03:27,560
+ben organizzata, poter competere con un gigante di tale portata?
+
+40
+00:03:27,640 --> 00:03:30,920
+Beh, tutto inizia dal concetto di SEO.
+
+41
+00:03:30,920 --> 00:03:36,000
+Se prendiamo proprio la definizione della stessa Google infatti, leggiamo che la SEO
+
+42
+00:03:36,000 --> 00:03:42,560
+è, cito testualmente, l'ottimizzazione per i motori di ricerca, la procedura che massimizza
+
+43
+00:03:42,560 --> 00:03:46,280
+l'efficacia del tuo sito per i motori di ricerca, fine citazione.
+
+44
+00:03:46,280 --> 00:03:53,720
+SEO infatti è l'acronimo di Search Engine Optimization ed è nella pratica tutto un
+
+45
+00:03:53,720 --> 00:04:00,200
+insieme di azioni, processi e configurazioni che vengono applicate ad un sito da un professionista
+
+46
+00:04:00,200 --> 00:04:06,680
+al fine di plasmarne i contenuti, l'aspetto e i metadati nel modo più congeniale possibile
+
+47
+00:04:06,680 --> 00:04:09,240
+alle indicazioni dei vari motori di ricerca.
+
+48
+00:04:09,240 --> 00:04:14,600
+In questo modo, il sito dovrebbe risultare di maggior valore agli occhi degli algoritmi
+
+49
+00:04:14,600 --> 00:04:21,240
+di ranking dei motori e, di conseguenza, questi dovrebbero avvantaggiarlo mostrandolo in posizioni
+
+50
+00:04:21,240 --> 00:04:25,520
+migliori nei risultati delle ricerche rispetto ai siti meno ottimizzati.
+
+51
+00:04:25,520 --> 00:04:32,120
+Se non hai idea di cosa sia il ranking delle pagine web, sappi che delle basi dell'algoritmo
+
+52
+00:04:32,120 --> 00:04:38,040
+di PageRank abbiamo già parlato qui su Pensieri in Codice e puoi facilmente trovare l'episodio
+
+53
+00:04:38,040 --> 00:04:39,720
+nel feed del podcast.
+
+54
+00:04:39,720 --> 00:04:45,520
+Ma in generale, il concetto è che chi crea e pubblica un sito web desidera che questo
+
+55
+00:04:45,680 --> 00:04:52,680
+venga visitato e, come ben sappiamo, i motori di ricerca veicolano un'enorme fetta degli
+
+56
+00:04:52,680 --> 00:04:55,480
+utenti del web verso le loro destinazioni.
+
+57
+00:04:55,480 --> 00:05:02,880
+Quindi, ogni creatore di siti cerca, o almeno dovrebbe cercare, di potenziare al massimo
+
+58
+00:05:02,880 --> 00:05:09,680
+l'assio delle proprie creazioni, in modo tale da provare ad avvantaggiarle rispetto ai concorrenti.
+
+59
+00:05:10,120 --> 00:05:16,400
+Se ad esempio pubblico un sito che vende prodotti di ferramenta, avrò probabilmente molti concorrenti.
+
+60
+00:05:16,400 --> 00:05:21,920
+Apparire prima di loro nei risultati delle ricerche potrebbe darmi un enorme vantaggio
+
+61
+00:05:21,920 --> 00:05:26,520
+competitivo e quindi potrei voler investire molto nell'assio del mio sito.
+
+62
+00:05:26,520 --> 00:05:32,200
+Ma proprio questo stesso meccanismo, che è una cosa positiva ed è fondamentale per restituire
+
+63
+00:05:32,200 --> 00:05:37,880
+agli utenti dei risultati il più possibile utili alle loro ricerche, può essere anche
+
+64
+00:05:37,880 --> 00:05:40,360
+sfruttato per scopi criminali.
+
+65
+00:05:40,360 --> 00:05:43,960
+L'idea in realtà di per sé è abbastanza semplice.
+
+66
+00:05:43,960 --> 00:05:49,280
+Si sceglie un obiettivo che può essere un servizio, o un prodotto, o in generale un
+
+67
+00:05:49,280 --> 00:05:55,360
+sito che già si sa che registra un certo traffico di utenti e che viene utilizzato
+
+68
+00:05:55,360 --> 00:05:57,960
+per un qualche tipo di scopo rilevante.
+
+69
+00:05:57,960 --> 00:06:03,400
+Solitamente gli obiettivi scelti sono siti di home banking, siti che offrono servizi
+
+70
+00:06:03,400 --> 00:06:09,400
+come caselle email, password manager, file sharing, oppure siti che raccolgono pacchetti
+
+71
+00:06:09,400 --> 00:06:11,600
+software da scaricare ed installare.
+
+72
+00:06:11,600 --> 00:06:18,120
+L'importante è scegliere siti che suscitino un certo interesse, quindi che cubano un certo
+
+73
+00:06:18,120 --> 00:06:23,880
+traffico di utenti, ma che al tempo stesso non siano troppo grandi o troppo famosi e
+
+74
+00:06:23,880 --> 00:06:25,400
+a breve capiremo il perché.
+
+75
+00:06:25,400 --> 00:06:31,120
+Una volta scelto il sito, poi, ne si sviluppa e pubblica una copia.
+
+76
+00:06:31,400 --> 00:06:36,280
+Questa copia non deve per forza essere completa, basta anche una o poche pagine.
+
+77
+00:06:36,280 --> 00:06:42,240
+L'importante è che all'apparenza queste risultino identiche o perlomeno credibili rispetto
+
+78
+00:06:42,240 --> 00:06:48,840
+a quelle del sito originale, anche se poi in realtà sono ospitate su di un server di
+
+79
+00:06:48,840 --> 00:06:54,200
+proprietà di un cybercriminale e quindi sono completamente sotto il suo controllo.
+
+80
+00:06:54,200 --> 00:07:00,240
+A questo punto non resta che potenziare il più possibile l'assio di queste pagine finte
+
+81
+00:07:00,360 --> 00:07:06,520
+e se l'attacco va a buon fine, dopo un certo lasso di tempo, queste inizieranno ad apparire
+
+82
+00:07:06,520 --> 00:07:13,160
+nei risultati delle ricerche effettuate dai utenti mescolate assieme alle pagine autentiche
+
+83
+00:07:13,160 --> 00:07:14,640
+del sito originale.
+
+84
+00:07:14,640 --> 00:07:19,760
+La scelta dell'obiettivo, dunque, come dicevamo poco fa, è fondamentale.
+
+85
+00:07:19,760 --> 00:07:25,680
+Scegliere un sito troppo ben posizionato, come potrebbe essere un Paypal o un Amazon,
+
+86
+00:07:25,680 --> 00:07:32,560
+renderebbe quasi impossibile batterlo sul campo dell'assio, mentre scegliere un sito
+
+87
+00:07:32,560 --> 00:07:38,720
+che visitano solo in pochi sarebbe magari facile da superare nelle ricerche, ma porterebbe
+
+88
+00:07:38,720 --> 00:07:44,800
+volumi di traffico ben più magri e, dato che questo tipo di attacchi si basano più sulla
+
+89
+00:07:44,800 --> 00:07:49,880
+quantità che sulla qualità, tutto il lavoro potrebbe risultare di fatto inutile.
+
+90
+00:07:50,280 --> 00:07:56,440
+In ogni caso, per pompare l'assio di queste pagine finte, si usano essenzialmente due
+
+91
+00:07:56,440 --> 00:08:03,960
+tecniche, che poi altro non sono che i normali metodi di ottimizzazione dell'assio, solo forzati
+
+92
+00:08:03,960 --> 00:08:05,960
+e stressati in modo artificiale.
+
+93
+00:08:05,960 --> 00:08:11,520
+Innanzitutto, infatti, si utilizzano parole chiave e metadati nascosti all'interno del
+
+94
+00:08:11,520 --> 00:08:17,560
+codice delle varie pagine, si aggiungono enormi liste di parole che riguardano l'argomento
+
+95
+00:08:17,560 --> 00:08:23,240
+trattato, ma anche termini studiati sulla base della tipologia di utenti che si intende
+
+96
+00:08:23,240 --> 00:08:24,240
+attirare.
+
+97
+00:08:24,240 --> 00:08:29,800
+Non so, nel caso di home banking, ad esempio, si potrebbe aggiungere banking con la ck,
+
+98
+00:08:29,800 --> 00:08:34,040
+o nel caso di file sharing, sharing scritto senza l'h.
+
+99
+00:08:34,040 --> 00:08:40,760
+Molti sicuramente obietteranno che questi sistemi basati su parole chiave nel 2022 sono
+
+100
+00:08:40,760 --> 00:08:48,160
+poco efficaci, ed è vero, ma dobbiamo sempre contestualizzare la situazione e ricordarci
+
+101
+00:08:48,160 --> 00:08:50,040
+bene quali sono gli obiettivi.
+
+102
+00:08:50,040 --> 00:08:56,760
+Banalmente, siamo in presenza di due pagine totalmente identiche, una reale, l'altra falsa.
+
+103
+00:08:56,760 --> 00:09:02,540
+Differenziare anche solo per una parola chiave può essere la discriminante tra quale delle
+
+104
+00:09:02,540 --> 00:09:09,400
+due viene scelta come risultato da uno dei motori di ricerca, e siccome i cybercriminali
+
+105
+00:09:09,920 --> 00:09:15,880
+sono sempre alla ricerca di utenti diciamo meno smaliziati, scartare chi scrive correttamente
+
+106
+00:09:15,880 --> 00:09:20,760
+home banking in favore di chi lo scrive male potrebbe in realtà essere un vantaggio per
+
+107
+00:09:20,760 --> 00:09:21,880
+lo scopo in questione.
+
+108
+00:09:21,880 --> 00:09:27,840
+E poi c'è la seconda tecnica, cioè quella di generare traffico sulle pagine false.
+
+109
+00:09:27,840 --> 00:09:33,320
+Sempre nell'episodio sul PageRank abbiamo già parlato del fatto che il traffico è
+
+110
+00:09:33,320 --> 00:09:38,480
+un importante indicatore della qualità di un sito web, almeno agli occhi di un motore
+
+111
+00:09:38,560 --> 00:09:39,560
+di ricerca.
+
+112
+00:09:39,560 --> 00:09:45,280
+Se infatti un utente fa una ricerca e clicca su di un risultato, questo guadagna valore
+
+113
+00:09:45,280 --> 00:09:52,800
+dal punto di vista dell'indicizzazione, quindi generare traffico in maniera ovviamente artificiale
+
+114
+00:09:52,800 --> 00:10:00,600
+sfruttando sistemi automatizzati, bot e simili è la seconda parte della strategia e contribuisce
+
+115
+00:10:00,600 --> 00:10:06,720
+assieme alle parole chiave a infiltrare le pagine finte in mezzo o addirittura in posizione
+
+116
+00:10:06,920 --> 00:10:09,360
+di vantaggio rispetto a quelle vere.
+
+117
+00:10:09,360 --> 00:10:13,600
+Ma ora probabilmente ti starei chiedendo perché fare tutto questo?
+
+118
+00:10:13,600 --> 00:10:16,000
+A che scopo questo sforzo?
+
+119
+00:10:16,000 --> 00:10:21,920
+Dopotutto, piazzare pagine false nei motori di ricerca, come già ti accennavo prima, di
+
+120
+00:10:21,920 --> 00:10:24,480
+per sé non ha tutta questa grande utilità.
+
+121
+00:10:24,480 --> 00:10:31,800
+Ed è vero, a meno che queste pagine non siano state progettate per veicolare un secondo
+
+122
+00:10:31,800 --> 00:10:32,800
+attacco.
+
+123
+00:10:32,880 --> 00:10:38,760
+Se prendiamo l'esempio dell'home banking che facevamo poco fa, tanto per dirne una,
+
+124
+00:10:38,760 --> 00:10:45,040
+una falsa pagina di login o una falsa pagina di richiesta di assistenza potrebbero essere
+
+125
+00:10:45,040 --> 00:10:49,760
+un ottimo modo per fare incetta di password e di dati di utenti ignari.
+
+126
+00:10:49,760 --> 00:10:56,080
+Oppure una falsa pagina di download di un software sarebbe perfetta per far scaricare
+
+127
+00:10:56,080 --> 00:11:02,440
+ed installare all'utente un virus o un ransomware, magari al posto o addirittura assieme al software
+
+128
+00:11:02,560 --> 00:11:03,560
+che stava cercando.
+
+129
+00:11:03,560 --> 00:11:09,880
+Gli utilizzi del co-poisoning in realtà possono essere tanti, sta alla scaltrezza del criminale
+
+130
+00:11:09,880 --> 00:11:15,160
+trovare quello più adatto ed efficiente, ma in generale il meccanismo è abbastanza
+
+131
+00:11:15,160 --> 00:11:16,160
+semplice.
+
+132
+00:11:16,160 --> 00:11:21,400
+Un utente è in cerca di qualcosa su di un motore di ricerca, tramite il co-poisoning
+
+133
+00:11:21,400 --> 00:11:27,320
+lo si attira su una pagina trappola, su questa pagina gli si propone una soluzione al suo
+
+134
+00:11:27,320 --> 00:11:32,840
+problema che in realtà nasconde un furto di dati o un virus di qualche tipo e il gioco
+
+135
+00:11:32,840 --> 00:11:33,840
+è fatto.
+
+136
+00:11:33,840 --> 00:11:38,840
+Spesso poi queste trappole sono anche fatte in modo da permettere effettivamente all'utente
+
+137
+00:11:38,840 --> 00:11:44,640
+di risolvere il problema da cui era partito, o almeno di credere di averlo fatto, e quindi
+
+138
+00:11:44,640 --> 00:11:49,760
+in molti casi questi nemmeno si rende conto di essere stato imbrogliato o infettato.
+
+139
+00:11:49,760 --> 00:11:55,920
+Le false pagine di download ad esempio, oltre a iniettare un malware, effettuano anche il
+
+140
+00:11:55,920 --> 00:12:01,760
+download del vero software in questione, quindi l'utente crede che tutto sia andato
+
+141
+00:12:01,760 --> 00:12:06,720
+per il meglio, lascia il sito, continua la sua attività e nemmeno sospetta di avere il
+
+142
+00:12:06,720 --> 00:12:07,720
+pc infetto.
+
+143
+00:12:07,720 --> 00:12:13,260
+Oppure le false pagine di assistenza rispondono con un messaggio del tipo la tua richiesta
+
+144
+00:12:13,260 --> 00:12:17,840
+è stata presa in carico e sarà evasa il prima possibile.
+
+145
+00:12:17,840 --> 00:12:24,160
+Come anticipavo nell'introduzione, il co-poisoning è qualcosa che si tende a sottovalutare, ma
+
+146
+00:12:24,160 --> 00:12:27,160
+il fenomeno esiste da tempo ed è anche in crescita.
+
+147
+00:12:27,160 --> 00:12:33,040
+Ad esempio risale al mese scorso la notizia dell'identificazione di una batteria di domini
+
+148
+00:12:33,040 --> 00:12:40,120
+malevoli che infettavano gli utenti alla ricerca di software come Zoom, Visual Studio, Team
+
+149
+00:12:40,120 --> 00:12:44,200
+Viewer e altri simili, il link della notizia lo trovi in descrizione.
+
+150
+00:12:44,200 --> 00:12:50,920
+E il motivo di questa crescita è presto detto, il co-poisoning funziona ed è anche relativamente
+
+151
+00:12:50,920 --> 00:12:52,480
+economico da mettere in campo.
+
+152
+00:12:52,480 --> 00:12:59,080
+Una sorta di pesca strascico per gli utenti del web ed è per questo motivo che viene
+
+153
+00:12:59,080 --> 00:13:01,960
+facile il parallelismo con il phishing.
+
+154
+00:13:01,960 --> 00:13:08,480
+E proprio al pari del phishing che è fatto di quei messaggi che sembrano provenire dalla
+
+155
+00:13:08,480 --> 00:13:14,040
+nostra banca o di quei banner pubblicitari che mostrano scritte lampeggianti del tipo
+
+156
+00:13:14,040 --> 00:13:20,000
+hai vinto un premio clicca qui per incassare oppure il disco è pieno clicca qui per liberare
+
+157
+00:13:20,000 --> 00:13:28,320
+spazio e che quindi giocano molto sul instillare un certo senso di ansia, anche il co-poisoning
+
+158
+00:13:28,320 --> 00:13:31,560
+si basa su tutta una serie di fattori psicologici.
+
+159
+00:13:31,560 --> 00:13:38,280
+Nel libro Pensieri Lenti e Veloci di Daniel Kahneman, e so che ormai lo cito spesso ma
+
+160
+00:13:38,280 --> 00:13:43,560
+è un libro che mi ha molto colpito e ha influito proprio sul modo in cui io interpreto le
+
+161
+00:13:44,080 --> 00:13:50,080
+persone e il mondo che mi circonda, in questo libro è riportato un esperimento riguardante
+
+162
+00:13:50,080 --> 00:13:55,160
+il comportamento delle persone quando utilizzano i motori di ricerca.
+
+163
+00:13:55,160 --> 00:14:01,160
+Ora non ricordo proprio tutti i dettagli ma il concetto era che a vari gruppi di persone
+
+164
+00:14:01,160 --> 00:14:07,920
+veniva dato un motore di ricerca costruito ad hoc nel quale la posizione dei risultati
+
+165
+00:14:07,920 --> 00:14:13,040
+delle ricerche era leggermente diversa in base al gruppo di appartenenza.
+
+166
+00:14:13,520 --> 00:14:19,740
+Nello specifico i soggetti dovevano informarsi su alcuni candidati ad una carica per i quali
+
+167
+00:14:19,740 --> 00:14:22,080
+poi avrebbero dovuto esprimere un voto.
+
+168
+00:14:22,080 --> 00:14:28,000
+Ai soggetti venivano dati i nomi dei candidati e gli veniva chiesto di usare questo speciale
+
+169
+00:14:28,000 --> 00:14:33,600
+motore di ricerca per informarsi, ovviamente però loro non erano a conoscenza del fatto
+
+170
+00:14:33,600 --> 00:14:38,560
+che a seconda dei gruppi nei quali erano stati collocati per la stessa ricerca il motore
+
+171
+00:14:38,560 --> 00:14:41,360
+avrebbe dato risultati ordinati diversamente.
+
+172
+00:14:41,360 --> 00:14:47,200
+E questo esperimento ha dimostrato che pur essendo le informazioni consultabili nel complesso
+
+173
+00:14:47,200 --> 00:14:53,240
+perfettamente identiche, il fatto che per alcuni candidati le pagine apparissero concentrate
+
+174
+00:14:53,240 --> 00:14:58,800
+nella parte alta dei risultati ne ha chiaramente favorito la reputazione.
+
+175
+00:14:58,800 --> 00:15:05,600
+Insomma, pur potendo leggere tutte le stesse pagine web, gli utenti tendevano a votare
+
+176
+00:15:05,600 --> 00:15:09,560
+il candidato le cui pagine apparivano per prime nei risultati.
+
+177
+00:15:09,560 --> 00:15:16,780
+E questo vuol dire semplicemente una cosa, cioè che le nostre scelte vengono influenzate
+
+178
+00:15:16,780 --> 00:15:23,800
+dal modo in cui ci vengono presentati i risultati delle ricerche e soprattutto che, consciamente
+
+179
+00:15:23,800 --> 00:15:29,520
+o inconsciamente, noi siamo portati a riporre una grande fiducia nei motori di ricerca che
+
+180
+00:15:29,520 --> 00:15:30,520
+utilizziamo.
+
+181
+00:15:30,760 --> 00:15:36,800
+In poche parole, almeno di primo acchito, il nostro cervello in automatico fa una sorta
+
+182
+00:15:36,800 --> 00:15:38,400
+di ragionamento del genere.
+
+183
+00:15:38,400 --> 00:15:44,360
+Se il risultato è mostrato per primo, allora è sicuramente più attinente alla mia ricerca,
+
+184
+00:15:44,360 --> 00:15:47,440
+il più valido, il più valevole di attenzione.
+
+185
+00:15:47,440 --> 00:15:53,400
+A questo fatto va aggiunto poi che, come esseri umani, se siamo un po' stanchi o un
+
+186
+00:15:53,400 --> 00:15:58,760
+po' di fretta, un vero e proprio controllo, quindi con il bisogno di porre attenzione
+
+187
+00:15:58,760 --> 00:16:04,120
+a quello che stiamo facendo, lo facciamo scattare solo nel momento in cui ci accorgiamo
+
+188
+00:16:04,120 --> 00:16:05,960
+che qualcosa non va.
+
+189
+00:16:05,960 --> 00:16:12,640
+Ma, se non sospettiamo di nulla, può capitare che completiamo intere operazioni totalmente
+
+190
+00:16:12,640 --> 00:16:14,360
+con il pilota automatico.
+
+191
+00:16:14,360 --> 00:16:19,880
+Questo è un altro fatto confermato dagli studi di Kahneman, se ti interessa trovi il link
+
+192
+00:16:19,880 --> 00:16:20,880
+in descrizione.
+
+193
+00:16:20,880 --> 00:16:25,920
+Quindi, se stiamo cercando un software da installare perché ci serve per un lavoro
+
+194
+00:16:25,920 --> 00:16:31,680
+che dobbiamo consegnare, o per provare un'idea che abbiamo in mente, o per una call a cui
+
+195
+00:16:31,680 --> 00:16:39,400
+dobbiamo partecipare tra 5 minuti, le nostre difese mentali saranno molto basse e il rischio
+
+196
+00:16:39,400 --> 00:16:43,280
+di cadere in una trappola di CO poisoning sarà più che concreto.
+
+197
+00:16:43,280 --> 00:16:48,920
+Pensaci, quante volte capita anche a te di muoverti in automatico sul motore di ricerca?
+
+198
+00:16:48,920 --> 00:16:49,920
+A me capita.
+
+199
+00:16:49,920 --> 00:16:55,480
+Mi serve una cosa, clicco su Firefox, scrivo due parole nella barra, invio, clicco sul
+
+200
+00:16:55,480 --> 00:16:56,480
+primo risultato.
+
+201
+00:16:56,480 --> 00:17:01,960
+Se questo fosse un sito falso, a questo punto ancora non me ne sarei accorto.
+
+202
+00:17:01,960 --> 00:17:08,240
+In tutto questo discorso, i motori di ricerca hanno dei meccanismi con i quali cercano di
+
+203
+00:17:08,240 --> 00:17:14,120
+mitigare il problema del CO poisoning, ma chiaramente, se siamo qui a parlarne, in
+
+204
+00:17:14,120 --> 00:17:16,760
+qualche modo questi non sono sufficienti.
+
+205
+00:17:16,760 --> 00:17:23,280
+Senza poi contare che nel mondo della cyber-sicurezza il gioco è sempre un po' quello della rincorsa
+
+206
+00:17:23,280 --> 00:17:29,080
+tra chi individua nuovi modi per commettere crimini e chi invece studia soluzioni per
+
+207
+00:17:29,080 --> 00:17:30,080
+evitarli.
+
+208
+00:17:30,080 --> 00:17:31,080
+Questo è un po' ovvio.
+
+209
+00:17:31,080 --> 00:17:36,280
+Quindi, noi dobbiamo metterci un po' del nostro per evitare di finire nella rete di
+
+210
+00:17:36,280 --> 00:17:43,640
+qualche cyber-criminale, anche perché poi le conseguenze possono essere ben poco piacevoli,
+
+211
+00:17:43,640 --> 00:17:49,920
+dalla necessità di reinstallare pc, server e sistemi vari, fino al rischio di dover bloccare
+
+212
+00:17:49,920 --> 00:17:56,680
+carte di credito o addirittura conti in banca, senza contare poi che se non ci rendiamo conto
+
+213
+00:17:56,680 --> 00:18:02,000
+di essere caduti in trappola, beh, rischiamo anche di perdere dati o addirittura soldi.
+
+214
+00:18:02,000 --> 00:18:08,240
+Innanzitutto, quindi, è sempre buona norma, ma questo in generale, avere un antivirus
+
+215
+00:18:08,240 --> 00:18:14,200
+attivo e funzionante e aggiornare tutti i software con la maggior frequenza possibile
+
+216
+00:18:14,200 --> 00:18:17,920
+e non parlo solo del sistema operativo, ma anche ad esempio dei browser.
+
+217
+00:18:17,920 --> 00:18:23,720
+Poi, dobbiamo entrare nell'ottica di non poterci fidare sempre e ciecamente dei motori
+
+218
+00:18:23,720 --> 00:18:29,440
+di ricerca, e questo non perché questi siano malvagi, questo è un altro discorso, ma perché
+
+219
+00:18:29,440 --> 00:18:35,720
+semplicemente non sono sicuri al 100%, niente è sicuro al 100%.
+
+220
+00:18:35,720 --> 00:18:42,440
+Quindi, quando facciamo una ricerca, prendiamo un bel respiro, ci fermiamo un attimo a guardare
+
+221
+00:18:42,440 --> 00:18:47,440
+la pagina dei risultati, leggiamo quello che c'è scritto invece di associare vagamente
+
+222
+00:18:47,440 --> 00:18:52,960
+una forma sullo schermo all'informazione che stiamo cercando e, soprattutto, facciamo
+
+223
+00:18:52,960 --> 00:18:57,160
+attenzione all'indirizzo del sito sul quale stiamo per cliccare.
+
+224
+00:18:57,160 --> 00:19:04,120
+Bene o male, infatti, qualsiasi motore nei risultati sopra il titolo di ogni pagina mostra
+
+225
+00:19:04,120 --> 00:19:09,880
+in piccolo l'indirizzo di destinazione, cioè quello a cui ci si collegherà se si decide
+
+226
+00:19:09,880 --> 00:19:11,640
+di cliccare sul risultato.
+
+227
+00:19:12,080 --> 00:19:19,720
+Questo indirizzo è molto di aiuto per individuare possibili SEO poisoning e questo perché, mentre
+
+228
+00:19:19,720 --> 00:19:25,880
+è possibile copiare delle pagine o un intero sito abbastanza semplicemente, è invece molto
+
+229
+00:19:25,880 --> 00:19:31,920
+più difficile impossessarsi di un dominio o anche solo trovare domini che siano sufficientemente
+
+230
+00:19:31,920 --> 00:19:33,720
+simili a quello originale.
+
+231
+00:19:33,720 --> 00:19:39,240
+Per fare un esempio reale, che trovi anche nell'articolo in descrizione, se cerchiamo
+
+232
+00:19:39,240 --> 00:19:45,000
+il software di videoconferenza Zoom, perché abbiamo bisogno di installarlo per un meeting,
+
+233
+00:19:45,000 --> 00:19:54,200
+e sul risultato vediamo che l'indirizzo punta a zoomvideo-s.com, dobbiamo insospettirci perché
+
+234
+00:19:54,200 --> 00:19:59,680
+se il software si chiama Zoom, la prima cosa che dobbiamo aspettarci è che, quantomeno,
+
+235
+00:19:59,680 --> 00:20:02,400
+il sito abbia un nome più simile.
+
+236
+00:20:02,840 --> 00:20:09,520
+Magari in questo modo avremo un po' di falsi positivi, ma è sempre meglio un po' di prudenza
+
+237
+00:20:09,520 --> 00:20:11,280
+in più che rischiare problemi.
+
+238
+00:20:11,280 --> 00:20:17,920
+Poi, in caso, ci sono sistemi più avanzati che si possono utilizzare come Firewall, Proxy,
+
+239
+00:20:17,920 --> 00:20:23,800
+Sandbox e cose del genere, ma direi che non è questa la sede giusta per parlarne.
+
+240
+00:20:23,800 --> 00:20:29,920
+Sono queste soluzioni che richiedono una certa dimestichezza e, se non sei già in grado
+
+241
+00:20:29,920 --> 00:20:35,160
+di configurarle in autonomia, credo sia meglio rivolgersi ad un esperto.
+
+242
+00:20:35,160 --> 00:20:39,360
+Nel caso in cui tu ne abbia bisogno, magari per il tuo ufficio o la tua azienda, puoi
+
+243
+00:20:39,360 --> 00:20:42,120
+anche contattarmi sul sito pensieriincodice.it.
+
+244
+00:20:42,120 --> 00:20:47,680
+Non me ne occupo personalmente, ma posso metterti in contatto con qualcuno dei miei collaboratori.
+
+245
+00:20:47,680 --> 00:20:53,240
+Ad ogni modo, però, io penso sempre che il miglior sistema per tenersi fuori dai guai
+
+246
+00:20:53,240 --> 00:20:59,000
+quando si naviga sul web sia quello di porre attenzione a quello che si sta facendo.
+
+247
+00:20:59,080 --> 00:21:05,320
+Non visitare siti sconosciuti, fare attenzione agli indirizzi, tenere al sicuro le password
+
+248
+00:21:05,320 --> 00:21:12,320
+in un password manager criptato, non utilizzare reti wifi aperte o reti delle quali non ci
+
+249
+00:21:12,320 --> 00:21:18,480
+possiamo fidare e, se proprio siamo costretti, allora farlo tramite una VPN, come potrebbe
+
+250
+00:21:18,480 --> 00:21:22,920
+essere quella di Proton di cui ti ho parlato nello scorso episodio di Espresso.
+
+251
+00:21:23,080 --> 00:21:29,640
+Insomma, i pericoli online ci sono, questo è vero, però alla fine, per stare ragionevolmente
+
+252
+00:21:29,640 --> 00:21:35,640
+sicuri, secondo me quello che basta è un po' di conoscenza e soprattutto usare la
+
+253
+00:21:35,640 --> 00:21:36,640
+testa.
+
+254
+00:21:36,640 --> 00:21:37,640
+Sempre.
+
+255
+00:21:37,640 --> 00:21:40,760
+Bene, l'episodio di oggi dunque termina qui.
+
+256
+00:21:40,760 --> 00:21:46,120
+Come al solito, spero di averti portato qualche informazione e qualche riflessione interessante.
+
+257
+00:21:46,120 --> 00:21:51,160
+Ti ricordo che se posso produrre questi contenuti è solo grazie a te che li ascolti e dalla
+
+258
+00:21:51,160 --> 00:21:54,640
+community di Pensieri in Codice che sostiene il progetto.
+
+259
+00:21:54,640 --> 00:21:58,440
+Scopri anche tu come dare una mano sul sito pensieriincodice.it.
+
+260
+00:21:58,440 --> 00:22:04,440
+Puoi ascoltare tutti gli episodi sulle maggiori piattaforme e app di podcast oppure ricevere
+
+261
+00:22:04,440 --> 00:22:09,280
+direttamente un link sul tuo smartphone iscrivendoti al canale Telegram che trovi sul sito.
+
+262
+00:22:09,280 --> 00:22:16,080
+Se Pensieri in Codice ti piace e se sei arrivato fin qui immagino ti piaccia, potresti sostenerlo
+
+263
+00:22:16,080 --> 00:22:21,360
+anche lasciando una recensione nell'app con cui ascolti il podcast e poi potresti
+
+264
+00:22:21,360 --> 00:22:24,240
+condividerlo con un amico per farglielo conoscere.
+
+265
+00:22:24,240 --> 00:22:29,440
+Così facendo mi aiuterai a far crescere il progetto, a migliorarne la qualità e farai
+
+266
+00:22:29,440 --> 00:22:32,160
+scoprire a lui qualcosa di interessante.
+
+267
+00:22:32,160 --> 00:22:34,880
+Detto questo per oggi è proprio tutto.
+
+268
+00:22:34,880 --> 00:22:39,640
+Io ti ringrazio per aver ascoltato fin qui, ti do appuntamento al prossimo episodio e ti
+
+269
+00:22:39,640 --> 00:22:44,840
+ricordo che un informatico risolve problemi, a volte, anche usando il computer.
+

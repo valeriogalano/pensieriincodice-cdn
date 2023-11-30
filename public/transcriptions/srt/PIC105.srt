@@ -1,0 +1,192 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice. Pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,400
+in meno di 5 minuti.
+
+3
+00:00:14,400 --> 00:00:29,880
+A prima vista, una trackball potrebbe sembrare semplicemente un vecchio mouse alla rovescia.
+
+4
+00:00:29,880 --> 00:00:36,920
+È presente, no? Prima dei mouse ottici esistevano quelli che sul fondo avevano una piccola sfera
+
+5
+00:00:36,920 --> 00:00:43,280
+il cui rotolamento sul piano di lavoro imprimeva il movimento al cursore sullo schermo. In
+
+6
+00:00:43,280 --> 00:00:49,040
+realtà, però, chi mai abbia avuto la possibilità di utilizzarla ti potrà facilmente dire che
+
+7
+00:00:49,040 --> 00:00:55,440
+una trackball è molto di più. Questo fantastico strumento di puntamento ha visto la luce subito
+
+8
+00:00:55,440 --> 00:01:01,480
+dopo la seconda guerra mondiale, come parte di un avanzatissimo sistema radar della marina
+
+9
+00:01:01,480 --> 00:01:09,480
+militare inglese chiamato Comprehensive Display System. In quel periodo il CDS aveva lo scopo
+
+10
+00:01:09,480 --> 00:01:14,720
+di calcolare gli spostamenti dei velivoli basandosi su tutta una serie di coordinate
+
+11
+00:01:14,720 --> 00:01:20,600
+iniziali che l'operatore inseriva per mezzo di un joystick. Ma per Ralph Benjamin, ingegnere
+
+12
+00:01:20,600 --> 00:01:27,000
+scienziato che lavorava al progetto, quel tipo di periferica di input non era abbastanza
+
+13
+00:01:27,000 --> 00:01:34,100
+funzionale ed elegante. Per questo motivo egli progettò il Rollerball, un sistema di
+
+14
+00:01:34,100 --> 00:01:39,940
+tracciamento basato, invece che su una leva orientabile, su di una sfera che poteva essere
+
+15
+00:01:39,940 --> 00:01:46,740
+fatta ruotare in tutte le direzioni. Per sua sfortuna il CDS andò comunque in produzione
+
+16
+00:01:46,740 --> 00:01:54,020
+nella sua versione con il joystick e l'idea del Rollerball restò solo un prototipo, tra
+
+17
+00:01:54,020 --> 00:01:59,440
+l'altro anche sottoposto a segreto militare per gli anni successivi. Ma quello strano
+
+18
+00:01:59,440 --> 00:02:05,040
+controller aveva comunque aperto un mondo nelle menti di tutta una serie di altri ingegneri
+
+19
+00:02:05,040 --> 00:02:12,600
+che avevano potuto conoscere e lavorare sul CDS. Pochi anni dopo, quindi, il DATAR, un
+
+20
+00:02:12,600 --> 00:02:18,600
+sistema radar di tracciamento sviluppato dalla marina militare canadese, montava proprio
+
+21
+00:02:18,600 --> 00:02:25,360
+come principale periferica di input una grossa sfera, per la precisione una sfera regolamentare
+
+22
+00:02:25,360 --> 00:02:30,380
+di Five Pin Bowling, cioè una versione del gioco del bowling molto diffusa all'epoca
+
+23
+00:02:30,380 --> 00:02:37,960
+in Canada. Dopo altri quindici anni, poi, nel 1966, una compagnia americana, la Orbit
+
+24
+00:02:37,960 --> 00:02:46,720
+Instrument Corporation, produsse il primo device chiamato XY Ball Tracker, anche soprannominato
+
+25
+00:02:46,720 --> 00:02:52,200
+Trackball, il quale finalmente divenne molto comune nei sistemi radar per il controllo
+
+26
+00:02:52,200 --> 00:02:57,840
+del traffico aereo. Nel corso del tempo, con la diffusione delle tecnologie legate
+
+27
+00:02:57,840 --> 00:03:04,160
+al computer e, più nello specifico, ai PC e Mac, la Trackball, seppur molto in ombra
+
+28
+00:03:04,160 --> 00:03:10,840
+rispetto al suo fratello il mouse, ha comunque avuto un certo successo in vari ambiti. Nacquero
+
+29
+00:03:10,840 --> 00:03:17,160
+infatti videogame pensati per essere giocati specificamente con una Trackball, alcuni joypad
+
+30
+00:03:17,160 --> 00:03:23,240
+per console includevano una piccola Trackball, perfino alcuni modelli del celebre smartphone
+
+31
+00:03:23,240 --> 00:03:30,200
+BlackBerry montavano una mini Trackball tra lo schermo e la tastiera. Le moderne Trackball,
+
+32
+00:03:30,200 --> 00:03:34,880
+invece, ancora attualissime e vendute dalla maggior parte dei produttori di periferiche
+
+33
+00:03:34,880 --> 00:03:42,560
+per PC, non hanno nulla da invidiare ai seppur più conosciuti e diffusi mouse. Sono efficienti,
+
+34
+00:03:42,560 --> 00:03:49,200
+ergonomiche, molto precise e funzionano anche su superfici irregolari, trasparenti e in generale
+
+35
+00:03:49,200 --> 00:03:55,920
+non adatte all'uso del mouse. Non c'è bisogno di tappetini, di piedini di ricambio, di pulizia
+
+36
+00:03:55,920 --> 00:04:02,120
+del ripiano o del fondo del device. In linea di massima possiamo dire che le Trackball più comuni
+
+37
+00:04:02,120 --> 00:04:08,560
+sono essenzialmente di due tipi, uno sul quale si utilizza il pollice per muovere la sfera ed
+
+38
+00:04:08,560 --> 00:04:14,880
+un altro in cui invece si utilizza l'intero palmo. Con le dita poi si premono i tasti, clic
+
+39
+00:04:14,880 --> 00:04:20,560
+destro, sinistro, rotella, avanti, indietro, eccetera. Personalmente anche io di tanto in
+
+40
+00:04:20,560 --> 00:04:26,840
+tanto utilizzo qualche Trackball, non sono il mio sistema preferito ma conosco chi le trova
+
+41
+00:04:26,840 --> 00:04:33,000
+nettamente superiori al mouse. Per la cronaca, in questo momento, ne possiedo due modelli della
+
+42
+00:04:33,000 --> 00:04:39,400
+Logitech di quelli che si utilizzano con il pollice, tra cui una MX Ergo che, devo dire,
+
+43
+00:04:39,400 --> 00:04:45,080
+è davvero di ottima qualità. Se ripenso poi a quando ero piccolo ricordo di aver utilizzato
+
+44
+00:04:45,080 --> 00:04:52,360
+per un lungo periodo e con molta soddisfazione una tastiera che includeva una Trackball da palmo.
+
+45
+00:04:52,360 --> 00:04:59,040
+Sulla destra del tastierino numerico era presente questa grossa sfera rossa che si poteva muovere
+
+46
+00:04:59,440 --> 00:05:06,240
+con il palmo o, per me, con la punta delle dita, mentre sul lato sinistro sotto il tasto
+
+47
+00:05:06,240 --> 00:05:15,520
+control erano posizionati i due tasti del clic destro e sinistro. Grazie per aver ascoltato
+
+48
+00:05:15,520 --> 00:05:23,080
+Snippet, una rubrica di pensieri in codice. Scopri tanti altri contenuti sul sito pensieriincodice.it
+

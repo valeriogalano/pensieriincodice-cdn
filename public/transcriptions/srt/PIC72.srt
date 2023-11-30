@@ -1,0 +1,924 @@
+1
+00:00:00,000 --> 00:00:07,600
+Nella programmazione, o più in generale nello sviluppo software, il debug, cioè quella
+
+2
+00:00:07,600 --> 00:00:14,080
+attività di scovare le cause di un problema e risolverle, viene considerata fra le più
+
+3
+00:00:14,080 --> 00:00:15,800
+complicate in assoluto.
+
+4
+00:00:15,800 --> 00:00:22,280
+Ma in realtà, se si ci ferma un attimo a riflettere sui meccanismi alla base di tale attività,
+
+5
+00:00:22,280 --> 00:00:26,960
+ci si rende conto che essa è comune a molti ambiti e a molte discipline.
+
+6
+00:00:26,960 --> 00:00:33,040
+In campo medico, ad esempio, viene definita diagnosi differenziale, in campo matematico
+
+7
+00:00:33,040 --> 00:00:39,560
+inferenza bayesiana, ma in pratica si tratta di formulare la giusta tesi a partire da
+
+8
+00:00:39,560 --> 00:00:43,480
+un insieme di indizi che si hanno a disposizione.
+
+9
+00:00:43,480 --> 00:00:44,480
+Sigla.
+
+10
+00:00:44,480 --> 00:00:53,120
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio
+
+11
+00:00:53,120 --> 00:00:54,120
+Galano.
+
+12
+00:00:54,120 --> 00:01:05,720
+Non ricordo esattamente dove, ma tempo fa mi capitò di leggere una battuta che recitava
+
+13
+00:01:05,720 --> 00:01:07,640
+più o meno in questo modo.
+
+14
+00:01:07,640 --> 00:01:14,800
+Quando fai il debug, stai praticamente investigando su un crimine del quale sei tu stesso il colpevole.
+
+15
+00:01:14,800 --> 00:01:21,960
+In effetti, spesso è così, scriviamo un codice o implementiamo una soluzione software
+
+16
+00:01:21,960 --> 00:01:28,640
+combinando insieme vari strumenti che abbiamo a disposizione e dopo un po' scopriamo, anzi
+
+17
+00:01:28,640 --> 00:01:34,080
+in realtà spesso lo scopre qualcun altro, che c'è qualcosa che non funziona a dovere,
+
+18
+00:01:34,080 --> 00:01:35,080
+c'è un bug.
+
+19
+00:01:35,080 --> 00:01:40,920
+Allora noi prontamente interveniamo, andiamo a controllare, cerchiamo e troviamo il problema,
+
+20
+00:01:40,920 --> 00:01:47,680
+lo correggiamo e tutto torna a funzionare perfettamente fino al prossimo bug.
+
+21
+00:01:47,800 --> 00:01:53,560
+Questa operazione, questo intervento prende appunto il nome di debug, o debugging, o fare
+
+22
+00:01:53,560 --> 00:01:54,560
+debug insomma.
+
+23
+00:01:54,560 --> 00:02:00,400
+E per chi lavora nel campo dello sviluppo software, come me ad esempio, si tratta di
+
+24
+00:02:00,400 --> 00:02:02,480
+un'operazione all'ordine del giorno.
+
+25
+00:02:02,480 --> 00:02:09,560
+Al di là infatti della battuta, capita spesso di dover intervenire su bug sia propri sia
+
+26
+00:02:09,560 --> 00:02:11,520
+generati da codice di altri.
+
+27
+00:02:12,040 --> 00:02:18,520
+Qui su Pensieri in Codice, debug, te ne ho già parlato in passato, nell'episodio 43
+
+28
+00:02:18,520 --> 00:02:25,160
+ad esempio ti ho illustrato più o meno in dettaglio le varie tipologie di bug di base
+
+29
+00:02:25,160 --> 00:02:29,800
+e si tratta di un argomento molto interessante, quindi ti lascio il link dell'episodio in
+
+30
+00:02:29,800 --> 00:02:32,520
+descrizione se non l'hai ascoltato e vuoi recuperarlo.
+
+31
+00:02:32,520 --> 00:02:38,720
+Ma affinché tu possa seguire il discorso che sto per farti, ti ricordo semplicemente
+
+32
+00:02:38,720 --> 00:02:45,120
+che i bug si dividono principalmente in tre categorie, bug di sintassi, di runtime e di
+
+33
+00:02:45,120 --> 00:02:46,120
+logica.
+
+34
+00:02:46,120 --> 00:02:53,200
+I bug di sintassi sono abbastanza poco significativi per quello che diremo oggi, dato che basta
+
+35
+00:02:53,200 --> 00:03:00,720
+un buon ambiente di sviluppo o un compilatore per essere in grado di individuarli e segnalarli
+
+36
+00:03:00,720 --> 00:03:02,120
+praticamente subito.
+
+37
+00:03:02,560 --> 00:03:09,040
+I bug di runtime e di logica invece sono quelli realmente un po' più problematici, perché
+
+38
+00:03:09,040 --> 00:03:15,440
+possono in qualche modo sfuggire a controlli automatici e finire per manifestarsi all'interno
+
+39
+00:03:15,440 --> 00:03:18,960
+dei software proprio nel momento in cui li si sta utilizzando.
+
+40
+00:03:18,960 --> 00:03:25,600
+Può quindi capitare che un tester, cioè un tecnico addetto ai test, stia provando una
+
+41
+00:03:25,600 --> 00:03:31,720
+funzionalità e il sistema non si comporti esattamente nel modo in cui ci si aspetterebbe,
+
+42
+00:03:31,720 --> 00:03:37,480
+o addirittura può capitare che qualcuno stia presentando una demo di quel software e BOOM
+
+43
+00:03:37,480 --> 00:03:38,880
+il sistema va in crash.
+
+44
+00:03:38,880 --> 00:03:48,360
+O ancora, e questo è stranamente molto probabile, un cliente riesce a scovare quel caso limite
+
+45
+00:03:48,360 --> 00:03:54,840
+che causa degli errori nel comportamento del software o dei risultati incongruenti o addirittura
+
+46
+00:03:54,840 --> 00:04:01,040
+il blocco del processo o qualsiasi altra cosa che i clienti sono sempre così bravi a scovare.
+
+47
+00:04:01,480 --> 00:04:03,480
+E il più delle volte per caso.
+
+48
+00:04:03,480 --> 00:04:09,520
+Ma a prescindere da tutto, che cosa fa uno sviluppatore quando gli viene effettivamente
+
+49
+00:04:09,520 --> 00:04:12,520
+segnalato che nel suo software c'è un bug?
+
+50
+00:04:12,520 --> 00:04:18,160
+Beh è semplice, se vogliamo rifarci alla battuta che ti citavo all'inizio, fa quello
+
+51
+00:04:18,160 --> 00:04:22,320
+che farebbe un investigatore alle prese con un nuovo caso, indaga.
+
+52
+00:04:22,320 --> 00:04:28,600
+Per prima cosa si reca di persona sulla scena del crimine, per osservarla, per cercare
+
+53
+00:04:28,600 --> 00:04:29,600
+indizi.
+
+54
+00:04:29,600 --> 00:04:36,280
+Il che vuol dire che accede al software in questione personalmente, per provare a vedere
+
+55
+00:04:36,280 --> 00:04:39,160
+o a riprodurre il problema con i propri stessi occhi.
+
+56
+00:04:39,160 --> 00:04:44,840
+Innanzitutto è infatti necessario capire se è stato davvero commesso un crimine, cioè
+
+57
+00:04:44,840 --> 00:04:52,560
+se il bug esiste veramente, e poi se è possibile raccogliere delle prove sulla scena, cioè
+
+58
+00:04:52,560 --> 00:04:58,760
+cercare di individuare caratteristiche e condizioni del bug, come quando e perché
+
+59
+00:04:58,760 --> 00:04:59,760
+si è verificato.
+
+60
+00:04:59,760 --> 00:05:04,160
+Alle volte fare questa cosa è possibile, ma altre volte no.
+
+61
+00:05:04,160 --> 00:05:12,240
+Può capitare che i bug si manifestino solamente in particolari situazioni, in condizioni specifiche,
+
+62
+00:05:12,240 --> 00:05:17,840
+e quando si prova a riprodurli non si riesce a farlo almeno agevolmente.
+
+63
+00:05:18,280 --> 00:05:24,160
+E oltre a ciò va anche considerato che non sempre chi segnala un bug può essere ritenuto
+
+64
+00:05:24,160 --> 00:05:25,160
+affidabile.
+
+65
+00:05:25,160 --> 00:05:31,240
+Un utente ad esempio può aver male interpretato il funzionamento del software e segnalare
+
+66
+00:05:31,240 --> 00:05:35,600
+un problema sulla base di quanto crede che debba succedere.
+
+67
+00:05:35,600 --> 00:05:42,240
+Ma se il programmatore ha invece un pizzico di fortuna, il bug invece è proprio lì,
+
+68
+00:05:42,240 --> 00:05:49,880
+in bella mostra, e la sua presenza rappresenta un punto di inizio da cui partire per capire
+
+69
+00:05:49,880 --> 00:05:51,640
+la causa del problema.
+
+70
+00:05:51,640 --> 00:05:55,680
+Un investigatore direbbe che ha una pista su cui indagare.
+
+71
+00:05:55,680 --> 00:06:01,400
+Completata questa fase, però, arriva il momento di interrogare i testimoni, sempre se ce
+
+72
+00:06:01,400 --> 00:06:02,400
+ne sono.
+
+73
+00:06:02,400 --> 00:06:08,040
+Se possibile, infatti, il nostro investigatore chiede ai utenti tutta una serie di informazioni.
+
+74
+00:06:08,360 --> 00:06:13,800
+Ad esempio se è la prima volta che appare questo bug, o se l'hanno già riscontrato
+
+75
+00:06:13,800 --> 00:06:20,440
+in qualche caso simile in precedenza, se sono in grado di farlo comparire in modo volontario
+
+76
+00:06:20,440 --> 00:06:26,120
+o evitarlo quando desiderano, o se lo percepiscono come un qualcosa di aleatorio.
+
+77
+00:06:26,120 --> 00:06:32,240
+Dalle loro risposte, infatti, si cerca di stabilire e di circoscrivere un ambito nel
+
+78
+00:06:32,240 --> 00:06:37,680
+quale il problema si manifesta, e con esso anche l'impatto che ha sull'utilizzo del
+
+79
+00:06:37,800 --> 00:06:38,800
+software.
+
+80
+00:06:38,800 --> 00:06:43,040
+Proprio come un detective, infatti, il programmatore potrebbe avere più casi aperti sui quali
+
+81
+00:06:43,040 --> 00:06:48,320
+lavorare e, in queste circostanze, è sempre meglio stabilire una priorità, comunque
+
+82
+00:06:48,320 --> 00:06:49,640
+una sorta di gerarchia.
+
+83
+00:06:49,640 --> 00:06:55,240
+Proprio come indagare su un omicidio è più importante che indagare su uno, magari uno
+
+84
+00:06:55,240 --> 00:07:02,720
+scippo, risolvere un bug che blocca il sistema o che sta deteriorando i dati nel database
+
+85
+00:07:02,720 --> 00:07:08,560
+è più importante che risolvere un colore sbagliato nell'interfaccia o una stringa
+
+86
+00:07:08,560 --> 00:07:09,560
+tradotta male.
+
+87
+00:07:09,560 --> 00:07:15,000
+In ogni caso, la cosa più importante che il nostro detective cerca di stabilire nelle
+
+88
+00:07:15,000 --> 00:07:21,320
+fasi di indagini preliminari è rappresentata dalle circostanze nelle quali si è perpetrato
+
+89
+00:07:21,320 --> 00:07:24,440
+il crimine o nelle quali si è verificato il bug.
+
+90
+00:07:24,440 --> 00:07:30,720
+Nello specifico, se possibile, quale operazione si stava svolgendo, quali utenti la stavano
+
+91
+00:07:30,720 --> 00:07:36,840
+eseguendo, quali input erano coinvolti e perfino data e ora nella quale si è verificato
+
+92
+00:07:36,840 --> 00:07:37,840
+il problema.
+
+93
+00:07:37,840 --> 00:07:43,800
+Tutte queste informazioni si riveleranno poi importanti nelle fasi successive, delle quali
+
+94
+00:07:43,800 --> 00:07:49,080
+una è sicuramente il controllo delle telecamere di sicurezza, che nel software sono i file
+
+95
+00:07:49,080 --> 00:07:50,080
+di log.
+
+96
+00:07:50,080 --> 00:07:55,680
+Con qualche indizio come la data o il nome utente o degli specifici dati in input è
+
+97
+00:07:55,680 --> 00:08:01,360
+infatti possibile ricercare all'interno di questi file, che solitamente sono enormi,
+
+98
+00:08:01,360 --> 00:08:07,920
+il preciso istante in cui il bug si è manifestato e, se i log sono sufficientemente dettagliati
+
+99
+00:08:07,920 --> 00:08:13,760
+e precisi, si può anche ricostruire che cosa stava accadendo nel sistema in quel momento.
+
+100
+00:08:13,760 --> 00:08:19,160
+E se un'analisi del genere va a buon fine, solitamente si riescono a tirare fuori molte
+
+101
+00:08:19,160 --> 00:08:24,760
+informazioni interessanti, ad esempio il contesto in cui si è verificato il bug, ma anche i
+
+102
+00:08:24,840 --> 00:08:31,360
+dati che stavano venendo elaborati e quali erano i loro valori, magari lo stato del sistema,
+
+103
+00:08:31,360 --> 00:08:37,200
+il carico che in quel momento c'era nella macchina e molti altri aspetti che si potrebbero
+
+104
+00:08:37,200 --> 00:08:40,280
+rivelare utili ai fini della risoluzione del caso.
+
+105
+00:08:40,280 --> 00:08:45,800
+Una volta raccolto infatti il maggior numero possibile di indizi si può finalmente passare
+
+106
+00:08:45,800 --> 00:08:48,200
+alle indagini di laboratorio.
+
+107
+00:08:48,200 --> 00:08:54,720
+Tutte queste informazioni vanno infatti analizzate, schematizzate e infine utilizzate per creare
+
+108
+00:08:54,920 --> 00:09:01,360
+una scena del crimine simulata, diciamo così, nel tentativo di riprodurre il bug in un ambiente
+
+109
+00:09:01,360 --> 00:09:02,360
+controllato.
+
+110
+00:09:02,360 --> 00:09:08,640
+Uno sviluppatore infatti è solitamente in possesso di uno o più ambienti di test, che
+
+111
+00:09:08,640 --> 00:09:14,920
+può configurare in modo da simulare nel modo più fedele possibile le condizioni che scatenano
+
+112
+00:09:14,920 --> 00:09:21,000
+il problema in questione, appunto per avere la possibilità di farlo manifestare a comando.
+
+113
+00:09:21,440 --> 00:09:28,720
+Spesso infatti si parla proprio di riproducibilità e questo per spiegare che un bug non riproducibile
+
+114
+00:09:28,720 --> 00:09:31,200
+è quasi impossibile da correggere.
+
+115
+00:09:31,200 --> 00:09:37,040
+A questo punto comunque l'indagine è quasi terminata, al nostro programmatore non resterà
+
+116
+00:09:37,040 --> 00:09:43,640
+altro che analizzare il codice alla ricerca della istruzione o la configurazione o il
+
+117
+00:09:43,640 --> 00:09:49,440
+componente che causa il bug e potrà dire di aver scoperto il colpevole.
+
+118
+00:09:49,880 --> 00:09:52,680
+Qui però apro un attimo una piccola parentesi.
+
+119
+00:09:52,680 --> 00:09:59,760
+Vorrei che facessi molta attenzione che nella metafora che ti sto proponendo il colpevole
+
+120
+00:09:59,760 --> 00:10:02,120
+non è una persona, è un codice.
+
+121
+00:10:02,120 --> 00:10:08,320
+E questo te lo dico perché a volte in alcuni ambienti ho visto iniziare la caccia alle
+
+122
+00:10:08,320 --> 00:10:14,440
+streghe alla ricerca di colui che ha sbagliato perché magari non ha previsto una certa situazione
+
+123
+00:10:14,440 --> 00:10:18,120
+o addirittura ha commesso proprio un errore nello scrivere un codice.
+
+124
+00:10:18,480 --> 00:10:25,720
+E ci tengo a chiarire che per me questa cosa non solo non ha grande utilità, ma anzi molto
+
+125
+00:10:25,720 --> 00:10:30,680
+spesso tende ad essere controproducente per il morale dell'intero team.
+
+126
+00:10:30,680 --> 00:10:36,480
+Quindi, dicevo, una volta scovato il codice o il componente o la configurazione che causa
+
+127
+00:10:36,480 --> 00:10:42,840
+il bug, e cioè il colpevole della nostra indagine, non resta altro che catturarlo.
+
+128
+00:10:43,240 --> 00:10:49,320
+E nella nostra metafora la cattura consiste nel modificare o addirittura riscrivere quello
+
+129
+00:10:49,320 --> 00:10:56,040
+che è il codice incriminato, ovviamente però tenendo sempre presente che bisogna mantenere
+
+130
+00:10:56,040 --> 00:10:59,240
+intatte tutte le altre funzionalità del software.
+
+131
+00:11:03,720 --> 00:11:11,200
+Spero con questa mia metafora di aver espresso in maniera comprensibile il modo in cui io
+
+132
+00:11:11,200 --> 00:11:16,520
+normalmente affronto la risoluzione di un bug, anche considerando che la mia cultura
+
+133
+00:11:16,520 --> 00:11:21,960
+sul metodo investigativo in realtà è frutto più che altro della visione di svariate
+
+134
+00:11:21,960 --> 00:11:27,680
+stagioni di Law & Order, ma a questo punto vorrei provare ad ampliare un po' il discorso.
+
+135
+00:11:27,680 --> 00:11:32,480
+Devi sapere che l'idea per questo episodio, più o meno come accade per ogni episodio
+
+136
+00:11:32,480 --> 00:11:38,920
+di Pensieri in Codice, mi è venuta nel momento in cui ho letto qualcosa che mi ha particolarmente
+
+137
+00:11:38,920 --> 00:11:44,520
+colpito. Nello specifico, qualche giorno fa mi è capitato di mettere le mani su un
+
+138
+00:11:44,520 --> 00:11:51,400
+sondaggio che ti lascio in descrizione di JetBrains. JetBrains è una società che produce
+
+139
+00:11:51,400 --> 00:11:57,680
+un'ampia gamma di ambienti di sviluppo molto potenti e molto vari per più linguaggi e
+
+140
+00:11:57,680 --> 00:12:03,880
+più tecnologie. In questo sondaggio, in particolare per la parte effettuata tra gli utilizzatori
+
+141
+00:12:03,880 --> 00:12:11,560
+di PHPStorm, quindi gli sviluppatori di software in PHP come me, tra le tante domande ve n'era
+
+142
+00:12:11,560 --> 00:12:19,020
+una sugli strumenti utilizzati per il debug, e le risposte a questa domanda per me sono
+
+143
+00:12:19,020 --> 00:12:23,880
+state assolutamente sorprendenti. Tra gli utilizzatori di questo specifico ambiente
+
+144
+00:12:23,880 --> 00:12:29,080
+di sviluppo, che è lo stesso che utilizzo anch'io, che sempre dal sondaggio risultano
+
+145
+00:12:29,080 --> 00:12:36,360
+essere per la stragrande maggioranza professionisti dello sviluppo e quasi per la metà senior,
+
+146
+00:12:36,360 --> 00:12:44,400
+solamente il 29% utilizza uno strumento professionale per fare debug. Esclusa una piccolissima minoranza
+
+147
+00:12:44,400 --> 00:12:53,480
+che dice di non debuggare proprio, il restante 68% svolge le proprie operazioni di debug inserendo
+
+148
+00:12:53,480 --> 00:13:01,840
+funzioni apposite per mostrare a video le informazioni delle variabili o delle strutture in generale.
+
+149
+00:13:01,840 --> 00:13:09,840
+Il PHP, infatti, offre alcune funzioni specifiche come dump, vardump o roba simile e se tu stesso non sei
+
+150
+00:13:09,840 --> 00:13:16,400
+uno sviluppatore o magari non utilizzi uno strumento di debug professionale, cioè uno strumento
+
+151
+00:13:16,400 --> 00:13:22,800
+appositamente progettato e realizzato per fare questa attività, probabilmente questa percentuale
+
+152
+00:13:22,800 --> 00:13:29,240
+non ti colpirà più di tanto e quindi provo a spiegarti qual è la differenza tra i due approcci.
+
+153
+00:13:29,240 --> 00:13:36,320
+E ovviamente per fare questo utilizzerò i concetti del PHP, dato che per me sono più congeniali,
+
+154
+00:13:36,320 --> 00:13:43,000
+mentre lascio a te il compito di applicare queste informazioni al tuo specifico contesto,
+
+155
+00:13:43,000 --> 00:13:49,480
+se magari utilizzi diversi linguaggi o diverse tecnologie. Dunque, come ti dicevo prima, per me
+
+156
+00:13:49,480 --> 00:13:56,520
+fare debug significa bene o male investigare e in particolare utilizzare uno strumento di debug
+
+157
+00:13:56,520 --> 00:14:04,480
+rientra in quella che prima abbiamo definito la fase di riproduzione in laboratorio del bug. Siamo
+
+158
+00:14:04,480 --> 00:14:09,240
+infatti nel punto in cui abbiamo predisposto le condizioni che riteniamo sufficienti a
+
+159
+00:14:09,240 --> 00:14:16,320
+riprodurre il problema e quindi facciamo eseguire il nostro codice per capire dove si trova esattamente
+
+160
+00:14:17,000 --> 00:14:23,360
+l'errore e come fare a correggerlo. E per ottenere questo risultato senza impazzire dobbiamo avere
+
+161
+00:14:23,360 --> 00:14:29,280
+un sistema per controllare quali operazioni sta svolgendo il nostro codice in un dato momento,
+
+162
+00:14:29,280 --> 00:14:36,600
+quali dati stanno venendo manipolati e in che modo, quindi il contenuto delle variabili,
+
+163
+00:14:36,600 --> 00:14:42,680
+il risultato delle operazioni e così via. E ripeto, per effettuare questi controlli ben il
+
+164
+00:14:42,680 --> 00:14:50,200
+68% degli intervistati utilizza delle funzioni aggiuntive nel codice. Il che vuol dire che si
+
+165
+00:14:50,200 --> 00:14:57,760
+posiziona all'interno del codice e lo modifica per farsi stampare determinati valori o fare
+
+166
+00:14:57,760 --> 00:15:04,040
+interrompere l'esecuzione in un dato momento. In tal modo il programma esce di colpo ad un
+
+167
+00:15:04,040 --> 00:15:09,240
+certo punto dell'esecuzione e il programmatore può analizzare lo stato dei dati così come
+
+168
+00:15:09,240 --> 00:15:14,680
+sono in quell'istante. Se non trova quello che sta cercando, torna indietro, sposta le
+
+169
+00:15:14,680 --> 00:15:20,080
+funzioni di stampa interruzione più avanti o più indietro nel codice e rilancia il tutto e
+
+170
+00:15:20,080 --> 00:15:25,320
+rianalizza il risultato. E prosegue in questa serie di operazioni fintanto che non riesce a
+
+171
+00:15:25,320 --> 00:15:32,000
+individuare la radice del problema. Chi invece utilizza un sistema di debugging, nel mio caso
+
+172
+00:15:32,040 --> 00:15:40,400
+io prediligo Xdebug con phpStorm, lavora più o meno in questo modo. Nei punti che ritiene
+
+173
+00:15:40,400 --> 00:15:48,400
+interessanti per la risoluzione del problema invece di funzioni di stampa dei dati piazza
+
+174
+00:15:48,400 --> 00:15:56,000
+dei breakpoint, i quali non sono altro che dei piccoli segnalibri che l'ambiente di sviluppo è
+
+175
+00:15:56,080 --> 00:16:03,400
+in grado di interpretare. Nel caso di phpStorm, così come per tantissimi altri editor, si tratta
+
+176
+00:16:03,400 --> 00:16:09,240
+semplicemente di fare un clic affianco alle righe di codice che ci interessano. Poi, una volta
+
+177
+00:16:09,240 --> 00:16:14,680
+scelti tutti i nostri breakpoint, non resta che lanciare l'esecuzione del codice in modalità
+
+178
+00:16:14,680 --> 00:16:21,360
+debug. A questo punto l'esecuzione prosegue normalmente fino ad incontrare uno dei breakpoint
+
+179
+00:16:21,360 --> 00:16:26,880
+piazzati all'inizio e a quel punto si ferma. Ma in questo caso non è un blocco come quelli
+
+180
+00:16:26,880 --> 00:16:33,600
+descritti in precedenza, con il programma che si ferma ed esce. Semplicemente l'esecuzione resta
+
+181
+00:16:33,600 --> 00:16:39,560
+sospesa in attesa di poter proseguire, ma contemporaneamente l'ambiente di sviluppo
+
+182
+00:16:39,560 --> 00:16:44,480
+mostra al programmatore tutta una serie di informazioni sul codice e sui dati,
+
+183
+00:16:44,480 --> 00:16:50,600
+esattamente così come sono nell'istante in cui l'esecuzione si è fermata. A questo
+
+184
+00:16:50,600 --> 00:16:55,760
+punto è possibile esplorare il contenuto delle variabili, ricostruire sequenze di
+
+185
+00:16:55,760 --> 00:17:02,000
+funzioni invocate, addirittura si possono apportare modifiche ai dati ed eseguire codice
+
+186
+00:17:02,000 --> 00:17:09,920
+arbitrario. E tutto questo nell'esatto stato in cui l'esecuzione è stata sospesa. Una volta poi
+
+187
+00:17:09,920 --> 00:17:15,280
+che ha fatto tutte le prove e le analisi del caso, il programmatore può decidere di far
+
+188
+00:17:15,280 --> 00:17:21,360
+avanzare l'esecuzione una riga per volta, magari per vedere cosa accade riga per riga all'interno
+
+189
+00:17:21,360 --> 00:17:26,920
+del codice, oppure passare direttamente al breakpoint successivo, oppure ancora lasciare
+
+190
+00:17:26,920 --> 00:17:33,840
+che il programma proceda fino alla fine o venga bloccato e magari ricominci da capo.
+
+191
+00:17:33,840 --> 00:17:39,920
+Ora, io non lo so se sono riuscito a renderti l'idea, ma la differenza nell'esperienza di
+
+192
+00:17:39,920 --> 00:17:46,640
+utilizzo è enorme. Personalmente, da quando ho iniziato a utilizzare il debugger non ne ho
+
+193
+00:17:46,640 --> 00:17:52,440
+mai più fatto a meno. Spesso io lo uso perfino in fase di sviluppo del codice, lanciando il
+
+194
+00:17:52,440 --> 00:17:57,960
+programma, facendolo fermare ad un breakpoint e provando istruzioni per vederne immediatamente
+
+195
+00:17:57,960 --> 00:18:04,560
+i risultati senza dover poi rilanciare pagine o processi. Ormai, qualunque sia il progetto sul
+
+196
+00:18:04,560 --> 00:18:11,600
+quale devo lavorare, il mio setup di base comprende sempre il debugger attivo e funzionante.
+
+197
+00:18:11,600 --> 00:18:23,200
+Ma ancora non è tutto. Questo episodio verrà lunghissimo. Nel mondo reale alcuni bug sono
+
+198
+00:18:23,200 --> 00:18:30,400
+tostissimi. Se si vuole avere qualche speranza di poterli correggere, non basta solo padroneggiare
+
+199
+00:18:30,440 --> 00:18:36,120
+degli strumenti e avere un buon approccio investigativo, diciamo così. Occorre anche
+
+200
+00:18:36,120 --> 00:18:42,800
+farsi trovare pronti e applicare tutta una serie di contromisure prima che i bug si verifichino.
+
+201
+00:18:42,800 --> 00:18:48,880
+E la lista di cose che mi viene in mente in questo momento probabilmente non è completa ed
+
+202
+00:18:48,880 --> 00:18:55,200
+è anche molto lunga e ognuno dei punti meriterebbe un episodio a sé. Ma proverò almeno a fare un
+
+203
+00:18:55,240 --> 00:19:00,120
+elenco che magari ci servirà come punto di partenza per un'interessante discussione.
+
+204
+00:19:00,120 --> 00:19:04,920
+Sicuramente il modo in cui si scrive il codice può avere un forte impatto nel
+
+205
+00:19:04,920 --> 00:19:11,560
+momento in cui si dovrà andare ad analizzare e correggere un bug. Un codice ad esempio robusto
+
+206
+00:19:11,560 --> 00:19:17,760
+e magari disaccoppiato potrebbe rendere più semplice la scrittura di una patch. Un codice
+
+207
+00:19:17,760 --> 00:19:24,880
+pulito, magari elegante, scritto rispettando gli standard di progetto potrebbe anche essere
+
+208
+00:19:25,400 --> 00:19:30,280
+d'aiuto nel momento in cui lo si andrà a rileggere nel tentativo di capire il senso
+
+209
+00:19:30,280 --> 00:19:36,320
+delle singole istruzioni e se c'è qualcosa che non va tra esse. E lo stesso potrebbe valere
+
+210
+00:19:36,320 --> 00:19:42,680
+per dei commenti scritti bene, dove per bene intendo che effettivamente aiutino a capire
+
+211
+00:19:42,680 --> 00:19:46,320
+il funzionamento del codice. Non parlo ad esempio di quei commenti tipo
+
+212
+00:19:46,320 --> 00:19:54,320
+ritorna il valore scritto sulla istruzione return. C'è poi l'utilizzo dei log. Loggare
+
+213
+00:19:54,320 --> 00:20:01,200
+ogni volta che viene effettuata un'operazione della quale magari in futuro sarebbe interessante
+
+214
+00:20:01,200 --> 00:20:08,800
+poter sapere il risultato e porsi il problema di quali informazioni saranno utili per un'eventuale
+
+215
+00:20:08,800 --> 00:20:15,960
+risoluzione di problematiche future è sicuramente un ottimo modo per utilizzare i log.
+
+216
+00:20:16,720 --> 00:20:22,680
+Una riga ad esempio che descrive importazione fallita mi servirà a ben poco se non sarò in
+
+217
+00:20:22,680 --> 00:20:29,040
+grado di ricostruire quale importazione di quale elemento, gli ID coinvolti,
+
+218
+00:20:29,040 --> 00:20:34,080
+tutto quello che serve per riconoscere quale operazione veniva eseguita in quel momento.
+
+219
+00:20:34,080 --> 00:20:39,920
+Ci sarebbe poi tutto un discorso da fare sul modo di scrivere le interfacce e non
+
+220
+00:20:39,920 --> 00:20:45,200
+intendo solo le interfacce verso gli umani anche quelle verso gli altri sistemi e poi
+
+221
+00:20:45,200 --> 00:20:52,080
+il fatto di gestire tutti i casi particolari come lo spazio esaurito se si lavora con dei
+
+222
+00:20:52,080 --> 00:20:59,720
+file con il file system o altri tipi di risorse da verificare se sono disponibili se sono occupate
+
+223
+00:20:59,720 --> 00:21:07,040
+o la gestione di errori in caso di una connessione che potrebbe non sempre essere funzionante e tante
+
+224
+00:21:07,040 --> 00:21:12,000
+altre cose del genere e tutto questo è da considerare ancora prima che si verifichi
+
+225
+00:21:12,080 --> 00:21:17,160
+un qualsiasi bug. Nel momento in cui poi il problema ci verrà segnalato come abbiamo
+
+226
+00:21:17,160 --> 00:21:24,120
+visto ci servirà sicuramente un po di capacità investigativa, degli strumenti professionali come
+
+227
+00:21:24,120 --> 00:21:32,160
+gli ambienti di sviluppo, i sistemi di testing, i strumenti di editing e debugging ma oltre a
+
+228
+00:21:32,160 --> 00:21:39,440
+questo ci sono altre cose da tenere presenti. Prima fra tutte un corretto atteggiamento mentale,
+
+229
+00:21:40,000 --> 00:21:45,080
+essere convinti che il proprio codice sia perfetto ed esente da bug ad esempio è un
+
+230
+00:21:45,080 --> 00:21:51,680
+problema di molti sviluppatori così come prendere per oro colato qualsiasi segnalazione da parte di
+
+231
+00:21:51,680 --> 00:21:53,720
+un qualsiasi utente e invece
+

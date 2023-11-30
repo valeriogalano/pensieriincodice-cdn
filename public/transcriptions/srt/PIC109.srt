@@ -1,0 +1,280 @@
+1
+00:00:00,000 --> 00:00:17,340
+Benvenuto o benvenuta su Espresso, la rubrica di pensieri in codice nella quale ci beviamo
+
+2
+00:00:17,340 --> 00:00:23,680
+un caffè ed io ti racconto di un libro, un gadget, un videogame o qualunque altra cosa
+
+3
+00:00:23,680 --> 00:00:27,880
+che mi abbia colpito e che penso possa piacere anche a te.
+
+4
+00:00:28,200 --> 00:00:33,240
+Se al termine dell'episodio riterrai che io ti abbia dato un buon consiglio, potrai
+
+5
+00:00:33,240 --> 00:00:38,240
+offrirmi tu il prossimo caffè, acquistando a partire dal link affiliato che trovi in
+
+6
+00:00:38,240 --> 00:00:43,480
+descrizione o addirittura inviando un piccolo contributo per supportare il progetto.
+
+7
+00:00:43,480 --> 00:00:47,560
+Trovi tutti i dettagli sul sito pensieriincodice.it
+
+8
+00:00:52,320 --> 00:00:56,840
+Durante questo mese di agosto, nella pausa estiva, mi sono ritagliato un pochino di tempo
+
+9
+00:00:56,840 --> 00:01:02,480
+per me e così ho avuto modo di leggere un bel po' e tra i vari libri che ho approcciato
+
+10
+00:01:02,480 --> 00:01:07,620
+alcuni non mi hanno trasmesso granché, devo essere onesto, mentre altri hanno colpito
+
+11
+00:01:07,620 --> 00:01:14,680
+e anche molto forte la mia attenzione, quindi nei prossimi mesi aspettati più di un episodio
+
+12
+00:01:14,680 --> 00:01:16,960
+di Espresso dedicato ai libri.
+
+13
+00:01:16,960 --> 00:01:22,620
+E guarda caso, il consiglio che ho scelto per oggi per ricominciare in bellezza non è
+
+14
+00:01:22,620 --> 00:01:25,140
+proprio un libro, bensì un autore.
+
+15
+00:01:25,140 --> 00:01:30,860
+Si tratta di uno scrittore di racconti, più o meno tutta la sua produzione fino ad oggi
+
+16
+00:01:30,860 --> 00:01:35,260
+si può ottenere acquistando fondamentalmente un paio di raccolte.
+
+17
+00:01:35,260 --> 00:01:41,540
+Lui si chiama Ted Chiang e in realtà nella vita di tutti i giorni si occupa di redigere
+
+18
+00:01:41,540 --> 00:01:48,780
+documentazione tecnica per prodotti software e le due raccolte in questione sono Respiro
+
+19
+00:01:48,780 --> 00:01:50,780
+e Storie della tua vita.
+
+20
+00:01:51,060 --> 00:01:56,700
+Si tratta di due libri che contengono praticamente una manciata di racconti, saranno forse una
+
+21
+00:01:56,700 --> 00:02:02,500
+quindicina in tutto, ma con essi Chiang ha vinto una quantità impressionante di premi
+
+22
+00:02:02,500 --> 00:02:04,900
+e ispirato vari film di Hollywood.
+
+23
+00:02:04,900 --> 00:02:09,220
+Basta fare un giro sulla sua pagina Wikipedia per vedere l'elenco.
+
+24
+00:02:09,220 --> 00:02:16,020
+Ma a parte i riconoscimenti ufficiali, ciò che sorprende di questo autore, almeno secondo
+
+25
+00:02:16,020 --> 00:02:22,100
+me, è la sua capacità di creare mondi e realtà alternative e soprattutto di immaginare
+
+26
+00:02:22,100 --> 00:02:28,980
+in modo estremamente dettagliato i comportamenti degli esseri umani che vivono all'interno
+
+27
+00:02:28,980 --> 00:02:30,740
+delle sue ambientazioni.
+
+28
+00:02:30,740 --> 00:02:37,100
+Io avevo già letto alcuni suoi racconti qualche tempo fa e in particolare ero rimasto colpito
+
+29
+00:02:37,100 --> 00:02:43,460
+da Il ciclo di vita degli oggetti software, un romanzo breve nel quale descrive un mondo
+
+30
+00:02:43,460 --> 00:02:50,380
+in cui la realtà virtuale e le intelligenze artificiali sono talmente sviluppate da permettere
+
+31
+00:02:50,380 --> 00:02:55,540
+agli utenti di crescere ed educare delle vere e proprie creature virtuali.
+
+32
+00:02:55,540 --> 00:03:02,020
+La cosa interessante del racconto è che invece di concentrarsi sugli aspetti fantascientifici
+
+33
+00:03:02,020 --> 00:03:08,820
+o tecnologici della vicenda, Chiang racconta dell'affetto che alcuni utenti provano per
+
+34
+00:03:08,820 --> 00:03:16,860
+le proprie creature virtuali e del loro impegno per farli sopravvivere alla naturale obsolescenza
+
+35
+00:03:16,860 --> 00:03:19,580
+di tutto ciò che dipende dalla tecnologia.
+
+36
+00:03:19,580 --> 00:03:26,180
+Mi ha fatto pensare a quei vecchi personaggi dei videogiochi a cui ho giocato in passato,
+
+37
+00:03:26,180 --> 00:03:32,420
+quei personaggi che ho creato, equipaggiato, potenziato e ai quali ho fatto fare esperienza
+
+38
+00:03:32,420 --> 00:03:37,660
+e che poi sono stati abbandonati quando è uscito un videogioco più moderno o con una
+
+39
+00:03:37,660 --> 00:03:38,900
+grafica migliore.
+
+40
+00:03:38,900 --> 00:03:45,700
+Nel racconto di Chiang, gli utenti si affezionano alle loro creature e così le creature ai
+
+41
+00:03:45,700 --> 00:03:52,140
+loro proprietari e cosa accade poi quando i server di gioco vengono dismessi perché
+
+42
+00:03:52,140 --> 00:03:56,260
+troppo vecchi o anti-economici da mantenere attivi?
+
+43
+00:03:56,260 --> 00:04:03,140
+Inoltre, questo autore non si limita a parlare di tecnologia, gioca con il tempo e la casualità
+
+44
+00:04:03,140 --> 00:04:09,620
+degli eventi e dei comportamenti, rivoluziona i concetti legati alla religione e alla fede,
+
+45
+00:04:09,620 --> 00:04:15,180
+mette in dubbio le convinzioni umane, i ricordi e persino le certezze matematiche.
+
+46
+00:04:15,180 --> 00:04:21,580
+In un racconto, ad esempio, immagina una tecnologia di registrazione audio e video integrata direttamente
+
+47
+00:04:21,580 --> 00:04:27,240
+nel corpo di tutti i membri della popolazione e quando il protagonista si decide finalmente
+
+48
+00:04:27,240 --> 00:04:33,400
+ad utilizzare questo sistema, lo strumento sconvolge la sua esistenza demolendo un'intera
+
+49
+00:04:33,400 --> 00:04:34,680
+vita di certezze.
+
+50
+00:04:34,680 --> 00:04:40,560
+In un altro racconto, poi, descrive come si comporterebbero le persone se messe di fronte
+
+51
+00:04:40,560 --> 00:04:43,720
+all'evidenza dell'esistenza di inferno e paradiso.
+
+52
+00:04:43,720 --> 00:04:49,960
+In un altro ancora, esamina le conseguenze di una scoperta che mina alla base i principi
+
+53
+00:04:49,960 --> 00:04:51,440
+stessi della matematica.
+
+54
+00:04:51,960 --> 00:04:58,200
+Questi sono chiaramente solo alcuni esempi, e non voglio dirti troppo per non farti spoiler,
+
+55
+00:04:58,200 --> 00:05:03,560
+ma la cosa che più mi è piaciuta è che dopo aver scoperto queste due raccolte ho avuto
+
+56
+00:05:03,560 --> 00:05:09,520
+modo di riflettere per ore sulle idee in esse contenute e ancora oggi, a distanza di più
+
+57
+00:05:09,520 --> 00:05:15,120
+di un mese, mi sorprendo ancora a riflettere su qualcuno dei concetti di cui ho letto.
+
+58
+00:05:15,520 --> 00:05:19,680
+Quindi, semplicemente, non potevo non consigliarlo anche a te.
+
+59
+00:05:19,680 --> 00:05:26,040
+Se sei un po' come me, se come me ti appassionano la tecnologia e i comportamenti che le persone
+
+60
+00:05:26,040 --> 00:05:32,320
+assumono quando si confrontano con essa, allora non puoi assolutamente farti sfuggire questi
+
+61
+00:05:32,320 --> 00:05:33,320
+due libri.
+
+62
+00:05:33,320 --> 00:05:36,080
+Sono certissimo che poi mi ringrazierai.
+
+63
+00:05:36,080 --> 00:05:41,040
+Ti ricordo che in descrizione trovi i link per l'acquisto su Amazon se ti va di sostenere
+
+64
+00:05:41,040 --> 00:05:46,760
+pensieri in codice, poi lo ripeto perché qualcuno me l'ha chiesto più volte, usando
+
+65
+00:05:46,760 --> 00:05:52,560
+i link affiliati il prezzo di qualsiasi prodotto che acquisti non cambia, tu paghi sempre la
+
+66
+00:05:52,560 --> 00:05:58,520
+stessa cifra e l'unica differenza è che Amazon riconosce una piccola percentuale dell'acquisto
+
+67
+00:05:58,520 --> 00:06:02,360
+al proprietario del link, quindi in questo caso a me.
+
+68
+00:06:02,360 --> 00:06:08,160
+Quindi, detto questo per oggi è proprio tutto, episodio breve così ottimizziamo e sperando
+
+69
+00:06:08,160 --> 00:06:13,560
+di averti dato un buon consiglio io ti saluto, ti do appuntamento alla prossima settimana
+
+70
+00:06:13,560 --> 00:06:20,280
+e ti ricordo come al solito che un informatico risolve problemi a volte anche usando il computer.
+

@@ -1,0 +1,228 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice. Pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,400
+in meno di 5 minuti.
+
+3
+00:00:14,400 --> 00:00:29,980
+Oggi noi siamo ormai abituati a sentire l'espressione dati personali e nella maggior parte dei casi
+
+4
+00:00:29,980 --> 00:00:35,640
+la associamo a quelle informazioni raccolte da siti web, da colossi di internet o dalle
+
+5
+00:00:35,640 --> 00:00:43,060
+istituzioni. E sappiamo anche che essi vengono massicciamente impiegati e rielaborati per
+
+6
+00:00:43,060 --> 00:00:49,420
+offrirci dei servizi e dei prodotti personalizzati nel modo in cui un certo algoritmo decide che
+
+7
+00:00:49,420 --> 00:00:51,380
+sia il migliore per noi.
+
+8
+00:00:51,380 --> 00:00:57,300
+Si tratta di un qualcosa di cui siamo più o meno consci e che, a seconda dei casi, siamo
+
+9
+00:00:57,300 --> 00:01:03,180
+abituati a evitare, respingere o accettare soprattutto durante la nostra navigazione
+
+10
+00:01:03,180 --> 00:01:04,180
+online.
+
+11
+00:01:04,180 --> 00:01:09,900
+Tuttavia, non molti sanno che la raccolta dei dati personali è in realtà nata fuori
+
+12
+00:01:09,900 --> 00:01:16,580
+dal web e tutt'oggi prospera anche nei luoghi nei quali non ci viene naturale pensare che
+
+13
+00:01:16,580 --> 00:01:19,980
+ci sia e nei quali tendiamo anche ad abbassare la guardia.
+
+14
+00:01:19,980 --> 00:01:25,380
+Le prime attività ad avviare infatti la raccolta dei dati personali per fini commerciali sono
+
+15
+00:01:25,380 --> 00:01:31,420
+stati i supermercati negli anni 90 e in particolare è fra i casi più interessanti via quello
+
+16
+00:01:31,420 --> 00:01:33,900
+della catena di supermercati inglesi Tesco.
+
+17
+00:01:33,900 --> 00:01:42,020
+Era il 1993, in un ambiente nel quale si lottava continuamente per attirare la clientela sottraendola
+
+18
+00:01:42,020 --> 00:01:48,300
+alla concorrenza, quando i coniugi ambi sottoposero alla dirigenza della Tesco un'idea per un
+
+19
+00:01:48,300 --> 00:01:51,180
+nuovo progetto, la carta fedeltà.
+
+20
+00:01:51,620 --> 00:01:56,380
+L'idea di per sé era abbastanza semplice, con la carta fedeltà i consumatori avrebbero
+
+21
+00:01:56,380 --> 00:02:03,820
+accumulato punti per degli sconti e, contemporaneamente, i punti vendita avrebbero accumulato informazioni
+
+22
+00:02:03,820 --> 00:02:04,820
+sugli acquisti.
+
+23
+00:02:04,820 --> 00:02:10,020
+All'epoca si trattava di un tentativo piuttosto rudimentale e le informazioni raccolte erano
+
+24
+00:02:10,020 --> 00:02:16,700
+molto poche, nome, cognome, indirizzo, data, eura della spesa e totale dello scontrino,
+
+25
+00:02:16,700 --> 00:02:21,780
+nemmeno il dettaglio dei singoli prodotti acquistati, e tuttavia gli ambi riuscirono,
+
+26
+00:02:21,780 --> 00:02:25,380
+con così pochi dati, a tirare fuori un risultato impressionante.
+
+27
+00:02:25,380 --> 00:02:30,500
+Dai totali capirono che la maggior parte del fatturato era realizzato da un gruppo molto
+
+28
+00:02:30,500 --> 00:02:35,940
+ristretto di clienti affezionati, dai codici di avviamento postale dedussero quanto i clienti
+
+29
+00:02:35,940 --> 00:02:41,980
+fossero disposti a viaggiare e quanto imponente fosse la concorrenza quartiere per quartiere,
+
+30
+00:02:41,980 --> 00:02:46,660
+e infine dalle date capirono quali clienti acquistavano tutti i giorni e quali invece
+
+31
+00:02:46,660 --> 00:02:47,860
+solo nel weekend.
+
+32
+00:02:47,860 --> 00:02:52,900
+So che sembrano informazioni di poco conto, ma furono sufficienti per avviare una campagna
+
+33
+00:02:52,900 --> 00:02:58,660
+di marketing tramite buoni sconto che fece aumentare le vendite della Tesco notevolmente.
+
+34
+00:02:58,660 --> 00:03:01,620
+E poi ovviamente il sistema iniziò ad evolversi.
+
+35
+00:03:01,620 --> 00:03:07,180
+Con le vendite online iniziarono gli sconti personalizzati e le liste di prodotti preferiti
+
+36
+00:03:07,180 --> 00:03:09,580
+dei vari possessori delle varie carte fedeltà.
+
+37
+00:03:10,180 --> 00:03:15,060
+Secondo molti, addirittura, questo sistema ha rappresentato il motivo principale per
+
+38
+00:03:15,060 --> 00:03:19,940
+il quale nel corso del tempo la Tesco ha poi prevalso su tutta la sua concorrenza.
+
+39
+00:03:19,940 --> 00:03:25,140
+Durante una riunione con i dirigenti dei punti vendita, uno di questi arrivò perfino ad
+
+40
+00:03:25,140 --> 00:03:30,820
+affermare che gli ambi fossero riusciti, in tre mesi, a conoscere i clienti della catena
+
+41
+00:03:30,820 --> 00:03:34,500
+meglio di quanto fosse riuscito lui in trent'anni di attività.
+
+42
+00:03:35,460 --> 00:03:40,260
+E, a giudicare dagli episodi raccontati dallo stesso ambi, pare che ciò fosse assolutamente
+
+43
+00:03:40,260 --> 00:03:41,260
+vero.
+
+44
+00:03:41,260 --> 00:03:46,020
+Anzi, pare che l'azienda iniziasse addirittura a conoscere le persone meglio dei loro stessi
+
+45
+00:03:46,020 --> 00:03:47,020
+partner.
+
+46
+00:03:47,020 --> 00:03:50,620
+Uno degli aneddoti più sorprendenti riguarda il sito e-commerce.
+
+47
+00:03:50,620 --> 00:03:56,100
+Infatti, poco dopo il lancio, una delle clienti chiamò il servizio assistenza per segnalare
+
+48
+00:03:56,100 --> 00:04:02,260
+che le sue liste di consigliati erano sbagliate in quanto contenevano confezioni di preservativi.
+
+49
+00:04:02,580 --> 00:04:07,500
+Ma né lei né suo marito li utilizzavano, quindi nessuno di loro le aveva mai acquistate
+
+50
+00:04:07,500 --> 00:04:08,500
+prima.
+
+51
+00:04:08,500 --> 00:04:14,380
+Oppure, un altro aneddoto riguarda un padre che entrò furioso in un punto vendita per
+
+52
+00:04:14,380 --> 00:04:20,580
+denunciare il fatto che alla sua giovane figlia fossero arrivati sconti su prodotti per donne
+
+53
+00:04:20,580 --> 00:04:21,580
+incinte.
+
+54
+00:04:21,580 --> 00:04:25,060
+E si dava il caso che lei non fosse neanche fidanzata.
+
+55
+00:04:25,060 --> 00:04:32,220
+Beh, in questo e in tanti altri casi, nonostante la realtà dimostrasse palesemente il contrario,
+
+56
+00:04:33,180 --> 00:04:38,140
+Hanbi racconta che l'atesco preferì rispondere che c'erano stati degli errori nei dati e
+
+57
+00:04:38,140 --> 00:04:42,300
+avrebbe proceduto manualmente alla correzione delle liste.
+

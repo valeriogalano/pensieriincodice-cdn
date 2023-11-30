@@ -1,0 +1,1340 @@
+1
+00:00:00,000 --> 00:00:05,320
+Ci siamo lasciati l'ultima volta dopo esserci raccontati la prima parte della vita della
+
+2
+00:00:05,320 --> 00:00:11,240
+diva del cinema degli anni 30 e 40, Edie Lamarr, nonché gli eventi e gli incontri che a mio
+
+3
+00:00:11,240 --> 00:00:16,120
+giudizio di più hanno contribuito alla maturazione delle sue idee in campo tecnologico.
+
+4
+00:00:16,120 --> 00:00:22,140
+E come vedremo fra poco, la Lamarr è stata sì un personaggio molto conosciuto nel mondo
+
+5
+00:00:22,140 --> 00:00:26,880
+del cinema, ma è anche stata fondamentale per la nascita di quella stessa tecnologia
+
+6
+00:00:26,880 --> 00:00:32,960
+wireless che noi ogni giorno utilizziamo all'interno di moltissimi dei nostri dispositivi elettronici.
+
+7
+00:00:32,960 --> 00:00:39,560
+E ciò non sarebbe stato di certo possibile se lei non avesse vissuto la vita che ha vissuto,
+
+8
+00:00:39,560 --> 00:00:45,200
+se non avesse potuto vantare quella sua intelligenza e quelle sue particolari attitudini e se non
+
+9
+00:00:45,200 --> 00:00:49,320
+avesse incontrato tutta una serie di singolari personaggi.
+
+10
+00:00:49,320 --> 00:00:55,040
+Per questo motivo, se non hai già ascoltato la prima parte di questo podcast, ti consiglio
+
+11
+00:00:55,040 --> 00:01:00,360
+assolutamente di recuperarla, perché contiene moltissimi passaggi indispensabili per capire
+
+12
+00:01:00,360 --> 00:01:04,760
+quanto ti racconterò a breve, in descrizione trovi ovviamente il link.
+
+13
+00:01:04,760 --> 00:01:10,280
+Se invece siamo pronti per partire, e io so che lo sei perché in tanti mi avete scritto
+
+14
+00:01:10,280 --> 00:01:16,320
+chiedendomi quando sarebbe uscita questa seconda parte, beh, non ci resta che lanciare la sigla.
+
+15
+00:01:16,320 --> 00:01:24,280
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici.
+
+16
+00:01:24,520 --> 00:01:26,520
+Con Valerio Galano.
+
+17
+00:01:32,120 --> 00:01:37,160
+Tornando quindi alla nostra storia, siamo a cavallo tra gli anni 30 e 40 del secolo
+
+18
+00:01:37,160 --> 00:01:42,600
+scorso, e dunque in un periodo di profonda instabilità internazionale.
+
+19
+00:01:42,600 --> 00:01:48,400
+La guerra imperversa sulla terraferma, in cielo, ma anche e soprattutto in mare, dove
+
+20
+00:01:48,400 --> 00:01:52,400
+la pericolosità dei sommergibili tedeschi appare più che evidente.
+
+21
+00:01:52,920 --> 00:01:58,200
+Un episodio emblematico, ad esempio, è quello della nave olandese Volendam, diretta a New
+
+22
+00:01:58,200 --> 00:02:05,480
+York e carica di quasi 900 persone, tra cui 320 bambini, che viene attaccata da un U-Bot
+
+23
+00:02:05,480 --> 00:02:11,520
+tedesco e, anche senza causare in realtà gravi conseguenze, ci sarà infatti un'unica
+
+24
+00:02:11,520 --> 00:02:16,760
+vittima, il fatto stesso scuote enormemente l'opinione pubblica americana.
+
+25
+00:02:17,320 --> 00:02:22,840
+Per ciò che riguarda la guerra in mare, poi, dal punto di vista tecnologico, tra le armi
+
+26
+00:02:22,840 --> 00:02:29,680
+più utilizzate, più costose e, paradossalmente, più inefficienti del momento, ci sono proprio
+
+27
+00:02:29,680 --> 00:02:30,680
+i siluri.
+
+28
+00:02:30,680 --> 00:02:36,920
+Questi, infatti, costano svariati milioni di dollari e al tempo stesso sono molto imprecisi,
+
+29
+00:02:36,920 --> 00:02:42,720
+anche perché l'attuale sistema di guida via radio è molto rudimentale e facile da disturbare.
+
+30
+00:02:43,120 --> 00:02:48,760
+Pertanto, appare chiaro a tutti che un notevole vantaggio tattico in questa guerra potrebbe
+
+31
+00:02:48,760 --> 00:02:53,920
+derivare proprio da un sistema di guida più robusto, a prova di intercettazione.
+
+32
+00:02:53,920 --> 00:03:00,720
+E il Secret Communication System, questo è il nome con cui verrà battezzato nel brevetto,
+
+33
+00:03:00,720 --> 00:03:07,400
+ideato da Eddie Lamar e poi ingegnerizzato da George Antil, è proprio quel che servirebbe
+
+34
+00:03:07,400 --> 00:03:11,720
+per influenzare pesantemente le sorti di questo conflitto.
+
+35
+00:03:11,720 --> 00:03:17,120
+Come abbiamo già accennato, non sappiamo se l'attrice abbia mai sentito discutere
+
+36
+00:03:17,120 --> 00:03:22,200
+di un sistema di guida del genere negli incontri che il marito austriaco teneva con i propri
+
+37
+00:03:22,200 --> 00:03:29,000
+clienti, o se abbia sottratto dei documenti tecnici e progetti durante la fuga, o se abbia
+
+38
+00:03:29,000 --> 00:03:33,440
+preso appunti di suo pugno, o se semplicemente avesse una buona memoria.
+
+39
+00:03:33,440 --> 00:03:39,520
+Fatto sta che la sua invenzione riguarda proprio un sistema di comunicazione avanzato per la
+
+40
+00:03:39,520 --> 00:03:40,880
+guida dei siluri.
+
+41
+00:03:41,040 --> 00:03:46,480
+L'idea geniale alla base del Secret Communication System è quella di servirsi di un concetto
+
+42
+00:03:46,480 --> 00:03:48,720
+denominato Frequency Hopping.
+
+43
+00:03:48,720 --> 00:03:54,760
+Questa tecnica, strategia o algoritmo che dir si voglia, a livello concettuale in fin
+
+44
+00:03:54,760 --> 00:04:00,480
+dei conti è piuttosto semplice e consiste nell'inviare un segnale radio saltando velocemente
+
+45
+00:04:00,480 --> 00:04:02,160
+tra una frequenza e l'altra.
+
+46
+00:04:02,160 --> 00:04:08,240
+In tal modo, il segnale viene spezzettato in varie trasmissioni, su più canali, rendendo
+
+47
+00:04:08,240 --> 00:04:13,800
+di fatto impossibile disturbarlo, e affinché tutto ciò possa funzionare, chiaramente
+
+48
+00:04:13,800 --> 00:04:19,200
+sia il ricevitore che il trasmettitore si muovono tra le frequenze rispettando i medesimi
+
+49
+00:04:19,200 --> 00:04:22,280
+tempi ed il medesimo ordine di salto.
+
+50
+00:04:22,280 --> 00:04:27,920
+Praticamente, se questo sistema fosse stato applicato alle dotazioni militari, sarebbe
+
+51
+00:04:27,920 --> 00:04:33,600
+stato possibile pilotare un siluro trasmettendo dalla nave un segnale che avrebbe cambiato
+
+52
+00:04:33,600 --> 00:04:35,600
+frequenza ogni pochi istanti.
+
+53
+00:04:36,120 --> 00:04:41,560
+Il siluro avrebbe ricevuto i comandi su di una lista di frequenze ben definite e ordinate
+
+54
+00:04:41,560 --> 00:04:47,200
+secondo una certa logica, in una sequenza pseudo-casuale utilizzata contemporaneamente
+
+55
+00:04:47,200 --> 00:04:49,680
+sia dalla trasmittente che dal ricevitore.
+
+56
+00:04:49,680 --> 00:04:55,560
+Da un punto di vista concettuale, quello che Eddie e George hanno ideato è di fatto un
+
+57
+00:04:55,560 --> 00:05:01,240
+precursore dello Spread Spectrum, il sistema che tutt'oggi è alla base delle comunicazioni
+
+58
+00:05:01,240 --> 00:05:06,680
+wireless più diffuse, smartphone, schede wifi, ricitrasmettenti, eccetera.
+
+59
+00:05:06,680 --> 00:05:13,600
+Il nome Spread Spectrum sta proprio ad indicare che l'informazione trasmessa viene spalmata,
+
+60
+00:05:13,600 --> 00:05:17,040
+spreaded, sull'intero spettro delle frequenze disponibili.
+
+61
+00:05:17,040 --> 00:05:23,400
+Ma come si poteva negli anni 40, senza microchip o transistor, realizzare un meccanismo del
+
+62
+00:05:23,400 --> 00:05:26,800
+genere e montarlo a bordo di un siluro?
+
+63
+00:05:26,960 --> 00:05:32,840
+Beh, questa seconda parte del progetto del Secret Communication System è sicuramente
+
+64
+00:05:32,840 --> 00:05:35,320
+da accreditare a George Antil.
+
+65
+00:05:35,320 --> 00:05:41,720
+Il musicista, infatti, come abbiamo già detto, era anche un abilissimo inventore di strumenti
+
+66
+00:05:41,720 --> 00:05:47,320
+musicali automatici, qualcosa che ricordava molto, ad esempio, i pianoforti dei saloon
+
+67
+00:05:47,320 --> 00:05:51,800
+che suonavano da soli senza bisogno che si piggiassero realmente i tasti.
+
+68
+00:05:52,240 --> 00:05:57,800
+E per far funzionare queste sue creazioni e permettergli di eseguire tutta una serie
+
+69
+00:05:57,800 --> 00:06:05,800
+di melodie diverse, George utilizzava un sistema semplice quanto ingegnoso, una serie di carte
+
+70
+00:06:05,800 --> 00:06:06,800
+forate.
+
+71
+00:06:06,800 --> 00:06:12,440
+In pratica, gli strumenti erano dotati di rulli che facevano scorrere delle strisce di
+
+72
+00:06:12,440 --> 00:06:13,680
+carta forata.
+
+73
+00:06:13,680 --> 00:06:19,400
+In questi fogli, i vari fori rappresentavano le varie note da suonare, qualcosa di molto
+
+74
+00:06:19,400 --> 00:06:24,960
+simile ai rulli dentati dei carillon, in cui ciascun dentino fa suonare una certa nota.
+
+75
+00:06:24,960 --> 00:06:30,120
+Semplicemente, cambiando il rullo di carta forata, si istruiva lo strumento a suonare
+
+76
+00:06:30,120 --> 00:06:31,960
+una melodia diversa.
+
+77
+00:06:31,960 --> 00:06:38,160
+L'idea per l'applicazione militare era appunto quella di dotare sia i siluri sia le navi
+
+78
+00:06:38,160 --> 00:06:44,120
+di un meccanismo simile a quello del pianoforte automatico, solo che i fogli forati, invece
+
+79
+00:06:44,120 --> 00:06:49,800
+di indicare le note, avrebbero indicato le frequenze da utilizzare per la trasmissione
+
+80
+00:06:49,800 --> 00:06:51,120
+dei comandi di guida.
+
+81
+00:06:51,120 --> 00:06:57,200
+Se trasmittente e ricevente fossero stati dotati di fogli con gli stessi fori e li avessero
+
+82
+00:06:57,200 --> 00:07:02,940
+fatti scorrere contemporaneamente, allora si sarebbero sintonizzati automaticamente all'unisono
+
+83
+00:07:02,940 --> 00:07:04,280
+sulle stesse frequenze.
+
+84
+00:07:04,280 --> 00:07:09,640
+Infine, i due motori a velocità costante che avrebbero mosso i rulli sarebbero stati
+
+85
+00:07:09,640 --> 00:07:14,480
+attivati contemporaneamente grazie ad un meccanismo a strappo che sarebbe entrato in
+
+86
+00:07:14,480 --> 00:07:19,600
+funzione sempre automaticamente nel momento in cui il siluro si fosse separato dalla
+
+87
+00:07:19,600 --> 00:07:20,600
+nave.
+
+88
+00:07:20,600 --> 00:07:25,440
+In un primo momento tutto sembra andare per il meglio e l'idea sembra viaggiare a gonfie
+
+89
+00:07:25,440 --> 00:07:28,240
+vele verso una vera e propria applicazione.
+
+90
+00:07:28,240 --> 00:07:35,360
+Nel dicembre del 1940, Eddie e George inviano persino una descrizione delle loro idee al
+
+91
+00:07:35,360 --> 00:07:41,360
+National Inventors Council e il direttore dell'ufficio li incoraggia a proseguire il
+
+92
+00:07:41,360 --> 00:07:46,240
+loro lavoro in vista del brevetto che viene poi effettivamente approvato nell'agosto del
+
+93
+00:07:46,240 --> 00:07:47,240
+1942.
+
+94
+00:07:47,240 --> 00:07:53,280
+Tuttavia, quando il progetto viene finalmente sottoposto al vaglio della Marina degli Stati
+
+95
+00:07:53,280 --> 00:07:58,240
+Uniti, la risposta ottenuta risulta assolutamente deludente.
+
+96
+00:07:58,240 --> 00:08:04,640
+Il sistema infatti sembra essere inutilizzabile perché troppo ingombrante nonostante gli
+
+97
+00:08:04,640 --> 00:08:08,440
+sforzi dei due autori per renderlo il più compatto possibile.
+
+98
+00:08:08,440 --> 00:08:15,520
+Ufficialmente, dunque, le ragioni del rifiuto sono piuttosto esplicite, ma i stessi protagonisti
+
+99
+00:08:15,520 --> 00:08:21,200
+della storia e poi i successivi studiosi della vicenda nutrono vari sospetti sul fatto
+
+100
+00:08:21,200 --> 00:08:23,880
+che le ragioni effettive siano ben diverse.
+
+101
+00:08:23,880 --> 00:08:29,880
+Secondo lo stesso George Antil, ad esempio, il fatto che loro abbiano parlato, nella descrizione
+
+102
+00:08:29,880 --> 00:08:35,480
+del meccanismo di pianoforte automatico, e che i due siano molto conosciuti per lo
+
+103
+00:08:35,480 --> 00:08:42,280
+più come un musicista ed un'attrice, piuttosto che come ingegneri, abbia determinato un moto
+
+104
+00:08:42,280 --> 00:08:46,000
+di stizza nell'impiegato che si è trovato a valutare il brevetto.
+
+105
+00:08:46,000 --> 00:08:52,080
+Secondo Edoardo Segantini, invece, autore della biografia Edi Lamar, La Donna Gatto,
+
+106
+00:08:52,080 --> 00:08:58,320
+il brevetto era così avanti dal punto di vista tecnologico rispetto ai suoi tempi da
+
+107
+00:08:58,320 --> 00:09:04,240
+far sì che le potenzialità superassero il limite di comprensione dell'impiegato di turno.
+
+108
+00:09:04,240 --> 00:09:10,960
+Secondo lo scienziato Robert Price, ancora, il motivo reale del rifiuto è invece da ricercare
+
+109
+00:09:10,960 --> 00:09:13,280
+nello status della Lamar.
+
+110
+00:09:13,280 --> 00:09:19,560
+Da alcuni documenti collegati al brevetto, infatti, emerge che l'attrice è stata classificata
+
+111
+00:09:19,560 --> 00:09:26,120
+dal governo degli Stati Uniti come una Enemy Alien, cioè come un soggetto poco affidabile
+
+112
+00:09:26,120 --> 00:09:30,600
+e da tenere lontano da tutte le questioni strategiche e militari, e questo per via delle
+
+113
+00:09:30,600 --> 00:09:32,200
+sue origini austriache.
+
+114
+00:09:32,200 --> 00:09:38,280
+Ma, in ogni caso, quale che sia il motivo reale, con questo rifiuto l'invenzione di
+
+115
+00:09:38,280 --> 00:09:44,920
+Edi e George, il Secret Communication System, sembra proprio essere finita per sempre.
+
+116
+00:09:49,920 --> 00:09:55,680
+Intanto gli anni passano e la carriera dell'attrice procede per la sua strada, arriva al suo
+
+117
+00:09:55,760 --> 00:09:58,800
+apice ed inizia anche a volgere al declino.
+
+118
+00:09:58,800 --> 00:10:06,360
+Ma nel 1957 accade un evento che riporta in auge l'idea del frequency hopping, cioè proprio
+
+119
+00:10:06,360 --> 00:10:10,520
+quel concetto che era alla base del brevetto Lamar-Until.
+
+120
+00:10:10,520 --> 00:10:17,920
+La divisione ingegneristica della Sylvania Electronics System di Buffalo progetta e realizza
+
+121
+00:10:17,920 --> 00:10:23,640
+una versione più avanzata della soluzione descritta dai due artisti, rimpiazzando il
+
+122
+00:10:23,640 --> 00:10:30,280
+sistema meccanico dei rotoli forati con un modernissimo ritrovato della tecnologia,
+
+123
+00:10:30,280 --> 00:10:36,280
+il cui primo prototipo era stato prodotto solo nel 47, cioè 5 anni dopo l'approvazione
+
+124
+00:10:36,280 --> 00:10:37,280
+del brevetto.
+
+125
+00:10:37,280 --> 00:10:42,400
+Questa avanzatissima tecnologia è niente di meno che il transistor.
+
+126
+00:10:42,400 --> 00:10:48,680
+Il risultato di questo aggiornamento è un sistema più compatto, più versatile di
+
+127
+00:10:48,680 --> 00:10:54,360
+quello descritto nel brevetto, molto più utilizzabile, ma che in fin dei conti si basa
+
+128
+00:10:54,360 --> 00:10:58,200
+esattamente sulle stesse idee e sugli stessi principi.
+
+129
+00:10:58,200 --> 00:11:03,760
+Purtroppo per loro, però, sembra che né Eddie né George, che morirà solo due anni
+
+130
+00:11:03,760 --> 00:11:12,040
+dopo, siano stati messi a conoscenza di queste evoluzioni, almeno non fino al 1962, anno
+
+131
+00:11:12,040 --> 00:11:18,040
+nel quale il sistema di guida viene effettivamente rivelato al grande pubblico, cioè tre anni
+
+132
+00:11:18,040 --> 00:11:20,840
+dopo la scadenza del brevetto originale.
+
+133
+00:11:20,840 --> 00:11:27,400
+In realtà esistono documenti che attestano che il lavoro dei due, quello definito inutilizzabile
+
+134
+00:11:27,400 --> 00:11:33,200
+dalla marina militare, sia stato impiegato eccome già prima del 57, ad esempio per la
+
+135
+00:11:33,200 --> 00:11:34,200
+guida di droni.
+
+136
+00:11:34,200 --> 00:11:39,360
+Ma in ogni caso, riconosciuta o meno, già allora appare chiaro che l'idea del frequency
+
+137
+00:11:39,360 --> 00:11:42,920
+hopping avrà effetti inimmaginabili sulle sorti del mondo.
+
+138
+00:11:43,440 --> 00:11:50,200
+Il 1960, infatti, è l'anno della crisi dei missili di Cuba, due settimane tristemente
+
+139
+00:11:50,200 --> 00:11:55,920
+famose durante le quali la situazione diventa davvero tesa, un contesto in cui la capacità
+
+140
+00:11:55,920 --> 00:12:01,980
+di rendere le proprie comunicazioni non intercettabili e non disturbabili torna ad essere un argomento
+
+141
+00:12:01,980 --> 00:12:02,980
+fondamentale.
+
+142
+00:12:02,980 --> 00:12:09,040
+E il sistema di trasmissione della Silvania, basato come dicevamo sul brevetto Lamar Antil
+
+143
+00:12:09,040 --> 00:12:16,040
+e denominato BLADES, implementa proprio questa importante funzionalità, incorporando appunto
+
+144
+00:12:16,040 --> 00:12:21,600
+il meccanismo di salto su un ampio numero di frequenze, lo Spread Sprectum Frequency
+
+145
+00:12:21,600 --> 00:12:22,600
+Hopping.
+
+146
+00:12:22,600 --> 00:12:28,160
+Ah, e altra nota tecnologica importante, questa versione aggiornata del sistema di controllo
+
+147
+00:12:28,160 --> 00:12:33,800
+implementa anche un modernissimo algoritmo di ridondanza del dato, fondamentale per la
+
+148
+00:12:33,800 --> 00:12:35,280
+correzione dell'errore.
+
+149
+00:12:35,760 --> 00:12:41,520
+Tale algoritmo trasmette dei dati aggiuntivi rispetto alle sole informazioni inviate e,
+
+150
+00:12:41,520 --> 00:12:46,840
+così facendo, in caso di malfunzionamenti, questi dati ridondati possono essere utilizzati
+
+151
+00:12:46,840 --> 00:12:51,400
+per ricostruire eventuali parti di messaggio danneggiate o non pervenute.
+
+152
+00:12:51,400 --> 00:12:56,600
+L'efficienza dell'algoritmo di BLADES, tra l'altro, è altissima per il periodo, si parla
+
+153
+00:12:56,600 --> 00:13:01,720
+infatti della capacità di ricostruire fino al 33% di informazione persa.
+
+154
+00:13:02,280 --> 00:13:07,800
+Grazie a questa evoluzione del Secret Communication System comunque le comunicazioni delle forze
+
+155
+00:13:07,800 --> 00:13:13,860
+degli Stati Uniti risultano sia impossibili da intercettare, sia resistenti a disturbi
+
+156
+00:13:13,860 --> 00:13:15,200
+e malfunzionamenti.
+
+157
+00:13:15,200 --> 00:13:21,840
+Ma la storia non finisce qui, successivamente lo Spread Spectrum viene impiegato anche
+
+158
+00:13:21,840 --> 00:13:27,480
+per la comunicazione con sommergibili armati con testate nucleari, per un sistema di BOE
+
+159
+00:13:27,480 --> 00:13:33,600
+di intercettazione in mare chiamato SONOBOI e per la comunicazione con aerei spia militari
+
+160
+00:13:33,600 --> 00:13:34,600
+dell'Aerojet.
+
+161
+00:13:34,600 --> 00:13:38,520
+E in tutto questo siamo appena agli anni Sessanta.
+
+162
+00:13:38,520 --> 00:13:48,840
+Mentre però le forze armate traggono vantaggio dall'applicazione in vari campi dello Spread
+
+163
+00:13:48,840 --> 00:13:54,240
+Spectrum, George è scomparso e la carriera ad attrice di Eddie è in caduta libera.
+
+164
+00:13:54,240 --> 00:13:59,880
+La televisione inizia a diffondersi nelle case degli americani e l'attrice tenta, un
+
+165
+00:13:59,880 --> 00:14:05,720
+po' come tutti all'epoca, un passaggio dal grande al piccolo schermo, senza però riscuotere
+
+166
+00:14:05,720 --> 00:14:07,080
+eccessive fortune.
+
+167
+00:14:07,080 --> 00:14:13,240
+Poi attraversa vari altri matrimoni, praticamente tutti fallimentari, alla fine ne arriverà
+
+168
+00:14:13,240 --> 00:14:16,520
+a totalizzare ben 6 con altrettanti divorzi.
+
+169
+00:14:16,520 --> 00:14:23,600
+Iniziano a manifestarsi problemi mentali sotto forma di stati di confusione e cleptomania.
+
+170
+00:14:23,960 --> 00:14:29,360
+A tutto questo si aggiunge una semicecità causata da una crescente cataratta.
+
+171
+00:14:29,360 --> 00:14:36,760
+E, come se non bastasse, Eddie resta coinvolta in un buon numero di cause legali, molte indentate
+
+172
+00:14:36,760 --> 00:14:41,760
+da lei stessa, di cui ben poche si riveleranno in qualche modo fruttuose.
+
+173
+00:14:41,760 --> 00:14:49,360
+Ma mentre la Lamar Diva si incammina verso il tramonto, per la Lamar Inventrice il fatto
+
+174
+00:14:49,360 --> 00:14:53,040
+ha ancora qualche piccola soddisfazione nascosta dietro l'angolo.
+
+175
+00:14:53,480 --> 00:15:02,320
+Il 12 marzo del 1997, infatti a ben 55 anni dalla registrazione del brevetto, la Electronic
+
+176
+00:15:02,320 --> 00:15:09,280
+Frontier Foundation, l'IFF, conferisce quasi a sorpresa a Eddie e George il premio Pioneer
+
+177
+00:15:09,280 --> 00:15:13,640
+Award per l'invenzione del Frequency Hopper Spread Spectrum.
+
+178
+00:15:13,640 --> 00:15:19,320
+E, tanto per confermare il carattere intramontabile della diva, alla ricezione della notizia del
+
+179
+00:15:19,320 --> 00:15:25,480
+premio l'ormai 83enne Eddie Lamar risponde con un simpatico «era ora».
+
+180
+00:15:25,480 --> 00:15:27,920
+In effetti, però, è vero.
+
+181
+00:15:27,920 --> 00:15:32,640
+Nel corso degli anni l'idea del Frequency Hopper Spread Spectrum è stata impiegata
+
+182
+00:15:32,640 --> 00:15:35,480
+per innumerevoli applicazioni tecnologiche.
+
+183
+00:15:35,480 --> 00:15:41,320
+Di alcune abbiamo già parlato, di altre parleremo più approfonditamente a breve.
+
+184
+00:15:41,320 --> 00:15:46,960
+E, per inciso, è un vero peccato che Eddie e George non abbiano rinnovato la licenza
+
+185
+00:15:46,960 --> 00:15:47,960
+del brevetto.
+
+186
+00:15:48,200 --> 00:15:52,680
+Anche pochi anni, infatti, gli avrebbero fruttato cifre impensabili.
+
+187
+00:15:52,680 --> 00:15:58,840
+Secondo l'autore della biografia ufficiale di Eddie, negli anni della moderna telefonia,
+
+188
+00:15:58,840 --> 00:16:05,320
+i diritti avrebbero avuto un valore di circa 166 miliardi di dollari l'anno, e parliamo
+
+189
+00:16:05,320 --> 00:16:07,760
+di una stima fatta più di dieci anni fa.
+
+190
+00:16:07,760 --> 00:16:14,080
+Ma, ad ogni modo, così non è stato e, dopo gli impieghi militari degli anni 60 e 70,
+
+191
+00:16:14,080 --> 00:16:19,400
+a partire dagli anni 80, prende in via anche un altro movimento tecnologico che fonda le
+
+192
+00:16:19,400 --> 00:16:21,880
+proprie basi sull'idea del Frequency Hopper.
+
+193
+00:16:21,880 --> 00:16:28,480
+Il colonnello David Hughes, una figura che tutt'oggi è leggendaria nel panorama statunitense,
+
+194
+00:16:28,480 --> 00:16:34,440
+sfrutta, infatti, questo algoritmo per portare avanti un'opera di spinta tecnologica senza
+
+195
+00:16:34,440 --> 00:16:35,960
+precedenti per l'epoca.
+
+196
+00:16:35,960 --> 00:16:43,040
+Siamo, appunto, nei primi anni 80, internet inizia appena a diffondersi al di fuori degli
+
+197
+00:16:43,040 --> 00:16:49,160
+ambienti militari e della ricerca scientifica, e il colonnello Hughes, una volta andato in
+
+198
+00:16:49,160 --> 00:16:55,240
+pensione dall'esercito, ha fondato una sua azienda di consulenza in ambito informatico
+
+199
+00:16:55,240 --> 00:17:01,360
+e di telecomunicazione, e si lancia nel promettente ramo dei collegamenti wireless.
+
+200
+00:17:01,360 --> 00:17:07,460
+Il merito di quest'uomo è sicuramente quello di aver capito quasi da subito che il collegamento
+
+201
+00:17:07,460 --> 00:17:13,540
+senza filo, data la sua maggiore semplicità e i costi più contenuti, è la tecnologia
+
+202
+00:17:13,540 --> 00:17:18,380
+che diventerà la più diffusa nell'ambito delle comunicazioni e delle trasmissioni dei
+
+203
+00:17:18,380 --> 00:17:19,380
+dati.
+
+204
+00:17:19,380 --> 00:17:24,940
+Hughes inizia quindi a offrire servizi per la connessione wireless ad internet nelle
+
+205
+00:17:24,940 --> 00:17:31,540
+scuole, nei pubblici uffici e nelle aziende, e al tempo stesso inizia una battaglia ideologica
+
+206
+00:17:31,540 --> 00:17:37,820
+e logistica per portare il collegamento anche nelle zone meno popolose del Colorado, quelle
+
+207
+00:17:37,820 --> 00:17:44,340
+in cui, per questione di costi e di scarsità di utenti, le grandi aziende hanno meno interesse
+
+208
+00:17:44,340 --> 00:17:47,620
+a portare i collegamenti via cavo alle piccole comunità.
+
+209
+00:17:47,620 --> 00:17:55,220
+E tutta la tecnologia wireless venduta ed installata da Hughes si basa appunto su una versione del
+
+210
+00:17:55,220 --> 00:18:01,300
+Frequency Hopper Spread Spectrum molto simile a quella ideata da Eddie e da George.
+
+211
+00:18:01,300 --> 00:18:07,860
+E' dunque questo il motivo per cui, quando nel 1997 la Electronic Frontier Foundation
+
+212
+00:18:07,860 --> 00:18:13,940
+avvia la ricerca per i candidati al premio Pioneer Award, che Hughes, considerato appunto
+
+213
+00:18:13,940 --> 00:18:19,220
+un paladino della libertà di internet che ha fatto tanto per ridurre il digital divide
+
+214
+00:18:19,220 --> 00:18:25,100
+all'interno della popolazione del Colorado, vuole proporre proprio Eddie Lamar e George
+
+215
+00:18:25,100 --> 00:18:29,580
+Antil, riportando così alla ribalta le loro anime da inventori.
+
+216
+00:18:29,580 --> 00:18:35,660
+A questo primo e inaspettato riconoscimento ne seguiranno poi molti altri, tra cui il
+
+217
+00:18:35,660 --> 00:18:42,340
+più prestigioso e forse più apprezzato dalla stessa attrice, la medaglia Victor Kaplan,
+
+218
+00:18:42,340 --> 00:18:47,660
+massimo riconoscimento della sua nazione d'origine assegnato dall'Accademia Austriaca delle Scienze.
+
+219
+00:18:47,660 --> 00:18:58,500
+Come abbiamo già ripetuto più volte, tra le più importanti e famose applicazioni del
+
+220
+00:18:58,500 --> 00:19:05,140
+Frequency Hopper Spread Spectrum ci sono dunque la telefonia mobile e i collegamenti wireless
+
+221
+00:19:05,140 --> 00:19:06,140
+più diffusi.
+
+222
+00:19:06,140 --> 00:19:11,340
+Ma in che modo questo semplice quanto geniale algoritmo contribuisce a far funzionare le
+
+223
+00:19:11,340 --> 00:19:16,540
+nostre moderne comunicazioni e quali sono i vantaggi dati dal suo utilizzo?
+
+224
+00:19:16,620 --> 00:19:22,980
+Beh, innanzitutto diciamo che il Frequency Hopping è in realtà una delle varianti della
+
+225
+00:19:22,980 --> 00:19:29,660
+tecnica Spread Spectrum, ed in particolare quella variante che rende possibile la coesistenza
+
+226
+00:19:29,660 --> 00:19:36,580
+di più reti wireless e più device ad esse collegate all'interno della stessa area geografica.
+
+227
+00:19:36,580 --> 00:19:42,980
+Il meccanismo dello Spread Spectrum, lo abbiamo già detto, consiste essenzialmente nel suddividere
+
+228
+00:19:42,980 --> 00:19:48,580
+una trasmissione radio su un ampio raggio dello spettro delle frequenze disponibili,
+
+229
+00:19:48,580 --> 00:19:54,980
+e nella sua versione Frequency Hopper in particolare, ciascuna porzione di messaggio viene inviata
+
+230
+00:19:54,980 --> 00:20:01,500
+saltando appunto tra una frequenza e l'altra, secondo un preciso ordine e durante precisi
+
+231
+00:20:01,500 --> 00:20:07,700
+lassi di tempo, le cui caratteristiche sono state precedentemente condivise tra il dispositivo
+
+232
+00:20:07,700 --> 00:20:09,580
+che trasmette e quello che riceve.
+
+233
+00:20:10,020 --> 00:20:15,220
+Volendo fare un semplicissimo esempio, possiamo immaginare di dover comunicare con un'altra
+
+234
+00:20:15,220 --> 00:20:21,500
+persona tramite una ricetrasmittente CB, una di quelle radio che sono montate comunemente
+
+235
+00:20:21,500 --> 00:20:24,980
+sulle motrici dei camion che vediamo in autostrada, per intenderci.
+
+236
+00:20:24,980 --> 00:20:32,060
+Quando sintonizziamo un CB su di uno specifico canale e poi premiamo il pulsante e parliamo,
+
+237
+00:20:32,060 --> 00:20:38,020
+le nostre parole vengono ricevute e riprodotte da tutti i dispositivi che sono dello stesso
+
+238
+00:20:38,020 --> 00:20:42,740
+tipo e che sono sintonizzati sullo stesso canale nel raggio di qualche chilometro.
+
+239
+00:20:42,740 --> 00:20:48,020
+Si tratta di quella che normalmente viene definita una trasmissione broadcast in chiaro.
+
+240
+00:20:48,020 --> 00:20:54,500
+Ma se volessimo sfruttare questa stessa tecnologia per comunicare senza però farci ascoltare
+
+241
+00:20:54,500 --> 00:21:00,140
+e comprendere da altre persone in possesso della stessa tipologia di radio, potremmo
+
+242
+00:21:00,140 --> 00:21:05,980
+accordarci preventivamente con il nostro interlocutore su di una lista di canali da utilizzare.
+
+243
+00:21:05,980 --> 00:21:10,820
+Un algoritmo semplicissimo che potremmo utilizzare ad esempio è questo.
+
+244
+00:21:10,820 --> 00:21:17,900
+Dopo ogni parola pronunciata da uno dei due, entrambi ci sintonizziamo sul canale successivo
+
+245
+00:21:17,900 --> 00:21:18,900
+della lista.
+
+246
+00:21:18,900 --> 00:21:25,660
+Ad esempio io trasmetterei ciao sul canale 7 e poi entrambi passeremmo al 12, tu risponderesti
+
+247
+00:21:25,660 --> 00:21:31,740
+ciao sul canale 12 ed entrambi passeremmo al canale 16 e così via fino all'esaurimento
+
+248
+00:21:31,740 --> 00:21:37,020
+dei canali nella lista, dopo il quale potremmo banalmente ripartire da capo.
+
+249
+00:21:37,020 --> 00:21:43,580
+In questo modo avremmo implementato un semplicissimo esempio di Frequency Hopper Spread Spectrum.
+
+250
+00:21:43,580 --> 00:21:49,060
+Tornando quindi al funzionamento del Wi-Fi, poiché una banda di frequenza può essere
+
+251
+00:21:49,060 --> 00:21:55,740
+suddivisa in sottobande, in un'implementazione reale del Frequency Hopper i dispositivi mentre
+
+252
+00:21:55,740 --> 00:22:01,660
+comunicano cambiano rapidamente le loro frequenze in modo sincronizzato, parliamo di salti
+
+253
+00:22:01,660 --> 00:22:08,380
+misurabili in millisecondi, restando sempre connessi e subendo minime perdite di informazione.
+
+254
+00:22:08,380 --> 00:22:13,980
+Naturalmente, grazie agli algoritmi di correzione degli errori, a cui abbiamo già accennato
+
+255
+00:22:13,980 --> 00:22:19,300
+poco fa e di cui abbiamo già parlato in modo più approfondito nell'episodio intitolato
+
+256
+00:22:19,300 --> 00:22:25,100
+proprio Algoritmi di correzione degli errori, queste perdite di informazione vengono ridotte
+
+257
+00:22:25,100 --> 00:22:31,620
+drasticamente o addirittura zerate aggiungendo dei dati ridondanti, che possono ricostruire
+
+258
+00:22:31,620 --> 00:22:33,980
+eventuali parti del messaggio danneggiate.
+
+259
+00:22:33,980 --> 00:22:39,580
+Il Frequency Hopping, quindi, offre tutta una serie di vantaggi rispetto alle trasmissioni
+
+260
+00:22:39,580 --> 00:22:40,900
+a frequenza fissa.
+
+261
+00:22:40,900 --> 00:22:47,420
+Innanzitutto, come già detto, le trasmissioni Spread Spectrum sono resistenti alle interferenze,
+
+262
+00:22:47,420 --> 00:22:53,060
+sia quelle esterne dovute ad altre trasmissioni presenti nella stessa zona, sia quelle generate
+
+263
+00:22:53,060 --> 00:22:57,460
+dagli stessi dispositivi durante le fasi intense di comunicazione.
+
+264
+00:22:57,900 --> 00:23:02,740
+In secondo luogo, i dati trasmessi sono molto difficili da intercettare se non si conosce
+
+265
+00:23:02,740 --> 00:23:06,900
+già il pattern dei salti concordati tra i due dispositivi connessi.
+
+266
+00:23:06,900 --> 00:23:12,060
+Rifacendoci sempre al nostro esempio di poco fa, chiunque sarebbe in grado di ascoltare
+
+267
+00:23:12,060 --> 00:23:19,020
+casualmente una delle parole che ci scambiamo, ma se questa stessa persona non è a conoscenza
+
+268
+00:23:19,020 --> 00:23:24,780
+della nostra lista completa dei canali che utilizzeremo, non riuscirà mai a seguirci
+
+269
+00:23:24,780 --> 00:23:27,740
+nei vari salti ed ascoltare l'intero discorso.
+
+270
+00:23:27,740 --> 00:23:34,060
+E per questo stesso motivo, poi, è anche molto difficile interferire con una trasmissione
+
+271
+00:23:34,060 --> 00:23:36,260
+che utilizza il Frequency Hopping.
+
+272
+00:23:36,260 --> 00:23:41,380
+Per ottenere qualche risultato apprezzabile, infatti, sarebbe necessario disturbare in
+
+273
+00:23:41,380 --> 00:23:47,300
+sequenza le frequenze utilizzate, o al più, disturbarle tutte contemporaneamente per un
+
+274
+00:23:47,300 --> 00:23:48,660
+certo lasso di tempo.
+
+275
+00:23:49,140 --> 00:23:54,940
+Certo, si può interferire a tappeto con ogni trasmissione radio in una data area, però
+
+276
+00:23:54,940 --> 00:23:56,980
+questo è un altro tipo di discorso.
+
+277
+00:23:56,980 --> 00:24:03,020
+E infine, un altro enorme vantaggio è che con un segnale trasmesso utilizzando il Frequency
+
+278
+00:24:03,020 --> 00:24:09,500
+Hopper Spread Spectrum è possibile condividere bande di frequenza fra più trasmissioni da
+
+279
+00:24:09,500 --> 00:24:15,820
+parte di dispositivi diversi, senza che queste generino interferenze l'una con l'altra.
+
+280
+00:24:16,260 --> 00:24:21,820
+Questa affermazione potrebbe sembrare banale, ma in realtà è il motivo principale per
+
+281
+00:24:21,820 --> 00:24:28,260
+cui noi oggi siamo in grado di utilizzare la telefonia mobile ed il Wi-Fi in zone con alta
+
+282
+00:24:28,260 --> 00:24:30,420
+densità di dispositivi connessi.
+
+283
+00:24:30,420 --> 00:24:37,140
+Se tutti questi dispositivi non fossero in grado di spartirsi automaticamente ed efficacemente
+
+284
+00:24:37,140 --> 00:24:43,300
+le frequenze per comunicare con le antenne telefoniche o con i router Wi-Fi, si genererebbe
+
+285
+00:24:43,300 --> 00:24:49,220
+una tale mole di interferenze che renderebbe praticamente impossibile qualsiasi invio o
+
+286
+00:24:49,220 --> 00:24:50,220
+ricezione.
+
+287
+00:24:50,220 --> 00:24:55,820
+Ogni trasmissione da parte di un telefono cellulare o di una scheda di rete wireless
+
+288
+00:24:55,820 --> 00:25:02,940
+contiene un codice pseudocasuale, e il dispositivo ricevente dall'altra parte sa come decifrare
+
+289
+00:25:02,940 --> 00:25:09,900
+questo codice per capire quali bit sono destinati a quello specifico telefono e quali ad altri.
+
+290
+00:25:10,300 --> 00:25:15,460
+E così usa proprio quelle specifiche posizioni per ricevere ed inviare i dati.
+
+291
+00:25:15,460 --> 00:25:22,220
+E la cosa più sorprendente è che ogni messaggio spedito viene spostato rapidamente lungo questo
+
+292
+00:25:22,220 --> 00:25:26,260
+canale di trasmissione per migliaia di volte al secondo.
+
+293
+00:25:31,300 --> 00:25:37,180
+E questa è dunque la storia di come un'attrice austriaca, divenuta famosa negli Stati Uniti
+
+294
+00:25:37,180 --> 00:25:43,220
+per le sue doti artistiche, abbia nel frattempo anche contribuito con un'idea geniale alla
+
+295
+00:25:43,220 --> 00:25:49,020
+nascita di una tecnologia che di fatto muove il mondo così come noi oggi lo conosciamo.
+
+296
+00:25:49,020 --> 00:25:54,420
+Una bambina che declamava poesie in piedi sulla scrivania del padre così come era in
+
+297
+00:25:54,420 --> 00:25:59,020
+grado di smontare e rimontare un carry-on alla tenera età di 5 anni.
+
+298
+00:25:59,020 --> 00:26:04,620
+Una ragazza che fin da piccola sognava di fare la storia del cinema, ma che era anche
+
+299
+00:26:04,620 --> 00:26:07,300
+dotata di una mente brillante e curiosa.
+
+300
+00:26:07,300 --> 00:26:12,860
+Una donna che ha recitato in alcuni film che sono rimasti nella storia così come ha ispirato
+
+301
+00:26:12,860 --> 00:26:17,340
+personaggi iconici come la Biancaneve di Disney o la Catwoman di Hathaway.
+
+302
+00:26:17,340 --> 00:26:23,980
+Il successo nel mondo del cinema non ha soffocato una fervida inventiva che, oltre a frequenze
+
+303
+00:26:23,980 --> 00:26:28,220
+oper, ha portato alla luce anche tante altre invenzioni.
+
+304
+00:26:28,220 --> 00:26:34,460
+Un modello evoluto di semaforo, una pastiglia effervescente per rendere le bevande gassate,
+
+305
+00:26:34,460 --> 00:26:40,020
+un supporto per disabili per l'accesso al bagno e un modello di ali per aeroplano che
+
+306
+00:26:40,020 --> 00:26:44,740
+permettesse di raggiungere velocità superiori di quelle ad esso contemporanee.
+
+307
+00:26:44,740 --> 00:26:50,700
+Insomma, Hedy Lamarr è stata sicuramente un personaggio piuttosto singolare del panorama
+
+308
+00:26:50,700 --> 00:26:56,700
+informatico, probabilmente unica nel suo genere, eppure, fino a pochi anni fa, era
+
+309
+00:26:56,700 --> 00:27:00,700
+considerata solo, si fa per dire, una diva di Hollywood.
+
+310
+00:27:05,460 --> 00:27:11,020
+Ovviamente la vita di Hedy Lamarr è stata molto più piena e sfaccettata di quanto
+
+311
+00:27:11,020 --> 00:27:13,820
+io ti possa mai raccontare in un podcast.
+
+312
+00:27:13,820 --> 00:27:20,100
+Ho tentato di concentrarmi su tutti quei passaggi che ritenevo fossero collegati alla nascita
+
+313
+00:27:20,100 --> 00:27:26,620
+del wifi, ma nel farlo ho, per forza di cose, tralasciato tanti altri eventi interessanti
+
+314
+00:27:26,620 --> 00:27:31,460
+riguardanti il cinema, la carriera e la vita di questa stupefacente inventrice.
+
+315
+00:27:31,460 --> 00:27:36,220
+In descrizione quindi troverai tutte le fonti che ho utilizzato per mettere insieme queste
+
+316
+00:27:36,220 --> 00:27:42,660
+informazioni, compresa la biografia di Segantini, che personalmente ho trovato interessantissima
+
+317
+00:27:42,660 --> 00:27:45,660
+e che ti consiglio assolutamente di leggere.
+
+318
+00:27:45,660 --> 00:27:51,020
+Sono certo che ti farà anche venir voglia di vedere o magari rivedere qualche vecchio
+
+319
+00:27:51,020 --> 00:27:52,020
+film.
+
+320
+00:27:52,020 --> 00:27:57,220
+Prima di lasciarti ci tengo a ricordarti che Pensieri in Codice è un podcast indipendente
+
+321
+00:27:57,220 --> 00:28:01,260
+e come tale si basa sul tuo sostegno per crescere e migliorare.
+
+322
+00:28:01,260 --> 00:28:07,380
+E a questo proposito ringrazio la persona che questa settimana ha donato 10€, che
+
+323
+00:28:07,380 --> 00:28:11,300
+è alla seconda sua donazione ma preferisce rimanere anonima.
+
+324
+00:28:11,300 --> 00:28:16,980
+Per contribuire anche tu a mantenere in piedi questo progetto, che lo so che ti piace perché
+
+325
+00:28:16,980 --> 00:28:22,940
+altrimenti non saresti arrivato fin qui, collegati al sito pensieriincodice.it e consulta la
+
+326
+00:28:22,940 --> 00:28:24,380
+sezione Sostieni.
+
+327
+00:28:24,700 --> 00:28:30,460
+Ah, e poi è importante che condividi gli episodi, sui tuoi social sicuramente, ma
+
+328
+00:28:30,460 --> 00:28:35,340
+soprattutto fagli ascoltare a qualcuno a cui pensi che possano piacere.
+
+329
+00:28:35,340 --> 00:28:40,900
+Ogni nuovo ascoltatore è una spinta per me ad impegnarmi sempre di più.
+
+330
+00:28:40,900 --> 00:28:46,180
+E detto questo direi che per oggi è tutto, io spero come al solito di averti portato
+
+331
+00:28:46,180 --> 00:28:52,220
+dei contenuti interessanti, ti invito sempre a fare un giro sul sito, lo ripeto, pensieriincodice.it
+
+332
+00:28:52,220 --> 00:28:57,060
+per ascoltare anche gli altri episodi, per saperne di più sul progetto, per i link alla
+
+333
+00:28:57,060 --> 00:29:02,780
+community e tutto il resto, noi ci risentiamo la prossima settimana con un nuovo episodio
+
+334
+00:29:02,780 --> 00:29:08,620
+e tu non dimenticare mai che un informatico risolve problemi, a volte, anche usando il
+
+335
+00:29:08,620 --> 00:29:09,120
+computer.
+

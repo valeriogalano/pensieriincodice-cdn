@@ -1,0 +1,588 @@
+1
+00:00:00,000 --> 00:00:09,840
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:19,840 --> 00:00:27,040
+Salve a tutti ragazzi e bentornati su Pensieri in Codice. Vi è mai capitato di parlare con un
+
+3
+00:00:27,040 --> 00:00:33,720
+programmatore e sentire il suo giudizio sulla bontà di un codice? O siete voi stessi dei
+
+4
+00:00:33,720 --> 00:00:39,040
+programmatori e vi è mai stato chiesto di giudicare un lavoro già svolto? Beh,
+
+5
+00:00:39,040 --> 00:00:44,880
+se vi siete mai trovati in una situazione del genere, a prescindere dal lato della domanda
+
+6
+00:00:44,880 --> 00:00:50,640
+dal quale eravate, saprete sicuramente che di solito la risposta che si ottiene ad un
+
+7
+00:00:50,640 --> 00:00:57,800
+quesito del genere varia tra un diplomatico si sarebbe potuto fare di meglio, ad un piuttosto
+
+8
+00:00:57,800 --> 00:01:05,320
+lapidario questo codice fa schifo. Solitamente un ingegnere o un programmatore chiamati a giudicare
+
+9
+00:01:05,320 --> 00:01:12,240
+un codice software difficilmente giungeranno ad un risponso positivo, a meno che ovviamente
+
+10
+00:01:12,240 --> 00:01:18,600
+non si parli di condizioni o di figure particolari. La cosa interessante è che non si tratta
+
+11
+00:01:18,600 --> 00:01:24,960
+semplicemente di disprezzo per il lavoro fatto dagli altri appartenenti alla propria categoria,
+
+12
+00:01:24,960 --> 00:01:31,760
+infatti è evento piuttosto comune che un programmatore ritenga cattivo anche il proprio
+
+13
+00:01:31,760 --> 00:01:36,920
+stesso codice, magari scritto qualche mese o qualche anno prima. Chi lavora in questo campo
+
+14
+00:01:36,920 --> 00:01:42,440
+lo sa bene, trovarsi ad operare su un codice esistente è sempre un problema e a volte può
+
+15
+00:01:42,440 --> 00:01:49,720
+diventare persino un incubo e poco importa se si tratta di codice scritto personalmente o da altri.
+
+16
+00:01:49,720 --> 00:01:58,040
+Quindi nell'episodio di oggi quello che faremo sarà semplicemente cercare di capire perché il codice fa sempre schifo.
+
+17
+00:01:58,040 --> 00:02:14,400
+Prima di avanzare qualsiasi pretesa di giudizio però, e questo dovrebbe valere per il codice ma
+
+18
+00:02:14,400 --> 00:02:21,080
+anche per tutto il resto in generale, bisogna stabilire dei criteri su cui lavorare. Se
+
+19
+00:02:21,080 --> 00:02:25,640
+vogliamo provare a misurare la qualità di un qualcosa, che nel nostro caso è del codice
+
+20
+00:02:25,640 --> 00:02:32,000
+software, dobbiamo in qualche modo decidere cosa intendiamo per qualità, chiarire cosa riteniamo
+
+21
+00:02:32,000 --> 00:02:39,160
+sia migliore e cosa peggiore ed elaborare un metodo per confrontare degli artefatti che
+
+22
+00:02:39,160 --> 00:02:45,800
+possono da un lato aggiungere a livelli di complessità molto alti e dall'altro differenziarsi
+
+23
+00:02:45,800 --> 00:02:52,120
+notevolmente fra loro e sotto moltissimi aspetti. E quindi vediamo che già a questo punto le cose si
+
+24
+00:02:52,120 --> 00:02:59,200
+fanno complicate. Se infatti escludiamo criteri banali e oggettivi, come gli errori di progettazione,
+
+25
+00:02:59,200 --> 00:03:06,120
+i bug, i crash eccetera, restano dei parametri su cui non è poi così facile mettersi d'accordo.
+
+26
+00:03:06,120 --> 00:03:13,280
+È chiaro infatti che un codice pieno di bug, che non svolge i compiti per i quali è stato realizzato
+
+27
+00:03:13,280 --> 00:03:19,400
+e che contiene falle vecchie di 20 anni, è facilmente annoverabile tra i software di
+
+28
+00:03:19,400 --> 00:03:25,800
+cattiva qualità. Ma che dire di un codice che funziona correttamente ma è magari un po' lento?
+
+29
+00:03:25,800 --> 00:03:32,360
+O di una libreria o semplicemente di un metodo che, se venisse applicato un certo teorema
+
+30
+00:03:32,360 --> 00:03:39,000
+matematico o un certo design pattern, potrebbe guadagnare velocità di esecuzione e chiarezza?
+
+31
+00:03:39,000 --> 00:03:44,600
+Oppure ancora, che dire di un blocco di codice procedurale che potrebbe essere riscritto
+
+32
+00:03:44,600 --> 00:03:50,800
+utilizzando la programmazione ad oggetti? Sulla carta sembrerebbero scelte facili,
+
+33
+00:03:50,800 --> 00:03:56,280
+il codice che ho descritto è certamente di scarsa qualità, poteva essere scritto in modo
+
+34
+00:03:56,280 --> 00:04:02,480
+molto più rispondente alla teoria riportata nei manuali e alle buone pratiche descritte
+
+35
+00:04:02,480 --> 00:04:09,000
+nella letteratura. Ma siamo proprio sicuri che sia così? E se quel codice fosse stato scritto
+
+36
+00:04:09,160 --> 00:04:15,280
+appositamente in modo più semplice? Certo voi starete pensando, se so utilizzare costrutti
+
+37
+00:04:15,280 --> 00:04:21,560
+complessi ed efficienti, perché non dovrei farlo? E beh, magari perché il team che dovrà lavorare
+
+38
+00:04:21,560 --> 00:04:27,600
+su quel codice è meno esperto e andrebbe in difficoltà nell'applicare future implementazioni
+
+39
+00:04:27,600 --> 00:04:33,800
+e nel fare la manutenzione. Oppure magari perché non dedicare troppo tempo alla stesura di un codice
+
+40
+00:04:33,880 --> 00:04:39,560
+complesso lascerebbe più tempo al team di sviluppo, o addirittura tutta l'azienda se
+
+41
+00:04:39,560 --> 00:04:47,720
+si parla di realtà piccole, delle risorse da impiegare in altri ambiti, magari per commercializzare
+
+42
+00:04:47,720 --> 00:04:53,640
+il prodotto o il servizio che si sta realizzando. Ecco, secondo me quando si parla di qualità,
+
+43
+00:04:53,640 --> 00:04:58,600
+questi sono aspetti che non possono essere lasciati indietro facendone semplicemente un
+
+44
+00:04:58,680 --> 00:05:05,240
+discorso elitario di abilità e di maestria di programmazione. Qualsiasi codice, infatti,
+
+45
+00:05:05,240 --> 00:05:12,400
+anche il migliore mai scritto raramente ha senso se è preso da solo. E questo ci porta ad una
+
+46
+00:05:12,400 --> 00:05:18,120
+distinzione che io trovo molto interessante e che ho letto qualche tempo fa su un articolo
+
+47
+00:05:18,120 --> 00:05:27,160
+del blog di Paul Jones. Lui è programmatore dal 1983, praticamente l'anno in cui io nascevo.
+
+48
+00:05:27,720 --> 00:05:33,560
+Paul distingue i programmatori in due categorie, i preti e i mercanti. Anche se io onestamente
+
+49
+00:05:33,560 --> 00:05:39,760
+preferisco parlare di monaci invece che preti perché secondo me il sostantivo rende meglio
+
+50
+00:05:39,760 --> 00:05:47,000
+l'idea che intendo veicolare. E dunque, il monaco è quel tipo di programmatore che tiene al proprio
+
+51
+00:05:47,000 --> 00:05:54,000
+codice e lo scrive pensando al fatto che questo verrà letto da altri programmatori. Il suo codice
+
+52
+00:05:54,000 --> 00:05:59,920
+quindi è ben organizzato, ben strutturato, con le giuste astrazioni, il disaccoppiamento,
+
+53
+00:05:59,920 --> 00:06:05,560
+l'incapsulamento, gli strati, i test e tutto quello che sulla carta rende il codice un buon
+
+54
+00:06:05,560 --> 00:06:12,480
+codice. Il mercante invece è quel tipo di programmatore orientato al risultato. Il suo
+
+55
+00:06:12,480 --> 00:06:19,080
+codice è solo un mezzo per realizzare una o più soluzioni da vendere poi a qualcuno. Quindi non
+
+56
+00:06:19,080 --> 00:06:25,240
+importa che sia perfetto, ciò che importa è che funzioni e che possa essere messo sul mercato il
+
+57
+00:06:25,240 --> 00:06:31,200
+prima possibile. E badate bene, per risultato non si intende solo e necessariamente incassi
+
+58
+00:06:31,200 --> 00:06:36,480
+diretti. Anche farsi conoscere professionalmente potrebbe ad esempio essere considerato un buon
+
+59
+00:06:36,480 --> 00:06:43,280
+risultato da sfruttare poi diversamente per un ritorno economico. Ad ogni modo, da un punto di
+
+60
+00:06:43,280 --> 00:06:50,360
+vista prettamente pragmatico, entrambi gli approcci hanno un senso e appaiono ragionevoli,
+
+61
+00:06:50,360 --> 00:06:56,960
+ed entrambi hanno dei pro e dei contro piuttosto interessanti. Il codice del Monaco ad esempio è
+
+62
+00:06:56,960 --> 00:07:04,240
+stabile, veloce, facile da manutenere e facile da estendere, ma occorre molto tempo per portarlo
+
+63
+00:07:04,240 --> 00:07:11,280
+sul mercato e paradossalmente, portando all'estremo questo approccio, il codice potrebbe non vedere
+
+64
+00:07:11,320 --> 00:07:17,640
+mai la luce, perché la perfezione non esiste e ci saranno sempre cose da migliorare. Il codice
+
+65
+00:07:17,640 --> 00:07:24,040
+del mercante invece, pur non essendo super efficiente e super stabile, inizia velocemente a
+
+66
+00:07:24,040 --> 00:07:31,240
+produrre un qualche tipo di profitto, incontra immediatamente il mercato e può subito confrontarsi
+
+67
+00:07:31,240 --> 00:07:37,120
+con la realtà e con le esigenze reali dei potenziali utilizzatori. Per contro però,
+
+68
+00:07:37,120 --> 00:07:42,760
+esso potrebbe risultare più complesso da manutenere e da estendere, meno scalabile,
+
+69
+00:07:42,760 --> 00:07:49,680
+e a lungo andare la codebase potrebbe raggiungere quel tale livello di complessità da rendere
+
+70
+00:07:49,680 --> 00:07:55,640
+necessaria una riscrittura completa, e se ne sono visti tanti di progetti che hanno subito questa
+
+71
+00:07:55,640 --> 00:08:01,640
+sorte. E quindi quale dei due approcci è il migliore? A quale dei due possiamo assegnare
+
+72
+00:08:01,640 --> 00:08:07,800
+il premio di approccio di qualità? La verità è che nessuno dei due, preso in senso assoluto,
+
+73
+00:08:07,800 --> 00:08:14,640
+può essere considerato un buon approccio. È vero che il codice è un mezzo e quindi prima diventa
+
+74
+00:08:14,640 --> 00:08:20,360
+operativo meglio è per l'azienda che lo deve utilizzare, ma è anche vero che un codice più
+
+75
+00:08:20,360 --> 00:08:26,280
+pulito, pur impiegando più tempo a raggiungere l'operatività, avrà una vita più lunga e una
+
+76
+00:08:26,280 --> 00:08:32,880
+maggiore efficienza, riducendo così i problemi e quindi i costi nel lungo periodo. La verità
+
+77
+00:08:32,880 --> 00:08:39,760
+quindi, secondo me, è che il giusto approccio è una sfumatura nel mezzo fra questi due estremi e
+
+78
+00:08:39,760 --> 00:08:45,840
+soprattutto la gradazione di questa sfumatura va stabilita in base a tutta una serie di fattori
+
+79
+00:08:45,840 --> 00:08:53,160
+che dipendono dal momento, dalle risorse, dal mercato e probabilmente anche da aspetti che
+
+80
+00:08:53,160 --> 00:08:58,640
+difficilmente riusciamo ad inquadrare esplicitamente e che poi puntualmente vengono
+
+81
+00:08:58,640 --> 00:09:05,960
+dimenticati. Il nostro progetto ha molti competitor che stanno per entrare nel mercato? Forse è meglio
+
+82
+00:09:05,960 --> 00:09:11,400
+prediligere un atteggiamento da mercante. Il progetto è pensato per fare da base a tutta
+
+83
+00:09:11,400 --> 00:09:17,760
+una serie di espansioni future? Forse è meglio prediligere l'approccio da Monaco. Però in fin
+
+84
+00:09:17,800 --> 00:09:25,080
+dei conti la decisione spetta chi è effettivamente coinvolto nel processo produttivo, mentre per
+
+85
+00:09:25,080 --> 00:09:31,620
+tutti gli altri che sono all'esterno diventa piuttosto difficile comprendere la bontà delle
+
+86
+00:09:31,620 --> 00:09:38,840
+decisioni prese e la loro corrispondenza ai criteri stabiliti. A valle di questo ragionamento quindi,
+
+87
+00:09:38,840 --> 00:09:44,880
+a me appare abbastanza chiaro che valutare la qualità di un software senza conoscere
+
+88
+00:09:44,880 --> 00:09:51,280
+i criteri con i quali è stato scritto e progettato diventa un po' un esercizio di stile
+
+89
+00:09:51,280 --> 00:09:58,960
+piuttosto complicato e un'attività che risulta in qualche modo di poca utilità. Se non conosco
+
+90
+00:09:58,960 --> 00:10:04,520
+gli standard con i quali sono stati progettati e realizzati quel determinato scritto, quella
+
+91
+00:10:04,520 --> 00:10:11,640
+libreria o quella classe, come posso sensatamente valutare se e quanto se ne discosta il risultato
+
+92
+00:10:11,640 --> 00:10:28,520
+finale? Stabilito quindi che il concetto di qualità, almeno nel software dove non esistono
+
+93
+00:10:28,520 --> 00:10:35,200
+standard oggettivi e regolamentati, è da considerarsi piuttosto soggettivo, proviamo a
+
+94
+00:10:35,200 --> 00:10:40,760
+capire perché chi arriva dopo in linea generale dirà sempre che il codice di ascritto fa schifo
+
+95
+00:10:41,320 --> 00:10:47,600
+e badate bene che ho detto chi arriva dopo e non per gli altri perché la verità è che molto
+
+96
+00:10:47,600 --> 00:10:53,160
+spesso quel codice già scritto farà schifo anche all'autore stesso. In tutta onestà,
+
+97
+00:10:53,160 --> 00:10:58,440
+quante volte è capitato anche a noi? Guardiamo del nostro codice e pensiamo
+
+98
+00:10:58,440 --> 00:11:04,760
+ma che cavolo avevo in testa quando l'ho scritto? A volte a me capita perfino di ritrovare dei miei
+
+99
+00:11:04,760 --> 00:11:12,160
+codici di anni prima e guardare una funzione o un blocco e pensare ma perché mai gli è venuto in
+
+100
+00:11:12,160 --> 00:11:18,720
+mente di fare questa modifica? Poi controllare nei commit del sistema di versioning e scoprire
+
+101
+00:11:18,720 --> 00:11:23,960
+che quel codice è sempre stato così da quando l'ho scritto io la prima volta. E come è mai
+
+102
+00:11:23,960 --> 00:11:31,120
+possibile questa cosa? Beh secondo me in realtà la risposta è molto semplice. La causa di questo
+
+103
+00:11:31,120 --> 00:11:39,760
+fenomeno è da ricercare nel trascorrere del tempo. Il tempo passa e un qualsiasi sistema complesso
+
+104
+00:11:39,760 --> 00:11:48,000
+che è composto da software, persone, servizi eccetera non è un'istantanea così fossilizzata
+
+105
+00:11:48,000 --> 00:11:54,040
+nei secoli dei secoli. Quando noi guardiamo un codice e pensiamo che fa schifo noi lo stiamo
+
+106
+00:11:54,200 --> 00:12:01,240
+giudicando oggi, con le conoscenze di oggi, sulla base delle condizioni in vigore oggi. Ma quel
+
+107
+00:12:01,240 --> 00:12:08,520
+codice è stato realizzato ieri, con le conoscenze di ieri e sulla base delle condizioni di ieri. Il
+
+108
+00:12:08,520 --> 00:12:15,800
+tempo è trascorso e il contesto è cambiato. Noi siamo cambiati. Magari oggi l'azienda ha più
+
+109
+00:12:15,800 --> 00:12:22,840
+risorse, più tempo e una diversa nicchia di mercato. Probabilmente noi oggi siamo più esperti,
+
+110
+00:12:22,840 --> 00:12:28,840
+conosciamo più linguaggi, più framework, più pattern. Abbiamo realizzato tante altre soluzioni
+
+111
+00:12:28,840 --> 00:12:36,320
+e abbiamo accumulato tante altre frecce al nostro arco. Per dirla con i termini del blocco precedente,
+
+112
+00:12:36,320 --> 00:12:43,120
+probabilmente all'epoca in cui quel codice è stato scritto si è utilizzata una certa sfumatura
+
+113
+00:12:43,120 --> 00:12:49,800
+dell'approccio monaco-mercante che oggi non è più valida e noi non la stiamo considerando. Quando
+
+114
+00:12:49,800 --> 00:12:56,480
+giudichiamo del codice, noi giudichiamo decisioni prese da noi stessi o da altri in un momento
+
+115
+00:12:56,480 --> 00:13:03,480
+passato, quando erano in vigore diverse condizioni e si era in possesso di diverse conoscenze. E
+
+116
+00:13:03,480 --> 00:13:10,360
+quindi cosa si può fare? Beh, la risposta più semplice che può venire in mente è quella di
+
+117
+00:13:10,360 --> 00:13:17,640
+non giudicare il vecchio codice e tutto sarebbe facilmente risolto. Ma in realtà non è proprio
+
+118
+00:13:17,680 --> 00:13:23,800
+così, non è così facile. Ogni volta che un programmatore si trova ad estendere o a manutenere
+
+119
+00:13:23,800 --> 00:13:30,480
+del codice già esistente, non può esimersi dal dare una sorta di valutazione e fare un po' di
+
+120
+00:13:30,480 --> 00:13:37,880
+analisi, decidere se è necessario fare refactoring o meno, capire se si può estendere una funzionalità
+
+121
+00:13:37,880 --> 00:13:44,520
+o è necessario riscriverla, prevedere dove e come le nostre modifiche andranno a impattare. Sono
+
+122
+00:13:44,520 --> 00:13:50,160
+solo alcune delle attività che fanno parte integrante del nostro lavoro. Non possiamo
+
+123
+00:13:50,160 --> 00:13:56,920
+rifiutarci di farle e queste ci porteranno sempre a dover dare una valutazione del codice di partenza.
+
+124
+00:13:56,920 --> 00:14:02,880
+Quindi, a mio parere, l'approccio deve essere molto pragmatico e si può seguire una sorta di
+
+125
+00:14:02,880 --> 00:14:11,400
+processo. Innanzitutto si esamina il codice e si valuta se funziona correttamente o meno. Se non
+
+126
+00:14:11,400 --> 00:14:17,840
+funziona o se le nostre modifiche lo andranno a rompere in qualche modo, allora è il momento di
+
+127
+00:14:17,840 --> 00:14:24,640
+sistemarlo. Possiamo quindi intervenire, più o meno pesantemente, a seconda del tempo e delle
+
+128
+00:14:24,640 --> 00:14:31,640
+risorse che abbiamo a disposizione oggi. Se invece il codice funziona e continuerà a farlo anche dopo
+
+129
+00:14:31,640 --> 00:14:39,000
+le nostre modifiche, allora conviene lasciarlo così com'è, brutto, vecchio, ma funzionante. E
+
+130
+00:14:39,000 --> 00:14:47,200
+tutto questo processo va applicato sempre tenendo a mente che fra un anno anche il più bel codice
+
+131
+00:14:47,200 --> 00:14:53,680
+che oggi riusciremo a scrivere ci apparirà comunque per lo meno migliorabile. E per questo motivo,
+
+132
+00:14:53,680 --> 00:15:00,400
+secondo me, quando possibile, si dovrebbe proprio evitare di approcciarsi ad un codice con l'intenzione
+
+133
+00:15:00,400 --> 00:15:07,840
+di dare giudizi fini a se stessi. E soprattutto credo anche che dovremmo proprio toglierci il
+
+134
+00:15:07,920 --> 00:15:24,880
+vizio di usare l'espressione questo codice fa schifo. Bene, anche oggi spero di avervi portato
+
+135
+00:15:24,880 --> 00:15:31,320
+delle riflessioni interessanti. Immagino che non tutti saranno d'accordo con me e mi farebbe molto
+
+136
+00:15:31,320 --> 00:15:37,080
+il piacere sentire le vostre opinioni. In ogni caso, vi ricordo sempre che potete dare una
+
+137
+00:15:37,080 --> 00:15:42,960
+mano condividendo gli episodi con chi credete possa trarne beneficio e possa essere interessato.
+
+138
+00:15:42,960 --> 00:15:49,160
+In questo modo andremo ad allargare il discorso che è sempre una cosa costruttiva e che fa bene.
+
+139
+00:15:49,160 --> 00:15:55,320
+Nell'episodio scorso, ad esempio, io vi ho consigliato l'utilizzo del browser Brave e
+
+140
+00:15:55,320 --> 00:16:01,280
+un nuovo utente del gruppo Telegram ha portato delle fonti interessanti che al contrario ne
+
+141
+00:16:01,280 --> 00:16:07,360
+sconsigliavano l'uso, dando così il via ad un interessante scambio. Sempre su Telegram,
+
+142
+00:16:07,360 --> 00:16:11,880
+lo dico per quell'utente che ha scritto un commento qualche giorno fa su Spreaker,
+
+143
+00:16:11,880 --> 00:16:19,640
+ho iniziato e ho intenzione di continuare con una certa regolarità a condividere consigli di lettura.
+
+144
+00:16:19,640 --> 00:16:27,000
+Quindi se vi va di leggere qualcosa di divulgativo a tema informatica iscrivetevi al canale. Trovate
+
+145
+00:16:27,000 --> 00:16:33,600
+tutti i link e le informazioni sul sito pensieriincodice.it. Mi raccomando con due i,
+
+146
+00:16:33,600 --> 00:16:39,600
+pensieri in codice. A me non resta che ringraziarvi per aver ascoltato fin qui,
+
+147
+00:16:39,600 --> 00:16:46,440
+salutarvi e ricordarvi che un informatico risolve problemi a volte anche usando il computer.
+

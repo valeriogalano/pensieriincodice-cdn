@@ -1,0 +1,1380 @@
+1
+00:00:00,000 --> 00:00:05,960
+Di personaggi stravaganti e insoliti nel mondo e nella storia dell'informatica ce ne sono
+
+2
+00:00:05,960 --> 00:00:06,960
+parecchi.
+
+3
+00:00:06,960 --> 00:00:13,920
+Alcuni sono molto famosi, a torto o a ragione, altri invece, pur avendo ricoperto ruoli di
+
+4
+00:00:13,920 --> 00:00:21,240
+fondamentale importanza, sono stati un po' dimenticati o messi da parte nel corso degli
+
+5
+00:00:21,240 --> 00:00:22,240
+anni.
+
+6
+00:00:22,240 --> 00:00:29,480
+A volte poi, capita che per qualcuno i riconoscimenti arrivino molto in ritardo, un po' per via
+
+7
+00:00:29,480 --> 00:00:36,480
+del semplice caso, o delle circostanze avverse, o della società che magari non è ancora
+
+8
+00:00:36,480 --> 00:00:43,000
+pronta a recepire ed apprezzare un qualcosa che appare troppo avanzato per il sentire
+
+9
+00:00:43,000 --> 00:00:44,000
+contemporaneo.
+
+10
+00:00:44,000 --> 00:00:49,920
+Quali che siano però le motivazioni di come si è svolta questa storia, quelle magari le
+
+11
+00:00:49,920 --> 00:00:56,840
+lascio decidere a te in base alla tua sensibilità, oggi parliamo di una donna doppiamente speciale.
+
+12
+00:00:57,280 --> 00:01:02,440
+Una donna che non paga di essere diventata una diva del cinema hollywoodiano, ha anche
+
+13
+00:01:02,440 --> 00:01:08,040
+ricoperto un ruolo fondamentale nella nascita di una delle tecnologie più utilizzate in
+
+14
+00:01:08,040 --> 00:01:09,040
+assoluto.
+
+15
+00:01:09,040 --> 00:01:16,400
+Oggi, infatti, ti racconterò di Hedy Lamarr, di quegli aspetti della sua vita che maggiormente
+
+16
+00:01:16,400 --> 00:01:23,520
+l'hanno avvicinata al mondo della tecnologia e di come abbia teorizzato e brevettato il
+
+17
+00:01:23,520 --> 00:01:28,360
+meccanismo, oggi, alla base delle moderne comunicazioni wireless.
+
+18
+00:01:28,360 --> 00:01:29,360
+Sigla.
+
+19
+00:01:29,360 --> 00:01:40,600
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio
+
+20
+00:01:40,600 --> 00:01:42,640
+Galano.
+
+21
+00:01:42,640 --> 00:01:46,560
+Iniziamo con un po' di note biografiche.
+
+22
+00:01:47,160 --> 00:01:53,920
+Edwidge Eva Maria Kisler, questo il vero nome della diva Hedy Lamarr, nasce in Austria,
+
+23
+00:01:53,920 --> 00:01:58,760
+più precisamente a Vienna, il 9 novembre 1914.
+
+24
+00:01:58,760 --> 00:02:05,600
+Di famiglia ebrea più che benestante e ben inserita, trascorre i suoi primi anni di vita
+
+25
+00:02:05,600 --> 00:02:11,120
+nella ricchezza e nell'eleganza di un quartiere di lusso del nord della capitale austriaca.
+
+26
+00:02:11,680 --> 00:02:18,280
+Fin da subito, il padre Emil e la giovane madre Gertrude garantiscono alla piccola Edwidge
+
+27
+00:02:18,280 --> 00:02:25,200
+un'infanzia agiata, le migliori scuole possibili, frequentazioni di salotti e teatri dell'alta
+
+28
+00:02:25,200 --> 00:02:32,000
+borghesia e lunghi periodi di svago sulle Alpi Svizzere, in Inghilterra, Irlanda e Parigi.
+
+29
+00:02:32,000 --> 00:02:38,960
+Purtroppo, però, a tutti questi privilegi e gesti d'affetto non corrispondono poi in
+
+30
+00:02:38,960 --> 00:02:45,680
+realtà un vero senso di intimità e tenerezza ed un vero e proprio calore familiare sincero.
+
+31
+00:02:45,680 --> 00:02:52,480
+In linea con la prassi dell'epoca, infatti, il dovere dei genitori è quello di crescere
+
+32
+00:02:52,480 --> 00:02:59,080
+i figli nel miglior modo possibile, ma ciò va fatto senza esprimere eccessive emozioni
+
+33
+00:02:59,080 --> 00:03:01,680
+di attaccamento e smancerie.
+
+34
+00:03:01,680 --> 00:03:08,880
+Le regole della buona società, insomma, pretendono che si mantenga un certo distacco ed una certa
+
+35
+00:03:09,800 --> 00:03:16,360
+eleganza. E questo rapporto un po' freddo, soprattutto da parte della madre, resterà
+
+36
+00:03:16,360 --> 00:03:23,120
+una costante per tutta la vita di Eddie, da piccola, ma anche nella sua vita adulta, sia
+
+37
+00:03:23,120 --> 00:03:27,960
+quando la madre la raggiungerà negli Stati Uniti dopo la sua consacrazione a diva di
+
+38
+00:03:27,960 --> 00:03:34,560
+Hollywood, sia quando l'attrice stessa dovrà relazionarsi con i propri di figli, con i quali
+
+39
+00:03:34,560 --> 00:03:37,760
+avrà rapporti molto complicati e conflittuali.
+
+40
+00:03:38,320 --> 00:03:43,800
+Fin da piccola, comunque, Edwidge è una ragazza bellissima, dalla mente effervescente
+
+41
+00:03:43,800 --> 00:03:49,600
+e dal carattere forte e indipendente, ed è anche chiaramente ben conscia di possedere
+
+42
+00:03:49,600 --> 00:03:52,240
+tutte queste importanti caratteristiche.
+
+43
+00:03:52,240 --> 00:03:58,960
+All'età di soli 12 anni, ad esempio, approfitta della morte della nonna per sottrarsi al controllo
+
+44
+00:03:58,960 --> 00:04:05,040
+di genitori e domestici e scappa di casa. Il suo obiettivo è quello di iscriversi ad
+
+45
+00:04:05,040 --> 00:04:10,720
+un corso di bellezza che si tiene nella zona, nel quale ovviamente si distingue vincendo
+
+46
+00:04:10,720 --> 00:04:15,240
+il primo premio, cioè una somma in denaro che poi investe nell'acquisto di un cappotto
+
+47
+00:04:15,240 --> 00:04:21,960
+di pelliccia. Questo gesto le costa un'esemplare punizione, ma al di là della ramanzina, la
+
+48
+00:04:21,960 --> 00:04:27,480
+madre non nega e non negherà mai anche un certo orgoglio per quella figlia così bella
+
+49
+00:04:27,480 --> 00:04:33,640
+e intelligente. Non da meno sarà il padre, che la spingerà sempre, quando possibile,
+
+50
+00:04:33,640 --> 00:04:39,640
+verso l'ingegneria o la tecnologia in generale. Edwidge, poi, come i suoi genitori, è anche
+
+51
+00:04:39,640 --> 00:04:45,800
+appassionata di tutto ciò che riguarda l'arte in voga in quegli anni nell'alta borghesia,
+
+52
+00:04:45,800 --> 00:04:52,920
+il teatro, la recitazione, il cinema. E così, all'età di 15 anni, si iscrive ad un corso
+
+53
+00:04:52,920 --> 00:04:59,480
+di recitazione e, come se non bastasse, ogni giorno andando a scuola passa davanti alla
+
+54
+00:04:59,480 --> 00:05:06,880
+Sasha Film Studios, gli studi della più grande casa di produzione austriaca, e si
+
+55
+00:05:06,880 --> 00:05:12,760
+ferma a sbirciare le attività che si svolgono all'interno. Giorno dopo giorno la voglia
+
+56
+00:05:12,760 --> 00:05:18,720
+di entrare a dare un'occhiata cresce sempre di più, finché ad un certo punto la ragazza
+
+57
+00:05:18,720 --> 00:05:25,060
+si fa forza e decide di falsificare un permesso per la scuola, in modo da saltare un giorno
+
+58
+00:05:25,060 --> 00:05:30,980
+e provare ad intrufolarsi agli studios per poter finalmente trascorrere un po' di tempo
+
+59
+00:05:30,980 --> 00:05:38,340
+immersa nel mondo che tanto ama. Una volta finalmente dentro, poi è il destino che fa
+
+60
+00:05:38,340 --> 00:05:45,020
+il resto. Lei ascolta casualmente un regista discutere con un attore e così facendo scopre
+
+61
+00:05:45,020 --> 00:05:49,980
+che l'indomani si sarebbero dovuti tenere alcuni provini con l'obiettivo di scegliere
+
+62
+00:05:49,980 --> 00:05:56,020
+un'attrice per una piccola parte da comparsa. Edwidge non resiste, aggiunge il proprio nome
+
+63
+00:05:56,020 --> 00:06:02,580
+alla lista delle candidate e il giorno seguente si presenta per una piccola parte da segretaria.
+
+64
+00:06:02,580 --> 00:06:09,340
+Ovviamente la sua bellezza e le sue doti, nonché il fatto che stesse studiando recitazione,
+
+65
+00:06:09,340 --> 00:06:16,020
+non passano inosservate e lei viene scritturata. Si tratta solo di una particina, ma è anche
+
+66
+00:06:16,020 --> 00:06:21,460
+l'evento che segna la nascita, nonostante le resistenze dei genitori, della carriera
+
+67
+00:06:21,460 --> 00:06:28,460
+d'attrice di Edwidge Kistler. Una carriera che la porterà particina dopo particina, colpo
+
+68
+00:06:28,460 --> 00:06:34,620
+di testa dopo colpo di testa, a conquistare la posizione tanto sognata, quella cioè di
+
+69
+00:06:34,620 --> 00:06:40,980
+grande attrice del cinema europeo degli anni 30. Di lì a poco infatti la ragazza inizierà
+
+70
+00:06:40,980 --> 00:06:47,500
+a studiare seriamente recitazione e per farlo abbandonerà gli studi di ingegneria, si trasferirà
+
+71
+00:06:47,500 --> 00:06:54,820
+a Berlino e inizierà a interpretare parti via via sempre più importanti, fino a ritornare
+
+72
+00:06:54,820 --> 00:07:01,900
+finalmente nel 32 a Vienna per partecipare da protagonista al celebre film Estasy, che
+
+73
+00:07:01,900 --> 00:07:07,900
+se da una parte elevarà il successo e la consacrazione nell'Olimpo del cinema, dall'altra
+
+74
+00:07:07,900 --> 00:07:13,980
+causerà anche uno scandalo internazionale per via di un paio di scene piuttosto spinte
+
+75
+00:07:13,980 --> 00:07:19,100
+per l'epoca, e tutto ciò quando lei aveva appena 18 anni.
+
+76
+00:07:19,100 --> 00:07:31,060
+Mentre la carriera di Edwidge decolla tra alti e bassi, successi e scandali, aumentano
+
+77
+00:07:31,060 --> 00:07:36,700
+esponenzialmente anche i suoi ammiratori e soprattutto gli spasimanti, d'altronde se
+
+78
+00:07:36,700 --> 00:07:41,340
+non la conosci già, per farti un'idea del personaggio ti consiglio di fare un giro sul
+
+79
+00:07:41,340 --> 00:07:47,060
+sito edilamar.com dove potrai trovare alcune sue foto molto famose.
+
+80
+00:07:47,060 --> 00:07:53,500
+Ma ad ogni modo fra tutti questi ammiratori e spasimanti spicca in particolare agli occhi
+
+81
+00:07:53,500 --> 00:07:59,660
+della ragazza un uomo che si firma come Fritz Mandl, il quale inonda letteralmente i camerini
+
+82
+00:07:59,660 --> 00:08:01,220
+dell'attrice di fiori.
+
+83
+00:08:01,740 --> 00:08:06,900
+Si tratta in realtà di un certo Friedrich Mandl, un uomo di origine austriache che ha
+
+84
+00:08:06,900 --> 00:08:12,500
+quasi il doppio della sua età, molto ricco, e che fa un mestiere che risulterà molto
+
+85
+00:08:12,500 --> 00:08:16,260
+importante nel corso della storia che ti sto raccontando.
+
+86
+00:08:16,260 --> 00:08:23,460
+Mandl, infatti, è un mercante d'armi, uno di quegli imprenditori che riforniscono gli
+
+87
+00:08:23,460 --> 00:08:27,700
+eserciti con le più moderne attrezzature belliche disponibili.
+
+88
+00:08:28,180 --> 00:08:34,380
+Dopo aver conosciuto Fritz, la giovane Edwidge perde improvvisamente interesse per il cinema
+
+89
+00:08:34,380 --> 00:08:35,780
+e per la recitazione.
+
+90
+00:08:35,780 --> 00:08:42,860
+Il pensiero di sposare un uomo tanto influente e benestante offusca quasi totalmente il suo
+
+91
+00:08:42,860 --> 00:08:48,620
+giudizio, anche se non c'è da essere troppo severi perché dobbiamo tener presente che
+
+92
+00:08:48,620 --> 00:08:53,500
+stiamo parlando di una ragazza poco più che diciottenne catapultata senza un bricciolo
+
+93
+00:08:53,500 --> 00:08:58,180
+di esperienza in un mondo tanto complesso e più grande di lei.
+
+94
+00:08:58,180 --> 00:09:03,960
+Ma ad ogni modo, con il pieno benestare dei suoi genitori che vedono il doppio vantaggio
+
+95
+00:09:03,960 --> 00:09:10,180
+di sistemare la propria figlia e allontanarla dal cinema, il fidanzamento tra Edwidge e
+
+96
+00:09:10,180 --> 00:09:16,060
+Fritz viene annunciato a maggio del 1933 e già ad agosto i due si sposano.
+
+97
+00:09:16,060 --> 00:09:22,700
+Al ritorno dal viaggio di nozze, poi, i due vanno a vivere in un enorme palazzo a Salisburgo
+
+98
+00:09:22,700 --> 00:09:29,900
+di proprietà del signor Mandel, dove la giovane signora Mandel dispone di ogni lusso immaginabile,
+
+99
+00:09:29,900 --> 00:09:36,100
+dai gioielli ai vestiti alle auto, passando per una nutrita schiera di servitori.
+
+100
+00:09:36,100 --> 00:09:42,260
+Ben presto, però, l'incantesimo di questo mondo fatato inizia ad incrinarsi.
+
+101
+00:09:42,260 --> 00:09:48,940
+I servitori iniziano a trasformarsi anche in sorveglianti quando Fritz, spesso all'estero
+
+102
+00:09:48,940 --> 00:09:55,660
+per lavoro, lascia la neosposa da sola relegata all'interno delle sue proprietà con a disposizione
+
+103
+00:09:55,660 --> 00:09:58,660
+tutto ciò che si possa immaginare tranne la libertà.
+
+104
+00:09:58,660 --> 00:10:04,900
+Il ricco mercante d'armi, infatti, più che innamorato, è proprio ossessionato dall'ex
+
+105
+00:10:04,900 --> 00:10:11,620
+attrice, al punto da non riuscire a sopportare l'idea che ella possa anche solo trascorrere
+
+106
+00:10:11,620 --> 00:10:15,340
+del tempo con altri uomini all'infuori di lui o dei domestici.
+
+107
+00:10:15,740 --> 00:10:21,100
+Addirittura la leggenda vuole che Fritz, in preda al furore causato dalla visione del
+
+108
+00:10:21,100 --> 00:10:27,180
+film Estasy, abbia speso ingenti risorse per assumere degli investigatori incaricati di
+
+109
+00:10:27,180 --> 00:10:32,780
+individuare, acquistare e distruggere il maggior numero possibile di copie del film.
+
+110
+00:10:32,780 --> 00:10:38,540
+Come dirà poi lei stessa, lui non l'aveva sposata, praticamente l'aveva aggiunta alla
+
+111
+00:10:38,540 --> 00:10:39,540
+sua collezione.
+
+112
+00:10:39,940 --> 00:10:46,140
+Edwidge, però, come abbiamo già potuto constatare, non è certo donna che riesca a stare semplicemente
+
+113
+00:10:46,140 --> 00:10:51,260
+con le mani in mano senza fare niente, così, nell'attesa che il marito rientri a casa
+
+114
+00:10:51,260 --> 00:10:54,180
+da un viaggio o finisca di lavorare a tardasera.
+
+115
+00:10:54,180 --> 00:10:59,860
+Anche se forse, almeno inizialmente, leggere, andare a cavallo, nuotare e fare shopping
+
+116
+00:10:59,860 --> 00:11:06,060
+non deve essere risultato poi così male, alla lunga non si trattava certo di attività
+
+117
+00:11:06,060 --> 00:11:11,580
+che potevano bastare ad occupare la mente, l'animo e la creatività della nostra diva.
+
+118
+00:11:11,580 --> 00:11:18,580
+E così il suo talento artistico inizia a farsi strada trovando nuovi e singolari modi
+
+119
+00:11:18,580 --> 00:11:19,580
+per emergere.
+
+120
+00:11:19,580 --> 00:11:25,500
+Un giorno, ad esempio, Eddie decide di smontare tutti i copriwater dei bagni del palazzo,
+
+121
+00:11:25,500 --> 00:11:32,480
+e stiamo parlando di non uno, ma decine di bagni, di portarli in giardino e di dipingerli
+
+122
+00:11:32,480 --> 00:11:33,480
+uno per uno.
+
+123
+00:11:33,800 --> 00:11:39,260
+Ed anche in questo caso sembra che il marito l'abbia semplicemente ignorata, rubricando
+
+124
+00:11:39,260 --> 00:11:42,440
+i suoi sprazzi di estro a semplici velleità.
+
+125
+00:11:42,440 --> 00:11:49,160
+È dunque in questo clima che si svolge una fase molto importante e particolare della
+
+126
+00:11:49,160 --> 00:11:51,160
+vita della signora Mandel.
+
+127
+00:11:51,160 --> 00:11:58,240
+Di fatto, lei si ritrova, da brava padrona di casa, a partecipare in silenzio e ignorata
+
+128
+00:11:58,240 --> 00:12:04,000
+da tutti, quasi alla stregua di un soprammobile o un pezzo da collezione, alle riunioni di
+
+129
+00:12:04,000 --> 00:12:07,400
+lavoro che il marito tiene con clienti e collaboratori.
+
+130
+00:12:07,400 --> 00:12:13,600
+Riunioni che hanno luogo quasi sempre al termine dei sontuosi ricevimenti che lui ama dare
+
+131
+00:12:13,600 --> 00:12:15,080
+nel proprio palazzo.
+
+132
+00:12:15,080 --> 00:12:22,160
+E mentre questi uomini influenti sono quindi impegnati a discutere di armi, di equipaggiamenti,
+
+133
+00:12:22,160 --> 00:12:27,840
+di progetti e di schemi, Edwidge se ne resta un po' indisparte, in silenzio, con la sua
+
+134
+00:12:27,840 --> 00:12:34,140
+indubbiamente splendida presenza, semplicemente ad ascoltare, comprendere e memorizzare le
+
+135
+00:12:34,140 --> 00:12:37,600
+tante informazioni che vengono scambiate davanti ai suoi occhi.
+
+136
+00:12:37,600 --> 00:12:43,720
+Forse eccessivamente confidente nella devozione della moglie o, io azzarderei più probabilmente
+
+137
+00:12:43,720 --> 00:12:49,200
+del tutto ignaro di quanto acuta e brillante sia la mente dietro quello splendido viso,
+
+138
+00:12:49,200 --> 00:12:55,560
+Fritz Mandel non teme infatti minimamente che armamenti, navi, siluri e missili possano
+
+139
+00:12:55,560 --> 00:13:01,080
+diventare per la sua consorte argomenti familiari se non addirittura ben conosciuti.
+
+140
+00:13:01,080 --> 00:13:06,000
+Nel frattempo però in Europa la situazione va peggiorando di mese in mese.
+
+141
+00:13:06,000 --> 00:13:12,640
+Tra i maggiori clienti di Mandel spiccano personaggi del calibro di Hitler e di Mussolini
+
+142
+00:13:12,640 --> 00:13:17,920
+e lui mostra una particolare simpatia per gli ambienti di destra e di estrema destra
+
+143
+00:13:17,920 --> 00:13:23,440
+che ne fanno di fatto un filo nazista, nonostante peraltro le origini ebraiche del padre.
+
+144
+00:13:23,920 --> 00:13:28,320
+E al contempo anche la vita di Edwidge non va certo migliorando.
+
+145
+00:13:28,320 --> 00:13:33,840
+Sempre chiusa in una sorta di gabbia dorata, con il marito sempre meno presente e la servitù
+
+146
+00:13:33,840 --> 00:13:39,080
+sempre più opprimente, un giorno decide che non può più andare avanti in quel modo e
+
+147
+00:13:39,080 --> 00:13:41,640
+che l'unica soluzione che le resta è la fuga.
+
+148
+00:13:41,640 --> 00:13:47,520
+Purtroppo però la cosa non si rivela essere poi così semplice, infatti saranno necessari
+
+149
+00:13:47,520 --> 00:13:52,800
+ben quattro tentativi prima che la ragazza riesca nel suo intento e addirittura secondo
+
+150
+00:13:52,800 --> 00:13:59,240
+alcuni in tutta la vicenda pare esserci stato anche lo zampino dei servizi segreti inglesi,
+
+151
+00:13:59,240 --> 00:14:03,360
+anche se ad essere onesti non ci sono prove a sostegno di questa tesi.
+
+152
+00:14:03,360 --> 00:14:08,240
+Stando al racconto della stessa Edie riportato nella sua biografia ufficiale, le serviranno
+
+153
+00:14:08,240 --> 00:14:13,760
+un piano ben congegnato ed un'accurata preparazione per riuscire a sfuggire alle grinfie del possessivo
+
+154
+00:14:13,760 --> 00:14:14,760
+marito.
+
+155
+00:14:14,760 --> 00:14:20,160
+L'occasione le si presenta quando, per un caso puramente fortuito, si rende necessario
+
+156
+00:14:20,160 --> 00:14:22,800
+sostituire una delle domestiche della villa.
+
+157
+00:14:22,800 --> 00:14:28,800
+Edie si mette immediatamente all'opera, prende il controllo della situazione e si mette personalmente
+
+158
+00:14:28,800 --> 00:14:32,360
+a ricercare e vagliare maniacalmente le candidate.
+
+159
+00:14:32,360 --> 00:14:37,360
+Il suo scopo è quello di individuare una ragazza che le somigli il più possibile per
+
+160
+00:14:37,360 --> 00:14:41,480
+corporatura, peso, altezza, colore dei capelli e della carnagione.
+
+161
+00:14:41,480 --> 00:14:49,120
+Una volta trovata ed assunta la persona giusta inizia ad esercitarsi di nascosto, si allena
+
+162
+00:14:49,120 --> 00:14:56,000
+per lungo tempo a camminare come lei, a gesticolare e persino a parlare come lei e, sempre in
+
+163
+00:14:56,000 --> 00:15:01,600
+segreto, si fa cucire dei vestiti da cameriera che le stanno bene e che producono un effetto
+
+164
+00:15:01,600 --> 00:15:02,680
+realistico.
+
+165
+00:15:02,680 --> 00:15:08,360
+Arriva perfino a rubare un po' dei prodotti per il trucco della ragazza, in modo da potersi
+
+166
+00:15:08,360 --> 00:15:10,920
+truccare esattamente allo stesso modo.
+
+167
+00:15:10,920 --> 00:15:17,360
+Nel frattempo si mette anche a studiare le sue abitudini, come si comporta con gli altri,
+
+168
+00:15:17,360 --> 00:15:21,560
+cosa fa nel suo tempo libero, i suoi progetti per il futuro eccetera.
+
+169
+00:15:21,560 --> 00:15:26,840
+Si intrattiene con lei quotidianamente per conoscere il più possibile sulla sua vita,
+
+170
+00:15:26,840 --> 00:15:33,280
+finché finalmente un giorno la ragazza le rivela che di lì a poco prenderà un congedo
+
+171
+00:15:33,280 --> 00:15:36,840
+e questo per incontrare il proprio fidanzato a Parigi.
+
+172
+00:15:36,840 --> 00:15:41,080
+Ecco dunque presentarsi la tanto attesa occasione.
+
+173
+00:15:41,080 --> 00:15:45,960
+Hedy raccoglie molti dei suoi gioielli più preziosi, li stipa in una valigia e li invia
+
+174
+00:15:45,960 --> 00:15:49,240
+ad un non meglio identificato amico fidato.
+
+175
+00:15:49,240 --> 00:15:54,460
+Poi, il giorno precedente alla partenza della domestica, mette del sonnifero nel caffè
+
+176
+00:15:54,460 --> 00:15:59,920
+della ragazza, prepara la sua valigia con i propri vestiti e oggetti personali, si traveste
+
+177
+00:15:59,920 --> 00:16:04,200
+da cameriera con tanto di trucco rubato e prende l'auto della giovane.
+
+178
+00:16:04,200 --> 00:16:09,920
+Praticamente senza che nessuno sospetti nulla, arriva alla stazione e prende il primo treno
+
+179
+00:16:09,920 --> 00:16:10,920
+per Parigi.
+
+180
+00:16:11,920 --> 00:16:17,320
+Grazie alla sua astuzia, ha parecchie ore di vantaggio su ogni eventuale inseguitore,
+
+181
+00:16:17,320 --> 00:16:22,720
+anche perché nelle settimane precedenti ha sempre finto di restare a letto fino a tardi
+
+182
+00:16:22,720 --> 00:16:28,480
+al mattino e anche finto di infuriarsi se qualcuno aveva l'ardire di disturbarla prima
+
+183
+00:16:28,480 --> 00:16:29,480
+di mezzogiorno.
+
+184
+00:16:29,480 --> 00:16:33,720
+Pertanto, arriva nella capitale francese praticamente senza intoppi.
+
+185
+00:16:34,160 --> 00:16:41,760
+L'intera storia raccontata dalla stessa protagonista sembra in realtà fin troppo romanzata ed
+
+186
+00:16:41,760 --> 00:16:48,040
+è per questo motivo e anche per il fatto che Hedwig avrebbe potuto tranquillamente sottrarre
+
+187
+00:16:48,040 --> 00:16:53,600
+documenti, progetti o informazioni dall'archivio del marito che ha fatto capolino la storia
+
+188
+00:16:53,600 --> 00:16:59,000
+del coinvolgimento dei servizi segreti, in particolare quelli inglesi, anche se, come
+
+189
+00:16:59,000 --> 00:17:02,600
+accennato prima, non sembrano esserci prove di ciò.
+
+190
+00:17:02,840 --> 00:17:08,880
+Ad ogni modo, Hedy è finalmente libera e ben presto lo sarà ancora di più perché, dopo
+
+191
+00:17:08,880 --> 00:17:14,440
+quattro anni di matrimonio, otterrà finalmente il divorzio tramite un tribunale francese.
+
+192
+00:17:14,440 --> 00:17:20,040
+Tutto ciò che le resta sono i suoi gioielli e i vestiti che si è portata via dal palazzo
+
+193
+00:17:20,040 --> 00:17:27,080
+di Salisburgo, parte dei quali verranno venduti per raccimolare denaro sufficiente a spostarsi
+
+194
+00:17:27,080 --> 00:17:28,080
+a Londra.
+
+195
+00:17:28,280 --> 00:17:33,600
+Una volta nella capitale inglese conoscerà un altro personaggio che si rivelerà poi essere
+
+196
+00:17:33,600 --> 00:17:37,840
+importantissimo per l'intero corso della sua vita.
+
+197
+00:17:43,840 --> 00:17:50,400
+Una sera, mentre la finalmente libera Hedwig si trova nella sua camera ad albergo londinese,
+
+198
+00:17:50,400 --> 00:17:56,840
+riceve una telefonata da parte di un agente americano che la invita a conoscere un importante
+
+199
+00:17:56,840 --> 00:17:57,840
+produttore.
+
+200
+00:17:58,840 --> 00:18:03,640
+Si tratta niente di meno che di Louis Barth Mayer, cioè semplicemente l'uomo che è a
+
+201
+00:18:03,640 --> 00:18:09,520
+capo della Metro Goldwyn Mayer, una delle case di produzione più importanti degli
+
+202
+00:18:09,520 --> 00:18:10,520
+States.
+
+203
+00:18:10,520 --> 00:18:16,480
+In quel periodo, infatti, Mayer si trova in giro per le più importanti capitali europee
+
+204
+00:18:16,480 --> 00:18:22,280
+alla ricerca di nuovi talenti da scoprire e portare con sé in America, ad Hollywood.
+
+205
+00:18:22,280 --> 00:18:28,320
+Chiaramente la ragazza non si lascia sfuggire l'occasione, ma purtroppo il primo incontro
+
+206
+00:18:28,320 --> 00:18:31,760
+tra i due si rivela essere non troppo pacato.
+
+207
+00:18:31,760 --> 00:18:37,880
+Anzi, in verità, si tratta di una vera e propria doccia fredda per lei, che si vede
+
+208
+00:18:37,880 --> 00:18:43,640
+rifiutare categoricamente qualsiasi possibilità di approdare al cinema americano perché
+
+209
+00:18:43,640 --> 00:18:49,680
+al produttore, cito testualmente, non piace quello che penserebbe l'agente di una ragazza
+
+210
+00:18:49,680 --> 00:18:52,360
+che passa sullo schermo con il sedere nudo.
+
+211
+00:18:52,360 --> 00:18:59,120
+Si tratta di un'affermazione piuttosto forte, chiaro riferimento allo scandalo del film
+
+212
+00:18:59,120 --> 00:19:06,040
+Estasy uscito qualche anno prima, e che potrebbe a prima vista sembrare un po' bigotta anche
+
+213
+00:19:06,040 --> 00:19:10,920
+per l'epoca, ma in realtà il concetto è un po' diverso.
+
+214
+00:19:10,920 --> 00:19:18,780
+La vera lezione che Mayer darà alla giovane Edwidge riguarda più che altro la politica
+
+215
+00:19:18,880 --> 00:19:22,300
+della metro Goldwyn Mayer, nonché dell'intera Hollywood.
+
+216
+00:19:22,300 --> 00:19:28,540
+Il concetto è che non importa cosa fai nella tua vita privata, l'importante è che nei
+
+217
+00:19:28,540 --> 00:19:32,620
+film il tuo comportamento sia perlomeno signorile.
+
+218
+00:19:32,620 --> 00:19:39,060
+Si tratta, anche qui cito testualmente, degli obblighi verso il pubblico e le famiglie.
+
+219
+00:19:39,060 --> 00:19:44,140
+Alla fine, comunque, l'incontro si risolverà con una piccola offerta di ingaggio da parte
+
+220
+00:19:44,140 --> 00:19:49,860
+di Mayer, nonché con un impulsivo rifiuto da parte di Edwidge, ma ciò che conta ai
+
+221
+00:19:49,860 --> 00:19:55,900
+fini della nostra storia è che la logica di fondo delle affermazioni del produttore resterà
+
+222
+00:19:55,900 --> 00:20:03,100
+talmente impressa nel modo di rapportarsi con il mondo della ragazza, che probabilmente
+
+223
+00:20:03,100 --> 00:20:08,700
+condizionerà molte delle sue scelte future, anche riguardo all'importanza che lei stessa
+
+224
+00:20:08,700 --> 00:20:11,260
+darà alla sua carriera di inventrice.
+
+225
+00:20:11,380 --> 00:20:16,940
+Ad ogni modo, quasi subito Edwidge si rende conto di aver sprecato un'occasione importante
+
+226
+00:20:16,940 --> 00:20:23,780
+per la sua vita e, non potendo più tornare indietro sui suoi passi in modo amichevole,
+
+227
+00:20:23,780 --> 00:20:29,060
+decide di comune accordo con il suo agente di tentare il tutto per tutto e imbarcarsi
+
+228
+00:20:29,060 --> 00:20:34,660
+sulla stessa nave che riporterà il signor Mayer negli Stati Uniti, il Normandy.
+
+229
+00:20:34,660 --> 00:20:40,020
+Durante questo viaggio, ovviamente, i due hanno modo di incrociarsi nuovamente alle
+
+230
+00:20:40,020 --> 00:20:47,700
+cene e nei corridoi delle cabine e così si vengono a creare le condizioni per riproporre
+
+231
+00:20:47,700 --> 00:20:50,580
+l'offerta già menzionata sulla terraferma.
+
+232
+00:20:50,580 --> 00:20:55,700
+Lei prova a mantenere un atteggiamento di superiorità, ma ormai il suo gioco è ben
+
+233
+00:20:55,700 --> 00:21:02,620
+chiaro e il produttore, di cui certamente si può dire di tutto ma non che sia uno sprovveduto,
+
+234
+00:21:02,620 --> 00:21:06,580
+prende praticamente quasi tutte le decisioni di testa sua.
+
+235
+00:21:06,900 --> 00:21:12,260
+I termini del contratto, la prima particina che le verrà assegnata, lo stipendio, che
+
+236
+00:21:12,260 --> 00:21:18,340
+è persino un po' più alto di quello della proposta precedente, ma in tutto ciò lui
+
+237
+00:21:18,340 --> 00:21:25,100
+pretende che lei inizi immediatamente a prendere lezioni di inglese e soprattutto accetti di
+
+238
+00:21:25,100 --> 00:21:26,100
+cambiare nome.
+
+239
+00:21:26,100 --> 00:21:31,660
+È proprio durante questo viaggio, dunque, a bordo del Normandy che naviga sulle acque
+
+240
+00:21:31,660 --> 00:21:37,660
+dell'Oceano Atlantico, in partenza dall'Europa e diretto verso gli Stati Uniti, che Edwidge
+
+241
+00:21:37,660 --> 00:21:43,460
+Kisler lascia il posto ad una rinnovata e rampante Hedy Lamarr.
+
+242
+00:21:43,460 --> 00:21:49,420
+Una volta arrivata a destinazione, però, la neonata Hedy è sì un'attrice giovane
+
+243
+00:21:49,420 --> 00:21:54,900
+e bellissima, ma anche poco padrona della lingua che si parla nel paese in cui si è
+
+244
+00:21:54,900 --> 00:21:58,700
+stabilita e con un curriculum professionale minuscolo.
+
+245
+00:21:58,740 --> 00:22:05,820
+Non può certo competere con le sue colleghe già affermate star di Hollywood e, pertanto,
+
+246
+00:22:05,820 --> 00:22:11,820
+tra una particina e l'altra, rimane per lungo tempo un po' indisparte e sotto l'ala protettrice
+
+247
+00:22:11,820 --> 00:22:12,820
+di Meyer.
+
+248
+00:22:12,820 --> 00:22:18,100
+In questo periodo, quindi, ancora una volta ha la possibilità di assorbire conoscenze
+
+249
+00:22:18,100 --> 00:22:25,100
+e atteggiamenti da quest'ultimo e ciò rafforza ancora di più quella filosofia della signorilità
+
+250
+00:22:25,100 --> 00:22:29,700
+che si concretizza nel tenere separate vita privata e vita professionale.
+
+251
+00:22:29,700 --> 00:22:35,860
+L'America dei film di Hollywood, con i suoi luoghi comuni, i suoi paesaggi caratteristici
+
+252
+00:22:35,860 --> 00:22:43,260
+e protagonisti eroici, è e deve rimanere un'America idealizzata, con regole e dinamiche
+
+253
+00:22:43,260 --> 00:22:44,260
+ben definite.
+
+254
+00:22:44,260 --> 00:22:50,140
+Ed è dunque in questo ambiente, ideale davanti alla macchina da presa ma duro e spietato
+
+255
+00:22:50,140 --> 00:22:57,300
+dietro, che la giovane Edie cresce professionalmente di pellicola in pellicola, alcune delle quali
+
+256
+00:22:57,300 --> 00:23:03,500
+verranno più apprezzate ed altre meno, e fra le quali spiccheranno anche grandi capolavori
+
+257
+00:23:03,500 --> 00:23:09,020
+che sono rimasti nella storia del cinema anche qui in Italia, come Sansone e Dalila, La febbre
+
+258
+00:23:09,020 --> 00:23:11,460
+del petrolio o Un'americana nella casba.
+
+259
+00:23:11,460 --> 00:23:18,540
+Questi anni saranno per Edie un susseguirsi di film, flirt occasionali e non, e persino
+
+260
+00:23:18,540 --> 00:23:21,820
+un matrimonio della durata di poco più di un anno.
+
+261
+00:23:21,820 --> 00:23:28,460
+Tutto questo fino al 1940, anno nel quale l'attrice incontra un altro personaggio, il
+
+262
+00:23:28,460 --> 00:23:34,900
+quale risulterà poi essere molto importante sia nella sua vita personale che nella storia
+
+263
+00:23:34,900 --> 00:23:37,020
+della moderna tecnologia.
+
+264
+00:23:37,020 --> 00:23:49,940
+George Antil, nato l'8 luglio 1900, è un musicista e compositore americano che ha fatto
+
+265
+00:23:49,940 --> 00:23:51,620
+carriera in Europa.
+
+266
+00:23:51,620 --> 00:23:58,820
+Come Edie, anche George è a suo modo geniale e professionalmente molto precoce, a soli
+
+267
+00:23:58,820 --> 00:24:05,260
+21 anni infatti già si esibisce nei teatri di Berlino e di Parigi e vive respirando e
+
+268
+00:24:05,260 --> 00:24:08,700
+assorbendo la cultura e il senso artistico locale.
+
+269
+00:24:08,700 --> 00:24:15,780
+La sua produzione musicale ammonta più di 300 opere, ma come se non bastasse, ha soprattutto
+
+270
+00:24:15,780 --> 00:24:20,940
+fama di essere un grande innovatore nel suo campo, nonché un singolare inventore.
+
+271
+00:24:20,940 --> 00:24:26,780
+Le sue macchine musicali infatti, cioè degli strumenti meccanici in grado di suonare dei
+
+272
+00:24:26,780 --> 00:24:32,920
+brani musicali in modo totalmente autonomo, stupiscono non poco gli ambienti della cultura
+
+273
+00:24:32,920 --> 00:24:39,040
+europea e permettono all'autore di stringere rapporti con illustri personaggi del tempo.
+
+274
+00:24:39,040 --> 00:24:46,800
+James Joyce, Pablo Picasso, Salvador Dalì, Man Ray, Ernest Hemingway e Igor Stravinsky.
+
+275
+00:24:46,800 --> 00:24:53,080
+Ma nonostante tutte queste attività e sfaccettature, in fin dei conti la carriera artistica non
+
+276
+00:24:53,080 --> 00:24:57,680
+rende a George a sufficienza per vivere una vita serena e dignitosa.
+
+277
+00:24:58,000 --> 00:25:05,440
+Così nel 1933 il musicista inventore si vede costretto a tornare in patria, demoralizzato
+
+278
+00:25:05,440 --> 00:25:06,560
+e senza un soldo.
+
+279
+00:25:06,560 --> 00:25:12,480
+I contatti però non gli mancano e grazie ad essi, a poco a poco, riesce a costruire
+
+280
+00:25:12,480 --> 00:25:18,040
+una propria stabilità economica negli Stati Uniti, creando colonne sonore e scrivendo
+
+281
+00:25:18,040 --> 00:25:22,320
+articoli per varie testate, alcune delle quali anche molto importanti.
+
+282
+00:25:22,840 --> 00:25:29,120
+Sempre interessato alla scena politica internazionale, nel 1939 scrive ad esempio un articolo in
+
+283
+00:25:29,120 --> 00:25:35,720
+cui prevede l'attacco della Germania alla Russia e nel 1940 pubblica persino un libro
+
+284
+00:25:35,720 --> 00:25:37,480
+di strategia internazionale.
+
+285
+00:25:37,480 --> 00:25:44,520
+Insomma, George è chiaramente un uomo brillante, intelligente e creativo, nonché un bell'uomo
+
+286
+00:25:44,520 --> 00:25:51,360
+e tutte queste caratteristiche sono certamente la base sulla quale si fonderà l'interesse
+
+287
+00:25:51,400 --> 00:25:58,000
+di una Hedy Lamarr che, dopo un primo incontro ad una cena a casa di amici comuni, gli lascia
+
+288
+00:25:58,000 --> 00:26:02,080
+il numero di telefono scritto con il rossetto sul cofano dell'auto.
+
+289
+00:26:02,080 --> 00:26:07,800
+Le vite dei due artisti iniziano dunque ad intrecciarsi, scoprono di avere in comune
+
+290
+00:26:07,800 --> 00:26:12,400
+desideri, rimpianti, ma anche acume intelligenza ed inventiva.
+
+291
+00:26:12,400 --> 00:26:19,400
+Lo stesso Antil racconta nella sua biografia che la Lamarr sentiva su di sé il peso del
+
+292
+00:26:19,520 --> 00:26:25,800
+senso di colpa di una europea che ha abbandonato il proprio paese dilaniato dalla crisi, un
+
+293
+00:26:25,800 --> 00:26:32,560
+po' come lui che credeva di non fare abbastanza per sostenere il proprio di paese in una situazione
+
+294
+00:26:32,560 --> 00:26:34,520
+difficile a livello mondiale.
+
+295
+00:26:34,520 --> 00:26:40,640
+Ad un certo punto lei gli confida persino di essere a conoscenza di molte informazioni
+
+296
+00:26:40,640 --> 00:26:46,120
+su armi, munizioni, dispositivi segreti e questioni militari apprese durante i suoi
+
+297
+00:26:46,120 --> 00:26:52,600
+anni a Salisburgo, al punto che sta riflettendo seriamente sull'eventualità di lasciare
+
+298
+00:26:52,600 --> 00:26:58,880
+la metro Goldwyn Myers e recarsi a Washington per offrire la sua collaborazione al National
+
+299
+00:26:58,880 --> 00:26:59,880
+Inventors Council.
+
+300
+00:26:59,880 --> 00:27:05,040
+Ma riguardo a questa storia George ha un'idea migliore, secondo lui la ragazza potrebbe
+
+301
+00:27:05,040 --> 00:27:08,480
+essere molto più utile alla causa rimanendo a Los Angeles.
+
+302
+00:27:08,480 --> 00:27:15,000
+Lei infatti è in possesso di uno spiccato talento per l'invenzione di armi da guerra,
+
+303
+00:27:15,000 --> 00:27:19,760
+qualcosa di maturato probabilmente a partire da un misto delle nozioni apprese durante
+
+304
+00:27:19,760 --> 00:27:26,280
+le riunioni di lavoro del primo marito, Mandl, e dei suoi studi giovani di ingegneria.
+
+305
+00:27:26,280 --> 00:27:32,880
+O forse ancora, Eddie aveva conservato per tutti questi anni documenti e progetti militari
+
+306
+00:27:32,880 --> 00:27:37,880
+sottratti dal signore delle armi austriaco, ma questo probabilmente non lo sapremo mai.
+
+307
+00:27:37,880 --> 00:27:44,800
+In ogni caso però tra le tante idee che Eddie continua a sfornare ce n'è una in particolare
+
+308
+00:27:44,800 --> 00:27:48,160
+che George giudica molto interessante.
+
+309
+00:27:48,160 --> 00:27:55,320
+Le prospettive, secondo lui, sono così buone che si spinge perfino a consigliarle di brevettarla
+
+310
+00:27:55,320 --> 00:27:58,080
+e lei accetta di farlo insieme a lui.
+
+311
+00:27:58,080 --> 00:28:04,400
+Le settimane e i mesi che seguono quella decisione sono di intenso lavoro per entrambi, i due
+
+312
+00:28:04,400 --> 00:28:10,120
+sono spesso impegnati a discutere e definire l'idea di Eddie con l'obiettivo di trasformarla
+
+313
+00:28:10,120 --> 00:28:17,200
+in un vero e proprio brevetto da sottoporre al National Inventors Council, il NIC, affinché
+
+314
+00:28:17,200 --> 00:28:22,080
+venga impiegato attivamente per essere d'aiuto alle forze militari americane.
+
+315
+00:28:22,080 --> 00:28:28,000
+Il NIC è una delle tante agenzie che viene istituita nel periodo della seconda guerra
+
+316
+00:28:28,000 --> 00:28:34,480
+mondiale con lo scopo di far lavorare insieme Stato, esercito, aziende private e università.
+
+317
+00:28:34,840 --> 00:28:41,720
+In particolare, il compito di questo bureau è quello di raccogliere ed analizzare invenzioni
+
+318
+00:28:41,720 --> 00:28:47,180
+che possano risultare utili per la difesa nazionale, da proporre poi alle forze armate
+
+319
+00:28:47,180 --> 00:28:49,040
+per un impiego sul campo.
+
+320
+00:28:49,040 --> 00:28:56,680
+Nei suoi 34 anni di attività, il NIC raccoglierà ben 625.000 proposte, ma solo poche di queste
+
+321
+00:28:56,680 --> 00:28:59,720
+verranno giudicate degne di essere impiegate.
+
+322
+00:29:00,160 --> 00:29:04,680
+Ad ogni modo, comunque, questa e le altre agenzie nate in quel periodo andranno poi
+
+323
+00:29:04,680 --> 00:29:10,120
+a costituire quella corrente sinergica tipica della filiera produttiva americana che ne
+
+324
+00:29:10,120 --> 00:29:16,000
+ha determinato allora e ne determina tutt'oggi l'estrema spinta innovatrice in campo tecnologico.
+
+325
+00:29:22,000 --> 00:29:26,880
+Bene, siamo giunti al termine di questa prima parte della nostra storia.
+
+326
+00:29:27,280 --> 00:29:31,920
+Abbiamo parlato della vita di Edi Lamar, delle sue attitudini anche al di fuori del
+
+327
+00:29:31,920 --> 00:29:37,400
+mondo del cinema e di quelli che, secondo me, sono gli incontri e gli eventi che maggiormente
+
+328
+00:29:37,400 --> 00:29:43,320
+hanno contribuito a formare in lei quelle idee che la porteranno a teorizzare le basi
+
+329
+00:29:43,320 --> 00:29:45,760
+della moderna comunicazione wireless.
+
+330
+00:29:45,760 --> 00:29:51,280
+Per oggi dunque direi che può bastare, mi raccomando non perderti la seconda parte
+
+331
+00:29:51,280 --> 00:29:55,880
+di questa storia in cui parleremo di come è nata e come funziona l'invenzione di questo
+
+332
+00:29:55,880 --> 00:30:01,480
+singolare personaggio che troverai sempre nel feed di Pensieri in Codice tra una o due
+
+333
+00:30:01,480 --> 00:30:02,480
+settimane.
+
+334
+00:30:02,480 --> 00:30:08,720
+Quindi iscriviti dalla tua app di podcast o scopri di più visitando il sito pensierincodice.it.
+
+335
+00:30:08,720 --> 00:30:15,080
+Nel frattempo io ti ringrazio per aver ascoltato, spero di averti raccontato qualcosa di interessante
+
+336
+00:30:15,080 --> 00:30:17,840
+e ti chiedo di condividere l'episodio con qualcun altro.
+
+337
+00:30:17,840 --> 00:30:22,760
+Insomma, se apprezzi il lavoro che faccio in questo podcast, aiutami a farlo crescere,
+
+338
+00:30:22,760 --> 00:30:23,760
+no?
+
+339
+00:30:23,760 --> 00:30:28,800
+E per la prossima settimana un grazie speciale va ad Edoardo Secco che con la sua donazione
+
+340
+00:30:28,800 --> 00:30:31,640
+periodica mi dimostra il suo apprezzamento.
+
+341
+00:30:31,640 --> 00:30:36,800
+Per fare anche tu come Edoardo trovi tutto, metodi, informazioni eccetera sempre sul sito
+
+342
+00:30:36,800 --> 00:30:38,120
+pensierincodice.it.
+
+343
+00:30:38,120 --> 00:30:45,040
+Detto questo noi ci sentiamo la prossima settimana sempre tenendo bene a mente che un informatico
+
+344
+00:30:45,040 --> 00:30:48,520
+risolve problemi a volte anche usando il computer.
+
+345
+00:30:53,760 --> 00:30:57,760
+Sottotitoli creati dalla comunità Amara.org
+

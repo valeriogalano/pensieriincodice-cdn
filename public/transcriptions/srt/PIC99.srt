@@ -1,0 +1,356 @@
+1
+00:00:00,000 --> 00:00:16,640
+Ti do il benvenuto su Espresso, la rubrica di pensieri in codice in cui ci beviamo insieme
+
+2
+00:00:16,640 --> 00:00:21,340
+un caffè ed io ti racconto di un libro, di un gadget, di un videogame o di qualsiasi
+
+3
+00:00:21,340 --> 00:00:26,180
+altra cosa che mi ha colpito e che sono sicuro piacerà anche a te.
+
+4
+00:00:26,580 --> 00:00:31,540
+Al termine dell'episodio, se riterrai che ti abbia dato un buon consiglio e vorrai offrire
+
+5
+00:00:31,540 --> 00:00:37,400
+tu il prossimo caffè, potrai farlo acquistando dal link affiliato che trovi in descrizione
+
+6
+00:00:37,400 --> 00:00:43,140
+o addirittura pensando di inviare un piccolo contributo per supportare il progetto. Trovi
+
+7
+00:00:43,140 --> 00:00:46,820
+tutti i dettagli sul sito pensieriincodice.it, con due i.
+
+8
+00:00:46,820 --> 00:00:58,380
+Quando penso a te, ascoltatore di pensieri in codice, tendo sempre ad immaginarti un
+
+9
+00:00:58,380 --> 00:01:04,660
+po' simile a me, con i miei stessi interessi, con le mie stesse fissazioni, ma anche con
+
+10
+00:01:04,660 --> 00:01:10,020
+i miei stessi problemi. Forse è un modo un po' limitato di pensare alla cosa, ma per
+
+11
+00:01:10,020 --> 00:01:16,260
+ora è così e influisce anche sui gadget che ti consiglio in questa rubrica. Se qualcosa
+
+12
+00:01:16,260 --> 00:01:22,580
+piace a me, finisce nell'elenco degli argomenti degli episodi di Espresso e lo strumento di
+
+13
+00:01:22,580 --> 00:01:28,160
+oggi non fa eccezione. Per come ti immagino quindi, sei probabilmente una persona che
+
+14
+00:01:28,160 --> 00:01:36,260
+trascorre tanto tempo seduta ad una scrivania davanti a un pc. Tra call e email, documentazione
+
+15
+00:01:36,260 --> 00:01:41,740
+e codice, le ore trascorrono in un attimo e a volte la concentrazione è tale che non
+
+16
+00:01:41,740 --> 00:01:47,500
+ti stacchi dallo schermo se non per il pranzo e la cena. Sono certo che come me già sai
+
+17
+00:01:47,500 --> 00:01:53,300
+che si tratta di un comportamento sbagliato, però ammettilo, non è mica semplice renderti
+
+18
+00:01:53,300 --> 00:01:58,380
+conto che dovresti fare una pausa quando la tua mente è immersa in un flusso continuo
+
+19
+00:01:58,380 --> 00:02:05,220
+di creatività e ragionamento. Io spesso utilizzo un timer e la tecnica del pomodoro, ne ho
+
+20
+00:02:05,220 --> 00:02:10,940
+parlato in un episodio di qualche tempo fa di pensieri in codice, ma è un approccio
+
+21
+00:02:10,940 --> 00:02:16,780
+non sempre applicabile e soprattutto non riguarda nello specifico il problema che vorrei
+
+22
+00:02:16,780 --> 00:02:22,300
+affrontare oggi con te, che è in realtà un po' più subdolo. Tra le tante attività
+
+23
+00:02:22,300 --> 00:02:30,560
+infatti che noi informatici tendiamo a trascurare, c'è quella semplice ma fondamentale, raccomandata
+
+24
+00:02:30,560 --> 00:02:37,100
+praticamente da tutti, che è l'idratarsi, l'assumere una sufficiente quantità di liquidi.
+
+25
+00:02:37,540 --> 00:02:44,700
+Ora lo so che è banale, ma pensaci, tu bevi almeno un litro e mezzo o due litri di acqua
+
+26
+00:02:44,700 --> 00:02:50,940
+ogni giorno? Non serve essere laureati in medicina per sapere che è una cosa importante,
+
+27
+00:02:50,940 --> 00:02:57,460
+ce ne accorgiamo noi stessi in quei rari giorni in cui assolviamo correttamente a questo compito,
+
+28
+00:02:57,460 --> 00:03:02,700
+abbiamo meno fame, ci sentiamo più energici, le signore che hanno più occhio per queste
+
+29
+00:03:02,700 --> 00:03:09,900
+cose notano una pelle più elastica, ci sentiamo semplicemente meglio in generale. Eppure di norma
+
+30
+00:03:09,900 --> 00:03:15,220
+non lo facciamo, nei giorni lavorativi perché siamo troppo concentrati sulle nostre altre
+
+31
+00:03:15,220 --> 00:03:21,180
+attività, nel weekend semplicemente perché ormai ci siamo abituati a trascurare queste attività e
+
+32
+00:03:21,180 --> 00:03:28,860
+ce ne dimentichiamo. Io ho sempre cercato una soluzione a questo problema nel mondo tech,
+
+33
+00:03:29,580 --> 00:03:34,740
+ho sempre pensato che dovesse esistere uno strumento smart per aiutare le persone a
+
+34
+00:03:34,740 --> 00:03:40,980
+mantenere questa buona abitudine e quindi nel corso degli anni ho provato un po' di quelle
+
+35
+00:03:40,980 --> 00:03:48,100
+app che ti avvisano durante il giorno, nelle quali puoi annotare la quantità di acqua bevuta e le ho
+
+36
+00:03:48,100 --> 00:03:54,900
+sempre abbandonate al massimo dopo tre o quattro giorni. Non importava quale scegliessi, c'era
+
+37
+00:03:54,900 --> 00:04:01,140
+sempre quel pensiero di fondo che mi diceva che c'era qualcosa che non andava e poi finalmente
+
+38
+00:04:01,140 --> 00:04:09,340
+ho capito. Il limite è che ti devi appuntare le informazioni manualmente, sembra una cosa da niente
+
+39
+00:04:09,340 --> 00:04:17,420
+ma la realtà è che il telefono fa bip, tu devi bere magari un sorso o un bicchiere o dalla
+
+40
+00:04:17,420 --> 00:04:24,420
+borraccia chissà quale quantità e poi sbloccare il telefono, cliccare sulla notifica, cliccare
+
+41
+00:04:24,420 --> 00:04:31,860
+su aggiungi, capire la quantità, si ma sto lavorando, mi sono distratto, ho perso il filo, arrivano
+
+42
+00:04:31,860 --> 00:04:39,420
+altre notifiche, no, non funziona secondo me. Ne sono così convinto che qualche anno fa provai
+
+43
+00:04:39,420 --> 00:04:45,540
+perfino a progettare con un collega ingegnere una borraccia che tenesse traccia in maniera
+
+44
+00:04:45,540 --> 00:04:51,500
+automatica della quantità di acqua bevuta. Purtroppo il progetto si arenò quasi subito
+
+45
+00:04:51,500 --> 00:04:58,980
+probabilmente perché non ci credemmo abbastanza ma forse con il senno di poi perché non avemmo
+
+46
+00:04:58,980 --> 00:05:07,220
+l'idea giusta che come scoprirai fra poco è così semplice da sembrare banale. Ad ogni modo dopo
+
+47
+00:05:07,220 --> 00:05:14,780
+tanta ricerca qualche settimana fa finalmente ho scoperto la soluzione perfetta. Ovviamente l'ho
+
+48
+00:05:14,780 --> 00:05:21,940
+acquistata, l'ho provata e se oggi sono qui a condividerla con te è perché l'ho trovata
+
+49
+00:05:21,940 --> 00:05:30,180
+fantastica. Sto parlando del drink manager. E cosa sarà mai un drink manager? Beh nella
+
+50
+00:05:30,180 --> 00:05:36,660
+pratica è una piccola bilancia intelligente prodotta dalla Beurer, è un'azienda tedesca non
+
+51
+00:05:36,660 --> 00:05:43,340
+faccio nemmeno finta di pronunciarla correttamente. Il funzionamento è molto semplice, la posizioni
+
+52
+00:05:43,340 --> 00:05:48,820
+vicino alla tua appostazione, riempi un contenitore, un bicchiere, una tazza, io uso una
+
+53
+00:05:48,820 --> 00:05:56,180
+borraccia di Decathlon da 5 euro e lo appoggi sopra il drink manager. Quando bevi ovviamente
+
+54
+00:05:56,180 --> 00:06:02,220
+sollevi il contenitore e poi lo riappoggi e la bilancia valuta la differenza di peso e capisce
+
+55
+00:06:02,220 --> 00:06:09,780
+quanta acqua hai bevuto. E' semplice e geniale. Mantiene le informazioni per 14 giorni e di
+
+56
+00:06:09,780 --> 00:06:15,860
+tanto in tanto puoi collegarla via bluetooth allo smartphone per scaricare i dati nell'app la
+
+57
+00:06:15,860 --> 00:06:21,860
+quale ti produce anche qualche grafico e ti comunica se hai rispettato o meno gli obiettivi
+
+58
+00:06:21,860 --> 00:06:28,380
+che ti sei prefissato. Ovviamente la sua funzione non si limita solo a conteggiare l'acqua bevuta
+
+59
+00:06:28,380 --> 00:06:34,900
+ma opera anche come un piccolo reminder. Puoi impostare fasce orarie e quantità di liquidi da
+
+60
+00:06:34,900 --> 00:06:41,700
+assumere e il manager ti avvisa tramite segnali luminosi e sonori se stai rispettando o meno la
+
+61
+00:06:41,700 --> 00:06:48,380
+tua tabella di marcia. L'oggetto in sé è molto leggero e compatto, io lo metto nello zainetto
+
+62
+00:06:48,380 --> 00:06:53,620
+del pc e me lo porto in ufficio ma entra tranquillamente anche nella tasca di una
+
+63
+00:06:53,620 --> 00:07:00,300
+giacca. Nell'utilizzo giornaliero mi sono dato come obiettivo i classici due litri e devo dire
+
+64
+00:07:00,300 --> 00:07:06,060
+che anche se non li raggiungo proprio sempre la media generale è molto migliorata nel corso di
+
+65
+00:07:06,060 --> 00:07:11,820
+queste ultime settimane ma ovviamente prima che tu te lo possa chiedere ti dico subito che non
+
+66
+00:07:11,820 --> 00:07:17,820
+lo utilizzo in modo compulsivo ad esempio non durante i pasti. L'idea non è quella di tracciare
+
+67
+00:07:17,820 --> 00:07:25,060
+ogni singola goccia di liquido quanto piuttosto quella di avere un reminder un pochino più
+
+68
+00:07:25,060 --> 00:07:31,300
+intelligente che richieda molta meno attenzione nell'utilizzo. Tanto per capirci ad esempio sto
+
+69
+00:07:31,300 --> 00:07:37,900
+sorseggiando anche mentre scrivo questo episodio, se a ogni sorso dovessi fermarmi per annotare la
+
+70
+00:07:37,900 --> 00:07:44,820
+quantità ci metterei non lo so il doppio del tempo probabilmente. Il manager però sta anche
+
+71
+00:07:44,820 --> 00:07:52,420
+facendo bip e mi sta mostrando un led rosso quindi so che devo incrementare il ritmo se voglio
+
+72
+00:07:52,420 --> 00:07:59,020
+rispettare la mia tabella di marcia. Insomma è una soluzione semplicissima ma anche molto
+
+73
+00:07:59,020 --> 00:08:06,460
+funzionale. Io conoscevo già la Beurer perché ho già una loro bilancia appesa persone smart da
+
+74
+00:08:06,460 --> 00:08:14,140
+anni e posso dire che i loro prodotti mi piacciono proprio per fattura e resistenza. Anche per questo
+
+75
+00:08:14,140 --> 00:08:18,460
+motivo mi sono lanciato subito nell'acquisto del drink manager e devo dire che non me ne
+
+76
+00:08:18,460 --> 00:08:25,740
+sono affatto pentito. Bene come certamente avrai capito dalla mia voce oggi non sono per niente in
+
+77
+00:08:25,740 --> 00:08:31,740
+forma quindi sinceramente non saprei che altro dirti riguardo al drink manager se non consigliarti
+
+78
+00:08:31,740 --> 00:08:37,220
+di andare a guardare il link che ti lascio in descrizione che ti ricordo è un link affiliato
+
+79
+00:08:37,220 --> 00:08:43,620
+quindi acquistando a partire da esso non spenderai un centesimo in più ma sosterrai il mio progetto.
+
+80
+00:08:43,620 --> 00:08:49,740
+Poi se hai domande non esitare a farmele sarò felice di risponderti. Trovi tutti i miei
+
+81
+00:08:49,740 --> 00:08:56,020
+contatti sul sito pensierincodice.it con due i. Ah e poi non farti spaventare da alcune
+
+82
+00:08:56,020 --> 00:09:01,580
+recensioni che troverai che ti dicono che è troppo difficile da usare. Sinceramente la
+
+83
+00:09:01,580 --> 00:09:06,260
+cosa mi aveva un po' preoccupato all'inizio ma una volta messo in funzione mi sono reso conto
+
+84
+00:09:06,260 --> 00:09:13,180
+che è di una semplicità tale che onestamente non capisco come non si possa riuscire ad utilizzarlo.
+
+85
+00:09:13,740 --> 00:09:19,980
+Cioè o a quei clienti deve essere capitato un esemplare difettoso oppure boh gli esemplari
+
+86
+00:09:19,980 --> 00:09:26,540
+difettosi sono loro non saprei come altro spiegare la cosa. Bene la mia voce è terminata tu fammi
+
+87
+00:09:26,540 --> 00:09:33,020
+sapere se deciderai di seguire questo mio consiglio lo sai che ci tengo. Noi ci sentiamo
+
+88
+00:09:33,020 --> 00:09:39,300
+la settimana prossima con un nuovo episodio classico del podcast voce permettendo e ricorda
+
+89
+00:09:39,300 --> 00:09:44,540
+sempre che un informatico risolve problemi a volte anche usando il computer.
+

@@ -1,0 +1,264 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice, pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,360
+in meno di 5 minuti.
+
+3
+00:00:14,360 --> 00:00:29,360
+In generale nel campo dei media esiste una pratica piuttosto diffusa che consiste nell'inserire
+
+4
+00:00:29,360 --> 00:00:34,920
+piccoli elementi come messaggi, immagini o addirittura funzionalità nascoste all'interno
+
+5
+00:00:34,920 --> 00:00:38,000
+di film, videogame, software o altri prodotti.
+
+6
+00:00:38,000 --> 00:00:43,800
+Tali elementi prendono il nome di Easter Eggs, uova di pasqua, proprio a voler rimarcare
+
+7
+00:00:43,800 --> 00:00:49,520
+il concetto di sorpresa che essi suscitano nei propri fruitori nel momento in cui questi
+
+8
+00:00:49,520 --> 00:00:54,080
+si trovano di fronte a qualcosa che non si aspettavano o che risulta fuori contesto
+
+9
+00:00:54,080 --> 00:00:57,560
+o che ancora si ricollega ad un altro prodotto.
+
+10
+00:00:57,960 --> 00:01:05,400
+Il nome Easter Egg fu cognato nel 1979 da Steve Wright, che sarebbe poi diventato il
+
+11
+00:01:05,400 --> 00:01:09,160
+direttore del reparto di sviluppo software dell'Atari.
+
+12
+00:01:09,160 --> 00:01:15,280
+Wright utilizzò questo nome per descrivere un messaggio nascosto, inserito all'interno
+
+13
+00:01:15,280 --> 00:01:21,840
+di un videogame dell'Atari dal titolo Adventure, ma proprio il campo dell'informatica, persino
+
+14
+00:01:21,840 --> 00:01:27,820
+da prima che nascesse il termine Easter Egg, è sempre stato un terreno fertile per questo
+
+15
+00:01:27,820 --> 00:01:29,280
+tipo di iniziative.
+
+16
+00:01:29,280 --> 00:01:35,480
+Da sempre i programmatori si sono divertiti ad inserire vari tipi di scherzi o di elementi
+
+17
+00:01:35,480 --> 00:01:38,640
+segreti nei loro software o addirittura nell'hardware.
+
+18
+00:01:38,640 --> 00:01:46,640
+Il primo Easter Egg software conosciuto, infatti, sembra risalire addirittura al 1973, all'interno
+
+19
+00:01:46,680 --> 00:01:51,760
+del famosissimo videogame Moonlander, nel quale l'obiettivo del giocatore è quello
+
+20
+00:01:51,760 --> 00:01:56,840
+di atterrare con un modulo spaziale sulla Luna, ma se si viaggia abbastanza a lungo
+
+21
+00:01:56,840 --> 00:02:01,720
+prima di toccare la superficie lunare, si incontra niente di meno che un McDonald's.
+
+22
+00:02:01,720 --> 00:02:06,480
+E questo è solo il primo, ne esistono moltissimi più o meno conosciuti.
+
+23
+00:02:06,480 --> 00:02:13,400
+Il famigerato Konami Code è un altro esempio piuttosto diffuso, presente nei più disparati
+
+24
+00:02:13,400 --> 00:02:14,720
+software o device.
+
+25
+00:02:14,720 --> 00:02:20,400
+Ad esempio, se hai una Alexa, prova a dirle su su giù giù sinistra destra sinistra
+
+26
+00:02:20,400 --> 00:02:23,160
+destra B A e scopri cosa ti risponde.
+
+27
+00:02:23,160 --> 00:02:28,920
+Ma questo fenomeno vale anche per contesti più seri, ad esempio nelle distribuzioni
+
+28
+00:02:28,920 --> 00:02:37,840
+Linux basate su Debian, se si lancia il comando da terminale apt-get mu appare un bovino che
+
+29
+00:02:37,840 --> 00:02:39,720
+ci chiede se oggi abbiamo mugito.
+
+30
+00:02:40,160 --> 00:02:45,960
+E anche gli strumenti di largo uso non fanno eccezione, Google stesso include tantissimi
+
+31
+00:02:45,960 --> 00:02:52,520
+easter egg che si possono attivare tramite delle particolari ricerche e dato il gran numero
+
+32
+00:02:52,520 --> 00:02:59,000
+e l'alta qualità degli stessi, esiste persino un sito dedicato a elencarli tutti e a spiegare
+
+33
+00:02:59,000 --> 00:03:03,360
+come attivarli, ovviamente te lo lascio in descrizione se vuoi andare a curiosare.
+
+34
+00:03:03,800 --> 00:03:10,120
+E ancora, prova ad andare sul sito di Amazon, cliccare il tasto destro e poi su mostra codice
+
+35
+00:03:10,120 --> 00:03:14,280
+sorgente, poi scrolla fino in fondo e fammi sapere cosa trovi.
+
+36
+00:03:14,280 --> 00:03:20,320
+Inizialmente il fenomeno degli easter egg era fatto di codice realmente nascosto o addirittura
+
+37
+00:03:20,320 --> 00:03:27,000
+dimenticato, come nel caso del Konami Code, ma poi la tendenza ha iniziato un po' a cambiare
+
+38
+00:03:27,000 --> 00:03:33,260
+e si è cominciato a documentare tale codice o addirittura a vietarlo, come nel caso rispettivamente
+
+39
+00:03:33,260 --> 00:03:40,060
+di Microsoft a partire dal 2002 e poi di Apple nel periodo Jobs, e tutto questo ovviamente
+
+40
+00:03:40,060 --> 00:03:41,660
+per motivi di sicurezza.
+
+41
+00:03:41,660 --> 00:03:47,380
+Ma quello degli easter eggs è rimasto un mondo tutto da esplorare, quasi sempre nel
+
+42
+00:03:47,380 --> 00:03:52,820
+farlo scopriremo che c'è un qualcosa di simpatico o di divertente che riguarda un software o
+
+43
+00:03:52,820 --> 00:03:56,460
+un device che utilizziamo tutti i giorni o che addirittura abbiamo in casa.
+
+44
+00:03:56,460 --> 00:04:02,620
+E tra i tanti c'è un particolare easter egg, devo dire piuttosto semplice, che però
+
+45
+00:04:02,620 --> 00:04:08,340
+per me è risultato sempre piuttosto interessante e che credo sia troppo poco conosciuto.
+
+46
+00:04:08,340 --> 00:04:11,380
+Sto parlando del Book of Mozilla.
+
+47
+00:04:11,380 --> 00:04:18,260
+Scrivendo infatti about 2.mozilla nella barra del titolo di un browser Firefox apparirà
+
+48
+00:04:18,260 --> 00:04:24,340
+una frase, una sorta di versetto biblico che parla di una bestia, le sue opere e i suoi
+
+49
+00:04:24,340 --> 00:04:25,340
+seguaci.
+
+50
+00:04:25,340 --> 00:04:31,660
+A seconda della versione di Firefox questo versetto cambia, infatti nel corso della storia
+
+51
+00:04:31,660 --> 00:04:38,420
+ne sono apparsi ben 8 che pur essendo diversi fra loro mantengono tutti questo tono un po'
+
+52
+00:04:38,420 --> 00:04:43,340
+misterioso e in descrizione trovi il link al sito ufficiale per leggerli tutti.
+
+53
+00:04:43,340 --> 00:04:49,860
+Ma nonostante l'apparente solennità, in realtà questi versetti sono associati alla
+
+54
+00:04:49,860 --> 00:04:56,060
+storia dell'evoluzione del browser nel tempo, dal primissimo Netscape Navigator fino al
+
+55
+00:04:56,060 --> 00:04:58,100
+novissimo Firefox Focus.
+
+56
+00:04:58,540 --> 00:05:04,020
+Per capire questa cosa basta visualizzare il codice sorgente del sito ufficiale del
+
+57
+00:05:04,020 --> 00:05:11,020
+Book of Mozilla e leggere i commenti nascosti all'interno del codice HTML, i quali spiegano
+
+58
+00:05:11,020 --> 00:05:17,060
+l'avvenimento a cui ciascun versetto fa riferimento, di fatto si tratta di un easter egg nell'easter
+
+59
+00:05:17,060 --> 00:05:18,060
+egg.
+
+60
+00:05:18,060 --> 00:05:22,460
+E un'altra cosa molto interessante è che questa caratteristica è presente perfino
+
+61
+00:05:22,460 --> 00:05:27,780
+in altri browser, tra i quali il più famoso è sicuramente Internet Explorer, il quale
+
+62
+00:05:27,780 --> 00:05:33,500
+all'indirizzo About Mozilla mostrava il Blue Screen of Death di Windows.
+
+63
+00:05:33,500 --> 00:05:38,740
+Insomma, The Book of Mozilla è un classico esempio di easter egg al quale tutti abbiamo
+
+64
+00:05:38,740 --> 00:05:42,580
+accesso ma che probabilmente non abbiamo mai visto.
+
+65
+00:05:42,580 --> 00:05:49,020
+Un piccolo scherzo che dei goliardici programmatori hanno voluto inserire all'interno delle loro
+
+66
+00:05:49,020 --> 00:05:56,100
+creazioni e che per noi può rappresentare un momento di scoperta divertente e curioso.
+

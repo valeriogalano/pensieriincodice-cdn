@@ -1,0 +1,896 @@
+1
+00:00:00,000 --> 00:00:09,960
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:09,960 --> 00:00:26,520
+Salve a tutti e bentornati su Pensieri in codice. Se non avete trascorso le ultime settimane
+
+3
+00:00:26,520 --> 00:00:31,960
+in un eremo o su un'isola deserta, avrete sicuramente sentito parlare dei vari leak di
+
+4
+00:00:31,960 --> 00:00:38,840
+dati avvenuti di recente. Grandissimi attori del mondo di internet, ed in particolare Facebook,
+
+5
+00:00:38,840 --> 00:00:45,400
+LinkedIn e Clubhouse, hanno subito degli attacchi grazie ai quali sono state sfiltrate informazioni
+
+6
+00:00:45,400 --> 00:00:52,080
+riguardanti una quantità di utenti che si conta in numero di milioni. Ora, di queste notizie ne
+
+7
+00:00:52,080 --> 00:00:57,680
+hanno già parlato in tanti e se vi interessa approfondire, cercate qualcosa sul canale di
+
+8
+00:00:57,680 --> 00:01:04,360
+Matteo Flora o sul podcast di Digitalia. Quello che invece vorrei fare io oggi qui con voi non è
+
+9
+00:01:04,360 --> 00:01:10,960
+tanto raccontare le notizie, quanto piuttosto esaminare il metodo utilizzato per questi
+
+10
+00:01:10,960 --> 00:01:17,600
+attacchi, dato che per tutti e tre si è trattato dello stesso sistema. Tutte le società coinvolte
+
+11
+00:01:17,600 --> 00:01:24,200
+infatti non hanno parlato di operazioni mirate a superare le loro misure di sicurezza, bensì hanno
+
+12
+00:01:24,200 --> 00:01:29,720
+spiegato che le sfiltrazione è avvenuta per mezzo di un'azione chiamata scraping, che sfrutta dei
+
+13
+00:01:29,720 --> 00:01:36,080
+meccanismi perfettamente leciti per raccogliere informazioni da un sistema in modo inusuale.
+
+14
+00:01:36,080 --> 00:01:42,520
+Ma cos'è esattamente questo scraping? Come funziona? È legale? Quali conseguenze può
+
+15
+00:01:42,520 --> 00:01:49,000
+avere per gli utenti colpiti? E cosa si può fare per evitarlo? Nell'episodio di oggi proviamo a
+
+16
+00:01:49,000 --> 00:01:52,840
+dare una risposta a tutte queste interessanti domande.
+
+17
+00:02:02,840 --> 00:02:09,360
+Quando si parla di scraping di un sistema informatico si intende solitamente un'operazione
+
+18
+00:02:09,360 --> 00:02:15,800
+volta a raccogliere informazioni da tale sistema utilizzando dei meccanismi e delle funzionalità
+
+19
+00:02:15,800 --> 00:02:23,160
+perfettamente lecite, solo in modo differente rispetto a come erano state progettate. In tal
+
+20
+00:02:23,160 --> 00:02:30,320
+senso non serve rubare accessi di amministrazione o entrare nei server o esportare database o file
+
+21
+00:02:30,320 --> 00:02:35,840
+di log. Il sistema semplicemente non viene violato da un punto di vista tecnico quanto
+
+22
+00:02:35,840 --> 00:02:41,840
+piuttosto da quello concettuale. Pensiamo ad esempio ai nostri profili professionali sul
+
+23
+00:02:41,840 --> 00:02:48,440
+LinkedIn. Chi accede al social network anche senza avere un diretto collegamento con noi è in grado
+
+24
+00:02:48,440 --> 00:02:54,040
+di riuscire a vedere alcune informazioni contenute nel nostro profilo, solitamente quelle che noi
+
+25
+00:02:54,040 --> 00:03:00,160
+stessi decidiamo di rendere pubbliche. Lo scopo di tale funzionalità è ovviamente permettere anche a
+
+26
+00:03:00,280 --> 00:03:07,440
+chi non è direttamente collegato alla nostra rete social ma vuole contattarci o sapere qualcosa su
+
+27
+00:03:07,440 --> 00:03:13,840
+di noi per scopi professionali di poter visualizzare alcune informazioni come ad esempio i
+
+28
+00:03:13,840 --> 00:03:20,320
+contatti o alcuni progetti di prestigio su cui abbiamo lavorato. Sia per noi che per il nostro
+
+29
+00:03:20,320 --> 00:03:26,800
+potenziale datore di lavoro si tratta di una funzionalità molto utile che tendenzialmente
+
+30
+00:03:27,120 --> 00:03:34,080
+viene utilizzata con parsimonia e buonsenso. Tuttavia se ci fosse qualcuno e ovviamente ce
+
+31
+00:03:34,080 --> 00:03:39,440
+ne sono tanti interessato a collezionare le informazioni di un gran numero di persone
+
+32
+00:03:39,440 --> 00:03:45,760
+potrebbe sfruttare questa stessa funzionalità per esplorare tutta una serie di profili e
+
+33
+00:03:45,760 --> 00:03:51,440
+trasferire in un proprio database tutte le informazioni pubbliche che riesce a visualizzare
+
+34
+00:03:51,920 --> 00:03:57,520
+e questa operazione prenderebbe proprio il nome di scraping. Paradossalmente è un qualcosa che
+
+35
+00:03:57,520 --> 00:04:04,880
+potremmo fare anche noi, anche a mano volendo. I profili linkedin sono elencati e ricercabili
+
+36
+00:04:04,880 --> 00:04:09,840
+sui motori di ricerca. Lo stesso linkedin ha un motore di ricerca interno e anche delle
+
+37
+00:04:09,840 --> 00:04:14,760
+pagine che raggruppano gli utenti in base a determinate caratteristiche. Se io volessi
+
+38
+00:04:14,760 --> 00:04:20,600
+potrei mettermi a navigare tutti questi profili e copiarmi i dati che mi interessano ad esempio in
+
+39
+00:04:20,600 --> 00:04:27,320
+un foglio excel e in pratica starei facendo scraping. Ora è ovvio che chi fa realmente scraping
+
+40
+00:04:27,320 --> 00:04:32,640
+sui grandi numeri non lo fa a mano dal momento che le pagine di linkedin hanno una struttura
+
+41
+00:04:32,640 --> 00:04:39,280
+ben definita è relativamente semplice scrivere dei programmi che si muovono tra i profili ed
+
+42
+00:04:39,280 --> 00:04:45,640
+estraggano le varie informazioni dalle posizioni predefinite. Il nome di un utente infatti si trova
+
+43
+00:04:45,640 --> 00:04:52,320
+sempre nello stesso tag html di ogni profilo, l'email sarà sempre identificata dalla stessa
+
+44
+00:04:52,320 --> 00:04:58,640
+classe css e così via. Naturalmente si tratta di esempi non ho veramente controllato la struttura
+
+45
+00:04:58,640 --> 00:05:04,640
+delle pagine linkedin ma il concetto è quello. E ad ogni modo lo scraping non è solo a livello
+
+46
+00:05:04,640 --> 00:05:11,160
+di pagine web. In generale infatti molti software e a maggior ragione le piattaforme social sono
+
+47
+00:05:11,160 --> 00:05:17,880
+datati di alcune interfacce che prendono il nome di api e che sono utilizzate principalmente da
+
+48
+00:05:17,880 --> 00:05:24,160
+altri software o dalle app per smartphone per contattare la piattaforma e scambiare le informazioni
+
+49
+00:05:24,160 --> 00:05:30,440
+necessarie al funzionamento. Se volessimo fare un esempio anche banale di questo meccanismo potremmo
+
+50
+00:05:30,440 --> 00:05:36,480
+pensare all'app di facebook. Se infatti cerchiamo il profilo di un amico o scrolliamo la timeline o
+
+51
+00:05:36,480 --> 00:05:42,720
+leggiamo una notifica tutte le informazioni visualizzate non sono realmente dentro l'app ma
+
+52
+00:05:42,720 --> 00:05:49,080
+vengono recuperate dai server di facebook tramite delle api. Diciamo che messa in questi termini
+
+53
+00:05:49,080 --> 00:05:55,080
+potrebbe risultare un tantino meno intuitiva rispetto alle pagine web ma si può comunque
+
+54
+00:05:55,080 --> 00:06:01,560
+facilmente immaginare che anche le api possono essere utilizzate per fare scraping. Anzi in
+
+55
+00:06:01,600 --> 00:06:08,440
+realtà per chi fa veramente scraping questo è sicuramente un metodo molto più semplice e comodo.
+
+56
+00:06:18,440 --> 00:06:27,440
+Periodicamente ritorna la domanda se fare scraping dei dati da internet sia legale oppure no. La
+
+57
+00:06:27,440 --> 00:06:34,320
+risposta è semplice ed è no. Dice mattizia caio hanno fatto la tal cosa hanno fatto il tal social
+
+58
+00:06:34,320 --> 00:06:42,440
+partendo da dati che avevano raccolto dagli altri social. Ho capito ma 1 il fatto che una cosa sia
+
+59
+00:06:42,440 --> 00:06:50,320
+illegale non significa che nessuno la fa significa che chi la fa fa qualche cosa di illegale. Questo
+
+60
+00:06:50,600 --> 00:06:58,120
+ad esempio anche per i siti dei quotidiani che prendono magari le foto o i video di un particolare
+
+61
+00:06:58,120 --> 00:07:05,600
+evento dai social le ripubblicano come se fossero loro sul proprio sito spesso senza neanche citare
+
+62
+00:07:05,600 --> 00:07:14,320
+la fonte originale. Ecco questo è illegale. 2 9 volte su 10 l'ennesimo hipster made in usa che fa
+
+63
+00:07:14,320 --> 00:07:20,280
+scraping e però la passa liscia è semplicemente perché ha preso i dati da gente che poi si scopre
+
+64
+00:07:20,280 --> 00:07:26,400
+essere fra i propri finanziatori. No voglio dire provate voi a lanciare un bel social made in
+
+65
+00:07:26,400 --> 00:07:33,480
+italy raccogliendo i dati dai social degli altri e vediamo quanto ci mettono a seppellirvi di cause.
+
+66
+00:07:33,480 --> 00:07:40,280
+Uno dei concetti che continuano a non passare nonostante vengano ripetuti allo sfinimento è
+
+67
+00:07:40,280 --> 00:07:46,720
+questo è ma i dati erano sul sito tal dei tali visibili a tutti quindi erano dati pubblici e si
+
+68
+00:07:46,720 --> 00:07:55,600
+possono riutilizzare ecco no io capisco che in questa italia ferma i meravigliosi anni 50 del
+
+69
+00:07:55,600 --> 00:08:04,560
+sogno americano sia difficile capirlo ma il fatto è questo pubblico vuol dire pubblico non vuol dire
+
+70
+00:08:04,560 --> 00:08:13,120
+privatizzabile non so se si coglie la sottile differenza la fontanella dell'acqua al parco
+
+71
+00:08:13,120 --> 00:08:21,560
+è acqua pubblica significa che puoi berla ti ci puoi lavare la faccia o i piedi puoi anche riempirci
+
+72
+00:08:21,560 --> 00:08:29,200
+una borraccia ma non puoi riempirci la piscina della tua villa e non puoi imbottigliarla e
+
+73
+00:08:29,200 --> 00:08:36,040
+venderla non puoi neanche imbottigliarla e dalla via gratis perché è acqua pubblica pubblico
+
+74
+00:08:36,040 --> 00:08:44,800
+significa che è di tutti non che è tuo quindi sì sui siti le informazioni sono pubbliche e no
+
+75
+00:08:44,800 --> 00:08:50,960
+quelle informazioni non sono privatizzabili quelle informazioni sono lì per essere fruite
+
+76
+00:08:50,960 --> 00:08:59,560
+singolarmente non per essere raccolte e riciclate per altre finalità quindi lo scraping cioè la
+
+77
+00:08:59,560 --> 00:09:08,440
+raccolta eventualmente a strascico di dati da internet danneggia noi persone come singoli
+
+78
+00:09:08,440 --> 00:09:14,960
+perché riutilizza nostre informazioni personali per finalità a cui non abbiamo mai dato l'assenso
+
+79
+00:09:14,960 --> 00:09:21,400
+e danneggia ovviamente il social che sulla fruizione di quelle informazioni costruisce
+
+80
+00:09:21,400 --> 00:09:29,480
+il proprio business ora il fatto che siti come linkedin e facebook possano candidamente ammettere
+
+81
+00:09:29,480 --> 00:09:36,120
+di essersi fatti sifonare i dati di centinaia di milioni di utenti senza sguinzagliare contestualmente
+
+82
+00:09:36,120 --> 00:09:44,480
+un esercito di killer sanguinari secondo me apre alcune prospettive interessanti 1 i social sono in
+
+83
+00:09:44,480 --> 00:09:48,560
+generale in mano a un branco di incompetenti che si lasciano soffiare i preziosi dati sotto il
+
+84
+00:09:48,560 --> 00:09:58,800
+naso oppure 2 se i dati costituiscono una sorta di valore a riposo dei social il loro valore dinamico
+
+85
+00:09:58,800 --> 00:10:05,440
+il valore vero di mercato deriva dalle interazioni fra le persone che sono proprietarie di quei dati
+
+86
+00:10:05,440 --> 00:10:12,120
+ossia la rete sociale dinamica il tempo per il quale il social riesce a trattenere i propri utenti
+
+87
+00:10:12,120 --> 00:10:19,000
+sulla piattaforma e il numero di volte che è lo stesso social riesce a vendere un utente collegato
+
+88
+00:10:19,000 --> 00:10:25,440
+come target di una pubblicità mirata in questo senso i dati personali sono un valore marginale
+
+89
+00:10:25,440 --> 00:10:31,840
+che non muta nel tempo e che comunque non viene intaccato da un eventuale scraping anche perché
+
+90
+00:10:31,840 --> 00:10:38,480
+un concorrente non può basarsi soltanto sui dati personali che ha raccolto ma deve ricostruire
+
+91
+00:10:38,480 --> 00:10:45,120
+l'interesse degli utenti a collegarsi da lui e non altrove e l'interesse degli inserzionisti
+
+92
+00:10:45,120 --> 00:10:52,000
+a comprare pubblicità sulla sua piattaforma e non altrove questo spiega l'assoluto disinteresse
+
+93
+00:10:52,000 --> 00:11:02,160
+delle piattaforme che sono oggetto di scraping è palese che non gli fa un baffo di danno 3 fare
+
+94
+00:11:02,160 --> 00:11:08,720
+scraping rimane facile perché gli investitori dei vari social investono direttamente o indirettamente
+
+95
+00:11:08,720 --> 00:11:16,360
+anche su potenziali futuri rivali perché perché se sei azionista di tutti i social non ti importa
+
+96
+00:11:16,360 --> 00:11:23,680
+quale domini quale cresca e quale cali perché tanto guadagni sempre con tutti e se come scenario
+
+97
+00:11:23,680 --> 00:11:29,280
+vi sembra poco plausibile perché l'america e il libero mercato vorrei ricordarvi che la silicon
+
+98
+00:11:29,280 --> 00:11:35,000
+valley è quel posto dove libero mercato significa che apple ora col google e microsoft avevano un
+
+99
+00:11:35,000 --> 00:11:42,440
+accordo segreto per non rubarsi a vicenda i talenti e per non far crescere i salari in modo incontrollato
+
+100
+00:11:42,560 --> 00:11:51,840
+ovviamente qualsiasi combinazione lineare dei tre scenari precedenti va bene lo stesso ora visto
+
+101
+00:11:51,840 --> 00:11:57,840
+che le piattaforme non sembrano proprio interessate a tutelare i nostri dati che cosa può fare un
+
+102
+00:11:57,840 --> 00:12:04,920
+cittadino per difendersi un cittadino purtroppo poco io direi che sarebbe magari il caso che le
+
+103
+00:12:04,920 --> 00:12:09,800
+associazioni di tutela degli utenti sbarcassero nel ventunesimo secolo che ancora un po che
+
+104
+00:12:09,800 --> 00:12:16,400
+aspettano siamo a metà e no la patetica iniziativa di altro consumo di chiedere un obolo
+
+105
+00:12:16,400 --> 00:12:24,600
+a facebook per l'uso dei dati personali non vale non è chiedendo un simbolico rimborso che metti
+
+106
+00:12:24,600 --> 00:12:32,360
+fine a un modello di business tossico e privo di ogni etica l'ad tech commerciale o politico
+
+107
+00:12:32,360 --> 00:12:39,560
+che sia va bruciato dalle fondamenta non importa quanti soldi perderanno i propagandisti di ogni
+
+108
+00:12:39,600 --> 00:12:47,960
+colore semplicemente come società non possiamo permetterci un business del genere perché è
+
+109
+00:12:47,960 --> 00:12:56,760
+tossico socialmente ora il gdpr prevede esplicitamente che associazioni no profit o
+
+110
+00:12:56,760 --> 00:13:01,640
+di difesa degli utenti possano intentare cause collettive per la tutela dei dati dei propri
+
+111
+00:13:01,640 --> 00:13:07,120
+associati questo è necessario perché un singolo individuo non avrà mai le risorse per portare in
+
+112
+00:13:07,120 --> 00:13:13,840
+giudizio un'azienda che tanto per cominciare a sede legale in irlanda ma le associazioni esistono
+
+113
+00:13:13,840 --> 00:13:22,320
+per questo dovrebbero soltanto seguire l'esempio ad esempio di noi.eu e come dicono gli anglosassoni
+
+114
+00:13:23,320 --> 00:13:40,480
+quando ci si trova ad essere vittime di scraping e cioè quando i propri dati pubblici vengono
+
+115
+00:13:40,480 --> 00:13:46,600
+rubati da un social network o da una qualsiasi altra piattaforma online si potrebbe tendere a
+
+116
+00:13:46,760 --> 00:13:53,120
+minimizzare il problema si potrebbe pensare che tanto erano già dati pubblici e tutti li
+
+117
+00:13:53,120 --> 00:13:59,040
+potevano vedere ma questo in realtà è un atteggiamento abbastanza miope innanzitutto
+
+118
+00:13:59,040 --> 00:14:05,760
+bisogna riflettere sulla differenza che passa tra dati pubblici ma affidati ad una determinata
+
+119
+00:14:05,760 --> 00:14:12,640
+piattaforma o un soggetto ben definito e dati che invece sono stati sfiltrati e poi redistribuiti
+
+120
+00:14:12,640 --> 00:14:18,640
+su canali illeciti le informazioni inserite in facebook linkedin o qualsiasi altro servizio
+
+121
+00:14:18,640 --> 00:14:24,400
+online almeno da un punto di vista teorico e legale restano di proprietà della persona che
+
+122
+00:14:24,400 --> 00:14:31,520
+sia registrata questi può chiederne la rimozione o l'aggiornamento in generale può sapere quante
+
+123
+00:14:31,520 --> 00:14:39,120
+quali sono in qualsiasi momento in altre parole è tutelato almeno qui in europa dal gdpr e in
+
+124
+00:14:39,120 --> 00:14:45,040
+generale anche dalla volontà di una qualsiasi azienda di mantenere una certa propria immagine
+
+125
+00:14:45,040 --> 00:14:52,200
+pubblica proteggendo e utilizzando i dati degli utenti nella maniera migliore possibile ok lo so
+
+126
+00:14:52,200 --> 00:14:57,920
+a cosa stanno pensando alcuni di voi ma almeno da un punto di vista teorico sarebbe così comunque
+
+127
+00:14:57,920 --> 00:15:04,760
+la collezione di dati è sfiltrati e invece ormai al di fuori del controllo degli utenti il database
+
+128
+00:15:04,760 --> 00:15:12,640
+viene scambiato venduto copiato e archiviato chissà dove e in caso di necessità o di volontà
+
+129
+00:15:12,640 --> 00:15:19,440
+sarà praticamente impossibile far sparire quelle informazioni dal web e tutto questo peggiora ad
+
+130
+00:15:19,440 --> 00:15:25,440
+ogni nuovo data leak perché informazioni univoche come ad esempio il numero di telefono o l'email
+
+131
+00:15:25,440 --> 00:15:32,280
+permettono anche di individuare lo stesso soggetto all'interno di più database di dati rubati e
+
+132
+00:15:32,280 --> 00:15:38,080
+quindi unire le informazioni per arricchire sempre di più il profilo clandestino di ogni
+
+133
+00:15:38,080 --> 00:15:46,560
+utente risultato è che diventa sempre più facile per un malintenzionato fingersi qualcun altro per
+
+134
+00:15:46,560 --> 00:15:52,600
+scopi fraudolenti grazie infatti a questi ultimi leak tra cui quello di facebook che conteneva
+
+135
+00:15:52,600 --> 00:16:00,680
+moltissimi numeri di telefono 30 milioni dei quali appartenevano a soggetti italiani è aumentato
+
+136
+00:16:00,680 --> 00:16:06,880
+enormemente il pericolo di subire un tipo di attacco chiamato sim swapping per mezzo del
+
+137
+00:16:06,880 --> 00:16:12,480
+quale qualcuno potrebbe riuscire a sottrarci il nostro numero di telefono nel sim swapping
+
+138
+00:16:12,480 --> 00:16:18,520
+infatti un malintenzionato potrebbe riuscire ad ottenere abbastanza informazioni sulla propria
+
+139
+00:16:18,520 --> 00:16:26,600
+vittima da impersonarla agli occhi della compagnia telefonica e riuscire quindi ad attivare la
+
+140
+00:16:26,600 --> 00:16:33,720
+procedura di sostituzione della scheda sim il criminale potrebbe quindi farsi spedire la scheda
+
+141
+00:16:33,720 --> 00:16:42,600
+dalla compagnia telefonica e attivandola disattivare la linea del legittimo proprietario e sostituirsi
+
+142
+00:16:42,600 --> 00:16:50,160
+ad esso ovviamente tutto ciò non potrebbe durare a lungo il malcapitato potrebbe sistemare tutto
+
+143
+00:16:50,160 --> 00:16:56,400
+recandosi in un centro del proprio gestore telefonico o chiamando l'assistenza ma nel
+
+144
+00:16:56,400 --> 00:17:04,080
+frattempo il criminale riceverà chiamate ed sms dedicate alla povera vittima e in questo modo
+
+145
+00:17:04,080 --> 00:17:10,560
+potrà accedere a tutti quei servizi che utilizzano il numero di cellulare come secondo fattore di
+
+146
+00:17:10,560 --> 00:17:16,680
+autenticazione avete presente ad esempio quando accedete ad amazon o a qualche altro servizio da
+
+147
+00:17:16,680 --> 00:17:22,440
+un nuovo dispositivo e vi arriva un sms che vi chiede di confermare che siete effettivamente voi
+
+148
+00:17:22,440 --> 00:17:29,240
+a tentare l'accesso e non un criminale ecco in caso di sim swapping ora quell' sms arriverà
+
+149
+00:17:29,240 --> 00:17:46,320
+direttamente al criminale se vi stesse chiedendo cosa si può fare contro questa odiosa pratica
+
+150
+00:17:46,680 --> 00:17:53,040
+le possibilità non sono moltissime ma qualcosa si può fare ad esempio si può tentare di sottrarsi
+
+151
+00:17:53,040 --> 00:17:59,440
+ad eventuali futuri scraping e lo si può fare riducendo al minimo le nostre informazioni
+
+152
+00:17:59,440 --> 00:18:05,840
+disponibili al pubblico il mio consiglio è sempre quello di fare periodicamente un giro di tutti i
+
+153
+00:18:05,840 --> 00:18:11,560
+servizi a cui siamo iscritti e per ciascuno di essi applicare una delle seguenti alternative
+
+154
+00:18:12,080 --> 00:18:17,400
+prima di tutto se non abbiamo più bisogno del servizio semplicemente cancelliamo il nostro
+
+155
+00:18:17,400 --> 00:18:23,360
+account il gdpr ci dà diritto di richiedere la cancellazione di tutte le nostre informazioni
+
+156
+00:18:23,360 --> 00:18:29,400
+in qualsiasi momento e comunque potremmo sempre reiscriverci in caso di necessità come seconda
+
+157
+00:18:29,400 --> 00:18:35,240
+alternativa se invece ci serve proprio usare quel servizio potremmo eliminare tutte le informazioni
+
+158
+00:18:35,240 --> 00:18:40,960
+superflue per il suo funzionamento ad esempio potrebbe non essere necessario che facebook
+
+159
+00:18:41,080 --> 00:18:46,120
+conosca il nostro indirizzo di casa o il nome del nostro cane per cui potremmo semplicemente
+
+160
+00:18:46,120 --> 00:18:52,600
+cancellarli dal profilo e badate bene che queste non sono informazioni da poco il nome del nostro
+
+161
+00:18:52,600 --> 00:19:00,720
+cane il cognome di nostra madre da nubile il nome della via in cui siamo cresciuti sono solidamente
+
+162
+00:19:00,720 --> 00:19:07,400
+informazioni che vengono richieste per le domande di recupero password quindi se ottiene questi dati
+
+163
+00:19:07,400 --> 00:19:12,840
+un criminale non ha che da festeggiare come terza alternativa poi se è proprio necessario che il
+
+164
+00:19:12,840 --> 00:19:18,960
+servizio conosca certe determinate informazioni accertiamoci almeno che le condivida il meno
+
+165
+00:19:18,960 --> 00:19:25,160
+possibile molti servizi infatti hanno delle opzioni per gestire la privacy ed è sempre
+
+166
+00:19:25,160 --> 00:19:31,240
+bene configurarle nel modo più restrittivo possibile nel caso specifico del data leak
+
+167
+00:19:31,240 --> 00:19:37,120
+di facebook l'attacco è stato effettuato utilizzando i numeri di cellulare dato che
+
+168
+00:19:37,120 --> 00:19:43,400
+gli attaccanti hanno utilizzato la funzione che permette di ricercare i propri amici tramite il
+
+169
+00:19:43,400 --> 00:19:49,600
+numero inserito nel profilo se tutti avessero avuta selezionata la spunta che dice impedisci
+
+170
+00:19:49,600 --> 00:19:55,640
+agli amici di trovarmi tramite numero l'attacco probabilmente non sarebbe andato a buon fine ora
+
+171
+00:19:55,640 --> 00:20:01,200
+so che sembra un lavoro enorme ma ogni viaggio comincia con un piccolo passo e se ad esempio non
+
+172
+00:20:01,200 --> 00:20:07,000
+avete una lista dei servizi che utilizzate potreste iniziare a stilare questa lista
+
+173
+00:20:07,000 --> 00:20:13,320
+magari cercando le mail di registrazione o le newsletter nella vostra casella di posta una
+
+174
+00:20:13,320 --> 00:20:19,680
+volta fatto questo lavoro magari potrebbe anche essere un buon punto di partenza per valutare
+
+175
+00:20:19,680 --> 00:20:26,680
+se avete troppi servizi attivi e magari decidere di eliminarne qualcuno detto questo però che cosa
+
+176
+00:20:26,680 --> 00:20:33,240
+possono fare invece le aziende per tutelare i propri utenti sia facebook che linkedin che clubhouse
+
+177
+00:20:33,240 --> 00:20:39,560
+si sono difesi affermando che lo scraping non è una vera e propria violazione dei sistemi e che
+
+178
+00:20:39,560 --> 00:20:46,280
+quindi non è possibile imputare a loro delle responsabilità e quasi quasi hanno scaricato
+
+179
+00:20:46,280 --> 00:20:52,600
+la colpa sugli utenti che non hanno protetto a dovere i propri account ma sinceramente io non
+
+180
+00:20:52,600 --> 00:20:59,920
+sono proprio d'accordo lo scraping viene eseguito attraverso dei meccanismi automatici dei software
+
+181
+00:20:59,920 --> 00:21:08,600
+e i comportamenti di tali software possono essere individuati e almeno dovrebbero risultare sospetti
+
+182
+00:21:08,600 --> 00:21:15,640
+dovrebbero attirare l'attenzione della piattaforma e sfiltrare 550 milioni di profili significa
+
+183
+00:21:15,640 --> 00:21:22,120
+contattare i server perlomeno miliardi di volte in un periodo di tempo abbastanza circoscritto
+
+184
+00:21:22,680 --> 00:21:29,880
+poniamo anche che come credo sia ovvio il software utilizzato per l'attacco abbia seguito più percorsi
+
+185
+00:21:29,880 --> 00:21:35,840
+abbia provato a camuffare la propria identità abbia provato a dilazionare le chiamate ad ogni
+
+186
+00:21:35,840 --> 00:21:41,800
+modo un'attività di ricerca inusuale per tipologia e tempistica deve far scattare un campanello
+
+187
+00:21:41,800 --> 00:21:48,480
+d'allarme da qualche parte serve è indispensabile un controllo automatico che si renda conto che
+
+188
+00:21:48,480 --> 00:21:55,240
+in un periodo di tempo relativamente breve sono stati ricercati miliardi di numeri di telefono e
+
+189
+00:21:55,240 --> 00:22:02,400
+dico ovviamente miliardi perché 550 milioni sono solo quelli individuati e possiamo solo
+
+190
+00:22:02,400 --> 00:22:08,000
+immaginare quante i tentativi siano stati fatti essendo andati a vuoto per ottenere questo risultato
+
+191
+00:22:08,000 --> 00:22:15,400
+comunque ormai il guaio è fatto anzi ne sono stati fatti parecchi nel corso del tempo e che cosa può
+
+192
+00:22:15,400 --> 00:22:22,800
+fare chi ci è già capitato in mezzo gli utenti colpiti da scraping possono innanzitutto controllare
+
+193
+00:22:22,800 --> 00:22:28,680
+la propria email la propria password e il proprio numero di telefono al fine di capire se sono stati
+
+194
+00:22:28,680 --> 00:22:36,120
+rubati e ciò si può fare sul sito e vai ben pond mi raccomando è difficilissimo da dettare e se non
+
+195
+00:22:36,120 --> 00:22:40,600
+lo conoscete già vi metto il link in descrizione non cercate direttamente sui motori di ricerca
+
+196
+00:22:40,600 --> 00:22:46,840
+perché non vorrei finiste su dei siti fake per quanto riguarda invece il problema del sim
+
+197
+00:22:46,840 --> 00:22:53,560
+swapping di cui parlavamo prima il mio consiglio è quello di spostare tutte le vostre autenticazioni
+
+198
+00:22:53,560 --> 00:23:00,880
+a due fattori su un app non usate l'sms mai in nessun caso perché in realtà non è un mezzo
+
+199
+00:23:00,880 --> 00:23:08,720
+veramente sicuro esistono invece varie app anche native per android e ios distribuite direttamente
+
+200
+00:23:08,720 --> 00:23:15,680
+da google e apple che vi permettono di gestire l'autenticazione a due fattori in sicurezza se
+
+201
+00:23:15,680 --> 00:23:21,140
+poi volete essere proprio paranoici esistono anche delle chiavette fisiche simili a quelle
+
+202
+00:23:21,140 --> 00:23:25,880
+della banca le potete acquistare e configurare per i servizi che vi interessano
+
+203
+00:23:25,880 --> 00:23:42,760
+bene innanzitutto ringrazio tantissimo il super ospite di oggi per averci prestato le sue competenze
+
+204
+00:23:42,760 --> 00:23:49,120
+e la sua voce sono sicuro che molti di voi l'avranno riconosciuto si tratta di valter vannini
+
+205
+00:23:49,120 --> 00:23:55,040
+anche conosciuto come data nightmare se voi non avete ascoltato data nightmare correte subito a
+
+206
+00:23:55,120 --> 00:24:00,720
+recuperarlo per capire come vengono trattati oggi i nostri dati vi assicuro che vi farà
+
+207
+00:24:00,720 --> 00:24:08,080
+cambiare idea su tantissimi argomenti questo podcast è poi parte di runtime radio un network
+
+208
+00:24:08,080 --> 00:24:14,800
+di podcaster che parlano degli argomenti più disparati dalla tecnologia al vino ai libri e
+
+209
+00:24:14,800 --> 00:24:20,680
+tanto altro qualunque siano i vostri interessi sono sicuro che riuscirete a trovare un podcast
+
+210
+00:24:20,680 --> 00:24:27,760
+di runtime che fa per voi vi lascio in descrizione i link a data nightmare e a runtime radio infine
+
+211
+00:24:27,760 --> 00:24:34,120
+se scoprite di essere stati vittime di furti di dati mi spiace ma non potete semplicemente
+
+212
+00:24:34,120 --> 00:24:41,560
+ignorarli cambiate tutte le vostre password e usatene una differente per ogni servizio potete
+
+213
+00:24:41,560 --> 00:24:47,520
+utilizzare un password manager per generare password complesse e per tenerle anche archiviate
+
+214
+00:24:47,520 --> 00:24:53,840
+al sicuro usate poi l'autenticazione a due fattori e scaricate le app solo dagli store
+
+215
+00:24:53,840 --> 00:25:00,080
+ufficiali di google o di apple e solo da autori fidati se poi vi piace l'idea di una chiavetta
+
+216
+00:25:00,080 --> 00:25:06,680
+fisica allora compratela solo dal sito del produttore non su amazon o su altri store e
+
+217
+00:25:06,680 --> 00:25:13,920
+infine non condividete le password non le inviate su whatsapp su telegram via email non le scrivete
+
+218
+00:25:13,920 --> 00:25:20,400
+su pezzetti di carta e non le pronunciate ad altavoce mentre le state inserendo sì mi è
+
+219
+00:25:20,400 --> 00:25:26,920
+capitato di sentirlo bene spero che con questo episodio la questione dello scraping del sim
+
+220
+00:25:26,920 --> 00:25:33,080
+swapping sia un po più chiara oggi l'episodio è venuto un po più lungo del previsto ma si è
+
+221
+00:25:33,080 --> 00:25:38,280
+rivelato secondo me molto interessante quindi come al solito vi ringrazio per aver ascoltato
+
+222
+00:25:38,680 --> 00:25:44,120
+fin qui e vi chiedo di condividere il podcast con chi pensate possa essere interessato o
+
+223
+00:25:44,120 --> 00:25:49,400
+possa trarne beneficio detto questo non mi resta che salutarvi e ricordarvi che
+
+224
+00:25:49,400 --> 00:25:54,120
+un informatico risolve problemi a volte anche usando il computer
+

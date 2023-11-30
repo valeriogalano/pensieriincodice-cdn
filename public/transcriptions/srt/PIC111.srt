@@ -1,0 +1,260 @@
+1
+00:00:00,000 --> 00:00:17,340
+Benvenuto o benvenuta su Espresso, la rubrica di pensieri in codice nella quale ci beviamo
+
+2
+00:00:17,340 --> 00:00:23,680
+un caffè ed io ti racconto di un libro, un gadget, un videogame o qualunque altra cosa
+
+3
+00:00:23,680 --> 00:00:27,880
+che mi abbia colpito e che penso possa piacere anche a te.
+
+4
+00:00:28,200 --> 00:00:33,760
+Se al termine dell'episodio riterrai che io ti abbia dato un buon consiglio, potrai offrirmi
+
+5
+00:00:33,760 --> 00:00:39,320
+tu il prossimo caffè, acquistando a partire dal link affiliato che trovi in descrizione
+
+6
+00:00:39,320 --> 00:00:44,380
+o addirittura inviando un piccolo contributo per supportare il progetto. Trovi tutti i
+
+7
+00:00:44,380 --> 00:00:47,880
+dettagli sul sito pensieriincodice.it
+
+8
+00:00:52,880 --> 00:00:56,880
+Lo so, lo so, non vedi l'ora di ascoltare la seconda parte dell'episodio
+
+9
+00:00:56,880 --> 00:01:02,640
+su Edy Lamarr e la nascita del wifi, ma per quello dovrai aspettare ancora una settimana
+
+10
+00:01:02,640 --> 00:01:09,180
+perché mi sono ripromesso di fare le cose per bene e, come sai, le cose fatte bene richiedono
+
+11
+00:01:09,180 --> 00:01:14,360
+un po' di tempo. Anche l'argomento di oggi però è molto interessante perché parliamo
+
+12
+00:01:14,360 --> 00:01:18,680
+di un'altra di quelle letture che ho avuto il piacere di fare quest'estate e che voglio
+
+13
+00:01:18,680 --> 00:01:23,800
+consigliare anche a te. D'altronde, te l'avevo già anticipato, no? Ho letto un sacco di
+
+14
+00:01:23,800 --> 00:01:28,680
+libri meritevoli e quindi ti dovrai aspettare un bel po' di episodi di espresso nelle prossime
+
+15
+00:01:28,680 --> 00:01:34,240
+settimane. Il consiglio di oggi però è un po' particolare, nel senso che non si tratta
+
+16
+00:01:34,240 --> 00:01:40,640
+proprio di un libro che parla di informatica o tecnologia, o meglio, non ne parla in modo
+
+17
+00:01:40,640 --> 00:01:48,360
+esplicito, però tratta un argomento che innanzitutto è interessantissimo, ma poi è anche profondamente
+
+18
+00:01:48,360 --> 00:01:54,760
+legato ai concetti che trattiamo qui su Pensieri in Codice. E siccome questo podcast ha essenzialmente
+
+19
+00:01:54,760 --> 00:02:00,160
+lo scopo di farci riflettere, prima di tutto a me quando scrivo gli episodi e poi a te
+
+20
+00:02:00,160 --> 00:02:06,040
+quando li ascolti, beh, semplicemente non potevo esimermi dal provare a spingerti a
+
+21
+00:02:06,040 --> 00:02:12,000
+fare questo collegamento. D'altronde, l'ho chiamato Pensieri in Codice proprio perché
+
+22
+00:02:12,000 --> 00:02:18,200
+l'idea è quella di ritagliarci un nostro momento per fermarci a pensare, a riflettere
+
+23
+00:02:18,200 --> 00:02:23,880
+insieme su un dato argomento, no? E quindi il libro che ti consiglio oggi si intitola
+
+24
+00:02:23,880 --> 00:02:30,120
+L'Era della Dopamina di Anna Lembke, sottotitolo Come mantenere l'equilibrio nella società
+
+25
+00:02:30,120 --> 00:02:36,360
+del tutto e subito. Come ti anticipavo, non parla di algoritmi, non parla di software
+
+26
+00:02:36,360 --> 00:02:41,880
+e di sicuro non parla di codice, ma parla invece del funzionamento di una parte del
+
+27
+00:02:41,880 --> 00:02:47,360
+nostro cervello. In particolare, l'intera trattazione si concentra sui concetti di
+
+28
+00:02:47,360 --> 00:02:53,720
+piacere e dolore e sul loro equilibrio. L'autrice ci spiega qual è il meccanismo cerebrale
+
+29
+00:02:53,720 --> 00:02:59,460
+che ci porta a provare l'una o l'altra sensazione e come l'esposizione prolungata ad una delle
+
+30
+00:02:59,460 --> 00:03:05,920
+due causi una ipersensibilità all'altra nel momento in cui essa ci si propone. Tutto
+
+31
+00:03:05,920 --> 00:03:11,640
+il discorso si intreccia poi con il concetto di dipendenza, vengono raccontati esempi reali
+
+32
+00:03:11,640 --> 00:03:18,000
+di dipendenze più o meno gravi e ne vengono esplorate le cause che a volte non sono neanche
+
+33
+00:03:18,000 --> 00:03:23,800
+così ovvie come si potrebbe immaginare. E altrettanto poco ovvi sono gli effetti che
+
+34
+00:03:23,800 --> 00:03:29,520
+la vita moderna, così come si è venuta a configurare, riesce ad avere su questo nostro
+
+35
+00:03:29,520 --> 00:03:35,640
+equilibrio cerebrale che poi altro non è che un meccanismo chimico e come tale è suscettibile
+
+36
+00:03:35,640 --> 00:03:41,560
+agli stimoli esterni. Siano essi sostanze che assumiamo o eventi con i quali entriamo
+
+37
+00:03:41,560 --> 00:03:46,800
+in contatto che subiamo. Una cosa importante come ti accennavo prima è che nel libro non
+
+38
+00:03:46,800 --> 00:03:52,920
+troverai riferimenti espliciti al mondo dell'informatica ma scoprirai certamente come il funzionamento
+
+39
+00:03:52,920 --> 00:03:59,200
+del circuito della ricompensa, così è chiamata la parte del cervello in cui circola la dopamina
+
+40
+00:03:59,200 --> 00:04:05,480
+e che è responsabile dell'equilibrio piacere-dolore, è profondamente legato a tantissimi aspetti
+
+41
+00:04:05,480 --> 00:04:11,960
+della vita digitale. Smartphone, notifiche, pubblicità, social network, app, smartwatch,
+
+42
+00:04:11,960 --> 00:04:18,320
+video suggeriti, post sponsorizzati... dopo aver letto questo libro queste ed altre funzionalità
+
+43
+00:04:18,320 --> 00:04:23,480
+insite nei tuoi dispositivi probabilmente ti appariranno in modo un po' diverso da
+
+44
+00:04:23,480 --> 00:04:29,360
+come fanno ora. Forse le informazioni contenute nell'era della dopamina ti aiuteranno ad operare
+
+45
+00:04:29,360 --> 00:04:34,960
+alcune piccole scelte che renderanno la tua vita un po' meno stressante o che ti porteranno
+
+46
+00:04:34,960 --> 00:04:40,320
+un pizzico di serenità in più. O forse ti faranno capire perché quel messaggio è
+
+47
+00:04:40,320 --> 00:04:45,160
+scritto proprio in quel modo o perché quella notifica che non arriva ti fa stare così
+
+48
+00:04:45,160 --> 00:04:51,400
+in ansia. Ecco, forse quello che più mi è piaciuto di questo libro è che non mi ha
+
+49
+00:04:51,400 --> 00:04:57,840
+dato già tutta la soluzione completa, non ha unito i puntini per me, ha lasciato che
+
+50
+00:04:57,840 --> 00:05:04,640
+fossi io a stabilire i collegamenti che ritenevo opportuni tra un fenomeno fisiologico e la
+
+51
+00:05:04,680 --> 00:05:10,240
+mia vita, il mio mondo. E io l'ho fatto, ho colto la sfida, altro che se non l'hai già
+
+52
+00:05:10,240 --> 00:05:15,960
+ascoltato puoi recuperare l'episodio intitolato Dopamina e ricompense, come le app hackerano
+
+53
+00:05:15,960 --> 00:05:22,520
+il nostro cervello. Lì troverai un riassunto delle riflessioni più importanti a cui mi
+
+54
+00:05:22,520 --> 00:05:28,480
+ha portato la Lembke. Ma in ogni caso sono anche sicuro che le tue riflessioni saranno
+
+55
+00:05:28,480 --> 00:05:34,440
+diverse dalle mie, perché le vite, le esperienze, le sensazioni delle persone sono diverse e
+
+56
+00:05:34,800 --> 00:05:41,160
+i puntini si possono unire in tanti modi diversi. Insomma, secondo me l'Era della Dopamina è
+
+57
+00:05:41,160 --> 00:05:47,020
+un po' come un manuale di istruzioni che spiega come funziona una parte del nostro cervello,
+
+58
+00:05:47,020 --> 00:05:53,440
+una parte importante e leggerlo ci dà strumenti importanti da utilizzare nella vita di tutti
+
+59
+00:05:53,440 --> 00:06:00,680
+i giorni ed ecco perché ho pensato di consigliartelo. Quindi, sperando di averti dato un buon consiglio
+
+60
+00:06:00,680 --> 00:06:06,680
+e di averti convinto, ti ricordo che in descrizione trovi i link per l'acquisto su Amazon se ti va
+
+61
+00:06:06,680 --> 00:06:12,600
+di sostenere Pensieri in Codice, mentre sul sito pensieriincodice.it trovi un po' tutte le
+
+62
+00:06:12,600 --> 00:06:18,120
+informazioni su questo progetto, come ascoltare, come contribuire, come unirti alla community,
+
+63
+00:06:18,120 --> 00:06:23,880
+eccetera. Dunque, sempre nell'ottica di ottimizzare i tempi, questo episodio di Espresso finisce qui.
+
+64
+00:06:23,880 --> 00:06:29,760
+Io ti saluto, ti do appuntamento alla prossima settimana e ti ricordo che un informatico risolve
+
+65
+00:06:29,760 --> 00:06:32,960
+problemi, a volte anche usando il computer.
+

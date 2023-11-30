@@ -1,0 +1,456 @@
+1
+00:00:00,000 --> 00:00:05,000
+Lo so, lo so, sono sparito così, un po' all'improvviso nelle ultime settimane.
+
+2
+00:00:05,000 --> 00:00:12,600
+In effetti mi sono preso una pausa forse un po' lunga, ma ti assicuro che ci voleva proprio
+
+3
+00:00:12,600 --> 00:00:15,000
+e a breve ti spiego anche perché.
+
+4
+00:00:15,000 --> 00:00:20,000
+Nel frattempo però ti sono mancato, ti è mancato Pensieri in Codice?
+
+5
+00:00:20,000 --> 00:00:26,640
+A me, devo dire la verità, tanto, sì, e quindi ho pensato, perché non riprendere
+
+6
+00:00:26,640 --> 00:00:32,160
+un po' in anticipo rispetto alla canonica prima settimana di settembre e uscire con
+
+7
+00:00:32,160 --> 00:00:33,760
+questo episodio di fine agosto.
+
+8
+00:00:33,760 --> 00:00:39,960
+Capiamoci, si tratta di un episodio leggero, giusto per riprendere il ritmo, in cui parliamo
+
+9
+00:00:39,960 --> 00:00:44,560
+un po' di questo progetto, di come sta andando e di quali sono le idee per il futuro.
+
+10
+00:00:44,560 --> 00:00:51,240
+Però, come prima cosa, non perdiamo le buone abitudini e prima di tutto ascoltiamo la sigla.
+
+11
+00:00:52,240 --> 00:01:00,560
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galan.
+
+12
+00:01:00,560 --> 00:01:13,560
+Devi sapere che per me questo 2022 si è rivelato essere un anno piuttosto intenso dal punto di
+
+13
+00:01:13,560 --> 00:01:15,000
+vista professionale.
+
+14
+00:01:15,720 --> 00:01:21,600
+Come immagino saprai se mi ascolti da un po', io lavoro come consulente freelance nel campo
+
+15
+00:01:21,600 --> 00:01:26,560
+dello sviluppo software, il che in pratica vuol dire che la quantità di impegni che
+
+16
+00:01:26,560 --> 00:01:33,960
+posso avere non è sempre stabile e può oscillare a seconda del periodo dell'anno o degli incarichi
+
+17
+00:01:33,960 --> 00:01:38,480
+che decido di accettare o dei progetti in cui scelgo di imbarcarmi.
+
+18
+00:01:39,000 --> 00:01:46,520
+E quest'anno in particolare, oltre che seguire i miei clienti abituali, sto portando avanti anche
+
+19
+00:01:46,520 --> 00:01:52,960
+un paio di nuovi progetti di una certa dimensione e importanza e per un cliente molto conosciuto
+
+20
+00:01:52,960 --> 00:01:59,080
+a livello nazionale. Si tratta di incarichi molto stimolanti e impegnativi e, come potrai
+
+21
+00:01:59,080 --> 00:02:04,600
+immaginare, il mio carico di lavoro è molto aumentato in questi mesi e, almeno fino alla
+
+22
+00:02:04,600 --> 00:02:11,200
+fine dell'anno, sicuramente rimarrà piuttosto alto. Al tempo stesso, poi, se segui Pensieri in
+
+23
+00:02:11,200 --> 00:02:18,240
+Codice in modo assiduo, saprai anche che proprio un anno fa, precisamente a settembre del 2021,
+
+24
+00:02:18,240 --> 00:02:27,160
+è partita la seconda versione di questo progetto. Io le chiamo versioni e non stagioni del podcast
+
+25
+00:02:27,160 --> 00:02:33,200
+perché per me non si basano sulla durata e non hanno una data precisa di inizio e di fine,
+
+26
+00:02:33,520 --> 00:02:40,320
+bensì rappresentano i grossi cambiamenti che decido di introdurre nel progetto e, in effetti,
+
+27
+00:02:40,320 --> 00:02:47,200
+con la seconda versione di Pensieri in Codice, quindi da ben un anno, ho deciso di raddoppiare
+
+28
+00:02:47,200 --> 00:02:54,040
+il numero di episodi rispetto alla prima versione. Siamo passati da un episodio ogni due settimane a
+
+29
+00:02:54,040 --> 00:03:00,960
+un episodio a settimana con l'introduzione di due nuove rubriche Snippet e Espresso.
+
+30
+00:03:01,480 --> 00:03:07,800
+Questo esperimento è andato sicuramente molto bene, sono aumentati gli ascolti, è migliorata
+
+31
+00:03:07,800 --> 00:03:13,240
+la posizione di Pensieri in Codice nelle classifiche, ho avuto la possibilità di portare
+
+32
+00:03:13,240 --> 00:03:19,800
+argomenti che nella prima versione avevo dovuto tralasciare. Insomma, per come la vedo io, è stato
+
+33
+00:03:19,800 --> 00:03:28,840
+sicuramente un successo, ma ha anche richiesto molto più impegno da parte mia, tempi più stretti per
+
+34
+00:03:28,880 --> 00:03:35,560
+raccogliere le informazioni, per riflettere sugli argomenti, per scrivere gli episodi, registrarli e
+
+35
+00:03:35,560 --> 00:03:42,720
+montarli. Devi sapere che un episodio classico di Pensieri in Codice mi richiede circa due giorni
+
+36
+00:03:42,720 --> 00:03:49,520
+di lavoro, quindi quasi 16 ore per essere ultimato, mentre uno di Snippet o di Espresso
+
+37
+00:03:49,520 --> 00:03:55,880
+mi richiede circa quattro ore. Facendo una banale media stiamo parlando di circa un giorno e un
+
+38
+00:03:55,880 --> 00:04:02,360
+quarto di lavoro ogni settimana. Insomma, una bella porzione del tempo a disposizione, almeno per
+
+39
+00:04:02,360 --> 00:04:09,480
+me. Eppure, sono molto orgoglioso del fatto di non aver saltato neppure un episodio da settembre a
+
+40
+00:04:09,480 --> 00:04:16,880
+luglio, quindi per ben dieci mesi. Potremmo definirlo un record per me. Però, purtroppo,
+
+41
+00:04:16,880 --> 00:04:23,720
+questi due fattori insieme, cioè più impegno nella sfera professionale e più produzione di contenuti,
+
+42
+00:04:24,360 --> 00:04:31,320
+hanno innanzitutto consumato non poco le mie energie. Ho scoperto che più passa il tempo e più
+
+43
+00:04:31,320 --> 00:04:37,480
+è importante per me staccare e riposarmi nei weekend, invece di dedicarli sempre a qualche
+
+44
+00:04:37,480 --> 00:04:45,120
+attività rimasta indietro, ad anticiparmi cose per i giorni a seguire. E poi, il dirottamento di tutto
+
+45
+00:04:45,120 --> 00:04:51,680
+questo impegno ha avuto anche un altro effetto collaterale, un qualcosa che sinceramente non
+
+46
+00:04:51,680 --> 00:04:58,560
+avevo pensato, ma che si è rivelato piuttosto deleterio per il podcast. In pratica, ho dovuto
+
+47
+00:04:58,560 --> 00:05:04,240
+ridurre il tempo da dedicare alla lettura, all'ascolto di altri podcast, alla visione di
+
+48
+00:05:04,240 --> 00:05:10,560
+video, documentari e perfino all'interazione con gli ascoltatori e gli altri creator. Nel gruppo
+
+49
+00:05:10,560 --> 00:05:16,520
+Telegram, ad esempio, la mia partecipazione si è dovuta ridurre per forza di cose, anche se in
+
+50
+00:05:16,520 --> 00:05:22,480
+realtà mi ha fatto molto piacere vedere che la community sta comunque procedendo piuttosto bene
+
+51
+00:05:22,480 --> 00:05:28,960
+nello scambio reciproco e questo è ottimo. Ma purtroppo la mancanza di stimoli nuovi per me
+
+52
+00:05:28,960 --> 00:05:37,160
+aveva iniziato a farsi sentire insieme alla fatica. Iniziavano a scarseggiare gli argomenti di cui
+
+53
+00:05:37,160 --> 00:05:45,240
+volevo parlarti, facevo più fatica a collegare concetti in ambiti distinti. Insomma, sentivo
+
+54
+00:05:45,240 --> 00:05:51,720
+proprio che la qualità del lavoro fatto per Pensieri in Codice iniziava a diminuire e allora
+
+55
+00:05:51,720 --> 00:05:57,520
+ho retto finché ho potuto. Mi sono sforzato per continuare a portare nel podcast argomenti e
+
+56
+00:05:57,520 --> 00:06:04,400
+riflessioni interessanti e, alla fine, piuttosto che arrangiare e iniziare a pubblicare tanto per,
+
+57
+00:06:04,400 --> 00:06:11,160
+ho preferito interrompere e prendermi una pausa anticipata, magari un po' più lunga,
+
+58
+00:06:11,160 --> 00:06:18,280
+in modo da ricaricare le batterie. Ora però mi sono riposato, mi sono distratto, sono stato qualche
+
+59
+00:06:18,280 --> 00:06:26,280
+giorno fuori, ho letto tanto e ho tante nuove idee per i prossimi episodi e quindi ti dico subito che,
+
+60
+00:06:26,280 --> 00:06:32,720
+nonostante so che mi costerà fatica, intendo comunque mantenere il nuovo ritmo di un episodio
+
+61
+00:06:32,720 --> 00:06:39,160
+a settimana, almeno per tutto il 2022. A fine anno poi il mio assetto professionale e quindi
+
+62
+00:06:39,160 --> 00:06:45,160
+il carico di lavoro dovrebbe cambiare nuovamente e quando accadrà decideremo che fare, ma nel
+
+63
+00:06:45,160 --> 00:06:51,360
+frattempo noi andiamo dritti per la nostra strada. E a questo punto, visto che ci siamo, ti voglio
+
+64
+00:06:51,360 --> 00:06:56,040
+anche anticipare un po' degli argomenti che ho intenzione di trattare durante le prossime
+
+65
+00:06:56,040 --> 00:07:02,840
+settimane, così sai cosa aspettarti fino a fine anno, più o meno. Innanzitutto continueremo
+
+66
+00:07:02,960 --> 00:07:08,880
+sicuramente a parlare di algoritmi, come funzionano, cosa fanno, come sono implementati,
+
+67
+00:07:08,880 --> 00:07:14,560
+dove sono installati e faremo le nostre riflessioni su come influiscono sui nostri oggetti,
+
+68
+00:07:14,560 --> 00:07:21,520
+sulle nostre vite e sul nostro modo di pensare. Questi argomenti sono il fulcro di pensieri in
+
+69
+00:07:21,520 --> 00:07:28,400
+codice e almeno per ora rimarranno tali. Inoltre continueremo con Espresso, la rubrica dei consigli
+
+70
+00:07:28,400 --> 00:07:35,120
+che devo dire ha riscontrato un discreto successo e che a me piace particolarmente perché tiene
+
+71
+00:07:35,120 --> 00:07:41,720
+separate le recensioni dai argomenti più storici e le riflessioni. Chi è interessato a recensioni
+
+72
+00:07:41,720 --> 00:07:47,000
+appunto o a suggerimenti o semplicemente a supportare il progetto con qualche link affiliato
+
+73
+00:07:47,000 --> 00:07:53,720
+può decidere di ascoltarla, mentre chi preferisce può semplicemente saltare questi episodi e
+
+74
+00:07:53,720 --> 00:08:00,400
+ascoltare gli altri. Poi credo che parleremo di più di storia dell'informatica. Ho provato in
+
+75
+00:08:00,400 --> 00:08:06,560
+questi mesi a raccontarti qualche evento storico o qualche personaggio nella rubrica snippet e
+
+76
+00:08:06,560 --> 00:08:12,240
+devo dire che la cosa mi è piaciuta, è un argomento che trovo piuttosto interessante e
+
+77
+00:08:12,240 --> 00:08:18,560
+quindi ho deciso che porterò più contenuti riguardanti eventi storici e soprattutto personaggi
+
+78
+00:08:18,560 --> 00:08:24,880
+della storia dell'informatica. Ancora avremo altri ospiti, anche in questo caso gli esperimenti
+
+79
+00:08:24,880 --> 00:08:29,920
+degli ultimi mesi mi hanno aiutato a capire un po' come gestire la cosa e devo dire che ne sono
+
+80
+00:08:29,920 --> 00:08:37,280
+rimasto abbastanza soddisfatto. Infine parleremo delle persone, le persone intese come noi, il
+
+81
+00:08:37,280 --> 00:08:44,120
+nostro rapporto con il mondo digitale, di come questo ci cambia, di come lo utilizziamo e di
+
+82
+00:08:44,120 --> 00:08:50,240
+quali direzioni esso sta prendendo proprio sotto i nostri occhi. Con tutto questo lavoro e con
+
+83
+00:08:50,240 --> 00:08:57,240
+questo progetto la mia intenzione è sempre quella di avvicinare le persone ad un mondo che non è
+
+84
+00:08:57,240 --> 00:09:03,960
+fatto di solo codice, processori e intelligenze artificiali ma anche di pensiero critico,
+
+85
+00:09:03,960 --> 00:09:11,040
+riflessione, ragionamento e idee geniali. Lo so sono un sacco di argomenti per un piccolo
+
+86
+00:09:11,040 --> 00:09:17,400
+progetto come pensieri in codice ma io sono fermamente convinto che questo podcast possa
+
+87
+00:09:17,400 --> 00:09:24,060
+crescere sempre di più. Ha già fatto tanti passi avanti, questo glielo dobbiamo riconoscere, è nato
+
+88
+00:09:24,060 --> 00:09:30,480
+tre anni e mezzo fa praticamente come un gioco, come un esperimento e oggi conta migliaia di
+
+89
+00:09:30,480 --> 00:09:37,000
+ascolti al mese e un'affezionata community su telegram composta di tante persone interessanti.
+
+90
+00:09:37,520 --> 00:09:44,000
+Quando ho iniziato onestamente non l'avrei mai immaginato mentre invece oggi posso esserne fiero
+
+91
+00:09:44,000 --> 00:09:51,480
+e soprattutto credo che dovresti esserlo anche tu dato che ne fai parte. Se pensieri in codice è così
+
+92
+00:09:51,480 --> 00:09:58,800
+cresciuto è merito un po' di tutti noi, mio che mi impegno per produrre qualcosa che spero sia di
+
+93
+00:09:58,800 --> 00:10:06,240
+valore e tuo che gli dedichi ogni settimana un po' del tuo tempo, che partecipi al gruppo telegram,
+
+94
+00:10:06,640 --> 00:10:13,360
+che condividi gli episodi con le persone e porti nuovi ascoltatori e che perché no di tanto in
+
+95
+00:10:13,360 --> 00:10:20,520
+tanto fai anche una donazione. Si fiero anche tu di questo progetto così come lo sono io e contribuisci
+
+96
+00:10:20,520 --> 00:10:26,400
+a renderlo sempre migliore settimana dopo settimana. Sono sicuro che un giorno guarderemo
+
+97
+00:10:26,400 --> 00:10:34,640
+indietro e saremo contenti di averne fatto parte e niente direi che per oggi possiamo chiudere qui
+
+98
+00:10:34,640 --> 00:10:41,120
+con questo episodio così un po' particolare. Prima di lasciarti però ho un paio di cose ancora da
+
+99
+00:10:41,120 --> 00:10:49,160
+dire. Innanzitutto voglio ringraziare Edoardo Secco che ha attivato la donazione periodica da un euro.
+
+100
+00:10:49,160 --> 00:10:54,720
+Ti ringrazio perché in questo modo mi dimostri che apprezzi il lavoro che faccio e mi fai capire
+
+101
+00:10:54,720 --> 00:11:02,520
+che tutto il tempo che dedico a questo progetto per te ha un valore speciale. Per chiunque volesse
+
+102
+00:11:02,520 --> 00:11:08,360
+seguire l'esempio di Edoardo come al solito ho tutte le informazioni su come supportare Pensieri
+
+103
+00:11:08,360 --> 00:11:15,320
+in Codice sono sul sito pensieriincodice.it. Inoltre voglio annunciare anche che da quest'anno
+
+104
+00:11:15,320 --> 00:11:21,880
+Pensieri in Codice è partner dell'Aravel Day, la conferenza italiana dedicata al framework PHP
+
+105
+00:11:21,880 --> 00:11:28,520
+Laravel. Se intendi parteciparvi e te lo consiglio visto che fai parte della community di questo
+
+106
+00:11:28,520 --> 00:11:35,040
+podcast puoi utilizzare il codice sconto communitypic per avere accesso ad uno sconto sul
+
+107
+00:11:35,040 --> 00:11:41,040
+biglietto. Ti lascio in descrizione sia il link al sito della conferenza che il nostro codice sconto.
+
+108
+00:11:41,040 --> 00:11:48,040
+Io quest'anno purtroppo non ho potuto partecipare in presenza al PHP Day sempre a causa dei molti
+
+109
+00:11:48,040 --> 00:11:54,920
+impegni e quindi ho deciso di prenotare già da ora per il Laravel Day 2022 il quale si terrà a
+
+110
+00:11:55,000 --> 00:12:03,600
+Verona il 17 novembre. Dovrei essere in zona già il giorno prima dalle 14 circa quindi se sei a
+
+111
+00:12:03,600 --> 00:12:09,880
+Verona o dintorni il giorno 16 e ti va di prendere un caffè insieme scrivimi che ci organizziamo.
+
+112
+00:12:09,880 --> 00:12:16,560
+Tutti i miei contatti li trovi come al solito sul sito pensieriincodice.it. Bene direi che con
+
+113
+00:12:16,560 --> 00:12:23,440
+questo è davvero tutto noi ci sentiamo al prossimo episodio e tu non dimenticare mai che un informatico
+
+114
+00:12:23,440 --> 00:12:27,160
+risolve problemi a volte anche usando il computer.
+

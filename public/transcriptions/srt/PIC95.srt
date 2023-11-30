@@ -1,0 +1,1240 @@
+1
+00:00:00,000 --> 00:00:05,880
+In generale, tutti noi siamo un po' abituati a pensare al mondo dell'open source come ad
+
+2
+00:00:05,880 --> 00:00:11,680
+una sorta di ecosistema di migliaia e migliaia di software, librerie e strumenti che sono
+
+3
+00:00:11,680 --> 00:00:14,920
+fondamentalmente gratuiti e sempre disponibili.
+
+4
+00:00:14,920 --> 00:00:21,800
+Per questo motivo, a volte in veste di sviluppatori, altre volte in quelle di semplici utilizzatori,
+
+5
+00:00:21,800 --> 00:00:27,920
+tendiamo a fare ampio uso di tutto questo codice e a darlo essenzialmente per scontato.
+
+6
+00:00:28,320 --> 00:00:34,080
+In alcuni casi poi, con il tempo, questi componenti sono diventati addirittura elementi alla base
+
+7
+00:00:34,080 --> 00:00:40,280
+di moltissime realtà professionali, dal piccolo software fino alla codebase di prodotti di
+
+8
+00:00:40,280 --> 00:00:41,920
+aziende anche molto grandi.
+
+9
+00:00:41,920 --> 00:00:48,800
+E pertanto, volenti o nolenti, i loro sviluppatori, che a volte si riducono semplicemente ad un
+
+10
+00:00:48,800 --> 00:00:54,880
+piccolo team o addirittura un singolo sviluppatore indipendente, si sono ritrovati ad avere nelle
+
+11
+00:00:54,880 --> 00:00:58,640
+proprie mani un potere e una responsabilità notevoli.
+
+12
+00:00:58,640 --> 00:01:04,720
+E proprio sfruttando questa sorta di posizione privilegiata, alcuni di loro di recente hanno
+
+13
+00:01:04,720 --> 00:01:11,460
+deciso di mandare dei messaggi, creando però al contempo una serie di problemi all'interno
+
+14
+00:01:11,460 --> 00:01:13,280
+delle comunità di sviluppatori.
+
+15
+00:01:13,280 --> 00:01:19,640
+Oggi quindi parliamo di sabotaggio di software e lo facciamo con un ospite d'eccezione, come
+
+16
+00:01:19,640 --> 00:01:21,240
+al solito però dopo la sigla.
+
+17
+00:01:21,240 --> 00:01:41,880
+Negli ultimi mesi ci sono stati un paio di episodi nel mondo delle librerie open source
+
+18
+00:01:41,880 --> 00:01:47,680
+e in particolare in quello di NPM che oserei definire perlomeno preoccupanti.
+
+19
+00:01:48,120 --> 00:01:54,400
+NPM, per chi non dovesse essere pratico di programmazione Java, non è altro che un gestore
+
+20
+00:01:54,400 --> 00:02:02,120
+di pacchetti al pari di come lo è Composer per il PHP o Apt per le distribuzioni Linux
+
+21
+00:02:02,120 --> 00:02:03,360
+basate su Debian.
+
+22
+00:02:03,360 --> 00:02:08,760
+In pratica permette di scaricare e installare librerie e componenti all'interno dei propri
+
+23
+00:02:08,760 --> 00:02:12,960
+progetti software, e questo semplicemente lanciando un comando.
+
+24
+00:02:13,480 --> 00:02:18,920
+Di fatto si tratta di quel concetto di dipendenza in software del quale abbiamo già parlato
+
+25
+00:02:18,920 --> 00:02:24,280
+nell'episodio sulla dependency confusion, quindi se non l'hai già fatto ti consiglio
+
+26
+00:02:24,280 --> 00:02:28,120
+di recuperarlo per farti un'idea più approfondita dell'argomento.
+
+27
+00:02:28,120 --> 00:02:31,320
+Ma cosa è successo di tanto grave?
+
+28
+00:02:31,320 --> 00:02:39,080
+Beh, in pratica alcuni sviluppatori di pacchetti piuttosto importanti hanno deciso di sabotare
+
+29
+00:02:39,160 --> 00:02:44,680
+le loro stesse librerie per mandare forti messaggi ai propri utilizzatori.
+
+30
+00:02:44,680 --> 00:02:51,960
+Nel primo dei due casi, che risale all'8 gennaio di quest'anno, Marak Skires, che sicuramente
+
+31
+00:02:51,960 --> 00:02:57,560
+non si pronuncerà così, ha pubblicato delle versioni aggiornate delle proprie librerie
+
+32
+00:02:57,560 --> 00:03:06,000
+chiamate Colors e Faker, nelle quali ha appositamente inserito dei bug studiati per bloccare e mandare
+
+33
+00:03:06,000 --> 00:03:08,440
+in crash i progetti che le utilizzavano.
+
+34
+00:03:08,920 --> 00:03:14,040
+Al momento dell'installazione, infatti, in tutti i progetti appariva la scritta Liberty,
+
+35
+00:03:14,040 --> 00:03:19,640
+ripetuta tre volte, seguita poi da una serie infinita di caratteri incomprensibili.
+
+36
+00:03:19,640 --> 00:03:22,520
+Lo stesso Skires ha dichiarato
+
+37
+00:03:38,760 --> 00:03:44,600
+Queste donazioni hanno contribuito a impedire che lo sviluppo di Faker si bloccasse completamente,
+
+38
+00:03:44,600 --> 00:03:46,040
+ma non sono sostenibili.
+
+39
+00:03:46,040 --> 00:03:51,480
+Mi piace lavorare su Faker, ma non posso nemmeno permettermi di lavorare gratuitamente.
+
+40
+00:03:51,480 --> 00:03:57,080
+Come la maggior parte di noi, ho persone che dipendono da me e ho delle bollette da pagare.
+
+41
+00:03:57,080 --> 00:04:02,320
+Non volendo arrendermi, ho deciso che la migliore linea d'azione era cercare di monetizzare
+
+42
+00:04:02,320 --> 00:04:05,960
+il progetto Faker per garantire un futuro sostenibile.
+
+43
+00:04:06,360 --> 00:04:12,360
+Le motivazioni del gesto, quindi, sono chiare e a prima vista sembrerebbero anche condivisibili.
+
+44
+00:04:12,360 --> 00:04:17,960
+Per un certo periodo anche io ho provato a mantenere un piccolo progetto open e conosco
+
+45
+00:04:17,960 --> 00:04:22,920
+i problemi, ma la bravata di Skires ha causato problemi ben più gravi.
+
+46
+00:04:22,920 --> 00:04:29,680
+Le stime, infatti, dicono che le due librerie sabotate cubano più di 20 milioni di download
+
+47
+00:04:29,680 --> 00:04:34,560
+settimanali e servono a far funzionare oltre 20.000 progetti.
+
+48
+00:04:34,960 --> 00:04:41,080
+E qualcosa di molto simile si è ripetuto anche il 7 marzo di quest'anno, quando Brandon
+
+49
+00:04:41,080 --> 00:04:48,400
+Nozaki Miller ha inserito in un aggiornamento del proprio pacchetto Node IPC un codice che
+
+50
+00:04:48,400 --> 00:04:54,600
+geolocalizzava gli indirizzi IP di chi lo installava e cancellava tutti i file degli
+
+51
+00:04:54,600 --> 00:04:58,040
+utilizzatori che risultavano collegati da Russia e Bielorussia.
+
+52
+00:04:58,040 --> 00:05:03,400
+Chiaramente, in questo caso, il messaggio era contro l'invasione russa dell'Ucraina,
+
+53
+00:05:03,480 --> 00:05:09,040
+ma ciò non toglie che comunque il gesto ha diffuso il panico nella comunità degli sviluppatori,
+
+54
+00:05:09,040 --> 00:05:14,520
+i quali inizialmente hanno ipotizzato attacchi di tipo supply chain, cioè quelli che prendono
+
+55
+00:05:14,520 --> 00:05:19,640
+di mira un componente intermedio del software invece di colpire direttamente l'obiettivo
+
+56
+00:05:19,640 --> 00:05:20,640
+finale.
+
+57
+00:05:20,640 --> 00:05:27,120
+In entrambi i casi, comunque, è stato necessario un intervento che potremmo definire dall'alto,
+
+58
+00:05:27,120 --> 00:05:31,760
+cioè da parte dei gestori delle piattaforme dei pacchetti, che hanno dovuto ripristinare
+
+59
+00:05:31,760 --> 00:05:36,320
+le versioni precedenti e sospendere temporaneamente gli account degli sviluppatori.
+
+60
+00:05:36,320 --> 00:05:42,240
+E dato che non è la prima volta che si verificano eventi del genere, qui con noi oggi, per aiutarci
+
+61
+00:05:42,240 --> 00:05:48,680
+a fare un po' di chiarezza in questo fenomeno crescente, c'è Daniele Scasciafratte, anche
+
+62
+00:05:48,680 --> 00:05:55,360
+conosciuto come MTE90, esperto sviluppatore fullstack e membro attivo della comunità
+
+63
+00:05:55,360 --> 00:05:56,800
+open source italiana.
+
+64
+00:05:57,240 --> 00:06:02,760
+Ciao Daniele, benvenuto, e ti chiedo di iniziare subito raccontandoci un po' chi sei e qual'è
+
+65
+00:06:02,760 --> 00:06:05,280
+il tuo rapporto con il mondo dell'open source.
+
+66
+00:06:05,280 --> 00:06:09,640
+Ciao a tutti, è la prima volta che appaiono in un podcast di altri, ci intende oltre il
+
+67
+00:06:09,640 --> 00:06:12,880
+mio quindi mi trovo dall'altra parte della barricata e fa un po' strano.
+
+68
+00:06:12,880 --> 00:06:17,720
+Nella vita ho una web agency e mi occupo di un po' di tutto, inclusa la sistemistica,
+
+69
+00:06:17,720 --> 00:06:23,240
+e la mia formazione non è accademica, è avvenuta negli scorsi 16 anni grazie all'open source.
+
+70
+00:06:23,560 --> 00:06:27,520
+Sono attivo in Mozilla Italia dal 2013 e per Mozilla ho ricoperto due roli internazionali
+
+71
+00:06:27,520 --> 00:06:33,520
+come volontario, ho partecipato anche a eventi interni dei dipendenti, poi sono nella comunità
+
+72
+00:06:33,520 --> 00:06:38,400
+WordPress dal 2015, sono tra i coorganizzatori dei meetup di Roma Eterni, che speriamo di
+
+73
+00:06:38,400 --> 00:06:42,760
+riprendere adesso che è finito lo stato di emergenza, e contribuisco al core di WordPress
+
+74
+00:06:42,760 --> 00:06:44,640
+oltre a vari progetti della comunità.
+
+75
+00:06:44,640 --> 00:06:49,960
+Poi dal 2021, cioè dall'anno scorso, sono nel direttivo dell'associazione Italia Linuxosity,
+
+76
+00:06:49,960 --> 00:06:55,880
+che è quella che dirige e gestisce tutti i Linux User Group in Italia, e sono tra i
+
+77
+00:06:55,880 --> 00:07:01,440
+fondatori del Linux User Group della mia città di Lieti dal 2018, poi tra l'altro
+
+78
+00:07:01,440 --> 00:07:06,240
+che gira, e per concludere ho scritto un libro gratuito open source in inglese proprio su
+
+79
+00:07:06,240 --> 00:07:09,080
+come contribuire all'open source in modo corretto.
+
+80
+00:07:09,080 --> 00:07:10,080
+Perfetto.
+
+81
+00:07:10,080 --> 00:07:15,120
+Daniele, raccontavo poco fa che in questi ultimi mesi si sono verificati un paio di
+
+82
+00:07:15,120 --> 00:07:21,120
+eventi che hanno generato un certo panico in alcune community open source, ce ne vuoi
+
+83
+00:07:21,120 --> 00:07:22,120
+parlare?
+
+84
+00:07:22,120 --> 00:07:24,280
+Ci vuoi raccontare cos'è successo?
+
+85
+00:07:24,280 --> 00:07:30,400
+Non so quanti di voi abbiano mai contribuito a un progetto FOSS, oppure che sono dei maintainer
+
+86
+00:07:30,400 --> 00:07:35,120
+di un progetto usato da altri o creato da altri, il problema è il tempo che si dedica
+
+87
+00:07:35,120 --> 00:07:39,600
+in questa attività, perché, ad esempio, nella mia vita ho ricevuto donazioni ad alcuni
+
+88
+00:07:39,600 --> 00:07:44,120
+dei miei progetti, ma parliamo a stima, così a occhio, che forse siamo sui 200 euro in
+
+89
+00:07:44,120 --> 00:07:46,760
+dieci anni, e capite che sono pochi.
+
+90
+00:07:46,760 --> 00:07:53,280
+Daniel Stenberg è l'autore di Curl, sul, non so qual è il modo migliore di pronunciarlo,
+
+91
+00:07:53,280 --> 00:07:58,040
+che si dice che è il secondo progetto open source più utilizzato al mondo dopo Linux,
+
+92
+00:07:58,040 --> 00:08:03,000
+quindi diciamo che è bello e importante, e spiega a lui nel suo blog il concetto della
+
+93
+00:08:03,000 --> 00:08:05,520
+piramide a livello di open source, che cos'è?
+
+94
+00:08:05,520 --> 00:08:09,840
+Praticamente gli spiega com'è diviso, ovvero più il progetto è di basso livello, tipo
+
+95
+00:08:09,840 --> 00:08:15,640
+sistema operativo o librerie, impatta sempre più persone, ed è più complicato gestirlo,
+
+96
+00:08:15,640 --> 00:08:20,200
+quindi ci si occupa principalmente di manutenzione perché è un argomento delicato, mentre
+
+97
+00:08:20,200 --> 00:08:25,920
+più il progetto riguarda interfacce o servizi web, è più facile farci soldi a rilasci
+
+98
+00:08:25,920 --> 00:08:30,320
+più frequenti e linguaggi più semplici, e questo si trova in cima alla piramide, mentre
+
+99
+00:08:30,320 --> 00:08:36,200
+la parte di sistema operativo si trova sotto, e quindi questo si vede nel mondo JavaScript,
+
+100
+00:08:36,200 --> 00:08:40,880
+in cui è successo tre volte negli scorsi anni questa situazione, con l'Eftpad che fu
+
+101
+00:08:40,880 --> 00:08:46,000
+un pacchetto che era stupidissimo, serviva a togliere del test dello spazio a sinistra
+
+102
+00:08:46,000 --> 00:08:50,000
+della stringa, e che era una dipendenza in molti pacchetti che poi a loro volta erano
+
+103
+00:08:50,000 --> 00:08:55,520
+dipendenze di altri, e quindi venne rimosso dallo sviluppatore, e quindi ci fu un macello
+
+104
+00:08:55,520 --> 00:09:00,840
+perché andava tutto in crash praticamente, perché non c'era questa libreria di 5 righe,
+
+105
+00:09:00,840 --> 00:09:05,800
+potremmo dire, però parliamo di qualche anno fa, invece recentemente, nello scorso anno,
+
+106
+00:09:05,800 --> 00:09:10,440
+è successo due volte con Colors e Fager dello stesso autore, che da un momento all'altro
+
+107
+00:09:10,440 --> 00:09:16,600
+lui ha scapociato, potremmo dire, ovvero ha deciso di lamentarsi pubblicamente del fatto
+
+108
+00:09:16,600 --> 00:09:21,880
+che delle aziende grandi utilizzano i suoi progetti, ma lui non ci guadagna un euro,
+
+109
+00:09:21,880 --> 00:09:26,200
+e quindi decise di metterci un avviso, all'inizio feceva crashare perché aveva scritto male
+
+110
+00:09:26,200 --> 00:09:29,840
+il codice, aveva fatto una release, poi aveva fatto un'altra, sistemando doveva mettere
+
+111
+00:09:29,840 --> 00:09:34,800
+un avviso eccetera, e questo ha creato dei problemi di nuovo a cascata, e l'ultimissima
+
+112
+00:09:34,800 --> 00:09:39,560
+è successo un mese fa, è del pacchetto Pis, praticamente una dipendenza di un altro
+
+113
+00:09:39,560 --> 00:09:47,440
+pacchetto Node e PC, che è a base di molti altri, che praticamente verificava se tu eri
+
+114
+00:09:47,440 --> 00:09:54,280
+con un indirizzo IP russo o bielorusso, e ti cancellava dei file, o ti brasava tutto
+
+115
+00:09:54,280 --> 00:10:01,320
+l'hard disk. Ecco, questi sono degli impatti, cioè hanno un alto impatto, però è limitato
+
+116
+00:10:01,320 --> 00:10:06,400
+al mondo degli sviluppatori perché sono delle librerie, e gli ambienti di produzione
+
+117
+00:10:06,400 --> 00:10:10,880
+sono difficilmente impattati da queste cose che avvengono in un momento, perché diciamo
+
+118
+00:10:10,880 --> 00:10:15,400
+c'è un flusso quando vengono effettuati questi rilasci, quindi diciamo che in questi
+
+119
+00:10:15,400 --> 00:10:21,120
+casi si sono intervenuti subito per il problema e sistemandolo, però questi maintainer hanno
+
+120
+00:10:21,120 --> 00:10:26,280
+sabotato in un modo o nell'altro i loro stessi progetti, chi togliendo il pacchetto, chi
+
+121
+00:10:26,280 --> 00:10:32,760
+modificandolo, o chi proprio cancellava tutto. Ecco, quindi è un comportamento che possiamo dire
+
+122
+00:10:32,760 --> 00:10:39,720
+sbagliato. Beh sì, probabilmente non è il modo migliore di comportarsi, comunque a beneficio di
+
+123
+00:10:39,720 --> 00:10:46,560
+chi ci ascolta aggiungo solo che FOSS è acronimo di Free and Open Source Software e include tutti
+
+124
+00:10:46,560 --> 00:10:51,120
+quei software il cui codice è liberamente disponibile e riutilizzabile, dico bene?
+
+125
+00:10:52,080 --> 00:10:57,400
+Sì esatto, è la differenza tra Open Source e Free Software, con quella sigla si intende un software che
+
+126
+00:10:57,400 --> 00:11:04,640
+copre entrambi gli aspetti, ovvero FOSS. Praticamente Open Source è solo software, mentre nel Free
+
+127
+00:11:04,640 --> 00:11:10,520
+Software c'è anche la parte etica, come ad esempio Open Source non vuol dire che è gratuito de facto,
+
+128
+00:11:10,520 --> 00:11:15,640
+ma che puoi pagare per avere il codice, mentre Free Software vuol dire che sei libero da subito
+
+129
+00:11:15,640 --> 00:11:22,160
+di avercelo, di farci quello che vuoi. Quindi filosoficamente parlando il FOSS è ancora più
+
+130
+00:11:22,160 --> 00:11:28,680
+libero dell'OSS che sta per Open Source Software, FOSS sta per Free Open Source Software. Quindi se
+
+131
+00:11:28,680 --> 00:11:33,640
+non si capisce questa piccola differenza si butta tutto in cacciara come quello che è successo,
+
+132
+00:11:33,640 --> 00:11:37,480
+infatti tutti si stupiscono dei fatti di quello che è successo, perché non c'è proprio una
+
+133
+00:11:37,480 --> 00:11:44,200
+conoscenza di base. Chiarissimo, quindi al di là degli intenti effettivi degli sviluppatori che
+
+134
+00:11:44,200 --> 00:11:49,800
+sicuramente saranno nobili o perlomeno condivisibili, mi sembra chiaro che questa
+
+135
+00:11:49,800 --> 00:11:56,040
+non sia la maniera corretta di agire. Secondo te quali erano gli effetti sperati in questi due
+
+136
+00:11:56,040 --> 00:12:02,080
+episodi e quali invece sono gli effetti realmente ottenuti? Non è la maniera corretta per niente,
+
+137
+00:12:02,080 --> 00:12:08,040
+le quattro libertà sono chiare e semplici, tra cui chiunque deve poterlo usare e modificare,
+
+138
+00:12:08,040 --> 00:12:14,120
+il che ci pone sull'etica. Gli effetti realmente ottenuti sono fastidi e intatta nel marchio
+
+139
+00:12:14,120 --> 00:12:20,280
+inteso come globale del concetto di Open Source, facendolo regredire a 20 anni fa quando era visto
+
+140
+00:12:20,280 --> 00:12:24,760
+solo come qualcosa del mondo amatoriale, non ci puoi fare business con Open Source, oppure non
+
+141
+00:12:24,760 --> 00:12:29,560
+puoi utilizzare roba Open Source e farci cambiare un'azienda, quindi crea un problema di fondo.
+
+142
+00:12:29,560 --> 00:12:34,600
+Quindi non stiamo parlando di progetti personali per mandarci un messaggino quando i bitcoin si
+
+143
+00:12:34,600 --> 00:12:40,120
+alzano, è qualcosa che colpisce troppi contesti, ad esempio molti progetti hanno messo degli avvisi
+
+144
+00:12:40,120 --> 00:12:47,320
+quando si utilizzano riguardo la guerra che conosciamo tutti insomma, proprio c'è un avviso
+
+145
+00:12:47,320 --> 00:12:54,120
+di stare da una certa parte per fare sensibilizzazione, il punto è che questo comportamento di questi
+
+146
+00:12:54,120 --> 00:13:00,520
+sviluppatori che hanno fatto questo casino era per mandare un messaggio, però volevano essere
+
+147
+00:13:00,520 --> 00:13:05,640
+sicuri che tutti e che nessuno potessero perderselo, cioè deve essere evidente che tu l'hai visto, quindi
+
+148
+00:13:05,640 --> 00:13:09,640
+non si possono paragonare a dei terroristi da questo punto di vista, perché anche loro non vogliono
+
+149
+00:13:09,640 --> 00:13:14,280
+mandare un messaggio e essere sicuri che tutti se ne accorgono, ma più degli inconscienti letteralmente
+
+150
+00:13:14,280 --> 00:13:18,600
+che questi non si rendono conto dell'effetto delle proprie azioni brutalmente, quindi non si tratta di
+
+151
+00:13:18,600 --> 00:13:24,920
+un bug sfuccido ma di qualcosa di interintenzionale, cioè che per me si può paragonare a quando viene
+
+152
+00:13:25,000 --> 00:13:31,480
+messa una vector appositamente, quindi è inutile fare dei hipster con le live di programmazione se
+
+153
+00:13:31,480 --> 00:13:36,280
+poi non si ha un'etica, questo è quello che manca, chi ha a che fare con il pubblico, quindi io che rilascio
+
+154
+00:13:36,280 --> 00:13:41,560
+qualcosa che poi qualcun altro utilizza, deve comportarsi in un modo corretto, preciso come
+
+155
+00:13:41,560 --> 00:13:46,040
+richiesto ad esempio sui social network quando si rappresentanti di comunità e gruppi, cioè tu sei
+
+156
+00:13:46,040 --> 00:13:52,920
+colpevole se tu non lo utilizzi nel modo più consono per il ruolo che ricopri. Hai parlato di quattro
+
+157
+00:13:53,000 --> 00:13:58,600
+libertà, immagino tu ti riferisca alle quattro libertà fondamentali definite dalla Free Software
+
+158
+00:13:58,600 --> 00:14:05,000
+Foundation, ce le vuoi spiegare? Sono le quattro libertà definite dall'Open Source Initiative che
+
+159
+00:14:05,000 --> 00:14:11,320
+è la fondazione che definisce se una licenza è open source, le cosiddette OSI, ovvero la libertà
+
+160
+00:14:11,320 --> 00:14:17,360
+di eseguire il programma per qualsiasi scopo, di studiarlo e modificarlo, di distribuirlo senza
+
+161
+00:14:17,360 --> 00:14:23,880
+limiti, di migliorare il programma e di condividere queste modifiche per tutti. La Free Software
+
+162
+00:14:23,880 --> 00:14:28,440
+Foundation, compresa anche la versione europea che è basata in Germania, ma c'è anche qualcuno
+
+163
+00:14:28,440 --> 00:14:34,000
+in italiano, invece porta avanti le battaglie riguardo proprio l'etica, quindi ad esempio sui
+
+164
+00:14:34,000 --> 00:14:40,920
+DRM per gli ebook o sui film, oppure sull'accesso dei dati e la privacy, oppure contro l'obsolescenza
+
+165
+00:14:40,920 --> 00:14:47,120
+programmata dei dispositivi. Ad esempio la Free Software Foundation Europe ha lanciato da qualche
+
+166
+00:14:47,160 --> 00:14:54,120
+mese la campagna Upcycling Android, che è pensata per insegnarti a riciclare il tuo vecchio smartphone,
+
+167
+00:14:54,120 --> 00:14:58,280
+quindi quando il smartphone non riceve più gli aggiornamenti perché il produttore ha deciso così,
+
+168
+00:14:58,280 --> 00:15:03,440
+ma lo smartphone è ancora buono, funziona eccetera, di metterci una versione di Android più moderna.
+
+169
+00:15:03,440 --> 00:15:08,080
+Quindi invece di avercelo come ce l'ho io, come ce l'abbiamo un po' tutti, a prendere la polvere
+
+170
+00:15:08,080 --> 00:15:13,800
+in un cassetto, si possono riutilizzare e aumentare la vita a discapio di quello che dice il produttore.
+
+171
+00:15:14,400 --> 00:15:19,720
+Un'altra campagna che ha fatto anche lei, che è molto più famosa, è chiamata Public Money,
+
+172
+00:15:19,720 --> 00:15:26,480
+Public Code, quindi già dal nome capite qual è il concetto. Quindi ecco, un conto è il progetto,
+
+173
+00:15:26,480 --> 00:15:30,680
+un altro è il mondo intorno e l'etica. Questa è la differenza.
+
+174
+00:15:30,680 --> 00:15:37,400
+Molto interessante. Poco fa ci hai fatto presente che non è la prima volta che accade una cosa del
+
+175
+00:15:37,400 --> 00:15:42,600
+genere, ma almeno per il momento il fenomeno sembra abbastanza legato alla comunità del
+
+176
+00:15:42,600 --> 00:15:49,880
+JavaScript. Credi che si tratti di un caso o che sia dovuto alla tipologia di community o di
+
+177
+00:15:49,880 --> 00:15:55,720
+tecnologia? Ad esempio al fatto che il mondo JavaScript fa un enorme uso di dipendenze.
+
+178
+00:15:55,720 --> 00:16:01,440
+Mi pare infatti di ricordare uno studio di un paio di anni fa che posizionava la tecnologia
+
+179
+00:16:01,440 --> 00:16:06,640
+basata su JavaScript tra quelle che in assoluto fanno più uso del concetto di dipendenza.
+
+180
+00:16:06,640 --> 00:16:11,280
+Non sono riuscito a trovare casi simili in altri linguaggi e questo per una domanda sull'etica
+
+181
+00:16:11,360 --> 00:16:14,960
+di questi sviluppatori e conoscenze del termine open source e delle licenze.
+
+182
+00:16:14,960 --> 00:16:19,480
+Il mondo JavaScript è esploso proprio, letteralmente con moltissimi programmatori
+
+183
+00:16:19,480 --> 00:16:23,840
+che di open source non sanno proprio niente, se non che si scarica da GitHub e ciao a tutti.
+
+184
+00:16:23,840 --> 00:16:29,560
+Ricordo anni fa quando ci furono le sanzioni verso l'Iran. Un utilizzatore di Asterisk,
+
+185
+00:16:29,560 --> 00:16:33,360
+che è il software open source più utilizzato al mondo per fare i centralini VoIP,
+
+186
+00:16:33,360 --> 00:16:39,200
+quindi internet, che è prodotto da un'azienda americana, lo contattò perché l'utilizzava
+
+187
+00:16:39,200 --> 00:16:44,600
+in Iran. In Iran c'erano delle sanzioni e quindi veniva detto di non utilizzarlo perché
+
+188
+00:16:44,600 --> 00:16:51,040
+c'erano proprio le sanzioni, però la licenza non comprende questa cosa, quindi il contesto è
+
+189
+00:16:51,040 --> 00:16:57,200
+diverso ma ci pongono proprio delle domande sull'azione di tutto quanto. Ad esempio in uno
+
+190
+00:16:57,200 --> 00:17:01,800
+abbiamo un singolo che senza preavviso agisce in modo sconsiderato, perché questo è quello che
+
+191
+00:17:01,800 --> 00:17:07,720
+è successo, verso chi utilizzava il suo strumento in modo cosciente o meno, quindi come uno che guida
+
+192
+00:17:07,720 --> 00:17:13,320
+per strada e che può essere anche una dipendenza, perché quindi uno non lo sa che ci sta nel mezzo
+
+193
+00:17:13,320 --> 00:17:18,680
+quel pacchetto, in un altro che si tenta di applicare delle leggi che però non coincidono
+
+194
+00:17:18,680 --> 00:17:22,840
+con la licenza del progetto. Quindi diciamo che c'è proprio una differenza di contesto,
+
+195
+00:17:22,840 --> 00:17:28,440
+anche se il problema è simile, come è successo con il caso di ICE, che è l'agenzia americana
+
+196
+00:17:28,440 --> 00:17:34,560
+per l'immigrazione e che utilizzava software FOSS e quindi è stata una ribellione in America da
+
+197
+00:17:34,560 --> 00:17:39,480
+questo punto di vista, e nacquero delle licenze che però imponevano di utilizzare questi progetti
+
+198
+00:17:39,480 --> 00:17:46,160
+in modo positivo, che non urtasse nessuno, che è lo stesso problema che ha avuto IBM quando anni fa si
+
+199
+00:17:46,160 --> 00:17:52,760
+scontrò con la licenza di JavaScript Int, l'antenato di ESLint, che era una licenza stupidissima di tre
+
+200
+00:17:52,760 --> 00:17:58,760
+righe, proprio che non anche ci si preoccupava più di tanto, però IBM a livello illegale non gli
+
+201
+00:17:58,760 --> 00:18:03,520
+andava bene, cioè voleva una chiarezza, perché diceva che la licenza la doveva utilizzare per
+
+202
+00:18:03,520 --> 00:18:09,320
+cose buone, punto. Però a livello legale, come si definisce se una cosa è buona? Come la intendi?
+
+203
+00:18:09,320 --> 00:18:14,120
+Cioè, c'è molte sfaccettature, quindi come fai a definire se io potrei utilizzare questo progetto per
+
+204
+00:18:14,120 --> 00:18:20,000
+qualcosa che può urtare qualcuno? Perché ogni discriminazione, ogni scelta, ogni decisione è
+
+205
+00:18:20,000 --> 00:18:26,000
+una discriminazione verso qualche altra cosa, quindi quella scelta può, ad esempio io mando
+
+206
+00:18:26,000 --> 00:18:30,680
+delle notifiche in tempo reale, però per qualche motivo certe volte non lo faccio. Questa può
+
+207
+00:18:30,680 --> 00:18:35,720
+rientrare nel concetto della licenza perché sto urtando l'utente, non sto fornendo un
+
+208
+00:18:35,720 --> 00:18:42,920
+servizio al 100%, può avere una rigaduta sulla licenza, ad esempio. Ecco, io JavaScript lo
+
+209
+00:18:42,920 --> 00:18:49,320
+utilizzo dai tempi di XHTML, l'ho visto evolversi e onestamente a me non mi piace per niente, non mi
+
+210
+00:18:49,320 --> 00:18:55,600
+piace più. Ne ho scritto male, ma non tanto del linguaggio, ma dei sviluppatori e dell'ecosistema
+
+211
+00:18:55,600 --> 00:19:01,360
+che c'è intorno, perché effettivamente ha dei problemi. Quindi anni fa ci si lamentava di scatole
+
+212
+00:19:01,360 --> 00:19:06,960
+chiuse con linguaggi tipo .NET, io ricordo che ero ragazzino, cominciai a lavorare con questo
+
+213
+00:19:06,960 --> 00:19:12,760
+linguaggio, ma parliamo del 2006, quindi ci si trovava con questo framework, tu non sapevi che
+
+214
+00:19:12,760 --> 00:19:18,880
+funzionava quello che c'era dentro, lo utilizzavi e pace. Però è come se a un ingegnere meccanico
+
+215
+00:19:18,880 --> 00:19:24,840
+gli chiedi di fare un motore, ma lui non ha le basi, non sa come mai è stato scelto quel materiale
+
+216
+00:19:24,840 --> 00:19:31,080
+rispetto ad un altro, e questo possiamo dire che è un errore fatale. Bene Daniele, direi che la tua
+
+217
+00:19:31,080 --> 00:19:37,880
+idea è abbastanza chiara, ma dicevamo all'inizio che tu sei esperto nello sviluppo open source,
+
+218
+00:19:37,880 --> 00:19:43,920
+partecipi a progetti importanti come Firefox e Wordpress, allora ti voglio chiedere qual è secondo
+
+219
+00:19:43,920 --> 00:19:50,080
+te il modo corretto per uno sviluppatore di approcciarsi a questo mondo? Voglio dire, a costo
+
+220
+00:19:50,080 --> 00:19:55,560
+di essere anche un po' provocatorio, se io sviluppo qualcosa e lo rilascio open source, di
+
+221
+00:19:55,560 --> 00:20:02,200
+fatto sto regalando il mio tempo, probabilmente ne regalerò altro in futuro per il mantenimento,
+
+222
+00:20:02,200 --> 00:20:08,800
+era la motivazione di uno dei due episodi di cui abbiamo parlato, come deve fare i conti uno
+
+223
+00:20:08,800 --> 00:20:15,840
+sviluppatore con questo fatto? Io faccio un ragionamento di due tipi, volontariato e passione.
+
+224
+00:20:16,640 --> 00:20:21,480
+In volontariato ci si trova nel mondo ad esempio della croce rossa, dove si può avere un rimborso
+
+225
+00:20:21,480 --> 00:20:28,240
+tipo della benzina per dirne una, ma mai un vero stipendio. Certo ci sta poi il tipo che lavora per
+
+226
+00:20:28,240 --> 00:20:34,520
+la croce rossa, ma sono ruoli specifici diciamo, e come è normale nel mondo fosso open source di
+
+227
+00:20:34,520 --> 00:20:40,360
+trovare fondazioni che con le stesse donazioni che ricevono pagano dei dipendenti, oppure aziende
+
+228
+00:20:40,360 --> 00:20:45,400
+che utilizzano le tecnologie queste qui e contribuiscono a tempo pieno con dei dipendenti,
+
+229
+00:20:45,480 --> 00:20:50,720
+cioè quel dipendente lui nel lavoro deve lavorare su quello, oppure quando gli serve fanno quello
+
+230
+00:20:50,720 --> 00:20:55,840
+che gli serve e contribuiscono. Nel mondo di javascript questo è difficile perché manca la
+
+231
+00:20:55,840 --> 00:21:00,320
+cultura e la sensibilità, perché non hanno l'etica, non sono passati diciamo verso un processo di
+
+232
+00:21:00,320 --> 00:21:06,520
+formazione in cui hanno capito cosa significa fare open source, oppure si trovano come dipendenti
+
+233
+00:21:06,520 --> 00:21:11,640
+di un'azienda e quindi utilizzano i software senza esserne consapevoli a loro volta di quello che
+
+234
+00:21:11,640 --> 00:21:17,400
+stanno utilizzando. Quindi si può dire che in questi contesti è l'azienda stessa che non
+
+235
+00:21:17,400 --> 00:21:22,280
+contribuisce a certi progetti perché potrebbero non saperlo oppure ne fanno così tanti e decidono di
+
+236
+00:21:22,280 --> 00:21:29,040
+dare priorità ad alcuni, come abbiamo detto prima nella piramide. E sul tema della passione faccio
+
+237
+00:21:29,040 --> 00:21:33,280
+il paragone con il calcio, parte che è uno sport che a me non mi piace per niente proprio per via
+
+238
+00:21:33,280 --> 00:21:39,560
+del suo ecosistema, come è anche in questo di javascript. Io preferisco essere il giocatore in
+
+239
+00:21:39,560 --> 00:21:46,240
+campo che stare sul bordocampo a sbraitare, perché la differenza è una posizione attiva e positiva
+
+240
+00:21:46,240 --> 00:21:52,200
+che fa qualcosa di effettivo, mentre il secondo è passivo e influisce solo nel fattore promozionale
+
+241
+00:21:52,200 --> 00:21:57,320
+che per quanto è importante è come il meme di quello che lavora mentre altri sette operai lo
+
+242
+00:21:57,320 --> 00:22:04,960
+guardano e che gli dicono cosa fare. Ecco quindi lo si fa per la gloria? Sì. Lo si fa perché piace? Sì.
+
+243
+00:22:04,960 --> 00:22:11,840
+Ottengo un rimborso o uno stipendio? Molto meglio. Non ho mai detto io a uno sviluppatore che il suo
+
+244
+00:22:11,840 --> 00:22:18,200
+progetto ha un bug e come l'ho sistemato? Ti meriti delle botte, nel senso che devi essere, cioè te
+
+245
+00:22:18,200 --> 00:22:23,080
+le stai cercando proprio. Vorrei che un oggetto facesse una certa cosa, un progetto scusatemi,
+
+246
+00:22:23,080 --> 00:22:30,240
+facesse una certa cosa, fallo o chiedi aiuto su come farlo. Questa è la mia filosofia, la persona
+
+247
+00:22:30,240 --> 00:22:36,440
+deve essere il cambiamento. I movimenti diciamo rivoluzionari o che cambiano le cose, possiamo
+
+248
+00:22:36,440 --> 00:22:42,760
+dirla così, vengono solo se ci sono degli esempi politicitivi e con il tempo. Questa è la base del
+
+249
+00:22:42,760 --> 00:22:49,920
+concetto di opensource per me. Bene Daniele, io ti ringrazio per essere stato qui con noi. Vuoi
+
+250
+00:22:49,920 --> 00:22:56,800
+ricordare a chi ci ascolta dove ti può trovare sul web e quali sono i tuoi contatti? Daniele.tech
+
+251
+00:22:56,800 --> 00:23:03,160
+è il mio sito con tutti i link, quindi troverete sul sito il menu con tutti i miei social, tra cui
+
+252
+00:23:03,160 --> 00:23:10,080
+anche il podcast e il libro di prima. Quindi potete ritrovarmi ovunque, come mi ha scritto Valerio su
+
+253
+00:23:10,080 --> 00:23:15,240
+Telegram, vi potete trovare su tutti i social di questo mondo. Il mio nickname è MT90, quindi vi
+
+254
+00:23:15,240 --> 00:23:24,200
+trovate uguale lì senza problemi. Quindi ecco, ci vediamo, alla prossima volta! Assolutamente,
+
+255
+00:23:24,360 --> 00:23:31,200
+grazie e alla prossima! Dunque, il problema sembra essere di tipo culturale. Da una parte
+
+256
+00:23:31,200 --> 00:23:38,200
+abbiamo un modo di sviluppare software sempre più interconnesso e interdipendente, dall'altra
+
+257
+00:23:38,200 --> 00:23:45,000
+abbiamo sempre più sviluppatori e componenti opensource disponibili. La possibilità che uno
+
+258
+00:23:45,000 --> 00:23:51,240
+sviluppatore indipendente sbrocchi, per usare le parole di Daniele, e faccia danni, come abbiamo
+
+259
+00:23:51,240 --> 00:23:57,720
+visto, sono più che concrete. In generale, potremmo dire che è il rischio di dipendere
+
+260
+00:23:57,720 --> 00:24:03,760
+da un qualcosa. Un giorno questo qualcosa potrebbe venire in qualche modo meno. E quindi dovremmo
+
+261
+00:24:03,760 --> 00:24:10,440
+rinunciare a qualsiasi dipendenza nel nostro software? Certo, io non sono un fan dell'utilizzo
+
+262
+00:24:10,440 --> 00:24:16,840
+indiscriminato delle dipendenze, se hai ascoltato l'episodio sulla Dependency Confusion lo saprai,
+
+263
+00:24:16,840 --> 00:24:24,000
+ma d'altro canto nemmeno credo sia corretto reinventare la ruota in ogni singolo progetto
+
+264
+00:24:24,000 --> 00:24:29,880
+che si sviluppa. Direi piuttosto che il segreto, un po' come in tutte le cose, è farci attenzione
+
+265
+00:24:29,880 --> 00:24:36,920
+e provare a stare, diciamo, nel mezzo. Soffermarsi un attimo a chiedersi ma mi serve proprio questo
+
+266
+00:24:36,920 --> 00:24:43,480
+pacchetto, magari qualche volta produrrà una risposta negativa. Semplicemente perché useremo
+
+267
+00:24:43,600 --> 00:24:50,000
+l'1% di quel pacchetto oppure perché si tratta di qualcosa di così semplice che possiamo pensare
+
+268
+00:24:50,000 --> 00:24:56,440
+di integrare direttamente o scrivere in autonomia? Dipende dal contesto, è ovvio, ma se non ci poniamo
+
+269
+00:24:56,440 --> 00:25:02,040
+mai attenzione nemmeno riusciremo a cogliere mai le occasioni che ci si presenteranno davanti.
+
+270
+00:25:02,040 --> 00:25:08,040
+Nel primo caso di cui abbiamo parlato poi, quello di gennaio, sembra anche esserci una
+
+271
+00:25:08,040 --> 00:25:14,320
+questione di etica professionale. Aziende che fatturano magari anche tanto utilizzando software
+
+272
+00:25:14,320 --> 00:25:20,480
+open source spesso dimenticano di contribuire anche minimamente agli stessi progetti che gli
+
+273
+00:25:20,480 --> 00:25:26,400
+permettono di lavorare. Ma in realtà siamo proprio sicuri che sia questo un comportamento
+
+274
+00:25:26,400 --> 00:25:32,320
+intenzionale? Come diceva Daniele, magari un'azienda sceglie semplicemente di indirizzare
+
+275
+00:25:32,320 --> 00:25:38,400
+le proprie risorse su un progetto open source tralasciandone evidentemente un altro. Oppure,
+
+276
+00:25:38,400 --> 00:25:44,480
+se ci riflettiamo un attimo, in linea generale diciamo che chi utilizza attivamente le librerie
+
+277
+00:25:44,480 --> 00:25:50,760
+open source all'interno di un'azienda, spesso in quella stessa azienda non è la stessa persona
+
+278
+00:25:50,760 --> 00:25:56,600
+che poi prende decisione su come spendere i soldi. Come ha riportato lo stesso Squeers infatti
+
+279
+00:25:56,600 --> 00:26:02,840
+nella sua dichiarazione alcune donazioni da sviluppatori indipendenti arrivano e probabilmente
+
+280
+00:26:02,840 --> 00:26:08,760
+questo dipende dal fatto che quando sei indipendente o sei piccolo la figura dello
+
+281
+00:26:08,760 --> 00:26:15,920
+sviluppatore e dell'amministratore spesso o coincidono o perlomeno sono più vicine rispetto
+
+282
+00:26:15,920 --> 00:26:22,480
+ad esempio ad una multinazionale. Forse una possibile soluzione potrebbe essere una sorta
+
+283
+00:26:22,480 --> 00:26:28,240
+di movimento che parte dal basso dagli sviluppatori stessi all'interno dell'azienda,
+
+284
+00:26:28,240 --> 00:26:34,640
+i quali potrebbero far presente quanto lavoro si risparmia utilizzando il pacchetto X piuttosto
+
+285
+00:26:34,640 --> 00:26:41,760
+che quello Y invece di doversi riscrivere tutte le funzionalità da soli. Addirittura qualche tempo fa
+
+286
+00:26:41,760 --> 00:26:48,080
+ricordo di aver sentito parlare di una proposta per far pagare un piccolo contributo per download.
+
+287
+00:26:48,240 --> 00:26:56,000
+Superata una certa soia mensile o settimanale con il gestore di pacchetti l'utente avrebbe
+
+288
+00:26:56,000 --> 00:27:01,680
+dovuto pagare una piccola commissione ma un meccanismo del genere presupporrebbe tutta
+
+289
+00:27:01,680 --> 00:27:08,440
+una serie di modifiche tecniche non indifferenti al sistema di gestione delle dipendenze e non so
+
+290
+00:27:08,440 --> 00:27:14,480
+in realtà quanto questo sarebbe realmente fattibile. Se riflettiamo invece sul secondo
+
+291
+00:27:14,480 --> 00:27:21,200
+caso di cui abbiamo parlato, cioè quello di marzo, la questione è palesemente di tipo politico
+
+292
+00:27:21,200 --> 00:27:28,960
+oltre che etico. Certamente la motivazione del gesto, cioè una protesta contro la guerra in
+
+293
+00:27:28,960 --> 00:27:36,040
+Ucraina, è un qualcosa di molto importante, soprattutto per noi europei, ma questo basta
+
+294
+00:27:36,040 --> 00:27:42,160
+a giustificare il sabotaggio di sviluppatori russi. D'altro canto però posso anche capire
+
+295
+00:27:42,160 --> 00:27:48,520
+chi vuole in qualche modo far sentire la propria voce riguardo qualcosa che ritiene sbagliato o
+
+296
+00:27:48,520 --> 00:27:56,360
+importante e pertanto decide di usare quei propri mezzi che ha a disposizione. Insomma tutto questo
+
+297
+00:27:56,360 --> 00:28:02,360
+per dire che come al solito la questione è complicata ed io non mi sento certo la persona
+
+298
+00:28:02,360 --> 00:28:11,120
+che ha tutte le risposte. Tuttavia una cosa credo di saperla e cioè che è importante porsi le domande
+
+299
+00:28:11,560 --> 00:28:18,760
+e soprattutto farlo nel modo migliore possibile. Bene, io spero di averti come al solito condiviso
+
+300
+00:28:18,760 --> 00:28:24,480
+qualche ragionamento e qualche informazione interessante. Voglio sapere tu come la pensi
+
+301
+00:28:24,480 --> 00:28:31,240
+su questa storia. Sul sito di Pensieri in Codice trovi tutti i miei contatti e ancora meglio il link
+
+302
+00:28:31,240 --> 00:28:36,940
+al gruppo Telegram dove possiamo discutere insieme con gli altri membri della community. Prima di
+
+303
+00:28:36,940 --> 00:28:43,180
+lasciarti ti ricordo che Pensieri in Codice è un podcast indipendente interamente prodotto da me
+
+304
+00:28:43,180 --> 00:28:49,660
+nel mio tempo libero e con le mie risorse personali. Quindi se apprezzi quello che faccio e se sei
+
+305
+00:28:49,660 --> 00:28:56,700
+arrivato fin qui immagino che l'apprezzi, sul sito pensieriincodice.it mi raccomando con due i trovi
+
+306
+00:28:56,700 --> 00:29:02,380
+tutti i metodi per inviarmi il tuo contributo. In tal modo mi aiuterai a coprire i costi di
+
+307
+00:29:02,380 --> 00:29:08,060
+attrezzature e abbonamenti mensili. Se non ti sei già iscritto ricorda di farlo per non perderti
+
+308
+00:29:08,060 --> 00:29:15,260
+nessun episodio. Trovi Pensieri in Codice su tutte le maggiori app e piattaforme di podcast. Io ora
+
+309
+00:29:15,260 --> 00:29:21,340
+ti ringrazio per l'ascolto, ti do appuntamento al prossimo episodio e ti ricordo che un informatico
+
+310
+00:29:21,340 --> 00:29:24,900
+risolve problemi, a volte anche usando il computer.
+

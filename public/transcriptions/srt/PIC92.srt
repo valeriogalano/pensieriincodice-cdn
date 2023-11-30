@@ -1,0 +1,852 @@
+1
+00:00:00,000 --> 00:00:05,680
+La criptografia è uno strumento essenziale per far funzionare il mondo, soprattutto quello
+
+2
+00:00:05,680 --> 00:00:12,200
+digitale, esattamente così come noi oggi lo conosciamo. Archivi, comunicazioni, pagamenti,
+
+3
+00:00:12,200 --> 00:00:19,120
+autenticazioni, tutto si basa su robusti meccanismi che hanno essenzialmente lo scopo di proteggere
+
+4
+00:00:19,120 --> 00:00:25,240
+le informazioni di valore dagli sguardi indiscreti di coloro che non hanno diritto di accedervi.
+
+5
+00:00:25,720 --> 00:00:32,520
+Ma tutto l'attuale ecosistema, pur assicurando un alto livello di sicurezza e protezione sufficiente
+
+6
+00:00:32,520 --> 00:00:38,840
+a permetterci di svolgere tutte le attività che ben conosciamo, è comunque ben lungi dall'essere
+
+7
+00:00:38,840 --> 00:00:44,600
+perfetto. Nell'episodio di oggi quindi vorrei parlarti di una interessante evoluzione nel
+
+8
+00:00:44,600 --> 00:00:49,760
+campo della criptografia che forse potrebbe diventare una realtà di ampia diffusione già
+
+9
+00:00:49,760 --> 00:00:55,480
+nei prossimi anni e che potrebbe aumentare enormemente il livello di sicurezza dei nostri
+
+10
+00:00:55,480 --> 00:01:01,960
+dati. Quindi ora ascoltiamo insieme la sigla e dopo parliamo un po' di criptografia omomorfica.
+
+11
+00:01:01,960 --> 00:01:11,360
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galano.
+
+12
+00:01:12,360 --> 00:01:22,240
+L'informatica e la criptografia sono da sempre discipline profondamente collegate. Da un lato
+
+13
+00:01:22,240 --> 00:01:27,560
+la criptografia deve tantissime delle proprie possibilità alla potenza di calcolo garantita
+
+14
+00:01:27,560 --> 00:01:33,000
+dall'informatica e dall'altro al tempo stesso tantissime delle moderne applicazioni informatiche
+
+15
+00:01:33,000 --> 00:01:39,040
+sarebbero letteralmente impossibili senza la criptografia. I primi esempi di criptografia
+
+16
+00:01:39,120 --> 00:01:45,120
+infatti risalgono addirittura più di 5000 anni fa, ma è solo negli ultimi anni, da poco più di
+
+17
+00:01:45,120 --> 00:01:50,560
+mezzo secolo, che questa disciplina ha visto esplodere i propri ambiti e le proprie possibilità
+
+18
+00:01:50,560 --> 00:01:56,560
+di applicazione, ovviamente seguendo il trend crescente della diffusione prima dei computer,
+
+19
+00:01:56,560 --> 00:02:02,360
+poi degli smartphone, il cloud e tutto ciò che ne abbiamo visto conseguire. Contemporaneamente
+
+20
+00:02:02,360 --> 00:02:08,760
+però gli informatici hanno attinto a piene mani dalle teorie e dagli algoritmi criptografici e
+
+21
+00:02:08,800 --> 00:02:14,880
+questo per implementare e proteggere tutte quelle tecnologie che sono alla base del mondo digitale.
+
+22
+00:02:14,880 --> 00:02:20,680
+Dall'hardware al software, dal wi-fi al cloud, tutto funziona anche grazie ad una
+
+23
+00:02:20,680 --> 00:02:25,280
+molteplicità di algoritmi che criptano e decriptano dati in continuazione.
+
+24
+00:02:25,280 --> 00:02:31,440
+Il concetto base di criptografia ormai lo conosciamo un po' tutti, o sicuramente ne
+
+25
+00:02:31,440 --> 00:02:36,520
+abbiamo almeno sentito parlare. Anche qui su Pensieri in Codice abbiamo trattato l'argomento
+
+26
+00:02:36,640 --> 00:02:42,320
+in vari episodi e se non sai a cosa mi riferisco ti invito caldamente ad andarli a recuperare
+
+27
+00:02:42,320 --> 00:02:47,880
+perché sono veramente molto interessanti. Ma in termini molto generali diciamo che la
+
+28
+00:02:47,880 --> 00:02:53,680
+criptografia è un meccanismo per conservare o scambiare informazioni nascondendole ad occhi
+
+29
+00:02:53,680 --> 00:02:58,520
+indiscreti e facendo in modo che siano consultabili ed utilizzabili solo da chi
+
+30
+00:02:58,520 --> 00:03:03,640
+dispone dei corretti strumenti e delle corrette informazioni di decrittazione.
+
+31
+00:03:04,200 --> 00:03:09,720
+Nel mondo moderno, anche se magari non intenzionalmente, ne facciamo un uso quotidiano,
+
+32
+00:03:09,720 --> 00:03:15,760
+ad esempio quando navighiamo sul web, quando ci scambiamo messaggi, quando inseriamo informazioni
+
+33
+00:03:15,760 --> 00:03:22,040
+in un'app o quando facciamo acquisti online. In realtà quasi in ogni nostra operazione sul web
+
+34
+00:03:22,040 --> 00:03:27,840
+o via internet è in qualche modo coinvolto un processo di criptografia. Ma non solo online,
+
+35
+00:03:28,000 --> 00:03:33,720
+anche quando utilizziamo sistemi di pagamento, quando colleghiamo pc e stampante al wifi di
+
+36
+00:03:33,720 --> 00:03:39,240
+casa, quando apriamo il cancello automatico del garage. Tutti questi sistemi, esclusi
+
+37
+00:03:39,240 --> 00:03:44,520
+proprio quelli obsoleti o mal configurati, basano comunicazione e autenticazione su un
+
+38
+00:03:44,520 --> 00:03:50,760
+qualche meccanismo di criptografia. Negli ultimi anni poi la criptografia è anche stata utilizzata
+
+39
+00:03:50,760 --> 00:03:56,880
+per scopi diciamo meno nobili e meno legali. Basti pensare a tutti gli attacchi ransomware
+
+40
+00:03:56,880 --> 00:04:02,480
+che crescono di giorno in giorno e che spesso fanno uso di algoritmi criptografici per impedire
+
+41
+00:04:02,480 --> 00:04:07,640
+l'accesso ai dati da parte dei legittimi proprietari, per poi chiedergli un riscatto
+
+42
+00:04:07,640 --> 00:04:12,680
+per ottenere strumenti e chiavi di decrittazione. Anche di questo abbiamo parlato qualche episodio
+
+43
+00:04:12,680 --> 00:04:18,080
+fa. Ma qualsiasi sia lo scopo, alla fine il concetto di base è abbastanza semplice. Si
+
+44
+00:04:18,080 --> 00:04:23,400
+prende un'informazione, la si elabora con un qualche algoritmo matematico e la si sostituisce
+
+45
+00:04:23,400 --> 00:04:29,400
+con il prodotto dell'elaborazione. Fatto questo l'informazione è criptata. Sempre mantenendoci
+
+46
+00:04:29,400 --> 00:04:34,880
+molto sul generico possiamo suddividere gli algoritmi criptografici in due tipologie. In
+
+47
+00:04:34,880 --> 00:04:40,560
+realtà esistono molte altre categorizzazioni e suddivisioni, ma per quello che mi interessa
+
+48
+00:04:40,560 --> 00:04:46,080
+descriverti oggi è più che sufficiente la distinzione tra algoritmi di criptografia
+
+49
+00:04:46,080 --> 00:04:52,920
+unidirezionali e algoritmi di criptografia bidirezionali. Un algoritmo di criptografia
+
+50
+00:04:53,400 --> 00:04:59,520
+unidirezionale è sostanzialmente un processo il cui risultato non può essere riportato allo
+
+51
+00:04:59,520 --> 00:05:05,640
+stato originale pre elaborazione. In pratica, a partire dall'informazione che si desidera
+
+52
+00:05:05,640 --> 00:05:11,920
+proteggere, con questo algoritmo è possibile calcolarne una versione criptata, ma se si è
+
+53
+00:05:11,920 --> 00:05:18,080
+in possesso della sola versione criptata non esiste un meccanismo vero e proprio per ricostruire
+
+54
+00:05:18,080 --> 00:05:24,120
+l'informazione iniziale. Ad un primo sguardo superficiale questo potrebbe sembrare un algoritmo
+
+55
+00:05:24,120 --> 00:05:31,000
+abbastanza inutile. A cosa serve convertire un dato in modo che poi sia illegibile e impossibile
+
+56
+00:05:31,000 --> 00:05:36,800
+da ripristinare? Beh, in realtà si tratta di un algoritmo ampiamente utilizzato e l'esempio più
+
+57
+00:05:36,800 --> 00:05:42,600
+classico riguarda l'archiviazione delle password all'interno di un database, ad esempio le password
+
+58
+00:05:42,680 --> 00:05:48,480
+degli utenti di un sito web. Quando infatti l'utente imposta la propria password, il sistema
+
+59
+00:05:48,480 --> 00:05:54,160
+la elabora con un algoritmo unidirezionale e la archivia all'interno del proprio database in
+
+60
+00:05:54,160 --> 00:06:00,000
+formato criptato. Quando poi, in un secondo momento, l'utente ritorna e reinserisce la
+
+61
+00:06:00,000 --> 00:06:05,760
+password per autenticarsi presso il sito, il sistema non fa altro che criptografare nuovamente
+
+62
+00:06:05,760 --> 00:06:11,280
+la password appena inserita usando lo stesso identico algoritmo della volta precedente. A
+
+63
+00:06:11,280 --> 00:06:16,920
+questo punto non gli resta che confrontare il risultato della criptografia appena applicata
+
+64
+00:06:16,920 --> 00:06:24,040
+con quella salvata all'interno del database. Se queste coincidono, ne può dedurre che l'utente
+
+65
+00:06:24,040 --> 00:06:29,560
+abbia inserito la password corretta. A prima vista potrebbe sembrare complicato, ma in realtà si
+
+66
+00:06:29,560 --> 00:06:35,080
+tratta di un modo molto semplice ed efficiente per gestire l'autenticazione e questo perché,
+
+67
+00:06:35,080 --> 00:06:41,840
+innanzitutto, gli algoritmi unidirezionali sono molto veloci e poi questo approccio permette di
+
+68
+00:06:41,840 --> 00:06:49,600
+gestire un gran numero di password senza doverle conoscere e mantenendole in uno stato difficilmente
+
+69
+00:06:49,600 --> 00:06:56,720
+decrittabile in caso di accessi non autorizzati al database. Un algoritmo bidirezionale invece,
+
+70
+00:06:56,720 --> 00:07:02,520
+penso lo starai immaginando, è quel tipo di algoritmo in cui il risultato è perfettamente
+
+71
+00:07:02,600 --> 00:07:08,960
+reversibile. È sufficiente conoscere i passaggi necessari e dei dati aggiuntivi segreti che di
+
+72
+00:07:08,960 --> 00:07:14,720
+solito prendono il nome di chiave e utilizzarli per ripristinare l'informazione originale a
+
+73
+00:07:14,720 --> 00:07:20,680
+partire da quella criptata. L'applicazione di questo algoritmo ovviamente è molto più intuitiva,
+
+74
+00:07:20,680 --> 00:07:25,960
+si usa per memorizzare qualcosa che in futuro dovrà essere ripristinato per essere utilizzato,
+
+75
+00:07:25,960 --> 00:07:31,280
+ma nel frattempo che si trova su un archivio o viene spedito lungo un canale di comunicazione
+
+76
+00:07:31,720 --> 00:07:37,720
+deve essere protetto da accessi o addirittura da modifiche indesiderate. Dunque, ricapitolando,
+
+77
+00:07:37,720 --> 00:07:43,040
+la criptografia serve a proteggere i dati, ma anche da quel poco che ti ho descritto finora
+
+78
+00:07:43,040 --> 00:07:48,680
+dovrebbe apparire chiara una cosa, e c'è che in certi casi, per la verità in molti casi,
+
+79
+00:07:48,680 --> 00:07:55,360
+essa vada momentaneamente rimossa per permettere l'utilizzo di tali dati, altrimenti in forma
+
+80
+00:07:55,360 --> 00:08:01,360
+criptata risultano essenzialmente inutili. Ed è proprio a questo punto che si inizia a parlare
+
+81
+00:08:01,360 --> 00:08:08,240
+di criptografia omomorfica. La criptografia omomorfica è un tipo di criptografia che
+
+82
+00:08:08,240 --> 00:08:14,640
+permette di utilizzare e di elaborare i dati in forma criptata. Ciò vuol dire che una volta
+
+83
+00:08:14,640 --> 00:08:21,800
+criptati, utilizzando questo tipo di algoritmo, non è necessario decriptarli se vi si vogliono
+
+84
+00:08:21,800 --> 00:08:27,280
+applicare delle trasformazioni o li si vuole utilizzare per fini statistici o per inferire
+
+85
+00:08:27,280 --> 00:08:34,880
+altri tipi di informazioni. L'aggettivo omomorfica deriva dal concetto di omomorfismo algebrico,
+
+86
+00:08:34,880 --> 00:08:40,400
+che in parole matematiche è un'applicazione tra due strutture algebriche dello stesso tipo che
+
+87
+00:08:40,400 --> 00:08:47,520
+ne conserva le operazioni definite. Ma, in parole molto molto semplici, vuol dire che se applico
+
+88
+00:08:47,520 --> 00:08:53,800
+la criptografia omomorfica ad un certo dato o a un insieme di dati, successivamente sarà per me
+
+89
+00:08:53,800 --> 00:09:00,880
+possibile eseguire le stesse operazioni sia sui dati originali che su quelli criptati e ottenere
+
+90
+00:09:00,880 --> 00:09:07,240
+gli stessi risultati. L'unica differenza sarà che i risultati ottenuti a partire dai dati criptati
+
+91
+00:09:07,240 --> 00:09:13,480
+saranno essi stessi criptati e in particolare la versione criptata dei risultati ottenuti dai
+
+92
+00:09:13,520 --> 00:09:20,000
+dati originali. Ok, suona ancora complicato, quindi proviamo anche in quest'altro modo. Chiamiamo
+
+93
+00:09:20,000 --> 00:09:27,560
+X il nostro dato originale, applichiamo la criptografia omomorfica e otteniamo X' poi
+
+94
+00:09:27,560 --> 00:09:35,280
+eseguiamo lo stesso calcolo o la stessa operazione prima su X poi su X' e otterremo rispettivamente
+
+95
+00:09:35,280 --> 00:09:41,880
+un risultato Y e un risultato Y'. A questo punto, poiché abbiamo utilizzato la criptografia
+
+96
+00:09:41,960 --> 00:09:50,040
+omomorfica, sapremo che Y' è esattamente la versione criptata di Y. In tutto questo ragionamento la
+
+97
+00:09:50,040 --> 00:09:55,480
+criptografia omomorfica è essenzialmente un tipo di criptografia a chiave pubblica e se non sai
+
+98
+00:09:55,480 --> 00:09:59,400
+cosa vuol dire ti consiglio di recuperare gli episodi in cui ne abbiamo parlato e in cui
+
+99
+00:09:59,400 --> 00:10:05,560
+abbiamo anche spiegato come funziona, ma questo vuol dire che solo chi possiede la chiave privata
+
+100
+00:10:05,560 --> 00:10:11,320
+è in grado di decriptare le informazioni e la cosa impressionante in tutto questo è che
+
+101
+00:10:11,320 --> 00:10:16,960
+l'elaborazione dei dati, i calcoli su di essi, l'ordinamento, la catalogazione e in certi casi
+
+102
+00:10:16,960 --> 00:10:23,240
+perfino la modifica possono essere effettuati senza bisogno di tale chiave, quindi in pratica
+
+103
+00:10:23,240 --> 00:10:29,480
+senza mai dover decriptare l'informazione. Se vogliamo provare a traslare tutto nel mondo
+
+104
+00:10:29,480 --> 00:10:35,880
+reale e fare un esempio, sempre tenendo presente che in casi come questi fortemente legati alla
+
+105
+00:10:35,880 --> 00:10:42,480
+matematica qualsiasi esempio nel mondo fisico non calzerà mai al cento per cento, possiamo
+
+106
+00:10:42,480 --> 00:10:49,760
+immaginare di essere non so in un ufficio e aver bisogno di scaldare il nostro pranzo. Magari nel
+
+107
+00:10:49,760 --> 00:10:55,080
+nostro ufficio c'è una piccola mensa e questa mensa è presidiata da un cuoco e questo cuoco
+
+108
+00:10:55,080 --> 00:11:02,760
+ha accesso ad un forno e magari vorremmo chiedere al cuoco di scaldare il nostro pranzo ma non ci
+
+109
+00:11:02,760 --> 00:11:09,040
+fa piacere che lui sappia che oggi mangeremo curry perché anche lui oggi ha cucinato il curry e
+
+110
+00:11:09,040 --> 00:11:15,000
+potrebbe offendersi. Allora per aggirare il problema potremmo mettere il nostro curry dentro
+
+111
+00:11:15,000 --> 00:11:21,040
+un contenitore chiuso e non trasparente e bloccare il coperchio in qualche modo, diciamo con un
+
+112
+00:11:21,040 --> 00:11:27,600
+lucchetto. Passeremo un po' per psicopatici ma tanto è un esempio. A questo punto il cuoco potrà
+
+113
+00:11:27,600 --> 00:11:32,840
+scaldare il nostro contenitore in forno per qualche minuto per poi restituircelo senza mai
+
+114
+00:11:32,840 --> 00:11:40,120
+sapere cosa esso contenga. Ecco, in questo modo il nostro pranzo, cioè i nostri dati, sarà stato
+
+115
+00:11:40,120 --> 00:11:47,680
+scaldato, cioè avranno subito una trasformazione, da un soggetto terzo, cioè il cuoco, senza che
+
+116
+00:11:47,680 --> 00:11:54,640
+questi abbia potuto effettivamente vederlo, cioè leggere i dati. In più però il cuoco, sapendo
+
+117
+00:11:54,640 --> 00:12:01,400
+solamente che ciò che ha scaldato era un generico pranzo, potrà segnare sul registro della cucina
+
+118
+00:12:01,400 --> 00:12:08,400
+che oggi un pranzo non è stato servito ma è stato portato da casa. In pratica, anche senza accedervi,
+
+119
+00:12:08,400 --> 00:12:14,560
+potrà utilizzare le informazioni per fini statistici. Dunque, come ti dicevo poco fa,
+
+120
+00:12:14,560 --> 00:12:21,280
+in questi casi si tratta sempre di esempi un po' stiracchiati, ma spero di aver reso l'idea. E
+
+121
+00:12:21,320 --> 00:12:26,680
+poi una cosa importante, io odio il Kerry, non so, magari è un'informazione interessante.
+
+122
+00:12:26,680 --> 00:12:33,080
+Tornando però alla criptografia omomorfica, al momento questa si divide in essenzialmente tre
+
+123
+00:12:33,080 --> 00:12:41,400
+livelli, Partially Omomorphic Encryption, Somewhat Omomorphic Encryption e Fully Omomorphic Encryption.
+
+124
+00:12:41,400 --> 00:12:47,440
+Nel primo livello, cioè la criptografia parziale, è possibile applicare solo un numero limitato di
+
+125
+00:12:47,440 --> 00:12:54,720
+operazioni matematiche al dato criptato, mentre nel secondo, quello Somewhat, invece è possibile
+
+126
+00:12:54,720 --> 00:13:01,360
+applicare un numero maggiore di operazioni ma solo per un numero limitato di volte. Ma il livello più
+
+127
+00:13:01,360 --> 00:13:07,400
+interessante è ovviamente il terzo, quello completo, grazie al quale è possibile superare i limiti dei
+
+128
+00:13:07,400 --> 00:13:14,140
+due livelli precedenti ed applicare un grande insieme di operazioni per un numero limitato di
+
+129
+00:13:14,140 --> 00:13:20,860
+volte. E qui già vedo la domanda apparire nei tuoi occhi, se esiste una versione completa di
+
+130
+00:13:20,860 --> 00:13:26,220
+questa criptografia perché siamo qui a parlare delle versioni intermedie? Beh, è presto detto
+
+131
+00:13:26,220 --> 00:13:32,900
+perché purtroppo, per il momento, la Fully Omomorphic Encryption richiede ancora così tanta
+
+132
+00:13:32,900 --> 00:13:37,900
+potenza di calcolo che il suo utilizzo resta confinato ad applicazioni di altissimo livello
+
+133
+00:13:38,220 --> 00:13:44,780
+oppure sperimentali. Le uniche criptografie realmente utilizzabili in modo proficuo nel
+
+134
+00:13:44,780 --> 00:13:50,860
+mondo reale per ora restano la Partially e la Somewhat. Ciò non toglie però che il futuro
+
+135
+00:13:50,860 --> 00:13:56,580
+sembri andare a tutti gli effetti verso la criptografia omomorfica completa e se così
+
+136
+00:13:56,580 --> 00:14:01,860
+sarà le applicazioni saranno moltissime. Come ti anticipavo già qualche minuto fa,
+
+137
+00:14:01,860 --> 00:14:07,260
+infatti, nel nostro mondo moderno, così informatizzato e così interconnesso,
+
+138
+00:14:07,260 --> 00:14:13,020
+quasi ogni nostra informazione, personale o meno, generata intenzionalmente o meno,
+
+139
+00:14:13,020 --> 00:14:19,580
+in qualche modo viene spedita, elaborata e archiviata verso da e presso un qualche tipo
+
+140
+00:14:19,580 --> 00:14:25,500
+di soggetto esterno. Posso fare qualche esempio ma la criptografia è letteralmente tutta intorno
+
+141
+00:14:25,500 --> 00:14:31,220
+a noi. Le nostre informazioni sono archiviate e viaggiano tra decine di server in giro per
+
+142
+00:14:31,220 --> 00:14:37,580
+il mondo. Pensa solo ai dati sanitari, a quelli fiscali, a qualsiasi informazione detenuta da
+
+143
+00:14:37,580 --> 00:14:44,460
+istituzioni e governi. Per poi non parlare di tutti gli account social sui vari siti e sulle
+
+144
+00:14:44,460 --> 00:14:50,780
+app che apriamo noi stessi di nostra iniziativa e che infarciamo con i nostri dati. Oppure ancora
+
+145
+00:14:50,780 --> 00:14:57,260
+informazioni necessarie per il commercio elettronico, quindi per pagamenti, spedizioni. E a tutta questa
+
+146
+00:14:57,260 --> 00:15:02,820
+lista di dati archiviati presso Terzi va poi aggiunta quella dei dati che facciamo elaborare
+
+147
+00:15:02,820 --> 00:15:08,980
+a Terzi. L'interpretazione dei comandi ai nostri assistenti vocali, nella maggior parte dei casi,
+
+148
+00:15:08,980 --> 00:15:15,460
+sono elaborati in cloud. I percorsi verso le destinazioni che vogliamo raggiungere sono elaborati
+
+149
+00:15:15,460 --> 00:15:21,260
+in cloud. Le nostre preferenze che determinano i contenuti che ci vengono suggeriti dagli algoritmi
+
+150
+00:15:21,340 --> 00:15:28,380
+sono elaborati in cloud. Insomma, come ti dicevo, la lista è sterminata e non ha senso continuare a
+
+151
+00:15:28,380 --> 00:15:35,780
+star qui ad elencare per la prossima ora. Però la cosa in realtà più interessante da capire è che
+
+152
+00:15:35,780 --> 00:15:41,900
+tutti questi casi che ti ho descritto finora, così come quelli che ho dimenticato o tralasciato,
+
+153
+00:15:41,900 --> 00:15:50,420
+hanno una singolare costante in comune e cioè la fiducia. In tutte queste situazioni, infatti,
+
+154
+00:15:50,780 --> 00:15:58,220
+in un certo qual modo, consciamente o inconsciamente, di fatto noi ci fidiamo che la persona, l'azienda,
+
+155
+00:15:58,220 --> 00:16:04,820
+l'ente o il governo che riceve, elabora e detiene le nostre informazioni sia in qualche modo
+
+156
+00:16:04,820 --> 00:16:10,700
+affidabile. E ciò ora dovrebbe essere chiaro alla luce di quello che abbiamo detto poco fa,
+
+157
+00:16:10,700 --> 00:16:17,140
+cioè che nella maggior parte delle situazioni i dati che noi permettiamo, addirittura chiediamo,
+
+158
+00:16:17,140 --> 00:16:22,300
+di elaborare a questi soggetti devono necessariamente essere in chiaro, cioè in
+
+159
+00:16:22,300 --> 00:16:28,500
+forma non criptata, almeno per il tempo necessario proprio per elaborarli. Questo è un punto che
+
+160
+00:16:28,500 --> 00:16:34,180
+dovrebbe essere ben chiaro, benché i dati nella cosiddetta condizione di riposo, cioè quando non
+
+161
+00:16:34,180 --> 00:16:42,060
+vengono utilizzati, sono solitamente conservati in forma criptata, attualmente, quasi in ogni caso,
+
+162
+00:16:42,060 --> 00:16:48,140
+nel momento in cui devono essere utilizzati vanno per forza decriptati. E questo vuol dire
+
+163
+00:16:48,140 --> 00:16:56,380
+essenzialmente due cose. Uno, che quando sono nel cloud i nostri dati, in alcuni momenti e per certi
+
+164
+00:16:56,380 --> 00:17:02,820
+lassi di tempo, devono per forza trovarsi in chiaro, cioè devono essere consultabili da umani o
+
+165
+00:17:02,820 --> 00:17:09,100
+algoritmi che siano, altrimenti sarebbero totalmente inutili. E due, di conseguenza,
+
+166
+00:17:09,100 --> 00:17:14,980
+chi detiene ed elabora i nostri dati, in molti casi, deve ovviamente possedere meccanismi e
+
+167
+00:17:14,980 --> 00:17:20,580
+chiavi per decriptarli, altrimenti, torniamo al punto di prima, senza poterli decriptare sono
+
+168
+00:17:20,580 --> 00:17:26,580
+inutili. E quindi, tornando al punto della fiducia, in questo ecosistema noi di fatto ci
+
+169
+00:17:26,580 --> 00:17:32,100
+fidiamo che i nostri dati vengano tenuti al sicuro. Ci fidiamo che il responsabile non ne
+
+170
+00:17:32,100 --> 00:17:36,300
+faccia un uso improprio, che i dipendenti di un'azienda o di una pubblica amministrazione
+
+171
+00:17:36,940 --> 00:17:43,500
+non ne facciano un uso improprio, che un cracker non riesca a forzare i sistemi e farne un uso
+
+172
+00:17:43,500 --> 00:17:50,300
+improprio. Certo esistono leggi al riguardo, noi siamo particolarmente fortunati ad avere il GDPR,
+
+173
+00:17:50,300 --> 00:17:56,820
+io lo dico sempre, ma bisogna essere realisti e tenere presente che nella vita reale la presenza
+
+174
+00:17:56,820 --> 00:18:02,260
+di una legge non esclude automaticamente la possibilità che tale legge venga infranta. Con
+
+175
+00:18:02,260 --> 00:18:07,580
+la criptografia omomorfica completa, invece, se mai essa dovesse raggiungere un livello di
+
+176
+00:18:07,580 --> 00:18:14,340
+efficienza tale da permettere applicazioni diffuse, sarebbe possibile, appunto, superare in vari
+
+177
+00:18:14,340 --> 00:18:20,620
+ambiti tutto questo ragionamento sulla fiducia. In moltissimi casi i dati non avrebbero proprio
+
+178
+00:18:20,620 --> 00:18:26,340
+più bisogno di essere decriptati per essere utilizzati e pertanto la loro sicurezza non si
+
+179
+00:18:26,340 --> 00:18:33,100
+baserebbe più su un meccanismo di fiducia ma su una serie di complesse regole matematiche che ne
+
+180
+00:18:33,100 --> 00:18:39,900
+renderebbero molto più complicato l'uso improprio. Certo non si andrebbe a coprire ogni singolo
+
+181
+00:18:39,900 --> 00:18:45,660
+scenario, ricordiamoci che la perfezione non esiste in nessun campo, ma le applicazioni
+
+182
+00:18:45,660 --> 00:18:52,140
+sarebbero davvero molte e soprattutto in molti ambiti importanti. Uno fra tutti, ad esempio,
+
+183
+00:18:52,140 --> 00:18:58,420
+la sanità. Al momento, infatti, il bilanciamento tra protezione dei dati e ampliamento delle
+
+184
+00:18:58,420 --> 00:19:06,060
+possibilità informatiche in campo sanitario è un problema ben difficile da risolvere. La
+
+185
+00:19:06,060 --> 00:19:11,940
+criptografia omomorfica completa permetterebbe di superare di colpo gran parte delle limitazioni.
+
+186
+00:19:11,940 --> 00:19:18,180
+Più in generale, nel cloud, qualsiasi tipo di elaborazione potrebbe beneficiarne. Pensa
+
+187
+00:19:18,180 --> 00:19:23,500
+a tutti quegli algoritmi di machine learning che vengono applicati in cloud ad esempio per
+
+188
+00:19:23,500 --> 00:19:30,940
+migliorare le immagini, i video, le registrazioni audio. Ricordo che qualche tempo fa andava molto
+
+189
+00:19:30,940 --> 00:19:36,860
+di moda un'app che, se caricata la foto di qualcuno, ne restituiva una versione invecchiata
+
+190
+00:19:36,860 --> 00:19:43,540
+di qualche anno. Beh, quel tipo di app funziona banalmente inviando l'immagine ad un server in
+
+191
+00:19:43,620 --> 00:19:49,300
+cloud. Tra l'altro mi pare in Russia, quindi visto il periodo direi che non sembra essere
+
+192
+00:19:49,300 --> 00:19:55,580
+stata una gran bella idea. Il quale server la restituiva poi dopo aver applicato un qualche
+
+193
+00:19:55,580 --> 00:20:03,020
+tipo di algoritmo di machine learning. Ecco, con la criptografia omomorfica un meccanismo del genere
+
+194
+00:20:03,020 --> 00:20:07,780
+potrebbe essere implementato con la certezza matematica, è proprio il caso di dirlo,
+
+195
+00:20:07,780 --> 00:20:13,980
+che l'immagine sia consultabile solo e unicamente dal legittimo proprietario.
+
+196
+00:20:13,980 --> 00:20:20,780
+E poi c'è il campo del marketing in cui oggi le grandi aziende usano le informazioni degli
+
+197
+00:20:20,780 --> 00:20:26,820
+utenti per inferire quali pubblicità siano più adatte da inserire nei siti o nei social. Un
+
+198
+00:20:26,820 --> 00:20:33,220
+domani potranno fare lo stesso senza effettivamente accedere alle informazioni in chiaro ma utilizzando
+
+199
+00:20:33,220 --> 00:20:40,460
+solo la loro versione criptata. Insomma, i campi di applicazione sono davvero molteplici ma la
+
+200
+00:20:40,460 --> 00:20:46,820
+cosa a mio parere più importante sarà la spinta in termini di privacy che questa criptografia potrà
+
+201
+00:20:46,820 --> 00:20:54,340
+dare alle nostre vite digitali, dato che esse, ormai dovrebbe essere chiaro, coincidono sempre
+
+202
+00:20:54,340 --> 00:20:59,900
+di più con le nostre vite materiali. Bene, spero come al solito di averti portato qualche
+
+203
+00:20:59,900 --> 00:21:05,900
+informazione e qualche riflessione interessante. Ti ricordo che se posso produrre questi contenuti
+
+204
+00:21:05,900 --> 00:21:11,420
+è solo grazie a te che li ascolti e dalla community di Pensieri in Codice che sostiene il progetto,
+
+205
+00:21:11,420 --> 00:21:17,340
+quindi scopri come entrare a farne parte anche tu collegandoti al sito pensieriincodice.it,
+
+206
+00:21:17,340 --> 00:21:22,740
+mi raccomando con due i. Puoi ascoltare tutti gli episodi sulle maggiori piattaforme e app di
+
+207
+00:21:22,740 --> 00:21:29,060
+podcast o riceverli direttamente sul tuo smartphone iscrivendoti al canale Telegram che trovi sul sito.
+
+208
+00:21:29,660 --> 00:21:35,180
+Se Pensieri in Codice ti piace e se sei arrivato fin qui immagino ti piaccia potresti sostenerlo
+
+209
+00:21:35,180 --> 00:21:41,740
+lasciando una recensione nell'app con cui ascolti il podcast e inoltre potresti condividerlo con un
+
+210
+00:21:41,740 --> 00:21:48,540
+amico per farglielo conoscere. Così facendo aiuterai me a far crescere il progetto, a migliorarne la
+
+211
+00:21:48,540 --> 00:21:54,900
+qualità e farai scoprire a lui un qualcosa di interessante. Per oggi dunque è proprio tutto,
+
+212
+00:21:55,100 --> 00:21:59,940
+ti ringrazio per aver ascoltato fin qui, ti do appuntamento al prossimo episodio e ti ricordo
+
+213
+00:21:59,940 --> 00:22:04,740
+che un informatico risolve problemi, a volte anche usando il computer.
+

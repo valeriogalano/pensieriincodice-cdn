@@ -1,0 +1,1080 @@
+1
+00:00:00,000 --> 00:00:06,400
+Ti è mai capitato, navigando sul web o magari utilizzando un'app, di avere la sensazione
+
+2
+00:00:06,400 --> 00:00:11,920
+di star compiendo la scelta sbagliata anche se in fondo sai che è sbagliata?
+
+3
+00:00:11,920 --> 00:00:17,640
+O di trovarti in una di quelle situazioni per cui hai deciso di voler cancellare quell'abbonamento
+
+4
+00:00:17,640 --> 00:00:24,360
+mensile ma, una volta arrivato fin quasi alla fine del processo, poi improvvisamente rinunci?
+
+5
+00:00:24,760 --> 00:00:30,280
+Oppure ancora di essere certo di non volere quel particolare accessorio ma poi, quando
+
+6
+00:00:30,280 --> 00:00:35,360
+durante il processo di acquisto te lo propongono, dirti, vabbè dai, ora lo compro.
+
+7
+00:00:35,360 --> 00:00:40,960
+A volte eventi del genere ci accadono perché siamo distratti o stanchi o semplicemente
+
+8
+00:00:40,960 --> 00:00:43,480
+perché abbiamo davvero cambiato idea, ci può stare.
+
+9
+00:00:43,480 --> 00:00:48,880
+Altre volte, però, la cosa non dipende propriamente da noi perché siamo vittime di quelli che
+
+10
+00:00:48,880 --> 00:00:51,880
+vengono comunemente chiamati dark pattern.
+
+11
+00:00:52,400 --> 00:00:58,640
+Nell'episodio di oggi, dunque, scopriamo cosa sono e come funzionano i dark pattern.
+
+12
+00:00:58,640 --> 00:00:59,640
+Sigla!
+
+13
+00:01:02,640 --> 00:01:07,240
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici.
+
+14
+00:01:07,240 --> 00:01:08,640
+Con Valerio Galan.
+
+15
+00:01:13,240 --> 00:01:18,240
+Oh, ti do il bentornato su Pensieri in Codice, o il benvenuto se è la prima volta che mi
+
+16
+00:01:18,240 --> 00:01:19,240
+ascolti.
+
+17
+00:01:19,240 --> 00:01:20,840
+Che te ne pare della nuova sigla?
+
+18
+00:01:21,000 --> 00:01:26,680
+Io la trovo fantastica, come trovo fantastico tutto il nuovo sound design di Pensieri in
+
+19
+00:01:26,680 --> 00:01:27,680
+Codice.
+
+20
+00:01:27,680 --> 00:01:32,320
+E quindi colgo l'occasione per ringraziare Chiara Virgili e Spad che hanno prestato la
+
+21
+00:01:32,320 --> 00:01:37,680
+loro voce per la sigla che ho appena ascoltato e quella che ascolterai la prossima settimana,
+
+22
+00:01:37,680 --> 00:01:42,360
+e Alex Raccuglia che invece ha curato il restyling sonoro del podcast.
+
+23
+00:01:42,360 --> 00:01:48,600
+Se conosci il mondo del podcasting indipendente sicuramente saprai già di chi sto parlando,
+
+24
+00:01:48,600 --> 00:01:54,400
+ma in caso contrario sappi che sono innanzitutto tre fantastiche persone, ma anche tre bravissimi
+
+25
+00:01:54,400 --> 00:01:55,400
+podcaster.
+
+26
+00:01:55,400 --> 00:02:00,960
+Nei loro programmi parlano di architettura, di cultura pop, di informatica e di musica.
+
+27
+00:02:00,960 --> 00:02:06,480
+Ti lascio i link ai loro progetti in descrizione, mi raccomando, valli a recuperare e non te
+
+28
+00:02:06,480 --> 00:02:07,480
+ne pentirai.
+
+29
+00:02:07,480 --> 00:02:11,880
+La sigla e il sound, però, non sono l'unica novità di quest'anno.
+
+30
+00:02:11,880 --> 00:02:17,400
+Scoprirai tutto un po' per volta, ma per ora ti anticipo che sto lavorando a ben due nuove
+
+31
+00:02:17,400 --> 00:02:21,520
+rubriche in aggiunta agli episodi classici che già conosci.
+
+32
+00:02:21,520 --> 00:02:28,800
+Ti posso anche svelare che in futuro usciranno delle miniserie speciali su determinati argomenti,
+
+33
+00:02:28,800 --> 00:02:34,720
+ma soprattutto che da oggi hai la possibilità di partecipare attivamente alla vita di Pensieri
+
+34
+00:02:34,720 --> 00:02:35,720
+in Codice.
+
+35
+00:02:35,720 --> 00:02:40,440
+Da questa stagione infatti potrai prender parte alla selezione degli argomenti o addirittura
+
+36
+00:02:40,440 --> 00:02:46,520
+richiedere un episodio su un tema specifico, contribuire a incrementare il numero di episodi
+
+37
+00:02:46,520 --> 00:02:52,640
+e di miniserie prodotte, avere accesso a tutti i contenuti in anteprima e senza pubblicità
+
+38
+00:02:52,640 --> 00:02:54,560
+e molto, molto altro ancora.
+
+39
+00:02:54,560 --> 00:02:59,840
+Ora, non voglio fare troppi spoiler, quindi per adesso mi fermo qui, ma tu collegati al
+
+40
+00:02:59,840 --> 00:03:05,800
+sito pensieriincodice.it con due i e scopri tutte le novità e tutto quello che da oggi
+
+41
+00:03:05,800 --> 00:03:06,800
+puoi fare.
+
+42
+00:03:06,800 --> 00:03:12,760
+Detto ciò, e tornando all'argomento dell'episodio di oggi, sappi che l'impressione di cui ti
+
+43
+00:03:12,760 --> 00:03:18,720
+parlavo all'inizio, e cioè che su certe app e su certi siti alcune decisioni sembrano
+
+44
+00:03:18,720 --> 00:03:23,360
+molto più complicate di altre da prendere, non è affatto un'impressione.
+
+45
+00:03:23,360 --> 00:03:28,720
+D'altronde, la maggior parte dei siti che visitiamo e delle app che utilizziamo sono
+
+46
+00:03:28,720 --> 00:03:34,240
+lì perché i loro proprietari possano trarne un qualche tipo di profitto, quindi c'è da
+
+47
+00:03:34,240 --> 00:03:40,480
+aspettarsi che cerchino di pilotare l'attenzione e le scelte degli utenti verso ciò che genera
+
+48
+00:03:40,480 --> 00:03:42,240
+maggiori introiti per loro.
+
+49
+00:03:42,480 --> 00:03:48,400
+Ma questo non vuol dire che una sana promozione di prodotti e servizi debba poi trasformarsi
+
+50
+00:03:48,400 --> 00:03:50,720
+in una trappola per utenti ignari.
+
+51
+00:03:50,720 --> 00:03:57,200
+Prendi ad esempio uno a caso dei giganti di Big Tech e prova ad aprire un account, che
+
+52
+00:03:57,200 --> 00:03:59,440
+so, su Amazon, su Google o su Facebook.
+
+53
+00:03:59,440 --> 00:04:05,040
+Per farlo bastano letteralmente due clic, un indirizzo email, una password e il gioco
+
+54
+00:04:05,040 --> 00:04:06,040
+è fatto.
+
+55
+00:04:06,040 --> 00:04:09,320
+Puoi già postare, comprare, comunicare con chi vuoi.
+
+56
+00:04:09,720 --> 00:04:14,520
+Ora però, prova a prendere quello stesso account e cancellarlo.
+
+57
+00:04:14,520 --> 00:04:20,840
+Probabilmente dovrai andare nelle impostazioni, trovare il link per la cancellazione che è
+
+58
+00:04:20,840 --> 00:04:26,680
+nascosto in fondo a qualche pagina di dettaglio o di profilo, cliccare, spiegare perché vuoi
+
+59
+00:04:26,680 --> 00:04:32,680
+cancellare l'account, rispondere alla classica domanda vuoi solo bloccare o vuoi proprio
+
+60
+00:04:32,680 --> 00:04:38,800
+cancellare, confermare, attendere 30 giorni facendo però attenzione a non ricollegarti
+
+61
+00:04:38,800 --> 00:04:44,240
+mai al sito web o all'app, altrimenti il conteggio si azzera, e poi, finalmente, dopo
+
+62
+00:04:44,240 --> 00:04:47,240
+un mese vedrai il tuo account cancellato.
+
+63
+00:04:47,240 --> 00:04:53,280
+Chiaramente non si tratta di due percorsi paritari, ma ora tu potresti obiettare che
+
+64
+00:04:53,280 --> 00:04:55,120
+si tratta comunque di un caso estremo.
+
+65
+00:04:55,120 --> 00:05:01,400
+Cancellare un account non è cosa di tutti i giorni, e allora io ti chiedo, sei iscritto
+
+66
+00:05:01,400 --> 00:05:02,400
+a LinkedIn?
+
+67
+00:05:02,400 --> 00:05:08,040
+Se sì, hai notato come alcune notifiche siano stranamente simili fra loro?
+
+68
+00:05:08,280 --> 00:05:14,120
+In particolare mi riferisco a quella notifica che ti segnala che un utente vuole collegarsi
+
+69
+00:05:14,120 --> 00:05:20,320
+alla tua rete di collegamenti, e a quella che invece ti segnala quando un utente ha
+
+70
+00:05:20,320 --> 00:05:25,480
+tanti collegamenti in comune con te e ti chiede se vuoi stabilire un nuovo collegamento con
+
+71
+00:05:25,480 --> 00:05:26,480
+lui.
+
+72
+00:05:26,480 --> 00:05:32,200
+In entrambi i casi al centro dell'email trovi un pulsante con scritto Collegati, ma tra
+
+73
+00:05:32,200 --> 00:05:34,840
+i due eventi c'è una grande differenza.
+
+74
+00:05:35,120 --> 00:05:41,160
+Nel primo caso l'utente ha espresso la volontà di collegarsi a te e se tu clicchi sul pulsantino
+
+75
+00:05:41,160 --> 00:05:44,960
+allora semplicemente rispondi affermativamente ad una richiesta.
+
+76
+00:05:44,960 --> 00:05:50,680
+Nel secondo caso invece se clicchi sul pulsantino sei tu ad inviare una richiesta all'altra
+
+77
+00:05:50,680 --> 00:05:53,440
+persona, la quale potrà decidere se accettare o meno.
+
+78
+00:05:53,440 --> 00:05:59,320
+Capisci bene che si tratta di azioni molto differenti fra loro, ma che vengono rese quasi
+
+79
+00:05:59,320 --> 00:06:01,720
+equivalenti dall'impostazione visiva.
+
+80
+00:06:02,680 --> 00:06:08,480
+Ebbene, quelli che ti ho appena raccontato sono due esempi di quelli che vengono comunemente
+
+81
+00:06:08,480 --> 00:06:16,400
+definiti Dark Pattern, e sono dei percorsi operativi o delle interfacce rese intenzionalmente
+
+82
+00:06:16,400 --> 00:06:22,440
+poco chiare e poco fruibili in modo da avvantaggiare il proprietario del sito o dell'app rispetto
+
+83
+00:06:22,440 --> 00:06:24,280
+all'utente che la sta utilizzando.
+
+84
+00:06:24,280 --> 00:06:30,820
+I Dark Pattern rendono difficile effettuare operazioni o scelte che rappresentino un danno
+
+85
+00:06:30,820 --> 00:06:37,020
+o uno svantaggio per il sito, oppure spingono un utente verso un comportamento che normalmente
+
+86
+00:06:37,020 --> 00:06:42,380
+non terrebbe, inducendolo a spendere più del dovuto, ad acquistare prodotti o servizi
+
+87
+00:06:42,380 --> 00:06:48,740
+che normalmente eviterebbe o a trascorrere più tempo del necessario utilizzando un servizio.
+
+88
+00:06:48,740 --> 00:06:55,060
+Ora, so che quello che ti sto raccontando ti potrebbe sembrare impossibile, magia, potresti
+
+89
+00:06:55,060 --> 00:07:00,220
+pensare che solo uno sciocco possa cadere in una trappola del genere, ma la verità
+
+90
+00:07:00,220 --> 00:07:05,340
+è che quando noi utilizziamo il PC o lo smartphone non è che leggiamo proprio ogni
+
+91
+00:07:05,340 --> 00:07:07,140
+parola di ogni schermata.
+
+92
+00:07:07,140 --> 00:07:13,140
+Dovendo gestire tantissime informazioni in brevi lassi di tempo, il nostro cervello fa
+
+93
+00:07:13,140 --> 00:07:18,500
+delle assunzioni, noi saltiamo interi testi e tendiamo a memorizzare degli elementi che
+
+94
+00:07:18,500 --> 00:07:20,620
+ci indicano la giusta via da seguire.
+
+95
+00:07:20,620 --> 00:07:25,820
+Riflettici la prossima volta che un'interfaccia ti fa una domanda del tipo, sei sicuro di
+
+96
+00:07:25,820 --> 00:07:26,900
+voler continuare?
+
+97
+00:07:27,420 --> 00:07:33,740
+Se solo sotto la scritta vedi due pulsanti, uno bello colorato di un colore pieno e brillante
+
+98
+00:07:33,740 --> 00:07:40,460
+e l'altro più sbiadito, trasparente, con solo il contorno nero, tu leggi effettivamente
+
+99
+00:07:40,460 --> 00:07:45,380
+le scritte sui pulsanti o dai per scontato che quello pieno sia la risposta affermativa
+
+100
+00:07:45,380 --> 00:07:48,060
+e quello sbiadito la risposta negativa?
+
+101
+00:07:48,060 --> 00:07:53,580
+Bene, le aziende, quando vogliono, possono pilotare gli utenti proprio sfruttando questo
+
+102
+00:07:53,580 --> 00:08:00,100
+tipo di comportamenti, i quali sono perfettamente normali e messi in atto un po' da tutti,
+
+103
+00:08:00,100 --> 00:08:02,860
+soprattutto quando siamo stanchi o stressati.
+
+104
+00:08:02,860 --> 00:08:07,980
+Chi realizza una schermata può far sembrare che una pagina dica una cosa quando in realtà
+
+105
+00:08:07,980 --> 00:08:15,060
+ne dice un'altra, può far sembrare che l'opzione più appetibile sia una invece che un'altra,
+
+106
+00:08:15,060 --> 00:08:19,980
+o addirittura può farci sentire stupidi nel rifiutare una determinata offerta.
+
+107
+00:08:20,500 --> 00:08:25,380
+E noi, cosa possiamo fare per difenderci da tutti questi comportamenti?
+
+108
+00:08:25,380 --> 00:08:31,180
+Beh, innanzitutto, negli ultimi anni, in molti paesi, i legislatori hanno iniziato a tener
+
+109
+00:08:31,180 --> 00:08:36,180
+conto di questi comportamenti e le multe e le azioni legali stanno anche iniziando ad
+
+110
+00:08:36,180 --> 00:08:42,100
+arrivare, ma sicuramente la prima linea di difesa dovrebbe partire da noi.
+
+111
+00:08:42,100 --> 00:08:49,420
+Infatti, per questi, come per tanti altri fenomeni, imparare a riconoscerli è già un primo grande
+
+112
+00:08:49,420 --> 00:08:51,660
+passo verso il saperli evitare.
+
+113
+00:08:51,660 --> 00:08:57,700
+Se impariamo a conoscere i Dark Pattern e ci abituiamo ad identificarli, quando ce li
+
+114
+00:08:57,700 --> 00:09:02,540
+troveremo davanti saremo anche in grado di fermarci un attimo a riflettere se quello
+
+115
+00:09:02,540 --> 00:09:10,580
+che stiamo per fare è veramente ciò che vogliamo o qualcosa indotto da un'interfaccia volutamente macchinosa.
+
+116
+00:09:10,580 --> 00:09:22,780
+Il termine Dark Pattern fu coniato nel 2010 da Henry Pringle e ad oggi il suo sito darkpatterns.org
+
+117
+00:09:22,780 --> 00:09:28,420
+ne riporta ben 12 tipologie diverse, alcune più comuni, altre, a dir la verità, un po'
+
+118
+00:09:28,420 --> 00:09:29,420
+meno.
+
+119
+00:09:29,420 --> 00:09:36,580
+Quello che vorrei oggi fare con te è proporti una carrellata di quei Dark Pattern che mi
+
+120
+00:09:36,580 --> 00:09:43,060
+sono sembrati più interessanti e più comuni, e forse scoprirai di esserteli trovati davanti
+
+121
+00:09:43,060 --> 00:09:44,620
+anche tu senza saperlo.
+
+122
+00:09:44,620 --> 00:09:49,900
+Il primo fra tutti i Dark Pattern è sicuramente la domanda tra bocchetto.
+
+123
+00:09:49,900 --> 00:09:55,180
+Si tratta di quelle domande che sembrano chiederti una cosa, ma in realtà stanno intendendo
+
+124
+00:09:55,180 --> 00:09:56,180
+tutt'altro.
+
+125
+00:09:56,180 --> 00:10:01,740
+Se ti stai chiedendo come sia possibile mettere su un pattern del genere, pensa semplicemente
+
+126
+00:10:01,740 --> 00:10:03,380
+ad un form di registrazione.
+
+127
+00:10:03,820 --> 00:10:10,420
+In fondo trovi spesso quei checkbox per accettare le condizioni di contratto, i termini di servizio,
+
+128
+00:10:10,420 --> 00:10:14,740
+eventuali altri contratti e poi l'invio di materiale pubblicitario.
+
+129
+00:10:14,740 --> 00:10:21,420
+Ad un'occhiata superficiale o distratta, queste quattro scelte sembrano uguali, tutte necessarie
+
+130
+00:10:21,420 --> 00:10:27,860
+per utilizzare il servizio, ma in realtà l'ultima, quella sull'invio di materiale pubblicitario,
+
+131
+00:10:27,860 --> 00:10:30,020
+è praticamente sempre opzionale.
+
+132
+00:10:30,460 --> 00:10:35,980
+Solo che la tua attenzione, che è stata attirata dalle caselline di spunta e non dalle scritte,
+
+133
+00:10:35,980 --> 00:10:41,460
+fa in modo che tu non ti renda conto di star considerando tutte le voci come equivalenti.
+
+134
+00:10:41,460 --> 00:10:46,980
+Spunti la prima, spunti la seconda, la terza e... perché non la quarta, visto che sembrano
+
+135
+00:10:46,980 --> 00:10:47,980
+tutte uguali?
+
+136
+00:10:51,300 --> 00:10:56,860
+Un secondo Dark Pattern molto interessante prende il nome di Sneak into Basket, che potremmo
+
+137
+00:10:56,900 --> 00:10:59,860
+tradurre più o meno come sgattaiolare nel carrello.
+
+138
+00:10:59,860 --> 00:11:06,220
+Questo pattern lo si può trovare ovviamente sui siti di e-commerce e consiste nella meccanica
+
+139
+00:11:06,220 --> 00:11:11,860
+di inserire prodotti o servizi aggiuntivi durante l'acquisto, senza però che l'utente
+
+140
+00:11:11,860 --> 00:11:13,860
+ne abbia fatta esplicita richiesta.
+
+141
+00:11:13,860 --> 00:11:19,420
+Solitamente sta poi a noi accorgerci che c'è un elemento in più nel carrello ed eventualmente
+
+142
+00:11:19,420 --> 00:11:20,420
+eliminarlo.
+
+143
+00:11:20,420 --> 00:11:25,420
+Si tratta di un comportamento tipico di quei siti che vendono ad esempio elettrodomestici.
+
+144
+00:11:25,780 --> 00:11:31,380
+Tu stai comprando il tuo condizionatore e ti ritrovi nel carrello le spese di montaggio,
+
+145
+00:11:31,380 --> 00:11:35,620
+sia mai che tu lo voglia montare da solo o farlo montare da un tecnico di fiducia.
+
+146
+00:11:35,620 --> 00:11:40,500
+Anche i provider di servizi hosting applicano questo tipo di pattern.
+
+147
+00:11:40,500 --> 00:11:46,620
+Se provi infatti ad esempio a comprare un dominio è facile che ti ritrovi nel carrello
+
+148
+00:11:46,620 --> 00:11:50,660
+anche il servizio di hosting collegato, anche se in realtà non l'hai richiesto.
+
+149
+00:11:50,660 --> 00:12:00,100
+Il terzo tra i dark pattern che ho selezionato prende il nome di Roche Motel, che poi sarebbe
+
+150
+00:12:00,100 --> 00:12:04,940
+la trappola per scarafaggi, hai presente quelle scatolette che attirano l'insetto e poi lo
+
+151
+00:12:04,940 --> 00:12:07,620
+bloccano all'interno senza lasciarlo più uscire.
+
+152
+00:12:07,620 --> 00:12:13,100
+In questo caso si tratta proprio della tipologia di pattern di cui abbiamo parlato all'inizio.
+
+153
+00:12:13,100 --> 00:12:18,380
+Iscriversi a un servizio viene reso oltremodo semplice, anche con dei trucchetti come chiedere
+
+154
+00:12:18,380 --> 00:12:23,380
+pochissime informazioni all'inizio e poi integrare e arricchire il profilo man mano
+
+155
+00:12:23,380 --> 00:12:29,060
+che l'utente si sposta tra le schermate e poi rendere quasi impossibile la cancellazione
+
+156
+00:12:29,060 --> 00:12:34,420
+del proprio account, implementando una interfaccia volutamente forzata e macchinosa.
+
+157
+00:12:34,420 --> 00:12:40,500
+Con un pattern del genere noi utenti abbiamo difficoltà a trovare la giusta voce di menu,
+
+158
+00:12:40,500 --> 00:12:45,620
+ci scoraggiamo e spesso preferiamo smettere di usare il servizio senza però cancellare
+
+159
+00:12:45,620 --> 00:12:51,500
+i nostri dati e tutto ciò va sempre a vantaggio del gestore del sito o dell'app, che in qualche
+
+160
+00:12:51,500 --> 00:12:55,700
+modo riesce a mantenere un certo minimo contatto con noi.
+
+161
+00:12:55,700 --> 00:13:01,660
+In casi estremi esistono addirittura siti nei quali per effettuare un acquisto Unatantum
+
+162
+00:13:01,660 --> 00:13:08,380
+bisogna andare a spuntare una specifica casella, se non lo facciamo il sistema ci iscrive direttamente
+
+163
+00:13:08,380 --> 00:13:12,900
+a un tipo di acquisto ricorsivo, magari mensile o addirittura annuale.
+
+164
+00:13:16,580 --> 00:13:23,580
+Il dark pattern chiamato Privacy Zakkering è chiaramente un omaggio a Mark Zuckerberg,
+
+165
+00:13:23,580 --> 00:13:28,620
+poiché per lungo tempo Facebook ne è stato il massimo utilizzatore mondiale.
+
+166
+00:13:28,620 --> 00:13:34,300
+Qui il trucco consiste nell'inserire nei termini di servizio di un sito o di un'applicazione
+
+167
+00:13:34,300 --> 00:13:38,780
+una clausola che autorizza il gestore a vendere i tuoi dati a soggetti terzi.
+
+168
+00:13:38,780 --> 00:13:45,100
+Il mercato dei dati è uno dei più fiorenti al mondo e le storture non mancano, se sei
+
+169
+00:13:45,100 --> 00:13:50,660
+un ascoltatore affezionato di pensieri in codice saprai che ne abbiamo già parlato
+
+170
+00:13:50,660 --> 00:13:51,780
+in lungo e in largo.
+
+171
+00:13:51,780 --> 00:13:58,100
+Purtroppo, questo è uno di quei pattern su cui è fondamentale un intervento dei legislatori.
+
+172
+00:13:58,100 --> 00:14:03,700
+Il GDPR al momento ne è un fulgito esempio e sta anche facendo scuola in tutto il mondo.
+
+173
+00:14:03,700 --> 00:14:10,180
+E onestamente credo che noi come singoli possiamo fare ben poco, perché nonostante
+
+174
+00:14:10,180 --> 00:14:17,180
+io sia uno di quelli che pensano che i contratti vadano letti prima di essere firmati e anche
+
+175
+00:14:17,180 --> 00:14:23,300
+che valga sempre la pena di soppesare bene un'app o un servizio prima di adottarne l'utilizzo,
+
+176
+00:14:23,300 --> 00:14:29,020
+mi rendo anche conto che leggere 80 pagine di un documento scritto in legalese, magari
+
+177
+00:14:29,020 --> 00:14:34,580
+in un'altra lingua, è un impegno di tempo che non tutti hanno e non tutti sono disposti
+
+178
+00:14:34,580 --> 00:14:35,580
+a fare.
+
+179
+00:14:35,580 --> 00:14:41,260
+Io stesso spesso mi fido e basta, magari perché non capisco qualcosa o non ho il tempo di
+
+180
+00:14:41,260 --> 00:14:42,260
+approfondire.
+
+181
+00:14:42,260 --> 00:14:47,780
+Da questo punto di vista, secondo me, i contratti dovrebbero essere semplici e chiaramente comprensibili
+
+182
+00:14:47,780 --> 00:14:53,820
+anche ai non addetti ai lavori e devo dire che fortunatamente l'Europa sta facendo davvero
+
+183
+00:14:53,820 --> 00:14:55,260
+molto in tal senso.
+
+184
+00:14:55,260 --> 00:15:04,780
+Un altro dark pattern che si può trovare sui siti di e-commerce è rappresentato dal
+
+185
+00:15:04,780 --> 00:15:11,500
+fatto di presentare prodotti simili con prezzi però calcolati su basi diverse.
+
+186
+00:15:11,500 --> 00:15:18,020
+Ora, saprai bene che per confrontare correttamente certi tipi di prodotti è necessario conoscerne
+
+187
+00:15:18,020 --> 00:15:20,580
+il prezzo in base alla stessa unità di misura.
+
+188
+00:15:20,580 --> 00:15:25,520
+Se sei mai stato in un supermercato avrai notato che per cibi e bevande ad esempio si
+
+189
+00:15:25,520 --> 00:15:28,100
+usa il prezzo al chilo o al litro.
+
+190
+00:15:28,100 --> 00:15:33,140
+Spesso però, vari siti di e-commerce tendono a mischiare un po' le carte.
+
+191
+00:15:33,540 --> 00:15:38,140
+Ad esempio potresti voler comprare dei beni di consumo come tovagliolini o fazzoletti
+
+192
+00:15:38,140 --> 00:15:40,780
+di carta, risme, bicchieri usa e getta.
+
+193
+00:15:40,780 --> 00:15:45,980
+In tali casi, se il sito ti presenta un articolo con il prezzo al chilo, un altro con il prezzo
+
+194
+00:15:45,980 --> 00:15:51,900
+a unità, un altro con il prezzo per confezione, tu dovrai metterti a fare i calcoli a mano
+
+195
+00:15:51,900 --> 00:15:55,220
+e difficilmente riuscirai a fare un acquisto informato.
+
+196
+00:15:55,220 --> 00:16:02,060
+In questo caso, la speranza di chi ha implementato il pattern è che tu, per errore, per distrazione
+
+197
+00:16:02,060 --> 00:16:06,780
+o per fretta, acquisti i prodotti più costosi a parità di valore.
+
+198
+00:16:06,780 --> 00:16:15,980
+E sempre sui siti di e-commerce troviamo poi il dark pattern dei costi nascosti.
+
+199
+00:16:15,980 --> 00:16:21,940
+In pratica funziona così, tu navighi il catalogo, riempi il tuo carrello, ti vengono mostrati
+
+200
+00:16:21,940 --> 00:16:28,260
+dei prezzi e il loro totale, ma poi, subito prima di pagare, ecco che compare una riga
+
+201
+00:16:28,260 --> 00:16:33,620
+che aggiunge una cifra per le tasse, un'altra per le spese di spedizione, per le spese di
+
+202
+00:16:33,620 --> 00:16:35,100
+smaltimento, eccetera.
+
+203
+00:16:35,100 --> 00:16:41,820
+E certamente qui il gestore ti viene subito a obiettare che, per certi tipi di prodotti,
+
+204
+00:16:41,820 --> 00:16:47,740
+fino a che non conosce il tuo paese, la tua residenza, il tuo indirizzo, non può formulare
+
+205
+00:16:47,740 --> 00:16:50,820
+un'offerta d'acquisto completa.
+
+206
+00:16:50,820 --> 00:16:57,740
+Ma in tal caso, perché non mettere semplicemente un pulsantino nel carrello per inserire queste
+
+207
+00:16:57,740 --> 00:17:00,780
+informazioni prima di farmelo riempire?
+
+208
+00:17:00,780 --> 00:17:06,380
+Se io come cliente voglio fare un acquisto informato, inserisco i dati necessari, mi
+
+209
+00:17:06,380 --> 00:17:11,900
+faccio calcolare subito tasse, spedizioni, smaltimento, eccetera, e senza dovermi trovare
+
+210
+00:17:11,900 --> 00:17:13,820
+la sorpresa all'ultimo minuto.
+
+211
+00:17:13,820 --> 00:17:19,820
+In questo pattern, infatti, il trucco sta nel fatto che, se magari ho speso tanto tempo
+
+212
+00:17:19,820 --> 00:17:26,620
+e risorse per confrontare e scegliere alcuni prodotti, a quel punto abbandonare il tutto
+
+213
+00:17:26,620 --> 00:17:31,580
+perché sono apparse all'ultimo delle voci di spesa mi costerà dal punto di vista sia
+
+214
+00:17:31,580 --> 00:17:38,620
+emotivo che temporale ed io sarò meno propenso a rifare tutta l'operazione su un altro sito,
+
+215
+00:17:38,620 --> 00:17:42,260
+e finirò quindi per accettare le spese aggiunte all'ultimo minuto.
+
+216
+00:17:42,260 --> 00:17:51,420
+Ed eccoci finalmente al mio dark pattern preferito, il confirm shaming.
+
+217
+00:17:51,740 --> 00:17:59,100
+Si tratta di una pratica nella quale, quando viene proposta una scelta all'utente, rifiutarla
+
+218
+00:17:59,100 --> 00:18:02,220
+gli viene fatto apparire come un qualcosa di stupido.
+
+219
+00:18:02,220 --> 00:18:07,740
+In altre parole, è un modo per farci sentire scemi se rifiutiamo l'offerta o addirittura
+
+220
+00:18:07,740 --> 00:18:11,100
+in colpa perché stiamo sprecando una ghiotta occasione.
+
+221
+00:18:11,100 --> 00:18:15,700
+E paradossalmente l'utilizzo di questa pratica si trova un po' dappertutto.
+
+222
+00:18:15,700 --> 00:18:19,180
+L'iscrizione ad Amazon Prime addirittura ne è un esempio.
+
+223
+00:18:19,620 --> 00:18:23,700
+Quando infatti ci appare il banner che ce la propone, le due scelte disponibili sono
+
+224
+00:18:23,700 --> 00:18:28,660
+qualcosa del tipo, sì, voglio le spedizioni in un giorno per milioni di prodotti senza
+
+225
+00:18:28,660 --> 00:18:34,220
+costi aggiuntivi, oppure no grazie, non voglio spedizioni in un giorno illimitate.
+
+226
+00:18:34,220 --> 00:18:39,900
+Si tratta chiaramente di due descrizioni non paritarie, perché quella affermativa ci mostra
+
+227
+00:18:39,900 --> 00:18:44,140
+i vantaggi, mentre quella negativa ci mostra solo gli svantaggi.
+
+228
+00:18:44,620 --> 00:18:50,820
+Il modo giusto di porla sarebbe, no grazie, voglio risparmiare i 30 e passa euro all'anno.
+
+229
+00:18:50,820 --> 00:18:56,180
+Anche il processo di installazione di Windows 10 prova ad applicare il Confirm Shaming.
+
+230
+00:18:56,180 --> 00:19:02,540
+Infatti, ad un certo punto, ci invita a registrarci con il nostro account Microsoft e a crearne
+
+231
+00:19:02,540 --> 00:19:03,900
+uno se non ce l'abbiamo.
+
+232
+00:19:03,900 --> 00:19:09,500
+E se non vogliamo farlo, dobbiamo cliccare su un piccolo link in basso a destra che recita
+
+233
+00:19:09,500 --> 00:19:15,740
+qualcosa del tipo, no grazie, voglio utilizzare il sistema operativo con funzionalità limitate.
+
+234
+00:19:19,740 --> 00:19:25,660
+Infine, un ultimo dark pattern con il quale probabilmente ti sarai confrontato è il Disguised
+
+235
+00:19:25,660 --> 00:19:32,180
+Advertising, con il quale si cerca di confondere gli utenti per fare in modo che essi clicchino
+
+236
+00:19:32,180 --> 00:19:37,300
+su elementi della schermata invece che su quelli che stanno effettivamente cercando.
+
+237
+00:19:37,700 --> 00:19:42,540
+Palese esempio di questa pratica sono i siti generici per il download di software.
+
+238
+00:19:42,540 --> 00:19:43,540
+Hai presente?
+
+239
+00:19:43,540 --> 00:19:49,020
+Quei siti dove puoi scaricare le ultime versioni più o meno di qualsiasi programma che trovi
+
+240
+00:19:49,020 --> 00:19:50,140
+in circolazione.
+
+241
+00:19:50,140 --> 00:19:56,340
+Mi riferisco ad esempio a Softpedia, Downloads.zinet, FileHippo.
+
+242
+00:19:56,340 --> 00:20:01,460
+Se ti sei mai trovato a scaricare da questi siti, avrai certamente notato che non è proprio
+
+243
+00:20:01,460 --> 00:20:07,020
+chiaro dove sia il pulsante per il download, anche perché spesso appaiono banner pubblicitari
+
+244
+00:20:07,020 --> 00:20:13,380
+dappertutto che contengono immagini di pulsanti lampeggianti con scritte Download Now, Start
+
+245
+00:20:13,380 --> 00:20:14,380
+Download, eccetera.
+
+246
+00:20:14,380 --> 00:20:20,580
+In realtà poi il vero link per il download è piccolo e nascosto al centro della pagina
+
+247
+00:20:20,580 --> 00:20:25,700
+in mezzo ad altri mille elementi, o addirittura a volte il download parte in automatico dopo
+
+248
+00:20:25,700 --> 00:20:31,460
+dieci secondi, tempo che è più che sufficiente per l'utente per cliccare su praticamente
+
+249
+00:20:31,460 --> 00:20:36,180
+tutti i banner nel disperato tentativo di scaricare il software che sta cercando.
+
+250
+00:20:36,180 --> 00:20:44,900
+Bene, come ti accennavo prima, questi sono solo alcuni dei dark pattern attualmente
+
+251
+00:20:44,900 --> 00:20:45,900
+in uso.
+
+252
+00:20:45,900 --> 00:20:50,740
+Io li ho selezionati perché li ho trovati i più interessanti e perché bene o male
+
+253
+00:20:50,740 --> 00:20:55,860
+mi sono reso conto di averli incontrati con una certa frequenza e ho immaginato che la
+
+254
+00:20:55,860 --> 00:20:58,300
+stessa cosa capiti anche a te.
+
+255
+00:20:58,300 --> 00:21:04,780
+Se sei interessato ad approfondire questo argomento ti consiglio di visitare il sito darkpatterns.org
+
+256
+00:21:04,780 --> 00:21:11,660
+e di seguire l'account Twitter di Dark Patterns che twitta spesso tanti esempi di dark pattern
+
+257
+00:21:11,660 --> 00:21:12,660
+reali.
+
+258
+00:21:12,660 --> 00:21:17,360
+Oltre a ciò in descrizione trovi anche un link ad un articolo di The Markup in cui ci
+
+259
+00:21:17,360 --> 00:21:23,260
+sono sei mini test casuali per verificare se sei in grado di individuare dei dark pattern.
+
+260
+00:21:23,260 --> 00:21:26,900
+È molto divertente e istruttivo, ti consiglio di provarlo.
+
+261
+00:21:26,900 --> 00:21:33,180
+Inoltre ti ricordo che se posso produrre questi contenuti è solo grazie a te che mi ascolti
+
+262
+00:21:33,180 --> 00:21:36,380
+e alla community che sostiene il podcast.
+
+263
+00:21:36,380 --> 00:21:40,260
+Scopri come contribuire anche tu sul sito pensieriincodice.it.
+
+264
+00:21:40,260 --> 00:21:46,700
+Puoi ascoltare tutti gli episodi sulle maggiori piattaforme e app di podcast riceverli direttamente
+
+265
+00:21:46,700 --> 00:21:52,060
+sul tuo smartphone iscrivendoti al canale Telegram e ascoltarli in anteprima sul sito
+
+266
+00:21:52,060 --> 00:21:53,060
+ufficiale.
+
+267
+00:21:53,060 --> 00:21:58,140
+Se Pensieri in Codice ti piace e se sei arrivato fin qui, immagino che ti piaccia, puoi anche
+
+268
+00:21:58,140 --> 00:22:02,740
+condividerlo con un amico e farglielo conoscere, farai un favore ad entrambi.
+
+269
+00:22:03,140 --> 00:22:09,820
+Io per ora ti do appuntamento al prossimo episodio e ti ricordo che un informatico risolve problemi,
+
+270
+00:22:09,820 --> 00:22:11,820
+a volte, anche usando il computer.
+

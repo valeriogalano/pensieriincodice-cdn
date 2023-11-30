@@ -1,0 +1,272 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice, pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,400
+in meno di cinque minuti.
+
+3
+00:00:14,400 --> 00:00:30,240
+Il problema del commesso viaggiatore, anche noto come TSP dall'inglese Travelling Salesman
+
+4
+00:00:30,240 --> 00:00:37,120
+Problem, consiste nell'individuare il percorso più breve che un ipotetico commesso viaggiatore
+
+5
+00:00:37,120 --> 00:00:42,400
+dovrebbe compiere per visitare un certo numero di città e tornare poi al punto di partenza.
+
+6
+00:00:42,400 --> 00:00:46,960
+Tutto questo senza mai passare due volte per la stessa città.
+
+7
+00:00:46,960 --> 00:00:53,480
+Si tratta di un problema matematico di ottimizzazione, cioè un problema la cui soluzione consiste
+
+8
+00:00:53,480 --> 00:00:59,960
+nel trovare il valore ottimo di una determinata funzione o obiettivo tenendo in conto specifiche
+
+9
+00:00:59,960 --> 00:01:02,240
+limitazioni, note anche come vincoli.
+
+10
+00:01:02,240 --> 00:01:08,840
+Lungi dall'essere un semplice artificio matematico, il TSP ha molte applicazioni pratiche.
+
+11
+00:01:09,280 --> 00:01:14,840
+Una fra tutte è ovviamente la logistica, la pianificazione di percorsi ed itinerari, che
+
+12
+00:01:14,840 --> 00:01:20,240
+migliora notevolmente fattori come il traffico e l'efficienza delle consegne e distribuzione
+
+13
+00:01:20,240 --> 00:01:21,240
+delle merci.
+
+14
+00:01:21,240 --> 00:01:27,280
+Oltre a questa poi altri esempi di applicazioni forse un po' meno intuitivi sono la pianificazione
+
+15
+00:01:27,280 --> 00:01:32,800
+di risorse, la realizzazione di microchip, l'apprendimento di algoritmi di intelligenza
+
+16
+00:01:32,800 --> 00:01:36,280
+artificiale e perfino il sequenziamento del DNA.
+
+17
+00:01:36,520 --> 00:01:41,920
+L'origine del TSP non è chiarissima, se ne parla addirittura in un libretto di appunti
+
+18
+00:01:41,920 --> 00:01:48,840
+per commessi viaggiatori del 1832, con tanto di descrizione del problema ed esempi di tragitti
+
+19
+00:01:48,840 --> 00:01:54,120
+che attraversano Germania e Svizzera, anche se l'intenzione di tali appunti era chiaramente
+
+20
+00:01:54,120 --> 00:01:59,960
+di risoluzione pratica, non di studio teorico vista la completa assenza di dettagli matematici.
+
+21
+00:02:00,400 --> 00:02:06,680
+Sempre nel XIX secolo però il matematico, fisico e astronomo irlandese William Hamilton
+
+22
+00:02:06,680 --> 00:02:13,520
+inventò un gioco, The Icosian Game, che consisteva nell'unire tutti i vertici di un dodecaedro
+
+23
+00:02:13,520 --> 00:02:16,200
+con un'unica linea chiusa continua.
+
+24
+00:02:16,200 --> 00:02:21,720
+E guarda caso la soluzione di tale gioco era proprio la soluzione al problema del commesso
+
+25
+00:02:21,720 --> 00:02:25,000
+viaggiatore prendendo in considerazione 20 città.
+
+26
+00:02:25,440 --> 00:02:31,720
+Ad ogni modo i primi studi veri e propri sul TSP iniziarono all'incirca negli anni 30 del
+
+27
+00:02:31,720 --> 00:02:39,200
+secolo scorso e fu subito chiaro che il problema in questione fosse di tipo cosiddetto NP completo.
+
+28
+00:02:39,200 --> 00:02:45,080
+Cioè in primo luogo si tratta di un problema che non può essere risolto in modo efficiente
+
+29
+00:02:45,080 --> 00:02:53,560
+e oltre a ciò ha la caratteristica che qualsiasi altro problema NP può essere trasformato matematicamente
+
+30
+00:02:53,560 --> 00:02:55,640
+in un'istanza del TSP.
+
+31
+00:02:55,640 --> 00:03:01,160
+Queste sue caratteristiche lo resero immediatamente abbastanza famoso nei circoli matematici
+
+32
+00:03:01,160 --> 00:03:07,200
+e la sua fama crebbe ancora quando, negli anni 50 e 60, iniziarono ad essere offerti
+
+33
+00:03:07,200 --> 00:03:11,800
+premi in denaro per chiunque fosse riuscito a risolverlo in maniera efficiente.
+
+34
+00:03:11,800 --> 00:03:17,880
+Ma nonostante tali incentivi, ad oggi il TSP è ancora un problema privo di una soluzione
+
+35
+00:03:17,880 --> 00:03:18,880
+efficiente.
+
+36
+00:03:18,880 --> 00:03:25,520
+L'unico modo per ottenere la soluzione esatta, infatti, è tracciare tutti i possibili percorsi
+
+37
+00:03:25,520 --> 00:03:31,560
+e valutarne il migliore, ma è chiaro che se parliamo di 3 o 4 città è un conto, mentre
+
+38
+00:03:31,560 --> 00:03:37,240
+considerando ad esempio 150 città il carico di lavoro diventa praticamente ingestibile.
+
+39
+00:03:37,240 --> 00:03:43,840
+Il risultato di ciò è che attualmente per la risoluzione del TSP per una quantità importante
+
+40
+00:03:43,840 --> 00:03:50,560
+di nodi vengono utilizzati degli algoritmi euristici, cioè algoritmi la cui soluzione
+
+41
+00:03:50,560 --> 00:03:56,240
+è solo probabilmente esatta, cioè che non assicurano che essa sia effettivamente quella
+
+42
+00:03:56,240 --> 00:03:57,240
+ottima.
+
+43
+00:03:57,240 --> 00:04:02,480
+Negli ultimi anni, poi, il problema del commesso viaggiatore ha anche iniziato ad attirare
+
+44
+00:04:02,480 --> 00:04:08,420
+attenzione al di fuori delle comunità matematiche ed informatiche, in particolare sono stati
+
+45
+00:04:08,420 --> 00:04:14,580
+condotti studi su esseri viventi per determinare la loro capacità di trovare la soluzione
+
+46
+00:04:14,580 --> 00:04:15,580
+ottima.
+
+47
+00:04:15,580 --> 00:04:20,340
+Gli esseri umani, ad esempio, sono risultati particolarmente adatti, riuscendo ad individuare
+
+48
+00:04:20,340 --> 00:04:25,900
+rapidamente a colpo d'occhio soluzioni molto vicine a quella ottima con una perdita di
+
+49
+00:04:25,900 --> 00:04:33,380
+efficienza di circa l'1% in caso di 10 o 20 nodi che saliva fino all'11% in caso di 120
+
+50
+00:04:33,380 --> 00:04:34,380
+nodi.
+
+51
+00:04:34,380 --> 00:04:39,380
+Gli studi condotti sui piccioni hanno mostrato come essi siano in grado di pianificare itinerari
+
+52
+00:04:39,380 --> 00:04:44,940
+complessi e quasi ottimali per visitare in modo efficiente una serie di mangiatoie, dimostrando
+
+53
+00:04:44,940 --> 00:04:50,700
+di fatto come anche tali animali vantino abilità naturali nell'avvicinarsi alla soluzione ottima
+
+54
+00:04:50,700 --> 00:04:51,700
+del TSP.
+
+55
+00:04:51,700 --> 00:04:57,000
+Negli anni dieci, poi, la fama del problema del commesso viaggiatore raggiunse persino
+
+56
+00:04:57,000 --> 00:05:02,980
+le grandi masse, la stampa generalista diffuse infatti la notizia che degli esemplari di
+
+57
+00:05:02,980 --> 00:05:09,980
+alcune specie di api fossero in grado istintivamente di risolvere il problema del commesso viaggiatore
+
+58
+00:05:09,980 --> 00:05:14,380
+con titoli del calibro di Il piccolo cervello delle api batte i computer.
+
+59
+00:05:14,380 --> 00:05:20,340
+Sarebbe stato bello, certo, ma in effetti si trattò semplicemente di una cattiva interpretazione
+
+60
+00:05:20,340 --> 00:05:22,500
+del paper di una ricerca scientifica.
+
+61
+00:05:22,500 --> 00:05:27,420
+Le api infatti si sono dimostrate abili nello spostarsi da un fiore all'altro scegliendo
+
+62
+00:05:27,420 --> 00:05:32,180
+il percorso più breve, questo è vero, ma ciò è ben lontano dall'essere in grado
+
+63
+00:05:32,380 --> 00:05:37,460
+di risolvere il problema del commesso viaggiatore e in più, non essendo noi stessi in grado
+
+64
+00:05:37,460 --> 00:05:43,020
+di calcolare l'ottimo percorso tra centinaia o addirittura migliaia di fiori utilizzando
+
+65
+00:05:43,020 --> 00:05:48,660
+dei computer, come potremmo giudicare se quello effettuato da un'ape sia effettivamente
+
+66
+00:05:48,660 --> 00:05:50,660
+l'ottimo o meno?
+
+67
+00:05:53,660 --> 00:05:58,940
+Grazie per aver ascoltato Snippet, una rubrica di Pensieri in Codice, scopri tanti altri
+
+68
+00:05:58,940 --> 00:06:02,180
+contenuti sul sito pensieriincodice.it
+

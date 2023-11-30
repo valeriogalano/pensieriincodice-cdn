@@ -1,0 +1,728 @@
+1
+00:00:00,000 --> 00:00:04,940
+Tra i tanti aspetti della vita che sono stati stravolti dall'informatica negli ultimi due
+
+2
+00:00:04,940 --> 00:00:11,500
+o tre decenni, ce n'è uno che forse tendiamo un po' tutti a dimenticare. Magari perché
+
+3
+00:00:11,500 --> 00:00:17,420
+fra noi alcuni saranno così giovani da non aver mai visto o toccato un atlante geografico
+
+4
+00:00:17,420 --> 00:00:23,500
+o una cartina stradale. O magari perché l'uso del GPS, delle mappe digitali e dei mappamondi
+
+5
+00:00:23,500 --> 00:00:29,300
+digitali è diventato la normalità in un tempo sorprendentemente breve e l'idea che
+
+6
+00:00:29,300 --> 00:00:35,700
+esistesse una cartografia anche prima di Google Maps è qualcosa che ai più non passa
+
+7
+00:00:35,700 --> 00:00:42,300
+nemmeno per la mente. Ma la cartografia esisteva e come e non era semplicemente un insieme
+
+8
+00:00:42,300 --> 00:00:49,540
+di disegni su carta. Era un mezzo per rappresentare il mondo in un certo modo e da un certo punto
+
+9
+00:00:49,540 --> 00:00:56,620
+di vista. Nell'episodio di oggi quindi parliamo di come l'informatica ha cambiato la cartografia
+
+10
+00:00:56,660 --> 00:01:00,420
+e con essa il nostro modo di vedere il mondo. Sigla!
+
+11
+00:01:00,420 --> 00:01:09,700
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galan.
+
+12
+00:01:09,700 --> 00:01:20,140
+La cartografia è una disciplina molto antica che risale almeno ai tempi dell'antica Grecia
+
+13
+00:01:20,140 --> 00:01:26,420
+e che ha avuto un'importanza fondamentale per la storia umana. La rappresentazione su carta o
+
+14
+00:01:26,700 --> 00:01:32,820
+su altri materiali, dipende dal periodo storico, delle informazioni geografiche ma non solo,
+
+15
+00:01:32,820 --> 00:01:40,020
+anche di quelle statistiche, demografiche, politiche eccetera, risulta come supporto di base per
+
+16
+00:01:40,020 --> 00:01:46,780
+l'organizzazione di moltissime attività itinerari, politiche territoriali, urbanistica, strategia
+
+17
+00:01:46,780 --> 00:01:53,300
+militare, studi sociali... l'elenco è pressoché infinito. Per questo motivo la rappresentazione
+
+18
+00:01:53,300 --> 00:01:59,580
+di un territorio ad opera di un cartografo è un lavoro molto molto complesso che va svolto
+
+19
+00:01:59,580 --> 00:02:06,260
+oltre che in base alle informazioni possedute, anche in base alle finalità desiderate. Infatti
+
+20
+00:02:06,260 --> 00:02:13,540
+la scala, i dati da inserire o omettere, i simboli e tutte le altre caratteristiche della mappa sono
+
+21
+00:02:13,540 --> 00:02:19,060
+fattori che devono essere scelti in base alla visione del territorio che si vuole trasmettere,
+
+22
+00:02:19,100 --> 00:02:25,180
+alle informazioni che si vuole mettere in evidenza e al messaggio che si vuole veicolare
+
+23
+00:02:25,180 --> 00:02:30,820
+verso il fruitore. Ed è proprio questo che, oltre probabilmente ad essere uno dei fattori più
+
+24
+00:02:30,820 --> 00:02:38,540
+interessanti di questa disciplina, ne rappresenta anche il maggior limite di sempre. Da una parte
+
+25
+00:02:38,540 --> 00:02:44,300
+abbiamo una quantità enorme di dati che possono essere combinati in infiniti modi, dall'altra
+
+26
+00:02:44,340 --> 00:02:50,700
+uno spazio relativamente limitato nel quale rappresentarli. Ora io non sono certo un esperto
+
+27
+00:02:50,700 --> 00:02:56,260
+in materia e non penso di saperne chissà quanto, quindi mi scuso già in anticipo se tu che stai
+
+28
+00:02:56,260 --> 00:03:02,340
+ascoltando sei un appassionato o addirittura un professionista del settore, ma come al solito
+
+29
+00:03:02,340 --> 00:03:08,700
+qui su Pensieri in Codice io cerco di veicolare un concetto in modo semplice per costruirci un
+
+30
+00:03:08,820 --> 00:03:14,700
+piccolo ragionamento e quindi proverò ad argomentare questa cosa in modo estremamente
+
+31
+00:03:14,700 --> 00:03:21,100
+semplice che magari un esperto potrebbe risultare addirittura banale. Questo solo per dirti che
+
+32
+00:03:21,100 --> 00:03:26,500
+sei stato avvisato e non puoi farmi causa se ti sanguinano le orecchie nei prossimi minuti,
+
+33
+00:03:26,500 --> 00:03:33,660
+ok? Dunque, quando si realizza una carta geografica lo si fa in scala. Questo vuol dire che i territori
+
+34
+00:03:33,660 --> 00:03:40,700
+rappresentati sono nella realtà più grandi di come appaiono nel disegno e minore è la scala,
+
+35
+00:03:40,700 --> 00:03:47,060
+maggiore è il divario di dimensione tra la realtà e la sua rappresentazione cartacea.
+
+36
+00:03:47,060 --> 00:03:53,140
+Questo concetto dovrebbe essere abbastanza ovvio e altrettanto dovrebbe essere la sua
+
+37
+00:03:53,140 --> 00:03:59,500
+diretta conseguenza, cioè che non è materialmente possibile rappresentare ogni singolo dettaglio
+
+38
+00:03:59,500 --> 00:04:06,700
+della realtà sulla carta, qualcosa deve essere necessariamente omesso e per qualcosa intendo
+
+39
+00:04:06,700 --> 00:04:13,900
+tantissime cose. Se poi consideriamo che per ogni singolo territorio esistono anche tantissime altre
+
+40
+00:04:13,900 --> 00:04:19,900
+informazioni oltre a quelle geografiche che, come ti anticipavo prima, potrebbero essere politiche,
+
+41
+00:04:19,900 --> 00:04:26,540
+culturali, demografiche e così via, allora diventa chiaro che la quantità di dati da escludere da
+
+42
+00:04:26,540 --> 00:04:33,860
+ogni singola carta è molto maggiore di quella che si possa anche solamente immaginare. E questo ci
+
+43
+00:04:33,860 --> 00:04:41,060
+porta ad una domanda piuttosto precisa. Come si scelgono le informazioni da inserire o da omettere
+
+44
+00:04:41,060 --> 00:04:47,660
+in una carta geografica? Teoricamente, lo abbiamo già detto qualche minuto fa, si scelgono in base
+
+45
+00:04:47,660 --> 00:04:55,140
+alle finalità della mappa. Se questa servirà per spostarsi fra le maggiori capitali europee, allora
+
+46
+00:04:55,140 --> 00:05:00,740
+avrà delle caratteristiche. Se invece, ad esempio, servirà per la navigazione nel mar mediterraneo ne
+
+47
+00:05:00,740 --> 00:05:06,420
+avrà altre. Se servirà per pianificare la costruzione di nuovi edifici ne avrà altre ancora
+
+48
+00:05:06,420 --> 00:05:12,900
+e così via. E se fossimo in un mondo perfetto potremmo chiudere qui il discorso, ma siccome la
+
+49
+00:05:12,900 --> 00:05:19,780
+realtà non è perfetta, dobbiamo sapere che nella realizzazione delle mappe entrano in gioco tutta
+
+50
+00:05:19,780 --> 00:05:27,380
+una serie di altri fattori. Fattori storici, economici, sociali, ideologici, che a volte sono
+
+51
+00:05:27,380 --> 00:05:34,260
+inclusi volontariamente, altre volte semplicemente trapelano dal contesto. Partendo ad esempio
+
+52
+00:05:34,260 --> 00:05:40,700
+dall'autore, il quale come essere umano avrà delle credenze e delle convinzioni e potrebbe
+
+53
+00:05:40,700 --> 00:05:47,500
+voler dare più enfasi alle proprie idee personali attraverso la sua opera. Passando poi per il
+
+54
+00:05:47,500 --> 00:05:53,020
+committente, quello che in effetti paga per far realizzare quella particolare mappa, che magari
+
+55
+00:05:53,020 --> 00:06:00,100
+vorrebbe mettere in luce le proprie idee. Fino ad arrivare alle influenze esterne come ad esempio il
+
+56
+00:06:00,100 --> 00:06:06,380
+contesto storico-culturale. Se infatti pensiamo alle mappe del medioevo vediamo che molte di
+
+57
+00:06:06,380 --> 00:06:12,900
+queste includevano anche la rappresentazione dell'Eden. Insomma quello che sto cercando di
+
+58
+00:06:12,900 --> 00:06:21,180
+dire è che nella cartografia tradizionale la persona che consulta una carta, il fruitore
+
+59
+00:06:21,180 --> 00:06:29,220
+della carta, ha accesso ad una serie di informazioni scelte e filtrate da qualcun altro. Tutte le altre
+
+60
+00:06:29,220 --> 00:06:36,620
+vengono escluse. Mi rendo conto che per te forse questa cosa sarà banale e che probabilmente vale
+
+61
+00:06:36,620 --> 00:06:42,740
+per qualsiasi opera umana, ma è fondamentale tenerla a mente. Questo per capire l'impatto
+
+62
+00:06:42,740 --> 00:06:49,460
+che ha avuto l'informatica sulla cartografia. La nostra storia inizia verso la seconda metà del
+
+63
+00:06:49,460 --> 00:06:57,020
+1900, periodo che è stato ovviamente di forte espansione per l'informatica. Primi calcolatori
+
+64
+00:06:57,020 --> 00:07:03,140
+elettronici, applicazioni geospaziali, computer grafica, tutti elementi che cominciano a fare
+
+65
+00:07:03,140 --> 00:07:10,340
+capolino sulla scena, almeno per quei grandi attori che possono permettersi tecnologie all'epoca
+
+66
+00:07:10,340 --> 00:07:17,060
+costosissime, come ad esempio enti militari o grandi istituti o governi. Per lo specifico campo
+
+67
+00:07:17,060 --> 00:07:22,620
+della cartografia si tratta del periodo in cui nasce la versione primordiale di quello che oggi
+
+68
+00:07:22,620 --> 00:07:30,420
+si chiama Geographic Information System o GIS e che è quel sistema informativo che permette
+
+69
+00:07:30,420 --> 00:07:36,860
+l'archiviazione delle informazioni georeferenziate. In pratica si tratta di un sistema che contiene
+
+70
+00:07:36,860 --> 00:07:43,500
+un'enorme mole di dati e contemporaneamente la loro associazione alla posizione geografica sulla
+
+71
+00:07:43,500 --> 00:07:50,220
+superficie terrestre. Il sistema GIS introduce un nuovo modo di fruire di tutte queste informazioni
+
+72
+00:07:50,220 --> 00:07:56,220
+geografiche e questo perché permette di recuperarle in tempo reale o quasi in vari
+
+73
+00:07:56,220 --> 00:08:02,460
+formati, in varie scale e prediligendo certe categorie di dati rispetto ad altre. Si tratta
+
+74
+00:08:02,460 --> 00:08:07,820
+comunque di una tecnologia elitaria, sempre per via dei costi proibitivi dell'hardware necessario
+
+75
+00:08:07,820 --> 00:08:14,300
+per farla funzionare ed in particolare per costruire e visualizzare le mappe, ma sul
+
+76
+00:08:14,300 --> 00:08:20,380
+finire degli anni novanta tutto questo cambia perché nasce il primo algoritmo software di
+
+77
+00:08:20,380 --> 00:08:28,740
+clipping. Semplificando al massimo le mappe sono digitalizzate come immagini e questo algoritmo è
+
+78
+00:08:28,740 --> 00:08:34,940
+in grado di mostrare una porzione di immagine a partire da un'immagine più grande senza dover
+
+79
+00:08:34,940 --> 00:08:40,980
+rielaborare l'intera immagine da zero. E per tutto questo non è più necessaria la potenza
+
+80
+00:08:40,980 --> 00:08:46,780
+di calcolo di un hardware dedicato ma basta un semplice computer casalingo. Per noi oggi
+
+81
+00:08:47,020 --> 00:08:52,620
+il concetto di clipping è qualcosa di abbastanza ovvio e banale, lo vediamo applicato tutti i
+
+82
+00:08:52,620 --> 00:08:59,380
+giorni nei videogame o sui nostri pc quando zoomiamo sulle immagini, ma per l'epoca si tratta di una
+
+83
+00:08:59,380 --> 00:09:04,380
+vera e propria rivoluzione che porta in brevissimo tempo alla nascita di tutta una serie di software
+
+84
+00:09:04,380 --> 00:09:11,380
+commerciali che con meno di 100 dollari permettono a chiunque di visualizzare mappe e immagini di
+
+85
+00:09:11,380 --> 00:09:17,900
+tutto il mondo e alla scala che preferiscono. Si tratta ancora di mappe non particolarmente
+
+86
+00:09:17,900 --> 00:09:23,260
+dettagliate piuttosto imprecise soprattutto fuori dagli Stati Uniti? Sì. Le scale sono
+
+87
+00:09:23,260 --> 00:09:28,300
+relativamente limitate e con scale molto grandi o molto piccole il risultato a volte è veramente
+
+88
+00:09:28,300 --> 00:09:35,180
+pessimo? Sì, ma è comunque qualcosa che fino a quel momento un privato cittadino poteva solo
+
+89
+00:09:35,220 --> 00:09:42,340
+sognare. E poi nel 2004 arriva Google, compra un paio di società una negli Stati Uniti un'altra in
+
+90
+00:09:42,340 --> 00:09:47,060
+Australia che si occupano di applicazioni geografiche e geospaziali e nell'arco di due
+
+91
+00:09:47,060 --> 00:09:53,980
+anni annuncia Google Maps e Google Earth. Google non ha grande esperienza nel campo della cartografia
+
+92
+00:09:53,980 --> 00:10:00,300
+ma ha un vantaggio competitivo enorme sulle società specializzate di quel periodo e cioè
+
+93
+00:10:00,300 --> 00:10:08,060
+sa come sfruttare al meglio gigantesche moli di dati. Con l'esperienza acquisita con i suoi
+
+94
+00:10:08,060 --> 00:10:13,540
+prodotti di punta infatti il motore di ricerca, la vendita degli spazi pubblicitari, possiede
+
+95
+00:10:13,540 --> 00:10:19,060
+una serie di conoscenze che possono essere applicate perfettamente anche alle applicazioni
+
+96
+00:10:19,060 --> 00:10:24,820
+cartografiche e geospaziali. Per prima cosa i responsabili dell'azienda hanno fiutato il
+
+97
+00:10:24,820 --> 00:10:30,460
+fatto che il problema dei dati georeferenziati è esattamente uguale al problema del World Wide
+
+98
+00:10:30,460 --> 00:10:36,220
+Web e cioè esiste una quantità sterminata di informazioni ed è molto difficile per
+
+99
+00:10:36,220 --> 00:10:40,780
+qualsiasi fruitore individuare ed estrarre quelle più adatte alle proprie necessità.
+
+100
+00:10:40,780 --> 00:10:47,300
+E guarda caso loro con il loro motore di ricerca sono leader mondiali nella risoluzione di questo
+
+101
+00:10:47,300 --> 00:10:53,100
+tipo di problema e inoltre proprio il possesso degli enormi archivi del motore di ricerca
+
+102
+00:10:53,420 --> 00:10:59,620
+rappresenta un'ulteriore possibilità di crescita sulla concorrenza perché permette alle applicazioni
+
+103
+00:10:59,620 --> 00:11:06,380
+di Google di integrare ai dati georeferenziati ulteriori informazioni tutte estratte dal web.
+
+104
+00:11:06,380 --> 00:11:12,060
+In secondo luogo poi il modello di business preesistente in questo settore come ti accennavo
+
+105
+00:11:12,060 --> 00:11:17,540
+poco fa consiste essenzialmente nella vendita per pochi dollari di software che danno all'utente
+
+106
+00:11:17,540 --> 00:11:23,540
+la possibilità di consultare un certo sotto insieme di mappe o di immagini ma Google utilizza
+
+107
+00:11:23,540 --> 00:11:29,540
+già delle meccaniche di guadagno molto diverse. L'azienda lavora sul concetto di sfruttare i dati
+
+108
+00:11:29,540 --> 00:11:35,540
+per generare profitto e per generare altri dati. Il primo passo è quello di adattare l'ormai
+
+109
+00:11:35,540 --> 00:11:42,260
+celebre programma di vendita di spazi pubblicitari conosciuto come AdWords che oggi si chiama Google
+
+110
+00:11:42,260 --> 00:11:49,740
+Ads alla prima legge della geografia di Tobler che dice che ogni cosa è in relazione con ogni
+
+111
+00:11:49,740 --> 00:11:56,540
+altra cosa ma le cose vicine sono in relazione più stretta delle cose lontane. Nella pratica si
+
+112
+00:11:56,540 --> 00:12:03,580
+tratta di dare la possibilità a chi sia disposto a pagare di avere posizioni in risalto nelle
+
+113
+00:12:03,580 --> 00:12:09,300
+ricerche o una maggiore evidenza nelle rappresentazioni vendendo di fatto gli spazi
+
+114
+00:12:09,300 --> 00:12:16,340
+pubblicitari in base oltre che alle caratteristiche degli utenti fruitori anche alla loro posizione e
+
+115
+00:12:16,340 --> 00:12:23,060
+ai luoghi geografici di loro interesse. Oltre a questo gli strumenti di Google sono anche studiati
+
+116
+00:12:23,060 --> 00:12:29,580
+per dare la possibilità agli utenti di personalizzare i contenuti. Le API infatti mettono a
+
+117
+00:12:29,580 --> 00:12:35,460
+disposizione tantissimi modi per integrare le mappe in altri siti o altri software e per
+
+118
+00:12:35,460 --> 00:12:41,540
+modificarle e aggiungere e rimuovere elementi e dettagli. Così facendo l'insieme di queste due
+
+119
+00:12:41,540 --> 00:12:47,020
+nuove possibilità cioè la pubblicità e la personalizzazione rappresenta per Google una
+
+120
+00:12:47,020 --> 00:12:53,620
+infinita miniera di altri dati che si originano a partire dai gusti e dalle preferenze dei propri
+
+121
+00:12:53,620 --> 00:13:00,740
+utenti espresse tramite ricerche e click riconducendo il tutto ad un modello di business
+
+122
+00:13:00,900 --> 00:13:07,940
+da un lato favorevole alla azienda informatica e dall'altro totalmente al di fuori della portata
+
+123
+00:13:07,940 --> 00:13:13,100
+di qualsiasi concorrente dell'epoca. Arrivati poi a questo punto il resto della storia lo
+
+124
+00:13:13,100 --> 00:13:20,460
+conosciamo un po' tutti. Chi di noi nel 2022 non utilizza Google Maps o Google Earth o almeno uno
+
+125
+00:13:20,460 --> 00:13:26,220
+dei servizi equivalenti di qualche altra società? Per non parlare del sistema GPS moderno che è
+
+126
+00:13:26,220 --> 00:13:31,380
+indispensabile praticamente per qualsiasi tipo di spostamento e che ormai troviamo in
+
+127
+00:13:31,380 --> 00:13:37,460
+qualsiasi device dalle automobili agli orologi. Ed è proprio questo il punto. Questa enorme
+
+128
+00:13:37,460 --> 00:13:43,500
+diffusione rappresenta la vera rivoluzione nel campo della cartografia. Nel momento in cui l'uomo
+
+129
+00:13:43,500 --> 00:13:49,700
+comune è passato dalle mappe cartacee a quelle digitali anche senza rendersene conto la sua
+
+130
+00:13:49,700 --> 00:13:56,500
+visione del mondo è radicalmente cambiata. E non mi riferisco solo alla quantità di informazioni
+
+131
+00:13:56,500 --> 00:14:02,900
+accessibili che pure è aumentata enormemente quanto piuttosto alle modalità di accesso. La
+
+132
+00:14:02,900 --> 00:14:08,420
+moderna rappresentazione geografica è molto più flessibile di quanto si potesse anche solo
+
+133
+00:14:08,420 --> 00:14:14,900
+immaginare qualche decennio fa. Una mappa digitale ha tantissimi livelli di informazione che possono
+
+134
+00:14:14,900 --> 00:14:20,540
+essere sovrapposti, attivati o disattivati, con formazione del territorio, trasporti, traffico,
+
+135
+00:14:20,540 --> 00:14:27,780
+informazioni politiche e così via. E ciò permette a ciascuno di scegliere cosa è di suo interesse e
+
+136
+00:14:27,780 --> 00:14:34,260
+di escludere tutto il resto. Allo stesso tempo una mappa digitale non ha una scala fissa e quindi
+
+137
+00:14:34,260 --> 00:14:40,500
+l'utente può scegliere di prediligere i dettagli, le distanze o qualsiasi posizione nel mezzo. E
+
+138
+00:14:40,500 --> 00:14:46,100
+addirittura, se parliamo di applicazioni 3D come Google Earth, la rappresentazione del territorio
+
+139
+00:14:46,100 --> 00:14:52,700
+può avere diverse angolazioni e diverse inclinazioni. Quello che voglio dire è che per la
+
+140
+00:14:52,700 --> 00:14:58,620
+prima volta nella storia ciascun utente può generare la propria rappresentazione o almeno
+
+141
+00:14:58,620 --> 00:15:04,180
+quella che è più congeniale alle proprie necessità. Mentre prima il mondo veniva essenzialmente
+
+142
+00:15:04,180 --> 00:15:09,380
+rappresentato attraverso il filtro di qualcun altro, dei suoi obiettivi, delle sue convinzioni,
+
+143
+00:15:09,820 --> 00:15:16,460
+oggi ognuno può costruire la propria visione di un territorio e non deve più sottostare a scelte e
+
+144
+00:15:16,460 --> 00:15:23,860
+limitazioni operate da altri. Si tratta certamente di una possibilità senza precedenti, ma dobbiamo
+
+145
+00:15:23,860 --> 00:15:28,820
+fare una puntualizzazione. Con quanto ti ho descritto finora, non è certo mia intenzione
+
+146
+00:15:28,820 --> 00:15:35,500
+dire che il risultato di qualsiasi nostra ricerca su, ad esempio, Google Maps, sia scevro da
+
+147
+00:15:35,540 --> 00:15:40,540
+qualsiasi tipo di forzatura o ideologia. Dobbiamo sempre tenere a mente, infatti,
+
+148
+00:15:40,540 --> 00:15:45,900
+che mentre i dati rappresentati in questi software sono essenzialmente disponibili al
+
+149
+00:15:45,900 --> 00:15:52,540
+pubblico, tutto il codice sorgente e gli algoritmi commerciali non lo sono affatto. E questo non ci
+
+150
+00:15:52,540 --> 00:15:58,140
+permette di affermare con assoluta certezza che in ogni singola rappresentazione non possa essere
+
+151
+00:15:58,140 --> 00:16:04,220
+presente un certo livello di manipolazione. Le aziende che sviluppano questi software non
+
+152
+00:16:04,220 --> 00:16:10,220
+operano, infatti, nel vuoto, ma in contesti ben definiti e potrebbero decidere di nascondere o
+
+153
+00:16:10,220 --> 00:16:16,460
+evidenziare determinate informazioni per un qualsiasi motivo economico, politico, ideologico.
+
+154
+00:16:16,460 --> 00:16:22,580
+Mentre, infatti, nella storia della cartografia, prima o poi qualsiasi autore ha rivelato le
+
+155
+00:16:22,580 --> 00:16:28,380
+tecniche e le fonti utilizzate per realizzare le proprie carte, è piuttosto ingenuo aspettarsi
+
+156
+00:16:28,380 --> 00:16:33,940
+che aziende che basano la propria prosperità sul segreto industriale facciano lo stesso con
+
+157
+00:16:33,940 --> 00:16:40,500
+strumenti che generano profitti multimilionari. Nel frattempo lo sviluppo tecnologico non accenna
+
+158
+00:16:40,500 --> 00:16:46,580
+a fermarsi e le immagini satellitari, aeree, terrestri diventano via via sempre più numerose
+
+159
+00:16:46,580 --> 00:16:53,180
+e precise, conferendo a questi software sempre più materiale per produrre risultati qualitativamente
+
+160
+00:16:53,220 --> 00:16:59,060
+superiori. La cosa certa, però, che vale oggi come valeva al tempo di Ptolomeo è che,
+
+161
+00:16:59,060 --> 00:17:04,860
+per quanto la tecnologia possa progredire, non esisterà mai una rappresentazione definita e
+
+162
+00:17:04,860 --> 00:17:10,820
+accurata del nostro pianeta. E questo semplicemente perché, come spero di essere riuscito a
+
+163
+00:17:10,820 --> 00:17:17,220
+trasmetterti, ogni cultura della storia ha il proprio modo di vedere e rappresentare il mondo
+
+164
+00:17:17,220 --> 00:17:23,900
+tramite le carte geografiche, vale per le mappe digitali come per le carte e i mappamondi dell'antichità.
+
+165
+00:17:23,900 --> 00:17:31,300
+Ci saranno sempre nuove tecnologie e nuove visioni dei territori e queste visioni influenzeranno per
+
+166
+00:17:31,300 --> 00:17:37,820
+forza la rappresentazione geografica favorendo alcuni aspetti a discapito di altri, ma di sicuro
+
+167
+00:17:37,820 --> 00:17:44,780
+nessuna mai mostrerà il mondo così com'è nella realtà, semplicemente perché esso non può essere
+
+168
+00:17:44,780 --> 00:17:50,700
+rappresentato. In fin dei conti il paradosso è proprio questo, non si può conoscere il mondo
+
+169
+00:17:50,700 --> 00:17:57,060
+senza una mappa ma non si può neanche rappresentarlo definitivamente con una mappa. Bene,
+
+170
+00:17:57,060 --> 00:18:02,180
+spero di averti condiviso una riflessione interessante e come al solito spero che
+
+171
+00:18:02,180 --> 00:18:07,420
+l'episodio ti sia piaciuto e ti ricordo che se posso produrre questi contenuti è solo grazie
+
+172
+00:18:07,420 --> 00:18:13,580
+a te che li ascolti e dalla community di Pensieri in Codice che sostiene il progetto. Oggi in
+
+173
+00:18:13,580 --> 00:18:20,060
+particolare voglio ringraziare Mario per la donazione di 5 euro, grazie, e mia moglie Silvia
+
+174
+00:18:20,060 --> 00:18:26,780
+per avermi consigliato la lettura della storia del mondo in 12 mappe, dal cui ultimo capitolo
+
+175
+00:18:26,780 --> 00:18:31,940
+ho tratto molte delle informazioni di questo episodio. Se ti interessa l'argomento trovi il
+
+176
+00:18:31,940 --> 00:18:38,180
+link in descrizione. Scopri poi come dare una mano anche tu collegandoti al sito pensieriincodice.it
+
+177
+00:18:38,180 --> 00:18:43,580
+con due i. Puoi ascoltare tutti gli episodi sulle maggiori piattaforme e app di podcast o
+
+178
+00:18:43,580 --> 00:18:48,740
+riceverli direttamente sul tuo smartphone iscrivendoti al canale Telegram. Se Pensieri
+
+179
+00:18:48,740 --> 00:18:53,860
+in Codice ti piace e se sei arrivato fin qui, immagino ti piaccia, puoi condividerlo con un
+
+180
+00:18:53,860 --> 00:18:59,260
+amico e farglielo conoscere, farai un favore a entrambi. Per oggi dunque è proprio tutto,
+
+181
+00:18:59,260 --> 00:19:03,740
+ti do appuntamento al prossimo episodio e ti ricordo che un informatico risolve
+
+182
+00:19:03,740 --> 00:19:06,660
+problemi, a volte anche usando il computer.
+

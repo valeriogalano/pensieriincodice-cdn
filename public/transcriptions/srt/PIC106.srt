@@ -1,0 +1,212 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice, pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,080
+in meno di 5 minuti.
+
+3
+00:00:14,080 --> 00:00:31,280
+È il giorno 30 aprile 1986, siamo a Pisa, alla sede del centro universitario per il
+
+4
+00:00:31,280 --> 00:00:39,680
+calcolo elettronico del CNR, il CNUCE, e un comando, PING, parte da un calcolatore situato
+
+5
+00:00:39,680 --> 00:00:46,520
+nella sala macchine, attraversa prima un modernissimo butterfly gateway, poi sorvola l'oceano
+
+6
+00:00:46,520 --> 00:00:53,040
+atlantico sfruttando la rete satellitare del Telespazio di Fucino e infine raggiunge Roaring
+
+7
+00:00:53,040 --> 00:01:00,660
+Creek in Pennsylvania. Nel giro di pochi istanti un OK inviato da un operatore americano arriva
+
+8
+00:01:00,660 --> 00:01:08,600
+in risposta a Pisa ed ecco che è appena nato il primo nodo internet italiano. Si tratta
+
+9
+00:01:08,600 --> 00:01:15,000
+di un avvenimento epocale frutto di 5 anni di lavoro da parte del CNUCE che in questo
+
+10
+00:01:15,000 --> 00:01:21,660
+periodo sta sperimentando i diversi standard di collegamento tra computer. I ricercatori
+
+11
+00:01:21,660 --> 00:01:29,280
+non possono ancora sapere che ARPANET porterà fra pochi anni alla nascita del moderno internet,
+
+12
+00:01:29,280 --> 00:01:35,440
+ma già intravedono le maggiori potenzialità del protocollo TCP-IP rispetto ai concorrenti.
+
+13
+00:01:35,800 --> 00:01:40,920
+Tante infatti sono le università e i centri di ricerca nel mondo già collegati a questa
+
+14
+00:01:40,920 --> 00:01:47,560
+rete. In effetti, anche se internet sembra ancora uno dei tanti progetti di ricerca sperimentale,
+
+15
+00:01:47,560 --> 00:01:53,920
+a Pisa sono all'avanguardia e la richiesta di connettere il centro di ricerca alla rete,
+
+16
+00:01:53,920 --> 00:02:00,280
+che di fatto è gestita dagli Stati Uniti, viene accettata subito con entusiasmo. In pochi ancora
+
+17
+00:02:00,280 --> 00:02:05,320
+si rendono conto che questo avvenimento è parte di un processo che in meno di mezzo secolo
+
+18
+00:02:05,320 --> 00:02:12,480
+trasformerà il mondo e la civiltà umana. Tanto è vero che, complice anche il disastro di Chernobyl
+
+19
+00:02:12,480 --> 00:02:18,280
+avvenuto qualche giorno prima, praticamente nessuno dei media riporta la notizia. Tutto
+
+20
+00:02:18,280 --> 00:02:26,000
+passa in sordina. Ma nel giro di solo un anno il CNR registrerà il primo dominio .it, quindi il
+
+21
+00:02:26,040 --> 00:02:32,120
+primo ufficialmente appartenente all'internet italiano, e poi nascerà il registro dei domini
+
+22
+00:02:32,120 --> 00:02:39,720
+.it, che ancora oggi è gestito a Pisa. A distanza di poco più di 35 anni, noi oggi facciamo transitare
+
+23
+00:02:39,720 --> 00:02:46,240
+tranquillamente centinaia di gigabyte di dati in giro per il globo, ma quel primo collegamento,
+
+24
+00:02:46,240 --> 00:02:55,120
+unico nodo di scambio fra due nazioni, implementava una velocità massima di 64 KB al secondo.
+
+25
+00:02:55,680 --> 00:03:02,000
+Qualcosa di assolutamente ridicolo per le necessità odierne, ma più che sufficiente
+
+26
+00:03:02,000 --> 00:03:07,280
+per gli studi dell'epoca, come affermerà in un'intervista 20 anni dopo Stefano Trumpi,
+
+27
+00:03:07,280 --> 00:03:13,600
+uno dei membri del team di ricerca che oggi è presidente onorario dell'Internet Society italiana,
+
+28
+00:03:13,600 --> 00:03:19,800
+nonché Digital Champion per la città di Livorno. L'Italia è quindi la quarta nazione europea,
+
+29
+00:03:20,280 --> 00:03:28,040
+dopo Norvegia, Regno Unito e Germania, ad entrare a far parte della rete Internet. E tutto è nato
+
+30
+00:03:28,040 --> 00:03:34,760
+dall'idea di Luciano Lenzini, informatico e ricercatore, di includere il CNUCE in un
+
+31
+00:03:34,760 --> 00:03:40,760
+progetto sperimentale avviato dalla DARPA, al quale partecipano già alcune altre nazioni europee.
+
+32
+00:03:40,760 --> 00:03:48,040
+Lenzini è stato da poco a Boston e ha visto gli albori e le potenzialità della rete,
+
+33
+00:03:48,480 --> 00:03:54,560
+così una volta tornato in Italia ha convinto i suoi superiori che fare richiesta anche per
+
+34
+00:03:54,560 --> 00:04:00,600
+l'Istituto di Pisa è la cosa giusta da fare. La risposta affermativa dagli Stati Uniti non
+
+35
+00:04:00,600 --> 00:04:06,600
+tarda ad arrivare. Lo stesso dottor Robert Kahn, direttore del progetto, viene in Italia per
+
+36
+00:04:06,600 --> 00:04:12,440
+partecipare alla progettazione del nodo, la scelta dell'hardware e la configurazione che si dovrà
+
+37
+00:04:12,520 --> 00:04:19,080
+poi mettere in piedi. E così gli anni passano e tutto sembra andare per il meglio, fino a che,
+
+38
+00:04:19,080 --> 00:04:24,840
+a pochi metri dal traguardo, non arriva un messaggio da parte della DARPA in cui si comunica
+
+39
+00:04:24,840 --> 00:04:32,600
+che è necessario che tutti i nodi europei si dotino del nuovissimo Butterfly, un gateway composto da
+
+40
+00:04:32,600 --> 00:04:40,200
+256 processori collegati secondo uno schema a farfalla, da cui il nome. Per l'Italia è la fine,
+
+41
+00:04:40,200 --> 00:04:46,360
+questo apparecchio costa più di quanto il CNUCE possa investire nel progetto e una richiesta di
+
+42
+00:04:46,360 --> 00:04:52,920
+fondi necessiterebbe di troppo tempo per via delle lungaggini burocratiche, non c'è altro da fare
+
+43
+00:04:52,920 --> 00:05:00,360
+che ritirarsi. Lenzini quindi prende l'aereo per Washington DC, partecipa alla riunione di tutti i
+
+44
+00:05:00,360 --> 00:05:08,000
+partner e quando è il suo turno di parlare comunica la triste decisione. Ma è in quel momento che
+
+45
+00:05:08,000 --> 00:05:14,400
+accade qualcosa che lo stesso ricercatore non si sarebbe mai aspettato, il dottor Robert Kahn
+
+46
+00:05:14,400 --> 00:05:21,600
+prende la parola e dice a Lenzini che loro vogliono lui, il CNUCE e l'Italia nel progetto, il
+
+47
+00:05:21,600 --> 00:05:28,360
+Butterfly Gateway lo finanzierà il dipartimento della difesa americano. In altre parole è stato
+
+48
+00:05:28,360 --> 00:05:34,760
+per merito della fiducia nelle capacità del team dell'istituto di Pisa e dell'orgoglio e dello
+
+49
+00:05:34,760 --> 00:05:41,960
+spessore di una figura come Lenzini se il 30 aprile 1986 l'Italia è stata fra i primi paesi
+
+50
+00:05:41,960 --> 00:05:48,760
+europei a collegarsi alla rete internet. Se ti va di sentire la storia raccontata dalla viva
+
+51
+00:05:48,760 --> 00:05:54,840
+voce del suo protagonista ti consiglio di cercare su youtube il documentario Login il giorno in cui
+
+52
+00:05:54,840 --> 00:06:04,320
+l'Italia scoprì internet. Grazie per aver ascoltato Snippet, una rubrica di pensieri in codice. Scopri
+
+53
+00:06:04,320 --> 00:06:08,040
+tanti altri contenuti sul sito pensieriincodice.it
+

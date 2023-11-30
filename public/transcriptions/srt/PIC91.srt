@@ -1,0 +1,404 @@
+1
+00:00:00,000 --> 00:00:16,640
+Ti do il benvenuto su Espresso, la rubrica di pensieri in codice in cui ci beviamo insieme
+
+2
+00:00:16,640 --> 00:00:21,340
+un caffè ed io ti racconto di un libro, di un gadget, di un videogame o di qualsiasi
+
+3
+00:00:21,340 --> 00:00:26,180
+altra cosa che mi ha colpito e che sono sicuro piacerà anche a te.
+
+4
+00:00:26,620 --> 00:00:31,340
+Al termine dell'episodio, se riterrai che ti abbia dato un buon consiglio e vorrai offrire
+
+5
+00:00:31,340 --> 00:00:37,400
+tu il prossimo caffè, potrai farlo acquistando dal link affiliato che trovi in descrizione
+
+6
+00:00:37,400 --> 00:00:43,140
+o addirittura pensando di inviare un piccolo contributo per supportare il progetto. Trovi
+
+7
+00:00:43,140 --> 00:00:46,700
+tutti i dettagli sul sito pensieriincodice.it, con due i.
+
+8
+00:00:46,700 --> 00:00:58,100
+Oggi ti vorrei parlare di qualcosa che per le grandi aziende è perfettamente normale
+
+9
+00:00:58,100 --> 00:01:04,460
+e ampiamente utilizzato, ma che invece nelle piccole e piccolissime realtà fatica ancora
+
+10
+00:01:04,460 --> 00:01:11,140
+a trovare il suo spazio e ad essere compreso. Mi sto riferendo al servizio email professionale.
+
+11
+00:01:11,540 --> 00:01:17,220
+Solitamente quando si tocca questo argomento con qualcuno, il pensiero quasi unanime è
+
+12
+00:01:17,220 --> 00:01:23,140
+la domanda del perché dovrei pagare qualcosa che posso avere gratis. E in effetti esistono
+
+13
+00:01:23,140 --> 00:01:29,260
+dei servizi, tra cui probabilmente i più conosciuti sono Gmail e Outlook, che forniscono
+
+14
+00:01:29,260 --> 00:01:36,580
+degli indirizzi email gratuiti a chiunque si registri. Ma questo tipo di indirizzi proprio
+
+15
+00:01:36,580 --> 00:01:42,500
+perché gratuiti hanno tutta una serie di limitazioni che a volte non è nemmeno facile
+
+16
+00:01:42,500 --> 00:01:48,780
+spiegare e far comprendere al proprio interlocutore. Ora non vorrei dilungarmi troppo in questo
+
+17
+00:01:48,780 --> 00:01:54,760
+episodio che dovrebbe essere un consiglio e non una spiegazione, ma per chiarire questo
+
+18
+00:01:54,760 --> 00:02:02,300
+punto dobbiamo affrontare la cosa almeno su tre livelli. E c'è uno che riguarda la qualità,
+
+19
+00:02:02,300 --> 00:02:08,540
+un altro la professionalità e un terzo la privacy barra sicurezza, diciamo così.
+
+20
+00:02:08,540 --> 00:02:15,380
+Bene, velocemente partiamo dalla qualità, qualità del servizio. E a questo proposito
+
+21
+00:02:15,380 --> 00:02:22,220
+un'email gratuita ha per forza di cose dei limiti. Magari sono limiti di spazio, quindi
+
+22
+00:02:22,220 --> 00:02:27,540
+per archiviare le proprie email, o limiti all'invio, il numero di email che si può
+
+23
+00:02:27,540 --> 00:02:35,260
+inviare, oppure ancora limitazioni del supporto che non è garantito ma gestito da volontari
+
+24
+00:02:35,260 --> 00:02:40,560
+all'interno di una community. Ecco tutti questi sono limiti che non si manifestano
+
+25
+00:02:40,560 --> 00:02:47,860
+immediatamente e che magari per un utilizzo blando o poco consapevole possono anche non
+
+26
+00:02:47,860 --> 00:02:54,140
+manifestarsi mai, ma nel momento in cui dovessero essere raggiunti non ci sarebbe alcun modo
+
+27
+00:02:54,140 --> 00:03:00,560
+per superarli mantenendo la gratuità del servizio. Il secondo livello poi riguarda
+
+28
+00:03:00,560 --> 00:03:06,780
+la professionalità e paradossalmente non quella del servizio ma quella dell'utilizzatore.
+
+29
+00:03:06,780 --> 00:03:13,940
+In molti contesti infatti, a partire da quello lavorativo, è importante anche nelle comunicazioni
+
+30
+00:03:13,940 --> 00:03:20,940
+mantenere una certa immagine professionale e a questo proposito un dominio personalizzato
+
+31
+00:03:20,980 --> 00:03:27,060
+nel indirizzo della casella email è il primo passo fondamentale. Serve infatti non solo
+
+32
+00:03:27,060 --> 00:03:32,540
+a proiettare professionalità verso il proprio interlocutore ma anche a mantenere una certa
+
+33
+00:03:32,540 --> 00:03:38,860
+consistenza di identità se si lavora all'interno di una piccola azienda o di un gruppo. Se
+
+34
+00:03:38,860 --> 00:03:43,340
+hai mai fatto parte di un'azienda medio-grande te ne sarai reso conto, nel momento in cui
+
+35
+00:03:43,340 --> 00:03:49,740
+ti assumono ti danno anche una casella email appartenente al loro dominio. A me capita
+
+36
+00:03:49,740 --> 00:03:55,260
+perfino quando faccio delle consulenze come freelance di una certa durata. Qualunque sia
+
+37
+00:03:55,260 --> 00:04:00,460
+la tua professione, se non l'hai già fatto, è qualcosa a cui dovresti pensare. Non sai
+
+38
+00:04:00,460 --> 00:04:06,900
+quanto sia squalificante vedere il sito ad esempio di un avvocato e poi in fondo nei contatti
+
+39
+00:04:06,900 --> 00:04:16,380
+trovare l'email avvocato taldeitali334chiocciolagmail.com. E la stessa cosa vale se fai parte di un'associazione,
+
+40
+00:04:16,380 --> 00:04:21,660
+di un gruppo, se hai preso parte a un progetto. Ora certamente non è questa la sede e probabilmente
+
+41
+00:04:21,660 --> 00:04:26,780
+non sono la persona più adatta per farti una lezione di web reputation, ma in generale
+
+42
+00:04:26,780 --> 00:04:32,980
+come in tantissimi ambiti è indicato avere un sito web per affermare la propria presenza,
+
+43
+00:04:32,980 --> 00:04:39,100
+anche per il dominio dell'email è più o meno la stessa cosa. In un certo senso è
+
+44
+00:04:39,100 --> 00:04:46,260
+un modo per estendere questa presenza e questa consistenza d'immagine. E di solito da qui
+
+45
+00:04:46,340 --> 00:04:53,340
+nasce la confusione. Perché? Perché chi magari ha capito questo concetto, che cosa fa? Passa
+
+46
+00:04:53,740 --> 00:05:00,740
+da un servizio gratuito al server mail installato sull'hosting del proprio sito web. In pratica
+
+47
+00:05:03,340 --> 00:05:08,940
+quando si acquista un dominio di solito vi si associa anche un servizio di hosting in
+
+48
+00:05:08,940 --> 00:05:15,460
+modo da poter installare il proprio sito web. E in quello stesso pannello in molti casi si
+
+49
+00:05:15,460 --> 00:05:22,460
+trova anche una serie di opzioni per attivare delle caselle email. Il problema però è che
+
+50
+00:05:23,260 --> 00:05:30,260
+se quell'hosting non garantisce un servizio email professionale, e è improbabile che
+
+51
+00:05:30,260 --> 00:05:37,180
+un contratto da 40€ l'anno lo includa, nell'utilizzo di quelle caselle si potrebbero
+
+52
+00:05:37,180 --> 00:05:44,180
+verificare tutta una serie di piccoli problemi, niente di insormontabile ma se non altro fastidiosi.
+
+53
+00:05:44,500 --> 00:05:50,540
+Ora, se per caso ti trovi o ti sei trovato in questa situazione, hai mai notato che le
+
+54
+00:05:50,540 --> 00:05:56,900
+tue email, nel senso quelle che tu invii verso gli altri, spesso finiscono nello spam? O
+
+55
+00:05:56,900 --> 00:06:02,380
+ti è mai capitato che un messaggio non venga recapitato perché il server da cui lo stai
+
+56
+00:06:02,380 --> 00:06:07,900
+inviando è finito ad esempio in una blacklist? Ecco, certamente non si tratta di problemi
+
+57
+00:06:07,940 --> 00:06:13,940
+irrisolvibili, si può utilizzare un altro indirizzo email per recapitare il messaggio,
+
+58
+00:06:13,940 --> 00:06:19,980
+ma sono fastidiosi e fanno perdere tempo. E te lo dico, lo so molto bene perché anch'io
+
+59
+00:06:19,980 --> 00:06:26,700
+stesso ho fatto questo percorso. Certo, ora è passato molto tempo, ma anch'io ho iniziato
+
+60
+00:06:26,700 --> 00:06:32,380
+con un servizio free, sono stato poi assunto da una piccola azienda che aveva il proprio
+
+61
+00:06:32,380 --> 00:06:40,660
+dominio per le caselle email e poi, una volta diventato freelance, sono passato anch'io
+
+62
+00:06:40,660 --> 00:06:46,940
+per l'acquisto di un hosting e il tentativo di utilizzo delle caselle su quell'hosting,
+
+63
+00:06:46,940 --> 00:06:53,260
+finché poi a un certo punto, esasperato dai vari piccoli problemi quotidiani, ho deciso
+
+64
+00:06:53,260 --> 00:06:59,660
+finalmente di passare ad un servizio professionale. Quindi, dopo penso oltre 5 minuti di chiacchiere,
+
+65
+00:06:59,660 --> 00:07:07,420
+eccoci finalmente al punto di questo episodio, e cioè il servizio di email professionale
+
+66
+00:07:07,420 --> 00:07:14,220
+che utilizzo da ormai più di un anno con estrema soddisfazione. ProtonMail. ProtonMail
+
+67
+00:07:14,220 --> 00:07:20,220
+potrebbe sembrare un servizio come tanti, d'altronde anche Google e Microsoft offrono
+
+68
+00:07:20,220 --> 00:07:27,100
+il proprio servizio di email a pagamento, ma rispetto agli altri ha alcune differenze.
+
+69
+00:07:27,420 --> 00:07:34,660
+Innanzitutto ha un prezzo abbordabile, e questo non guasta mai, e poi ha una particolare attenzione
+
+70
+00:07:34,660 --> 00:07:40,140
+per la sicurezza e la privacy. Ora, se mi conosci un po', saprai che per me questi sono
+
+71
+00:07:40,140 --> 00:07:46,060
+aspetti molto importanti, quindi piuttosto che descriverti, che so, le interfacce o le
+
+72
+00:07:46,060 --> 00:07:51,580
+caratteristiche tecniche che puoi tranquillamente vedere da te sul sito web, ti dirò più che
+
+73
+00:07:51,580 --> 00:07:57,740
+altro quello che mi ha particolarmente colpito di questo servizio. Innanzitutto la sede in
+
+74
+00:07:57,740 --> 00:08:05,100
+Svizzera fa sì che il trattamento dei dati sia totalmente compliant al GDPR, se non addirittura
+
+75
+00:08:05,100 --> 00:08:10,220
+ad una legge quella svizzera che è ancora più restrittiva. In secondo luogo poi tutti
+
+76
+00:08:10,220 --> 00:08:17,500
+i loro software sono open source ed implementano una tecnologia di criptografia zero access,
+
+77
+00:08:17,500 --> 00:08:23,020
+che in pratica vuol dire che senza la password di accesso alla casella email non è possibile
+
+78
+00:08:23,020 --> 00:08:29,260
+decodificare i messaggi e gli altri dati nemmeno avendo direttamente accesso al server. E a
+
+79
+00:08:29,260 --> 00:08:34,620
+questo proposito, non so se lo sai, ma se le tue caselle sono hostate su un servizio di
+
+80
+00:08:34,620 --> 00:08:42,060
+hosting non professionale è possibile che chi abbia accesso a tale pannello possa banalmente
+
+81
+00:08:42,060 --> 00:08:48,580
+leggere e inviare email da tutte le caselle e la stessa cosa ovviamente vale per il provider. Ma
+
+82
+00:08:48,580 --> 00:08:55,340
+tornando a ProtonMail, un'altra cosa che mi ha molto colpito è che periodicamente l'azienda
+
+83
+00:08:55,340 --> 00:09:01,900
+fa fare degli audit da parte di altre aziende esterne specializzate in sicurezza e sul loro
+
+84
+00:09:01,900 --> 00:09:07,500
+sito puoi trovare la documentazione prodotta in tali occasioni che attesta il livello di sicurezza
+
+85
+00:09:07,500 --> 00:09:14,500
+delle strutture. E sempre sullo stesso sito hanno anche un blog educativo e se hai ascoltato
+
+86
+00:09:14,500 --> 00:09:20,620
+l'episodio su Todoist sai per me quanto sia importante questo tipo di approccio. Insomma,
+
+87
+00:09:20,620 --> 00:09:27,220
+Proton offre un servizio email con rubrica, calendario, un drive per caricare i file ed
+
+88
+00:09:27,220 --> 00:09:35,020
+una vpn, tutto con criptografia end-to-end all'interno di un ecosistema di app e di
+
+89
+00:09:35,020 --> 00:09:42,340
+siti web dal design intuitivo pulito e moderno e ad un prezzo abbordabile. Cosa vuoi più di così?
+
+90
+00:09:42,340 --> 00:09:49,540
+Ok scherzi a parte, certamente non sto dicendo che Proton sia il servizio migliore del mondo è
+
+91
+00:09:49,540 --> 00:09:56,780
+semplicemente quello con il quale mi sono trovato bene nell'ultimo anno e passa così bene che ho
+
+92
+00:09:56,780 --> 00:10:04,020
+pensato di condividerlo anche con te. Però tu puoi farti la tua idea registrandoti banalmente
+
+93
+00:10:04,020 --> 00:10:11,420
+all'account free. Una volta che avrai provato il servizio per quanto tempo vuoi e avrai capito se
+
+94
+00:10:11,420 --> 00:10:18,980
+ti piace almeno quanto piace a me, potrai decidere se cancellare il tuo account, restare con la
+
+95
+00:10:18,980 --> 00:10:25,140
+versione free o passare alla versione a pagamento per avere dei servizi aggiuntivi. L'unica cosa
+
+96
+00:10:25,140 --> 00:10:30,780
+che ti chiedo è di non dimenticare di iscriverti utilizzando il link che trovi nella descrizione
+
+97
+00:10:30,780 --> 00:10:36,780
+di questo episodio o sul sito di Pensieri in Codice così quando deciderai di acquistare il
+
+98
+00:10:36,780 --> 00:10:43,140
+servizio professionale, cosa di cui sono abbastanza sicuro, aiuterai anche automaticamente questo
+
+99
+00:10:43,140 --> 00:10:49,300
+podcast. Bene, per oggi ho parlato fin troppo, spero di averti convinto a provare ProtonMail,
+
+100
+00:10:49,300 --> 00:10:55,700
+ti ringrazio per avermi ascoltato fin qui e ti ricordo che un informatico risolve
+
+101
+00:10:55,700 --> 00:10:58,660
+problemi a volte anche usando il computer.
+
