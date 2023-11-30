@@ -1,0 +1,236 @@
+1
+00:00:00,000 --> 00:00:29,080
+Il Bluetooth è una diffusissima tecnologia di connettività wireless a bassa potenza
+
+2
+00:00:29,080 --> 00:00:34,480
+che viene utilizzata principalmente per lo streaming di flussi audio, per il trasferimento
+
+3
+00:00:34,480 --> 00:00:38,320
+di dati e per la trasmissione di informazioni tra dispositivi.
+
+4
+00:00:38,320 --> 00:00:45,920
+Inizialmente fu concepito per sostituire i cavi RS232, quelli che i più grandi celli
+
+5
+00:00:45,920 --> 00:00:52,120
+fra noi probabilmente ricorderanno con il nome di porte seriali e che magari utilizzavano
+
+6
+00:00:52,120 --> 00:00:58,240
+una ventina o più anni fa, prima dell'avvento dell'USB, per collegare al PC periferiche
+
+7
+00:00:58,240 --> 00:01:02,200
+professionali e non a volte anche le comuni stampanti.
+
+8
+00:01:02,200 --> 00:01:09,680
+Successivamente però questa tecnologia, ovviamente intendo il Bluetooth, ha avuto un ampio successo,
+
+9
+00:01:09,680 --> 00:01:14,820
+maggiore di quello che ci si aspettasse, e ha finito per fare da mezzo di trasmissione
+
+10
+00:01:14,820 --> 00:01:17,920
+alla base di moltissime applicazioni moderne.
+
+11
+00:01:17,920 --> 00:01:23,840
+In fin dei conti si tratta di una connessione relativamente semplice da stabilire e da
+
+12
+00:01:23,840 --> 00:01:27,880
+utilizzare, abbastanza stabile e comoda e senza fili.
+
+13
+00:01:27,880 --> 00:01:34,880
+Oggi quindi il Bluetooth è diventato letteralmente alla portata di tutti, è nei nostri smartphone,
+
+14
+00:01:34,880 --> 00:01:40,680
+nei nostri PC, nei dispositivi di riproduzione musicale, negli speaker intelligenti e non,
+
+15
+00:01:40,680 --> 00:01:44,880
+nei mouse, nelle tastiere, nei controller per videogame, nelle bilance, nei misuratori
+
+16
+00:01:44,880 --> 00:01:45,880
+di pressione.
+
+17
+00:01:45,880 --> 00:01:51,000
+Basta guardarsi intorno e probabilmente si scorgerà almeno un dispositivo che implementa
+
+18
+00:01:51,000 --> 00:01:56,400
+il Bluetooth o che, volendo, esiste anche in versione comprensiva di Bluetooth.
+
+19
+00:01:56,400 --> 00:02:01,640
+D'altronde, per citare Sheldon Cooper di Big Bang Theory, tutto è migliore con il
+
+20
+00:02:01,640 --> 00:02:02,640
+Bluetooth.
+
+21
+00:02:02,640 --> 00:02:07,680
+Ma una domanda interessante potrebbe essere, da dove viene questo strano nome, Bluetooth?
+
+22
+00:02:07,680 --> 00:02:13,800
+Non è un acronimo come ci si potrebbe normalmente aspettare da qualcosa di moderno e tecnologicamente
+
+23
+00:02:13,800 --> 00:02:19,560
+avanzato, né sembra avere un senso minimamente attinente ad un protocollo di trasmissione
+
+24
+00:02:19,560 --> 00:02:21,280
+se lo si traduce direttamente.
+
+25
+00:02:21,280 --> 00:02:27,320
+E in effetti tutto questo dipende dal fatto che Bluetooth non è altro che un soprannome.
+
+26
+00:02:27,320 --> 00:02:34,000
+In particolare il soprannome di Re Harald Gormson, vissuto più di mille anni fa e famoso
+
+27
+00:02:34,000 --> 00:02:39,440
+per aver unificato la Danimarca e la Norvegia nell'anno 958 d.C.
+
+28
+00:02:39,440 --> 00:02:45,720
+Oltre ad essere un famoso sovrano, però, Re Harald era conosciuto anche per un'altra
+
+29
+00:02:45,720 --> 00:02:53,080
+sua caratteristica, e cioè un dente marcio che, guarda un po', aveva assunto un singolare
+
+30
+00:02:53,080 --> 00:02:58,440
+colore a metà fra il blu scuro e il grigio, e da lì il soprannome Bluetooth.
+
+31
+00:02:58,440 --> 00:03:06,480
+Quando nel 1996 i rappresentanti di tre grandi aziende, allora leader nel settore informatico,
+
+32
+00:03:06,480 --> 00:03:12,280
+Ericsson, Intel e Nokia, si riunirono per elaborare un protocollo di comunicazione che
+
+33
+00:03:12,280 --> 00:03:18,200
+avrebbe permesso di collegare senza filo una molteplicità di dispositivi, Jim Kardasch
+
+34
+00:03:18,200 --> 00:03:21,760
+della Intel propose il nome temporaneo di Bluetooth.
+
+35
+00:03:21,760 --> 00:03:27,080
+Successivamente lo stesso Kardasch dirà che la sua idea era semplicemente legata al concetto
+
+36
+00:03:27,080 --> 00:03:28,080
+di unione.
+
+37
+00:03:28,080 --> 00:03:34,360
+Come Re Harald Bluetooth Gormson aveva unito due popoli del Nord Europa, così la tecnologia
+
+38
+00:03:34,360 --> 00:03:40,840
+che avevano in mente avrebbe unito l'industria del PC a quella dei dispositivi industriali,
+
+39
+00:03:40,840 --> 00:03:43,200
+ma quello era solo un nome temporaneo.
+
+40
+00:03:43,200 --> 00:03:49,060
+Sarebbe poi spettato al marketing trovare quello definitivo, e per il marketing le
+
+41
+00:03:49,060 --> 00:03:55,960
+due migliori alternative erano PAN, che sta per Personal Area Network, oppure in seconda
+
+42
+00:03:55,960 --> 00:03:57,440
+battuta RadioWare.
+
+43
+00:03:57,440 --> 00:04:04,400
+Peccato che PAN risultò essere un nome talmente inflazionato da produrre centinaia di migliaia
+
+44
+00:04:04,400 --> 00:04:10,400
+di risultati in caso di una ricerca online, finendo quindi per essere scartato in favore
+
+45
+00:04:10,400 --> 00:04:12,000
+del secondo classificato.
+
+46
+00:04:12,000 --> 00:04:18,000
+Ma incredibilmente la ricerca di mercato per il nome RadioWire non fu completata in tempo
+
+47
+00:04:18,000 --> 00:04:23,400
+per il lancio del prodotto, lasciando così per esclusione come unica alternativa il nome
+
+48
+00:04:23,400 --> 00:04:24,400
+Bluetooth.
+
+49
+00:04:24,400 --> 00:04:30,040
+A quel punto anche per il logo si rimase fedeli alla cultura nordica e si scelse di utilizzare
+
+50
+00:04:30,040 --> 00:04:36,720
+due rune dell'alfabeto scandinavo Junger Futhark, in uso nel IX secolo, e unirle insieme
+
+51
+00:04:36,720 --> 00:04:37,840
+in un unico simbolo.
+
+52
+00:04:38,280 --> 00:04:44,440
+In particolare la scelta ricadde sulle rune iniziali sempre del nome di Re Harald, cioè
+
+53
+00:04:44,440 --> 00:04:50,560
+la runa Hagal, che somiglia ad un asterisco ma con la punta superiore e inferiore un po'
+
+54
+00:04:50,560 --> 00:04:57,680
+più allungate, e la runa Bjarkan, molto simile alla nostra B ma senza linee curve, fatta
+
+55
+00:04:57,680 --> 00:05:00,520
+di soli segmenti come una B spigolosa.
+
+56
+00:05:00,520 --> 00:05:06,240
+E la sovrapposizione di questi due caratteri andò a formare quello che divenne il logo
+
+57
+00:05:06,240 --> 00:05:07,240
+del Bluetooth.
+
+58
+00:05:08,840 --> 00:05:13,840
+Grazie per aver ascoltato Snippet, una rubrica di Pensieri in Codice.
+
+59
+00:05:13,840 --> 00:05:18,320
+Scopri tanti altri contenuti sul sito pensieriincodice.it
+

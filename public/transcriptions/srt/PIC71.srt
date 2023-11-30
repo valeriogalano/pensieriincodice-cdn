@@ -1,0 +1,344 @@
+1
+00:00:00,000 --> 00:00:16,640
+Ti do il benvenuto su Espresso, la rubrica di pensieri in codice in cui ci beviamo insieme
+
+2
+00:00:16,640 --> 00:00:21,340
+un caffè ed io ti racconto di un libro, di un gadget, di un videogame o di qualsiasi
+
+3
+00:00:21,340 --> 00:00:26,180
+altra cosa che mi ha colpito e che sono sicuro piacerà anche a te.
+
+4
+00:00:26,620 --> 00:00:31,340
+Al termine dell'episodio, se riterrai che ti abbia dato un buon consiglio e vorrai offrire
+
+5
+00:00:31,340 --> 00:00:37,400
+tu il prossimo caffè, potrai farlo acquistando dal link affiliato che trovi in descrizione
+
+6
+00:00:37,400 --> 00:00:43,140
+o addirittura pensando di inviare un piccolo contributo per supportare il progetto. Trovi
+
+7
+00:00:43,140 --> 00:00:46,680
+tutti i dettagli sul sito pensieriincodice.it con due i.
+
+8
+00:00:46,680 --> 00:00:59,280
+Il consiglio che sto per darti oggi è venuto fuori da una riflessione che ho fatto qualche
+
+9
+00:00:59,280 --> 00:01:04,920
+tempo fa mentre chattavo con i ragazzi della community di pensieri in codice. Oggi, con
+
+10
+00:01:04,920 --> 00:01:10,480
+il senno di poi, mi rendo conto essere una riflessione anche abbastanza banale, ma al
+
+11
+00:01:10,480 --> 00:01:16,280
+momento, mentre ero lì che scrivevo sul gruppo Telegram, mi è sembrata quasi una
+
+12
+00:01:16,280 --> 00:01:23,520
+sorta di illuminazione. Eravamo lì che discutevamo di computer, di sistemi operativi, eccetera,
+
+13
+00:01:23,520 --> 00:01:29,040
+quando all'improvviso ho realizzato che, con buonissima probabilità, la maggior parte
+
+14
+00:01:29,040 --> 00:01:35,040
+dei appartenenti alla community di pensieri in codice è fatta di persone che trascorrono
+
+15
+00:01:35,040 --> 00:01:40,700
+moltissimo tempo davanti a un computer. E di conseguenza è molto probabile che questo
+
+16
+00:01:40,700 --> 00:01:47,080
+valga anche per te che mi stai ascoltando in questo momento. Magari non sei un programmatore
+
+17
+00:01:47,080 --> 00:01:53,280
+o un informatico nello specifico. Magari sei un tecnico, uno studente o un impiegato che
+
+18
+00:01:53,280 --> 00:01:59,480
+utilizza il computer per il proprio lavoro. Ma in ogni caso, visti gli argomenti di cui
+
+19
+00:01:59,480 --> 00:02:06,440
+quasi sempre parliamo, sento di poter supporre che anche tu, come me, trascorra tantissimo
+
+20
+00:02:06,440 --> 00:02:12,640
+tempo con le mani su un mouse e una tastiera. Quindi ho pensato, visto che ho una sorta di
+
+21
+00:02:12,640 --> 00:02:19,000
+fissazione per questo tipo di periferiche, e visto che negli ultimi mesi ho trovato una
+
+22
+00:02:19,000 --> 00:02:25,600
+configurazione che sembra soddisfarmi, perché non parlarne anche con te? Magari potresti
+
+23
+00:02:25,600 --> 00:02:31,200
+trovarlo interessante e addirittura trarne beneficio. Quindi inizio subito col dirti che
+
+24
+00:02:31,200 --> 00:02:36,520
+negli ultimi 15 anni o poco più, lavorando come freelance, ho avuto la possibilità di girare
+
+25
+00:02:36,520 --> 00:02:43,480
+tra moltissimi uffici diversi e quindi anche di provare molte postazioni differenti, con vari
+
+26
+00:02:43,480 --> 00:02:50,800
+tipi di tastiere, mouse, più o meno tecnologici, più o meno moderni, di varie fasce di prezzo,
+
+27
+00:02:50,800 --> 00:02:57,040
+di vari livelli di qualità. E in tutto questo ho anche conosciuto molte persone alle quali non
+
+28
+00:02:57,040 --> 00:03:05,520
+faceva alcuna differenza utilizzare una periferica piuttosto che un'altra. Ma ben presto, anzi forse
+
+29
+00:03:05,520 --> 00:03:12,720
+anche da prima, da quando ero più piccolo e il computer lo utilizzavo solo per scopi didattici
+
+30
+00:03:12,720 --> 00:03:20,160
+o di divertimento, ho anche capito che per me questa cosa non valeva. Per me è sempre stato
+
+31
+00:03:20,160 --> 00:03:27,320
+fondamentale utilizzare delle periferiche che fossero sia comode sia funzionali e questo
+
+32
+00:03:27,320 --> 00:03:33,680
+proprio per una serie di fattori fisici e di rendimento. Quando infatti sono impegnato nello
+
+33
+00:03:33,680 --> 00:03:42,760
+svolgere un lavoro, se utilizzo ad esempio un mouse la cui corsa non è abbastanza fluida, il cui
+
+34
+00:03:42,760 --> 00:03:49,960
+movimento non è abbastanza preciso o che magari non scivola bene sulla superficie, beh questo mi
+
+35
+00:03:49,960 --> 00:03:59,040
+porta una sorta di frustrazione che mi deconcentra e mi impedisce di lavorare nel modo corretto e con
+
+36
+00:03:59,040 --> 00:04:04,560
+il massimo dell'efficienza. E la stessa cosa mi accade ad esempio se utilizzo una di quelle
+
+37
+00:04:04,560 --> 00:04:12,320
+tastiere da pochi euro dove la corsa dei tasti non è ben fluida o il movimento del tasto è un po'
+
+38
+00:04:12,320 --> 00:04:19,160
+basculante. So che sembrano delle scuse ma in realtà è proprio così, non riesco a concentrarmi
+
+39
+00:04:19,240 --> 00:04:25,880
+se le periferiche non rispondono esattamente come vorrei. E a tutto questo vanno poi aggiunti i
+
+40
+00:04:25,880 --> 00:04:32,880
+fastidi fisici dovuti all'utilizzo prolungato di questo tipo di periferiche di scarsa qualità che
+
+41
+00:04:32,880 --> 00:04:41,360
+nello specifico per me si traducono in affaticamento dei polsi, affaticamento dei pollici e un dolore
+
+42
+00:04:41,360 --> 00:04:47,880
+alla spalla destra che può durare anche qualche giorno. Ora come accennavo all'inizio io di
+
+43
+00:04:47,880 --> 00:04:55,400
+soluzioni a questo problema ne ho cercate e ne ho sperimentate varie ma nell'ultimo periodo
+
+44
+00:04:55,400 --> 00:05:02,960
+sento di aver trovato qualcosa che se non è la perfezione se non altro ci si avvicina abbastanza.
+
+45
+00:05:02,960 --> 00:05:09,680
+E mi riferisco a quello che è il consiglio di questo episodio e cioè l'accoppiata tastiera
+
+46
+00:05:09,680 --> 00:05:18,680
+Logitech MX Keys e Mouse Logitech MX Vertical. Si tratta ovviamente di periferiche professionali
+
+47
+00:05:18,680 --> 00:05:24,800
+di fascia alta ora non sto qui a elencarti le caratteristiche tecniche perché quelle le puoi
+
+48
+00:05:24,800 --> 00:05:30,760
+leggere ai link che ti lascio in descrizione ma quello che vorrei invece fare è provare
+
+49
+00:05:30,760 --> 00:05:38,000
+a trasmetterti la mia esperienza in modo che tu possa farti un'idea di come sono questi oggetti
+
+50
+00:05:38,320 --> 00:05:45,960
+nell'utilizzo quotidiano e per quotidiano intendo in media dieci ore al giorno per sei giorni a
+
+51
+00:05:45,960 --> 00:05:53,440
+settimana. Quindi cominciamo con la tastiera la Logitech MX Keys. Inizio subito col dirti che non
+
+52
+00:05:53,440 --> 00:06:00,040
+è una tastiera dalla forma particolare non è ergonomica non ha inclinazioni strane e non ha
+
+53
+00:06:00,040 --> 00:06:06,800
+una lunghezza al di fuori dello standard. Quello che invece ha di particolare che secondo me la
+
+54
+00:06:06,800 --> 00:06:14,360
+caratterizza in senso positivo sono i tasti. Ora non so esattamente come spiegare questa cosa se
+
+55
+00:06:14,360 --> 00:06:23,000
+non dicendo che la corsa dei tasti è perfetta la resistenza che essi oppongono quando li premi
+
+56
+00:06:23,000 --> 00:06:32,520
+è perfetta e tutto ciò unito alla forma particolare dei tasti cioè con una sorta di incavo nel quale
+
+57
+00:06:32,520 --> 00:06:40,920
+posizionare i polpastrelli rendono la digitazione assolutamente piacevole e rilassante e inoltre
+
+58
+00:06:40,920 --> 00:06:47,280
+parliamo anche di tasti piuttosto silenziosi che quindi non disturbano gli altri all'interno della
+
+59
+00:06:47,280 --> 00:06:53,480
+stanza cosa che invece accade ad esempio con quelle tastiere meccaniche che pure sono piacevoli da
+
+60
+00:06:53,480 --> 00:07:00,840
+utilizzare ma non tanto da ascoltare per chi magari è concentrato nel fare un altro lavoro. Infine un'altra
+
+61
+00:07:00,840 --> 00:07:07,440
+caratteristica che apprezzo particolarmente è che questa tastiera è molto solida e pesante e
+
+62
+00:07:07,440 --> 00:07:15,600
+questo la rende stabile sul piano di lavoro e anche piuttosto resistente a quelli che potremmo
+
+63
+00:07:15,600 --> 00:07:25,440
+chiamare gli sfoghi dovuti ad attività complesse come il debug ad esempio. Se sei un programmatore
+
+64
+00:07:25,440 --> 00:07:32,800
+mi avrai capito di sicuro. Quindi passiamo invece al mouse. Anche il mouse come per la tastiera non
+
+65
+00:07:32,800 --> 00:07:39,440
+appare particolarmente come dire speciale per essere un mouse di fascia alta della Logitech
+
+66
+00:07:39,440 --> 00:07:45,520
+infatti non ha cose come ad esempio il super scroll o un motore da centinaia di migliaia di
+
+67
+00:07:45,520 --> 00:07:52,120
+dpi ma la sua caratteristica principale è quella di essere verticale il che in pratica vuol dire
+
+68
+00:07:52,120 --> 00:08:00,000
+che la mano viene appoggiata sul mouse non in modo classico quindi come se fosse appoggiata
+
+69
+00:08:00,000 --> 00:08:07,400
+su un tavolo diciamo così ma in posizione appunto verticale un po' come se si impugnasse un bicchiere
+
+70
+00:08:07,400 --> 00:08:14,400
+ad esempio. Ok mi rendo conto che non so spiegarti questa cosa ma sarebbe tutto più facile se tu
+
+71
+00:08:14,400 --> 00:08:21,120
+cliccassi sul link in descrizione ok? Quello che però ti posso dire con certezza è che da quando
+
+72
+00:08:21,120 --> 00:08:28,920
+utilizzo questo mouse il mio dolore alla spalla che persisteva da mesi ormai è completamente
+
+73
+00:08:28,920 --> 00:08:37,000
+sparito e oltre a questo si tratta anche di un ottimo mouse è leggero scorre bene ed è anche
+
+74
+00:08:37,000 --> 00:08:43,800
+molto solido vedi discorso di prima. Insomma nonostante non spicchino come ad esempio le
+
+75
+00:08:43,800 --> 00:08:51,960
+tastiere o il mouse da gaming queste periferiche sono strumenti professionali e di grande qualità
+
+76
+00:08:51,960 --> 00:08:59,320
+basta pensare che entrambi hanno un'autonomia di batteria di quasi un mese considerando
+
+77
+00:08:59,320 --> 00:09:05,240
+soprattutto che io sono uno che dimentica puntualmente di spegnerli. E infine questo lo
+
+78
+00:09:05,280 --> 00:09:14,640
+dico per dovere di cronaca al mio diciamo così kit da desktop ho aggiunto anche un paio di poggi
+
+79
+00:09:14,640 --> 00:09:21,520
+a polsi hai presente no? Quella specie di cuscinetti che si mettono davanti alla tastiera e al mouse e
+
+80
+00:09:21,520 --> 00:09:28,000
+che fanno in modo che i polsi non stiano troppo piegati quando sono a riposo. Io ti metto un paio
+
+81
+00:09:28,000 --> 00:09:34,960
+di link anche per quelli ma ovviamente in linea di massima uno vale l'altro l'unico consiglio
+
+82
+00:09:34,960 --> 00:09:41,000
+che mi sento di darti è di non comprare proprio quelli troppo economici e al tempo stesso
+
+83
+00:09:41,000 --> 00:09:49,160
+assicurarti che siano lavabili che può tornare utile insomma. Bene spero di averti dato dei buoni
+
+84
+00:09:49,160 --> 00:09:55,560
+consigli ti ricordo sempre che puoi dare una mano al progetto acquistando questi prodotti o altri se
+
+85
+00:09:55,560 --> 00:10:01,640
+preferisci dai link affiliati che trovi in descrizione o andando sul sito pensieriincodice.it
+
+86
+00:10:01,640 --> 00:10:08,200
+per oggi ti ringrazio per avermi tenuto compagnia e ti do appuntamento al prossimo caffè
+

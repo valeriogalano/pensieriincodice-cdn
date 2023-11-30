@@ -1,0 +1,452 @@
+1
+00:00:00,000 --> 00:00:05,560
+C'è poco da fare, a volte nonostante il nostro lavoro possa piacerci, appagarci e
+
+2
+00:00:05,560 --> 00:00:11,400
+darci soddisfazione, è comunque probabile che ogni giorno ci tocchi combattere con tutta
+
+3
+00:00:11,400 --> 00:00:17,680
+una serie di problemi, lo stress, le consegne, le richieste dei clienti e a volte persino
+
+4
+00:00:17,680 --> 00:00:18,680
+i colleghi.
+
+5
+00:00:18,680 --> 00:00:24,340
+Sì perché non sempre le persone con cui lavoriamo, che tra l'altro dovrebbero anche magari
+
+6
+00:00:24,340 --> 00:00:29,860
+aiutarci, supportarci o semplificarci la vita, poi lo fanno effettivamente.
+
+7
+00:00:29,860 --> 00:00:36,660
+Intendiamoci, non mi sto riferendo ai colleghi stronzi, quelli che cercano appositamente
+
+8
+00:00:36,660 --> 00:00:44,500
+di sabotare il prossimo per un proprio tornaconto personale, quanto piuttosto a quelli che pur
+
+9
+00:00:44,500 --> 00:00:50,860
+con propositi collaborativi, a causa di alcune caratteristiche diciamo personali, tendono
+
+10
+00:00:50,860 --> 00:00:55,580
+a creare alcuni problemi dei quali probabilmente nemmeno si rendono conto.
+
+11
+00:00:55,580 --> 00:01:01,540
+Lavorando come consulente per molte aziende, mi è capitato nel corso degli anni di incontrare
+
+12
+00:01:01,540 --> 00:01:07,620
+tantissimi professionisti del mio stesso settore, ma anche di settori collegati e oggi voglio
+
+13
+00:01:07,620 --> 00:01:13,180
+provare a stilare insieme a te una sorta di bestiario delle tipologie più interessanti
+
+14
+00:01:13,180 --> 00:01:15,180
+di colleghi fantastici.
+
+15
+00:01:15,180 --> 00:01:16,180
+Sigla.
+
+16
+00:01:17,180 --> 00:01:27,500
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio
+
+17
+00:01:27,500 --> 00:01:29,060
+Galano.
+
+18
+00:01:29,060 --> 00:01:36,780
+I colleghi sono una grande risorsa, trovare collaboratori con cui si va poi particolarmente
+
+19
+00:01:36,780 --> 00:01:41,940
+d'accordo è una gran fortuna e permette di migliorare esponenzialmente sia il valore
+
+20
+00:01:41,940 --> 00:01:44,740
+del proprio lavoro che la propria vita professionale.
+
+21
+00:01:44,740 --> 00:01:51,100
+Ci tengo a precisare che quello che sto per descriverti è una sorta di elenco scherzoso,
+
+22
+00:01:51,100 --> 00:01:56,740
+non vorrei che qualcuno si offendesse perché ad essere onesti i veri colleghi da evitare
+
+23
+00:01:56,740 --> 00:01:59,820
+sono ben altri rispetto a quelli di cui ti parlerò oggi.
+
+24
+00:01:59,820 --> 00:02:05,240
+Tuttavia mi piaceva l'idea di registrare questo episodio come una sorta di seguito
+
+25
+00:02:05,240 --> 00:02:11,400
+di quello intitolato Clienti Fantastici e come evitarli, nel quale ho raccontato una
+
+26
+00:02:11,400 --> 00:02:17,400
+lista dei clienti più assurdi che mi sono capitati nel corso degli anni e che ho pubblicato
+
+27
+00:02:17,400 --> 00:02:23,640
+nella scorsa stagione di Pensieri in Codice, se tu che mi ascolti ora sei nuovo mi raccomando
+
+28
+00:02:23,640 --> 00:02:28,640
+vallo a recuperare perché sono sicuro che non te repentirai, ti lascio il link in descrizione.
+
+29
+00:02:28,640 --> 00:02:32,120
+Bene, fatte dunque le dovute premesse, iniziamo.
+
+30
+00:02:33,000 --> 00:02:40,120
+Il primo soggetto della mia lista viene comunemente definito l'eroe, si tratta di quella persona che
+
+31
+00:02:40,120 --> 00:02:46,680
+vuoi per sua scelta o vuoi semplicemente per via delle circostanze si fa sempre carico di
+
+32
+00:02:46,680 --> 00:02:52,560
+qualsiasi problematica a chi capiti a tiro. E' abbastanza facile capire chi sia l'eroe
+
+33
+00:02:52,560 --> 00:02:58,640
+in un team o in un'azienda, il primo campanello d'allarme ti deve scattare quando ti rendi
+
+34
+00:02:58,640 --> 00:03:04,760
+conto che per ogni problema vieni sempre indirizzato alla stessa persona. Si è bloccato
+
+35
+00:03:04,760 --> 00:03:11,760
+il sito X? Bene, chiedi a Jim. Sì, oggi l'eroe della nostra storia si chiama Jim. Hai un problema
+
+36
+00:03:11,760 --> 00:03:18,840
+con il repository del progetto Y? Chiedi a Jim. C'è da fare un preventivo per il cliente Z? Chiedi
+
+37
+00:03:18,840 --> 00:03:25,920
+a Jim. In questi casi le possibilità sono due, o Jim è particolarmente più esperto degli altri e
+
+38
+00:03:25,920 --> 00:03:31,160
+in un team o in una piccola azienda questo può fare un'enorme differenza e spingere tutti i
+
+39
+00:03:31,160 --> 00:03:36,920
+componenti ad appoggiarsi in modo eccessivo all'eroe, sviluppando quasi una sorta di timore
+
+40
+00:03:36,920 --> 00:03:43,960
+reverenziale. Oppure Jim non è in grado di delegare agli altri, magari non sa documentare o non sa
+
+41
+00:03:43,960 --> 00:03:50,160
+spiegare il proprio lavoro o non ha la pazienza di attendere che qualcuno meno esperto di lui
+
+42
+00:03:50,200 --> 00:03:55,960
+risolva la questione con i propri tempi e per questo motivo preferisce fare tutto in prima
+
+43
+00:03:55,960 --> 00:04:01,440
+persona. Se poi ha proprio l'indole dell'eroe allora avrà in modo di vedere lo stesso Jim
+
+44
+00:04:01,440 --> 00:04:07,560
+inserirsi in discorsi per i quali non è stato interpellato o farsi carico di incombenze su cui
+
+45
+00:04:07,560 --> 00:04:14,280
+già stavano lavorando altri. Capiamoci, l'eroe non è cattivo, semplicemente pensa di fare la
+
+46
+00:04:14,280 --> 00:04:20,360
+cosa migliore comportandosi da eroe. Pensa di risolvere i problemi agli altri, di fare bella
+
+47
+00:04:20,360 --> 00:04:26,720
+figura. Solo che in realtà non è così. Basta riflettere due secondi per capire che se tutta
+
+48
+00:04:26,720 --> 00:04:31,840
+la conoscenza è nella testa di Jim, tutte le procedure, tutte le caratteristiche, mentre gli
+
+49
+00:04:31,840 --> 00:04:37,560
+altri collaborano solo di sfuggita ad un progetto, allora nel caso in cui il nostro eroe dovesse
+
+50
+00:04:37,560 --> 00:04:42,640
+venir meno per un qualsiasi motivo, per tutti gli altri colleghi sarebbe una catastrofe.
+
+51
+00:04:43,200 --> 00:04:48,120
+All'improvviso si ritroverebbero spiazzati a dover mettere le mani su un qualcosa su cui,
+
+52
+00:04:48,120 --> 00:04:55,720
+fino a quel momento, aveva lavorato sempre solo Jim. Senza contare poi che un eroe funziona finché
+
+53
+00:04:55,720 --> 00:05:02,120
+il carico di lavoro tutto sommato è moderato. Al crescere dei progetti o dei clienti, nessuna
+
+54
+00:05:02,120 --> 00:05:08,040
+persona potrebbe mai scalare come invece può fare un team, nemmeno un eroe, altrimenti prima
+
+55
+00:05:08,040 --> 00:05:14,400
+o poi scoppierebbe. Per tutti questi motivi una figura del genere va assolutamente ridimensionata,
+
+56
+00:05:14,400 --> 00:05:20,760
+magari la si può sfruttare, sfruttare la sua grande esperienza per formare altre figure che
+
+57
+00:05:20,760 --> 00:05:26,800
+operino prima sotto la sua supervisione e poi magari in autonomia. Ma in ogni caso se ti ritrovi
+
+58
+00:05:26,800 --> 00:05:32,520
+con un collega eroe, la prima cosa da fare è provare ad alleggerire il suo carico di lavoro,
+
+59
+00:05:32,520 --> 00:05:39,000
+magari aiutandolo a scrivere della documentazione che permetta anche agli altri di svolgere il suo
+
+60
+00:05:39,000 --> 00:05:45,160
+lavoro. E se invece sei tu l'eroe, procurati qualcuno che ti possa affiancare, anche se
+
+61
+00:05:45,160 --> 00:05:50,680
+all'inizio sarà estremamente più lento di te, ti chiederà un sacco di aiuto, ma poi con il passare
+
+62
+00:05:50,680 --> 00:05:57,080
+del tempo ti solleverà da tante incombenze e ti renderà la vita molto molto più semplice.
+
+63
+00:05:57,080 --> 00:06:06,040
+Il secondo tipo di collega da evitare è l'ansioso. L'ansioso, come dice la parola,
+
+64
+00:06:06,040 --> 00:06:11,840
+è quello che soffre tremendamente d'ansia sul posto di lavoro e di conseguenza tende a diventare
+
+65
+00:06:11,840 --> 00:06:17,960
+ansiogeno anche per chi lavora a contatto con lui. Si tratta di quella persona che ti chiede
+
+66
+00:06:17,960 --> 00:06:23,960
+continuamente a che punto sei con quel determinato compito, ti scrive magari nel fine settimana per
+
+67
+00:06:23,960 --> 00:06:30,040
+chiederti se poi hai ricevuto quella mail o se poi hai contattato quel cliente. Chiaramente se tu
+
+68
+00:06:30,040 --> 00:06:36,560
+sei un ritardatario, cronico e salti regolarmente le consegne, non puoi certo additare il tuo collega
+
+69
+00:06:36,560 --> 00:06:42,640
+o addirittura il tuo capo come ansioso, ma se sei sempre puntuale e preciso e comunque questa
+
+70
+00:06:42,640 --> 00:06:49,040
+persona ti pungola continuamente, allora è proprio il caso di metterci una pezza. Con tutta la
+
+71
+00:06:49,040 --> 00:06:54,320
+delicatezza di questo mondo occorre che gli spieghi che se quell'attività non è particolarmente
+
+72
+00:06:54,320 --> 00:07:00,440
+urgente, allora è inutile che ti costringe ogni due ore a spiegargli perché hai dovuto dare
+
+73
+00:07:00,440 --> 00:07:07,040
+precedenza a qualcos'altro. Semplicemente quando l'avrai terminata, e ricordagli che tu non sei uno
+
+74
+00:07:07,040 --> 00:07:13,240
+che buca le scadenze, allora sarai tu stesso a farglielo sapere. E ugualmente nel caso in cui
+
+75
+00:07:13,240 --> 00:07:18,760
+dovessi riscontrare dei problemi che possano causare dei ritardi, allora sarai sempre tu a
+
+76
+00:07:18,760 --> 00:07:25,080
+metterlo al corrente. In pratica va chiarito che tu sei un professionista come lui e anche tu sai
+
+77
+00:07:25,080 --> 00:07:31,120
+fare il tuo lavoro. Ovviamente tutti possiamo sbagliare e un po' di sana ansia può aiutare a
+
+78
+00:07:31,120 --> 00:07:37,640
+fare attenzione alle cose importanti, ma esagerare non solo non porta buoni risultati professionali,
+
+79
+00:07:37,640 --> 00:07:43,720
+ma produce anche uno stress inutile che peggiora la vita personale e i rapporti fra colleghi.
+
+80
+00:07:43,720 --> 00:07:52,600
+Il terzo soggetto del nostro bestiario è lo scansafatiche. Ovviamente lo scansafatiche è
+
+81
+00:07:52,600 --> 00:07:59,160
+quello che evita il più possibile di lavorare. Devo dire che ne ho incontrati tanti nel corso
+
+82
+00:07:59,160 --> 00:08:05,280
+degli anni con vari livelli di abilità e in grado di applicare tecniche anche piuttosto elaborate,
+
+83
+00:08:05,840 --> 00:08:11,760
+dall'inventare le scuse più articolate per evitare un compito, al navigare fuori dai radar per non
+
+84
+00:08:11,760 --> 00:08:18,480
+destare l'attenzione degli altri, fino al dilatare i tempi o svolgere male appositamente un'attività
+
+85
+00:08:18,480 --> 00:08:24,160
+per fare in modo che la prossima volta sia affidata a un altro. Questo è forse il tipo
+
+86
+00:08:24,160 --> 00:08:30,360
+peggiore di soggetto all'interno di questo bestiario, perché è quel tipo che include
+
+87
+00:08:30,360 --> 00:08:37,400
+un po' di dolo nel suo comportamento deleterio e così facendo complica anche la vita a tutti gli
+
+88
+00:08:37,400 --> 00:08:44,880
+altri del team. Ho visto inviare email o notifiche di problemi giusto un paio di minuti prima della
+
+89
+00:08:44,880 --> 00:08:50,880
+fine dell'orario d'ufficio, per non dare tempo ai destinatari di rispondere o verificare il giorno
+
+90
+00:08:50,880 --> 00:08:58,560
+stesso. Ho visto pasticciare documenti, report e statistiche per costringere chi le doveva controllare
+
+91
+00:08:58,720 --> 00:09:04,400
+a perdere più tempo del necessario e doverle mandare indietro segnalando poi i problemi.
+
+92
+00:09:04,400 --> 00:09:09,560
+Insomma, secondo me se uno scansafatiche mettesse nel lavoro lo stesso impegno che
+
+93
+00:09:09,560 --> 00:09:14,640
+mette nel cercare di evitarlo quel lavoro, probabilmente otterrebbe anche dei buoni
+
+94
+00:09:14,640 --> 00:09:20,800
+risultati, sarebbe più ben voluto dai colleghi e contribuirebbe perfino al benessere dell'azienda.
+
+95
+00:09:20,800 --> 00:09:27,520
+E arriviamo dunque ad una tipologia di collega da evitare che ho soprannominato
+
+96
+00:09:27,880 --> 00:09:33,760
+il proxy. Si tratta di quella persona che riceve una domanda, una richiesta o una segnalazione,
+
+97
+00:09:33,760 --> 00:09:41,320
+la inoltra passivamente a qualcun altro per ricevere a sua volta una soluzione o una risposta e poi
+
+98
+00:09:41,320 --> 00:09:48,560
+inoltra quest'ultima al richiedente iniziale. Insomma, un proxy. Solitamente si tratta di
+
+99
+00:09:48,560 --> 00:09:54,040
+qualcuno che non ha una grande conoscenza del progetto sul quale sta lavorando, ma che al
+
+100
+00:09:54,040 --> 00:10:00,160
+tempo stesso è stato adibito a intrattenere i rapporti con il committente o il cliente o
+
+101
+00:10:00,160 --> 00:10:05,760
+magari uno dei dirigenti più in alto nella catena di comando. Anche in questo caso però va fatta
+
+102
+00:10:05,760 --> 00:10:11,920
+una distinzione. Se si tratta di una persona nuova, magari appena assunta o appena assegnata
+
+103
+00:10:11,920 --> 00:10:17,960
+al progetto, allora non gliene si può fare una gran colpa se non conosce perfettamente l'argomento
+
+104
+00:10:17,960 --> 00:10:23,840
+del quale è chiamato a discutere. Certo avrebbe dovuto ricevere una formazione, ma sappiamo che
+
+105
+00:10:23,840 --> 00:10:30,200
+nel mondo reale non sempre è così. Con il passare del tempo imparerà, studierà, inizierà a fare
+
+106
+00:10:30,200 --> 00:10:36,120
+esperienza acquisendo man mano una padronanza del progetto e la capacità di aggiungere il
+
+107
+00:10:36,120 --> 00:10:41,800
+proprio contributo o magari addirittura di rispondere direttamente ai quesiti. Ma se
+
+108
+00:10:41,800 --> 00:10:48,040
+stiamo parlando di un proxy cronico allora il discorso cambia. Il vero proxy si trova
+
+109
+00:10:48,040 --> 00:10:53,800
+perfettamente a suo agio nella posizione che ricopre. Prima si interfaccia con una parte, poi
+
+110
+00:10:53,800 --> 00:11:00,200
+con l'altra, poi di nuovo con la prima. In questo modo dà l'impressione di stare lavorando con tutte
+
+111
+00:11:00,200 --> 00:11:05,440
+quelle email e tutte quelle call schedulate, ma in realtà non sta facendo altro che riportare
+
+112
+00:11:05,440 --> 00:11:13,080
+all'uno le risposte dell'altro. Un lavoro facile e leggero. Individuare un proxy non è così facile,
+
+113
+00:11:13,080 --> 00:11:18,760
+sicuramente serve trovarsi in una posizione di supervisione all'interno di un gruppo.
+

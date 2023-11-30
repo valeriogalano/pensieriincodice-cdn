@@ -1,0 +1,312 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice, pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,360
+in meno di 5 minuti.
+
+3
+00:00:14,360 --> 00:00:29,360
+La cosiddetta tastiera QWERTY, cioè quella che oggi utilizziamo sui nostri computer e
+
+4
+00:00:29,360 --> 00:00:36,920
+smartphone ogni giorno, fu progettata alla fine del 1800 come parte di una formidabile
+
+5
+00:00:36,920 --> 00:00:41,040
+e rivoluzionaria invenzione conosciuta con il nome di macchina da scrivere.
+
+6
+00:00:41,040 --> 00:00:46,240
+La particolare disposizione delle lettere, pur essendosi evoluta un po' nel corso del
+
+7
+00:00:46,240 --> 00:00:52,760
+tempo, resta essenzialmente quella dell'epoca e fu studiata per agevolare la scrittura dei
+
+8
+00:00:52,760 --> 00:00:59,320
+messaggi da parte dei telegrafisti, professionisti che ne erano i principali, se non unici, utilizzatori
+
+9
+00:00:59,720 --> 00:01:01,440
+nelle prime fasi della diffusione.
+
+10
+00:01:01,440 --> 00:01:08,080
+Le leggende infatti sulla disposizione necessaria per impedire l'inceppamento dei martelletti
+
+11
+00:01:08,080 --> 00:01:14,080
+o per permettere di scrivere typewriter nel minor tempo possibile sono essenzialmente
+
+12
+00:01:14,080 --> 00:01:19,200
+prive di fondamento, ma di questo ne abbiamo già parlato nell'episodio Le origini della
+
+13
+00:01:19,200 --> 00:01:20,680
+tastiera QWERTY.
+
+14
+00:01:20,680 --> 00:01:27,520
+Tuttavia, resta il fatto che l'utilizzo moderno di questa tastiera è sostanzialmente differente
+
+15
+00:01:27,520 --> 00:01:29,480
+da quello per cui è stata pensata.
+
+16
+00:01:29,480 --> 00:01:35,960
+Sono piuttosto rari ormai gli utilizzi connessi al telegrafo ed è invece perfettamente normale
+
+17
+00:01:35,960 --> 00:01:41,160
+trovare una serie di tastiere QWERTY nelle case, negli uffici, negli smartphone, diciamo
+
+18
+00:01:41,160 --> 00:01:42,320
+praticamente ovunque.
+
+19
+00:01:42,320 --> 00:01:49,160
+Il dottor August Duvorak, professore all'università di Washington, affrontò questo stesso problema
+
+20
+00:01:49,160 --> 00:01:56,000
+già negli anni 20 del 1900, quindi quasi un secolo fa, e mettendo insieme tutta una serie
+
+21
+00:01:56,000 --> 00:02:01,640
+di studi sulla lingua inglese e sulla fisiologia della mano, giunse alla conclusione che la
+
+22
+00:02:01,640 --> 00:02:07,980
+disposizione ottimale dei tasti dovrebbe essere molto differente da quella che era ormai già
+
+23
+00:02:07,980 --> 00:02:11,080
+diventata la classica e diffusissima QWERTY.
+
+24
+00:02:11,080 --> 00:02:18,800
+E fu così che nacque invece la tastiera Duvorak, una tastiera dal layout alternativo, progettata
+
+25
+00:02:18,800 --> 00:02:24,920
+per massimizzare il comfort dell'utilizzatore, la produttività e la semplicità di apprendimento.
+
+26
+00:02:25,360 --> 00:02:32,920
+Fu ufficialmente presentata nel 1932, ma divenne uno standard riconosciuto solo dopo una cinquantina
+
+27
+00:02:32,920 --> 00:02:33,920
+d'anni.
+
+28
+00:02:33,920 --> 00:02:39,100
+In descrizione ti lascio un link al quale potrai osservare tu stesso la disposizione
+
+29
+00:02:39,100 --> 00:02:45,760
+dei tasti, ma a grandi linee, in questa tastiera, i numeri sono essenzialmente nella posizione
+
+30
+00:02:45,760 --> 00:02:51,400
+in cui siamo abituati a trovarli, quindi in un'unica fila nella parte superiore, mentre
+
+31
+00:02:51,400 --> 00:02:57,480
+le vocali sono spostate sul lato sinistro nella fila orizzontale centrale, in mezzo
+
+32
+00:02:57,480 --> 00:03:03,880
+a due file di consonanti meno utilizzate, e invece le consonanti più utilizzate sono
+
+33
+00:03:03,880 --> 00:03:05,640
+quasi tutte sulla destra.
+
+34
+00:03:05,640 --> 00:03:12,860
+Nella pratica, con questa organizzazione dei tasti, la Duvorak è progettata per utilizzare
+
+35
+00:03:12,860 --> 00:03:17,720
+in modo alternativo le due mani, una lettera con la destra e una con la sinistra, poi di
+
+36
+00:03:17,720 --> 00:03:22,320
+nuovo la destra, poi di nuovo la sinistra, e anche quando è necessario utilizzare la
+
+37
+00:03:22,320 --> 00:03:28,320
+stessa mano per più lettere consecutive, la tastiera è comunque pensata per sfruttare
+
+38
+00:03:28,320 --> 00:03:31,600
+il più possibile dita diverse per ciascun tasto.
+
+39
+00:03:31,600 --> 00:03:38,140
+Oltre a questo, sempre grazie alla sua particolare disposizione, la Duvorak massimizza le battute
+
+40
+00:03:38,140 --> 00:03:43,920
+in ordine dalle dita più esterne a quelle più interne delle mani, movimento questo che
+
+41
+00:03:43,920 --> 00:03:48,360
+risulta particolarmente naturale quando, ad esempio, si tamburella con le dita sul
+
+42
+00:03:48,360 --> 00:03:50,480
+tavolo, dal mignolo all'indice.
+
+43
+00:03:50,480 --> 00:03:56,360
+Tralasciando poi un po' i discorsi sulla presunta maggiore velocità di scrittura rispetto
+
+44
+00:03:56,360 --> 00:04:03,060
+alla QWERTY, cosa che a mio parere resta un fatto un po' soggettivo in questo caso, sembra
+
+45
+00:04:03,060 --> 00:04:08,900
+però che la Duvorak porti l'utente a compiere dei movimenti che fondamentalmente stressano
+
+46
+00:04:08,900 --> 00:04:13,980
+o meno le articolazioni, con i caratteri più utilizzati nelle posizioni più facili
+
+47
+00:04:13,980 --> 00:04:21,620
+da raggiungere e al tempo stesso fornendo un'alternanza tra le due mani e tutte le dita.
+
+48
+00:04:21,620 --> 00:04:27,500
+Ora, detta così, sembrerebbe la soluzione ottimale per tutti, purtroppo però queste
+
+49
+00:04:27,500 --> 00:04:33,660
+sue peculiari caratteristiche sono anche un forte limite per la tastiera Duvorak.
+
+50
+00:04:33,860 --> 00:04:39,580
+Mentre infatti le tastiere QWERTY, pur differendo leggermente tra una lingua e l'altra, restano
+
+51
+00:04:39,580 --> 00:04:45,620
+sostanzialmente valide per ogni tipo di utente, perché alla fine varia la posizione dei caratteri
+
+52
+00:04:45,620 --> 00:04:52,180
+speciali e della punteggiatura, ma non dei caratteri principali, nella Duvorak la scrittura
+
+53
+00:04:52,180 --> 00:04:57,840
+in una lingua differente da quella della sua progettazione invalida l'intera logica con
+
+54
+00:04:57,840 --> 00:04:59,900
+cui sono disposte le lettere.
+
+55
+00:05:00,100 --> 00:05:05,060
+I ragionamenti sulla frequenza di utilizzo delle consonanti, delle vocali e delle doppie
+
+56
+00:05:05,060 --> 00:05:10,260
+infatti saltano completamente nel momento in cui si considera una lingua che non sia
+
+57
+00:05:10,260 --> 00:05:11,260
+l'inglese.
+
+58
+00:05:11,260 --> 00:05:16,700
+In italiano, ad esempio, pur volendo ignorare il fatto che sulla Duvorak mancano le lettere
+
+59
+00:05:16,700 --> 00:05:22,300
+accentate, che nella nostra lingua sono molto utilizzate, si presenta comunque un problema
+
+60
+00:05:22,300 --> 00:05:25,580
+di fondo nella tecnica utilizzata per la scrittura.
+
+61
+00:05:26,020 --> 00:05:31,860
+Nelle istruzioni di utilizzo, infatti, esiste un'esplicita regola che afferma che la barra
+
+62
+00:05:31,860 --> 00:05:38,060
+spaziatrice va premuta con il pollice appartenente alla mano che ha digitato l'ultima lettera
+
+63
+00:05:38,060 --> 00:05:39,060
+della parola.
+
+64
+00:05:39,060 --> 00:05:45,740
+E ok, peccato che in italiano quasi tutte le parole terminino con una vocale, portando
+
+65
+00:05:45,740 --> 00:05:51,100
+così ad un utilizzo totalmente sbilanciato del pollice sinistro rispetto a quello destro.
+
+66
+00:05:51,620 --> 00:05:57,020
+Forse per motivi del genere la Duvorak non ha mai preso piede rispetto alla QWERTY o
+
+67
+00:05:57,020 --> 00:06:01,300
+forse semplicemente perché la QWERTY era già diffusissima negli anni trenta.
+
+68
+00:06:01,300 --> 00:06:07,900
+Fatto sta che le intenzioni e gli studi del dottor Duvorak restano un interessantissimo
+
+69
+00:06:07,900 --> 00:06:11,780
+lavoro di progettazione basato su linguistica e fisiologia.
+
+70
+00:06:11,780 --> 00:06:18,380
+Un esempio di come si possa, almeno teoricamente, migliorare qualcosa che il mondo intero ormai
+
+71
+00:06:18,380 --> 00:06:20,100
+già dà per scontato.
+
+72
+00:06:20,620 --> 00:06:25,740
+Successivamente, infatti, lo stesso professore progettò anche altre due tastiere, questa
+
+73
+00:06:25,740 --> 00:06:32,900
+volta pensate per l'utilizzo di operatori con una sola mano, una pensata per l'utilizzo
+
+74
+00:06:32,900 --> 00:06:36,460
+con la sola mano destra, l'altra con la sola mano sinistra.
+
+75
+00:06:36,460 --> 00:06:43,340
+E pare che queste permettano all'utilizzatore di scrivere ben fino a cinquanta parole al
+
+76
+00:06:43,340 --> 00:06:44,340
+minuto.
+
+77
+00:06:45,340 --> 00:06:51,340
+Grazie per aver ascoltato Snippet, una rubrica di Pensieri in Codice.
+
+78
+00:06:51,340 --> 00:06:55,340
+Scopri tanti altri contenuti sul sito pensieriincodice.it
+

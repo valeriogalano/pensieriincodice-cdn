@@ -1,0 +1,164 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice, pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,360
+in meno di 5 minuti.
+
+3
+00:00:14,360 --> 00:00:31,240
+Leonardo Pisano, detto Fibonacci, pubblicò la sua opera più importante nel 1202, con
+
+4
+00:00:31,240 --> 00:00:33,200
+il titolo di Liber Abaci.
+
+5
+00:00:33,200 --> 00:00:40,520
+In essa spiegava i metodi per effettuare le principali operazioni di base, adizione, sottrazione,
+
+6
+00:00:40,520 --> 00:00:42,440
+moltiplicazione e divisione.
+
+7
+00:00:42,920 --> 00:00:49,760
+In pratica, per la prima volta nella storia, illustrava per iscritto, in modo comprensibile,
+
+8
+00:00:49,760 --> 00:00:52,240
+i primi algoritmi matematici.
+
+9
+00:00:52,240 --> 00:00:59,180
+Nato nel 1170, da giovane aveva seguito il padre, che lavorava come mercante, in giro
+
+10
+00:00:59,180 --> 00:01:01,480
+per il mondo per i suoi viaggi d'affari.
+
+11
+00:01:01,480 --> 00:01:08,200
+E proprio durante uno di questi viaggi era entrato in contatto con l'opera ed il pensiero
+
+12
+00:01:08,200 --> 00:01:14,560
+del matematico arabo Hal Hawarizmi, colui che oggi è considerato il padre del concetto
+
+13
+00:01:14,560 --> 00:01:15,560
+di algoritmo.
+
+14
+00:01:15,560 --> 00:01:22,360
+Rimasto affascinato dalla matematica indiana e araba, e dal modo in cui Hal Hawarizmi ne
+
+15
+00:01:22,360 --> 00:01:29,200
+aveva raccolto e descritto i metodi per rendere le operazioni più schematiche e più meccanicamente
+
+16
+00:01:29,200 --> 00:01:35,120
+eseguibili, Fibonacci decise di pubblicare la prima versione del suo Liber Abaci come
+
+17
+00:01:35,120 --> 00:01:39,200
+una traduzione arricchita dell'opera del matematico arabo.
+
+18
+00:01:39,200 --> 00:01:45,440
+Purtroppo di quest'opera non è sopravvissuta alcuna copia fino ai giorni nostri, ma sappiamo,
+
+19
+00:01:45,440 --> 00:01:51,640
+per ammissione dello stesso autore, che egli non si limitò a tradurre il testo di Hal Hawarizmi,
+
+20
+00:01:51,640 --> 00:01:58,520
+ma si adoperò anche per integrare la matematica appresa dal testo originale con la matematica
+
+21
+00:01:58,520 --> 00:02:01,000
+euclidea in uso in quel momento in Europa.
+
+22
+00:02:01,480 --> 00:02:08,000
+Fortunatamente, 25 anni dopo la prima edizione, Fibonacci decise di scrivere una seconda edizione
+
+23
+00:02:08,000 --> 00:02:14,560
+rivista del Liber Abaci, includendo molte aggiunte personali, tra cui quella serie di
+
+24
+00:02:14,560 --> 00:02:19,240
+numeri passata poi alla storia appunto con il nome di Serie di Fibonacci.
+
+25
+00:02:19,240 --> 00:02:24,480
+Le informazioni riportate in quest'opera influenzarono enormemente la società del
+
+26
+00:02:24,480 --> 00:02:29,360
+tempo, poiché l'autore stesso era convinto che la matematica dovesse essere a portata
+
+27
+00:02:29,360 --> 00:02:35,000
+di tutti e si impegnò quindi a scrivere il suo testo in modo che fosse comprensibile
+
+28
+00:02:35,000 --> 00:02:39,320
+anche alle fasce di popolazione meno istruite e non solo agli accademici.
+
+29
+00:02:39,320 --> 00:02:45,640
+Per questo motivo, il contenuto del Liber Abaci fu largamente recepito da mercanti e
+
+30
+00:02:45,640 --> 00:02:50,560
+banchieri che avevano bisogno di fare grande uso della matematica per i loro affari.
+
+31
+00:02:50,560 --> 00:02:56,200
+Iniziò quindi rapidamente a prendere piede quella che tutt'oggi noi chiamiamo numerazione
+
+32
+00:02:56,320 --> 00:03:01,600
+araba anche se in realtà le cifre che utilizziamo sono di origine indiana e sono semplicemente
+
+33
+00:03:01,600 --> 00:03:04,880
+giunte fino a noi attraverso i matematici arabi.
+
+34
+00:03:04,880 --> 00:03:10,640
+E poiché i banchieri iniziarono a tenere tutti i propri registri utilizzando le cifre
+
+35
+00:03:10,640 --> 00:03:17,360
+arabe al posto di quelle romane, data la maggiore semplicità necessaria per effettuare i calcoli,
+
+36
+00:03:17,360 --> 00:03:23,960
+presto questi furono accusati dai regnanti dell'epoca di tentare di nascondere le informazioni
+
+37
+00:03:24,000 --> 00:03:30,800
+al fine di evadere le tasse e ben presto questo comportamento portò alla nascita nel gergo
+
+38
+00:03:30,800 --> 00:03:40,120
+comune del utilizzo della parola cifrare per indicare un modo per nascondere informazioni,
+
+39
+00:03:40,120 --> 00:03:45,880
+dando così vita proprio a quell'accezione moderna che noi utilizziamo tutt'oggi.
+
+40
+00:03:45,880 --> 00:03:52,720
+Grazie per aver ascoltato Snippet, una rubrica di pensieri in codice.
+
+41
+00:03:52,720 --> 00:03:57,240
+Scopri tanti altri contenuti sul sito pensieriincodice.it
+

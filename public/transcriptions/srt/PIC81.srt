@@ -1,0 +1,204 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice, pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,320
+in meno di 5 minuti.
+
+3
+00:00:14,320 --> 00:00:29,360
+Augusta Ada Byron, conosciuta anche come Ada Lovelace per aver sposato il conte di
+
+4
+00:00:29,360 --> 00:00:37,200
+Lovelace, nasceva a Londra nel 1815 da Anne Milbank e dal famoso poeta Lord Byron.
+
+5
+00:00:37,200 --> 00:00:43,400
+A causa delle velleità libertine del padre, i due genitori si separarono poco dopo la
+
+6
+00:00:43,400 --> 00:00:49,320
+nascita di Ada, la quale non conobbe mai suo padre, morto quando lei aveva appena
+
+7
+00:00:49,320 --> 00:00:50,320
+9 anni.
+
+8
+00:00:50,320 --> 00:00:56,200
+Nonostante ciò, le attitudini artistiche della piccola Ada si manifestarono quasi immediatamente.
+
+9
+00:00:56,200 --> 00:01:02,640
+Da bambina prodigio, iniziò in tenera età a suonare l'arpa ed ad esibirsi come ballerina.
+
+10
+00:01:02,640 --> 00:01:09,140
+Ma la madre, temendo che la ragazza potesse seguire le orme del padre, cercò subito di
+
+11
+00:01:09,140 --> 00:01:13,980
+instillare in lei la passione per la matematica ed ebbe un ottimo successo.
+
+12
+00:01:13,980 --> 00:01:20,100
+Grazie infatti alle sue indubbie capacità, Ada finì addirittura a studiare questa materia
+
+13
+00:01:20,100 --> 00:01:25,900
+con il famoso logico Augustus de Morgan, che all'epoca insegnava all'università di Londra.
+
+14
+00:01:25,900 --> 00:01:31,900
+E per una donna della prima metà dell'ottocento, questo rappresentava un risultato quasi impensabile.
+
+15
+00:01:31,900 --> 00:01:37,660
+Poi, all'età di 17 anni, Ada conobbe Charles Babbage.
+
+16
+00:01:37,660 --> 00:01:44,180
+Babbage era un matematico e filosofo a capo della Royal Astronomical Society e da alcuni
+
+17
+00:01:44,180 --> 00:01:49,980
+anni stava lavorando a due prototipi di calcolatori meccanici, conosciuti appunto come le macchine
+
+18
+00:01:49,980 --> 00:01:50,980
+di Babbage.
+
+19
+00:01:50,980 --> 00:01:58,040
+E nel 1840 presentò appunto la sua prima macchina analitica, durante un seminario tenutosi
+
+20
+00:01:58,040 --> 00:02:04,060
+a Torino al quale presenziò anche un giovane ingegnere chiamato Luigi Federico Menabrea,
+
+21
+00:02:04,060 --> 00:02:08,260
+il quale sarebbe poi diventato il primo ministro del regno d'Italia.
+
+22
+00:02:08,260 --> 00:02:13,500
+L'ingegnere Menabrea fu così colpito dal progetto di quella macchina che poteva essere
+
+23
+00:02:13,500 --> 00:02:19,500
+programmata per svolgere vari tipi di calcoli, che decise di contribuire alla sua diffusione
+
+24
+00:02:19,500 --> 00:02:21,340
+dedicandogli un articolo.
+
+25
+00:02:21,340 --> 00:02:27,900
+Tale articolo era ovviamente scritto in francese, che all'epoca era la lingua internazionale,
+
+26
+00:02:27,900 --> 00:02:34,060
+e alla giovane Ada fu chiesto proprio da Babbage di tradurlo in inglese, ma non solo.
+
+27
+00:02:34,060 --> 00:02:39,900
+Ammirando proprio le capacità matematiche della giovane, Babbage le chiese anche di
+
+28
+00:02:39,900 --> 00:02:44,740
+aggiungere alla traduzione le proprie considerazioni personali sull'argomento.
+
+29
+00:02:44,740 --> 00:02:50,380
+E tra le varie aggiunte della Lovelace c'è anche la descrizione di un programma per generare
+
+30
+00:02:50,380 --> 00:02:56,540
+i numeri di Bernulli, che, anche se la macchina analitica non fu in realtà mai realizzata,
+
+31
+00:02:56,540 --> 00:03:02,940
+sulla carta resta però il primo programma per computer della storia, e quindi le conferisce
+
+32
+00:03:02,940 --> 00:03:07,140
+a pieno diritto il titolo di prima programmatrice della storia.
+
+33
+00:03:07,140 --> 00:03:08,660
+Ma non è tutto qui.
+
+34
+00:03:08,660 --> 00:03:14,860
+Infatti, a differenza degli scienziati dell'epoca, compreso lo stesso Babbage, Ada previde che
+
+35
+00:03:14,860 --> 00:03:20,660
+i calcolatori, sfruttando la manipolazione dei numeri, sarebbero un giorno stati in grado
+
+36
+00:03:20,660 --> 00:03:23,820
+di andare ben oltre il mero calcolo numerico.
+
+37
+00:03:24,260 --> 00:03:30,420
+Ad esempio, forse proprio per le sue passioni artistiche, paventò la possibilità che le
+
+38
+00:03:30,420 --> 00:03:35,460
+macchine del futuro avrebbero svolto compiti complessi come comporre musica.
+
+39
+00:03:35,460 --> 00:03:41,740
+Infine, ispirata da una macchina tessile che era in grado di comporre complessi disegni
+
+40
+00:03:41,740 --> 00:03:48,100
+seguendo le istruzioni riportate su schede perforate, suggerì anche che la macchina
+
+41
+00:03:48,100 --> 00:03:53,100
+analitica potesse essere programmata utilizzando lo stesso sistema.
+
+42
+00:03:53,100 --> 00:03:59,900
+Metodo di programmazione è questo che, come sappiamo, più di un secolo dopo venne effettivamente
+
+43
+00:03:59,900 --> 00:04:04,660
+impiegato per i calcolatori degli anni 60 e 70.
+
+44
+00:04:04,660 --> 00:04:11,340
+Insomma, il contributo di Ada Lovelace all'informatica è considerato così importante che in suo
+
+45
+00:04:11,340 --> 00:04:18,060
+onore, nel 1979, al linguaggio di programmazione sviluppato dal Ministero della Difesa di
+
+46
+00:04:18,060 --> 00:04:24,580
+Gli Stati Uniti per il controllo dei sistemi militari fu appunto dato il nome di ADA.
+
+47
+00:04:24,580 --> 00:04:32,260
+E in più, dal 2009, ogni secondo martedì di ottobre, si celebra l'ADA Lovelace Day,
+
+48
+00:04:32,260 --> 00:04:38,020
+cioè la giornata mondiale dedicata a tutte quelle donne che si dedicano alle discipline
+
+49
+00:04:38,020 --> 00:04:39,940
+tecnologiche e scientifiche.
+
+50
+00:04:40,940 --> 00:04:47,940
+Grazie per aver ascoltato Snippet, una rubrica di Pensieri in Codice.
+
+51
+00:04:47,940 --> 00:04:52,500
+Scopri tanti altri contenuti sul sito pensieriincodice.it
+

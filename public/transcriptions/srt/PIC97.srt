@@ -1,0 +1,764 @@
+1
+00:00:00,000 --> 00:00:05,040
+Ormai lo sappiamo bene, lo abbiamo detto anche qui un sacco di volte su Pensieri in Codice,
+
+2
+00:00:05,040 --> 00:00:10,000
+sul web purtroppo esistono determinati pericoli ai quali dobbiamo fare attenzione.
+
+3
+00:00:10,000 --> 00:00:15,920
+E quindi installiamo Antivirus, Firewall e abbiamo tutta una serie di rituali che mettiamo
+
+4
+00:00:15,920 --> 00:00:16,920
+in pratica.
+
+5
+00:00:16,920 --> 00:00:21,680
+Controlliamo l'indirizzo del sito web, ci assicuriamo che ci sia il looketto che indica
+
+6
+00:00:21,680 --> 00:00:27,680
+che è sicuro e usiamo password complesse e sempre diverse, oltre ovviamente ad attivare
+
+7
+00:00:28,000 --> 00:00:29,720
+l'autenticazione a due fattori.
+
+8
+00:00:29,720 --> 00:00:34,200
+Ma se un giorno ci accorgessimo che tutto ciò non basta più?
+
+9
+00:00:34,200 --> 00:00:39,480
+Che tutte queste contromisure non sono più sufficienti e c'è un modo per bypassarle?
+
+10
+00:00:39,480 --> 00:00:45,480
+Queste sono probabilmente le domande che si è posto un ricercatore chiamato Mr. Dox e
+
+11
+00:00:45,480 --> 00:00:49,920
+alle quali purtroppo ha dato anche una risposta affermativa.
+
+12
+00:00:49,920 --> 00:00:56,920
+Mr. Dox, infatti, ha scoperto un possibile nuovo tipo di attacco phishing che può essere
+
+13
+00:00:57,320 --> 00:01:02,720
+messo in pratica sfruttando quelli che sono i pulsanti di single sign-on, cioè per intenderci
+
+14
+00:01:02,720 --> 00:01:08,420
+quei pulsantini che si trovano su alcuni siti e che permettono di autenticarsi direttamente
+
+15
+00:01:08,420 --> 00:01:15,420
+al sito non con username e password, ma attraverso Google, Apple, Facebook e altri provider del
+
+16
+00:01:15,680 --> 00:01:16,200
+genere.
+
+17
+00:01:16,200 --> 00:01:21,320
+Quando ne ho letto ho pensato che fosse un attacco piuttosto interessante e soprattutto
+
+18
+00:01:21,320 --> 00:01:25,840
+ingegnoso perché sfugge a quelli che sono i normali controlli che siamo abituati ad
+
+19
+00:01:25,840 --> 00:01:32,340
+applicare e quindi oggi parliamo di cos'è e come funziona l'attacco Browser in the
+
+20
+00:01:32,340 --> 00:01:34,340
+Browser. Sigla!
+
+21
+00:01:48,340 --> 00:01:53,040
+Per capire come funziona l'attacco Browser in the Browser dobbiamo innanzitutto rispolverare
+
+22
+00:01:53,040 --> 00:01:58,680
+il concetto di single sign-on. Qui su Pensieri in Codice ne abbiamo già parlato in qualche
+
+23
+00:01:58,680 --> 00:02:04,760
+episodio precedente, ma il succo del discorso è che, a discapito del nome altisonante,
+
+24
+00:02:04,760 --> 00:02:11,160
+single sign-on è in pratica quel meccanismo che permette di autenticarsi presso un sito
+
+25
+00:02:11,160 --> 00:02:17,800
+web utilizzando non le credenziali registrate presso il sito stesso, ma l'autenticazione
+
+26
+00:02:17,800 --> 00:02:23,960
+effettuata presso un altro sito, un cosiddetto identity provider. Nella pratica questo si
+
+27
+00:02:23,960 --> 00:02:30,720
+traduce in quei pulsantini che spesso vediamo nei form di accesso in quelli di registrazione,
+
+28
+00:02:30,720 --> 00:02:37,120
+i quali recano etichette del tipo accedi con Facebook o accedi con Twitter e questo perché
+
+29
+00:02:37,120 --> 00:02:44,120
+in quasi tutti i casi i vari social network sono anche a loro volta degli identity provider
+
+30
+00:02:44,120 --> 00:02:51,000
+e quindi permettono di accedere ad una miriade di altri siti senza per forza doversi registrare
+
+31
+00:02:51,000 --> 00:02:55,880
+singolarmente a ciascuno di essi. A scanso di equivoci però dobbiamo sempre chiarire
+
+32
+00:02:55,880 --> 00:03:02,600
+una cosa e c'è che accedere con Google o con LinkedIn o con qualsiasi altro identity
+
+33
+00:03:02,600 --> 00:03:09,080
+provider non vuol dire non essere registrati presso il sito a cui si sta accedendo, semplicemente
+
+34
+00:03:09,080 --> 00:03:15,080
+è il meccanismo di single sign-on che crea per noi un utente, lo popola con le informazioni
+
+35
+00:03:15,080 --> 00:03:20,880
+necessarie e si preoccupa di riassociarlo alla nostra identità ogni volta che accediamo
+
+36
+00:03:20,880 --> 00:03:26,840
+al sito. Quindi deve essere chiaro che il sito in questione sa bene chi siamo e ha anche
+
+37
+00:03:26,840 --> 00:03:32,120
+in archivio la nostra utenza, per di più collegata all'account social che abbiamo
+
+38
+00:03:32,120 --> 00:03:38,440
+utilizzato per l'accesso. Ma in ogni caso dal punto di vista di noi utenti quello che
+
+39
+00:03:38,440 --> 00:03:44,720
+accade quando clicchiamo sul pulsante accedi con per la prima volta è che si apre solitamente
+
+40
+00:03:44,720 --> 00:03:50,120
+una finestra nella quale vengono mostrate alcune informazioni relative all'identity
+
+41
+00:03:50,120 --> 00:03:56,640
+provider selezionato. Poi se siamo già autenticati presso tale provider ci viene mostrato all'interno
+
+42
+00:03:56,640 --> 00:04:02,560
+di questa finestra un modulo di accettazione, qualcosa del tipo il sito X vuole utilizzare
+
+43
+00:04:02,560 --> 00:04:09,480
+il tuo nome, cognome, indirizzo email o informazione che serve. Oppure se non siamo ancora autenticati
+
+44
+00:04:09,480 --> 00:04:16,280
+nemmeno presso il provider ci viene richiesto di inserire username e password di quest'ultimo
+
+45
+00:04:16,280 --> 00:04:23,000
+e se l'abbiamo impostata il codice dell'autenticazione a due fattori. Quindi se proviamo ad esempio
+
+46
+00:04:23,000 --> 00:04:29,600
+ad accedere con Facebook al sito della pasticceria Nina, che non so neanche se esiste, non è
+
+47
+00:04:29,600 --> 00:04:35,160
+uno sponsor ma se vuole sponsorizzare Pensieri in Codice è benvenuta, vedremo apparire una
+
+48
+00:04:35,160 --> 00:04:40,800
+finestra che solitamente viene chiamata pop-up nella quale se siamo già autenticati su
+
+49
+00:04:40,800 --> 00:04:47,440
+Facebook questo ci avviserà che pasticceria Nina vuole conoscere la nostra email e il
+
+50
+00:04:47,440 --> 00:04:54,120
+nostro nome. Mentre se non siamo ancora loggati nemmeno su Facebook nella pop-up comparirà
+
+51
+00:04:54,120 --> 00:05:00,800
+un modulo di accesso al social network e solo dopo esserci autenticati vedremo la schermata
+
+52
+00:05:00,800 --> 00:05:08,240
+dei dati richiesti dalla pasticceria Nina. Una volta poi autenticati e concessa l'autorizzazione
+
+53
+00:05:08,240 --> 00:05:14,460
+questa finestra scomparirà e noi saremo finalmente liberi di utilizzare il nostro account presso
+
+54
+00:05:14,460 --> 00:05:20,720
+il sito che volevamo visitare. E via a comprare pasticcini! Nel mezzo di tutto questo processo
+
+55
+00:05:20,720 --> 00:05:25,400
+però che in effetti è molto più difficile da spiegare che da utilizzare nella pratica,
+
+56
+00:05:25,400 --> 00:05:31,360
+probabilmente lo sfruttiamo tutti anche più volte al giorno, si colloca appunto il cosiddetto
+
+57
+00:05:31,360 --> 00:05:38,160
+attacco browser in the browser. Mr. Dox infatti, che ovviamente è uno pseudonimo che nasconde
+
+58
+00:05:38,160 --> 00:05:44,280
+l'identità di un abile ricercatore nel campo della cyber security, ha escogitato e descritto
+
+59
+00:05:44,280 --> 00:05:49,320
+questo nuovo tipo di attacco che si basa essenzialmente sul limitare la finestra che
+
+60
+00:05:49,360 --> 00:05:55,760
+appare dopo aver cliccato sul pulsante accedi con. L'idea di fondo è semplice, si costruisce un
+
+61
+00:05:55,760 --> 00:06:01,520
+sito trappola che comprende dei moduli di registrazione e di autenticazione falsi e
+
+62
+00:06:01,520 --> 00:06:07,240
+in questi moduli si posizionano dei pulsanti sempre falsi del tipo accedi con google,
+
+63
+00:06:07,240 --> 00:06:13,400
+accedi con facebook e così via. Quando l'utente clicca su questi pulsanti il sito non apre
+
+64
+00:06:13,400 --> 00:06:18,680
+veramente una seconda finestra del browser in cui effettuare le operazioni di autorizzazione
+
+65
+00:06:18,680 --> 00:06:26,160
+descritte poco fa, bensì mostra un elemento interno alla schermata principale ma truccato
+
+66
+00:06:26,160 --> 00:06:31,360
+per apparire identico in tutto e per tutto a quello che dovrebbe essere la vera finestra di
+
+67
+00:06:31,360 --> 00:06:38,200
+pop-up. Questo elemento ha esattamente l'aspetto che ci si dovrebbe aspettare, scusa il gioco di
+
+68
+00:06:38,200 --> 00:06:46,360
+parole, sembra una finestra indipendente, mostra una url che sembra valida, contiene il lucchetto
+
+69
+00:06:46,360 --> 00:06:52,240
+che sta ad indicare che la connessione è sicura ed è perfino interattiva perché permette di
+
+70
+00:06:52,240 --> 00:06:57,960
+inserire username, password e nei casi più sofisticati mostra persino il messaggio che
+
+71
+00:06:57,960 --> 00:07:04,440
+il sito web è sicuro e tutti gli altri indicatori che normalmente utilizziamo per verificare
+
+72
+00:07:04,440 --> 00:07:11,880
+l'attendibilità di un sito. Tuttavia non è altro che un falso modulo circondato da immagini fasulle
+
+73
+00:07:11,880 --> 00:07:18,640
+e animato da codice javascript. Ora se ti parlo di simulare finestre del browser la prima cosa che
+
+74
+00:07:18,640 --> 00:07:24,840
+ti potrebbe venire in mente è che queste non sono sempre uguali a se stesse ma cambiano a seconda
+
+75
+00:07:24,840 --> 00:07:31,960
+del browser, del sistema operativo e perfino delle impostazioni che l'utente sta utilizzando. C'è chi
+
+76
+00:07:31,960 --> 00:07:37,960
+naviga con Chrome o con Firefox ad esempio ma esistono tanti altri browser, c'è chi utilizza
+
+77
+00:07:37,960 --> 00:07:44,440
+Windows, macOS, Linux... tutte queste differenze sono visibili a occhio nudo. I browser hanno
+
+78
+00:07:44,440 --> 00:07:50,680
+interfacce differenti fra loro, un occhio neanche troppo allenato lo nota immediatamente. I sistemi
+
+79
+00:07:50,680 --> 00:07:56,760
+operativi poi spesso impongono un proprio aspetto grafico a tutte le finestre dei vari software e
+
+80
+00:07:56,760 --> 00:08:03,600
+i browser non fanno certo eccezione. Una finestra di Firefox su Ubuntu apparirà diversa da una
+
+81
+00:08:03,600 --> 00:08:09,560
+finestra di Firefox su Windows 10 ad esempio e persino le impostazioni grafiche generali
+
+82
+00:08:09,560 --> 00:08:15,960
+influiscono sull'aspetto. L'utente utilizza il tema chiaro o quello scuro o uno personalizzato
+
+83
+00:08:15,960 --> 00:08:22,320
+attivato l'ingrandimento dei caratteri, il contrasto accentuato... ma nonostante tutte
+
+84
+00:08:22,320 --> 00:08:30,800
+queste possibili variabili la cosa sorprendente è che Mr. Dox mostra come sia possibile adattare
+
+85
+00:08:30,800 --> 00:08:36,120
+l'attacco browser in the browser al sistema operativo, al browser e perfino alle impostazioni
+
+86
+00:08:36,120 --> 00:08:42,400
+che l'utente sta utilizzando. Con un po' di JavaScript, di CSS e di immagini preconfezionate
+
+87
+00:08:42,400 --> 00:08:49,520
+infatti, la finestra a fasulla può recuperare queste informazioni e apparire con l'aspetto
+
+88
+00:08:49,520 --> 00:08:56,720
+coerente se non addirittura perfetto rispetto a quello che il malcapitato visitatore si aspetta.
+
+89
+00:08:57,280 --> 00:09:02,320
+Ora, si tratta chiaramente di un tipo di attacco non banale che richiede determinate
+
+90
+00:09:02,320 --> 00:09:08,120
+conoscenze di programmazione web e una certa quantità di lavoro. E se ti stai chiedendo
+
+91
+00:09:08,120 --> 00:09:13,400
+il motivo per cui qualcuno dovrebbe fare tanta fatica per creare moduli di autenticazione
+
+92
+00:09:13,400 --> 00:09:20,080
+fasulli così verosimili, beh la risposta è banalmente ordinaria. L'obiettivo è quello
+
+93
+00:09:20,080 --> 00:09:26,120
+di collezionare credenziali di tutti gli ignari utenti che cadono vittime del tranello.
+
+94
+00:09:26,640 --> 00:09:31,640
+Mettendo in pratica questo tipo di attacco infatti, un criminale è in grado di accumulare
+
+95
+00:09:31,640 --> 00:09:36,400
+credenziali su credenziali di persone che pensano erroneamente di stare inserendo la
+
+96
+00:09:36,400 --> 00:09:41,480
+propria password in un form di Google o di Facebook o di qualsiasi altro entity provider
+
+97
+00:09:41,480 --> 00:09:47,720
+di loro scelta. E una collezione del genere dà possibilità notevoli. Pensa solo a quanti
+
+98
+00:09:47,720 --> 00:09:53,480
+siti hai acceduto con Google nella tua vita. Se un criminale riuscisse ad accedere direttamente
+
+99
+00:09:53,480 --> 00:09:59,760
+al tuo account Google, in quanti siti riuscirebbe ad autenticarsi indisturbato impersonando
+
+100
+00:09:59,760 --> 00:10:06,800
+te? E psicologicamente, dopo tutto, il sistema è semplice. Il falso modulo di autenticazione
+
+101
+00:10:06,800 --> 00:10:12,880
+infatti sfrutta la normale fiducia degli utenti nel processo di single sign-on così come
+
+102
+00:10:12,880 --> 00:10:19,640
+l'ho descritto poco fa. Innanzitutto mostra una schermata di autenticazione per spingere
+
+103
+00:10:19,640 --> 00:10:25,520
+l'utente a reinserire username e password dell'identity provider. Basta infatti mostrare
+
+104
+00:10:25,520 --> 00:10:31,720
+un messaggio del tipo la tua sessione è scaduta per favore reinserisci username e password
+
+105
+00:10:31,720 --> 00:10:38,320
+oppure inserisci le tue credenziali per dimostrarci che sei veramente tu a voler accedere a questo
+
+106
+00:10:38,320 --> 00:10:44,000
+sito. Ovviamente l'utente crede di interagire con un soggetto sicuro e non conoscendo a
+
+107
+00:10:44,000 --> 00:10:50,080
+memoria ogni possibile richiesta che potrebbe arrivare da un identity provider è portato
+
+108
+00:10:50,080 --> 00:10:55,920
+a prendere per buoni questi comportamenti, inserisce le proprie credenziali e in realtà
+
+109
+00:10:55,920 --> 00:11:02,080
+il falso modulo le archivia da qualche parte alla portata del criminale. Come se non bastasse
+
+110
+00:11:02,080 --> 00:11:08,640
+poi stiamo parlando anche di un tipo di attacco che può essere ampiamente potenziato. Infatti
+
+111
+00:11:08,640 --> 00:11:14,240
+avendo il controllo del sito che in realtà gli appartiene interamente il criminale potrebbe
+
+112
+00:11:14,240 --> 00:11:20,440
+applicare tanti altri comportamenti più sofisticati. Ad esempio potrebbe scrivere del
+
+113
+00:11:20,440 --> 00:11:25,640
+codice per utilizzare immediatamente le password carpite e autenticarsi presso
+
+114
+00:11:25,640 --> 00:11:32,720
+l'identity provider. In questo modo potrebbe far sì che il falso sito si comporti esattamente nel
+
+115
+00:11:32,720 --> 00:11:39,440
+modo in cui ci si aspetterebbe da un vero sito rendendo di fatto l'attacco trasparente e impedendo
+
+116
+00:11:39,440 --> 00:11:45,560
+che l'utente riesca anche solo a capire che qualcosa non va. Se infatti io provassi ad utilizzare la
+
+117
+00:11:45,560 --> 00:11:52,200
+single sign-on su un sito e questo pur essendo falso si comportasse esattamente come ci si
+
+118
+00:11:52,200 --> 00:11:58,480
+aspetterebbe chiedendomi la password, poi l'autorizzazione e poi mostrandomi il mio profilo
+
+119
+00:11:58,480 --> 00:12:04,840
+appena creato, allora probabilmente farei molta fatica a rendermi conto che in realtà mi hanno
+
+120
+00:12:04,840 --> 00:12:11,480
+rubato l'identità. Crederei semplicemente di avere acceduto all'ennesimo sito. Oppure ancora il mal
+
+121
+00:12:11,480 --> 00:12:17,560
+vivente potrebbe implementare anche un finto meccanismo di autenticazione a due fattori facendo
+
+122
+00:12:17,560 --> 00:12:23,360
+in modo che il falso sito si comporti proprio come una sorta di proxy, di passacarte verso
+
+123
+00:12:23,360 --> 00:12:28,920
+l'identity provider. E sì, hai capito bene, anche l'autenticazione a due fattori non è più
+
+124
+00:12:28,920 --> 00:12:34,840
+sufficiente a proteggerci da questo tipo di attacco e forse è il caso di soffermarci un
+
+125
+00:12:34,840 --> 00:12:40,840
+attimo su questa cosa. Nella documentazione di MrDocs, che ovviamente trovi in descrizione,
+
+126
+00:12:40,840 --> 00:12:47,400
+non è specificato esplicitamente questo caso ma proviamo ad immaginare una possibile strategia
+
+127
+00:12:47,400 --> 00:12:52,680
+per bypassare la two-step authentication. Immaginiamo di finire su un sito trappola
+
+128
+00:12:52,680 --> 00:12:59,440
+che permetta l'accesso tramite twitter. Ottimo perché noi siamo iscritti a twitter. Clicchiamo
+
+129
+00:12:59,440 --> 00:13:05,000
+quindi sul pulsante accedi con twitter e ci si apre una finestra che sembra proprio molto simile
+
+130
+00:13:05,000 --> 00:13:11,360
+a quella di twitter nella quale c'è scritto per confermare di voler accedere al sito per favore
+
+131
+00:13:11,360 --> 00:13:17,040
+inserisci username e password. Magari per un attimo pensiamo che sia strano ma poi in effetti
+
+132
+00:13:17,280 --> 00:13:22,720
+ci ricordiamo anche che l'ultima volta che abbiamo inserito la password su twitter sarà
+
+133
+00:13:22,720 --> 00:13:28,800
+stato il 2020 in occasione delle presidenziali americane quindi magari ci sta che ogni tanto
+
+134
+00:13:28,800 --> 00:13:35,640
+il sito chieda delle conferme e dunque inseriamo e basta. Il modulo fasullo a questo punto archivia
+
+135
+00:13:35,640 --> 00:13:41,800
+le nostre credenziali e poi effettua anche immediatamente un tentativo di utilizzarle
+
+136
+00:13:41,800 --> 00:13:48,880
+così in automatico e scopre che abbiamo attiva l'autenticazione a due fattori. Non si può
+
+137
+00:13:48,880 --> 00:13:55,440
+accedere così facilmente al nostro account. E allora? Semplice. L'algoritmo trappola utilizza
+
+138
+00:13:55,440 --> 00:14:02,000
+la funzione di twitter per farci inviare il pin di sblocco dell'autenticazione a due fattori e
+
+139
+00:14:02,000 --> 00:14:08,720
+contemporaneamente ci mostra una schermata che simula la richiesta del secondo fattore di
+
+140
+00:14:08,720 --> 00:14:15,640
+autenticazione. Salve utente, sul tuo profilo è impostata l'autenticazione a due fattori. Ti
+
+141
+00:14:15,640 --> 00:14:21,520
+abbiamo quindi mandato il pin. Per favore inseriscilo qui per dimostrare che sei il
+
+142
+00:14:21,520 --> 00:14:28,160
+proprietario dell'account. Noi a questo punto riceviamo veramente il pin via sms o email o
+
+143
+00:14:28,160 --> 00:14:34,360
+addirittura lo andiamo a recuperare dalla nostra app di autenticazione e poi lo inseriamo nella
+
+144
+00:14:34,360 --> 00:14:40,960
+pop-up convinti di stare facendo un'operazione perfettamente normale. Il sito falso invece è ora
+
+145
+00:14:40,960 --> 00:14:47,480
+a conoscenza anche del nostro pin e lo utilizza per completare la sua autenticazione e autorizzare
+
+146
+00:14:47,480 --> 00:14:54,600
+un suo dispositivo. Nella nostra schermata invece appare un messaggio che ci dice complimenti,
+
+147
+00:14:54,600 --> 00:15:00,840
+ti sei appena autenticato e la simulazione va avanti così come l'ho descritta poco fa. Di
+
+148
+00:15:00,840 --> 00:15:07,320
+fatto a questo punto siamo stati raggirati due fattori compresi e nemmeno ce ne siamo accorti.
+
+149
+00:15:07,320 --> 00:15:14,900
+Ma quindi questo attacco è proprio impossibile da evitare? Grazie ad esso l'indirizzo web mostrato
+
+150
+00:15:14,900 --> 00:15:20,120
+può essere falsificato, il controllo del looketto che indica che il sito web è sicuro
+
+151
+00:15:20,120 --> 00:15:26,640
+anche può essere emulato graficamente. Persino l'autenticazione a due fattori che fino a poco
+
+152
+00:15:26,640 --> 00:15:33,280
+tempo fa sembrava essere l'unico baluardo contro il furto di credenziali si rivela essere poi così
+
+153
+00:15:33,280 --> 00:15:40,800
+non più inattaccabile. Dobbiamo dunque considerarci proprio privi di qualsiasi difesa in balia dei
+
+154
+00:15:40,800 --> 00:15:48,680
+criminali? Beh in effetti per fortuna no. Come dico sempre il primo antivirus, il primo firewall ce
+
+155
+00:15:48,680 --> 00:15:55,600
+l'abbiamo nella testa e il nostro cervello. Conoscere un pericolo ci permette anche di porvi
+
+156
+00:15:55,600 --> 00:16:01,720
+la dovuta attenzione e eventualmente mettere in campo le possibili contromisure. Innanzitutto
+
+157
+00:16:01,720 --> 00:16:07,920
+potremmo cominciare con lo smettere di utilizzare il single sign-on che mi rendo conto essere un'
+
+158
+00:16:07,920 --> 00:16:15,040
+alternativa un po drastica ma avrebbe anche altri effetti positivi come ad esempio quello di smettere
+
+159
+00:16:15,040 --> 00:16:20,400
+di regalare nostre informazioni ai social network. Ma se invece preferiamo continuare ad utilizzare
+
+160
+00:16:20,400 --> 00:16:27,400
+questa funzionalità che è chiaramente qualcosa di molto comodo possiamo considerare una cosa e cioè
+
+161
+00:16:27,400 --> 00:16:34,320
+che tra la finestra reale del browser e quella falsa creata tramite l'attacco browser in the browser
+
+162
+00:16:34,320 --> 00:16:40,920
+c'è una differenza enorme e questa non può essere colmata in alcun modo né con il codice né con la
+
+163
+00:16:40,920 --> 00:16:49,400
+grafica. La finestra reale infatti è di fatto separata dal browser mentre quella falsa sembra
+
+164
+00:16:49,400 --> 00:16:56,840
+separata ma in realtà è interna alla pagina web e questo cosa vuol dire? Beh semplicemente che la
+
+165
+00:16:56,840 --> 00:17:04,320
+finestra vera può essere trascinata fuori dal sito mentre quella falsa no. Quindi per verificare se
+
+166
+00:17:04,320 --> 00:17:10,080
+siamo sotto attacco browser in the browser ci basta semplicemente rimpicciolire la finestra
+
+167
+00:17:10,080 --> 00:17:16,240
+del sito e provare a trascinare la pop-up di autenticazione in giro per lo schermo. Se questa
+
+168
+00:17:16,240 --> 00:17:22,440
+si muove e si riesce a superare il bordo del browser allora si tratta di una vera finestra
+
+169
+00:17:22,440 --> 00:17:29,360
+i cui elementi non possono essere falsificati e della quale se indirizzo e lucchetto si mostrano
+
+170
+00:17:29,360 --> 00:17:37,280
+sicuri allora possiamo ragionevolmente fidarci. Al contrario se dovessimo essere vittime di attacco
+
+171
+00:17:37,280 --> 00:17:44,280
+browser in the browser la finestra si muoverà fino al bordo del browser e al massimo riuscirà a
+
+172
+00:17:44,280 --> 00:17:50,320
+scomparire parzialmente se tentiamo di farle superare quel limite rivelandosi in questo modo
+
+173
+00:17:50,320 --> 00:17:57,520
+falsa. Come vedi già questo è un controllo semplice ed efficace ma in più sembra che
+
+174
+00:17:57,520 --> 00:18:03,320
+siano già nascendo delle estensioni per i vari browser che permettono di identificare gli attacchi
+
+175
+00:18:03,320 --> 00:18:09,840
+di questo tipo. Ad essere onesto ancora non le ho provate né tantomeno studiate nel funzionamento
+
+176
+00:18:09,840 --> 00:18:16,920
+ma visto che ce n'è una che è suggerita dallo stesso Mr. Dox te la linko in descrizione caso
+
+177
+00:18:16,920 --> 00:18:24,680
+mai volessi provarla e installarla. Nel caso sarai tu a far sapere a me se e come funziona. Bene
+
+178
+00:18:24,680 --> 00:18:29,800
+spero come al solito di averti condiviso qualcosa di interessante sul sito di Pensieri in Codice
+
+179
+00:18:29,800 --> 00:18:35,040
+trovi tutti i miei contatti così puoi farmelo sapere e ancora meglio trovi il link al gruppo
+
+180
+00:18:35,040 --> 00:18:41,320
+telegram dove possiamo discutere insieme con gli altri membri della community. Prima di lasciarti
+
+181
+00:18:41,320 --> 00:18:47,720
+ti ricordo che Pensieri in Codice è un podcast indipendente interamente prodotto da me nel
+
+182
+00:18:47,720 --> 00:18:54,160
+mio tempo libero e con le mie risorse personali quindi se apprezzi quello che faccio e se sei
+
+183
+00:18:54,160 --> 00:19:00,520
+arrivato fin qui immagino che un po' lo apprezzi lascia una recensione nell'app con cui ascolti il
+
+184
+00:19:00,520 --> 00:19:07,240
+podcast e poi fallo conoscere ai tuoi amici così facendo mi aiuterai a far crescere il progetto e
+
+185
+00:19:07,240 --> 00:19:13,760
+a migliorarne la qualità e farai bella figura con loro. E guarda che dico sul serio ho notato che
+
+186
+00:19:13,760 --> 00:19:20,160
+nonostante le statistiche di ascolto non siano poi così male recensioni e votazioni sono poche
+
+187
+00:19:20,160 --> 00:19:26,520
+rispetto ad altri podcast anche molto meno seguiti quindi dimostrami che tutto il lavoro e
+
+188
+00:19:26,520 --> 00:19:31,800
+l'impegno che ci sto mettendo serve a qualcosa. Ricorda sempre che puoi ascoltare tutti gli
+
+189
+00:19:31,800 --> 00:19:39,360
+episodi di Pensieri in Codice su tutte le maggiori piattaforme app di podcast e basta io ti ringrazio
+
+190
+00:19:39,360 --> 00:19:44,640
+per l'ascolto ti do appuntamento al prossimo episodio e ti ricordo che un informatico risolve
+
+191
+00:19:44,640 --> 00:19:47,720
+problemi a volte anche usando il computer
+

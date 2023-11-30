@@ -1,0 +1,136 @@
+1
+00:00:00,000 --> 00:00:29,520
+Al giorno d'oggi siamo purtroppo tutti abituati a combattere con un fastidioso e
+
+2
+00:00:29,520 --> 00:00:35,280
+invasivo fenomeno di internet che si svolge principalmente nelle nostre caselle email e
+
+3
+00:00:35,280 --> 00:00:41,520
+che prende il nome di spam. Ogni giorno riceviamo decine di comunicazioni che non hanno alcun valore
+
+4
+00:00:41,520 --> 00:00:48,000
+o utilità per noi e che non abbiamo mai richiesto di ricevere, le quali tentano spudratamente di
+
+5
+00:00:48,000 --> 00:00:53,200
+indurci ad acquistare prodotti o iscriverci a servizi dei quali non abbiamo alcun bisogno.
+
+6
+00:00:53,520 --> 00:00:59,320
+Nei casi peggiori si giunge a ricevere sgrammaticati messaggi che cercano di
+
+7
+00:00:59,320 --> 00:01:05,320
+sottrarci informazioni importanti come i nostri dati personali o le nostre credenziali di accesso
+
+8
+00:01:05,320 --> 00:01:11,080
+ai più svariati servizi. Anche se, ad essere onesti, in tal caso non si parla più di semplice
+
+9
+00:01:11,080 --> 00:01:16,400
+spam bensì di una pratica criminale che prende il nome di phishing. Ad ogni modo,
+
+10
+00:01:16,400 --> 00:01:22,600
+una ricerca della celebre azienda produttrice di software di sicurezza Kaspersky ha rivelato
+
+11
+00:01:22,600 --> 00:01:31,280
+che nel 2021 il 43% delle email ricevute da utenti italiani è spam. Non tutti sanno però
+
+12
+00:01:31,280 --> 00:01:37,880
+che la nascita di questo fenomeno non è affatto recente e risale a ben più di 40 anni fa. Si
+
+13
+00:01:37,880 --> 00:01:45,400
+parla infatti del 1978 quando la rete ARPANET conteneva ancora poche migliaia di utilizzatori,
+
+14
+00:01:45,400 --> 00:01:50,800
+pare addirittura meno di 3.000 e tutti presso grandi aziende, università e denti statali,
+
+15
+00:01:51,320 --> 00:01:56,440
+quando Gary Tuerk, responsabile marketing di una delle principali compagnie informatiche
+
+16
+00:01:56,440 --> 00:02:02,440
+dell'epoca, elaborò e scrisse una email pubblicitaria per far conoscere al mondo
+
+17
+00:02:02,440 --> 00:02:06,880
+una nuova famiglia di computer che la sua azienda aveva da poco commercializzato.
+
+18
+00:02:06,880 --> 00:02:12,880
+Tuerk pensò bene di risparmiare tempo e massimizzare l'efficienza inviando il messaggio
+
+19
+00:02:12,880 --> 00:02:20,040
+email a tutti i 393 contatti della sua rubrica. Ed in effetti riuscì a vendere qualche computer,
+
+20
+00:02:20,480 --> 00:02:26,200
+anche se oltre alle vendite ottenne un moto di indignazione da parte di centinaia di utenti
+
+21
+00:02:26,200 --> 00:02:31,800
+che si videro recapitare un messaggio che non era stato richiesto e non era inerente alla loro
+
+22
+00:02:31,800 --> 00:02:37,240
+attività e per di più in coda recava la sponsorizzazione di un prodotto commerciale.
+
+23
+00:02:37,240 --> 00:02:44,440
+In ogni caso il gesto di Tuerk era rivoluzionario per l'epoca, al punto che oggi egli viene ricordato
+
+24
+00:02:44,440 --> 00:02:52,720
+come il padre dello spam. Ma nel 1978 il termine spam non era ancora utilizzato per indicare questo
+
+25
+00:02:52,720 --> 00:03:00,760
+tipo di comunicazione di massa indesiderata. Il nome ufficiale arrivò solo nel 1983 quando Richard
+
+26
+00:03:00,760 --> 00:03:06,320
+Diffu, moderatore di un news group, decise di utilizzare questa parola per la prima volta in
+
+27
+00:03:06,320 --> 00:03:13,360
+questo contesto. Fino ad allora infatti spam era solo la contrazione di Spiced Ham, un tipo di carne
+
+28
+00:03:13,360 --> 00:03:21,080
+di maiale speziata prodotta dalla Hormel Food Corporation fin dal 1937. L'idea di utilizzare
+
+29
+00:03:21,080 --> 00:03:27,480
+questa parola venne a Diffu in mente dopo aver visto uno sketch dei Monty Python alla tv. Nella
+
+30
+00:03:27,480 --> 00:03:32,800
+scena in questione infatti dei vichinghi seduti al tavolo di una taverna cercano di ordinare appunto
+
+31
+00:03:32,800 --> 00:03:40,360
+della carne speziata e nel farlo urlano spam spam spam e in effetti lo sketch nasceva proprio come
+
+32
+00:03:40,360 --> 00:03:46,600
+una critica alla campagna pubblicitaria della spam la quale per gli standard dell'epoca veniva
+
+33
+00:03:46,600 --> 00:03:55,360
+considerata molto molto invasiva. Grazie per aver ascoltato Snippet, una rubrica di Pensieri
+
+34
+00:03:55,360 --> 00:04:00,520
+in Codice. Scopri tanti altri contenuti sul sito pensieriincodice.it
+

@@ -1,0 +1,780 @@
+1
+00:00:00,000 --> 00:00:06,120
+Oh, finalmente, eccoci di nuovo qui. È un po' che non ci sentiamo, vero? Purtroppo,
+
+2
+00:00:06,120 --> 00:00:13,280
+in queste ultime settimane, anzi, diciamo più mesi, sono stato davvero sommerso dal lavoro
+
+3
+00:00:13,280 --> 00:00:18,400
+e non ho avuto modo di seguire questo progetto quanto avrei voluto e quanto avevo detto che
+
+4
+00:00:18,400 --> 00:00:23,900
+avrei fatto. Però oggi sono di nuovo qui e ricominciamo alla grande parlando di uno
+
+5
+00:00:23,900 --> 00:00:28,860
+di quegli argomenti principe di pensieri in codice, e cioè uno di quei tanti algoritmi
+
+6
+00:00:28,920 --> 00:00:35,240
+che utilizziamo ogni giorno ma magari nemmeno sappiamo di farlo. In questo episodio, infatti,
+
+7
+00:00:35,240 --> 00:00:41,400
+ritorniamo a parlare di come funzionano i nostri software ed in particolare di
+
+8
+00:00:41,400 --> 00:00:45,640
+algoritmo TIT4TAT e protocollo BitTorrent.
+
+9
+00:00:59,640 --> 00:01:06,400
+Iniziamo subito con un po' di storia che non fa mai male. Negli anni 50 del secolo scorso,
+
+10
+00:01:06,400 --> 00:01:13,400
+il matematico canadese Albert Tucker formulò un problema nell'ambito della teoria dei giochi,
+
+11
+00:01:13,400 --> 00:01:20,560
+il quale sarebbe presto divenuto famoso anche fra i non addetti ai lavori. Spesso definito
+
+12
+00:01:20,560 --> 00:01:25,760
+come paradosso, il dilemma del prigioniero, questo è il nome del gioco, consiste nel
+
+13
+00:01:25,760 --> 00:01:32,100
+prendere due ipotetici soggetti, due prigionieri appunto, e metterli di fronte ad una scelta che
+
+14
+00:01:32,100 --> 00:01:37,760
+determinerà i vantaggi che otterranno e le conseguenze che dovranno poi subire. Nello
+
+15
+00:01:37,760 --> 00:01:43,260
+specifico, nella sua formulazione più classica, il dilemma suona più o meno in questo modo. Due
+
+16
+00:01:43,260 --> 00:01:49,580
+malviventi vengono arrestati ed accusati di un crimine. I due poi vengono tenuti in celle
+
+17
+00:01:49,580 --> 00:01:55,380
+separate, non possono comunicare, ma ciascuno è a conoscenza del fatto che è stata arrestata
+
+18
+00:01:55,480 --> 00:02:01,160
+anche un'altra persona per il suddetto crimine. A questo punto gli investigatori iniziano con
+
+19
+00:02:01,160 --> 00:02:07,400
+degli interrogatori separati e danno ad entrambi la possibilità di confessare e accusare il complice
+
+20
+00:02:07,400 --> 00:02:13,640
+per avere in cambio maggiore clemenza. Ciò vuol dire in pratica che ciascuno può facilitare le
+
+21
+00:02:13,640 --> 00:02:20,440
+indagini scaricando la colpa del crimine sull'altra persona, con lo scopo di vedere ridotta la propria
+
+22
+00:02:20,440 --> 00:02:25,620
+pena. E siccome parliamo di un gioco matematico, a questo punto si vengono a configurare tre
+
+23
+00:02:25,620 --> 00:02:31,780
+possibili scenari ben distinti. Numero uno, entrambi i soggetti decidono di non confessare,
+
+24
+00:02:31,780 --> 00:02:37,900
+attenendosi ad una sorta di codice morale del criminale e non accusandosi l'un l'altro. In
+
+25
+00:02:37,900 --> 00:02:43,940
+questo scenario gli inquirenti non sono in grado di dimostrare la loro colpevolezza per il crimine
+
+26
+00:02:43,940 --> 00:02:50,480
+in questione ed entrambi vengono condannati ad un solo anno di reclusione per un crimine minore.
+
+27
+00:02:50,480 --> 00:02:57,440
+Nel secondo scenario invece uno dei due decide di tradire l'altro. In questo caso il primo,
+
+28
+00:02:57,440 --> 00:03:03,000
+cioè il traditore, se la cava senza scontare un giorno di galera, mentre il secondo ci rimarrà
+
+29
+00:03:03,000 --> 00:03:09,920
+per ben sei anni. E infine nel terzo scenario entrambi i criminali decidono di tradirsi l'un
+
+30
+00:03:09,920 --> 00:03:17,340
+l'altro. In pratica accusandosi vicendevolmente di crimini gravi, entrambi otterranno uno sconto
+
+31
+00:03:17,340 --> 00:03:23,980
+e verranno condannati a tre anni ciascuno. Ora puoi mettere pausa e fermarti a riflettere sul
+
+32
+00:03:23,980 --> 00:03:31,580
+problema o magari su cosa faresti tu o qualcuno che conosci, ma conti alla mano e visto che quelle
+
+33
+00:03:31,580 --> 00:03:37,900
+che ti ho dato sono le uniche informazioni disponibili per la scelta, dovrebbe apparire
+
+34
+00:03:37,900 --> 00:03:44,080
+subito chiaro che la migliore strategia da attuare per entrambi sia quella di tradirsi a vicenda e
+
+35
+00:03:44,080 --> 00:03:50,520
+beccarsi tre anni a testa. Certo c'è l'opzione in cui entrambi non collaborano, nella quale
+
+36
+00:03:50,520 --> 00:03:56,800
+prendono un anno di galera ciascuno, ma senza informazioni su come l'altro si potrebbe comportare
+
+37
+00:03:56,800 --> 00:04:02,680
+conviene maggiormente dare per scontato che questi cercherà di prendere la decisione migliore per se
+
+38
+00:04:02,680 --> 00:04:10,140
+stesso, puntando quindi a collaborare per ridurre o a zerare la pena. In tale condizione la cosa più
+
+39
+00:04:10,140 --> 00:04:16,300
+saggia che uno dei due possa fare è comunque collaborare con gli investigatori e tradire il
+
+40
+00:04:16,300 --> 00:04:22,100
+proprio compagno. Nel migliore dei casi l'altro non avrà collaborato e quindi il traditore se la
+
+41
+00:04:22,100 --> 00:04:29,060
+caverà senza pena. Nel peggiore anche l'altro avrà collaborato e il traditore prenderà comunque tre
+
+42
+00:04:29,120 --> 00:04:35,320
+anni invece di sei. Dunque questa decisione da prendere in tale contesto viene definita appunto
+
+43
+00:04:35,320 --> 00:04:41,040
+dilemma del prigioniero. Descritto in questo modo un problema del genere può apparire un bel
+
+44
+00:04:41,040 --> 00:04:48,120
+giochino da raccontare al bar davanti a una birra ma niente di più e invece il dilemma del prigioniero
+
+45
+00:04:48,120 --> 00:04:55,460
+rappresenta la logica di fondo di molti comportamenti umani. Un esempio che tutti noi conosciamo è ciò
+
+46
+00:04:55,460 --> 00:05:02,160
+che hanno fatto stati uniti ed unione sovietica durante la cosiddetta guerra fredda. Se ci pensi
+
+47
+00:05:02,160 --> 00:05:08,300
+la situazione è la stessa, le scelte non sono più se collaborare o meno con la polizia ma diventano
+
+48
+00:05:08,300 --> 00:05:15,260
+se competere o meno nella corsa agli armamenti nucleari e di conseguenza gli scenari diventano
+
+49
+00:05:15,260 --> 00:05:22,040
+uno. Entrambe le potenze decidono di non investire in armamenti e risparmiare così enormi risorse da
+
+50
+00:05:22,040 --> 00:05:30,160
+destinare ad usi ben più meritevoli. Due, una delle due potenze decide di armarsi e l'altra no, la
+
+51
+00:05:30,160 --> 00:05:35,800
+prima sprecherà tantissimi soldi in spese militari ma la seconda rischierà la cancellazione dalla
+
+52
+00:05:35,800 --> 00:05:41,560
+faccia della terra da parte dell'avversario. Tre, entrambe le potenze decidono di armarsi e
+
+53
+00:05:41,560 --> 00:05:47,360
+spendere miliardi di dollari per mantenere l'equilibrio strategico e guarda un po' come
+
+54
+00:05:47,360 --> 00:05:53,960
+ben sappiamo la scelta è stata quella dell'escalation degli armamenti, lo scenario numero 3, svantaggiosa
+
+55
+00:05:53,960 --> 00:06:01,000
+per entrambi ma la scelta migliore nell'ottica dell'impossibilità di sapere realmente cosa
+
+56
+00:06:01,000 --> 00:06:07,360
+avrebbe fatto l'avversario. Ma come dicevo prima questo è solo un esempio fra i tanti possibili,
+
+57
+00:06:07,360 --> 00:06:13,800
+schemi del genere si possono ritrovare continuamente nel comportamento di persone, comunità, aziende e
+
+58
+00:06:13,800 --> 00:06:21,560
+persino stati. In tali scenari la strategia più vantaggiosa viene definita equilibrio di Nash ed è
+
+59
+00:06:21,560 --> 00:06:28,240
+in pratica quella scelta in cui ciascun soggetto non ha modo di migliorare ulteriormente la propria
+
+60
+00:06:28,240 --> 00:06:35,440
+situazione facendo ricorso solo alle proprie forze. Tieni ben presente infatti che se è pur vero che
+
+61
+00:06:35,440 --> 00:06:42,960
+gli scenari possibili sono tre, in realtà le scelte possibili per ciascun prigioniero sono soltanto
+
+62
+00:06:43,000 --> 00:06:49,600
+due. Questo è un passaggio fondamentale da capire. I due soggetti dell'esperimento infatti possono
+
+63
+00:06:49,600 --> 00:06:55,560
+scegliere se confessare o negare, se collaborare o non collaborare, se investire in armamenti
+
+64
+00:06:55,560 --> 00:07:03,320
+nucleari o meno. Ma gli scenari risultano essere il frutto della somma delle scelte effettuate da
+
+65
+00:07:03,320 --> 00:07:08,840
+entrambi. Nessuno dei due può determinare la propria situazione in maniera totalmente autonoma
+
+66
+00:07:08,840 --> 00:07:21,160
+ma deve in qualche modo subire anche la scelta dell'avversario. Ok, tutto bellissimo. Spero di
+
+67
+00:07:21,160 --> 00:07:26,360
+non essere stato troppo prolisso e di essermi spiegato in maniera sufficientemente chiara,
+
+68
+00:07:26,360 --> 00:07:33,160
+ma sono certo che ora ti starai chiedendo perché tutto questo parlare di teoria dei giochi? Beh,
+
+69
+00:07:33,200 --> 00:07:40,240
+per capirlo dobbiamo fare un altro piccolo sforzo, un piccolo passo in più. Un passo che può sembrare
+
+70
+00:07:40,240 --> 00:07:46,680
+banale ma che ti assicuro rende tutto il nostro discorso molto più interessante. In pratica,
+
+71
+00:07:46,680 --> 00:07:52,520
+per come te l'ho descritto finora, il dilemma del prigioniero è un evento singolo. Due attori
+
+72
+00:07:52,520 --> 00:07:57,960
+vengono messi di fronte ad una scelta e per ciascuno le due opzioni disponibili risultano
+
+73
+00:07:57,960 --> 00:08:03,680
+essere più o meno vantaggiose in relazione alla scelta dell'altro. Questi due scelgono,
+
+74
+00:08:03,680 --> 00:08:10,120
+ottengono un qualche risultato e l'equilibrio di Nash ci dice qual è il risultato ottimale
+
+75
+00:08:10,120 --> 00:08:17,720
+ottenibile in autonomia. Fine. Ma se invece considerassimo una serie di dilemmi del prigioniero
+
+76
+00:08:17,720 --> 00:08:23,880
+che si susseguono nel tempo? Mi spiego. Se invece di un'unica occasione di scelta gli attori in
+
+77
+00:08:23,880 --> 00:08:30,760
+gioco avessero tante possibilità e potessero decidere in base non solo alle opzioni disponibili
+
+78
+00:08:30,760 --> 00:08:37,520
+in un singolo momento ma anche in base a delle scelte fatte in precedenza? Così non ti sembra
+
+79
+00:08:37,520 --> 00:08:43,120
+più interessante. Certo non possiamo pensare che ci sia una guerra fredda ogni settimana,
+
+80
+00:08:43,120 --> 00:08:49,440
+né spero per te che tu possa pensare di essere arrestato o arrestata ogni mese, ma quello che
+
+81
+00:08:49,440 --> 00:08:55,640
+possiamo invece fare è inventarci una nostra situazione, ad esempio un piccolo semplice gioco.
+
+82
+00:08:55,640 --> 00:09:02,080
+E proviamo a immaginarlo questo gioco. Ci sono due giocatori, questi due giocatori passeggiano
+
+83
+00:09:02,080 --> 00:09:08,880
+seguendo percorsi casuali in un parco relativamente piccolo, quindi si incontrano con una certa
+
+84
+00:09:08,880 --> 00:09:17,120
+frequenza. Quando le loro strade si incontrano ciascuno dei due ha due possibilità. Può salutare
+
+85
+00:09:17,120 --> 00:09:23,720
+l'avversario oppure tirargli un bello schiaffo. Salutandosi entrambi i due giocatori totalizzano
+
+86
+00:09:23,720 --> 00:09:30,840
+due punti ciascuno, scenario 1. Se invece uno saluta e l'altro schiaffeggia allora l'equilibrio
+
+87
+00:09:30,840 --> 00:09:37,200
+viene meno e chi ha schiaffeggiato guadagna tre punti mentre chi ha salutato ed ha preso la sberla
+
+88
+00:09:37,200 --> 00:09:44,840
+non fa punti, scenario 2. Infine prendendosi a schiaffi entrambi i due totalizzano mezzo punto
+
+89
+00:09:45,000 --> 00:09:51,720
+ciascuno, scenario 3. È chiaramente una situazione simile a quelle precedenti e l'unica differenza sta
+
+90
+00:09:51,720 --> 00:09:58,360
+nel fatto che si ripete nel tempo permettendo ai giocatori di effettuare più scelte in sequenza e
+
+91
+00:09:58,360 --> 00:10:05,080
+di cumulare i punti relativi. Come starai già immaginando ora le scelte diventano molto più
+
+92
+00:10:05,080 --> 00:10:11,480
+interessanti. Finché i due scelgono sempre di salutarsi mantengono un buon punteggio globale ma
+
+93
+00:10:11,480 --> 00:10:17,680
+per nessuno dei due si tratta del punteggio ottimale. Al primo incontro infatti avranno due
+
+94
+00:10:17,680 --> 00:10:24,960
+punti a testa poi quattro poi sei dopo cinque saluti siamo a dieci punti ciascuno cioè 20
+
+95
+00:10:24,960 --> 00:10:31,880
+punti globali. Però ad un certo punto uno dei due potrebbe pensare che mollare schiaffoni sia
+
+96
+00:10:31,880 --> 00:10:38,360
+una scelta migliore. D'altronde se l'altro fosse un pacifista e continuasse sempre a salutare la
+
+97
+00:10:38,360 --> 00:10:45,720
+situazione sarebbe più o meno questa. Primo incontro pacifista 0 violento 3 secondo incontro
+
+98
+00:10:45,720 --> 00:10:52,400
+pacifista sempre 0 violento 6. Dopo cinque incontri il violento avrebbe totalizzato ben
+
+99
+00:10:52,400 --> 00:10:59,040
+15 punti mentre il pacifista sarebbe a 0. La situazione del violento sarebbe molto migliore
+
+100
+00:10:59,040 --> 00:11:05,640
+di quella di prima e quella del pacifista molto peggiore. Ma se in fondo il pacifista non fosse
+
+101
+00:11:05,720 --> 00:11:11,680
+poi così tanto pacifista magari dopo il primo schiaffo potrebbe iniziare a menare anche lui le
+
+102
+00:11:11,680 --> 00:11:18,680
+mani e quindi avremmo primo incontro 3 a 0 per il violento ma poi schiaffi a non finire. Secondo
+
+103
+00:11:18,680 --> 00:11:24,240
+incontro 3 e mezzo a mezzo. Ti ricordo che picchiarsi entrambi fa totalizzare solo mezzo
+
+104
+00:11:24,240 --> 00:11:31,240
+punto ciascuno. Poi 4 a 1 poi 4 e mezzo a 1 e mezzo e così via fino ad un risultato dopo 5
+
+105
+00:11:31,240 --> 00:11:37,960
+incontri di 5 a 2. Certo quello che ha iniziato a picchiare per primo avrebbe un punteggio più
+
+106
+00:11:37,960 --> 00:11:44,440
+alto dell'altro giocatore ma comunque un punteggio molto più basso di quelli totalizzati con le
+
+107
+00:11:44,440 --> 00:11:50,880
+strategie precedenti. In definitiva la strategia collaborativa cioè quella di salutarsi sarebbe
+
+108
+00:11:50,880 --> 00:11:57,000
+la scelta globalmente più vantaggiosa quindi quella che darebbe il maggior numero di punti
+
+109
+00:11:57,080 --> 00:12:04,000
+ad entrambi. E quindi? Già capito dove voglio arrivare? Ora la situazione non è più semplice
+
+110
+00:12:04,000 --> 00:12:09,880
+come lo era con il dilemma del prigioniero preso come evento singolo. Gli arrestati infatti avevano
+
+111
+00:12:09,880 --> 00:12:14,720
+come migliore opzione quella di accusarsi vicendevolmente perché senza avere altre
+
+112
+00:12:14,720 --> 00:12:21,600
+informazioni ciascuno sceglieva razionalmente la soluzione meno brutta per se stesso. Ma qui
+
+113
+00:12:21,600 --> 00:12:28,680
+nel nostro gioco del parco ci sono altre informazioni che sono quelle sul comportamento
+
+114
+00:12:28,680 --> 00:12:34,880
+passato dell'avversario. Come si è comportato durante l'incontro precedente e in quello prima
+
+115
+00:12:34,880 --> 00:12:41,760
+ancora? E se gli incontri fossero 10, 100 o 1000? Ecco che si crea lo spazio per immaginare una
+
+116
+00:12:41,760 --> 00:12:48,360
+strategia di comportamento più interessante e complessa e ovviamente noi da buoni informatici
+
+117
+00:12:48,400 --> 00:12:55,200
+sappiamo che il termine strategia spesso è sinonimo di algoritmo. Questo particolare
+
+118
+00:12:55,200 --> 00:13:02,120
+algoritmo prende il nome di tit for tat e alla fine non si tratta di niente di nuovo o rivoluzionario,
+
+119
+00:13:02,120 --> 00:13:08,760
+in italiano noi lo chiamiamo semplicemente occhio per occhio e consiste appunto nel rispondere con
+
+120
+00:13:08,760 --> 00:13:15,240
+lo stesso comportamento che si riceve da parte di un altro soggetto. In poche parole se l'altro si
+
+121
+00:13:15,240 --> 00:13:20,520
+comporta in modo cooperativo allora noi ci comporteremo in modo cooperativo a nostra volta,
+
+122
+00:13:20,520 --> 00:13:26,240
+se l'altro invece si comporta in modo egoistico allora anche noi ci comporteremo in modo simile,
+
+123
+00:13:26,240 --> 00:13:32,400
+almeno finché l'altro non mostri una maggiore disponibilità a migliorare il proprio atteggiamento.
+
+124
+00:13:32,400 --> 00:13:39,000
+Rapportato al nostro gioco di prima vuol dire che di base ogni giocatore inizia col salutare
+
+125
+00:13:39,000 --> 00:13:45,040
+l'altro quando lo incontra ma se in un qualsiasi momento riceve uno schiaffo allora dal turno
+
+126
+00:13:45,080 --> 00:13:51,960
+successivo restituirà a sua volta uno schiaffo. La strategia tit for tat è molto efficace in
+
+127
+00:13:51,960 --> 00:13:57,600
+molti contesti e questo poiché incoraggia i giocatori a comportarsi in modo cooperativo ed
+
+128
+00:13:57,600 --> 00:14:04,400
+ad evitare comportamenti egoistici che si approfittano degli altri senza contribuire a
+
+129
+00:14:04,400 --> 00:14:15,000
+propria volta. Guarda caso questo particolare algoritmo volto ad incoraggiare il comportamento
+
+130
+00:14:15,000 --> 00:14:21,160
+cooperativo in informatica è largamente utilizzato in particolare per applicazioni
+
+131
+00:14:21,160 --> 00:14:27,280
+basate su operazioni dirette fra i singoli soggetti come ad esempio nel caso di BitTorrent.
+
+132
+00:14:27,280 --> 00:14:32,760
+Ora sono sicuro che tutti abbiamo utilizzato BitTorrent almeno una volta nella vita ma è
+
+133
+00:14:32,760 --> 00:14:39,280
+sempre meglio fare un piccolo ripasso. BitTorrent è un protocollo di condivisione file peer-to-peer
+
+134
+00:14:39,840 --> 00:14:46,800
+detto P2P studiato per consentire agli utenti di condividere file di grandi dimensioni in modo
+
+135
+00:14:46,800 --> 00:14:52,320
+efficace. Per fare ciò in questo protocollo i file vengono suddivisi in piccoli pacchetti
+
+136
+00:14:52,320 --> 00:14:58,600
+dati che possono essere scaricati e condivisi indipendentemente l'uno dall'altro. Ciò significa
+
+137
+00:14:58,600 --> 00:15:05,200
+che ogni utente può scaricare una parte del file e iniziare immediatamente a ricondividerla anche se
+
+138
+00:15:05,200 --> 00:15:11,760
+il download del file intero non è ancora stato completato ed inoltre è possibile ricevere diversi
+
+139
+00:15:11,760 --> 00:15:18,240
+pacchetti di dati da più fonti contemporaneamente e in questo modo velocizzarne il download. Quando
+
+140
+00:15:18,240 --> 00:15:23,520
+un utente vuole scaricare un file sfruttando BitTorrent utilizza il proprio client per
+
+141
+00:15:23,520 --> 00:15:30,040
+connettersi ad un sistema chiamato tracker che è adibito a gestire la rete di condivisione dei
+
+142
+00:15:30,040 --> 00:15:37,760
+file. Il tracker fornisce al client l'elenco di altri client che condividono il file richiesto e
+
+143
+00:15:37,760 --> 00:15:45,000
+di conseguenza questo può iniziare a scaricare uno o più pacchetti di dati da più sorgenti. Ciascun
+
+144
+00:15:45,000 --> 00:15:50,760
+client BitTorrent oltre ad effettuare il download dei file richiesti lavora contemporaneamente per
+
+145
+00:15:50,760 --> 00:15:57,400
+ridistribuire i pacchetti di dati di cui è già in possesso quindi di fatto ciascun utente mentre
+
+146
+00:15:57,400 --> 00:16:04,240
+scarica un file ricarica anche automaticamente le porzioni di tale file di cui già dispone e
+
+147
+00:16:04,240 --> 00:16:09,640
+questo meccanismo di ridistribuzione è proprio alla base del funzionamento del protocollo
+
+148
+00:16:09,640 --> 00:16:15,760
+BitTorrent ed è il motivo principale della sua estrema efficienza e della sua grande diffusione
+
+149
+00:16:15,760 --> 00:16:21,920
+ed è dunque fondamentale che il comportamento di tutti i client mantenga un certo livello di
+
+150
+00:16:21,920 --> 00:16:28,320
+correttezza e cooperazione senza il quale tutto il sistema verrebbe meno. Se infatti ci fossero in
+
+151
+00:16:28,320 --> 00:16:34,640
+giro applicazioni implementate per mantenere un atteggiamento parassitario scaricando solamente
+
+152
+00:16:34,640 --> 00:16:41,880
+da chiunque si trovi a tiro senza mai ricondividere quanto ottenuto allora la velocità ed efficienza
+
+153
+00:16:41,880 --> 00:16:52,160
+del protocollo ne verrebbero danneggiate a scapito degli utilizzatori onesti. Come avrai
+
+154
+00:16:52,160 --> 00:16:59,040
+quindi certamente già capito l'algoritmo TIT4TAT risulta essere una base di partenza molto adatta
+
+155
+00:16:59,040 --> 00:17:05,120
+in questo tipo di situazioni per determinare come un client BitTorrent dovrebbe comportarsi
+
+156
+00:17:05,120 --> 00:17:11,800
+nei confronti degli altri. L'idea alla base è abbastanza semplice ogni client dovrebbe essere
+
+157
+00:17:11,800 --> 00:17:17,880
+disposto a condividere file con gli altri ma solo se anche questi sono disposti a farlo a loro volta.
+
+158
+00:17:17,880 --> 00:17:23,920
+Proprio come accadeva per la strategia ottimale dei nostri giocatori nel parco finché ciascuno
+
+159
+00:17:23,920 --> 00:17:30,240
+dei due manteneva un rapporto cordiale salutando e non aggredendo l'altro anche l'altro continuava
+
+160
+00:17:30,240 --> 00:17:36,680
+ad essere cooperativo. Appena uno dei due veniva meno al tacito patto di collaborazione anche
+
+161
+00:17:36,680 --> 00:17:44,120
+l'altro reagiva nello stesso modo. In altre parole nel protocollo BitTorrent un client risponde con
+
+162
+00:17:44,120 --> 00:17:50,680
+lo stesso comportamento che riceve dagli altri client se l'altro è disposto a condividere file
+
+163
+00:17:50,680 --> 00:17:57,440
+allora lui è disposto a fare lo stesso se invece l'altro non è disposto a condividere allora lui
+
+164
+00:17:57,440 --> 00:18:04,400
+risponde non condividendo a sua volta con quel client. Infine come sarai certamente intuendo
+
+165
+00:18:04,400 --> 00:18:09,640
+c'è anche da considerare che la strategia tit for tat può essere anche soggetta ad un fenomeno
+
+166
+00:18:09,640 --> 00:18:17,200
+chiamato punizioni a catena nel quale i soggetti decidono di non cooperare a oltranza. Se ad
+
+167
+00:18:17,200 --> 00:18:22,800
+esempio due client iniziano a rifiutare la condivisione l'un l'altro si rischia di entrare
+
+168
+00:18:22,800 --> 00:18:29,200
+in un circolo che può portare al risultato peggiore per entrambi. Quindi per tenere conto di
+
+169
+00:18:29,200 --> 00:18:35,520
+ciò nell'implementazione reale all'interno del protocollo BitTorrent la versione dell'algoritmo
+
+170
+00:18:35,520 --> 00:18:42,440
+tit for tat utilizzata è ovviamente un po' più avanzata della sua formulazione base. Esistono
+
+171
+00:18:42,440 --> 00:18:49,440
+infatti degli accorgimenti che puntano a mantenere un minimo di apertura verso qualsiasi nodo e questo
+
+172
+00:18:49,440 --> 00:18:55,760
+proprio per evitare situazioni di stallo in cui dei nodi si ritrovino ignorati da tutti gli altri.
+
+173
+00:18:56,320 --> 00:19:02,560
+Per fare ciò innanzitutto ogni client prova a riaprire la condivisione con cadenza periodica
+
+174
+00:19:02,560 --> 00:19:09,160
+alla ricerca di una reazione positiva anche dai nodi più avari diciamo così. In secondo luogo
+
+175
+00:19:09,160 --> 00:19:16,100
+poi il nodo battezzato come parassita non viene effettivamente disconnesso ma gli viene lasciato
+
+176
+00:19:16,100 --> 00:19:22,160
+l'accesso ad una connessione con un minimo di banda per dargli la possibilità di migliorare
+
+177
+00:19:22,160 --> 00:19:29,540
+il proprio upload e quindi riguadagnare uno status accettabile agli occhi degli altri. Infine due
+
+178
+00:19:29,540 --> 00:19:34,880
+nodi che sono in fase di scambio tendono a massimizzare i vantaggi reciproci cercando
+
+179
+00:19:34,880 --> 00:19:41,840
+l'uno nell'altro i pacchetti di cui hanno bisogno e per fare ciò estremizzano il concetto di
+
+180
+00:19:41,840 --> 00:19:49,360
+collaborazione tra i client al punto da rendere possibile per uno condividere verso l'altro anche
+
+181
+00:19:49,360 --> 00:19:55,400
+più di quanto l'altro possa ricambiare. Insomma grazie all'implementazione di questa strategia
+
+182
+00:19:55,400 --> 00:20:02,280
+TIT4TAT avanzata il protocollo BitTorrent è in grado di mantenere un proprio equilibrio e di
+
+183
+00:20:02,280 --> 00:20:09,080
+fornire un servizio funzionale ed efficiente. Tra i vari nodi della rete presi a due a due si
+
+184
+00:20:09,080 --> 00:20:16,280
+raggiunge quindi quella che viene definita efficienza di pareto cioè uno stato di equilibrio
+
+185
+00:20:16,280 --> 00:20:22,680
+in cui non ci sono ulteriori opportunità di scambio che potrebbero portare ad una situazione
+
+186
+00:20:22,680 --> 00:20:33,000
+migliore di quella corrente. Bene grazie per aver ascoltato questo episodio di pensieri in codice
+
+187
+00:20:33,000 --> 00:20:38,760
+io come al solito spero sia stato di tuo interesse e spero anche che ti sia mancato almeno quanto è
+
+188
+00:20:38,760 --> 00:20:44,880
+mancato a me. Un piccolo ringraziamento speciale va a Edoardo e Carlo che hanno continuato a
+
+189
+00:20:44,880 --> 00:20:50,320
+credere nel progetto nonostante lo stop improvviso di oltre tre mesi e che me l'hanno
+
+190
+00:20:50,320 --> 00:20:56,400
+dimostrato con le loro donazioni mensili. Ti ricordo che sul sito pensieriincodice.it trovi
+
+191
+00:20:56,400 --> 00:21:03,200
+tutti i link del progetto gruppo telegram donazioni affiliazioni eccetera e mi raccomando fai ascoltare
+
+192
+00:21:03,200 --> 00:21:09,080
+questo episodio a qualcun altro un amico un parente un conoscente un estraneo che se ognuno di noi
+
+193
+00:21:09,080 --> 00:21:14,480
+porta anche un ascoltatore in più tra una settimana siamo già il doppio. In ultimo ti
+
+194
+00:21:14,480 --> 00:21:20,600
+do appuntamento al prossimo episodio e non dimenticare mai che un informatico risolve
+
+195
+00:21:20,600 --> 00:21:23,680
+problemi a volte anche usando il computer
+

@@ -1,0 +1,2156 @@
+1
+00:00:00,000 --> 00:00:05,880
+Pensieri in codice, se mi segui da un po' lo saprai già, è un podcast nel quale io
+
+2
+00:00:05,880 --> 00:00:11,400
+ti parlo di tutti quegli argomenti che stuzzicano un po' la mia curiosità, dei quali mi va
+
+3
+00:00:11,400 --> 00:00:17,060
+di esplorare in maggior dettaglio le caratteristiche o che ancora mi interessano per via del loro
+
+4
+00:00:17,060 --> 00:00:18,060
+funzionamento.
+
+5
+00:00:18,060 --> 00:00:24,000
+A volte sono argomenti che già conosco bene e dei quali ti racconto aggiungendo esperienze
+
+6
+00:00:24,000 --> 00:00:29,940
+e riflessioni personali, altre volte sono informazioni nelle quali incappo semplicemente
+
+7
+00:00:29,940 --> 00:00:35,300
+per caso, per via del mio lavoro o dei miei interessi e che reputo però interessanti
+
+8
+00:00:35,300 --> 00:00:36,300
+da condividere.
+
+9
+00:00:36,300 --> 00:00:42,700
+Altre volte ancora, come in questo caso, sono ambiti nei quali non conosco granché ma che
+
+10
+00:00:42,700 --> 00:00:44,700
+mi piacerebbe invece approfondire.
+
+11
+00:00:44,700 --> 00:00:50,500
+E dal momento che non mi va di parlare di cose di cui non conosco, credo che, come in
+
+12
+00:00:50,500 --> 00:00:56,460
+tanti altri casi nella vita, affidarsi a qualcuno che ne sappia più di te sia sempre la scelta
+
+13
+00:00:56,460 --> 00:00:58,820
+più saggia non che quella più produttiva.
+
+14
+00:00:58,820 --> 00:01:04,420
+Ed è proprio quello che ho fatto oggi, ho invitato una persona di cui mi fido e che
+
+15
+00:01:04,420 --> 00:01:08,380
+stimo per rivolgerle un po' di domande che ho in mente.
+
+16
+00:01:08,380 --> 00:01:14,460
+A breve, quindi, scopriremo un po' insieme cosa vuol dire essere uno sviluppatore iOS.
+
+17
+00:01:14,460 --> 00:01:16,260
+Prima, però, la sigla.
+
+18
+00:01:26,460 --> 00:01:34,540
+Prima di iniziare con l'argomento di questo episodio, però, voglio condividere con te
+
+19
+00:01:34,540 --> 00:01:35,540
+una novità.
+
+20
+00:01:35,540 --> 00:01:41,900
+Da oggi, in realtà da qualche giorno ma nei podcast si dice da oggi, Pensieri in Codice
+
+21
+00:01:41,900 --> 00:01:44,700
+è partner del PHP Day.
+
+22
+00:01:44,700 --> 00:01:51,940
+Il PHP Day, o PHP Day per dirla all'italiana, per chi non lo sapesse è la conferenza per
+
+23
+00:01:51,940 --> 00:01:58,540
+la community PHP che si svolge ogni anno in Italia ben dal 2003, penso sono quasi
+
+24
+00:01:58,540 --> 00:01:59,540
+20 anni.
+
+25
+00:01:59,540 --> 00:02:05,360
+Si tratta di un evento importante a livello europeo, con talk sempre super interessanti
+
+26
+00:02:05,360 --> 00:02:08,620
+e speaker sempre disponibili e simpatici.
+
+27
+00:02:08,620 --> 00:02:16,020
+L'edizione di quest'anno, 2022, si svolgerà nei giorni 19 e 20 maggio, quindi tra pochissimo,
+
+28
+00:02:16,020 --> 00:02:20,660
+e sarà in versione ibrida, cioè sia online che in presenza nella bellissima Verona.
+
+29
+00:02:21,180 --> 00:02:26,780
+Se sei uno sviluppatore PHP o uno sviluppatore in generale e non conosci o non hai mai partecipato
+
+30
+00:02:26,780 --> 00:02:30,740
+al PHP Day, beh, oggi è arrivato il momento di rimediare.
+
+31
+00:02:30,740 --> 00:02:35,660
+In descrizione trovi il link al sito ufficiale con tutti i dettagli, mi raccomando.
+
+32
+00:02:35,660 --> 00:02:41,060
+Inoltre, per il solo fatto di essere parte della community di Pensieri in Codice hai diritto
+
+33
+00:02:41,060 --> 00:02:44,660
+al 20% di sconto sull'acquisto del biglietto di ingresso.
+
+34
+00:02:44,660 --> 00:02:51,580
+Ti basterà inserire nel form il codice sconto COMMUNITY underscore PIC con COMMUNITY scritto
+
+35
+00:02:51,580 --> 00:02:55,180
+piccolo e PIC maiuscolo, ma comunque lo trovi in descrizione.
+
+36
+00:02:55,180 --> 00:03:00,420
+E ancora, come se tutto questo non bastasse, hai anche la possibilità di vincere un biglietto
+
+37
+00:03:00,420 --> 00:03:04,740
+online omaggio, semplicemente partecipando ad un piccolo contest.
+
+38
+00:03:04,740 --> 00:03:11,140
+Se infatti hai supportato o supporterai Pensieri in Codice nella settimana tra il 10 e il 18
+
+39
+00:03:11,140 --> 00:03:14,180
+maggio, parteciperai all'estrazione.
+
+40
+00:03:14,700 --> 00:03:21,060
+Per supportare intendo scegliere tra una delle seguenti azioni, cioè lasciare una recensione
+
+41
+00:03:21,060 --> 00:03:27,900
+sulla tua app di podcast preferita, iscriverti ad uno dei servizi affiliati come Satisfay,
+
+42
+00:03:27,900 --> 00:03:33,700
+Protonmail o Todoist eccetera, oppure fare una piccola donazione, oppure tutte e tre
+
+43
+00:03:33,700 --> 00:03:35,620
+le cose insieme e avrai più chance.
+
+44
+00:03:35,620 --> 00:03:41,140
+Tutti i link di cui parlo li trovi in descrizione o sul sito pensieriincodice.it.
+
+45
+00:03:41,540 --> 00:03:48,780
+Il giorno 18, per farla nerd diciamo così, metterò insieme tutti gli identificativi
+
+46
+00:03:48,780 --> 00:03:55,380
+dei vari utenti, tipo il nickname per le recensioni o l'email per le iscrizioni eccetera, genererò
+
+47
+00:03:55,380 --> 00:04:02,460
+per ciascuno un checksum MD5 e ordinerò il tutto in ordine alfabetico, il primo classificato
+
+48
+00:04:02,460 --> 00:04:03,460
+vincerà il biglietto.
+
+49
+00:04:03,460 --> 00:04:08,940
+L'unica cosa che ti raccomando di fare per stare sicuro è inviarmi un email o un messaggio
+
+50
+00:04:08,940 --> 00:04:15,260
+su Telegram per segnalarmi la tua azione, non vorrei perdermela per via di qualche notifica
+
+51
+00:04:15,260 --> 00:04:21,340
+sfuggita o perché in alcuni casi non sono in grado di risalire alla persona che ha effettuato
+
+52
+00:04:21,340 --> 00:04:22,340
+l'azione.
+
+53
+00:04:22,340 --> 00:04:28,340
+Trovi sempre tutti i miei vari contatti sul sito pensieriincodice.it o su valeriogalano.it.
+
+54
+00:04:28,340 --> 00:04:34,780
+Bene, comunicate le notizie di oggi, passiamo all'argomento dell'episodio, la domanda alla
+
+55
+00:04:34,780 --> 00:04:40,220
+quale vorrei dare una risposta è che cosa vuol dire essere uno sviluppatore iOS?
+
+56
+00:04:40,220 --> 00:04:46,500
+Ok, lo so, magari starai pensando che cavolo di domanda è questa, oppure sei tu stesso
+
+57
+00:04:46,500 --> 00:04:52,580
+uno sviluppatore iOS e non sai bene che cosa rispondere, quindi provo a spiegare un po'
+
+58
+00:04:52,580 --> 00:04:53,980
+meglio cosa intendo.
+
+59
+00:04:53,980 --> 00:05:00,060
+Partiamo dal fatto che non tutti i programmatori sono uguali, e non parlo ovviamente delle
+
+60
+00:05:00,060 --> 00:05:05,980
+singole persone che hanno chiaramente ciascuna le proprie caratteristiche individuali, ma
+
+61
+00:05:05,980 --> 00:05:12,820
+mi riferisco proprio alla figura professionale del programmatore, o ancora meglio dello sviluppatore,
+
+62
+00:05:12,820 --> 00:05:18,500
+non esiste una sola ma una molteplicità, ciascuna con le proprie competenze, abilità
+
+63
+00:05:18,500 --> 00:05:19,500
+e caratteristiche.
+
+64
+00:05:19,500 --> 00:05:26,460
+E queste peculiarità sono tantissime e spesso anche molto differenti fra loro, rendendo questa
+
+65
+00:05:26,460 --> 00:05:29,020
+professionalità molto eterogenea.
+
+66
+00:05:29,020 --> 00:05:34,940
+Ciò vale perfino per sviluppatori che lavorano nello stesso ambito di specializzazione e figuriamoci
+
+67
+00:05:34,940 --> 00:05:37,660
+per quelli che lavorano in campi diversi fra loro.
+
+68
+00:05:37,660 --> 00:05:43,660
+Ad esempio, come saprai, visto che ormai l'ho ripetuto tante volte, io sono uno sviluppatore
+
+69
+00:05:43,660 --> 00:05:51,020
+web, in particolar modo esperto nello sviluppo di back-end con tecnologia PHP, ciò non vuol
+
+70
+00:05:51,020 --> 00:05:57,820
+dire che disdegno lo sviluppo di front-end o con altre tecnologie, Node.js, JavaScript,
+
+71
+00:05:57,820 --> 00:06:04,500
+ho perfino pubblicato episodi su Deno, Yugo, Wordpress, ma se devo pensare a me dal punto
+
+72
+00:06:04,500 --> 00:06:10,140
+di vista professionale, sicuramente le prime parole che mi vengono in mente sono PHP e
+
+73
+00:06:10,140 --> 00:06:11,140
+back-end.
+
+74
+00:06:11,140 --> 00:06:17,060
+E in realtà a queste vanno poi aggiunte altre due parole che contraddistinguono invece il
+
+75
+00:06:17,060 --> 00:06:21,500
+mio modo di lavorare e sono consulente e freelance.
+
+76
+00:06:21,500 --> 00:06:27,260
+Prendendo queste quattro parole, termini, caratteristiche, chiamale come vuoi, mettendole
+
+77
+00:06:27,260 --> 00:06:34,020
+insieme e shakerando, si ottiene me, la mia figura professionale, il mio lavoro almeno
+
+78
+00:06:34,020 --> 00:06:36,940
+per la maggior parte del tempo in cui lo svolgo.
+
+79
+00:06:36,940 --> 00:06:43,820
+Ciò significa che in generale io ho un mio modo di approcciarmi allo sviluppo, un mio
+
+80
+00:06:43,820 --> 00:06:49,700
+modo di elaborare la risoluzione dei problemi o degli strumenti che conosco più o meno
+
+81
+00:06:49,700 --> 00:06:56,140
+bene, so bene o male a quali problemi vado incontro quando affronto un nuovo progetto,
+
+82
+00:06:56,140 --> 00:06:59,780
+di cosa potrei avere bisogno e quali sono i miei limiti.
+
+83
+00:06:59,780 --> 00:07:05,980
+Ma vuol dire anche che devo lavorare oltre che alla progettazione e alla realizzazione
+
+84
+00:07:05,980 --> 00:07:12,980
+del codice, anche alla ricerca dei clienti, ad esempio, o all'amministrazione fiscale
+
+85
+00:07:13,020 --> 00:07:18,580
+o al supporto tecnico. Vuol dire che devo essere ben conscio che ogni mia consulenza
+
+86
+00:07:18,580 --> 00:07:24,340
+ha una durata prestabilita, oppure, in caso contrario, potrebbe comunque terminare, certo,
+
+87
+00:07:24,340 --> 00:07:29,140
+con un preavviso, ma è un concetto molto più fragile, diciamo così, di un rapporto
+
+88
+00:07:29,140 --> 00:07:35,260
+di lavoro dipendente. E poi devo sapere che potrei dovermi cimentare con attività di
+
+89
+00:07:35,260 --> 00:07:41,820
+recupero crediti, di contrattazione, di rimodulazione degli accordi. Insomma, per farla breve, essere
+
+90
+00:07:41,820 --> 00:07:47,660
+uno sviluppatore, nel mio caso, vuol dire un po' tutte queste cose, certo in proporzioni
+
+91
+00:07:47,660 --> 00:07:51,340
+ovviamente diverse, ma tutte in un unico calderone.
+
+92
+00:07:51,340 --> 00:07:57,420
+E dunque la mia curiosità riguarda essenzialmente come traslare tutto questo ragionamento nel
+
+93
+00:07:57,420 --> 00:08:04,700
+mondo Apple, un mondo che, almeno ad occhi da profano quale io sono, è fatto di tante
+
+94
+00:08:04,700 --> 00:08:11,260
+regole, tante costruzioni e tante limitazioni, ma anche tante possibilità interessanti
+
+95
+00:08:11,260 --> 00:08:14,700
+che in altri ambiti non sono così facilmente accessibili.
+
+96
+00:08:14,700 --> 00:08:20,420
+Quindi, come ti anticipavo, oggi ho invitato a parlarne qui con noi una persona che di
+
+97
+00:08:20,420 --> 00:08:26,900
+questi argomenti ha grande esperienza, uno sviluppatore iOS, ma anche un amico e una
+
+98
+00:08:26,900 --> 00:08:32,540
+persona dalle mille sfaccettature. Sicuramente me l'avrai già sentito nominare, perché
+
+99
+00:08:32,540 --> 00:08:37,460
+tra le sue tante attività si è occupato anche del sound design di Pensieri in Codice,
+
+100
+00:08:37,460 --> 00:08:42,700
+ha partecipato all'ultimo episodio speciale di Natale ed è anche molto attivo nel nostro
+
+101
+00:08:42,700 --> 00:08:49,740
+gruppo Telegram. Lui è Alex Racuglia e, oltre ad essere podcaster e regista, gestisce anche
+
+102
+00:08:49,740 --> 00:08:56,420
+una piccola ma prolifica software house chiamata Ulti.media. Ciao Alex, benvenuto e grazie
+
+103
+00:08:56,420 --> 00:08:57,700
+ad aver accettato l'invito.
+
+104
+00:08:57,700 --> 00:09:01,900
+Ma grazie a te, è sempre un piacere avere a che fare con te e soprattutto per me è
+
+105
+00:09:01,900 --> 00:09:05,820
+un onore essere qui nel tuo podcast che ascolto avidamente tutte le volte che esce.
+
+106
+00:09:06,620 --> 00:09:12,140
+Ed io ti ringrazio ancora e non posso che esserne felice perché sai benissimo quanta
+
+107
+00:09:12,140 --> 00:09:18,740
+stima ho di te. Ma iniziamo subito con l'inquadrare la tua figura professionale. Spiegaci un po'
+
+108
+00:09:18,740 --> 00:09:22,660
+di cosa ti occupi e di cosa si occupa la tua Ulti.media.
+
+109
+00:09:22,660 --> 00:09:30,420
+Allora, mi inquadro velocemente come persona. Io ho studiato informatica alle superiori,
+
+110
+00:09:30,420 --> 00:09:34,220
+ingegneria informatica all'università e ho iniziato a lavorare durante l'università
+
+111
+00:09:34,220 --> 00:09:42,820
+per una piccola software house di Milano che si occupava di multimedia. Il mio sogno
+
+112
+00:09:42,820 --> 00:09:49,420
+da bambino è sempre stato fare video, fare cinema, ma non avevo la possibilità ai tempi
+
+113
+00:09:49,420 --> 00:09:53,380
+degli anni Ottanta di avere una telecamera, una cosa da ricchi ricchi ricchi e non c'erano
+
+114
+00:09:53,380 --> 00:09:58,540
+scuole di professionali per fare cinema. Per cui ho fatto l'informatico e mi sono
+
+115
+00:09:58,540 --> 00:10:03,260
+anche divertito tantissimo. In questa software house hanno iniziato a avere necessità di
+
+116
+00:10:03,260 --> 00:10:08,740
+fare piccole animazioni e piccoli video e nell'arco di tre mesi mi sono ritrovato a
+
+117
+00:10:08,740 --> 00:10:12,780
+fare solo video dalla mattina alla sera fino a diventare regista di spot televisivi, video
+
+118
+00:10:12,780 --> 00:10:22,620
+promozionali ecc. Ma nel tempo libero, dato che sono uno sviluppatore, avendo un po'
+
+119
+00:10:22,620 --> 00:10:27,720
+di skill informatici, mi sono sempre sviluppato dei piccoli tool interni che mi aiutassero
+
+120
+00:10:27,720 --> 00:10:32,700
+nel workflow di produzione del video. Perché uno potrebbe pensare che fare video è un'attività
+
+121
+00:10:32,700 --> 00:10:37,620
+molto artistica, ma in realtà la parte artistica rappresenta l'uno per mile del tempo e il resto
+
+122
+00:10:37,620 --> 00:10:43,660
+del tempo è ingegneria, anche lì. Di conseguenza se ci sono strumenti che aiutano nel workflow,
+
+123
+00:10:43,660 --> 00:10:48,540
+benvengano. Alcuni me li sono sviluppati io e qualche anno fa, tre o quattro anni fa,
+
+124
+00:10:48,540 --> 00:10:52,300
+ho iniziato a dire ma sai che c'è? Ste cose sono talmente carine che potrei anche pensare di
+
+125
+00:10:52,300 --> 00:10:57,380
+venderle. A un certo punto ho trovato il dominio giusto che era Ulti.media, cioè con l'estensione
+
+126
+00:10:57,380 --> 00:11:02,340
+punto media, e mi sono buttato. Dire che ho fondato una software house è dire tanto, però
+
+127
+00:11:02,340 --> 00:11:07,780
+ho cominciato a occuparmi anche della commercializzazione di queste app. Nella maggior
+
+128
+00:11:07,780 --> 00:11:14,660
+parte dei casi sono app per macOS che integrano il lavoro di chi fa montaggio video, però non
+
+129
+00:11:14,660 --> 00:11:18,460
+disegnando anche la parte audio. Infatti la primissima app che ho sviluppato, che si chiama
+
+130
+00:11:18,460 --> 00:11:22,620
+PodCleaner, si chiamava perché adesso non c'è più, c'è un PodCleaner Pro che è la terza versione,
+
+131
+00:11:23,580 --> 00:11:30,380
+era essenzialmente un'app pensata per pulire l'audio, per aiutare il mio lavoro, il mio hobby
+
+132
+00:11:30,380 --> 00:11:37,020
+come podcaster, perché anch'io faccio podcast. Nel corso degli anni ho sviluppato alcune app,
+
+133
+00:11:37,020 --> 00:11:43,580
+alcune di successo tra virgolette, alcune un po' meno. Diciamo che però l'obiettivo di questa
+
+134
+00:11:43,580 --> 00:11:47,860
+software house è quello di aiutare la gente che fa il mio lavoro, il mio primo lavoro,
+
+135
+00:11:48,300 --> 00:11:54,460
+il montatore video, il regista, chi si occupa di post-produzione, togliendogli le castagne
+
+136
+00:11:54,460 --> 00:12:01,380
+dal fuoco, diciamo aiutando le persone nel workflow. Come ti ho detto, la creatività è
+
+137
+00:12:01,380 --> 00:12:06,260
+l'uno per mille, il resto è ingegneria e molto spesso sono anche lavori ripetitivi. Le mie app
+
+138
+00:12:06,260 --> 00:12:14,020
+cercano di aiutare l'utente, cioè il montatore, nei lavori ripetitivi cercando di automatizzarli.
+
+139
+00:12:14,140 --> 00:12:20,100
+Questo è l'inquadramento di quello che io faccio. Ho sviluppato tanto per macOS perché
+
+140
+00:12:20,100 --> 00:12:26,740
+sono un utente Mac dal 1993, pensate, before it was cool. Di conseguenza ho anche sviluppato un
+
+141
+00:12:26,740 --> 00:12:34,020
+po' di skill per iOS e negli ultimi anni ho sviluppato più come sviluppatore dipendente,
+
+142
+00:12:34,020 --> 00:12:38,180
+non indipendente, cioè proprio al soldo di una software house, cioè della software house per
+
+143
+00:12:38,180 --> 00:12:43,060
+cui io lavoro ancora, che oltre a fare i video comunque continua a fare informatica. Per questa
+
+144
+00:12:43,060 --> 00:12:50,460
+software house ho sviluppato due app corporate interne iOS e nel frattempo però ne ho commercializzati
+
+145
+00:12:50,460 --> 00:12:57,140
+due o tre per iOS sull'App Store, app che hanno avuto fortune alterne, che è un modo carino per
+
+146
+00:12:57,140 --> 00:13:01,300
+dire che non è che abbiano avuto un grande successo. Diciamo che alla fine si ripagano
+
+147
+00:13:01,300 --> 00:13:11,140
+l'abbonamento annuale al registro degli sviluppatori di Apple, però il mio core business adesso è
+
+148
+00:13:11,180 --> 00:13:15,940
+comunque sempre quello di Mac, anche se conosco abbastanza bene il mercato di iOS. Perfetto,
+
+149
+00:13:15,940 --> 00:13:21,900
+chiarissimo. Senti, io ti ho invitato a parlare di questo argomento perché almeno dall'esterno
+
+150
+00:13:21,900 --> 00:13:28,500
+ho la percezione che il tuo rapporto con lo sviluppo iOS sia, diciamo così, a tutto tondo.
+
+151
+00:13:28,500 --> 00:13:34,900
+Tu progetti e sviluppi il codice chiaramente, ma intrattieni anche il rapporto con Apple,
+
+152
+00:13:34,900 --> 00:13:40,700
+con i clienti, gestisci il supporto, svolgi un po' in prima persona tutte quelle attività che
+
+153
+00:13:40,740 --> 00:13:47,380
+svolgiamo noi indipendenti o freelancer, come vogliamo definirci, giusto? E come si configurano
+
+154
+00:13:47,380 --> 00:13:53,580
+tutti questi aspetti quando si ha a che fare con un gigante come Apple, con il suo marketplace che
+
+155
+00:13:53,580 --> 00:14:00,260
+notoriamente è piuttosto costrittivo nei confronti degli sviluppatori? Vorrei iniziare questa risposta
+
+156
+00:14:00,260 --> 00:14:06,140
+con una citazione, faccio una piccola digressione. Non so se tu sai chi sia Walter
+
+157
+00:14:06,180 --> 00:14:11,380
+March. Walter March è un montatore, uno dei più grandi montatori della storia del cinema. Credo
+
+158
+00:14:11,380 --> 00:14:17,300
+che abbia vinto anche diversi Oscar. E' stato uno dei pochi montatori, uno dei primi, ad utilizzare
+
+159
+00:14:17,300 --> 00:14:25,100
+Final Cut, che è un'applicazione di Apple per il montaggio video. Final Cut dieci anni fa ha avuto
+
+160
+00:14:25,100 --> 00:14:30,220
+un restyling completo, cioè l'hanno riscritta da zero, perché era un'app che aveva una codebase molto
+
+161
+00:14:30,220 --> 00:14:35,140
+vecchia eccetera eccetera. L'hanno riscritta da zero e l'hanno resa un'applicazione molto più orientata
+
+162
+00:14:35,140 --> 00:14:40,020
+per gli youtuber, per quel tipo di mercato, cioè meno per il feature film, cioè per il grande
+
+163
+00:14:40,020 --> 00:14:45,380
+cinema, e molto più per il video più agile, mettiamola così. E allora in un'intervista hanno
+
+164
+00:14:45,380 --> 00:14:52,260
+detto a Walter March, che insomma cosa ne pensa di Apple? Apple ci vuole bene ma non ci ama. Anzi,
+
+165
+00:14:52,260 --> 00:14:58,620
+a noi a Apple piacciamo ma non ci ama. Cioè per la serie, noi siamo... a Apple noi piacciamo perché
+
+166
+00:14:58,620 --> 00:15:03,100
+siamo degli acquirenti, ma non ci vuole bene, non ci ama al 100%. E' un po' quello che noi
+
+167
+00:15:03,620 --> 00:15:10,620
+sviluppatori iOS pensiamo di Apple nel rapporto come sviluppatori. Cioè Apple ha come primo
+
+168
+00:15:10,620 --> 00:15:16,780
+focus, vabbè il primo focus di Apple è fare soldi naturalmente. Il secondo è il benessere dei suoi
+
+169
+00:15:16,780 --> 00:15:20,740
+clienti, i clienti paganti, quelli che comprano iPhone, quelli che comprano i Mac, quelli che
+
+170
+00:15:20,740 --> 00:15:26,860
+comprano le app. L'ultimo anello di questa catena del valore sono gli sviluppatori che sono trattati
+
+171
+00:15:26,860 --> 00:15:31,460
+abbastanza male. Le cose stanno migliorando per certi versi, considera che fino a due anni fa
+
+172
+00:15:31,540 --> 00:15:37,020
+c'era una survey su internet che monitorava lo stato della documentazione delle librerie di
+
+173
+00:15:37,020 --> 00:15:45,700
+Apple e praticamente fino a due anni fa il 50% delle delle app di Apple era non documentato,
+
+174
+00:15:45,700 --> 00:15:49,780
+cioè uno doveva andare a tentativi cercando di capire come funzionavano. Adesso le cose
+
+175
+00:15:49,780 --> 00:15:52,580
+sono leggermente meglio, stanno facendo un sacco di lavoro da questo punto di vista,
+
+176
+00:15:52,580 --> 00:15:59,660
+però... ed è una forse un'eredità di Steve Jobs stesso. Cioè Apple ha sempre detto noi come Apple
+
+177
+00:15:59,660 --> 00:16:05,100
+dobbiamo dare il miglior servizio al cliente, cioè fare tutto noi, e quando si aprono agli
+
+178
+00:16:05,100 --> 00:16:10,820
+sviluppatori di terze parti, Apple vede gli sviluppatori di terze parti come terzi incomodi,
+
+179
+00:16:10,820 --> 00:16:16,820
+come dire, questi perché sono qui a rompere le scatole, a inquinare la nostra piattaforma? Per
+
+180
+00:16:16,820 --> 00:16:25,100
+cui il supporto è un po' è un po' faticoso. Io per primo dico che la tariffa del 30%, perché una
+
+181
+00:16:25,100 --> 00:16:30,060
+volta tutto quello che passava attraverso lo store di Apple, il 30% se lo tenevano loro,
+
+182
+00:16:30,060 --> 00:16:35,260
+adesso è passato al 15% se non sei troppo grande, dove il non troppo grande significa che non guadagni
+
+183
+00:16:35,260 --> 00:16:41,420
+almeno un milione di dollari all'anno, grazie al cielo. Praticamente io ho sempre detto per me
+
+184
+00:16:41,420 --> 00:16:47,420
+il 30% non è un grande vincolo, mi va benissimo, anzi sono ben contento, se tu ti occupi di arginar
+
+185
+00:16:47,420 --> 00:16:54,180
+la pirateria e tutto quanto mi va anche bene come come strumento. Il problema è che l'App Store di
+
+186
+00:16:54,180 --> 00:17:00,820
+Apple è gestito in maniera un po' barbina, cioè il principio per cui qualsiasi cosa tu pubblichi
+
+187
+00:17:00,820 --> 00:17:06,060
+sullo store deve essere comunque recensito da uno di loro mi va anche bene, se questa recensione
+
+188
+00:17:06,060 --> 00:17:14,020
+fosse omogenea per tutti gli sviluppatori, se avesse gli stessi parametri di valutazione,
+
+189
+00:17:14,020 --> 00:17:19,220
+cioè nel senso se lo store fosse veramente un luogo protetto dove i protetti sono sia gli utenti che
+
+190
+00:17:19,220 --> 00:17:23,180
+gli sviluppatori andrebbe bene, ma ultimamente non sono protetti né gli utenti né gli sviluppatori,
+
+191
+00:17:23,180 --> 00:17:28,220
+perché ci sono un sacco di app di scam che vengono recensite internamente come positive,
+
+192
+00:17:28,220 --> 00:17:38,860
+per cui magari ti trovi il clone di Wordle che costa 12 dollari al mese ed è palesemente uno
+
+193
+00:17:38,860 --> 00:17:43,140
+scam perché non è l'applicazione vera e propria, però è un clone e passa eccetera eccetera perché
+
+194
+00:17:43,140 --> 00:17:47,300
+a volte sembra quasi che queste recensioni le facciano gli ultimi degli stagisti che devono
+
+195
+00:17:47,300 --> 00:17:51,940
+solo seguire le tre indicazioni base, se queste tre indicazioni base sono superate anche se c'è
+
+196
+00:17:52,260 --> 00:17:59,220
+l'elefante in una cristalleria e nessuno se ne accorge, nessuno lo dice e questi fanno casino.
+
+197
+00:17:59,220 --> 00:18:06,180
+Il motivo per cui Epic se n'è andata dall'App Store è un motivo puramente economico, loro hanno
+
+198
+00:18:06,180 --> 00:18:12,900
+detto noi vogliamo più del 30%, il motivo per cui molti sviluppatori non sono contenti di quelli
+
+199
+00:18:12,900 --> 00:18:19,460
+piccoli, considera che mediamente un'applicazione nell'App Store quando raggiunge 100 dollari è
+
+200
+00:18:19,540 --> 00:18:25,340
+tanto, la maggior parte delle app nell'App Store sono veramente un grande fallimento di mercato e
+
+201
+00:18:25,340 --> 00:18:30,300
+i piccoli sviluppatori, gli sviluppatori indipendenti sono arrabbiati perché voi dite di avere un
+
+202
+00:18:30,300 --> 00:18:34,620
+sistema chiuso perché così è protetto e sicuro eccetera eccetera eccetera ma non è nemmeno protetto
+
+203
+00:18:34,620 --> 00:18:44,980
+e sicuro per cui c'è una sorta di grande contrasto, di grande promesse non mantenute che non fanno bene
+
+204
+00:18:44,980 --> 00:18:50,580
+né l'app, né gli sviluppatori, né gli utenti finali. Detto questo è un sistema che funziona
+
+205
+00:18:50,580 --> 00:18:58,500
+abbastanza ma necessiterebbe di avere una visione esterna, cioè per farti capire la
+
+206
+00:18:58,500 --> 00:19:04,340
+ricerca delle app nell'App Store è complicatissima, difficilmente trovi quello che stai cercando ma
+
+207
+00:19:04,340 --> 00:19:09,460
+trovi qualcosa qualcun altro che ha investito un sacco di soldi in advertising eccetera eccetera
+
+208
+00:19:09,460 --> 00:19:14,500
+con un meccanismo molto più opaco e molto meno funzionante di quello dell'advertising di Google
+
+209
+00:19:14,500 --> 00:19:20,260
+che invece funziona molto bene e la ricerca nel Play Store di Google è molto ma molto ma molto più
+
+210
+00:19:20,260 --> 00:19:26,900
+più ottimizzata. Quello che fanno gli sviluppatori, quello che faccio io è prendere atto di
+
+211
+00:19:26,900 --> 00:19:32,700
+questa cosa e dire ok nel mondo iOS funziona così, lo prendo per quello che è, mi rendo conto che ci
+
+212
+00:19:32,700 --> 00:19:36,940
+sono tutti questi vincoli, che alcuni vincoli sono scritti, alcuni vincoli sono così perché
+
+213
+00:19:36,940 --> 00:19:42,180
+sono così e uno fa la valutazione, mi conviene o non mi conviene, poi uno dice vabbè mi conviene
+
+214
+00:19:42,180 --> 00:19:47,620
+eccetera eccetera. Devo anche essere sincero il 99 per cento delle mie revenue arriva dal
+
+215
+00:19:47,620 --> 00:19:55,100
+mercato Mac e non dalle iOS, non dai telefoni o dagli iPad e io essenzialmente nel
+
+216
+00:19:55,100 --> 00:20:01,620
+mondo Mac vendo direttamente le app nel mio store, cioè i Mac sono meno blindati dal punto di vista
+
+217
+00:20:01,620 --> 00:20:08,220
+della possibilità di installare app con degli store esterni o abbastanza liberamente, io faccio
+
+218
+00:20:08,300 --> 00:20:12,860
+di questa cosa ma non tanto perché non voglio dare il 15 per cento di quello che guadagno
+
+219
+00:20:12,860 --> 00:20:17,860
+a Apple, io sarei ben contento di farlo se mi offrisse un servizio di una certa qualità però
+
+220
+00:20:17,860 --> 00:20:25,220
+le applicazioni per Mac che passano dallo store devono sottostare un sacco di limitazioni e di
+
+221
+00:20:25,220 --> 00:20:31,900
+funzionalità e di policy, nel senso il fatto che magari aggiorno l'app e poi ci vogliono 3, 4, 5,
+
+222
+00:20:31,900 --> 00:20:37,380
+6, 7 giorni perché questa recensita venga pubblicata e infine le applicazioni del
+
+223
+00:20:37,380 --> 00:20:42,980
+Mac App Store sono craccate nell'arco di 12 secondi dalla maggior parte dei cracker, degli
+
+224
+00:20:42,980 --> 00:20:50,460
+hacker del mondo per cui è abbastanza un po' come dire lo fai se hai un mercato di base talmente
+
+225
+00:20:50,460 --> 00:20:57,740
+largo che avere delle copie craccate non ti sposta a qualcosa, a me invece sposterebbe ed è
+
+226
+00:20:57,740 --> 00:21:02,900
+successo perché me le hanno craccate in passato per cui tendenzialmente se riesco ad evitare lo
+
+227
+00:21:02,900 --> 00:21:07,500
+store lo evito soprattutto però per il fatto che le applicazioni nello store hanno un sacco di
+
+228
+00:21:07,500 --> 00:21:14,340
+limitazioni di policy che hanno a che vedere con la privacy, con la sicurezza è vero ma a volte
+
+229
+00:21:14,340 --> 00:21:18,980
+anche veramente con una grande rottura di scatole, non sono come quello che dice sono lacce lacciuoli,
+
+230
+00:21:18,980 --> 00:21:27,860
+la realtà è che le applicazioni del Mac App Store devono stare dentro una sandbox che non mi
+
+231
+00:21:27,860 --> 00:21:35,860
+consente di fare chiamate ad applicazioni a linea di comando oppure che per poter accedere a certe
+
+232
+00:21:35,860 --> 00:21:40,640
+cartelle del sistema necessita non soltanto di chiedere l'autorizzazione dell'utente ed è una
+
+233
+00:21:40,640 --> 00:21:45,380
+cosa giustissima ma anche di richiedere delle delle policy di valutazione diverse per cui
+
+234
+00:21:45,380 --> 00:21:50,780
+l'applicazione deve già partire con Apple mi concedi di essere di fare questo questo quest'altro
+
+235
+00:21:50,780 --> 00:21:55,020
+Apple può dire no non c'ho voglia in qualsiasi momento anche da una versione all'altra magari ti
+
+236
+00:21:55,020 --> 00:22:00,000
+autorizza la versione 1.0 e la versione 1.1 sai che c'è stamattina mi sono svegliato così e non lo
+
+237
+00:22:00,000 --> 00:22:06,540
+faccio per cui se posso l'App Store di Mac lo evito come la peste ma più che altro per questi motivi
+
+238
+00:22:06,540 --> 00:22:14,220
+e invece queste notizie che fioccano ultimamente in casa Apple non lo so la nuova gestione della
+
+239
+00:22:14,220 --> 00:22:20,260
+privacy l'apertura ai pagamenti al di fuori dello store ufficiale questi cambiamenti come li vive
+
+240
+00:22:20,380 --> 00:22:28,420
+un indipendente come influiscono effettivamente sul tuo lavoro allora considera che io sono uno
+
+241
+00:22:28,420 --> 00:22:34,860
+sviluppatore molto indipendente il cui core business sono applicazioni che fanno cose e non
+
+242
+00:22:34,860 --> 00:22:40,780
+servizi che fanno cose che sono due valutazioni molto diverse sai servizi sono anche avvantaggiati
+
+243
+00:22:40,780 --> 00:22:47,220
+da Apple stessa perché dice il servizio significa che tu ti abboni a questo servizio e di conseguenza
+
+244
+00:22:47,220 --> 00:22:52,540
+c'è uno stream di revenue continuo e di conseguenza le app che prevedono un abbonamento
+
+245
+00:22:52,540 --> 00:22:57,700
+sono avvantaggiate le mie sono app che sono tendenzialmente pensate per ti piace quello
+
+246
+00:22:57,700 --> 00:23:02,900
+che fa provalo per 8 giorni se ti piace se sei contento allora me la compri buyout cioè una
+
+247
+00:23:02,900 --> 00:23:08,100
+volta per tutte che è un modello di business che piace moltissimo agli utenti un po meno
+
+248
+00:23:08,100 --> 00:23:13,820
+allo sviluppatori però ti devo dire che personalmente a me non per adesso non mi sta dispiacendo per
+
+249
+00:23:13,900 --> 00:23:19,220
+chiusa si apre una parentesi il ciclo di vita delle app delle mie app di circa due tre anni
+
+250
+00:23:19,220 --> 00:23:24,980
+significa che tutti gli aggiornamenti intermedi e di solito ce ne sono tantissimi sono gratuiti
+
+251
+00:23:24,980 --> 00:23:30,860
+le major release e di solito sono dei grandi grandi grandi ridisegni dell'app sono a pagamento ma
+
+252
+00:23:30,860 --> 00:23:35,180
+prevedo comunque una un costo di upgrade cioè nel senso non la paghi da zero ma paghi soltanto
+
+253
+00:23:35,180 --> 00:23:42,940
+l'incremento un po come si faceva tanto tempo fa su sul pc è presente infatti i metodi di
+
+254
+00:23:42,940 --> 00:23:47,900
+cambiamento alternativi adesso sono se dipendessi da Apple non lo farebbero mai proprio ma neanche
+
+255
+00:23:47,900 --> 00:23:51,940
+con una pistola puntata alla testa la pistola puntata alla testa ce l'hanno perché certi
+
+256
+00:23:51,940 --> 00:23:59,540
+governi hanno certe certe istituzioni hanno detto ho bisogno questa roba qui non mi va bene e allora
+
+257
+00:23:59,540 --> 00:24:04,700
+Apple ha detto vabbè facciamo a modo tuo per dirti in in olanda se non sbaglio le applicazioni
+
+258
+00:24:04,700 --> 00:24:10,380
+di appuntamenti come potrebbe essere miti che quelli per dire devo devo trovare un compagno di
+
+259
+00:24:10,380 --> 00:24:16,260
+vita un compagno solo per una ciulata devono aprire anche a pagamenti terzi Apple cosa ha
+
+260
+00:24:16,260 --> 00:24:22,260
+detto sai che c'è va benissimo però noi dobbiamo avere un minimo un minimo di soldi di percentuale
+
+261
+00:24:22,260 --> 00:24:28,620
+per comunque gestire questa cosa e sai cosa han detto i pagamenti sono al 30 per cento di base
+
+262
+00:24:28,620 --> 00:24:32,660
+cioè indipendentemente anche se sei piccolo non c'è più il 15 per cento ma il 30 per cento di
+
+263
+00:24:32,660 --> 00:24:41,020
+quello che passa e di il 30 per cento è il 27 se lo tiene Apple e il 3 lo dà al al alente terzo
+
+264
+00:24:41,020 --> 00:24:45,740
+che dovrebbe beccarsi soldi capisci che a questo punto è un po come dire sì sì trovata le leggi
+
+265
+00:24:45,740 --> 00:24:52,740
+ha provato a leggere c'è trovato l'inganno e lo stesso diceva qualcuno c'ha imposto delle regole
+
+266
+00:24:52,740 --> 00:24:57,220
+ma siamo tanto le applichiamo modo nostro per cui io credo che questi cambiamenti arriveranno
+
+267
+00:24:57,220 --> 00:25:04,220
+nell'arco di anni e non di mesi e gli sviluppatori medi guardano questa cosa un po come dire è una
+
+268
+00:25:04,220 --> 00:25:10,660
+partita che non ci riguarda cioè comunque sarà una partita che riguarderà epic mega games riguarderà
+
+269
+00:25:10,660 --> 00:25:16,940
+netflix riguarderà spotify riguarderà questi giganti che che sono aziende da miliardi di
+
+270
+00:25:16,940 --> 00:25:23,340
+dollari noi che stiamo lì a contare 5 euro li guardiamo ma è una guerra tra una guerra loro
+
+271
+00:25:23,340 --> 00:25:28,020
+non non ci riguarda magari tutti faranno cercheranno di fare leva sui piccoli perché siamo
+
+272
+00:25:28,020 --> 00:25:33,620
+in tanti e magari la nostra opinione di massa potrebbe contare ma alla fine infine non c'è
+
+273
+00:25:33,620 --> 00:25:38,260
+guardiamo questa cosa ma è una cosa che non veramente non ci riguarda è un po come guarda
+
+274
+00:25:38,260 --> 00:25:44,420
+come il mercato dell'energia il mercato delle dei trasporti il mercato delle delle infrastrutture
+
+275
+00:25:44,420 --> 00:25:49,060
+sono cose che se il cittadino può in qualche modo influire ma spesso volentieri si tratta
+
+276
+00:25:49,060 --> 00:25:56,140
+di guerre che vengono combattute in altri piani capito e invece altra curiosità completamente
+
+277
+00:25:56,140 --> 00:26:02,420
+diversa scendiamo un po nel dettaglio dello sviluppo del codice in casa Apple come il
+
+278
+00:26:02,420 --> 00:26:09,260
+rapporto dello sviluppatore con la documentazione ufficiale e con il resto della community per
+
+279
+00:26:09,260 --> 00:26:17,940
+capirci quando io sviluppo in php ad esempio o dei punti di riferimento ufficiali e di un certo
+
+280
+00:26:17,980 --> 00:26:24,100
+peso diciamo così presso i quali vado a cercare determinate informazioni la documentazione
+
+281
+00:26:24,100 --> 00:26:30,580
+ufficiale del linguaggio dei framework oppure alcuni siti o personaggi molto conosciuti
+
+282
+00:26:30,580 --> 00:26:38,060
+nell'ambiente ma a volte faccio anche molto uso banalmente di duck duck go il quale in buona
+
+283
+00:26:38,060 --> 00:26:43,140
+parte dei casi mi riporta semplicemente su stackoverflow come funziona invece questo
+
+284
+00:26:43,140 --> 00:26:50,940
+aspetto per un dev ios è una bellissima domanda e la risposta è molto semplice allora la
+
+285
+00:26:50,940 --> 00:26:56,580
+documentazione è prettamente scritta secondo me per certi versi è ricca dal punto di vista che
+
+286
+00:26:56,580 --> 00:27:03,420
+ti dice tutte le api che ci sono in alcuni casi è abbastanza carente negli ultimi tempi stanno
+
+287
+00:27:03,420 --> 00:27:09,380
+facendo un grandissimo lavoro di armonizzazione anche di creare degli esempi ma secondo me sia
+
+288
+00:27:09,380 --> 00:27:15,060
+ancora indietro su molte tecnologie di base c'è le tecnologie introdotte recentemente hanno
+
+289
+00:27:15,060 --> 00:27:22,420
+dell'ottima documentazione tecnologie che magari sono state introdotte cinque dieci anni fa hanno
+
+290
+00:27:22,420 --> 00:27:29,260
+un sacco di mancanze per dirti tutta l'infrastruttura audio video audio e video che è stata sviluppata
+
+291
+00:27:29,260 --> 00:27:33,380
+pensa in te con un altro linguaggio di programmazione per cui ha delle api anche abbastanza
+
+292
+00:27:33,380 --> 00:27:42,020
+vetuste e quella è molto difficile da recuperare da parte di Apple nativa bisogna riconoscere che
+
+293
+00:27:42,020 --> 00:27:47,220
+appo sta facendo un buon lavoro di semplificazione di entry level per certi versi ma anche di un
+
+294
+00:27:47,220 --> 00:27:52,780
+c'è per il per l'entry level anche per il livello medio perché ogni anno a giugno c'è la conferenza
+
+295
+00:27:52,780 --> 00:27:57,740
+mondiale degli sviluppatori e negli ultimi due anni dato che c'è stata la pandemia questa conferenza
+
+296
+00:27:57,740 --> 00:28:02,420
+non è più live ma è tutto completamente registrata il che significa che ci sono dei
+
+297
+00:28:02,420 --> 00:28:08,900
+video pre pre registrati prima erano tutti la live di solito sono 100 150 sessioni sessioni
+
+298
+00:28:08,900 --> 00:28:14,980
+che durano da 10 minuti all'ora che esplorano dei singoli dei singoli task c'è nel senso cosa c'è
+
+299
+00:28:14,980 --> 00:28:18,220
+di nuovo in questo linguaggio cosa cosa c'è di nuovo in questa api cosa c'è di nuovo in
+
+300
+00:28:18,220 --> 00:28:24,540
+l'audio cioè ci sono un sacco di difficile quelle dell'anno vengono vengono sviscerate e i video
+
+301
+00:28:24,540 --> 00:28:29,620
+sono effettivamente sono molto belli molto ricchi e questi video sono a disposizione c'è tutta la
+
+302
+00:28:29,620 --> 00:28:34,300
+trascrizione e di questi video ci sono degli esempi veramente fatti bene cioè il codice si
+
+303
+00:28:34,300 --> 00:28:42,020
+può scaricare documentatissimo molto ricco e molto è molto facile se lasciamo perdere i first party
+
+304
+00:28:42,020 --> 00:28:51,180
+cioè poi ci sono due o tre guru diciamo che sono che sono veramente dei dei delle grandissime persone
+
+305
+00:28:51,180 --> 00:28:55,620
+che hanno sviluppato hanno sviluppato il loro business sulla comunicazione sul sull'insegnare
+
+306
+00:28:55,620 --> 00:29:02,540
+e tre o quattro ti metterò ti darò il link da mettere nella nota dell'episodio che hanno
+
+307
+00:29:02,540 --> 00:29:08,100
+nella maggior parte dei casi sono corsi gratuiti in alcuni casi sono corsi premium nel senso che
+
+308
+00:29:08,100 --> 00:29:13,540
+c'è tutta una parte gratuita però c'è una parte premium per cui se vi accedi e accesso altre altre
+
+309
+00:29:13,540 --> 00:29:20,420
+altre cose più più ricche più approfondite una delle cose più belle che ho seguito è stato il
+
+310
+00:29:20,420 --> 00:29:25,420
+corso che c'è ogni anno in primavera alla stanford university che c'è il corso di swift
+
+311
+00:29:25,740 --> 00:29:32,220
+tenuto da un ex dipendente di Apple una persona veramente geniale simpaticissima che tiene questo
+
+312
+00:29:32,220 --> 00:29:37,780
+corso i corsi e le lezioni sono 15 16 lezioni da circa due ore sono tutte online per cui te
+
+313
+00:29:37,780 --> 00:29:43,860
+le puoi guardare ogni anno vengono raffinate e affinate per mettersi al passo con le ultime
+
+314
+00:29:43,860 --> 00:29:48,660
+tecnologie per cui è sempre più divertente sempre più ricco guardarle ogni anno io me
+
+315
+00:29:48,660 --> 00:29:56,780
+ne riguardo da zero perché sono proprio belle e sono veramente di grande insegnamento a male
+
+316
+00:29:56,780 --> 00:30:03,500
+di questo si c'è sta cover flow il grosso problema che non è un problema è che le tecnologie di Apple
+
+317
+00:30:03,500 --> 00:30:11,580
+sono sono state molto come sono hanno cambiato molto nel corso degli ultimi anni perché sette
+
+318
+00:30:11,580 --> 00:30:16,060
+anni fa hanno introdotto un nuovo linguaggio di programmazione che si chiama swift che è molto
+
+319
+00:30:16,180 --> 00:30:23,060
+molto snello è un'erede del c del javascript per far proprio a grandi linee molto molto snello
+
+320
+00:30:23,060 --> 00:30:28,860
+molto molto bello con una bellissima sintassi con tante potenzialità alle closure alle generics
+
+321
+00:30:28,860 --> 00:30:36,780
+ovviamente un sacco di cose fighe ai protocolli e per cui c'è un sacco di cose che sono state poi
+
+322
+00:30:36,780 --> 00:30:42,340
+digerite dal pubblico nel corso di due o tre anni per cui il stackover flow trovi volte del codice
+
+323
+00:30:42,340 --> 00:30:46,820
+che però va bene per una delle primissime versioni di swift e poi magari le cose se sono
+
+324
+00:30:46,820 --> 00:30:54,260
+evolute è abbastanza facile far la migrazione da swift 2 a 3 a 3 a 4 4 5 5 5 eccetera eccetera
+
+325
+00:30:54,260 --> 00:31:00,380
+però è comunque sempre un mezzo sbattimento tre anni fa hanno introdotto un nuovo linguaggio di
+
+326
+00:31:00,380 --> 00:31:07,500
+programmazione di interfacce grafiche che si chiama swift UI che a questo punto cambia completamente
+
+327
+00:31:07,700 --> 00:31:17,660
+il modello di sviluppo delle app da mvvm che ovviamente è migliore per certi versi
+
+328
+00:31:17,660 --> 00:31:23,140
+consente di sviluppare applicazioni più snelle però è fuori da due anni di conseguenza anche
+
+329
+00:31:23,140 --> 00:31:28,780
+il codice che si trova su stackover flow è giovane e c'è un sacco di lavoro da fare
+
+330
+00:31:29,060 --> 00:31:39,420
+c'è un sacco le risorse ci sono è molto facile trovare risorse per del medio livello del basso
+
+331
+00:31:39,420 --> 00:31:45,580
+livello risorse ad alto livello sono molto più difficile ed è molto più a questo punto secondo me
+
+332
+00:31:45,580 --> 00:31:52,580
+talmente ad alto livello che è più probabile ricevere questo tipo di imprinting in azienda
+
+333
+00:31:52,580 --> 00:32:02,060
+dove si strutturano grandi quantità di codice e codice molto complesso codice molto ricco per cui
+
+334
+00:32:02,060 --> 00:32:06,340
+è difficile fare un corso che ti possa spiegare certe cose è una cosa che ti fa abbastanza
+
+335
+00:32:06,340 --> 00:32:11,660
+con l'esperienza però è per certi versi è lo scoglio più duro che io sto affrontando perché
+
+336
+00:32:11,660 --> 00:32:17,780
+sai ti insegnano a fare un'applicazione col database di core data che è un'applicazione
+
+337
+00:32:18,060 --> 00:32:23,220
+di to do cioè nel senso una lista di cose da fare però nella vita le cose sono molto più
+
+338
+00:32:23,220 --> 00:32:29,460
+complicate sono molto più più ricche e anche tutta la componente di programmazione asincrona
+
+339
+00:32:29,460 --> 00:32:36,420
+che è fondamentale nello sviluppo di applicazioni credo tutte le applicazioni sia web che native
+
+340
+00:32:36,420 --> 00:32:43,220
+è quella sì un conto ti dicono questo è una cosa sincrona però tutta la policy di gestione
+
+341
+00:32:43,380 --> 00:32:51,860
+delle miliardi di errori e del policy di correctness di solidità dei dati eccetera eccetera è molto
+
+342
+00:32:51,860 --> 00:32:57,780
+alla fin fine c'è nessuno c'è un esempio pratico che ti spiega sta cosa alla fine sono sono parte
+
+343
+00:32:57,780 --> 00:33:04,100
+di code base che ti devi sviluppare tu e a volte spesso e volentieri se non fai uso di piattaforme
+
+344
+00:33:04,100 --> 00:33:14,380
+già esistenti io penso a firebase di Google di mongodb oppure di Apple stessa con i cloud e
+
+345
+00:33:14,380 --> 00:33:18,820
+comunque devi comunque lavorarci un sacco e te lo dico perché io personalmente ho dovuto sviluppare
+
+346
+00:33:18,820 --> 00:33:24,460
+un'infrastruttura del genere che non poteva fare uso di tutti questi database distribuiti per policy
+
+347
+00:33:24,460 --> 00:33:32,820
+di privacy e di gestione di dati sensibili perché erano dati medici per cui cose abbiamo dovuto
+
+348
+00:33:32,940 --> 00:33:38,460
+svilupparci un'infrastruttura del genere lato client lato server è stato un bel divertimento
+
+349
+00:33:38,460 --> 00:33:43,420
+ogni tanto dico come cacchio è possibile che sta roba funzioni ma finché funziona va bene così
+
+350
+00:33:43,420 --> 00:33:51,500
+sì certo è una di quelle regole non scritte che molti seguono finché funziona non si tocca mentre
+
+351
+00:33:51,500 --> 00:33:57,060
+per quanto riguarda invece la possibilità di scrivere codice a sincrono trovo che sia una
+
+352
+00:33:57,060 --> 00:34:04,460
+potenzialità enorme ma al tempo stesso per chi come me viene da 20 anni di sviluppo sincrono
+
+353
+00:34:04,460 --> 00:34:11,660
+risulta anche piuttosto difficile da comprendere complicato entrare nella mentalità diciamo così
+
+354
+00:34:11,660 --> 00:34:17,900
+assolutamente devo dire che credo che sia dal punto di dal mondo di che frequenti tu che dal
+
+355
+00:34:17,900 --> 00:34:23,660
+mondo mio l'introduzione dei degli a sinc e degli await ha aiutato moltissimo alla scrittura del
+
+356
+00:34:23,660 --> 00:34:29,620
+codice però c'è sempre oltre la questione di scrittura gestione di manutenibilità del codice
+
+357
+00:34:29,620 --> 00:34:34,780
+che è molto importante credo che è una parte più complicata sia la gestione della creazione di
+
+358
+00:34:34,780 --> 00:34:41,740
+policy nel senso ok questa roba è una cosa che a sincrono può andare bene o male però il problema
+
+359
+00:34:41,740 --> 00:34:48,620
+è che tu devi poter pensare di anzi devi poter pensare di gestire qualsiasi caso perché comunque
+
+360
+00:34:48,620 --> 00:34:55,540
+gli utenti sono bravissimi e troveranno la cosa più assurda e gli capita io abbiamo sviluppato
+
+361
+00:34:55,540 --> 00:35:01,100
+questa applicazione di gestione di dati sensibili a sincrona pesantemente a sincrona e abbiamo
+
+362
+00:35:01,100 --> 00:35:09,420
+scoperto che ci sono degli edge cases che dici non c'era mai pensato nessuno c'era ancora pensata
+
+363
+00:35:09,420 --> 00:35:15,540
+l'abbiamo incontrato a questo punto ti fai la punta alla testa e trovi il modo di di di di
+
+364
+00:35:15,540 --> 00:35:20,980
+arginar la cosa di aggiornare il tuo codice in modo tale che possa essere compatibile con con
+
+365
+00:35:20,980 --> 00:35:27,260
+la follia dell'universo mettiamola così esattamente senti invece parliamo di un argomento di cui non
+
+366
+00:35:27,260 --> 00:35:34,060
+si parla mai negli ultimi anni c'è l'intelligenza artificiale dato che io ascolto tecnopills cioè
+
+367
+00:35:34,060 --> 00:35:41,100
+uno dei tuoi podcast so che hai fatto più volte uso di algoritmi di machine learning messi a
+
+368
+00:35:41,100 --> 00:35:47,020
+disposizione da Apple e sempre dalle tue spiegazioni mi è sembrato di capire che
+
+369
+00:35:47,020 --> 00:35:53,900
+l'approccio a copertino sia un po diverso da quello che altri big come Google o Microsoft
+
+370
+00:35:53,900 --> 00:35:59,980
+hanno in generale ce ne vuoi parlare un po allora tu prima ti dico le cose che io faccio ho
+
+371
+00:35:59,980 --> 00:36:07,660
+sviluppato applicazioni che si occupano della computer vision e della trascrizione dell'audio
+
+372
+00:36:07,660 --> 00:36:12,820
+computer vision significa guardo un'immagine cerco di capire che cosa c'è dentro la classificazione
+
+373
+00:36:12,820 --> 00:36:20,820
+sulla base di alcuni modelli nel senso di tu fai una ci sono due cose nella classificazione generale
+
+374
+00:36:20,820 --> 00:36:25,180
+nel senso c'è una fotografia che cosa c'è dentro in questa fotografia oppure ancora di più nel
+
+375
+00:36:25,180 --> 00:36:29,660
+senso tu fai il training di una di un'applicazione di una di un'applicazione di un modello di
+
+376
+00:36:29,660 --> 00:36:35,900
+machine learning per cui tu insegni al modello a riconoscere un certa cosa mettiamo caso che tu
+
+377
+00:36:35,900 --> 00:36:42,780
+è un'azienda che produce dei dei dei delle parti di ricambio e tu vuoi far sì che quando uno
+
+378
+00:36:42,780 --> 00:36:47,060
+inquadra col telefono una parte di ricambio il telefono ti dica questa è la parte di ricambio
+
+379
+00:36:47,060 --> 00:36:55,060
+col codice x y z e il sito inter dove puoi trovarle acquistarle y z x ok mi sono occupato di queste
+
+380
+00:36:55,060 --> 00:37:01,140
+cose qui e della trascrizione dell'audio nonché della lettura dei testi nel senso in questa
+
+381
+00:37:01,140 --> 00:37:06,580
+immagine c'è questa scritta che cosa c'è scritto questi sono gli ambiti su cui ho lavorato allora
+
+382
+00:37:06,580 --> 00:37:14,540
+il mondo del machine learning è un mondo ovviamente in grandissima evoluzione e si
+
+383
+00:37:14,540 --> 00:37:23,060
+base essenzialmente sul principio per cui grandi quantità di dati vengono processati in maniera
+
+384
+00:37:23,060 --> 00:37:30,900
+piuttosto veloce con una cosa che si chiama che è a metà strada tra codice eseguibile e dati che
+
+385
+00:37:30,900 --> 00:37:37,340
+si chiama modello che insomma l'oggetto che che dovrebbe simulare l'intelligenza umana e questo
+
+386
+00:37:37,340 --> 00:37:41,900
+modello essenzialmente produce una sorta di risultato è un algoritmo mettiamola così che è
+
+387
+00:37:41,900 --> 00:37:48,420
+un algoritmo relativamente semplice che però lavora su quantità di dati abnormi è un po come
+
+388
+00:37:48,420 --> 00:37:58,140
+se tu avessi un polinomio a 0 x 0 più 1 x 1 più 2 x 2 solo che invece di avere tante x ne ha milioni
+
+389
+00:37:58,140 --> 00:38:04,260
+di x perditi per cui è necessario una potenza di calcolo assurda e come si fa a costruire un
+
+390
+00:38:04,260 --> 00:38:11,620
+modello che faccia appunto questa cosa si fa del training in pratica si si presentano a un sistema
+
+391
+00:38:11,620 --> 00:38:17,340
+che costruisce questo polimo questa serie di polinomi i casi giusti nel senso se questa roba
+
+392
+00:38:17,340 --> 00:38:23,300
+qui allora fai così se questa roba qui allora fai così glielo fai vedere 500 mille milioni di volte
+
+393
+00:38:23,340 --> 00:38:28,820
+alla fine questi algoritmi un po imparano a capire come sono fatte le cose veramente sto
+
+394
+00:38:28,820 --> 00:38:34,860
+dicendo delle cose semplificando non di più di piùissimo è chiarissimo per cui c'è questa
+
+395
+00:38:34,860 --> 00:38:42,060
+doppia fase la fase di creazione del modello e la fase di applicazione del modello la maggior
+
+396
+00:38:42,060 --> 00:38:51,460
+parte delle aziende Google Amazon con con iws azur di Microsoft eccetera eccetera mettono a
+
+397
+00:38:51,460 --> 00:38:56,620
+disposizione le delle infrastrutture che consentono a di creare i modelli ma quasi
+
+398
+00:38:56,620 --> 00:39:01,660
+nessuno lo fa in cloud quasi tutti se lo fanno in casa e b di fare l'interpretazione di questi
+
+399
+00:39:01,660 --> 00:39:07,460
+modelli cioè ti dicono abbiamo questi computer della madonna in cloud tu passi l'informazione
+
+400
+00:39:07,460 --> 00:39:15,900
+noi ti diamo l'esaborazione di questa informazione in pratica tu hai vuoi classificare i fiori crei un
+
+401
+00:39:15,900 --> 00:39:23,380
+modello che ha un database di fiori di mille fiori diversi dalle orchidee alle rose a tutte le varie
+
+402
+00:39:23,380 --> 00:39:28,620
+sotto sotto specie e così che tu puoi creare un'applicazione che inquadrando un fiore ti dice
+
+403
+00:39:28,620 --> 00:39:33,500
+che fiore è bellissimo tu fai il training del modello cioè ti costruisci questo modello utilizzando
+
+404
+00:39:33,500 --> 00:39:40,140
+milioni o di un sacco di fotografie di fiori in pratica dice il modello senti questi 500 foto
+
+405
+00:39:40,140 --> 00:39:44,700
+sono un'orchidea queste 500 foto sono una rosa eccetera eccetera eccetera alla fine il modello
+
+406
+00:39:44,700 --> 00:39:50,580
+comincia a capire se alla 501 esima inizio a capire come fu come ha fatto una rosa che cos'è
+
+407
+00:39:50,580 --> 00:39:55,420
+che distingue una rosa un'orchidea eccetera eccetera eccetera l'applicazione c'è l'interpretazione di
+
+408
+00:39:55,420 --> 00:39:59,420
+queste cose le viene fatte in cloud in pratica si crede si prende questo modello lo si carica
+
+409
+00:39:59,420 --> 00:40:04,980
+in un'istanza di qualche tipo e quando l'utente ha l'applicazione questo lo dico con quello che
+
+410
+00:40:04,980 --> 00:40:10,620
+fanno gli altri è scatto una foto la foto viene compressa viene mandata velocemente a questi
+
+411
+00:40:10,620 --> 00:40:16,300
+server questi server fanno la classificazione della foto dice questa è un'orchidea e viene
+
+412
+00:40:16,300 --> 00:40:22,260
+giù il risultato in maniera asincrona però nel senso quasi in tempo reale Apple ha un approccio
+
+413
+00:40:22,260 --> 00:40:28,100
+differente nel senso dice noi non vediamo i server noi ti diamo un telefono che ha un motore
+
+414
+00:40:28,100 --> 00:40:32,220
+di elaborazione di intelligenza artificiale abbastanza cazzuto per cui l'elaborazione la
+
+415
+00:40:32,220 --> 00:40:37,460
+fa in locale e di conseguenza tu fai il tuo training del modello in qualche modo costruisci
+
+416
+00:40:37,460 --> 00:40:42,140
+questo modello e poi il modello lo cariche nella tua applicazione e si occupa la tua applicazione
+
+417
+00:40:42,140 --> 00:40:49,700
+di fare questa cosa così non c'è il passaggio in cloud sono due politiche ovviamente che stanno
+
+418
+00:40:49,700 --> 00:40:56,700
+in antitesi quella del cloud ha lo svantaggio che necessita di connessione e lo sviluppatore
+
+419
+00:40:56,700 --> 00:41:02,300
+deve pagare le istanze in the cloud che se fai sia un'applicazione installata da 10 persone non
+
+420
+00:41:02,540 --> 00:41:07,740
+costa niente se un'applicazione installata da 10 milioni di persone deve pensare a un modello
+
+421
+00:41:07,740 --> 00:41:15,020
+di business perché se no i costi ti esplodono e il vantaggio del cloud è che i modelli possono
+
+422
+00:41:15,020 --> 00:41:21,820
+essere raffinati in maniera molto più agile rispetto al modello sul telefono e in più la
+
+423
+00:41:21,820 --> 00:41:29,300
+potenza di elaborazione è infinita per cui c'è nel senso è un po come avere una server una render
+
+424
+00:41:29,300 --> 00:41:34,620
+farm tutta per te ogni volta che devi fare l'analisi di una fotografia nella maggior parte
+
+425
+00:41:34,620 --> 00:41:39,140
+dei casi questa cosa non è necessaria per due motivi 1 i modelli sono sempre gli stessi cioè
+
+426
+00:41:39,140 --> 00:41:44,420
+a meno che tu non ti costruisci un modello tuo i modelli sono essenzialmente gli stessi anche quando
+
+427
+00:41:44,420 --> 00:41:49,300
+ti costruisci un modello tuo spesso e volentieri si tratti strate di customizzazione di modelli
+
+428
+00:41:49,300 --> 00:41:55,620
+tipo se vuoi fare un modello che riconosce i fiori non hai bisogno di fotografare 10.000 orchidee 10.000
+
+429
+00:41:55,620 --> 00:42:00,460
+rosi 10.000 gladioli 10.000 viole tutto quel cacchio cioè nel senso non devi tirar fuori un
+
+430
+00:42:00,460 --> 00:42:04,540
+milione di foto l'importante è che tutti i basi sul modello già esistente che ha una sua
+
+431
+00:42:04,540 --> 00:42:09,460
+infrastruttura che è stata sviluppata nel corso degli anni sono modelli open source e alla fin
+
+432
+00:42:09,460 --> 00:42:14,300
+fine aggiungi delle informazioni a questo modello per cui spesso e volentieri ti bastano 10 20 50
+
+433
+00:42:14,300 --> 00:42:20,580
+foto che è una cosa più gestibile per fare 10 foto di orchidee ce la fai ancora fare 10.000
+
+434
+00:42:20,580 --> 00:42:27,780
+comincia a diventare una cosa che appannaggio soltanto di alcune grandi aziende ecco la maggior
+
+435
+00:42:27,780 --> 00:42:33,500
+parte dei modelli sono costruiti in questo modo si sono copie spuderate anche copia spuderate nel
+
+436
+00:42:33,500 --> 00:42:38,180
+senso si prendono questi modelli che sono open source e si utilizzano direttamente Apple non fa
+
+437
+00:42:38,180 --> 00:42:44,100
+non fa mistero che utilizza mobile net che è uno dei modelli più diffusi di classificazione delle
+
+438
+00:42:44,100 --> 00:42:50,380
+immagini e robe simili per cui alla fine le cose si assomigliano tutte e lo stesso agli stessi
+
+439
+00:42:51,180 --> 00:42:56,380
+Google con testo e flotti mette a disposizione queste cose anche per fare il training direttamente
+
+440
+00:42:56,380 --> 00:43:01,700
+in un sito web per dire che i passi 10 fotografie capisce come è fatta una fotografia per cui da lì
+
+441
+00:43:01,700 --> 00:43:08,740
+in poi sa come è fatta una rosa sa come è fatta un'orchidea la differenza è effettivamente quella
+
+442
+00:43:08,740 --> 00:43:12,580
+e poi ha investito molto sull'intelligenza artificiale molto più di quanto uno si
+
+443
+00:43:12,580 --> 00:43:19,860
+aspettasse perché tutti i processori nuovi hanno metà dell'area del computer chip solo
+
+444
+00:43:19,860 --> 00:43:27,060
+dedicata alla machine learning in più nel senso nei momenti di massimo stress possono utilizzare la
+
+445
+00:43:27,060 --> 00:43:32,540
+componente della gpu della scheda grafica per fare machine learning e anche la cpu cioè per cui
+
+446
+00:43:32,540 --> 00:43:38,660
+fondamentalmente il 90 per cento della superficie del chip è dedicata a fare questa cosa e non ho
+
+447
+00:43:38,660 --> 00:43:43,860
+mai capito perché perché le applicazioni poi non si sono ancora viste né dal punto di vista
+
+448
+00:43:43,860 --> 00:43:49,620
+degli sviluppatori terzi ma neanche dal dal punto di vista di apolo di Apple stessa si la gestione
+
+449
+00:43:49,620 --> 00:43:55,500
+della fotografia computazionale effettivamente è un minimo migliora certi versi ma non ho ancora
+
+450
+00:43:55,500 --> 00:44:00,300
+visto niente di che mi faccia dire tutta sta potenza viene veramente utilizzata oppure no
+
+451
+00:44:00,300 --> 00:44:07,620
+forse la l'ultima versione che praticamente cambia la messa a fuoco e gestisce la sfocatura delle
+
+452
+00:44:07,620 --> 00:44:12,420
+immagini naturale simulando aperture più più elevate di quelle che si possono raggiungere
+
+453
+00:44:12,420 --> 00:44:18,100
+fisicamente con un telefono l'ho vista mi ha abbastanza impressionato ma non è ancora cioè
+
+454
+00:44:18,100 --> 00:44:23,780
+come dire mi sembra una sorta di quasi un demo piuttosto che di un oggetto che possa essere
+
+455
+00:44:23,780 --> 00:44:28,780
+utilizzato davvero per cui la mia la mia perplessità come sviluppatore ma forse la mia mancanza di
+
+456
+00:44:28,780 --> 00:44:35,780
+conoscenza è che c'è una potenza della madonna in questi telefoni che ancora lì che dormiente e sto
+
+457
+00:44:35,780 --> 00:44:40,260
+ancora aspettando che arrivi qualcosa i due anni di pandemia hanno rallentato molto l'aggiunta di
+
+458
+00:44:40,260 --> 00:44:46,100
+feature soprattutto dal punto di vista del sistema operativo io devo dirti che fra esattamente un
+
+459
+00:44:46,100 --> 00:44:50,060
+mese ci sarà la nuova conferenza degli sviluppatori mi auguro che ci siano delle nuove
+
+460
+00:44:50,060 --> 00:44:55,300
+api delle nuove funzionalità non tanto per la classificazione delle immagini ma quanto per la
+
+461
+00:44:55,300 --> 00:45:02,220
+generazione delle immagini le ci sono modelli c'è alcuna classe delle dell'applicazione
+
+462
+00:45:02,220 --> 00:45:07,740
+dell'intelligenza artificiale è quella di costruire cose a partire dai dati per dirti
+
+463
+00:45:07,740 --> 00:45:11,780
+passi un'immagine in bassa risoluzione ti aumenta risoluzione passi un'immagine di una
+
+464
+00:45:11,780 --> 00:45:16,700
+persona che ha che non ha il trucco gli mette il trucco ti mette a posto come se fosse fotografata
+
+465
+00:45:16,700 --> 00:45:21,740
+da ben bene pure una persona che è illuminata male l'illumina bene cioè io mi auguro di vedere
+
+466
+00:45:21,740 --> 00:45:25,620
+questo tipo di applicazioni nella prossima generazione del sistema operativo perché
+
+467
+00:45:25,620 --> 00:45:31,300
+sarebbe molto divertente e sarebbe divertentissimo per me svilupparci oggetti sopra perché li
+
+468
+00:45:31,300 --> 00:45:37,500
+utilizzerei io in prima persona bene interessante staremo a vedere anche le evoluzioni magari ce
+
+469
+00:45:37,500 --> 00:45:43,220
+ne potrai parlare in futuro o ci potrei aggiornare sul gruppo telegram intanto io ti ringrazio per
+
+470
+00:45:43,220 --> 00:45:49,580
+essere stato qui con noi mi ha fatto davvero molto molto piacere averti ospite perché parlare con te
+
+471
+00:45:49,580 --> 00:45:55,860
+è sempre un'esperienza interessante e per concludere ci vuoi dire dove ti possiamo trovare
+
+472
+00:45:55,860 --> 00:46:01,300
+sul web seguirti eccetera allora prima di tutto è stato molto bello per me sono molto contento di
+
+473
+00:46:01,300 --> 00:46:06,980
+essere riuscito di essere qui e vorrei che tu ricambiassi venendo par ospite nella mia trasmissione
+
+474
+00:46:06,980 --> 00:46:14,460
+a dire cose invece un po' diverse e ovviamente mi piacerebbe poterti incontrare così da poterti
+
+475
+00:46:14,460 --> 00:46:20,060
+ricambiare la cena la cena che tu mi hai offerto a casa tua certamente dove mi si può trovare
+
+476
+00:46:20,060 --> 00:46:27,340
+beh allora la mia piccola azienda si chiama ulti.media lo trovate sul sito ulti.media così
+
+477
+00:46:27,340 --> 00:46:31,900
+potete vedere le cose che faccio io vorrei offrirti un bel 20 per cento di sconto a tutti
+
+478
+00:46:31,900 --> 00:46:36,180
+i tuoi ascoltatori metterò il coupon ti darò il coupon da mettere nelle note di questo episodio
+
+479
+00:46:36,180 --> 00:46:40,220
+mi rendo conto che la maggior parte di quelli che ti ascolta probabilmente un mac non ce l'ha per
+
+480
+00:46:40,220 --> 00:46:47,180
+cui è solo per amicizia però per amicizia sono ben contento di fare grazie altrimenti mi trovate
+
+481
+00:46:47,180 --> 00:46:56,820
+su twitter io sono vabbè insomma sono alxge anche questo metto ti do le note delle note dell'episodio
+
+482
+00:46:56,820 --> 00:47:03,340
+questo questo link uso twitter in maniera molto compulsiva nel senso che non vado a dire mettiamo
+
+483
+00:47:03,340 --> 00:47:08,580
+la cocaina nella coca cola come ha detto qualcun altro di nostra di nostra conoscenza però
+
+484
+00:47:08,580 --> 00:47:14,060
+tendenzialmente non lo uso per fare personal branding cioè per cui tendenzialmente seguo
+
+485
+00:47:14,060 --> 00:47:19,500
+persone che mi piacciono e a volte dico quello che penso spesso volentieri anche dal punto di
+
+486
+00:47:19,500 --> 00:47:25,740
+vista tecnico però sono lo vivo come un social network che non è molto sociale ma lo vedo più
+
+487
+00:47:25,780 --> 00:47:31,140
+come una rete eccetera eccetera eccetera altrimenti non saprei altro ma se giustamente
+
+488
+00:47:31,140 --> 00:47:37,260
+forse il mio mio podcast io ho un podcast che è quello che faccio quasi tutte le settimane che
+
+489
+00:47:37,260 --> 00:47:42,180
+si chiama tecnopills che è una sorta di racconto di flusso di coscienza che io chiamo flusso di
+
+490
+00:47:42,180 --> 00:47:48,300
+coscienza digitale che è una sorta di oggetto una sorta di paperella io parlo a voce alta perché così
+
+491
+00:47:48,300 --> 00:47:53,100
+metto insieme i miei pensieri quando parlo di algoritmi di sviluppo di applicazioni ed è
+
+492
+00:47:53,100 --> 00:47:57,340
+interessante perché spesso volentieri nel podcast non mi metto limiti e ci sono anticipazioni di
+
+493
+00:47:57,340 --> 00:48:03,980
+quello che farò e che verrà fuori fra sei mesi fra otto mesi poi è un secondo podcast di musica
+
+494
+00:48:03,980 --> 00:48:09,020
+questo esce una volta ogni due mesi circa perché è un casino poi trovare gli impegni incastrare
+
+495
+00:48:09,020 --> 00:48:13,580
+gli impegni eccetera eccetera dove cerco di raccontare delle storie con la musica io cerco
+
+496
+00:48:13,580 --> 00:48:20,980
+un tema e poi dopo lo elaboro con le canzoni che si chiama mdb summer radio e non so il titolo
+
+497
+00:48:20,980 --> 00:48:26,100
+è la cosa meno seo del mondo ma c'è una storia dietro e infine con una volta al mese esce un
+
+498
+00:48:26,100 --> 00:48:30,740
+podcast di enologia io sono solo il conduttore perché di vino ne capisco quando c'è da bere
+
+499
+00:48:30,740 --> 00:48:36,860
+ma non più di tanto in cui parliamo facciamo veramente delle analisi abbastanza approfondite
+
+500
+00:48:36,860 --> 00:48:41,700
+del vino con uno dei migliori sommelier d'italia dei più famosi che è marco barbetti e con un
+
+501
+00:48:41,700 --> 00:48:46,740
+personal chef che si chiama gabriele palermo e il nostro obiettivo quello di creare degli
+
+502
+00:48:46,740 --> 00:48:53,140
+ottimi abbinamenti abbiamo iniziato partendo dal piatto per trovando il vino adatto la terza
+
+503
+00:48:53,140 --> 00:49:00,220
+stagione invece prevede che abbiamo contattato siamo stati ben lieti di ricevere delle bottiglie
+
+504
+00:49:00,220 --> 00:49:05,220
+bottiglie anche importanti e sulla base di queste bottiglie importanti ci costruiamo invece la il
+
+505
+00:49:05,220 --> 00:49:10,580
+piatto per cui un approccio molto diverso è bene su queste le cose su cui mi si può trovare
+
+506
+00:49:10,580 --> 00:49:16,660
+altrimenti o mi trovate anche sul canale telegram di pensieri in codice ogni tanto dico la mia
+
+507
+00:49:16,660 --> 00:49:21,260
+ma spesso volentieri ascolto e ascolto con le orecchie aperte con gli occhi spalancati perché
+
+508
+00:49:21,260 --> 00:49:25,380
+spesso volentieri trovo un sacco di gente che dice un sacco di cose interessanti di cui essendo un
+
+509
+00:49:25,380 --> 00:49:32,540
+sviluppatore così e così capisco tendenzialmente la metà va bene sei sempre troppo gentile alex io
+
+510
+00:49:32,540 --> 00:49:37,820
+ti ringrazio tantissimo a nome mio e di tutta la community di pensieri in codice per essere stato
+
+511
+00:49:37,820 --> 00:49:43,860
+qui con noi per tutte le informazioni che ci hai dato per il regalo che c'è fatto e chiunque lo
+
+512
+00:49:43,860 --> 00:49:49,420
+desidera trova tutto in descrizione bene sinceramente io non ho molto da aggiungere a
+
+513
+00:49:49,420 --> 00:49:54,840
+quanto detto da alex se non che sono molto molto soddisfatto di questa chiacchierata che ha dato
+
+514
+00:49:54,840 --> 00:50:01,580
+risposta a tante questioni che mi frullavano in testa e delle quali ero molto curioso spero come
+
+515
+00:50:01,580 --> 00:50:07,700
+al solito che l'argomento dell'episodio sia stato di tuo interesse sul sito di pensieri in codice
+
+516
+00:50:07,700 --> 00:50:12,980
+trovi tutti i miei contatti o meglio ancora il link al gruppo telegram dove possiamo discuterne
+
+517
+00:50:12,980 --> 00:50:18,300
+insieme con gli altri membri della community ma anche con lo stesso alex se vuoi fargli qualche
+
+518
+00:50:18,300 --> 00:50:24,700
+altra domanda e prima di lasciarti ti ricordo che pensieri in codice è un podcast indipendente
+
+519
+00:50:24,700 --> 00:50:30,980
+interamente prodotto da me nel mio tempo libero e con le mie risorse personali quindi se apprezzi
+
+520
+00:50:30,980 --> 00:50:36,540
+quello che faccio e se sei arrivato fin qui come al solito immagino che tu lo apprezzi sul sito
+
+521
+00:50:36,940 --> 00:50:43,740
+pensieriincodice.it mi raccomando con due i trovi tutti i metodi per inviarmi il tuo contributo in
+
+522
+00:50:43,740 --> 00:50:49,940
+tal modo mi dimostrerai che tutto il mio impegno ha un qualche valore per te e perché no mi
+
+523
+00:50:49,940 --> 00:50:55,620
+aiuterai anche a coprire i costi di attrezzature e abbonamenti mensili oggi in particolare voglio
+
+524
+00:50:55,620 --> 00:51:02,100
+ringraziare paola che ha inviato un contributo di 10 euro tramite satisfei e che mi scrive lo
+
+525
+00:51:02,100 --> 00:51:08,680
+so che è poco un po alla volta beh paola grazie mille innanzitutto perché non è affatto poco se
+
+526
+00:51:08,680 --> 00:51:12,780
+tutti gli ascoltatori di pensieri in codice donassero un decimo di quanto hai fatto tu
+
+527
+00:51:12,780 --> 00:51:18,600
+potremmo facilmente ad esempio rimuovere la pubblicità o addirittura assumere qualcuno che
+
+528
+00:51:18,600 --> 00:51:25,740
+gestisca non so un account social ma anche perché questo genere di gesti sono attestati di stima e
+
+529
+00:51:25,740 --> 00:51:31,700
+di apprezzamento e mi incoraggiano a proseguire in questo impegno che mi sono assunto che ti
+
+530
+00:51:31,700 --> 00:51:39,140
+assicuro non è per nulla banale e poi ringrazio per le recensioni su Apple podcast luca che scrive
+
+531
+00:51:39,140 --> 00:51:45,020
+bellissimi approfondimenti da seguire assolutamente complimenti grazie luca e complimenti a te per gli
+
+532
+00:51:45,020 --> 00:51:53,780
+ottimi gusti bicho bitcoin che scrive bellissimo podcast per informatici puri grazie bicho dal tuo
+
+533
+00:51:53,780 --> 00:51:59,820
+nome deduco che ti faranno piacere alcuni episodi che sto programmando che usciranno dopo l'estate
+
+534
+00:51:59,820 --> 00:52:08,460
+ma non dirlo a nessuno mi raccomando e infine marco introini che scrive podcast molto interessante
+
+535
+00:52:08,460 --> 00:52:14,260
+che ogni programmatore o più in generale ogni amante della tecnologia dovrebbe ascoltare grazie
+
+536
+00:52:14,260 --> 00:52:20,780
+valerio per il tuo impegno grazie a te marco e grazie delle bellissime parole per concludere
+
+537
+00:52:20,780 --> 00:52:26,300
+non dimenticare che tutti gli episodi di pensieri in codice sono disponibili sulle maggiori piattaforme
+
+538
+00:52:26,300 --> 00:52:32,300
+e app di podcast e basta io ti ringrazio per l'ascolto ti do appuntamento al prossimo episodio
+
+539
+00:52:32,300 --> 00:52:38,180
+e ti ricordo che un informatico risolve problemi a volte anche usando il computer
+

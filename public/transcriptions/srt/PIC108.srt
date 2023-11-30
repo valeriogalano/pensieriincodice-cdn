@@ -1,0 +1,1160 @@
+1
+00:00:00,000 --> 00:00:05,960
+Ti è mai capitato di prendere lo smartphone, controllare se ci fossero delle notifiche,
+
+2
+00:00:05,960 --> 00:00:11,360
+poi posarlo e sorprenderti a ricontrollarlo dopo appena una manciata di secondi?
+
+3
+00:00:11,360 --> 00:00:18,640
+Beh, se è così sappi che non sei l'unico o l'unica e sappi anche che questo comportamento
+
+4
+00:00:18,640 --> 00:00:26,080
+non dipende unicamente da te, ma è anche, anzi soprattutto, frutto di come sono progettate
+
+5
+00:00:26,080 --> 00:00:28,480
+le app che si trovano all'interno del tuo smartphone.
+
+6
+00:00:28,480 --> 00:00:35,440
+Siti web, social network e app in generale sono infatti tutti studiati per spingerci
+
+7
+00:00:35,440 --> 00:00:42,100
+ad utilizzarli il più possibile e il più a lungo possibile e per ottenere questo risultato
+
+8
+00:00:42,100 --> 00:00:48,320
+essi sfruttano a proprio vantaggio dei meccanismi naturali presenti nel nostro cervello esattamente
+
+9
+00:00:48,320 --> 00:00:54,080
+come gli hacker sfruttano a proprio vantaggio i meccanismi presenti nel software o nell'hardware.
+
+10
+00:00:54,080 --> 00:01:00,480
+Nell'episodio di oggi di Pensieri in Codice dunque parliamo di dopamina, di ricompense
+
+11
+00:01:00,480 --> 00:01:04,480
+e di come gli smartphone hackerano il nostro cervello.
+
+12
+00:01:04,480 --> 00:01:05,480
+Sigla.
+
+13
+00:01:05,480 --> 00:01:14,080
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio
+
+14
+00:01:14,080 --> 00:01:15,080
+Galano.
+
+15
+00:01:15,080 --> 00:01:25,120
+Lo smartphone è ormai diventato una sorta di appendice artificiale per ciascuno di
+
+16
+00:01:25,120 --> 00:01:26,120
+noi.
+
+17
+00:01:26,120 --> 00:01:31,680
+Sempre nella nostra tasca o nella nostra borsa lo consultiamo centinaia di volte al giorno
+
+18
+00:01:31,680 --> 00:01:34,480
+e lo utilizziamo per le più disparate attività.
+
+19
+00:01:34,480 --> 00:01:40,480
+Io stesso, se provo a verificare nell'app che misura il tempo di utilizzo del mio smartphone,
+
+20
+00:01:40,480 --> 00:01:46,800
+vedo che tranquillamente ogni giorno trascorro dalle 2 alle 4 ore con lo schermo acceso,
+
+21
+00:01:46,800 --> 00:01:53,320
+sblocco almeno un centinaio di volte e ricevo almeno un centinaio di notifiche e questo nonostante
+
+22
+00:01:53,320 --> 00:01:59,120
+mi sia impegnato per ridurre al minimo le attività superflue, chi è nel gruppo Telegram
+
+23
+00:01:59,120 --> 00:02:00,120
+lo sa.
+
+24
+00:02:00,120 --> 00:02:05,960
+Ma oggigiorno nessuno può fare a meno di questo strumento tecnologico, sempre che non
+
+25
+00:02:05,960 --> 00:02:12,160
+voglia restare indietro rispetto agli altri sotto molti aspetti e punti di vista e molte
+
+26
+00:02:12,160 --> 00:02:18,120
+persone hanno anche sviluppato una sorta di attaccamento maniacale nonché dei disturbi
+
+27
+00:02:18,120 --> 00:02:20,480
+specifici riguardo ad esso.
+
+28
+00:02:20,480 --> 00:02:26,080
+Esistono studi, che trovi negli articoli in descrizione, che mostrano come alcuni soggetti
+
+29
+00:02:26,080 --> 00:02:31,560
+soffrono di ansia o addirittura di panico nel momento in cui non hanno accesso al proprio
+
+30
+00:02:31,560 --> 00:02:34,720
+smartphone o in certi casi alla connessione ad internet.
+
+31
+00:02:35,480 --> 00:02:40,720
+Altri studi invece evidenziano come a volte si abbia la sensazione di aver sentito una
+
+32
+00:02:40,720 --> 00:02:45,440
+vibrazione solo per poi rendersi conto che in realtà il telefono nella nostra tasca
+
+33
+00:02:45,440 --> 00:02:48,440
+o sulla scrivania non mostra alcuna notifica.
+
+34
+00:02:48,440 --> 00:02:53,760
+Questi sono solo alcuni esempi, ma si tratta di disturbi che hanno persino un nome.
+
+35
+00:02:53,760 --> 00:02:59,920
+Il primo si chiama nomofobia, che sta per no mobile phone phobia, mentre il secondo
+
+36
+00:02:59,920 --> 00:03:05,920
+è chiamato sindrome della vibrazione fantasma e io devo confessare che anche a me è capitato
+
+37
+00:03:05,920 --> 00:03:08,560
+più di una volta di immaginarmi una vibrazione.
+
+38
+00:03:08,560 --> 00:03:15,240
+Ma ad ogni modo il nostro attaccamento allo smartphone non è poi così sorprendente se
+
+39
+00:03:15,240 --> 00:03:18,720
+si analizzano un po' più da vicino i meccanismi che lo determinano.
+
+40
+00:03:18,720 --> 00:03:24,440
+Innanzitutto, immagino sia chiaro che quando parlo di smartphone non mi riferisco all'apparecchio
+
+41
+00:03:24,440 --> 00:03:27,560
+in sé, bensì alle app che vi sono all'interno.
+
+42
+00:03:27,560 --> 00:03:33,640
+Un telefono spento, per quanto possa avere un'estetica affascinante, non credo possa
+
+43
+00:03:33,640 --> 00:03:36,840
+costituire una grande attrattiva per nessuno.
+
+44
+00:03:36,840 --> 00:03:39,720
+Per le app invece il discorso è diverso.
+
+45
+00:03:39,720 --> 00:03:45,400
+Il fatto che esse siano progettate per attirare in ogni modo la nostra attenzione non dovrebbe
+
+46
+00:03:45,400 --> 00:03:49,240
+essere una novità per gli ascoltatori di questo podcast, almeno spero.
+
+47
+00:03:49,640 --> 00:03:55,560
+E infatti, in linea di principio, un'app può avere appena una manciata di obiettivi.
+
+48
+00:03:55,560 --> 00:04:01,160
+Mi riferisco alle app commerciali, ovviamente quelle app che vengono sviluppate per portare
+
+49
+00:04:01,160 --> 00:04:04,360
+un certo ritorno di investimento a chi le finanzia.
+
+50
+00:04:04,360 --> 00:04:11,240
+Parlo di social network, di e-commerce, cose di questo tipo, non l'app dell'oratorio o
+
+51
+00:04:11,240 --> 00:04:16,080
+quella che fa funzionare la bilancia smart, quelle sono fuori dal mio ragionamento.
+
+52
+00:04:16,400 --> 00:04:21,600
+Per le app commerciali invece gli obiettivi possono essere vendere prodotti o servizi
+
+53
+00:04:21,600 --> 00:04:27,920
+al maggior numero di persone, mostrare pubblicità al maggior numero di persone, raggruppare
+
+54
+00:04:27,920 --> 00:04:33,280
+il maggior numero di persone per poi portarli a un certo esborso di qualche tipo, che può
+
+55
+00:04:33,280 --> 00:04:35,520
+essere economico o anche di impegno.
+
+56
+00:04:35,520 --> 00:04:38,000
+Non c'è molto altro oltre a questo.
+
+57
+00:04:38,000 --> 00:04:44,920
+E per conseguire uno qualsiasi di questi obiettivi, o magari anche più di uno, queste app devono
+
+58
+00:04:44,920 --> 00:04:51,040
+in qualche modo attirare la nostra attenzione, devono cioè portarci a trascorrere il maggior
+
+59
+00:04:51,040 --> 00:04:55,040
+numero di minuti o magari di ore possibili utilizzandole.
+
+60
+00:04:55,040 --> 00:05:01,240
+Ecco perché di tanto in tanto l'app di Amazon ci invia quella notifica, abbiamo pensato
+
+61
+00:05:01,240 --> 00:05:07,840
+che ti possa interessare un dosatore di croccantini per cani, oppure LinkedIn invia un po' di quelle
+
+62
+00:05:07,840 --> 00:05:13,880
+email con oggetto, la tua carriera sta andando alla grande o conosci tizio vuoi aggiungerlo
+
+63
+00:05:13,960 --> 00:05:14,960
+alla tua rete?
+
+64
+00:05:14,960 --> 00:05:21,120
+Si tratta semplicemente di espedienti studiati proprio per attirare la nostra attenzione
+
+65
+00:05:21,120 --> 00:05:26,080
+che magari da ben 24 ore non era rivolta verso la piattaforma in questione.
+
+66
+00:05:26,080 --> 00:05:33,240
+Però purtroppo, come vedremo fra poco, questi comportamenti sono solo la punta di un iceberg
+
+67
+00:05:33,240 --> 00:05:39,440
+il quale nasconde meccanismi psicologici molto più complessi che servono proprio ad attivare
+
+68
+00:05:39,440 --> 00:05:41,880
+specifiche aree nel nostro cervello.
+
+69
+00:05:41,880 --> 00:05:46,200
+Tutto ruota intorno ad una sostanza chiamata dopamina.
+
+70
+00:05:46,200 --> 00:05:51,800
+Ora io non sono un esperto di neuroscienze quindi provo a riassumere il concetto nel
+
+71
+00:05:51,800 --> 00:05:58,200
+modo più semplice possibile e così per come io l'ho capito, poi nel caso ogni correzione
+
+72
+00:05:58,200 --> 00:05:59,200
+sarà apprezzata.
+
+73
+00:05:59,200 --> 00:06:06,280
+La dopamina è una sostanza chimica prodotta dal cervello quindi è un neurotrasmettitore
+
+74
+00:06:06,280 --> 00:06:13,240
+endogeno il quale ha molte funzioni tra cui anche quella di spingere l'essere vivente
+
+75
+00:06:13,240 --> 00:06:16,640
+verso certi comportamenti piuttosto che altri.
+
+76
+00:06:16,640 --> 00:06:22,240
+In pratica da questo punto di vista è quella che noi normalmente chiamiamo motivazione.
+
+77
+00:06:22,240 --> 00:06:28,840
+Un certo quantitativo di questa sostanza è normalmente sempre prodotta in varie aree
+
+78
+00:06:28,840 --> 00:06:29,840
+del cervello.
+
+79
+00:06:30,160 --> 00:06:38,080
+Tale quantità è detta baseline e in pratica ne rappresenta il valore di default ma a seguito
+
+80
+00:06:38,080 --> 00:06:45,040
+di determinate situazioni o stimoli tale produzione può variare aumentando o diminuendo.
+
+81
+00:06:45,040 --> 00:06:50,680
+Ad esempio della dopamina viene rilasciata quando mangiamo qualcosa che ci piace, quando
+
+82
+00:06:50,680 --> 00:06:56,640
+siamo con persone a cui vogliamo bene, quando riceviamo una bella sorpresa o quando facciamo
+
+83
+00:06:56,640 --> 00:07:03,640
+esercizio fisico mentre al contrario il rilascio di dopamina diminuisce quando falliamo in
+
+84
+00:07:03,640 --> 00:07:07,680
+qualcosa o quando una nostra aspettativa viene disattesa.
+
+85
+00:07:07,680 --> 00:07:13,720
+La cosa interessante di tutto ciò è che buona parte di questo neurotrasmettitore attraversa
+
+86
+00:07:13,720 --> 00:07:20,320
+dei percorsi del cervello che sono chiamati circuito della ricompensa i quali in pratica
+
+87
+00:07:20,320 --> 00:07:22,800
+producono una sensazione di piacere.
+
+88
+00:07:23,200 --> 00:07:28,440
+Questo fatto crea una sorta di legame tra l'azione o la situazione che ha provocato
+
+89
+00:07:28,440 --> 00:07:35,800
+il rilascio e la sensazione di benessere e ciò ci spinge a ripetere nuovamente l'esperienza.
+
+90
+00:07:35,800 --> 00:07:42,640
+In pratica assaggiamo un pezzetto di cioccolato, c'è un rilascio di dopamina, proviamo piacere
+
+91
+00:07:42,640 --> 00:07:44,200
+e vogliamo altro cioccolato.
+
+92
+00:07:44,200 --> 00:07:49,760
+E proprio parlando di cibo alcuni studi hanno mostrato come la dopamina sia responsabile
+
+93
+00:07:49,760 --> 00:07:56,240
+anche dell'istinto di nutrirsi, cavie da laboratorio a cui sono stati dati metodi alternativi
+
+94
+00:07:56,240 --> 00:08:03,040
+per l'ottenimento massiccio di dopamina infatti hanno semplicemente smesso di cercare il cibo,
+
+95
+00:08:03,040 --> 00:08:09,160
+se venivano imboccati masticavano ma altrimenti non facevano nemmeno qualche passo per raggiungere
+
+96
+00:08:09,160 --> 00:08:10,160
+il mangime.
+
+97
+00:08:10,160 --> 00:08:15,800
+Un altro punto molto interessante poi è che il circuito della ricompensa si sovrappone
+
+98
+00:08:15,800 --> 00:08:22,000
+a quello del dolore ed è quindi responsabile anche delle sensazioni spiacevoli, il cervello
+
+99
+00:08:22,000 --> 00:08:28,520
+infatti utilizza gli stessi percorsi per elaborare entrambe le sensazioni e in pratica ciò vuol
+
+100
+00:08:28,520 --> 00:08:34,920
+dire che piacere e dolore sono due facce della stessa medaglia, due fattori opposti, due antagonisti
+
+101
+00:08:34,920 --> 00:08:37,480
+che si trovano in una sorta di equilibrio.
+
+102
+00:08:37,480 --> 00:08:44,160
+In situazione di riposo infatti, cioè quando la dopamina è alla sua baseline, la bilancia
+
+103
+00:08:44,160 --> 00:08:50,280
+piacere-dolore è in equilibrio nel centro, ma se la dopamina aumenta allora la bilancia
+
+104
+00:08:50,280 --> 00:08:55,920
+si abbatte dal lato del piacere, innescando le sensazioni positive a cui abbiamo accennato
+
+105
+00:08:55,920 --> 00:08:56,920
+prima.
+
+106
+00:08:56,920 --> 00:09:02,640
+Se invece la dopamina diminuisce la bilancia si abbatte dal lato del dolore, provocando
+
+107
+00:09:02,640 --> 00:09:08,520
+al contrario sensazioni negative come tristezza o abbattimento, depressione e simili.
+
+108
+00:09:08,960 --> 00:09:15,240
+In tutto questo discorso il nostro smartphone fa la parte del distributore tascabile di
+
+109
+00:09:15,240 --> 00:09:16,240
+dopamina.
+
+110
+00:09:16,240 --> 00:09:21,880
+Tutte le interazioni che noi consideriamo positive, infatti, provocano in noi un rilascio
+
+111
+00:09:21,880 --> 00:09:27,960
+di dopamina e ciò vale tanto per quelle reali quanto per quelle virtuali, solo che rispetto
+
+112
+00:09:27,960 --> 00:09:33,280
+al mondo materiale, in quello immateriale le possibilità sono infinite.
+
+113
+00:09:33,720 --> 00:09:40,160
+In presenza, dal vivo, noi possiamo interagire con un numero limitato di persone o di cose,
+
+114
+00:09:40,160 --> 00:09:43,680
+ma online questi numeri crescono a dismisura.
+
+115
+00:09:43,680 --> 00:09:49,680
+I cataloghi che possiamo consultare sono immensi, i gruppi sociali a cui possiamo partecipare
+
+116
+00:09:49,680 --> 00:09:55,200
+sono infiniti, le interazioni che possiamo somministrare o ricevere sono potenzialmente
+
+117
+00:09:55,200 --> 00:09:56,200
+miliardi.
+
+118
+00:09:56,200 --> 00:10:02,880
+Ed ecco quindi che ogni notifica, ogni acquisto, ogni like, ogni commento si trasforma in
+
+119
+00:10:03,480 --> 00:10:08,400
+un fiume di dopamina che inonda il nostro circuito della ricompensa e che produce un
+
+120
+00:10:08,400 --> 00:10:15,400
+rinforzo positivo, si dice così, che ci spinge istintivamente a ricercare quegli stessi stimoli
+
+121
+00:10:15,400 --> 00:10:17,400
+per avere quelle stesse ricompense.
+
+122
+00:10:17,400 --> 00:10:24,360
+Poi, come se questo non fosse già abbastanza, sappi che dobbiamo anche ritornare al discorso
+
+123
+00:10:24,360 --> 00:10:30,520
+di prima, cioè ogni app ben progettata è progettata per catturare al massimo l'attenzione
+
+124
+00:10:30,520 --> 00:10:37,200
+degli utenti, dunque per ciascuna di esse il gioco consiste nello sfruttare al massimo
+
+125
+00:10:37,200 --> 00:10:39,880
+i meccanismi della dopamina a proprio vantaggio.
+
+126
+00:10:39,880 --> 00:10:47,040
+Il circuito della ricompensa infatti ha caratteristiche ben precise, alcune delle quali vengono egregiamente
+
+127
+00:10:47,040 --> 00:10:50,200
+sfruttate dalle app ad esempio dei social network.
+
+128
+00:10:50,200 --> 00:10:55,400
+Una di queste tante caratteristiche, forse una delle più interessanti secondo me, è
+
+129
+00:10:55,400 --> 00:11:01,720
+che l'attesa di ricevere la ricompensa genera essa stessa un rilascio di dopamina.
+
+130
+00:11:01,720 --> 00:11:05,360
+L'attesa del piacere è essa stessa il piacere, no?
+
+131
+00:11:05,360 --> 00:11:11,760
+Si tratta dello stesso fenomeno che si verifica quando si gioca alle slot machine o quando
+
+132
+00:11:11,760 --> 00:11:14,360
+si tenta la fortuna con i gratta e vinci.
+
+133
+00:11:14,360 --> 00:11:22,000
+L'eccitazione e la sensazione piacevole iniziano ben prima di vincere il premio, quando si
+
+134
+00:11:22,000 --> 00:11:27,700
+inserisce la moneta e si tira la leva o quando si acquista il biglietto e si impugna la monetina
+
+135
+00:11:27,700 --> 00:11:28,700
+per grattare.
+
+136
+00:11:28,700 --> 00:11:34,520
+Il processo di gratificazione a quel punto è già in atto, è un qualcosa che ad esempio
+
+137
+00:11:34,520 --> 00:11:37,760
+chi soffre di dipendenza da gioco conosce molto bene.
+
+138
+00:11:37,760 --> 00:11:44,040
+E altrettanto bene sappiamo anche che nel caso in cui si dovesse vincere l'emozione
+
+139
+00:11:44,040 --> 00:11:51,360
+che si prova è sempre molto forte anche magari per piccole cifre e questo è un'altra interessante
+
+140
+00:11:51,400 --> 00:11:54,000
+caratteristica del circuito della ricompensa.
+
+141
+00:11:54,000 --> 00:12:01,880
+Se la ricompensa è difficile da prevedere, se non è noto dopo quanti tentativi arriverà,
+
+142
+00:12:01,880 --> 00:12:06,920
+allora quando finalmente arriva provoca un rilascio di dopamina molto maggiore.
+
+143
+00:12:06,920 --> 00:12:11,880
+Chiaramente anche a supporto di queste mie affermazioni esistono molti studi, li trovi
+
+144
+00:12:11,880 --> 00:12:13,720
+sempre negli articoli in descrizione.
+
+145
+00:12:13,720 --> 00:12:16,320
+Ma se poi il premio non arriva?
+
+146
+00:12:16,640 --> 00:12:21,960
+In fondo sono ben rare le occasioni in cui si vince con le slot machine o con i gratta
+
+147
+00:12:21,960 --> 00:12:22,960
+e vinci.
+
+148
+00:12:22,960 --> 00:12:28,120
+Beh, a seguito di questo tipo di situazioni, cioè quando ci aspettiamo di ricevere una
+
+149
+00:12:28,120 --> 00:12:34,000
+ricompensa e poi restiamo delusi, si verifica un altro interessante fenomeno, sempre legato
+
+150
+00:12:34,000 --> 00:12:38,880
+al rilascio di dopamina, che viene chiamato Reward Prediction Error.
+
+151
+00:12:39,440 --> 00:12:47,160
+In due parole, un RPE è un picco nel rilascio della dopamina, quindi al di sopra della baseline,
+
+152
+00:12:47,160 --> 00:12:52,840
+seguito subito dopo da un crollo, il quale porta invece il valore al di sotto della
+
+153
+00:12:52,840 --> 00:12:53,840
+baseline.
+
+154
+00:12:53,840 --> 00:12:59,920
+Poco prima di scoprire il risultato del nostro tentativo, quindi, la dopamina sale per l'attesa
+
+155
+00:12:59,920 --> 00:13:06,320
+della ricompensa e noi stiamo bene, ci sentiamo galvanizzati, poi scopriamo il risultato,
+
+156
+00:13:06,320 --> 00:13:12,000
+che quasi sempre è negativo, e la dopamina precipita e noi ci sentiamo molto demoralizzati.
+
+157
+00:13:12,000 --> 00:13:15,320
+Ma qui arriva il bello di questo meccanismo.
+
+158
+00:13:15,320 --> 00:13:21,160
+Se il livello di dopamina, infatti, è al di sotto della baseline, è vero che stiamo male,
+
+159
+00:13:21,160 --> 00:13:26,040
+ma il successivo picco, dovuto al successivo azionamento della leva o all'acquisto del
+
+160
+00:13:26,040 --> 00:13:30,960
+successivo gratta e vinci, ci farà sentire molto meglio della volta precedente.
+
+161
+00:13:31,280 --> 00:13:37,480
+E questo perché il dislivello tra un picco negativo e un picco positivo è molto maggiore
+
+162
+00:13:37,480 --> 00:13:41,240
+di quello tra la baseline e lo stesso picco positivo.
+
+163
+00:13:41,240 --> 00:13:46,400
+Ma torniamo quindi a quanto accennavamo prima, come fanno i social network a sfruttare questi
+
+164
+00:13:46,400 --> 00:13:51,920
+meccanismi al loro vantaggio e spingerci a dedicare loro tanta della nostra attenzione?
+
+165
+00:13:51,920 --> 00:13:59,000
+Semplice, le app sono ottimizzate per concatenare il più possibile picchi positivi e negativi,
+
+166
+00:13:59,000 --> 00:14:05,560
+in modo da indurci dei veri e propri boost di dopamina che siano i più ampi possibile.
+
+167
+00:14:05,560 --> 00:14:11,260
+L'incertezza del risultato poi farà il resto del lavoro, mitigando l'effetto dei picchi
+
+168
+00:14:11,260 --> 00:14:17,280
+negativi nel momento in cui finalmente avremo la nostra soddisfazione, la quale ci apparirà
+
+169
+00:14:17,280 --> 00:14:21,240
+enormemente più grande di tutte le delusioni precedenti.
+
+170
+00:14:21,240 --> 00:14:27,520
+Ancora una volta, qui si riconoscono i pattern della dipendenza da gioco d'azzardo, ad esempio.
+
+171
+00:14:27,520 --> 00:14:32,840
+Questo tipo di comportamento è attuato da Instagram, tanto per dirne uno fra tanti.
+
+172
+00:14:32,840 --> 00:14:38,560
+Gli algoritmi di notifica dei like di questo social network infatti sono tarati in modo
+
+173
+00:14:38,560 --> 00:14:41,040
+da raggruppare insieme più eventi.
+
+174
+00:14:41,040 --> 00:14:48,240
+In pratica, Instagram non notifica ogni like di ogni nostra foto, storia o reel appena
+
+175
+00:14:48,240 --> 00:14:54,720
+questo viene apposto, ma al contrario trattiene le notifiche fino ad accumulare un tot di
+
+176
+00:14:54,720 --> 00:14:57,680
+like e poi ce ne segnala la presenza.
+
+177
+00:14:57,680 --> 00:15:03,720
+Il risultato di questo fatto per l'utente è che magari inizialmente rimarrà deluso
+
+178
+00:15:03,720 --> 00:15:10,440
+dal fatto di aver ricevuto pochissime interazioni, ma poi in un secondo momento sarà molto più
+
+179
+00:15:10,440 --> 00:15:13,840
+felice di averne ricevute molte tutte insieme.
+
+180
+00:15:13,840 --> 00:15:20,120
+Un esempio diverso invece è Facebook, il quale gioca più sulla quantità e sull'abbondanza.
+
+181
+00:15:20,520 --> 00:15:25,960
+Con le sue infinite possibilità di interazione, infatti, questo social network cerca di non
+
+182
+00:15:25,960 --> 00:15:31,720
+farci mai mancare la nostra dose di dopamina e allora praticamente ogni volta che apriamo
+
+183
+00:15:31,720 --> 00:15:38,240
+l'app possiamo ragionevolmente sperare di trovarvi un qualche tipo di notifica, sempre
+
+184
+00:15:38,240 --> 00:15:41,400
+che non ce le abbia già sparate direttamente sullo schermo.
+
+185
+00:15:41,400 --> 00:15:47,440
+Gruppi, pagine, amici, giochi, tutti concorrono a incrementare quel numerino delle attività
+
+186
+00:15:47,440 --> 00:15:52,760
+che richiedono la nostra attenzione e noi siamo felici perché il nostro livello di dopamina
+
+187
+00:15:52,760 --> 00:15:53,760
+sale.
+
+188
+00:15:53,760 --> 00:15:59,080
+Ma in tutto questo, le strategie a disposizione di queste app non si fermano certo alle sole
+
+189
+00:15:59,080 --> 00:16:00,080
+notifiche.
+
+190
+00:16:00,080 --> 00:16:06,920
+Il refresh manuale dei contenuti, ad esempio, non viene certo implementato perché sia necessario
+
+191
+00:16:06,920 --> 00:16:12,680
+al funzionamento di un social come Twitter o Instagram o un sito di news, lo scopo in
+
+192
+00:16:12,680 --> 00:16:19,060
+realtà è quello di darci l'illusione di avere il controllo, quella sensazione di mettere
+
+193
+00:16:19,060 --> 00:16:25,840
+in moto un meccanismo che ci porti ad un risultato, esattamente come il gesto di tirare la leva
+
+194
+00:16:25,840 --> 00:16:28,480
+di una slot machine o di grattare un biglietto.
+
+195
+00:16:28,480 --> 00:16:34,440
+E poi c'è lo scrolling infinito, come nel caso di Amazon o praticamente di qualunque
+
+196
+00:16:34,440 --> 00:16:40,680
+social, oppure l'autoplay di YouTube o di Spotify che non fa mai fermare la riproduzione.
+
+197
+00:16:40,680 --> 00:16:47,520
+Qui il concetto è come quello di chi sta mangiando e vede il proprio piatto riempito
+
+198
+00:16:47,520 --> 00:16:53,480
+in continuazione, dal punto di vista psicologico è più semplice tenere il conto di quanto
+
+199
+00:16:53,480 --> 00:16:58,520
+si è mangiato e smettere quando il piatto è vuoto, mentre diventa molto più complicato
+
+200
+00:16:58,520 --> 00:17:01,600
+se il piatto viene continuamente rimpinguato.
+
+201
+00:17:01,600 --> 00:17:07,640
+E ancora ci sono i colori, i colori possono essere usati per far provare emozioni differenti
+
+202
+00:17:07,640 --> 00:17:08,640
+alle persone.
+
+203
+00:17:08,800 --> 00:17:13,920
+Il nostro sguardo viene attirato dai colori brillanti, come ad esempio il rosso, e guarda
+
+204
+00:17:13,920 --> 00:17:19,160
+un po', nel corso degli anni il logo di Instagram, che inizialmente era marrone, si è evoluto
+
+205
+00:17:19,160 --> 00:17:22,400
+aggiungendo colori come il rosso, il giallo, il porpora.
+
+206
+00:17:22,400 --> 00:17:28,400
+Oppure i badge che contengono i contatori delle notifiche non lette sono di colore rosso,
+
+207
+00:17:28,400 --> 00:17:30,320
+praticamente per qualsiasi app.
+
+208
+00:17:30,320 --> 00:17:35,600
+Insomma, anche se non ce ne rendiamo spesso conto, siamo letteralmente sottoposti ad un
+
+209
+00:17:35,600 --> 00:17:40,720
+bombardamento continuo volto ad attirare la nostra attenzione per il maggior tempo
+
+210
+00:17:40,720 --> 00:17:43,880
+possibile e nel modo più esclusivo possibile.
+
+211
+00:17:43,880 --> 00:17:49,040
+Non c'è da meravigliarsi quindi se tanti di noi manifestano forme maggiori o minori
+
+212
+00:17:49,040 --> 00:17:52,200
+di disturbi collegati all'utilizzo dello smartphone.
+
+213
+00:17:52,200 --> 00:17:57,480
+Abbiamo accennato all'inizio di questo episodio ad esempio all'anomofobia o alla sindrome
+
+214
+00:17:57,480 --> 00:18:01,680
+della vibrazione fantasma, ma la lista non finisce certo qui.
+
+215
+00:18:01,760 --> 00:18:06,880
+Si parla anche di stress e ansia quando non si ha accesso al proprio dispositivo o più
+
+216
+00:18:06,880 --> 00:18:13,160
+semplicemente di un senso di urgenza di controllare le notifiche come se non farlo rappresentasse
+
+217
+00:18:13,160 --> 00:18:14,360
+un'occasione persa.
+
+218
+00:18:14,360 --> 00:18:20,040
+Con questo discorso non voglio certo negare che lo smartphone e le varie app, come anche
+
+219
+00:18:20,040 --> 00:18:25,400
+i social network, abbiano innumerevoli effetti positivi sulle nostre vite, fosse anche solo
+
+220
+00:18:25,400 --> 00:18:30,840
+per le enormi possibilità di interazione che ci garantiscono, ma non si può neanche
+
+221
+00:18:30,840 --> 00:18:36,520
+ignorare il fatto che tutto l'ecosistema tecnologico in cui operano sia studiato a
+
+222
+00:18:36,520 --> 00:18:38,440
+tavolino per indurre dipendenza.
+
+223
+00:18:38,440 --> 00:18:43,680
+Magari non parliamo di dipendenze che portano danni a lungo termine, come sono quelle da
+
+224
+00:18:43,680 --> 00:18:47,840
+sostanze pesanti, ma non per questo vanno prese sotto gamba.
+
+225
+00:18:47,840 --> 00:18:53,760
+Nel libro L'era della dopamina, ad esempio, la dottoressa Anne Lembke spiega in modo molto
+
+226
+00:18:53,760 --> 00:18:59,520
+semplice e chiaro come i rilasci di dopamina ripetuti costantemente nel tempo siano in
+
+227
+00:18:59,600 --> 00:19:06,640
+grado di indurre stati di dipendenza e io trovo che sia molto interessante conoscere come funzionano
+
+228
+00:19:06,640 --> 00:19:13,600
+questi algoritmi implementati nel nostro cervello, se non altro per saperli riconoscere quando
+
+229
+00:19:13,600 --> 00:19:14,960
+ce li troviamo di fronte.
+
+230
+00:19:14,960 --> 00:19:22,560
+La Lembke ci dice dunque, come abbiamo accennato già poco fa, che il rapporto piacere-dolore
+
+231
+00:19:22,560 --> 00:19:29,160
+è di fatto un equilibrio e quindi tende in modo naturale ed automatico a rimanere tale,
+
+232
+00:19:29,300 --> 00:19:34,880
+ad ogni stimolo positivo che produce un rilascio di dopamina, corrisponde infatti una sorta
+
+233
+00:19:34,880 --> 00:19:42,000
+di riflesso, uno stimolo negativo che si attiva poco dopo e che controbilancia la spinta.
+
+234
+00:19:42,000 --> 00:19:48,160
+Si tratta di una reazione del tutto naturale, ma il problema è che quando lo stimolo positivo
+
+235
+00:19:48,160 --> 00:19:54,960
+si interrompe, quello negativo è ancora attivo almeno per un po' di tempo e questo causa
+
+236
+00:19:54,960 --> 00:20:00,560
+un seppurtemporaneo squilibrio verso il versante del dolore e ci fa soffrire.
+
+237
+00:20:00,560 --> 00:20:07,160
+Sperimentare questo semplice fatto ci porta in maniera istintiva a cercare di non interrompere
+
+238
+00:20:07,160 --> 00:20:11,840
+mai lo stimolo positivo o almeno a sostituirlo con un altro simile.
+
+239
+00:20:11,840 --> 00:20:17,560
+So che sembra un ragionamento un po' astratto, ma è esattamente ciò che succede ad esempio
+
+240
+00:20:17,560 --> 00:20:23,520
+quando mangiamo una patatina, dopo pochi secondi ne vogliamo subito un'altra, oppure quando
+
+241
+00:20:23,520 --> 00:20:28,800
+abbiamo appena terminato una partita ad un videogame, abbiamo subito voglia di iniziare
+
+242
+00:20:28,800 --> 00:20:35,840
+un'altra partita, in generale vogliamo continuare a percepire quelle sensazioni positive e vogliamo
+
+243
+00:20:35,840 --> 00:20:37,280
+evitare che spariscano.
+
+244
+00:20:37,280 --> 00:20:44,360
+Purtroppo però un costante apporto di stimoli positivi a lungo andare indebolisce l'intensità
+
+245
+00:20:44,360 --> 00:20:52,400
+e la durata del piacere, in pratica con l'esposizione continua ad un unico tipo di stimolo, la baseline
+
+246
+00:20:52,400 --> 00:20:58,920
+si sposta verso di esso e la quantità di altri stimoli necessari per ricevere gli stessi
+
+247
+00:20:58,920 --> 00:21:01,720
+benefici aumenta sempre di più.
+
+248
+00:21:01,720 --> 00:21:08,720
+E' così che si sviluppa una dipendenza, qualunque essa sia da droga, da cibo, da sesso, da smartphone,
+
+249
+00:21:08,720 --> 00:21:14,560
+semplicemente servono quantità sempre maggiori per ottenere gli stessi livelli di soddisfazione.
+
+250
+00:21:14,560 --> 00:21:20,760
+Ovviamente prima di arrivare a livelli critici per i quali è necessario consultare uno specialista
+
+251
+00:21:20,760 --> 00:21:25,900
+è possibile attuare delle strategie per ripristinare il normale funzionamento del
+
+252
+00:21:25,900 --> 00:21:28,040
+nostro circuito della ricompensa.
+
+253
+00:21:28,040 --> 00:21:33,920
+Quello che la dottoressa Lembki descrive come un reset della baseline è infatti possibile
+
+254
+00:21:33,920 --> 00:21:39,520
+grazie all'astinenza, in linea generale, secondo la sua esperienza, per un tempo di almeno
+
+255
+00:21:39,520 --> 00:21:40,640
+4 settimane.
+
+256
+00:21:40,640 --> 00:21:46,480
+In tal modo il controstimolo negativo ha il tempo di esaurirsi e l'intero sistema torna
+
+257
+00:21:46,480 --> 00:21:48,200
+in uno stato di equilibrio sano.
+
+258
+00:21:48,640 --> 00:21:54,240
+Certo, nel frattempo il soggetto sperimenterà uno stato di sofferenza pari a quello del
+
+259
+00:21:54,240 --> 00:21:57,400
+piacere da cui sta provenendo, e dovrà resistere.
+
+260
+00:21:57,400 --> 00:22:03,640
+Ma anche senza voler parlare di casi estremi, le app nel nostro smartphone fanno comunque
+
+261
+00:22:03,640 --> 00:22:09,180
+la parte dei pusher che vengono a bussare alla nostra porta in continuazione, offrendoci
+
+262
+00:22:09,180 --> 00:22:11,440
+le loro dosi di dopamina a buon mercato.
+
+263
+00:22:11,440 --> 00:22:17,680
+Noi, dal canto nostro, se sentiamo di stare iniziando a sviluppare comportamenti eccessivi
+
+264
+00:22:17,680 --> 00:22:23,240
+che non vogliamo avere, quello che possiamo fare, prima che la cosa ci sfugga di mano,
+
+265
+00:22:23,240 --> 00:22:29,080
+è attuare una serie di pratiche per almeno mitigare gli attacchi a cui siamo sottoposti.
+
+266
+00:22:29,080 --> 00:22:34,800
+Per esempio, possiamo disattivare tutte le notifiche delle app non indispensabili.
+
+267
+00:22:34,800 --> 00:22:40,280
+Poi possiamo eliminare i badge con i contatori dei messaggi non letti o le attività non
+
+268
+00:22:40,280 --> 00:22:41,280
+visualizzate.
+
+269
+00:22:41,280 --> 00:22:44,680
+Possiamo impostare le interfacce in bianco e nero.
+
+270
+00:22:44,680 --> 00:22:49,680
+Possiamo disattivare lo sblocco veloce tramite impronta o viso.
+
+271
+00:22:49,680 --> 00:22:56,040
+E se proprio vogliamo osare, possiamo perfino provare a lasciare lo smartphone in un'altra
+
+272
+00:22:56,040 --> 00:22:58,680
+stanza quando non ci è indispensabile.
+
+273
+00:22:58,680 --> 00:23:04,440
+Ma al di là di qualunque consiglio io ti possa dare, come al solito il punto fondamentale
+
+274
+00:23:04,440 --> 00:23:10,400
+è quello di utilizzare lo strumento con la testa, con consapevolezza, in modo da essere
+
+275
+00:23:10,400 --> 00:23:13,760
+noi a utilizzare lui e non lui a utilizzare noi.
+
+276
+00:23:14,160 --> 00:23:19,200
+Quindi, semplicemente, la prossima volta che prendiamo in mano uno smartphone proviamo
+
+277
+00:23:19,200 --> 00:23:24,240
+a chiederci se farci guidare da un mucchio di notifiche è veramente ciò che vogliamo
+
+278
+00:23:24,240 --> 00:23:25,240
+fare.
+
+279
+00:23:25,240 --> 00:23:27,960
+Bene, l'episodio di oggi finisce qui.
+
+280
+00:23:27,960 --> 00:23:32,840
+Io come al solito spero di averti condiviso un qualche ragionamento interessante e se
+
+281
+00:23:32,840 --> 00:23:38,520
+così fosse ti chiedo di condividere questo podcast con un amico o un'amica che c'è
+
+282
+00:23:38,520 --> 00:23:41,360
+bisogno di crescere per fare qualcosa di bello.
+
+283
+00:23:41,760 --> 00:23:47,240
+Ti ricordo poi che se hai intenzione di partecipare al Laravel Day di quest'anno puoi utilizzare
+
+284
+00:23:47,240 --> 00:23:51,360
+lo sconto che trovi in descrizione per acquistare il biglietto e questo perché Pensieri in
+
+285
+00:23:51,360 --> 00:23:57,520
+Codice è partner dell'evento e inoltre se ti va possiamo vederci per un caffè due
+
+286
+00:23:57,520 --> 00:24:00,960
+chiacchiere il giorno prima, il 16 novembre a Verona.
+
+287
+00:24:00,960 --> 00:24:05,740
+Se sei interessato scrivimi che ci organizziamo, tutti i miei contatti li trovi come al solito
+
+288
+00:24:05,740 --> 00:24:07,880
+sul sito pensieriincodice.it.
+
+289
+00:24:08,320 --> 00:24:14,240
+E basta, direi che per oggi è tutto, noi ci sentiamo al prossimo episodio e tu non dimenticare
+
+290
+00:24:14,240 --> 00:24:19,480
+mai che un informatico risolve problemi, a volte, anche usando il computer.
+

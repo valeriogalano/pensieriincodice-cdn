@@ -1,0 +1,136 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice, pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,400
+in meno di 5 minuti.
+
+3
+00:00:14,400 --> 00:00:31,760
+Abu Jafar Muhammad Ibn Musa al-Hawarizmi, sempre ammesso che si pronunci in questo modo,
+
+4
+00:00:31,760 --> 00:00:38,760
+nasce nel 780 d.C. in quella che ai giorni nostri è conosciuta come la regione dell'Uzbekistan.
+
+5
+00:00:39,200 --> 00:00:45,120
+Riconosciuto già dai suoi contemporanei come abile studioso, viene presto messo dal califo
+
+6
+00:00:45,120 --> 00:00:51,880
+dell'epoca a capo di un famoso polo culturale arabo, che prendeva il nome di Casa della
+
+7
+00:00:51,880 --> 00:00:57,680
+Saggezza e che, proprio in quel periodo, sotto la sua supervisione, darà il via ad un'opera
+
+8
+00:00:57,680 --> 00:01:04,760
+di traduzione di un gran numero di testi matematici di stampo greco, indiano, babilonese e persiano.
+
+9
+00:01:05,440 --> 00:01:12,760
+Presumibilmente intorno all'anno 825 d.C., lo stesso al-Hawarizmi scrive inoltre un proprio
+
+10
+00:01:12,760 --> 00:01:19,200
+testo, dal titolo per me assolutamente impronunciabile in lingua originale, ma che in italiano suona
+
+11
+00:01:19,200 --> 00:01:25,760
+più o meno come compendio sul calcolo per completamento e bilanciamento, e del quale
+
+12
+00:01:25,760 --> 00:01:31,480
+purtroppo fino ad oggi non è sopravvissuta alcuna copia in lingua araba, ma solo successive
+
+13
+00:01:31,480 --> 00:01:32,960
+traduzioni latine.
+
+14
+00:01:33,360 --> 00:01:39,040
+Tale opera, infatti, avrà grande diffusione in Europa nei secoli successivi e nel periodo
+
+15
+00:01:39,040 --> 00:01:45,880
+medioevale, e verrà ripresa, studiata e ampliata da vari studiosi la cui fama è più che viva
+
+16
+00:01:45,880 --> 00:01:51,720
+anche oggi. Uno fra tutti, ad esempio, è proprio il matematico Fibonacci, quello della
+
+17
+00:01:51,720 --> 00:01:58,640
+serie di numeri, di cui abbiamo parlato anche già qui su Snippet. Questo testo arabo, che
+
+18
+00:01:58,640 --> 00:02:04,640
+poi sarebbe diventato un pilastro della moderna aritmetica, illustrava un sistema di numerazione
+
+19
+00:02:04,640 --> 00:02:11,760
+indiano, sconosciuto all'epoca in Europa e che presentava un simbolo speciale in più
+
+20
+00:02:11,760 --> 00:02:18,640
+rispetto al sistema romano. Questo simbolo, che per noi oggi è più che normale e comunemente
+
+21
+00:02:18,640 --> 00:02:26,200
+utilizzato, per l'epoca rappresentava una grande innovazione e permetteva di ampliare notevolmente
+
+22
+00:02:26,200 --> 00:02:33,720
+le possibilità di calcolo. Mi sto riferendo banalmente allo zero. Proprio il fatto che
+
+23
+00:02:33,720 --> 00:02:40,560
+le cifre che noi utilizziamo oggi, ogni giorno, ci siano giunte in Europa tramite un autore
+
+24
+00:02:40,560 --> 00:02:46,120
+arabo, nonostante esse in realtà siano di origine indiana, è proprio il motivo per
+
+25
+00:02:46,120 --> 00:02:53,720
+cui noi ci riferiamo spesso ad esse con il titolo di numeri arabi e non numeri indiani.
+
+26
+00:02:54,120 --> 00:03:00,720
+Oltre a questo, poi, nel libro di Hal Hawarizmi viene anche descritta una serie di regole
+
+27
+00:03:00,720 --> 00:03:07,520
+da applicare per calcolare meccanicamente, in modo automatico, le quattro operazioni
+
+28
+00:03:07,520 --> 00:03:14,320
+di base, somma, sottrazione, moltiplicazione e divisione. E queste regole, che sono composte
+
+29
+00:03:14,320 --> 00:03:21,200
+di passaggi ben definiti, semplici da applicare e in numero finito, vengono tuttora insegnate
+
+30
+00:03:21,200 --> 00:03:28,040
+agli studenti di scuola elementare. E anche se all'epoca questa parola non esisteva ancora,
+
+31
+00:03:28,040 --> 00:03:35,880
+esse rappresentano di fatto i primi algoritmi matematici formalizzati. Ed è proprio infatti
+
+32
+00:03:35,880 --> 00:03:42,680
+dalla traslitterazione del nome Hal Hawarizmi che ha avuto origine la moderna parola algoritmo.
+
+33
+00:03:42,680 --> 00:03:50,880
+E come se non bastasse, dalla versione abbreviata del titolo del suo libro, tradotta in latino,
+
+34
+00:03:50,880 --> 00:03:53,680
+ha preso invece origine la parola algebra.
+

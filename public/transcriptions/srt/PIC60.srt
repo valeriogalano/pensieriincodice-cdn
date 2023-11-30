@@ -1,0 +1,656 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pensieri in codice. Idee dal mondo del software a cura di Valerio Galano.
+
+2
+00:00:10,000 --> 00:00:27,100
+Salve a tutti ragazzi e bentornati su Pensieri in codice. Non capita spesso di poter definire
+
+3
+00:00:27,100 --> 00:00:33,500
+avvicente una storia di informatica o di informatici. Tuttavia qualche settimana fa mi è capitato
+
+4
+00:00:33,500 --> 00:00:40,060
+di leggere un interessante articolo su Medium in cui l'autore Alex Birsan descriveva il
+
+5
+00:00:40,060 --> 00:00:46,580
+modo in cui ha hackerato oltre 35 aziende grazie ad un particolare tipo di attacco informatico
+
+6
+00:00:46,580 --> 00:00:53,360
+da lui inventato. Questo attacco si basa su di una tecnica di uso estremamente comune
+
+7
+00:00:53,360 --> 00:01:00,400
+nella moderna programmazione e leggerne la descrizione e il tasso di successo mi ha fatto
+
+8
+00:01:00,400 --> 00:01:06,560
+riflettere su alcuni aspetti del modo in cui si sviluppa il software oggigiorno. Come vedremo
+
+9
+00:01:06,560 --> 00:01:13,000
+fra poco l'attacco è stato sì eseguito sfruttando degli specifici linguaggi di programmazione,
+
+10
+00:01:13,000 --> 00:01:19,000
+ma il concetto alla base è molto ampio e può essere facilmente esteso ad altri linguaggi
+
+11
+00:01:19,000 --> 00:01:24,680
+e ad altri livelli dello sviluppo software. Quindi nell'episodio di oggi parleremo di come
+
+12
+00:01:24,680 --> 00:01:30,240
+è avvenuto questo attacco, del perché è stato eseguito, di che cosa lo ha reso possibile e
+
+13
+00:01:30,240 --> 00:01:35,720
+infine di come questa storia debba servire da lezione a tutti noi sviluppatori.
+
+14
+00:01:49,000 --> 00:02:04,120
+Alex Birsan è un cacciatore di bug. Ciò vuol dire che il suo lavoro, o almeno parte di esso,
+
+15
+00:02:04,120 --> 00:02:12,040
+consiste nel cercare i bug nei software e nelle piattaforme online. Molte aziende infatti premiano
+
+16
+00:02:12,040 --> 00:02:18,760
+i ricercatori che scovano falle nei loro sistemi. Grosse realtà come Google, Apple e altri hanno
+
+17
+00:02:19,520 --> 00:02:25,520
+dei programmi di bug counting ai quali è possibile partecipare e che elargiscono
+
+18
+00:02:25,520 --> 00:02:32,960
+compensi in base alle entità dei bug individuati. E così, alla sua ennesima esperienza alla ricerca
+
+19
+00:02:32,960 --> 00:02:39,400
+di bug, Alex ha ben pensato di provare a sfruttare un concetto che nella programmazione moderna è
+
+20
+00:02:39,400 --> 00:02:45,840
+ampiamente diffuso e cioè il concetto di dipendenza. Quando in informatica si parla di
+
+21
+00:02:45,920 --> 00:02:52,000
+dipendenza, solitamente si intende il fatto che un componente o un software sfrutta le
+
+22
+00:02:52,000 --> 00:02:57,880
+funzionalità di un altro componente o software per svolgere le proprie attività. In altre parole,
+
+23
+00:02:57,880 --> 00:03:03,920
+per fare un esempio semplice e pratico, è molto comune che un programma o un sito web
+
+24
+00:03:03,920 --> 00:03:11,200
+utilizzi porzioni di codice create in precedenza da altre persone. Tali codici vengono comunemente
+
+25
+00:03:11,360 --> 00:03:17,320
+definiti librerie e i loro autori li creano tendenzialmente o per soddisfare necessità
+
+26
+00:03:17,320 --> 00:03:24,440
+abbastanza comuni o per condividere funzionalità fra più software. In generale, quando un programma
+
+27
+00:03:24,440 --> 00:03:30,840
+o una piattaforma per funzionare includono al proprio interno delle librerie, si dice che
+
+28
+00:03:30,840 --> 00:03:38,240
+queste rappresentano delle dipendenze per il progetto. Ora, inizialmente, e con inizialmente
+
+29
+00:03:38,240 --> 00:03:45,520
+intendo 10, forse 15 o 20 anni fa, le dipendenze si concretizzavano con il copiare materialmente
+
+30
+00:03:45,520 --> 00:03:51,720
+il codice delle librerie necessarie all'interno del codice del nostro programma. Se infatti un
+
+31
+00:03:51,720 --> 00:03:58,680
+nostro software avesse avuto fra le sue varie funzioni quella di creare un file pdf, ad esempio,
+
+32
+00:03:58,680 --> 00:04:04,800
+invece di scriverci l'intero codice per generare il file in quel particolare formato, avremmo
+
+33
+00:04:05,000 --> 00:04:10,920
+scaricato un'apposita libreria, possibilmente open source e possibilmente nella versione più
+
+34
+00:04:10,920 --> 00:04:16,840
+recente disponibile, e l'avremmo integrata al resto del nostro codice. E così facendo,
+
+35
+00:04:16,840 --> 00:04:24,160
+il nostro programma avrebbe quindi contenuto il nostro codice più una parte di codice scritta
+
+36
+00:04:24,160 --> 00:04:30,520
+da qualcun altro. Il vantaggio di una simile scelta è ovvio, ci avrebbe risparmiato tempo e
+
+37
+00:04:30,520 --> 00:04:36,120
+fatica evitandoci di riscrivere qualcosa che qualcun altro aveva già scritto e messo a nostra
+
+38
+00:04:36,120 --> 00:04:42,400
+disposizione. E allo stesso modo però anche lo svantaggio è piuttosto chiaro, essendo codice
+
+39
+00:04:42,400 --> 00:04:48,800
+scritto da altri avrebbe potuto contenere dei bug, o addirittura in casi estremi del codice malevolo
+
+40
+00:04:48,800 --> 00:04:53,880
+di qualche tipo. Ora, giusto per essere chiari, non è che se il programma fosse scritto interamente
+
+41
+00:04:53,880 --> 00:05:01,160
+da noi, allora sarebbe esente da bug. Ma è ovvio che è diverso individuare e risolvere i nostri bug
+
+42
+00:05:01,160 --> 00:05:07,800
+rispetto a quelli presenti nel codice di qualcun altro. In teoria, quando infatti si include una
+
+43
+00:05:07,800 --> 00:05:13,720
+libreria, si dà per scontato che essa funzioni già correttamente e non la si va a ritestare in
+
+44
+00:05:13,720 --> 00:05:18,840
+dettaglio, altrimenti questo vanificherebbe i vantaggi descritti prima. Ad ogni modo,
+
+45
+00:05:18,840 --> 00:05:24,640
+questo concetto di dipendenza fin qui descritto, negli ultimi anni si è andato, diciamo così,
+
+46
+00:05:24,640 --> 00:05:30,440
+istituzionalizzando, entrando a far parte di parecchi linguaggi di programmazione e di parecchi
+
+47
+00:05:30,440 --> 00:05:37,440
+componenti che sono poi diventati lo standard de facto. Pensiamo al Python, al PHP, al Ruby,
+
+48
+00:05:37,440 --> 00:05:43,520
+Node, Deno... la lista è lunghissima ed elenca tutta una serie di linguaggi di programmazione
+
+49
+00:05:43,520 --> 00:05:50,920
+corredati di un meccanismo atto ad includere in modo automatizzato librerie nei propri progetti
+
+50
+00:05:50,920 --> 00:05:58,320
+e quindi dipendenze. Questo meccanismo è realizzato da un altro componente software che,
+
+51
+00:05:58,320 --> 00:06:04,760
+in linea generale, prende il nome di gestore di pacchetti o in inglese Package Manager. Per me
+
+52
+00:06:04,760 --> 00:06:10,920
+che sviluppo principalmente in PHP, ad esempio, esiste un gestore chiamato Composer che mi
+
+53
+00:06:10,920 --> 00:06:16,560
+permette di includere librerie di ogni genere, le quali risiedono su di un enorme archivio online.
+
+54
+00:06:16,560 --> 00:06:24,040
+Quando lancio il comando composer require seguito dal nome di un pacchetto, l'operazione eseguita
+
+55
+00:06:24,040 --> 00:06:30,080
+in modo totalmente automatico è molto simile al modo in cui si includevano le dipendenze una
+
+56
+00:06:30,080 --> 00:06:37,120
+volta che abbiamo descritto prima, ma ovviamente è anche un'operazione molto più sofisticata. Il
+
+57
+00:06:37,120 --> 00:06:44,440
+Package Manager, infatti, in pratica ricerca e identifica il pacchetto che ho richiesto e lo fa
+
+58
+00:06:44,440 --> 00:06:51,440
+su degli archivi chiamati repository, uno dei quali è pubblico e accessibile a tutti mentre
+
+59
+00:06:51,440 --> 00:06:58,400
+altri possono essere privati, creati da noi, dalla nostra azienda o da qualche altra entità che
+
+60
+00:06:58,400 --> 00:07:06,000
+successivamente ci ha concesso l'accesso. Una volta individuato il pacchetto, poi, il Package Manager
+
+61
+00:07:06,120 --> 00:07:12,040
+scarica in un apposito percorso del nostro progetto il codice corrispondente alla versione
+
+62
+00:07:12,040 --> 00:07:17,280
+da noi richiesta o, se non abbiamo specificato alcuna versione, quello corrispondente alla
+
+63
+00:07:17,280 --> 00:07:23,960
+versione considerata la stabile del momento. Contemporaneamente a tutto questo però il gestore
+
+64
+00:07:23,960 --> 00:07:30,040
+dei pacchetti ha anche un altro compito, in realtà ne ha molti ma in questo momento a noi interessa
+
+65
+00:07:30,040 --> 00:07:36,280
+questo in particolare e cioè quello di creare e mantenere aggiornata una lista di tutte le
+
+66
+00:07:36,280 --> 00:07:42,880
+dipendenze del progetto. Il vantaggio di un approccio del genere è, presto detto, dal momento
+
+67
+00:07:42,880 --> 00:07:49,480
+che esiste una precisa lista delle dipendenze e che queste sono inoltre reperibili online,
+
+68
+00:07:49,480 --> 00:07:56,360
+poco importa se su repository pubblici o se provengono da server privati o di accesso
+
+69
+00:07:56,800 --> 00:08:04,280
+esclusivo dello sviluppatore, allora è possibile evitare di includere materialmente tutti i file
+
+70
+00:08:04,280 --> 00:08:09,960
+che compongono il progetto all'interno dell'archivio, portando così ad una notevole
+
+71
+00:08:09,960 --> 00:08:15,520
+riduzione della dimensione del codice, cosa che lo rende più facile da maneggiare, da archiviare,
+
+72
+00:08:15,520 --> 00:08:21,760
+da installare. Ora non scenderò in dettaglio perché non è argomento di questo episodio ma
+
+73
+00:08:21,760 --> 00:08:27,080
+i vantaggi dal punto di vista dello sviluppo e della distribuzione del software rendono questo
+
+74
+00:08:27,080 --> 00:08:33,320
+approccio sicuramente molto migliore di quello descritto in precedenza, ma come per qualsiasi
+
+75
+00:08:33,320 --> 00:08:40,000
+altra cosa non è sempre tutto rose e fiori. Infatti è proprio su questo meccanismo che
+
+76
+00:08:40,000 --> 00:08:48,120
+Alex Birsan ha potuto basare il proprio attacco. In pratica Alex ha pensato di sfruttare i package
+
+77
+00:08:48,120 --> 00:08:54,520
+manager di alcuni linguaggi di programmazione molto diffusi per provare a installare un proprio
+
+78
+00:08:54,520 --> 00:09:01,320
+codice all'interno dei progetti di moltissime grandi aziende. In particolare si è concentrato
+
+79
+00:09:01,320 --> 00:09:08,440
+su tre linguaggi molto diffusi, Python, Node e Ruby. Cercando su repository pubblici, su motori
+
+80
+00:09:08,440 --> 00:09:15,160
+di ricerca e all'interno di progetti e siti web, si è procurato tutta una serie di file contenenti
+
+81
+00:09:15,240 --> 00:09:21,640
+liste di dipendenze di software utilizzati e sviluppati nelle aziende prese di mira. Ovviamente
+
+82
+00:09:21,640 --> 00:09:28,240
+ciò è stato possibile perché spesso accade che questi file finiscano per sbaglio all'interno di
+
+83
+00:09:28,240 --> 00:09:33,880
+progetti successivamente resi pubblici, o addirittura in altri progetti ai quali non
+
+84
+00:09:33,880 --> 00:09:40,760
+dovrebbero appartenere, o ancora che vengano pubblicati direttamente online. Ma ad ogni modo,
+
+85
+00:09:40,920 --> 00:09:47,640
+una volta reperita questa serie di file, Alex ha potuto filtrare al loro interno tutte le
+
+86
+00:09:47,640 --> 00:09:53,440
+dipendenze che si trovano pubblicamente disponibili online. L'obiettivo di Alex era
+
+87
+00:09:53,440 --> 00:10:00,320
+procurarsi una lista delle dipendenze private di queste varie aziende, quindi non ha dovuto fare
+
+88
+00:10:00,320 --> 00:10:07,640
+altro che lavorare per sottrazione, prendere tutte le dipendenze elencate e sottrarre tutte
+
+89
+00:10:07,640 --> 00:10:14,200
+quelle librerie che è riuscito a trovare pubblicamente accessibili sul web. Eliminando
+
+90
+00:10:14,200 --> 00:10:19,840
+quindi tutte le librerie pubbliche dalla lista, gli sono per forza di cose rimaste le dipendenze
+
+91
+00:10:19,840 --> 00:10:25,480
+private, quelle che evidentemente le varie aziende rendevano disponibili ai propri sviluppatori
+
+92
+00:10:25,480 --> 00:10:31,960
+tramite server privati. E a questo punto l'hacker ha potuto sferrare il proprio attacco,
+
+93
+00:10:31,960 --> 00:10:36,640
+semplicemente creando sui repository pubblici dei vari linguaggi una serie di pacchetti
+
+94
+00:10:36,640 --> 00:10:43,160
+contenenti tutti lo stesso codice, ma aventi ciascuno il nome di uno dei pacchetti privati
+
+95
+00:10:43,160 --> 00:10:49,320
+della lista. Proviamo a capire meglio questo processo con un esempio. Mettiamo che Alex sia
+
+96
+00:10:49,320 --> 00:10:56,520
+riuscito a trovare il file del package manager di un progetto di una grande azienda come ad
+
+97
+00:10:56,520 --> 00:11:03,880
+esempio Paypal. In questo file saranno elencate le dipendenze di tale progetto. Facciamo finta
+
+98
+00:11:03,880 --> 00:11:11,320
+che siano tre librerie che chiameremo A, B e C. Ora per sferrare il proprio attacco Alex dovrebbe
+
+99
+00:11:11,320 --> 00:11:18,200
+controllare se tutte queste librerie risultano presenti sul repository pubblico. E sempre per
+
+100
+00:11:18,200 --> 00:11:25,600
+amore di esempio immaginiamo che la libreria A non sia fra queste, quindi sia identificabile come una
+
+101
+00:11:25,640 --> 00:11:33,360
+libreria privata di Paypal. A questo punto Alex non dovrebbe far altro che prendere il suo codice e
+
+102
+00:11:33,360 --> 00:11:41,760
+utilizzarlo per creare una libreria sul repository pubblico chiamata A. Al termine di questo processo,
+
+103
+00:11:41,760 --> 00:11:49,600
+ripetuto per tutte le librerie private identificate, la speranza era quella che gli sviluppatori e
+
+104
+00:11:49,600 --> 00:11:55,120
+magari i sistemi automatizzati adibiti all'installazione dei vari progetti scegliessero
+
+105
+00:11:55,120 --> 00:12:02,280
+di scaricare i pacchetti falsi pubblici di Alex invece di quelli veri privati dell'azienda. E
+
+106
+00:12:02,280 --> 00:12:08,240
+indovinate un po', in effetti è stato così. L'autore ha battezzato questo suo tipo di attacco
+
+107
+00:12:08,240 --> 00:12:14,400
+Dependency Confusion e nell'articolo che vi lascio in descrizione per maggiori dettagli e che vi
+
+108
+00:12:14,400 --> 00:12:22,360
+consiglio di leggere perché è davvero interessante, Alex racconta di oltre 35 compagnie colpite tra
+
+109
+00:12:22,360 --> 00:12:29,080
+cui Shopify, Apple e Paypal, ciascuna delle quali ha riconosciuto al giovane cacciatore
+
+110
+00:12:29,080 --> 00:12:33,160
+una taglia di 30 mila dollari per il bug individuato.
+
+111
+00:12:53,360 --> 00:13:00,920
+Se vi venisse voglia di provare a fare come Alex e diventare bug hunters, tenete presente che le
+
+112
+00:13:00,920 --> 00:13:06,880
+aziende che attaccate devono essere informate prima e che dovete stipulare dei contratti o
+
+113
+00:13:06,880 --> 00:13:14,200
+iscrivervi al programma di bug hunting, altrimenti è illegale e si rischia grosso. Inoltre i tentativi
+
+114
+00:13:14,200 --> 00:13:19,000
+di hacking non devono essere mirati al danneggiamento dei sistemi o alle sfiltrazioni
+
+115
+00:13:19,000 --> 00:13:23,360
+dei dati, altrimenti anche in questo caso potrebbero esserci ripercussioni legali.
+
+116
+00:13:23,360 --> 00:13:30,520
+Il codice contenuto nei pacchetti falsi di Alex Birsen infatti conteneva solo dei meccanismi di
+
+117
+00:13:30,520 --> 00:13:37,320
+notifica per avvisare dell'avvenuta installazione e identificare l'azienda colpita. Ma a parte questo,
+
+118
+00:13:37,320 --> 00:13:42,480
+cosa possiamo imparare noi programmatori, professionisti o meno, da questa storia?
+
+119
+00:13:43,120 --> 00:13:49,680
+Io sarei felice di sapere voi cosa ne pensate, magari sul canale telegram o sul gruppo o anche
+
+120
+00:13:49,680 --> 00:13:55,680
+tramite messaggi o commenti, trovate tutti i riferimenti in descrizione. Nel frattempo però
+
+121
+00:13:55,680 --> 00:14:02,040
+una cosa mi sento di dirla, perché è un pensiero che già mi girava in testa da molto tempo e questa
+
+122
+00:14:02,040 --> 00:14:08,520
+storia non fa altro che avallarlo. In informatica si dice sempre che non bisogna reinventare la ruota,
+
+123
+00:14:08,520 --> 00:14:14,920
+se una cosa già esiste ed è già disponibile non è necessario ricrearla e in generale sono
+
+124
+00:14:14,920 --> 00:14:20,720
+tutti i ragionamenti corretti. Tuttavia io però credo che come in tutte le cose anche
+
+125
+00:14:20,720 --> 00:14:25,080
+queste affermazioni vadano ragionate e contestualizzate. È vero che in linea
+
+126
+00:14:25,080 --> 00:14:30,680
+generale conviene sfruttare componenti già esistenti, ma non in modo circotuso.
+
+127
+00:14:30,680 --> 00:14:37,200
+Una dipendenza aggiunta al nostro progetto ci risparmia tempo di sviluppo e a volte anche
+
+128
+00:14:37,200 --> 00:14:44,400
+molto, ma allo stesso tempo aumenta la possibilità che si verifichino dei problemi. In gergo si dice
+
+129
+00:14:44,400 --> 00:14:49,320
+che allarga il perimetro della sicurezza. E non mi riferisco solo all'attacco di
+
+130
+00:14:49,320 --> 00:14:55,880
+Dependency Confusion scoperto da Birsan, esistono molti altri attacchi. La libreria
+
+131
+00:14:55,880 --> 00:15:01,640
+installata ad esempio potrebbe contenere dei bug di sicurezza ancora non scoperti e questo
+
+132
+00:15:01,640 --> 00:15:06,440
+implica un potenziale pericolo, ma anche la necessità di rimanere al passo con gli
+
+133
+00:15:06,440 --> 00:15:13,040
+aggiornamenti. Oppure potremmo paradossalmente sbagliare ad installare dipendenza. Basta sbagliare
+
+134
+00:15:13,040 --> 00:15:19,400
+infatti una lettera e magari c'è qualche furbone che ha potuto creare un pacchetto con il nome
+
+135
+00:15:19,400 --> 00:15:25,480
+appositamente sbagliato e delle backdoor all'interno. Oppure ancora qualcuno potrebbe riuscire ad
+
+136
+00:15:25,480 --> 00:15:31,080
+inserire del codice malevolo in un pacchetto pubblico molto conosciuto ed utilizzato. Poco
+
+137
+00:15:31,080 --> 00:15:36,720
+tempo fa c'è stato un tentativo di inserire delle backdoor nel codice del linguaggio PHP che
+
+138
+00:15:36,720 --> 00:15:43,200
+fortunatamente è stato individuato e corretto immediatamente, ma il tentativo c'è stato. E poi
+
+139
+00:15:43,200 --> 00:15:49,360
+attenzione non è un discorso che si ferma solo al codice o solo alle librerie. Giusto per fare un
+
+140
+00:15:49,360 --> 00:15:54,880
+esempio nel quale si potrebbe rivedere anche chi non sviluppa codice, pensate ad esempio a quanti
+
+141
+00:15:54,880 --> 00:16:01,400
+siti sono realizzati con WordPress o con altri content management system e a quanti plugin essi
+
+142
+00:16:01,400 --> 00:16:08,000
+utilizzano. Per molti di questi plugin vengono scoperti e risolti bug in continuazione. E se un
+
+143
+00:16:08,000 --> 00:16:15,040
+giorno un plugin, magari anche molto utilizzato, sparisse dal repository pubblico e un malintenzionato
+
+144
+00:16:15,040 --> 00:16:20,000
+lo rimpiazzasse immediatamente con una versione modificata, quanti utenti lo installerebbero per
+
+145
+00:16:20,000 --> 00:16:25,880
+sbaglio, quanti siti lo aggiornerebbero in modo automatico. Certo poi verrebbe scoperto,
+
+146
+00:16:25,880 --> 00:16:30,880
+magari anche abbastanza velocemente, ma nel frattempo quanti siti sarebbero stati infettati,
+
+147
+00:16:30,880 --> 00:16:36,560
+quanti lo saprebbero, quanti si renderebbero conto che è necessario eliminare o sostituire
+
+148
+00:16:36,560 --> 00:16:43,440
+il plugin. Si tratta solo di esempi e alcuni anche abbastanza estremi, ma secondo me fermarsi
+
+149
+00:16:43,440 --> 00:16:48,880
+un attimo a chiedersi se quel nuovo componente ci serve effettivamente, se la sua aggiunta ci
+
+150
+00:16:48,880 --> 00:16:53,560
+risparmia abbastanza tempo di sviluppo per giustificare l'ampliamento della superficie
+
+151
+00:16:53,560 --> 00:16:59,680
+di attacco del nostro software e lo sforzo di manutenzione, secondo me è una cosa da fare sempre.
+
+152
+00:17:19,880 --> 00:17:25,720
+Bene, come al solito vi ringrazio per avere ascoltato fin qui, spero che l'episodio vi
+
+153
+00:17:25,720 --> 00:17:31,880
+sia piaciuto. Ci tengo davvero a sapere voi cosa ne pensate, che linguaggi utilizzate,
+
+154
+00:17:31,880 --> 00:17:37,760
+se ne utilizzate, quante librerie installate solitamente e se magari vi è mai capitato
+
+155
+00:17:37,760 --> 00:17:43,360
+qualche problema di questo tipo. Come avrete capito io in generale sono uno che cerca di
+
+156
+00:17:43,360 --> 00:17:48,960
+evitare di aggiungere componenti esterni quando non è indispensabile, ma ci sono dei linguaggi
+
+157
+00:17:48,960 --> 00:17:55,560
+che si basano fortemente su questa pratica come ad esempio javascript, quindi probabilmente fra
+
+158
+00:17:55,560 --> 00:18:01,520
+voi c'è chi la pensa molto diversamente e un confronto non può farci che bene. Detto questo
+
+159
+00:18:01,520 --> 00:18:07,480
+vi ricordo che se volete dare una mano a far crescere il progetto potete condividere questo
+
+160
+00:18:07,480 --> 00:18:12,160
+e gli altri episodi magari aggiungendo una piccola nota su cosa vi è piaciuto e cosa
+
+161
+00:18:12,160 --> 00:18:18,000
+vi è interessato o addirittura facendolo ascoltare a qualcuno. Magari potrebbe diventare
+
+162
+00:18:18,000 --> 00:18:24,560
+un ascoltatore assiduo e un'altra bella persona con cui discutere. Quindi ancora grazie per avere
+
+163
+00:18:24,560 --> 00:18:31,000
+ascoltato fin qui, vi saluto, vi do appuntamento al prossimo episodio e vi ricordo che un informatico
+
+164
+00:18:31,000 --> 00:18:34,600
+risolve problemi, a volte anche usando il computer.
+

@@ -1,0 +1,248 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice, pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,320
+in meno di 5 minuti.
+
+3
+00:00:14,320 --> 00:00:29,000
+Di solito quando parliamo di linguaggi di programmazione ci vengono in mente una cerchia
+
+4
+00:00:29,000 --> 00:00:36,320
+più o meno ampia di opzioni, PHP, Java, Python, JavaScript, questi sono solo alcuni e se ti
+
+5
+00:00:36,320 --> 00:00:41,360
+fermi a riflettere un attimo sicuramente ne troverai tanti altri con diverse caratteristiche
+
+6
+00:00:41,360 --> 00:00:43,000
+e diverse applicazioni.
+
+7
+00:00:43,000 --> 00:00:49,640
+Ma esiste una particolare categoria di linguaggi di programmazione che risulta in effetti ben
+
+8
+00:00:49,640 --> 00:00:55,400
+poco conosciuta e raramente rientra in quelli che sono gli elenchi diciamo così più istituzionali.
+
+9
+00:00:55,400 --> 00:01:02,080
+Sto parlando di quei linguaggi che vengono chiamati linguaggi di programmazione esoterici.
+
+10
+00:01:02,080 --> 00:01:08,000
+Il termine esoterico sta ad indicare il fatto che questa tipologia di linguaggi viene impiegata
+
+11
+00:01:08,000 --> 00:01:13,960
+non tanto per produrre un vero e proprio software di utilizzo comune, professionale o personale
+
+12
+00:01:13,960 --> 00:01:20,360
+che sia, quanto piuttosto per portare all'estremo il concetto stesso di programmazione.
+
+13
+00:01:20,800 --> 00:01:26,760
+I linguaggi esoterici sono infatti progettati per scopi molto particolari, come ad esempio
+
+14
+00:01:26,760 --> 00:01:32,680
+produrre arte con il software, oppure verificare la fattibilità di un qualcosa attraverso
+
+15
+00:01:32,680 --> 00:01:36,720
+il software, oppure ancora semplicemente per gioco o per scherzo.
+
+16
+00:01:36,720 --> 00:01:42,480
+E tra i vari linguaggi esoterici, che a dire la verità sono più di quanti uno potrebbe
+
+17
+00:01:42,480 --> 00:01:49,960
+immaginare, c'è ad esempio l'Intercal, creato appunto come una sorta di parodia volta a prendere
+
+18
+00:01:49,960 --> 00:01:53,840
+in giro proprio il concetto di linguaggio di programmazione.
+
+19
+00:01:53,840 --> 00:02:01,800
+Rilasciato infatti nel 1972 da due studenti di Princeton, aveva come chiaro scopo quello
+
+20
+00:02:01,800 --> 00:02:07,640
+di trattare in modo satirico alcune delle principali caratteristiche dei linguaggi dell'epoca
+
+21
+00:02:07,640 --> 00:02:13,560
+e quindi nei codici sorgenti scritti in tale linguaggio si possono trovare istruzioni come
+
+22
+00:02:13,560 --> 00:02:20,480
+please do, invece del più classico imperativo do dei linguaggi contemporanei, oppure please
+
+23
+00:02:20,480 --> 00:02:24,680
+give up, al posto di un più comune return zero.
+
+24
+00:02:24,680 --> 00:02:32,680
+Con lo stesso spirito goliardico poi la valorizzazione di una variabile in Intercal è notevolmente
+
+25
+00:02:32,680 --> 00:02:38,800
+ed inutilmente complicata, senza contare che almeno nelle sue prime versioni non permette
+
+26
+00:02:38,840 --> 00:02:45,880
+l'utilizzo delle stringhe e ciò rende il tutto talmente macchinoso da necessitare ad
+
+27
+00:02:45,880 --> 00:02:53,440
+esempio fino a 16 righe di codice per stampare un banale hello world, cosa che in altri linguaggi
+
+28
+00:02:53,440 --> 00:02:55,800
+ne richiederebbe al massimo 5 o 6.
+
+29
+00:02:55,800 --> 00:03:01,160
+E la stramberia di Intercal non si ferma certo alla sola sintassi del codice.
+
+30
+00:03:01,160 --> 00:03:06,800
+Nel manuale si possono infatti trovare frasi del tipo il nome completo del compilatore
+
+31
+00:03:06,800 --> 00:03:12,840
+è compiler language with no pronunciable acronym che per ovvie ragioni viene abbreviato
+
+32
+00:03:12,840 --> 00:03:19,800
+in Intercal, oppure attenzione in nessun caso confondere l'operatore mesh con l'operatore
+
+33
+00:03:19,800 --> 00:03:23,280
+interleave tranne che in circostanze confuse.
+
+34
+00:03:23,280 --> 00:03:29,820
+E oltre a ciò sembra che siano presenti delle funzionalità molto particolari anche all'interno
+
+35
+00:03:29,820 --> 00:03:37,220
+del compilatore stesso, ad esempio il fatto che se il codice non contiene abbastanza please
+
+36
+00:03:37,220 --> 00:03:45,060
+la compilazione viene rigettata, oppure che quando il compilatore incontra un errore semplicemente
+
+37
+00:03:45,060 --> 00:03:50,220
+lo ignora e va avanti, cosa che chiaramente rende il debug un vero inferno.
+
+38
+00:03:50,220 --> 00:03:57,700
+Quando fu inizialmente distribuito da Don Woods e Jim Leon, Intercal funzionava utilizzando
+
+39
+00:03:57,700 --> 00:04:02,940
+addirittura le schede perforate, metodo di programmazione ancora piuttosto comune nel
+
+40
+00:04:02,940 --> 00:04:11,500
+1972, tuttavia con il passare degli anni anche questo strano linguaggio si è evoluto e ciò
+
+41
+00:04:11,500 --> 00:04:13,820
+grazie al supporto di una serie di appassionati.
+
+42
+00:04:13,820 --> 00:04:19,300
+Sono state aggiunte nuove funzionalità più avanzate, sono stati sviluppati compilatori
+
+43
+00:04:19,300 --> 00:04:28,260
+per computer più moderni e sono nate anche alcune varianti come il C-Intercal nel 1990
+
+44
+00:04:28,260 --> 00:04:35,740
+e il CLC-Intercal, a cura di Claudio Calvelli, ed entrambi questi dialetti sono attualmente
+
+45
+00:04:35,740 --> 00:04:39,540
+disponibili nell'archivio di software di Debian, se li vuoi provare.
+
+46
+00:04:39,540 --> 00:04:45,780
+Anche se fai attenzione, perché potrebbe risultare complicato capire in quale versione
+
+47
+00:04:45,780 --> 00:04:53,300
+li stai utilizzando, visto che secondo il file readme di CLC-Intercal, per correttezza
+
+48
+00:04:53,300 --> 00:05:01,020
+la parola versione è stata sostituita con la parola perversione e i numeri di perversione
+
+49
+00:05:01,020 --> 00:05:08,900
+sono in virgola mobile e la parte intera e quella frazionaria possono avere segni diversi
+
+50
+00:05:08,900 --> 00:05:13,900
+e la parte intera a sua volta può essere un intero o un frazionario.
+
+51
+00:05:14,340 --> 00:05:25,860
+Quindi la versione 1.-94 si riferisce a 94 escape prima della versione 1.00 oppure basta
+
+52
+00:05:25,860 --> 00:05:35,380
+sommare 1 e meno 94 ottenendo così l'escape 0.06 che però è una coincidenza dato che
+
+53
+00:05:35,380 --> 00:05:38,180
+la 0.06 non è mai stata realizzata.
+
+54
+00:05:38,180 --> 00:05:39,180
+Come?
+
+55
+00:05:39,180 --> 00:05:41,580
+Ti stai chiedendo cos'è un escape?
+
+56
+00:05:41,580 --> 00:05:42,580
+Beh ovvio!
+
+57
+00:05:42,580 --> 00:05:48,620
+Devi sapere che una volta il compilatore di CLC-Intercal fu lasciato senza sorveglianza
+
+58
+00:05:48,620 --> 00:05:54,900
+su di un server FTP e pare che da lì sia riuscito a scappare, quindi chiaramente gli
+
+59
+00:05:54,900 --> 00:05:59,380
+sviluppatori non possono parlare di release quando si riferiscono ad esso, devono per
+
+60
+00:05:59,380 --> 00:06:00,940
+forza parlare di escape.
+
+61
+00:06:04,940 --> 00:06:08,940
+Grazie per aver ascoltato Snippet, una rubrica di pensieri in codice.
+
+62
+00:06:08,940 --> 00:06:13,500
+Scopri tanti altri contenuti sul sito pensieriincodice.it
+

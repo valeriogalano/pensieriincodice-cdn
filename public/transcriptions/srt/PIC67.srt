@@ -1,0 +1,164 @@
+1
+00:00:00,000 --> 00:00:16,640
+Ti do il benvenuto su Espresso, la rubrica di pensieri in codice in cui ci beviamo insieme
+
+2
+00:00:16,640 --> 00:00:21,360
+un caffè ed io ti racconto di un libro, di un gadget, di un videogame o di qualsiasi
+
+3
+00:00:21,360 --> 00:00:26,200
+altra cosa che mi ha colpito e che sono sicuro piacerà anche a te.
+
+4
+00:00:26,600 --> 00:00:31,560
+Al termine dell'episodio, se riterrai che ti abbia dato un buon consiglio e vorrai offrire
+
+5
+00:00:31,560 --> 00:00:37,400
+tu il prossimo caffè, potrai farlo acquistando dal link affiliato che trovi in descrizione
+
+6
+00:00:37,400 --> 00:00:43,160
+o addirittura pensando di inviare un piccolo contributo per supportare il progetto. Trovi
+
+7
+00:00:43,160 --> 00:00:46,680
+tutti i dettagli sul sito pensieriincodice.it con due i.
+
+8
+00:00:46,680 --> 00:00:59,800
+Il consiglio che ti voglio dare oggi riguarda un libro sull'intelligenza artificiale e
+
+9
+00:00:59,800 --> 00:01:06,440
+so già cosa starai pensando, di libri sull'intelligenza artificiale se ne trovano a pacchi, ma questo
+
+10
+00:01:06,440 --> 00:01:11,560
+è un po' particolare quindi ti consiglio di starmi a sentire. È stato scritto dal
+
+11
+00:01:11,640 --> 00:01:17,640
+grande campione mondiale di scacchi Garry Kasparov e si intitola Deep Thinking. Si tratta
+
+12
+00:01:17,640 --> 00:01:23,800
+di un libro atipico per il suo genere perché getta uno sguardo del tutto particolare sul
+
+13
+00:01:23,800 --> 00:01:29,280
+mondo della cosiddetta intelligenza artificiale. Innanzitutto ha uno stile di scrittura molto
+
+14
+00:01:29,280 --> 00:01:35,360
+chiaro e molto scorrevole, il che lo rende una lettura che cattura molto e che stimola
+
+15
+00:01:35,360 --> 00:01:41,080
+anche la riflessione, ma senza mai risultare pesante. Tutti gli eventi e le riflessioni
+
+16
+00:01:41,080 --> 00:01:46,680
+sono raccontate dal punto di vista di Kasparov e lui, nella sua lunga carriera, ha visto
+
+17
+00:01:46,680 --> 00:01:53,160
+letteralmente crescere i software scacchistici, da livelli di gioco amatoriali fino a superare
+
+18
+00:01:53,160 --> 00:01:59,300
+il miglior giocatore in assoluto del mondo. L'approccio del libro quindi non è tecnico
+
+19
+00:01:59,300 --> 00:02:04,960
+quanto piuttosto storico e filosofico e in gran parte è volto ad indagare il concetto
+
+20
+00:02:04,960 --> 00:02:10,640
+di intelligenza in generale, sia quella umana sia quella artificiale. Nella prima parte
+
+21
+00:02:10,640 --> 00:02:15,440
+si parla di come le macchine scacchistiche affrontate dal campione durante tutta la sua
+
+22
+00:02:15,440 --> 00:02:22,360
+carriera approccino la risoluzione dei problemi in modi differenti e di come questi approcci
+
+23
+00:02:22,360 --> 00:02:29,120
+somiglino o differiscano da quelli che sono gli approcci umani, per motivi che vanno da
+
+24
+00:02:29,120 --> 00:02:35,040
+la capacità di calcolo fino alla creatività e alla conseguenza dell'evoluzione. Poi si
+
+25
+00:02:35,040 --> 00:02:40,600
+dedica ampio spazio a come si è evoluto l'atteggiamento nei confronti dell'intelligenza artificiale,
+
+26
+00:02:40,600 --> 00:02:46,920
+nel corso del tempo e al rapporto che c'è stato tra uomini e macchine. E infine una
+
+27
+00:02:46,920 --> 00:02:52,360
+cosa che mi ha particolarmente colpito è stata il racconto della famosa sfida contro
+
+28
+00:02:52,360 --> 00:02:58,840
+Deep Blue, l'intelligenza artificiale dell'IBM, di cui come tanti altri avevo sentito parlare
+
+29
+00:02:58,840 --> 00:03:05,040
+ma che non conoscevo nel dettaglio. Personalmente ho scoperto dei retroscena sorprendenti e
+
+30
+00:03:05,040 --> 00:03:10,540
+anche un po' inquietanti, ma ovviamente non ti faccio spoiler perché non ti vorrei rovinare
+
+31
+00:03:10,540 --> 00:03:16,300
+la lettura. Quello che posso dirti però è che questo libro io l'ho praticamente divorato.
+
+32
+00:03:16,300 --> 00:03:22,340
+Capitolo dopo capitolo ho terminato la lettura in poco più di una settimana e se mi conosci
+
+33
+00:03:22,340 --> 00:03:29,300
+sai bene che non ho tutto questo tempo a disposizione. Insomma, a mio parere questo libro è un interessantissimo
+
+34
+00:03:29,300 --> 00:03:35,660
+spaccato della società umana durante gli esordi dell'intelligenza artificiale, nonché
+
+35
+00:03:35,660 --> 00:03:41,220
+un sorprendente racconto dei retroscena di un evento che è rimasto nella storia dell'informatica
+
+36
+00:03:41,220 --> 00:03:46,980
+come la più grande sfida tra uomo e macchina. Quindi io spero sinceramente di averti incuriosito
+
+37
+00:03:46,980 --> 00:03:52,620
+perché sono convinto che questo sia uno di quei libri che vanno letti e sarei felice
+
+38
+00:03:52,620 --> 00:03:58,940
+se il mio consiglio aiutasse a diffonderlo. Detto questo ti ricordo che se vuoi maggiori
+
+39
+00:03:58,940 --> 00:04:04,620
+informazioni o vuoi acquistare il libro trovi il link in descrizione o nella sezione consigli
+
+40
+00:04:04,620 --> 00:04:10,180
+del sito pensieriincodice.it, mi raccomando sempre con due i. Io ti ringrazio per avermi
+
+41
+00:04:10,180 --> 00:04:14,820
+tenuto compagnia e ti do appuntamento al prossimo caffè. Ciao!
+
