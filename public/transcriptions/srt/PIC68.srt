@@ -1,0 +1,860 @@
+1
+00:00:00,000 --> 00:00:07,000
+Per quanto alcuni sviluppatori delle ultime generazioni possano ritenerlo superato, WordPress
+
+2
+00:00:07,000 --> 00:00:12,560
+resta uno degli strumenti più utilizzati per lo sviluppo di soluzioni web per privati,
+
+3
+00:00:12,560 --> 00:00:14,480
+professionisti e piccole aziende.
+
+4
+00:00:14,480 --> 00:00:21,000
+Complice la sempre maggiore semplificazione e diffusione di servizi hosting e cloud,
+
+5
+00:00:21,000 --> 00:00:26,760
+questo CMS è anche quasi sempre disponibile in pochi click ed è ampiamente supportato
+
+6
+00:00:26,760 --> 00:00:29,840
+da tantissimi provider e gestori di servizi.
+
+7
+00:00:29,840 --> 00:00:35,320
+Questo fatto lo rende la soluzione ideale per progetti non troppo grandi e complessi,
+
+8
+00:00:35,320 --> 00:00:38,120
+che poi nella realtà sono la stragrande maggioranza.
+
+9
+00:00:38,120 --> 00:00:44,400
+Ma che si parli di progetti personali, professionali o aziendali, realizzati in autonomia o affidati
+
+10
+00:00:44,400 --> 00:00:50,200
+a professionisti, secondo me vale sempre la pena di tenere a mente qualche piccola regola
+
+11
+00:00:50,200 --> 00:00:56,440
+di base in modo da poter essere un po' più sicuri di cosa si sta realizzando o acquistando.
+
+12
+00:00:57,120 --> 00:01:02,680
+In questo episodio, quindi, ho pensato di raccogliere qualche piccolo consiglio su quali valutazioni
+
+13
+00:01:02,680 --> 00:01:06,520
+effettuare quando si avvia un progetto basato su WordPress.
+
+14
+00:01:06,520 --> 00:01:08,440
+La sigla, e poi ne parliamo un po'.
+
+15
+00:01:08,440 --> 00:01:18,440
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galano.
+
+16
+00:01:18,440 --> 00:01:29,200
+Innanzitutto ci tengo a dirti che quelle che sto per raccontarti sono opinioni personali
+
+17
+00:01:29,200 --> 00:01:34,840
+ed è importante che tu le prenda come tali, quindi non considerarle oro colato, ma fa
+
+18
+00:01:34,840 --> 00:01:40,640
+le tue e adattale al tuo particolare contesto, ovviamente sempre usando la testa.
+
+19
+00:01:41,120 --> 00:01:48,840
+Le osservazioni che sto per fare sono il frutto della mia esperienza professionale, che sviluppando
+
+20
+00:01:48,840 --> 00:01:56,320
+soluzioni per lo più in PHP, mi ha portato a interagire molto spesso e anche attualmente
+
+21
+00:01:56,320 --> 00:01:58,440
+con questo particolare CMS.
+
+22
+00:01:58,440 --> 00:02:04,600
+Nel corso degli anni ho utilizzato WordPress per sviluppare siti vetrina, siti e-commerce,
+
+23
+00:02:04,600 --> 00:02:11,240
+ho implementato personalizzazioni anche molto verticali, integrazioni con altri software,
+
+24
+00:02:11,240 --> 00:02:16,920
+sia open source che proprietari, processi automatizzati e molto altro.
+
+25
+00:02:16,920 --> 00:02:23,520
+Quello che ti dirò oggi ti potrà servire come una lista di cose da tenere a mente nel
+
+26
+00:02:23,520 --> 00:02:27,960
+momento in cui deciderai di tirare su un sito web con WordPress.
+
+27
+00:02:27,960 --> 00:02:34,440
+E questo sia che tu lo voglia fare personalmente o affidandoti a un professionista o un'azienda,
+
+28
+00:02:34,440 --> 00:02:37,120
+sono consigli che valgono in ogni caso.
+
+29
+00:02:37,120 --> 00:02:44,120
+Ma attenzione, se sai di non averne le competenze, non prendere questo episodio come un incitamento
+
+30
+00:02:44,120 --> 00:02:47,000
+a realizzare da solo il tuo sito web.
+
+31
+00:02:47,000 --> 00:02:52,760
+Il fatto che WordPress ti permetta di fare alcune cose in modo molto semplice non vuol
+
+32
+00:02:52,760 --> 00:02:58,320
+dire che il risultato sarà necessariamente apprezzabile e di valore.
+
+33
+00:02:58,720 --> 00:03:04,480
+In questi casi è fondamentale valutare quanto è importante il progetto per te o per la
+
+34
+00:03:04,480 --> 00:03:05,480
+tua azienda.
+
+35
+00:03:05,480 --> 00:03:12,400
+E nel caso in cui questa valutazione vada oltre il livello amatoriale, diventa saggio
+
+36
+00:03:12,400 --> 00:03:18,120
+rivolgersi a dei professionisti, perché il modo in cui viene realizzato il sito web
+
+37
+00:03:18,120 --> 00:03:23,800
+può decretare il successo o il fallimento della attività che rappresenta.
+
+38
+00:03:24,280 --> 00:03:29,760
+Se non l'hai già fatto ti consiglio di recuperare, credo, il quarto episodio di Pensieri in Codice
+
+39
+00:03:29,760 --> 00:03:35,400
+nel quale si parlava del sito fai-da-te, giusto anche solo per scoprire quante figure
+
+40
+00:03:35,400 --> 00:03:39,080
+sono necessarie per realizzare un sito fatto come si deve.
+
+41
+00:03:39,080 --> 00:03:45,680
+Detto ciò, spero di aver esaurito le dovute premesse e passiamo a parlare di WordPress.
+
+42
+00:03:45,680 --> 00:03:51,960
+La prima riflessione da fare quando si decide di sviluppare un progetto in WordPress può
+
+43
+00:03:51,960 --> 00:03:58,480
+sembrare un po' strana, ma per quella che è la mia esperienza, le persone raramente
+
+44
+00:03:58,480 --> 00:04:00,480
+si soffirmano su questo punto.
+
+45
+00:04:00,480 --> 00:04:06,320
+Ed in particolare sto parlando di dare una risposta alla domanda… mi conviene effettivamente
+
+46
+00:04:06,320 --> 00:04:08,840
+utilizzare WordPress per il mio progetto?
+
+47
+00:04:08,840 --> 00:04:15,040
+Sì, perché indubbiamente stiamo parlando di un CMS molto flessibile e pensato per soddisfare
+
+48
+00:04:15,040 --> 00:04:16,760
+moltissime necessità.
+
+49
+00:04:16,760 --> 00:04:21,000
+Ma ciò non vuol dire che esso possa soddisfare qualsiasi necessità.
+
+50
+00:04:21,040 --> 00:04:27,640
+Ad esempio, se hai bisogno di un sito molto semplice, magari statico, o che varia molto
+
+51
+00:04:27,640 --> 00:04:33,160
+poco nel corso del tempo, magari potresti usare una tecnologia diversa da WordPress.
+
+52
+00:04:33,160 --> 00:04:38,280
+Io ad esempio per il mio sito personale ho utilizzato Yugo, e a questo proposito puoi
+
+53
+00:04:38,280 --> 00:04:44,160
+trovare un episodio di Pensieri in Codice proprio sulla cronaca della migrazione del mio sito
+
+54
+00:04:44,160 --> 00:04:48,560
+personale da WordPress a Yugo, magari te lo linko in descrizione se lo vuoi recuperare.
+
+55
+00:04:49,080 --> 00:04:54,960
+Per quanto infatti possa sembrare semplice, WordPress resta comunque un CMS, e cioè un
+
+56
+00:04:54,960 --> 00:04:59,360
+software con un database delle dipendenze e degli aggiornamenti.
+
+57
+00:04:59,360 --> 00:05:03,520
+Questo significa che ha bisogno di un certo grado di manutenzione.
+
+58
+00:05:03,520 --> 00:05:10,320
+E se da un'analisi preliminare ti rendi conto che magari accederai più spesso al backoffice
+
+59
+00:05:10,320 --> 00:05:16,840
+di questo WordPress per fare gli aggiornamenti piuttosto che per modificare i contenuti, allora
+
+60
+00:05:16,840 --> 00:05:22,600
+forse può risultare più conveniente utilizzare una tecnologia che di aggiornamenti non ne
+
+61
+00:05:22,600 --> 00:05:25,040
+ha bisogno, come un sito statico.
+
+62
+00:05:25,040 --> 00:05:31,600
+Un altro esempio nel quale potrebbe non convenire utilizzare questo CMS è quello diametralmente
+
+63
+00:05:31,600 --> 00:05:39,080
+opposto, cioè nel caso in cui tu debba realizzare un software molto complesso o che in generale
+
+64
+00:05:39,080 --> 00:05:43,160
+si discosta molto dalla struttura base di WordPress.
+
+65
+00:05:43,480 --> 00:05:49,720
+Se ad esempio ti occorre un CRM o un ERP o comunque una soluzione che sia fortemente
+
+66
+00:05:49,720 --> 00:05:56,080
+personalizzata sul tuo business model, allora è probabile che WordPress non sia il punto
+
+67
+00:05:56,080 --> 00:05:57,840
+di partenza corretto.
+
+68
+00:05:57,840 --> 00:06:03,120
+A quel punto ti potrebbe convenire utilizzare altri framework o addirittura altre tecnologie,
+
+69
+00:06:03,120 --> 00:06:04,760
+questo dipende dalle tue necessità.
+
+70
+00:06:04,760 --> 00:06:11,200
+Infine, ho un terzo esempio nel quale credo che valga la pena evitare WordPress, e questo
+
+71
+00:06:11,200 --> 00:06:14,480
+viene proprio dalla mia esperienza personale.
+
+72
+00:06:14,480 --> 00:06:22,760
+Sto parlando del caso in cui abbiamo bisogno di un sito di e-commerce particolarmente complesso.
+
+73
+00:06:22,760 --> 00:06:29,000
+Ora, seguimi un attimo con attenzione perché complesso può significare molte cose, e io
+
+74
+00:06:29,000 --> 00:06:35,080
+mi riferisco in particolare ad una complessità sui listini per utente.
+
+75
+00:06:35,080 --> 00:06:41,180
+Se sai di dover tirare su un sito di e-commerce dove ci sono molte tipologie di utenti di
+
+76
+00:06:41,180 --> 00:06:47,780
+diversi, i quali magari hanno per gruppi o addirittura per singolo utente listini diversi
+
+77
+00:06:47,780 --> 00:06:54,020
+quindi prezzi diversi per gli stessi prodotti o sconti diversi sugli stessi prodotti, potresti
+
+78
+00:06:54,020 --> 00:06:56,180
+incappare in vari problemi.
+
+79
+00:06:56,180 --> 00:07:02,060
+Nel momento in cui hai necessità di un tale tipo di complessità, forse una soluzione
+
+80
+00:07:02,060 --> 00:07:07,900
+basata su Magento, pur meno economica dal punto di vista della realizzazione e della
+
+81
+00:07:07,900 --> 00:07:12,220
+manutenzione potrebbe venire meglio incontro ai tuoi bisogni.
+
+82
+00:07:12,220 --> 00:07:18,260
+Esclusi quindi questi casi specifici, hai deciso che la tua soluzione va implementata
+
+83
+00:07:18,260 --> 00:07:19,500
+tramite WordPress.
+
+84
+00:07:19,500 --> 00:07:26,220
+Una cosa importante che devi valutare già prima di iniziare è che avrai bisogno di
+
+85
+00:07:26,220 --> 00:07:28,060
+un hosting performante.
+
+86
+00:07:28,060 --> 00:07:34,340
+Ora, come consulente freelance ho visto installare WordPress su tantissime tipologie di server
+
+87
+00:07:34,340 --> 00:07:42,300
+differenti, dagli hosting di Aruba o Register fino alle cloud come AWS o Azure, il tutto
+
+88
+00:07:42,300 --> 00:07:47,260
+passando per server privati sia molto professionali che di fortuna.
+
+89
+00:07:47,260 --> 00:07:52,860
+Qualunque sia la tua scelta, quello che devi sapere è che nonostante tutti gli aggiornamenti
+
+90
+00:07:52,860 --> 00:07:58,180
+che nell'ultimo periodo stanno migliorando la situazione, né il PHP né WordPress sono
+
+91
+00:07:58,180 --> 00:08:01,860
+famosi per essere gentili con le risorse di sistema.
+
+92
+00:08:02,180 --> 00:08:07,940
+Quindi, se conti di avere almeno 10 visite al giorno e stai pensando di acquistare il
+
+93
+00:08:07,940 --> 00:08:17,380
+servizio più economico con mezzo core e 256 MB di RAM, beh, inizia già a ricrederti perché
+
+94
+00:08:17,380 --> 00:08:19,940
+ti troverai in difficoltà in un secondo momento.
+
+95
+00:08:19,940 --> 00:08:27,220
+In particolare, se parliamo di volumi di traffico seri, la presenza di varie cache potrebbe
+
+96
+00:08:27,220 --> 00:08:32,500
+essere enormemente d'aiuto e mi riferisco ad una web cache per la presentazione dei
+
+97
+00:08:32,500 --> 00:08:39,220
+contenuti e magari anche ad una cache per il database, magari qualcosa come Redis.
+
+98
+00:08:39,220 --> 00:08:44,700
+Quello che devi tenere sempre bene a mente è che scegliere in maniera oculata questi
+
+99
+00:08:44,700 --> 00:08:48,420
+servizi avrà un enorme impatto sull'esperienza utente.
+
+100
+00:08:48,420 --> 00:08:55,140
+Sempre parlando di server, ma questa volta più da un punto di vista della gestione,
+
+101
+00:08:55,140 --> 00:09:03,820
+è importante che il servizio che scegliamo abbia un sistema di backup e che sia anche
+
+102
+00:09:03,820 --> 00:09:07,580
+relativamente efficiente dal punto di vista della sicurezza.
+
+103
+00:09:07,580 --> 00:09:13,500
+Per il backup è necessario verificare che il servizio che stiamo andando ad acquistare
+
+104
+00:09:13,500 --> 00:09:19,340
+lo comprenda in maniera nativa oppure ci permetta, magari con un sovrapprezzo, di acquistarlo
+
+105
+00:09:19,340 --> 00:09:20,340
+separatamente.
+
+106
+00:09:20,660 --> 00:09:27,540
+Il fatto che il nostro codice e il nostro database siano in cloud non li rende indistruttibili,
+
+107
+00:09:27,540 --> 00:09:33,420
+essi possono essere soggetti ad attacchi o comunque anche il provider può perdere i
+
+108
+00:09:33,420 --> 00:09:37,980
+nostri dati per errore o chiudere il nostro account per una violazione.
+
+109
+00:09:37,980 --> 00:09:43,980
+Per il problema sicurezza invece è innanzitutto necessario eseguire le cosiddette operazioni
+
+110
+00:09:43,980 --> 00:09:50,820
+di hardening sul nostro WordPress che servono appunto a renderlo meno attaccabile, ma è
+
+111
+00:09:50,820 --> 00:09:57,580
+anche buona norma, questo in realtà soprattutto quando si parla di server autogestiti, assicurarsi
+
+112
+00:09:57,580 --> 00:10:05,580
+che i permessi di file e utenti siano correttamente configurati e che il server stesso li gestisca
+
+113
+00:10:05,580 --> 00:10:07,260
+nel modo corretto.
+
+114
+00:10:07,260 --> 00:10:13,060
+Questo te lo dico perché mi è successo più di una volta che qualche cliente gestisse
+
+115
+00:10:13,060 --> 00:10:18,980
+internamente il proprio server e al momento dell'installazione o dell'aggiornamento dei
+
+116
+00:10:18,980 --> 00:10:26,540
+siti già una discrepanza tra l'utente ftp con il quale venivano caricati i file e l'utente
+
+117
+00:10:26,540 --> 00:10:31,860
+di Apache con il quale veniva eseguito il sito mi ha creato varie difficoltà, quindi
+
+118
+00:10:31,860 --> 00:10:35,140
+da allora me ne assicuro prima di iniziare.
+
+119
+00:10:35,140 --> 00:10:40,780
+Deciso quindi di utilizzare WordPress e dove installarlo, il passo successivo è quello
+
+120
+00:10:40,780 --> 00:10:43,660
+di conoscerlo più a fondo possibile.
+
+121
+00:10:43,660 --> 00:10:48,620
+E' vero che di base stiamo parlando di un software non troppo complicato, ma in ogni
+
+122
+00:10:48,620 --> 00:10:54,740
+caso va esplorato, vanno provate le varie funzionalità, soprattutto il nuovo editor
+
+123
+00:10:54,740 --> 00:11:00,540
+Gutenberg che è molto più potente di quello che c'era in precedenza, conviene poi studiare
+
+124
+00:11:00,540 --> 00:11:05,260
+le varie novità ogni volta che viene rilasciata una nuova versione, cosa che accade molto
+
+125
+00:11:05,260 --> 00:11:12,740
+di frequente e tutto questo ha lo scopo di non fare lavoro o di installare componenti
+
+126
+00:11:12,740 --> 00:11:13,740
+superflui.
+
+127
+00:11:13,740 --> 00:11:19,580
+Capita infatti spesso che alcuni sviluppatori installino il WordPress base e poi subito
+
+128
+00:11:19,580 --> 00:11:26,380
+partano ad aggiungere i plugin che usano da tempi in memory, ma con il passare del tempo
+
+129
+00:11:26,380 --> 00:11:32,900
+molte funzionalità sono state portate da plugin esterni verso il core e la stessa cosa
+
+130
+00:11:32,900 --> 00:11:38,340
+vale anche per i plugin più importanti, penso a WooCommerce o a BuddyPress.
+
+131
+00:11:38,340 --> 00:11:44,620
+A poco a poco le funzionalità più interessanti e importanti vengono inglobate da questi grossi
+
+132
+00:11:44,620 --> 00:11:51,500
+software fino al punto di rendere a volte superflua l'installazione di determinati plugin che
+
+133
+00:11:51,500 --> 00:11:54,700
+magari eravamo abituati a usare un paio di anni fa.
+
+134
+00:11:54,700 --> 00:12:00,500
+In generale, e questo vale in qualsiasi caso nello sviluppo software quando si parte da
+
+135
+00:12:00,500 --> 00:12:05,180
+una base preesistente, conviene conoscerla al meglio possibile.
+
+136
+00:12:05,180 --> 00:12:12,420
+Conoscere il framework, conoscere la tecnologia, in questo modo si evita di svolgere lavoro
+
+137
+00:12:12,420 --> 00:12:18,580
+in più andando a includere o addirittura a sviluppare righe di codice che in realtà
+
+138
+00:12:18,580 --> 00:12:20,100
+non sono necessarie.
+
+139
+00:12:20,100 --> 00:12:27,180
+Un altro momento critico nella vita di un progetto WordPress si verifica quando c'è
+
+140
+00:12:27,180 --> 00:12:30,540
+necessità di installare nuovi componenti.
+
+141
+00:12:30,540 --> 00:12:37,700
+Quando infatti selezioniamo il tema o i plugin da includere nel nostro progetto dobbiamo innanzitutto
+
+142
+00:12:37,700 --> 00:12:45,060
+restringere la rosa dei candidati a quelli più votati e più utilizzati, nonché i più
+
+143
+00:12:45,060 --> 00:12:46,060
+aggiornati.
+
+144
+00:12:46,060 --> 00:12:51,740
+E questo perché dobbiamo considerare che probabilmente faremo uso di questi componenti
+
+145
+00:12:51,740 --> 00:12:54,020
+almeno per i prossimi due o tre anni.
+
+146
+00:12:54,460 --> 00:13:00,100
+E' importante che essi siano stabili, che funzionino correttamente, ma soprattutto che
+
+147
+00:13:00,100 --> 00:13:02,260
+siano manutenuti nel tempo.
+
+148
+00:13:02,260 --> 00:13:08,300
+Installare già oggi un plugin il cui ultimo aggiornamento risale a più di un anno fa
+
+149
+00:13:08,300 --> 00:13:11,300
+potrebbe rivelarsi un problema in futuro.
+
+150
+00:13:11,300 --> 00:13:18,500
+Metti che dovesse venire fuori un problema di sicurezza nel codice, se l'autore ha abbandonato
+
+151
+00:13:18,500 --> 00:13:22,580
+il progetto è improbabile che si adoperi per correggerlo.
+
+152
+00:13:22,980 --> 00:13:29,780
+In quel caso il problema resterà a te, sarai tu a dover correggere il bug di sicurezza
+
+153
+00:13:29,780 --> 00:13:36,000
+oppure a dover cambiare il plugin con tutto quello che ciò comporta in termini di costi
+
+154
+00:13:36,000 --> 00:13:37,000
+di migrazione.
+
+155
+00:13:37,000 --> 00:13:43,540
+Quindi una volta ristretta questa rosa dei candidati converrebbe fra essi scegliere i
+
+156
+00:13:43,540 --> 00:13:47,260
+plugin minimali e eventualmente un tema starter.
+
+157
+00:13:47,660 --> 00:13:54,060
+Ovviamente qui la selezione va fatta in base alle necessità del progetto, però in linea
+
+158
+00:13:54,060 --> 00:14:01,100
+generale conviene sempre selezionare quei componenti che soddisfano i requisiti ma che non hanno
+
+159
+00:14:01,100 --> 00:14:03,220
+troppe funzionalità superflue.
+
+160
+00:14:03,220 --> 00:14:09,740
+E questo evidentemente perché l'aggiunta di codice è sempre un possibile vettore di
+
+161
+00:14:09,740 --> 00:14:16,180
+bug o di problemi di sicurezza, quindi evitare di aggiungere codice superfluo è sempre una
+
+162
+00:14:16,180 --> 00:14:17,180
+buona idea.
+
+163
+00:14:17,380 --> 00:14:22,460
+In definitiva quando sei alla ricerca dei tuoi componenti spendi un po' di tempo a
+
+164
+00:14:22,460 --> 00:14:29,420
+leggere le recensioni o a provarli addirittura, magari se ne sei in grado a guardare il codice,
+
+165
+00:14:29,420 --> 00:14:34,380
+vedere se è scritto in modo pulito, se è ben documentato e se utilizza gli hook.
+
+166
+00:14:34,380 --> 00:14:40,700
+E anche qui se non sai cos'è un hook potresti recuperare l'episodio sulla filosofia dello
+
+167
+00:14:40,700 --> 00:14:45,500
+sviluppo in WordPress, lo trovi sempre in descrizione o nel feed del podcast.
+
+168
+00:14:45,820 --> 00:14:51,140
+In ultimo se hai fatto tutto il possibile con WordPress e i componenti disponibili e
+
+169
+00:14:51,140 --> 00:14:56,340
+hai ancora necessità di alcune funzionalità è probabile che tu debba sviluppare delle
+
+170
+00:14:56,340 --> 00:14:58,380
+cosiddette personalizzazioni.
+
+171
+00:14:58,380 --> 00:15:04,380
+Che le sviluppi tu in prima persona o lo faccia fare a dei programmatori è importante che
+
+172
+00:15:04,380 --> 00:15:11,100
+questo codice segua alcune regole di base e questo per far sì che se in un secondo
+
+173
+00:15:11,100 --> 00:15:18,300
+momento un secondo team di sviluppo debba subentrare, questo possa farlo nel modo più
+
+174
+00:15:18,300 --> 00:15:24,460
+indolore possibile e a ciò possono contribuire alcuni piccoli accorgimenti.
+
+175
+00:15:24,460 --> 00:15:31,540
+Ad esempio, nello scrivere il codice è importante seguire gli standard codes e mi riferisco
+
+176
+00:15:31,540 --> 00:15:38,100
+sia a quelli del PHP sia a quelli di WordPress o addirittura a quelli dell'HTML e CSS se
+
+177
+00:15:38,100 --> 00:15:40,380
+si stanno implementando modifiche grafiche.
+
+178
+00:15:40,900 --> 00:15:46,620
+In secondo luogo è molto molto importante utilizzare il concetto del tema figlio, lo
+
+179
+00:15:46,620 --> 00:15:51,420
+trovi sempre spiegato nell'episodio sulla filosofia dello sviluppo in WordPress ed è
+
+180
+00:15:51,420 --> 00:15:57,780
+importante perché permette di eseguire tutti gli aggiornamenti senza rischiare problemi
+
+181
+00:15:57,780 --> 00:16:00,420
+di sovrascrittura del codice personalizzato.
+
+182
+00:16:00,420 --> 00:16:07,100
+Poi, quando possibile, conviene sempre sviluppare in modo minimale, realizzare le funzionalità
+
+183
+00:16:07,100 --> 00:16:13,100
+scrivendo meno codice possibile e intaccando il meno possibile la logica di base.
+
+184
+00:16:13,100 --> 00:16:20,060
+Un buon sviluppatore WordPress dovrebbe preferire sempre l'utilizzo degli hook sia per i plugin
+
+185
+00:16:20,060 --> 00:16:27,100
+sia per il tema, in questo modo potrà sviluppare la propria logica mantenendosi il più possibile
+
+186
+00:16:27,100 --> 00:16:32,940
+consistente con la logica di base, correndo così meno rischi di sovrascrivere altre
+
+187
+00:16:32,940 --> 00:16:37,820
+funzionalità e di avere problemi in caso di aggiornamenti futuri.
+
+188
+00:16:37,820 --> 00:16:44,060
+Bene, direi che per questo episodio mi posso fermare qui.
+
+189
+00:16:44,060 --> 00:16:48,700
+So di averti dato un sacco di informazioni e forse questo è uno di quegli episodi che
+
+190
+00:16:48,700 --> 00:16:54,540
+vanno ascoltati più di una volta, ma ci tengo a ribadire un concetto che per me è molto
+
+191
+00:16:54,540 --> 00:16:55,540
+importante.
+
+192
+00:16:55,540 --> 00:17:01,840
+Il fatto di applicare questi pochi consigli che ti ho dato non fanno di te automaticamente
+
+193
+00:17:01,840 --> 00:17:06,880
+un buon programmatore WordPress, per quello serve studio ed esperienza.
+
+194
+00:17:06,880 --> 00:17:14,560
+Quindi quando ti troverai a decidere come realizzare i tuoi progetti, sii sempre onesto
+
+195
+00:17:14,560 --> 00:17:18,640
+con te stesso e misura sempre le tue capacità.
+
+196
+00:17:18,640 --> 00:17:25,120
+Nessuno qui sta insinuando che tu sia un cattivo sviluppatore ma tieni sempre presente che
+
+197
+00:17:25,120 --> 00:17:28,560
+un cattivo sviluppatore può far fallire un progetto.
+
+198
+00:17:29,000 --> 00:17:32,520
+Bene, direi che per oggi è proprio tutto, anzi no.
+
+199
+00:17:32,520 --> 00:17:40,640
+Riguardo l'episodio scorso, il numero 64, mi hanno fatto giustamente notare che cracker
+
+200
+00:17:40,640 --> 00:17:47,920
+in realtà si pronuncia cracker, tuttavia data l'eccessiva assonanza con i famosi snack io
+
+201
+00:17:47,920 --> 00:17:52,800
+preferisco la pronuncia all'italiana, quindi cracker, così come pronuncio hacker invece
+
+202
+00:17:52,800 --> 00:17:53,800
+di hacker.
+
+203
+00:17:53,800 --> 00:17:56,240
+Però la pronuncia corretta sarebbe cracker.
+
+204
+00:17:56,640 --> 00:18:03,040
+Detto questo, spero che l'episodio ti sia piaciuto e ti ricordo che se io posso produrre
+
+205
+00:18:03,040 --> 00:18:09,120
+questi contenuti è solo grazie a te che li ascolti e alla community di Pensieri in Codice
+
+206
+00:18:09,120 --> 00:18:10,440
+che sostiene il progetto.
+
+207
+00:18:10,440 --> 00:18:16,720
+Scopri come partecipare e dare una mano anche tu collegandoti al sito pensieriincodice.it
+
+208
+00:18:16,720 --> 00:18:17,720
+con due i.
+
+209
+00:18:17,720 --> 00:18:23,960
+Puoi ascoltare tutti gli episodi sulle maggiori piattaforme e app di podcast o riceverli direttamente
+
+210
+00:18:23,960 --> 00:18:27,080
+su tuo smartphone iscrivendoti al canale telegram.
+
+211
+00:18:27,080 --> 00:18:32,640
+Se Pensieri in Codice ti piace e come al solito se sei arrivato fin qui do per scontato che
+
+212
+00:18:32,640 --> 00:18:38,200
+ti piaccia, puoi condividerlo con un amico e farglielo conoscere, farai un favore ad
+
+213
+00:18:38,200 --> 00:18:39,200
+entrambi.
+
+214
+00:18:39,200 --> 00:18:45,320
+Per oggi quindi è proprio tutto, io ti do appuntamento al prossimo episodio e ti ricordo
+
+215
+00:18:45,320 --> 00:18:50,200
+che un informatico risolve problemi, a volte, anche usando il computer.
+

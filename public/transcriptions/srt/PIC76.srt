@@ -1,0 +1,140 @@
+1
+00:00:00,000 --> 00:00:13,080
+Benvenuti su Snippet, una rubrica di pensieri in codice. Pillole e aneddoti dal mondo dell'informatica
+
+2
+00:00:13,080 --> 00:00:14,080
+in meno di 5 minuti.
+
+3
+00:00:14,080 --> 00:00:31,440
+Il 4 ottobre 1957 l'Unione Sovietica riuscì a conseguire un grande successo nella corsa
+
+4
+00:00:31,440 --> 00:00:38,080
+allo spazio. Quel giorno, infatti, spedì in orbita attorno alla Terra il primo satellite
+
+5
+00:00:38,080 --> 00:00:46,200
+artificiale, al quale fu dato il nome di Sputnik 1, ossia Semplice Satellite 1. Pur trattandosi
+
+6
+00:00:46,200 --> 00:00:51,920
+di un volo breve per gli standard odierni, restò infatti in orbita solo per 3 settimane
+
+7
+00:00:51,920 --> 00:00:57,280
+prima di esaurire le batterie, per l'epoca, cioè in piena guerra fredda, il fatto che
+
+8
+00:00:57,280 --> 00:01:03,000
+l'Unione Sovietica avesse raggiunto un tale risultato per prima, rappresentò per gli
+
+9
+00:01:03,000 --> 00:01:10,320
+Stati Uniti un durissimo colpo. A testimoniare questo fatto, l'espressione momento Sputnik
+
+10
+00:01:10,320 --> 00:01:16,480
+entrò proprio nel gergo comune americano per indicare quelle conquiste ottenute in qualsiasi
+
+11
+00:01:16,480 --> 00:01:22,920
+campo da paesi stranieri prima del proprio. Un modo questo anche per tenere a mente il
+
+12
+00:01:22,920 --> 00:01:28,800
+fatto che gli Stati Uniti non sono sempre i primi in tutto. Ad ogni modo, la reazione
+
+13
+00:01:28,800 --> 00:01:34,840
+americana a questo evento fu notevole. Il Ministero della Difesa istituì un'agenzia
+
+14
+00:01:34,840 --> 00:01:40,160
+apposita che lavorasse nel campo della ricerca avanzata e che avesse come obiettivo quello
+
+15
+00:01:40,160 --> 00:01:46,200
+di far primeggiare gli Stati Uniti in campo scientifico e tecnologico. Il nome di questa
+
+16
+00:01:46,200 --> 00:01:53,680
+agenzia era Advanced Research Project Agency, che abbreviato è ARPA. Fra tutti i progetti
+
+17
+00:01:53,680 --> 00:01:59,840
+perseguiti dall'ARPA però uno in particolare ha portato a dei risultati delle cui evoluzioni
+
+18
+00:01:59,840 --> 00:02:07,780
+noi oggi facciamo uso tutti i giorni e certamente può essere definito come quell'innovazione
+
+19
+00:02:07,780 --> 00:02:13,880
+che rende il mondo così come noi lo conosciamo. Pochissimo dopo l'istituzione dell'agenzia
+
+20
+00:02:13,880 --> 00:02:22,660
+infatti, già nel 1963, il direttore dell'ARPA, Joseph Licklider, inoltrava ai suoi colleghi
+
+21
+00:02:22,660 --> 00:02:30,180
+una nota di 8 pagine in cui descriveva sommariamente gli obiettivi di un nuovo progetto, un progetto
+
+22
+00:02:30,180 --> 00:02:37,460
+volto a far dialogare fra loro i computer. Scherzosamente, ma anche in modo molto ambizioso,
+
+23
+00:02:37,460 --> 00:02:45,260
+tale nota era indirizzata ai, leggo testualmente, membri affiliati della rete informatica intergalattica.
+
+24
+00:02:45,660 --> 00:02:55,420
+E fu così che, circa 10 anni dopo il momento Sputnik, nel 1967, nacque il progetto ARPANET,
+
+25
+00:02:55,420 --> 00:03:00,740
+che aveva come obiettivo appunto quello di creare una tecnologia che permettesse di collegare
+
+26
+00:03:00,740 --> 00:03:07,340
+i computer in rete e rendesse possibile la comunicazione e lo scambio di informazioni.
+
+27
+00:03:07,740 --> 00:03:14,940
+Dopo quindi solo altri due anni di lavoro, e precisamente il giorno 29 ottobre 1969,
+
+28
+00:03:14,940 --> 00:03:21,040
+la rete di computer, basata su tecnologia a commutazione di pacchetti, vide finalmente
+
+29
+00:03:21,040 --> 00:03:27,880
+la luce e fu inviato il primo messaggio fra computer della storia. L'intenzione era quella
+
+30
+00:03:27,880 --> 00:03:33,420
+di inviare la parola LOGIN da un computer dell'Università della California ad uno che
+
+31
+00:03:33,420 --> 00:03:40,980
+si trovava a Stanford. Tuttavia, come da buona e ormai consolidata tradizione informatica,
+
+32
+00:03:40,980 --> 00:03:47,820
+durante la demo qualcosa andò storto e, dopo aver spedito le lettere L e O, si verificò
+
+33
+00:03:47,820 --> 00:03:54,900
+un crash e le lettere G, I ed N non furono mai ricevute. Nonostante questo piccolo intoppo
+
+34
+00:03:54,900 --> 00:04:02,340
+però già dopo un mese il primo collegamento fra macchine era stabile e funzionante e gettava
+
+35
+00:04:02,340 --> 00:04:09,380
+le basi per quella rete di calcolatori che noi oggi conosciamo con il nome di Internet.
+

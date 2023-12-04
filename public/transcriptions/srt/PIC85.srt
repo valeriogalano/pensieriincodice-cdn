@@ -1,0 +1,196 @@
+1
+00:00:00,000 --> 00:00:29,500
+Sul finire degli anni 40, alcuni tra i più importanti matematici ed ingegneri statunitensi
+
+2
+00:00:29,500 --> 00:00:35,860
+iniziarono a dedicarsi allo studio dei cosiddetti processi stocastici. In due semplici parole
+
+3
+00:00:35,860 --> 00:00:42,420
+i processi stocastici sono eventi che sembrano casuali e indipendenti, ma se studiati su
+
+4
+00:00:42,420 --> 00:00:50,220
+un certo lasso di tempo possono essere matematicamente sia descritti sia previsti con una certa
+
+5
+00:00:50,220 --> 00:00:57,640
+accuratezza. Per intenderci un semplice esempio di questo tipo di eventi potrebbe essere il
+
+6
+00:00:57,640 --> 00:01:03,360
+numero di errori nella catena di montaggio di una fabbrica. Sul totale dei pezzi prodotti
+
+7
+00:01:03,360 --> 00:01:09,440
+è naturale che alcuni presentino dei difetti, ma la loro distribuzione nel tempo non sarà
+
+8
+00:01:09,440 --> 00:01:15,360
+certamente regolare. Un giorno magari non ne capiterà nessun prodotto difettato, un
+
+9
+00:01:15,360 --> 00:01:21,280
+altro giorno solo qualche pezzo sarà da buttare e magari in un giorno sfortunato gli scarti
+
+10
+00:01:21,280 --> 00:01:27,440
+saranno in quantità notevole. Oltre a questo altri esempi dei processi stocastici sono
+
+11
+00:01:27,440 --> 00:01:33,720
+il decadimento degli atomi, il numero di auto che transitano per un casello autostradale,
+
+12
+00:01:33,720 --> 00:01:40,080
+il numero di chiamate in arrivo ad un centralino telefonico e, fondamentale per il nostro discorso,
+
+13
+00:01:40,080 --> 00:01:47,140
+gli atti di comunicazione, siano essi tra umani o macchine. Nella seconda metà degli
+
+14
+00:01:47,300 --> 00:01:54,100
+anni 40 quindi scienziati come Claude Shannon o Norbert Weiner, che durante la guerra erano
+
+15
+00:01:54,100 --> 00:02:00,300
+stati impegnati nello studio di processi stocastici come i sistemi di puntamento degli armamenti o la
+
+16
+00:02:00,300 --> 00:02:05,940
+crittografia utilizzata per mascherare le comunicazioni, iniziarono a proporre sistemi
+
+17
+00:02:05,940 --> 00:02:12,500
+matematici in grado di analizzare ed addirittura prevedere atti che fino a quel momento venivano
+
+18
+00:02:12,620 --> 00:02:19,500
+normalmente considerati arbitrari e casuali. Nel 1948 Weiner scriveva
+
+19
+00:02:19,500 --> 00:02:25,420
+Abbiamo deciso di chiamare l'intero campo della teoria del controllo e della comunicazione sia
+
+20
+00:02:25,420 --> 00:02:31,300
+nelle macchine che negli animali con il nome di Cibernetica. Questa nuova parola,
+
+21
+00:02:31,300 --> 00:02:37,260
+Cibernetica, derivava da una parola greca che io non sono in grado di pronunciare perché non
+
+22
+00:02:37,260 --> 00:02:44,420
+ho mai studiato il greco, ma credo si dica Kibernetes e che appunto indicava il timoniere
+
+23
+00:02:44,420 --> 00:02:51,300
+di una nave o più nello specifico dell'azione il controllare o il governare. Sempre nel 48 poi,
+
+24
+00:02:51,300 --> 00:02:57,700
+nell'ormai celebre esagio Una teoria matematica della comunicazione, Claude Shannon faceva un
+
+25
+00:02:57,700 --> 00:03:04,100
+ulteriore passo avanti e teorizzava che in qualsiasi comunicazione, non importa di quale
+
+26
+00:03:04,100 --> 00:03:10,740
+natura, convivono essenzialmente due elementi. Il messaggio vero e proprio e quello che lui
+
+27
+00:03:10,740 --> 00:03:17,500
+definiva rumore, cioè una sorta di interferenza che disturba la trasmissione del messaggio.
+
+28
+00:03:17,500 --> 00:03:23,980
+Uno degli aspetti particolarmente interessanti della teoria di Shannon è che il contenuto del
+
+29
+00:03:23,980 --> 00:03:31,020
+messaggio è fondamentalmente irrilevante. Tutta l'analisi si basa sul modo in cui funziona la
+
+30
+00:03:31,020 --> 00:03:37,500
+trasmissione. Il messaggio infatti viene in pratica generato da una sorgente, poi entra in
+
+31
+00:03:37,500 --> 00:03:45,540
+un dispositivo di trasmissione, attraversa un mezzo fisico specifico, raggiunge una destinazione e
+
+32
+00:03:45,540 --> 00:03:51,940
+infine viene interpretato dal ricevente. E nel momento in cui attraversa il mezzo fisico,
+
+33
+00:03:51,940 --> 00:03:58,180
+il messaggio incontra il rumore, cioè tutta una serie di interferenze non pertinenti che
+
+34
+00:03:58,180 --> 00:04:05,060
+si aggiungono ad esso e vanno quindi a creare disturbo al momento della ricezione. Chiaramente
+
+35
+00:04:05,060 --> 00:04:10,600
+una descrizione del genere è adattabile a qualsiasi tipo di trasmissione di informazioni,
+
+36
+00:04:10,600 --> 00:04:17,500
+dalla comunicazione verbale fra persone fino alle onde radio o alle moderne reti informatiche. E
+
+37
+00:04:17,500 --> 00:04:24,020
+Shannon nel suo articolo mostrava che tutti questi messaggi possono essere sia misurati,
+
+38
+00:04:24,020 --> 00:04:31,060
+sia trasmessi in maniera digitale, cioè tramite impulsi elettrici che rappresentano le cifre 0 o
+
+39
+00:04:31,060 --> 00:04:38,100
+1. Lo stesso Shannon scriveva se si usa la base 2 le unità risultanti possono essere chiamate
+
+40
+00:04:38,100 --> 00:04:46,140
+cifre binarie, ovviamente lui in inglese scrisse digital bits o più brevemente bit. E questa
+
+41
+00:04:46,140 --> 00:04:52,780
+relativamente semplice frase introduceva di fatto il concetto ed il termine che noi tutti oggi
+
+42
+00:04:52,980 --> 00:04:58,940
+utilizziamo per indicare l'unità di misura dell'informazione. Nel suo saggio poi Shannon
+
+43
+00:04:58,940 --> 00:05:04,580
+continuava sviluppando una teoria delle probabilità che tramite una serie di complessi
+
+44
+00:05:04,580 --> 00:05:10,500
+algoritmi mostrava come fare per massimizzare le prestazioni del segnale e al tempo stesso
+
+45
+00:05:10,500 --> 00:05:16,980
+minimizzare il rumore riducendone quindi gli effetti. E ad oggi la teoria di Shannon è alla
+
+46
+00:05:16,980 --> 00:05:21,420
+base delle operazioni di memorizzazione e di trasmissione delle informazioni digitali,
+
+47
+00:05:21,420 --> 00:05:28,460
+permette la conversione dei dati da un formato all'altro, ne consente la quantificazione ed il
+
+48
+00:05:28,460 --> 00:05:36,820
+conteggio. Grazie per aver ascoltato Snippet una rubrica di pensieri in codice. Scopri
+
+49
+00:05:36,820 --> 00:05:40,540
+tanti altri contenuti sul sito pensieriincodice.it
+

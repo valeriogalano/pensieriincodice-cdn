@@ -1,0 +1,1068 @@
+1
+00:00:00,000 --> 00:00:05,480
+Se ci penso mi sento terribilmente vecchio. Ricordo quando non c'era una sola auto al
+
+2
+00:00:05,480 --> 00:00:10,640
+mondo capace di tornarsene a casa da sé. Guidavo macchine ottuse e senza vita. La
+
+3
+00:00:10,640 --> 00:00:15,360
+mano dell'uomo doveva continuamente manovrare i comandi, e ogni anno quelle auto uccidevano
+
+4
+00:00:15,360 --> 00:00:21,020
+migliaia di persone. Le automatiche misero fine a quel macello. Il cervello positronico
+
+5
+00:00:21,020 --> 00:00:25,780
+reagiva assai più rapidamente di quello umano, e si poteva benissimo fare a meno di toccare
+
+6
+00:00:25,780 --> 00:00:31,980
+i comandi. Si entrava, si selezionava la destinazione voluta e si lasciava fare alla macchina. Ora
+
+7
+00:00:31,980 --> 00:00:36,820
+tutto questo ci sembra normale, ma ricordo quando uscì la prima legge che proibiva alle
+
+8
+00:00:36,820 --> 00:00:40,980
+vecchie auto di correre sulle autostrade e permetteva il transito solo alle automatiche.
+
+9
+00:00:40,980 --> 00:00:47,180
+Dio mio, che pieno. Si parlò di comunismo, di fascismo, ma le autostrade si liberarono
+
+10
+00:00:47,180 --> 00:00:52,460
+e il massacro cessò. Naturalmente le automobili erano cento volte più costose di quelle ordinarie
+
+11
+00:00:52,460 --> 00:00:57,300
+e non molti potevano permettersele. Così, l'industria si specializzò nella costruzione
+
+12
+00:00:57,300 --> 00:01:02,500
+di omnibus automatici. Si poteva telefonare a una compagnia e farsene mandare uno alla
+
+13
+00:01:02,500 --> 00:01:07,140
+porta in pochi minuti. Generalmente bisognava viaggiare con altre persone dirette nello
+
+14
+00:01:07,140 --> 00:01:13,540
+stesso medesimo luogo, ma che importava. Tuttavia, Samson Heritage si era comprato un'auto personale.
+
+15
+00:01:13,540 --> 00:01:19,060
+Quell'auto non era ancora Matthew per me allora. Non sapevo che sarebbe poi diventata
+
+16
+00:01:19,060 --> 00:01:24,220
+l'anziana della fattoria. Sapevo soltanto che stava soffiandomi il posto e la odiavo.
+
+17
+00:01:24,220 --> 00:01:29,180
+Ora non avrete certamente più bisogno di me, signor Heritage, dissi quando vidi la vettura.
+
+18
+00:01:29,180 --> 00:01:34,260
+Lui era già piuttosto vecchio e aveva i capelli bianchi, ma le guance rosse ben rasate gli
+
+19
+00:01:34,260 --> 00:01:39,020
+davano l'aria di un ragazzino ed era uno degli uomini più ricchi del Nord America.
+
+20
+00:01:39,020 --> 00:01:44,180
+Cosa diavolo vi mettete in mente, Jake? Disse. Non credete mica che io mi affidie ciecamente
+
+21
+00:01:44,180 --> 00:01:48,060
+a un congegno strano come quello? Voi rimarrete ai comandi come al solito.
+
+22
+00:01:48,060 --> 00:01:53,580
+Ma funziona da sé, dissi io. Esplora la strada, reagisce agli ostacoli, uomini o auto che
+
+23
+00:01:53,580 --> 00:01:58,900
+siano e ricorda il percorso che deve seguire. Sono cose che si dicono, io comunque non mi
+
+24
+00:01:58,900 --> 00:02:02,700
+fido. Voi ve ne starete seduto al volante nel caso qualcosa non funzioni.
+
+25
+00:02:14,180 --> 00:02:22,260
+Il brano che ti ho letto nell'introduzione è tratto da un racconto di Isaac Asimov del
+
+26
+00:02:22,260 --> 00:02:28,940
+1953, dal titolo Sally. Nelle parole che ti ho letto vi è una descrizione di un tipo
+
+27
+00:02:28,940 --> 00:02:33,780
+di guida autonoma che va ben oltre quella a cui possiamo aspirare noi oggi, ma che
+
+28
+00:02:33,780 --> 00:02:39,420
+forse è anche quel tipo di intelligenza artificiale che in tanti sogniamo e ci auguriamo di poter
+
+29
+00:02:39,420 --> 00:02:44,980
+vedere un giorno. Il cervello positronico così ampiamente descritto nei racconti di
+
+30
+00:02:44,980 --> 00:02:50,260
+Asimov è in realtà molto di più del machine learning o del deep learning o di qualsiasi
+
+31
+00:02:50,260 --> 00:02:55,300
+altra intelligenza artificiale sulla quale si stia lavorando al momento. Almeno per quanto
+
+32
+00:02:55,300 --> 00:03:02,140
+ne so io, diciamo. Ma il risultato descritto nel brano non è poi così diverso dall'obiettivo
+
+33
+00:03:02,140 --> 00:03:07,140
+degli attuali sviluppi della cosiddetta guida autonoma, cioè auto che si guidano da sole
+
+34
+00:03:07,140 --> 00:03:12,160
+in cui il passeggero deve solo salire, indicare la direzione e senza svolgere alcun tipo di
+
+35
+00:03:12,160 --> 00:03:17,500
+compito lasciare che l'auto lo trasporti a destinazione. Allo stesso tempo però anche
+
+36
+00:03:17,500 --> 00:03:23,660
+i sospetti del signore Herridge sembrano piuttosto attuali, soprattutto in questi anni in cui
+
+37
+00:03:23,660 --> 00:03:29,780
+la guida autonoma sta progredendo sì, ma è ben lontana dal raggiungere il livello
+
+38
+00:03:29,780 --> 00:03:34,780
+descritto da Asimov. Ad ogni modo, se non hai mai letto Sally ti consiglio di recuperarlo
+
+39
+00:03:34,780 --> 00:03:40,180
+perché può essere molto interessante soprattutto agli occhi del lettore contemporaneo, anche
+
+40
+00:03:40,180 --> 00:03:46,420
+alla luce del particolare finale che per ovvi motivi qui non ti spoilerò. E nel caso potresti
+
+41
+00:03:46,420 --> 00:03:52,880
+anche ascoltarlo, sul web se ne trovano tante versioni lette in italiano e anzi ti lascio
+
+42
+00:03:52,880 --> 00:03:59,060
+in descrizione il link alla versione che preferisco, che ho ascoltato pochi giorni fa, di Rosanna
+
+43
+00:03:59,060 --> 00:04:04,900
+Lia, la quale mi piace molto come lettrice e magari nel suo canale potresti anche trovare
+
+44
+00:04:04,900 --> 00:04:10,660
+tanti altri racconti interessanti. Ma tornando alla nostra realtà contemporanea, noi come
+
+45
+00:04:10,660 --> 00:04:16,540
+siamo messi con la guida autonoma? Innanzitutto partiamo col dire che la guida autonoma ha
+
+46
+00:04:16,540 --> 00:04:23,460
+una sua suddivisione ben precisa in sei livelli di automazione. Si parte dal livello zero
+
+47
+00:04:23,460 --> 00:04:28,900
+in cui l'automazione è fondamentalmente assente, quindi si parla delle auto tradizionali
+
+48
+00:04:28,900 --> 00:04:34,860
+completamente manuali, fino ad arrivare al livello 5 in cui la guida autonoma è completa
+
+49
+00:04:34,860 --> 00:04:40,340
+e totale, quindi si parla di macchine che non hanno bisogno di volante, pedali o altri
+
+50
+00:04:40,340 --> 00:04:47,680
+comandi. Nel mezzo i livelli 1 e 2 sono rappresentati dal cruise control, che ovviamente può essere
+
+51
+00:04:47,680 --> 00:04:53,640
+più o meno sofisticato, mentre i livelli 3 e 4 sono rappresentati da sistemi come
+
+52
+00:04:53,640 --> 00:04:59,760
+il traffic jam assist che permette all'auto di guidare da sola nel traffico a bassa velocità
+
+53
+00:04:59,760 --> 00:05:05,760
+o in generale la guida autonoma in condizioni controllate. Comunque, se sei come me e non
+
+54
+00:05:05,760 --> 00:05:12,040
+conosci tutti gli optional attualmente disponibili nel mondo automobilistico, esiste una sorta
+
+55
+00:05:12,040 --> 00:05:19,300
+di convenzione mnemonica più semplice, nella quale la guida autonoma di livello 1 è definita
+
+56
+00:05:19,300 --> 00:05:25,020
+come quella in cui non c'è bisogno di usare i piedi, quella di livello 2 non c'è bisogno
+
+57
+00:05:25,020 --> 00:05:30,660
+di usare le mani, in quella di livello 3 si può non guardare, in quella di livello 4 non
+
+58
+00:05:30,660 --> 00:05:36,980
+pensare e per quella di livello 5 non servono proprio i comandi. Chiaramente il livello
+
+59
+00:05:36,980 --> 00:05:43,460
+5 è quello a cui la moderna industria automobilistica aspira e questo perché i vantaggi ovviamente
+
+60
+00:05:43,460 --> 00:05:49,700
+sono ben chiari, un ecosistema di veicoli autonomi collegati fra loro diminuirebbe innanzitutto
+
+61
+00:05:49,700 --> 00:05:56,700
+drasticamente gli incidenti nonché il consumo di carburante, le code e cosa non trascurabile
+
+62
+00:05:56,700 --> 00:06:02,900
+concederebbe ai passeggeri tempo per attività diverse che non siano la guida, per esempio
+
+63
+00:06:02,900 --> 00:06:09,700
+il lavoro o lo svago. Chi di noi non sogna di poter dire addio a quell'attività faticosa
+
+64
+00:06:09,700 --> 00:06:16,260
+e stressante che è la guida e magari potersi dedicare a leggere un libro o a guardare
+
+65
+00:06:16,260 --> 00:06:23,100
+un film nel tragitto casa lavoro e viceversa? Purtroppo però la strada verso questo traguardo
+
+66
+00:06:23,100 --> 00:06:28,980
+sembra ancora lunga e soprattutto non priva di ostacoli e a differenza di quanto si potrebbe
+
+67
+00:06:28,980 --> 00:06:35,020
+immaginare tali ostacoli non sono solo di tipo tecnologico. Come dico sempre qui su
+
+68
+00:06:35,020 --> 00:06:40,460
+Pensieri in Codice noi proviamo a capire a grandi linee come funziona la tecnologia
+
+69
+00:06:40,460 --> 00:06:47,460
+che ci circonda, in particolare il software, ma poi ci interroghiamo anche spesso sul rapporto
+
+70
+00:06:47,460 --> 00:06:53,420
+che questa tecnologia instaura con le nostre vite, i nostri comportamenti, le nostre abitudini
+
+71
+00:06:53,420 --> 00:06:58,820
+e oggi non parliamo di qualcosa di esattamente attuale o ampiamente diffuso, probabilmente
+
+72
+00:06:58,820 --> 00:07:04,180
+lo sarà in futuro, anzi sicuramente, ma dalle riflessioni che vorrei provare a fare sono
+
+73
+00:07:04,180 --> 00:07:09,220
+sicuro che tanti fra noi scopriranno che i problemi nel campo della guida autonoma
+
+74
+00:07:09,220 --> 00:07:16,660
+sono tanto tecnologici quanto anche banalmente umani. Dal punto di vista tecnologico uno
+
+75
+00:07:16,660 --> 00:07:22,220
+degli ostacoli più grandi che in generale affligge un po' qualsiasi tipo di intelligenza
+
+76
+00:07:22,220 --> 00:07:27,780
+artificiale è rappresentato dal paradosso di Moravec. Magari affronteremo il tema in
+
+77
+00:07:27,780 --> 00:07:33,180
+maniera più approfondita in un altro episodio ma in due parole Hans Moravec formulò questo
+
+78
+00:07:33,180 --> 00:07:39,660
+paradosso quando si rese conto che se paragonate per l'intelligenza artificiale le attività
+
+79
+00:07:39,660 --> 00:07:45,020
+di alto livello, come giocare a scacchi o identificare oggetti in immagini e cose simili
+
+80
+00:07:45,020 --> 00:07:51,620
+che noi associamo ad un certo livello di intelligenza umana, richiedono molta più potenza di calcolo
+
+81
+00:07:51,620 --> 00:07:57,420
+rispetto a processi di apprendimento elementari, come ad esempio quello che potrebbe mettere
+
+82
+00:07:57,420 --> 00:08:04,300
+in campo un bambino di un anno. Ora mi rendo conto che a seconda del tuo background probabilmente
+
+83
+00:08:04,300 --> 00:08:11,860
+questo paradosso potrà sembrarti o piuttosto banale o piuttosto controintuitivo. Probabilmente
+
+84
+00:08:11,860 --> 00:08:17,660
+la sua spiegazione va ricercata nei milioni di anni di evoluzione del cervello umano che
+
+85
+00:08:17,660 --> 00:08:22,980
+hanno permesso lo sviluppo di tutta una serie di capacità e di automatismi, per intenderci
+
+86
+00:08:22,980 --> 00:08:29,300
+quelli descritti da Daniel Kahneman nel suo bestseller Pensieri lenti e veloci, ma in ogni
+
+87
+00:08:29,300 --> 00:08:36,220
+caso sta di fatto che al momento è più complicato per una intelligenza artificiale imparare ad
+
+88
+00:08:36,220 --> 00:08:43,060
+esempio a far camminare un robot umanoide come farebbe un bambino piccolo piuttosto che imparare
+
+89
+00:08:43,060 --> 00:08:48,340
+a giocare a un qualsiasi videogame meglio di un qualsiasi campione del mondo umano. Questo
+
+90
+00:08:48,340 --> 00:08:55,180
+paradosso si manifesta largamente in un'attività come la guida. Per un umano basta qualche giorno
+
+91
+00:08:55,180 --> 00:08:59,820
+di pratica, al massimo qualche settimana, e riesce bene o male a imparare a guidare un
+
+92
+00:08:59,820 --> 00:09:05,260
+veicolo in modo soddisfacente. La tecnologia della guida autonoma invece ha cominciato a
+
+93
+00:09:05,260 --> 00:09:12,340
+muovere qualche passo veramente significativo in avanti verso il 2005, giù di lì, e dopo quasi 20
+
+94
+00:09:12,340 --> 00:09:18,940
+anni ci sono alcuni casi virtuosi che riescono a muovere veicoli in ambienti controllati e a
+
+95
+00:09:18,940 --> 00:09:26,180
+complessità ridotta e comunque sotto la supervisione umana. Se proviamo infatti a scomporre l'attività
+
+96
+00:09:26,180 --> 00:09:31,580
+della guida in sotto attività più semplici, quindi applichiamo il classico divide e timpera proprio
+
+97
+00:09:31,580 --> 00:09:37,260
+come se stessimo progettando un software per risolvere questo problema, ci rendiamo conto che
+
+98
+00:09:37,260 --> 00:09:43,580
+a differenza di come potrebbe apparire intuitivamente, guidare non è affatto semplice.
+
+99
+00:09:43,580 --> 00:09:50,340
+Ad ogni istante infatti è necessario conoscere informazioni come la destinazione, la strada che
+
+100
+00:09:50,340 --> 00:09:57,260
+ci porta a tale destinazione, la posizione del nostro veicolo su tale strada, lo stato di movimento,
+
+101
+00:09:57,260 --> 00:10:03,900
+quindi direzione, velocità, lo stato di tutto l'ambiente circostante, compresi ostacoli fissi
+
+102
+00:10:03,940 --> 00:10:10,860
+o mobili, veicoli che vanno nella stessa direzione o in altre direzioni, persone o animali nelle
+
+103
+00:10:10,860 --> 00:10:19,580
+vicinanze e basandosi su tutti questi e tanti altri input decidere se è come cambiare lo stato di
+
+104
+00:10:19,580 --> 00:10:25,300
+movimento, quindi se accelerare, decelerare, curvare o lasciare tutto invariato. Ad un umano
+
+105
+00:10:25,300 --> 00:10:30,420
+per fare tutto questo bastano i propri sensi, un minimo di raziocinio e un po' di pratica,
+
+106
+00:10:30,420 --> 00:10:36,180
+ad una macchina ovviamente no. Per ottenere tutte queste informazioni un algoritmo deve
+
+107
+00:10:36,180 --> 00:10:42,420
+fare affidamento su una lunga schiera di sensori, un'auto a guida autonoma infatti deve essere
+
+108
+00:10:42,420 --> 00:10:48,780
+equipaggiata con vari radar, gps, telecamere, accelerometri, lidar che sono praticamente dei
+
+109
+00:10:48,780 --> 00:10:54,140
+radar che però funzionano con la luce invece che con le onde radio e grazie a tutti questi
+
+110
+00:10:54,140 --> 00:10:59,620
+apparecchi l'algoritmo è in grado di raccogliere informazioni sulla posizione dell'auto,
+
+111
+00:10:59,820 --> 00:11:04,100
+l'ambiente circostante, la posizione e direzione dei vari oggetti in movimento,
+
+112
+00:11:04,100 --> 00:11:10,100
+la segnaletica eccetera. Razionalmente possiamo immaginare che tutto questo sia composto da
+
+113
+00:11:10,100 --> 00:11:16,260
+terabyte di dati prodotti in brevissimi lassi di tempo che il cervello dell'auto,
+
+114
+00:11:16,260 --> 00:11:22,540
+tanto per utilizzare le parole di Asimov, deve costantemente elaborare, scartare ed
+
+115
+00:11:22,540 --> 00:11:29,500
+eventualmente utilizzare per prendere decisioni, a volte anche a 100 km orari. Inoltre gestire tutti
+
+116
+00:11:29,500 --> 00:11:35,420
+questi volumi e tipologie di input non è nemmeno semplice dal punto di vista teorico, nessuna di
+
+117
+00:11:35,420 --> 00:11:40,700
+queste apparecchiature da sola è in grado di fornire tutte le informazioni necessarie e quindi
+
+118
+00:11:40,700 --> 00:11:46,260
+i loro flussi di dati vanno in qualche modo combinati e interpretati perché abbiano un
+
+119
+00:11:46,260 --> 00:11:52,580
+effettivo valore ai fini dei processi di guida. E cosa accade se un sensore è temporaneamente
+
+120
+00:11:52,580 --> 00:11:58,980
+indisponibile come magari un gps in galleria? O se è guasto? O se invia informazioni non valide?
+
+121
+00:11:58,980 --> 00:12:05,300
+E che cosa fare se due o più sistemi restituiscono informazioni contrastanti fra loro? Alla base
+
+122
+00:12:05,300 --> 00:12:10,860
+della gestione di tutte queste informazioni e casistiche varie risiede il teorema di Bayes.
+
+123
+00:12:10,860 --> 00:12:15,980
+Si tratta questo di un teorema matematico fondamentale per tutte le applicazioni di
+
+124
+00:12:15,980 --> 00:12:21,380
+machine learning, ma che noi proveremo a riassumere in poche frasi e con un esempio.
+
+125
+00:12:21,380 --> 00:12:26,980
+Immagina che un tuo amico ti dica che in una piazza a pochi chilometri da dove vi trovate
+
+126
+00:12:26,980 --> 00:12:32,060
+c'è un famoso cantante di cui tu sei un grande fan e che sta tenendo un concerto.
+
+127
+00:12:32,060 --> 00:12:39,140
+Immediatamente, a seconda di quanta fiducia riponi in questa persona, assegnerai mentalmente un certo
+
+128
+00:12:39,140 --> 00:12:45,180
+valore di verità alla sua affermazione. Qualcosa del tipo, questa notizia sarà vera al 30,
+
+129
+00:12:45,180 --> 00:12:52,300
+50, 70%. Subito dopo, però, il tuo cervello farà probabilmente una veloce ricerca nei tuoi
+
+130
+00:12:52,300 --> 00:12:58,380
+ricordi, per verificare se c'è traccia di un concerto che si sarebbe dovuto svolgere in zona
+
+131
+00:12:58,380 --> 00:13:04,140
+in quei giorni. Se ricordi qualcosa in merito, il valore di verità dell'affermazione probabilmente
+
+132
+00:13:04,140 --> 00:13:09,900
+aumenterà di molto, in caso contrario diminuirà. Ma in ogni caso potresti decidere di recarti sul
+
+133
+00:13:09,900 --> 00:13:14,460
+posto per controllare di persona e allora, nell'avvicinarti alla piazza in questione,
+
+134
+00:13:14,460 --> 00:13:20,500
+inizierai a fare caso al numero di persone in circolazione, all'intensità del traffico,
+
+135
+00:13:20,500 --> 00:13:26,420
+ai suoni che riesci a captare. Molte persone che vanno nella tua stessa direzione potrebbero
+
+136
+00:13:26,420 --> 00:13:32,940
+avvalorare la notizia della presenza del cantante. Non sentire musica man mano che ti avvicini alla
+
+137
+00:13:32,940 --> 00:13:39,020
+meta potrebbe invece indebolire tale convinzione. Finché infine, ad un certo punto, arriverai a
+
+138
+00:13:39,100 --> 00:13:45,500
+destinazione e potrai constatare con i tuoi stessi occhi e le tue orecchie lo stato della situazione.
+
+139
+00:13:45,500 --> 00:13:51,820
+Tutte queste informazioni, che a poco a poco, mentre le ricevi, fanno variare la probabilità
+
+140
+00:13:51,820 --> 00:13:58,460
+secondo cui il cantante sia veramente lì per un concerto, sono in poche parole un buon esempio di
+
+141
+00:13:58,460 --> 00:14:04,900
+come è possibile applicare il teorema di Bayes. A mano a mano che i sensori dell'auto trasmettono
+
+142
+00:14:04,900 --> 00:14:10,580
+i loro dati, questi vanno a costituire aumenti e diminuzioni di tutta una serie di valori di
+
+143
+00:14:10,580 --> 00:14:17,340
+probabilità, i quali, a loro volta, determinano posizione del veicolo, ambiente circostante,
+
+144
+00:14:17,340 --> 00:14:22,660
+eccetera. Bayes stesso inventò un piccolo gioco per descrivere in modo semplice il
+
+145
+00:14:22,660 --> 00:14:29,100
+funzionamento delle sue teorie. Per giocare immagina di essere seduto su una sedia con
+
+146
+00:14:29,100 --> 00:14:35,820
+davanti a te una lavagna quadrata e alle tue spalle un tavolo sempre quadrato. A te viene
+
+147
+00:14:35,820 --> 00:14:42,100
+chiesto di lanciare una sfera blu sul tavolo senza voltarti e poi provare a marcare una X sulla
+
+148
+00:14:42,100 --> 00:14:48,540
+lavagna per indicare il punto in cui la palla si è fermata. È ovvio che sia quasi impossibile
+
+149
+00:14:48,540 --> 00:14:55,140
+indovinare, ma successivamente potrai lanciare altre palline di colore rosso e ad ogni lancio
+
+150
+00:14:55,140 --> 00:15:00,820
+ti verrà comunicato se la pallina iniziale si trova a destra, a sinistra o in alto o in basso
+
+151
+00:15:00,820 --> 00:15:08,460
+rispetto a quella rossa. A questo punto tu potrai tracciare una nuova X sulla lavagna cancellando
+
+152
+00:15:08,460 --> 00:15:14,180
+quella precedente. Continuando così a lanciare palline rosse e a ricevere per ciascuna di esse
+
+153
+00:15:14,180 --> 00:15:21,580
+la posizione relativa rispetto alla pallina blu, a lungo andare la posizione della X disegnata
+
+154
+00:15:21,580 --> 00:15:27,820
+sulla lavagna diventerà sempre più simile a quella reale della pallina blu. Mi rendo conto che
+
+155
+00:15:27,820 --> 00:15:33,140
+descritto a parole non è semplicissimo ma spero di essermi spiegato a dovere. Il concetto che
+
+156
+00:15:33,140 --> 00:15:40,300
+voglio esprimere è che grazie al teorema di Bayes dati come la posizione dell'auto vengono calcolati
+
+157
+00:15:40,300 --> 00:15:46,860
+esattamente in questo modo, cioè come riassunto delle approssimazioni successive di informazioni
+
+158
+00:15:46,860 --> 00:15:54,140
+che arrivano continuamente da tutti i sensori coinvolti e dunque messa in questo modo forse
+
+159
+00:15:54,140 --> 00:16:01,300
+non è poi così strano che serva un'enorme potenza di calcolo, non pensi? Ora però proviamo a fare
+
+160
+00:16:01,300 --> 00:16:07,540
+un passo avanti e fingiamo che tutti i problemi tecnologici siano stati superati e che d'improvviso
+
+161
+00:16:07,540 --> 00:16:14,740
+diventi disponibile la guida autonoma di livello 5. Come dovrebbero comportarsi effettivamente le
+
+162
+00:16:14,740 --> 00:16:21,900
+auto senza comandi nel mondo reale, nel rapporto con l'ambiente circostante, le persone, gli animali
+
+163
+00:16:21,900 --> 00:16:28,820
+eccetera? Ecco io immagino che ti sarà già venuto in mente il famoso dilemma del tram o del carrello
+
+164
+00:16:28,820 --> 00:16:34,100
+del treno, insomma l'ho sentito enunciare in vari modi, cioè quell'esperimento mentale in cui si
+
+165
+00:16:34,100 --> 00:16:39,540
+chiede se in caso di incidente inevitabile da parte di un tram o in questo caso di un'auto
+
+166
+00:16:39,540 --> 00:16:46,980
+autonoma sia meglio salvare i passeggeri o i pedoni o un particolare pedone se questo salverà
+
+167
+00:16:46,980 --> 00:16:53,540
+altre vite in futuro eccetera così. E onestamente no non mi sto riferendo a questo, sono sicuro che
+
+168
+00:16:53,540 --> 00:17:01,620
+sia un discorso filosofico abbastanza importante ma è appunto quello filosofico, non lo trovo
+
+169
+00:17:01,620 --> 00:17:07,860
+particolarmente legato alla tecnologia o al software. E prima che gridi allo scandalo quello
+
+170
+00:17:07,860 --> 00:17:12,860
+che voglio dire è che credo che questo tipo di problema vada risolto a livello di società e non
+
+171
+00:17:12,860 --> 00:17:18,620
+di software, tanto più che sono sicuro che una volta che la società avrà preso la sua decisione
+
+172
+00:17:18,620 --> 00:17:24,780
+ci saranno tanti programmatori ben lieti di implementarne una versione algoritmica. Tuttavia
+
+173
+00:17:24,780 --> 00:17:30,340
+continuo a considerare questo un argomento piuttosto interessante e se la pensi così anche
+
+174
+00:17:30,340 --> 00:17:36,460
+tu ti lascio in descrizione un paio di risorse che mi sono piaciute e cioè un episodio del
+
+175
+00:17:36,540 --> 00:17:43,860
+disinformatico story intitolato dilemmi delle auto autonome e il libro lo scarabeo di Wittgenstein
+
+176
+00:17:43,860 --> 00:17:49,060
+che parla di questo e di altri esperimenti mentali. Tornando però al nostro discorso
+
+177
+00:17:49,060 --> 00:17:56,340
+quello che intendo con il rapporto con l'ambiente circostante è proprio riferito a quei piccoli
+
+178
+00:17:56,340 --> 00:18:02,100
+comportamenti che vediamo tutti i giorni. Voglio dire sappiamo già che le auto attuali di livello
+
+179
+00:18:02,100 --> 00:18:09,300
+3 o 4 sono già in grado da sole di non investire persone o di evitare ostacoli ma il problema
+
+180
+00:18:09,300 --> 00:18:17,020
+forse può risiedere nei piccoli imprevisti di tutti i giorni per i quali magari diventa difficile
+
+181
+00:18:17,020 --> 00:18:22,540
+lasciare sufficienti margini di manovra ad un sistema automatico. Provo a spiegarmi meglio in
+
+182
+00:18:22,540 --> 00:18:28,740
+generale un qualsiasi software sia tradizionale che implementato tramite machine learning rispetta
+
+183
+00:18:28,740 --> 00:18:34,140
+in modo ferreo tutte le regole che gli vengono imposte e ammettiamo anche che in un mondo come
+
+184
+00:18:34,140 --> 00:18:40,620
+quello descritto da Asimov tutti i veicoli siano a guida autonoma quindi stiamo già escludendo casi
+
+185
+00:18:40,620 --> 00:18:46,420
+in cui l'auto che arriva in senso contrario ci viene addosso o fa manovre strane o pericolose
+
+186
+00:18:46,420 --> 00:18:54,180
+ma se ad esempio semplicemente ci fosse un'auto in panne nella nostra corsia il nostro codice della
+
+187
+00:18:54,180 --> 00:18:59,740
+strada dice che non si può sconfinare se le corsie sono separate da due strisce continue
+
+188
+00:18:59,740 --> 00:19:06,540
+quindi cosa dovrebbe fare un'auto autonoma restare per ore in fila dietro a un velicolo in panne o
+
+189
+00:19:06,540 --> 00:19:12,460
+infrangere il codice della strada? Per un umano è chiaro cosa fare ma per una macchina potrebbe non
+
+190
+00:19:12,460 --> 00:19:19,060
+esserlo altrettanto e in casi ancora più particolari magari c'è un semaforo rosso ma l'auto deve
+
+191
+00:19:19,060 --> 00:19:26,140
+spostarsi per far passare un mezzo di soccorso o per far spostare una persona ferita o ancora ci
+
+192
+00:19:26,140 --> 00:19:32,980
+potrebbe essere un pericolo imminente molto vicino magari un incendio nel mezzo avanti a noi che cosa
+
+193
+00:19:32,980 --> 00:19:39,340
+deve fare un pilota autonomo? A marcia indietro sulla corsia non si può andare e sarebbe anche
+
+194
+00:19:39,340 --> 00:19:47,540
+un comportamento un po' difficile da gestire per le altre auto certo si può già intuire che basta
+
+195
+00:19:47,540 --> 00:19:52,820
+interconnettere fra loro le vetture per risolvere molti di questi problemi e sono sicuro che in
+
+196
+00:19:52,820 --> 00:19:59,140
+futuro sarà sicuramente così ma se il problema fosse invece umano o animale? Insomma qualcosa di
+
+197
+00:19:59,140 --> 00:20:04,980
+non direttamente connesso alla guida ma al comportamento di un soggetto esterno? Come si
+
+198
+00:20:04,980 --> 00:20:10,220
+dovrebbe comportare un'intelligenza artificiale se al centro della corsia c'è un ciclista che va a
+
+199
+00:20:10,220 --> 00:20:17,660
+10 chilometri orari? O peggio un pazzo che è seduto sull'asfalto? Si potrebbero vietare queste
+
+200
+00:20:17,660 --> 00:20:24,100
+attività? Certo probabilmente già lo sono ma sappiamo bene che di vieto di fare una cosa non
+
+201
+00:20:24,100 --> 00:20:30,300
+vuol dire veramente che nessuno la farà mai il caso va comunque gestito in qualche modo. Ecco
+
+202
+00:20:30,300 --> 00:20:36,900
+secondo me questo genere di domande incarna ancora un certo tipo di ostacolo per la guida
+
+203
+00:20:36,900 --> 00:20:42,340
+autonoma un ostacolo che in realtà è a cavallo tra il campo della tecnologia e quello del
+
+204
+00:20:42,340 --> 00:20:48,180
+comportamento umano. Teoricamente se potessimo applicare il concetto di guida autonoma ad un
+
+205
+00:20:48,180 --> 00:20:53,220
+ambiente chiuso senza interventi esterni non avremmo problemi di questo tipo ma purtroppo
+
+206
+00:20:53,220 --> 00:21:00,220
+così non è. Le vetture autonome dovranno circolare nel mondo reale e nel mondo reale possono accadere
+
+207
+00:21:00,220 --> 00:21:06,700
+cose difficili da prevedere. Ecco ora che sia chiaro personalmente io non ho dubbi che prima
+
+208
+00:21:06,900 --> 00:21:13,820
+si arriverà alla guida autonoma totale e completa e sono convinto anche che sarà meglio per tutti.
+
+209
+00:21:13,820 --> 00:21:21,180
+Per me il problema non è se e devo dire che anche il quando mi lascia abbastanza indifferente mentre
+
+210
+00:21:21,180 --> 00:21:27,620
+la cosa che trovo interessante è il come. Gli attuali esempi di guida autonoma infatti sono
+
+211
+00:21:27,620 --> 00:21:32,340
+autonomi solo grazie ai vincoli imposti all'ambiente circostante si muovono all'interno
+
+212
+00:21:32,660 --> 00:21:38,940
+di aree specifiche bonificate da molti degli agenti esterni in orari prestabiliti e sotto la
+
+213
+00:21:38,940 --> 00:21:46,260
+supervisione umana. Il livello 4 dunque bene o male è stato raggiunto mentre il 5 quello completo
+
+214
+00:21:46,260 --> 00:21:52,460
+pur non essendo esattamente dietro l'angolo sembrerebbe solo questione di tempo ma nel
+
+215
+00:21:52,460 --> 00:21:58,700
+mezzo io ci vedo anche un altro tipo di limite e cioè quello dell'essere umano che vive questa
+
+216
+00:21:58,700 --> 00:22:05,380
+transizione. Prova a pensarci tutti gli sforzi della ricerca e dell'industria sembrano volti a
+
+217
+00:22:05,380 --> 00:22:11,340
+inserire la guida autonoma all'interno del nostro attuale status quo. La retorica quella del
+
+218
+00:22:11,340 --> 00:22:18,700
+marketing degli annunci roboanti e delle ricerche di capitali sembra essere quella di voler portare
+
+219
+00:22:18,700 --> 00:22:26,300
+per gradi le auto autonome all'interno del traffico ordinario cioè poi di trasformare pian piano una
+
+220
+00:22:26,300 --> 00:22:31,300
+tipologia di mezzo di trasporto manuale in qualcosa che non ha più bisogno nemmeno dei
+
+221
+00:22:31,300 --> 00:22:38,460
+comandi. Ma gli umani che guidano e che guideranno nel frattempo, quelli che guideranno nell'altra
+
+222
+00:22:38,460 --> 00:22:44,460
+corsia, quelli che dovranno supervisionare saranno in grado di adattarsi alla stessa velocità della
+
+223
+00:22:44,460 --> 00:22:51,500
+tecnologia? Da qualche parte una volta ho letto che è più probabile fare un incidente alla guida se si
+
+224
+00:22:51,500 --> 00:22:57,500
+è vicino casa rispetto a quando si è lontani in zone sconosciute. Ora non so se sia una statistica
+
+225
+00:22:57,500 --> 00:23:03,980
+vera però almeno per quella che è la mia esperienza sembra qualcosa di più che sensato. Io stesso mi
+
+226
+00:23:03,980 --> 00:23:09,180
+accorgo di essere molto più attento e concentrato alla guida quando sono in una zona che non conosco
+
+227
+00:23:09,180 --> 00:23:15,500
+rispetto a quando sono vicino a casa mia. Non credo si tratti proprio di superficialità ma per
+
+228
+00:23:15,500 --> 00:23:20,820
+quanto mi possa io dare una spiegazione la vedo come una questione di eccessiva sicurezza che mi
+
+229
+00:23:20,820 --> 00:23:27,500
+fa pensare di potermi distrarre di più di quanto farei altrimenti. Ora però immagina di essere
+
+230
+00:23:27,500 --> 00:23:32,860
+alla guida di un'auto che può percorrere 400 chilometri di autostrada senza che tu debba mai
+
+231
+00:23:32,860 --> 00:23:39,300
+sterzare, accelerare o rallentare. Alla velocità di 100 chilometri orari sono quattro ore di viaggio
+
+232
+00:23:39,300 --> 00:23:44,140
+nelle quali non ti viene richiesto di fare praticamente nulla se non sorvegliare l'auto.
+
+233
+00:23:44,140 --> 00:23:50,860
+Pensi davvero di poter riuscire a mantenere l'attenzione alta e costante? E se dopo quei
+
+234
+00:23:50,860 --> 00:23:56,980
+400 chilometri si verificasse un'emergenza? Pensi che saresti pronto a prendere i comandi,
+
+235
+00:23:56,980 --> 00:24:03,780
+sterzare per evitare qualcosa che l'auto ritiene invece di non dover evitare? Io non lo so. Credo
+
+236
+00:24:03,780 --> 00:24:09,940
+che dopo quattro ore bene o male sarei stanco e propenso a distrarmi. E comunque lo so che le
+
+237
+00:24:09,940 --> 00:24:14,940
+auto realmente in commercio hanno tutta una serie di sistemi per evitare distrazioni,
+
+238
+00:24:14,940 --> 00:24:21,340
+ma come ti dicevo è difficile prevedere tutte le eventualità e quindi se vai su YouTube puoi
+
+239
+00:24:21,340 --> 00:24:26,980
+già trovare tutta una serie di video di persone che spiegano come imbrogliare il controllo della
+
+240
+00:24:26,980 --> 00:24:32,980
+Tesla ad esempio. E il discorso si potrebbe poi estendere se fossi chiamato a gestire un'emergenza
+
+241
+00:24:32,980 --> 00:24:39,660
+dopo 4.000 chilometri di marcia autonoma? O dopo 40.000? O magari hai percorso 400.000
+
+242
+00:24:39,660 --> 00:24:43,740
+chilometri con le mani sul volante però hai comprato un'ottima auto che non ha mai richiesto
+
+243
+00:24:43,740 --> 00:24:50,620
+il tuo intervento e dopo, che so, tipo un anno c'è un problema. Sarai in grado di intervenire
+
+244
+00:24:50,620 --> 00:24:55,980
+con prontezza e gestire un'emergenza all'improvviso? Senza contare che più si andrà avanti più ci
+
+245
+00:24:55,980 --> 00:25:02,740
+saranno persone che avranno già in partenza poca esperienza di guida. Pensa ai neopatentati. Ecco,
+
+246
+00:25:02,900 --> 00:25:08,700
+secondo me al di là della mera tecnologia, del marketing e di tutto il resto sono questi i
+
+247
+00:25:08,700 --> 00:25:14,620
+concetti su cui si dovrebbe riflettere. Non certo per farli diventare degli spauracchi ma per
+
+248
+00:25:14,620 --> 00:25:21,220
+utilizzare consapevolmente gli strumenti. L'ho già detto e lo ripeto io sono convinto che la
+
+249
+00:25:21,220 --> 00:25:27,060
+guida autonoma prima o poi diventerà realtà e soprattutto che i suoi lati positivi supereranno
+
+250
+00:25:27,180 --> 00:25:33,220
+di gran lunga quelli negativi. E senza dubbio varrà la pena di affrontare e risolvere tutti i
+
+251
+00:25:33,220 --> 00:25:39,140
+problemi che ho descritto fin qui nonché quelli che sicuramente avrò dimenticato e quelli che
+
+252
+00:25:39,140 --> 00:25:44,260
+ancora magari non ci sono manifestati. Lungo questo percorso però dobbiamo fare attenzione
+
+253
+00:25:44,260 --> 00:25:49,940
+a non cadere nella retorica dei media e delle aziende. Quella disponibile al momento non è
+
+254
+00:25:49,940 --> 00:25:57,020
+vera guida autonoma più che altro si può definire guida assistita e non permette di distrarsi se
+
+255
+00:25:57,020 --> 00:26:05,300
+non in alcuni rari casi. Senza dubbio avere grandi aspettative è giusto ed è importante ma lo è anche
+
+256
+00:26:05,300 --> 00:26:12,060
+valutare le cose che ci circondano per quelle che sono e soprattutto nel farlo usare la testa. Bene
+
+257
+00:26:12,060 --> 00:26:18,100
+io spero di averti dato qualche spunto interessante. Ti ricordo che non sono un esperto di guida
+
+258
+00:26:18,100 --> 00:26:22,780
+autonoma e ho solo messo insieme qualche riflessione in base alle informazioni che ho
+
+259
+00:26:22,780 --> 00:26:29,420
+letto ascoltato e visto negli ultimi tempi per il resto oggi niente discorsetto so che sei una
+
+260
+00:26:29,420 --> 00:26:34,900
+persona intelligente sai già che bisogna condividere come seguire e tutto il resto voglio
+
+261
+00:26:34,900 --> 00:26:41,740
+soltanto dire una cosa ovviamente anche io so e sto seguendo quello che sta accadendo in questi
+
+262
+00:26:41,740 --> 00:26:48,300
+giorni ho scelto volutamente di non parlarne e di non fare nessun tipo di riferimento tuttavia
+
+263
+00:26:48,300 --> 00:26:54,460
+c'è gente che sta facendo un gran lavoro secondo me di informazione come ad esempio liberi oltre
+
+264
+00:26:54,460 --> 00:27:02,980
+per cui ne parlo solo per lasciarti in descrizione il link ai loro canali youtube e twitch e penso
+
+265
+00:27:02,980 --> 00:27:08,940
+che almeno nel breve periodo non farò più alcun tipo di riferimento alla questione quindi come
+
+266
+00:27:08,940 --> 00:27:15,580
+al solito ti ringrazio per aver ascoltato fin qui ti do appuntamento al prossimo episodio e ti
+
+267
+00:27:15,580 --> 00:27:20,100
+ricordo che un informatico risolve problemi a volte anche usando il computer
+

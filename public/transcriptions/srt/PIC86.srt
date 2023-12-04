@@ -1,0 +1,212 @@
+1
+00:00:00,000 --> 00:00:29,720
+Quando in informatica si parla di data e ora, i valori del calendario e dell'orologio che
+
+2
+00:00:29,720 --> 00:00:38,240
+solitamente sono mostrati in forma di giorno, mese, anno, ore, secondi, in realtà vengono
+
+3
+00:00:38,240 --> 00:00:41,520
+rappresentati in modo completamente differente.
+
+4
+00:00:41,520 --> 00:00:47,400
+In particolare, nella maggior parte dei casi, quando si vuole rappresentare una certa data
+
+5
+00:00:47,400 --> 00:00:54,400
+e un certo orario, lo si fa con un numero intero, che rappresenta il numero di secondi che separano
+
+6
+00:00:54,400 --> 00:01:00,560
+quella particolare data e ora da un'altra che è conosciuta come epoca e che corrisponde
+
+7
+00:01:00,560 --> 00:01:03,440
+al primo gennaio 1970.
+
+8
+00:01:03,440 --> 00:01:09,920
+Una rappresentazione del genere semplifica tutte le operazioni di manipolazione e confronto
+
+9
+00:01:09,920 --> 00:01:15,680
+fra date, perché invece di operare su tanti numeri separati, permette di farlo su un unico
+
+10
+00:01:15,680 --> 00:01:16,840
+numero intero.
+
+11
+00:01:16,840 --> 00:01:23,480
+E quindi, ad esempio, la mezzanotte del giorno di Natale dell'anno 2021 sarà rappresentata
+
+12
+00:01:23,480 --> 00:01:33,360
+da gran parte dei programmi e dei sistemi operativi come 1.640.390.400 secondi dall'epoca.
+
+13
+00:01:33,360 --> 00:01:38,520
+Ora però, se si ragiona ad un livello un po' più basso, cioè più vicino al modo
+
+14
+00:01:38,520 --> 00:01:44,520
+in cui i computer trattano effettivamente le informazioni, più o meno qualsiasi dato
+
+15
+00:01:44,520 --> 00:01:50,280
+viene rappresentato in forma di codice binario, quindi per mezzo di una sequenza più o meno
+
+16
+00:01:50,280 --> 00:01:52,680
+lunga di cifre di 0 e 1.
+
+17
+00:01:52,800 --> 00:01:58,720
+E dunque, in informatica, date e ore vengono prima rappresentate in numero di secondi dall'epoca
+
+18
+00:01:58,720 --> 00:02:03,640
+e poi a sua volta questo numero di secondi viene invece rappresentato come una sequenza
+
+19
+00:02:03,640 --> 00:02:04,640
+di bit.
+
+20
+00:02:04,640 --> 00:02:11,240
+Tutto questo ragionamento per dire che esiste un limite alle date che possono essere rappresentate
+
+21
+00:02:11,240 --> 00:02:16,720
+in informatica e questo limite dipende dal numero di bit che si ha a disposizione.
+
+22
+00:02:17,160 --> 00:02:23,800
+Ad esempio, con un sistema 32 bit, architettura che ormai sta sparendo dai device più moderni
+
+23
+00:02:23,800 --> 00:02:28,280
+ma che è ancora largamente utilizzata in molte applicazioni sia professionali che
+
+24
+00:02:28,280 --> 00:02:40,960
+industriali, è possibile rappresentare al massimo i numeri fino a 2.147.483.647, riservando
+
+25
+00:02:40,960 --> 00:02:45,440
+un bit per indicare se il numero è un positivo o un negativo.
+
+26
+00:02:45,840 --> 00:02:51,640
+E se tale valore massimo viene calcolato come secondi dall'epoca, esso corrisponde alle
+
+27
+00:02:51,640 --> 00:02:57,120
+3.1407 del 19 gennaio 2038.
+
+28
+00:02:57,120 --> 00:03:04,680
+Arrivati a tale data e ora, quindi, in un sistema a 32 bit, l'aggiunta di un altro secondo
+
+29
+00:03:04,680 --> 00:03:11,320
+causerà un cosiddetto errore di rappresentazione e invece di portare ad un intero con un'unità
+
+30
+00:03:11,320 --> 00:03:14,640
+in più, porterà ad un numero negativo.
+
+31
+00:03:14,960 --> 00:03:21,080
+In pratica, un eventuale orologio a 32 bit, nell'arco di quel secondo, passerà dalle
+
+32
+00:03:21,080 --> 00:03:32,760
+3.1407 del 19 gennaio 2038 direttamente alle 20.45.52 del 13 dicembre 1901.
+
+33
+00:03:32,760 --> 00:03:39,640
+A questo particolare bug è stato dato il nome di Y2038, proprio perché se dovesse
+
+34
+00:03:39,720 --> 00:03:44,600
+verificarsi nella realtà, lo farebbe all'inizio dell'anno 2038.
+
+35
+00:03:44,600 --> 00:03:50,360
+E ovviamente, un qualsiasi sistema o programma che si trovasse coinvolto in un errore del
+
+36
+00:03:50,360 --> 00:03:57,160
+genere difficilmente riuscirebbe ad espletare correttamente le proprie funzioni, e un evento
+
+37
+00:03:57,160 --> 00:04:01,240
+del genere potrebbe portare a risultati davvero inaspettati.
+
+38
+00:04:01,240 --> 00:04:09,280
+Detta così, potrebbe sembrare una catastrofe, ma in realtà, come per il simile ma ben più
+
+39
+00:04:09,280 --> 00:04:16,920
+noto predecessore Millennium Bug, non è certo il caso di disperare per Y2038, poiché
+
+40
+00:04:16,920 --> 00:04:22,760
+essendo a conoscenza del problema, sono già state elaborate varie soluzioni, e si tratta
+
+41
+00:04:22,760 --> 00:04:26,800
+solo di implementarle prima dell'arrivo della fatidica data.
+
+42
+00:04:26,800 --> 00:04:32,920
+Già conosciuto fra ghiandetti ai lavori fin dal 2006, infatti, il problema della rappresentazione
+
+43
+00:04:32,920 --> 00:04:39,880
+massima di un intero in 32bit è salito agli onori della cronaca nel 2014, quando la pagina
+
+44
+00:04:39,880 --> 00:04:46,320
+del video Gangam Style, disponibile su YouTube, è andata in crash perché il contatore delle
+
+45
+00:04:46,320 --> 00:04:53,560
+visualizzazioni ha superato i 2 miliardi e 147 milioni, mandando quindi in tilt la variabile
+
+46
+00:04:53,560 --> 00:04:57,560
+a 32bit che non riusciva più a contenerne il valore.
+
+47
+00:04:58,000 --> 00:05:04,640
+Dal momento quindi che sia Google sia YouTube sono ancora in piedi e perfettamente funzionanti,
+
+48
+00:05:04,640 --> 00:05:11,080
+e Gangam Style ha ormai superato abbondantemente i 4 miliardi di visualizzazioni, appare chiaro
+
+49
+00:05:11,080 --> 00:05:17,800
+che la soluzione esiste e può essere applicata, e se tutti faranno la propria parte, come
+
+50
+00:05:17,800 --> 00:05:23,040
+è accaduto per il Millennium Bug, è molto probabile che nessuno di noi debba preoccuparsi
+
+51
+00:05:23,040 --> 00:05:27,080
+di cosa accadrà alle nostre variabili nel 2038.
+
+52
+00:05:27,560 --> 00:05:35,520
+Grazie per aver ascoltato Snippet, una rubrica di Pensieri in Codice. Scopri tanti altri
+
+53
+00:05:35,520 --> 00:05:38,760
+contenuti sul sito pensieriincodice.it
+

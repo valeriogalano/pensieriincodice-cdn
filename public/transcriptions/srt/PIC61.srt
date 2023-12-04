@@ -1,0 +1,892 @@
+1
+00:00:00,000 --> 00:00:09,840
+Pensieri in codice. Idee dal mondo del software, a cura di Valerio Galano.
+
+2
+00:00:19,840 --> 00:00:27,120
+Salve a tutti ragazzi e bentornati per un nuovo episodio di Pensieri in codice. Se siete qui ad
+
+3
+00:00:27,120 --> 00:00:33,520
+ascoltare questo podcast vuol dire che bene o male siete degli utilizzatori abituali del web
+
+4
+00:00:33,520 --> 00:00:40,320
+e quindi avrete sicuramente notato quello strano fenomeno secondo il quale quando navighiamo tra
+
+5
+00:00:40,320 --> 00:00:46,960
+un sito e l'altro sembra quasi che gli annunci pubblicitari ci seguano. Noi cerchiamo un modello
+
+6
+00:00:46,960 --> 00:00:53,120
+di frullatore che ci interessa su Google e il giorno dopo Instagram ci propone post sponsorizzati
+
+7
+00:00:53,120 --> 00:01:00,200
+sui frullatori. Noi ci colleghiamo ad un sito di una nota marca di smartphone o di televisori e la
+
+8
+00:01:00,200 --> 00:01:05,080
+nostra navigazione per le prossime settimane sarà costellata di offerte di smartphone e
+
+9
+00:01:05,080 --> 00:01:12,040
+televisori. E questo avviene su siti come Amazon o Ebay ma non solo, anche su siti di informazione,
+
+10
+00:01:12,040 --> 00:01:18,080
+social network e molti altri. Addirittura può capitare che quando leggiamo email che parlano
+
+11
+00:01:18,080 --> 00:01:24,800
+di certi argomenti come, che so, il fumo o il cibo, poi ci ritroviamo inondati di banner di
+
+12
+00:01:24,800 --> 00:01:31,800
+sigarette elettroniche e di siti di ricette. E questo fenomeno, che può sembrare strano ma è
+
+13
+00:01:31,800 --> 00:01:39,440
+molto molto reale, accade perché i rivenditori di prodotti o di servizi acquistano dei particolari
+
+14
+00:01:39,440 --> 00:01:46,960
+tipi di spazi pubblicitari che esistono solo online e che sono in grado di seguire i nostri
+
+15
+00:01:46,960 --> 00:01:54,120
+passi lungo il percorso di navigazione. Comunemente questi spazi pubblicitari vengono chiamati
+
+16
+00:01:54,120 --> 00:02:00,520
+pubblicità traccianti e funzionano più o meno in questo modo. Identificano l'utente che sta
+
+17
+00:02:00,520 --> 00:02:07,680
+visitando il sito e poi in base alla sua cronologia di navigazione gli propongono la pubblicità che
+
+18
+00:02:07,680 --> 00:02:13,880
+un certo algoritmo ritiene che possa interessargli di più. L'algoritmo in questione, ce ne saremo
+
+19
+00:02:14,000 --> 00:02:20,320
+accorti tutti, di solito è anche abbastanza banale. Infatti del tipo, se l'utente ha visto
+
+20
+00:02:20,320 --> 00:02:27,880
+questo tipo di prodotto, allora gli ripropongo a ripetizione prodotti simili per un tot di giorni.
+
+21
+00:02:27,880 --> 00:02:35,400
+Se quindi noi siamo abituali navigatori di siti di tecnologia, i contenuti sponsorizzati che ci
+
+22
+00:02:35,400 --> 00:02:41,280
+verranno proposti saranno per la stragrande maggioranza tecnologia. Se navighiamo spesso
+
+23
+00:02:41,280 --> 00:02:48,040
+su siti di ricette invece le pubblicità per noi saranno prodotti di cucina e così via. Ma
+
+24
+00:02:48,040 --> 00:02:54,560
+la cosa realmente interessante è come funziona tutto questo sistema dal punto di vista tecnico?
+
+25
+00:02:54,560 --> 00:03:00,720
+Certamente i network pubblicitari non possono accedere alla cronologia archiviata nei nostri
+
+26
+00:03:00,720 --> 00:03:08,040
+browser, eppure in qualche modo sembrano in grado di conoscerla. E alla fine in un certo senso ciò
+
+27
+00:03:08,040 --> 00:03:15,120
+è anche vero, perché questi network utilizzano una serie di tecniche e di trucchi tecnologici,
+
+28
+00:03:15,120 --> 00:03:21,920
+chiamiamoli così, per seguire gli utenti nella loro navigazione e in tal modo ricostruire le
+
+29
+00:03:21,920 --> 00:03:28,960
+informazioni riguardanti la cronologia senza avervi un accesso diretto. E dunque nell'episodio di
+
+30
+00:03:28,960 --> 00:03:35,920
+oggi parleremo proprio di questo. Scopriremo come funzionano tecnicamente le pubblicità traccianti,
+
+31
+00:03:36,480 --> 00:03:42,520
+come le agenzie pubblicitarie riescano a conoscere in modo inquietantemente preciso i siti
+
+32
+00:03:42,520 --> 00:03:49,480
+che visitiamo e infine faremo anche qualche piccolo accenno per vedere come arginare
+
+33
+00:03:49,480 --> 00:03:51,480
+l'invasività di questa pratica.
+
+34
+00:04:02,480 --> 00:04:09,000
+Probabilmente quando si parla di pubblicità su internet tutti abbiamo sentito nominare la parola
+
+35
+00:04:09,000 --> 00:04:14,680
+cookie. Banner che chiedono in continuazione di accettare o rifiutare i cookie, opzioni di
+
+36
+00:04:14,680 --> 00:04:20,800
+cancellazione dei cookie, ma in effetti cosa sono questi cookie? In generale un cookie è un
+
+37
+00:04:20,800 --> 00:04:28,320
+meccanismo che permette ad un server web di archiviare informazioni all'interno del browser
+
+38
+00:04:28,320 --> 00:04:34,520
+installato sul computer dell'utente. Questi cookie hanno varie caratteristiche, un nome che
+
+39
+00:04:34,520 --> 00:04:41,680
+l'identifica, contengono un valore che poi è l'informazione memorizzata dal server e hanno
+
+40
+00:04:41,680 --> 00:04:49,320
+una durata e sono associati ad un dominio. Quando un browser riceve un cookie da un sito web lo
+
+41
+00:04:49,320 --> 00:04:55,120
+archivia per la durata di tempo specificata e ogni volta che l'utente visita nuovamente il
+
+42
+00:04:55,120 --> 00:05:01,800
+dominio specificato nel cookie questo viene riallegato alla richiesta. L'associazione ad
+
+43
+00:05:01,800 --> 00:05:07,600
+uno specifico dominio è proprio una misura di sicurezza per fare in modo che il browser non mandi
+
+44
+00:05:07,600 --> 00:05:14,160
+queste informazioni a chiunque. Quello che ho appena descritto è un meccanismo perfettamente
+
+45
+00:05:14,160 --> 00:05:20,040
+lecito ed è anche molto utile per vari scopi. Ad esempio i cookie permettono il funzionamento
+
+46
+00:05:20,040 --> 00:05:27,560
+delle sessioni quindi rendono possibile il fatto che ci si possa autenticare presso un sito web per
+
+47
+00:05:27,560 --> 00:05:32,800
+accedere magari ad una sezione privata, oppure permettono di memorizzare alcune impostazioni
+
+48
+00:05:33,120 --> 00:05:39,520
+degli utenti rendendo così la navigazione più semplice e comoda. Paradossalmente il fatto
+
+49
+00:05:39,520 --> 00:05:45,560
+stesso che il banner di accettazione o di rifiuto dei cookie ci compare solo la prima volta che
+
+50
+00:05:45,560 --> 00:05:52,560
+accediamo al sito è stesso reso possibile dalla memorizzazione di un'informazione in un cookie.
+
+51
+00:05:52,560 --> 00:05:59,200
+Noi clicchiamo sul pulsante accetta o rifiuta e così scegliamo di accettare o rifiutare i cookie
+
+52
+00:05:59,200 --> 00:06:05,840
+pubblicitari ma spesso questa nostra scelta viene proprio memorizzata in un altro cookie definito
+
+53
+00:06:05,840 --> 00:06:12,040
+di tipo tecnico. In pratica si tratta di un meccanismo alla base del funzionamento del web
+
+54
+00:06:12,040 --> 00:06:20,520
+e che di fatto lo rende così come noi oggi lo conosciamo. Ma questa medaglia ha anche un risvolto
+
+55
+00:06:20,520 --> 00:06:26,840
+che è appunto quello delle pubblicità traccianti rese possibili proprio grazie ad un utilizzo molto
+
+56
+00:06:27,080 --> 00:06:33,280
+particolare dei cookie che viene comunemente chiamato cookie di terza parte. Ora se vi
+
+57
+00:06:33,280 --> 00:06:39,160
+ricordate l'episodio numero 21 intitolato anatomia di un sito web vi ricorderete che
+
+58
+00:06:39,160 --> 00:06:45,000
+abbiamo già parlato di come una pagina web viene visualizzata all'interno del nostro browser,
+
+59
+00:06:45,000 --> 00:06:51,760
+del fatto che ogni pagina è in realtà composta da vari elementi e che questi vengono tutti
+
+60
+00:06:51,760 --> 00:06:58,360
+trasferiti dai rispettivi server al nostro computer. Se l'argomento vi è proprio oscuro
+
+61
+00:06:58,360 --> 00:07:04,680
+vi consiglio di recuperare l'episodio 21 per capire bene quello che diremo in questo episodio. Ad ogni
+
+62
+00:07:04,680 --> 00:07:11,440
+modo quando un sito aderisce ad un network pubblicitario inserisce all'interno di tutte
+
+63
+00:07:11,440 --> 00:07:19,000
+le proprie pagine almeno un elemento che si trova in realtà sui server del network. In questo modo
+
+64
+00:07:19,000 --> 00:07:25,480
+quando noi visitiamo una pagina di tale sito proprio per come è fatto il web per come vengono
+
+65
+00:07:25,480 --> 00:07:32,040
+trasmessi gli elementi che compongono la singola pagina oltre a scaricare tutti gli elementi utili
+
+66
+00:07:32,040 --> 00:07:37,760
+per vedere il contenuto che ci interessa scaricheremo anche questo elemento pubblicitario
+
+67
+00:07:37,760 --> 00:07:44,240
+e lo faremo da un server differente da quello del sito su cui ci troviamo. Molto spesso questo
+
+68
+00:07:44,240 --> 00:07:50,520
+elemento tracciante è esso stesso un banner pubblicitario o anche a volte un widget come
+
+69
+00:07:50,520 --> 00:07:57,840
+il pulsante like di facebook o il blocchetto degli ultimi tweet o delle ultime foto di instagram ma
+
+70
+00:07:57,840 --> 00:08:05,720
+a prescindere da come sia effettivamente composto quando il server lo invia al nostro browser vi
+
+71
+00:08:05,720 --> 00:08:13,840
+allega anche uno o più cookie i quali contengono una particolare stringa di informazione generata
+
+72
+00:08:13,960 --> 00:08:20,680
+apposta per noi. Ora come abbiamo detto prima questo cookie farà riferimento ad un particolare
+
+73
+00:08:20,680 --> 00:08:28,440
+dominio e il nostro browser avrà cura di inviarlo a tale dominio ogni volta che si troverà a fargli
+
+74
+00:08:28,440 --> 00:08:35,880
+una richiesta di un qualsiasi elemento e al tempo stesso quando noi ci spostiamo da un sito all'altro
+
+75
+00:08:35,880 --> 00:08:42,720
+che appartengono tutti però allo stesso circuito pubblicitario le pagine che visiteremo conterranno
+
+76
+00:08:42,720 --> 00:08:49,840
+elementi traccianti che faranno riferimento al circuito e saranno quindi ospitati dagli stessi
+
+77
+00:08:49,840 --> 00:08:55,320
+domini degli elementi traccianti dei siti precedenti e per questo motivo le richieste
+
+78
+00:08:55,320 --> 00:09:01,040
+di questi elementi verranno automaticamente effettuate allegando i cookie ricevuti in
+
+79
+00:09:01,040 --> 00:09:08,160
+precedenza i quali conterranno la nostra stringa identificativa. Ok mi rendo conto che può sembrare
+
+80
+00:09:08,160 --> 00:09:15,440
+un po' complicato quindi come al solito proviamo a capire meglio il tutto facendo un esempio di
+
+81
+00:09:15,440 --> 00:09:20,680
+questo processo. Immaginiamo di avere una mezz'oretta libera e di voler navigare un po' in
+
+82
+00:09:20,680 --> 00:09:27,120
+libertà sul web. Come prima cosa ci colleghiamo al nostro sito di ricette preferito per trovare
+
+83
+00:09:27,120 --> 00:09:33,680
+magari ispirazione per cosa cucinare a pranzo. Navigando quindi tra le pagine il nostro browser
+
+84
+00:09:33,680 --> 00:09:40,720
+riceverà tutta una serie di elementi, testi, immagini, stili di formattazione e anche un paio
+
+85
+00:09:40,720 --> 00:09:46,840
+di banner pubblicitari. Mentre però il testo, le immagini e gli elementi grafici arriveranno dal
+
+86
+00:09:46,840 --> 00:09:52,960
+server del sito che stiamo visitando, i due banner arriveranno invece dal server del network
+
+87
+00:09:52,960 --> 00:10:00,000
+pubblicitario e porteranno con sé uno o due cookie identificativi appositamente creati per noi. Nel
+
+88
+00:10:00,000 --> 00:10:07,200
+frattempo il server del network avrà memorizzato all'interno del proprio archivio che quel cookie,
+
+89
+00:10:07,200 --> 00:10:13,120
+proprio quello inviato a noi, proprio quello con quella stringa, è stato generato a partire dal
+
+90
+00:10:13,120 --> 00:10:19,440
+sito di ricette. Noi intanto una volta deciso cosa cucinare facciamo un giro sul nostro sito di
+
+91
+00:10:19,440 --> 00:10:25,000
+abbigliamento preferito perché vogliamo magari controllare se sono già iniziati i saldi. Anche
+
+92
+00:10:25,000 --> 00:10:31,600
+qui vediamo comparire un banner pubblicitario magari in testa al sito e anche questo arriva
+
+93
+00:10:31,600 --> 00:10:39,080
+in realtà dal sito del network. Solo che questa volta quando il browser ha effettuato la richiesta
+
+94
+00:10:39,080 --> 00:10:45,640
+per ottenere il banner aveva anche memorizzato un cookie e quindi lo ha allegato a tale richiesta.
+
+95
+00:10:45,640 --> 00:10:51,760
+Il server del network che ci risponderà sempre con un banner pubblicitario e con un cookie
+
+96
+00:10:51,880 --> 00:10:59,160
+su misura per noi, questa volta però avrà ricevuto un cookie allegato da noi e lo potrà
+
+97
+00:10:59,160 --> 00:11:04,880
+utilizzare per memorizzare nei propri archivi che l'utente in possesso di quel cookie,
+
+98
+00:11:04,880 --> 00:11:12,240
+creato pochi minuti fa nel sito di ricette, ora lo ha inviato indietro partendo dal sito di
+
+99
+00:11:12,240 --> 00:11:18,240
+abbigliamento. Nel frattempo noi ci colleghiamo al sito del nostro quotidiano preferito per
+
+100
+00:11:18,240 --> 00:11:24,400
+leggere un po' di notizie. Scegliete pure quello che preferite perché tanto, a parte un paio,
+
+101
+00:11:24,400 --> 00:11:29,920
+i quotidiani italiani online sono affiliati praticamente a tutti i network pubblicitari.
+
+102
+00:11:29,920 --> 00:11:36,280
+Anche qui le pagine conterranno dei banner e le richieste per questi banner verranno effettuate
+
+103
+00:11:36,280 --> 00:11:43,400
+al server del network pubblicitario e il nostro browser allegherà i cookie ricevuti in precedenza
+
+104
+00:11:43,400 --> 00:11:50,160
+anche in questo caso. Il network quindi potrà annotarsi l'informazione che quell'utente in
+
+105
+00:11:50,160 --> 00:11:56,320
+possesso del cookie che prima è partito dal sito di ricette poi è passato per quello di abbigliamento
+
+106
+00:11:56,320 --> 00:12:03,720
+ora si trova su un sito di notizie. In questo esempio abbiamo utilizzato un cookie per ricostruire
+
+107
+00:12:03,720 --> 00:12:11,400
+il passaggio di un utente attraverso più siti ma ovviamente questo esempio è molto semplificato. Io
+
+108
+00:12:11,400 --> 00:12:18,000
+vi ho parlato solo di siti ma la verità è che il network riceve chiamate dal nostro browser ad
+
+109
+00:12:18,000 --> 00:12:24,320
+ogni pagina che visitiamo, di ogni sito che visitiamo e che fa parte del network. Quindi
+
+110
+00:12:24,320 --> 00:12:31,400
+con questa attività diciamo così di pedinamento si è in grado non solo di ricostruire il percorso
+
+111
+00:12:31,400 --> 00:12:38,440
+di un utente fra i siti ma anche all'interno di ciascun sito. Così facendo tutti i siti
+
+112
+00:12:38,480 --> 00:12:43,920
+affiliati al network pubblicitario saranno in grado di riconoscerci ogni volta che ci
+
+113
+00:12:43,920 --> 00:12:50,320
+colleghiamo ad uno di essi e unendo insieme tutte queste informazioni sarà possibile creare un
+
+114
+00:12:50,320 --> 00:12:56,040
+archivio nel quale viene ricostruita gran parte della nostra attività sul web. A questo punto
+
+115
+00:12:56,040 --> 00:13:03,280
+non resta loro che creare un profilo dei nostri interessi e ad ogni visita acquisire una nuova
+
+116
+00:13:03,280 --> 00:13:10,200
+informazione in più su di noi e contemporaneamente proporci un banner pubblicitario che secondo il
+
+117
+00:13:10,200 --> 00:13:18,360
+loro algoritmo riguarda quelli che sono i nostri interessi. In effetti se vogliamo essere precisi
+
+118
+00:13:18,360 --> 00:13:24,600
+dal punto di vista tecnico per attuare un meccanismo del genere non è nemmeno necessario
+
+119
+00:13:24,600 --> 00:13:30,880
+che ci appaia una pubblicità per essere tracciati. Come abbiamo già detto infatti ad esempio i social
+
+120
+00:13:30,880 --> 00:13:37,960
+network possono tracciarci attraverso elementi funzionali delle pagine e non dei banner come
+
+121
+00:13:37,960 --> 00:13:45,360
+il pulsante like o quello dei commenti o dei widget. Addirittura il tracciamento può avvenire
+
+122
+00:13:45,360 --> 00:13:52,440
+anche attraverso elementi completamente invisibili all'utente. Se ad esempio un sito implementa gli
+
+123
+00:13:52,440 --> 00:13:59,480
+strumenti di google analytics o richiama i google fonts recuperandoli direttamente dai server di
+
+124
+00:13:59,480 --> 00:14:06,520
+google allora il tracciamento sarà automatico anche se magari il sito non espone nessun banner
+
+125
+00:14:06,520 --> 00:14:14,160
+pubblicitario ed esistono perfino alcuni elementi il cui unico scopo è il tracciamento. Un esempio di
+
+126
+00:14:14,160 --> 00:14:21,560
+ciò è il cosiddetto pixel di google che non è visibile non genera alcun tipo di funzionalità
+
+127
+00:14:21,560 --> 00:14:40,920
+ma è utilizzato solamente per tracciare l'utente. In Europa i cookie di terze parti sono regolamentati
+
+128
+00:14:40,920 --> 00:14:46,520
+da specifiche normative che impongono ai siti di avvisare gli utenti di quali cookie verranno
+
+129
+00:14:46,520 --> 00:14:53,080
+installati nei loro computer e quindi permettergli di opporsi eventualmente a tale installazione
+
+130
+00:14:53,080 --> 00:14:58,000
+ovviamente a meno che non si parli di cookie tecnici quelli sono indispensabili per il
+
+131
+00:14:58,000 --> 00:15:03,840
+funzionamento del sito. Contemporaneamente a ciò molti browser implementano direttamente
+
+132
+00:15:03,840 --> 00:15:10,240
+delle protezioni che impediscono l'installazione di cookie di terze parti o in certi casi permettono
+
+133
+00:15:10,240 --> 00:15:17,240
+l'installazione di estensioni per questo scopo. Il proliferare quindi di leggi e di sistemi di
+
+134
+00:15:17,240 --> 00:15:23,560
+difesa nel corso del tempo ha portato ovviamente ad una diminuzione dell'efficacia dei metodi di
+
+135
+00:15:23,560 --> 00:15:29,320
+tracciamento. Se infatti gli utenti sempre più spesso rifiutano il tracciamento o utilizzano
+
+136
+00:15:29,320 --> 00:15:34,720
+strumenti che bloccano direttamente la condivisione dei cookie a siti esterni rispetto a quelli che
+
+137
+00:15:34,720 --> 00:15:40,480
+stanno navigando per i network diventa più difficile tracciare gli spostamenti e quindi
+
+138
+00:15:40,480 --> 00:15:46,720
+ricostruire la cronologia. Per questo motivo con il passare del tempo questi colossi della
+
+139
+00:15:46,720 --> 00:15:54,480
+pubblicità hanno iniziato a cercare quindi metodi alternativi di tracciamento degli utenti e uno di
+
+140
+00:15:54,480 --> 00:16:01,680
+questi metodi è basato sul concetto di browser fingerprint. L'idea in questo caso è simile ma
+
+141
+00:16:01,680 --> 00:16:07,720
+un pizzico più complicata rispetto a quella del cookie tracciante e si basa su un concetto
+
+142
+00:16:07,720 --> 00:16:13,280
+abbastanza logico. Visto che gli utenti si rifiutano di accettare dai network l'installazione
+
+143
+00:16:13,280 --> 00:16:21,480
+di un codice identificativo allora serve un modo differente per identificarli. Il cookie tracciante
+
+144
+00:16:21,480 --> 00:16:28,160
+in effetti svolge semplicemente lo stesso ruolo di una matricola o di una targa e cioè il network
+
+145
+00:16:28,160 --> 00:16:34,240
+sa che quel particolare cookie appartiene sempre e solo a quel particolare browser. Se quindi non
+
+146
+00:16:34,240 --> 00:16:40,000
+puoi installare il cookie gli basta semplicemente trovare un altro modo per essere sicuro di
+
+147
+00:16:40,000 --> 00:16:47,120
+riconoscere quel singolo browser e paradossalmente questa identificazione si rivela essere meno
+
+148
+00:16:47,120 --> 00:16:53,600
+complicata di quanto potrebbe sembrare. Ogni browser infatti condivide già naturalmente una
+
+149
+00:16:53,600 --> 00:16:59,280
+quantità enorme di informazioni con il server del sito che visita e ciò è dovuto al fatto che
+
+150
+00:16:59,280 --> 00:17:04,580
+queste informazioni sono utili al fine di migliorare la comunicazione e l'esperienza utente.
+
+151
+00:17:04,580 --> 00:17:10,480
+Caratteristiche dell'hardware, tipologia di protocolli che è in grado di supportare, risoluzione dello
+
+152
+00:17:10,480 --> 00:17:17,360
+schermo, font installati, protocolli accettati, versioni di motori di rendering... queste sono
+
+153
+00:17:17,360 --> 00:17:23,840
+solo alcune delle informazioni che il browser conosce e che o condivide per necessità o che
+
+154
+00:17:23,840 --> 00:17:30,840
+addirittura vengono lette da speciali porzioni di codice inseriti nelle pagine. Prese singolarmente
+
+155
+00:17:30,840 --> 00:17:36,680
+tutte queste informazioni sarebbero abbastanza comuni fra tanti utenti, fra tanti browser, ma
+
+156
+00:17:36,680 --> 00:17:43,040
+messe tutte insieme vanno a formare una vera e propria etichetta univoca che può essere usata
+
+157
+00:17:43,040 --> 00:17:50,360
+con buona approssimazione per l'identificazione dell'utente, esattamente come un fingerprint,
+
+158
+00:17:50,360 --> 00:17:56,680
+un'impronta digitale del nostro browser. Grazie quindi a questa nuova modalità di identificazione,
+
+159
+00:17:56,680 --> 00:18:03,200
+quanto abbiamo detto prima a proposito dei cookie traccianti, si può ripetere esattamente anche
+
+160
+00:18:03,200 --> 00:18:09,560
+per il fingerprint. L'unica differenza è appunto nell'etichetta usata per marchiare il povero
+
+161
+00:18:09,560 --> 00:18:15,440
+utente che vorrebbe solo navigare in tranquillità. Fortunatamente però, ancora una volta, alcuni
+
+162
+00:18:15,440 --> 00:18:20,440
+browser riescono ad implementare dei sistemi di offuscamento anche per il fingerprint,
+
+163
+00:18:20,440 --> 00:18:26,640
+facendo così apparire il browser come diverso ad ogni contatto con ciascun server. Questo
+
+164
+00:18:26,640 --> 00:18:32,920
+meccanismo di offuscamento non è affatto banale e si basa sulla generazione casuale di tutta una
+
+165
+00:18:32,920 --> 00:18:39,200
+serie di parametri e di informazioni che normalmente vengono utilizzate per il tracciamento. Cambiando
+
+166
+00:18:39,200 --> 00:18:44,840
+queste informazioni di pagina in pagina, il browser mette in crisi gli script di tracciamento,
+
+167
+00:18:44,840 --> 00:18:50,600
+i quali non riescono più ad associare il fingerprint attuale a quello precedente. E in
+
+168
+00:18:50,600 --> 00:18:56,240
+questo modo gli archivi dei network pubblicitari non riescono a ricostruire la cronologia di
+
+169
+00:18:56,240 --> 00:19:03,200
+navigazione dell'utente, ma si trovano solamente con una lunghissima serie di accessi tutti
+
+170
+00:19:03,200 --> 00:19:19,040
+scollegati fra loro. Alla continua ricerca di metodi per tracciare gli utenti, negli ultimi
+
+171
+00:19:19,040 --> 00:19:26,520
+mesi Google, il cui business si basa in larghissima parte sul tracciamento, ha implementato un nuovo
+
+172
+00:19:26,520 --> 00:19:32,840
+meccanismo chiamato Flock. In Italia spesso se ne parla con il nome di meccanismo delle corti.
+
+173
+00:19:33,360 --> 00:19:38,360
+Onestamente non pensavo di parlarne in questo episodio perché a livello tecnico non mi è
+
+174
+00:19:38,360 --> 00:19:45,280
+sembrato nulla di eccezionale, se non un semplice tentativo di far valere il proprio monopolio su
+
+175
+00:19:45,280 --> 00:19:51,960
+un mondo che in realtà sta cambiando. Tuttavia poi ho deciso che magari invece ne vale la pena,
+
+176
+00:19:51,960 --> 00:19:58,840
+almeno per sapere che esiste e come difendersi. Il sistema delle corti è in realtà molto semplice.
+
+177
+00:19:59,400 --> 00:20:04,640
+In pratica il browser traccia la cronologia di tutti gli utenti che lo utilizzano. Noi
+
+178
+00:20:04,640 --> 00:20:11,040
+scriviamo www.amazon.it nella barra dell'indirizzo e Google riceve una notifica dal browser.
+
+179
+00:20:11,040 --> 00:20:16,160
+Clicchiamo sulla categoria giardinaggio e di nuovo il browser invia una notifica a Google,
+
+180
+00:20:16,160 --> 00:20:22,760
+e semplicemente così via per qualsiasi sito e qualsiasi pagina. Ovviamente Google può fare
+
+181
+00:20:22,760 --> 00:20:28,880
+questa cosa solo ed unicamente con browser su cui ha pieno controllo, come ad esempio Google
+
+182
+00:20:28,880 --> 00:20:35,720
+Chrome. Ad essere onesti non so se altri browser esistenti abbiano accettato di aderire al sistema
+
+183
+00:20:35,720 --> 00:20:41,360
+Flock. In ogni caso, come per i metodi precedentemente descritti, a mio parere si tratta
+
+184
+00:20:41,360 --> 00:20:47,360
+sempre di una intromissione ingiustificata nella privacy dell'utente. Ma a differenza dei cookie
+
+185
+00:20:47,360 --> 00:20:52,600
+e del fingerprint, che almeno sono interessanti dal punto di vista tecnico, questo sistema delle
+
+186
+00:20:52,600 --> 00:20:58,280
+corti mi sembra semplicemente un trucchetto reso possibile dal fatto che il browser Chrome è
+
+187
+00:20:58,280 --> 00:21:04,640
+attualmente molto molto diffuso. Al contrario dei sistemi di tracciamento precedenti, infatti per
+
+188
+00:21:04,640 --> 00:21:10,760
+sottrarsi all'occhio del Flock basta semplicemente smettere di utilizzare Chrome. Cosa che in ogni
+
+189
+00:21:10,760 --> 00:21:16,800
+caso vi consiglio caldamente di fare, esistono moltissime alternative, quasi tutte migliori dal
+
+190
+00:21:16,880 --> 00:21:24,080
+punto di vista tecnico e del rispetto dell'utente. Infine, se vi steste invece chiedendo come funziona
+
+191
+00:21:24,080 --> 00:21:29,880
+il tracciamento sui dispositivi mobili come smartphone e tablet, beh anche in questo caso
+
+192
+00:21:29,880 --> 00:21:35,640
+la risposta è molto più semplice di quanto potrebbe sembrare. Ogni dispositivo implementa
+
+193
+00:21:35,640 --> 00:21:42,440
+un proprio codice identificativo che permette a tutti i network e gestori delle app di seguirci
+
+194
+00:21:42,440 --> 00:21:47,840
+attraverso la navigazione e tutte le varie attività online. Il concetto è un po' quello
+
+195
+00:21:47,840 --> 00:21:54,560
+dei Flock, solo che negli smartphone Android o iPhone che siano è implementato appositamente e
+
+196
+00:21:54,560 --> 00:22:00,480
+purtroppo a differenza dei browser che sono molti e molto differenti fra loro, per gli smartphone e
+
+197
+00:22:00,480 --> 00:22:07,280
+i tablet la scelta di cambiare e affidarsi a qualcuno che non tracci l'utente è molto molto
+
+198
+00:22:07,280 --> 00:22:23,560
+meno praticabile. E anche oggi siamo giunti al termine dell'episodio. Spero che sia stato di
+
+199
+00:22:23,560 --> 00:22:29,600
+vostro gradimento e di essere stato abbastanza chiaro perché mi rendo conto che l'argomento non
+
+200
+00:22:29,600 --> 00:22:35,400
+è complicatissimo ma nemmeno troppo semplice da spiegare senza l'ausilio di un supporto visivo.
+
+201
+00:22:36,000 --> 00:22:41,200
+Non abbiamo parlato del perché è importante non farsi tracciare ma per questo vi invito a
+
+202
+00:22:41,200 --> 00:22:47,120
+recuperare un po' di episodi del podcast Data Nightmare che direi che ha sviscerato per bene
+
+203
+00:22:47,120 --> 00:22:52,640
+l'argomento. Se invece non l'avete già fatto vi consiglio di prendere al più presto provvedimenti
+
+204
+00:22:52,640 --> 00:22:58,280
+contro il tracking. In descrizione vi lascio un paio di link per testare la privacy del vostro
+
+205
+00:22:58,400 --> 00:23:05,880
+attuale browser e in caso non doveste totalizzare il punteggio massimo vi consiglio di passare al
+
+206
+00:23:05,880 --> 00:23:13,600
+browser Brave. Io ormai lo uso da un bel po' e devo dire che è molto funzionale e sicuro e in più
+
+207
+00:23:13,600 --> 00:23:21,040
+ha anche un interessante programma di reward il quale da un lato blocca la pubblicità e dall'altro
+
+208
+00:23:21,040 --> 00:23:28,120
+se volete la rimpiazza con alcuni banner non traccianti i quali vi ricompensano in una
+
+209
+00:23:28,120 --> 00:23:35,480
+criptomoneta chiamata BAT. Ogni mese voi ricevete i vostri BAT e potete decidere se tenerveli,
+
+210
+00:23:35,480 --> 00:23:42,560
+se spostarli su un vostro wallet di fiducia oppure se utilizzarli per fare delle piccole
+
+211
+00:23:42,560 --> 00:23:49,000
+donazioni in modo manuale o automatico ai creator che sono iscritti al programma. Nelle ultime
+
+212
+00:23:49,000 --> 00:23:55,080
+settimane mentre preparavo questo episodio ho anche colto l'occasione per iscrivere Pensieri
+
+213
+00:23:55,080 --> 00:24:01,960
+in Codice al programma di reward di Brave quindi se ad esempio voleste contribuire con una piccola
+
+214
+00:24:01,960 --> 00:24:08,080
+donazione vi basterebbe accedere al sito di pensieriincodice.it o al canale youtube e
+
+215
+00:24:08,080 --> 00:24:14,920
+vi comparirebbe l'opzione per la donazione. Infine se siete curiosi di sapere quanti siti e quali
+
+216
+00:24:14,920 --> 00:24:21,320
+network pubblicitari vi tracciano vi consiglio di provare l'estensione lightbeam per firefox la
+
+217
+00:24:21,320 --> 00:24:28,360
+quale vi costruisce un grafico dei siti di terze parti visitati voi la installate navigate per
+
+218
+00:24:28,360 --> 00:24:35,000
+qualche giorno poi la riaprite e scoprite quanti siti vi stanno tracciando vi assicuro che
+
+219
+00:24:35,000 --> 00:24:41,400
+resterete sbalorditi. Con questo direi che l'episodio di oggi che è venuto particolarmente
+
+220
+00:24:41,400 --> 00:24:48,920
+lungo può considerarsi concluso io come al solito vi ringrazio per aver ascoltato fin qui e vi invito
+
+221
+00:24:48,920 --> 00:24:55,720
+a condividere il podcast il più possibile con chi pensate possa trovarne beneficio a cui possa
+
+222
+00:24:55,720 --> 00:25:04,280
+piacere e non mi resta che salutarvi ricordandovi che un informatico risolve problemi a volte anche
+
+223
+00:25:04,280 --> 00:25:05,240
+usando il computer
+
