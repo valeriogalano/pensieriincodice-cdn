@@ -1,0 +1,2168 @@
+1
+00:00:00,000 --> 00:00:06,120
+Eccoci finalmente al secondo dei tre episodi della serie dedicata ad Ada Lovelace e alla
+
+2
+00:00:06,120 --> 00:00:07,120
+sua opera.
+
+3
+00:00:07,120 --> 00:00:12,200
+Sono certo che l'attendevi con trepidazione, ma mi raccomando, se non hai ancora ascoltato
+
+4
+00:00:12,200 --> 00:00:17,480
+l'episodio numero uno, ti consiglio di farlo prima di questo per avere una visione più
+
+5
+00:00:17,480 --> 00:00:24,080
+completa e lineare di tutto quanto sto per raccontarti, e poi perché farò molti riferimenti
+
+6
+00:00:24,080 --> 00:00:26,600
+senza soffermarmi a spiegarli nuovamente.
+
+7
+00:00:27,200 --> 00:00:32,320
+In questo episodio parleremo della vita adulta di Ada e delle vicende che si intrecciano
+
+8
+00:00:32,320 --> 00:00:38,800
+con la storia delle macchine differenziale e analitica di Babbage, nonché della redazione
+
+9
+00:00:38,800 --> 00:00:44,280
+dell'opera per la quale tanti considerano tutt'oggi la Lovelace come la prima programmatrice
+
+10
+00:00:44,280 --> 00:00:45,280
+di sempre.
+
+11
+00:00:45,280 --> 00:00:51,120
+Senza induggiare oltre, quindi basta con le introduzioni e ti auguro un buon ascolto.
+
+12
+00:00:52,120 --> 00:01:00,320
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galano.
+
+13
+00:01:00,320 --> 00:01:14,840
+Secondo il Times, la settimana del 15 novembre 1834 fu caratterizzata da tempo burrascoso
+
+14
+00:01:14,840 --> 00:01:16,480
+e turbulenze politiche.
+
+15
+00:01:16,880 --> 00:01:22,600
+In quei giorni si diffonde infatti la voce che Lord Melbourne, cugino di primo grado
+
+16
+00:01:22,600 --> 00:01:28,560
+di Lady Byron, la madre di Ada, si sia dimesso dalla carica di primo ministro e che il duca
+
+17
+00:01:28,560 --> 00:01:31,480
+di Wellington guiderà un governo provvisorio.
+
+18
+00:01:31,480 --> 00:01:38,440
+Dopo soli tre giorni, il 18 dello stesso mese, le voci vengono confermate e poiché Lord
+
+19
+00:01:38,440 --> 00:01:44,040
+Wellington è rimasto molto colpito dalla dimostrazione della macchina differenziale,
+
+20
+00:01:44,040 --> 00:01:49,400
+Babbage spera che questo cambio di governo gli permetta di ottenere i fondi necessari
+
+21
+00:01:49,400 --> 00:01:54,160
+per completare il suo progetto, ma purtroppo così non è.
+
+22
+00:01:54,160 --> 00:02:01,360
+Il 28 di novembre, Ada si reca da Babbage assieme a Mrs. Somerville e la discussione diventa
+
+23
+00:02:01,360 --> 00:02:02,840
+subito molto vivace.
+
+24
+00:02:02,840 --> 00:02:09,520
+Secondo i diari di Lady Byron, la figlia ascolta attentamente i due scienziati discutere delle
+
+25
+00:02:09,520 --> 00:02:13,920
+ragioni del mancato sostegno al progetto della macchina differenziale.
+
+26
+00:02:13,920 --> 00:02:20,440
+Mrs. Somerville è convinta che il mondo non sia pronto per un'invenzione del genere, Babbage
+
+27
+00:02:20,440 --> 00:02:25,240
+invece sostiene che se non la svilupperà lui, lo farà qualcun altro.
+
+28
+00:02:25,240 --> 00:02:32,560
+E nel mezzo fra i due giganti, la giovane Miss Byron non può pronunciarsi sul futuro,
+
+29
+00:02:32,560 --> 00:02:38,520
+ma sappiamo dalla sua successiva corrispondenza che si sta chiedendo perché la madre non è
+
+30
+00:02:38,520 --> 00:02:43,920
+intervenuta in favore della sua adorata macchina finché ne ha avuto la possibilità, cioè
+
+31
+00:02:43,920 --> 00:02:45,680
+finché suo cugino era al governo.
+
+32
+00:02:45,680 --> 00:02:52,080
+A dispetto però della peggiorata situazione, Babbage non si perde d'animo e poco tempo
+
+33
+00:02:52,080 --> 00:02:58,460
+dopo annuncia addirittura di aver concepito una nuova macchina, una seconda versione avanzata
+
+34
+00:02:58,460 --> 00:03:04,380
+che eseguirà equazioni che fino ad allora erano considerate impossibili da risolvere
+
+35
+00:03:04,380 --> 00:03:07,080
+e che si chiamerà macchina analitica.
+
+36
+00:03:07,640 --> 00:03:13,600
+La macchina differenziale è sia efficiente che funzionale, ma è limitata alla necessità
+
+37
+00:03:13,600 --> 00:03:19,360
+di azzerarla ad ogni nuova serie di calcoli e tutti i numeri iniziali devono essere disposti
+
+38
+00:03:19,360 --> 00:03:21,920
+sulle 17 ruote dentate a mano.
+
+39
+00:03:21,920 --> 00:03:27,520
+Il nuovo modello, invece, la macchina analitica, non avrà nessuno di questi limiti.
+
+40
+00:03:27,520 --> 00:03:33,600
+È in tale occasione che Ada espone all'amico la sua idea per migliorare l'invenzione.
+
+41
+00:03:34,040 --> 00:03:39,600
+Lei ritiene che si possano utilizzare le schede perforate, molto simili a quelle impiegate
+
+42
+00:03:39,600 --> 00:03:45,640
+per governare il telaio jacquard, per programmare il funzionamento e l'inserimento dei numeri
+
+43
+00:03:45,640 --> 00:03:47,440
+in questa nuova macchina.
+
+44
+00:03:47,440 --> 00:03:53,980
+Tuttavia, nonostante la sua lungimiranza e considerazione per la ragazza, Babbage le risponde
+
+45
+00:03:53,980 --> 00:04:00,120
+che ha già valutato una soluzione basata su cilindri dentati e che la nuova macchina
+
+46
+00:04:00,120 --> 00:04:03,600
+analitica funzionerà grazie a tale tecnologia.
+
+47
+00:04:03,600 --> 00:04:09,800
+Non è chiaro il perché di questa scelta, in questo particolare momento storico le schede
+
+48
+00:04:09,800 --> 00:04:15,240
+perforate hanno effettivamente il vantaggio di poter essere concatenate a formare serie
+
+49
+00:04:15,240 --> 00:04:20,920
+praticamente infinite, mentre i cilindri, per forza di cose, sono destinati a ripetersi
+
+50
+00:04:20,920 --> 00:04:25,880
+ma tant'è, Babbage è convinto e lanciato verso il futuro.
+
+51
+00:04:25,880 --> 00:04:29,920
+DALL'ANNUNCIO DELLA CONCEZIONE DELLA NUOVA MACCHINA ANALITICA
+
+52
+00:04:29,920 --> 00:04:35,080
+Dall'annuncio della concezione della nuova macchina analitica trascorre poi più di un
+
+53
+00:04:35,080 --> 00:04:43,480
+anno quando, nella primavera del 1835, una 19enne hada, in visita alla casa di Sir George
+
+54
+00:04:43,480 --> 00:04:49,480
+Phillips nel Warwickshire, viene presentata a Lord William King, di 30 anni.
+
+55
+00:04:49,480 --> 00:04:54,840
+Come spesso accade quando lei partecipa ad un incontro, la discussione ricade ancora
+
+56
+00:04:54,840 --> 00:05:00,000
+una volta sulla matematica, sulla macchina analitica e su Mrs. Somerville.
+
+57
+00:05:00,000 --> 00:05:04,920
+Naturalmente la ragazza ha molto da dire sull'argomento, ma è Lord King che invece
+
+58
+00:05:04,920 --> 00:05:11,400
+la sorprende con domande intelligenti e pertinenti, a cui lei tenta di rispondere al meglio delle
+
+59
+00:05:11,400 --> 00:05:12,400
+sue possibilità.
+
+60
+00:05:12,400 --> 00:05:19,120
+Ciò che forse la colpisce maggiormente è che William considera una vergogna e un insulto
+
+61
+00:05:19,120 --> 00:05:24,960
+che la Royal Society, nonostante i suoi meriti scientifici, non accetti Mrs. Somerville fra
+
+62
+00:05:24,960 --> 00:05:29,040
+i suoi membri e le impedisca l'accesso alla biblioteca solo perché donna.
+
+63
+00:05:29,040 --> 00:05:35,880
+E così inizia il corteggiamento, breve e dolce, ma anche macchiato dalla preoccupazione
+
+64
+00:05:35,880 --> 00:05:41,760
+di hada che, essendo la figlia del famoso poeta Lord Byron, la sua relazione possa essere
+
+65
+00:05:41,760 --> 00:05:44,200
+oggetto di attenzione indesiderata.
+
+66
+00:05:44,720 --> 00:05:49,960
+Per questo motivo, lei è molto cauta sul fatto che le informazioni sul suo imminente
+
+67
+00:05:49,960 --> 00:05:55,320
+matrimonio non vengano pubblicate prima che lei stessa sia pronta ad annunciarlo.
+
+68
+00:05:55,320 --> 00:06:01,160
+Condivide la notizia con Mrs. Somerville un paio di settimane prima, ma non lo dice nemmeno
+
+69
+00:06:01,160 --> 00:06:06,080
+a Warrens of Grey, a Mary o a Martha, cioè i figli della donna.
+
+70
+00:06:06,400 --> 00:06:13,840
+Hada e William si sposano l'8 luglio 1835, con una piccola cerimonia che si tiene a
+
+71
+00:06:13,840 --> 00:06:14,840
+Fordook.
+
+72
+00:06:14,840 --> 00:06:20,920
+Nell'accordo matrimoniale, a William viene promessa metà dell'eredità di Hada, circa
+
+73
+00:06:20,920 --> 00:06:27,680
+3.000 sterline di rendita annua, che riceverà alla morte della madre, in cambio Hada riceverà
+
+74
+00:06:27,680 --> 00:06:33,960
+annualmente da William una rendita di 300 sterline, circa lo stipendio annuale di un
+
+75
+00:06:33,960 --> 00:06:35,280
+precettore dell'epoca.
+
+76
+00:06:35,280 --> 00:06:40,040
+Miss Hada Byron diventa quindi Lady Hada King.
+
+77
+00:06:40,040 --> 00:06:46,000
+In tale occasione, l'amico Babbage si rivela nuovamente provvidenziale per evitare agli
+
+78
+00:06:46,000 --> 00:06:48,520
+sposi un possibile imbarazzo.
+
+79
+00:06:48,520 --> 00:06:54,960
+La contessa Teresa Guiccioli, infatti, consorte italiana di Lord Byron, è intenzionata a
+
+80
+00:06:54,960 --> 00:06:58,880
+prendere parte alla cerimonia anche senza essere stata invitata.
+
+81
+00:06:59,040 --> 00:07:05,480
+Lo scienziato, però, le riferisce informazioni sbagliate sul luogo in cui si tiene l'evento
+
+82
+00:07:05,480 --> 00:07:11,440
+e Hada ringraziera più volte tramite lettera l'amico per averla salvata da un incontro
+
+83
+00:07:11,440 --> 00:07:16,640
+che avrebbe potenzialmente potuto rovinarle questa giornata importante.
+
+84
+00:07:16,640 --> 00:07:22,760
+La residenza dei novelli sposi si trova in una grande tenuta a Dockham Park, anche se
+
+85
+00:07:22,760 --> 00:07:28,720
+in effetti la coppia possiede anche una magione a Torridon, nelle Highlands, e una casa a Londra.
+
+86
+00:07:29,560 --> 00:07:35,160
+A Dockham, comunque, Hada ha accesso alla vasta biblioteca di William che, fra i tanti
+
+87
+00:07:35,160 --> 00:07:40,320
+volumi, contiene anche tutta la collezione dei libri di poesia di Lord Byron.
+
+88
+00:07:40,320 --> 00:07:44,760
+Finalmente lei potrà leggere liberamente l'opera di suo padre.
+
+89
+00:07:44,760 --> 00:07:50,000
+Dopo appena un paio di mesi dalle nozze, la coppia festeggia il primo Natale insieme
+
+90
+00:07:50,000 --> 00:07:53,520
+alla famiglia Somerville e a Charles Babbage.
+
+91
+00:07:53,520 --> 00:07:58,400
+Il matrimonio non ha ridotto l'interesse di Hada per la matematica e le scienze, nella
+
+92
+00:07:58,400 --> 00:08:04,440
+sua volontà di occuparsene, ma sicuramente, visti i nuovi doveri, riduce il tempo che
+
+93
+00:08:04,440 --> 00:08:06,120
+le è possibile dedicarvi.
+
+94
+00:08:06,120 --> 00:08:12,440
+Nonostante ciò, però, lei cerca di impegnarsi al massimo, anche con l'aiuto dei suoi amici.
+
+95
+00:08:12,440 --> 00:08:18,560
+Dal momento che il suo studio non si limita alla risoluzione di formule, ma sconfina spesso
+
+96
+00:08:18,560 --> 00:08:25,200
+e volentieri in un approccio visivo e addirittura tattile, la novella Lady King vuole modelli
+
+97
+00:08:25,200 --> 00:08:29,640
+geometrici fisici che la aiutino a capire i concetti.
+
+98
+00:08:29,640 --> 00:08:36,240
+Dunque, sempre preoccupata di suscitare interesse indesiderato in quanto figlia di Lord Byron,
+
+99
+00:08:36,240 --> 00:08:42,640
+è costretta a chiedere a Somerville e Babbage di procurarle l'occorrente senza divulgare
+
+100
+00:08:42,640 --> 00:08:43,640
+il suo nome.
+
+101
+00:08:43,640 --> 00:08:50,440
+I modelli sono ancora oggi un modo semplice e molto utilizzato per illustrare concetti
+
+102
+00:08:50,440 --> 00:08:52,320
+matematici e scientifici.
+
+103
+00:08:52,760 --> 00:08:58,760
+Forse i più famosi di sempre sono i modelli di Watson e Crick per illustrare la struttura
+
+104
+00:08:58,760 --> 00:09:05,720
+delle molecole di RNA e DNA, ma comunque le simulazioni e rappresentazioni 3D sono tutt'oggi
+
+105
+00:09:05,720 --> 00:09:09,480
+uno strumento fondamentale per comprendere la scienza.
+
+106
+00:09:09,480 --> 00:09:16,680
+Alla fine di aprile, i King si trasferiscono nella loro casa di Londra, a St. James Square,
+
+107
+00:09:16,680 --> 00:09:19,480
+per attendere la nascita del loro primo figlio.
+
+108
+00:09:19,920 --> 00:09:28,240
+Il 16 maggio 1836, dopo un'eclissi solare, nasce Byron, chiamato così ovviamente in
+
+109
+00:09:28,240 --> 00:09:30,320
+onore del suo illustre nonno.
+
+110
+00:09:30,320 --> 00:09:38,720
+Dal 1836 al 1839, per Ada, concentrarsi sugli studi è piuttosto complicato.
+
+111
+00:09:38,720 --> 00:09:44,200
+La preoccupazione di essere una buona madre e moglie e le tante occasioni dell'inizio
+
+112
+00:09:44,200 --> 00:09:48,480
+dell'età vittoriana la tengono infatti notevolmente impegnata.
+
+113
+00:09:48,800 --> 00:09:55,080
+Ma Lady King, come abbiamo ormai capito, possiede delle capacità del tutto particolari
+
+114
+00:09:55,080 --> 00:10:00,480
+e se questi suoi impegni la costringono a rimandare gli studi formali, le permettono
+
+115
+00:10:00,480 --> 00:10:05,000
+al contempo anche di sviluppare abilità creative e pensiero critico.
+
+116
+00:10:05,000 --> 00:10:11,480
+La ragazza inizia infatti a lavorare su immaginazione, visualizzazione e utilizzo della metafora.
+
+117
+00:10:11,480 --> 00:10:17,400
+Diventa un'attenta osservatrice annotando dettagliatamente le attività motore del figlio
+
+118
+00:10:17,400 --> 00:10:23,640
+e intanto continua a ricercare modelli geometrici che l'aiutino a visualizzare la trigonometria
+
+119
+00:10:23,640 --> 00:10:24,640
+sferica.
+
+120
+00:10:24,640 --> 00:10:31,480
+Per il suo ventunesimo compleanno riceve persino in regalo un telescopio per osservare le stelle.
+
+121
+00:10:31,480 --> 00:10:36,840
+Poi, al tempo stesso, non perde occasione per informarsi e restare al passo con le
+
+122
+00:10:36,840 --> 00:10:42,600
+ultime novità nel campo scientifico e sempre in questo periodo riceve anche una buona notizia
+
+123
+00:10:42,600 --> 00:10:43,600
+su tale fronte.
+
+124
+00:10:44,160 --> 00:10:49,920
+La sua idea iniziale riguardo la macchina analitica ha finalmente fatto breccia.
+
+125
+00:10:49,920 --> 00:10:57,480
+Il caro amico Babbage infatti, dopo lunga e attenta riflessione, ha deciso di modificare
+
+126
+00:10:57,480 --> 00:11:03,720
+il progetto per includere le schede perforate come strumento per impartire istruzioni alla
+
+127
+00:11:03,720 --> 00:11:04,720
+macchina.
+
+128
+00:11:04,720 --> 00:11:11,040
+La sua prima idea, quella dei cilindri dentati, infatti comporta troppe limitazioni che le
+
+129
+00:11:11,040 --> 00:11:14,400
+schede suggerite da Ada invece superano egreggiamente.
+
+130
+00:11:14,400 --> 00:11:20,440
+Alla fine dell'autunno, però, Lady King si rende conto che i suoi studi dovranno essere
+
+131
+00:11:20,440 --> 00:11:22,400
+ulteriormente rimandati.
+
+132
+00:11:22,400 --> 00:11:28,200
+Nonostante le precauzioni, infatti, la famiglia è in procinto di allargarsi.
+
+133
+00:11:28,200 --> 00:11:34,440
+Come per il fratellino Byron, anche Annabella viene alla luce nella casa di St. James Square
+
+134
+00:11:34,440 --> 00:11:39,120
+a Londra, precisamente il 22 settembre 1837.
+
+135
+00:11:39,480 --> 00:11:45,520
+Purtroppo, però, pochi giorni dopo il parto, quando Ada ancora si sta riprendendo dalle
+
+136
+00:11:45,520 --> 00:11:50,720
+fatiche di quell'esperienza, la sua salute cagionevole la tradisce nuovamente.
+
+137
+00:11:50,720 --> 00:11:54,120
+La ragazza si ammala, infatti, di colera.
+
+138
+00:11:54,120 --> 00:11:56,320
+Ha appena 22 anni.
+
+139
+00:11:56,320 --> 00:12:02,920
+Tra l'altro, secondo un rapporto dell'epoca, anche se quell'anno la malattia dilagava a
+
+140
+00:12:02,920 --> 00:12:07,920
+Londra per via del fatto che le persone bevevano l'acqua non depurata del Tamigi, era molto
+
+141
+00:12:07,920 --> 00:12:11,960
+insolito che un membro dell'aristocrazia ve ne si ammalasse.
+
+142
+00:12:11,960 --> 00:12:17,640
+Ad ogni modo, Ada riesce a superare anche quest'ennesima prova, sperimentando varie
+
+143
+00:12:17,640 --> 00:12:20,800
+cure e, di conseguenza, perdendo molto peso.
+
+144
+00:12:20,800 --> 00:12:27,560
+Cosa che desta grande contrarietà in Lady Byron, ma anche la gioia di Lord King, che
+
+145
+00:12:27,560 --> 00:12:30,760
+a quanto pare nutre un certo odio per le persone grasse.
+
+146
+00:12:31,200 --> 00:12:38,600
+E siamo così giunti al 1838, anno nel quale un altro importante cambiamento scuote la famiglia
+
+147
+00:12:38,600 --> 00:12:45,200
+King e chiarisce anche ad Ada un piccolo mistero fra lei e sua madre, durato anni.
+
+148
+00:12:45,200 --> 00:12:51,400
+Nel mese di giugno, infatti, la regina Vittoria eleva William, ottavo Lord King, al rango
+
+149
+00:12:51,400 --> 00:12:52,400
+di conte.
+
+150
+00:12:52,400 --> 00:12:57,960
+Alla ricezione della notizia, Ada capisce finalmente perché sua madre non abbia mai
+
+151
+00:12:57,960 --> 00:13:04,000
+voluto chiedere al cugino, Lord Melbourne, di adoperarsi per sostenere la causa della
+
+152
+00:13:04,000 --> 00:13:07,920
+macchina differenziale prima e di quella analitica poi.
+
+153
+00:13:07,920 --> 00:13:14,560
+Lord Melbourne avrebbe potuto fare molto in proposito, vista la sua carica politica, tuttavia
+
+154
+00:13:14,560 --> 00:13:20,000
+Lady Byron aveva evidentemente altri piani elaborati già da molto tempo.
+
+155
+00:13:20,000 --> 00:13:26,480
+Sebbene, infatti, non l'abbia mai dichiarato apertamente, è quasi certo che la nomina di
+
+156
+00:13:26,480 --> 00:13:32,920
+William sia arrivata su sua richiesta al cugino in veste di favore personale, tanto più
+
+157
+00:13:32,920 --> 00:13:37,360
+che si parla di un titolo nuovo, quindi creato appositamente per lui.
+
+158
+00:13:37,360 --> 00:13:43,000
+A questo punto, il marito di Ada indaga nell'albero genealogico della moglie e scopre fra gli
+
+159
+00:13:43,000 --> 00:13:49,920
+antenati di lei un Lord Lovelace di Harley rimasto senza discendenti e decide, in segno
+
+160
+00:13:49,920 --> 00:13:52,800
+di riconoscimento, di ripristinarne il nome.
+
+161
+00:13:53,120 --> 00:14:01,280
+I due diventano quindi William King, conte di Lovelace, e Ada Byron King, contessa di Lovelace.
+
+162
+00:14:01,280 --> 00:14:07,480
+Questa nuova posizione sociale costringe Ada, per quanto lei non voglia, a partecipare
+
+163
+00:14:07,480 --> 00:14:11,000
+in misura sempre maggiore agli eventi sociali e mondani.
+
+164
+00:14:11,000 --> 00:14:17,040
+Facendo però buon viso a cattivo gioco, lei ne approfitta anche per andare a vedere tutte
+
+165
+00:14:17,040 --> 00:14:21,320
+le mostre e dimostrazioni degli ultimi sviluppi tecnologici.
+
+166
+00:14:21,840 --> 00:14:29,080
+Le esposizioni di animali esotici, gli esperimenti di mesmerismo e perfino il telegrafo elettrico
+
+167
+00:14:29,080 --> 00:14:34,040
+inventato da Charles Whitstone, del quale diventerà anche cara amica.
+
+168
+00:14:34,040 --> 00:14:40,320
+Tutto questo finché, alla vigilia del suo ventitresimo compleanno, appena terminata
+
+169
+00:14:40,320 --> 00:14:48,280
+la stagione mondana del 1838, la contessa di Lovelace si rende conto di essere di nuovo incinta.
+
+170
+00:14:52,280 --> 00:14:59,880
+Il secondo giorno di luglio del 1839, Ada dà alla luce un maschietto, a cui viene dato
+
+171
+00:14:59,880 --> 00:15:01,600
+il nome di Ralph Gordon.
+
+172
+00:15:01,600 --> 00:15:08,160
+La donna ama i figli e il marito, ed è felice per la ricchezza e la posizione sociale della
+
+173
+00:15:08,160 --> 00:15:15,280
+sua famiglia, ma in questo periodo si sente prigioniera come non mai, vincolata e soggetta
+
+174
+00:15:15,280 --> 00:15:18,400
+ai capricci degli altri letteralmente non.
+
+175
+00:15:18,840 --> 00:15:25,480
+La bambina che sognava di volare a tal punto da aver inventato la volologia e aver progettato
+
+176
+00:15:25,480 --> 00:15:31,080
+delle ali basate sul potere della matematica, della scienza e dell'immaginazione, ora si
+
+177
+00:15:31,080 --> 00:15:37,400
+trova quanto mai costretta in un ruolo che non sembra essere affatto adatto a lei.
+
+178
+00:15:37,400 --> 00:15:43,600
+Ada però ha dalla sua il potere di una mente brillante e capisce subito che deve fare
+
+179
+00:15:43,600 --> 00:15:47,600
+tutto il possibile per riprendere almeno i suoi studi in matematica.
+
+180
+00:15:47,800 --> 00:15:53,920
+Per tutto l'inverno e la primavera successivi procede alla ricerca di un tutore, finché,
+
+181
+00:15:53,920 --> 00:15:59,880
+all'inizio dell'estate, il celebre matematico e logico Augustus De Morgan non decide di
+
+182
+00:15:59,880 --> 00:16:01,120
+accettare la sfida.
+
+183
+00:16:01,120 --> 00:16:08,120
+De Morgan, oltre ad essere amico di Charles Babbage e amico molto stretto di Lady Byron,
+
+184
+00:16:08,120 --> 00:16:15,280
+è considerato uno dei più grandi logici del XIX secolo e insegna all'Università di Londra.
+
+185
+00:16:15,280 --> 00:16:21,320
+Il professore assegna Ada da brani da studiare ed esercitazioni tratte dai libri di testo
+
+186
+00:16:21,320 --> 00:16:25,960
+e la incontra ogni 15 giorni circa o a volte una volta al mese.
+
+187
+00:16:25,960 --> 00:16:32,080
+L'istruzione della ragazza avviene dunque principalmente per corrispondenza, un metodo
+
+188
+00:16:32,080 --> 00:16:37,080
+che per lei è più che congeniale perché le permette di conciliare lo studio con i
+
+189
+00:16:37,080 --> 00:16:43,680
+suoi doveri di mamma e moglie e che non le pesa dati gli anni di allenamento fatti durante
+
+190
+00:16:43,680 --> 00:16:45,640
+i suoi vari periodi di malattia.
+
+191
+00:16:45,640 --> 00:16:52,280
+Il linguaggio della loro corrispondenza matematica è a dir poco singolare, ricco di allusioni
+
+192
+00:16:52,280 --> 00:16:57,840
+poetiche e di metafore sia da parte di De Morgan che della Lovelace, uno stile che si
+
+193
+00:16:57,840 --> 00:17:03,280
+adatta naturalmente e perfettamente al particolare modo di apprendere di lei.
+
+194
+00:17:03,280 --> 00:17:08,600
+Nonostante un background piuttosto inconsistente, pari a quello che oggi sarebbe considerato
+
+195
+00:17:08,600 --> 00:17:14,400
+un programma minimo di matematica per le scuole superiori, la ragazza passa rapidamente
+
+196
+00:17:14,400 --> 00:17:21,280
+al calcolo differenziale e integrale, di sicuro spinta dalla sua grande passione per le macchine
+
+197
+00:17:21,280 --> 00:17:25,560
+di Bubbage che nascono per eseguire proprio questo tipo di calcoli.
+
+198
+00:17:25,560 --> 00:17:32,680
+Purtroppo per noi però De Morgan non riceve alcun compenso per questa attività di insegnamento
+
+199
+00:17:32,680 --> 00:17:39,160
+e per questo motivo Ada cerca di disturbarlo il meno possibile e solo se ha necessità
+
+200
+00:17:39,160 --> 00:17:44,440
+di chiarire un concetto o una nozione che proprio non riesce a comprendere da sola.
+
+201
+00:17:44,440 --> 00:17:50,320
+Di conseguenza tutta la corrispondenza di questo periodo fra i due non ci permette di
+
+202
+00:17:50,320 --> 00:17:54,400
+capire appieno quali sono le reali conoscenze di lei.
+
+203
+00:17:54,400 --> 00:18:01,280
+In pratica queste lettere mostrano solo quello che Lady Lovelace non capiva e tralasciano
+
+204
+00:18:01,360 --> 00:18:05,080
+tutto ciò che invece conosceva e imparava in autonomia.
+
+205
+00:18:05,080 --> 00:18:11,800
+Sono di fatto un campione distorto delle sue conoscenze però almeno ci danno un'idea
+
+206
+00:18:11,800 --> 00:18:18,120
+di quali sono i suoi interessi in questo periodo, di quali argomenti affronta e quali difficoltà
+
+207
+00:18:18,120 --> 00:18:19,120
+riscontra.
+
+208
+00:18:19,120 --> 00:18:25,120
+Spesso le sue problematiche si riducono ai principi di base, cosa significa e come si
+
+209
+00:18:25,120 --> 00:18:28,440
+ottiene sono le due domande che si ripetono maggiormente.
+
+210
+00:18:28,600 --> 00:18:35,040
+Dal canto suo De Morgan è un ottimo insegnante e Ada, quando riesce a ignorare le continue
+
+211
+00:18:35,040 --> 00:18:40,960
+apprezzioni di lui per il pericolo che corre una mente femminile studiando troppo, impara
+
+212
+00:18:40,960 --> 00:18:47,280
+tantissimo e noi possiamo solo immaginare quanto si senta intellettualmente appagata.
+
+213
+00:18:47,280 --> 00:18:53,720
+In effetti questo è un periodo felice della vita della Contessa di Lovelace, fatta eccezione
+
+214
+00:18:53,720 --> 00:19:00,720
+per le vicende legate alla cugina barra sorellastra Medora, le sue lettere sono entusiaste e piene
+
+215
+00:19:00,720 --> 00:19:01,720
+di speranza.
+
+216
+00:19:01,720 --> 00:19:07,360
+Continua ad andare a cavallo, a pattinare sul ghiaccio, a socializzare con i suoi numerosi
+
+217
+00:19:07,360 --> 00:19:13,560
+amici scienziati e anche con tutte queste attività i suoi studi matematici procedono
+
+218
+00:19:13,560 --> 00:19:14,560
+a pieno ritmo.
+
+219
+00:19:14,560 --> 00:19:21,640
+In una lettera a sua madre Ada scrive proprio che nella sua vita il calcolo è il re.
+
+220
+00:19:24,640 --> 00:19:32,600
+La vita scorre dunque abbastanza serena, Miss Somerville si è trasferita in Italia con la
+
+221
+00:19:32,600 --> 00:19:39,400
+famiglia per motivi legati alla salute del marito, l'amico Charles Dickens si è sposato
+
+222
+00:19:39,400 --> 00:19:44,000
+ed è padre di tre bambini e autore di alcuni magnifici romanzi.
+
+223
+00:19:44,000 --> 00:19:50,400
+La corrispondenza fra i vari membri del gruppo resta sempre piuttosto intensa e nel febbraio
+
+224
+00:19:50,400 --> 00:19:58,440
+del 1840 Ada ha quasi 25 anni e scrive a Babbage un'altra piccola perla che anticipa
+
+225
+00:19:58,440 --> 00:20:02,640
+tanti concetti presenti nel moderno approccio ai videogame.
+
+226
+00:20:02,640 --> 00:20:08,480
+Avete mai visto un gioco, un puzzle chiamato Solitaire?
+
+227
+00:20:08,480 --> 00:20:12,920
+Sono riuscita a trovare la soluzione a forza di tentativi e con l'osservazione ma vorrei
+
+228
+00:20:12,920 --> 00:20:16,600
+sapere se è possibile creare una formula matematica per la sua soluzione.
+
+229
+00:20:16,800 --> 00:20:21,640
+Deve esserci un principio basato su proprietà numeriche e geometriche dal quale dipende
+
+230
+00:20:21,640 --> 00:20:24,960
+la soluzione che può essere tradotto in un linguaggio simbolico.
+
+231
+00:20:24,960 --> 00:20:34,120
+Questo tipo di scambio non è certo una sorpresa, Ada e Babbage si dilettano in tutti i tipi
+
+232
+00:20:34,120 --> 00:20:38,640
+di giochi basati su concetti matematici, dal Beghemoth agli scacchi.
+
+233
+00:20:38,640 --> 00:20:44,640
+L'argomento della lettera è appunto il Solitaire, un gioco composto da un tabellone
+
+234
+00:20:44,640 --> 00:20:51,360
+ottagonale con 37 fori e 36 pedine che riempiono tutti i fori meno uno.
+
+235
+00:20:51,360 --> 00:20:58,040
+Le pedine devono saltarsi, mangiarsi ed eliminarsi l'un l'altra, come nella Dama.
+
+236
+00:20:58,040 --> 00:21:04,040
+Lo scopo è restare con una sola pedina, ma è possibile provarci anche migliaia di volte
+
+237
+00:21:04,040 --> 00:21:05,440
+senza mai riuscire.
+
+238
+00:21:05,440 --> 00:21:11,160
+Ada include perfino un disegno per facilitare la comprensione dell'interlocutore.
+
+239
+00:21:11,680 --> 00:21:17,640
+Racconta di aver trovato la soluzione sperimentalmente, ma di essere anche al lavoro sulla ricerca
+
+240
+00:21:17,640 --> 00:21:25,160
+di una soluzione basata su principi matematici e geometrici e traducibile in linguaggio simbolico.
+
+241
+00:21:25,160 --> 00:21:31,520
+E da qui il passo successivo è se la soluzione può essere tradotta in un linguaggio simbolico,
+
+242
+00:21:31,520 --> 00:21:34,880
+non può allora anche essere inserita nella macchina analitica?
+
+243
+00:21:35,320 --> 00:21:41,120
+Gli ospiti di Mr. Babbage erano affascinati dalla dama d'argento che danzava, ma cosa
+
+244
+00:21:41,120 --> 00:21:46,520
+avrebbero pensato di una macchina in grado di fare un gioco o di risolvere un enigma
+
+245
+00:21:46,520 --> 00:21:47,520
+logico?
+
+246
+00:21:47,520 --> 00:21:52,880
+In effetti, al giorno d'oggi questo tipo di collegamento tra matematica, descrizione
+
+247
+00:21:52,880 --> 00:21:58,200
+del problema e della risoluzione e codifica delle istruzioni è alla base ad esempio
+
+248
+00:21:58,200 --> 00:22:00,520
+della programmazione dei videogiochi.
+
+249
+00:22:00,920 --> 00:22:06,600
+Ciò che Ada riesce a vedere nei progetti di Babbage non è un mero risultato, bensì
+
+250
+00:22:06,600 --> 00:22:11,640
+una gamma di opportunità scientifiche che per l'epoca potrebbero essere catalogate
+
+251
+00:22:11,640 --> 00:22:18,000
+quasi come metafisiche, ed è interessata al risultato della scoperta quanto al processo
+
+252
+00:22:18,000 --> 00:22:20,360
+stesso che porta alla scoperta.
+
+253
+00:22:20,360 --> 00:22:27,400
+Sempre nell'autunno del 1840 Babbage viene poi invitato a partecipare ad una conferenza
+
+254
+00:22:27,400 --> 00:22:29,560
+di scienziati illustri a Torino.
+
+255
+00:22:29,560 --> 00:22:34,860
+Ciò che gli viene chiesto è di spiegare la sua idea per la macchina analitica e mostrare
+
+256
+00:22:34,860 --> 00:22:36,560
+come essa dovrebbe funzionare.
+
+257
+00:22:36,560 --> 00:22:42,840
+Al suo ritorno, come d'abitudine, organizza una serata per festeggiare l'evento e racconta
+
+258
+00:22:42,840 --> 00:22:47,880
+di essere stato accolto come un inventore scienziato illustre dal gruppo di eruditi
+
+259
+00:22:47,880 --> 00:22:54,840
+e che il loro rispetto e la loro ammirazione per la sua macchina analitica lo hanno gratificato
+
+260
+00:22:54,840 --> 00:22:55,960
+e incoraggiato.
+
+261
+00:22:56,520 --> 00:23:02,520
+Tuttavia, quando finalmente riescono a restare un po' soli, l'uomo racconta ad Ada che è
+
+262
+00:23:02,520 --> 00:23:08,360
+stato anche costretto ad affrontare la triste verità, le probabilità di costruire realmente
+
+263
+00:23:08,360 --> 00:23:11,600
+la macchina analitica sono sempre più esigue.
+
+264
+00:23:11,600 --> 00:23:17,520
+La sua ricchezza personale, sebbene non trascurabile, non è assolutamente adeguata.
+
+265
+00:23:17,520 --> 00:23:23,600
+La macchina richiederebbe la fabbricazione di decine di migliaia di componenti, tutte
+
+266
+00:23:23,600 --> 00:23:26,400
+create su misura da ingegneri esperti.
+
+267
+00:23:26,400 --> 00:23:33,120
+Queste parti, poi, dovrebbero essere assemblate secondo una disposizione complicata con estrema
+
+268
+00:23:33,120 --> 00:23:40,240
+precisione per raggiungere dimensioni complessive di 4 metri e mezzo di altezza, 1,80 di larghezza
+
+269
+00:23:40,240 --> 00:23:43,880
+e circa 6 di lunghezza, praticamente una locomotiva.
+
+270
+00:23:43,880 --> 00:23:50,360
+Ada resta profondamente delusa da questa notizia, ma è ancora decisa a diventare una grande
+
+271
+00:23:50,360 --> 00:23:54,080
+matematica, almeno quanto suo padre è stato un grande poeta.
+
+272
+00:23:54,080 --> 00:23:59,760
+L'ostacolo maggiore, però, è rappresentato dal suo nemico di sempre, la malattia.
+
+273
+00:23:59,760 --> 00:24:06,880
+Questa volta, infatti, nemmeno i soliti rimedi risultano efficaci e lei, in cerca di nuovi
+
+274
+00:24:06,880 --> 00:24:13,440
+trattamenti, trova sollievo solo nel mesmerismo e, dietro consiglio del dottore, nel laudano.
+
+275
+00:24:13,440 --> 00:24:18,680
+Quando non soffre di invalidanti emicranie, però, continua a riempire le ore con la
+
+276
+00:24:18,680 --> 00:24:25,320
+matematica, la scienza, un rinnovato interesse per la musica e... una nuova passione per
+
+277
+00:24:25,320 --> 00:24:26,320
+il teatro.
+
+278
+00:24:26,320 --> 00:24:31,560
+Fortunatamente, l'ambiente intorno a lei continua a nutrire la sua mente, le scoperte
+
+279
+00:24:31,560 --> 00:24:37,400
+nell'ambito del mondo naturale sono sconvolgenti almeno come quelle in campo tecnologico.
+
+280
+00:24:37,400 --> 00:24:43,800
+Un amico di Mr. Babbage, Charles Darwin, è tornato da un viaggio di 5 anni intorno
+
+281
+00:24:43,800 --> 00:24:49,480
+al mondo per studiare la geologia e la storia naturale e ha compiuto osservazioni interessanti
+
+282
+00:24:49,480 --> 00:24:51,640
+e raccolto numerosi campioni.
+
+283
+00:24:51,640 --> 00:24:58,280
+Alle serate di Babbage parla di una teoria che sta sviluppando basata sulle sue osservazioni,
+
+284
+00:24:58,280 --> 00:25:01,240
+qualcosa che lui chiama selezione naturale.
+
+285
+00:25:01,240 --> 00:25:07,040
+Il sistema ferroviario a vapore poi inizia a diffondersi per il trasporto sia di merci
+
+286
+00:25:07,040 --> 00:25:12,480
+che di passeggeri e forse ancora più intriganti sono gli esperimenti di Michael Faraday su
+
+287
+00:25:12,480 --> 00:25:14,320
+elettricità e magnetismo.
+
+288
+00:25:14,320 --> 00:25:20,360
+L'interesse di Ada la spinge a ricreare alcuni esperimenti dello scienziato e con il tempo
+
+289
+00:25:20,360 --> 00:25:22,800
+i due diventano anche ottimi amici.
+
+290
+00:25:22,800 --> 00:25:29,440
+Lui arriva perfino a confessarle che non gli interessa granché la matematica e lei,
+
+291
+00:25:29,440 --> 00:25:33,360
+con grande divertimento di entrambi, lo prende spesso in giro per questo.
+
+292
+00:25:33,360 --> 00:25:45,320
+Nell'ottobre del 1842 un importante evento riapre la speranza per la realizzazione della
+
+293
+00:25:45,320 --> 00:25:47,200
+macchina analitica.
+
+294
+00:25:47,200 --> 00:25:53,280
+Luigi Federico Menabrea, professore di meccanica e costruzione dell'Università di Torino,
+
+295
+00:25:53,280 --> 00:25:58,760
+che Babbage aveva incontrato alla conferenza di scienziati italiani due anni prima, pubblica
+
+296
+00:25:58,760 --> 00:26:04,840
+un trattato che parla della macchina analitica sulla prestigiosa rivista Bibliotheque Universelle
+
+297
+00:26:04,840 --> 00:26:05,840
+de Genève.
+
+298
+00:26:05,840 --> 00:26:10,240
+Si tratta di una grande occasione per Babbage ma anche per Ada.
+
+299
+00:26:10,240 --> 00:26:16,280
+L'editore di Scientific Memoirs, una pubblicazione inglese che si propone di dare alle stampe
+
+300
+00:26:16,280 --> 00:26:22,640
+i saggi scientifici più importanti pubblicati nelle riviste estere, contatta infatti la donna
+
+301
+00:26:22,640 --> 00:26:27,400
+per chiederle di occuparsi della traduzione dell'articolo di Menabrea.
+
+302
+00:26:27,480 --> 00:26:33,640
+L'articolo è perfetto per la linea editoriale di Scientific Memoirs e l'idea di incaricare
+
+303
+00:26:33,640 --> 00:26:39,320
+la contessa di Lopleis come traduttrice è più che azzeccata, visti da un lato la sua
+
+304
+00:26:39,320 --> 00:26:44,920
+passione per l'argomento e dall'altro la sua perfetta conoscenza del francese, che
+
+305
+00:26:44,920 --> 00:26:47,000
+è la lingua usata da Menabrea.
+
+306
+00:26:47,000 --> 00:26:52,880
+Ovviamente lei accetta con estremo piacere ed entusiasmo e si dedica all'incarico con
+
+307
+00:26:52,880 --> 00:26:55,360
+attenzione ed impegno ammirevoli.
+
+308
+00:26:55,800 --> 00:27:02,440
+La scrittura di Menabrea è scorrevole e chiara, ma non si limita ad una traduzione letterale.
+
+309
+00:27:02,440 --> 00:27:08,720
+Ciò che traspare dal suo lavoro è il tentativo di catturare la poesia delle sue spiegazioni
+
+310
+00:27:08,720 --> 00:27:13,320
+e aggiungere chiarezza dove il testo poteva apparire un po' scuro.
+
+311
+00:27:13,320 --> 00:27:19,920
+Non vi è nessuna intenzione di sminuire l'autore originale, ma la verità è che la donna conosce
+
+312
+00:27:19,920 --> 00:27:25,720
+la macchina analitica al pari di Babbage e probabilmente ne capisce le implicazioni
+
+313
+00:27:25,720 --> 00:27:32,040
+di funzionamento persino meglio di lui, quindi è ovvio che ci siano certi dettagli tecnici
+
+314
+00:27:32,040 --> 00:27:35,600
+che è in grado di spiegare meglio del conto di Menabrea.
+
+315
+00:27:35,600 --> 00:27:42,480
+In febbraio la traduzione è pronta, una traduzione completa, accurata e poetica del trattato
+
+316
+00:27:42,480 --> 00:27:43,480
+originale.
+
+317
+00:27:43,480 --> 00:27:48,000
+Ada, orgogliosa del suo risultato, consegna il manoscritto all'editore.
+
+318
+00:27:48,400 --> 00:27:53,320
+Ma è a questo punto che accade qualcosa che lei non avrebbe mai immaginato.
+
+319
+00:27:53,320 --> 00:27:59,360
+Babbage ricorda questo avvenimento nei passages molti anni dopo la morte di Ada.
+
+320
+00:28:01,480 --> 00:28:05,920
+Qualche tempo dopo l'apparizione della sua memoria sull'argomento nella biblioteca
+
+321
+00:28:05,920 --> 00:28:10,880
+Universel de Genève, la contessa di Lovelace mi informò che aveva tradotto la memoria
+
+322
+00:28:10,880 --> 00:28:11,880
+di Menabrea.
+
+323
+00:28:11,880 --> 00:28:16,880
+Le chiesi perché non avesse scritto lei stessa un articolo originale sull'argomento che
+
+324
+00:28:16,880 --> 00:28:18,160
+conosceva così bene.
+
+325
+00:28:18,160 --> 00:28:22,480
+Lady Lovelace rispose che il pensiero non le era venuto in mente.
+
+326
+00:28:22,480 --> 00:28:29,000
+Le suggerì allora di aggiungere delle note al libro di Menabrea, un'idea che fu immediatamente
+
+327
+00:28:29,000 --> 00:28:30,000
+adottata.
+
+328
+00:28:30,000 --> 00:28:38,440
+Babbage è convinto che un contributo originale di Ada potrebbe migliorare notevolmente l'articolo
+
+329
+00:28:38,440 --> 00:28:40,960
+e aprire nuove prospettive per la macchina.
+
+330
+00:28:41,360 --> 00:28:47,080
+La richiesta che le fa è quella di arricchire il testo e completarlo con le ultime modifiche
+
+331
+00:28:47,080 --> 00:28:50,040
+da lui apportate dopo l'uscita dell'articolo.
+
+332
+00:28:50,040 --> 00:28:56,720
+In effetti però il suggerimento di Babbage è qualcosa di piuttosto rischioso per l'epoca.
+
+333
+00:28:56,720 --> 00:29:03,080
+Nel 1843 le donne non scrivono di scienza, soprattutto non su riviste di un certo livello.
+
+334
+00:29:03,080 --> 00:29:09,640
+Al massimo quando capita lo fanno per rendere comprensibili le scoperte e le idee degli scienziati
+
+335
+00:29:09,640 --> 00:29:14,560
+uomini alle donne interessate all'argomento ma prive di competenze specifiche.
+
+336
+00:29:14,560 --> 00:29:15,560
+Mr.
+
+337
+00:29:15,560 --> 00:29:21,080
+Babbage invece sta suggerendo qualcosa di completamente diverso, un saggio scientifico
+
+338
+00:29:21,080 --> 00:29:25,440
+originale scritto da una donna per un pubblico di scienziati uomini.
+
+339
+00:29:25,440 --> 00:29:31,920
+Nessuna donna, per quanto ne sa Ada, ha fatto qualcosa del genere, a parte ovviamente Mary
+
+340
+00:29:31,920 --> 00:29:35,120
+Somerville, ma lei è un'eccezione straordinaria.
+
+341
+00:29:35,560 --> 00:29:41,080
+Fortunatamente però la contessa di Lovelace non si lascia intimorire dalla situazione
+
+342
+00:29:41,080 --> 00:29:46,040
+e accetta l'incarico mettendosi al lavoro con rinnovato entusiasmo.
+
+343
+00:29:46,040 --> 00:29:53,000
+Come vedremo più avanti tale decisione porterà questa ragazza di poco più di 27 anni a scrivere
+
+344
+00:29:53,000 --> 00:29:55,360
+un pezzo di storia dell'informatica.
+
+345
+00:29:55,360 --> 00:30:00,960
+Ada comincia con quelli che considera gli aspetti essenziali da chiarire, e cioè in
+
+346
+00:30:00,960 --> 00:30:06,360
+che modo la macchina analitica si differenzia dalla macchina differenziale e dalla più
+
+347
+00:30:06,360 --> 00:30:10,920
+semplice macchina calcolatrice che Pascal aveva creato anni prima.
+
+348
+00:30:10,920 --> 00:30:16,680
+La macchina analitica infatti era capace non solo di disporre in tabelle i risultati di
+
+349
+00:30:16,680 --> 00:30:22,080
+una funzione particolare, ma di sviluppare e di tabulare qualunque funzione.
+
+350
+00:30:22,080 --> 00:30:28,720
+Anzi, essa riusciva a intervenire su qualunque informazione rappresentabile simbolicamente,
+
+351
+00:30:28,720 --> 00:30:29,720
+non solo numeri.
+
+352
+00:30:29,960 --> 00:30:34,560
+Le difficoltà del lavoro, dal punto di vista di Ada, sono essenzialmente due.
+
+353
+00:30:34,560 --> 00:30:40,000
+Come spiegare chiaramente lo scopo e la funzione di un apparecchio complesso quale la macchina
+
+354
+00:30:40,000 --> 00:30:45,040
+analitica, che sono difficili da capire anche per le menti scientifiche più brillanti
+
+355
+00:30:45,040 --> 00:30:46,040
+dell'epoca?
+
+356
+00:30:46,040 --> 00:30:51,760
+E come convincere i suoi lettori che essa avrà un'utilità reale, che è uno sviluppo
+
+357
+00:30:51,760 --> 00:30:56,400
+tecnologico perfino più importante della Ferroviò del telaio Jacquard.
+
+358
+00:30:56,680 --> 00:31:02,400
+Capisce presto che non può riuscire in questi suoi intenti semplicemente presentando fatti
+
+359
+00:31:02,400 --> 00:31:08,000
+e numeri, perché i fatti da soli non riuscirebbero ad illustrare adeguatamente qualcosa che
+
+360
+00:31:08,000 --> 00:31:10,080
+non è mai stato immaginato prima.
+
+361
+00:31:10,080 --> 00:31:16,400
+Per far capire che meraviglia è la macchina analitica, deve addentrarsi nel campo della
+
+362
+00:31:16,400 --> 00:31:18,960
+metafisica o addirittura della poesia.
+
+363
+00:31:18,960 --> 00:31:25,120
+Nessuno contribuirà mai ad un progetto rappresentato da una versione molto costosa e molto meno
+
+364
+00:31:25,120 --> 00:31:27,480
+affascinante della Dama d'Argento.
+
+365
+00:31:27,480 --> 00:31:32,800
+Con questi obiettivi in mente, al termine del suo lavoro, Ada produce una serie di note
+
+366
+00:31:32,800 --> 00:31:39,120
+contrassegnate da A a G che descrivono nei minimi particolari le funzioni e i processi
+
+367
+00:31:39,120 --> 00:31:43,920
+meccanici della macchina analitica, nonché le sue incredibili potenzialità.
+
+368
+00:31:43,920 --> 00:31:54,040
+Quando il lavoro di ampliamento del memoir sta ormai per terminare, nasce però un certo
+
+369
+00:31:54,040 --> 00:31:57,160
+attrito tra la contessa di Lovelace e lo scienziato.
+
+370
+00:31:57,160 --> 00:32:03,000
+Il problema principale è una prefazione che Bubbage ha preparato per Ada che descrive
+
+371
+00:32:03,000 --> 00:32:08,320
+il mancato sostegno del governo britannico al completamento della macchina differenziale
+
+372
+00:32:08,320 --> 00:32:11,360
+e i suoi piani innovativi per la macchina analitica.
+
+373
+00:32:11,360 --> 00:32:17,640
+Lui vuole che la sua prefazione sia stampata come parte del memoir, ma lei si rifiuta di
+
+374
+00:32:17,640 --> 00:32:22,640
+includerla per via dell'impatto negativo che avrebbe avuto sui lettori, totalmente
+
+375
+00:32:22,640 --> 00:32:26,600
+in contrasto con il tentativo di lei di catturarne il favore.
+
+376
+00:32:26,600 --> 00:32:32,400
+Persino Richard Taylor, l'editore della rivista, scrive una lettera a Bubbage confermando di
+
+377
+00:32:32,400 --> 00:32:37,360
+essere d'accordo con il desiderio di Lady Lovelace di non stampare la prefazione, ma
+
+378
+00:32:37,360 --> 00:32:43,280
+per tutta risposta lo scienziato chiede alla contessa di ritirare l'articolo e di scriverne
+
+379
+00:32:43,280 --> 00:32:44,800
+uno completamente nuovo.
+
+380
+00:32:44,800 --> 00:32:50,880
+Come è facile immaginare, Ada è furiosa e si rivolge a Bubbage senza usare mezzi termini.
+
+381
+00:32:51,320 --> 00:32:59,480
+Il 14 agosto 1843 gli scrive un'accorata lettera di ben 16 pagine in cui si fa avvalere, spiega
+
+382
+00:32:59,480 --> 00:33:05,480
+le sue idee e descrive la propria proposta per il futuro della loro collaborazione.
+
+383
+00:33:05,480 --> 00:33:11,040
+Innanzitutto gli fa notare che il tono della sua prefazione sottintende una forte ostilità
+
+384
+00:33:11,040 --> 00:33:17,040
+impossibile da fraintendere e pertanto non vi ha alcun vantaggio nell'includerla né
+
+385
+00:33:17,040 --> 00:33:19,160
+per lui né per la sua macchina.
+
+386
+00:33:19,560 --> 00:33:25,360
+Poi, con estrema empatia, anticipa ed esplora quelli che saranno i sentimenti di lui alla
+
+387
+00:33:25,360 --> 00:33:30,980
+lettura di questa lettera e cerca di spiegare perché ritirare l'articolo non sarebbe giusto
+
+388
+00:33:30,980 --> 00:33:33,720
+nei confronti suoi dell'editore e dei lettori.
+
+389
+00:33:33,720 --> 00:33:39,800
+E infine guarda al futuro con una proposta che suona tanto interessante da una parte
+
+390
+00:33:39,800 --> 00:33:42,520
+quanto un ultimatum dall'altra.
+
+391
+00:33:44,840 --> 00:33:47,720
+Devo ora venire a una questione pratica che riguarda il futuro.
+
+392
+00:33:48,120 --> 00:33:53,160
+Ho dei progetti per voi che al momento non ritengo opportuno comunicarvi ma che svilupperò
+
+393
+00:33:53,160 --> 00:33:57,560
+o metterò al servizio di qualche altro settore delle mie energie, del mio tempo, della verità
+
+394
+00:33:57,560 --> 00:34:02,240
+e della scienza della mia penna, seconda della risposta che riceverò da voi a ciò che sto
+
+395
+00:34:02,240 --> 00:34:03,240
+per dichiarare.
+
+396
+00:34:03,240 --> 00:34:08,200
+Vi prego quindi di riflettere profondamente e seriamente sulla questione di quanto possiate
+
+397
+00:34:08,200 --> 00:34:10,000
+aderire o meno alle mie condizioni.
+
+398
+00:34:10,000 --> 00:34:14,520
+Vi offro la prima scelta e la prima offerta dei miei servizi e del mio intelletto.
+
+399
+00:34:14,840 --> 00:34:19,400
+Non rifiutateli con leggerezza, lo dico interamente per vostro bene, credetemi.
+
+400
+00:34:22,040 --> 00:34:27,280
+Si tratta di una lettera carica di passione ma anche di lucidi ragionamenti e progetti
+
+401
+00:34:27,280 --> 00:34:28,280
+per il futuro.
+
+402
+00:34:28,280 --> 00:34:34,120
+È chiarissimo che Ada ritiene di poter condurre quegli aspetti dello sviluppo della macchina
+
+403
+00:34:34,120 --> 00:34:39,800
+analitica che Babbage non è in grado di seguire con il giusto impegno e la giusta attitudine.
+
+404
+00:34:40,240 --> 00:34:45,280
+Anche il migliore dei progetti ha bisogno di essere divulgato agli altri e di una oculata
+
+405
+00:34:45,280 --> 00:34:51,760
+gestione economica e Ada è convinta di poter fare tutto questo meglio dello stesso creatore.
+
+406
+00:34:51,760 --> 00:34:57,920
+Infine chiude la lettera riprendendo un tono più pacato e invitando l'amico ad Ashley
+
+407
+00:34:57,920 --> 00:34:59,320
+Combe per qualche giorno.
+
+408
+00:35:02,000 --> 00:35:03,800
+Lunedì verrete qui per qualche giorno?
+
+409
+00:35:03,800 --> 00:35:04,800
+Spero di sì.
+
+410
+00:35:04,800 --> 00:35:08,200
+Lord Lovelace è molto ansioso di vedervi e conversare con voi.
+
+411
+00:35:08,400 --> 00:35:11,400
+Questa lettera è tristemente macchiata e corretta ma non importa.
+
+412
+00:35:11,400 --> 00:35:15,720
+Mi chiedo se deciderete di mantenere la Lady Fairy al vostro servizio o meno.
+
+413
+00:35:15,720 --> 00:35:19,240
+Sempre con la massima sincerità, Augusta Ada Lovelace.
+
+414
+00:35:21,360 --> 00:35:26,600
+A seguito di questa lettera, invece di includere la prefazione nel memoir, Babbage decide di
+
+415
+00:35:26,600 --> 00:35:29,600
+far stampare le proprie opinioni in forma anonima.
+
+416
+00:35:29,600 --> 00:35:36,160
+Lo scienziato non accetta la proposta professionale della contessa ma, a differenza di quanto si
+
+417
+00:35:36,160 --> 00:35:41,880
+potrebbe immaginare, probabilmente per via della grande onestà che traspare dal testo,
+
+418
+00:35:41,880 --> 00:35:45,760
+la loro amicizia non si rompe a seguito di questo litigio.
+
+419
+00:35:45,760 --> 00:35:51,920
+Più che altro muta, allontanandoli dal punto di vista professionale ma unendoli maggiormente
+
+420
+00:35:51,920 --> 00:35:55,120
+sul piano del rispetto e della fiducia personale.
+
+421
+00:35:55,120 --> 00:36:02,280
+Dopo qualche settimana di ansia ed apprensione, il 9 settembre 1843 arriva la risposta di
+
+422
+00:36:02,280 --> 00:36:05,280
+Babbage all'invito di Ada a recarsi ad Ashley Combe.
+
+423
+00:36:07,160 --> 00:36:14,720
+Mia cara Lady Lovelace, mi pare inutile aspettare di avere il tempo, quindi ho deciso di lasciare
+
+424
+00:36:14,720 --> 00:36:20,840
+in sospeso il resto e di partire per Ashley, portando con me abbastanza carte per dimenticare
+
+425
+00:36:20,840 --> 00:36:25,360
+questo mondo e tutti i suoi problemi, e se possibile i suoi molti ciarlatani.
+
+426
+00:36:25,360 --> 00:36:30,160
+Tutto in poche parole, meno l'incantatrice di numeri.
+
+427
+00:36:37,160 --> 00:36:44,160
+Pochi giorni dopo, a metà del settembre 1843, la traduzione del memoir con le note della
+
+428
+00:36:44,160 --> 00:36:49,960
+contessa di Lovelace viene pubblicata sui Scientific Memoirs di Taylor, con il titolo
+
+429
+00:36:49,960 --> 00:36:55,200
+di Sketch of the Analytical Engine Invented by Charles Babbage.
+
+430
+00:36:55,200 --> 00:37:01,360
+L'orgoglio di Ada è grande, invia subito una serie di copie e suoi amici, i quali rimangono
+
+431
+00:37:01,360 --> 00:37:05,800
+molto colpiti dal lavoro fatto e la riempiono di complimenti e lodi.
+
+432
+00:37:05,800 --> 00:37:12,120
+Il professor De Morgan scrive per definirla un'opera eccellente e per esprimere tutto
+
+433
+00:37:12,120 --> 00:37:14,920
+il suo orgoglio per ciò che è riuscita a compiere.
+
+434
+00:37:14,920 --> 00:37:20,800
+Dall'Italia, Mary Somerville le manda una lettera di congratulazioni commovente, piena
+
+435
+00:37:20,800 --> 00:37:27,160
+di encomi, in cui si dice certa che si tratti solo del primo trionfo di una lunga e illustre
+
+436
+00:37:27,160 --> 00:37:28,160
+carriera.
+
+437
+00:37:28,280 --> 00:37:34,960
+Lady Byron invia una dolce lettera di complimenti con un cesto di fiori e verdura dai giardini
+
+438
+00:37:34,960 --> 00:37:35,960
+di Fordook.
+
+439
+00:37:35,960 --> 00:37:42,320
+William è orgogliosissimo e perfino i bambini, a modo loro, devono aver capito che la loro
+
+440
+00:37:42,320 --> 00:37:44,800
+madre ha fatto qualcosa di straordinario.
+
+441
+00:37:44,800 --> 00:37:50,840
+Purtroppo, però, non appena si viene a sapere che il memoir è stato scritto da una donna,
+
+442
+00:37:50,840 --> 00:37:54,840
+il suo valore di opera scientifica crolla improvvisamente.
+
+443
+00:37:55,280 --> 00:38:00,360
+Se l'ha scritto una donna, concludono gli uomini di scienza, non può essere rilevante
+
+444
+00:38:00,360 --> 00:38:02,400
+come poteva sembrare all'inizio.
+
+445
+00:38:02,400 --> 00:38:07,600
+Il ragionamento non può essere solido se viene da una mente femminile, il soggetto
+
+446
+00:38:07,600 --> 00:38:11,840
+non può essere troppo importante se è stato affidato a mani femminili.
+
+447
+00:38:11,840 --> 00:38:18,480
+E così l'interesse, in realtà già modesto fin dall'inizio, si riduce in fretta a un
+
+448
+00:38:18,480 --> 00:38:22,080
+bisbiglio e presto diviene un assordante silenzio.
+
+449
+00:38:22,400 --> 00:38:28,240
+Ancora una volta, Ada si ritrova davanti un ostacolo insormontabile, per il quale non
+
+450
+00:38:28,240 --> 00:38:29,840
+esiste alcuna soluzione.
+
+451
+00:38:29,840 --> 00:38:35,640
+Non importa che lei sia seconda solo a Babbage nella conoscenza della macchina analitica
+
+452
+00:38:35,640 --> 00:38:41,240
+e che sotto certi aspetti la capisca anche meglio di lui, per quanto possa essere abile,
+
+453
+00:38:41,240 --> 00:38:45,160
+precisa, dettagliata e chiara, resta pur sempre una donna.
+
+454
+00:38:45,160 --> 00:38:50,960
+Il fallimento di quest'ultimo tentativo segna la fine delle speranze per la macchina, anche
+
+455
+00:38:50,960 --> 00:38:56,120
+se Babbage continuerà a lavorare i suoi progetti fino alla morte e Ada non riuscirà
+
+456
+00:38:56,120 --> 00:38:59,280
+mai a dimenticare questo affascinante macchinario.
+
+457
+00:38:59,280 --> 00:39:06,840
+Nonostante la delusione, però, Babbage riconoscerà sempre l'importanza di Ada nel suo progetto.
+
+458
+00:39:06,840 --> 00:39:10,800
+Dopo la morte di lei, scriverà al figlio Byron
+
+459
+00:39:10,800 --> 00:39:16,920
+Nel libro di memorie del signor Menabrea, e ancor più nelle eccellenti note allegate
+
+460
+00:39:16,920 --> 00:39:23,240
+da tua madre, troverai l'unica visione completa delle potenzialità della macchina analitica
+
+461
+00:39:23,240 --> 00:39:28,520
+che i matematici dell'epoca abbiano mai avuto, che i matematici del mondo abbiano ancora
+
+462
+00:39:28,520 --> 00:39:29,520
+espresso.
+
+463
+00:39:29,520 --> 00:39:41,480
+Esaurita l'avventura delle note, Ada sembra abbandonare definitivamente l'idea di avere
+
+464
+00:39:41,480 --> 00:39:44,520
+un futuro nella storia della macchina analitica.
+
+465
+00:39:44,840 --> 00:39:50,720
+Dopo la stesura del memoir e la grande discussione con Babbage, la natura del loro rapporto è
+
+466
+00:39:50,720 --> 00:39:56,040
+cambiata e, nonostante siano rimasti grandi amici, lui non cerca più il suo aiuto in
+
+467
+00:39:56,040 --> 00:39:57,040
+quel campo.
+
+468
+00:39:57,040 --> 00:40:03,440
+Divengono molto più uniti dal punto di vista emotivo e meno coinvolti su quello tecnologico,
+
+469
+00:40:03,440 --> 00:40:08,520
+sebbene la contessa continuerà sempre a sostenere gli sforzi dell'inventore di reperire fondi.
+
+470
+00:40:09,040 --> 00:40:14,880
+Detto ciò, lei resta inoltre ugualmente legata alle sue passioni di sempre, la matematica,
+
+471
+00:40:14,880 --> 00:40:19,560
+le macchine calcolatrici e la musica, alle quali si aggiungono lo studio del sistema
+
+472
+00:40:19,560 --> 00:40:25,440
+nervoso, il mesmerismo e tutte le innovazioni tecnologiche che si susseguono negli anni.
+
+473
+00:40:25,440 --> 00:40:31,560
+Al solito, il fatto di essere nata del sesso sbagliato rappresenta sempre di per sé un
+
+474
+00:40:31,560 --> 00:40:35,920
+primo ostacolo per le attività che lei desidera intraprendere.
+
+475
+00:40:36,320 --> 00:40:41,060
+Affinché possa proseguire nelle sue ricerche, infatti, ha bisogno di avere accesso alle
+
+476
+00:40:41,060 --> 00:40:46,960
+informazioni scientifiche più recenti e questo è tutt'altro che scontato per una donna.
+
+477
+00:40:46,960 --> 00:40:53,120
+Ancora una volta ci torna alla mente l'esempio di Mrs. Somerville della Royal Society e più
+
+478
+00:40:53,120 --> 00:40:59,440
+avanti sarà la stessa scienziata, dirà la contessa di Lovelace, che forse la scintilla
+
+479
+00:40:59,440 --> 00:41:02,480
+celeste non è stata accordata al loro sesso.
+
+480
+00:41:02,920 --> 00:41:08,560
+Forse loro hanno altre capacità, ma il genio originale per la scienza, quello è al di
+
+481
+00:41:08,560 --> 00:41:10,160
+fuori della loro portata.
+
+482
+00:41:10,160 --> 00:41:16,440
+I problemi di salute, poi, si ripresentano più agguerriti che mai, al punto che l'unico
+
+483
+00:41:16,440 --> 00:41:19,600
+sollievo dai dolori è ottenuto grazie all'audano.
+
+484
+00:41:19,600 --> 00:41:26,920
+Questo, però, cura purtroppo solo i sintomi e non le cause e ad ogni interruzione la sofferenza
+
+485
+00:41:26,920 --> 00:41:28,720
+torna più acuta di prima.
+
+486
+00:41:29,120 --> 00:41:36,280
+Il mese di maggio 1851 è un mese straordinario per la rivoluzione industriale e Ada lo ricorda
+
+487
+00:41:36,280 --> 00:41:41,960
+come il giorno del giudizio, riferendosi ad una intensa serie di eventi molto importanti
+
+488
+00:41:41,960 --> 00:41:42,960
+e interessanti.
+
+489
+00:41:42,960 --> 00:41:49,040
+Per lei, però, è il giorno del giudizio anche in un altro senso, perché pochi giorni dopo
+
+490
+00:41:49,040 --> 00:41:50,880
+ha una forte emorragia.
+
+491
+00:41:50,880 --> 00:41:57,600
+In giugno due medici analizzano i suoi sintomi e concludono che ha sviluppato un tumore all'utero.
+
+492
+00:41:57,960 --> 00:42:03,600
+Anche il dottor Locock, suo medico curante, conduce un esame interno e questo rivela che
+
+493
+00:42:03,600 --> 00:42:06,960
+il collo dell'utero è coperto di lesioni cancerose.
+
+494
+00:42:06,960 --> 00:42:12,880
+D'accordo con il marito William, però, decide di non dirlo a lei, ma i sintomi si aggravano
+
+495
+00:42:12,880 --> 00:42:18,080
+e con il passare del tempo le sue lettere indicano chiaramente che la donna sa di essere molto
+
+496
+00:42:18,080 --> 00:42:19,080
+malata.
+
+497
+00:42:19,080 --> 00:42:24,600
+Dalle lettere alla madre e ai figli dell'anno seguente traspare proprio la consapevolezza
+
+498
+00:42:24,600 --> 00:42:26,600
+di chi sa di stare per morire.
+
+499
+00:42:26,600 --> 00:42:32,400
+Negli ultimi mesi di vita, Ada soffre di dolori tremendi che neppure il laudano in dosi
+
+500
+00:42:32,400 --> 00:42:34,320
+massicce riesce a allenire.
+
+501
+00:42:34,320 --> 00:42:40,840
+E a peggiorare le cose si aggiunge un allontanamento emotivo dalla madre, l'aumento dei disaccordi
+
+502
+00:42:40,840 --> 00:42:46,640
+tra Lady Annabel Byron e William e la preoccupazione per dei presunti debiti di gioco.
+
+503
+00:42:46,640 --> 00:42:52,480
+L'amico di una vita, Charles Babbage, viene nominato suo esecutore testamentario.
+
+504
+00:42:52,840 --> 00:43:01,600
+Il 19 agosto 1852, Ada chiede ad un altro amico, Charles Dickens, di venire a leggerle la scena
+
+505
+00:43:01,600 --> 00:43:04,600
+della morte del bambino di Dunbay & Son.
+
+506
+00:43:04,600 --> 00:43:10,360
+Dickens esce dalla sua stanza colpito e commosso dal coraggio e dall'audacia di lei.
+
+507
+00:43:10,360 --> 00:43:16,120
+È l'ultima persona non di famiglia, oltre agli amici e ai medici di Annabel, a vederla
+
+508
+00:43:16,120 --> 00:43:17,120
+viva.
+
+509
+00:43:17,160 --> 00:43:23,240
+Alla fine di agosto, infatti, Lady Byron si è ormai trasferita al numero 6 di Great Cumberland
+
+510
+00:43:23,240 --> 00:43:25,840
+Place per occuparsi della figlia morente.
+
+511
+00:43:25,840 --> 00:43:31,720
+Con il consenso di William assume il controllo della casa, manda via i domestici di Ada e
+
+512
+00:43:31,720 --> 00:43:37,400
+li sostituisce con i propri e decide chi può farle visita e quali lettere leggerle.
+
+513
+00:43:37,400 --> 00:43:41,680
+Una delle sue prime decisioni è vietare l'accesso a Babbage.
+
+514
+00:43:41,680 --> 00:43:44,280
+Lui e Ada non si rivedranno mai più.
+
+515
+00:43:44,440 --> 00:43:52,960
+Le sofferenze continuano per quasi altri tre mesi e il 27 novembre 1852 Ada Byron King,
+
+516
+00:43:52,960 --> 00:43:58,720
+contessa di Lovelace, muore nel suo letto di cancro all'utero all'età di 36 anni.
+
+517
+00:43:58,720 --> 00:44:05,080
+Nei suoi ultimi istanti chiede a William di provvedere alla sua sepoltura accanto al padre,
+
+518
+00:44:05,080 --> 00:44:09,920
+quell'illustre padre che non ha mai conosciuto in vita ma che è ora il suo compagno nella
+
+519
+00:44:09,920 --> 00:44:10,920
+morte.
+
+520
+00:44:10,920 --> 00:44:16,560
+Il 3 dicembre viene sepolta e sua madre, Lady Byron, non partecipa al funerale.
+
+521
+00:44:16,560 --> 00:44:22,920
+Per quasi vent'anni dopo la morte della sua più fedele collaboratrice, Charles Babbage
+
+522
+00:44:22,920 --> 00:44:28,040
+continua a lavorare sui calcolatori che tanto avevano catturato l'immaginazione di lei.
+
+523
+00:44:28,040 --> 00:44:34,440
+Sta ancora migliorando i progetti per la macchina analitica quando a quasi 80 anni muore il
+
+524
+00:44:34,440 --> 00:44:38,800
+18 ottobre 1871 dopo una breve malattia.
+
+525
+00:44:39,200 --> 00:44:42,720
+Non realizzerà mai nessuna delle sue due macchine.
+
+526
+00:44:47,720 --> 00:44:53,600
+Ok, termina così il racconto della vita di Ada nonché il secondo episodio di questa
+
+527
+00:44:53,600 --> 00:44:54,600
+serie.
+
+528
+00:44:54,600 --> 00:44:58,720
+Il finale è un po' pesante, lo so, registrarlo non è stato semplice.
+
+529
+00:44:58,720 --> 00:45:04,840
+Nel prossimo, comunque, quello conclusivo, analizzeremo le parti più interessanti contenute
+
+530
+00:45:04,840 --> 00:45:05,840
+nel memoir.
+
+531
+00:45:05,880 --> 00:45:11,720
+Io intanto ringrazio gli amici che hanno prestato la voce, Chiara Virgili del podcast Dannati
+
+532
+00:45:11,720 --> 00:45:16,440
+Architetti nella parte di Ada, in una prima citazione tratta dall'incantatrice di numeri
+
+533
+00:45:16,440 --> 00:45:22,280
+e poi da Ada di Enchantress of Numbers, e grazie anche ad Alex Racuglia, che ormai dovresti
+
+534
+00:45:22,280 --> 00:45:27,120
+conoscere sia come podcaster che come amico di Pensieri in Codice, nella parte di Charles
+
+535
+00:45:27,120 --> 00:45:30,720
+Babbage, tratto sempre da Ada di Enchantress of Numbers.
+
+536
+00:45:30,720 --> 00:45:34,200
+I link ai libri citati ovviamente li trovi in descrizione.
+
+537
+00:45:34,600 --> 00:45:40,240
+Ringrazio poi sempre i sostenitori fissi ormai del podcast che sono Edoardo e Carlo, e ti
+
+538
+00:45:40,240 --> 00:45:46,320
+ricordo che sul sito pensieriincodice.it trovi tutte le informazioni sul progetto, come contribuire,
+
+539
+00:45:46,320 --> 00:45:47,800
+i partners, ecc.
+
+540
+00:45:47,800 --> 00:45:52,760
+Oggi non ho troppa voglia di ripetere tutta la pappardella, quindi ti do appuntamento
+
+541
+00:45:52,760 --> 00:45:58,240
+al prossimo episodio e ti ricordo che un informatico risolve problemi, a volte, anche usando il
+
+542
+00:45:58,240 --> 00:45:59,240
+computer.
+

@@ -1,0 +1,1648 @@
+1
+00:00:00,000 --> 00:00:07,320
+La criptografia e l'informatica sono due attività umane che prese insieme hanno sempre
+
+2
+00:00:07,320 --> 00:00:13,600
+esercitato un certo fascino su di me, esse procedono a braccetto, si completano a vicenda,
+
+3
+00:00:13,600 --> 00:00:18,960
+si migliorano a vicenda e oggi come oggi sono indispensabili l'una all'altra.
+
+4
+00:00:18,960 --> 00:00:25,040
+In questo episodio quindi ho pensato di parlarti di una moderna storia di criptoanalisi e poi
+
+5
+00:00:25,040 --> 00:00:27,840
+di approfondirne insieme gli aspetti informatici.
+
+6
+00:00:28,160 --> 00:00:34,400
+Insomma, un po' di storia e un po' di riflessioni come al solito in stile Pensieri in Codice, sigla!
+
+7
+00:00:34,400 --> 00:00:43,680
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galano.
+
+8
+00:00:43,680 --> 00:00:54,440
+Oh, finalmente riesco a registrare un nuovo episodio, ormai il tempo è davvero poco,
+
+9
+00:00:54,440 --> 00:00:59,960
+purtroppo quest'anno è andata così, spero però nel mese di novembre che dovrebbe essere il mio
+
+10
+00:00:59,960 --> 00:01:07,920
+mese di ferie, si sentono le virgolette? Ma ad ogni modo ho quasi pronta una miniserie che mi piace
+
+11
+00:01:07,920 --> 00:01:14,600
+tantissimo, almeno mi è piaciuto scriverla, organizzare le collaborazioni eccetera, spero
+
+12
+00:01:14,600 --> 00:01:21,040
+piacerà anche a te. Sarà composta da tre episodi che dovrebbero uscire settimanalmente che saranno
+
+13
+00:01:21,160 --> 00:01:27,960
+uno più interessante dell'altro e lo so che te la prometto praticamente da febbraio ma ormai ci
+
+14
+00:01:27,960 --> 00:01:36,200
+siamo, promesso, di nuovo. Ma ora veniamo a noi e all'argomento di oggi. Di informatica e di
+
+15
+00:01:36,200 --> 00:01:42,000
+crittografia abbiamo già parlato in passato qui su Pensieri in Codice, si tratta di due scienze
+
+16
+00:01:42,000 --> 00:01:48,120
+da sempre molto legate, due aspetti dell'ingegno umano che si muovono di pari passo e che si
+
+17
+00:01:48,120 --> 00:01:54,600
+alimentano l'un l'altro. Da un punto di vista meramente storico la crittografia è un po' più
+
+18
+00:01:54,600 --> 00:02:00,160
+antica dell'informatica, probabilmente fin da quando ha iniziato a comunicare l'essere umano
+
+19
+00:02:00,160 --> 00:02:06,040
+ha sentito il bisogno di condividere informazioni con qualcuno e contemporaneamente nasconderle a
+
+20
+00:02:06,040 --> 00:02:12,600
+qualcun altro. Le prime testimonianze di questo atteggiamento e di prime rudimentali tecniche
+
+21
+00:02:12,600 --> 00:02:19,720
+risalgono infatti a già più di 5.000 anni fa e se ti piace l'idea di saperne un po' di più su
+
+22
+00:02:19,720 --> 00:02:25,040
+questo argomento ti consiglio di dare un'occhiata al libro Decifrare di cui ti lascio in descrizione
+
+23
+00:02:25,040 --> 00:02:31,720
+il link e che offre una bella carrellata di vari metodi utilizzati nel corso della storia. È un
+
+24
+00:02:31,720 --> 00:02:37,160
+libro che ho già consigliato qui su questo podcast ma mi è piaciuto molto soprattutto per la sua
+
+25
+00:02:37,200 --> 00:02:42,480
+scorrevolezza e quindi te lo consiglio di nuovo. Ovviamente essendo una sorta di catalogo è
+
+26
+00:02:42,480 --> 00:02:48,000
+piuttosto generico e non approfondisce gli argomenti però fornisce una bella serie di
+
+27
+00:02:48,000 --> 00:02:53,560
+spunti da cui iniziare. D'altronde è anche un po' il senso di pensieri in codice no? Parlarti
+
+28
+00:02:53,560 --> 00:02:59,600
+di qualcosa e fare in modo che tu ti appassioni ad un certo argomento per poi andare ad approfondirlo
+
+29
+00:02:59,600 --> 00:03:06,120
+in autonomia. Ma tornando al nostro argomento l'informatica è invece una scienza relativamente
+
+30
+00:03:06,120 --> 00:03:11,840
+più recente soprattutto per come la intendiamo noi e cioè come la gestione meccanizzata
+
+31
+00:03:11,840 --> 00:03:17,480
+dell'informatica. Possiamo infatti trovare testimonianze a partire dal X secolo avanti
+
+32
+00:03:17,480 --> 00:03:25,800
+cristo quindi anche qualche millennio dopo la crittografia. Ma parlando pragmaticamente diciamocelo
+
+33
+00:03:25,800 --> 00:03:32,640
+ciò che a noi amanti della tecnologia interessa realmente è tutto più o meno concentrato nell'ultimo
+
+34
+00:03:32,640 --> 00:03:38,760
+secolo. La nascita e lo sviluppo dei computer infatti ha costituito quella spinta enorme al
+
+35
+00:03:38,760 --> 00:03:45,480
+miglioramento dei metodi crittografici e ha anche reso queste pratiche più semplici e a poco a poco
+
+36
+00:03:45,480 --> 00:03:52,600
+alla portata sempre di più persone. Allo stesso tempo poi la medesima spinta innovativa ha anche
+
+37
+00:03:52,600 --> 00:03:59,200
+aumentato le possibilità di mettere in pratica metodologie per la crittoanalisi cioè quelle utili
+
+38
+00:03:59,200 --> 00:04:05,320
+per la rottura dei codici il che ha innescato a sua volta la necessità di nuovi sistemi
+
+39
+00:04:05,320 --> 00:04:11,200
+crittografici più complessi e sicuri il che ha portato a nuovi metodi di rottura e così via.
+
+40
+00:04:11,200 --> 00:04:18,040
+Tutto ciò si è quindi concretizzato in un susseguirsi di invenzioni, di avanzamenti
+
+41
+00:04:18,040 --> 00:04:24,400
+tecnologici, una corsa del gatto col topo, una sorta di spirale esponenziale crittografia più
+
+42
+00:04:24,400 --> 00:04:29,720
+avanzata, code breaking più potente, tecnologia ancora più avanzata, crittoanalisi ancora più
+
+43
+00:04:29,720 --> 00:04:36,120
+spinta e così via. Oggi dunque quello che mi interessa e di cui ti voglio parlare è appunto
+
+44
+00:04:36,120 --> 00:04:42,760
+un episodio di crittoanalisi l'applicazione di una tecnica per rompere una cifratura di cui le
+
+45
+00:04:42,760 --> 00:04:49,120
+chiavi originali erano ormai andate perdute nel tempo un qualcosa che ha permesso a dei
+
+46
+00:04:49,120 --> 00:04:55,440
+ricercatori di recuperare proprio un piccolo pezzo di storia creduto perduto.
+
+47
+00:05:01,440 --> 00:05:07,880
+Oggi la crittografia è veramente alla portata di tutti e perfino nei nostri computer, gli smartphone,
+
+48
+00:05:07,880 --> 00:05:14,680
+protegge i nostri messaggi, gli acquisti e tanto altro senza che noi neanche dobbiamo fare nulla
+
+49
+00:05:14,680 --> 00:05:22,680
+per metterla in funzione, ma non è sempre stato così. Per secoli è stato difficile ricorrere ad un
+
+50
+00:05:22,680 --> 00:05:28,200
+tale metodo di protezione delle informazioni, bisognava conoscere le tecniche, avere tempo e
+
+51
+00:05:28,200 --> 00:05:33,640
+capacità di metterle in atto, corrispondere con chi fosse in grado di fare altrettanto e di
+
+52
+00:05:33,640 --> 00:05:39,960
+invertire il processo per decifrare i testi. Per questi motivi erano soprattutto personaggi di
+
+53
+00:05:39,960 --> 00:05:46,680
+spicco a poterne fare uso, politici, nobili, regnanti e figure importanti in generale potevano
+
+54
+00:05:46,680 --> 00:05:53,080
+scegliere di impiegare risorse per applicare la crittografia a documenti o lettere per impedire
+
+55
+00:05:53,080 --> 00:05:59,000
+che le informazioni in esse contenute finissero nelle mani di nemici o concorrenti. A volte
+
+56
+00:05:59,000 --> 00:06:04,720
+nascondere il contenuto di un testo poteva servire per proteggere segreti di stato, altre volte per
+
+57
+00:06:04,720 --> 00:06:10,480
+coprire le proprie tracce, altre ancora per difendere i propri interessi economici. La
+
+58
+00:06:10,480 --> 00:06:17,440
+crittografia poteva salvare vite come insabbiare misfatti, ma quali che fossero gli scopi sta di
+
+59
+00:06:17,440 --> 00:06:23,440
+fatto che l'applicazione di questa pratica nel tempo ha prodotto una notevole quantità di materiale
+
+60
+00:06:23,440 --> 00:06:31,680
+che è pervenuto a noi a volte ancora in forma non leggibile e pertanto non correttamente catalogato
+
+61
+00:06:31,720 --> 00:06:38,840
+o attribuito ai giusti autori. In pratica ancora oggi abbiamo conservati in biblioteche e archivi
+
+62
+00:06:38,840 --> 00:06:45,560
+tanti documenti non decifrati che non possono e non vengono studiati e che potrebbero essere di
+
+63
+00:06:45,560 --> 00:06:51,440
+grande interesse storico o potrebbero andare a completare parti mancanti all'interno di importanti
+
+64
+00:06:51,440 --> 00:06:58,040
+collezioni. L'unico modo per assegnare loro il giusto posto nella storia è decifrarli, ma data
+
+65
+00:06:58,040 --> 00:07:04,040
+la loro natura segreta spesso le chiavi di cifratura venivano tenute ben nascoste e di
+
+66
+00:07:04,040 --> 00:07:10,120
+conseguenza sono andate perdute nel tempo o intenzionalmente distrutte ed è qui che ci
+
+67
+00:07:10,120 --> 00:07:16,240
+vengono in aiuto i computer e gli algoritmi moderni. Essi permettono infatti ai ricercatori
+
+68
+00:07:16,240 --> 00:07:22,600
+che ne fanno uso di decifrare in tempi ragionevoli codici che fino a pochi anni fa avrebbero richiesto
+
+69
+00:07:22,760 --> 00:07:28,400
+anni di lavoro. I metodi di crittografia sono infatti pensati per rendere la decrittazione
+
+70
+00:07:28,400 --> 00:07:34,880
+impossibile o almeno molto molto complicata e pensare di affrontare un lavoro del genere senza
+
+71
+00:07:34,880 --> 00:07:42,120
+l'aiuto di un moderno calcolatore implicherebbe armarsi di notevole pazienza e dover effettuare
+
+72
+00:07:42,120 --> 00:07:48,960
+migliaia di tentativi a mano. Oggi invece un computer che esegue un buon algoritmo è in grado
+
+73
+00:07:48,960 --> 00:07:55,000
+di sopperire a buona parte di questo lavoro o almeno di tutta quella parte più noiosa e
+
+74
+00:07:55,000 --> 00:08:00,860
+ripetitiva e la storia che ti sto per raccontare parla proprio di come tre ricercatori hanno
+
+75
+00:08:00,860 --> 00:08:08,600
+ritrovato e decifrato a colpi di algoritmi e ragionamenti ben 55 lettere scritte dalla famosa
+
+76
+00:08:08,600 --> 00:08:14,960
+regina di Scozia Mary Stewart. Queste lettere credute perdute fanno ora parte per la quasi
+
+77
+00:08:14,960 --> 00:08:21,560
+totalità della corrispondenza tra Maria Stewart e Michel de Castelnau, ambasciatore di Francia e
+
+78
+00:08:21,560 --> 00:08:30,960
+furono inviate negli anni che vanno dal 1578 al 1584. Potrebbe non sembrare ma si tratta di un
+
+79
+00:08:30,960 --> 00:08:37,680
+ritrovamento che ha un'importanza storica notevole. Esso infatti innanzitutto getta nuova luce su un
+
+80
+00:08:37,680 --> 00:08:44,720
+preciso periodo della vita di Mary Stewart e poi come vedremo a breve ci dà molte informazioni
+
+81
+00:08:44,720 --> 00:08:51,040
+riguardo il metodo criptografico utilizzato all'epoca, sulle scelte per incrementare la
+
+82
+00:08:51,040 --> 00:08:58,240
+sicurezza e persino sulla strana tipologia di errori commessi dai responsabili della codifica.
+
+83
+00:08:58,240 --> 00:09:06,320
+Senza contare il fatto che poi si è scoperto che negli archivi britannici erano presenti già copie
+
+84
+00:09:06,320 --> 00:09:13,720
+in chiaro di sette delle 55 lettere e ciò rappresenta la prova che esse furono in qualche
+
+85
+00:09:13,720 --> 00:09:20,520
+modo intercettate e decifrate già al tempo, probabilmente ad opera di una talpa. E se ora
+
+86
+00:09:20,520 --> 00:09:26,160
+ti stai chiedendo perché non ci si sia dedicati prima alla decrittazione di queste lettere così
+
+87
+00:09:26,160 --> 00:09:33,680
+importanti, beh la risposta è semplice, esse non contenevano alcuna parte scritta in chiaro e
+
+88
+00:09:33,680 --> 00:09:40,400
+pertanto, come ti dicevo poco fa, erano impossibili da riconoscere come appartenenti a Mary Stewart ed
+
+89
+00:09:40,400 --> 00:09:46,680
+erano finite nel posto sbagliato in mezzo a tanti altri documenti che non c'entravano nulla.
+
+90
+00:09:46,680 --> 00:10:01,880
+Mary Stewart nacque nel 1542 e salì al trono di Scozia quando aveva solo sei giorni di vita a
+
+91
+00:10:01,880 --> 00:10:08,760
+seguito della prematura morte del padre Giacomo V. Inviata in Francia all'età di sei anni per
+
+92
+00:10:08,760 --> 00:10:15,960
+essere educata alla corte francese, a 16 sposò l'uomo che l'anno successivo divenne re di Francia
+
+93
+00:10:15,960 --> 00:10:25,560
+e che poi morì l'anno successivo ancora. Nel 1561 poi a 19 anni Maria tornò in Scozia e dopo altri
+
+94
+00:10:25,560 --> 00:10:31,760
+quattro anni sposò Enrico Stewart dando alla luce un figlio che sarebbe in futuro divenuto Giacomo
+
+95
+00:10:31,760 --> 00:10:38,760
+VI. Tuttavia anche questo secondo marito non ebbe vita lunga e poco dopo la sua morte Maria
+
+96
+00:10:38,760 --> 00:10:45,160
+si sposò nuovamente, questa volta con il conte di Bothwell. Questo terzo matrimonio però fu
+
+97
+00:10:45,160 --> 00:10:51,280
+giudicato troppo prematuro dagli ambienti dell'alta società anche perché il conte era sospettato di
+
+98
+00:10:51,280 --> 00:10:57,280
+essere coinvolto nell'omicidio del precedente marito di lei e quindi Maria si inimicò gran
+
+99
+00:10:57,280 --> 00:11:05,040
+parte della nobiltà protestante dell'epoca la quale la fece imprigionare a Loch Leven, un castello
+
+100
+00:11:05,040 --> 00:11:11,200
+su di un'isola al centro di un lago dove lei fu costretta ad abdicare in favore del figlio neonato
+
+101
+00:11:11,200 --> 00:11:19,560
+nel 1567. L'anno successivo riuscì anche a fuggire e rifugiarsi in Inghilterra cercando protezione da
+
+102
+00:11:19,560 --> 00:11:25,400
+parte della regina Elisabetta ma quest'ultima considerandola una minaccia preferì lasciare
+
+103
+00:11:25,400 --> 00:11:31,120
+Giacomo come re di Scozia i cui reggenti erano a favore dei regnanti inglesi e imprigionare di
+
+104
+00:11:31,120 --> 00:11:37,720
+nuovo Maria. La Stuart trascorse così il resto della sua vita in Inghilterra sotto la custodia
+
+105
+00:11:37,720 --> 00:11:44,240
+del conte di Shrewsbury vivendo nei vari castelli e tenute di proprietà di quest'ultimo. Nonostante
+
+106
+00:11:44,240 --> 00:11:50,280
+la prigionia però Maria riuscì a mantenere una discreta corrispondenza con i suoi contatti in
+
+107
+00:11:50,280 --> 00:11:56,800
+Inghilterra e in Francia come appunto l'ambasciatore francese a Londra Castelnau, l'altro protagonista
+
+108
+00:11:56,800 --> 00:12:02,960
+di questa storia o anche l'arcivescovo di Glasgow James Beaton. Fu proprio a causa di questa sua
+
+109
+00:12:02,960 --> 00:12:08,760
+condizione di prigioniera politica e la necessità di comunicare con i suoi collaboratori che Maria
+
+110
+00:12:08,760 --> 00:12:15,400
+dovette ricorrere all'impiego appunto della criptografia. Una serie di canali di comunicazione
+
+111
+00:12:15,400 --> 00:12:21,080
+segreti mantenuti attivi grazie ad un manipolo di persone fidate infatti le permettevano di
+
+112
+00:12:21,080 --> 00:12:27,600
+spedire e ricevere lettere il cui contenuto andava ben oltre i normali affari di una nobile donna e
+
+113
+00:12:27,600 --> 00:12:34,600
+amministratrice di proprietà. Non era però raro che alcune di queste missive venissero intercettate
+
+114
+00:12:34,600 --> 00:12:41,480
+o non recapitate a causa di vari problemi impedimenti o persino trappole e pertanto per
+
+115
+00:12:41,480 --> 00:12:47,360
+evitare che occhi indiscreti ne leggessero il contenuto molte delle lettere scritte da Maria
+
+116
+00:12:47,360 --> 00:12:55,080
+in quel periodo venivano criptate e le 55 di cui parliamo oggi ne sono proprio un esempio.
+
+117
+00:12:55,080 --> 00:13:07,520
+Come già accennato fatta eccezione per una di esse tutte le lettere trattate nel corso di questo
+
+118
+00:13:07,520 --> 00:13:14,920
+studio di cui parliamo oggi erano interamente cifrate quindi non vi era alcun testo in chiaro
+
+119
+00:13:14,920 --> 00:13:20,720
+che permettesse di identificare i soggetti coinvolti il periodo o la zona geografica. Date,
+
+120
+00:13:20,720 --> 00:13:28,640
+emittente, destinatario tutto risultava totalmente illegibile e indecifrabile e inoltre le 55
+
+121
+00:13:28,640 --> 00:13:34,480
+lettere erano state mischiate in un archivio che conteneva vari altri documenti di cui molti in
+
+122
+00:13:34,560 --> 00:13:40,680
+chiaro in italiano dando così l'impressione che si trattasse di un'unica collezione. Probabilmente
+
+123
+00:13:40,680 --> 00:13:46,600
+chi le aveva catalogate in quel modo aveva ricostruito in qualche modo il periodo storico
+
+124
+00:13:46,600 --> 00:13:53,320
+infatti sono tutti documenti del XVI secolo ma aveva erroneamente dedotto che si trattasse
+
+125
+00:13:53,320 --> 00:14:06,920
+di versioni cifrate e in chiaro degli stessi testi. A breve approfondiremo vari aspetti più
+
+126
+00:14:06,920 --> 00:14:12,520
+in dettaglio ma per ora diciamo che a grandi linee il processo di decifrazione attuato dagli
+
+127
+00:14:12,520 --> 00:14:19,320
+studiosi è stato un misto di deduzione umana e applicazione di un algoritmo di ottimizzazione e
+
+128
+00:14:19,320 --> 00:14:24,880
+si è svolto più o meno in questo modo. I ricercatori hanno dovuto innanzitutto eseguire
+
+129
+00:14:24,880 --> 00:14:30,880
+una prima sessione di analisi per identificare la lingua originale del testo e per farlo hanno
+
+130
+00:14:30,880 --> 00:14:37,000
+utilizzato l'algoritmo che tra un po' esamineremo più in dettaglio. Una volta scoperta la lingua
+
+131
+00:14:37,000 --> 00:14:42,880
+hanno poi potuto individuare quali fossero gli omofoni, cioè i simboli che rappresentano le
+
+132
+00:14:42,880 --> 00:14:48,480
+lettere dell'alfabeto, quali fossero i caratteri speciali ad esempio un simbolo che serve a
+
+133
+00:14:48,480 --> 00:14:55,920
+duplicare l'ultimo simbolo e infine la struttura di base del cifrario. Il cifrario è la chiave che
+
+134
+00:14:55,920 --> 00:15:02,360
+permette sia di criptare che di decriptare un testo. Poi sono passati ad identificare i simboli
+
+135
+00:15:02,360 --> 00:15:08,840
+dei prefissi, dei suffissi, delle preposizioni e quelli che rappresentavano alcune parole intere.
+
+136
+00:15:08,840 --> 00:15:14,720
+Sulla base di questa decifrazione parziale gli è stato poi possibile attribuire i testi a Mary
+
+137
+00:15:14,720 --> 00:15:19,680
+Stuart, regina di Scozia e capire che erano lettere indirizzate all'ambasciatore francese
+
+138
+00:15:19,680 --> 00:15:25,920
+Castelnau. Arrivati a questo punto, esaminando altre lettere precedentemente già conosciute
+
+139
+00:15:25,920 --> 00:15:32,120
+della corrispondenza tra la Stuart e Castelnau, i ricercatori hanno scovato anche le versioni in
+
+140
+00:15:32,120 --> 00:15:38,080
+chiaro di cui abbiamo parlato poco fa e così hanno potuto determinare e verificare il significato di
+
+141
+00:15:38,080 --> 00:15:44,640
+vari altri elementi. E infine, dopo tutto questo lavoro, hanno dovuto identificare i simboli che
+
+142
+00:15:44,640 --> 00:15:52,280
+rappresentano nomi, luoghi e mesi dell'anno e finalmente hanno potuto completare la trascrizione
+
+143
+00:15:52,280 --> 00:15:58,240
+e decifrazione definitiva di tutti i documenti. In tutto questo, un aspetto che ho trovato molto
+
+144
+00:15:58,240 --> 00:16:03,760
+interessante è che nel corso di questo processo sono venuti fuori numerosi passaggi oscuri e
+
+145
+00:16:03,840 --> 00:16:09,920
+incomprensibili poiché contenevano un gran numero di errori ortografici e ad un esame più attento
+
+146
+00:16:09,920 --> 00:16:16,240
+poi sono persino emersi dei modelli ricorrenti che difficilmente possono essere spiegati con i
+
+147
+00:16:16,240 --> 00:16:22,000
+classici errori sporadici che ci si aspetta di commettere quando si cifrano lunghi testi a mano.
+
+148
+00:16:22,000 --> 00:16:29,240
+Solo una volta chiarito anche quest'ultimo mistero, e a breve vedremo come, l'indagine si è potuta
+
+149
+00:16:29,240 --> 00:16:43,560
+veramente considerare completa. Per capire come sono state decifrate le 55 lettere di Mary Stewart
+
+150
+00:16:43,560 --> 00:16:49,600
+dobbiamo innanzitutto capire come esse erano state cifrate originariamente. A dire il vero,
+
+151
+00:16:49,600 --> 00:16:55,840
+il principio di base dei cifrari è rimasto invariato per secoli. Ad ogni lettera dell'alfabeto viene
+
+152
+00:16:55,840 --> 00:17:02,240
+sostituito un simbolo che la rappresenti. Questa pratica prende il nome di crittografia tramite
+
+153
+00:17:02,240 --> 00:17:09,480
+cifrario a sostituzione e la sua forma più semplice è rappresentata dal cifrario a sostituzione
+
+154
+00:17:09,480 --> 00:17:16,480
+monoalfabetico, cioè quello in cui ad ogni lettera corrisponde un unico simbolo. Per esempio,
+
+155
+00:17:16,480 --> 00:17:23,600
+possiamo banalmente costruire uno di questi cifrari facendo corrispondere delle forme geometriche alle
+
+156
+00:17:23,600 --> 00:17:30,640
+lettere dell'alfabeto, un quadrato per l'A, un triangolo per la B, un cerchio per la C e così via,
+
+157
+00:17:30,640 --> 00:17:37,120
+magari inventandoci qualche figura irregolare perché ce ne servono ovviamente 26 in totale.
+
+158
+00:17:37,120 --> 00:17:43,840
+Già nel X secolo però, gli studiosi arabi avevano sviluppato una tecnica chiamata analisi delle
+
+159
+00:17:43,840 --> 00:17:49,560
+frequenze molto efficace per decifrare questo genere di codici crittografici. Tale tecnica
+
+160
+00:17:49,560 --> 00:17:57,040
+si basa sul fatto che alcune lettere dell'alfabeto sono usate molto più frequentemente di altre e i
+
+161
+00:17:57,040 --> 00:18:03,120
+simboli che le rappresentano sono probabilmente presenti più volte nei testi cifrati e dunque
+
+162
+00:18:03,120 --> 00:18:10,440
+sono più facili da identificare. Questa regola vale un po' per qualsiasi lingua, ad esempio in inglese
+
+163
+00:18:10,440 --> 00:18:15,680
+la E e la T sono particolarmente frequenti in qualsiasi testo, in italiano vale lo stesso per
+
+164
+00:18:15,760 --> 00:18:22,960
+la E, la A e la I. Pertanto in un testo cifrato monoalfabeticamente, assegnando un simbolo ad
+
+165
+00:18:22,960 --> 00:18:29,440
+una lettera, noteremmo immediatamente il ripetersi con maggiore frequenza di alcuni simboli e
+
+166
+00:18:29,440 --> 00:18:36,760
+potremmo usare questa informazione come ottima base di partenza per decriptare il testo. Nel XV
+
+167
+00:18:36,760 --> 00:18:42,880
+secolo quindi, proprio per ostacolare l'analisi delle frequenze, sono stati introdotti i cosiddetti
+
+168
+00:18:43,080 --> 00:18:51,200
+cifrari omofonici in cui le lettere più comuni sono rappresentate da più di un simbolo. Utilizzando
+
+169
+00:18:51,200 --> 00:18:56,840
+un cifrario omofonico, quando si effettua la codifica e si deve trasformare una lettera come
+
+170
+00:18:56,840 --> 00:19:04,240
+la E, si può dunque scegliere tra un gruppo di simboli anziché essere costretti ad usare sempre
+
+171
+00:19:04,240 --> 00:19:10,800
+lo stesso. In questo modo l'analisi delle frequenze viene fortemente disturbata introducendo maggiore
+
+172
+00:19:10,800 --> 00:19:16,360
+variabilità sugli elementi più frequenti. Ripercorrendo però lo stesso ragionamento anche
+
+173
+00:19:16,360 --> 00:19:23,400
+per le parole o le sillabe più comuni, si intuisce immediatamente che anch'esse possono rivelare
+
+174
+00:19:23,400 --> 00:19:30,080
+schemi ricorrenti utili ai decifratori di codici e quindi possono essere a loro volta oggetto di
+
+175
+00:19:30,080 --> 00:19:36,120
+analisi di frequenza. Articoli, avverbi e proposizioni ne sono un esempio, ma anche i nomi
+
+176
+00:19:36,120 --> 00:19:42,680
+propri nel caso in cui si stia lavorando su grandi archivi monotematici. Per questo motivo col
+
+177
+00:19:42,680 --> 00:19:48,800
+passare del tempo, ai cifrari omofonici è stata aggiunta anche la pratica della nomenclatura che
+
+178
+00:19:48,800 --> 00:19:55,080
+consiste nell'usare uno specifico gruppo di simboli per indicare una parola, un nome o una sillaba di
+
+179
+00:19:55,080 --> 00:20:01,520
+uso più frequente. In tal modo nel corso degli anni hanno iniziato a fare la loro comparsa testi
+
+180
+00:20:01,520 --> 00:20:08,060
+cifrati contenenti simboli misti, alcuni a sostituire le lettere dell'alfabeto, altri per i
+
+181
+00:20:08,060 --> 00:20:14,520
+nomi, altri ancora per le parole di uso più comune e così via. Infine, sempre per aggiungere maggiore
+
+182
+00:20:14,520 --> 00:20:20,640
+complessità per disturbare l'analisi delle frequenze, è stato introdotto anche l'utilizzo di simboli
+
+183
+00:20:20,640 --> 00:20:26,960
+nulli che devono semplicemente essere ignorati durante la decifrazione e di simboli speciali che
+
+184
+00:20:26,960 --> 00:20:32,760
+indicano necessità particolari come ad esempio ripetere il simbolo precedente o cancellarlo.
+
+185
+00:20:32,760 --> 00:20:39,680
+Dato il loro buon livello di sicurezza, quindi, i cifrari a sostituzione omofonica corredati di
+
+186
+00:20:39,680 --> 00:20:52,360
+nomenclatura e simboli speciali sono stati utilizzati per secoli. Inizialmente, quindi,
+
+187
+00:20:52,360 --> 00:20:58,600
+i ricercatori si aspettavano già che le 55 lettere fossero cifrate tramite un cifrario
+
+188
+00:20:58,600 --> 00:21:05,160
+omofonico con nomenclatura e simboli speciali, tuttavia non avevano idea a priori di quale
+
+189
+00:21:05,160 --> 00:21:11,200
+fosse la lingua in cui erano state originariamente scritte. Come già detto, infatti, non era presente
+
+190
+00:21:11,200 --> 00:21:18,920
+alcuna parola in chiaro. Inoltre, sommando tutti i documenti, si ottenevano ben 219 simboli distinti,
+
+191
+00:21:18,960 --> 00:21:25,280
+quasi dieci volte quelli di un normale alfabeto. L'unico modo per decifrare un testo del genere,
+
+192
+00:21:25,280 --> 00:21:31,600
+quindi, è ricostruire il cifrario, cioè la mappatura tra i simboli e i loro rispettivi
+
+193
+00:21:31,600 --> 00:21:37,080
+significati e dunque per iniziare a capirci qualcosa era essenziale cominciare a individuare
+
+194
+00:21:37,080 --> 00:21:42,280
+almeno quali fossero i corrispondenti delle lettere alfabetiche. E per risolvere questo
+
+195
+00:21:42,280 --> 00:21:47,320
+problema i ricercatori avevano un'arma molto potente e versatile a loro disposizione,
+
+196
+00:21:47,320 --> 00:21:54,000
+un cosiddetto algoritmo di ottimizzazione. Di ottimizzazione abbiamo già parlato qui su
+
+197
+00:21:54,000 --> 00:21:59,440
+Pensieri in Codice e negli episodi, ad esempio, sul problema del commesso viaggiatore, quindi se
+
+198
+00:21:59,440 --> 00:22:05,400
+non hai proprio idea di cosa io stia parlando ti consiglio di recuperarli per avere un quadro più
+
+199
+00:22:05,400 --> 00:22:11,680
+generale. Riassumendo brevemente però, il problema di recuperare la chiave di un cifrario a partire
+
+200
+00:22:11,680 --> 00:22:17,920
+solamente dal testo cifrato è perfettamente riconducibile ad un problema di ottimizzazione.
+
+201
+00:22:17,920 --> 00:22:25,120
+A tale scopo si esegue l'algoritmo per calcolare una serie di possibili soluzioni e individuare
+
+202
+00:22:25,120 --> 00:22:30,040
+fra esse quella definita ottima, ossia quella che totalizza un punteggio maggiore in base
+
+203
+00:22:30,040 --> 00:22:36,320
+ai criteri specificati dall'utente. Una volta individuata, tale soluzione probabilmente
+
+204
+00:22:36,320 --> 00:22:41,120
+corrisponderà a quella corretta, che nel nostro caso è la chiave originaria utilizzata per
+
+205
+00:22:41,120 --> 00:22:47,520
+cifrare il testo. I ricercatori di questo studio si sono quindi affidati alla ricerca stocastica,
+
+206
+00:22:47,520 --> 00:22:53,280
+una famiglia di tecniche ampiamente utilizzate per la ricerca di soluzioni ottime e nello specifico
+
+207
+00:22:53,280 --> 00:22:59,040
+hanno fatto uso della cosiddetta Hill Climbing, che è una tecnica relativamente semplice e
+
+208
+00:22:59,040 --> 00:23:05,640
+comunemente utilizzata. Per assegnare il punteggio ad una soluzione candidata hanno stabilito il
+
+209
+00:23:05,640 --> 00:23:10,960
+criterio di valutare la qualità del testo decifrato ottenuto utilizzandola, quindi
+
+210
+00:23:10,960 --> 00:23:17,000
+in pratica hanno deciso che migliore era il risultato di una decifrazione, migliore era
+
+211
+00:23:17,000 --> 00:23:20,480
+la chiave utilizzata per ottenerla, abbastanza logico.
+
+212
+00:23:20,480 --> 00:23:26,600
+So che detta in questo modo potrebbe sembrare un'affermazione banale, ma tieni sempre a
+
+213
+00:23:26,600 --> 00:23:33,380
+mente che ad un algoritmo vanno date istruzioni precise ed esaustive perché possa lavorare
+
+214
+00:23:33,380 --> 00:23:39,220
+correttamente. E come hanno fatto quindi i ricercatori a calcolare praticamente questo
+
+215
+00:23:39,220 --> 00:23:45,500
+valore di qualità? Beh, matematicamente è un po' complicato da spiegare in un podcast,
+
+216
+00:23:45,500 --> 00:23:50,860
+ci sono formule, logaritmi e sommatorie, quindi se ti interessano i dettagli ti ricordo sempre
+
+217
+00:23:50,860 --> 00:23:56,260
+che in descrizione trovi i link alle fonti di tutto quello che dico, ma possiamo provare
+
+218
+00:23:56,260 --> 00:23:58,780
+a descrivere il tutto a grandi linee.
+
+219
+00:23:59,180 --> 00:24:04,420
+Punto primo. Prima di applicare l'algoritmo i ricercatori hanno provato a indovinare
+
+220
+00:24:04,420 --> 00:24:11,260
+quale fosse la lingua originale dei documenti e per essa hanno calcolato con che frequenza
+
+221
+00:24:11,260 --> 00:24:18,300
+appaiono normalmente le sequenze di 5 lettere. Per farlo hanno utilizzato un corpus di testi
+
+222
+00:24:18,300 --> 00:24:26,100
+selezionati nella lingua scelta e hanno contato le frequenze dopo aver rimosso spazi e punteggiature.
+
+223
+00:24:26,420 --> 00:24:31,140
+Quindi, per capirci, immaginiamo ad esempio di fare questa operazione per l'italiano che
+
+224
+00:24:31,140 --> 00:24:37,740
+poi è la lingua che hanno provato per prima. Sceglieremo un corposo elenco di testi, elimineremo
+
+225
+00:24:37,740 --> 00:24:44,060
+completamente spazi e punteggiatura e poi andremo a calcolare con che frequenza compaiono
+
+226
+00:24:44,060 --> 00:24:51,340
+tutti i quintetti di lettere. In una frase tipo il mio cane si chiama cane, sì come
+
+227
+00:24:51,340 --> 00:25:00,740
+quello del tenente colombo, andremo ad estrarre sequenze del tipo il mio o il mioca e così
+
+228
+00:25:00,740 --> 00:25:07,060
+via. So che così non sembra avere molto senso ma pensa ad una sequenza come zione, ti renderai
+
+229
+00:25:07,060 --> 00:25:13,780
+subito conto che questa sarà molto più usata di altre in un testo in italiano. Ad ogni modo
+
+230
+00:25:13,780 --> 00:25:19,620
+di tutte queste sequenze dovremo poi stilare una classifica. Più volte le abbiamo incontrate
+
+231
+00:25:19,620 --> 00:25:26,740
+e più in alto saranno nell'elenco. Il risultato di tutto ciò sarà la nostra statistica di
+
+232
+00:25:26,740 --> 00:25:32,860
+riferimento. Durante l'esecuzione dell'algoritmo, quindi per valutare una decifrazione provvisoria
+
+233
+00:25:32,860 --> 00:25:38,460
+realizzata tramite una chiave candidata, i ricercatori hanno controllato le occorrenze
+
+234
+00:25:38,460 --> 00:25:44,260
+delle sequenze di cinque lettere nel testo decifrato e le hanno messe in rapporto con
+
+235
+00:25:44,260 --> 00:25:50,020
+la loro statistica di riferimento. In pratica, tenendo conto delle differenze di lunghezza tra
+
+236
+00:25:50,020 --> 00:25:57,180
+i testi, più le frequenze relative tra decifrato e riferimento si avvicinavano, più la chiave usata
+
+237
+00:25:57,180 --> 00:26:03,760
+veniva considerata di qualità. Tornando quindi al nostro esempio per la lingua italiana, dicevamo
+
+238
+00:26:03,760 --> 00:26:11,100
+che c'è da immaginare che la sequenza zione sia molto più presente di altre come otare o edere e
+
+239
+00:26:11,100 --> 00:26:18,580
+pertanto la chiave è da considerarsi migliore rispetto ad un'altra se produce un testo che
+
+240
+00:26:18,580 --> 00:26:26,060
+rispetta maggiormente tali proporzioni. Spero di essere riuscito a spiegarmi o in caso contrario
+
+241
+00:26:26,060 --> 00:26:31,780
+possiamo sempre continuare il discorso nel gruppo Telegram di Pensieri in Codice, lo trovi sul sito
+
+242
+00:26:31,780 --> 00:26:38,660
+di pensieriincodice.it o semplicemente cercando su Telegram. E comunque, ad essere onesti,
+
+243
+00:26:38,660 --> 00:26:44,260
+anche il paper originale non mi è sembrato esaustivo su questo punto. Ho provato ad esempio
+
+244
+00:26:44,260 --> 00:26:49,340
+a cercare informazioni sul perché scegliere proprio sequenze di cinque lettere ma non ho
+
+245
+00:26:49,340 --> 00:26:55,340
+trovato granché e credo che sia un argomento più legato alla linguistica. Se quindi tu che mi
+
+246
+00:26:55,340 --> 00:27:01,500
+ascolti hai maggiori conoscenze in merito, magari contattami che potremmo parlarne in un prossimo
+
+247
+00:27:01,500 --> 00:27:08,300
+episodio. Ma tornando agli aspetti più informatici della questione, dicevamo che applicando l'algoritmo
+
+248
+00:27:08,340 --> 00:27:14,220
+di Hill Climbing al problema di individuare una chiave crittografica si ottiene un procedimento
+
+249
+00:27:14,220 --> 00:27:20,140
+di ricerca della soluzione ottima. Ad ogni iterazione l'algoritmo genera una mappatura
+
+250
+00:27:20,140 --> 00:27:27,740
+in modo semi-casuale, la utilizza per decifrare il testo e calcola un punteggio per il risultato
+
+251
+00:27:27,740 --> 00:27:35,180
+ottenuto. Se tale punteggio è migliore del precedente, la nuova mappatura viene utilizzata
+
+252
+00:27:35,180 --> 00:27:42,140
+come base per la prossima iterazione, altrimenti viene scartata e l'algoritmo continua a usare
+
+253
+00:27:42,140 --> 00:27:48,660
+come soluzione di partenza la chiave attuale. Ricorda sempre che le parole chiave, soluzione e
+
+254
+00:27:48,660 --> 00:27:55,060
+mappatura in questo contesto sono sinonimi. Il processo quindi prosegue in questo modo finché
+
+255
+00:27:55,060 --> 00:28:02,180
+giro dopo giro non arriva ad un punto nel quale non riesce più a migliorare la chiave. Il trucco
+
+256
+00:28:02,180 --> 00:28:08,140
+sta nella generazione della mappatura, che di volta in volta viene fatto eseguendo solo un
+
+257
+00:28:08,140 --> 00:28:13,380
+piccolo cambiamento rispetto alla versione precedente. Nel nostro caso specifico sono
+
+258
+00:28:13,380 --> 00:28:19,460
+stati utilizzati solo due tipi di modifiche della soluzione candidata, lo scambio di due simboli
+
+259
+00:28:19,460 --> 00:28:26,500
+qualsiasi e la riassegnazione di uno qualsiasi dei simboli. Cioè in pratica l'algoritmo ad ogni
+
+260
+00:28:26,500 --> 00:28:33,220
+modifica della chiave poteva provare una tra due strade o scambiava due lettere corrispondenti a
+
+261
+00:28:33,220 --> 00:28:38,500
+due simboli, quindi se prima il quadrato corrispondeva ad A e il triangolo a B poteva
+
+262
+00:28:38,500 --> 00:28:45,100
+provare a invertirli, oppure assegnava una differente associazione tra una lettera e un
+
+263
+00:28:45,100 --> 00:28:51,340
+simbolo, quindi se prima la A corrispondeva al triangolo poteva provare a farla corrispondere
+
+264
+00:28:51,940 --> 00:28:58,820
+al cerchio. Il nome il climbing sta ad indicare che l'algoritmo progressivamente scala verso
+
+265
+00:28:58,820 --> 00:29:05,180
+soluzioni sempre migliori, come un individuo che passo dopo passo scala una collina verso
+
+266
+00:29:05,180 --> 00:29:12,180
+l'avetta, ma questa affermazione appare molto più chiara se vai ad esempio a consultare il paper
+
+267
+00:29:12,180 --> 00:29:19,740
+originale che alla figura A20 dell'appendice A evidenzia la rappresentazione grafica dell'algoritmo.
+
+268
+00:29:20,300 --> 00:29:26,140
+Quello che però è molto interessante è che in generale, nella maggior parte dei problemi di
+
+269
+00:29:26,140 --> 00:29:32,820
+ottimizzazione, potrebbero esistere più colline, più massimali, quindi più soluzioni che
+
+270
+00:29:32,820 --> 00:29:39,620
+matematicamente sembrano corrette, ma di cui solo una lo è veramente e viene chiamata massimo
+
+271
+00:29:39,620 --> 00:29:46,620
+globale. E benché ultimamente tantissimi facciano di tutto per farci credere il contrario, i computer
+
+272
+00:29:46,660 --> 00:29:53,380
+non hanno ancora sviluppato una vera intelligenza, perciò esiste sempre il rischio che un algoritmo
+
+273
+00:29:53,380 --> 00:30:00,580
+rimanga matematicamente bloccato in uno di questi massimali locali. Se li immaginiamo infatti proprio
+
+274
+00:30:00,580 --> 00:30:06,860
+come una serie di collinette di cui solo una è la più alta di tutte, possiamo intuire facilmente
+
+275
+00:30:06,860 --> 00:30:14,220
+che ci sia la possibilità concreta che l'algoritmo si incammini lungo un pendio sbagliato e una volta
+
+276
+00:30:14,220 --> 00:30:20,580
+in cima, potendo attuare solo minime modifiche alla chiave, resti intrappolato in quella che
+
+277
+00:30:20,580 --> 00:30:26,220
+crede essere la soluzione migliore. Un po' come un uomo che ad ogni passo controlla ottusamente
+
+278
+00:30:26,220 --> 00:30:33,300
+l'altitudine a cui si trova e non vuole mai che essa diminuisca, no? La vetta più alta è in
+
+279
+00:30:33,300 --> 00:30:39,780
+realtà un'altra rispetto a quella dove si trova, ma qualsiasi passo egli faccia in qualsiasi
+
+280
+00:30:39,780 --> 00:30:46,740
+direzione provoca una diminuzione di altitudine prima che questa aumenti di nuovo. Per superare
+
+281
+00:30:46,740 --> 00:30:53,340
+problemi del genere con l'Hill Climbing, dunque, si è soliti eseguire più volte l'intero processo
+
+282
+00:30:53,340 --> 00:31:00,340
+partendo sempre da una diversa soluzione iniziale generata in modo casuale, ma nel nostro caso
+
+283
+00:31:00,340 --> 00:31:07,340
+specifico l'algoritmo impiegato dai ricercatori è stato una variante del Hill Climbing chiamata
+
+284
+00:31:07,340 --> 00:31:14,220
+Simulated Handling, che risolve il problema dei massimali locali consentendo alcuni cambiamenti
+
+285
+00:31:14,220 --> 00:31:19,460
+di pendenza che comportano un punteggio peggiore nel percorso intermedio.
+
+286
+00:31:26,460 --> 00:31:32,540
+Le difficoltà incontrate durante questo studio comunque non sono state solo di tipo informatico
+
+287
+00:31:32,540 --> 00:31:38,780
+o matematico. Come anticipato, l'algoritmo di ottimizzazione ha permesso infatti di recuperare
+
+288
+00:31:38,780 --> 00:31:45,780
+la mappatura dei simboli omofonici tramite un processo quasi totalmente automatico, ma tutti
+
+289
+00:31:45,780 --> 00:31:52,180
+i simboli della nomenclatura che rappresentavano parole comuni, parti di parole, nomi o luoghi
+
+290
+00:31:52,180 --> 00:31:58,420
+hanno richiesto molto altro lavoro. All'inizio i ricercatori non avendo modo di sapere quali
+
+291
+00:31:58,420 --> 00:32:05,220
+simboli fossero omofoni e quali invece rappresentassero altre entità linguistiche, hanno applicato
+
+292
+00:32:05,220 --> 00:32:11,060
+l'algoritmo di Hill Climbing ipotizzando che ogni simbolo potesse rappresentare una
+
+293
+00:32:11,060 --> 00:32:15,940
+qualsiasi lettera dell'alfabeto. Il primo tentativo è stato fatto supponendo che la
+
+294
+00:32:15,940 --> 00:32:21,300
+lingua originale dei testi fosse l'italiano, dato che essi erano stati rinvenuti in una
+
+295
+00:32:21,300 --> 00:32:26,420
+collezione contenente quasi solo materiale nella nostra lingua, ma ciò non ha portato
+
+296
+00:32:26,420 --> 00:32:32,340
+a nulla di concreto. Solo quando dopo vari tentativi i ricercatori hanno provato con il
+
+297
+00:32:32,340 --> 00:32:39,260
+francese, hanno finalmente ottenuto una prima decrittazione sensata e di conseguenza una prima
+
+298
+00:32:39,260 --> 00:32:45,820
+mappatura valida. Seguendo questa linea dunque il processo è andato avanti come un susseguirsi di
+
+299
+00:32:45,820 --> 00:32:52,420
+esperimenti. I ricercatori hanno lavorato formulando un'ipotesi e sfruttando poi l'algoritmo di
+
+300
+00:32:52,420 --> 00:32:58,900
+ottimizzazione e la relativa decifrazione per verificarne la bontà. Ad esempio hanno ipotizzato
+
+301
+00:32:58,900 --> 00:33:04,740
+che un certo simbolo potesse servire a duplicare l'ultima lettera e con tali presupposti hanno
+
+302
+00:33:04,740 --> 00:33:11,180
+eseguito una versione riconfigurata dell'algoritmo di ottimizzazione. Poi hanno ipotizzato che il tal
+
+303
+00:33:11,180 --> 00:33:17,620
+simbolo servisse a cancellare l'ultima lettera e di nuovo hanno eseguito la decifrazione. Hanno
+
+304
+00:33:17,620 --> 00:33:23,060
+provato a considerare i simboli diacritici come rappresentanti di parole o in generale
+
+305
+00:33:23,060 --> 00:33:28,180
+qualcosa di differente rispetto alle singole lettere sulla base del fatto che i cifrari di
+
+306
+00:33:28,180 --> 00:33:33,060
+quel periodo utilizzavano questo tipo di approccio quindi le hanno esclusi per affinare i risultati
+
+307
+00:33:33,060 --> 00:33:39,460
+dell'esecuzione dell'algoritmo. Ogni nuova ipotesi era seguita da una o più verifiche
+
+308
+00:33:39,460 --> 00:33:45,540
+automatizzate tramite l'esecuzione di ottimizzazione, decrittazione e valutazione della bontà del
+
+309
+00:33:45,540 --> 00:33:51,940
+risultato. Se l'ipotesi veniva confermata si fissava un nuovo tassello del puzzle e si passava
+
+310
+00:33:51,940 --> 00:33:58,740
+poi al successivo. Insomma si è trattato di un vero e proprio processo di risoluzione di un enigma ad
+
+311
+00:33:58,740 --> 00:34:05,060
+eccezione del fatto che l'algoritmo di ottimizzazione gli ha fornito un enorme aiuto occupandosi della
+
+312
+00:34:05,060 --> 00:34:11,780
+parte più pesante e noiosa. Solo dopo molti tentativi è stato finalmente raggiunto un grado
+
+313
+00:34:11,780 --> 00:34:19,420
+di decrittazione tale da poter leggere i documenti abbastanza chiaramente da permettere di identificare
+
+314
+00:34:19,420 --> 00:34:26,620
+anche i simboli che rappresentavano persone o luoghi. Sì perché senza il dizionario della
+
+315
+00:34:26,620 --> 00:34:33,380
+nomenclatura a disposizione è stato indispensabile poter leggere la maggior parte del testo per poi
+
+316
+00:34:33,380 --> 00:34:40,140
+ricostruire e indovinare i soggetti, i luoghi e gli eventi sulla base di altre fonti. Come in
+
+317
+00:34:40,140 --> 00:34:47,020
+un racconto in cui nel testo mancano solo alcune parole, si sa dove mancano, si sa che sono nomi e
+
+318
+00:34:47,020 --> 00:34:54,740
+si sa anche quando due spazi corrispondono allo stesso nome e per indovinarli è necessario riuscire
+
+319
+00:34:54,740 --> 00:35:01,300
+a leggere abbastanza da poter capire fatti e contesto. Alla fine i ricercatori sono arrivati
+
+320
+00:35:01,300 --> 00:35:06,900
+a stabilire che l'autrice delle lettere fosse Maria Stewart regina di Scozia e hanno quindi
+
+321
+00:35:07,100 --> 00:35:13,260
+preso in considerazione nomi di personaggi e luoghi che potevano in qualche modo essere legati
+
+322
+00:35:13,260 --> 00:35:19,780
+a lei, amici, conoscenti, congiunti, proprietà, sedi nobiliari eccetera finché finalmente non
+
+323
+00:35:19,780 --> 00:35:25,980
+li hanno individuati. Non ci vengono raccontati i dettagli ma diciamo che non deve essere stato
+
+324
+00:35:25,980 --> 00:35:32,260
+affatto semplice se consideriamo che ad aumentare il livello di sicurezza della criptografia nelle
+
+325
+00:35:32,260 --> 00:35:38,500
+lettere segrete di Maria Stewart non solo era stato criptato il testo ed era stata utilizzata
+
+326
+00:35:38,500 --> 00:35:45,700
+la nomenclatura per codificare i nomi ma questi erano stati persino sostituiti utilizzando pseudonimi
+
+327
+00:35:45,700 --> 00:35:58,420
+e nomi in codice. Tra gli aspetti che ho trovato più interessanti di questo studio c'è poi sicuramente
+
+328
+00:35:58,820 --> 00:36:05,820
+l'importanza che hanno ricoperto gli errori di cifratura. In qualsiasi testo cifrato storico è
+
+329
+00:36:05,820 --> 00:36:11,820
+probabile trovare errori di cifratura casuali come l'omissione di un simbolo, l'aggiunta di
+
+330
+00:36:11,820 --> 00:36:18,540
+uno di troppo, l'uso di un segno sbagliato. Ci si aspetta di trovare errori sporadici nei documenti
+
+331
+00:36:18,540 --> 00:36:24,220
+perché la cifratura manuale è un processo complicato, è una distrazione, un po' di
+
+332
+00:36:24,220 --> 00:36:31,060
+confusione sono più che comprensibili. Tuttavia in alcuni documenti di questo studio la percentuale
+
+333
+00:36:31,060 --> 00:36:37,420
+di errori si è rivelata essere piuttosto alta rendendo tra l'altro anche più complessa la
+
+334
+00:36:37,420 --> 00:36:44,100
+decifrazione e l'interpretazione. Inoltre un esame più approfondito ha mostrato anche che molti di
+
+335
+00:36:44,100 --> 00:36:49,700
+questi errori erano sistematici cioè accadeva spesso che alla stessa lettera corrispondesse
+
+336
+00:36:49,700 --> 00:36:57,100
+lo stesso simbolo errato, una cosa tutt'altro che normale. E poi alcuni si sono verificati decine
+
+337
+00:36:57,100 --> 00:37:02,740
+di volte, spesso all'interno dello stesso documento, non potevano essere semplicemente casuali.
+
+338
+00:37:02,740 --> 00:37:08,580
+Inizialmente i ricercatori hanno pensato che si trattasse di errori dovuti alla somiglianza
+
+339
+00:37:08,580 --> 00:37:14,460
+grafica come ad esempio l'uso di un simbolo senza il punto al posto di uno con il punto o viceversa,
+
+340
+00:37:14,900 --> 00:37:21,740
+tuttavia questo tipo di sbaglio rappresentava solo una piccola percentuale del totale. Esaminando
+
+341
+00:37:21,740 --> 00:37:27,820
+quindi altri cifrari utilizzati da Maria hanno invece notato che il cifrario ricostruito in
+
+342
+00:37:27,820 --> 00:37:33,460
+questo studio, che hanno chiamato cifrario Maria Castelnuovo, condivide diverse caratteristiche
+
+343
+00:37:33,460 --> 00:37:40,860
+come i diacritici, i simboli omofoni e la maggior parte del vocabolario con un altro chiamato cifrario
+
+344
+00:37:40,860 --> 00:37:47,580
+di Maria Beaton e utilizzato sempre da la Stuart per comunicare con James Beaton,
+
+345
+00:37:47,580 --> 00:37:53,980
+arcivescovo di Glasgow e suo ambasciatore in Francia. L'ipotesi quindi è diventata quella
+
+346
+00:37:53,980 --> 00:37:59,780
+che si siano verificati errori sistematici quando un segretario ha dovuto codificare
+
+347
+00:37:59,780 --> 00:38:06,460
+molte lettere utilizzando contemporaneamente cifrari diversi. Poteva capitare infatti che
+
+348
+00:38:06,460 --> 00:38:11,500
+Maria inviasse nello stesso giorno tante comunicazioni a vari soggetti, ognuna da
+
+349
+00:38:11,500 --> 00:38:17,060
+proteggere con uno specifico cifrario ed è altrettanto probabile che il lavoro di cifratura
+
+350
+00:38:17,060 --> 00:38:23,340
+fosse affidato ad un'unica persona. E molti di questi sbagli possono proprio essere spiegati
+
+351
+00:38:23,340 --> 00:38:29,340
+dal fatto che il segretario abbia erroneamente utilizzato il simbolo grafico preso da un cifrario
+
+352
+00:38:29,340 --> 00:38:34,620
+piuttosto che da un altro. Quando un addetto alla cifratura infatti iniziava a usare un
+
+353
+00:38:34,620 --> 00:38:41,300
+nuovo cifrario con cui non aveva ancora familiarità è probabile che cercasse nella tabella ogni singolo
+
+354
+00:38:41,300 --> 00:38:48,060
+simbolo grafico con estrema attenzione, ma dopo un po' di tempo è altresì probabile che gli iniziasse
+
+355
+00:38:48,060 --> 00:38:53,940
+a memorizzare i simboli corrispondenti alle lettere più frequenti e non sentisse più il bisogno di
+
+356
+00:38:53,940 --> 00:39:00,220
+dover sempre consultare la tabella ad ogni singolo passaggio. Tuttavia un comportamento del genere
+
+357
+00:39:00,220 --> 00:39:06,180
+tendeva evidentemente a generare confusione e far sì che a volte la persona sbagliasse e
+
+358
+00:39:06,180 --> 00:39:12,660
+utilizzasse erroneamente un simbolo preso dal cifrario sbagliato, dando così vita a un fenomeno
+
+359
+00:39:12,660 --> 00:39:18,540
+che i ricercatori hanno definito contaminazione incrociata dei cifrari. Solo dopo aver compreso
+
+360
+00:39:18,540 --> 00:39:25,180
+questo fatto è stato possibile finalmente decifrare e interpretare correttamente tutti i vari passaggi
+
+361
+00:39:25,500 --> 00:39:31,540
+che ancora risultavano oscuri nei documenti del gruppo Mary Castelnuo e lo si è fatto appunto
+
+362
+00:39:31,540 --> 00:39:38,980
+esaminandoli alla luce anche dell'altro cifrario, quello Mary Beaton. Infine è anche interessante
+
+363
+00:39:38,980 --> 00:39:44,380
+notare che in molti punti il segretario è stato in grado di rilevare da solo gli errori di
+
+364
+00:39:44,380 --> 00:39:50,020
+contaminazione già durante la cifratura e li ha perfino corretti immediatamente utilizzando
+
+365
+00:39:50,020 --> 00:39:56,140
+il simbolo di cancellazione o sbarrando il simbolo sbagliato o addirittura sovrascrivendolo.
+
+366
+00:39:56,140 --> 00:40:08,380
+In tutta questa storia a me piace pensare a quanto fosse robusto e avanzato il sistema
+
+367
+00:40:08,380 --> 00:40:14,500
+di comunicazione segreto messo in piedi da Mary Stewart, già a partire dalla chiave di criptografia
+
+368
+00:40:14,500 --> 00:40:21,300
+che presenta ad esempio l'uso dei diacritici, niente affatto comune per i cifrari diplomatici
+
+369
+00:40:21,300 --> 00:40:27,620
+francesi dell'epoca. Durante la prigionia Maria poteva scrivere e ricevere lettere tramite la
+
+370
+00:40:27,620 --> 00:40:34,540
+posta ufficiale sotto la supervisione di Welsingham e utilizzava questo canale per le comunicazioni con
+
+371
+00:40:34,540 --> 00:40:41,220
+la regina Elisabetta o con i membri del consiglio o per le sue proprietà in Francia per questioni
+
+372
+00:40:41,220 --> 00:40:47,820
+non troppo delicate insomma. Ma oltre ai canali ufficiali la donna riuscì a mantenere contatti
+
+373
+00:40:47,820 --> 00:40:54,020
+segreti attraverso tutta una serie di canali confidenziali e uno di questi era proprio quello
+
+374
+00:40:54,020 --> 00:40:59,700
+supportato da Castelnau che inoltrava lettere confidenziali tra Maria e i suoi collaboratori
+
+375
+00:40:59,700 --> 00:41:07,260
+nell'Europa continentale. I canali segreti però non erano immuni da intercettazioni o da eventuali
+
+376
+00:41:07,260 --> 00:41:14,100
+occhi indiscreti e Maria dovette quindi affrontare una grossa sfida per mantenere la comunicazione
+
+377
+00:41:14,100 --> 00:41:21,820
+sicura e privata. La crittografia le ha permesso per lungo tempo di proteggere i suoi interessi e
+
+378
+00:41:21,820 --> 00:41:28,820
+la sua vita in fin dei conti un po' come accade per noi al giorno d'oggi anche se in scala diversa.
+
+379
+00:41:28,820 --> 00:41:34,940
+Noi facciamo ampio e disinvolto uso della crittografia spesso senza nemmeno rendercene
+
+380
+00:41:35,020 --> 00:41:41,820
+conto eppure per la regina di Scozia all'epoca era una necessità che richiedeva tanto impegno
+
+381
+00:41:41,820 --> 00:41:48,700
+in lavoro. Il fatto di utilizzare più cifrari a seconda del destinatario ci fa capire quanta
+
+382
+00:41:48,700 --> 00:41:54,460
+attenzione venisse posta in queste misure di sicurezza e può farci solo immaginare quante
+
+383
+00:41:54,460 --> 00:42:00,900
+lettere e documenti siano stati distrutti dopo la lettura e magari quanti cifrari siano andati
+
+384
+00:42:00,900 --> 00:42:07,860
+perduti perché non più utilizzabili. Alla fine Welsingham e i suoi agenti riuscirono ad infiltrarsi
+
+385
+00:42:07,860 --> 00:42:14,740
+nell'abbasciata di Castelnuo a metà del 1583 e a compromettere il canale di comunicazione con
+
+386
+00:42:14,740 --> 00:42:20,820
+Maria. Le sette lettere ritrovate in chiaro in un'altra collezione ne sono la prova lampante.
+
+387
+00:42:20,820 --> 00:42:26,580
+Una lettera che dimostrava il suo coinvolgimento nel complotto ordito ai danni della regina
+
+388
+00:42:26,580 --> 00:42:34,300
+Elisabetta fu infine intercettata e decifrata nel 1586. A seguito di questo evento Maria fu
+
+389
+00:42:34,300 --> 00:42:40,900
+condannata a morte e la condanna fu eseguita nel febbraio del 1586.
+
+390
+00:42:47,500 --> 00:42:52,380
+E anche oggi siamo giunti alla conclusione di questo episodio. Come al solito io spero di
+
+391
+00:42:52,380 --> 00:42:58,420
+averti raccontato una storia interessante. Devo dire che gli aspetti storici dell'informatica mi
+
+392
+00:42:58,420 --> 00:43:04,340
+stanno intrigando molto in questo periodo e anche Pensieri in Codice ne sta risentendo.
+
+393
+00:43:04,340 --> 00:43:10,060
+L'episodio è venuto molto più lungo di quanto pensassi ma spero ne sia valsa la pena. Come ormai
+
+394
+00:43:10,060 --> 00:43:15,300
+con suetudine ringrazio Edoardo e Carlo per la loro donazione mensile ai quali oggi si aggiunge
+
+395
+00:43:15,300 --> 00:43:22,020
+anche Paola con la sua seconda donazione. Il ringraziamento è doppio per tutti perché
+
+396
+00:43:22,020 --> 00:43:28,580
+continuate a mantenere fiducia nel progetto anche se le pubblicazioni si sono molto diradate. La
+
+397
+00:43:28,580 --> 00:43:34,180
+buona notizia per tutti e tre però è che avete superato la soglia prefissata di 10 euro di
+
+398
+00:43:34,180 --> 00:43:40,380
+donazioni e quindi in queste settimane riceverete a casa i nuovi gadget di Pensieri in Codice cioè
+
+399
+00:43:40,380 --> 00:43:46,500
+il segnalibro e gli stickers. Ora se anche tu vuoi supportare il progetto e ricevere anche i
+
+400
+00:43:46,500 --> 00:43:53,820
+gadget trovi tutto sul sito pensieriincodice.it con due i mi raccomando che tra l'altro tra
+
+401
+00:43:53,820 --> 00:44:01,300
+qualche settimana verrà aggiornato con un po di cose nuove e interessanti si spera. Tu resta
+
+402
+00:44:01,300 --> 00:44:06,780
+sintonizzato prima o poi ce la farò. Poi altra notizia importante come sai Pensieri in Codice è
+
+403
+00:44:06,780 --> 00:44:13,900
+partner del Grusp che in queste settimane organizza moltissime conferenze. Le prossime
+
+404
+00:44:13,900 --> 00:44:22,460
+sono il container day il 12 ottobre, il react.js day il 27 ottobre, il Laravel day il 9 novembre
+
+405
+00:44:22,460 --> 00:44:27,900
+e poi ce ne sono altre ma è inutile che ti faccio qui l'elenco completo ti lascio il link in
+
+406
+00:44:27,900 --> 00:44:34,460
+descrizione. Sempre in descrizione però trovi il codice sconto del 10% sull'acquisto dei biglietti
+
+407
+00:44:34,620 --> 00:44:39,500
+mi raccomando dacci un'occhiata fammi sapere a quali conferenze parteciperai che magari ci
+
+408
+00:44:39,500 --> 00:44:46,140
+vediamo lì. Per il resto tagliamo corto che sono stanchissimo e sono anche stufo persino io di
+
+409
+00:44:46,140 --> 00:44:52,500
+ripetere sempre le stesse cose che tanto già le sai fai ascoltare l'episodio condividilo sui social
+
+410
+00:44:52,500 --> 00:44:59,020
+visita il sito fa una donazione eccetera eccetera eccetera. Noi ci sentiamo al prossimo episodio
+
+411
+00:44:59,620 --> 00:45:05,460
+grazie per aver ascoltato fin qui fino in fondo è stata faticosa per entrambi e non
+
+412
+00:45:05,460 --> 00:45:11,060
+dimenticare che un informatico risolve problemi a volte anche usando il computer
+
