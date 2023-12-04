@@ -1,0 +1,840 @@
+1
+00:00:00,000 --> 00:00:06,680
+Ormai lo sai bene, è inutile che mi ripeta in continuazione, conferenze e incontri sono
+
+2
+00:00:06,680 --> 00:00:12,960
+un momento da me particolarmente apprezzato per il potere che hanno di stimolare la riflessione
+
+3
+00:00:12,960 --> 00:00:19,240
+e la riflessione è anche il motivo per cui esiste questo podcast e da poco ho partecipato
+
+4
+00:00:19,240 --> 00:00:25,880
+al Container Day, conferenza italiana organizzata dal GRUSP di cui Pensieri in Codice è partner
+
+5
+00:00:25,880 --> 00:00:31,600
+e quelle che stai per ascoltare sono le idee sulle quali questo evento mi ha dato da pensare.
+
+6
+00:00:31,600 --> 00:00:32,600
+Sigla.
+
+7
+00:00:32,600 --> 00:00:43,960
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio
+
+8
+00:00:43,960 --> 00:00:45,680
+Galano.
+
+9
+00:00:45,680 --> 00:00:52,680
+Dal momento che il Container Day è una conferenza totalmente incentrata sulla tecnologia di
+
+10
+00:00:52,680 --> 00:00:58,400
+containerizzazione mi sembra doveroso introdurre almeno a grandi linee il concetto di container,
+
+11
+00:00:58,400 --> 00:01:00,360
+così per fugare almeno i dubbi.
+
+12
+00:01:00,360 --> 00:01:07,280
+In realtà di questo argomento abbiamo già parlato nell'ormai lontano luglio 2020 nell'episodio
+
+13
+00:01:07,280 --> 00:01:10,920
+su Docker ma un piccolo ripasso non fa mai male.
+
+14
+00:01:10,920 --> 00:01:17,160
+Per container in ambito informatico ed in particolare in ambito DevOps si intende un particolare
+
+15
+00:01:17,160 --> 00:01:22,320
+meccanismo di virtualizzazione del sistema operativo nel quale eseguire un software.
+
+16
+00:01:22,960 --> 00:01:28,080
+Semplificando al massimo diciamo che in generale un software per funzionare ha bisogno di un
+
+17
+00:01:28,080 --> 00:01:34,440
+ambiente con determinate caratteristiche che spaziano dalla tipologia di sistema operativo,
+
+18
+00:01:34,440 --> 00:01:41,040
+alla potenza di calcolo, alla quantità di memoria, alla possibilità di eseguire determinate
+
+19
+00:01:41,040 --> 00:01:46,800
+operazioni, alla presenza di specifici moduli e librerie da sfruttare e via discorrendo.
+
+20
+00:01:47,200 --> 00:01:52,000
+Ora, questo ambiente può essere il normale sistema operativo di un computer o di un server
+
+21
+00:01:52,000 --> 00:01:58,520
+configurato a dovere oppure un suo sotto insieme nel quale sono presenti solo le caratteristiche
+
+22
+00:01:58,520 --> 00:02:05,080
+minime necessarie e che genericamente prende il nome di container o sistema operativo virtuale.
+
+23
+00:02:05,080 --> 00:02:11,200
+Oltre a fornire lo spazio di lavoro più efficiente possibile, il container isola anche il proprio
+
+24
+00:02:11,200 --> 00:02:15,680
+contenuto dall'esterno assicurando in questo modo che i software al proprio interno non
+
+25
+00:02:15,680 --> 00:02:20,480
+possano sconfinare nel sistema operativo della macchina ospite se non espressamente
+
+26
+00:02:20,480 --> 00:02:21,480
+autorizzati.
+
+27
+00:02:21,480 --> 00:02:26,960
+In una condizione del genere è chiaro che se da un lato il container deve includere
+
+28
+00:02:26,960 --> 00:02:31,840
+tutto ciò che serve al proprio software per funzionare correttamente, tuttavia dall'altro
+
+29
+00:02:31,840 --> 00:02:35,560
+può anche ignorare o mancare di tutto il resto.
+
+30
+00:02:35,560 --> 00:02:41,840
+L'utilizzo dei container ha una miriade di vantaggi che non possiamo sicuramente sviscerare
+
+31
+00:02:41,840 --> 00:02:47,760
+oggi, ma riassumendo all'osso, permette a chi deve occuparsi del software all'interno
+
+32
+00:02:47,760 --> 00:02:55,200
+di preoccuparsi di un numero limitato di fattori e a chi invece deve occuparsi di ospitare
+
+33
+00:02:55,200 --> 00:03:00,960
+il container di maneggiare una scatola nera che può avviare, duplicare, trasferire e
+
+34
+00:03:00,960 --> 00:03:03,960
+in generale gestire con molta più semplicità.
+
+35
+00:03:04,880 --> 00:03:13,520
+Al Container Day vengono affrontati vari aspetti della containerizzazione del software, aspetti
+
+36
+00:03:13,520 --> 00:03:18,600
+sistemistici per la corretta gestione dei container e aspetti programmatici per la
+
+37
+00:03:18,600 --> 00:03:24,680
+corretta implementazione degli stessi, nonché aspetti di DevOps, non ce lo dimentichiamo
+
+38
+00:03:24,680 --> 00:03:30,200
+altra attività di cui abbiamo parlato in passato, episodio 22, e che rappresenta un
+
+39
+00:03:30,200 --> 00:03:32,600
+punto di fusione tra questi due mondi.
+
+40
+00:03:32,960 --> 00:03:38,960
+Ora, non so se tu che mi ascolti hai partecipato al Container Day di quest'anno, in caso contrario
+
+41
+00:03:38,960 --> 00:03:43,840
+peccato perché è stato davvero interessante e ti invito a recuperarlo appena diverrà
+
+42
+00:03:43,840 --> 00:03:47,080
+disponibile sul canale YouTube del Grusp.
+
+43
+00:03:47,080 --> 00:03:53,160
+Purtroppo io non ho potuto partecipare in presenza e questo mi dispiace sempre un po'
+
+44
+00:03:53,160 --> 00:03:58,440
+perché il confronto diretto con i partecipanti è più stimolante secondo me, tuttavia ho
+
+45
+00:03:58,440 --> 00:04:03,520
+guardato da remoto tutti i talk e ne ho trovati vari veramente interessanti.
+
+46
+00:04:03,520 --> 00:04:09,240
+Sicuramente bellissimo è stato l'escursus storico iniziale che mi ha fatto scoprire
+
+47
+00:04:09,240 --> 00:04:14,600
+che il concetto di container risale addirittura a metà del secolo scorso, poi interessanti
+
+48
+00:04:14,600 --> 00:04:20,680
+sono state anche le varie esposizioni di strumenti e metodologie per gestire il passaggio al
+
+49
+00:04:20,680 --> 00:04:26,200
+modello containerizzato, le configurazioni dei container, il monitoraggio dei sistemi,
+
+50
+00:04:26,200 --> 00:04:27,200
+eccetera.
+
+51
+00:04:27,200 --> 00:04:36,680
+Ma se dovessi individuare una parola comune, un concetto cardine, un filo conduttore dell'intera
+
+52
+00:04:36,680 --> 00:04:44,200
+giornata, oltre ovviamente a quello di container, direi proprio che potrebbe essere la semplificazione.
+
+53
+00:04:44,200 --> 00:04:49,840
+Raramente ho percepito una tale fame di semplificazione su tutti i fronti.
+
+54
+00:04:50,000 --> 00:04:56,720
+In effetti nel mondo container, forse ancora di più che in altre branchie dell'informatica,
+
+55
+00:04:56,720 --> 00:05:02,480
+c'è stata negli ultimi anni un'esplosione di complessità, o perlomeno essa è particolarmente
+
+56
+00:05:02,480 --> 00:05:04,200
+sentita in questo ambito.
+
+57
+00:05:04,200 --> 00:05:11,080
+L'adozione in tempi recenti da parte di tante realtà è stata fortissima e questo ha creato
+
+58
+00:05:11,080 --> 00:05:15,320
+ovviamente molto caos legato all'espansione improvvisa.
+
+59
+00:05:15,800 --> 00:05:22,120
+Diversi approcci, diverse tecnologie e diverse professionalità, tutte mescolate insieme
+
+60
+00:05:22,120 --> 00:05:27,600
+a produrre nuovi risultati in modo spesso eterogeneo e un po' confusionario.
+
+61
+00:05:27,600 --> 00:05:33,840
+Capiamoci, si tratta di un processo abbastanza naturale, soprattutto nel campo dell'informatica
+
+62
+00:05:33,840 --> 00:05:39,080
+moderna, tuttavia, forse per una maggiore consapevolezza ed esperienza delle persone
+
+63
+00:05:39,080 --> 00:05:44,880
+coinvolte o forse per il fatto che ultimamente anche la società si è evoluta con leggi
+
+64
+00:05:44,880 --> 00:05:52,440
+come il GDPR o il CRA, la spinta a normalizzare e standardizzare la situazione mi è sembrata
+
+65
+00:05:52,440 --> 00:05:54,000
+particolarmente forte.
+
+66
+00:05:54,000 --> 00:06:00,480
+In effetti, il concetto di container è di fatto uno strato aggiuntivo che si posiziona
+
+67
+00:06:00,480 --> 00:06:06,400
+a metà strada tra i concetti classici di sviluppo, software e amministrazione di sistemi
+
+68
+00:06:06,400 --> 00:06:12,560
+e, come tutti i layer intermedi, da una parte semplifica la vita ai layer sovrastanti e
+
+69
+00:06:12,560 --> 00:06:17,720
+sottostanti, ma dall'altra rappresenta esso stesso un fattore di complessità.
+
+70
+00:06:17,720 --> 00:06:24,040
+La nascita di una figura professionale come il DevOps, a metà tra sviluppatore e sistemista,
+
+71
+00:06:24,040 --> 00:06:29,720
+è un chiaro esempio di questa complessità aggiuntiva, ma anche il fatto che i container
+
+72
+00:06:29,720 --> 00:06:35,160
+stessi abbiano delle proprie dipendenze e configurazioni, debbano rispettare requisiti
+
+73
+00:06:35,160 --> 00:06:39,880
+specifici funzionali e di sicurezza e richiedano un forte uso di automazione.
+
+74
+00:06:40,200 --> 00:06:45,280
+Tutti questi sono fattori che contribuiscono per forza di cose a rendere i sistemi più
+
+75
+00:06:45,280 --> 00:06:46,800
+complessi da gestire.
+
+76
+00:06:46,800 --> 00:06:52,120
+Insomma, se fino a qualche anno fa la prassi era di doversi occupare di tenere in piedi
+
+77
+00:06:52,120 --> 00:06:58,480
+i server e produrre gli artefatti dei software, ora ci sono anche da sviluppare e mantenere
+
+78
+00:06:58,480 --> 00:07:01,880
+le pipeline, i container, i pod e così via.
+
+79
+00:07:02,800 --> 00:07:10,920
+Dal momento che i container portano con sé una quantità enorme di benefici, ovviamente
+
+80
+00:07:10,920 --> 00:07:15,960
+nessuno si sognerebbe mai di pensare che la soluzione a questo incremento di complessità
+
+81
+00:07:15,960 --> 00:07:18,720
+possa essere evitare di utilizzarli.
+
+82
+00:07:18,720 --> 00:07:24,800
+La spinta che questa nuova tecnologia ha portato nel campo dello sviluppo software è assolutamente
+
+83
+00:07:24,800 --> 00:07:25,960
+indiscutibile.
+
+84
+00:07:26,360 --> 00:07:31,480
+Come invece è giusto che sia, gli esperti del settore hanno elaborato e stanno ancora
+
+85
+00:07:31,480 --> 00:07:37,360
+elaborando soluzioni per semplificare tanti aspetti della questione e questa tendenza
+
+86
+00:07:37,360 --> 00:07:41,360
+è venuta fuori forte e chiara dal container day di quest'anno.
+
+87
+00:07:41,360 --> 00:07:47,560
+Si è parlato di sistemi di sicurezza, di monitoraggio avanzato, di meccanismi per assicurare
+
+88
+00:07:47,560 --> 00:07:54,040
+la consistenza delle configurazioni, di metodologie per semplificare la migrazione da contesti
+
+89
+00:07:54,040 --> 00:08:00,920
+non containerizzati, ma l'idea di fondo, quella di cui non si è parlato esplicitamente
+
+90
+00:08:00,920 --> 00:08:07,560
+ma che si poteva facilmente leggere fra le righe, quella che tutto sommato pervade da
+
+91
+00:08:07,560 --> 00:08:14,760
+sempre il mondo dell'informatica, è stata che la semplificazione in fin dei conti non
+
+92
+00:08:14,760 --> 00:08:19,120
+è un fattore che riguarda le macchine o i software, ma le persone.
+
+93
+00:08:19,640 --> 00:08:25,800
+Si possono aggiungere e immaginare i più disparati servizi di controllo e correzione,
+
+94
+00:08:25,800 --> 00:08:33,680
+i più complessi framework e standard di implementazione, ma alla fine i sistemi sono sempre sistemi
+
+95
+00:08:33,680 --> 00:08:38,880
+e sono invece le persone che ci lavorano che determinano semplicità o complessità.
+
+96
+00:08:41,880 --> 00:08:48,320
+Man mano che ho accumulato esperienza come sviluppatore e progettista di software ho
+
+97
+00:08:48,320 --> 00:08:53,520
+iniziato sempre più a preferire le soluzioni semplici a quelle complesse.
+
+98
+00:08:53,520 --> 00:09:00,520
+Quella che ho appena detto è una bella frase, lo so, di effetto, ma se ci pensiamo un attimo
+
+99
+00:09:00,520 --> 00:09:03,320
+chi non preferisce le soluzioni semplici?
+
+100
+00:09:03,320 --> 00:09:09,560
+Il vero problema nel mondo del software è definire quali siano effettivamente le soluzioni
+
+101
+00:09:09,560 --> 00:09:10,560
+semplici.
+
+102
+00:09:10,560 --> 00:09:17,280
+Una soluzione semplice potrebbe essere quella composta da poche righe di codice, oppure
+
+103
+00:09:17,280 --> 00:09:23,600
+quella che incarna al meglio gli standard di codifica attuali, oppure ancora quella
+
+104
+00:09:23,600 --> 00:09:29,880
+più generica possibile, che funziona bene dovunque serva o quella che rispetti al meglio
+
+105
+00:09:29,880 --> 00:09:30,880
+le specifiche.
+
+106
+00:09:30,880 --> 00:09:36,360
+La soluzione più semplice potrebbe essere quella più facile da mettere in campo, quella
+
+107
+00:09:36,360 --> 00:09:42,400
+più facile da manutenere, quella più facile da sostituire, quella più facile da comprendere
+
+108
+00:09:42,400 --> 00:09:44,840
+o tutte queste cose messe insieme.
+
+109
+00:09:45,400 --> 00:09:52,280
+La verità è che la semplicità non è misurabile come lo sono invece la lunghezza, il peso,
+
+110
+00:09:52,280 --> 00:09:53,800
+il tempo di elaborazione.
+
+111
+00:09:53,800 --> 00:10:00,160
+Non puoi assegnare un numero o un valore alla semplicità, o meglio, puoi farlo ma ti ritrovi
+
+112
+00:10:00,160 --> 00:10:04,840
+nella stessa condizione di prima, cioè di dover definire come assegnare tale valore,
+
+113
+00:10:04,840 --> 00:10:05,840
+quindi sei da capo.
+
+114
+00:10:05,840 --> 00:10:12,120
+E questo perché la semplicità non è un fattore oggettivo, è un fattore umano e come
+
+115
+00:10:12,120 --> 00:10:15,480
+moltissimi altri fattori umani è soggettivo.
+
+116
+00:10:15,480 --> 00:10:23,400
+La semplicità non è qualcosa che importa alle macchine, in nessun caso.
+
+117
+00:10:23,400 --> 00:10:28,320
+Le macchine eseguono le istruzioni sia che la soluzione che stanno andando a mettere
+
+118
+00:10:28,320 --> 00:10:30,720
+in campo sia semplice, sia che sia complessa.
+
+119
+00:10:30,720 --> 00:10:35,800
+Forse una soluzione complessa richiederà più tempo, ma le macchine non hanno il nostro
+
+120
+00:10:35,800 --> 00:10:37,800
+stesso concetto di tempo.
+
+121
+00:10:37,800 --> 00:10:44,200
+Lo sanno valutare e calcolare, ma non ne percepiscono la finitezza come invece facciamo
+
+122
+00:10:44,200 --> 00:10:45,200
+noi.
+
+123
+00:10:45,200 --> 00:10:50,000
+La differenza tra semplice e complesso in realtà importa solo alle persone.
+
+124
+00:10:50,000 --> 00:10:56,080
+Una soluzione più semplice, qualsiasi cosa questo voglia dire, porta con sé dei vantaggi
+
+125
+00:10:56,080 --> 00:11:01,680
+per le persone che devono lavorarci, per i loro scopi, per le loro percezioni, per i loro
+
+126
+00:11:01,680 --> 00:11:02,680
+stati d'animo.
+
+127
+00:11:03,080 --> 00:11:10,240
+Ed è proprio questo il punto, la semplicità è per le persone e dipende dalle persone
+
+128
+00:11:10,240 --> 00:11:11,480
+e anche dal contesto.
+
+129
+00:11:11,480 --> 00:11:17,680
+Prima di tutto è necessario capire cosa le persone in gioco considerano più semplice
+
+130
+00:11:17,680 --> 00:11:24,160
+e poi è possibile estrarre una serie di regole che aiutino a definire e valutare la semplicità
+
+131
+00:11:24,160 --> 00:11:26,640
+relativa al contesto considerato.
+
+132
+00:11:27,080 --> 00:11:33,540
+Spesso accade che molte di queste regole siano comuni a più contesti ed è grazie a questo
+
+133
+00:11:33,540 --> 00:11:39,600
+fatto che possono esistere gli standard, i framework, le convenzioni e tutti gli strumenti
+
+134
+00:11:39,600 --> 00:11:42,840
+che solitamente usiamo per direzionare lo sviluppo.
+
+135
+00:11:42,840 --> 00:11:48,960
+Ma ogni contesto avrà sempre una qualche peculiarità che lo differenzia dagli altri
+
+136
+00:11:48,960 --> 00:11:55,720
+e tenere conto di questo è fondamentale per formulare la propria, corretta definizione
+
+137
+00:11:55,720 --> 00:11:56,720
+di semplicità.
+
+138
+00:11:56,720 --> 00:12:04,840
+Una volta capito che cosa vuol dire per noi semplicità e una volta stabilite le nostre
+
+139
+00:12:04,840 --> 00:12:10,240
+regole in merito, qualunque esse siano, dobbiamo però anche fare in modo che queste vengano
+
+140
+00:12:10,240 --> 00:12:11,880
+applicate e rispettate.
+
+141
+00:12:11,880 --> 00:12:18,000
+Abbiamo già detto che alle macchine in generale questo discorso non interessa, ma è sempre
+
+142
+00:12:18,000 --> 00:12:25,160
+possibile implementare meccanismi automatici che aiutino a pilotare le cose verso la semplicità
+
+143
+00:12:25,160 --> 00:12:26,960
+o a valutare i risultati.
+
+144
+00:12:26,960 --> 00:12:32,680
+Vari talk del container day erano incentrati proprio su questo tipo di attività, quelli
+
+145
+00:12:32,680 --> 00:12:38,400
+sull'eliminare il configuration drift o sull'indirizzare lo sviluppo degli operators, ad esempio.
+
+146
+00:12:38,400 --> 00:12:45,000
+In fin dei conti però, a mio parere, il segreto per ottenere le soluzioni semplici e soprattutto
+
+147
+00:12:45,000 --> 00:12:51,440
+mantenerle tali nel corso della vita di un progetto è fare leva sulla responsabilità.
+
+148
+00:12:51,720 --> 00:12:58,440
+Le soluzioni, l'abbiamo detto, sono realizzate dalle persone e per come la vedo io devono
+
+149
+00:12:58,440 --> 00:13:01,400
+anche avere sempre dei responsabili.
+
+150
+00:13:01,400 --> 00:13:07,040
+Attenzione, quando parlo di responsabilità non intendo dire che se si verifica un problema
+
+151
+00:13:07,040 --> 00:13:12,480
+in quella porzione di codice o a causa di quella configurazione, allora la persona
+
+152
+00:13:12,480 --> 00:13:15,160
+che l'ha programmata deve essere punita in qualche modo.
+
+153
+00:13:15,160 --> 00:13:17,760
+Ovviamente questo non è utile.
+
+154
+00:13:18,160 --> 00:13:24,040
+Quello che intendo, invece, è che quando si produce una soluzione deve esserci sempre
+
+155
+00:13:24,040 --> 00:13:30,680
+qualcuno che non solo lo faccia seguendo le direttive prefissate, ma continui anche a
+
+156
+00:13:30,680 --> 00:13:34,720
+migliorare e mantenere quella caratteristica nel corso del tempo.
+
+157
+00:13:34,720 --> 00:13:41,040
+Il responsabile di qualcosa può essere il suo stesso autore o qualcun altro, non importa.
+
+158
+00:13:41,040 --> 00:13:47,200
+Ciò che importa è che a quel codice, a quella pipeline, a quella libreria, a quel servizio,
+
+159
+00:13:47,200 --> 00:13:54,960
+a quel server o a qualsiasi altro elemento qualcuno sia designato a dedicare del tempo,
+
+160
+00:13:54,960 --> 00:13:55,960
+il giusto tempo.
+
+161
+00:13:55,960 --> 00:14:02,320
+Questa persona deve avere la responsabilità e le risorse per seguire e curare la propria
+
+162
+00:14:02,320 --> 00:14:08,360
+porzione di sistema, intervenendo dove e quando necessario ed interagendo con i responsabili
+
+163
+00:14:08,360 --> 00:14:09,800
+dei sistemi collegati.
+
+164
+00:14:09,800 --> 00:14:15,320
+E, ripeto, prevedere del tempo per queste attività è indispensabile.
+
+165
+00:14:15,760 --> 00:14:21,200
+Solo in questo modo sarà possibile avere soluzioni veramente semplici e funzionali
+
+166
+00:14:21,200 --> 00:14:26,360
+e l'insieme di elementi semplici e funzionali darà vita a sistemi migliori, innescando
+
+167
+00:14:26,360 --> 00:14:31,280
+un circolo virtuoso che farà bene a tutti, dagli sviluppatori al cliente finale.
+
+168
+00:14:34,360 --> 00:14:37,440
+Bene, oggi un discorso un po' più leggero.
+
+169
+00:14:37,440 --> 00:14:41,520
+So che stai aspettando con ansia il secondo episodio della serie di Ada Lovelace e ti
+
+170
+00:14:41,520 --> 00:14:46,320
+assicuro che arriverà a breve, mi serve solo un po' di tempo per registrare perché
+
+171
+00:14:46,320 --> 00:14:48,800
+la lunghezza è notevole rispetto al solito.
+
+172
+00:14:48,800 --> 00:14:54,600
+Come invece avrai notato quello di oggi era un episodio di opinioni e riflessioni mie
+
+173
+00:14:54,600 --> 00:14:57,280
+personali, quindi prendilo come tale.
+
+174
+00:14:57,280 --> 00:15:03,080
+Io non ho la risposta a cosa sia la semplicità ma spero di aver almeno posto la domanda nel
+
+175
+00:15:03,080 --> 00:15:04,080
+modo corretto.
+
+176
+00:15:04,080 --> 00:15:09,240
+Se tu invece la pensi diversamente e vuoi aggiungere qualcosa al discorso mi farebbe
+
+177
+00:15:09,240 --> 00:15:14,760
+molto piacere saperlo e ti ricordo che sul sito pensieriincodice.it trovi il link al
+
+178
+00:15:14,760 --> 00:15:20,040
+gruppo Telegram dove una community di persone fantastiche discute ogni giorno anche degli
+
+179
+00:15:20,040 --> 00:15:21,640
+argomenti del podcast.
+
+180
+00:15:21,640 --> 00:15:28,200
+Ancora una volta poi ringrazio Edoardo Secco e Carlo Thomas per la loro donazione mensile
+
+181
+00:15:28,200 --> 00:15:30,200
+che va avanti ormai da più di un anno.
+
+182
+00:15:30,200 --> 00:15:35,420
+Questo perché, ti ricordo, Pensieri in Codice è un podcast indipendente che può essere
+
+183
+00:15:35,420 --> 00:15:41,500
+ascoltato liberamente presso tutte le piattaforme di podcast e non ha pubblicità o sponsor ma
+
+184
+00:15:41,500 --> 00:15:45,860
+si regge unicamente sul mio tempo libero e sulle donazioni della community.
+
+185
+00:15:45,860 --> 00:15:52,340
+Se lo ascolti regolarmente quindi chiediti quanto vale per te il tempo che dedico a questo
+
+186
+00:15:52,340 --> 00:15:59,260
+progetto che ti assicuro non è poco e se ritieni ne valga la pena ricorda che sempre
+
+187
+00:15:59,260 --> 00:16:04,920
+sul sito o nella descrizione dell'episodio trovi i link per contribuire anche tu al sostentamento
+
+188
+00:16:04,920 --> 00:16:05,920
+del progetto.
+
+189
+00:16:05,920 --> 00:16:11,920
+Nessuna donazione ovviamente è troppo piccola e ricorda che poi adesso abbiamo anche i gadget.
+
+190
+00:16:11,920 --> 00:16:17,800
+Se invece preferisci aiutare senza spendere, condividere è sempre un buon modo, più persone
+
+191
+00:16:17,800 --> 00:16:20,840
+raggiungiamo e più il progetto cresce e quindi migliora.
+
+192
+00:16:20,840 --> 00:16:26,800
+Poi, sempre in descrizione trovi anche il codice sconto del 10% per le conferenze del
+
+193
+00:16:26,800 --> 00:16:34,720
+Grusp che a breve ci sarà il Laravel Day e l'Angular Day, il link al sito del Container
+
+194
+00:16:34,720 --> 00:16:39,040
+Day di cui ti ho appena parlato e altre informazioni interessanti.
+
+195
+00:16:39,040 --> 00:16:45,880
+Infine, se vuoi contattarmi puoi scrivermi a valerio-pensierincodice.it con due i mi
+
+196
+00:16:45,880 --> 00:16:50,280
+raccomando e mi trovi ovviamente su Telegram nel gruppo del podcast.
+
+197
+00:16:50,680 --> 00:16:56,440
+Ah, e poi un'altra cosa importante, per tutto il mese di novembre Proton offre dei super
+
+198
+00:16:56,440 --> 00:17:00,680
+sconti fino al 66% su tutti i suoi prodotti.
+
+199
+00:17:00,680 --> 00:17:07,040
+Proton fornisce servizi avanzati di email, archiviazione e condivisione file, gestione
+
+200
+00:17:07,040 --> 00:17:12,880
+delle password, VPN, che ultimamente si parla tanto di VPN, anche un po' a sproposito poi
+
+201
+00:17:12,880 --> 00:17:19,040
+ne parliamo, tutti criptografati e rispettosi della privacy e della sicurezza degli utenti.
+
+202
+00:17:19,440 --> 00:17:24,680
+Io li utilizzo quotidianamente e ti assicuro che i vari software funzionano benissimo e
+
+203
+00:17:24,680 --> 00:17:30,480
+sono molto comodi, i prezzi non sono bassissimi, lo capisco, ma queste offerte sono davvero
+
+204
+00:17:30,480 --> 00:17:34,600
+allettanti e possono bloccare il prezzo anche per tutto il prossimo anno.
+
+205
+00:17:34,600 --> 00:17:39,640
+Soprattutto il piano Family, secondo me, è interessante per chi vuole proteggere fino
+
+206
+00:17:39,640 --> 00:17:44,560
+a 6 utenti e condividere password e spazio di archiviazione fino a 3 tera.
+
+207
+00:17:45,080 --> 00:17:50,360
+In descrizione trovi i link affiliati di Pensieri in Codice in modo da poter usufruire delle
+
+208
+00:17:50,360 --> 00:17:56,600
+offerte e supportare contemporaneamente questo progetto e basta direi che per oggi ho detto
+
+209
+00:17:56,600 --> 00:18:03,200
+proprio tutto se non che non devi assolutamente dimenticare che un informatico risolve problemi
+
+210
+00:18:03,200 --> 00:18:05,160
+a volte anche usando il computer.
+

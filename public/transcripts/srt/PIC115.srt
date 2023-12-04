@@ -1,0 +1,344 @@
+1
+00:00:00,000 --> 00:00:05,360
+Dopo l'ultimo episodio di Snippet, quello sul problema del commesso viaggiatore, sono
+
+2
+00:00:05,360 --> 00:00:10,720
+stato contattato da un ascoltatore del podcast, Elia, che mi ha fatto notare che ho dato un
+
+3
+00:00:10,720 --> 00:00:13,600
+paio di informazioni sbagliate o incomplete.
+
+4
+00:00:13,600 --> 00:00:19,800
+La mia conoscenza del problema infatti era un po' datata e le mie ricerche per scrivere
+
+5
+00:00:19,800 --> 00:00:23,000
+l'episodio non hanno aiutato a colmare queste lacune.
+
+6
+00:00:23,000 --> 00:00:29,440
+Elia invece ha scritto un paper su una variante molto più complessa del TSP ed ha anche ideato
+
+7
+00:00:29,440 --> 00:00:35,280
+una euristica, cioè una procedura che esplora un numero limitato di possibili soluzioni
+
+8
+00:00:35,280 --> 00:00:40,840
+per trovarne una il più possibile vicino a quella ottima in modo molto rapido.
+
+9
+00:00:40,840 --> 00:00:46,280
+In poche parole Elia è molto più ferrato di me sull'argomento e per questo motivo
+
+10
+00:00:46,280 --> 00:00:52,140
+l'ho incastrato e gli ho chiesto di scrivere il testo per questo episodio in modo da approfondire
+
+11
+00:00:52,140 --> 00:00:56,480
+il concetto di ottimizzazione e chiarire e correggere un po' di cose dette l'ultima
+
+12
+00:00:56,480 --> 00:00:57,480
+volta.
+
+13
+00:00:57,520 --> 00:01:04,200
+Lui molto gentilmente ha accettato ed il risultato di questa collaborazione è lo snippet che
+
+14
+00:01:04,200 --> 00:01:05,440
+stai per ascoltare.
+
+15
+00:01:28,480 --> 00:01:33,880
+Un problema di ottimizzazione è un tipo di problema matematico in cui si cerca di
+
+16
+00:01:33,880 --> 00:01:40,040
+trovare il valore migliore, detto anche ottimo, di una funzione denominata obiettivo.
+
+17
+00:01:40,040 --> 00:01:45,880
+Problemi di ottimizzazione sono ad esempio scegliere i prodotti con cui fare la spesa
+
+18
+00:01:45,880 --> 00:01:51,320
+per la settimana, andando a riempire il nostro carrello spendendo il meno possibile, cercare
+
+19
+00:01:51,320 --> 00:01:56,280
+di montare i pezzi di un macchinario industriale parallelizzando il più possibile i vari
+
+20
+00:01:56,280 --> 00:02:02,000
+step di montaggio, cercare la più corta sequenza di istruzioni per scrivere un programma
+
+21
+00:02:02,000 --> 00:02:07,760
+che effettui un calcolo ed anche trovare il percorso più breve per attraversare un certo
+
+22
+00:02:07,760 --> 00:02:09,000
+numero di città.
+
+23
+00:02:09,000 --> 00:02:14,680
+Ebbene sì, il problema del commesso viaggiatore di cui abbiamo parlato nell'episodio precedente
+
+24
+00:02:14,680 --> 00:02:17,160
+è proprio un problema di ottimizzazione.
+
+25
+00:02:17,160 --> 00:02:22,880
+La branca dell'informatica che si occupa di calcolare e affrontare sistematicamente
+
+26
+00:02:22,880 --> 00:02:27,480
+questo tipo di problemi è nota con il nome di ricerca operativa.
+
+27
+00:02:27,480 --> 00:02:34,040
+Tale nome ha origine nel contesto delle operazioni militari durante la seconda guerra mondiale.
+
+28
+00:02:34,040 --> 00:02:40,480
+In quel periodo infatti, matematici e ingegneri furono incaricati di sviluppare modelli matematici
+
+29
+00:02:40,480 --> 00:02:45,920
+e metodi per aiutare a prendere decisioni operative complesse e migliorare così l'efficienza
+
+30
+00:02:45,920 --> 00:02:47,200
+delle azioni militari.
+
+31
+00:02:47,640 --> 00:02:52,720
+Dopo la guerra, poi, questi strumenti matematici e modelli di calcolo furono applicati con
+
+32
+00:02:52,720 --> 00:02:57,720
+successo a molte altre aree dello sviluppo civile, come la produzione industriale, la
+
+33
+00:02:57,720 --> 00:03:03,240
+logistica, la pianificazione di trasporti, la gestione delle risorse, la finanza, eccetera.
+
+34
+00:03:03,240 --> 00:03:08,600
+I primi passi per descrivere correttamente un problema di ottimizzazione consistono
+
+35
+00:03:08,600 --> 00:03:14,480
+nello scrivere una formula per decidere quanto buona o cattiva sia una possibile soluzione.
+
+36
+00:03:14,800 --> 00:03:17,640
+Questa formula è chiamata funzione obiettivo.
+
+37
+00:03:17,640 --> 00:03:23,360
+Nell'esempio del commesso viaggiatore, la funzione obiettivo quantifica, data una particolare
+
+38
+00:03:23,360 --> 00:03:29,640
+soluzione, la distanza totale percorsa per visitare una lista ordinata di città.
+
+39
+00:03:29,640 --> 00:03:36,560
+Tale funzione è quindi una sorta di bussola che permette a chi calcola le varie ottimizzazioni
+
+40
+00:03:36,560 --> 00:03:42,240
+di capire se sta migliorando o peggiorando la soluzione individuata, in quanto lo scopo
+
+41
+00:03:42,240 --> 00:03:47,280
+dell'ottimizzazione è proprio quello di massimizzare o minimizzare la funzione obiettivo.
+
+42
+00:03:47,280 --> 00:03:53,880
+In riferimento al TSPI, tanto per rimanere sempre sull'esempio del commesso viaggiatore,
+
+43
+00:03:53,880 --> 00:03:59,040
+lo scopo è infatti quello di minimizzare la distanza per attraversare le varie città,
+
+44
+00:03:59,040 --> 00:04:03,800
+mentre ad esempio nel caso del montaggio del macchinario l'obiettivo sarebbe quello di
+
+45
+00:04:03,800 --> 00:04:08,040
+massimizzare il numero di linee produttive che possono lavorare in parallelo.
+
+46
+00:04:08,480 --> 00:04:14,160
+In tutto questo discorso sono poi presenti anche degli elementi chiamati vincoli, cioè
+
+47
+00:04:14,160 --> 00:04:19,760
+delle regole che descrivono determinate condizioni da rispettare per considerare valida una soluzione.
+
+48
+00:04:19,760 --> 00:04:27,360
+Tornando ancora una volta al TSPI, una soluzione è valida solo se visita tutte le città nella
+
+49
+00:04:27,360 --> 00:04:32,640
+lista, oppure nell'esempio del carrello della spesa da riempire, un vincolo potrebbe essere
+
+50
+00:04:32,640 --> 00:04:37,360
+quello di totalizzare almeno un certo quantitativo di calorie da consumare in un giorno.
+
+51
+00:04:37,760 --> 00:04:43,480
+Insomma, i vincoli sono delle direttive da rispettare per non imbrogliare nell'elaborazione
+
+52
+00:04:43,480 --> 00:04:49,640
+e soprattutto per trovare una soluzione che sia sensata e utile allo scopo reale prefissato.
+
+53
+00:04:49,640 --> 00:04:56,480
+Infine, l'ultimo elemento del problema è rappresentato dalle variabili, ovvero le varie
+
+54
+00:04:56,480 --> 00:05:01,560
+scelte che si possono compiere per trovare una soluzione. Nel TSPI le variabili potrebbero ad
+
+55
+00:05:01,560 --> 00:05:07,200
+esempio essere un numero per ogni città che rappresenta l'ordine di visita. Tutti
+
+56
+00:05:07,200 --> 00:05:11,960
+questi che abbiamo descritto sono i vari elementi di base per la modellazione che
+
+57
+00:05:11,960 --> 00:05:16,480
+permettono a matematici e informatici di rappresentare in maniera precisa e sintetica
+
+58
+00:05:16,480 --> 00:05:23,080
+un problema di ottimizzazione. E partendo da tale modellazione si può notare un fatto molto
+
+59
+00:05:23,080 --> 00:05:30,360
+interessante e probabilmente controintuitivo. Cioè esistono problemi per i quali è molto
+
+60
+00:05:30,360 --> 00:05:36,520
+complesso trovare una soluzione ma è paradossalmente molto semplice verificare se una data
+
+61
+00:05:36,520 --> 00:05:41,800
+soluzione è corretta. Prendiamo ad esempio un insieme di numeri. Occorrono molti tentativi
+
+62
+00:05:41,800 --> 00:05:49,200
+per trovarne tre che sommati diano come risultato un certo valore k, però una volta ottenuta una
+
+63
+00:05:49,200 --> 00:05:54,520
+tripletta è invece molto semplice verificare se essa rappresenta una soluzione corretta o
+
+64
+00:05:54,520 --> 00:06:00,440
+meno. Questo tipo di asimmetria tra semplicità di verifica di una soluzione e complessità nel
+
+65
+00:06:00,440 --> 00:06:05,800
+calcolarla tra le altre cose è un elemento fondante di quella disciplina alla base della
+
+66
+00:06:05,800 --> 00:06:11,960
+sicurezza informatica nota come criptografia. Ma tornando al nostro TSP, nello scorso episodio
+
+67
+00:06:11,960 --> 00:06:17,880
+ho erroneamente detto che non saremo in grado di verificare la soluzione adottata dalle api per
+
+68
+00:06:17,880 --> 00:06:23,640
+spostarsi di fiore in fiore perché per noi è impossibile calcolare l'ottimo quando il numero
+
+69
+00:06:23,640 --> 00:06:30,760
+di nodi è troppo elevato. Beh in realtà questo non è vero. Tramite infatti un complesso e geniale
+
+70
+00:06:30,760 --> 00:06:38,280
+metodo matematico chiamato algoritmo del simplesso è possibile trasformare il TSP in uno dei problemi
+
+71
+00:06:38,280 --> 00:06:43,600
+appena descritti per i quali verificare se sia ottenuta la risposta corretta è un'operazione
+
+72
+00:06:43,600 --> 00:06:49,960
+attuabile anche in un tempo relativamente contenuto. In secondo luogo poi sempre nello
+
+73
+00:06:49,960 --> 00:06:56,040
+scorso episodio avevo detto che per trovare la soluzione del TSP è necessario elencare tutti i
+
+74
+00:06:56,040 --> 00:07:02,880
+possibili cammini. Ma anche questa affermazione si è poi rivelata imprecisa. Infatti la realtà è
+
+75
+00:07:02,880 --> 00:07:08,320
+che alcuni cammini possono essere scartati grazie a dei ragionamenti per assurdo e ciò vuol dire
+
+76
+00:07:08,320 --> 00:07:14,760
+che non è necessario esplorare ogni volta tutte le possibilità. Il nocciolo del ragionamento è
+
+77
+00:07:14,760 --> 00:07:21,920
+essenzialmente nella definizione un cammino ottimo è composto da sottocammini ottimi. Il che nel
+
+78
+00:07:21,920 --> 00:07:28,120
+concreto vuol dire che se sappiamo ad esempio che il cammino migliore per andare da Torino a Bari
+
+79
+00:07:28,120 --> 00:07:34,280
+e partire dal Piemonte e attraversare le Milano Magna, le Marche, l'Abruzzo, il Molise e poi
+
+80
+00:07:34,280 --> 00:07:40,880
+raggiungere la Puglia. Se volessimo aggiungere una tappa che attraversa ad esempio l'Umbria non
+
+81
+00:07:40,880 --> 00:07:46,920
+dovremmo provare ogni combinazione possibile dei percorsi perché sapremmo che ad esempio
+
+82
+00:07:46,920 --> 00:07:51,920
+il sottopercorso migliore per andare dalle Marche alla Puglia rimarrebbe sempre attraversare
+
+83
+00:07:51,920 --> 00:07:58,520
+l'Abruzzo e il Molise. Questa tecnica prende il nome di programmazione dinamica e consiste
+
+84
+00:07:58,520 --> 00:08:05,560
+sostanzialmente nel riutilizzare i sottopercorsi ottimi di una soluzione che già avevamo calcolato
+
+85
+00:08:05,560 --> 00:08:14,600
+in precedenza. Grazie per aver ascoltato Snippet, una rubrica di Pensieri in Codice. Scopri tanti
+
+86
+00:08:14,600 --> 00:08:18,040
+altri contenuti sul sito pensieriincodice.it
+

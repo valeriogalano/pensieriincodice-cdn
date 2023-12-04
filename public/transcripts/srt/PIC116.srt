@@ -1,0 +1,1112 @@
+1
+00:00:00,000 --> 00:00:07,200
+3 nuove newsletter nella casella e-mail, 15 articoli nel feed rss, 8 video su youtube,
+
+2
+00:00:07,200 --> 00:00:12,960
+4 episodi nell'app di podcast, 3 riunioni al lavoro, una decina di e-mail, un paio di
+
+3
+00:00:12,960 --> 00:00:19,000
+link condivisi da amici, un paio di notizie interessanti al tg, i consigli di un amico
+
+4
+00:00:19,000 --> 00:00:20,000
+esperto...
+
+5
+00:00:20,000 --> 00:00:22,840
+Quante informazioni ci bombardano ogni giorno?
+
+6
+00:00:22,840 --> 00:00:27,120
+Dì la verità, anche tu qualche volta hai pensato che servirebbe proprio un secondo
+
+7
+00:00:27,120 --> 00:00:28,120
+cervello?
+
+8
+00:00:28,120 --> 00:00:39,720
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio
+
+9
+00:00:39,720 --> 00:00:40,720
+Galano.
+
+10
+00:00:40,720 --> 00:00:46,720
+Prima di iniziare con l'episodio di oggi c'è un piccolo ma importante annuncio.
+
+11
+00:00:46,720 --> 00:00:51,800
+Quest'anno Pensieri in Codice è community partner dell'Open Source Day, la conferenza
+
+12
+00:00:51,800 --> 00:00:55,080
+organizzata dalla community di Schrodinger Hut.
+
+13
+00:00:55,280 --> 00:01:01,480
+I ragazzi di Schrodinger Hut si dedicano proprio a promuovere l'open source e lo sviluppo software,
+
+14
+00:01:01,480 --> 00:01:05,960
+hanno un podcast, un canale youtube ed una community molto attiva su discord.
+
+15
+00:01:05,960 --> 00:01:12,480
+La conferenza si svolgerà il 24 marzo a Firenze e sarà una gran bella occasione per ascoltare
+
+16
+00:01:12,480 --> 00:01:17,440
+persone interessanti parlare di sviluppo e problematiche inerenti al mondo dell'open
+
+17
+00:01:17,440 --> 00:01:18,440
+source.
+
+18
+00:01:18,440 --> 00:01:23,560
+Se ti va poi sarà anche un bel momento per incontrarci e conoscerci, visto che a Firenze
+
+19
+00:01:23,560 --> 00:01:29,240
+il giorno 24 ci sarò anche io e vari altri podcaster che fanno divulgazione nel campo
+
+20
+00:01:29,240 --> 00:01:30,240
+dell'informatica.
+
+21
+00:01:30,240 --> 00:01:35,040
+Il biglietto d'ingresso è gratuito ma va prenotato, quindi ti lascio in descrizione
+
+22
+00:01:35,040 --> 00:01:36,880
+il link al sito della conferenza.
+
+23
+00:01:36,880 --> 00:01:42,560
+Dopo che ti sarai iscritto e scritta, se ti va scrivimi una mail o su telegram così
+
+24
+00:01:42,560 --> 00:01:45,880
+magari ne approfittiamo per incontrarci e fare gruppo.
+
+25
+00:01:45,880 --> 00:01:49,640
+Tutti i miei contatti sono sul sito pensierincodice.it
+
+26
+00:01:54,520 --> 00:01:59,720
+Tornando all'argomento di oggi, se sei sul canale telegram di Pensieri in Codice saprai
+
+27
+00:01:59,720 --> 00:02:04,640
+che sono mesi che mi lamento del fatto che non riesco a trovare il tempo per fare tutto
+
+28
+00:02:04,640 --> 00:02:09,240
+quello che vorrei, il lavoro, gli impegni, gli imprevisti, è un continuo, servirebbero
+
+29
+00:02:09,240 --> 00:02:15,400
+giornate di 48 ore e ti sarai anche resa o reso conto che questa mia situazione sta influendo
+
+30
+00:02:15,400 --> 00:02:20,380
+parecchio e soprattutto sull'uscita di Pensieri in Codice che si è fermato per un po' e ora
+
+31
+00:02:20,380 --> 00:02:22,920
+stenta a ripartire in maniera regolare.
+
+32
+00:02:23,320 --> 00:02:27,680
+Ebbene, forse mi sono imbattuto in qualcosa che potrebbe essere d'aiuto per migliorare
+
+33
+00:02:27,680 --> 00:02:32,720
+questa situazione e non solo per il podcast ma anche per la qualità della vita in generale.
+
+34
+00:02:32,720 --> 00:02:37,920
+E siccome credo di non essere l'unico ad avere questo tipo di problemi, a sentirsi
+
+35
+00:02:37,920 --> 00:02:44,080
+un po' sopraffatto dalla mole di informazioni che arriva ogni giorno, ho deciso di condividere
+
+36
+00:02:44,080 --> 00:02:49,360
+con te la mia scoperta e anche questa prima fase del percorso, sperando che sia effettivamente
+
+37
+00:02:49,360 --> 00:02:54,800
+efficace quanto sembra. Se quindi qualche volta ti è capitato di sentirti come me negli
+
+38
+00:02:54,800 --> 00:03:00,040
+ultimi mesi, beh chissà che quanto sto per dirti non possa tornare utile anche a te.
+
+39
+00:03:00,040 --> 00:03:09,400
+Iniziamo con un po' di contesto, giusto per farti capire qual è stato il mio punto di
+
+40
+00:03:09,400 --> 00:03:14,800
+partenza, la situazione da cui ha preso piede il cambiamento che sto attuando. Lavorando
+
+41
+00:03:14,800 --> 00:03:20,560
+come consulente freelance, libero professionista e volendo svolgere anche tutta una serie di
+
+42
+00:03:20,560 --> 00:03:26,200
+attività extra lavorative come lo studio, la produzione del podcast, vari hobby e naturalmente
+
+43
+00:03:26,200 --> 00:03:33,040
+le faccende personali, già da tempo ho adottato e affinato e personalizzato un mio sistema
+
+44
+00:03:33,040 --> 00:03:39,400
+di pianificazione del tempo. È infatti dal 2015 che gestisco tutte le mie attività attraverso
+
+45
+00:03:39,400 --> 00:03:44,880
+un'app, Todoist, della quale ho già parlato in un vecchio episodio e nella quale implemento
+
+46
+00:03:44,880 --> 00:03:51,320
+un mix di varie tecniche che considero il più adatto alla mia situazione. Questo sistema
+
+47
+00:03:51,320 --> 00:03:57,760
+di pianificazione si è evoluto nel tempo, partendo dal classico GTD, integrando la tecnica
+
+48
+00:03:57,760 --> 00:04:03,880
+del pomodoro, passando per il time blocking e giungendo a diventare un mio metodo che
+
+49
+00:04:03,880 --> 00:04:10,280
+non ha un vero e proprio nome, non è nessuno dei precedenti, ma una commistione di essi
+
+50
+00:04:10,280 --> 00:04:16,040
+e mi permette di essere il più efficace ed efficiente ed organizzato possibile, almeno
+
+51
+00:04:16,040 --> 00:04:22,560
+secondo i miei standard. O forse così credevo. La verità è che più mi rendevo conto di
+
+52
+00:04:22,560 --> 00:04:28,120
+aumentare la mia efficienza utilizzando tecniche, app o quant'altro, più cresceva anche la
+
+53
+00:04:28,120 --> 00:04:33,320
+mia voglia di aggiungere altre attività alla lista di cose da fare. Credo che sia normale.
+
+54
+00:04:33,760 --> 00:04:38,360
+È stato grazie a questo mio sistema che ho potuto avviare un podcast in parallelo con
+
+55
+00:04:38,360 --> 00:04:43,640
+la mia attività di consulente a partita IVA. È stato sempre grazie ad esso che ho potuto
+
+56
+00:04:43,640 --> 00:04:50,480
+gestire vari incarichi in contemporanea senza dover fare le nottate. E nel frattempo aumentavo
+
+57
+00:04:50,480 --> 00:04:55,320
+il numero di libri che riuscivo a leggere, i contenuti online che consumavo, ho persino
+
+58
+00:04:55,320 --> 00:05:01,000
+iniziato a coltivare piante carnivore, tanto per dirne una. Tutte attività queste che
+
+59
+00:05:01,000 --> 00:05:06,720
+sei o sette anni fa non avrei mai creduto di poter fare, obberato com'ero dal lavoro
+
+60
+00:05:06,720 --> 00:05:12,360
+e dagli impegni di allora. In pratica, ottimizzando la gestione del tempo, si è venuto a creare
+
+61
+00:05:12,360 --> 00:05:16,760
+una sorta di spazio che mi ha permesso di inserire altre attività, non solo quelle
+
+62
+00:05:16,760 --> 00:05:22,600
+che dovevo svolgere, ma anche quelle che volevo svolgere. Hobby, cose divertenti, studio.
+
+63
+00:05:22,600 --> 00:05:29,000
+E, forse la cosa più importante, ho potuto serenamente trascorrere più tempo con le persone
+
+64
+00:05:29,000 --> 00:05:34,400
+a cui tengo. Ora, io l'ho descritto velocemente, ma questo processo è durato qualche anno
+
+65
+00:05:34,400 --> 00:05:39,720
+seguendo una curva di miglioramento più o meno costante, ottimizzando la pianificazione
+
+66
+00:05:39,720 --> 00:05:46,360
+e riducendo al minimo gli sprechi di tempo. E poi? E poi ad un certo punto mi sono reso
+
+67
+00:05:46,360 --> 00:05:51,600
+conto che avevo raggiunto il mio limite. Anzi, per buona parte dello scorso anno, l'ho
+
+68
+00:05:51,600 --> 00:05:56,000
+anche abbondantemente superato, infatti ad un certo punto non ho più potuto tenere
+
+69
+00:05:56,000 --> 00:06:01,560
+il passo. Ho scoperto, infatti, che posso rifinire e ottimizzare quanto voglio la pianificazione
+
+70
+00:06:01,560 --> 00:06:06,800
+delle mie giornate, ma la dura verità è che poi devo fare anche i conti con le mie energie,
+
+71
+00:06:06,800 --> 00:06:11,960
+soprattutto quelle mentali. Il fatto di aver riservato il giusto tempo per svolgere una
+
+72
+00:06:11,960 --> 00:06:16,820
+serie di compiti non vuol dire che la mia mente sia sempre in grado di mantenere il
+
+73
+00:06:16,820 --> 00:06:21,360
+giusto livello di concentrazione per tutta la durata della giornata, o addirittura della
+
+74
+00:06:21,360 --> 00:06:27,000
+settimana. Accadeva così che già al giovedì mi sentissi mentalmente esausto e non riuscissi
+
+75
+00:06:27,000 --> 00:06:32,720
+a tenere fede alla pianificazione settimanale, o a fine giornata mi rifiutassi di svolgere
+
+76
+00:06:32,720 --> 00:06:38,120
+le stesse attività che avevo immaginato al mattino, e non per mancanza di tempo, semplicemente
+
+77
+00:06:38,120 --> 00:06:43,280
+per stanchezza. E dunque, escluse le sfere lavorativa e familiare alle quali ho dato
+
+78
+00:06:43,280 --> 00:06:48,960
+la precedenza per ovvi motivi, ho dovuto rinunciare a un bel po' di cose. Ho accumulato
+
+79
+00:06:48,960 --> 00:06:53,920
+letture, podcast e video che solo ora sto iniziando a smaltire, così come ho dovuto
+
+80
+00:06:53,920 --> 00:06:59,600
+interrompere pensieri in codice, il quale è ripartito solo da poco. Sto faticosamente
+
+81
+00:06:59,600 --> 00:07:04,560
+riprendendo il ritmo e da un lato non ho alcuna intenzione di finire in burnout come nel
+
+82
+00:07:04,560 --> 00:07:10,520
+mese di ottobre dello scorso anno, ma dall'altro non voglio neanche rinunciare ai miei hobby
+
+83
+00:07:10,520 --> 00:07:15,840
+e a questo progetto di divulgazione, o men che meno agli impegni che ho preso. Ma quindi,
+
+84
+00:07:15,840 --> 00:07:20,680
+riprendendo al punto, ciò che sta rendendo possibile questa ripresa e che spero mi aiuti
+
+85
+00:07:20,680 --> 00:07:25,880
+sempre di più nel prossimo futuro, è il fatto che ho scoperto un nuovo aspetto della
+
+86
+00:07:25,880 --> 00:07:31,800
+mia vita organizzativa che potevo effettivamente migliorare. Qualcosa a cui mi sono reso conto
+
+87
+00:07:31,800 --> 00:07:38,000
+di non aver finora dato il peso che meritava, ed in particolare mi riferisco al modo in cui
+
+88
+00:07:38,000 --> 00:07:47,760
+apprendo, conservo ed utilizzo le informazioni. Diciamoci la verità, negli ultimi venti o
+
+89
+00:07:47,760 --> 00:07:52,480
+trent'anni il flusso di informazioni al quale veniamo sottoposti ogni giorno è aumentato
+
+90
+00:07:52,480 --> 00:07:57,440
+in maniera folle. Una volta, a seconda dei nostri interessi, per ottenere informazioni
+
+91
+00:07:57,440 --> 00:08:02,720
+dovevamo cercare in un'enciclopedia, comprare un libro o una rivista, andare in biblioteca,
+
+92
+00:08:02,720 --> 00:08:08,240
+scendere la radio o la tv. Oggi, invece, è chiaro a chiunque che abbiamo accesso a
+
+93
+00:08:08,240 --> 00:08:13,200
+tutte le informazioni che vogliamo in ogni momento della giornata. La tecnologia che
+
+94
+00:08:13,200 --> 00:08:18,760
+ce le rende disponibili è progredita a vista d'occhio e noi chiaramente ne abbiamo approfittato,
+
+95
+00:08:18,760 --> 00:08:23,520
+saremmo stati pazzi a fare altrimenti. Il problema però in tutto questo è che il nostro
+
+96
+00:08:23,520 --> 00:08:30,320
+cervello non ha avuto il tempo di adattarsi a questa abbondanza informativa ed il risultato
+
+97
+00:08:30,320 --> 00:08:37,040
+di ciò è che spesso si sente sommerso, stressato oltremodo e fatica a mantenere e
+
+98
+00:08:37,040 --> 00:08:42,000
+sfruttare così tanti dati nel migliore dei modi. Ti lascio un link in descrizione ma
+
+99
+00:08:42,000 --> 00:08:46,760
+non serve andare a scomodare neuroscienze e ricerche scientifiche per capire quanto sia
+
+100
+00:08:46,760 --> 00:08:52,920
+vera questa affermazione. Quante volte ti è capitato di sentire o leggere una qualche
+
+101
+00:08:52,920 --> 00:08:59,520
+informazione pensando quanto sia interessante e poi semplicemente perderla dalla mente?
+
+102
+00:08:59,720 --> 00:09:05,120
+Quanti pensieri hai formulato mentre eri sotto la doccia, in auto o in attesa dal dentista
+
+103
+00:09:05,120 --> 00:09:10,560
+per poi scoprire dopo qualche ora che ogni ricordo in merito era completamente sparito?
+
+104
+00:09:10,560 --> 00:09:15,960
+Quante volte ti è stato necessario ricostruire delle conoscenze che già avevi utilizzato
+
+105
+00:09:15,960 --> 00:09:21,640
+in passato e delle quali già avevi appreso degli aspetti ma che hai dovuto ricercare
+
+106
+00:09:21,640 --> 00:09:28,360
+e rivedere da capo? Beh a me è capitato spesso, molto spesso e non parlo solo di informazioni
+
+107
+00:09:28,360 --> 00:09:34,120
+pubblicamente reperibili online ma anche di cose private o di lavoro, una ricerca appuntata
+
+108
+00:09:34,120 --> 00:09:39,480
+su un foglio di carta, un documento fiscale o medico in archivio, una procedura sepolta
+
+109
+00:09:39,480 --> 00:09:45,560
+tra mille pagine di un manuale, gli appunti di una riunione d'inizio mese. Le informazioni
+
+110
+00:09:45,560 --> 00:09:51,240
+arrivano da internet, dal mondo reale o persino dalla nostra stessa mente perché no se si
+
+111
+00:09:51,240 --> 00:09:57,600
+tratta di sensazioni, idee o pensieri e tutte passano inevitabilmente dal nostro cervello
+
+112
+00:09:57,600 --> 00:10:02,680
+al quale noi affibbiamo l'arduo compito di memorizzarle e restituircele al momento
+
+113
+00:10:02,680 --> 00:10:09,000
+del bisogno. Beh evidentemente per me questa cosa non funziona, anzi credo che siano veramente
+
+114
+00:10:09,000 --> 00:10:15,320
+pochi quelli che possono permettersi questo lusso e infatti tutti noi abbiamo i nostri
+
+115
+00:10:15,320 --> 00:10:20,920
+metodi per porvi il rimedio no? Ad alcuni semplicemente magari la cosa non interessa
+
+116
+00:10:20,920 --> 00:10:27,080
+e si lasciano scivolare tutto addosso, altri invece utilizzano quaderni, blocnotes, post-it,
+
+117
+00:10:27,080 --> 00:10:32,880
+magari ancora avranno un software o un raccoglitore cartaceo. Io avevo un mio metodo fatto di
+
+118
+00:10:32,880 --> 00:10:39,320
+un misto di quaderni, software per appunti, hard disk, ma a quanto pare non funziona troppo
+
+119
+00:10:39,320 --> 00:10:45,480
+bene e poi finalmente ho scoperto la pratica del second brain.
+
+120
+00:10:45,480 --> 00:10:55,640
+Qualche settimana fa mi è capitato di mettere le mani su questo libro intitolato il tuo
+
+121
+00:10:55,640 --> 00:11:01,520
+secondo cervello di Tiago Forte. L'ho acquistato più che altro per curiosità, avevo sentito
+
+122
+00:11:01,520 --> 00:11:08,080
+parlare di questa tecnica nel podcast Gitbar e a proposito se non segui ancora il podcast
+
+123
+00:11:08,080 --> 00:11:13,200
+di riferimento per la comunità degli sviluppatori italiani beh ti lascio un link in descrizione
+
+124
+00:11:13,200 --> 00:11:19,080
+perché devi assolutamente recuperarlo mi raccomando. Comunque come dicevo l'ho acquistato
+
+125
+00:11:19,080 --> 00:11:24,200
+senza troppe aspettative perché avevo la presunzione se non proprio di sapere già
+
+126
+00:11:24,280 --> 00:11:31,040
+tutto sull'argomento almeno di essere a buon punto ma devo dire che ho scoperto che mi sbagliavo.
+
+127
+00:11:31,040 --> 00:11:37,600
+Questa lettura mi ha aperto una serie di orizzonti che non avrei mai immaginato. Avevo già un'idea
+
+128
+00:11:37,600 --> 00:11:43,360
+di cosa fosse il concetto di gestione della conoscenza personale ma non credevo che si
+
+129
+00:11:43,360 --> 00:11:48,200
+potessero ottimizzare a tal punto i metodi relativi alla gestione di tutta questa mole
+
+130
+00:11:48,200 --> 00:11:54,120
+di informazioni. Capiamoci io avevo già costruito una mia knowledge base personale fatta di
+
+131
+00:11:54,540 --> 00:12:00,480
+archivi appunti raccoglievo osservazioni sugli articoli che trovavo interessanti mi appuntavo
+
+132
+00:12:00,480 --> 00:12:06,680
+procedure utili e conservavo i manuali che mi erano serviti in certi casi specifici ma
+
+133
+00:12:06,680 --> 00:12:12,280
+quello che non avevo mai acquisito era una vera e propria filosofia della gestione della mia
+
+134
+00:12:12,280 --> 00:12:18,920
+conoscenza. Quando descrive lo scopo del secondo cervello forse non parla semplicemente di archiviare
+
+135
+00:12:18,920 --> 00:12:25,240
+e organizzare informazioni ma usa frasi del tipo aprire una banca della conoscenza o mettere a
+
+136
+00:12:25,240 --> 00:12:31,000
+rendita i vostri pensieri. Ciò che ho appreso da questo libro infatti non è solo come organizzare
+
+137
+00:12:31,000 --> 00:12:37,920
+appunti e documenti ma un metodo per liberare la mente dai compiti nei quali è meno efficiente e
+
+138
+00:12:37,920 --> 00:12:43,560
+utilizzarla al massimo in quello che invece sa fare meglio. Esattamente come per i concetti alla
+
+139
+00:12:43,560 --> 00:12:48,840
+base della pianificazione che mirano a risparmiarci di dover tenere a mente tutte le
+
+140
+00:12:48,840 --> 00:12:56,120
+cose da fare e quando farle. Il cervello umano è fatto per effettuare ragionamenti per cercare
+
+141
+00:12:56,120 --> 00:13:02,680
+collegamenti e scoprire e capire cose nuove non per mantenere archiviate informazioni che potrebbero
+
+142
+00:13:02,680 --> 00:13:08,680
+o non potrebbero poi servirci nella vita. E allora per usare termini informatici perché
+
+143
+00:13:08,680 --> 00:13:14,120
+non scaricare le informazioni su supporti fatti apposta per la memorizzazione e lasciare invece
+
+144
+00:13:14,120 --> 00:13:20,520
+libere le nostre risorse mentali per impiegarle in attività che sono più in linea con le
+
+145
+00:13:20,520 --> 00:13:30,840
+potenzialità del nostro processore? Per capire un attimo meglio questa dicotomia di funzionamento
+
+146
+00:13:30,840 --> 00:13:36,440
+del cervello dobbiamo però accennare ad un concetto che è ben elaborato nel libro e cioè
+
+147
+00:13:36,440 --> 00:13:43,280
+la distinzione tra pensiero divergente e pensiero convergente. Ora ti riassumerò molto in breve
+
+148
+00:13:43,280 --> 00:13:49,040
+quanto mi è rimasto impresso ma chiaramente ti consiglio di leggere il libro e trarne le
+
+149
+00:13:49,040 --> 00:13:54,560
+tue osservazioni di prima mano. Ebbene il concetto di base è che quando lavora sulle
+
+150
+00:13:54,560 --> 00:13:59,720
+informazioni il cervello opera essenzialmente in due modalità appunto quella divergente e
+
+151
+00:13:59,800 --> 00:14:07,080
+quella convergente. Il pensiero divergente è attivo durante le fasi esplorative, infatti il
+
+152
+00:14:07,080 --> 00:14:12,640
+cervello è in quella modalità quando incameriamo informazioni, leggiamo, ascoltiamo podcast,
+
+153
+00:14:12,640 --> 00:14:18,520
+guardiamo video. Siamo in fase divergente anche quando fantastichiamo, quando seguiamo il link a
+
+154
+00:14:18,520 --> 00:14:25,320
+partire dal contenuto che stiamo leggendo o ancora quando vaghiamo sui motori di ricerca accumulando
+
+155
+00:14:25,320 --> 00:14:31,840
+dati e risultati. Al contrario invece il pensiero convergente è quello più analitico, più costruttivo,
+
+156
+00:14:31,840 --> 00:14:37,040
+quello nel quale valutiamo i risultati della nostra caccia alle informazioni e decidiamo
+
+157
+00:14:37,040 --> 00:14:42,520
+cosa veramente ci può tornare utile e cosa possiamo fare con il bottino accumulato. In
+
+158
+00:14:42,520 --> 00:14:49,240
+questa modalità il cervello praticamente screma i dati in eccesso per giungere al nocciolo di cosa
+
+159
+00:14:49,240 --> 00:14:55,040
+è davvero essenziale per noi e con i risultati di questa operazione tende a produrre altri
+
+160
+00:14:55,040 --> 00:15:00,920
+pensieri e ragionamenti. In pratica semplificando molto potremmo dire che il pensiero divergente
+
+161
+00:15:00,920 --> 00:15:07,200
+accumula mentre quello convergente fa pulizia e mette in ordine e come potrai ben immaginare è
+
+162
+00:15:07,200 --> 00:15:13,400
+molto difficile compiere entrambe le operazioni contemporaneamente. Le due modalità di pensiero
+
+163
+00:15:13,400 --> 00:15:19,200
+sono tendenzialmente in contrasto fra loro, ciò non vuol dire che sia impossibile conciliarle ma
+
+164
+00:15:19,200 --> 00:15:24,800
+probabilmente per la maggior parte di noi questo tentativo richiede uno sforzo che non vale la
+
+165
+00:15:24,800 --> 00:15:30,200
+pena di essere compiuto. Semplicemente è più facile divagare quando è il momento di divagare
+
+166
+00:15:30,200 --> 00:15:35,280
+e invece organizzare quando è il momento di organizzare rispetto a svolgere entrambe le
+
+167
+00:15:35,280 --> 00:15:45,640
+attività contemporaneamente. Il metodo second brain quindi si basa proprio sul tentativo di
+
+168
+00:15:45,640 --> 00:15:51,720
+assecondare questo semplice concetto di dicotomia di pensiero e nel farlo va ben oltre il fatto di
+
+169
+00:15:51,720 --> 00:15:57,120
+essere un mero metodo di archiviazione. Superficialmente infatti potrebbe sembrare
+
+170
+00:15:57,120 --> 00:16:04,000
+che si parli semplicemente di un modo per prendere appunti ma in realtà il second brain è una vera
+
+171
+00:16:04,000 --> 00:16:09,240
+e propria filosofia di produzione del sapere. Non parliamo solo di installare un software per
+
+172
+00:16:09,240 --> 00:16:14,400
+raccogliere annotazioni o di riorganizzare la cartella documenti, applicare questo modello
+
+173
+00:16:14,400 --> 00:16:19,760
+alla propria quotidianità significa adottare un vero e proprio processo che aiuta a catturare,
+
+174
+00:16:19,760 --> 00:16:25,000
+organizzare, distillare e poi rielaborare le informazioni alle quali già siamo normalmente
+
+175
+00:16:25,000 --> 00:16:31,040
+esposti ogni giorno. L'idea di base è quella di sviluppare delle abitudini di comportamento che
+
+176
+00:16:31,040 --> 00:16:36,760
+si integrino al meglio nella nostra vita senza aggiungere alcun costo in termini di impegno,
+
+177
+00:16:36,760 --> 00:16:41,760
+quindi approfittare delle letture che già stiamo facendo, dei video e dei podcast che
+
+178
+00:16:41,760 --> 00:16:47,400
+già ascoltiamo abitualmente, di tutte le fonti di informazione che già siamo soliti consultare ma
+
+179
+00:16:47,400 --> 00:16:53,400
+con uno spirito un po' diverso e con un metodo ben definito che ora proverò a descrivere. Vada
+
+180
+00:16:53,400 --> 00:16:59,080
+bene siccome parliamo di qualcosa che è in realtà più complesso di quel che può apparire non è certo
+
+181
+00:16:59,080 --> 00:17:05,680
+mia intenzione esaurire in pochi minuti l'intero argomento però voglio provare almeno a darti una
+
+182
+00:17:05,680 --> 00:17:11,800
+panoramica di quanto estratto da questo libro, poi starà a approfondire direttamente dalle parole
+
+183
+00:17:11,800 --> 00:17:22,640
+dell'autore se l'argomento risulterà di tuo interesse. Tutto a inizio dal cercare di porre
+
+184
+00:17:22,640 --> 00:17:27,840
+il focus su ciò che colpisce la nostra attenzione, quello che solletica la nostra immaginazione,
+
+185
+00:17:27,840 --> 00:17:34,680
+che fa scattare in noi una riflessione o perfino che ci fa incazzare. Forte utilizza questo trigger
+
+186
+00:17:34,680 --> 00:17:40,760
+per individuare le informazioni che meritano di essere catturate. Personalmente trovo questa
+
+187
+00:17:40,760 --> 00:17:46,000
+regola molto intelligente perché ritengo che sia una sorta di estensione del normale funzionamento
+
+188
+00:17:46,000 --> 00:17:51,640
+del cervello, d'altronde non è pensabile archiviare ogni informazione con la quale si viene in
+
+189
+00:17:51,640 --> 00:17:58,000
+contatto ed in effetti quello che solitamente ci resta impresso naturalmente è anche ciò che in
+
+190
+00:17:58,000 --> 00:18:03,240
+qualche modo ci ha colpiti e quando memorizziamo qualcosa il nostro obiettivo non è quello di
+
+191
+00:18:03,240 --> 00:18:09,480
+costruire un'enciclopedia ma è cercare di avere a portata di mano le informazioni che pensiamo ci
+
+192
+00:18:09,480 --> 00:18:15,000
+possano tornare utili nella vita quotidiana. Quindi perché non estendere questo meccanismo
+
+193
+00:18:15,000 --> 00:18:21,600
+e demandare questo compito ad un supporto digitale che ci garantisca una maggiore affidabilità e al
+
+194
+00:18:21,600 --> 00:18:26,920
+tempo stesso ci permetta di liberare risorse mentali da utilizzare in altro modo? Ora non
+
+195
+00:18:26,920 --> 00:18:32,520
+scendiamo nei dettagli tecnici che non è questa la sede ma mi sembra ovvio che i nostri computer,
+
+196
+00:18:32,520 --> 00:18:37,240
+i nostri smartphone equipaggiati con un buon software per appunti ed una connessione ad
+
+197
+00:18:37,240 --> 00:18:43,440
+internet per sincronizzare il tutto possano svolgere perfettamente il compito di conservare
+
+198
+00:18:43,440 --> 00:18:50,040
+per noi le informazioni. Tecnologicamente parlando questa cosa può avere molto senso ma dobbiamo
+
+199
+00:18:50,040 --> 00:18:55,320
+anche tener presente che nessuna tecnologia attuale funziona esattamente come il nostro
+
+200
+00:18:55,320 --> 00:19:01,400
+cervello quindi dopo aver delegato a questi strumenti parte dei compiti della nostra
+
+201
+00:19:01,400 --> 00:19:07,000
+memoria dobbiamo subito affrontare un secondo problema cioè come organizzare e recuperare
+
+202
+00:19:07,320 --> 00:19:14,360
+conoscenza. Il metodo second brain ha già una sua semplicissima regola in merito cioè ordinare le
+
+203
+00:19:14,360 --> 00:19:20,640
+informazioni in base all'uso che si intende farne. Quello che serve oggi quindi va messo a portata di
+
+204
+00:19:20,640 --> 00:19:26,400
+mano quello che serve una volta al mese sarà un po' meno in evidenza e ciò che forse potrebbe
+
+205
+00:19:26,400 --> 00:19:33,200
+servire un giorno finirà in un archivio in cui cercare quando e se ce ne sarà bisogno. Quella
+
+206
+00:19:33,200 --> 00:19:38,360
+che ti ho riassunto molto brevemente è un tipo di organizzazione che forte chiama con l'acronimo
+
+207
+00:19:38,360 --> 00:19:45,800
+di PARA che sta per progetti aree risorse e archivio. Non sto ad approfondire ora trovi sempre
+
+208
+00:19:45,800 --> 00:19:50,880
+tutto nel libro ma in pratica si tratta di avere sotto mano le informazioni che al momento si
+
+209
+00:19:50,880 --> 00:19:56,720
+utilizzano con maggiore frequenza e nascondere tutte le altre. Per ottenere ciò è chiaro che
+
+210
+00:19:56,720 --> 00:20:02,240
+sarà necessario riorganizzare frequentemente questa suddivisione sulla base delle necessità
+
+211
+00:20:02,240 --> 00:20:08,120
+del momento ma d'altronde la tecnologia ci permette anche questo effettuare ricerche in
+
+212
+00:20:08,120 --> 00:20:14,280
+testi, documenti, perfino immagini o video e spostare tutti i file o le annotazioni in modo
+
+213
+00:20:14,280 --> 00:20:20,960
+semplice e veloce. Quindi ancora una volta perché non sfruttare tutte queste funzionalità e risparmiare
+
+214
+00:20:20,960 --> 00:20:27,120
+le nostre di energie? Parlando poi sempre di ottimizzazione il second brain prescrive anche
+
+215
+00:20:27,120 --> 00:20:33,400
+un interessante concetto di distillazione degli appunti. A mano a mano che le nostre annotazioni
+
+216
+00:20:33,400 --> 00:20:40,160
+crescono infatti quando mettiamo mano ad un appunto dovrebbe essere possibile capire in pochi
+
+217
+00:20:40,160 --> 00:20:46,400
+secondi se questo può esserci utile oppure no in quel momento. Non possiamo collezionare pagine
+
+218
+00:20:46,400 --> 00:20:51,520
+e pagine di informazioni e rileggerle tutte ogni volta che abbiamo il sospetto che ci possano
+
+219
+00:20:51,520 --> 00:20:59,000
+servire. Quindi sempre come suggerito da forte a poco a poco volta dopo volta che consulteremo
+
+220
+00:20:59,000 --> 00:21:07,040
+un nostro appunto metteremo sempre più in evidenza parti del testo cosa che poi ci permetterà quasi a
+
+221
+00:21:07,040 --> 00:21:13,760
+colpo d'occhio di capirne il contenuto. Si tratta questa di una strategia per distillare il contenuto
+
+222
+00:21:13,760 --> 00:21:19,360
+rileggere rapidamente le parti salienti e soprattutto capire velocemente se ciò su cui ci
+
+223
+00:21:19,360 --> 00:21:25,560
+troviamo ci interessa effettivamente in questo momento oppure no. Per i dettagli poi ti rimando
+
+224
+00:21:25,560 --> 00:21:30,800
+sempre al libro o magari ad un altro episodio perché no fammi sapere se la cosa ti interessa.
+
+225
+00:21:30,800 --> 00:21:36,920
+Ora so che tutto ciò che ti ho descritto potrebbe sembrare un sacco di lavoro ma non è assolutamente
+
+226
+00:21:36,920 --> 00:21:44,680
+così. Se c'è una caratteristica del second brain che mi ha colpito è proprio il pochissimo carico
+
+227
+00:21:44,680 --> 00:21:50,880
+che aggiunge alle attività che normalmente già svolgo ogni giorno. Tutto il sistema infatti pensato
+
+228
+00:21:50,880 --> 00:21:56,560
+per adattarsi alle abitudini di chi lo utilizza essere portato avanti con poco sforzo e soprattutto
+
+229
+00:21:56,560 --> 00:22:02,760
+per dare benefici sempre maggiori con il passare del tempo. Sì perché diciamocela tutta cosa
+
+230
+00:22:02,760 --> 00:22:08,440
+raccogliamo a fare tante informazioni ogni giorno se poi non ne tiriamo fuori qualcosa di buono?
+
+231
+00:22:08,440 --> 00:22:14,880
+Perché mai ci informiamo, studiamo, ascoltiamo podcast, leggiamo libri articoli se poi non
+
+232
+00:22:14,880 --> 00:22:20,320
+vogliamo mettere in qualche modo a frutto la conoscenza derivante da tutto questo lavoro?
+
+233
+00:22:21,240 --> 00:22:27,800
+Beh la conseguenza di questo accumulo di sapere è a sua volta produzione di conoscenza che ce ne
+
+234
+00:22:27,800 --> 00:22:33,800
+rendiamo conto o no. Le informazioni vengono incamerate rielaborate e poi ricondivise con gli
+
+235
+00:22:33,840 --> 00:22:40,760
+altri. Forse tu ora starei pensando alla creazione di contenuti certo ma non farti ingannare non è
+
+236
+00:22:40,760 --> 00:22:48,160
+questo l'unico obiettivo anzi in percentuale sono ben poche le persone che mirano a ciò. La verità
+
+237
+00:22:48,160 --> 00:22:54,360
+è che tutti noi produciamo sempre informazioni ogni giorno sul lavoro, quando creiamo documenti,
+
+238
+00:22:54,360 --> 00:22:59,280
+presentazioni, manuali o anche semplicemente quando spieghiamo una procedura ad un collega,
+
+239
+00:22:59,280 --> 00:23:06,400
+con amici e parenti, quando diamo loro consigli, quando parliamo di come abbiamo risolto questo
+
+240
+00:23:06,400 --> 00:23:13,120
+o quel problema. È una sorta di processo continuo e in questo il metodo second brain può aiutarci a
+
+241
+00:23:13,120 --> 00:23:19,200
+semplificarlo, a renderlo più piacevole, migliore. Riversando infatti gran parte dei compiti
+
+242
+00:23:19,200 --> 00:23:26,600
+mnemonici sul nostro secondo cervello al primo, quello biologico, resteranno molte più energie per
+
+243
+00:23:26,600 --> 00:23:33,000
+fare quello che sa fare meglio, cioè individuare soluzioni, collegamenti, formulare idee e metterle
+
+244
+00:23:33,000 --> 00:23:43,040
+in pratica nella vita quotidiana. Personalmente parlando ho adottato questo metodo da qualche
+
+245
+00:23:43,040 --> 00:23:49,760
+settimana e mi sto abituando poco a poco a farlo rientrare nella mia routine e questo secondo me
+
+246
+00:23:49,760 --> 00:23:56,000
+il primo grande vantaggio. Non si tratta di un paradigma rigido e pesante, non impone cambiamenti
+
+247
+00:23:56,040 --> 00:24:02,440
+improvvisi, ma permette un'adozione graduale che rende tutto il processo piuttosto gradevole e
+
+248
+00:24:02,440 --> 00:24:09,080
+naturale. In secondo luogo poi mi sono reso conto che pian piano il mio modo di ragionare sta
+
+249
+00:24:09,080 --> 00:24:17,800
+cambiando. Quando applico il metodo pongo anche più attenzione all'attimo presente, valuto più
+
+250
+00:24:17,800 --> 00:24:23,040
+attentamente le attività che sto compiendo ed analizzo diversamente i dati che scaturiscono
+
+251
+00:24:23,040 --> 00:24:30,960
+da esse. Non importa quale sia l'ambito lavorativo, personale, ricreativo o altro, mi accorgo che
+
+252
+00:24:30,960 --> 00:24:37,120
+ragiono più a lungo sulle cose, non ore ovviamente, non parlo di viaggi mentali, ma semplicemente di
+
+253
+00:24:37,120 --> 00:24:43,000
+qualche istante in più. Giusto il tempo di pensare che questa cosa mi interessa effettivamente, mi
+
+254
+00:24:43,000 --> 00:24:50,320
+potrebbe mai servire, dovrei ricordarmela. E infine sento letteralmente di avere un posto sicuro dove
+
+255
+00:24:50,320 --> 00:24:56,400
+emettere le informazioni, una sorta di schedario privato in cui so che da una parte posso stare
+
+256
+00:24:56,400 --> 00:25:03,000
+sicuro che i dati grezzi non andranno persi e saranno poi raffinati in caso di necessità e
+
+257
+00:25:03,000 --> 00:25:09,880
+dall'altra non avrò rimpianti se non mi serviranno mai, perché avrò speso una quantità minima di
+
+258
+00:25:09,880 --> 00:25:16,760
+tempo per archiviarli. Tutto ciò mi trasmette un senso di serenità, ho letteralmente sentito
+
+259
+00:25:16,760 --> 00:25:23,240
+diminuire il mio livello di stress in queste ultime settimane. Nei prossimi tempi, secondo
+
+260
+00:25:23,240 --> 00:25:29,440
+quanto sostiene Tiago Forte, dovrei iniziare a notare collegamenti emergere in modo organico
+
+261
+00:25:29,440 --> 00:25:35,480
+dall'insieme dei miei appunti, dovrei iniziare a migliorare a tal punto alcuni di questi documenti
+
+262
+00:25:35,480 --> 00:25:41,760
+da poterli condividere anche con gli altri come una sorta di unità di conoscenza. Per ora,
+
+263
+00:25:41,760 --> 00:25:48,640
+onestamente, non mi sembra di aver notato nulla di ciò, ma sono solo all'inizio e se anche non
+
+264
+00:25:48,640 --> 00:25:55,920
+dovesse essere così, questo metodo mi sta dando già tante di quelle soddisfazioni che penso proprio
+
+265
+00:25:55,920 --> 00:26:06,720
+che diverrà parte integrante della mia quotidianità. Bene, spero che questo episodio un po' particolare
+
+266
+00:26:06,720 --> 00:26:12,800
+su questa mia nuova scoperta ti sia piaciuto. Ovviamente, se ti incuriosisce il concetto di
+
+267
+00:26:12,800 --> 00:26:18,920
+Second Brain, il punto giusto da cui partire è il libro di Tiago Forte. Per acquistarlo trovi
+
+268
+00:26:18,920 --> 00:26:24,720
+in descrizione il link affiliato, così contribuirai anche a sostenere Pensieri in Codice. Se invece
+
+269
+00:26:24,720 --> 00:26:30,960
+già conoscevi il metodo, già lo utilizzi o hai intenzione di iniziare, valuta di unirti al gruppo
+
+270
+00:26:30,960 --> 00:26:36,480
+Telegram di Pensieri in Codice, perché sarei contento di potermi confrontare con qualcuno,
+
+271
+00:26:36,480 --> 00:26:43,360
+dato che io stesso sono alle prime armi. Detto ciò, anche oggi un grazie particolare va a Edoardo e
+
+272
+00:26:43,360 --> 00:26:50,480
+Carlo, che con le loro donazioni ricorrenti sono ormai sostenitori fissi del podcast. Ti ricordo
+
+273
+00:26:50,480 --> 00:26:57,400
+che sul sito pensieriincodice.it trovi tutti i link utili, gruppo Telegram, donazioni, affiliazioni,
+
+274
+00:26:57,400 --> 00:27:04,400
+eccetera. Ma se preferisci sostenere senza spendere soldi, puoi far ascoltare questo
+
+275
+00:27:04,400 --> 00:27:10,440
+episodio a qualcun altro, un amico, un conoscente. Condividerlo in qualche gruppo è un ottimo modo
+
+276
+00:27:10,440 --> 00:27:17,000
+per dare una mano. E dunque direi che non c'è altro, quindi come al solito io ti ringrazio
+
+277
+00:27:17,000 --> 00:27:23,600
+per aver ascoltato, ti saluto, ti do appuntamento al prossimo episodio e non dimenticare mai che un
+
+278
+00:27:23,600 --> 00:27:27,920
+informatico risolve problemi, a volte anche usando il computer.
+
