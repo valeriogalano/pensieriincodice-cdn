@@ -28,11 +28,20 @@ jobs:
         with:
           submodules: true
 
-      - name: 📂 Sync files
+      - name: 📂 Sync files to pensieriincodice.it
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: pensieriincodice.it
           username: cdn@pensieriincodice.it
           password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./public/
+          server-dir: /
+
+      - name: 📂 Sync files to cdn.pensieriincodice.it
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: cdn.pensieriincodice.it
+          username: cdn@cdn.pensieriincodice.it
+          password: ${{ secrets.CDN_FTP_PASSWORD }}
           local-dir: ./public/
           server-dir: /
