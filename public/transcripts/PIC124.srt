@@ -1,0 +1,2024 @@
+1
+00:00:00,000 --> 00:00:07,040
+Dopo due episodi nei quali abbiamo raccontato la vita della Contessa Augusta Ada Byron di
+
+2
+00:00:07,040 --> 00:00:12,680
+Lovelace, in questa terza ed ultima parte del nostro viaggio parliamo della sua opera
+
+3
+00:00:12,680 --> 00:00:15,680
+e di quanto straordinaria sia ancora oggi.
+
+4
+00:00:15,680 --> 00:00:22,000
+Se infatti la Lovelace è da molti ritenuta la prima programmatrice della storia, è proprio
+
+5
+00:00:22,000 --> 00:00:28,560
+grazie a quanto da lei illustrato nel suo memoir, dal titolo Sketch of Analytical Engine
+
+6
+00:00:28,560 --> 00:00:30,520
+invented by Charles Babbage.
+
+7
+00:00:30,520 --> 00:00:36,400
+Ma a differenza di quanto si creda comunemente, un tale titolo non è dovuto solo al fatto
+
+8
+00:00:36,400 --> 00:00:43,120
+che lei abbia inserito nell'articolo un algoritmo per la risoluzione dei numeri di Bernoulli,
+
+9
+00:00:43,120 --> 00:00:48,560
+ma anche e soprattutto dalla mentalità che traspare chiaramente dalle sue parole.
+
+10
+00:00:48,560 --> 00:00:56,520
+Una mentalità che anticipava tante di quelle che sono le caratteristiche del moderno sviluppatore
+
+11
+00:00:56,520 --> 00:00:57,520
+di software.
+
+12
+00:00:57,720 --> 00:01:00,720
+Mettiamoci dunque comodi e buon ascolto.
+
+13
+00:01:00,720 --> 00:01:10,720
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galano.
+
+14
+00:01:15,720 --> 00:01:19,920
+Il lavoro svolto da Ada non fu affatto semplice.
+
+15
+00:01:19,920 --> 00:01:26,120
+Il suo compito, che inizialmente era di mera traduzione, si trasformò ben presto in qualcosa
+
+16
+00:01:26,120 --> 00:01:31,440
+di molto più complesso e la responsabilità che ne derivò fu notevole.
+
+17
+00:01:31,440 --> 00:01:38,240
+La pubblicazione, il memoir come erano soliti chiamarla, una volta completata comprendeva
+
+18
+00:01:38,240 --> 00:01:43,960
+la traduzione dell'articolo di Menabrea e le note originali di Ada, e il suo scopo
+
+19
+00:01:43,960 --> 00:01:51,160
+era comunicare al governo inglese e alla comunità scientifica britannica il valore della rivoluzionaria
+
+20
+00:01:51,160 --> 00:01:54,360
+invenzione di Babbage, la macchina analitica.
+
+21
+00:01:54,600 --> 00:02:01,840
+Per fare ciò, Lady Lovelace dovette sintetizzare una mole di progetti enorme e, a partire da
+
+22
+00:02:01,840 --> 00:02:07,440
+essi, immaginare una serie di applicazioni pratiche che, da una parte, fossero realmente
+
+23
+00:02:07,440 --> 00:02:11,680
+realizzabili e, dall'altra, che facessero colpo sui suoi lettori.
+
+24
+00:02:11,680 --> 00:02:18,200
+Il suo compito era impressionare ed interessare il più vasto pubblico possibile, facendo
+
+25
+00:02:18,200 --> 00:02:23,680
+sempre però attenzione a non ingannare o illudere nessuno, intenzionalmente o meno.
+
+26
+00:02:24,000 --> 00:02:29,840
+Possiamo solo immaginare quanto sia stato complicato, dato che, alla sua morte, Babbage
+
+27
+00:02:29,840 --> 00:02:35,640
+aveva riempito ben trenta volumi di progetti e Ada non aveva nemmeno un modello in scala
+
+28
+00:02:35,640 --> 00:02:41,440
+ridotta sul quale provare le proprie intuizioni, come accadeva invece per la macchina differenziale.
+
+29
+00:02:41,440 --> 00:02:44,520
+Doveva ragionare totalmente in astratto.
+
+30
+00:02:44,520 --> 00:02:51,440
+Ci furono poi una serie di problemi pratici nella stesura delle note, in primis la difficoltà
+
+31
+00:02:51,440 --> 00:02:54,080
+oggettiva di lavorare a distanza.
+
+32
+00:02:54,080 --> 00:03:01,200
+La Lovelace e Babbage erano entrambi molto impegnati e non potevano incontrarsi facilmente,
+
+33
+00:03:01,200 --> 00:03:07,760
+quindi si spedivano null'altro le bozze dei testi, corredate da lunghe descrizioni o richieste
+
+34
+00:03:07,760 --> 00:03:10,240
+di spiegazioni di determinati aspetti.
+
+35
+00:03:10,240 --> 00:03:15,840
+Per noi che oggi utilizziamo editor condivisi e archivi cloud, si tratterebbe di un problema
+
+36
+00:03:15,840 --> 00:03:20,960
+banale, ma all'epoca era una parte importante della lavorazione.
+
+37
+00:03:21,480 --> 00:03:27,560
+Sono varie le lettere in cui Laylor improvera di averle mandato una versione vecchia del
+
+38
+00:03:27,560 --> 00:03:31,320
+documento o per aver dimenticato di includere qualche pagina.
+
+39
+00:03:31,320 --> 00:03:38,120
+In effetti, l'immagine di Babbage che appare dalla corrispondenza di questo periodo è
+
+40
+00:03:38,120 --> 00:03:41,120
+di una persona piuttosto caotica e disordinata.
+
+41
+00:03:41,120 --> 00:03:47,100
+E poi ancora ci fu il litigio riguardo la problematica prefazione che Babbage voleva
+
+42
+00:03:47,100 --> 00:03:51,740
+includere all'ultimo momento, di cui abbiamo già parlato in precedenza.
+
+43
+00:03:51,740 --> 00:03:57,740
+Si trattò di una controversia non da poco che quasi fece saltare l'intero lavoro e
+
+44
+00:03:57,740 --> 00:04:02,460
+che, come abbiamo già discusso, cambiò per sempre il rapporto fra i due.
+
+45
+00:04:02,460 --> 00:04:09,620
+Infine, altra cosa non banale, si presentò la questione di decidere come firmare l'opera.
+
+46
+00:04:09,620 --> 00:04:16,980
+Sappiamo infatti dagli scambi epistolari con la madre ed il marito che Ada era molto preoccupata
+
+47
+00:04:16,980 --> 00:04:22,380
+di come sarebbe stato percepito il suo lavoro se si fosse intuito che era stato scritto
+
+48
+00:04:22,380 --> 00:04:24,420
+da una donna invece che da un uomo.
+
+49
+00:04:24,420 --> 00:04:31,780
+Lei sapeva bene, date le sue esperienze personali e quelle dell'amica Mary Somerville, che questo
+
+50
+00:04:31,780 --> 00:04:37,860
+era un aspetto da ponderare con molta attenzione per raggiungere gli obiettivi di divulgazione
+
+51
+00:04:37,860 --> 00:04:38,860
+che si era posta.
+
+52
+00:04:38,860 --> 00:04:44,700
+Per quanto potesse essere abile nel descrivere le potenzialità della macchina analitica,
+
+53
+00:04:44,700 --> 00:04:52,060
+nel fornire informazioni, analisi o esempi, sapeva bene che un'opera scritta da una donna
+
+54
+00:04:52,060 --> 00:04:55,060
+non avrebbe mai raggiunto i lettori più prevenuti.
+
+55
+00:04:55,060 --> 00:05:02,020
+E così, alla fine, dopo essersi consultata con William, decise di sacrificare l'orgoglio
+
+56
+00:05:02,020 --> 00:05:10,700
+e di firmare il memoir con le sole sue iniziali, quindi come A.A.L.
+
+57
+00:05:11,700 --> 00:05:19,700
+Nello scrivere il memoir, A.A.D.A. dimostrò di avere delle abilità di pensiero del tutto
+
+58
+00:05:19,700 --> 00:05:22,060
+fuori dal comune per il suo tempo.
+
+59
+00:05:22,060 --> 00:05:28,580
+Il suo genio consisteva nella capacità di sintetizzare le idee astratte, diffondere
+
+60
+00:05:28,580 --> 00:05:34,460
+ragionamento e immaginazione in un nuovo tipo di idea, ed è per questo motivo che capiva
+
+61
+00:05:34,460 --> 00:05:39,620
+le potenzialità della macchina analitica anche meglio del suo stesso inventore.
+
+62
+00:05:40,020 --> 00:05:46,220
+Come vedremo a breve, in pratica la Lovelace possedeva molte delle competenze che oggi
+
+63
+00:05:46,220 --> 00:05:53,860
+si richiedono ai moderni programmatori, astrazione, progettazione, sinteticità, obiettività,
+
+64
+00:05:53,860 --> 00:06:00,140
+problem solving, immaginazione e creatività, e non v'è dubbio che gli eventi vissuti sia
+
+65
+00:06:00,140 --> 00:06:05,980
+positivi che negativi abbiano contribuito enormemente allo sviluppo di tali capacità.
+
+66
+00:06:06,420 --> 00:06:13,580
+Gli anni passati a studiare per corrispondenza la spinsero a speculare sui problemi, ad individuare
+
+67
+00:06:13,580 --> 00:06:19,500
+in autonomia le soluzioni, e mettere in dubbio gli assunti di base e progettare estensioni
+
+68
+00:06:19,500 --> 00:06:21,420
+delle conoscenze acquisite.
+
+69
+00:06:21,420 --> 00:06:27,860
+L'utilizzo quotidiano delle metafore in tutti i campi, personale o di studio che fossero
+
+70
+00:06:27,860 --> 00:06:33,620
+favorì certamente in lei l'astrazione dei concetti e l'applicazione delle conoscenze
+
+71
+00:06:33,620 --> 00:06:35,260
+in diversi contesti.
+
+72
+00:06:35,660 --> 00:06:41,740
+L'interesse sviluppato per i giochi matematici e la musica la portò a valutare la loro possibile
+
+73
+00:06:41,740 --> 00:06:47,140
+elaborazione tramite la macchina analitica che, concettualmente, è qualcosa di molto
+
+74
+00:06:47,140 --> 00:06:49,340
+simile alla progettazione di algoritmi.
+
+75
+00:06:49,340 --> 00:06:56,240
+Augustus De Morgan, che, essendo stato l'insegnante di Ada, forse conosceva le sue capacità meglio
+
+76
+00:06:56,240 --> 00:06:58,100
+di chiunque altro, affermò
+
+77
+00:06:58,100 --> 00:07:04,260
+La capacità di pensiero di Ada, fin dall'inizio della mia corrispondenza con lei, è stata
+
+78
+00:07:04,260 --> 00:07:08,500
+assolutamente fuori dal comune per qualsiasi principiante, uomo o donna.
+
+79
+00:07:08,500 --> 00:07:13,940
+La mente di Mrs. Somerville non l'ha mai condotta oltre i dettagli del lavoro matematico.
+
+80
+00:07:13,940 --> 00:07:17,460
+Lady L prenderà una strada completamente diversa.
+
+81
+00:07:17,460 --> 00:07:28,180
+Alcuni biografhi di Ada Lovelace e Charles Babbage hanno messo in dubbio il contributo
+
+82
+00:07:28,180 --> 00:07:34,500
+della contessa alle note, quasi come se lui le avesse scritte e lei fosse stata solo la
+
+83
+00:07:34,500 --> 00:07:35,700
+sua segretaria.
+
+84
+00:07:35,700 --> 00:07:40,500
+Non è chiaro da dove sia sorta questa particolare obiezione.
+
+85
+00:07:40,500 --> 00:07:47,580
+Babbage, nella sua autobiografia, afferma chiaramente che Ada scrisse le note basandosi sul materiale
+
+86
+00:07:47,580 --> 00:07:49,220
+che lui le aveva fornito.
+
+87
+00:07:49,220 --> 00:07:55,940
+Si trattò di uno sforzo collaborativo, certo, ma poiché i progetti e le descrizioni erano
+
+88
+00:07:55,940 --> 00:08:02,020
+state realizzate da lui, è ovvio che egli fosse l'unico a poter dare chiarimenti in
+
+89
+00:08:02,020 --> 00:08:03,020
+merito.
+
+90
+00:08:03,020 --> 00:08:10,220
+Anche in questa fase, Lady Lovelace si distinse ponendo domande pertinenti e scegliendo personalmente
+
+91
+00:08:10,220 --> 00:08:11,660
+un modello matematico.
+
+92
+00:08:11,660 --> 00:08:17,700
+Il famoso calcolo dei numeri di Bernoulli, utilizzato per evidenziare la differenza tra
+
+93
+00:08:17,700 --> 00:08:22,660
+le due macchine, fu una sua scelta e lo realizzò quasi totalmente da sola.
+
+94
+00:08:23,100 --> 00:08:28,980
+Secondo Babbage, Ada accorresse persino un errore di calcolo che lui aveva commesso e
+
+95
+00:08:28,980 --> 00:08:35,100
+quando cercò di modificare le sue note, lei ebbe da ridire sulle sue capacità di editor.
+
+96
+00:08:35,100 --> 00:08:42,300
+L'unico aiuto che Babbage diede effettivamente ad Ada, addetta dello stesso inventore, fu
+
+97
+00:08:42,300 --> 00:08:47,580
+quello di completare la tabella dei numeri di Bernoulli, ma semplicemente perché lei
+
+98
+00:08:47,580 --> 00:08:49,460
+all'epoca era molto malata.
+
+99
+00:08:49,860 --> 00:08:56,660
+Alla fine fu lui stesso a riassumere l'alta considerazione per ciò che lei aveva fatto,
+
+100
+00:08:56,660 --> 00:08:58,380
+sempre nella sua autobiografia.
+
+101
+00:08:58,380 --> 00:09:03,340
+Discutemmo insieme delle varie illustrazioni che potevano essere introdotte.
+
+102
+00:09:03,340 --> 00:09:08,180
+Io ne suggerii diverse, ma la scelta fu interamente sua.
+
+103
+00:09:08,180 --> 00:09:13,660
+Così come l'elaborazione algebrica dei vari problemi, tranne quello relativo ai numeri
+
+104
+00:09:13,660 --> 00:09:18,500
+di Bernoulli, che mi ero offerto di fare per risparmiare a Lady Lovelace la fatica.
+
+105
+00:09:19,300 --> 00:09:24,260
+Lei me lo rimandò indietro per una modifica, avendo individuato un grave errore che avevo
+
+106
+00:09:24,260 --> 00:09:25,780
+commesso nel processo.
+
+107
+00:09:25,780 --> 00:09:31,580
+Questa memoria fornisce, a coloro che sono in grado di comprendere il ragionamento, una
+
+108
+00:09:31,580 --> 00:09:36,900
+dimostrazione completa del fatto che l'insieme degli sviluppi e delle operazioni dell'analisi
+
+109
+00:09:36,900 --> 00:09:39,660
+sono ora in grado di essere eseguiti da macchine.
+
+110
+00:09:39,660 --> 00:09:51,020
+Uno degli obiettivi più importanti che si prefisse ADA fu dunque di rendere edotti i
+
+111
+00:09:51,020 --> 00:09:57,060
+lettori delle grandi potenzialità della macchina analitica, e per fare ciò fu fondamentale
+
+112
+00:09:57,060 --> 00:10:01,220
+evidenziare un aspetto dello strumento molto difficile da comprendere.
+
+113
+00:10:01,220 --> 00:10:08,900
+La macchina infatti una volta finalmente realizzata avrebbe avuto la capacità di eseguire operazioni
+
+114
+00:10:08,900 --> 00:10:14,780
+in sequenza, ad esempio avrebbe potuto calcolare una somma o una divisione e poi utilizzare
+
+115
+00:10:14,780 --> 00:10:19,940
+il risultato per un calcolo successivo e così via, potenzialmente all'infinito.
+
+116
+00:10:19,940 --> 00:10:26,860
+Ciò significa che lo strumento sarebbe stato in grado di immagazzinare e riutilizzare le
+
+117
+00:10:26,860 --> 00:10:27,980
+informazioni.
+
+118
+00:10:27,980 --> 00:10:33,580
+Nessuna altra macchina calcolatrice ideata fino a quel momento era capace di un tale
+
+119
+00:10:33,580 --> 00:10:34,580
+automatismo.
+
+120
+00:10:34,580 --> 00:10:40,780
+Nemmeno la macchina differenziale, il precedente progetto di Babbage, per questo motivo risultava
+
+121
+00:10:40,780 --> 00:10:44,460
+così complicato immaginarne le applicazioni.
+
+122
+00:10:44,460 --> 00:10:50,900
+La scelta di Lady Lovelace di utilizzare come esempio nelle sue note il calcolo dei numeri
+
+123
+00:10:50,900 --> 00:10:55,460
+di Bernulli fu perfetta per evidenziare tale aspetto.
+
+124
+00:10:55,460 --> 00:11:01,500
+Per calcolare la sequenza infatti è necessario eseguire molte operazioni, quindi prenderne
+
+125
+00:11:01,500 --> 00:11:05,620
+i risultati e utilizzarli per altre operazioni successive.
+
+126
+00:11:05,620 --> 00:11:11,380
+Solo la macchina analitica avrebbe potuto farlo grazie proprio all'utilizzo delle schede
+
+127
+00:11:11,380 --> 00:11:18,020
+perforate che lei aveva raccomandato di includere nel progetto e dal suo meccanismo di archiviazione
+
+128
+00:11:18,020 --> 00:11:19,020
+interna.
+
+129
+00:11:19,020 --> 00:11:25,060
+Questa scelta dimostra che Ada non vedeva solo i dettagli tecnici ma anche il quadro
+
+130
+00:11:25,060 --> 00:11:31,020
+generale, il concetto di ciò che la macchina analitica avrebbe potuto o non potuto fare
+
+131
+00:11:31,020 --> 00:11:35,500
+e di cosa avrebbe potuto fare in più rispetto ai suoi predecessori.
+
+132
+00:11:35,500 --> 00:11:41,900
+Non si trattò di una decisione facile, Babbage aveva a disposizione volumi di progetti e
+
+133
+00:11:41,900 --> 00:11:48,500
+molti esempi di iterazioni di quelli che oggi potremmo definire primordiali programmi per
+
+134
+00:11:48,500 --> 00:11:49,500
+computer.
+
+135
+00:11:49,500 --> 00:11:55,660
+Tuttavia la contessa parlandone e discutendone con l'inventore e distillando le informazioni
+
+136
+00:11:55,660 --> 00:12:01,500
+che lui le forniva, al pari di come un moderno sviluppatore distilla le richieste dei propri
+
+137
+00:12:01,500 --> 00:12:07,060
+committenti, riuscì a mettere nella giusta prospettiva un'idea straordinaria.
+
+138
+00:12:07,060 --> 00:12:14,820
+E cosa bellissima, nel mezzo di questa impresa molto seria, lei scrisse a lui lettere deliziose
+
+139
+00:12:14,820 --> 00:12:21,660
+e stravaganti, piene di discussioni sui numeri di Bernulli certo, ma anche di fatti e avvenimenti
+
+140
+00:12:21,660 --> 00:12:26,940
+personali e di metafore di lei nella veste di fata, enigmista, generale.
+
+141
+00:12:26,940 --> 00:12:32,580
+Babbage divenne così il suo confidente e lei la divulgatrice delle sue idee.
+
+142
+00:12:32,580 --> 00:12:38,500
+Alla fine, Ada implementò un algoritmo che la macchina analitica avrebbe potuto utilizzare
+
+143
+00:12:38,500 --> 00:12:45,300
+per generare questa sequenza di numeri facilmente, velocemente e senza errori, un algoritmo efficiente
+
+144
+00:12:45,300 --> 00:12:46,300
+diremmo oggi.
+
+145
+00:12:46,540 --> 00:12:51,940
+Lei era certa che questo avrebbe fatto colpo sui suoi lettori esperti di scienza più di
+
+146
+00:12:51,940 --> 00:12:53,980
+qualunque altro possibile esempio.
+
+147
+00:12:53,980 --> 00:13:00,500
+Tale progetto avrebbe dimostrato che la macchina analitica era un'idea superiore e unica.
+
+148
+00:13:00,500 --> 00:13:06,980
+Oggi, questo algoritmo viene da molti considerato il primo programma per computer della storia.
+
+149
+00:13:06,980 --> 00:13:18,260
+Il progetto di Charles Babbage della macchina analitica può essere definito come la formulazione
+
+150
+00:13:18,260 --> 00:13:24,460
+teorica del primo calcolatore informatico, l'idea che segna un po' la nascita della
+
+151
+00:13:24,460 --> 00:13:28,700
+moderna gestione automatizzata del calcolo, almeno sulla carta.
+
+152
+00:13:28,700 --> 00:13:35,060
+Questo incredibile strumento fu progettato come una serie di meccanismi, un sistema di
+
+153
+00:13:35,060 --> 00:13:40,460
+input, un sistema di elaborazione chiamato MIL, perché realizzato tramite una sorta
+
+154
+00:13:40,460 --> 00:13:43,540
+di mulino, e un sistema di output.
+
+155
+00:13:43,540 --> 00:13:49,580
+In effetti lo stesso schema di componenti che fu poi utilizzato per la creazione dei primi
+
+156
+00:13:49,580 --> 00:13:50,580
+computer.
+
+157
+00:13:50,580 --> 00:13:56,040
+L'input, come abbiamo già detto, fu ideato per la lettura di schede perforate simile
+
+158
+00:13:56,040 --> 00:14:03,500
+a quelle del telaio jacquard, e tale meccanismo fu poi effettivamente impiegato per programmare
+
+159
+00:14:03,500 --> 00:14:09,740
+i cosiddetti mainframe, e restò in utilizzo fino alla fine degli anni settanta del novecento.
+
+160
+00:14:09,740 --> 00:14:16,220
+Anche se non si può parlare di programmazione nel senso strettamente moderno del termine,
+
+161
+00:14:16,220 --> 00:14:21,820
+disponendo le schede nel modo corretto si sarebbe potuta istruire la macchina per eseguire
+
+162
+00:14:21,820 --> 00:14:28,040
+un calcolo, un ciclo o una serie di processi in sequenza, prendendo e depositando numeri
+
+163
+00:14:28,040 --> 00:14:29,040
+dal MIL.
+
+164
+00:14:29,080 --> 00:14:35,040
+A sua volta il MIL sarebbe poi stato in grado di eseguire le operazioni di base, somma,
+
+165
+00:14:35,040 --> 00:14:41,440
+sottrazione, moltiplicazione e divisione, e di contenere oltre mille numeri a cinquanta
+
+166
+00:14:41,440 --> 00:14:43,120
+cifre in virgola fissa.
+
+167
+00:14:43,120 --> 00:14:50,120
+Infine, nell'autobiografia, nei passages, Babbage afferma di aver ideato tre tipi di
+
+168
+00:14:50,120 --> 00:14:51,120
+output.
+
+169
+00:14:51,120 --> 00:14:57,400
+Un apparecchio per la stampa su carta, un mezzo per produrre una stampa standardizzata
+
+170
+00:14:57,400 --> 00:15:04,560
+delle tabelle dei risultati calcolati e un meccanismo per punzonare su schede di cartoni
+
+171
+00:15:04,560 --> 00:15:10,920
+o su piastre metalliche i risultati di qualsiasi calcolo, in modo da poterli riutilizzare successivamente
+
+172
+00:15:10,920 --> 00:15:11,920
+come input.
+
+173
+00:15:11,920 --> 00:15:17,840
+Tutto il macchinario poi sarebbe stato alimentato da un motore a vapore, il che, come abbiamo
+
+174
+00:15:17,840 --> 00:15:22,960
+già detto, in totale lo avrebbe reso grande quasi quanto una locomotiva.
+
+175
+00:15:23,400 --> 00:15:30,080
+Oggi, per noi, questi sono concetti abbastanza semplici e comprensibili, ma all'epoca si trattava
+
+176
+00:15:30,080 --> 00:15:36,080
+di fatto solo di migliaia e migliaia di pagine di diagrammi e schemi, perché come sappiamo
+
+177
+00:15:36,080 --> 00:15:38,440
+il progetto non venne mai realizzato.
+
+178
+00:15:38,440 --> 00:15:46,040
+In una condizione del genere, era difficile persino costruire un prototipo in scala ridotta,
+
+179
+00:15:46,040 --> 00:15:51,280
+figuriamoci comprendere e descrivere a pieno il funzionamento e le possibilità di una
+
+180
+00:15:51,280 --> 00:15:52,560
+tale tecnologia.
+
+181
+00:15:52,960 --> 00:15:59,280
+Eppure, questo è proprio l'arduo compito che, sì, prefisse Ada Lovelace quando decise
+
+182
+00:15:59,280 --> 00:16:05,080
+di scrivere le sue note all'articolo di Menabrea, descrivere il funzionamento della macchina
+
+183
+00:16:05,080 --> 00:16:11,640
+analitica e soprattutto il suo valore, le potenziali applicazioni e perfino i potenziali
+
+184
+00:16:11,640 --> 00:16:12,640
+abusi.
+
+185
+00:16:12,640 --> 00:16:18,880
+E possiamo dire che ci riuscì pienamente, è per questo motivo che le note stupiscono
+
+186
+00:16:18,880 --> 00:16:22,360
+ancora oggi, a distanza di 180 anni.
+
+187
+00:16:22,360 --> 00:16:28,840
+Babbage fornì l'idea ed il progetto, ma fu Ada che con il doppio cappello di analista
+
+188
+00:16:28,840 --> 00:16:35,000
+e metafisica inserì quell'idea e quel progetto nel contesto appropriato, sia a livello di
+
+189
+00:16:35,000 --> 00:16:37,200
+dettaglio che di visione generale.
+
+190
+00:16:37,200 --> 00:16:48,840
+Sono riluttante a restituire la vostra ammirevole e filosofica nota A. Vi prego di non modificarla.
+
+191
+00:16:49,400 --> 00:16:54,280
+E' incredibile che voi sappiate tutto questo per intuizione, e più leggo le vostre note
+
+192
+00:16:54,280 --> 00:16:59,400
+più ne sono sorpreso e mi rammarico di non aver esplorato prima una vena così ricca del
+
+193
+00:16:59,400 --> 00:17:00,640
+metallo più nobile.
+
+194
+00:17:03,120 --> 00:17:08,240
+Come abbiamo già detto, oggi molti conoscono Ada Lovelace per il merito di aver scritto
+
+195
+00:17:08,240 --> 00:17:13,800
+il primo programma per computer della storia, l'algoritmo per il calcolo della successione
+
+196
+00:17:13,800 --> 00:17:17,080
+dei numeri di Bernoulli utilizzando la macchina analitica.
+
+197
+00:17:17,320 --> 00:17:19,840
+Ma questa è solo una parte della sua opera.
+
+198
+00:17:19,840 --> 00:17:26,240
+Il vero fascino delle note, secondo me, deriva principalmente dal fatto che Lady Lovelace
+
+199
+00:17:26,240 --> 00:17:34,440
+previde già nel 1842 alcune delle caratteristiche che appartengono al moderno computer, nonché
+
+200
+00:17:34,440 --> 00:17:40,240
+l'impatto che tale tecnologia avrebbe avuto sui suoi utilizzatori e sulle scienze in generale.
+
+201
+00:17:40,240 --> 00:17:46,480
+Di fatto nel suo testo lei arrivò a descrivere i concetti di base di quello che noi oggi chiamiamo
+
+202
+00:17:46,480 --> 00:17:48,440
+sviluppo del software.
+
+203
+00:17:48,440 --> 00:17:55,160
+In un primo momento Ada aggiunse una sola nota alla traduzione, quella che credeva sarebbe
+
+204
+00:17:55,160 --> 00:18:00,960
+stato il suo unico contributo originale e lo fece semplicemente per chiarire alcuni
+
+205
+00:18:00,960 --> 00:18:04,640
+concetti che secondo lei Menabrea aveva trascurato.
+
+206
+00:18:04,640 --> 00:18:10,840
+Ma quando le venne poi chiesto di integrare l'articolo con le proprie conoscenze lei aggiunse
+
+207
+00:18:10,840 --> 00:18:17,520
+varie altre note, producendo una quantità di materiale che superò in lunghezza l'articolo
+
+208
+00:18:17,520 --> 00:18:18,520
+originale.
+
+209
+00:18:18,520 --> 00:18:30,700
+Nella prima, la nota filosofica A, quella che piacque tanto a Babbage, la contessa iniziò
+
+210
+00:18:30,700 --> 00:18:38,240
+con il definire i confini della macchina analitica e i dettagli di come essa avrebbe svolto i
+
+211
+00:18:38,240 --> 00:18:39,240
+suoi compiti.
+
+212
+00:18:39,640 --> 00:18:45,620
+La macchina differenziale, il primo motore di calcolo di Babbage, era stata progettata
+
+213
+00:18:45,620 --> 00:18:52,880
+principalmente per calcolare e stampare specifiche tabelle, ma il progetto della nuova macchina
+
+214
+00:18:52,880 --> 00:18:57,360
+analitica rappresentava un salto meccanico e concettuale enorme.
+
+215
+00:18:57,360 --> 00:19:04,320
+La macchina analitica al contrario non è semplicemente adatta a tabulare i risultati
+
+216
+00:19:04,320 --> 00:19:09,640
+di una funzione particolare e di nessun'altra, ma a sviluppare e tabulare qualsiasi funzione.
+
+217
+00:19:09,640 --> 00:19:13,520
+In effetti la macchina può essere descritta come l'espressione materiale di qualsiasi
+
+218
+00:19:13,520 --> 00:19:16,640
+funzione indefinita di qualsiasi grado di generalità e complessità.
+
+219
+00:19:16,640 --> 00:19:24,840
+La nuova macchina analitica avrebbe posseduto una capacità del tutto innovativa, sarebbe
+
+220
+00:19:24,840 --> 00:19:30,080
+cioè stata in grado di memorizzare, oltre ai dati, anche un programma sotto forma di
+
+221
+00:19:30,080 --> 00:19:32,480
+sequenza di operazioni o istruzioni.
+
+222
+00:19:32,880 --> 00:19:39,540
+ADA iniziò anche a riconoscere ed enfatizzare la responsabilità che questa nuova capacità
+
+223
+00:19:39,540 --> 00:19:46,320
+avrebbe posto nelle mani dell'utilizzatore della macchina, il quale avrebbe dovuto specificare
+
+224
+00:19:46,320 --> 00:19:51,360
+il programma in modo preciso e completamente conforme alle proprie necessità.
+
+225
+00:19:51,360 --> 00:19:58,320
+Oggi noi chiamiamo questo tipo di lavoro sviluppo del software, ma per un'epoca in cui non
+
+226
+00:19:58,320 --> 00:20:04,560
+esisteva ancora il concetto di computer né un qualcosa di tangibile e reale su cui
+
+227
+00:20:04,560 --> 00:20:10,920
+sperimentare, si trattò di un'intuizione notevole, come notevole è anche la definizione
+
+228
+00:20:10,920 --> 00:20:13,040
+che ADA diede di operazione.
+
+229
+00:20:13,040 --> 00:20:20,520
+Può essere auspicabile spiegare che con la parola operazione intendiamo qualsiasi processo
+
+230
+00:20:20,520 --> 00:20:25,320
+che altera la relazione reciproca di due o più cose sia questa relazione di qualsiasi
+
+231
+00:20:25,320 --> 00:20:26,320
+tipo.
+
+232
+00:20:26,320 --> 00:20:30,120
+Questa è la definizione più generale e include tutti gli argomenti dell'universo.
+
+233
+00:20:30,120 --> 00:20:38,680
+Non si può negare che sembri la descrizione di quella che noi oggi chiamiamo una funzione,
+
+234
+00:20:38,680 --> 00:20:43,400
+un generico processo che altera un qualsiasi tipo di relazione o valore.
+
+235
+00:20:43,400 --> 00:20:50,720
+Un altro passaggio singolarmente profetico di questa nota A è quello in cui la Lovelace
+
+236
+00:20:50,720 --> 00:20:57,240
+anticipò quella che sarebbe poi stata una delle prime difficoltà per la rappresentazione
+
+237
+00:20:57,240 --> 00:21:04,640
+dell'informazione nei futuri linguaggi di programmazione, cioè il fatto che i simboli debbano essere
+
+238
+00:21:04,640 --> 00:21:11,320
+utilizzati diversamente a seconda del significato che hanno all'interno del programma.
+
+239
+00:21:11,320 --> 00:21:18,320
+La macchina analitica, differentemente da un computer, sarebbe stata totalmente meccanica,
+
+240
+00:21:18,320 --> 00:21:23,840
+quindi quando i numeri avrebbero indicato delle operazioni e non delle quantità sarebbero
+
+241
+00:21:23,840 --> 00:21:28,000
+stati inseriti in una parte del meccanismo anziché in un'altra.
+
+242
+00:21:28,000 --> 00:21:34,960
+Ma, ben guardare, quello che Ada mise in evidenza è la tipica difficoltà del compito dello
+
+243
+00:21:34,960 --> 00:21:40,640
+sviluppo di software, cioè la difficoltà di comunicare alla macchina ciò che ci si
+
+244
+00:21:40,640 --> 00:21:42,240
+aspetta che essa faccia.
+
+245
+00:21:42,600 --> 00:21:48,640
+In effetti, leggendo le note, si rimane colpiti dall'apprezzamento di Ada per il principio
+
+246
+00:21:48,640 --> 00:21:53,400
+secondo cui il potere deriva dalla creatività disciplinata.
+
+247
+00:21:53,400 --> 00:21:59,600
+Le due personalità che questa donna ha manifestato in tutto il corso della sua vita, quella più
+
+248
+00:21:59,600 --> 00:22:07,360
+analitica e scientifica e quella più metafisica e creativa, risultano nella sua opera essere
+
+249
+00:22:07,360 --> 00:22:13,080
+in perfetto equilibrio dando vita a delle abilità dal potenziale sorprendente.
+
+250
+00:22:13,080 --> 00:22:19,080
+Lo stesso tipo di abilità che sono richieste oggi ad un bravo sviluppatore, cioè la capacità
+
+251
+00:22:19,080 --> 00:22:24,360
+di inventare soluzioni e descriverle in modo preciso, strutturato e ripetibile.
+
+252
+00:22:24,360 --> 00:22:30,840
+Una delle grandi passioni di Ada, poi, era la musica e ovviamente le bastò poco, una
+
+253
+00:22:30,840 --> 00:22:36,880
+volta definiti i concetti di base, per arrivare ad ipotizzare che la macchina avrebbe potuto
+
+254
+00:22:36,880 --> 00:22:40,680
+trattare tale arte, se ricondotta la giusta codifica.
+
+255
+00:22:40,680 --> 00:22:48,400
+Inoltre, la macchina analitica potrebbe agire su altre cose oltre al numero, se si trovassero
+
+256
+00:22:48,400 --> 00:22:52,920
+oggetti le cui relazioni fondamentali reciproche potessero essere espresse da quelle della
+
+257
+00:22:52,920 --> 00:22:57,760
+scienza astratta delle operazioni e che fossero anche suscettibili di adattamenti all'azione
+
+258
+00:22:57,760 --> 00:23:00,600
+della notazione operativa e del meccanismo del motore.
+
+259
+00:23:00,600 --> 00:23:05,040
+Supponendo, per esempio, che le relazioni fondamentali dei suoni acuti nella scienza
+
+260
+00:23:05,040 --> 00:23:10,800
+dell'armonia e della composizione musicale siano suscettibili di tali espressioni e adattamenti,
+
+261
+00:23:10,800 --> 00:23:15,400
+beh, il motore potrebbe comporre brani musicali elaborati e scientifici di qualsiasi grado
+
+262
+00:23:15,400 --> 00:23:16,800
+di complessità o estensione.
+
+263
+00:23:16,800 --> 00:23:25,040
+Una volta fatta la distinzione tra numeri e operazioni da eseguire, non fu poi difficile
+
+264
+00:23:25,040 --> 00:23:30,320
+fare il passo successivo e immaginare come la macchina analitica sarebbe stata in grado
+
+265
+00:23:30,320 --> 00:23:36,000
+di fornire due tipi di risultati, numerici e simbolici, ad esempio algebrici.
+
+266
+00:23:36,000 --> 00:23:43,040
+In effetti la macchina analitica avrebbe potuto generare nuovi programmi, oltre che numeri,
+
+267
+00:23:43,040 --> 00:23:49,120
+poiché sarebbe stata capace anche di perforare le schede, e questo avrebbe aperto un nuovo
+
+268
+00:23:49,120 --> 00:23:52,440
+e vasto territorio per l'analisi delle informazioni.
+
+269
+00:23:52,440 --> 00:23:59,200
+Quello che descrisse Lady Lovelace sembra essere una versione primordiale del concetto
+
+270
+00:23:59,200 --> 00:24:05,880
+di sottoprocesso o di funzione moderna, in cui l'output di un programma diventa l'input
+
+271
+00:24:05,880 --> 00:24:07,320
+di un altro programma.
+
+272
+00:24:07,320 --> 00:24:14,400
+Un concetto che, se esteso, può tranquillamente essere visto come un progenitore del software
+
+273
+00:24:14,400 --> 00:24:20,660
+che tutti noi oggi conosciamo, nel quale tutta una serie di componenti vengono concatenati
+
+274
+00:24:20,660 --> 00:24:24,240
+per dare vita alla risoluzione di problemi complessi.
+
+275
+00:24:24,760 --> 00:24:30,760
+Per tutta la nota A, dunque, lei continuò ad insistere sull'enorme superiorità della
+
+276
+00:24:30,760 --> 00:24:35,360
+seconda macchina sulla prima, dell'analitica sulla differenziale.
+
+277
+00:24:35,360 --> 00:24:41,200
+Primo perché, in fin dei conti, l'obiettivo era quello di fare interessare i lettori e
+
+278
+00:24:41,200 --> 00:24:46,880
+di trovare potenziali finanziatori, e per ottenere ciò era fondamentale spiegare perché
+
+279
+00:24:46,880 --> 00:24:52,360
+Babbage avesse abbandonato il primo progetto in favore del secondo senza neanche portarlo
+
+280
+00:24:52,360 --> 00:24:53,360
+a compimento.
+
+281
+00:24:53,760 --> 00:25:00,120
+Ma anche perché lei riusciva già a vedere questo strumento come il mezzo per raggiungere
+
+282
+00:25:00,120 --> 00:25:02,680
+una sorta di verità superiore.
+
+283
+00:25:02,680 --> 00:25:09,960
+La sua descrizione spazia continuamente dal metafisico al pragmatico, ma sempre sottolineando
+
+284
+00:25:09,960 --> 00:25:14,080
+l'enorme impulso che questa invenzione avrebbe dato alla scienza.
+
+285
+00:25:16,200 --> 00:25:20,160
+Coloro che pensano alla verità matematica come allo strumento attraverso il quale la
+
+286
+00:25:20,160 --> 00:25:24,720
+debole mente dell'uomo può leggere nel modo più efficace le opere del suo creatore,
+
+287
+00:25:24,720 --> 00:25:28,880
+considereranno con particolare interesse tutto ciò che può tendere a facilitare la traduzione
+
+288
+00:25:28,880 --> 00:25:31,600
+dei suoi principi in forme pratiche e esplicite.
+
+289
+00:25:31,600 --> 00:25:38,360
+E la macchina analitica avrebbe facilitato eccome il lavoro dello scienziato.
+
+290
+00:25:38,360 --> 00:25:44,400
+La dimostrazione sta nel fatto che, ad esempio, il sistema a schede perforate di cui sarebbe
+
+291
+00:25:44,400 --> 00:25:49,080
+stata dotata, come abbiamo già detto, venne effettivamente utilizzato.
+
+292
+00:25:49,080 --> 00:25:55,720
+O nel fatto che, secondo il progetto di Babbage, la macchina poteva memorizzare un numero di
+
+293
+00:25:55,720 --> 00:26:01,640
+cifre pari a quello dei computer della metà degli anni sessanta del secolo successivo.
+
+294
+00:26:01,640 --> 00:26:08,120
+O ancora nel fatto che il mulino, dove venivano elaborate le informazioni, era l'equivalente
+
+295
+00:26:08,120 --> 00:26:12,320
+meccanico di una CPU, di un moderno processore matematico.
+
+296
+00:26:12,720 --> 00:26:19,080
+Infine, la macchina analitica avrebbe avuto anche diversi metodi per stampare le informazioni,
+
+297
+00:26:19,080 --> 00:26:24,320
+persino sotto forma di grafici, proprio come oggi i computer hanno diverse periferiche.
+
+298
+00:26:24,320 --> 00:26:30,720
+È vero, non sarebbe stata programmabile nel senso moderno del termine, tutto sarebbe
+
+299
+00:26:30,720 --> 00:26:36,200
+avvenuto tramite il posizionamento delle schede perforate e la ripetizione dei cicli, più
+
+300
+00:26:36,200 --> 00:26:42,280
+come un telaio, ma Ada sottolineò anche questo e nel farlo utilizzò una metafora
+
+301
+00:26:42,280 --> 00:26:44,120
+come forse avrebbe fatto suo padre.
+
+302
+00:26:44,120 --> 00:26:50,800
+Possiamo dire che il motore analitico tesse modelli algebrici come il telaio jacquard
+
+303
+00:26:50,800 --> 00:26:52,000
+tesse fiori e foglie.
+
+304
+00:26:52,000 --> 00:26:59,800
+Un'altra caratteristica fondamentale della macchina sarebbe stata la capacità di gestire
+
+305
+00:26:59,800 --> 00:27:05,760
+operazioni condizionali, quelle che noi oggi chiamiamo ad esempio IF, senza la necessità
+
+306
+00:27:05,760 --> 00:27:08,240
+di intervento da parte di un operatore.
+
+307
+00:27:08,240 --> 00:27:15,040
+In effetti il macchinario avrebbe potuto calcolare la soluzione ad un problema e metterla in
+
+308
+00:27:15,040 --> 00:27:22,600
+una sorta di archivio per poi recuperarla ed utilizzarla per un altro problema se e quando
+
+309
+00:27:22,600 --> 00:27:25,160
+ciò si fosse rivelato necessario.
+
+310
+00:27:25,160 --> 00:27:30,800
+Si sarebbe trattato di un salto di qualità che ovviamente Ada non si lasciò sfuggire.
+
+311
+00:27:30,800 --> 00:27:37,760
+Consentendo al macchinario di combinare insieme simboli generali in successioni di varietà
+
+312
+00:27:37,760 --> 00:27:42,480
+ed estensioni limitate, si stabilisce un legame unitario tra le operazioni della materia e
+
+313
+00:27:42,480 --> 00:27:46,960
+i processi mentali astratti della branca più astratta della scienza matematica.
+
+314
+00:27:46,960 --> 00:27:52,200
+Viene sviluppato un nuovo, vasto e potente linguaggio per l'uso futuro dell'analisi,
+
+315
+00:27:52,200 --> 00:27:55,920
+in cui maneggiare le sue verità in modo che queste possano diventare di più rapida e
+
+316
+00:27:55,920 --> 00:28:00,040
+accurata applicazione pratica per gli scopi dell'umanità di quanto i mezzi finora in
+
+317
+00:28:00,040 --> 00:28:02,000
+nostro possesso abbiano reso possibile.
+
+318
+00:28:02,000 --> 00:28:11,080
+Un altro passaggio interessante si trova poi nella nota B.
+
+319
+00:28:11,080 --> 00:28:17,360
+Non è eccessivo, secondo me, intravedere in questo punto una versione primordiale di
+
+320
+00:28:17,360 --> 00:28:21,560
+una serie di idee basilari nel mondo dello sviluppo software.
+
+321
+00:28:21,560 --> 00:28:28,160
+Astrazione, modularità, separazione delle responsabilità, offuscamento, quasi un antenato
+
+322
+00:28:28,160 --> 00:28:30,960
+della progettazione orientata agli oggetti.
+
+323
+00:28:30,960 --> 00:28:37,160
+Più analizziamo il modo in cui tale motore esegue i suoi processi e raggiunge i suoi
+
+324
+00:28:37,160 --> 00:28:42,600
+risultati, più ci rendiamo conto di come esso ponga in una luce vera e giusta le relazioni
+
+325
+00:28:42,600 --> 00:28:47,080
+e le connessioni reciproche dei vari passaggi dell'analisi matematica, di come separi
+
+326
+00:28:47,080 --> 00:28:52,800
+chiaramente le cose che sono in realtà distinte e indipendenti e unisca quelle che sono reciprocamente
+
+327
+00:28:52,800 --> 00:28:53,800
+dipendenti.
+
+328
+00:28:54,800 --> 00:29:02,640
+La componente essenziale di questa idea è la separazione tra le caratteristiche di un'operazione
+
+329
+00:29:02,640 --> 00:29:08,320
+e la sua implementazione, cioè tra cosa l'operazione fa e come lo fa.
+
+330
+00:29:08,320 --> 00:29:14,680
+In effetti, praticamente in tutti i moderni linguaggi di programmazione esiste il concetto
+
+331
+00:29:14,680 --> 00:29:20,280
+di definizione, che descrive il modo in cui una funzione si collega agli altri elementi
+
+332
+00:29:20,280 --> 00:29:26,760
+di software e di corpo che specifica in dettaglio le azioni che tale funzione va ad eseguire
+
+333
+00:29:26,760 --> 00:29:29,480
+sui dati passati al momento della chiamata.
+
+334
+00:29:29,480 --> 00:29:36,200
+I vantaggi di questa idea di separazione sono palesi a chiunque conosca la programmazione.
+
+335
+00:29:36,200 --> 00:29:41,880
+In fase di progettazione permette di conoscere in anticipo il funzionamento di una porzione
+
+336
+00:29:41,880 --> 00:29:42,880
+di codice.
+
+337
+00:29:42,880 --> 00:29:49,520
+In fase di implementazione permette di utilizzare le funzioni anche se non se ne conoscono i
+
+338
+00:29:49,520 --> 00:29:51,240
+dettagli implementativi.
+
+339
+00:29:51,240 --> 00:29:58,000
+In fase di manutenzione permette di sostituire, se necessario, una funzione con un'altra senza
+
+340
+00:29:58,000 --> 00:30:03,880
+impattare in alcun modo sul resto del software, a patto che le due condividano una uguale
+
+341
+00:30:03,880 --> 00:30:04,880
+definizione.
+
+342
+00:30:04,880 --> 00:30:11,800
+Estremizzando poi il concetto, si ottiene e lascia passare per realizzare non solo semplici
+
+343
+00:30:11,800 --> 00:30:16,960
+funzioni ma strutture più complesse come librerie e packages.
+
+344
+00:30:17,400 --> 00:30:21,160
+In pratica si arriva al moderno concetto di interfaccia.
+
+345
+00:30:21,160 --> 00:30:29,480
+Oggi come oggi i veri problemi del software sono di complessità, di scala e la capacità
+
+346
+00:30:29,480 --> 00:30:35,920
+di separare le cose che in realtà sono distinte e indipendenti e unire quelle che sono reciprocamente
+
+347
+00:30:35,920 --> 00:30:42,200
+dipendenti, tanto per usare le parole di ADA, è assolutamente fondamentale.
+
+348
+00:30:42,200 --> 00:30:52,920
+Nell'adattare il concetto di scheda perforata alla macchina analitica, Bubbage aveva apportato
+
+349
+00:30:52,920 --> 00:30:58,320
+un miglioramento al modo in cui le schede potevano essere utilizzate per dare istruzioni.
+
+350
+00:30:58,320 --> 00:31:05,200
+Nella nota C, ADA mette in evidenza proprio questa modifica e addirittura la ripropone
+
+351
+00:31:05,200 --> 00:31:11,120
+come miglioramento del progetto originale per aumentare le prestazioni del telaio jacquard.
+
+352
+00:31:12,040 --> 00:31:17,800
+E' stato ideato un metodo tecnicamente chiamato backing delle carte in determinati gruppi
+
+353
+00:31:17,800 --> 00:31:19,440
+secondo determinate leggi.
+
+354
+00:31:19,440 --> 00:31:23,960
+L'obiettivo di questa estensione è garantire la possibilità di utilizzare una particolare
+
+355
+00:31:23,960 --> 00:31:28,880
+carta o un gruppo di carte per un numero qualsiasi di volte successive nella soluzione di un
+
+356
+00:31:28,880 --> 00:31:29,880
+problema.
+
+357
+00:31:29,880 --> 00:31:35,000
+Con l'introduzione del sistema di supporto nel telaio jacquard stesso, i modelli che dovrebbero
+
+358
+00:31:35,000 --> 00:31:40,040
+avere una simmetria e seguire leggi irregolari di qualsiasi portata potrebbero essere tessuti
+
+359
+00:31:40,040 --> 00:31:42,440
+per mezzo di un numero relativamente basso di carte.
+
+360
+00:31:42,440 --> 00:31:50,320
+In effetti un codice accuratamente progettato e implementato è perfettamente in grado di
+
+361
+00:31:50,320 --> 00:31:54,800
+essere riutilizzato in punti diversi da quelli originariamente previsti.
+
+362
+00:31:54,800 --> 00:32:01,140
+Riutilizzare il software è ormai la prassi più comune ed è un mezzo per risparmiare
+
+363
+00:32:01,140 --> 00:32:02,560
+tempo e risorse.
+
+364
+00:32:02,560 --> 00:32:10,320
+Non solo riduce il costo della rielaborazione di codice simile, ma permette anche di impiegare
+
+365
+00:32:10,320 --> 00:32:16,520
+qualcosa di già testato diminuendo lo sforzo impiegato nell'individuazione e correzione
+
+366
+00:32:16,520 --> 00:32:17,520
+degli errori.
+
+367
+00:32:17,520 --> 00:32:27,000
+Nella nota D abbiamo altre due intuizioni sorprendentemente attuali.
+
+368
+00:32:27,000 --> 00:32:33,080
+Innanzitutto, in questa nota ADA raccomanda l'uso degli indici per fare riferimento ai
+
+369
+00:32:33,080 --> 00:32:38,840
+dati all'interno della macchina e fornisce altresì una tabella d'esempio per spiegare
+
+370
+00:32:38,840 --> 00:32:39,840
+il concetto.
+
+371
+00:32:39,840 --> 00:32:46,480
+Oggi questa è una tecnica basilare per gestire oggetti software complessi come liste, array
+
+372
+00:32:46,480 --> 00:32:53,680
+e strutture e praticamente tutti i linguaggi ne fanno uso e forniscono istruzioni ad-hoc
+
+373
+00:32:53,680 --> 00:32:55,720
+per l'iterazione indicizzata.
+
+374
+00:32:56,240 --> 00:33:02,760
+Ma oltre a ciò, grazie proprio al concetto di indicizzazione, ADA poteva allora introdurre
+
+375
+00:33:02,760 --> 00:33:07,200
+una seconda idea che oggi è alla base del moderno software.
+
+376
+00:33:07,200 --> 00:33:12,640
+Con l'indicizzazione il presupposto che la macchina analitica venisse controllata
+
+377
+00:33:12,640 --> 00:33:19,440
+da un singolo flusso di istruzioni in sequenza diventava più che altro una convenzione
+
+378
+00:33:19,440 --> 00:33:26,080
+e lei mostrò una notevole intuizione immaginando la possibilità di creare flussi multipli
+
+379
+00:33:26,080 --> 00:33:28,400
+di istruzioni eseguite in parallelo.
+
+380
+00:33:28,400 --> 00:33:35,240
+Oggi noi definiamo questo concetto come processi paralleli o multitrading o in tanti altri
+
+381
+00:33:35,240 --> 00:33:39,280
+modi a seconda del linguaggio o dell'hardware di riferimento.
+
+382
+00:33:39,280 --> 00:33:45,120
+Ma è comunque un qualcosa di complesso da concepire e realizzare già con le moderne
+
+383
+00:33:45,120 --> 00:33:51,100
+tecniche, figuriamoci allora senza nulla di concreto e solo analizzando pile e pile
+
+384
+00:33:51,100 --> 00:33:52,100
+di progetti.
+
+385
+00:33:52,100 --> 00:33:59,200
+Deve essere evidente quanto siano molteplici e reciprocamente complicate le considerazioni
+
+386
+00:33:59,200 --> 00:34:01,640
+che il funzionamento di un tale sistema comporta.
+
+387
+00:34:01,640 --> 00:34:06,840
+Spesso si verificano contemporaneamente diverse serie di effetti distinti, tutti indipendenti
+
+388
+00:34:06,840 --> 00:34:11,520
+l'uno dall'altro, ma che esercitano in misura maggiore o minore un'influenza reciproca.
+
+389
+00:34:12,040 --> 00:34:18,200
+Regolare gli uni e gli altri e persino percepirli e tracciarli con perfetta correttezza e successo
+
+390
+00:34:18,200 --> 00:34:22,920
+comporta difficoltà la cui natura è in certa misura simile a quella di ogni questione
+
+391
+00:34:22,920 --> 00:34:25,880
+in cui le condizioni sono molto numerose e complicate.
+
+392
+00:34:25,880 --> 00:34:33,280
+L'analogia tra il funzionamento dei processi paralleli nella macchina e quelli nel mondo
+
+393
+00:34:33,280 --> 00:34:39,960
+reale, anch'essi per natura paralleli, traspare evidente dalle parole di Ada e, partendo da
+
+394
+00:34:39,960 --> 00:34:45,560
+queste considerazioni, il passo ad immaginare più macchine analitiche che funzionino in
+
+395
+00:34:45,560 --> 00:34:47,520
+parallelo è piuttosto breve.
+
+396
+00:34:47,520 --> 00:34:57,280
+Ovunque esista un termine generale, ci sarà un gruppo ricorrente di operazioni, come nell'esempio
+
+397
+00:34:57,280 --> 00:34:58,280
+precedente.
+
+398
+00:34:58,280 --> 00:35:04,440
+Sia per brevità, sia per disgiunzione, il gruppo ricorrente è chiamato ciclo.
+
+399
+00:35:04,440 --> 00:35:08,920
+Per ciclo di operazioni si intende quindi qualsiasi insieme di operazioni che si ripete
+
+400
+00:35:08,920 --> 00:35:09,920
+più di una volta.
+
+401
+00:35:09,920 --> 00:35:18,600
+In quest'altro passaggio, che si trova nella nota E e che, ricordiamolo, fu scritta nel
+
+402
+00:35:18,600 --> 00:35:27,120
+1843, la contessa di Lovelace definì di fatto quello che è oggi il concetto di ciclo e
+
+403
+00:35:27,120 --> 00:35:33,280
+se una di queste operazioni fosse a sua volta un ciclo, allora si potrebbero realizzare
+
+404
+00:35:33,280 --> 00:35:36,080
+cicli di cicli potenzialmente all'infinito.
+
+405
+00:35:36,560 --> 00:35:42,880
+E ancora una volta l'accento fu posto sulle enormi possibilità di calcolo, di riutilizzo
+
+406
+00:35:42,880 --> 00:35:48,200
+del lavoro fatto e di potenziamento delle capacità umane in favore della scienza che
+
+407
+00:35:48,200 --> 00:35:51,160
+la macchina sarebbe stata in grado di attuare.
+
+408
+00:35:55,440 --> 00:36:00,000
+Esiste un bellissimo ritratto tessuto di Jacquard, per la cui realizzazione sono state necessarie
+
+409
+00:36:00,000 --> 00:36:01,800
+24.000 carte.
+
+410
+00:36:02,280 --> 00:36:07,000
+Il potere di ripetere le carte riduce in misura immensa il numero di carte necessarie.
+
+411
+00:36:07,000 --> 00:36:11,600
+E' ovvio che questo miglioramento meccanico è particolarmente applicabile ovunque si
+
+412
+00:36:11,600 --> 00:36:12,600
+verifichino cicli.
+
+413
+00:36:14,920 --> 00:36:20,880
+Una volta acquisito il concetto di ciclo e le sue enormi potenzialità, come avrebbe
+
+414
+00:36:20,880 --> 00:36:27,720
+potuto Ada non rendersi conto della retratezza dei meccanismi fino ad allora realizzati?
+
+415
+00:36:28,040 --> 00:36:34,720
+Nella nota F, infatti, la contessa Di Lovelace introdusse il concetto di ottimizzazione dei
+
+416
+00:36:34,720 --> 00:36:41,120
+processi, prendendo ad esempio il telaio Jacquard, ma generalizzando poi anche il discorso.
+
+417
+00:36:41,120 --> 00:36:48,960
+Come era possibile che dei disegni sostanzialmente simmetrici necessitassero di essere descritti
+
+418
+00:36:48,960 --> 00:36:49,960
+interamente?
+
+419
+00:36:49,960 --> 00:36:56,200
+Se il disegno si ripeteva, allora si sarebbe potuta riutilizzare la stessa scheda perforata
+
+420
+00:36:56,200 --> 00:36:57,720
+ad ogni ripetizione.
+
+421
+00:36:57,720 --> 00:37:03,320
+E se questo valeva per un disegno, allora perché non per qualsiasi tipo di operazione
+
+422
+00:37:03,320 --> 00:37:05,840
+che si ripetesse uguale a se stessa?
+
+423
+00:37:05,840 --> 00:37:10,760
+Ecco che, di nuovo, i cicli risultano un'innovazione essenziale.
+
+424
+00:37:15,040 --> 00:37:21,440
+In conclusione, dopo aver magnificato le potenzialità della macchina analitica, dopo aver provato
+
+425
+00:37:21,440 --> 00:37:27,520
+a immaginare le applicazioni concrete, dopo aver tentato di catturare l'attenzione e solleticare
+
+426
+00:37:27,520 --> 00:37:33,920
+l'immaginazione del lettore, dopo aver scritto il primo esempio di programmazione dello strumento,
+
+427
+00:37:33,920 --> 00:37:40,280
+nella nota G, Ada stupisce, infine, con un'estrema dimostrazione di onestà.
+
+428
+00:37:42,560 --> 00:37:47,520
+È auspicabile prevenire la possibilità di idee esagerate che potrebbero sorgere in merito
+
+429
+00:37:47,520 --> 00:37:49,120
+ai poteri della macchina analitica.
+
+430
+00:37:49,360 --> 00:37:53,320
+Quando si prende in considerazione un nuovo argomento, si tende spesso in primo luogo
+
+431
+00:37:53,320 --> 00:37:59,200
+a sopravvalutare ciò che si ritiene già interessante e notevole, e in secondo luogo, per una sorta
+
+432
+00:37:59,200 --> 00:38:04,960
+di reazione naturale, a sottovalutare il vero stato del caso, quando si scopre che le nostre
+
+433
+00:38:04,960 --> 00:38:08,040
+nozioni hanno superato quelle che erano realmente sostenibili.
+
+434
+00:38:08,040 --> 00:38:13,120
+La macchina analitica non ha alcuna pretesa di creare qualcosa, può fare tutto ciò
+
+435
+00:38:13,120 --> 00:38:18,120
+che sappiamo ordinarle di fare, può eseguire un'analisi, ma non ha la capacità di anticipare
+
+436
+00:38:18,120 --> 00:38:20,640
+alcuna relazione o verità analitica.
+
+437
+00:38:20,640 --> 00:38:26,120
+Il suo compito è quello di assisterci nel rendere disponibile ciò che già conosciamo.
+
+438
+00:38:26,120 --> 00:38:34,120
+Come imparato da Babbage, l'onestà in questi casi è sempre la strada migliore.
+
+439
+00:38:34,120 --> 00:38:40,000
+Che senso avrebbe avuto illudere il proprio pubblico con racconti di cose in realtà impossibili?
+
+440
+00:38:40,000 --> 00:38:45,920
+Così come Babbage spiegò sempre ai propri ospiti che inserendo i numeri sbagliati si
+
+441
+00:38:45,920 --> 00:38:48,360
+ottengono risultati sbagliati?
+
+442
+00:38:48,360 --> 00:38:55,080
+Così Ada volle assicurarsi che nessuno pensasse che la macchina fosse in grado di fare più
+
+443
+00:38:55,080 --> 00:38:59,080
+di quanto il suo programmatore riuscisse a istruirla a fare.
+
+444
+00:38:59,080 --> 00:39:04,800
+La macchina analitica non avrebbe avuto la capacità di pensare, ma sarebbe stata uno
+
+445
+00:39:04,800 --> 00:39:11,720
+strumento potentissimo e innovativo per supportare l'essere umano nel suo percorso verso la
+
+446
+00:39:11,720 --> 00:39:12,720
+conoscenza.
+
+447
+00:39:12,720 --> 00:39:22,920
+Anche se gli sforzi di Ada non portarono poi ai risultati attesi da lei e da Babbage, la
+
+448
+00:39:22,920 --> 00:39:26,800
+sua opera resta comunque oggi un qualcosa di straordinario.
+
+449
+00:39:26,800 --> 00:39:32,400
+Non solo perché descrive concetti moderni con più di cent'anni di anticipo, ma anche
+
+450
+00:39:32,400 --> 00:39:37,280
+perché ci mostra quanto singolare ed interessante fosse la sua autrice.
+
+451
+00:39:37,280 --> 00:39:42,080
+Ada Lovelace dovette lottare per ottenere il suo posto nella storia.
+
+452
+00:39:42,440 --> 00:39:48,800
+Quando provò a seguire il punto di vista di sua madre o di suo padre fallì, ma quando
+
+453
+00:39:48,800 --> 00:39:54,680
+si decise ad abbracciare e bilanciare sia la poesia che la scienza, sia la metafisica
+
+454
+00:39:54,680 --> 00:40:01,800
+che l'analisi, sia la forma che la sostanza, riuscì ad immaginare un'innovazione tecnologica
+
+455
+00:40:01,800 --> 00:40:04,040
+che ha superato la prova del tempo.
+
+456
+00:40:04,040 --> 00:40:11,240
+Il suo merito più grande è forse quello di aver descritto la nascita di una nuova idea
+
+457
+00:40:11,280 --> 00:40:16,960
+e poi fatto un passo indietro e guardato a quell'idea in modo creativo e critico.
+
+458
+00:40:16,960 --> 00:40:23,800
+E così facendo, per un breve momento, l'incantatrice di numeri vide qualcosa per quello che era
+
+459
+00:40:23,800 --> 00:40:26,920
+stato, che era e che sarebbe potuto essere.
+
+460
+00:40:26,920 --> 00:40:30,000
+Pochi a suo tempo capirono questi meriti.
+
+461
+00:40:30,000 --> 00:40:36,400
+Uno di questi fu certamente Babbage, che vide una donna in grado di percepire il valore
+
+462
+00:40:36,400 --> 00:40:41,400
+del suo progetto, di descriverlo in modo chiaro e conciso e di avere la capacità
+
+463
+00:40:41,400 --> 00:40:45,120
+di mettere l'innovazione tecnologica nella giusta prospettiva.
+
+464
+00:40:45,120 --> 00:40:51,720
+Questa qualità viene spesso minimizzata perché non può essere quantificata, eppure
+
+465
+00:40:51,720 --> 00:40:53,360
+è il cuore della questione.
+
+466
+00:40:53,360 --> 00:40:59,520
+Non si può negare che Ada avesse una visione delle possibilità delle macchine calcolatrici
+
+467
+00:40:59,520 --> 00:41:03,960
+che superava di gran lunga quella dei suoi contemporanei, Babbage incluso.
+
+468
+00:41:04,520 --> 00:41:11,000
+Per tanto tempo, in quanto donna, non ha avuto la considerazione che merita, ma per fortuna
+
+469
+00:41:11,000 --> 00:41:16,840
+molti oggi riconoscono l'algoritmo descritto da Ada nelle note per generare i numeri di
+
+470
+00:41:16,840 --> 00:41:23,160
+Bernulli come il primo programma per computer della storia, e quindi lei è considerata
+
+471
+00:41:23,160 --> 00:41:26,120
+la prima programmatrice di computer.
+
+472
+00:41:26,120 --> 00:41:32,320
+Esiste persino il giorno di Ada Lovelace che cade il secondo martedì di ottobre e che
+
+473
+00:41:32,320 --> 00:41:38,280
+è stato istituito nel 2019 per celebrare i contributi delle donne nel campo delle materie
+
+474
+00:41:38,280 --> 00:41:39,280
+STEM.
+
+475
+00:41:39,280 --> 00:41:46,440
+Ada non fu quindi solo una donna speciale del XIX secolo, ma è anche un simbolo e un
+
+476
+00:41:46,440 --> 00:41:47,680
+mito moderno.
+
+477
+00:41:47,680 --> 00:41:53,240
+Più conosciuta per la sua associazione con la nascita della moderna informatica che come
+
+478
+00:41:53,240 --> 00:41:58,960
+figlia di Byron, il fatto di essere la figlia di un grande poeta conferisce tuttavia a lei
+
+479
+00:41:59,120 --> 00:42:03,080
+e alla sua opera una passione ed una forza fuori dal comune.
+
+480
+00:42:03,080 --> 00:42:10,720
+È una perdita incommensurabile per la matematica, l'informatica e la poesia che Ada Byron King,
+
+481
+00:42:10,720 --> 00:42:16,240
+contessa di Lovelace, non abbia mai avuto l'opportunità di scoprire l'entità di
+
+482
+00:42:16,240 --> 00:42:19,560
+quell'energia e di quel potere che portava dentro di sé.
+
+483
+00:42:19,560 --> 00:42:27,840
+Si conclude così il nostro viaggio nella vita e l'opera di Ada Lovelace.
+
+484
+00:42:27,840 --> 00:42:34,000
+Spero tanto che questa miniserie ti sia piaciuta almeno quanto è piaciuto a me realizzarla.
+
+485
+00:42:34,000 --> 00:42:40,400
+Mi raccomando, ti chiedo sinceramente il favore di farla girare il più possibile, è un progetto
+
+486
+00:42:40,400 --> 00:42:45,040
+di cui vado fiero e vorrei tanto che lo ascoltassero più persone possibile.
+
+487
+00:42:45,040 --> 00:42:51,080
+E anche oggi ringrazio tantissimo gli amici che hanno prestato la voce sempre in ordine
+
+488
+00:42:51,080 --> 00:42:52,080
+di apparizione.
+
+489
+00:42:52,080 --> 00:42:57,200
+Walter Vannini del podcast Data Nightmare nella parte di Augustus De Morgan.
+
+490
+00:42:57,560 --> 00:43:01,760
+Chiara Virgili del podcast Dannati Architetti nella parte di Ada Lovelace.
+
+491
+00:43:01,760 --> 00:43:06,400
+E Alex Raccuglia di Techno Peels nella parte di Charles Babbage.
+
+492
+00:43:06,400 --> 00:43:11,880
+Tutte le citazioni di questo episodio sono state tratte dal bellissimo libro Ada The
+
+493
+00:43:11,880 --> 00:43:16,160
+Enchantress of Numbers, ovviamente trovi tutti i link in descrizione.
+
+494
+00:43:16,160 --> 00:43:21,880
+Ringrazio poi Edoardo e Carlo che ormai sono sostenitori fissi da più di un anno, cosa
+
+495
+00:43:21,880 --> 00:43:27,320
+che mi fa capire che apprezzano veramente quello che faccio, a cui per questo episodio
+
+496
+00:43:27,320 --> 00:43:30,000
+si unisce anche Antonio Lazazzera.
+
+497
+00:43:30,000 --> 00:43:35,280
+Ti ricordo infatti che Pensieri in Codice è un podcast indipendente che si sostiene
+
+498
+00:43:35,280 --> 00:43:39,640
+grazie solo al mio impegno ed al supporto dei donatori.
+
+499
+00:43:39,640 --> 00:43:44,800
+Ultimamente ho persino eliminato la pubblicità per evitare scocciature e soprattutto per
+
+500
+00:43:44,800 --> 00:43:47,600
+minimizzare il tracciamento degli ascoltatori.
+
+501
+00:43:48,000 --> 00:43:53,960
+Quindi se vuoi contribuire anche tu, trovi tutti i dettagli sul sito pensieriincodice.it
+
+502
+00:43:53,960 --> 00:43:59,640
+e se doni almeno 10€ hai diritto a ricevere stickers e segnalibro, basta che mi fai avere
+
+503
+00:43:59,640 --> 00:44:01,280
+un indirizzo a cui spedirli.
+
+504
+00:44:01,280 --> 00:44:07,140
+Detto questo credo che non ci sia altro, io quindi ti auguro buone feste, ti do appuntamento
+
+505
+00:44:07,140 --> 00:44:12,840
+al prossimo episodio con la raccomandazione di trascorrere un sereno Natale senza dimenticare
+
+506
+00:44:12,840 --> 00:44:18,000
+mai però che un informatico risolve problemi, a volte anche usando il computer.
+
