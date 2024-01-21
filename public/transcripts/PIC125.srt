@@ -1,0 +1,880 @@
+1
+00:00:00,000 --> 00:00:07,160
+A volte ci sono degli strumenti che utilizziamo ogni giorno per abitudine o per lavoro, dei
+
+2
+00:00:07,160 --> 00:00:13,760
+quali però conosciamo ben poco sia dal punto di vista tecnico ma anche solo della loro
+
+3
+00:00:13,760 --> 00:00:19,400
+storia e a volte così facendo ci perdiamo qualcosa di interessante.
+
+4
+00:00:19,400 --> 00:00:26,240
+Nell'episodio di oggi, dunque, con l'aiuto di un amico che sono sicuro già conoscerai
+
+5
+00:00:26,240 --> 00:00:32,120
+facciamo un bel viaggio nella storia e nel funzionamento di quella che comunemente tutti
+
+6
+00:00:32,120 --> 00:00:33,840
+noi chiamiamo PEC.
+
+7
+00:00:33,840 --> 00:00:40,840
+Nell'ultimo periodo questo servizio ha fatto da punto di partenza per una versione più
+
+8
+00:00:40,840 --> 00:00:49,020
+avanzata estesa all'intera Europa con il nome di REM ed è quindi bene secondo me conoscerne
+
+9
+00:00:49,020 --> 00:00:54,120
+caratteristiche e differenze rispetto alla normale posta elettronica.
+
+10
+00:00:54,500 --> 00:01:02,500
+Senza induggiare oltre quindi passo la parola a Francesco Tucci del podcast Pillole di Bit
+
+11
+00:01:02,500 --> 00:01:05,740
+ma non prima di aver lanciato la sigla.
+
+12
+00:01:05,740 --> 00:01:14,940
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galan.
+
+13
+00:01:14,940 --> 00:01:27,060
+Tanto tempo fa per inviare una comunicazione ufficiale era necessario andare in posta, fare
+
+14
+00:01:27,060 --> 00:01:32,060
+la coda, sopportare il blatterare dell'agente, compilare il modulo della raccomandata con
+
+15
+00:01:32,060 --> 00:01:40,180
+ricevuta di ritorno a mano, pagare, spedirla, aspettare che questa venisse consegnata e poi
+
+16
+00:01:40,180 --> 00:01:44,940
+aspettare che il cartoncino firmato dal destinatario tornasse fino nella vostra buca
+
+17
+00:01:44,940 --> 00:01:50,540
+delle lettere. Dopo tutto questo giro c'era la certezza che questa comunicazione aveva
+
+18
+00:01:50,540 --> 00:01:56,380
+ufficialità di consegna e sarebbe potuta essere usata anche in caso di un contenzioso legale.
+
+19
+00:01:56,380 --> 00:02:02,740
+I puristi dicevano di non imbustare ma di spedirla piegata in modo che il timbro postale
+
+20
+00:02:02,740 --> 00:02:09,900
+risultasse direttamente sulla lettera. I premi della raccomandata in posta sono oltre al tempo
+
+21
+00:02:09,940 --> 00:02:15,500
+di spedizione e di attesa della consegna anche altri. La corrispondenza potrebbe andare persa,
+
+22
+00:02:15,500 --> 00:02:22,260
+il destinatario potrebbe rifiutare di riceverla e allungare ancora di più questi tempi oppure
+
+23
+00:02:22,260 --> 00:02:28,980
+potrebbe non essere in casa allungando i tempi e diventando un disagio per lui che dovrà andare a
+
+24
+00:02:28,980 --> 00:02:34,740
+ritirarla in un ufficio postale. Non c'è identificazione ufficiale dimittente e destinatario,
+
+25
+00:02:34,740 --> 00:02:42,700
+quando spedisco e quando mi arriva la lettera nessuno verifica il mio documento. Con i tempi
+
+26
+00:02:42,700 --> 00:02:48,300
+moderni e tecnologici era necessario creare qualcosa di adatto a rimpiazzare la raccomandata
+
+27
+00:02:48,300 --> 00:02:55,700
+ed ecco che nel 2005 con presidente della repubblica Ciampi e presidente del consiglio Berlusconi nasce
+
+28
+00:02:55,700 --> 00:03:01,860
+la PEC, acronimo che sta per posta elettronica certificata. La PEC è nata per sostituire il
+
+29
+00:03:01,940 --> 00:03:08,060
+giro di carta della raccomandata tutto in digitale. Per il dettaglio tecnico aspettate
+
+30
+00:03:08,060 --> 00:03:14,900
+la seconda parte di questa puntata, Valerio approfondirà ogni singolo aspetto di certificati,
+
+31
+00:03:14,900 --> 00:03:20,820
+firme e buste. Per poter fornire il servizio PEC i fornitori devono accreditarsi ed essere
+
+32
+00:03:20,820 --> 00:03:26,060
+validati da un ente pubblico, per questo non ci sono tanti fornitori PEC quanti fornitori di
+
+33
+00:03:26,060 --> 00:03:32,100
+posta elettronica. Per essere ritenuta valida ai fini legali una PEC deve partire da un server
+
+34
+00:03:32,100 --> 00:03:37,700
+PEC e arrivare a un server PEC, ma non basta. È necessario che sia validata tutta la catena di
+
+35
+00:03:37,700 --> 00:03:43,020
+creazione e consegna di cui fanno parte anche i log dei sistemi di invio e ricezione che per
+
+36
+00:03:43,020 --> 00:03:48,900
+legge devono essere mantenuti per 30 mesi. Oltre a questo periodo è vostra cura archiviare la PEC
+
+37
+00:03:48,900 --> 00:03:54,980
+con contenuto, hash, certificato, firme e marche temporali in quella che viene chiamata archiviazione
+
+38
+00:03:54,980 --> 00:04:02,180
+sostitutiva. Modalità di archiviazione che non sono valide ai fini legali sono le seguenti e so
+
+39
+00:04:02,180 --> 00:04:09,540
+che in un modo o nell'altro voi credevate di sì. Scaricare la PEC su un cliente di posta, stamparla
+
+40
+00:04:09,540 --> 00:04:15,220
+e metterla in un faldone anche se stampate sia il contenuto che il certificato. Vale solo se è sui
+
+41
+00:04:15,220 --> 00:04:21,340
+server del gestore e solo per i primi 30 mesi, pari a due anni e mezzo. Un'altra nota interessante
+
+42
+00:04:21,340 --> 00:04:27,900
+della PEC a cui molti non fanno caso è la ricevuta di consegna che attenzione non è di lettura ma è
+
+43
+00:04:27,900 --> 00:04:33,700
+valida ai fini del definire l'hai ricevuta e non puoi ignorare di averlo fatto. Se la raccomandata
+
+44
+00:04:33,700 --> 00:04:39,380
+si poteva in qualche modo rifiutare la PEC non può essere respinta e la ricevuta di consegna
+
+45
+00:04:39,380 --> 00:04:45,780
+arriva quando la comunicazione atterra sui server del ricevente, indipendentemente dal fatto che
+
+46
+00:04:45,780 --> 00:04:52,220
+questi controlli la casella di posta. Facciamo un esempio banale, mi arriva via PEC una notifica di
+
+47
+00:04:52,220 --> 00:04:58,380
+un pagamento da fare entro 30 giorni, io non guardo la PEC per più di 30 giorni, al quarantesimo giorno
+
+48
+00:04:58,380 --> 00:05:04,060
+la guardo e vedo il pagamento sarà già scaduto perché i 30 giorni sono passati da quando la
+
+49
+00:05:04,060 --> 00:05:11,220
+PEC è arrivata sul server e non da quando io l'ho aperta. Se avete una casella di posta PEC
+
+50
+00:05:11,340 --> 00:05:18,020
+dovete controllarla in modo regolare mi raccomando. Banalmente con la raccomandata non arriva pubblicità
+
+51
+00:05:18,020 --> 00:05:23,700
+come potrebbe arrivare nella buca normale, la teoria è che con la PEC dovrebbero arrivare solo
+
+52
+00:05:23,700 --> 00:05:30,300
+messaggi legittimi, niente pubblicità o altre schifezze magari. In realtà la PEC è funestata
+
+53
+00:05:30,300 --> 00:05:36,260
+da pubblicità spam ed è un veicolo di ransomware pazzesco, la gente si fida di quello che arriva
+
+54
+00:05:36,260 --> 00:05:42,700
+via PEC e clicca su ogni cosa molto più che sulla posta normale. I gestori PEC che noi conosciamo
+
+55
+00:05:42,700 --> 00:05:48,060
+sono prevalentemente italiani ma già dall'inizio non c'era alcun vincolo al fatto che potessero
+
+56
+00:05:48,060 --> 00:05:55,580
+essere europei, anche se il sistema di comunicazione è valido ai fini legali solo in Italia. Poi le
+
+57
+00:05:55,580 --> 00:06:00,860
+cose si sono evolute e anche la PEC ha fatto qualche passo in avanti, è arrivata la REM che
+
+58
+00:06:00,940 --> 00:06:07,100
+sta per registered electronic mail, primo segnale l'acronimo è in inglese, questo vuol dire che il
+
+59
+00:06:07,100 --> 00:06:14,340
+sistema passa ad avere valore legale solo in Italia, ad averlo in tutta Europa, già interessante. Poi
+
+60
+00:06:14,340 --> 00:06:22,580
+passa ad essere SERC, servizio elettronico di recapito certificato, a SERC, servizio elettronico
+
+61
+00:06:22,580 --> 00:06:28,860
+di recapito certificato qualificato, c'è una Q al fondo del secondo acronimo, vuol dire che
+
+62
+00:06:28,860 --> 00:06:34,340
+finalmente è garantito chi è l'intestatario della casella di posta. Questa cosa va fatta
+
+63
+00:06:34,340 --> 00:06:41,260
+obbligatoriamente su ogni casella PEC entro il primo trimestre di quest'anno 2024. Per fare
+
+64
+00:06:41,260 --> 00:06:46,700
+questo è necessario abilitare l'identificazione della propria casella PEC con SPID, CIE o altro
+
+65
+00:06:46,700 --> 00:06:53,740
+sistema, in modo che si sia certi chi sia il vero proprietario della casella. Con questa attivazione
+
+66
+00:06:54,020 --> 00:06:59,380
+diventa obbligatorio anche attivare l'autenticazione a due fattori, con il mio gestore non si può fare
+
+67
+00:06:59,380 --> 00:07:05,420
+con app standard TOTP ma con app proprietaria, questo ha creato un po' di malumori tra i vari
+
+68
+00:07:05,420 --> 00:07:11,220
+puristi che vorrebbero usare app open source, cosa attualmente impossibile. Con la questione
+
+69
+00:07:11,220 --> 00:07:17,100
+dell'autenticazione a due fattori diventa anche scomodo scaricare la posta sui client standard,
+
+70
+00:07:17,100 --> 00:07:23,260
+in quanto va generata una password che scade regolarmente e va cambiata sui sui sistemi di
+
+71
+00:07:23,260 --> 00:07:31,500
+provider e poi sul client di posta che usate. Una seccatura in più è una roba che va fatta
+
+72
+00:07:31,500 --> 00:07:37,980
+per avere un sistema più sicuro e certificato. Mi astengo dal commentare. A questo punto per
+
+73
+00:07:37,980 --> 00:07:43,100
+i dettagli tecnici, ma proprio scavando nel profondo, passo la palla a Valerio.
+
+74
+00:07:47,100 --> 00:08:01,340
+Francesco ci ha appena spiegato che uno strumento come la PEC, e la cosa varrà ancora di più per la
+
+75
+00:08:01,340 --> 00:08:09,380
+futura RAM, nasce per avere il cosiddetto valore probatorio legale, al pari della posta raccomandata
+
+76
+00:08:09,380 --> 00:08:16,780
+tradizionale. Ciò vuol dire che le comunicazioni inviate tramite questi strumenti, al contrario
+
+77
+00:08:16,780 --> 00:08:24,220
+di quelle spedite, con una normale email, possono essere utilizzate per sostenere eventuali dispute
+
+78
+00:08:24,220 --> 00:08:31,180
+in tribunale. Certificano l'effettiva consegna di documenti o avvisi, nonché la data in cui il
+
+79
+00:08:31,180 --> 00:08:38,940
+messaggio è stato inviato e recapitato. Ma cosa differenzia PEC o RAM dalla comune posta elettronica
+
+80
+00:08:38,940 --> 00:08:45,860
+al punto di poter garantire un tale grado di affidabilità? Da un punto di vista legale,
+
+81
+00:08:45,940 --> 00:08:52,900
+il fattore dirimente risiede nel fatto che la posta certificata permette di stabilire,
+
+82
+00:08:52,900 --> 00:08:59,780
+con approssimazione buona almeno quanto una tradizionale posta raccomandata, l'identità
+
+83
+00:08:59,780 --> 00:09:06,260
+del mittente e del destinatario di una missiva, nonché il fatto che il destinatario l'abbia
+
+84
+00:09:06,260 --> 00:09:13,780
+ricevuta o meno. Da un punto di vista informatico, invece, la chiave è nell'utilizzo di una serie di
+
+85
+00:09:13,780 --> 00:09:21,140
+concetti, per la verità abbastanza basilari e ampiamente diffusi, ma che assicurano innanzitutto
+
+86
+00:09:21,140 --> 00:09:27,620
+l'inalterabilità della comunicazione e poi permettono un controllo automatico della
+
+87
+00:09:27,620 --> 00:09:34,620
+corrispondenza tra mittente e destinatario e i vari messaggi scambiati, siano essi il messaggio
+
+88
+00:09:34,620 --> 00:09:41,980
+originale o le varie notifiche. Questi concetti in particolare sono l'incapsulamento, l'hashing
+
+89
+00:09:42,060 --> 00:09:49,940
+e la firma digitale. Prima però di scendere subito nel dettaglio, ci conviene ripassare il
+
+90
+00:09:49,940 --> 00:09:56,500
+processo di scambio di messaggi tra caselle di posta elettronica certificate, perché seppur
+
+91
+00:09:56,500 --> 00:10:04,860
+molto simile a quello tra normali caselle email, presenta alcune differenze fondamentali. Chiariamo
+
+92
+00:10:04,860 --> 00:10:12,300
+innanzitutto che i soggetti coinvolti in tale processo sono teoricamente gli stessi, cioè il
+
+93
+00:10:12,300 --> 00:10:19,300
+mittente, il destinatario, il gestore del mittente ed il gestore del destinatario, a differenza di
+
+94
+00:10:19,300 --> 00:10:27,060
+come accade per una qualsiasi email. Però nel caso dell'AppEc, quando si parla di gestori non
+
+95
+00:10:27,060 --> 00:10:34,460
+si fa genericamente riferimento ai soliti noti come Gmail o Microsoft o chiunque altro fornisca
+
+96
+00:10:34,620 --> 00:10:42,020
+caselle email, ma ad un particolare elenco di soggetti registrati ed approvati dall'AGID,
+
+97
+00:10:42,020 --> 00:10:49,460
+l'Agenzia per l'Italia Digitale. Esempio di gestori certificati sono Aruba, Tim, Poste
+
+98
+00:10:49,460 --> 00:10:56,620
+Registere e vari altri. L'elenco completo è disponibile sotto la voce elenco-gestori-ipec
+
+99
+00:10:56,620 --> 00:11:03,180
+sul sito dell'AGID. In descrizione troverai il link. Tornando a noi però, il processo di
+
+100
+00:11:03,180 --> 00:11:09,900
+trasmissione si svolge dunque in questo modo. Quando un utente invia una email certificata,
+
+101
+00:11:09,900 --> 00:11:17,220
+questi la compone tramite il software desktop o la webmail che ha a disposizione e la affida
+
+102
+00:11:17,220 --> 00:11:24,260
+al proprio gestore affinché la recapiti al destinatario. Qui c'è già la prima differenza
+
+103
+00:11:24,260 --> 00:11:31,700
+rispetto ad una normale email perché il gestore certificato inserisce il messaggio scritto dall'utente
+
+104
+00:11:31,700 --> 00:11:38,260
+all'interno di un altro messaggio che prende il nome di busta di trasporto. Questa operazione,
+
+105
+00:11:38,260 --> 00:11:44,820
+definita incapsulamento, permette di allegare tutta una serie di informazioni utili e aggiuntive
+
+106
+00:11:44,820 --> 00:11:52,820
+rispetto a quelle del messaggio originale. Subito dopo, il gestore genera una stringa di testo di
+
+107
+00:11:52,820 --> 00:12:01,140
+tale busta, chiamata codice hash, ed utilizza la propria firma digitale per firmare entrambi
+
+108
+00:12:01,140 --> 00:12:10,140
+gli artefatti busta e hash. Come vedremo a breve, ciò permetterà in seguito di verificare e garantire
+
+109
+00:12:10,140 --> 00:12:17,100
+la veridicità di una serie di fattori come la provenienza, la marca temporale e l'integrità
+
+110
+00:12:17,100 --> 00:12:25,260
+del messaggio. Una volta ultimate queste prime operazioni, il gestore invia indietro al mittente
+
+111
+00:12:25,260 --> 00:12:32,580
+la notifica di presa in carico del messaggio, che altro non è che la prima delle due ricevute
+
+112
+00:12:32,580 --> 00:12:39,780
+che il mittente riceve ogni volta che invia una PEC. Se fino ad ora tutto è andato per il verso
+
+113
+00:12:39,780 --> 00:12:46,860
+giusto, nella ricevuta comparirà un messaggio di successo, altrimenti sarà presente una descrizione
+
+114
+00:12:46,860 --> 00:12:55,020
+del problema verificatosi. Nel frattempo il gestore del mittente invia la busta e l'hash firmati
+
+115
+00:12:55,340 --> 00:13:02,380
+al gestore del destinatario, il quale avvia i propri protocolli di verifica per accertarsi che
+
+116
+00:13:02,380 --> 00:13:10,380
+tutto sia in ordine prima di procedere al recapito. Affinché il messaggio superi le verifiche, la firma
+
+117
+00:13:10,380 --> 00:13:17,500
+deve essere innanzitutto valida e poi deve appartenere ad uno dei gestori PEC autorizzati
+
+118
+00:13:17,500 --> 00:13:24,980
+dall'AGID. Dopodiché, se la busta corrisponde correttamente all'hash, allora si può concludere
+
+119
+00:13:24,980 --> 00:13:33,060
+che il suo contenuto sia arrivato inalterato. Una volta effettuate tutte le verifiche con successo,
+
+120
+00:13:33,060 --> 00:13:40,660
+il gestore del destinatario può aprire la busta, estrarne il messaggio email e consegnarlo nella
+
+121
+00:13:40,660 --> 00:13:47,660
+casella del soggetto destinatario. Solo a questo punto il gestore del destinatario invia una
+
+122
+00:13:47,660 --> 00:13:54,860
+notifica al mittente iniziale per avvisarlo che il messaggio è stato recapitato al destinatario,
+
+123
+00:13:54,860 --> 00:14:03,700
+vada bene recapitato, non letto. Questa notifica detta ricevuta di consegna è il secondo messaggio
+
+124
+00:14:03,700 --> 00:14:11,780
+che normalmente il mittente riceve automaticamente quando invia una PEC ed è sufficiente anche agli
+
+125
+00:14:11,780 --> 00:14:19,460
+occhi della legge per confermare che il processo è andato a buon fine. Da protocollo esistono anche
+
+126
+00:14:19,460 --> 00:14:26,780
+delle notifiche riguardanti la lettura dei messaggi da parte degli utenti, ma non sono obbligatorie e
+
+127
+00:14:26,780 --> 00:14:33,500
+non molti gestori le implementano. Legalmente parlando è responsabilità del destinatario
+
+128
+00:14:33,500 --> 00:14:39,820
+presidiare regolarmente la propria casella e leggere le comunicazioni ricevute. Ad ogni modo,
+
+129
+00:14:39,860 --> 00:14:45,980
+già da queste poche informazioni possiamo trarre alcune conclusioni importanti sul
+
+130
+00:14:45,980 --> 00:14:52,300
+funzionamento della PEC, che valgono in parte anche per la RAM. Innanzitutto possiamo
+
+131
+00:14:52,300 --> 00:14:57,540
+tranquillamente affermare che grazie alla tecnologia impiegata di hashing e firma
+
+132
+00:14:57,540 --> 00:15:04,100
+digitale il contenuto di un messaggio non può essere in alcun modo alterato, a differenza
+
+133
+00:15:04,100 --> 00:15:09,780
+ad esempio di come accade per la raccomandata, servizio al quale spesso la PEC viene paragonata.
+
+134
+00:15:10,580 --> 00:15:18,300
+In secondo luogo, il processo di trasmissione è reso sicuro in modo automatico dal protocollo
+
+135
+00:15:18,300 --> 00:15:25,980
+tecnologico, ma la verifica della vera identità di emittente e destinatario, cioè proprio delle
+
+136
+00:15:25,980 --> 00:15:34,500
+persone che acquistano le caselle, viene demandata al gestore. Questo fattore è importante se pensiamo
+
+137
+00:15:34,500 --> 00:15:40,020
+che il nuovo standard europeo che è nato come estensione della PEC, cioè appunto la RAM,
+
+138
+00:15:40,020 --> 00:15:47,300
+risolve proprio questo problema, imponendo il riconoscimento dell'utente tramite sistema sicuro
+
+139
+00:15:47,300 --> 00:15:54,700
+come lo speed, la CIE, la firma digitale o il riconoscimento in video. Fatte queste prime
+
+140
+00:15:54,700 --> 00:16:01,100
+osservazioni proviamo dunque ad approfondire un po' quelli che sono gli aspetti più tecnici
+
+141
+00:16:01,100 --> 00:16:06,740
+della questione, andando ad osservare il funzionamento dei concetti su cui si basano
+
+142
+00:16:06,740 --> 00:16:12,860
+le peculiari caratteristiche della posta certificata. Abbiamo innanzitutto detto che
+
+143
+00:16:12,860 --> 00:16:19,380
+il messaggio inviato nel primo passaggio viene incapsulato in un secondo messaggio
+
+144
+00:16:19,380 --> 00:16:26,580
+chiamato busta di trasporto. L'incapsulamento è una pratica molto diffusa nel mondo del software,
+
+145
+00:16:27,020 --> 00:16:35,260
+un paradigma potente quanto in realtà semplice che consiste nell'inglobare un oggetto software
+
+146
+00:16:35,260 --> 00:16:41,220
+all'interno di un altro oggetto software. A seconda dell'ambito in cui viene applicato,
+
+147
+00:16:41,220 --> 00:16:48,420
+l'incapsulamento può avere forme diverse. Ad esempio se si parla di protocolli di trasmissione
+
+148
+00:16:48,420 --> 00:16:55,900
+dei dati, come quelli che sono alla base delle reti o dei servizi internet, incapsulare vuol dire
+
+149
+00:16:55,900 --> 00:17:02,180
+inserire pacchetti di dati all'interno di altri pacchetti leggermente più grandi che possono
+
+150
+00:17:02,180 --> 00:17:09,420
+trasportare, oltre al pacchetto originale, anche altre informazioni aggiuntive. Se invece parliamo
+
+151
+00:17:09,420 --> 00:17:17,020
+di programmazione basata sugli oggetti, l'incapsulamento si manifesta nello sfruttare
+
+152
+00:17:17,020 --> 00:17:23,620
+delle classi per sviluppare altre classi che implementino funzionalità più complesse ma
+
+153
+00:17:23,620 --> 00:17:30,820
+basate su quelle della classe originale. Nel nostro caso invece l'incapsulamento della busta
+
+154
+00:17:30,820 --> 00:17:36,940
+di trasporto consiste nel far diventare il messaggio originale una parte di un nuovo
+
+155
+00:17:36,940 --> 00:17:44,060
+messaggio, il quale contiene anche informazioni aggiuntive come l'hash, il nominativo dell'ente
+
+156
+00:17:44,060 --> 00:17:51,620
+certificante e la sua chiave pubblica. Un altro concetto ampiamente diffuso e utilizzato anche
+
+157
+00:17:51,620 --> 00:17:59,380
+dalla PEC è poi dunque quello di hashing. Lo abbiamo ripetuto tante volte ma in effetti non
+
+158
+00:17:59,380 --> 00:18:08,940
+abbiamo ancora spiegato cosa sia. In pratica l'hash è una stringa alfanumerica di lunghezza ben definita
+
+159
+00:18:08,940 --> 00:18:16,420
+che può essere calcolata tramite una funzione matematica e quindi un algoritmo detta appunto
+
+160
+00:18:16,420 --> 00:18:24,860
+funzione di hashing. L'algoritmo di hashing è implementato in modo che se si calcola più volte
+
+161
+00:18:24,860 --> 00:18:32,660
+l'hash di un testo si ottiene come risultato sempre la stessa identica stringa a patto che il testo sia
+
+162
+00:18:32,660 --> 00:18:40,620
+sempre esattamente identico. Se il testo originale cambia anche solo di una virgola o di uno spazio
+
+163
+00:18:40,660 --> 00:18:49,620
+l'hash calcolato risulterà completamente differente. Inoltre sempre a causa delle caratteristiche della
+
+164
+00:18:49,620 --> 00:18:58,740
+funzione di hashing da un qualsiasi codice hash è impossibile risalire all'originale testo utilizzato
+
+165
+00:18:58,740 --> 00:19:06,780
+per generarlo. Algoritmi di questo tipo sono largamente utilizzati in criptografia ad esempio
+
+166
+00:19:06,780 --> 00:19:14,780
+per memorizzare le credenziali o i dati biometrici perché conservare nei database l'hash di una
+
+167
+00:19:14,780 --> 00:19:22,180
+password, dell'impronta digitale o del viso è molto più economico e sicuro che memorizzare il dato
+
+168
+00:19:22,180 --> 00:19:30,100
+originale per intero. Nel caso in cui qualcuno dovesse sottrarre il database a partire dagli
+
+169
+00:19:30,100 --> 00:19:37,060
+hash non sarebbe in grado di calcolare i dati originali e al tempo stesso quando è necessario
+
+170
+00:19:37,060 --> 00:19:44,900
+utilizzare tali dati basta ricalcolare l'hash a partire dal nuovo input fornito dall'utente. Quando
+
+171
+00:19:44,900 --> 00:19:52,500
+l'utente inserisce una nuova password o fa scansionare il proprio viso ad esempio il sistema
+
+172
+00:19:52,500 --> 00:20:00,340
+genera nuovamente l'hash e lo confronta con quello memorizzato nel proprio database. Se coincide
+
+173
+00:20:00,340 --> 00:20:08,860
+allora l'utente è verificato altrimenti no. Facile, veloce e funziona nonostante l'impossibilità di
+
+174
+00:20:08,860 --> 00:20:16,900
+ricostruire il dato originale e proprio sfruttando un principio del genere i gestori dell'APEC possono
+
+175
+00:20:16,900 --> 00:20:24,060
+verificare che i messaggi non siano stati alterati durante il percorso volontariamente o meno. Al
+
+176
+00:20:24,060 --> 00:20:32,080
+momento dell'invio infatti il gestore del mittente crea la busta e vi inserisce oltre al messaggio
+
+177
+00:20:32,080 --> 00:20:38,620
+anche alcune informazioni aggiuntive come ad esempio la marca temporale e altri dati che
+
+178
+00:20:38,620 --> 00:20:47,260
+possono risultare utili. Poi calcola l'hash e inserisce anche quello nella busta. Quando il
+
+179
+00:20:47,260 --> 00:20:55,580
+messaggio arriva al gestore del destinatario il sistema estrae l'hash e poi calcola a sua volta
+
+180
+00:20:55,580 --> 00:21:02,580
+l'hash della busta che ha ricevuto. Se i due hash coincidono ne può dedurre che il messaggio è
+
+181
+00:21:02,580 --> 00:21:11,020
+arrivato inalterato. Ora però ti starai chiedendo se io intercetto un messaggio, lo altero, calcolo
+
+182
+00:21:11,020 --> 00:21:17,980
+il nuovo hash e lo sostituisco al vecchio nella busta. In tal modo posso tranquillamente far
+
+183
+00:21:17,980 --> 00:21:26,180
+credere al sistema che la mia modifica fosse parte dell'invio originale. Beh, in realtà questo
+
+184
+00:21:26,180 --> 00:21:33,940
+non si può fare grazie all'ultimo concetto chiave menzionato prima, quello che assicura che tutta la
+
+185
+00:21:33,940 --> 00:21:41,980
+trasmissione avvenga in modo sicuro e dal sicuro da occhi indiscreti, cioè la firma digitale. Prima
+
+186
+00:21:41,980 --> 00:21:51,300
+di inviare la busta infatti il gestore del mittente la firma con la propria chiave privata e la cifra
+
+187
+00:21:51,300 --> 00:21:58,780
+con quella pubblica del gestore del destinatario. Ora, la criptografia tramite chiave pubblico
+
+188
+00:21:58,780 --> 00:22:06,820
+privata è un sistema semplice quanto geniale per assicurare la sicurezza delle comunicazioni in
+
+189
+00:22:06,820 --> 00:22:14,900
+generale. Viene utilizzata in moltissimi ambiti come ad esempio il protocollo HTTPS. In questo
+
+190
+00:22:14,940 --> 00:22:21,700
+momento non abbiamo tempo per spiegarne il funzionamento in dettaglio, per questo ti
+
+191
+00:22:21,700 --> 00:22:28,780
+consiglio di ascoltare l'episodio di Pensieri in Codice numero 20 intitolato l'algoritmo della
+
+192
+00:22:28,780 --> 00:22:36,540
+criptografia chiave pubblica. Ma quel che ci interessa oggi è il seguente concetto. Quando
+
+193
+00:22:36,540 --> 00:22:43,740
+si codifica un'informazione utilizzando una chiave privata la si può decodificare utilizzando la
+
+194
+00:22:43,740 --> 00:22:51,260
+relativa chiave pubblica e viceversa. La busta della PEC quindi che è stata criptografata
+
+195
+00:22:51,260 --> 00:22:58,180
+utilizzando la chiave pubblica del gestore del destinatario può essere decriptata solo da
+
+196
+00:22:58,180 --> 00:23:05,580
+quest'ultimo in quanto è unico detentore della propria chiave privata. Questa caratteristica
+
+197
+00:23:05,580 --> 00:23:12,140
+assicura il fatto che il messaggio una volta spedito non possa essere aperto né tantomeno
+
+198
+00:23:12,140 --> 00:23:19,940
+modificato da altri se non dal gestore legittimo del destinatario. Al tempo stesso poi la firma
+
+199
+00:23:19,940 --> 00:23:27,500
+applicata utilizzando la chiave privata del gestore emittente potrà essere verificata con la relativa
+
+200
+00:23:27,500 --> 00:23:35,060
+chiave pubblica liberamente distribuita che assicurerà che il messaggio arriva effettivamente
+
+201
+00:23:35,060 --> 00:23:41,020
+dal gestore in questione. Essendo infatti la chiave privata in possesso solo e unicamente
+
+202
+00:23:41,500 --> 00:23:48,220
+del gestore emittente nessun altro soggetto potrà utilizzarla per criptare un messaggio
+
+203
+00:23:48,220 --> 00:23:55,220
+allo stesso modo. Se utilizzando la giusta chiave pubblica il messaggio potrà essere decriptato
+
+204
+00:23:55,220 --> 00:24:02,900
+allora il gestore destinatario avrà la conferma che esso arriva dal gestore emittente altrimenti
+
+205
+00:24:02,900 --> 00:24:09,900
+il messaggio verrà considerato illegittimo e verrà scartato. Utilizzando questi meccanismi
+
+206
+00:24:09,940 --> 00:24:17,580
+di codifica e decodifica in combinazione viene preservata sia l'autenticità che la segretezza
+
+207
+00:24:17,580 --> 00:24:30,460
+dell'intera comunicazione. Bene anche oggi siamo giunti al termine dell'episodio ringrazio Francesco
+
+208
+00:24:30,460 --> 00:24:36,260
+per aver accettato la collaborazione era già un po' che volevo farne una con lui e finalmente
+
+209
+00:24:36,260 --> 00:24:43,700
+sono riuscito ad organizzarla. In descrizione trovi il link a pillole di bit che se già non
+
+210
+00:24:43,700 --> 00:24:51,500
+conosci ovviamente devi andare a recuperare. Per inciso ho in mente altri argomenti che potremmo
+
+211
+00:24:51,500 --> 00:24:58,740
+trattare insieme quindi se l'episodio ti è piaciuto faccelo sapere su telegram o scrivendo
+
+212
+00:24:58,780 --> 00:25:06,820
+una mail a valerio-pensierincodice.it. A questo proposito sul sito pensierincodice.it trovi
+
+213
+00:25:06,820 --> 00:25:13,660
+anche tutti i modi per contattarmi ed entrare a far parte della community del podcast. Detto questo
+
+214
+00:25:13,660 --> 00:25:20,540
+poi ringrazio i soliti Carlo ed Edoardo per la loro donazione ricorrente e ti ricordo che se
+
+215
+00:25:20,540 --> 00:25:27,340
+vuoi unirti a loro trovi tutte le informazioni sempre sul sito alla sezione sostieni. Ah e quasi
+
+216
+00:25:27,340 --> 00:25:33,460
+dimenticavo sul nuovo sito c'è anche il nuovo feed del podcast senza pubblicità e senza
+
+217
+00:25:33,460 --> 00:25:39,460
+tracciamento lesivo della privacy quindi ti consiglio di andarlo a recuperare e aggiungerlo
+
+218
+00:25:39,460 --> 00:25:46,140
+alla tua app. Dunque direi che per il momento non c'è altro io ti do semplicemente appuntamento
+
+219
+00:25:46,140 --> 00:25:53,140
+al prossimo episodio ma ti ricordo sempre che un informatico risolve problemi a volte anche
+
+220
+00:25:53,140 --> 00:25:54,100
+usando il computer.
+
