@@ -45,3 +45,5 @@ jobs:
           password: ${{ secrets.CDN_FTP_PASSWORD }}
           local-dir: ./public/
           server-dir: /
+          timeout: 60000
+          log-level: verbose
