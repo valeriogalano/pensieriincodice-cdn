@@ -37,13 +37,13 @@ jobs:
           local-dir: ./public/
           server-dir: /
 
-      - name: 📂 Sync files to cdn.pensieriincodice.it
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ftp.cdn.pensieriincodice.it
-          username: cdn@cdn.pensieriincodice.it
-          password: ${{ secrets.CDN_FTP_PASSWORD }}
-          local-dir: ./public/
-          server-dir: /
-          timeout: 60000
-          log-level: verbose
+#      - name: 📂 Sync files to cdn.pensieriincodice.it
+#        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+#        with:
+#          server: ftp.cdn.pensieriincodice.it
+#          username: cdn@cdn.pensieriincodice.it
+#          password: ${{ secrets.CDN_FTP_PASSWORD }}
+#          local-dir: ./public/
+#          server-dir: /
+#          timeout: 60000
+#          log-level: verbose
