@@ -1,0 +1,1524 @@
+1
+00:00:00,000 --> 00:00:06,560
+Quante volte ci capita di sentirci stanchi, in ansia e provare la sensazione da un lato
+
+2
+00:00:06,560 --> 00:00:11,480
+di aver perso tempo e dall'altro di avere mille cose in sospeso da fare?
+
+3
+00:00:11,480 --> 00:00:17,800
+Eppure noi ci impegniamo tanto, portiamo a termine sempre tante attività e ci prodighiamo
+
+4
+00:00:17,800 --> 00:00:24,080
+anche per gli altri, com'è possibile nonostante tutto ciò che ci sentiamo così?
+
+5
+00:00:24,080 --> 00:00:29,780
+Oggi parliamo di alcuni fattori della vita quotidiana che contribuiscono a farci essere
+
+6
+00:00:29,780 --> 00:00:36,060
+meno produttivi e più stressati, di come mitigarne gli effetti e addirittura di come
+
+7
+00:00:36,060 --> 00:00:39,180
+sfruttarne i meccanismi al nostro vantaggio.
+
+8
+00:00:39,180 --> 00:00:40,180
+Sigla.
+
+9
+00:00:40,180 --> 00:00:51,340
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio
+
+10
+00:00:51,340 --> 00:00:53,540
+Galano.
+
+11
+00:00:54,540 --> 00:01:02,780
+Oggi come oggi le continue interruzioni al flusso dei nostri pensieri sono la pura normalità.
+
+12
+00:01:02,780 --> 00:01:09,420
+Personalmente non credo di conoscere nessuno che possa legittimamente affermare di esserne
+
+13
+00:01:09,420 --> 00:01:10,980
+totalmente esente.
+
+14
+00:01:10,980 --> 00:01:17,220
+Il nostro stile di vita e tutta la tecnologia di cui disponiamo ci hanno avvicinati fra
+
+15
+00:01:17,220 --> 00:01:22,100
+noi, hanno reso le comunicazioni più veloci ed efficienti, l'accesso alle informazioni
+
+16
+00:01:22,100 --> 00:01:29,100
+più immediato, ma hanno anche moltiplicato enormemente le possibilità di ciascuno di
+
+17
+00:01:29,100 --> 00:01:34,660
+essere raggiunto praticamente in ogni luogo e in ogni momento del giorno e della notte.
+
+18
+00:01:34,660 --> 00:01:42,980
+I nostri smartphone ci tempestano in continuazione di notifiche, messaggi, email, social network,
+
+19
+00:01:42,980 --> 00:01:43,980
+applicazioni varie.
+
+20
+00:01:43,980 --> 00:01:50,520
+E poi riceviamo chiamate al telefono o richieste a voce, domande e sollicitazioni varie da
+
+21
+00:01:50,520 --> 00:01:54,960
+parte delle persone che ci stanno intorno, a casa i familiari, al lavoro i colleghi e
+
+22
+00:01:54,960 --> 00:01:55,960
+così via.
+
+23
+00:01:55,960 --> 00:02:03,120
+Questa condizione è diventata ormai così normale e accettata che molti non si fanno
+
+24
+00:02:03,120 --> 00:02:08,120
+più problemi nemmeno a scrivere o a chiamare durante l'orario della pausa pranzo, della
+
+25
+00:02:08,120 --> 00:02:12,240
+cena o a tardasera e nei giorni festivi.
+
+26
+00:02:12,240 --> 00:02:18,880
+Per ora possiamo definirci fortunati se almeno le ore notturne vengono ancora rispettate,
+
+27
+00:02:18,880 --> 00:02:19,880
+per ora.
+
+28
+00:02:19,880 --> 00:02:26,660
+Il punto però è che se non facciamo qualcosa per ovviare a questo problema, possiamo potenzialmente
+
+29
+00:02:26,660 --> 00:02:33,520
+essere continuamente interrotti in quello che stiamo facendo, mentre lavoriamo, in vacanza,
+
+30
+00:02:33,520 --> 00:02:38,840
+quando siamo per strada, a tavola, davanti alla tv, leggendo un libro, praticamente sempre.
+
+31
+00:02:38,840 --> 00:02:46,000
+Con il tempo ci siamo abituati a questo status quo e ci prodighiamo ogni giorno per farvi
+
+32
+00:02:46,000 --> 00:02:51,880
+di fronte alla meglio, spostando continuamente la nostra attenzione tra l'attività che
+
+33
+00:02:51,880 --> 00:02:57,840
+stiamo svolgendo, per dovere o per piacere, e l'interruzione di turno, sia essa digitale
+
+34
+00:02:57,840 --> 00:02:58,840
+o analogica.
+
+35
+00:02:58,840 --> 00:03:05,480
+Questo tipo di impostazione del proprio lavoro o di gestione del proprio tempo in generale
+
+36
+00:03:05,480 --> 00:03:12,400
+viene comunemente chiamato multitasking, questo nome è mutuato dall'attività tipica dei
+
+37
+00:03:12,400 --> 00:03:19,400
+sistemi informatici di eseguire più compiti per volta, spostando continuamente la potenza
+
+38
+00:03:19,400 --> 00:03:25,440
+di calcolo tra di essi in maniera ciclica, e dando così la sensazione che essi siano
+
+39
+00:03:25,440 --> 00:03:27,480
+svolti contemporaneamente.
+
+40
+00:03:27,480 --> 00:03:34,220
+A poco a poco, negli ultimi anni, ci siamo un po' tutti convinti che il multitasking sia
+
+41
+00:03:34,220 --> 00:03:40,800
+la risposta naturale al problema delle interruzioni, e abbiamo iniziato a svolgere più compiti
+
+42
+00:03:40,800 --> 00:03:46,200
+in contemporanea, dedicando pochi minuti o addirittura pochi secondi a ciascuno di
+
+43
+00:03:46,200 --> 00:03:53,040
+essi a rotazione, e così, mentre scriviamo un documento, riceviamo una mail e ci prendiamo
+
+44
+00:03:53,040 --> 00:03:59,240
+5 minuti per rispondere, poi dedichiamo altri 3 minuti al documento finché non arriva un
+
+45
+00:03:59,240 --> 00:04:04,720
+messaggio al quale servono 30 secondi per rispondere, poi altri 2 minuti al documento
+
+46
+00:04:04,720 --> 00:04:05,720
+e così via.
+
+47
+00:04:05,960 --> 00:04:11,600
+Peccato che il cervello umano, a differenza di un microprocessore, non sia progettato
+
+48
+00:04:11,600 --> 00:04:14,000
+per funzionare in modalità multitasking.
+
+49
+00:04:14,000 --> 00:04:20,920
+Su di noi, le interruzioni hanno un impatto negativo enorme rispetto ad un computer, perché
+
+50
+00:04:20,920 --> 00:04:27,160
+in milioni di anni noi ci siamo evoluti per svolgere fondamentalmente un compito per volta.
+
+51
+00:04:27,160 --> 00:04:34,840
+Benché sul momento ci possa sembrare di stare conseguendo chissà quali risultati, la realtà
+
+52
+00:04:34,840 --> 00:04:41,440
+è che attuare il multitasking non solo non ci permette di rendere meglio di come faremmo
+
+53
+00:04:41,440 --> 00:04:47,960
+se svolgessimo le stesse attività affrontandole una per volta, ma ci porta anche a subire
+
+54
+00:04:47,960 --> 00:04:49,920
+tutta una serie di svantaggi.
+
+55
+00:04:49,920 --> 00:04:57,280
+Innanzitutto, in multitasking non performiamo meglio, perché nel passare da un'attività
+
+56
+00:04:57,280 --> 00:05:03,000
+all'altra entra in gioco un'operazione che, sempre mutuata dall'informatica, prende il
+
+57
+00:05:03,000 --> 00:05:09,880
+nome di Context Switch e consiste nell'azione di abbandonare tutti i pensieri e ragionamenti
+
+58
+00:05:09,880 --> 00:05:15,480
+che attualmente si stanno elaborando per prendere in considerazione quelli necessari per un'altra
+
+59
+00:05:15,480 --> 00:05:16,480
+attività.
+
+60
+00:05:16,480 --> 00:05:22,560
+Quando infatti ci dedichiamo ad un qualche compito, soprattutto se non è qualcosa di
+
+61
+00:05:22,560 --> 00:05:28,960
+già fatto centinaia di volte e per cui abbiamo sviluppato un automatismo, dobbiamo tenere
+
+62
+00:05:28,960 --> 00:05:35,400
+in considerazione tutta una serie di informazioni, obiettivi, prossimi passi, idee, elucubrazioni
+
+63
+00:05:35,400 --> 00:05:36,400
+ecc.
+
+64
+00:05:36,400 --> 00:05:43,760
+E ogni volta che passiamo da un compito all'altro, tutte queste informazioni vanno rimpiazzate
+
+65
+00:05:43,760 --> 00:05:48,480
+con altre inerenti il nuovo compito al quale vogliamo dedicare attenzione.
+
+66
+00:05:48,480 --> 00:05:55,720
+Dobbiamo anche noi, proprio come un microprocessore, attuare l'operazione di Context Switching.
+
+67
+00:05:55,880 --> 00:06:02,240
+Ora, vari studi, te ne lascio qualcuno in descrizione, indicano che per effettuare efficacemente
+
+68
+00:06:02,240 --> 00:06:09,440
+questo spostamento di informazioni occorrono in media dai 10 ai 15 minuti, a seconda della
+
+69
+00:06:09,440 --> 00:06:11,800
+complessità di ciò che si sta facendo.
+
+70
+00:06:11,800 --> 00:06:19,160
+Per questo motivo, aumentando le operazioni di Context Switching, finiamo con lo sprecare
+
+71
+00:06:19,160 --> 00:06:25,560
+tempo e risorse mentali che potrebbero invece essere risparmiate e riempiegate meglio, se
+
+72
+00:06:26,400 --> 00:06:30,080
+mantenessimo la concentrazione fissa su un'attività finché non la completiamo.
+
+73
+00:06:30,080 --> 00:06:36,640
+In secondo luogo poi, il multitasking potrebbe perfino avere effetti negativi sulla nostra
+
+74
+00:06:36,640 --> 00:06:39,920
+salute mentale se ne facciamo un uso eccessivo.
+
+75
+00:06:39,920 --> 00:06:43,480
+Anche su questo argomento ti lascio alcuni link in descrizione.
+
+76
+00:06:43,480 --> 00:06:50,400
+Ad esempio, è stato appurato come in alcuni soggetti il multitasking massiccio porti ad
+
+77
+00:06:50,400 --> 00:06:56,640
+un calo della capacità di concentrazione e di attenzione, oppure ad una forte riduzione
+
+78
+00:06:56,640 --> 00:07:00,760
+della memoria e della capacità di tenere a mente le cose da fare.
+
+79
+00:07:00,760 --> 00:07:08,680
+Infine, l'uso del multitasking può essere anche causa di produzione in eccesso di cortisolo,
+
+80
+00:07:08,680 --> 00:07:15,000
+che in genera stress, può aumentare l'ansia e può perfino incrementare il rischio di
+
+81
+00:07:15,000 --> 00:07:16,000
+depressione.
+
+82
+00:07:16,360 --> 00:07:24,080
+E questo spiega anche perché spesso, se lavoriamo sempre in multitasking, potremmo provare quel
+
+83
+00:07:24,080 --> 00:07:26,680
+perenne senso di insoddisfazione.
+
+84
+00:07:26,680 --> 00:07:32,320
+A onor del vero però, prima di passare al prossimo blocco, ci tengo a fare un paio di
+
+85
+00:07:32,320 --> 00:07:34,640
+precisazioni su questo discorso.
+
+86
+00:07:34,640 --> 00:07:42,680
+La prima è che io sto parlando di multitasking cognitivo, non di multitasking combinato cognitivo
+
+87
+00:07:42,680 --> 00:07:43,680
+e motorio.
+
+88
+00:07:43,920 --> 00:07:49,000
+In parole semplici mi riferisco al fatto di svolgere più attività contemporaneamente
+
+89
+00:07:49,000 --> 00:07:56,160
+che richiedano tutte una certa dose di concentrazione mentale, non al fare attività fisica mentre
+
+90
+00:07:56,160 --> 00:07:57,720
+si ragiona su qualcosa.
+
+91
+00:07:57,720 --> 00:08:03,960
+Un'attività fisica e contemporaneamente di riflessione è in realtà qualcosa di sano
+
+92
+00:08:03,960 --> 00:08:05,800
+e assolutamente consigliato.
+
+93
+00:08:05,800 --> 00:08:12,000
+Ti lascio in descrizione il link al libro L'arte di correre di Haruki Murakami che racconta
+
+94
+00:08:12,000 --> 00:08:16,840
+un bel esempio di multitasking combinato efficace, molto zen.
+
+95
+00:08:16,840 --> 00:08:23,000
+E la seconda precisazione invece riguarda il fatto che durante le mie ricerche ho trovato
+
+96
+00:08:23,000 --> 00:08:29,560
+alcuni studi che indicano nei più giovani effetti positivi del multitasking sul rendimento
+
+97
+00:08:29,560 --> 00:08:30,560
+scolastico.
+
+98
+00:08:30,560 --> 00:08:37,320
+Solo che non mi è chiaro come è stato valutato il concetto di positivo, perché da quello
+
+99
+00:08:37,320 --> 00:08:43,720
+che ho capito i soggetti che praticano multitasking massiccio, in campo multimediale quindi ad
+
+100
+00:08:43,720 --> 00:08:50,320
+esempio giocando ai videogame e guardando video, ottengono risultati scolastici migliori
+
+101
+00:08:50,320 --> 00:08:56,360
+in presenza di elementi distrattori rispetto a quando tali distrattori sono assenti.
+
+102
+00:08:56,360 --> 00:09:02,520
+E quello che non ho capito è in che senso aver bisogno di distrattori per rendere meglio
+
+103
+00:09:02,520 --> 00:09:05,440
+si può considerare positivo.
+
+104
+00:09:05,960 --> 00:09:12,760
+Se tu che ascolti ne capisci più di me, ci terrei a sentire la tua opinione, trovi anche
+
+105
+00:09:12,760 --> 00:09:14,320
+questo articolo in descrizione.
+
+106
+00:09:19,320 --> 00:09:24,960
+A contribuire all'inefficienza causata da un'attività di context switching continuo
+
+107
+00:09:24,960 --> 00:09:31,200
+ci si mette poi anche un'altra caratteristica intrinseca del nostro cervello che riguarda
+
+108
+00:09:31,280 --> 00:09:35,520
+la naturale difficoltà di ignorare le faccende in sospeso.
+
+109
+00:09:35,520 --> 00:09:42,000
+Si tratta di quello stesso fenomeno per il quale ci risulta fastidioso interrompere le
+
+110
+00:09:42,000 --> 00:09:48,240
+nostre attività senza essere giunti alla conclusione e per cui poi fatichiamo a togliercele
+
+111
+00:09:48,240 --> 00:09:49,240
+dalla mente.
+
+112
+00:09:49,240 --> 00:09:55,800
+Quante volte ci capita di lasciare qualcosa in sospeso e nei primi minuti provare quella
+
+113
+00:09:55,800 --> 00:10:02,920
+punta di ansia e poi ritrovarci a ripensare continuamente a quel qualcosa mentre stiamo
+
+114
+00:10:02,920 --> 00:10:07,760
+facendo altro nel corso delle ore o addirittura dei giorni successivi.
+
+115
+00:10:07,760 --> 00:10:14,120
+Non importa quale sia l'attività non completata, potrebbe trattarsi di una serie tv o di un
+
+116
+00:10:14,120 --> 00:10:19,520
+libro, di un lavoretto in casa, di un documento, persino di un oggetto lasciato fuori posto
+
+117
+00:10:19,520 --> 00:10:21,200
+o di una macchia da pulire.
+
+118
+00:10:21,600 --> 00:10:27,200
+Vale persino in caso di fenomeni molto più complicati come i rapporti interpersonali.
+
+119
+00:10:27,200 --> 00:10:35,120
+Avere una questione in sospeso con qualcuno e non aver potuto chiarire determinati aspetti
+
+120
+00:10:35,120 --> 00:10:40,800
+per qualsiasi motivo genera quel senso di ansia e fastidio, magari solo con intensità
+
+121
+00:10:40,800 --> 00:10:41,800
+diversa.
+
+122
+00:10:41,800 --> 00:10:48,640
+Beh, questo fenomeno, qualsiasi sia la forma in cui si manifesta, prende il nome di effetto
+
+123
+00:10:48,640 --> 00:10:54,600
+Ziganik dal nome della studiosa che lo osservò per prima nel 1920.
+
+124
+00:10:54,600 --> 00:11:02,360
+La leggenda narra che la psicologa russa Bulma Ziganik ebbe l'intuizione mentre si trovava
+
+125
+00:11:02,360 --> 00:11:04,160
+a cena al ristorante.
+
+126
+00:11:04,160 --> 00:11:10,520
+Mentre attendeva le proprie portate, la Ziganik assistette alle solite scene da locale di
+
+127
+00:11:10,520 --> 00:11:11,520
+ristorazione.
+
+128
+00:11:11,520 --> 00:11:17,200
+Camerieri che vanno avanti e indietro, prendono le ordinazioni, portano i piatti, ricevono
+
+129
+00:11:17,200 --> 00:11:19,120
+continue richieste eccetera.
+
+130
+00:11:19,120 --> 00:11:25,080
+La studiosa però rimase impressionata da come i camerieri, pur correndo su e giù fra
+
+131
+00:11:25,080 --> 00:11:31,040
+i tavoli, riuscissero a tenere a mente ordini anche molto complicati senza prenderne nota
+
+132
+00:11:31,040 --> 00:11:32,640
+e senza sbagliare un colpo.
+
+133
+00:11:32,640 --> 00:11:39,040
+Al tempo stesso poi, ella notò pure che, dopo che i clienti pagavano il conto, tutta
+
+134
+00:11:39,040 --> 00:11:45,920
+questa abilità mnemonica svaniva quasi istantaneamente e degli ordini effettuati qualche ora o addirittura
+
+135
+00:11:46,320 --> 00:11:49,040
+qualche minuto prima non restava alcuna traccia.
+
+136
+00:11:49,040 --> 00:11:56,520
+Da questa osservazione nacque lo studio Unfinished and Unfinished Tasks, a firma appunto della
+
+137
+00:11:56,520 --> 00:11:57,520
+Ziganik.
+
+138
+00:11:57,520 --> 00:12:03,400
+Studio grazie al quale la dottoressa dimostrò l'esistenza di quello che, proprio a partire
+
+139
+00:12:03,400 --> 00:12:06,280
+dal suo nome, fu definito effetto Ziganik.
+
+140
+00:12:06,280 --> 00:12:12,200
+L'idea di base utilizzata per portare avanti la ricerca è ben illustrata in un passaggio
+
+141
+00:12:12,200 --> 00:12:14,720
+del documento stesso che recita.
+
+142
+00:12:15,120 --> 00:12:21,320
+Qual è la relazione tra lo stato della memoria di un'attività che è stata interrotta prima
+
+143
+00:12:21,320 --> 00:12:26,120
+che potesse essere completata e di una che non è stata interrotta?
+
+144
+00:12:26,120 --> 00:12:34,160
+Sospettiamo che una quasi necessità non soddisfatta presumibilmente influisca anche sulla conservazione
+
+145
+00:12:34,160 --> 00:12:35,800
+puramente memoriale.
+
+146
+00:12:35,800 --> 00:12:41,620
+Ti lascio in descrizione il link al documento per approfondire, ma il succo della ricerca
+
+147
+00:12:41,620 --> 00:12:47,660
+è che ad una serie di soggetti furono assegnate delle attività da svolgere e di queste la
+
+148
+00:12:47,660 --> 00:12:52,300
+metà furono poi interrotte senza possibilità di essere completate.
+
+149
+00:12:52,300 --> 00:12:59,420
+I risultati fecero emergere che i soggetti coinvolti ricordavano con maggiore precisione
+
+150
+00:12:59,420 --> 00:13:03,780
+i dettagli dei compiti interrotti rispetto a quelli completati.
+
+151
+00:13:03,780 --> 00:13:10,180
+Secondo gli esperimenti dei ricercatori, infatti, sospendendo un compito prima della fine, le
+
+152
+00:13:10,180 --> 00:13:15,580
+informazioni che i partecipanti erano in grado di riportare aumentavano di una quantità
+
+153
+00:13:15,580 --> 00:13:18,380
+tra il 90 e il 110%.
+
+154
+00:13:18,380 --> 00:13:23,840
+In pratica, quindi, l'effetto Ziganic si riferisce alla tendenza del nostro cervello
+
+155
+00:13:23,840 --> 00:13:30,020
+a ricordare i dettagli delle attività sospese o interrotte e a dimenticare invece quelli
+
+156
+00:13:30,020 --> 00:13:36,500
+riguardanti le attività completate, liberando così la mente da informazioni non più immediatamente
+
+157
+00:13:36,500 --> 00:13:37,500
+necessarie.
+
+158
+00:13:37,820 --> 00:13:43,460
+Questa caratteristica del cervello, da un lato, può risultare davvero utile in quanto
+
+159
+00:13:43,460 --> 00:13:48,740
+è un'ottima cosa avere ben chiara in mente tutte le informazioni riguardanti ciò che
+
+160
+00:13:48,740 --> 00:13:54,260
+dobbiamo fare ed è anche positivo sentire l'impulso di voler finire ciò che abbiamo
+
+161
+00:13:54,260 --> 00:13:55,260
+iniziato.
+
+162
+00:13:55,260 --> 00:14:02,380
+Tuttavia, per contro, può anche trasformarsi in un ostacolo per la nostra produttività
+
+163
+00:14:02,380 --> 00:14:04,300
+e per la nostra serenità.
+
+164
+00:14:04,780 --> 00:14:11,500
+In primo luogo, infatti, a causa dell'effetto Ziganic, ogni compito non completato rimane
+
+165
+00:14:11,500 --> 00:14:18,180
+ad occupare un po' della nostra attenzione, frammentandola e rendendo così più complicato
+
+166
+00:14:18,180 --> 00:14:22,260
+per noi concentrarci sul lavoro attualmente in corso.
+
+167
+00:14:22,260 --> 00:14:29,060
+Ad esempio, un altro studio che trovi sempre in descrizione ha rivelato che le persone
+
+168
+00:14:29,060 --> 00:14:34,740
+interrotte durante un'attività ottengono risultati peggiori nell'attività successiva
+
+169
+00:14:34,740 --> 00:14:39,820
+rispetto a coloro ai quali è permesso di completare il primo compito prima di passare
+
+170
+00:14:39,820 --> 00:14:40,820
+al secondo.
+
+171
+00:14:40,820 --> 00:14:47,580
+Oltre a ciò, un'altra conseguenza negativa dell'effetto Ziganic è che, anche se stacchiamo
+
+172
+00:14:47,580 --> 00:14:55,260
+fisicamente dal lavoro, spesso le nostre attività incompiute ci seguono a casa, a cena, in vacanza,
+
+173
+00:14:55,260 --> 00:14:57,900
+nei fini settimane e perfino durante il sonno.
+
+174
+00:14:58,340 --> 00:15:04,500
+L'effetto Ziganic, infatti, fa in modo che il pensiero torni continuamente a ciò che
+
+175
+00:15:04,500 --> 00:15:09,860
+abbiamo lasciato in sospeso e, nei momenti di riposo, il cervello è più vulnerabile
+
+176
+00:15:09,860 --> 00:15:11,700
+a questa sorta di invasione.
+
+177
+00:15:11,700 --> 00:15:19,060
+Il risultato è una continua ansia che, per tanti di noi, si manifesta, ad esempio, con
+
+178
+00:15:19,060 --> 00:15:25,020
+quella sgradevole sensazione di trascorrere la domenica a pensare a ciò che dovremo fare
+
+179
+00:15:25,020 --> 00:15:26,420
+il lunedì successivo.
+
+180
+00:15:28,900 --> 00:15:34,100
+Purtroppo viviamo in un mondo complesso.
+
+181
+00:15:34,100 --> 00:15:40,060
+Sia nel lavoro che nella vita privata non possiamo smettere di svolgere determinate attività
+
+182
+00:15:40,060 --> 00:15:44,580
+in un certo lasso di tempo, banalmente dobbiamo tutti lavorare, no?
+
+183
+00:15:44,580 --> 00:15:50,660
+Però possiamo adoperarci per contrastare almeno le abitudini malsane e non indispensabili
+
+184
+00:15:50,660 --> 00:15:54,060
+come, guarda un po', le interruzioni e il multitasking.
+
+185
+00:15:54,460 --> 00:15:59,700
+Un primo passo, ad esempio, potrebbe essere quello di fare un utilizzo più consapevole
+
+186
+00:15:59,700 --> 00:16:04,900
+della tecnologia e, in questo senso, potremmo cominciare con il configurare al meglio i
+
+187
+00:16:04,900 --> 00:16:06,660
+nostri sistemi di notifica.
+
+188
+00:16:06,660 --> 00:16:11,740
+Conosco tante persone che ricevono tantissime notifiche ogni giorno.
+
+189
+00:16:11,740 --> 00:16:16,580
+Il loro approccio, solitamente, è quello di dare una rapida occhiata allo smartphone
+
+190
+00:16:16,580 --> 00:16:23,440
+o allo smartwatch e valutare, al volo, magari dal mittente, se si tratta di qualcosa di
+
+191
+00:16:23,440 --> 00:16:25,800
+più urgente o che possono ignorare.
+
+192
+00:16:25,800 --> 00:16:31,680
+Forse fai anche tu così, non lo so, io lo facevo accertamente fino a qualche anno fa.
+
+193
+00:16:31,680 --> 00:16:38,400
+Beh, sorpresa sorpresa, sappi che quella breve interruzione per valutare la notifica è anch'essa
+
+194
+00:16:38,400 --> 00:16:40,120
+un context switch.
+
+195
+00:16:40,120 --> 00:16:45,760
+Magari uno molto veloce, sempre che non si decida di rispondere o di leggere il messaggio
+
+196
+00:16:45,760 --> 00:16:53,000
+per intero, ma sempre di context switch si tratta e, come tale, distrae e consuma risorse
+
+197
+00:16:53,000 --> 00:16:56,360
+mentali, portando maggiore stress e meno efficienza.
+
+198
+00:16:56,360 --> 00:17:01,720
+Il fatto che spesso dimentichiamo, però, è che i sistemi di notifica sono ampiamente
+
+199
+00:17:01,720 --> 00:17:07,040
+configurabili e ci permettono di impostare filtri anche molto granulari, ad esempio in
+
+200
+00:17:07,040 --> 00:17:12,120
+base al mittente o all'applicazione o al fatto che si tratti di conversazioni di gruppo o
+
+201
+00:17:12,120 --> 00:17:13,680
+singole e così via.
+
+202
+00:17:13,680 --> 00:17:20,160
+Quello che voglio dire è che, invece di sprecare quei 5 secondi per ciascuna notifica che nell'arco
+
+203
+00:17:20,160 --> 00:17:26,840
+della giornata possono diventare minuti, e invece di subire decine o a volte centinaia
+
+204
+00:17:26,840 --> 00:17:32,560
+di interruzioni, abbiamo semplicemente la possibilità di farci fare una scrematura
+
+205
+00:17:32,560 --> 00:17:34,160
+automatica a monte.
+
+206
+00:17:34,160 --> 00:17:39,680
+Io lo faccio da ormai qualche anno e ti assicuro che i benefici sono enormi.
+
+207
+00:17:39,680 --> 00:17:46,560
+Smartphone e computer, o addirittura singole app e siti, permettono già di fare una buona
+
+208
+00:17:46,560 --> 00:17:47,560
+cernita.
+
+209
+00:17:47,560 --> 00:17:53,160
+Si tratta soltanto di riflettere un attimo su quali fonti ci portano informazioni urgenti
+
+210
+00:17:53,160 --> 00:17:59,200
+e quali no, e di dedicare un po' di tempo a configurare i vari sistemi in modo che
+
+211
+00:17:59,200 --> 00:18:01,720
+ci interrompano solo se necessario.
+
+212
+00:18:01,720 --> 00:18:07,360
+Poi sarà nostra cura controllare magari una o due volte al giorno o anche di più tutti
+
+213
+00:18:07,360 --> 00:18:12,800
+gli aggiornamenti meno urgenti che non ci sono stati segnalati direttamente e sono rimasti
+
+214
+00:18:12,800 --> 00:18:14,320
+lì ad aspettarci.
+
+215
+00:18:14,760 --> 00:18:19,760
+So che potrebbe sembrare un comportamento strano a chi è abituato a verificare e a
+
+216
+00:18:19,760 --> 00:18:26,320
+rispondere a tutto subito, ma non tutto è urgente e si tratta di una scelta importante
+
+217
+00:18:26,320 --> 00:18:27,720
+per la nostra serenità.
+
+218
+00:18:27,720 --> 00:18:33,840
+In pratica si tratta di frapporre un filtro che ci schermi dalla maggior parte del rumore
+
+219
+00:18:33,840 --> 00:18:37,240
+di fondo nel momento in cui siamo impegnati in qualcosa.
+
+220
+00:18:37,240 --> 00:18:43,640
+Provaci e vedrai che questa semplice contromisura ti aiuterà tanto ad alleviare lo stress e
+
+221
+00:18:43,640 --> 00:18:45,760
+ad aumentare la concentrazione.
+
+222
+00:18:45,760 --> 00:18:51,560
+Magari non riuscirai a tirare su un sistema perfetto, ma almeno migliorerai la tua situazione
+
+223
+00:18:51,560 --> 00:18:53,160
+e godrai dei benefici.
+
+224
+00:18:53,160 --> 00:19:00,440
+Una volta indirizzato il problema digitale, però, resta comunque poi quello analogico.
+
+225
+00:19:00,440 --> 00:19:07,120
+Le distrazioni non sono solo notifiche, ma anche effetto di azioni di chi ci è accanto.
+
+226
+00:19:07,600 --> 00:19:14,600
+Il collega, il cliente, l'amico, eccetera, sono tutte persone che ci orbitano intorno
+
+227
+00:19:14,600 --> 00:19:19,800
+e, volenti o nolenti, possono interromperci in quello che stiamo facendo.
+
+228
+00:19:19,800 --> 00:19:25,120
+Se una persona ci si avvicina per dirci o chiederci qualcosa mentre stiamo lavorando
+
+229
+00:19:25,120 --> 00:19:31,320
+o studiando, non possiamo certo applicargli un filtro automatico o ignorarla finché non
+
+230
+00:19:31,320 --> 00:19:32,920
+siamo pronti a risponderle.
+
+231
+00:19:33,360 --> 00:19:39,760
+Ma possiamo fare una cosa simile che, anche se inizialmente può sembrarci assurda, piano
+
+232
+00:19:39,760 --> 00:19:42,400
+piano può diventare una sana normalità.
+
+233
+00:19:42,400 --> 00:19:46,280
+Possiamo chiederle se la sua necessità è urgente.
+
+234
+00:19:46,280 --> 00:19:53,600
+So che per tantissimi è una cosa folle, ma utilizzare frasi del tipo «Scusami, è una
+
+235
+00:19:53,600 --> 00:20:00,880
+cosa urgente o ne possiamo parlare tra mezz'ora?» è in realtà perfettamente lecito, non è
+
+236
+00:20:00,880 --> 00:20:07,200
+offensivo e, come ho poi scoperto con il tempo, è anche piuttosto apprezzato da molti.
+
+237
+00:20:07,200 --> 00:20:13,120
+Non si tratta di un atteggiamento scostante e non si tratta di ignorare le necessità
+
+238
+00:20:13,120 --> 00:20:14,120
+altrui.
+
+239
+00:20:14,120 --> 00:20:20,400
+Si tratta semplicemente di chiedere educatamente tempo per completare ciò che si sta facendo
+
+240
+00:20:20,400 --> 00:20:26,360
+prima di dedicarsi, potenzialmente con molta più attenzione, al problema dell'altra persona.
+
+241
+00:20:26,840 --> 00:20:32,000
+Iniziare a comportarsi in questo modo porta tutta una serie di vantaggi per entrambi i
+
+242
+00:20:32,000 --> 00:20:33,400
+soggetti coinvolti.
+
+243
+00:20:33,400 --> 00:20:35,160
+Tu prova e fammi sapere.
+
+244
+00:20:35,160 --> 00:20:42,440
+In primis, tu avrai la possibilità di evitare un context switch e di completare ciò che
+
+245
+00:20:42,440 --> 00:20:46,120
+stai facendo senza aggiungere stress o ansia inutili.
+
+246
+00:20:46,120 --> 00:20:52,680
+Potrai valutare bene quanto tempo dedicare ancora all'attività in corso e scegliere
+
+247
+00:20:52,680 --> 00:20:58,320
+quando interromperla, sempre che non ti riesca tranquillamente di finirla in un tempo ragionevole.
+
+248
+00:20:58,320 --> 00:21:05,920
+E poi darai all'altra persona la sensazione che, a breve, le dedicherai la tua completa
+
+249
+00:21:05,920 --> 00:21:12,360
+attenzione e una porzione ben definita del tuo tempo, e non solo quei tre minuti al volo
+
+250
+00:21:12,360 --> 00:21:16,440
+con la testa che torna continuamente all'attività che hai interrotto.
+
+251
+00:21:16,440 --> 00:21:28,480
+Tornando ora all'effetto Zeigarnik, e partendo dal presupposto che avremo sempre delle cose
+
+252
+00:21:28,480 --> 00:21:35,120
+da fare, ci tocca scogitare un modo per trovare un sollievo nel caso in cui siamo proprio
+
+253
+00:21:35,120 --> 00:21:42,200
+costretti a interrompere un compito, e anche per poter staccare mentalmente quando non
+
+254
+00:21:42,200 --> 00:21:43,440
+siamo più al lavoro.
+
+255
+00:21:43,880 --> 00:21:50,160
+In effetti ci sono varie contromisure che possiamo mettere in campo per evitare o almeno
+
+256
+00:21:50,160 --> 00:21:56,240
+mitigare le conseguenze negative di questa particolare propensione del nostro cervello.
+
+257
+00:21:56,240 --> 00:22:02,600
+E già lo studio originale evidenziava che avere un buon sistema di organizzazione del
+
+258
+00:22:02,600 --> 00:22:08,280
+tempo e delle attività aiuta molto nel dare sollievo dallo stress causato dall'effetto
+
+259
+00:22:08,280 --> 00:22:09,280
+Zeigarnik.
+
+260
+00:22:09,400 --> 00:22:16,320
+Il trucco è mettere su un sistema per annotare le attività e i relativi dettagli che sia
+
+261
+00:22:16,320 --> 00:22:24,440
+rapido e semplice da usare, in modo da richiedere poche energie cognitive e permettere al contempo
+
+262
+00:22:24,440 --> 00:22:28,640
+un context switch quanto più efficace possibile.
+
+263
+00:22:28,640 --> 00:22:35,960
+Il cervello infatti, sapendo di poter recuperare facilmente al momento giusto tutte le informazioni
+
+264
+00:22:36,200 --> 00:22:43,760
+di cui avrà bisogno, non percepirà più il rischio di perderle e ciò placherà quell'impulso
+
+265
+00:22:43,760 --> 00:22:46,840
+di doverle tenere continuamente a mente.
+
+266
+00:22:46,840 --> 00:22:53,040
+Quello delle annotazioni, poi, è anche un buon modo per non farci occupare la testa
+
+267
+00:22:53,040 --> 00:22:55,040
+fuori dall'orario di lavoro.
+
+268
+00:22:55,040 --> 00:23:01,880
+Basterà infatti appuntare subito il messaggio del collega o la chiamata del capo o l'idea
+
+269
+00:23:01,880 --> 00:23:07,800
+che ci è venuta in mente per risolvere il tal problema e potremo rimandare il tutto
+
+270
+00:23:07,800 --> 00:23:09,920
+al primo giorno lavorativo utile.
+
+271
+00:23:09,920 --> 00:23:15,680
+Una volta implementato un efficiente sistema di organizzazione del tempo, poi il passo
+
+272
+00:23:15,680 --> 00:23:22,360
+successivo è quello di rivedere e riorganizzare la lista delle attività regolarmente, magari
+
+273
+00:23:22,360 --> 00:23:28,120
+una volta al giorno per le cose più urgenti e una settimana per la pianificazione più
+
+274
+00:23:28,120 --> 00:23:29,120
+generale.
+
+275
+00:23:29,360 --> 00:23:34,800
+Avere infatti una visione d'insieme su ciò che abbiamo fatto e su ciò che abbiamo da
+
+276
+00:23:34,800 --> 00:23:40,860
+fare durante il giorno e magari anche nei giorni a seguire, aiuta a placare l'ansia
+
+277
+00:23:40,860 --> 00:23:45,360
+dovuta all'incertezza e a smorzare quella sensazione di sospeso.
+
+278
+00:23:45,360 --> 00:23:51,320
+Inoltre, una buona pianificazione distribuisce meglio il carico di lavoro che non fa mai
+
+279
+00:23:51,320 --> 00:23:58,320
+male e funge da riassunto delle attività svolte nel corso degli ultimi giorni o settimane,
+
+280
+00:23:58,320 --> 00:24:06,160
+evitando quel senso di delusione che ci prende quando domande come ma che ho fatto oggi o
+
+281
+00:24:06,160 --> 00:24:12,920
+in cosa ho speso la mia giornata o la scorsa settimana restano senza una risposta.
+
+282
+00:24:12,920 --> 00:24:18,880
+Nel corso degli ultimi anni io ho sviluppato una strategia di pianificazione del tutto
+
+283
+00:24:18,880 --> 00:24:21,880
+personale e cucita sulle mie esigenze.
+
+284
+00:24:22,320 --> 00:24:28,480
+Tu però potresti iniziare col provare una strategia classica come la GTD o l'utilizzo
+
+285
+00:24:28,480 --> 00:24:33,360
+di un software come Todoist, per il quale ti lascio in descrizione una guida e il link
+
+286
+00:24:33,360 --> 00:24:35,040
+affiliato alla registrazione.
+
+287
+00:24:35,040 --> 00:24:42,560
+Per concludere il discorso è anche molto d'aiuto stabilire alcuni rituali giornalieri
+
+288
+00:24:42,560 --> 00:24:49,360
+che spezzino la concentrazione e permettano di fare un passo indietro e osservare come
+
+289
+00:24:49,360 --> 00:24:53,040
+stanno andando le cose da un punto di vista un po' più ampio.
+
+290
+00:24:53,040 --> 00:24:59,120
+Uno o due momenti della giornata, magari mentre facciamo pausa per bere un tè, un caffè
+
+291
+00:24:59,120 --> 00:25:05,920
+o banalmente guardare un panorama dalla finestra, nei quali lasciamo vagare la mente, possono
+
+292
+00:25:05,920 --> 00:25:13,440
+aiutarci a calmare lo stress e ripulire il cervello da faccende in sospeso, a patto sempre
+
+293
+00:25:13,440 --> 00:25:17,880
+di averle appuntate in modo da non dimenticarci poi di svolgerle.
+
+294
+00:25:18,400 --> 00:25:25,360
+Questi sono anche momenti buoni per ripensare a ciò che abbiamo fatto nelle ore precedenti,
+
+295
+00:25:25,360 --> 00:25:31,560
+una cosa che nella vita attuale così frenetica spesso dimentichiamo di fare è godere delle
+
+296
+00:25:31,560 --> 00:25:37,240
+piccole vittorie ottenute, prima di indirizzare l'attenzione alle cose ancora da fare.
+
+297
+00:25:37,240 --> 00:25:43,800
+Più di tutto, poi, è importante avere un rituale di chiusura della giornata lavorativa,
+
+298
+00:25:43,800 --> 00:25:50,800
+come sistemare e pulire la scrivania o chiudere tutti i programmi aperti e, tanto per cambiare,
+
+299
+00:25:50,800 --> 00:25:53,040
+annotare le attività non terminate.
+
+300
+00:25:53,040 --> 00:26:00,080
+Queste azioni, infatti, aiuteranno a separare il momento del lavoro da quello personale
+
+301
+00:26:00,080 --> 00:26:06,120
+e ad evitare di trascinarsi per tutta la serata pensieri e preoccupazioni lavorative.
+
+302
+00:26:06,120 --> 00:26:12,000
+So che se non l'hai mai provato ti potrà sembrare tutto molto teorico e tutto molto
+
+303
+00:26:12,000 --> 00:26:18,920
+zen, ma ti assicuro che, almeno nel mio caso, tutto ciò che ti ho descritto è stato un
+
+304
+00:26:18,920 --> 00:26:21,480
+ottimo modo per migliorare la mia vita.
+
+305
+00:26:21,480 --> 00:26:32,440
+In ultimo, dal momento che, da come abbiamo visto, il nostro cervello trova fastidiose
+
+306
+00:26:32,440 --> 00:26:40,120
+le situazioni ambigue e insospeso, noi possiamo anche farci furbi e provare a sfruttare l'effetto
+
+307
+00:26:40,280 --> 00:26:42,240
+Zeigarnik a nostro vantaggio.
+
+308
+00:26:42,240 --> 00:26:48,480
+In tal senso, quello che in realtà dobbiamo fare per capovolgere gli effetti negativi
+
+309
+00:26:48,480 --> 00:26:55,320
+dovuti alle interruzioni involontarie è semplicemente creare appositamente delle situazioni di sospeso
+
+310
+00:26:55,320 --> 00:26:56,440
+volontarie.
+
+311
+00:26:56,440 --> 00:27:02,800
+L'idea è quella di stigare la mente a inseguire un determinato obiettivo distogliendola di
+
+312
+00:27:02,800 --> 00:27:09,160
+tanto in tanto da esso, facendo così in modo che, a causa appunto dell'effetto Zeigarnik,
+
+313
+00:27:09,200 --> 00:27:14,520
+al ritorno essa sia ancora più smaniosa di continuare il proprio lavoro.
+
+314
+00:27:14,520 --> 00:27:21,720
+Si tratta esattamente del principio su cui si basano, ad esempio, le tecniche di compartimentazione
+
+315
+00:27:21,720 --> 00:27:27,560
+del tempo, cioè quelle tecniche che consistono nell'inserire interruzioni artificiali nel
+
+316
+00:27:27,560 --> 00:27:28,560
+flusso di lavoro.
+
+317
+00:27:28,560 --> 00:27:34,760
+Sarà capitato anche a te di impegnarti in un'attività di concentrazione, di procedere
+
+318
+00:27:34,760 --> 00:27:40,560
+in modo spedito e poi ad un tratto di perdere interesse, sentire la fatica, interrompere
+
+319
+00:27:40,560 --> 00:27:42,440
+e non riuscire più a riprendere.
+
+320
+00:27:42,440 --> 00:27:48,880
+Un momento prima sei lì che procedi a tutta forza e un momento dopo sopraggiunge stanchezza
+
+321
+00:27:48,880 --> 00:27:50,040
+e distrazione.
+
+322
+00:27:50,040 --> 00:27:56,880
+La fase iniziale di questo processo, quella produttiva, è chiamata di concentrazione
+
+323
+00:27:56,880 --> 00:28:04,160
+profonda, in inglese state of flow, ed è quella nella quale solitamente tutti noi otteniamo
+
+324
+00:28:04,560 --> 00:28:05,560
+i risultati migliori.
+
+325
+00:28:05,560 --> 00:28:12,400
+Tuttavia, essa si esaurisce dopo un certo periodo di tempo che può durare più o meno
+
+326
+00:28:12,400 --> 00:28:17,640
+a seconda della persona e difficilmente si presenta più di un paio di volte al giorno.
+
+327
+00:28:17,640 --> 00:28:24,860
+Con le tecniche di compartimentazione del tempo si sfrutta l'effetto Zeigarnik per aumentare
+
+328
+00:28:24,860 --> 00:28:30,360
+artificialmente la durata di questo periodo di concentrazione, inserendo proprio delle
+
+329
+00:28:30,360 --> 00:28:36,120
+pause forzate, spesso dettate da un timer, perché durante lo state of flow non si ha
+
+330
+00:28:36,120 --> 00:28:38,920
+una buona percezione del tempo che passa.
+
+331
+00:28:38,920 --> 00:28:45,680
+In questo modo, il cervello, interrotto mentre sta svolgendo un'attività, resta vigile
+
+332
+00:28:45,680 --> 00:28:51,560
+e concentrato sull'obiettivo per tutta la durata della pausa, che solitamente ammonta
+
+333
+00:28:51,560 --> 00:28:58,880
+3 o 4 minuti, e quando ritorna sul problema è ancora più smanioso di portare a termine
+
+334
+00:28:58,880 --> 00:28:59,880
+il suo compito.
+
+335
+00:29:00,400 --> 00:29:06,840
+Un esempio piuttosto conosciuto di questa strategia è la cosiddetta tecnica del pomodoro,
+
+336
+00:29:06,840 --> 00:29:11,840
+di cui abbiamo già parlato qui su Pensieri in Codice un bel po' di puntate fa.
+
+337
+00:29:11,840 --> 00:29:17,560
+Ti lascio anche questo link in descrizione nel caso in cui tu voglia recuperare l'episodio
+
+338
+00:29:17,560 --> 00:29:20,800
+ed avere un punto di partenza per provare la tecnica.
+
+339
+00:29:20,800 --> 00:29:27,200
+Come già ti dissi all'epoca, io la trovo veramente utile per svolgere determinate attività
+
+340
+00:29:27,200 --> 00:29:33,160
+come lo sviluppo del codice e lo studio, ma a seconda dei casi puoi impiegarla per
+
+341
+00:29:33,160 --> 00:29:37,720
+tanti scopi diversi, devi solo trovare quelli più adatti alle tue necessità.
+
+342
+00:29:37,720 --> 00:29:44,800
+Infine, dato che la concentrazione profonda non si presenta spesso durante la giornata
+
+343
+00:29:44,800 --> 00:29:52,120
+e anzi in certi momenti facciamo molta fatica anche solo a decidere di iniziare un'attività,
+
+344
+00:29:52,120 --> 00:29:58,840
+possiamo sfruttare l'effetto Zeigarnik anche per forzarci ad entrare nello state of flow.
+
+345
+00:29:58,840 --> 00:30:04,280
+Ad esempio, quando ci sentiamo scoraggiati e non vogliamo iniziare un lavoro perché
+
+346
+00:30:04,280 --> 00:30:11,280
+tanto sappiamo che non lo finiremo in tempo o siamo troppo stanchi per farlo ora o qualsiasi
+
+347
+00:30:11,280 --> 00:30:17,640
+altra scusa, potremmo ricorrere alla tecnica dei 5 secondi per attivare la concentrazione
+
+348
+00:30:17,640 --> 00:30:18,640
+profonda.
+
+349
+00:30:18,640 --> 00:30:25,920
+La cosa funziona più o meno in questo modo, anche se non hai voglia, prova a costringerti
+
+350
+00:30:25,920 --> 00:30:29,840
+ad adoperarti al tuo compito per almeno 5 secondi.
+
+351
+00:30:29,840 --> 00:30:36,560
+Se si tratta di scrivere un documento, ad esempio, aprilo e leggi l'ultimo paragrafo
+
+352
+00:30:36,560 --> 00:30:38,840
+che hai scritto la volta precedente.
+
+353
+00:30:38,840 --> 00:30:44,880
+Se si tratta di codice, riporta a video la funzione che manca o le ultime righe lasciate
+
+354
+00:30:44,880 --> 00:30:45,880
+in sospeso.
+
+355
+00:30:46,200 --> 00:30:51,240
+Se invece parliamo di un lavoro più manuale, inizia a disporre gli strumenti.
+
+356
+00:30:51,240 --> 00:30:57,480
+Perfino se il compito è semplicemente passare l'aspirapolvere, inserisci la spina e avvia
+
+357
+00:30:57,480 --> 00:30:58,480
+il motore.
+
+358
+00:30:58,480 --> 00:30:59,480
+E ora?
+
+359
+00:30:59,480 --> 00:31:05,480
+Se proprio non vuoi proseguire, rimetti tutto a posto o chiudi il file e rinuncia, nessun
+
+360
+00:31:05,480 --> 00:31:06,480
+problema.
+
+361
+00:31:06,480 --> 00:31:12,080
+In verità, però, il più delle volte vedrai come l'effetto Zeigarnik farà in modo che il
+
+362
+00:31:12,080 --> 00:31:17,360
+tuo cervello non voglia più interrompere ciò che hai iniziato e ti darà la spinta
+
+363
+00:31:17,360 --> 00:31:22,040
+necessaria per svolgere la tua attività, almeno per un altro po' di tempo.
+
+364
+00:31:22,040 --> 00:31:29,400
+E anche oggi l'episodio termina qui.
+
+365
+00:31:29,400 --> 00:31:34,880
+Se l'argomento è stato di tuo interesse, non dimenticare di condividerlo sui tuoi social
+
+366
+00:31:34,880 --> 00:31:37,920
+o meglio ancora ai tuoi colleghi ed amici.
+
+367
+00:31:37,920 --> 00:31:41,800
+Se invece ti ha fatto schifo, condividilo con i tuoi nemici.
+
+368
+00:31:42,520 --> 00:31:49,120
+Io, intanto, ti ringrazio per aver ascoltato e ringrazio anche i sostenitori abituali,
+
+369
+00:31:49,120 --> 00:31:52,360
+Edoardo e Carlo, per la loro donazione mensile.
+
+370
+00:31:52,360 --> 00:31:59,960
+E oggi un ringraziamento speciale va anche a Francesco Zubani, il quale ha fatto un lavorone
+
+371
+00:31:59,960 --> 00:32:05,520
+realizzando le locandine e le trascrizioni per tutti gli episodi di Pensieri in Codice,
+
+372
+00:32:05,520 --> 00:32:11,320
+utilizzando vari modelli di Machine Learning, Stable Diffusion, Mistral e Whisper.
+
+373
+00:32:11,320 --> 00:32:18,000
+Considerando che parliamo di quasi 130 episodi, il ringraziamento è veramente tanto tanto
+
+374
+00:32:18,000 --> 00:32:19,000
+sentito.
+
+375
+00:32:19,000 --> 00:32:25,320
+E tu che mi ascolti, mi raccomando, scorri il feed o visita il sito pensierincodice.it
+
+376
+00:32:25,320 --> 00:32:29,840
+per guardare tutte le nuove locandine e facci sapere cosa ne pensi.
+
+377
+00:32:29,840 --> 00:32:36,120
+Ti ricordo che sul sito trovi anche tutte le informazioni su come supportare il podcast,
+
+378
+00:32:36,120 --> 00:32:40,960
+come ricevere i gadget, come abbonarti al nuovo feed gratuito senza pubblicità, come
+
+379
+00:32:40,960 --> 00:32:46,520
+scrivermi, come unirti al gruppo Telegram, eccetera, insomma un sacco di cose interessanti.
+
+380
+00:32:46,520 --> 00:32:52,680
+Detto questo, non mi resta che salutarti, darti appuntamento al prossimo episodio, ma
+
+381
+00:32:52,680 --> 00:32:58,200
+senza mai dimenticare che un informatico risolve problemi, a volte anche usando il computer.
+
