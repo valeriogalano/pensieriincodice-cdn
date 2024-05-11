@@ -39,7 +39,7 @@ jobs:
       - name: Commit converted files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_mesasaage: "Convert chapters files"
+          commit_message: "Convert chapters files"
 
       - name: Sync files to pensieriincodice.it
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
