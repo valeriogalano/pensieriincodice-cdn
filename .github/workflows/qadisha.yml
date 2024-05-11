@@ -22,6 +22,10 @@ jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     steps:
       - name: Get latest code
         uses: actions/checkout@v3
