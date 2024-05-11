@@ -28,6 +28,14 @@ jobs:
         with:
           submodules: true
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: Convert chapter files
+        run: php ./utils/convert.php
+
       - name: 📂 Sync files to pensieriincodice.it
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:

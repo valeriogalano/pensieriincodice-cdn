@@ -1,0 +1,6 @@
+0.000000	0.000000	Introduzione
+52.047438	52.047438	La notizia
+199.657088	199.657088	Come rintracciare qualcuno tramite le notifiche push
+983.333015	983.333015	Il problema privacy
+1255.822131	1255.822131	Il caso Threema
+1419.679589	1419.679589	Conclusione
