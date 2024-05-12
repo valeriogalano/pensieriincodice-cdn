@@ -1,0 +1,244 @@
+start	end	text
+0	6880	Le notifiche push, consapevolmente o meno, le usiamo tutti quanti ogni giorno, anche decine
+6880	12840	di volte al giorno, ci avvisano quando qualcuno ci invia un messaggio, ci ricordano i movimenti
+12840	18800	delle nostre carte di credito, ci segnalano una news che potrebbe interessarci o l'ultimo
+18800	24560	video del nostro youtuber preferito o un tweet di tendenza e molto molto altro ancora.
+24560	30160	Ma quanti di noi sanno che queste utilissime notifiche si basano su un meccanismo che nasconde
+30160	37320	un potenziale in cubo per la privacy degli utenti che le ricevono? Ne parliamo fra pochissimo dopo la sigla.
+37320	46520	Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici con Valerio Galano.
+46520	58520	La notizia che mi ha fatto pensare di realizzare questo episodio risale ormai a qualche settimana
+58520	63840	fa ed il motivo per cui mi interessa riprenderla è che, come a volte accade,
+63840	70280	essa ha fatto conoscere al grande pubblico qualcosa che per gli addetti ai lavori era
+70520	76640	abbastanza ovvio e noto da tempo. E semplicemente volevo rifletterci un po' su con te.
+76640	82560	Nello specifico sto parlando del fatto che il meccanismo che permette il funzionamento
+82560	89440	delle cosiddette notifiche push per smartphone e computer, permette anche a chi gestisceلى il
+89440	95920	sistema di invio di risalire all'utenza e dal dispositivo che riceve le comunicazioni.
+95920	101920	E se questo fatto, detto in questo modo, ti può suonare abbastanza ovvio, beh sappi
+101920	104920	che a quanto si è visto non lo è per tutti.
+104920	111840	Partiamo quindi dall'inizio e vediamo innanzitutto cosa è successo, poi come è potuto succedere
+111840	115960	e infine quali sono le implicazioni di tutta la faccenda.
+115960	121560	E nel farlo proviamo anche a capire un po' come funzionano le notifiche push.
+121560	127680	Alla fine di febbraio di quest'anno il Washington Post ha pubblicato un articolo il cui titolo
+127680	134920	era, lo dico in italiano, la nuova tattica dell'FBI, catturare i sospetti con le notifiche push.
+134920	140920	In tale articolo è raccontata la storia di come alcuni agenti federali abbiano identificato
+140920	147840	un utente che scambiava contenuti pedopornografici richiedendo a Google di rintracciarlo tramite
+147840	149840	le notifiche push che riceveva.
+150240	156680	L'uomo in questione agiva in anonymato ovviamente ed utilizzava anche un app svizzera di messaggistica
+156680	162120	chiamata teleguard le cui comunicazioni sono private e criptografate.
+162120	168720	Ma ciò non è bastato ad impedire a Google di identificarlo e di consegnare le sue informazioni
+168720	170720	nelle mani degli inquirenti.
+170720	177160	A seguito di questa scoperta però il Washington Post ha poi indagato ulteriormente e ha trovato
+177160	183480	almeno 130 casi in cui è stata utilizzata questa tecnica per individuare sospetti con
+183480	186560	l'aiuto di Google, Apple o Facebook.
+186560	194880	Alcuni di questi casi risalgono anche a vari anni fa e per la precisione iniziano dal 2019.
+199880	205920	Ma come è possibile che Google, Apple o chi che sia possa rintracciare un utente tramite
+205920	211920	le notifiche inviate al suo dispositivo, un utente che addirittura utilizza sistemi
+211920	218200	di messaggistica criptati che in teoria dovrebbero essere totalmente sicuri e anonimi?
+218200	224520	Beh, in realtà conoscendo un po' come funzionano i sistemi per l'invio di notifiche push la
+224520	227920	risposta non è poi così complicata.
+227920	233120	Piccola nota, essendomi capitato in passato di implementare soluzioni di notifica per
+233120	239480	city web tramite servizi di Google, in questo episodio ti parlerò nello specifico di come
+239480	245760	funziona questo sistema, ma i concetti di base valgono anche per Apple, Facebook o qualunque
+245760	250160	altro soggetto che possieda un proprio sistema di notifiche push.
+250160	256960	Cominciamo col dire che le notifiche push non nascono certo come un metodo di tracciamento,
+256960	262880	ma sono un meccanismo pensato per rendere più efficiente l'invio delle notifiche aiutenti.
+262880	269400	Considerando infatti quante app sono installate sui nostri dispositivi e quante notifiche
+269400	275440	esse generano ogni giorno, l'idea di base è raggruppare tutte queste interazioni in
+275440	281520	flussi di comunicazione ottimizzati e farli partire da un numero minimo di server.
+281880	288200	In pratica, invece di attendere che ogni app o sito web si colleghi al proprio server
+288200	295000	per richiedere le novità in sospeso, il sistema delle notifiche push invia immediatamente
+295000	301360	al dispositivo ciascuna notifica appena questa è disponibile a prescindere dall'app o
+301360	303800	dal sito cui essa è destinata.
+303800	310000	Questa, raccontata così molto alla buona, è in sostanza la soluzione implementata
+310000	316000	dai maggiori player del mondo informatico, Google, Apple, Meta e compagni, e utilizzata
+316000	319720	quasi da tutte le app e i siti in circolazione.
+319720	326280	Il punto però è che per far funzionare un sistema del genere è necessario che il gestore
+326280	331920	del server conosca gli account dei utenti e i dispositivi presso i quali andranno in
+331920	339120	viate le notifiche, non che le app e i siti di destinazione e tutti i dettagli da mostrare
+339120	346080	nell'anteprima, per poter consegnare ad un utente una notifica infatti bisogna identificare
+346080	352600	su quali dispositivi è registrato, e bisogna anche avere un collegamento a tali dispositivi
+352600	359920	in tempo quasi reale e inviare tutte le informazioni necessarie specificando l'app o il sito di
+359920	365800	turno ed il contenuto del banner che dovrà essere mostrato, ora tu avrai certamente
+365800	371920	notato che ogni volta che installi un app sul tuo smartphone o tablet questa ti richiede
+371920	379520	il permesso di poterti mostrare le notifiche, così come spesso fanno anche tanti siti web
+379520	383240	di notizie o con funzioni social e di messaggistica.
+383240	390600	Beh quella richiesta non è solo un'autorizzazione, ma sottintende anche tutto un procedimento
+390600	396320	di configurazione che ha luogo tra il tuo dispositivo e i server del gestore del sistema
+396320	403560	push, in pratica accade che il dispositivo segnala al server la propria esistenza chiedendo
+403560	409240	di essere avvisato immediatamente in caso siano presenti nuove notifiche riguardo quella
+409240	416240	specifica app o sito web, e insieme i due sistemi concordano e si scambiano alcune
+416240	421060	stringe di testo che servono per il funzionamento di tutto il meccanismo.
+421060	428120	Una di queste stringe è il push token che è unico per ciascuna tripletta composta da
+428120	435960	dispositivo utente e sito pure app e rappresenta una sorta di password potremmo dire che il
+435960	441080	dispositivo deve utilizzare per ottenere le notifiche che lo riguardano.
+441600	448360	Una seconda stringa importante poi è il codice identificativo di argomento, che a
+448360	456680	seconda dei casi ha vari utilizzi ma semplificando molto diciamo che nel caso delle app di messaggistica
+456680	462320	permette di identificare i dispositivi del destinatario di una o più notifiche.
+462320	467680	Volendo essere un po' più precisi in realtà il codice argomento identifica una tipologia
+467680	473760	di informazione sulla quale l'utente è interessato a ricevere aggiornamenti nel più breve tempo
+473760	480880	possibile, e quando dispositivo e server push si accordano sulla ricezione di notifiche l'app o
+480880	487520	il sito di turno specificano a quali argomenti scrivere l'utente e quindi per quali novità
+487520	495280	riceverà le notifiche. Quando si parla di app di messaggistica ogni chat coincide bene o male
+495280	502840	con un certo argomento e quindi di fatto ogni chat privata tra due utenti permette di risalire
+502840	509600	ai due tramite i codici argomento ad essa collegati, e dico codici e non codice perché
+509600	516400	ciascun utente avrà il proprio pur essendo la chat in comune tra i due. Ad ogni modo il
+516400	522240	concetto è che grazie a push token e codici argomento ogni dispositivo può restare in
+522240	530160	ascolto presso un server push che per android sarà ad esempio google e per iphone sarà apple e
+530160	536680	al tempo stesso il server di ciascun app può comunicare al server push di riferimento i
+536680	543960	dati delle notifiche da inoltrare e gli utenti a cui inoltrarle. Per i siti web la questione è un
+543960	550320	pelo più complicata perché è il browser a dover tenere il collegamento verso i server push
+550320	558080	che potenzialmente potrebbero anche essere più di uno, ma anche in questo caso al momento questi
+558080	564080	dettagli non ci interessano. Ciò che invece dobbiamo tenere bene a mente per capire le
+564080	570160	implicazioni in termini di privacy di tutto questo sistema è il ciclo di vita di una
+570160	577640	notifica push che più o meno è il seguente. Uno, le notifiche comprensive di tutti i relativi
+577640	583640	dettagli, quelli che compaiono nelle anteprime per intenderci, vengono generate dal server
+583640	591080	originale di un app o di un sito. Due, tale server poi contatta i server del servizio di
+591080	597200	notifica push che come abbiamo già detto solitamente appartengono a google o apple o qualche
+597200	603640	altro big, indica tutte le informazioni da recapitare e il codice argomento relativo.
+603640	611040	Tre, il server push combina insieme il codice argomento e l'identità del server che lo ha
+611040	618400	appena contattato e così facendo identifica l'app e il dispositivo o i dispositivi del
+618400	623760	o dei destinatari iscritti all'argomento e gli invia tutto il necessario.
+623760	630480	Quattro, una volta recapitate le informazioni, nel caso di un app viene mostrato il classico
+630480	637360	banner di notifica del sistema operativo, mentre nel caso di un sito la gestione può anche
+637360	644680	essere un po' più personalizzata, come di consueto tecnicamente parlando, in realtà tutto il gire è
+644680	650560	un po' più complicato di così, ma per quello che ci interessa i passaggi descritti sono perfetti.
+650560	656760	Tornando infatti alla nostra domanda iniziale su come si può rintracciare un utente tramite le
+656760	663480	notifiche, dobbiamo per forza presupporre che il server del servizio push debba in qualche
+663480	669840	modo archiviare una lista di tutti gli utenti, dei dispositivi collegati e delle app desiti per
+669840	675440	poter mettere in funzione tutto il meccanismo quando necessario. Il succo della questione in
+675440	682120	pratica è che se ad esempio il server delle notifiche push deve consegnare le informazioni
+682120	691200	ricevute da WhatsApp per la chat x, che ricordiamo corrisponde a un certo argomento y, deve cercare
+691200	697200	all'interno dei propri elenchi l'identificativo degli utenti collegati all'app di WhatsApp per
+697200	704080	l'argomento y ed estrarre i corrispondenti dispositivi, altrimenti semplicemente non può
+704080	710840	fare il suo lavoro. In definitiva quindi ora dovrebbe essere chiaro che il server delle notifiche
+710840	717640	push è contemporaneamente a conoscenza di tutta una serie di informazioni che vanno
+717640	723960	dall'account dell'utente al dispositivo che sta utilizzando alle app e ai siti che frequenta e per cui
+723960	731920	riceve notifiche y, cosa non da poco, alle informazioni contenute in queste notifiche banalmente le
+731920	739240	anteprime dei messaggi. Ora, data la complessità e la pervasività e l'importanza di un sistema
+739240	745720	come quello appena descritto, non possiamo certo pensare che non implementi tutta una serie di log
+745720	752920	da utilizzare in caso di verifica e di reportistica. Sarebbe folle se non lo facesse, è un servizio
+752920	760080	attivo a livello mondiale che serve ogni giorno centinaia di milioni di utenti. E tali log devono
+760080	767400	contenere certamente identificativi e informazioni inviate dai server delle app e dei siti, non
+767400	774840	che probabilmente l'esito di consegna delle notifiche e altri dati utili sia a fini statistici
+774840	782160	che di manutenzione. A questo punto ci tengo ad essere chiaro, io non ho trovato articoli online
+782160	789000	che illustrassero esplicitamente la procedura utilizzata da Google per fornire le informazioni
+789000	797120	all'FBI del caso di cui stiamo parlando o altri simili, ma a questo punto con quello che ci siamo
+797120	805440	detti finora possiamo provare ad immaginare i pasti seguiti, poi se qualcuno ne sa di più su questo
+805440	812440	argomento potrà tranquillamente confermare o smentire le seguenti supposizioni. Immaginiamo
+812440	818960	di avere la possibilità di consultare i log dei server delle notifiche push di Google. Come
+818960	826120	potremmo fare ad individuare l'identità di uno specifico utente che stiamo monitorando su una chat,
+826120	834520	una qualsiasi WhatsApp, Telegram, Teleguard o chi che sia? Beh, un'idea potrebbe essere quella di fare
+834520	841160	arrivare all'utente una serie di notifiche con caratteristiche uniche, in questo modo potremo
+841160	847920	poi andare a ricercarle all'interno dei log ed usarle per individuare un codice argomento a cui
+847920	854400	è iscritto l'utente. Ad esempio, io potremmo spedire messaggi contenenti specifiche stringe
+854400	862200	di testo abbastanza complesse da essere potenzialmente uniche e abbastanza brevi da
+862200	869240	rientrare nell'anteprima della notifica, oppure potremmo spedirgli una serie di messaggi con un
+869240	875720	particolare pattern temporale, ad esempio generando un preciso numero di notifiche in un arco di tempo
+875720	882480	ben definito. In entrambi questi casi, avendo accesso ai log del server push, potremmo poi
+882480	888680	effettuare delle ricerche ed individuare, con buona approssimazione, l'utente a cui abbiamo inviato
+888680	895120	le nostre notifiche trappola. L'identificativo dell'argomento, salvo eventi eccezionali,
+895120	901920	sarà sempre uguale per tutte le notifiche inviate all'utente per quella particolare chat e,
+901920	907440	pertanto, fungerà da elemento comune tra i risultati della ricerca negli archivi.
+907440	914480	In pratica le ricerche saranno qualcosa del tipo estraiamo tutti i identificativi per cui sono
+914480	920000	state inviate notifiche push contenenti la stringa trappola spedita via chat il giorno
+920000	927240	tot alle ore tot, oppure estraiamo tutti i identificativi per cui sono state inviate notifiche
+927240	933680	push alla seguente data e ora e specifichiamo tutti gli orari dei messaggi che gli abbiamo spedito.
+933680	940480	A questo punto non ci resterà che accedere al database dei server push e individuare i
+940480	948320	dispositivi e quindi gli utenti iscritti a ricevere notifiche dai codici argomento venuti
+948320	955600	fuori dalle nostre query di ricerca. E semplicemente il gioco è fatto. Le probabilità di trovare più
+955600	961000	di un utente che corrisponda ai risultati della ricerca saranno relativamente basse,
+961000	967800	ma anche in caso contrario sarà possibile poi completare le indagini in modo tradizionale.
+967800	973040	Per l'FBI infatti un conto è non avere idea di chi si sta cercando,
+973040	978920	tutt'altra cosa invece è dover indagare su un numero molto ristretto di sospetti.
+978920	990600	Quale che sia effettivamente la tecnica utilizzata da Google e dalle FBI, quel che è certo è che
+990600	995960	è stata essenziale per catturare un criminale, quindi ad una prima impressione può sembrare
+995960	1003000	un'ottima cosa. Riflettendoci un po' più a fondo però la notizia è anche piuttosto preoccupante.
+1003000	1009880	Questa sorta di indagine del Washington Post ha suscitato più di una perplessità perché in
+1009880	1015480	effetti ha fatto emergere un meccanismo di sorveglianza di massa da parte di grandi nomi come
+1015480	1022520	Google o Apple che è in piedi ormai danni e se in generale la sorveglianza di massa non è mai
+1022520	1028760	una buona idea è ancora peggio quando è messa in atto da soggetti privati, tanto per cominciare
+1028760	1035080	finché la tecnica dell'individuazione tramite notifiche push viene utilizzata dalle forze
+1035080	1042520	dell'ordine dei governi democratici diciamo che potrebbe ancora andarci bene, ma il problema come
+1042520	1049000	sempre nasce quando questi meccanismi sono nelle mani di entità diversamente democratiche,
+1049000	1054840	oltretutto noi magari oggi possiamo essere d'accordo con chi è al potere ma ciò non
+1054840	1061480	implica che lo saremo sicuramente anche domani e la presenza di un meccanismo così pervasivo
+1061480	1067720	per scovare le persone potrebbe diventare un grosso problema. Si a Google che Apple hanno
+1067720	1074680	dichiarato che se fino ad ora non lo facevano già per il futuro pretenderanno sempre un'ingiunzione
+1074680	1080760	del tribunale per effettuare questo tipo di controlli sui dati dei propri utenti, ma come ben
+1080760	1088000	sappiamo questa è una blanda rassicurazione, a centrare tante informazioni in un unico punto le
+1088000	1093840	rende molto desiderabili da parte di chi pensa di poterne ricavare vantaggio o addirittura
+1093840	1101200	profitto sia legalmente che illegalmente. Inoltre Google o Apple o qualsiasi altra società non
+1101200	1107720	sono entità monolitiche ma sono fatte di migliaia di persone, il fatto che un'azienda dichiari di
+1107720	1113800	tenere al sicuro dei dati non implica necessariamente che ogni singola persona al suo interno non
+1113800	1120520	possa decidere di fare qualcosa di stupido con quei dati. In tutto questo comunque noi
+1120520	1125880	utenti non possiamo fare praticamente più nulla per evitare di essere sottoposti a questa
+1125880	1135120	sorveglianza passiva, se non iniziare a rifiutare ogni tipo di notifica futura e magari scegliere
+1135120	1142040	dispositivi privi di notifiche push con però tutti gli svantaggi del caso. Al momento infatti
+1142040	1149320	esistono degli smartphone con sistemi operativi open source e senza servizi Google o Apple ma
+1149320	1155160	difficilmente possono essere pensati per un uso da parte di chiunque perché hanno delle limitazioni
+1155160	1161520	e richiedono che l'utente abbia un minimo di competenza senza contare che poi le notifiche push
+1161520	1168400	sono molto comode e utili e in ogni caso una misura del genere non risolverebbe nemmeno il problema
+1168400	1175120	in toto ma solo per le app esiti che utilizzeremo in futuro per quelle già autorizzate ormai il
+1175120	1181920	danno è fatto. Se anche infatti disattivassimo totalmente le notifiche push questo non ci assicurerebbe
+1181920	1187240	la rimozione degli identificativi e la completa disconnessione dei vari servizi già registrati
+1187240	1194160	né tanto meno il mancato in via delle notifiche da parte di questi ultimi. In tal caso infatti il
+1194160	1200600	flusso di notifica si interromperebbe una volta arrivato sul server push non a monte sul server
+1200680	1206680	perchè origina i dati e ce li spedisce cuidisci. Quindi noi non vedremmo le notifiche ma saremmo
+1206680	1214080	comunque individuabili esattamente come se le ricevessimo normalmente. Per capirci riprendendo
+1214080	1220720	l'esempio di prima se disattivassimo le notifiche di whatsapp il server dell'app di messa gistica potrebbe
+1220720	1226840	continuare a mandare notifiche ai server di google e apple e sarebbero poi questi ultimi a non
+1226840	1233480	recapitarli al nostro dispositivo pur però continuando a ricevere tutte le informazioni necessarie
+1233480	1240800	per identificarci. Insomma, come affermato già un anno fa da parte dell'esperto di privacy David LeBow
+1240800	1248880	in un articolo piuttosto interessante sull'argomento le notifiche push sono un incubo per la privacy.
+1248880	1251320	Trovi sempre il link in descrizione.
+1251320	1260800	Ma è proprio impossibile difendersi da questo sistema di sorveglianza di massa?
+1260800	1268600	Beh, guardando all'esempio di Threema, in verità no, qualcosa si può fare. Threema è un app di
+1268600	1275360	messaggistica svizzera che pone particolare enfasi sul rispetto della privacy e della sicurezza dei
+1275360	1283120	propri utenti. I suoi sviluppatori al corrente già da tempo del problema delle notifiche push
+1283120	1290760	hanno deciso di implementare per la propria app un sistema di notifiche push ad hoc utilizzando
+1290760	1298240	dei server propri e senza appoggiarsi a quelli dei giganti di big tech. In tal modo l'azienda ha
+1298240	1304120	il pieno controllo su tutti gli aspetti delle notifiche e dall'archivazione alla codifica
+1304120	1310640	e tutte le informazioni vengono protette da intrusioni esterne. Nel caso te lo stessi chiedendo,
+1310640	1316680	questo non vuol dire che l'app è diventata il ritrovo di criminali e terroristi perché il fatto
+1316680	1322000	di tenere al sicuro i dati da occhi indiscreti non vuol dire non collaborare con le forze
+1322000	1328080	dell'ordine quando richiesto. Vuol dire solo decentralizzare le informazioni e fare in modo
+1328080	1336240	che esse non siano alla merce di chiunque. In pratica anche se l'app 3 ma gira su piattaforme
+1336240	1343480	come pc windows o smartphone android, il fatto che la comunicazione avvenga tramite i server
+1343480	1350160	privati dell'azienda permette di non utilizzare i push token nei codici argomento di google o di
+1350160	1357400	microsoft. In tal modo la comunicazione è protetta e sottratta alla sorveglianza di massa. Se
+1357400	1363480	anche qualcuno entrasse in possesso delle informazioni di 3 ma infatti, al massimo potrebbe arrivare a
+1363480	1370560	conoscere l'account 3 ma dell'utente e i dati in possesso dell'azienda, ma non li potrebbe collegare
+1370560	1376600	ad altre informazioni su altre app utilizzate da questa persona o installate sul suo dispositivo.
+1376600	1383760	Il concetto in pratica è quello di separare i flussi delle notifiche push. Se ogni app utilizzasse
+1383760	1390840	il proprio server push, tutte le informazioni resterebbero separate e raccoglierle a strascio,
+1390840	1397120	sarebbe molto più complicato per chi non è autorizzato a farlo. Purtroppo a causa delle
+1397120	1404880	restrizioni apple tutto questo discorso per ora non è applicabile su iphone, ma il caso 3 ma
+1404880	1412480	resta comunque un esempio virtuoso, che se seguito da tanti sarebbe un'ottima soluzione per migliorare
+1412480	1422840	la protezione della privacy di tutti i noi utenti. Prima di concludere l'episodio ho già un piccolo
+1422840	1429680	annuncio da fare, se usi google podcast spero saprai che l'app sta per essere dismessa e a breve
+1429680	1436120	entrerà a far parte del famigerato cimitero di google, quindi ti consiglio di passare ad altre
+1436120	1444280	app, trovi pensieri in codice su tutte le migliori app di podcast o su youtube music se sei particolarmente
+1444280	1450360	affezionato ai prodotti google. Detto questo ti ricordo che ormai da qualche mese pensieri in
+1450360	1455560	codice aderisce prenderà la filosofia value for value, il che vuol dire che non sentirai
+1455560	1462280	pubblicità e non sarà tracciato o tracciata, le tue informazioni non saranno distribuite in giro,
+1462280	1470920	ma tu puoi scegliere liberamente se è come restituire il valore che senti di ottenere da questo progetto. In
+1470920	1478920	pratica, se ti dispiacerebbe se pensieri in codice non ci fosse, se per te questo podcast ha un
+1478920	1488720	valore e quanto grande lo decidi tu, puoi scegliere di ricompensarlo con una delle 3 t, time, talent o treasure.
+1488720	1496720	Cosa vuol dire? Vuol dire che io mi impegno a portare avanti il progetto al meglio delle mie possibilità e tu in
+1496720	1503960	cambio puoi dedicare un po' del tuo tempo, ad esempio puoi parlarne e farlo ascoltare a qualcuno che
+1503960	1510600	pensi che possa apprezzarlo, puoi scrivere una recensione su itunes o su qualche altro servizio,
+1510600	1517000	puoi citarlo nei tuoi contenuti etc. oppure puoi mettere al servizio il tuo talento,
+1517000	1523720	sai programmare, puoi aiutare con i servizi e gli automatismi o a sistemare qualche parte del
+1523720	1529720	sito, sai gestire i social, puoi farti carico di uno o più aspetti collegati alla diffusione,
+1529720	1536720	o puoi cimentarti con qualsiasi altro talento, proponi direttamente tu cosa. Ad esempio in questi
+1536720	1542080	giorni Francesco e Antonio mi hanno aiutato tantissimo, il primo con la creazione delle
+1542080	1547960	trascrizioni e delle locandine e il secondo sviluppando automatismi per la pubblicazione di
+1547960	1555520	news nel gruppo telegram. E infine la terza attista per treasure, cioè puoi fare una donazione che
+1555520	1561480	aiuti a coprire le spese che un progetto del genere porta, che non sono poche se pensi che
+1561480	1566920	spazziano dai costi delle attrezzature dei servizi fino al mio impegno in termini di tempo.
+1566920	1573360	E a questo proposito un grande ringraziamento va come sempre ad Eduardo e Carlo che se non
+1573360	1578680	sbaglio a breve arriveranno a due anni come donatori fissi. Grazie ragazzi.
+1578680	1585880	E niente, il sito pensierincodice.it ormai lo conosci e ci trovi tutte le informazioni che
+1585880	1591440	ti possono servire se vuoi scrivermi, unirti alla community, fare donazioni, etc. Noi ci
+1591440	1598800	sentiamo al prossimo episodio e tu non dimenticare mai che un informatico risolve problemi a volte
+1598800	1600280	anche usando il computer.

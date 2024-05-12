@@ -1,0 +1,731 @@
+WEBVTT
+
+00:00.000 --> 00:06.880
+Le notifiche push, consapevolmente o meno, le usiamo tutti quanti ogni giorno, anche decine
+
+00:06.880 --> 00:12.840
+di volte al giorno, ci avvisano quando qualcuno ci invia un messaggio, ci ricordano i movimenti
+
+00:12.840 --> 00:18.800
+delle nostre carte di credito, ci segnalano una news che potrebbe interessarci o l'ultimo
+
+00:18.800 --> 00:24.560
+video del nostro youtuber preferito o un tweet di tendenza e molto molto altro ancora.
+
+00:24.560 --> 00:30.160
+Ma quanti di noi sanno che queste utilissime notifiche si basano su un meccanismo che nasconde
+
+00:30.160 --> 00:37.320
+un potenziale in cubo per la privacy degli utenti che le ricevono? Ne parliamo fra pochissimo dopo la sigla.
+
+00:37.320 --> 00:46.520
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici con Valerio Galano.
+
+00:46.520 --> 00:58.520
+La notizia che mi ha fatto pensare di realizzare questo episodio risale ormai a qualche settimana
+
+00:58.520 --> 01:03.840
+fa ed il motivo per cui mi interessa riprenderla è che, come a volte accade,
+
+01:03.840 --> 01:10.280
+essa ha fatto conoscere al grande pubblico qualcosa che per gli addetti ai lavori era
+
+01:10.520 --> 01:16.640
+abbastanza ovvio e noto da tempo. E semplicemente volevo rifletterci un po' su con te.
+
+01:16.640 --> 01:22.560
+Nello specifico sto parlando del fatto che il meccanismo che permette il funzionamento
+
+01:22.560 --> 01:29.440
+delle cosiddette notifiche push per smartphone e computer, permette anche a chi gestisceلى il
+
+01:29.440 --> 01:35.920
+sistema di invio di risalire all'utenza e dal dispositivo che riceve le comunicazioni.
+
+01:35.920 --> 01:41.920
+E se questo fatto, detto in questo modo, ti può suonare abbastanza ovvio, beh sappi
+
+01:41.920 --> 01:44.920
+che a quanto si è visto non lo è per tutti.
+
+01:44.920 --> 01:51.840
+Partiamo quindi dall'inizio e vediamo innanzitutto cosa è successo, poi come è potuto succedere
+
+01:51.840 --> 01:55.960
+e infine quali sono le implicazioni di tutta la faccenda.
+
+01:55.960 --> 02:01.560
+E nel farlo proviamo anche a capire un po' come funzionano le notifiche push.
+
+02:01.560 --> 02:07.680
+Alla fine di febbraio di quest'anno il Washington Post ha pubblicato un articolo il cui titolo
+
+02:07.680 --> 02:14.920
+era, lo dico in italiano, la nuova tattica dell'FBI, catturare i sospetti con le notifiche push.
+
+02:14.920 --> 02:20.920
+In tale articolo è raccontata la storia di come alcuni agenti federali abbiano identificato
+
+02:20.920 --> 02:27.840
+un utente che scambiava contenuti pedopornografici richiedendo a Google di rintracciarlo tramite
+
+02:27.840 --> 02:29.840
+le notifiche push che riceveva.
+
+02:30.240 --> 02:36.680
+L'uomo in questione agiva in anonymato ovviamente ed utilizzava anche un app svizzera di messaggistica
+
+02:36.680 --> 02:42.120
+chiamata teleguard le cui comunicazioni sono private e criptografate.
+
+02:42.120 --> 02:48.720
+Ma ciò non è bastato ad impedire a Google di identificarlo e di consegnare le sue informazioni
+
+02:48.720 --> 02:50.720
+nelle mani degli inquirenti.
+
+02:50.720 --> 02:57.160
+A seguito di questa scoperta però il Washington Post ha poi indagato ulteriormente e ha trovato
+
+02:57.160 --> 03:03.480
+almeno 130 casi in cui è stata utilizzata questa tecnica per individuare sospetti con
+
+03:03.480 --> 03:06.560
+l'aiuto di Google, Apple o Facebook.
+
+03:06.560 --> 03:14.880
+Alcuni di questi casi risalgono anche a vari anni fa e per la precisione iniziano dal 2019.
+
+03:19.880 --> 03:25.920
+Ma come è possibile che Google, Apple o chi che sia possa rintracciare un utente tramite
+
+03:25.920 --> 03:31.920
+le notifiche inviate al suo dispositivo, un utente che addirittura utilizza sistemi
+
+03:31.920 --> 03:38.200
+di messaggistica criptati che in teoria dovrebbero essere totalmente sicuri e anonimi?
+
+03:38.200 --> 03:44.520
+Beh, in realtà conoscendo un po' come funzionano i sistemi per l'invio di notifiche push la
+
+03:44.520 --> 03:47.920
+risposta non è poi così complicata.
+
+03:47.920 --> 03:53.120
+Piccola nota, essendomi capitato in passato di implementare soluzioni di notifica per
+
+03:53.120 --> 03:59.480
+city web tramite servizi di Google, in questo episodio ti parlerò nello specifico di come
+
+03:59.480 --> 04:05.760
+funziona questo sistema, ma i concetti di base valgono anche per Apple, Facebook o qualunque
+
+04:05.760 --> 04:10.160
+altro soggetto che possieda un proprio sistema di notifiche push.
+
+04:10.160 --> 04:16.960
+Cominciamo col dire che le notifiche push non nascono certo come un metodo di tracciamento,
+
+04:16.960 --> 04:22.880
+ma sono un meccanismo pensato per rendere più efficiente l'invio delle notifiche aiutenti.
+
+04:22.880 --> 04:29.400
+Considerando infatti quante app sono installate sui nostri dispositivi e quante notifiche
+
+04:29.400 --> 04:35.440
+esse generano ogni giorno, l'idea di base è raggruppare tutte queste interazioni in
+
+04:35.440 --> 04:41.520
+flussi di comunicazione ottimizzati e farli partire da un numero minimo di server.
+
+04:41.880 --> 04:48.200
+In pratica, invece di attendere che ogni app o sito web si colleghi al proprio server
+
+04:48.200 --> 04:55.000
+per richiedere le novità in sospeso, il sistema delle notifiche push invia immediatamente
+
+04:55.000 --> 05:01.360
+al dispositivo ciascuna notifica appena questa è disponibile a prescindere dall'app o
+
+05:01.360 --> 05:03.800
+dal sito cui essa è destinata.
+
+05:03.800 --> 05:10.000
+Questa, raccontata così molto alla buona, è in sostanza la soluzione implementata
+
+05:10.000 --> 05:16.000
+dai maggiori player del mondo informatico, Google, Apple, Meta e compagni, e utilizzata
+
+05:16.000 --> 05:19.720
+quasi da tutte le app e i siti in circolazione.
+
+05:19.720 --> 05:26.280
+Il punto però è che per far funzionare un sistema del genere è necessario che il gestore
+
+05:26.280 --> 05:31.920
+del server conosca gli account dei utenti e i dispositivi presso i quali andranno in
+
+05:31.920 --> 05:39.120
+viate le notifiche, non che le app e i siti di destinazione e tutti i dettagli da mostrare
+
+05:39.120 --> 05:46.080
+nell'anteprima, per poter consegnare ad un utente una notifica infatti bisogna identificare
+
+05:46.080 --> 05:52.600
+su quali dispositivi è registrato, e bisogna anche avere un collegamento a tali dispositivi
+
+05:52.600 --> 05:59.920
+in tempo quasi reale e inviare tutte le informazioni necessarie specificando l'app o il sito di
+
+05:59.920 --> 06:05.800
+turno ed il contenuto del banner che dovrà essere mostrato, ora tu avrai certamente
+
+06:05.800 --> 06:11.920
+notato che ogni volta che installi un app sul tuo smartphone o tablet questa ti richiede
+
+06:11.920 --> 06:19.520
+il permesso di poterti mostrare le notifiche, così come spesso fanno anche tanti siti web
+
+06:19.520 --> 06:23.240
+di notizie o con funzioni social e di messaggistica.
+
+06:23.240 --> 06:30.600
+Beh quella richiesta non è solo un'autorizzazione, ma sottintende anche tutto un procedimento
+
+06:30.600 --> 06:36.320
+di configurazione che ha luogo tra il tuo dispositivo e i server del gestore del sistema
+
+06:36.320 --> 06:43.560
+push, in pratica accade che il dispositivo segnala al server la propria esistenza chiedendo
+
+06:43.560 --> 06:49.240
+di essere avvisato immediatamente in caso siano presenti nuove notifiche riguardo quella
+
+06:49.240 --> 06:56.240
+specifica app o sito web, e insieme i due sistemi concordano e si scambiano alcune
+
+06:56.240 --> 07:01.060
+stringe di testo che servono per il funzionamento di tutto il meccanismo.
+
+07:01.060 --> 07:08.120
+Una di queste stringe è il push token che è unico per ciascuna tripletta composta da
+
+07:08.120 --> 07:15.960
+dispositivo utente e sito pure app e rappresenta una sorta di password potremmo dire che il
+
+07:15.960 --> 07:21.080
+dispositivo deve utilizzare per ottenere le notifiche che lo riguardano.
+
+07:21.600 --> 07:28.360
+Una seconda stringa importante poi è il codice identificativo di argomento, che a
+
+07:28.360 --> 07:36.680
+seconda dei casi ha vari utilizzi ma semplificando molto diciamo che nel caso delle app di messaggistica
+
+07:36.680 --> 07:42.320
+permette di identificare i dispositivi del destinatario di una o più notifiche.
+
+07:42.320 --> 07:47.680
+Volendo essere un po' più precisi in realtà il codice argomento identifica una tipologia
+
+07:47.680 --> 07:53.760
+di informazione sulla quale l'utente è interessato a ricevere aggiornamenti nel più breve tempo
+
+07:53.760 --> 08:00.880
+possibile, e quando dispositivo e server push si accordano sulla ricezione di notifiche l'app o
+
+08:00.880 --> 08:07.520
+il sito di turno specificano a quali argomenti scrivere l'utente e quindi per quali novità
+
+08:07.520 --> 08:15.280
+riceverà le notifiche. Quando si parla di app di messaggistica ogni chat coincide bene o male
+
+08:15.280 --> 08:22.840
+con un certo argomento e quindi di fatto ogni chat privata tra due utenti permette di risalire
+
+08:22.840 --> 08:29.600
+ai due tramite i codici argomento ad essa collegati, e dico codici e non codice perché
+
+08:29.600 --> 08:36.400
+ciascun utente avrà il proprio pur essendo la chat in comune tra i due. Ad ogni modo il
+
+08:36.400 --> 08:42.240
+concetto è che grazie a push token e codici argomento ogni dispositivo può restare in
+
+08:42.240 --> 08:50.160
+ascolto presso un server push che per android sarà ad esempio google e per iphone sarà apple e
+
+08:50.160 --> 08:56.680
+al tempo stesso il server di ciascun app può comunicare al server push di riferimento i
+
+08:56.680 --> 09:03.960
+dati delle notifiche da inoltrare e gli utenti a cui inoltrarle. Per i siti web la questione è un
+
+09:03.960 --> 09:10.320
+pelo più complicata perché è il browser a dover tenere il collegamento verso i server push
+
+09:10.320 --> 09:18.080
+che potenzialmente potrebbero anche essere più di uno, ma anche in questo caso al momento questi
+
+09:18.080 --> 09:24.080
+dettagli non ci interessano. Ciò che invece dobbiamo tenere bene a mente per capire le
+
+09:24.080 --> 09:30.160
+implicazioni in termini di privacy di tutto questo sistema è il ciclo di vita di una
+
+09:30.160 --> 09:37.640
+notifica push che più o meno è il seguente. Uno, le notifiche comprensive di tutti i relativi
+
+09:37.640 --> 09:43.640
+dettagli, quelli che compaiono nelle anteprime per intenderci, vengono generate dal server
+
+09:43.640 --> 09:51.080
+originale di un app o di un sito. Due, tale server poi contatta i server del servizio di
+
+09:51.080 --> 09:57.200
+notifica push che come abbiamo già detto solitamente appartengono a google o apple o qualche
+
+09:57.200 --> 10:03.640
+altro big, indica tutte le informazioni da recapitare e il codice argomento relativo.
+
+10:03.640 --> 10:11.040
+Tre, il server push combina insieme il codice argomento e l'identità del server che lo ha
+
+10:11.040 --> 10:18.400
+appena contattato e così facendo identifica l'app e il dispositivo o i dispositivi del
+
+10:18.400 --> 10:23.760
+o dei destinatari iscritti all'argomento e gli invia tutto il necessario.
+
+10:23.760 --> 10:30.480
+Quattro, una volta recapitate le informazioni, nel caso di un app viene mostrato il classico
+
+10:30.480 --> 10:37.360
+banner di notifica del sistema operativo, mentre nel caso di un sito la gestione può anche
+
+10:37.360 --> 10:44.680
+essere un po' più personalizzata, come di consueto tecnicamente parlando, in realtà tutto il gire è
+
+10:44.680 --> 10:50.560
+un po' più complicato di così, ma per quello che ci interessa i passaggi descritti sono perfetti.
+
+10:50.560 --> 10:56.760
+Tornando infatti alla nostra domanda iniziale su come si può rintracciare un utente tramite le
+
+10:56.760 --> 11:03.480
+notifiche, dobbiamo per forza presupporre che il server del servizio push debba in qualche
+
+11:03.480 --> 11:09.840
+modo archiviare una lista di tutti gli utenti, dei dispositivi collegati e delle app desiti per
+
+11:09.840 --> 11:15.440
+poter mettere in funzione tutto il meccanismo quando necessario. Il succo della questione in
+
+11:15.440 --> 11:22.120
+pratica è che se ad esempio il server delle notifiche push deve consegnare le informazioni
+
+11:22.120 --> 11:31.200
+ricevute da WhatsApp per la chat x, che ricordiamo corrisponde a un certo argomento y, deve cercare
+
+11:31.200 --> 11:37.200
+all'interno dei propri elenchi l'identificativo degli utenti collegati all'app di WhatsApp per
+
+11:37.200 --> 11:44.080
+l'argomento y ed estrarre i corrispondenti dispositivi, altrimenti semplicemente non può
+
+11:44.080 --> 11:50.840
+fare il suo lavoro. In definitiva quindi ora dovrebbe essere chiaro che il server delle notifiche
+
+11:50.840 --> 11:57.640
+push è contemporaneamente a conoscenza di tutta una serie di informazioni che vanno
+
+11:57.640 --> 12:03.960
+dall'account dell'utente al dispositivo che sta utilizzando alle app e ai siti che frequenta e per cui
+
+12:03.960 --> 12:11.920
+riceve notifiche y, cosa non da poco, alle informazioni contenute in queste notifiche banalmente le
+
+12:11.920 --> 12:19.240
+anteprime dei messaggi. Ora, data la complessità e la pervasività e l'importanza di un sistema
+
+12:19.240 --> 12:25.720
+come quello appena descritto, non possiamo certo pensare che non implementi tutta una serie di log
+
+12:25.720 --> 12:32.920
+da utilizzare in caso di verifica e di reportistica. Sarebbe folle se non lo facesse, è un servizio
+
+12:32.920 --> 12:40.080
+attivo a livello mondiale che serve ogni giorno centinaia di milioni di utenti. E tali log devono
+
+12:40.080 --> 12:47.400
+contenere certamente identificativi e informazioni inviate dai server delle app e dei siti, non
+
+12:47.400 --> 12:54.840
+che probabilmente l'esito di consegna delle notifiche e altri dati utili sia a fini statistici
+
+12:54.840 --> 13:02.160
+che di manutenzione. A questo punto ci tengo ad essere chiaro, io non ho trovato articoli online
+
+13:02.160 --> 13:09.000
+che illustrassero esplicitamente la procedura utilizzata da Google per fornire le informazioni
+
+13:09.000 --> 13:17.120
+all'FBI del caso di cui stiamo parlando o altri simili, ma a questo punto con quello che ci siamo
+
+13:17.120 --> 13:25.440
+detti finora possiamo provare ad immaginare i pasti seguiti, poi se qualcuno ne sa di più su questo
+
+13:25.440 --> 13:32.440
+argomento potrà tranquillamente confermare o smentire le seguenti supposizioni. Immaginiamo
+
+13:32.440 --> 13:38.960
+di avere la possibilità di consultare i log dei server delle notifiche push di Google. Come
+
+13:38.960 --> 13:46.120
+potremmo fare ad individuare l'identità di uno specifico utente che stiamo monitorando su una chat,
+
+13:46.120 --> 13:54.520
+una qualsiasi WhatsApp, Telegram, Teleguard o chi che sia? Beh, un'idea potrebbe essere quella di fare
+
+13:54.520 --> 14:01.160
+arrivare all'utente una serie di notifiche con caratteristiche uniche, in questo modo potremo
+
+14:01.160 --> 14:07.920
+poi andare a ricercarle all'interno dei log ed usarle per individuare un codice argomento a cui
+
+14:07.920 --> 14:14.400
+è iscritto l'utente. Ad esempio, io potremmo spedire messaggi contenenti specifiche stringe
+
+14:14.400 --> 14:22.200
+di testo abbastanza complesse da essere potenzialmente uniche e abbastanza brevi da
+
+14:22.200 --> 14:29.240
+rientrare nell'anteprima della notifica, oppure potremmo spedirgli una serie di messaggi con un
+
+14:29.240 --> 14:35.720
+particolare pattern temporale, ad esempio generando un preciso numero di notifiche in un arco di tempo
+
+14:35.720 --> 14:42.480
+ben definito. In entrambi questi casi, avendo accesso ai log del server push, potremmo poi
+
+14:42.480 --> 14:48.680
+effettuare delle ricerche ed individuare, con buona approssimazione, l'utente a cui abbiamo inviato
+
+14:48.680 --> 14:55.120
+le nostre notifiche trappola. L'identificativo dell'argomento, salvo eventi eccezionali,
+
+14:55.120 --> 15:01.920
+sarà sempre uguale per tutte le notifiche inviate all'utente per quella particolare chat e,
+
+15:01.920 --> 15:07.440
+pertanto, fungerà da elemento comune tra i risultati della ricerca negli archivi.
+
+15:07.440 --> 15:14.480
+In pratica le ricerche saranno qualcosa del tipo estraiamo tutti i identificativi per cui sono
+
+15:14.480 --> 15:20.000
+state inviate notifiche push contenenti la stringa trappola spedita via chat il giorno
+
+15:20.000 --> 15:27.240
+tot alle ore tot, oppure estraiamo tutti i identificativi per cui sono state inviate notifiche
+
+15:27.240 --> 15:33.680
+push alla seguente data e ora e specifichiamo tutti gli orari dei messaggi che gli abbiamo spedito.
+
+15:33.680 --> 15:40.480
+A questo punto non ci resterà che accedere al database dei server push e individuare i
+
+15:40.480 --> 15:48.320
+dispositivi e quindi gli utenti iscritti a ricevere notifiche dai codici argomento venuti
+
+15:48.320 --> 15:55.600
+fuori dalle nostre query di ricerca. E semplicemente il gioco è fatto. Le probabilità di trovare più
+
+15:55.600 --> 16:01.000
+di un utente che corrisponda ai risultati della ricerca saranno relativamente basse,
+
+16:01.000 --> 16:07.800
+ma anche in caso contrario sarà possibile poi completare le indagini in modo tradizionale.
+
+16:07.800 --> 16:13.040
+Per l'FBI infatti un conto è non avere idea di chi si sta cercando,
+
+16:13.040 --> 16:18.920
+tutt'altra cosa invece è dover indagare su un numero molto ristretto di sospetti.
+
+16:18.920 --> 16:30.600
+Quale che sia effettivamente la tecnica utilizzata da Google e dalle FBI, quel che è certo è che
+
+16:30.600 --> 16:35.960
+è stata essenziale per catturare un criminale, quindi ad una prima impressione può sembrare
+
+16:35.960 --> 16:43.000
+un'ottima cosa. Riflettendoci un po' più a fondo però la notizia è anche piuttosto preoccupante.
+
+16:43.000 --> 16:49.880
+Questa sorta di indagine del Washington Post ha suscitato più di una perplessità perché in
+
+16:49.880 --> 16:55.480
+effetti ha fatto emergere un meccanismo di sorveglianza di massa da parte di grandi nomi come
+
+16:55.480 --> 17:02.520
+Google o Apple che è in piedi ormai danni e se in generale la sorveglianza di massa non è mai
+
+17:02.520 --> 17:08.760
+una buona idea è ancora peggio quando è messa in atto da soggetti privati, tanto per cominciare
+
+17:08.760 --> 17:15.080
+finché la tecnica dell'individuazione tramite notifiche push viene utilizzata dalle forze
+
+17:15.080 --> 17:22.520
+dell'ordine dei governi democratici diciamo che potrebbe ancora andarci bene, ma il problema come
+
+17:22.520 --> 17:29.000
+sempre nasce quando questi meccanismi sono nelle mani di entità diversamente democratiche,
+
+17:29.000 --> 17:34.840
+oltretutto noi magari oggi possiamo essere d'accordo con chi è al potere ma ciò non
+
+17:34.840 --> 17:41.480
+implica che lo saremo sicuramente anche domani e la presenza di un meccanismo così pervasivo
+
+17:41.480 --> 17:47.720
+per scovare le persone potrebbe diventare un grosso problema. Si a Google che Apple hanno
+
+17:47.720 --> 17:54.680
+dichiarato che se fino ad ora non lo facevano già per il futuro pretenderanno sempre un'ingiunzione
+
+17:54.680 --> 18:00.760
+del tribunale per effettuare questo tipo di controlli sui dati dei propri utenti, ma come ben
+
+18:00.760 --> 18:08.000
+sappiamo questa è una blanda rassicurazione, a centrare tante informazioni in un unico punto le
+
+18:08.000 --> 18:13.840
+rende molto desiderabili da parte di chi pensa di poterne ricavare vantaggio o addirittura
+
+18:13.840 --> 18:21.200
+profitto sia legalmente che illegalmente. Inoltre Google o Apple o qualsiasi altra società non
+
+18:21.200 --> 18:27.720
+sono entità monolitiche ma sono fatte di migliaia di persone, il fatto che un'azienda dichiari di
+
+18:27.720 --> 18:33.800
+tenere al sicuro dei dati non implica necessariamente che ogni singola persona al suo interno non
+
+18:33.800 --> 18:40.520
+possa decidere di fare qualcosa di stupido con quei dati. In tutto questo comunque noi
+
+18:40.520 --> 18:45.880
+utenti non possiamo fare praticamente più nulla per evitare di essere sottoposti a questa
+
+18:45.880 --> 18:55.120
+sorveglianza passiva, se non iniziare a rifiutare ogni tipo di notifica futura e magari scegliere
+
+18:55.120 --> 19:02.040
+dispositivi privi di notifiche push con però tutti gli svantaggi del caso. Al momento infatti
+
+19:02.040 --> 19:09.320
+esistono degli smartphone con sistemi operativi open source e senza servizi Google o Apple ma
+
+19:09.320 --> 19:15.160
+difficilmente possono essere pensati per un uso da parte di chiunque perché hanno delle limitazioni
+
+19:15.160 --> 19:21.520
+e richiedono che l'utente abbia un minimo di competenza senza contare che poi le notifiche push
+
+19:21.520 --> 19:28.400
+sono molto comode e utili e in ogni caso una misura del genere non risolverebbe nemmeno il problema
+
+19:28.400 --> 19:35.120
+in toto ma solo per le app esiti che utilizzeremo in futuro per quelle già autorizzate ormai il
+
+19:35.120 --> 19:41.920
+danno è fatto. Se anche infatti disattivassimo totalmente le notifiche push questo non ci assicurerebbe
+
+19:41.920 --> 19:47.240
+la rimozione degli identificativi e la completa disconnessione dei vari servizi già registrati
+
+19:47.240 --> 19:54.160
+né tanto meno il mancato in via delle notifiche da parte di questi ultimi. In tal caso infatti il
+
+19:54.160 --> 20:00.600
+flusso di notifica si interromperebbe una volta arrivato sul server push non a monte sul server
+
+20:00.680 --> 20:06.680
+perchè origina i dati e ce li spedisce cuidisci. Quindi noi non vedremmo le notifiche ma saremmo
+
+20:06.680 --> 20:14.080
+comunque individuabili esattamente come se le ricevessimo normalmente. Per capirci riprendendo
+
+20:14.080 --> 20:20.720
+l'esempio di prima se disattivassimo le notifiche di whatsapp il server dell'app di messa gistica potrebbe
+
+20:20.720 --> 20:26.840
+continuare a mandare notifiche ai server di google e apple e sarebbero poi questi ultimi a non
+
+20:26.840 --> 20:33.480
+recapitarli al nostro dispositivo pur però continuando a ricevere tutte le informazioni necessarie
+
+20:33.480 --> 20:40.800
+per identificarci. Insomma, come affermato già un anno fa da parte dell'esperto di privacy David LeBow
+
+20:40.800 --> 20:48.880
+in un articolo piuttosto interessante sull'argomento le notifiche push sono un incubo per la privacy.
+
+20:48.880 --> 20:51.320
+Trovi sempre il link in descrizione.
+
+20:51.320 --> 21:00.800
+Ma è proprio impossibile difendersi da questo sistema di sorveglianza di massa?
+
+21:00.800 --> 21:08.600
+Beh, guardando all'esempio di Threema, in verità no, qualcosa si può fare. Threema è un app di
+
+21:08.600 --> 21:15.360
+messaggistica svizzera che pone particolare enfasi sul rispetto della privacy e della sicurezza dei
+
+21:15.360 --> 21:23.120
+propri utenti. I suoi sviluppatori al corrente già da tempo del problema delle notifiche push
+
+21:23.120 --> 21:30.760
+hanno deciso di implementare per la propria app un sistema di notifiche push ad hoc utilizzando
+
+21:30.760 --> 21:38.240
+dei server propri e senza appoggiarsi a quelli dei giganti di big tech. In tal modo l'azienda ha
+
+21:38.240 --> 21:44.120
+il pieno controllo su tutti gli aspetti delle notifiche e dall'archivazione alla codifica
+
+21:44.120 --> 21:50.640
+e tutte le informazioni vengono protette da intrusioni esterne. Nel caso te lo stessi chiedendo,
+
+21:50.640 --> 21:56.680
+questo non vuol dire che l'app è diventata il ritrovo di criminali e terroristi perché il fatto
+
+21:56.680 --> 22:02.000
+di tenere al sicuro i dati da occhi indiscreti non vuol dire non collaborare con le forze
+
+22:02.000 --> 22:08.080
+dell'ordine quando richiesto. Vuol dire solo decentralizzare le informazioni e fare in modo
+
+22:08.080 --> 22:16.240
+che esse non siano alla merce di chiunque. In pratica anche se l'app 3 ma gira su piattaforme
+
+22:16.240 --> 22:23.480
+come pc windows o smartphone android, il fatto che la comunicazione avvenga tramite i server
+
+22:23.480 --> 22:30.160
+privati dell'azienda permette di non utilizzare i push token nei codici argomento di google o di
+
+22:30.160 --> 22:37.400
+microsoft. In tal modo la comunicazione è protetta e sottratta alla sorveglianza di massa. Se
+
+22:37.400 --> 22:43.480
+anche qualcuno entrasse in possesso delle informazioni di 3 ma infatti, al massimo potrebbe arrivare a
+
+22:43.480 --> 22:50.560
+conoscere l'account 3 ma dell'utente e i dati in possesso dell'azienda, ma non li potrebbe collegare
+
+22:50.560 --> 22:56.600
+ad altre informazioni su altre app utilizzate da questa persona o installate sul suo dispositivo.
+
+22:56.600 --> 23:03.760
+Il concetto in pratica è quello di separare i flussi delle notifiche push. Se ogni app utilizzasse
+
+23:03.760 --> 23:10.840
+il proprio server push, tutte le informazioni resterebbero separate e raccoglierle a strascio,
+
+23:10.840 --> 23:17.120
+sarebbe molto più complicato per chi non è autorizzato a farlo. Purtroppo a causa delle
+
+23:17.120 --> 23:24.880
+restrizioni apple tutto questo discorso per ora non è applicabile su iphone, ma il caso 3 ma
+
+23:24.880 --> 23:32.480
+resta comunque un esempio virtuoso, che se seguito da tanti sarebbe un'ottima soluzione per migliorare
+
+23:32.480 --> 23:42.840
+la protezione della privacy di tutti i noi utenti. Prima di concludere l'episodio ho già un piccolo
+
+23:42.840 --> 23:49.680
+annuncio da fare, se usi google podcast spero saprai che l'app sta per essere dismessa e a breve
+
+23:49.680 --> 23:56.120
+entrerà a far parte del famigerato cimitero di google, quindi ti consiglio di passare ad altre
+
+23:56.120 --> 24:04.280
+app, trovi pensieri in codice su tutte le migliori app di podcast o su youtube music se sei particolarmente
+
+24:04.280 --> 24:10.360
+affezionato ai prodotti google. Detto questo ti ricordo che ormai da qualche mese pensieri in
+
+24:10.360 --> 24:15.560
+codice aderisce prenderà la filosofia value for value, il che vuol dire che non sentirai
+
+24:15.560 --> 24:22.280
+pubblicità e non sarà tracciato o tracciata, le tue informazioni non saranno distribuite in giro,
+
+24:22.280 --> 24:30.920
+ma tu puoi scegliere liberamente se è come restituire il valore che senti di ottenere da questo progetto. In
+
+24:30.920 --> 24:38.920
+pratica, se ti dispiacerebbe se pensieri in codice non ci fosse, se per te questo podcast ha un
+
+24:38.920 --> 24:48.720
+valore e quanto grande lo decidi tu, puoi scegliere di ricompensarlo con una delle 3 t, time, talent o treasure.
+
+24:48.720 --> 24:56.720
+Cosa vuol dire? Vuol dire che io mi impegno a portare avanti il progetto al meglio delle mie possibilità e tu in
+
+24:56.720 --> 25:03.960
+cambio puoi dedicare un po' del tuo tempo, ad esempio puoi parlarne e farlo ascoltare a qualcuno che
+
+25:03.960 --> 25:10.600
+pensi che possa apprezzarlo, puoi scrivere una recensione su itunes o su qualche altro servizio,
+
+25:10.600 --> 25:17.000
+puoi citarlo nei tuoi contenuti etc. oppure puoi mettere al servizio il tuo talento,
+
+25:17.000 --> 25:23.720
+sai programmare, puoi aiutare con i servizi e gli automatismi o a sistemare qualche parte del
+
+25:23.720 --> 25:29.720
+sito, sai gestire i social, puoi farti carico di uno o più aspetti collegati alla diffusione,
+
+25:29.720 --> 25:36.720
+o puoi cimentarti con qualsiasi altro talento, proponi direttamente tu cosa. Ad esempio in questi
+
+25:36.720 --> 25:42.080
+giorni Francesco e Antonio mi hanno aiutato tantissimo, il primo con la creazione delle
+
+25:42.080 --> 25:47.960
+trascrizioni e delle locandine e il secondo sviluppando automatismi per la pubblicazione di
+
+25:47.960 --> 25:55.520
+news nel gruppo telegram. E infine la terza attista per treasure, cioè puoi fare una donazione che
+
+25:55.520 --> 26:01.480
+aiuti a coprire le spese che un progetto del genere porta, che non sono poche se pensi che
+
+26:01.480 --> 26:06.920
+spazziano dai costi delle attrezzature dei servizi fino al mio impegno in termini di tempo.
+
+26:06.920 --> 26:13.360
+E a questo proposito un grande ringraziamento va come sempre ad Eduardo e Carlo che se non
+
+26:13.360 --> 26:18.680
+sbaglio a breve arriveranno a due anni come donatori fissi. Grazie ragazzi.
+
+26:18.680 --> 26:25.880
+E niente, il sito pensierincodice.it ormai lo conosci e ci trovi tutte le informazioni che
+
+26:25.880 --> 26:31.440
+ti possono servire se vuoi scrivermi, unirti alla community, fare donazioni, etc. Noi ci
+
+26:31.440 --> 26:38.800
+sentiamo al prossimo episodio e tu non dimenticare mai che un informatico risolve problemi a volte
+
+26:38.800 --> 26:40.280
+anche usando il computer.
+
