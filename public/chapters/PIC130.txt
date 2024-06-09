@@ -1,0 +1,7 @@
+0.000000	0.000000	Introduzione
+69.158503	69.158503	Finire un gioco che non ha una fine
+227.411207	227.411207	Il Kill screen
+354.481945	354.481945	Il crash spiegato
+849.886692	849.886692	Hypertapping e Rolling
+1066.559177	1066.559177	Il glitch dei colori
+1272.157092	1272.157092	Conclusione
