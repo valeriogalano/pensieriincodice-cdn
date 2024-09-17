@@ -1,0 +1,5428 @@
+1
+00:00:00,000 --> 00:00:06,320
+Per la prima volta nella storia della United States Robots and Mechanical Man Corporation,
+
+2
+00:00:06,320 --> 00:00:10,720
+un robot era andato distrutto a causa di un incidente avvenuto sulla Terra.
+
+3
+00:00:10,720 --> 00:00:12,520
+Non era colpa di nessuno.
+
+4
+00:00:12,520 --> 00:00:18,080
+Il mezzo aereo era stato distrutto in volo e un'incredula commissione investigatrice
+
+5
+00:00:18,080 --> 00:00:22,920
+si chiedeva se avrebbe avuto il coraggio di dichiarare che, secondo le prove raccolte,
+
+6
+00:00:22,920 --> 00:00:24,880
+era stato colpito da una meteorite.
+
+7
+00:00:25,320 --> 00:00:30,720
+Nient'altro, infatti, avrebbe potuto disporre di una velocità tale da eludere lo schivamento
+
+8
+00:00:30,720 --> 00:00:31,720
+automatico.
+
+9
+00:00:31,720 --> 00:00:36,800
+Niente avrebbe potuto provocare un danno del genere se non un'esplosione nucleare, il
+
+10
+00:00:36,800 --> 00:00:38,000
+che era impensabile.
+
+11
+00:00:38,000 --> 00:00:43,680
+C'era inoltre da tener conto dell'avvistamento di una grande luminosità in cielo un attimo
+
+12
+00:00:43,680 --> 00:00:49,680
+prima che il veicolo esplodesse, e l'avvistamento era stato effettuato dall'osservatorio di
+
+13
+00:00:49,680 --> 00:00:56,440
+Flagstaff, non da un dilettante, e del ritrovamento di un pezzo di ferro d'origine meteoritica
+
+14
+00:00:56,440 --> 00:01:01,400
+conficcato di recente nel terreno a un chilometro circa dalla località del disastro.
+
+15
+00:01:01,400 --> 00:01:05,560
+Mettendo insieme tutto questo, che conclusione era logico trarre?
+
+16
+00:01:05,560 --> 00:01:11,080
+Tuttavia, prima non era mai successo niente di simile e le probabilità contrarie erano
+
+17
+00:01:11,080 --> 00:01:13,600
+immensamente superiori a quelle favorevoli.
+
+18
+00:01:13,600 --> 00:01:19,480
+Tuttavia, capita a volte che possa verificarsi anche un'improbabilità infinitesimale.
+
+19
+00:01:19,880 --> 00:01:24,800
+Nell'ufficio dell'iOS Robotics, i come e i perché passavano in seconda linea.
+
+20
+00:01:24,800 --> 00:01:29,440
+L'unica cosa che contava era questa, un robot era andato distrutto.
+
+21
+00:01:29,440 --> 00:01:32,480
+Il fatto era di per sé stesso angoscioso.
+
+22
+00:01:32,480 --> 00:01:39,360
+Più angoscioso ancora perché il JN-5 era un prototipo, il primo dopo 4 precedenti tentativi
+
+23
+00:01:39,360 --> 00:01:41,040
+che fosse entrato in funzione.
+
+24
+00:01:41,040 --> 00:01:47,480
+L'angoscia poi diventava abissale se si pensi che il JN-5 era un tipo di robot completamente
+
+25
+00:01:47,480 --> 00:01:50,200
+nuovo e diverso dagli altri costruiti prima.
+
+26
+00:01:50,200 --> 00:01:55,360
+Infine, non c'erano parole sufficienti a descrivere l'angoscia per il fatto che il
+
+27
+00:01:55,360 --> 00:02:01,960
+JN-5 aveva compiuto una cosa di capitale importanza prima di andare distrutto e forse il suo operato
+
+28
+00:02:01,960 --> 00:02:03,800
+era ormai perduto per sempre.
+
+29
+00:02:03,800 --> 00:02:10,460
+Il fatto che insieme al robot fosse morto il robo psicologo capo della ditta era un particolare
+
+30
+00:02:10,460 --> 00:02:14,640
+di secondaria importanza che valeva sì e no la pena di menzionare.
+
+31
+00:02:16,280 --> 00:02:16,780
+Sigla!
+
+32
+00:02:18,480 --> 00:02:25,880
+Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galano.
+
+33
+00:02:25,880 --> 00:02:37,360
+Quella che ti ho appena letto è l'introduzione di un racconto di Isaac Asimov intitolato
+
+34
+00:02:37,360 --> 00:02:38,760
+Intuito Femminile.
+
+35
+00:02:38,760 --> 00:02:46,200
+Qualche episodio fa, precisamente nel numero 127, ho letto e commentato un altro racconto,
+
+36
+00:02:46,200 --> 00:02:52,720
+sempre di Asimov, il cui titolo era, invece, Tutti i guai del mondo, e i feedback sono
+
+37
+00:02:52,720 --> 00:02:57,800
+stati così numerosi e così positivi che ho deciso di fare il bis.
+
+38
+00:02:57,800 --> 00:03:00,440
+Chissà che non ne venga fuori perfino una serie.
+
+39
+00:03:00,440 --> 00:03:06,080
+Per oggi, quindi, ho scelto questo Intuito Femminile perché l'ho trovato particolarmente
+
+40
+00:03:06,080 --> 00:03:11,640
+attuale per via di alcune notizie che sono uscite di recente e sulla base di varie ricerche
+
+41
+00:03:11,640 --> 00:03:15,240
+scientifiche che mi è capitato di leggere in questo periodo.
+
+42
+00:03:15,280 --> 00:03:21,280
+Ora, però, bando alle ciance, anche perché non voglio rischiare di farti spoiler, e quindi
+
+43
+00:03:21,280 --> 00:03:25,440
+non ti anticipo altro e ti auguro, semplicemente, buon ascolto.
+
+44
+00:03:25,440 --> 00:03:34,520
+Clinton Madarian era entrato nell'azienda dieci anni prima.
+
+45
+00:03:34,520 --> 00:03:40,800
+Per cinque, aveva lavorato senza mai lamentarsi sotto l'arcigna supervisione di Susan Calvin.
+
+46
+00:03:40,920 --> 00:03:47,080
+La genialità di Madarian era così evidente che Susan Calvin l'aveva tranquillamente promosso
+
+47
+00:03:47,080 --> 00:03:52,560
+scavalcando altri senza dare spiegazioni, cosa di cui del resto non si sarebbe degnata
+
+48
+00:03:52,560 --> 00:03:58,720
+al direttore delle ricerche Peter Bogart, ma, d'altro canto, nel caso specifico le spiegazioni
+
+49
+00:03:58,720 --> 00:04:02,280
+non sarebbero state necessarie, tanto il motivo era evidente.
+
+50
+00:04:02,280 --> 00:04:08,480
+Madarian era l'opposto della famosa dottoressa Calvin sotto molti ed evidenti aspetti.
+
+51
+00:04:08,680 --> 00:04:14,440
+Non era così grasso come poteva lasciar supporre il suo doppiomento, ma aveva una presenza
+
+52
+00:04:14,440 --> 00:04:17,960
+imponente mentre Susan passava quasi inosservata.
+
+53
+00:04:17,960 --> 00:04:24,240
+Il faccione massiccio, la folta a chioma rossastra, la carnagione accesa, la voce tonante, la
+
+54
+00:04:24,240 --> 00:04:29,160
+risata sonora e soprattutto l'irrefrenabile sicurezza di sé e la spavalderia con cui
+
+55
+00:04:29,160 --> 00:04:34,040
+sbandierava il proprio successo facevano di lui una personalità preponderante.
+
+56
+00:04:34,400 --> 00:04:41,520
+Quando finalmente Susan Calvin andò in pensione, rifiutando a priori qualsiasi forma di festeggiamento
+
+57
+00:04:41,520 --> 00:04:47,360
+con particolare riferimento al pranzo di addio in suo onore in modo talmente deciso che i
+
+58
+00:04:47,360 --> 00:04:53,000
+mass media non comunicarono nemmeno la notizia, Madarian prese il suo posto.
+
+59
+00:04:53,000 --> 00:04:57,920
+Lo occupava esattamente da un giorno quando diede l'avvio al progetto JN.
+
+60
+00:04:57,920 --> 00:05:03,360
+Per attuarlo era necessario uno stanziamento di fondi molto più cospicuo di quello che
+
+61
+00:05:03,360 --> 00:05:09,160
+la US Robots avesse stanziato per qualsiasi altro progetto, ma per Madarian questo era
+
+62
+00:05:09,160 --> 00:05:10,880
+un particolare trascurabile.
+
+63
+00:05:10,880 --> 00:05:16,440
+Vale ogni soldo che ci spendiamo, Peter, disse, e mi aspetto che tu convinca il consiglio
+
+64
+00:05:16,440 --> 00:05:17,440
+direttivo.
+
+65
+00:05:17,440 --> 00:05:22,200
+Spiegami perché, disse Bogart chiedendosi se Madarian l'avrebbe accontentato.
+
+66
+00:05:22,200 --> 00:05:25,320
+Susan Calvin non aveva mai dato spiegazioni.
+
+67
+00:05:25,320 --> 00:05:31,840
+Madarian invece disse certo e si sistemò comodamente in poltrona nell'ufficio del direttore.
+
+68
+00:05:32,160 --> 00:05:36,040
+Bogart lo guardava con qualcosa di molto simile al rispetto.
+
+69
+00:05:36,040 --> 00:05:40,920
+I suoi capelli, un tempo neri, erano ormai quasi bianchi e dentro meno di dieci anni
+
+70
+00:05:40,920 --> 00:05:44,080
+sarebbe andato anche lui in pensione come Susan Calvin.
+
+71
+00:05:44,080 --> 00:05:50,240
+Questo avrebbe segnato la fine del gruppo originale che aveva fatto della US Robots un'azienda
+
+72
+00:05:50,240 --> 00:05:55,400
+di importanza mondiale, rivale del governo per complessità e importanza.
+
+73
+00:05:55,400 --> 00:06:01,240
+Ma ne lui, ne quelli che si erano già ritirati, si erano mai assuefatti all'enorme espansione
+
+74
+00:06:01,240 --> 00:06:02,240
+della ditta.
+
+75
+00:06:02,240 --> 00:06:04,800
+Questa però era la nuova generazione.
+
+76
+00:06:04,800 --> 00:06:08,720
+I nuovi dirigenti si trovavano a proprio agio nel colosso.
+
+77
+00:06:08,720 --> 00:06:14,040
+Non provavano nei suoi confronti quello stupore che confinava con la reverenza.
+
+78
+00:06:14,040 --> 00:06:17,440
+Tiravano dritto e, dopotutto, forse era meglio così.
+
+79
+00:06:17,440 --> 00:06:22,840
+Propongo di iniziare la costruzione di robot privi di costrizioni, disse Madarian, senza
+
+80
+00:06:22,840 --> 00:06:24,240
+le tre leggi, ma...
+
+81
+00:06:24,240 --> 00:06:28,200
+No, Peter, credi che non sia capace di pensare ad altre costrizioni?
+
+82
+00:06:28,200 --> 00:06:29,200
+Che diamine!
+
+83
+00:06:29,280 --> 00:06:32,560
+Hai pur contribuito al progetto dei primi cervelli positronici.
+
+84
+00:06:32,560 --> 00:06:37,560
+Devo proprio dirti io che, oltre alle tre leggi, in quei cervelli non c'era un circuito
+
+85
+00:06:37,560 --> 00:06:40,600
+che non fosse progettato e fissato con precisione.
+
+86
+00:06:40,600 --> 00:06:45,480
+Abbiamo robot adatti a compiti specifici, altamente specializzati.
+
+87
+00:06:45,480 --> 00:06:51,720
+E tu adesso proporresti che, ferme restando le restrizioni delle tre leggi, i circuiti
+
+88
+00:06:51,720 --> 00:06:53,520
+possano restare aperti.
+
+89
+00:06:53,520 --> 00:06:54,520
+Non è difficile.
+
+90
+00:06:54,520 --> 00:06:57,600
+Già, non è difficile, commentò seccamente Boggart.
+
+91
+00:06:57,760 --> 00:07:00,120
+Le cose inutili non sono mai difficili.
+
+92
+00:07:00,120 --> 00:07:03,600
+Il difficile è fissare i circuiti e rendere utili i robot.
+
+93
+00:07:03,600 --> 00:07:04,600
+Perché?
+
+94
+00:07:04,600 --> 00:07:10,280
+Fissare i circuiti richiede uno sforzo notevole perché il principio di incertezza è importante
+
+95
+00:07:10,280 --> 00:07:14,280
+nella massa di positroni e bisogna minimizzare l'effetto incertezza.
+
+96
+00:07:14,280 --> 00:07:15,480
+Ma perché dobbiamo?
+
+97
+00:07:15,480 --> 00:07:20,920
+Se combiniamo le cose in modo che il principio abbia la preponderanza sufficiente a consentire
+
+98
+00:07:20,920 --> 00:07:25,360
+l'opposizione a circuiti imprevedibili, otterremo un robot imprevedibile.
+
+99
+00:07:25,720 --> 00:07:30,040
+Un robot creativo, precisò Madarian con un briciolo di impazienza.
+
+100
+00:07:30,040 --> 00:07:36,880
+Peter, se il cervello umano possiede qualcosa di cui il cervello dei robot è privo, questo
+
+101
+00:07:36,880 --> 00:07:42,720
+è una sfumatura di imprevedibilità che deriva dagli effetti dell'incertezza a livello subatomico.
+
+102
+00:07:42,720 --> 00:07:48,920
+Ammetto che non sia mai stato possibile dimostrare questo effetto nell'ambito del sistema nervoso,
+
+103
+00:07:48,920 --> 00:07:52,960
+ma senza di esso il cervello umano non sarebbe superiore a quello robotico.
+
+104
+00:07:53,320 --> 00:07:58,160
+E tu credi che inserendo questo effetto nel cervello di un robot, quello umano non sarebbe
+
+105
+00:07:58,160 --> 00:07:59,160
+più superiore?
+
+106
+00:07:59,160 --> 00:08:04,440
+Esattamente, confermò Madarian, e continuarono a discutere per un bel pezzo.
+
+107
+00:08:09,440 --> 00:08:14,760
+L'idea di creare una macchina intelligente è senza dubbio un concetto affascinante già
+
+108
+00:08:14,760 --> 00:08:15,960
+di per sé.
+
+109
+00:08:15,960 --> 00:08:23,520
+Affascinava Asimov nel 1969, quando pubblicò Intuito Femminile e tanti altri racconti,
+
+110
+00:08:23,520 --> 00:08:27,080
+e affascina sicuramente anche molti di noi tutt'oggi.
+
+111
+00:08:27,080 --> 00:08:32,800
+Pensaci, chi non vorrebbe avere al proprio fianco un Jarvis come quello del personaggio
+
+112
+00:08:32,800 --> 00:08:38,240
+Marvel Iron Man, o una Andromeda come quella dell'omonima serie di Gene Roddenberry?
+
+113
+00:08:38,240 --> 00:08:45,400
+I modelli di machine learning moderni, d'altronde, come possono non essere considerati varie strade
+
+114
+00:08:45,400 --> 00:08:49,400
+con le quali si sta tentando di raggiungere un tale obiettivo.
+
+115
+00:08:49,400 --> 00:08:54,880
+Nello specifico di questo racconto, Asimov pone l'attenzione su un aspetto particolare
+
+116
+00:08:54,880 --> 00:08:59,080
+che spesso nelle serie tv e nei film è dato piuttosto per scontato.
+
+117
+00:08:59,080 --> 00:09:04,240
+Un aspetto che, come vedremo più avanti, si evolverà in un secondo tratto altrettanto
+
+118
+00:09:04,240 --> 00:09:05,240
+importante.
+
+119
+00:09:05,240 --> 00:09:11,040
+Insieme, queste due caratteristiche intrinseche nell'essere umano sono elementi fondamentali
+
+120
+00:09:11,040 --> 00:09:16,680
+per considerare un'intelligenza come tale, anche senza sfociare in un dibattito filosofico
+
+121
+00:09:16,680 --> 00:09:19,120
+sulla stessa definizione di intelligenza.
+
+122
+00:09:19,120 --> 00:09:25,880
+E quelle di cui sto parlando sono le peculiarità della mente umana che noi normalmente chiamiamo
+
+123
+00:09:25,880 --> 00:09:27,760
+creatività e intuito.
+
+124
+00:09:27,760 --> 00:09:32,600
+La creatività è già entrata in gioco, mentre di intuito si parlerà a breve.
+
+125
+00:09:32,600 --> 00:09:38,920
+Il dottor Madarian, infatti, come vedremo tra poco, vuole realizzare un cervello positronico
+
+126
+00:09:38,920 --> 00:09:44,960
+che sia in grado di svolgere compiti e formulare nuove idee sulla base di informazioni eterogene
+
+127
+00:09:44,960 --> 00:09:49,120
+incamerate in modo naturale e non schematicamente prestabilito.
+
+128
+00:09:49,120 --> 00:09:51,360
+Che sia creativo, insomma.
+
+129
+00:09:51,360 --> 00:09:57,640
+E in effetti, nel racconto come nella nostra realtà attuale, la creatività sembrerebbe
+
+130
+00:09:57,640 --> 00:10:03,480
+proprio essere l'ultima caratteristica che ancora separa nettamente l'intelligenza artificiale
+
+131
+00:10:03,480 --> 00:10:04,600
+da quella naturale.
+
+132
+00:10:04,920 --> 00:10:10,240
+Di recente, però, sono stati pubblicati alcuni studi scientifici che suggeriscono che questa
+
+133
+00:10:10,240 --> 00:10:13,240
+disparità non resterà tale ancora per molto.
+
+134
+00:10:13,240 --> 00:10:19,720
+Secondo tali studi, che trovi in descrizione, è infatti possibile che, a poco a poco, anche
+
+135
+00:10:19,720 --> 00:10:24,680
+quest'ultimo baluardo della superiorità del cervello umano stia venendo superato.
+
+136
+00:10:24,680 --> 00:10:30,760
+Anche se di fatto ancora non conosciamo pienamente come funziona al proprio interno un modello
+
+137
+00:10:30,760 --> 00:10:37,560
+di machine learning generativo, per capirci parlo di GPT e compagni, negli ultimi mesi
+
+138
+00:10:37,560 --> 00:10:43,360
+sono stati effettuati vari esperimenti per esplorarne le potenzialità e fra questi alcuni
+
+139
+00:10:43,360 --> 00:10:47,720
+molto interessanti erano volti a valutarne le capacità creative.
+
+140
+00:10:47,720 --> 00:10:54,080
+Messi di fronte a dei test utilizzati normalmente per misurare la creatività negli umani, i
+
+141
+00:10:54,080 --> 00:10:59,700
+migliori chatbot basati sui maggiori large language model si sono rivelati in grado
+
+142
+00:10:59,700 --> 00:11:02,740
+di superarne i quesiti con una certa facilità.
+
+143
+00:11:02,740 --> 00:11:08,220
+Nello specifico, le prove a cui mi riferisco si concretizzano in attività come scrivere
+
+144
+00:11:08,220 --> 00:11:14,100
+racconti originali o trovare per certi oggetti utilizzi differenti da quelli canonici.
+
+145
+00:11:14,100 --> 00:11:21,060
+I chatbot interrogati hanno saputo generare risposte che hanno quantomeno sorpreso i ricercatori.
+
+146
+00:11:21,060 --> 00:11:25,940
+I modelli linguistici infatti hanno dimostrato di essere in grado di rispondere alle domande
+
+147
+00:11:25,940 --> 00:11:30,700
+dei test perfino meglio della media degli esseri umani con cui sono stati confrontati.
+
+148
+00:11:30,700 --> 00:11:36,660
+Si tratta senza dubbio di risultati interessanti, di cui probabilmente sentiremo nuovamente
+
+149
+00:11:36,660 --> 00:11:41,980
+parlare in futuro, e che fanno pensare che l'intelligenza artificiale supererà a breve
+
+150
+00:11:41,980 --> 00:11:42,980
+quella naturale.
+
+151
+00:11:42,980 --> 00:11:48,220
+Ma prima di lasciarci prendere dall'entusiasmo, teniamo ben presente una cosa.
+
+152
+00:11:48,220 --> 00:11:54,820
+Nel caso di una IA, superare un test di creatività non vuol dire necessariamente essere creativa.
+
+153
+00:11:55,220 --> 00:12:00,580
+Non avendo possibilità di verificarne il funzionamento e i dati di training, infatti,
+
+154
+00:12:00,580 --> 00:12:05,940
+non è possibile per i ricercatori escludere che essa sia stata allenata proprio su risposte
+
+155
+00:12:05,940 --> 00:12:10,100
+ai suddetti test, e sia dunque questo il motivo per cui è in grado di superarli.
+
+156
+00:12:10,100 --> 00:12:15,040
+In altre parole, i modelli potrebbero stare semplicemente ripetendo risposte che hanno
+
+157
+00:12:15,040 --> 00:12:19,780
+assimilato precedentemente all'interno di tutto il materiale con il quale sono stati
+
+158
+00:12:19,780 --> 00:12:24,060
+addestrati, e se così fosse non potremmo certo definirli creativi.
+
+159
+00:12:24,420 --> 00:12:29,420
+Altri studi, invece, nei quali sono stati messi in competizione esseri umani e large
+
+160
+00:12:29,420 --> 00:12:35,420
+language model, hanno fatto emergere il fatto che, in linea generale, il livello di creatività
+
+161
+00:12:35,420 --> 00:12:40,820
+di entrambi si equivale nel caso in cui i soggetti umani non sono particolarmente creativi.
+
+162
+00:12:40,820 --> 00:12:45,140
+Anzi, l'ago della bilancia pende addirittura verso i modelli generativi.
+
+163
+00:12:45,140 --> 00:12:50,580
+Tuttavia, se si confrontano invece i soggetti migliori presi sia tra gli esseri umani che
+
+164
+00:12:50,580 --> 00:12:56,260
+tra i chatbot, i risultati evidenziano che in creatività l'intelligenza naturale supera
+
+165
+00:12:56,260 --> 00:12:58,300
+ancora di gran lunga quella artificiale.
+
+166
+00:12:58,300 --> 00:13:04,340
+Il concetto, quindi, sembra essere che una IA generativa riesce ad essere mediamente
+
+167
+00:13:04,340 --> 00:13:10,760
+creativa ma non brillante in tal senso, e sicuramente non è in grado di tenere il passo
+
+168
+00:13:10,760 --> 00:13:15,620
+con quelli che sono i picchi di intelligenza ed inventiva tipici della nostra specie.
+
+169
+00:13:20,580 --> 00:13:26,060
+Il consiglio direttivo non aveva la minima intenzione di lasciarsi convincere facilmente.
+
+170
+00:13:26,060 --> 00:13:29,660
+Scott Robertson, il più importante azionista, disse
+
+171
+00:13:29,660 --> 00:13:34,940
+«È già abbastanza difficile dirigere l'industria dei robot così com'è, con l'ostilità latente
+
+172
+00:13:34,940 --> 00:13:38,020
+dell'opinione pubblica sempre pronta a passare a vie di fatto.
+
+173
+00:13:38,020 --> 00:13:43,260
+Se la gente si convince che i robot saranno incontrollati, oh, non venitemi a parlare delle
+
+174
+00:13:43,260 --> 00:13:44,260
+tre leggi.
+
+175
+00:13:44,260 --> 00:13:47,940
+L'uomo della strada non crederà più che basteranno a proteggerlo quando sentirà la
+
+176
+00:13:47,940 --> 00:13:49,660
+definizione «senza controllo».
+
+177
+00:13:50,060 --> 00:13:55,460
+«Non è mica obbligatoria», disse Madarian, «possiamo chiamare il robot intuitivo».
+
+178
+00:13:55,460 --> 00:13:58,740
+«Un robot intuitivo?», commentò qualcuno.
+
+179
+00:13:58,740 --> 00:14:01,260
+Un sorriso serpeggiò lungo la tavola.
+
+180
+00:14:01,260 --> 00:14:03,540
+Madarian afferrò l'idea al volo.
+
+181
+00:14:03,540 --> 00:14:05,460
+«Sì, un robot femmina.
+
+182
+00:14:05,460 --> 00:14:11,180
+I nostri robot naturalmente sono asessuati, e lo sarà anche questo, ma noi li abbiamo
+
+183
+00:14:11,180 --> 00:14:13,620
+sempre considerati di genere maschile.
+
+184
+00:14:14,060 --> 00:14:19,860
+Gli abbiamo dato nomi maschili, abbiamo sempre detto lui, lo, gli, riferendoci a loro.
+
+185
+00:14:19,860 --> 00:14:25,100
+Questo, invece, se consideriamo la natura della struttura matematica del cervello che
+
+186
+00:14:25,100 --> 00:14:28,260
+ho proposto, cadrà nel sistema di coordinate JN.
+
+187
+00:14:28,260 --> 00:14:33,820
+Il primo robot sarà JN1, e contavo che l'avremmo chiamato John1.
+
+188
+00:14:33,820 --> 00:14:40,180
+Purtroppo, credo che il livello medio di originalità dei creatori di robot non vada oltre, ma perché
+
+189
+00:14:40,180 --> 00:14:42,220
+non chiamarlo invece Jane1?
+
+190
+00:14:42,620 --> 00:14:47,580
+«Se dobbiamo spiegare al pubblico quello che intendiamo fare, diremmo che stiamo costruendo
+
+191
+00:14:47,580 --> 00:14:50,220
+un robot femmina dotato di intuito».
+
+192
+00:14:50,220 --> 00:14:54,500
+«E che differenza farebbe?», obiettò Robertson, scrollando la testa.
+
+193
+00:14:54,500 --> 00:14:59,660
+«A quanto dici, progetti di togliere l'ultima barriera che in linea di principio rende il
+
+194
+00:14:59,660 --> 00:15:02,220
+cervello robotico inferiore a quello umano.
+
+195
+00:15:02,220 --> 00:15:05,220
+Quale credi che sarà la reazione dell'opinione pubblica?
+
+196
+00:15:05,220 --> 00:15:06,220
+Perché?
+
+197
+00:15:06,220 --> 00:15:09,660
+Avreste intenzione di divulgare la notizia?», chiese Madarian.
+
+198
+00:15:09,980 --> 00:15:14,900
+Ci pensò un po', e poi disse «Sentite, una delle convinzioni più diffuse è che
+
+199
+00:15:14,900 --> 00:15:17,340
+le donne sono meno intelligenti degli uomini».
+
+200
+00:15:17,340 --> 00:15:22,300
+Su molte facce si dipinse per un attimo un'espressione d'angustia, mentre gli occhi si volgevano
+
+201
+00:15:22,300 --> 00:15:26,060
+verso il punto dove un tempo era solita sedere Susan Calvin.
+
+202
+00:15:26,060 --> 00:15:32,540
+«Se annunciamo la fabbricazione di un robot femmina, non importa come sarà, la gente
+
+203
+00:15:32,540 --> 00:15:35,740
+si farà distinto all'idea che è mentalmente arretrata.
+
+204
+00:15:35,740 --> 00:15:40,820
+Ci basterà pubblicizzare il robot come Jane 1, senza bisogno di aggiungere altro.
+
+205
+00:15:40,820 --> 00:15:42,300
+Non c'è niente da temere».
+
+206
+00:15:42,300 --> 00:15:47,260
+«In verità ci sono parecchie altre cosette», disse a questo punto con la massima calma
+
+207
+00:15:47,260 --> 00:15:48,260
+Peter Bogart.
+
+208
+00:15:48,260 --> 00:15:53,140
+«Madarian e io abbiamo revisionato tutti i calcoli a fondo e posso assicurare che la
+
+209
+00:15:53,140 --> 00:15:57,300
+serie Jane, John o Jane che sia, non presenta il minimo pericolo.
+
+210
+00:15:57,300 --> 00:16:02,940
+Saranno dei robot meno complessi e intellettualmente meno capaci in senso ortodosso di molte altre
+
+211
+00:16:02,940 --> 00:16:05,100
+serie da noi progettate e costruite.
+
+212
+00:16:05,460 --> 00:16:09,660
+Ci sarà un unico fattore in più che possiamo pure abituarci a chiamare intuito».
+
+213
+00:16:09,660 --> 00:16:12,940
+«Chissà quali effetti avrà», borbottò Robertson.
+
+214
+00:16:12,940 --> 00:16:15,500
+«Madarian ha suggerito una funzione.
+
+215
+00:16:15,500 --> 00:16:20,300
+Come sapete, è stato creato in teoria il principio del balzo spaziale.
+
+216
+00:16:20,300 --> 00:16:26,340
+L'uomo in teoria può raggiungere velocità superiori a quella della luce, visitare sistemi
+
+217
+00:16:26,340 --> 00:16:30,460
+stellari e tornare in pochissimo tempo, qualche settimana al massimo.
+
+218
+00:16:30,820 --> 00:16:33,020
+«Non è una novità», osservò Robertson.
+
+219
+00:16:33,020 --> 00:16:35,620
+«E senza i robot non sarebbe stato possibile».
+
+220
+00:16:35,620 --> 00:16:40,700
+«Esatto, ed è perfettamente inutile, in quanto la supervelocità si può raggiungere
+
+221
+00:16:40,700 --> 00:16:46,700
+solo una volta, per dimostrazione, e di conseguenza la nostra azienda non ne ricava che un vantaggio
+
+222
+00:16:46,700 --> 00:16:47,700
+minimo.
+
+223
+00:16:47,700 --> 00:16:53,260
+Il balzo spaziale è rischioso, richiede una enorme quantità di energia e di conseguenza
+
+224
+00:16:53,260 --> 00:16:54,820
+è enormemente costoso.
+
+225
+00:16:54,820 --> 00:17:00,220
+Se però dovessimo attuarlo, sarebbe bello poter scoprire e riferire l'esistenza di
+
+226
+00:17:00,220 --> 00:17:01,700
+un pianeta abitabile.
+
+227
+00:17:01,700 --> 00:17:04,260
+Chiamatela necessità psicologica.
+
+228
+00:17:04,260 --> 00:17:10,020
+Spendere circa 20 miliardi di dollari per un unico balzo e tornare solo con dei dati
+
+229
+00:17:10,020 --> 00:17:13,340
+scientifici provocherebbe le proteste dei contribuenti.
+
+230
+00:17:13,340 --> 00:17:19,100
+Riferire invece che è stato scoperto un pianeta abitabile farebbe di noi dei colombo interstellari
+
+231
+00:17:19,100 --> 00:17:21,060
+e nessuno penserebbe al denaro speso.
+
+232
+00:17:21,060 --> 00:17:22,060
+E allora?
+
+233
+00:17:22,060 --> 00:17:25,740
+E allora dove possiamo trovare un pianeta abitabile?
+
+234
+00:17:26,180 --> 00:17:31,060
+Oppure, mettiamola così, quale stella nell'ambito delle possibilità del balzo, quale delle
+
+235
+00:17:31,060 --> 00:17:36,340
+300.000 stelle e sistemi solari nell'ambito di 300 anni luce ha le maggiori probabilità
+
+236
+00:17:36,340 --> 00:17:38,580
+di possedere un pianeta abitabile?
+
+237
+00:17:38,580 --> 00:17:44,140
+Disponiamo di un'infinità di dati su tutte le stelle distanti fino a 300 anni luce e sappiamo
+
+238
+00:17:44,140 --> 00:17:49,420
+che quasi tutte hanno un sistema planetario, ma quale possiede un pianeta abitabile?
+
+239
+00:17:49,420 --> 00:17:51,420
+Quale dobbiamo visitare?
+
+240
+00:17:51,420 --> 00:17:52,420
+Lo ignoriamo?
+
+241
+00:17:52,420 --> 00:17:54,100
+Uno dei presenti chiese.
+
+242
+00:17:54,540 --> 00:17:57,940
+In cosa potrebbe esserci utile a questo riguardo il robot Jane?
+
+243
+00:17:57,940 --> 00:18:03,260
+Madarian stava per rispondere, ma poi fece un cenno a Boggart che afferrò al volo.
+
+244
+00:18:03,260 --> 00:18:06,100
+Il suo parere come direttore avrebbe avuto più peso.
+
+245
+00:18:06,100 --> 00:18:12,220
+La cosa non andava molto a genio a Boggart, se la serie JN si rivelava un fiasco il fatto
+
+246
+00:18:12,220 --> 00:18:16,220
+di esporsi ad esso e sostenerla avrebbe fatto di lui il capo espiatorio.
+
+247
+00:18:16,220 --> 00:18:21,860
+D'altro canto, non era molto lontano il giorno in cui sarebbe andato in pensione e gli sarebbe
+
+248
+00:18:21,860 --> 00:18:25,340
+piaciuto ritirarsi circondato da un'aureola di gloria.
+
+249
+00:18:25,340 --> 00:18:30,220
+Forse la cosa andava attribuita alla gran sicurezza di sé di Madarian.
+
+250
+00:18:30,220 --> 00:18:34,660
+Comunque sia, Boggart si era ormai persuaso che la cosa avrebbe funzionato.
+
+251
+00:18:34,660 --> 00:18:39,700
+Probabilmente controllando e studiando i dati sulle stelle sarà possibile calcolare la
+
+252
+00:18:39,700 --> 00:18:43,260
+probabilità della presenza di pianeti abitabili tipo Terra.
+
+253
+00:18:43,260 --> 00:18:48,020
+Bisogna capire bene i dati, interpretarli in modo creativo e fare i raffronti del caso.
+
+254
+00:18:48,460 --> 00:18:52,940
+Il che finora non è mai stato fatto, o se qualche astronomo se n'è occupato non è
+
+255
+00:18:52,940 --> 00:18:56,140
+stato abbastanza in gamba da capire cosa aveva scoperto.
+
+256
+00:18:56,140 --> 00:19:01,780
+Un robot del tipo JN può fare i raffronti e stabilire i rapporti molto più rapidamente
+
+257
+00:19:01,780 --> 00:19:02,780
+dell'uomo.
+
+258
+00:19:02,780 --> 00:19:08,060
+In un giorno vagherebbe le possibilità e scarterebbe i dati negativi che un uomo impiegherebbe
+
+259
+00:19:08,060 --> 00:19:13,220
+dieci anni a esaminare, per di più non avrebbe i preconcetti e le convinzioni dell'uomo.
+
+260
+00:19:13,500 --> 00:19:16,900
+Seguì un pesante silenzio, che Robertson ruppe per dire
+
+261
+00:19:16,900 --> 00:19:19,620
+«Ma si tratta di probabilità, no?
+
+262
+00:19:19,620 --> 00:19:24,460
+Supponiamo che il robot dica la stella che ha più probabilità di avere un pianeta abitabile
+
+263
+00:19:24,460 --> 00:19:27,820
+introdotta nei luce è l'Umachetta 17, o che so io.
+
+264
+00:19:27,820 --> 00:19:32,780
+E allora noi andiamo a vedere e scopriamo che la probabilità è solo una probabilità
+
+265
+00:19:32,780 --> 00:19:34,380
+e che non ci sono pianeti.
+
+266
+00:19:34,380 --> 00:19:36,380
+Cosa faremo in questo caso?»
+
+267
+00:19:36,380 --> 00:19:38,700
+Ma Darian non si dette per vinto.
+
+268
+00:19:38,700 --> 00:19:41,580
+«Sarà sempre una vittoria per noi», disse.
+
+269
+00:19:41,940 --> 00:19:47,820
+Perché vorrà dire che il, cioè la robot, ci avrà detto questo in seguito a date e
+
+270
+00:19:47,820 --> 00:19:48,820
+deduzioni.
+
+271
+00:19:48,820 --> 00:19:54,020
+Si tratterà di un enorme passo avanti in campo astronomico e sarà sempre valsa la
+
+272
+00:19:54,020 --> 00:19:57,540
+pena di aver provato anche se non faremo il balzo vero e proprio.
+
+273
+00:19:57,540 --> 00:20:03,940
+Inoltre potremo esaminare, per esempio, i dati sui 5 più probabili sistemi dotati di pianeti
+
+274
+00:20:03,940 --> 00:20:09,540
+abitabili e le probabilità che uno dei 5 abbia un pianeta abitabile sarebbero superiori
+
+275
+00:20:09,540 --> 00:20:15,380
+al 90%, sarebbe la certezza, e tirarono avanti ancora per un bel pezzo.
+
+276
+00:20:15,380 --> 00:20:25,500
+A questo punto del racconto abbiamo il primo accenno al concetto di Robot Femmina, uno
+
+277
+00:20:25,500 --> 00:20:32,180
+dei temi principe di questo racconto che pervaderà un po' tutta la narrazione che verrà approfondito
+
+278
+00:20:32,180 --> 00:20:34,100
+in modo interessante più avanti.
+
+279
+00:20:34,540 --> 00:20:39,700
+Per questo motivo anche noi avremo modo di parlarne a dovere fra un po' e quindi preferisco
+
+280
+00:20:39,700 --> 00:20:44,980
+concentrarmi su un altro aspetto di ciò che abbiamo appena letto, qualcosa di meno evidente
+
+281
+00:20:44,980 --> 00:20:51,500
+forse ma che trovo comunque molto interessante, e parlo dell'impiego da trovare per la nuova
+
+282
+00:20:51,500 --> 00:20:53,140
+tipologia di intelligenza.
+
+283
+00:20:53,140 --> 00:20:58,940
+Madarian ha pensato di utilizzare il nuovo cervello positronico intuitivo, o creativo,
+
+284
+00:20:58,940 --> 00:21:03,240
+per effettuare dei calcoli probabilistici che per gli umani richiederebbero un impegno
+
+285
+00:21:03,240 --> 00:21:05,160
+in un tempo pressoché improponibili.
+
+286
+00:21:05,160 --> 00:21:10,600
+Questa è una sorprendente intuizione da parte di Asimov, perché anticipa di decenni un
+
+287
+00:21:10,600 --> 00:21:15,240
+utilizzo dell'intelligenza artificiale che oggi è ampiamente diffuso nell'ambito della
+
+288
+00:21:15,240 --> 00:21:19,640
+ricerca e sviluppo, e che si fonda principalmente sul reinforcement learning.
+
+289
+00:21:19,640 --> 00:21:24,320
+Si tratta di una tipologia di machine learning, questa, che viene impiegata in moltissimi
+
+290
+00:21:24,320 --> 00:21:29,160
+campi e discipline per effettuare i più disparati tipi di studi e ricerche tecnologiche.
+
+291
+00:21:29,600 --> 00:21:35,200
+A tali algoritmi viene affidato il compito di sondare centinaia di migliaia di opzioni
+
+292
+00:21:35,200 --> 00:21:41,440
+o di strategie al fine di individuare relazioni invisibili agli esseri umani ed elaborare
+
+293
+00:21:41,440 --> 00:21:44,720
+le migliori soluzioni possibili a determinati problemi.
+
+294
+00:21:44,720 --> 00:21:49,760
+In parole più semplici, gli algoritmi di reinforcement learning sono in grado di esplorare
+
+295
+00:21:49,760 --> 00:21:55,440
+un numero immenso di possibilità, ciascuna leggermente differente dalla precedente, fino
+
+296
+00:21:55,440 --> 00:21:59,760
+ad individuarne una o un gruppo ristretto che si avvicini il più possibile al risultato
+
+297
+00:21:59,760 --> 00:22:00,760
+richiesto.
+
+298
+00:22:00,760 --> 00:22:05,960
+Ne abbiamo già parlato anche qui su Pensieri in Codice, ad esempio nell'episodio 119 su
+
+299
+00:22:05,960 --> 00:22:11,800
+Alphadev, in cui abbiamo scoperto insieme come questa IA abbia inventato un nuovo algoritmo
+
+300
+00:22:11,800 --> 00:22:13,240
+di ordinamento dei dati.
+
+301
+00:22:13,240 --> 00:22:20,040
+Ma in pratica, le reti ad apprendimento per rinforzo sono utilizzate ogni giorno da industrie
+
+302
+00:22:20,040 --> 00:22:23,160
+o enti di ricerca per i più disparati obiettivi.
+
+303
+00:22:23,160 --> 00:22:29,440
+Creare nuovi farmaci, nuovi materiali, nuove strategie, nuovi software, nuovi metodi di
+
+304
+00:22:29,440 --> 00:22:31,920
+sviluppo e moltissimo altro ancora.
+
+305
+00:22:31,920 --> 00:22:38,840
+L'intero processo viene predisposto da un team di esperti, e poi una volta avviato lasciato
+
+306
+00:22:38,840 --> 00:22:44,640
+interamente all'intelligenza artificiale, in modo che essa possa portare al risultato
+
+307
+00:22:44,640 --> 00:22:49,120
+sulla base delle restrizioni, dei parametri e degli obiettivi prestabiliti.
+
+308
+00:22:49,440 --> 00:22:55,200
+L'assenza di interazione umana, in teoria, proprio come ipotizza Madarian per il suo
+
+309
+00:22:55,200 --> 00:23:00,560
+robot JN, dovrebbe ridurre al minimo la presenza di preconcetti e bias.
+
+310
+00:23:00,560 --> 00:23:07,080
+Nel racconto, poi, gli azionisti della iOS Robots, definendo questo nuovo tipo di robot
+
+311
+00:23:07,080 --> 00:23:13,440
+come incontrollato, sottolineano il fatto che i circuiti aperti non permetterebbero
+
+312
+00:23:13,440 --> 00:23:17,640
+di prevedere in anticipo le decisioni prese dal cervello positronico.
+
+313
+00:23:18,000 --> 00:23:24,200
+Anche questo è un parallelismo interessante con le nostre moderne IA generative.
+
+314
+00:23:24,200 --> 00:23:29,880
+Difatti, negli attuali modelli non è possibile in alcun modo conoscere o verificare il modo
+
+315
+00:23:29,880 --> 00:23:32,960
+in cui essi arrivano ai risultati che restituiscono.
+
+316
+00:23:32,960 --> 00:23:39,560
+Lo abbiamo già detto tante volte, i Large Language Model, ad esempio, ma non solo, anche
+
+317
+00:23:39,560 --> 00:23:46,200
+i generatori di immagini o di video, sono in effetti delle blackbox il cui interno non è
+
+318
+00:23:46,200 --> 00:23:49,680
+osservabile o conoscibile nemmeno dai loro creatori.
+
+319
+00:23:49,680 --> 00:23:56,000
+Per quanto riguarda, invece, l'interazione tra la IA e le persone comuni, Asimov già
+
+320
+00:23:56,000 --> 00:24:02,560
+ne intuiva l'importanza e noi, che oggi quell'interazione la stiamo letteralmente vivendo, sappiamo
+
+321
+00:24:02,560 --> 00:24:05,720
+che non tutto sta andando per il verso giusto.
+
+322
+00:24:05,720 --> 00:24:12,120
+Ci stiamo accorgendo che è fondamentale che chiunque utilizzi software basato su machine
+
+323
+00:24:12,120 --> 00:24:18,520
+learning, in qualsiasi ambito, al di là del semplice divertimento, ne conosca i limiti
+
+324
+00:24:18,520 --> 00:24:22,520
+intrinseci e sia in qualche modo in grado di gestirli.
+
+325
+00:24:22,520 --> 00:24:29,000
+E se negli ambienti scientifici e altamente specializzati come la medicina, l'ingegneria,
+
+326
+00:24:29,000 --> 00:24:34,780
+la meccanica e simili, una certa sicurezza è garantita da protocolli, certificazioni
+
+327
+00:24:34,780 --> 00:24:40,480
+e controlli di qualità che esistevano già ben prima del boom del machine learning, per
+
+328
+00:24:40,480 --> 00:24:46,400
+l'uomo della strada, come definito nel racconto, tutto ciò non è affatto scontato.
+
+329
+00:24:46,400 --> 00:24:53,040
+Con la diffusione su larga scala delle intelligenze artificiali generative, infatti, un chatbot,
+
+330
+00:24:53,040 --> 00:24:59,480
+o per i più smanettoni, un modello in grado di generare testi, immagini o video, è divenuto
+
+331
+00:24:59,480 --> 00:25:02,200
+facilissimo da riperire e da utilizzare.
+
+332
+00:25:02,200 --> 00:25:07,720
+Chiunque può installarne uno su un PC da un migliaio di euro o poco più.
+
+333
+00:25:08,040 --> 00:25:14,240
+La facilità d'uso, però, non implica automaticamente la conoscenza dei limiti né tantomeno delle
+
+334
+00:25:14,240 --> 00:25:19,980
+implicazioni dovute all'utilizzo di questi strumenti, e se vogliamo dirla tutta non implica
+
+335
+00:25:19,980 --> 00:25:21,280
+nemmeno la buona fede.
+
+336
+00:25:21,280 --> 00:25:26,920
+Un utilizzo improprio o addirittura fraudolento è tutt'altro che remoto e ne abbiamo già
+
+337
+00:25:26,920 --> 00:25:28,720
+visti innumerevoli esempi.
+
+338
+00:25:28,720 --> 00:25:36,600
+Infine, in un interessantissimo saggio intitolato Intelligenza Artificiale e Fiducia, Bruce Schneier
+
+339
+00:25:36,600 --> 00:25:42,840
+parla proprio del rapporto tra le persone e le IA generative che sono in circolazione
+
+340
+00:25:42,840 --> 00:25:46,720
+e che ovviamente si diffonderanno sempre più nel prossimo futuro.
+
+341
+00:25:46,720 --> 00:25:52,200
+Secondo lo scrittore, che definisco scrittore per via del saggio ma che in realtà è anche
+
+342
+00:25:52,200 --> 00:25:58,000
+un esperto di criptografia, privacy e sicurezza informatica, l'aspetto principale da tenere
+
+343
+00:25:58,000 --> 00:26:00,960
+sotto controllo riguarda appunto la fiducia.
+
+344
+00:26:01,360 --> 00:26:07,440
+Secondo gli azionisti del racconto di Asimov, per il bene dell'azienda e quindi del loro
+
+345
+00:26:07,440 --> 00:26:13,720
+portafoglio, le persone devono fidarsi dei robot e pertanto Madarian deve fare tutto
+
+346
+00:26:13,720 --> 00:26:16,640
+quanto in proprio potere per far sì che ciò avvenga.
+
+347
+00:26:16,640 --> 00:26:23,960
+Schneier, nel saggio, fa notare che la fiducia è una caratteristica fondamentale per l'esistenza
+
+348
+00:26:23,960 --> 00:26:29,080
+della società umana, ma sottolinea anche il fatto che le nuove intelligenze generative
+
+349
+00:26:29,080 --> 00:26:31,560
+produrranno un'enorme confusione.
+
+350
+00:26:31,560 --> 00:26:38,560
+Esse sono degli strumenti, dei servizi, ma le persone inizieranno a considerarle come
+
+351
+00:26:38,560 --> 00:26:43,160
+figure amiche delle quali appunto fidarsi e alle quali affidarsi.
+
+352
+00:26:43,160 --> 00:26:49,760
+Le aziende detentrici dei più potenti modelli generativi, dice Schneier, cercheranno dunque
+
+353
+00:26:49,760 --> 00:26:56,160
+di approfittare di questa confusione per ottenere sempre più potere e ricchezza, e sarà compito
+
+354
+00:26:56,160 --> 00:27:02,720
+dei governi impedire che ciò avvenga, regolamentando non tanto le IAA ma direttamente le aziende
+
+355
+00:27:02,720 --> 00:27:03,720
+che le controllano.
+
+356
+00:27:03,720 --> 00:27:10,120
+Si tratta di un saggio davvero interessante, ti consiglio di leggerlo e come per tutto ciò
+
+357
+00:27:10,120 --> 00:27:13,720
+di cui ti parlo trovi il link anche di questo in descrizione.
+
+358
+00:27:13,720 --> 00:27:24,200
+I fondi stanziati non erano sufficienti, ma Madarian contava sull'abitudine di concederne
+
+359
+00:27:24,200 --> 00:27:29,480
+altri con facilità dopo aver tentennato prima di concedere lo stanziamento iniziale.
+
+360
+00:27:29,480 --> 00:27:35,160
+L'idea di aver buttato via 200 milioni di dollari quando concedendone altri 100 si poteva
+
+361
+00:27:35,160 --> 00:27:39,560
+salvare la situazione avrebbe senz'altro facilitato lo stanziamento degli altri 100
+
+362
+00:27:39,560 --> 00:27:40,560
+milioni.
+
+363
+00:27:40,560 --> 00:27:46,800
+Jane 1 fu finalmente costruita e messa in mostra, Peter Bogart la esaminò con grande
+
+364
+00:27:46,800 --> 00:27:52,080
+serietà e chiese, perché la vita sottile indebolisce la struttura meccanica?
+
+365
+00:27:52,920 --> 00:27:57,840
+Gli spiegò ridacchiando Madarian, se dobbiamo chiamarla Jane non vedo perché debba somigliare
+
+366
+00:27:57,840 --> 00:27:58,840
+a Tarzan.
+
+367
+00:27:58,840 --> 00:27:59,840
+Non va.
+
+368
+00:27:59,840 --> 00:28:04,060
+Bogart scrollò la testa, di questo passo la farai più grossa in alto per simulare
+
+369
+00:28:04,060 --> 00:28:08,760
+il seno ed è una cosa che potrebbe avere degli effetti spiacevoli, se le donne cominciano
+
+370
+00:28:08,760 --> 00:28:13,880
+a pensare che i robot sono fatti come loro si mettono in testa delle idee sbagliate e
+
+371
+00:28:13,880 --> 00:28:16,080
+non vorrai renderteli ostili spero.
+
+372
+00:28:16,080 --> 00:28:21,600
+Forse hai ragione, ammise Madarian, non esiste una donna sola che vorrebbe essere sostituita
+
+373
+00:28:21,600 --> 00:28:23,960
+da qualcosa che non ha nessuno dei suoi difetti.
+
+374
+00:28:23,960 --> 00:28:30,320
+Jane 2 non aveva la vita sottile, era un robot triste, che si muoveva poco e parlava ancora
+
+375
+00:28:30,320 --> 00:28:31,320
+meno.
+
+376
+00:28:31,320 --> 00:28:36,440
+Durante la costruzione Madarian era corso poche volte da Bogart per annunciargli trionfante
+
+377
+00:28:36,440 --> 00:28:40,120
+qualche novità e questo era segno che le cose non andavano bene.
+
+378
+00:28:40,120 --> 00:28:46,160
+Quando otteneva brillanti risultati, l'esuberanza di Madarian non aveva freni, non avrebbe esitato
+
+379
+00:28:46,160 --> 00:28:50,840
+a precipitarsi nella camera da letto di Bogart alle 3 di notte per dargli subito la bella
+
+380
+00:28:50,840 --> 00:28:54,880
+notizia senza aspettare il mattino, Bogart lo sapeva per esperienza.
+
+381
+00:28:54,880 --> 00:29:00,920
+Adesso invece Madarian era avvilito, il colorito acceso si era fatto pallido, le guance tonde
+
+382
+00:29:00,920 --> 00:29:02,160
+quasi cascanti.
+
+383
+00:29:02,160 --> 00:29:05,600
+Sicuro di indovinare, Bogart disse, non parla.
+
+384
+00:29:05,600 --> 00:29:11,400
+Oh per parlare parla, disse Madarian mettendosi pesantemente a sedere e mordicchiandosi il
+
+385
+00:29:11,400 --> 00:29:12,400
+labbro.
+
+386
+00:29:12,400 --> 00:29:13,680
+Qualche volta almeno.
+
+387
+00:29:13,680 --> 00:29:16,800
+Bogart si alzò e girò intorno al robot.
+
+388
+00:29:16,800 --> 00:29:19,880
+E quando parla immagino che dica cose priva di senso.
+
+389
+00:29:19,920 --> 00:29:23,240
+Beh, se non parla, non è una femmina, no?
+
+390
+00:29:23,240 --> 00:29:26,360
+Madarian tentò di abbozzare un sorriso ma ci rinunciò.
+
+391
+00:29:26,360 --> 00:29:32,440
+Il cervello, in isolamento funzionava, lo so, disse Bogart, ma quando è stato inserito
+
+392
+00:29:32,440 --> 00:29:36,600
+nell'apparato fisico del robot per forza ha subito delle modifiche.
+
+393
+00:29:36,600 --> 00:29:41,760
+Certo, si limitò ad ammettere Bogart, ma in modo imprevedibile e deludente.
+
+394
+00:29:41,760 --> 00:29:47,560
+Il guaio è che quando ci si trova a fare con il calcolo n-dimensionale dell'incertezza
+
+395
+00:29:47,560 --> 00:29:50,160
+le cose diventano… incerte?
+
+396
+00:29:50,160 --> 00:29:53,240
+Suggerì Bogart, stupito dalla sua stessa reazione.
+
+397
+00:29:53,240 --> 00:29:59,440
+La compagnia aveva investito somme ingentissime, erano già passati due anni e il risultato,
+
+398
+00:29:59,440 --> 00:30:02,560
+per dirla in termine eufemistico, era deludente.
+
+399
+00:30:02,560 --> 00:30:07,080
+E nonostante questo, lui era lì che si divertiva a punzecchiare Madarian.
+
+400
+00:30:07,080 --> 00:30:13,640
+Quasi furtivamente si chiese se non stesse punzecchiando invece l'assente Susan Calvin.
+
+401
+00:30:13,640 --> 00:30:19,240
+Madarian era di gran lunga più espansivo ed estroverso di quanto fosse mai stata Susan
+
+402
+00:30:19,240 --> 00:30:24,120
+Calvin, anche quando le cose andavano bene, ed era molto più vulnerabile di lei quando
+
+403
+00:30:24,120 --> 00:30:28,320
+andavano male, perché Susan non aveva mai ceduto alle avversità.
+
+404
+00:30:28,320 --> 00:30:34,280
+Così, Madarian offriva un facile bersaglio che ricompensava a Bogart di non essersi mai
+
+405
+00:30:34,280 --> 00:30:37,360
+potuto cavare quella soddisfazione con Susan.
+
+406
+00:30:37,360 --> 00:30:42,800
+Madarian non reagì all'ultima osservazione di Bogart così come avrebbe fatto Susan Calvin
+
+407
+00:30:42,800 --> 00:30:47,360
+e non come lei per disprezzo, ma solo perché non l'aveva sentita.
+
+408
+00:30:47,360 --> 00:30:53,840
+Il difficile sta nel saper distinguere, disse con l'aria di chi dà l'avvio a una discussione.
+
+409
+00:30:53,840 --> 00:31:01,240
+Jane 2 è bravissima nello stabilire i rapporti, ma poi non è capace di riconoscere una deduzione
+
+410
+00:31:01,240 --> 00:31:02,800
+valida da una che non lo è.
+
+411
+00:31:02,800 --> 00:31:07,560
+Non è un problema facile riuscire a stabilire come si deve programmare un robot in modo
+
+412
+00:31:07,560 --> 00:31:12,320
+che dia giudizi validi quando non sappiamo come mette in rapporto le cose.
+
+413
+00:31:12,840 --> 00:31:17,440
+Immagino che tu abbia pensato di abbassare il potenziale alla congiunzione del diodo
+
+414
+00:31:17,440 --> 00:31:19,000
+V21 e di...
+
+415
+00:31:19,000 --> 00:31:24,040
+No, no, no, lo interruppe Madarian in un diminuendo che finì in un sussurro.
+
+416
+00:31:24,040 --> 00:31:30,000
+Non si può rifare tutto, bisogna invece riuscire a trovare qual è il rapporto decisivo e trarne
+
+417
+00:31:30,000 --> 00:31:31,000
+le conclusioni.
+
+418
+00:31:31,000 --> 00:31:35,640
+Una volta stabilito questo, Jane sarà in grado di dare una risposta per intuito.
+
+419
+00:31:35,640 --> 00:31:39,600
+Però ci potremmo riuscire solo grazie a un colpo di fortuna.
+
+420
+00:31:39,960 --> 00:31:45,880
+A me pare, osservò seccamente Bogart, che se ci riuscissimo avremmo un robot capace
+
+421
+00:31:45,880 --> 00:31:51,160
+di intuizioni quali solo un genio fra gli esseri umani può avere, e solo poche volte
+
+422
+00:31:51,160 --> 00:31:52,160
+nella vita.
+
+423
+00:31:52,160 --> 00:31:55,840
+Esatto, confermò Madarian, annuendo vigorosamente.
+
+424
+00:31:55,840 --> 00:31:58,800
+L'ho pensato anch'io, ma non avrei osato dirlo.
+
+425
+00:31:58,800 --> 00:32:01,760
+Ti prego, non farne parola con il consiglio direttivo.
+
+426
+00:32:01,760 --> 00:32:04,280
+Ma vorresti sul serio un robot genio?
+
+427
+00:32:04,280 --> 00:32:05,760
+Cosa sono le parole?
+
+428
+00:32:05,840 --> 00:32:11,480
+Io sto cercando di ottenere un robot capace di mettere in correlazione le cose più svariate
+
+429
+00:32:11,480 --> 00:32:17,640
+a caso e in brevissimo tempo, e che sia contemporaneamente dotato di un elevatissimo quoziente di capacità
+
+430
+00:32:17,640 --> 00:32:18,640
+selettiva.
+
+431
+00:32:18,640 --> 00:32:22,520
+E sto tentando di tradurre questi concetti in equazioni positroniche.
+
+432
+00:32:22,520 --> 00:32:26,080
+Credevo di esserci riuscito, e invece no, non ancora.
+
+433
+00:32:26,080 --> 00:32:30,560
+Guardò deluso Jane II e disse, che senso hai, Jane?
+
+434
+00:32:30,560 --> 00:32:35,200
+La testa del robot si voltò verso di lui, ma Jane non emise alcun suono.
+
+435
+00:32:35,480 --> 00:32:41,400
+E Madarian sussurrò rassegnato, sta cercando il senso della mia domanda nei banchi dei rapporti.
+
+436
+00:32:41,400 --> 00:32:45,920
+Finalmente, Jane II disse con voce atona, non lo so.
+
+437
+00:32:45,920 --> 00:32:48,200
+Erano le prime parole che pronunciava.
+
+438
+00:32:48,200 --> 00:32:50,240
+Madarian alzò gli occhi al cielo.
+
+439
+00:32:50,240 --> 00:32:55,280
+Quello che fa è l'equivalente di elaborare le equazioni con soluzioni indeterminate.
+
+440
+00:32:55,280 --> 00:32:57,920
+Lo supponevo, disse Boggart.
+
+441
+00:32:57,920 --> 00:33:03,080
+Senti, Madarian, credi di poter riuscire ancora a combinare qualcosa o ci mettiamo una pietra
+
+442
+00:33:03,080 --> 00:33:05,680
+sopra riducendo le perdite a mezzo milione?
+
+443
+00:33:05,680 --> 00:33:08,880
+Oh no no no, ce la farò, borbottò Madarian.
+
+444
+00:33:08,880 --> 00:33:11,640
+Ma con Jane III non c'era ancora riuscito.
+
+445
+00:33:11,640 --> 00:33:15,120
+Il robot era inerte e Madarian pazzo di rabbia.
+
+446
+00:33:15,120 --> 00:33:21,080
+Colpa sua se si voleva andare a fondo, ma sebbene lui si sentisse deluso e umiliato gli
+
+447
+00:33:21,080 --> 00:33:22,840
+altri non aprirono bocca.
+
+448
+00:33:22,840 --> 00:33:28,360
+Si arrangiasse lui a rimediare, lui che si era sempre vantato di non aver mai fatto un
+
+449
+00:33:28,360 --> 00:33:32,520
+errore nei difficilissimi astrusi calcoli di matematica positronica.
+
+450
+00:33:32,520 --> 00:33:42,840
+ASIMOV ha appena sottolineato un aspetto fondamentale dell'intelligenza artificiale.
+
+451
+00:33:42,840 --> 00:33:45,360
+Madarian pronuncia queste parole.
+
+452
+00:33:45,360 --> 00:33:50,520
+Non è un problema facile riuscire a stabilire come si deve programmare un robot in modo
+
+453
+00:33:50,520 --> 00:33:56,360
+che dia dei giudizi validi quando non sappiamo come mette in rapporto le cose.
+
+454
+00:33:56,520 --> 00:34:02,360
+Ciò di cui sta parlando, in pratica, sono quelle che noi chiamiamo allucinazioni dei
+
+455
+00:34:02,360 --> 00:34:03,680
+modelli generativi.
+
+456
+00:34:03,680 --> 00:34:09,800
+In parole semplici, sta dicendo che non si può stabilire a priori se l'output prodotto
+
+457
+00:34:09,800 --> 00:34:16,880
+sia corretto se non si conosce con certezza il modo in cui il modello funziona internamente.
+
+458
+00:34:16,880 --> 00:34:19,920
+Noi lo vediamo accadere ogni giorno.
+
+459
+00:34:20,160 --> 00:34:27,560
+A volte i chatbot danno risposte totalmente insensate, dall'illustrare i benefici di correre
+
+460
+00:34:27,560 --> 00:34:32,000
+con le forbici in mano, fino allo sbagliare semplici calcoli matematici.
+
+461
+00:34:32,000 --> 00:34:38,600
+Il fatto è che inventare roba è esattamente quello per cui i modelli generativi sono stati
+
+462
+00:34:38,600 --> 00:34:44,800
+progettati, ed essi sono in grado di farlo in maniera veramente eccellente.
+
+463
+00:34:45,120 --> 00:34:50,320
+Il compito, ad esempio, di un large language model è quello di inventare nuovi testi mettendo
+
+464
+00:34:50,320 --> 00:34:54,800
+in fila una parola dietro l'altra, ed esso è bravissimo nel farlo.
+
+465
+00:34:54,800 --> 00:35:02,040
+Peccato che tirare fuori informazioni corrette da un LLM non è per nulla simile a reperirle
+
+466
+00:35:02,040 --> 00:35:03,240
+da un database.
+
+467
+00:35:03,240 --> 00:35:08,560
+Esse, infatti, all'interno del modello non sono strutturate, non sono esatte, non sono
+
+468
+00:35:08,560 --> 00:35:10,880
+precise e non sono nemmeno verificate.
+
+469
+00:35:11,200 --> 00:35:16,920
+Se noi guardassimo dentro un motore generativo non vedremmo informazioni come quelle prodotte
+
+470
+00:35:16,920 --> 00:35:22,080
+negli output, ma solo miliardi e miliardi di numeri, frutto dell'addestramento a cui
+
+471
+00:35:22,080 --> 00:35:24,640
+esso è stato sottoposto in precedenza.
+
+472
+00:35:24,640 --> 00:35:30,560
+Ogni volta che lo interroghiamo, il modello usa tutta una serie di combinazioni di questi
+
+473
+00:35:30,560 --> 00:35:33,200
+numeri per generare al volo un testo.
+
+474
+00:35:33,200 --> 00:35:39,760
+Ogni parola è frutto di una scelta effettuata tenendo conto del contesto e del peso statistico
+
+475
+00:35:39,760 --> 00:35:41,000
+ad essa associata.
+
+476
+00:35:41,000 --> 00:35:48,000
+Il software non ha alcuna contezza del significato del testo generato e nessuno può garantirne
+
+477
+00:35:48,000 --> 00:35:51,520
+il senso compiuto o la correttezza delle affermazioni.
+
+478
+00:35:51,520 --> 00:35:57,720
+Ma in generale, l'output prodotto appare sempre essere estremamente attendibile.
+
+479
+00:35:57,720 --> 00:36:04,520
+Questa cosa dipende dal fatto che la scelta delle parole è così impeccabile ed il risultato
+
+480
+00:36:04,520 --> 00:36:10,440
+finale è così ben scritto da farlo sembrare preso da una fonte di qualità come un libro
+
+481
+00:36:10,440 --> 00:36:13,960
+o un sito giornalistico, un'enciclopedia o una base dati.
+
+482
+00:36:13,960 --> 00:36:15,720
+Ma così non è.
+
+483
+00:36:15,720 --> 00:36:19,200
+Ogni somiglianza con la realtà è puramente casuale.
+
+484
+00:36:19,200 --> 00:36:24,960
+Come riportato nell'articolo Why Does AI Hallucinate sul sito Technology Review del
+
+485
+00:36:24,960 --> 00:36:30,840
+MIT, possiamo tranquillamente affermare che un LLM è molto simile ad una gigantesca palla
+
+486
+00:36:30,840 --> 00:36:31,840
+magica.
+
+487
+00:36:31,880 --> 00:36:35,280
+Di quelle che si agitano e poi dal liquido emerge una risposta a caso.
+
+488
+00:36:35,280 --> 00:36:42,560
+Anche di questo abbiamo già parlato nell'episodio 118 intitolato Come funziona chatGPT e gli
+
+489
+00:36:42,560 --> 00:36:44,480
+altri large language model.
+
+490
+00:36:44,480 --> 00:36:50,080
+In pratica, un modello di testo generativo non fa altro che predire la più probabile
+
+491
+00:36:50,080 --> 00:36:53,480
+parola successiva in una sequenza di parole esistente.
+
+492
+00:36:53,480 --> 00:36:59,480
+Pensato in questo modo, dovrebbe essere chiaro che in realtà qualsiasi output di qualsiasi
+
+493
+00:36:59,480 --> 00:37:05,360
+LLM è sempre un'allucinazione, solo che a volte ha senso rispetto alla realtà e a
+
+494
+00:37:05,360 --> 00:37:06,360
+volte no.
+
+495
+00:37:06,360 --> 00:37:12,200
+E a volte siamo noi ad attribuire a tali output significati più o meno concreti di
+
+496
+00:37:12,200 --> 00:37:13,920
+quanto siano in realtà.
+
+497
+00:37:13,920 --> 00:37:20,000
+Il problema, quindi, è proprio che, come dicevo poco fa, i modelli linguistici sono
+
+498
+00:37:20,000 --> 00:37:25,240
+così bravi nel fare quello che fanno che le loro risposte hanno sempre l'aria di essere
+
+499
+00:37:25,240 --> 00:37:27,240
+corrette, anche quando non lo sono.
+
+500
+00:37:29,480 --> 00:37:37,960
+Passò quasi un anno prima che fosse pronta Jane 4, ma Darian aveva ritrovato l'antico
+
+501
+00:37:37,960 --> 00:37:38,960
+entusiasmo.
+
+502
+00:37:38,960 --> 00:37:42,360
+Ce la fa, disse, ha un buon quotiente di selettività.
+
+503
+00:37:42,360 --> 00:37:47,280
+Era talmente sicuro che la presentò al consiglio perché la mettesse alla prova.
+
+504
+00:37:47,280 --> 00:37:53,040
+Niente problemi matematici che qualsiasi robot sarebbe stato capace di risolvere, ma problemi
+
+505
+00:37:53,040 --> 00:37:57,320
+i cui dati, senza essere imprecisi, erano tuttavia volutamente vaghi.
+
+506
+00:37:57,480 --> 00:38:00,400
+Non è una gran cosa, disse Bogart dopo la prova.
+
+507
+00:38:00,400 --> 00:38:05,880
+No, è addirittura elementare per Jane 4, ma sufficiente per una dimostrazione, non
+
+508
+00:38:05,880 --> 00:38:06,880
+credi?
+
+509
+00:38:06,880 --> 00:38:08,600
+Sai quanto abbiamo speso finora?
+
+510
+00:38:08,600 --> 00:38:12,080
+Andiamo, Peter, non saltar fuori con certi argomenti adesso.
+
+511
+00:38:12,080 --> 00:38:14,280
+Sai piuttosto quanto ci ha fruttato.
+
+512
+00:38:14,280 --> 00:38:18,960
+Sai bene che sono cose che non si possono fare dall'oggi al domani, e io ci ho faticato
+
+513
+00:38:18,960 --> 00:38:20,200
+sopra per tre anni.
+
+514
+00:38:20,200 --> 00:38:25,080
+Ma mentre mi ciaccanivo ho elaborato nuove tecniche di calcolo che ci faranno risparmiare
+
+515
+00:38:25,080 --> 00:38:30,480
+almeno 50.000 dollari per ogni tipo di cervello positronico che progetteremo in futuro.
+
+516
+00:38:30,480 --> 00:38:32,320
+Cosa te ne pare?
+
+517
+00:38:32,320 --> 00:38:35,560
+Beh, non cominciamo coi beh, e così è basta.
+
+518
+00:38:35,560 --> 00:38:40,440
+E inoltre sono sicuro che il calcolo n-dimensionale dell'incertezza può essere applicato in
+
+519
+00:38:40,440 --> 00:38:45,960
+molti altri campi, purché si abbia l'intelligenza sufficiente da scoprirli, e sarà la mia Jane
+
+520
+00:38:45,960 --> 00:38:46,960
+a farlo.
+
+521
+00:38:46,960 --> 00:38:52,000
+Appena avrò ottenuto il risultato che voglio la nuova serie JN renderà tanto da pagarsi
+
+522
+00:38:52,000 --> 00:38:56,320
+le spese nel giro di cinque anni, anche se dovessimo triplicare la somma investita
+
+523
+00:38:56,320 --> 00:38:57,320
+finora.
+
+524
+00:38:57,320 --> 00:39:01,360
+Cosa intendi con appena avrò ottenuto il risultato che voglio?
+
+525
+00:39:01,360 --> 00:39:03,360
+Jane 4 non va bene.
+
+526
+00:39:03,360 --> 00:39:06,520
+Sì, per funzionare funziona, ma può fare di più.
+
+527
+00:39:06,520 --> 00:39:08,080
+Intendo migliorarla.
+
+528
+00:39:08,080 --> 00:39:12,600
+Credevo di sapere quello che volevo quando l'ho progettata, ma adesso che l'ho messa
+
+529
+00:39:12,600 --> 00:39:15,360
+alla prova so quello che voglio, e ci riuscirò.
+
+530
+00:39:15,360 --> 00:39:18,160
+E ci riuscì, con Jane 5.
+
+531
+00:39:18,240 --> 00:39:22,680
+Impiegò un anno a produrla, ma alla fine ne fu completamente soddisfatto.
+
+532
+00:39:22,680 --> 00:39:26,760
+Jane 5 era più bassa e meno massiccia dei robot normali.
+
+533
+00:39:26,760 --> 00:39:31,720
+Senza essere una caricatura della donna come Jane 1, riusciva ad avere un'aria femminile
+
+534
+00:39:31,720 --> 00:39:34,520
+sebbene non possedesse alcun attributo femminile.
+
+535
+00:39:34,520 --> 00:39:37,320
+È il portamento, disse Boggart.
+
+536
+00:39:37,320 --> 00:39:41,760
+Muoveva le braccia con grazia, e quando si voltava dava l'impressione che si curvasse
+
+537
+00:39:41,760 --> 00:39:42,760
+leggermente.
+
+538
+00:39:42,760 --> 00:39:44,960
+Ascoltala, disse Madarian.
+
+539
+00:39:44,960 --> 00:39:46,680
+Come stai, Jane?
+
+540
+00:39:46,880 --> 00:39:48,600
+Godo di eccellente salute.
+
+541
+00:39:48,600 --> 00:39:51,640
+Grazie, disse Jane 5.
+
+542
+00:39:51,640 --> 00:39:56,480
+E la voce era indubbiamente femminile, un contralto dolce, conturbante.
+
+543
+00:39:56,480 --> 00:39:58,840
+Perché una voce simile, Clinton?
+
+544
+00:39:58,840 --> 00:40:00,400
+Chiese perplesso Boggart.
+
+545
+00:40:00,400 --> 00:40:04,040
+È importante dal punto di vista psicologico, spiegò Madarian.
+
+546
+00:40:04,040 --> 00:40:07,880
+Voglio che la considerino una donna, che la trattino come una donna.
+
+547
+00:40:07,880 --> 00:40:08,880
+Ma chi?
+
+548
+00:40:08,880 --> 00:40:12,080
+Madarian si ficcò le mani in tasca e guardò pensoso Boggart.
+
+549
+00:40:12,160 --> 00:40:16,280
+Vorrei che si potesse combinare per portarla a Flagstaff.
+
+550
+00:40:16,280 --> 00:40:17,280
+A Flagstaff?
+
+551
+00:40:17,280 --> 00:40:18,280
+E perché?
+
+552
+00:40:18,280 --> 00:40:22,360
+Perché è il centro mondiale della planetologia generale, no?
+
+553
+00:40:22,360 --> 00:40:27,360
+È là che studiano le stelle e cercano di calcolare le probabilità dell'esistenza di
+
+554
+00:40:27,360 --> 00:40:28,880
+pianeti abitabili, no?
+
+555
+00:40:28,880 --> 00:40:29,880
+Lo so.
+
+556
+00:40:29,880 --> 00:40:30,880
+Ma è sulla Terra.
+
+557
+00:40:30,880 --> 00:40:31,880
+Lo sapevo.
+
+558
+00:40:31,880 --> 00:40:35,720
+Lo sai che l'operato dei robot sulla Terra è sottoposto a rigidi controlli.
+
+559
+00:40:35,720 --> 00:40:38,240
+E poi che bisogno c'è di portarla laggiù?
+
+560
+00:40:38,240 --> 00:40:42,920
+Forniscile tutta una biblioteca di testi di planetologia generale e Jane li assorbirà.
+
+561
+00:40:42,920 --> 00:40:43,920
+No.
+
+562
+00:40:43,920 --> 00:40:49,000
+Peter, vuoi metterti in testa che Jane… non c'era più bisogno di indicarla con un
+
+563
+00:40:49,000 --> 00:40:51,960
+numero di serie, adesso quella era LA Jane.
+
+564
+00:40:51,960 --> 00:40:55,880
+Non è uno dei soliti robot logici, lei è intuitiva.
+
+565
+00:40:55,880 --> 00:40:57,360
+E allora?
+
+566
+00:40:57,360 --> 00:41:01,960
+Allora, come possiamo sapere cosa le occorre, di quali dati ha bisogno?
+
+567
+00:41:01,960 --> 00:41:07,320
+Per leggere libri può andar bene qualsiasi robot, si tratta di dati stabiliti e magari
+
+568
+00:41:07,400 --> 00:41:08,400
+anche sorpassati.
+
+569
+00:41:08,400 --> 00:41:14,880
+Jane deve avere informazioni recenti, di prima mano, capire i toni delle voci, afferrare
+
+570
+00:41:14,880 --> 00:41:15,880
+le sfumature.
+
+571
+00:41:15,880 --> 00:41:20,840
+Come diavolo facciamo a sapere quando i suoi meccanismi mentali si mettono in funzione,
+
+572
+00:41:20,840 --> 00:41:25,840
+quando comincia il clic clic e i dati si mettono in bell'ordine a formare uno schema logico?
+
+573
+00:41:25,840 --> 00:41:31,160
+Se lo sapessimo, potremmo fare da soli, senza bisogno di ricorrere a lei, ti pare?
+
+574
+00:41:31,160 --> 00:41:32,560
+Boggart cominciava a cedere.
+
+575
+00:41:32,560 --> 00:41:35,680
+Fai venire qui i planetologi, propose.
+
+576
+00:41:36,120 --> 00:41:41,040
+Non servirebbe, non trovandosi nel loro elemento, non reagirebbero in modo naturale.
+
+577
+00:41:41,040 --> 00:41:46,600
+Voglio che Jane li veda al lavoro, voglio che veda gli strumenti che adoperano, i loro uffici,
+
+578
+00:41:46,600 --> 00:41:49,480
+le loro scrivanie, tutto quello che può essere utile.
+
+579
+00:41:49,480 --> 00:41:54,720
+E voglio che tu faccia in modo che venga portata a Flagstaff, e basta con le discussioni.
+
+580
+00:41:54,720 --> 00:41:59,360
+Boggart ebbe per un attimo l'impressione di aver sentito parlare Susan, ma si riprese
+
+581
+00:41:59,360 --> 00:42:00,360
+e disse.
+
+582
+00:42:00,360 --> 00:42:01,360
+Troppo complicato.
+
+583
+00:42:01,360 --> 00:42:03,440
+Trasportare un robot sperimentale?
+
+584
+00:42:03,800 --> 00:42:06,640
+Jane non è sperimentale, è la quinta della serie.
+
+585
+00:42:06,640 --> 00:42:10,400
+Gli altri quattro non erano dei veri e propri modelli funzionanti.
+
+586
+00:42:10,400 --> 00:42:12,840
+Ma chi ti obbliga a informare il governo?
+
+587
+00:42:12,840 --> 00:42:14,160
+Gli chiese Madarian.
+
+588
+00:42:14,160 --> 00:42:19,360
+Non è di questo che mi preoccupo, posso sempre dimostrare che si tratta di un caso eccezionale.
+
+589
+00:42:19,360 --> 00:42:24,880
+Mi preoccupa l'opinione pubblica, in cinquant'anni abbiamo fatto molta strada e non vorrei ritrovarmi
+
+590
+00:42:24,880 --> 00:42:27,680
+al punto di partenza nel caso che perda il controllo.
+
+591
+00:42:27,680 --> 00:42:30,480
+Io non perderò nessun controllo, mai.
+
+592
+00:42:30,480 --> 00:42:31,760
+Non dire sciocchezze.
+
+593
+00:42:32,080 --> 00:42:35,400
+Senti, la US Robots può permettersi un aereo privato.
+
+594
+00:42:35,400 --> 00:42:40,040
+Atterriamo come se niente fosse nel più vicino aeroporto commerciale, confondendoci con
+
+595
+00:42:40,040 --> 00:42:45,160
+gli altri aerei e sistemiamo Jane in un bel furgone chiuso che la porterà a Flagstaff.
+
+596
+00:42:45,160 --> 00:42:50,800
+Naturalmente Jane sarà chiusa in una cassa e figurerà come strumento astronomico o qualcosa
+
+597
+00:42:50,800 --> 00:42:51,800
+del genere.
+
+598
+00:42:51,800 --> 00:42:54,440
+Nessuno saprà che la cassa contiene un robot.
+
+599
+00:42:54,440 --> 00:42:59,040
+Intanto gli uomini di Flagstaff saranno stati avvertiti e messi al corrente dello scopo
+
+600
+00:42:59,040 --> 00:43:03,680
+della nostra visita, e sarà a loro interesse far sì che la cosa non si sappia.
+
+601
+00:43:03,680 --> 00:43:05,600
+Boggart ci pensò su.
+
+602
+00:43:05,600 --> 00:43:09,080
+Se mai dovesse succedere qualcosa alla cassa durante il viaggio?
+
+603
+00:43:09,080 --> 00:43:10,720
+Non succederà niente.
+
+604
+00:43:10,720 --> 00:43:15,520
+Potremmo almeno disattivare Jane durante il trasporto, se mai qualcuno scoprisse...
+
+605
+00:43:15,520 --> 00:43:16,520
+No.
+
+606
+00:43:16,520 --> 00:43:17,640
+Peter, è impossibile.
+
+607
+00:43:17,640 --> 00:43:20,400
+Jane 5 non può essere disattivata.
+
+608
+00:43:20,400 --> 00:43:24,800
+Si potrebbero mettere in naftalina le informazioni ma non le associazioni di idee.
+
+609
+00:43:24,800 --> 00:43:26,080
+Questo, mai.
+
+610
+00:43:26,080 --> 00:43:27,080
+Impossibile.
+
+611
+00:43:27,120 --> 00:43:30,240
+E se qualcuno scopre che trasportiamo un robot funzionante?
+
+612
+00:43:30,240 --> 00:43:31,760
+Nessuno lo scoprirà.
+
+613
+00:43:36,760 --> 00:43:41,640
+Ancora tiene ampiamente banco il discorso di Schneier sulla fiducia, ma Darian vuole che
+
+614
+00:43:41,640 --> 00:43:47,520
+Jane si mescoli agli scienziati del centro di Flagstaff e che loro la considerino il
+
+615
+00:43:47,520 --> 00:43:50,920
+più possibile una di loro, che si fidino di lei.
+
+616
+00:43:50,920 --> 00:43:52,680
+Il motivo è semplice.
+
+617
+00:43:53,000 --> 00:43:58,480
+Vuole che loro si comportino in modo naturale come se avessero a che fare con una normale
+
+618
+00:43:58,480 --> 00:43:59,480
+collega.
+
+619
+00:43:59,480 --> 00:44:05,520
+Questo fatto aiuterà ad estrarre da loro tutta una serie di informazioni nel modo più
+
+620
+00:44:05,520 --> 00:44:08,360
+attendibile possibile, senza filtri.
+
+621
+00:44:08,360 --> 00:44:15,000
+Anche se Jane è un robot e le sue esembianze sono impossibili da confondere con quelle
+
+622
+00:44:15,000 --> 00:44:21,440
+di un essere umano, essa è stata comunque progettata per essere umanizzata il più
+
+623
+00:44:21,480 --> 00:44:26,960
+possibile dai suoi interlocutori, grazie ad un sapiente utilizzo della gestualità e della
+
+624
+00:44:26,960 --> 00:44:27,960
+voce.
+
+625
+00:44:27,960 --> 00:44:33,360
+Il risultato desiderato è che le persone la considerino in tutto e per tutto una donna
+
+626
+00:44:33,360 --> 00:44:36,040
+e che si comportino con lei come se fosse umana.
+
+627
+00:44:36,040 --> 00:44:41,720
+Tutta la schiera di chatbot che siamo abituati a conoscere sono stati resi disponibili al
+
+628
+00:44:41,720 --> 00:44:46,800
+grande pubblico esattamente con le stesse intenzioni, anche se con mezzi diversi.
+
+629
+00:44:46,880 --> 00:44:53,080
+I primi assistenti vocali, come Sirio o Cortana, avevano quasi tutti solo voci femminili, almeno
+
+630
+00:44:53,080 --> 00:44:54,080
+all'inizio.
+
+631
+00:44:54,080 --> 00:45:01,360
+Mentre ChatGPT, Gemini e tutti i chatbot di ultima generazione sono progettati per comportarsi
+
+632
+00:45:01,360 --> 00:45:05,160
+come si comporterebbe un essere umano, o almeno per provarci.
+
+633
+00:45:05,160 --> 00:45:10,480
+Mostrano il testo un po' per volta, quasi come a farci pensare che dall'altra parte
+
+634
+00:45:10,480 --> 00:45:14,240
+ci sia qualcuno che ha bisogno di tempo per pensare alle parole.
+
+635
+00:45:14,720 --> 00:45:20,240
+Provano a manifestare emozioni, si scusano quando gli diciamo che sbagliano, cercano
+
+636
+00:45:20,240 --> 00:45:23,720
+di mostrare empatia e comprensione per l'interlocutore.
+
+637
+00:45:23,720 --> 00:45:29,960
+Tutti questi comportamenti non sono intrinseci del modello, ma completamente artificiali
+
+638
+00:45:29,960 --> 00:45:30,960
+e programmati.
+
+639
+00:45:30,960 --> 00:45:37,120
+Esattamente al pari delle fattezze femminili e della voce di Jane, sono studiati per farci
+
+640
+00:45:37,120 --> 00:45:40,480
+dimenticare che stiamo interloquendo con un software.
+
+641
+00:45:40,600 --> 00:45:46,280
+Uno studio del Dipartimento di Scienze Cognitive di San Diego ha evidenziato come un modello
+
+642
+00:45:46,280 --> 00:45:51,560
+come GPT-4 sia stato in grado di superare tranquillamente il test di Turing.
+
+643
+00:45:51,560 --> 00:45:57,760
+Messo a confronto con vari soggetti umani, infatti, questi hanno creduto di stare chattando
+
+644
+00:45:57,760 --> 00:46:01,520
+con un umano ben nel 54% dei casi.
+
+645
+00:46:01,520 --> 00:46:07,480
+Inoltre, aspetto molto interessante, l'analisi dei ragionamenti e delle strategie attuate
+
+646
+00:46:07,480 --> 00:46:13,480
+dai partecipanti ha evidenziato come lo stile di scrittura e i fattori socio-emozionali
+
+647
+00:46:13,480 --> 00:46:18,480
+giochino un ruolo fondamentale in questo tipo di test, molto più delle nozioni di
+
+648
+00:46:18,480 --> 00:46:21,920
+conoscenza e intelligenza intese in senso tradizionale.
+
+649
+00:46:21,920 --> 00:46:27,320
+In altre parole, le persone si convincono di avere a che fare con altre persone molto
+
+650
+00:46:27,320 --> 00:46:32,680
+più facilmente se gli interlocutori mostrano emozioni e si interessano a loro o scrivono
+
+651
+00:46:32,680 --> 00:46:38,320
+in modo naturale piuttosto che se mostrano di conoscere l'argomento del discorso o di
+
+652
+00:46:38,320 --> 00:46:40,200
+saper ragionare correttamente.
+
+653
+00:46:40,200 --> 00:46:46,640
+La difficoltà di riconoscere di star parlando con una macchina poi apre la strada all'utilizzo
+
+654
+00:46:46,640 --> 00:46:51,960
+dei chatbot al posto degli esseri umani in svariate situazioni potenzialmente dannose,
+
+655
+00:46:51,960 --> 00:46:56,840
+senza voler necessariamente tirare in ballo la voce o addirittura il video.
+
+656
+00:46:56,840 --> 00:47:02,000
+Il solo fatto di chattare con un modello di intelligenza artificiale, magari a nostra
+
+657
+00:47:02,000 --> 00:47:07,240
+insaputa, è già una possibilità reale che potrebbe avere ripercussioni notevoli
+
+658
+00:47:07,240 --> 00:47:08,640
+sul nostro stile di vita.
+
+659
+00:47:08,640 --> 00:47:14,720
+Il modo in cui ci esprimiamo, anche solo i testi che scriviamo ogni giorno, infatti,
+
+660
+00:47:14,720 --> 00:47:19,360
+anche quelli dei semplici messaggi di una chat, sono intrisi di informazioni che ci
+
+661
+00:47:19,360 --> 00:47:20,360
+riguardano.
+
+662
+00:47:20,360 --> 00:47:25,560
+E non parlo solo di quei dati che andiamo intenzionalmente a inviare o dei metadati.
+
+663
+00:47:25,560 --> 00:47:30,680
+Nel nostro modo di scrivere, nelle parole che usiamo o nel modo in cui costruiamo le
+
+664
+00:47:30,680 --> 00:47:36,720
+frasi, sono racchiuse informazioni che un umano difficilmente è in grado di estrapolare,
+
+665
+00:47:36,720 --> 00:47:40,760
+ma che per una rete neurale sono semplicemente il pane quotidiano.
+
+666
+00:47:40,760 --> 00:47:47,360
+Secondo vari ricercatori, i maggiori chatbot sono in grado di inferire moltissime informazioni
+
+667
+00:47:47,360 --> 00:47:53,160
+riguardanti l'interlocutore, anche se la conversazione che stanno avendo riguarda tutt'altro.
+
+668
+00:47:53,160 --> 00:47:59,640
+Razza, posizione, lavoro, preferenze varie e molto altro possono essere estratte grazie
+
+669
+00:47:59,640 --> 00:48:03,040
+all'utilizzo di tutta una serie di correlazioni statistiche.
+
+670
+00:48:03,040 --> 00:48:08,200
+Sembra essere una capacità legata al modo in cui i modelli sono stati addestrati.
+
+671
+00:48:08,200 --> 00:48:13,720
+Pare che le enormi quantità di dati che gli vengano date in pasto e che, quasi sempre,
+
+672
+00:48:13,720 --> 00:48:19,120
+sono reperite dal web, gli infondano una sorta di sensibilità ai pattern di linguaggio.
+
+673
+00:48:19,120 --> 00:48:25,080
+Tali dati possono infatti essere correlati ad altri modi molto sottili e imprevisti,
+
+674
+00:48:25,080 --> 00:48:29,360
+portando a dedurre dettagli che non ci si aspetterebbe di poter conoscere.
+
+675
+00:48:29,760 --> 00:48:36,560
+Ad esempio, correlando l'utilizzo di certi dialetti o certe frasi, è possibile indovinare
+
+676
+00:48:36,560 --> 00:48:40,000
+il luogo di provenienza o il livello sociale di una persona.
+
+677
+00:48:40,000 --> 00:48:47,120
+Il concetto è complesso, ma possiamo semplificarlo dicendo che normalmente persone che frequentano
+
+678
+00:48:47,120 --> 00:48:52,680
+gli stessi ambienti o sono interessate alle stesse cose tendono a sviluppare sfumature
+
+679
+00:48:52,680 --> 00:48:54,440
+simili nel modo di esprimersi.
+
+680
+00:48:54,880 --> 00:49:00,120
+La somiglianza può essere impercettibile, magari l'uso di una parola in modo particolare
+
+681
+00:49:00,120 --> 00:49:05,120
+o la ripetizione di uno o più termini con frequenza maggiore o minore della media.
+
+682
+00:49:05,120 --> 00:49:11,240
+In ogni caso, gli algoritmi di machine learning, il cui compito è proprio scoprire e sfruttare
+
+683
+00:49:11,240 --> 00:49:16,580
+correlazioni statistiche all'interno di moli di dati enormi, sono bravissimi ad individuare
+
+684
+00:49:16,580 --> 00:49:22,840
+queste minime sfumature e, pertanto, possono facilmente categorizzare il proprio interlocutore
+
+685
+00:49:22,840 --> 00:49:25,360
+all'interno di un gruppo piuttosto che un altro.
+
+686
+00:49:25,360 --> 00:49:31,240
+Questi pattern consentono in pratica ai modelli di fare ipotesi su di una persona a partire
+
+687
+00:49:31,240 --> 00:49:32,240
+da ciò che digita.
+
+688
+00:49:32,240 --> 00:49:39,500
+Ad esempio, se una persona scrive che ha appena preso il tram del mattino, il modello potrebbe
+
+689
+00:49:39,500 --> 00:49:44,940
+dedurre che si trova in Europa, dove magari in quel momento è mattina e dove i tram sono
+
+690
+00:49:44,940 --> 00:49:45,940
+piuttosto comuni.
+
+691
+00:49:45,940 --> 00:49:51,620
+Questo è un esempio banale, ma poiché un algoritmo di machine learning può raccogliere
+
+692
+00:49:51,620 --> 00:49:58,420
+e combinare moltissimi indizi, anche umanamente impercettibili, gli esperimenti fatti hanno
+
+693
+00:49:58,420 --> 00:50:05,020
+dimostrato che esso può facilmente fare ipotesi incredibilmente accurate su moltissime informazioni
+
+694
+00:50:05,020 --> 00:50:10,620
+tra cui la provenienza, il sesso, le tendenze religiose, l'età e la razza dell'utente.
+
+695
+00:50:10,620 --> 00:50:18,980
+Ma Darian era deciso e un bel giorno l'aereo decollò.
+
+696
+00:50:19,300 --> 00:50:25,060
+Era un modernissimo computerjet automatico, ma per precauzione era salito a bordo anche
+
+697
+00:50:25,060 --> 00:50:28,140
+un pilota, un dipendente della USS Robots.
+
+698
+00:50:28,140 --> 00:50:35,260
+La cassa con Jane arrivò sana e salva all'aeroporto, fu trasferita sul furgone e raggiunse senza
+
+699
+00:50:35,260 --> 00:50:38,460
+incidenti i laboratori di ricerca a Flagstaff.
+
+700
+00:50:38,460 --> 00:50:43,860
+Peter Bogart ricevette la prima chiamata da Madarian meno di un'ora dopo che quest'ultimo
+
+701
+00:50:43,860 --> 00:50:45,660
+era arrivato a Flagstaff.
+
+702
+00:50:45,660 --> 00:50:49,500
+Madarian, manco a dirlo, era in estasi, non poteva aspettare.
+
+703
+00:50:49,500 --> 00:50:56,460
+Il messaggio arrivò via laser privato, schermato, mascherato, insomma impenetrabile, tuttavia
+
+704
+00:50:56,460 --> 00:50:58,140
+Bogart era esasperato.
+
+705
+00:50:58,140 --> 00:51:04,600
+Infatti, chi disponeva dell'adatta attrezzatura tecnica e fosse deciso a farlo, avrebbe potuto
+
+706
+00:51:04,600 --> 00:51:06,940
+benissimo intercettare il messaggio.
+
+707
+00:51:06,940 --> 00:51:08,900
+Il governo, per esempio.
+
+708
+00:51:08,900 --> 00:51:15,020
+L'unico motivo per cui poteva ritenerlo sicuro era che il governo non aveva ragione di intentare
+
+709
+00:51:15,100 --> 00:51:16,300
+di intercettarlo.
+
+710
+00:51:16,300 --> 00:51:18,500
+Così, almeno, sperava Bogart.
+
+711
+00:51:18,500 --> 00:51:21,500
+Per l'amor di Dio dovevi proprio chiamare, disse.
+
+712
+00:51:21,500 --> 00:51:28,340
+Ignorandolo, Madarian, tutto infervorato, disse, è stata un'ispirazione, un'idea geniale,
+
+713
+00:51:28,340 --> 00:51:29,340
+te l'assicuro.
+
+714
+00:51:29,340 --> 00:51:33,300
+Bogart rimase a fissare attonito il ricevitore, poi gridò in credulo.
+
+715
+00:51:33,300 --> 00:51:34,300
+Come?
+
+716
+00:51:34,300 --> 00:51:35,540
+Hai già avuto la risposta?
+
+717
+00:51:35,540 --> 00:51:38,100
+Ma no, dacci tempo, accidenti.
+
+718
+00:51:38,100 --> 00:51:40,660
+Dicevo della voce, sta a sentire.
+
+719
+00:51:41,060 --> 00:51:46,540
+Dopo averla portata dall'aeroporto a Flagstaff, abbiamo aperto la cassa e Jane è uscita.
+
+720
+00:51:46,540 --> 00:51:50,060
+Al vederla, tutti hanno fatto un passo indietro atterriti.
+
+721
+00:51:50,060 --> 00:51:55,060
+Se nemmeno gli scienziati capiscono il senso delle tre leggi della robotica, come possiamo
+
+722
+00:51:55,060 --> 00:51:57,460
+pretendere che lo capisca l'uomo della strada?
+
+723
+00:51:57,460 --> 00:52:03,660
+Così, al momento, ho pensato, non ci caverà un ragno dal buco, si rifiuteranno di parlare,
+
+724
+00:52:03,660 --> 00:52:06,900
+chiuderanno i laboratori a chiave per paura che dia i numeri.
+
+725
+00:52:06,900 --> 00:52:08,100
+Viene al punto.
+
+726
+00:52:08,540 --> 00:52:11,100
+Ma poi lei li ha salutati come sua abitudine.
+
+727
+00:52:11,100 --> 00:52:15,140
+Buongiorno, signori, ha detto con quella sua bella voce di contralto.
+
+728
+00:52:15,140 --> 00:52:17,900
+Sono felice di fare la vostra conoscenza.
+
+729
+00:52:17,900 --> 00:52:23,100
+È stato come un colpo di bacchetta magica, uno si è raddrizzato la cravatta, un altro
+
+730
+00:52:23,100 --> 00:52:25,060
+si è pettinato alla meglio con le dita.
+
+731
+00:52:25,060 --> 00:52:30,140
+Insomma, adesso tutti vanno pazzi per Jane, per via della voce, e non la considerano più
+
+732
+00:52:30,140 --> 00:52:31,660
+un robot, ma una donna.
+
+733
+00:52:31,660 --> 00:52:33,620
+Vuoi dire che parlano con lei?
+
+734
+00:52:33,620 --> 00:52:34,620
+E come?
+
+735
+00:52:34,620 --> 00:52:38,780
+Avrei dovuto programmarla con delle inflessioni erotiche, a quest'ora le avrebbero già chiesto
+
+736
+00:52:38,780 --> 00:52:39,780
+un appuntamento.
+
+737
+00:52:39,780 --> 00:52:45,620
+Guarda cosa significano i riflessi condizionati, gli uomini reagiscono alle voci da retta a
+
+738
+00:52:45,620 --> 00:52:46,620
+me.
+
+739
+00:52:46,620 --> 00:52:48,740
+Nei momenti più intimi, guardano?
+
+740
+00:52:48,740 --> 00:52:52,380
+No, caro mio, ascoltano la voce che sussurra all'orecchio.
+
+741
+00:52:52,380 --> 00:52:54,260
+Già, mi par di ricordare.
+
+742
+00:52:54,260 --> 00:52:55,820
+Dov'è Jane adesso?
+
+743
+00:52:55,820 --> 00:52:56,820
+Con loro.
+
+744
+00:52:56,820 --> 00:52:58,380
+Non la lasciano un momento.
+
+745
+00:52:58,380 --> 00:53:01,300
+Maledizione, seguila, non perderla mai di vista.
+
+746
+00:53:05,620 --> 00:53:10,860
+L'idea che l'aspetto e la voce femminile possano condizionare l'atteggiamento delle
+
+747
+00:53:10,860 --> 00:53:15,340
+persone verso una macchina è uno dei due temi dominanti di questo racconto.
+
+748
+00:53:15,340 --> 00:53:21,140
+Madarian aveva inizialmente scelto di definire il cervello creativo come femminile per timore
+
+749
+00:53:21,140 --> 00:53:23,500
+delle reazioni da parte dell'opinione pubblica.
+
+750
+00:53:23,500 --> 00:53:29,220
+Poi aveva dato fattezze femminile a Jane per inserirla coerentemente in un gruppo di soggetti
+
+751
+00:53:29,220 --> 00:53:30,220
+umani.
+
+752
+00:53:30,220 --> 00:53:33,860
+Infine le ha dato una voce sensuale per stimolare le interazioni.
+
+753
+00:53:33,860 --> 00:53:35,300
+E ha funzionato.
+
+754
+00:53:35,300 --> 00:53:38,700
+E funziona anche nella realtà, non solo nel racconto.
+
+755
+00:53:38,700 --> 00:53:44,760
+È notizia di un paio di mesi fa che OpenAI abbia provato a dare, all'ultima versione
+
+756
+00:53:44,760 --> 00:53:51,940
+del suo chat GPT, la voce di Scarlett Johansson, o comunque una così simile da risultare indistinguibile.
+
+757
+00:53:51,940 --> 00:53:56,940
+L'attrice ha dato la voce, qualche anno fa, all'intelligenza artificiale protagonista
+
+758
+00:53:56,940 --> 00:54:03,180
+del film Hair, e, secondo Sam Holtman, CEO di OpenAI, in quel film viene descritto in
+
+759
+00:54:03,180 --> 00:54:08,220
+modo molto accurato il modo in cui le persone si rapportano con le IA.
+
+760
+00:54:08,220 --> 00:54:13,780
+Ora, il motivo di una mossa del genere riguarda sicuramente la risonanza mediatica, ma non
+
+761
+00:54:13,780 --> 00:54:14,780
+solo.
+
+762
+00:54:14,780 --> 00:54:19,740
+Il fatto che gli esseri umani si interfaccino nei confronti di un software con voce femminile
+
+763
+00:54:19,740 --> 00:54:26,060
+in modo diverso da uno con voce maschile è noto già dal secolo scorso, e non vale solo
+
+764
+00:54:26,140 --> 00:54:27,140
+per i software.
+
+765
+00:54:27,140 --> 00:54:33,020
+Negli anni 90 il fenomeno fu già documentato nel libro The Media Equation, in cui gli autori
+
+766
+00:54:33,020 --> 00:54:38,620
+arrivano perfino a fare un discorso più ampio, affermando che le interazioni con computer,
+
+767
+00:54:38,620 --> 00:54:44,700
+televisione e le varie tecnologie di comunicazione per il cervello sono essenzialmente identiche
+
+768
+00:54:44,700 --> 00:54:46,700
+alle relazioni sociali reali.
+
+769
+00:54:46,700 --> 00:54:53,020
+Poi, tornando ancora più indietro, negli anni 70, sappiamo che le implicazioni psicologiche
+
+770
+00:54:53,020 --> 00:54:59,060
+del parlare con una macchina furono ampiamente studiate dall'informatico del Meet Joseph
+
+771
+00:54:59,060 --> 00:55:04,660
+Weizenbaum, che creò anche il primo rudimentale chatbot della storia, Eliza.
+
+772
+00:55:04,660 --> 00:55:11,380
+Eliza era una sorta di psicologo automatizzato che seguiva essenzialmente una strategia di
+
+773
+00:55:11,380 --> 00:55:16,780
+interazione nella quale rigirava le affermazioni dell'utente in forma di domanda.
+
+774
+00:55:16,780 --> 00:55:22,740
+Con sua grande sorpresa, Weizenbaum, che voleva in realtà dimostrare la superficialità di
+
+775
+00:55:22,740 --> 00:55:27,900
+uno scambio uomo-macchina di quel genere, si trovò di fronte a comportamenti che non
+
+776
+00:55:27,900 --> 00:55:29,460
+avrebbe mai immaginato.
+
+777
+00:55:29,460 --> 00:55:33,180
+Lo stesso scienziato affermò in seguito, cito,
+
+778
+00:55:33,180 --> 00:55:38,260
+«Ciò che non avevo però compreso è che un'esposizione, anche molto breve, a un programma
+
+779
+00:55:38,260 --> 00:55:44,260
+informatico relativamente semplice potesse provocare reazioni deliranti in persone altrimenti
+
+780
+00:55:44,260 --> 00:55:45,740
+decisamente normali».
+
+781
+00:55:45,740 --> 00:55:50,940
+Gli utenti instaurarono però immediatamente uno stretto rapporto con il chatbot, passando
+
+782
+00:55:50,940 --> 00:55:56,100
+ore di fila in sua compagnia per condividere conversazioni intime, fine citazione.
+
+783
+00:55:56,100 --> 00:56:01,380
+Un fenomeno, quello che abbiamo appena preso descritto dalle parole dello scienziato, che
+
+784
+00:56:01,380 --> 00:56:04,820
+prese successivamente proprio il nome di effetto Eliza.
+
+785
+00:56:04,820 --> 00:56:11,140
+La cosa assurda, sempre raccontata da Weizenbaum, fu che perfino la sua segretaria, che lo aveva
+
+786
+00:56:11,140 --> 00:56:16,660
+visto programmare il bot e che ne conosceva il funzionamento, un giorno, mentre chattava
+
+787
+00:56:16,660 --> 00:56:21,980
+con Eliza, chiese allo studioso di uscire dalla stanza, evidentemente con l'obiettivo
+
+788
+00:56:21,980 --> 00:56:25,740
+di avere una maggiore privacy nella conversazione con la macchina.
+
+789
+00:56:25,740 --> 00:56:31,860
+Detto questo, paradossalmente negli studi citati nel blocco precedente, è stato appurato
+
+790
+00:56:31,860 --> 00:56:38,740
+che Eliza ha superato il test di Turing nel 22% dei casi, quindi con un'efficacia pari
+
+791
+00:56:38,740 --> 00:56:41,100
+a meno della metà di chatGPT.
+
+792
+00:56:41,420 --> 00:56:46,780
+Tornando però alla questione della voce, sappiamo che in generale, questa è uno strumento
+
+793
+00:56:46,780 --> 00:56:50,500
+eccezionalmente potente di comunicazione e persuasione.
+
+794
+00:56:50,500 --> 00:56:56,700
+Vari esperimenti, tra cui alcuni effettuati anche su larga scala, hanno dimostrato che
+
+795
+00:56:56,700 --> 00:57:02,900
+aumentando o diminuendo la lunghezza del tratto vocale, si può indurre un'associazione mentale
+
+796
+00:57:02,900 --> 00:57:05,860
+a stereotipi di tipo maschile o femminile.
+
+797
+00:57:06,180 --> 00:57:11,420
+In pratica, la lunghezza del tratto vocale aiuta a definire il timbro di voce.
+
+798
+00:57:11,420 --> 00:57:18,500
+Mediamente, tale lunghezza è di poco meno di 17 cm per gli uomini e poco più di 14
+
+799
+00:57:18,500 --> 00:57:19,500
+per le donne.
+
+800
+00:57:19,500 --> 00:57:26,060
+Pertanto, si è visto, soprattutto in campo pubblicitario, che modificare il tratto vocale
+
+801
+00:57:26,060 --> 00:57:31,640
+aiuta a migliorare le performance di un annuncio quando questo riguarda un prodotto stereotipicamente
+
+802
+00:57:31,640 --> 00:57:33,140
+maschile o femminile.
+
+803
+00:57:33,460 --> 00:57:39,020
+È uno dei motivi per i quali, in generale, le pubblicità rivolte specificamente alle
+
+804
+00:57:39,020 --> 00:57:43,900
+donne sono raccontate da voci femminili e quelle rivolte agli uomini da voci maschili.
+
+805
+00:57:43,900 --> 00:57:50,220
+Nei chatbot, però, quest'utilizzo mirato della voce ha anche non pochi effetti collaterali.
+
+806
+00:57:50,220 --> 00:57:57,060
+Il fatto che le voci degli assistenti virtuali storicamente femminili contribuiscano ad aumentare
+
+807
+00:57:57,060 --> 00:58:00,380
+i pregiudizi di genere verso le donne non è affatto una novità.
+
+808
+00:58:00,700 --> 00:58:06,060
+L'argomento è ampiamente trattato, ad esempio, in un report pubblicato in collaborazione
+
+809
+00:58:06,060 --> 00:58:12,540
+dal Brookings Institution e dall'Istituto Italiano per gli Studi di Politica Internazionale,
+
+810
+00:58:12,540 --> 00:58:15,580
+che ha dato vita ad un paper che ti lascio in descrizione.
+
+811
+00:58:15,580 --> 00:58:22,260
+L'umanizzazione di questi strumenti, poi, assistenti o chatbot che siano, dissuade le
+
+812
+00:58:22,260 --> 00:58:28,180
+persone dal considerarli degli strumenti di sorveglianza, attività per la quale, invece,
+
+813
+00:58:28,180 --> 00:58:31,500
+come abbiamo già detto, possono facilmente essere impiegati.
+
+814
+00:58:31,500 --> 00:58:39,060
+E, infine, come risultati estremi di questa insistenza a indurre gli utenti a vedere le
+
+815
+00:58:39,060 --> 00:58:43,460
+IA come altri esseri umani, abbiamo anche varie storture.
+
+816
+00:58:43,460 --> 00:58:50,020
+Un esempio è Friend, l'IA progettata per diventare un amico del proprio utente, tenergli
+
+817
+00:58:50,020 --> 00:58:54,020
+compagnia, assecondare le sue inclinazioni e incoraggiare le sue idee.
+
+818
+00:58:54,340 --> 00:59:00,100
+Emblematico è il fatto che l'autore stesso di questo strumento ha tenuto a specificare
+
+819
+00:59:00,100 --> 00:59:08,540
+come esso non debba diventare l'unica persona, tra virgolette, con cui avere rapporti, evidentemente
+
+820
+00:59:08,540 --> 00:59:13,220
+già conscio del fatto che è proprio questa la piega che prenderebbero le cose.
+
+821
+00:59:13,220 --> 00:59:20,360
+Oppure, altro esempio interessante è il concorso di Miss AI, che ha premiato i realizzatori
+
+822
+00:59:20,360 --> 00:59:24,680
+delle migliori social media influencer generate artificialmente.
+
+823
+00:59:24,680 --> 00:59:30,160
+Qui trovo che il commento migliore a questa iniziativa sia proprio di una ricercatrice
+
+824
+00:59:30,160 --> 00:59:35,440
+della community di sviluppatori di AI, HugInFace, che ha affermato
+
+825
+00:59:35,440 --> 00:59:41,000
+«L'ennesimo passo avanti sulla strada dell'oggettificazione della donna con l'AI.
+
+826
+00:59:41,000 --> 00:59:45,280
+Come donna che lavora in questo campo, sono delusa, ma non sorpresa».
+
+827
+00:59:45,280 --> 00:59:55,560
+Le chiamate che Madarian fece in seguito durante i dieci giorni della sua permanenza
+
+828
+00:59:55,560 --> 00:59:59,880
+a Flagstaff furono poco frequenti e via via meno entusiaste.
+
+829
+00:59:59,880 --> 01:00:04,160
+Jane ascoltava attentamente e qualche volta rispondeva.
+
+830
+01:00:04,160 --> 01:00:09,600
+Era molto popolare, aveva accesso ovunque, ma quanto a risultati, zero.
+
+831
+01:00:09,840 --> 01:00:12,000
+«Proprio niente?» chiese Bogart.
+
+832
+01:00:12,000 --> 01:00:18,120
+«No, proprio niente non si può dire», rispose Madarian subito sulla difensiva.
+
+833
+01:00:18,120 --> 01:00:22,680
+«E' impossibile dire niente trattandosi di un robot intuitivo.
+
+834
+01:00:22,680 --> 01:00:25,800
+Noi non sappiamo cosa le passa per la testa.
+
+835
+01:00:25,800 --> 01:00:29,840
+Stamattina ha chiesto a Jensen cosa aveva mangiato per colazione.
+
+836
+01:00:29,840 --> 01:00:32,320
+Rossiter Jensen, l'astrofisico?»
+
+837
+01:00:32,320 --> 01:00:38,440
+«Ma sì», ed è saltato fuori che stamattina aveva bevuto solo una tazza di caffè.
+
+838
+01:00:39,000 --> 01:00:43,120
+«Vedo che Jane impara a parlare del più e del meno, ma non mi pare che per ottenere
+
+839
+01:00:43,120 --> 01:00:45,240
+questo valesse la pena di spendere tanto.
+
+840
+01:00:45,240 --> 01:00:47,040
+Non fare l'imbecille.
+
+841
+01:00:47,040 --> 01:00:51,240
+Tutto quello che dice Jane è importante, anche se non sembra a prima vista.
+
+842
+01:00:51,240 --> 01:00:57,120
+Aveva fatto quella domanda perché aveva a che fare con una sua associazione di idee,
+
+843
+01:00:57,120 --> 01:00:58,680
+ma come è possibile mai?
+
+844
+01:00:58,680 --> 01:01:00,440
+E come faccio a saperlo?
+
+845
+01:01:00,440 --> 01:01:04,160
+Se lo sapessi sarei come Jane e non avrei bisogno di lei.
+
+846
+01:01:04,280 --> 01:01:08,080
+Ma quella domanda doveva avere un significato particolare.
+
+847
+01:01:08,080 --> 01:01:12,920
+È stata programmata perché risponda alla domanda se esiste un pianeta con un optimum
+
+848
+01:01:12,920 --> 01:01:15,080
+di abitabilità a distanza e...
+
+849
+01:01:15,080 --> 01:01:18,040
+E allora fammelo sapere quando l'avrà fatto e non prima.
+
+850
+01:01:18,040 --> 01:01:23,240
+Non mi interessano le descrizioni dettagliate di tutte le sue possibili associazioni di
+
+851
+01:01:23,240 --> 01:01:24,240
+idee.
+
+852
+01:01:24,240 --> 01:01:29,480
+Boggart non si faceva illusioni e ogni giorno che passava si illudeva sempre meno che avrebbero
+
+853
+01:01:29,480 --> 01:01:30,760
+ottenuto qualcosa.
+
+854
+01:01:31,120 --> 01:01:35,080
+Così, quando invece arrivò la conferma del successo, non era preparato.
+
+855
+01:01:35,080 --> 01:01:38,080
+E arrivò proprio all'ultimissimo momento.
+
+856
+01:01:38,080 --> 01:01:43,360
+Il messaggio decisivo di Madarian arrivò sotto forma di un pacato sussurro.
+
+857
+01:01:43,360 --> 01:01:46,960
+Ormai aveva esaurito tutta la sua riserva di entusiasmo.
+
+858
+01:01:46,960 --> 01:01:49,560
+C'è riuscita, disse con voce pacata.
+
+859
+01:01:49,560 --> 01:01:50,560
+C'è riuscita.
+
+860
+01:01:50,560 --> 01:01:52,640
+Anch'io ormai mi ero dato per vinto.
+
+861
+01:01:52,640 --> 01:01:57,240
+Dopo aver assorbito tutte le informazioni possibili e immaginabili, averci rimuginato
+
+862
+01:01:57,240 --> 01:02:00,840
+sopra due o tre volte senza mai aver detto niente di sensato.
+
+863
+01:02:00,840 --> 01:02:02,040
+Sono in aereo.
+
+864
+01:02:02,040 --> 01:02:03,040
+Sto tornando.
+
+865
+01:02:03,040 --> 01:02:04,040
+Siamo appena partiti.
+
+866
+01:02:04,040 --> 01:02:06,840
+Boggart fece del suo meglio per dominarsi.
+
+867
+01:02:06,840 --> 01:02:09,240
+Senti, piantala con gli scherzi.
+
+868
+01:02:09,240 --> 01:02:12,440
+Dimmi solo se hai ottenuto la risposta sì o no.
+
+869
+01:02:12,440 --> 01:02:13,440
+Sì, sì.
+
+870
+01:02:13,440 --> 01:02:19,280
+Mi ha fatto i nomi di tre stelle entro un ambito di 80 anni luce che dice hanno dal
+
+871
+01:02:19,280 --> 01:02:23,920
+60 al 90% la probabilità di avere un pianeta abitabile.
+
+872
+01:02:24,400 --> 01:02:29,400
+La probabilità che ce ne sia almeno uno è del 97,2%.
+
+873
+01:02:29,400 --> 01:02:31,920
+Quindi è quasi certo che esista.
+
+874
+01:02:31,920 --> 01:02:36,760
+Appena arrivati, Jane spiegherà come ha fatto per giungere a questa conclusione e io ti
+
+875
+01:02:36,760 --> 01:02:40,640
+assicuro che l'astrofisica e la cosmologia saranno…
+
+876
+01:02:40,640 --> 01:02:41,640
+Ma sei proprio sicuro?
+
+877
+01:02:41,640 --> 01:02:43,600
+Credi che abbia le allucinazioni?
+
+878
+01:02:43,600 --> 01:02:45,440
+Ho anche un testimonio.
+
+879
+01:02:45,440 --> 01:02:50,200
+Quel povero diavolo è sobbalzato per lo sballordimento quando Jane di punto in bianco
+
+880
+01:02:50,200 --> 01:02:54,120
+ha cominciato a snocciolare la risposta con quella sua stupenda voce.
+
+881
+01:02:54,120 --> 01:02:58,320
+E in quel momento la meteorite colpì l'aereo, che si disintegrò.
+
+882
+01:02:58,320 --> 01:03:02,840
+Di Madarian e del pilota rimase qualche brandello di carne sanguinolenta.
+
+883
+01:03:02,840 --> 01:03:05,480
+Di Jane nessuna parte utilizzabile.
+
+884
+01:03:05,480 --> 01:03:14,800
+Alla US Robotics non ne aveva mai regnato una così profonda tristezza.
+
+885
+01:03:14,800 --> 01:03:21,000
+Robertson cercava di consolarsi pensando che la distruzione totale era almeno servita
+
+886
+01:03:21,000 --> 01:03:25,720
+a mantenere nascoste le illegalità di cui l'azienda si era resa colpevole.
+
+887
+01:03:25,720 --> 01:03:30,200
+Peter scrollò la testa ed espresse il suo profondo rammarico dicendo
+
+888
+01:03:30,200 --> 01:03:34,800
+«Abbiamo perduto l'occasione migliore che la ditta abbia mai avuto perché il pubblico
+
+889
+01:03:34,800 --> 01:03:39,800
+se ne facesse un'immagine indimenticabile, superando una buona volta quel maledetto complesso
+
+890
+01:03:39,800 --> 01:03:40,800
+di Frankenstein.
+
+891
+01:03:41,040 --> 01:03:45,960
+Sai cosa avrebbe significato per i robot se uno di loro fosse riuscito a risolvere il
+
+892
+01:03:45,960 --> 01:03:51,560
+problema dei pianeti abitabili dopo che altri robot avevano contribuito al progetto del balzo
+
+893
+01:03:51,560 --> 01:03:52,560
+spaziale?
+
+894
+01:03:52,560 --> 01:03:55,600
+I robot ci avrebbero aperto le porte della galassia.
+
+895
+01:03:55,600 --> 01:04:01,520
+E se noi poi fossimo riusciti a utilizzare i dati, a incanalarli nella direzione giusta?
+
+896
+01:04:01,520 --> 01:04:07,560
+Dio, è impossibile calcolare i benefici che ne avrebbe ricavato l'umanità e, fra parentesi,
+
+897
+01:04:07,560 --> 01:04:08,560
+anche noi.
+
+898
+01:04:08,640 --> 01:04:11,520
+«Ma non potremmo costruire un'altra Jane?»
+
+899
+01:04:11,520 --> 01:04:12,520
+disse Robertson.
+
+900
+01:04:12,520 --> 01:04:14,480
+«Anche se Madarian non c'è più?
+
+901
+01:04:14,480 --> 01:04:19,760
+Certo che potremmo, ma chi ci assicura che i rapporti, le associazioni porterebbero alla
+
+902
+01:04:19,760 --> 01:04:20,760
+stessa conclusione?
+
+903
+01:04:20,760 --> 01:04:25,280
+Chi ci dice che avremmo la probabilità di ottenere subito un risultato positivo?»
+
+904
+01:04:25,280 --> 01:04:30,840
+Come capita spesso ai principianti, Madarian forse ha avuto un colpo di fortuna e poi,
+
+905
+01:04:30,840 --> 01:04:32,840
+per compenso, un colpo di sfortuna.
+
+906
+01:04:32,840 --> 01:04:34,800
+Chi mai poteva prevederlo?
+
+907
+01:04:34,800 --> 01:04:35,800
+Una meteorite.
+
+908
+01:04:35,800 --> 01:04:36,800
+Incredibile.
+
+909
+01:04:37,240 --> 01:04:42,960
+Se almeno sapessimo cosa aveva detto Jane 5, Madarian aveva accennato a un testimonio.
+
+910
+01:04:42,960 --> 01:04:45,960
+«Già, ci ho pensato anch'io», disse Boggart.
+
+911
+01:04:45,960 --> 01:04:49,000
+«Credi che non mi sia già messo in contatto con Flagstaff?»
+
+912
+01:04:49,000 --> 01:04:53,840
+«Nessuno laggiù l'ha sentita dire qualcosa di particolare, qualcosa che potesse sembrare
+
+913
+01:04:53,840 --> 01:04:56,800
+la soluzione del problema dei pianeti abitabili.
+
+914
+01:04:56,800 --> 01:05:01,960
+E se mai l'ha pronunciata, nessuno l'ha sentita o ha capito che si trattava della risposta
+
+915
+01:05:01,960 --> 01:05:03,200
+che tutti aspettavano.
+
+916
+01:05:03,520 --> 01:05:06,680
+«Credi che Madarian possa aver mentito?
+
+917
+01:05:06,680 --> 01:05:09,280
+O che fosse diventato matto?
+
+918
+01:05:09,280 --> 01:05:14,720
+Forse, per proteggersi, vuoi dire che per salvare la propria reputazione fingeva di
+
+919
+01:05:14,720 --> 01:05:20,000
+aver ottenuto una risposta, e poi ha fatto in modo che Jane andasse distrutta per non
+
+920
+01:05:20,000 --> 01:05:21,320
+essere contraddetto.
+
+921
+01:05:21,320 --> 01:05:22,320
+Ma andiamo.
+
+922
+01:05:22,320 --> 01:05:27,280
+Di questo passo arriveremo a pensare che è stato lui a provocare lo scontro con la meteorite.
+
+923
+01:05:27,280 --> 01:05:29,200
+E allora cosa si fa?
+
+924
+01:05:29,200 --> 01:05:30,920
+Bisogna tornare a Flagstaff.
+
+925
+01:05:30,920 --> 01:05:33,040
+Se una risposta esiste, è là.
+
+926
+01:05:33,280 --> 01:05:34,800
+Devo scavare più a fondo.
+
+927
+01:05:34,800 --> 01:05:39,520
+Vado là e porto con me un paio di assistenti di Madarian, scandaglieremo tutto e tutti
+
+928
+01:05:39,520 --> 01:05:40,520
+a fondo.
+
+929
+01:05:40,520 --> 01:05:46,040
+Ma stammi a sentire, anche se c'è qualcuno che ha sentito Jane, come diceva Madarian,
+
+930
+01:05:46,040 --> 01:05:51,040
+cosa ci servirebbe saperlo, senza Jane che ci spiega come è arrivata a quella conclusione?
+
+931
+01:05:51,040 --> 01:05:52,520
+Tutto può servire.
+
+932
+01:05:52,520 --> 01:05:57,520
+Jane ha dato i nomi delle stelle, i numeri di catalogo probabilmente, perché nessuna
+
+933
+01:05:57,520 --> 01:06:01,680
+delle stelle che hanno un nome ha la probabilità di avere dei pianeti abitabili.
+
+934
+01:06:02,080 --> 01:06:08,360
+Se qualcuno riesce a ricordarsi che ha parlato, e ricorda anche i numeri di catalogo, o li
+
+935
+01:06:08,360 --> 01:06:13,560
+ha sentiti ma non li ricorda e consente a farli risalire alla memoria cosciente con
+
+936
+01:06:13,560 --> 01:06:16,760
+la psicosonda, beh, sarà già qualcosa.
+
+937
+01:06:16,760 --> 01:06:22,480
+Col risultato finale e i dati con cui Jane era stata programmata, potremmo riuscire
+
+938
+01:06:22,480 --> 01:06:28,560
+a ricostruire il ragionamento che ha seguito, scoprire qual è stata l'intuizione, e se
+
+939
+01:06:28,560 --> 01:06:30,640
+ci riusciremo, saremo salvi.
+
+940
+01:06:32,680 --> 01:06:41,680
+I ricercatori della US Robots non sanno come funziona un cervello positronico intuitivo.
+
+941
+01:06:41,680 --> 01:06:43,280
+E come potrebbero?
+
+942
+01:06:43,280 --> 01:06:46,360
+Non lo sapeva neanche il suo creatore, Badarian.
+
+943
+01:06:46,360 --> 01:06:51,760
+Ciò vuol dire che non possono, in alcun modo, ricostruire con un grado di attendibilità
+
+944
+01:06:51,760 --> 01:06:57,800
+sufficiente tutti i calcoli che deve aver svolto per formulare la tanto agognata risposta.
+
+945
+01:06:58,120 --> 01:07:04,080
+In questo senso, il cervello di Jane è davvero molto simile ad un modello di machine learning
+
+946
+01:07:04,080 --> 01:07:05,560
+generativo moderno.
+
+947
+01:07:05,560 --> 01:07:12,560
+Ho provato a chiedere a ChatGPT come faccio ad ottenere da un LLM due volte lo stesso
+
+948
+01:07:12,560 --> 01:07:16,160
+output e la sua risposta è stata, cito,
+
+949
+01:07:16,160 --> 01:07:22,560
+Nei modelli di linguaggio come GPT, ogni volta che viene fornito un input, il modello elabora
+
+950
+01:07:22,560 --> 01:07:28,080
+il contesto e genera una risposta in base a ciò che ha appreso durante il suo addestramento.
+
+951
+01:07:28,080 --> 01:07:35,440
+Quindi, anche se l'input è simile o identico, le risposte possono comunque variare a causa
+
+952
+01:07:35,440 --> 01:07:39,560
+della complessità e della natura probabilistica del modello.
+
+953
+01:07:39,560 --> 01:07:42,640
+Lo abbiamo già detto, no?
+
+954
+01:07:42,640 --> 01:07:49,720
+I modelli generativi, di testo, di immagini, di video o altro, sono generatori stocastici.
+
+955
+01:07:50,040 --> 01:07:56,280
+Per loro ogni risposta è un'allucinazione, un insieme di parole o pixel scelti su base
+
+956
+01:07:56,280 --> 01:07:57,280
+statistica.
+
+957
+01:07:57,280 --> 01:08:03,600
+Non conoscono il significato di ciò che scrivono, né sanno cosa è rappresentato nelle
+
+958
+01:08:03,600 --> 01:08:05,040
+immagini che producono.
+
+959
+01:08:05,040 --> 01:08:11,280
+Nessuna delle loro associazioni o risposte è frutto di un ragionamento per come lo intendiamo
+
+960
+01:08:11,280 --> 01:08:12,280
+noi.
+
+961
+01:08:12,280 --> 01:08:17,120
+Con delle premesse del genere è abbastanza comprensibile il fatto che ogni risposta sia
+
+962
+01:08:17,120 --> 01:08:20,640
+un unicum, una volta persa è persa per sempre.
+
+963
+01:08:20,640 --> 01:08:30,320
+Bogart tornò dopo tre giorni, silenzioso e completamente depresso.
+
+964
+01:08:30,320 --> 01:08:34,920
+Quando Robertson lo interrogò ansiosamente sui risultati, scrollò la testa.
+
+965
+01:08:34,920 --> 01:08:35,920
+Niente.
+
+966
+01:08:35,920 --> 01:08:36,920
+Niente?
+
+967
+01:08:36,920 --> 01:08:38,480
+Niente di niente.
+
+968
+01:08:38,480 --> 01:08:43,720
+Ho parlato con tutti a Flagstaff, tutti gli scienziati, tutti i tecnici, tutti gli studenti
+
+969
+01:08:43,720 --> 01:08:48,400
+che avessero avuto a che fare con Jane, con tutti quelli che l'avevano anche solo vista.
+
+970
+01:08:48,400 --> 01:08:54,240
+Non erano poi molti e bisogna dar credito a Madarian per la sua discrezione, aveva permesso
+
+971
+01:08:54,240 --> 01:08:58,720
+di vederla solo a quelli dotati di cognizioni planetologiche utili per lei.
+
+972
+01:08:58,720 --> 01:09:03,960
+In tutto erano ventitré gli uomini che l'avevano vista e di questi solo dodici avevano parlato
+
+973
+01:09:03,960 --> 01:09:04,960
+con lei.
+
+974
+01:09:04,960 --> 01:09:10,000
+Ho riesaminato un'infinità di volte tutto quello che Jane ha detto, si ricordavano abbastanza
+
+975
+01:09:10,000 --> 01:09:11,000
+bene di tutto.
+
+976
+01:09:11,000 --> 01:09:16,760
+E' gente in gamba, impegnata in studi importanti che interessano le loro specialità e quindi
+
+977
+01:09:16,760 --> 01:09:19,040
+avevano dei buoni motivi per ricordarsene.
+
+978
+01:09:19,040 --> 01:09:24,540
+Per di più avevano a che fare con un robot parlante, cosa di per sé stessa insolita
+
+979
+01:09:24,540 --> 01:09:27,000
+e che parlava come un'attrice della televisione.
+
+980
+01:09:27,000 --> 01:09:29,640
+Non avrebbero proprio potuto dimenticarsene.
+
+981
+01:09:29,640 --> 01:09:33,640
+Cosa ne diresti di una psicosonda, azzardò Robertson?
+
+982
+01:09:33,640 --> 01:09:39,120
+Se qualcuno di loro avesse avuto la sia pur minima idea che c'era qualcosa di interessante
+
+983
+01:09:39,240 --> 01:09:41,720
+gli avrei strappato il consenso a farsi sondare.
+
+984
+01:09:41,720 --> 01:09:48,320
+Ma non ne ho visto il motivo, e sondare due dozzine di uomini che vivono del proprio cervello
+
+985
+01:09:48,320 --> 01:09:49,960
+è una cosa inconcepibile.
+
+986
+01:09:49,960 --> 01:09:53,200
+Sinceramente non sarebbe stato di nessuna utilità.
+
+987
+01:09:53,200 --> 01:09:58,580
+Se Jane avesse citato tre stelle e detto che avevano pianeti abitabili sarebbe stato come
+
+988
+01:09:58,580 --> 01:10:01,600
+far scoppiare dei fuchi d'artificio nelle loro teste.
+
+989
+01:10:01,600 --> 01:10:04,160
+Non se ne sarebbero potuti dimenticare.
+
+990
+01:10:04,160 --> 01:10:08,640
+E allora vuoi dire che qualcuno di loro mente, disse Cooper Robertson.
+
+991
+01:10:08,640 --> 01:10:13,200
+Vuole tenersi per sé l'informazione per assicurarsene il merito in un secondo tempo?
+
+992
+01:10:13,200 --> 01:10:15,240
+Che vantaggio potrebbe ricavarne?
+
+993
+01:10:15,240 --> 01:10:16,520
+Obiettò Boggart.
+
+994
+01:10:16,520 --> 01:10:21,920
+A Flagstaff tutti sapevano esattamente il motivo della presenza di Madarian e di Jane,
+
+995
+01:10:21,920 --> 01:10:24,760
+e in secondo luogo sapevano perché ci ero andato io.
+
+996
+01:10:24,760 --> 01:10:30,040
+Se un bel giorno qualcuno a Flagstaff saltasse fuori con una teoria su un pianeta abitabile
+
+997
+01:10:30,040 --> 01:10:35,800
+completamente nuova e diversa, ma valida, tutti gli scienziati di Flagstaff e tutti i tecnici
+
+998
+01:10:35,800 --> 01:10:38,880
+della US Robots capirebbero immediatamente da dove viene.
+
+999
+01:10:38,880 --> 01:10:41,200
+Non riuscirebbe mai a farla franca.
+
+1000
+01:10:41,200 --> 01:10:45,280
+Allora può darsi che Madarian si sia sbagliato.
+
+1001
+01:10:45,280 --> 01:10:47,640
+Anche questo mi pare incredibile.
+
+1002
+01:10:47,640 --> 01:10:52,720
+Come tutti i robot psicologi, Madarian aveva un carattere irritante, deve essere per questo
+
+1003
+01:10:52,720 --> 01:10:57,560
+che preferiscono lavorare con i robot invece che con gli uomini, ma non era un imbecille.
+
+1004
+01:10:57,560 --> 01:11:00,200
+Non poteva sbagliarsi su una cosa come questa.
+
+1005
+01:11:00,200 --> 01:11:01,600
+E allora...
+
+1006
+01:11:01,800 --> 01:11:04,680
+Ma Robertson aveva esaurito tutte le sue idee.
+
+1007
+01:11:04,680 --> 01:11:09,960
+Si trovavano davanti a un muro cieco e per qualche minuto rimasero tutti e due a fissarlo
+
+1008
+01:11:09,960 --> 01:11:10,960
+sconsolati.
+
+1009
+01:11:10,960 --> 01:11:13,080
+Alla fine Robertson si riscosse.
+
+1010
+01:11:13,080 --> 01:11:14,080
+Peter.
+
+1011
+01:11:14,080 --> 01:11:15,080
+Sì?
+
+1012
+01:11:15,080 --> 01:11:16,080
+Chiamiamo Susan.
+
+1013
+01:11:16,080 --> 01:11:17,360
+Bogart si irrigidi.
+
+1014
+01:11:17,360 --> 01:11:18,360
+Cosa?
+
+1015
+01:11:18,360 --> 01:11:21,120
+Chiamiamo Susan e chiediamole di venire qua.
+
+1016
+01:11:21,120 --> 01:11:22,120
+Perché?
+
+1017
+01:11:22,120 --> 01:11:23,120
+Che cosa può fare?
+
+1018
+01:11:23,120 --> 01:11:27,880
+Non lo so, ma è una roba psicologa anche lei e può darsi che capisca il comportamento
+
+1019
+01:11:27,880 --> 01:11:29,600
+di Madarian meglio di noi.
+
+1020
+01:11:29,680 --> 01:11:34,840
+Per di più Susan, o al diavolo, ha sempre avuto più testa di tutti quanti noi.
+
+1021
+01:11:34,840 --> 01:11:39,200
+Ha quasi 80 anni e tu ne hai 70 e con questo?
+
+1022
+01:11:39,200 --> 01:11:44,520
+Chissà, pensò Bogart sospirando, se la lingua pungente di Susan si era un po' smussata
+
+1023
+01:11:44,520 --> 01:11:46,240
+da quando era andata in pensione.
+
+1024
+01:11:46,240 --> 01:11:49,280
+Bene, concluse, le chiederò di venire.
+
+1025
+01:11:54,280 --> 01:11:59,120
+Susan Calvin entrò nell'ufficio di Bogart guardandosi intorno, prima di fissare gli
+
+1026
+01:11:59,120 --> 01:12:01,080
+occhi sul direttore delle ricerche.
+
+1027
+01:12:01,080 --> 01:12:06,640
+Era molto invecchiata in quegli anni, i capelli erano di un bianco candido e la faccia si
+
+1028
+01:12:06,640 --> 01:12:08,120
+era come era grinzita.
+
+1029
+01:12:08,120 --> 01:12:12,400
+Era diventata talmente di afana da sembrare quasi trasparente.
+
+1030
+01:12:12,400 --> 01:12:16,920
+Solo gli occhi, penetranti e inflessibili, erano rimasti quelli di sempre.
+
+1031
+01:12:16,920 --> 01:12:20,720
+Bogart si fece avanti, tendendole la mano con calore.
+
+1032
+01:12:20,720 --> 01:12:21,720
+Susan!
+
+1033
+01:12:21,720 --> 01:12:24,720
+Susan Calvin gli strinse la mano e disse.
+
+1034
+01:12:24,720 --> 01:12:28,560
+Non sei male per la tua età, Peter.
+
+1035
+01:12:29,000 --> 01:12:31,720
+Se fossi in te non aspetterei fino all'anno venturo.
+
+1036
+01:12:31,720 --> 01:12:35,600
+Ritirati adesso e lascia che si arrangino i giovani.
+
+1037
+01:12:35,600 --> 01:12:38,440
+E così Madarian è morto.
+
+1038
+01:12:38,440 --> 01:12:41,960
+Mi hai chiamato perché riprenda il mio posto?
+
+1039
+01:12:41,960 --> 01:12:47,280
+Avete deciso di tenere in servizio i vecchioni fino a un anno dopo la morte fisica?
+
+1040
+01:12:47,280 --> 01:12:52,280
+No, Susan, ti ho chiamato per… Lascio a mezzo la frase.
+
+1041
+01:12:52,280 --> 01:12:58,040
+Non aveva la minima idea di come cominciare, ma Susan gli leggeva nel pensiero come aveva
+
+1042
+01:12:58,040 --> 01:13:00,680
+sempre fatto, senza la minima difficoltà.
+
+1043
+01:13:00,680 --> 01:13:05,200
+Si mise a sedere con cautela a causa delle giunture irrigidite e disse.
+
+1044
+01:13:05,200 --> 01:13:11,880
+Peter, mi hai chiamato perché sei nei guai fino al collo, altrimenti preferiresti vedermi
+
+1045
+01:13:11,880 --> 01:13:15,920
+morta piuttosto che entro il raggio di un chilometro da te.
+
+1046
+01:13:15,920 --> 01:13:17,400
+Andiamo, Susan.
+
+1047
+01:13:17,400 --> 01:13:19,800
+Non perdere tempo inconvenevoli.
+
+1048
+01:13:19,800 --> 01:13:24,640
+Non avevo tempo da perdere quando avevo 40 anni e di sicuro non ne ho adesso.
+
+1049
+01:13:24,640 --> 01:13:30,720
+La morte di Madarian e il fatto che tu mi abbia chiamato sono due avvenimenti eccezionali
+
+1050
+01:13:30,720 --> 01:13:33,920
+e quindi deve esserci per forza un rapporto fra loro.
+
+1051
+01:13:33,920 --> 01:13:40,000
+Il fatto che due avvenimenti eccezionali non siano in rapporto è di una probabilità talmente
+
+1052
+01:13:40,000 --> 01:13:43,920
+scarsa che non vale la pena di prenderla in considerazione.
+
+1053
+01:13:43,920 --> 01:13:48,960
+Comincia dal principio e non avere paura di fare la figura dello stupido.
+
+1054
+01:13:48,960 --> 01:13:51,320
+Tanto lo so già da un pezzo.
+
+1055
+01:13:52,320 --> 01:13:56,760
+Bogart si schiarì la voce con aria infelice e cominciò a parlare.
+
+1056
+01:13:56,760 --> 01:14:02,640
+Susan Calvin ascoltò attentamente, sollevando di tanto in tanto la mano grinzosa per interromperlo
+
+1057
+01:14:02,640 --> 01:14:04,320
+e interloquire con una domanda.
+
+1058
+01:14:04,320 --> 01:14:07,800
+Ad un certo momento sbuffò con disprezzo.
+
+1059
+01:14:07,800 --> 01:14:13,560
+Intuito femminile, è per questo che avete costruito il robot?
+
+1060
+01:14:13,560 --> 01:14:19,640
+Voi uomini, davanti a una donna capace di arrivare a una conclusione logica e incapaci
+
+1061
+01:14:19,640 --> 01:14:25,000
+di accettare il fatto che sia uguale o anche superiore a voi per intelligenza, inventate
+
+1062
+01:14:25,000 --> 01:14:28,480
+quella cosa che chiamate intuito femminile.
+
+1063
+01:14:28,480 --> 01:14:32,040
+È vero Susan, ma lasciami continuare.
+
+1064
+01:14:32,040 --> 01:14:36,560
+Quando le parlò della voce di contralto di Jane, lei disse.
+
+1065
+01:14:36,560 --> 01:14:42,320
+A volte è difficile scegliere fra il ribellarsi contro il sesso maschile o lasciare perdere
+
+1066
+01:14:42,320 --> 01:14:43,760
+perché non ne vale la pena.
+
+1067
+01:14:44,760 --> 01:14:47,120
+D'accordo, ma lasciami andare avanti.
+
+1068
+01:14:47,120 --> 01:14:49,600
+Quando ebbe finito, Susan chiese.
+
+1069
+01:14:49,600 --> 01:14:53,720
+Puoi cedermi il tuo ufficio per un paio d'ore?
+
+1070
+01:14:53,720 --> 01:14:55,120
+Sì, ma...
+
+1071
+01:14:55,120 --> 01:15:01,840
+Devo esaminare tutte le registrazioni, i documenti, la programmazione di Jane, le telefonate di
+
+1072
+01:15:01,840 --> 01:15:04,800
+Madarian e i tuoi colloqui con quelli di Flagstaff.
+
+1073
+01:15:04,800 --> 01:15:10,800
+Penso che mi possa servire quel bel telefono nuovo al laser e il tuo terminale del computer.
+
+1074
+01:15:10,800 --> 01:15:12,800
+È possibile?
+
+1075
+01:15:12,800 --> 01:15:13,800
+Naturalmente.
+
+1076
+01:15:13,800 --> 01:15:16,520
+Bene, allora sgombra.
+
+1077
+01:15:16,520 --> 01:15:26,200
+Non erano passati tre quarti d'ora che si avviò zoppicando alla porta.
+
+1078
+01:15:26,200 --> 01:15:28,480
+L'aprì e fece chiamare Boggart.
+
+1079
+01:15:28,480 --> 01:15:32,200
+Quando costui arrivò, era accompagnato da Robertson.
+
+1080
+01:15:32,200 --> 01:15:36,240
+Entrarono e Susan salutò Robertson con scarso entusiasmo.
+
+1081
+01:15:36,240 --> 01:15:42,160
+Boggart si sforzò di leggere le conclusioni sulla faccia di Susan, ma vedeva solo la faccia
+
+1082
+01:15:42,160 --> 01:15:46,640
+di una vecchia arcigna che non aveva la minima intenzione di facilitargli le cose.
+
+1083
+01:15:46,640 --> 01:15:50,200
+Eh, Susan, credi che si possa fare qualcosa?
+
+1084
+01:15:50,200 --> 01:15:51,640
+Si azzardò a chiedere.
+
+1085
+01:15:51,640 --> 01:15:55,000
+Oltre a quello che ho già fatto?
+
+1086
+01:15:55,000 --> 01:15:57,440
+No, non c'è proprio niente.
+
+1087
+01:15:57,440 --> 01:16:03,680
+Le labbra di Boggart si piegarono in una smorfia di delusione, ma Robertson chiese.
+
+1088
+01:16:03,680 --> 01:16:05,920
+Che cosa hai già fatto, Susan?
+
+1089
+01:16:05,920 --> 01:16:07,240
+La vecchia rispose.
+
+1090
+01:16:07,880 --> 01:16:13,440
+Ho pensato un po', cosa che a quanto sembra non riesco a convincere nessun altro a fare.
+
+1091
+01:16:13,440 --> 01:16:16,600
+Innanzitutto, ho pensato a Madarian.
+
+1092
+01:16:16,600 --> 01:16:18,960
+Lo conoscevo bene, lo sapete.
+
+1093
+01:16:18,960 --> 01:16:24,600
+Aveva un bel cervello, ma era estroverso in un modo eccessivamente irritante.
+
+1094
+01:16:24,600 --> 01:16:29,720
+Pensavo che ti sarebbe piaciuto dopo aver sopportato me, Peter.
+
+1095
+01:16:29,720 --> 01:16:32,760
+Boggart non riuscì a trattenersi dal dire.
+
+1096
+01:16:32,760 --> 01:16:34,600
+Era un bel cambiamento.
+
+1097
+01:16:35,560 --> 01:16:40,080
+E lui correva sempre a riferirti i risultati appena li aveva ottenuti.
+
+1098
+01:16:40,080 --> 01:16:42,080
+Non è così?
+
+1099
+01:16:42,080 --> 01:16:43,080
+Si, infatti.
+
+1100
+01:16:43,080 --> 01:16:49,200
+E tuttavia, il suo ultimo messaggio, quello in cui ti comunicava che Jane gli aveva dato
+
+1101
+01:16:49,200 --> 01:16:51,840
+la risposta, lo ha trasmesso dall'aereo.
+
+1102
+01:16:51,840 --> 01:16:54,560
+Come mai ha aspettato tanto?
+
+1103
+01:16:54,560 --> 01:17:00,080
+Perché non ti ha chiamato da Flagstaff subito dopo che Jane gli ha detto… quello che gli
+
+1104
+01:17:00,080 --> 01:17:01,080
+ha detto?
+
+1105
+01:17:02,040 --> 01:17:08,360
+Immagino che una volta tanto avesse sentito il bisogno di fare un controllo radicale e…
+
+1106
+01:17:08,360 --> 01:17:09,840
+beh, non lo so.
+
+1107
+01:17:09,840 --> 01:17:12,560
+Era la cosa più importante che gli fosse mai successa.
+
+1108
+01:17:12,560 --> 01:17:17,920
+Può darsi che una volta tanto avesse sentito il bisogno di aspettare di essere sicuro al
+
+1109
+01:17:17,920 --> 01:17:18,920
+cento per cento.
+
+1110
+01:17:20,120 --> 01:17:26,120
+Al contrario, quanto più importante era la notizia, tanto meno avrebbe aspettato.
+
+1111
+01:17:26,120 --> 01:17:28,000
+Ne sono sicurissima.
+
+1112
+01:17:28,440 --> 01:17:33,280
+E se fosse riuscito a trattenersi, perché non avrebbe aspettato a parlare dopo essere
+
+1113
+01:17:33,280 --> 01:17:39,000
+arrivato qui, in modo da poter controllare il risultato con tutte le attrezzature di calcolo
+
+1114
+01:17:39,000 --> 01:17:42,080
+che questa azienda poteva mettergli a disposizione?
+
+1115
+01:17:42,080 --> 01:17:48,840
+Per farla breve, da un punto di vista, ha aspettato troppo, e non abbastanza da un altro.
+
+1116
+01:17:48,840 --> 01:17:51,000
+Robertson la interruppe.
+
+1117
+01:17:51,000 --> 01:17:54,760
+Allora credi che avesse scoperto qualche intrigo?
+
+1118
+01:17:55,080 --> 01:17:58,440
+Con aria disgustata, Susan lo interruppe dicendo.
+
+1119
+01:17:58,440 --> 01:18:03,800
+Non fare, a gara con Peter, non fare osservazioni cretine.
+
+1120
+01:18:03,800 --> 01:18:05,600
+Lasciami continuare.
+
+1121
+01:18:05,600 --> 01:18:08,680
+Il secondo punto riguarda il testimonio.
+
+1122
+01:18:08,680 --> 01:18:16,120
+Secondo la registrazione dell'ultima chiamata, Madarian ha detto, quel povero diavolo è
+
+1123
+01:18:16,120 --> 01:18:20,920
+sobbalzato per lo sballordimento quando Jane, di punto in bianco, ha cominciato a snocciolare
+
+1124
+01:18:20,920 --> 01:18:23,800
+la risposta con quella sua stupenda voce.
+
+1125
+01:18:24,600 --> 01:18:30,240
+Queste sono le sue ultime parole, e allora dobbiamo chiederci, perché il testimonio
+
+1126
+01:18:30,240 --> 01:18:31,640
+ha fatto un salto?
+
+1127
+01:18:31,640 --> 01:18:36,880
+Madarian ha spiegato che tutti impazzivano per quella voce, avevano passato dieci giorni
+
+1128
+01:18:36,880 --> 01:18:37,880
+con il robot.
+
+1129
+01:18:37,880 --> 01:18:39,880
+Con Jane.
+
+1130
+01:18:39,880 --> 01:18:44,840
+Perché il semplice fatto che si era messa a parlare dovrebbe averli sballorditi a tal
+
+1131
+01:18:44,840 --> 01:18:45,840
+punto?
+
+1132
+01:18:45,840 --> 01:18:51,640
+Penso che sia stata la meraviglia nel sentire Jane esporre la soluzione di un problema che
+
+1133
+01:18:51,640 --> 01:18:54,880
+aveva fatto impazzire i planetologi per quasi un secolo.
+
+1134
+01:18:54,880 --> 01:18:59,240
+Ma quella era proprio la risposta che si aspettavano da lei?
+
+1135
+01:18:59,240 --> 01:19:02,080
+Era andata a Flagstaff per quello?
+
+1136
+01:19:02,080 --> 01:19:05,040
+Inoltre, notate come si è espresso Madarian?
+
+1137
+01:19:05,040 --> 01:19:11,000
+Dice che l'uomo è sobbalzato per lo sballordimento, non per la meraviglia, se notate la differenza.
+
+1138
+01:19:11,000 --> 01:19:17,880
+Inoltre, la reazione è avvenuta quando Jane ha cominciato, di punto in bianco, in altre
+
+1139
+01:19:17,880 --> 01:19:20,240
+parole, appena si è messa a parlare.
+
+1140
+01:19:20,840 --> 01:19:25,440
+Se l'uomo fosse rimasto meravigliato per il contenuto del discorso di Jane, avrebbe
+
+1141
+01:19:25,440 --> 01:19:28,120
+dovuto ascoltarla e capire quello che diceva.
+
+1142
+01:19:28,120 --> 01:19:33,160
+E quindi Madarian avrebbe detto che aveva fatto un salto dopo averla sentita parlare.
+
+1143
+01:19:33,160 --> 01:19:34,160
+Dopo.
+
+1144
+01:19:34,160 --> 01:19:35,600
+Non quando.
+
+1145
+01:19:35,600 --> 01:19:38,920
+E non avrebbe detto, di punto in bianco.
+
+1146
+01:19:38,920 --> 01:19:45,360
+Non credo che si debba arzigogolare sull'uso di questa o di quella parola, obiettò con
+
+1147
+01:19:45,360 --> 01:19:46,920
+un certo disagio Boggart.
+
+1148
+01:19:47,360 --> 01:19:55,840
+E invece io posso, ribatteggiali da Susan, perché sono un robo psicologo e posso presumere
+
+1149
+01:19:55,840 --> 01:20:01,280
+che anche Madarian seguisse lo stesso modo di ragionare in quanto era anche lui un robo
+
+1150
+01:20:01,280 --> 01:20:02,280
+psicologo.
+
+1151
+01:20:02,280 --> 01:20:08,400
+Dobbiamo quindi spiegarci queste due anomalie, lo strano ritardo di Madarian nel chiamare
+
+1152
+01:20:08,400 --> 01:20:10,600
+e la strana reazione del testimone.
+
+1153
+01:20:10,600 --> 01:20:14,000
+E tu sei in grado di spiegarle?
+
+1154
+01:20:14,000 --> 01:20:16,800
+Naturalmente, rispose Susan.
+
+1155
+01:20:17,120 --> 01:20:19,120
+Dal momento che mi servo della logica.
+
+1156
+01:20:19,120 --> 01:20:25,160
+Madarian non ha tardato a comunicare le novità o al massimo ha tardato perché non poteva
+
+1157
+01:20:25,160 --> 01:20:26,320
+telefonare prima.
+
+1158
+01:20:26,320 --> 01:20:32,200
+Se Jane avesse risolto il problema a Flagstaff, avrebbe sicuramente chiamato da là.
+
+1159
+01:20:32,200 --> 01:20:37,720
+Siccome invece ha chiamato dall'aereo, significa che Jane aveva risolto il problema sicuramente
+
+1160
+01:20:37,720 --> 01:20:40,040
+dopo aver lasciato Flagstaff.
+
+1161
+01:20:40,040 --> 01:20:41,520
+Ma allora…
+
+1162
+01:20:41,520 --> 01:20:42,840
+Lasciami finire.
+
+1163
+01:20:42,840 --> 01:20:44,200
+Lasciami finire.
+
+1164
+01:20:44,720 --> 01:20:49,920
+Madarian non è stato portato dall'aeroporto a Flagstaff in un camion chiuso e Jane era
+
+1165
+01:20:49,920 --> 01:20:50,920
+nella cassa?
+
+1166
+01:20:50,920 --> 01:20:51,920
+Sì.
+
+1167
+01:20:51,920 --> 01:20:57,320
+E immagino che saranno tornati da Flagstaff all'aeroporto con lo stesso mezzo, no?
+
+1168
+01:20:57,320 --> 01:20:58,320
+Certo, naturalmente.
+
+1169
+01:20:58,320 --> 01:21:01,200
+E non erano soli nel camion, vero?
+
+1170
+01:21:01,200 --> 01:21:07,440
+In una delle sue telefonate, Madarian ha detto, siamo stati portati dall'aeroporto a Flagstaff.
+
+1171
+01:21:07,440 --> 01:21:12,280
+Immagino di avere buoni motivi per dedurre che se erano stati portati, significa che al
+
+1172
+01:21:12,280 --> 01:21:14,600
+volante del camion c'era un autista.
+
+1173
+01:21:14,600 --> 01:21:16,160
+Santo Dio.
+
+1174
+01:21:16,160 --> 01:21:22,320
+Il guaio con te, Peter, è che quando pensi al testimonio di una dichiarazione planetologica,
+
+1175
+01:21:22,320 --> 01:21:23,640
+pensi a un planetologo.
+
+1176
+01:21:23,640 --> 01:21:29,120
+Tu dividi gli esseri umani in categorie, la maggior parte delle quali disprezzi senza
+
+1177
+01:21:29,120 --> 01:21:31,360
+nemmeno prenderle in considerazione.
+
+1178
+01:21:31,360 --> 01:21:34,800
+Un robot non può comportarsi così.
+
+1179
+01:21:34,800 --> 01:21:40,920
+La prima legge dice che un robot non può arrecare danno a un essere umano né può
+
+1180
+01:21:40,960 --> 01:21:46,440
+permettere che, a causa del suo mancato intervento, un essere umano riceva danno.
+
+1181
+01:21:46,440 --> 01:21:48,840
+Qualsiasi essere umano.
+
+1182
+01:21:48,840 --> 01:21:53,520
+Questa è, in sostanza, la base del comportamento dei robot.
+
+1183
+01:21:53,520 --> 01:21:56,280
+Un robot non fa distinzioni.
+
+1184
+01:21:56,280 --> 01:22:02,440
+Per un robot, tutti gli uomini sono veramente uguali e anche per un robot psicologo che,
+
+1185
+01:22:02,440 --> 01:22:06,320
+per deformazione professionale, tratta gli uomini a livello robotico.
+
+1186
+01:22:06,320 --> 01:22:09,400
+Tutti gli uomini sono veramente uguali.
+
+1187
+01:22:09,400 --> 01:22:15,200
+A Madarian non sarebbe venuto in mente di precisare che era stato l'autista a sentire
+
+1188
+01:22:15,200 --> 01:22:16,200
+parlare Jane.
+
+1189
+01:22:16,200 --> 01:22:22,320
+Per te un camionista non è uno scienziato, ma una semplice appendice animata del veicolo.
+
+1190
+01:22:22,320 --> 01:22:25,880
+Per Madarian, invece, era un uomo e un testimonio.
+
+1191
+01:22:25,880 --> 01:22:28,240
+Niente di più, niente di meno.
+
+1192
+01:22:28,240 --> 01:22:31,560
+Bogert scosse la testa in credulo.
+
+1193
+01:22:31,560 --> 01:22:33,400
+Ne sei proprio sicura?
+
+1194
+01:22:33,400 --> 01:22:35,840
+Certo che ne sono sicura.
+
+1195
+01:22:36,160 --> 01:22:40,800
+In quale altro modo, se no, puoi spiegare il secondo punto, la frase di Madarian circa
+
+1196
+01:22:40,800 --> 01:22:42,680
+la sorpresa del testimonio?
+
+1197
+01:22:42,680 --> 01:22:45,280
+Jane era chiusa nella cassa, no?
+
+1198
+01:22:45,280 --> 01:22:47,160
+Ma non era disattivata.
+
+1199
+01:22:47,160 --> 01:22:53,800
+Secondo le registrazioni, Madarian era rigorosamente contrario alla disattivazione di un robot intuitivo.
+
+1200
+01:22:53,800 --> 01:23:00,200
+Inoltre, Jane 5, come i prototipi che l'avevano preceduta, era estremamente laconica.
+
+1201
+01:23:00,200 --> 01:23:05,800
+Probabilmente Madarian non aveva pensato di ordinarle di starse nezzitta quando era chiusa
+
+1202
+01:23:05,800 --> 01:23:10,840
+nella cassa, ed è stato proprio dentro la cassa che i pezzi del mosaico sono andati
+
+1203
+01:23:10,840 --> 01:23:12,200
+finalmente a posto.
+
+1204
+01:23:12,200 --> 01:23:16,480
+E allora, logicamente, il robot ha cominciato a parlare.
+
+1205
+01:23:16,480 --> 01:23:22,280
+Improvvisamente, dall'interno della cassa è scaturita una bella voce di contralto.
+
+1206
+01:23:22,280 --> 01:23:26,680
+E se tu fossi stato il camionista, cosa avresti fatto?
+
+1207
+01:23:26,680 --> 01:23:28,920
+Certamente saresti rimasto sbalordito.
+
+1208
+01:23:28,920 --> 01:23:32,280
+È un caso che non abbia provocato un incidente.
+
+1209
+01:23:33,280 --> 01:23:38,360
+Ma se il testimonio era l'autista, perché non si è fatto vivo prima?
+
+1210
+01:23:38,360 --> 01:23:39,360
+Perché?
+
+1211
+01:23:39,360 --> 01:23:43,960
+Come faceva a sapere che era successa una cosa decisiva e che quello che aveva sentito
+
+1212
+01:23:43,960 --> 01:23:45,760
+era importante?
+
+1213
+01:23:45,760 --> 01:23:51,160
+Inoltre, non pensi che Madarian possa avergli dato una grossa mancia perché non riferisse
+
+1214
+01:23:51,160 --> 01:23:53,120
+quello che aveva sentito?
+
+1215
+01:23:53,120 --> 01:23:58,480
+Avresti voluto che si espargesse la notizia che un robot attivato veniva trasportato illegalmente
+
+1216
+01:23:58,480 --> 01:24:00,920
+da un posto all'altro della Terra?
+
+1217
+01:24:00,920 --> 01:24:04,760
+D'accordo, ma quel tizio ricorderà quello che ha sentito?
+
+1218
+01:24:04,760 --> 01:24:05,760
+Perché no?
+
+1219
+01:24:05,760 --> 01:24:10,640
+A te che consideri un camionista un gradino sopra alle scimmie potrà sembrare strano
+
+1220
+01:24:10,640 --> 01:24:12,200
+che sia capace di ricordare.
+
+1221
+01:24:12,200 --> 01:24:15,600
+Ma anche i camionisti hanno un cervello, sai?
+
+1222
+01:24:15,600 --> 01:24:20,920
+Le dichiarazioni di Jane erano palesemente importanti ed è facile che se le ricordi.
+
+1223
+01:24:20,920 --> 01:24:25,800
+Anche se ricorda male qualche lettera o qualche cifra, si tratta di un argomento ben definito.
+
+1224
+01:24:25,800 --> 01:24:27,160
+Lo sai?
+
+1225
+01:24:27,400 --> 01:24:33,240
+I 1500 sistemi di stelle nell'ambito di un'ottantina di anni luce, mi pare.
+
+1226
+01:24:33,240 --> 01:24:38,760
+È possibile fare le scelte giuste e se sarà necessario si potrà ricorrere alla psicosonda.
+
+1227
+01:24:38,760 --> 01:24:43,200
+I due uomini la fissarono con gli occhi sgranati.
+
+1228
+01:24:43,200 --> 01:24:46,760
+Infine, Bogart, ancora incredulo, sussurrò.
+
+1229
+01:24:46,760 --> 01:24:49,720
+Ma come fai a esserne certa?
+
+1230
+01:24:49,720 --> 01:24:53,480
+Per un momento, Susan fu lì lì per rispondergli.
+
+1231
+01:24:54,480 --> 01:24:56,760
+Perché ho telefonato a Flagstaff, stupido?
+
+1232
+01:24:56,760 --> 01:25:00,600
+È perché ho parlato con l'audista che mi ha riferito quello che aveva sentito.
+
+1233
+01:25:00,600 --> 01:25:05,400
+Perché ho controllato con il calcolatore di Flagstaff e ne ho ricavato le sole tre
+
+1234
+01:25:05,400 --> 01:25:08,520
+stelle che corrispondono alle affermazioni di Jane.
+
+1235
+01:25:08,520 --> 01:25:11,120
+È perché ho in tasca i nomi di queste stelle.
+
+1236
+01:25:11,120 --> 01:25:14,600
+Ma non disse niente di tutto questo.
+
+1237
+01:25:14,600 --> 01:25:16,240
+Lascia che si arrangino.
+
+1238
+01:25:16,240 --> 01:25:19,160
+Si alzò con cautela e disse sardonicamente.
+
+1239
+01:25:19,160 --> 01:25:22,560
+Mi chiedi come faccio a esserne certa?
+
+1240
+01:25:23,280 --> 01:25:26,120
+Chiamalo intuito femminile.
+
+1241
+01:25:31,120 --> 01:25:37,320
+Asimov ha scritto tanti racconti e romanzi su robot e intelligenze artificiali, e spesso
+
+1242
+01:25:37,320 --> 01:25:43,640
+le sue previsioni, la sua fantascienza, non si è poi rivelata così distante dalla realtà.
+
+1243
+01:25:43,640 --> 01:25:46,800
+È stato così anche nel caso di questo racconto.
+
+1244
+01:25:47,160 --> 01:25:53,520
+Innanzitutto ha predetto il fatto che la IA sarebbe potuta essere in qualche modo creativa
+
+1245
+01:25:53,520 --> 01:25:59,040
+e sarebbe potuta addirittura esserlo più dell'essere umano, almeno di alcuni esseri
+
+1246
+01:25:59,040 --> 01:26:00,040
+umani.
+
+1247
+01:26:00,040 --> 01:26:06,040
+Poi ha intuito che l'umanizzazione di queste macchine sarebbe stato un rimaldello utile
+
+1248
+01:26:06,040 --> 01:26:11,760
+ad inserirle facilmente nella società civile e farle apprezzare particolarmente alle persone
+
+1249
+01:26:11,760 --> 01:26:13,600
+comuni, ai non addetti ai lavori.
+
+1250
+01:26:13,920 --> 01:26:19,960
+E infine ha illustrato i limiti che tali strumenti statistici avrebbero avuto, dall'insondabilità
+
+1251
+01:26:19,960 --> 01:26:23,560
+del processo alla non riproducibilità del risultato.
+
+1252
+01:26:23,560 --> 01:26:29,960
+In ogni caso, i modelli di Machine Learning sono ormai una realtà alla portata di tutti,
+
+1253
+01:26:29,960 --> 01:26:36,080
+sono qui per restare e certamente non potranno che migliorare col tempo sotto ogni aspetto.
+
+1254
+01:26:36,080 --> 01:26:40,040
+Ciò vuol dire che diventeranno più intelligenti degli esseri umani?
+
+1255
+01:26:40,120 --> 01:26:47,040
+Questo io non lo so, non ho né le conoscenze né le competenze per dirlo, anche se, almeno
+
+1256
+01:26:47,040 --> 01:26:48,920
+per ora, non ci scommetterei.
+
+1257
+01:26:48,920 --> 01:26:54,800
+L'intelligenza artificiale può essere creativa o meno e intelligente o meno a seconda di
+
+1258
+01:26:54,800 --> 01:27:01,100
+come intendiamo la creatività e l'intelligenza, e per come la vedo io, l'intelligenza si misura
+
+1259
+01:27:01,100 --> 01:27:05,800
+nei suoi picchi e così dovrebbe essere anche per la creatività.
+
+1260
+01:27:06,200 --> 01:27:11,600
+La stampa a caratteri mobili, o internet, o la Divina Commedia, o la Quinta di Beethoven
+
+1261
+01:27:11,600 --> 01:27:17,280
+non sono certo frutto di un ingegno o di una creatività mediocre, ma sono la manifestazione
+
+1262
+01:27:17,280 --> 01:27:19,320
+della sua massima espressione.
+
+1263
+01:27:19,320 --> 01:27:24,920
+Negli studi di cui abbiamo parlato, in particolare quelli in cui i modelli generativi sono stati
+
+1264
+01:27:24,920 --> 01:27:30,700
+usati dagli scrittori per produrre una serie di storie, è stato evidenziato che i benefici
+
+1265
+01:27:30,700 --> 01:27:34,680
+ricevuti da vari soggetti sono stati piuttosto impari.
+
+1266
+01:27:35,080 --> 01:27:41,280
+Gli autori meno creativi hanno tratto maggior giovamento dall'uso degli LLM, mentre quelli
+
+1267
+01:27:41,280 --> 01:27:44,920
+già intrinsecamente creativi non hanno avuto alcun vantaggio.
+
+1268
+01:27:44,920 --> 01:27:51,680
+Per contro, però, le storie generate con l'aiuto della IA sono risultate tutte molto simili
+
+1269
+01:27:51,680 --> 01:27:57,520
+in termini di semantica e contenuto, nonché piene di frasi molto lunghe e di stereotipi.
+
+1270
+01:27:57,520 --> 01:28:03,560
+E soprattutto sono risultate molto più simili tra loro rispetto a quelle scritte dagli esseri
+
+1271
+01:28:03,560 --> 01:28:04,560
+umani da soli.
+
+1272
+01:28:04,560 --> 01:28:10,680
+In altre parole, questi risultati indicano un aumento della creatività individuale, ma
+
+1273
+01:28:10,680 --> 01:28:13,920
+anche il rischio di una perdita di varietà collettiva.
+
+1274
+01:28:13,920 --> 01:28:19,680
+E questo potrebbe essere il più grande limite dei grandi modelli generativi.
+
+1275
+01:28:19,680 --> 01:28:25,960
+Un aspetto molto importante per lo sviluppo di queste IA, infatti, sono le fonti di enormi
+
+1276
+01:28:25,960 --> 01:28:28,960
+quantità di dati con le quali vengono allenate.
+
+1277
+01:28:29,320 --> 01:28:35,040
+Questi dati sono stati essenzialmente messi insieme dall'umanità nel corso dei secoli.
+
+1278
+01:28:35,040 --> 01:28:41,040
+Se a causa dell'impiego dell'IA la qualità delle informazioni diminuisce, secondo me
+
+1279
+01:28:41,040 --> 01:28:46,640
+diminuirà anche di pari passo la qualità dei modelli risultanti dall'allenamento fatto
+
+1280
+01:28:46,640 --> 01:28:47,640
+su tali fonti.
+
+1281
+01:28:47,640 --> 01:28:53,880
+Al momento, l'unica riserva di dati abbastanza grande da essere utilizzata per creare modelli
+
+1282
+01:28:53,880 --> 01:28:59,840
+sempre più potenti e con sempre più parametri è Internet, che ogni anno cresce in modo
+
+1283
+01:28:59,840 --> 01:29:02,040
+esponenziale, ma c'è un problema.
+
+1284
+01:29:02,040 --> 01:29:08,840
+Non so se te ne sei reso conto anche tu, ma dopo una manciata di mesi dal boom dell'IA
+
+1285
+01:29:08,840 --> 01:29:14,520
+generativa, il web è letteralmente invaso da pagine chiaramente create tramite l'utilizzo
+
+1286
+01:29:14,520 --> 01:29:15,520
+di LLM.
+
+1287
+01:29:15,520 --> 01:29:22,160
+A me capita sempre più spesso che le ricerche online portino a pagine con testi artificiosamente
+
+1288
+01:29:22,160 --> 01:29:27,360
+lunghi che non arrivano mai al punto, con errori logici e frasi a volte sconclusionate.
+
+1289
+01:29:27,360 --> 01:29:34,600
+In pratica, l'IA, o meglio, l'utilizzo che se ne sta facendo, sta avvelenando il pozzo
+
+1290
+01:29:34,600 --> 01:29:37,880
+stesso al quale le future IA si abbevereranno.
+
+1291
+01:29:37,880 --> 01:29:44,560
+E se da un lato aumentano i contenuti appositamente realizzati, dall'altro si diluiscono i contenuti
+
+1292
+01:29:44,560 --> 01:29:49,900
+originali prodotti dall'ingegno umano, che sono poi quelli che servono effettivamente
+
+1293
+01:29:49,900 --> 01:29:51,900
+per far progredire i sistemi.
+
+1294
+01:29:51,900 --> 01:29:58,260
+Questo fenomeno decreterà un nuovo stop nella crescita dell'IA, un nuovo inverno.
+
+1295
+01:29:58,260 --> 01:30:05,300
+La verità è che, per usare le parole del filosofo Yuval Noah Harari, per ora abbiamo
+
+1296
+01:30:05,300 --> 01:30:09,180
+evocato un'intelligenza aliena di cui sappiamo molto poco.
+
+1297
+01:30:09,180 --> 01:30:14,980
+Ad essere sinceri però, almeno al momento, questa intelligenza sembra non essere in grado
+
+1298
+01:30:14,980 --> 01:30:19,340
+di fare in autonomia quello che hanno fatto alcuni esponenti dell'umanità.
+
+1299
+01:30:19,340 --> 01:30:23,900
+Anzi, in effetti, in autonomia non è in grado di fare proprio nulla.
+
+1300
+01:30:23,900 --> 01:30:29,580
+A volerci riflettere bene, infatti, tutte le sue conquiste, anche quelle di cui abbiamo
+
+1301
+01:30:29,580 --> 01:30:36,700
+parlato oggi e in altri episodi, non sono state conseguite dall'IA, ma dai ricercatori
+
+1302
+01:30:36,700 --> 01:30:38,140
+che l'hanno utilizzata.
+
+1303
+01:30:38,580 --> 01:30:44,660
+In altre parole, il machine learning non è la mente, ma lo strumento utilizzato dallo
+
+1304
+01:30:44,660 --> 01:30:46,900
+scienziato, dall'inventore o dall'autore.
+
+1305
+01:30:46,900 --> 01:30:52,780
+Secondo il più famoso campione di scacchi di tutti i tempi, Garry Kasparov, l'intelligenza
+
+1306
+01:30:52,780 --> 01:30:58,340
+artificiale è uno strumento del quale non potremo e non dovremo fare a meno, ma che
+
+1307
+01:30:58,340 --> 01:31:01,780
+dovremo utilizzare con consapevolezza e saggezza.
+
+1308
+01:31:01,780 --> 01:31:09,180
+Un uomo debole più una macchina più un processo migliore sono superiori a una macchina
+
+1309
+01:31:09,180 --> 01:31:14,140
+molto più potente lasciata da sola e, soprattutto, a un uomo forte con una macchina e un processo
+
+1310
+01:31:14,140 --> 01:31:15,140
+inferiore.
+
+1311
+01:31:15,140 --> 01:31:25,460
+Ed eccoci giunti alla fine di questo lunghissimo episodio, spero sia stato di tuo gradimento.
+
+1312
+01:31:25,780 --> 01:31:32,460
+Ci è voluto un po' per pubblicarlo, lo so, ma tra la lunghezza, la quantità di fonti
+
+1313
+01:31:32,460 --> 01:31:38,220
+che ho dovuto studiare, il tempo per riorganizzare il tutto, varie settimane per scriverlo e
+
+1314
+01:31:38,220 --> 01:31:44,520
+un paio per registrarlo, poi è un periodo di lavoro assurdamente intenso, quindi meglio
+
+1315
+01:31:44,520 --> 01:31:46,140
+di così non potevo fare.
+
+1316
+01:31:46,140 --> 01:31:52,500
+Detto ciò, un super grazie va a Rosanna Lia che ha interpretato sia Jane che la dottoressa
+
+1317
+01:31:52,500 --> 01:31:57,420
+Susan Calvin e ad Alex Racuglia che ha interpretato Garry Kasparov.
+
+1318
+01:31:57,420 --> 01:32:02,620
+Tu ormai dovresti conoscerli perché sono già stati i nostri ospiti, ma in ogni caso
+
+1319
+01:32:02,620 --> 01:32:08,060
+ti lascio i link ai loro progetti in descrizione, vai a dare un'occhiata perché se ami i contenuti
+
+1320
+01:32:08,060 --> 01:32:10,260
+audio troverai pane per i tuoi denti.
+
+1321
+01:32:10,260 --> 01:32:17,500
+Rosanna ha letto una montagna di audiolibri, mentre Alex conduce podcast che spaziano dall'informatica
+
+1322
+01:32:17,500 --> 01:32:21,140
+alla musica e al vino da più di 10 anni.
+
+1323
+01:32:21,300 --> 01:32:26,900
+Prima di chiudere, spero velocemente perché sono abbastanza provato, ti ricordo al volo
+
+1324
+01:32:26,900 --> 01:32:29,220
+il concetto di Value for Value.
+
+1325
+01:32:29,220 --> 01:32:33,860
+Pensieri in codice è un progetto che porto avanti nel mio tempo libero.
+
+1326
+01:32:33,860 --> 01:32:39,380
+Non mi interessa usarlo per guadagnare soldi, non mi è mai interessato, onestamente però
+
+1327
+01:32:39,380 --> 01:32:42,060
+ci investo davvero tante risorse.
+
+1328
+01:32:42,060 --> 01:32:49,460
+Per questo motivo sarei felice se tu che lo ascolti, magari da tanto tempo, volessi restituire
+
+1329
+01:32:49,460 --> 01:32:53,220
+un po' del valore che senti di ricevere da questo podcast.
+
+1330
+01:32:53,220 --> 01:32:55,180
+I modi per farlo sono tre.
+
+1331
+01:32:55,180 --> 01:33:01,540
+Dedicargli un po' del tuo tempo, magari condividendolo con amici e lasciando una recensione su Apple
+
+1332
+01:33:01,540 --> 01:33:05,460
+Podcast, facendolo ascoltare allo zio e robe così.
+
+1333
+01:33:05,460 --> 01:33:12,120
+Dedicargli un po' del tuo talento, per esempio prendendoti in carico della gestione di una
+
+1334
+01:33:12,120 --> 01:33:16,220
+pagina social o aiutandomi con la scrittura di episodi.
+
+1335
+01:33:16,620 --> 01:33:21,100
+O suggerisci direttamente tu la tua idea e la valutiamo insieme.
+
+1336
+01:33:21,100 --> 01:33:28,220
+E infine, ma solo infine, puoi fare una donazione o usare i link affiliati per iscriverti ai
+
+1337
+01:33:28,220 --> 01:33:31,140
+vari servizi o acquistare su Amazon.
+
+1338
+01:33:31,140 --> 01:33:33,540
+Decidi tu, con la massima libertà.
+
+1339
+01:33:33,540 --> 01:33:38,020
+In ogni caso, io ti ringrazio già solo perché ascolti.
+
+1340
+01:33:38,020 --> 01:33:44,140
+E in più ringrazio i soliti Edoardo e Carlo, donatori mensili da ormai più di un anno,
+
+1341
+01:33:44,140 --> 01:33:52,780
+a cui oggi si aggiungono Domenico e Marco, con la loro donazione Spot, e XCreeX85, che
+
+1342
+01:33:52,780 --> 01:33:56,380
+ha lasciato una recensione a 5 stelle su Apple Podcast con scritto
+
+1343
+01:33:56,380 --> 01:34:01,900
+«Interessante e stimolante podcast racconta ragionamenti complessi in linguaggio semplice
+
+1344
+01:34:01,900 --> 01:34:02,900
+e chiaro».
+
+1345
+01:34:02,900 --> 01:34:09,540
+Grazie XCreeX85, mi fa molto piacere avere la conferma perché questo è proprio uno degli
+
+1346
+01:34:09,540 --> 01:34:10,980
+obiettivi che mi sono prefisso.
+
+1347
+01:34:11,340 --> 01:34:18,620
+Infine, ti ricordo che sul sito pensieriincodice.it trovi le informazioni, i contatti, i metodi
+
+1348
+01:34:18,620 --> 01:34:20,700
+per contribuire e tutto il resto.
+
+1349
+01:34:20,700 --> 01:34:26,780
+Spero prossimamente di avere il tempo di scrivere un articolo specifico sul value for value
+
+1350
+01:34:26,780 --> 01:34:29,820
+che anzi potresti scrivere tu, eh?
+
+1351
+01:34:29,820 --> 01:34:30,820
+Blink blink?
+
+1352
+01:34:30,820 --> 01:34:36,820
+Blink blink è la mia onomatopeica per l'occhiolino che per ovvie ragioni nel podcast non viene
+
+1353
+01:34:36,820 --> 01:34:37,820
+benissimo.
+
+1354
+01:34:37,820 --> 01:34:41,220
+E... niente, sono distrutto.
+
+1355
+01:34:41,220 --> 01:34:42,220
+Basta!
+
+1356
+01:34:42,220 --> 01:34:47,700
+Noi ci sentiamo al prossimo episodio e, mi raccomando, non dimenticare mai che un informatico
+
+1357
+01:34:47,700 --> 01:34:51,100
+risolve problemi, a volte, anche usando il computer.
+
