@@ -1,0 +1,2820 @@
+1
+00:00:00,500 --> 00:00:08,180
+ Finalmente siamo riusciti a farci sistemare parte della casa, nello specifico la parte in cui io solitamente registro.
+
+2
+00:00:08,180 --> 00:00:15,420
+ Quindi, finalmente, posso ridare a pensieri in codice la giusta qualità audio che secondo me merita.
+
+3
+00:00:15,420 --> 00:00:21,780
+ Dunque, iniziamo il 2025 con un episodio che avevo in mente di fare da parecchio,
+
+4
+00:00:21,780 --> 00:00:28,060
+ dato che l'argomento di cui parleremo salta fuori spesso nel gruppo Telegram del podcast.
+
+5
+00:00:28,060 --> 00:00:33,280
+ Come? Non conosci il gruppo Telegram di Pensieri in Codice? Male, molto male.
+
+6
+00:00:33,280 --> 00:00:41,120
+ Corri subito su pensierincodice.it e clicca sul link apposito, oppure circa Pensieri in Codice direttamente su Telegram.
+
+7
+00:00:41,120 --> 00:00:47,920
+ Fidati, ne vale la pena. Il gruppo è pieno di argomenti e persone interessanti, quindi fallo subito, mi raccomando.
+
+8
+00:00:47,920 --> 00:00:52,800
+ Ad ogni modo, dicevo che, periodicamente, nella community,
+
+9
+00:00:52,800 --> 00:00:57,580
+ il discorso ricade su un certo linguaggio di programmazione del quale tutti,
+
+10
+00:00:57,800 --> 00:00:59,460
+ o quasi, si lamentano.
+
+11
+00:00:59,460 --> 00:01:02,400
+ È orribile, fa schifo, non si può usare.
+
+12
+00:01:02,400 --> 00:01:10,820
+ Per un verso so che nel gruppo lo fanno apposta, perché sanno che è il linguaggio che uso per lavoro e sono dei rompiscatole.
+
+13
+00:01:10,820 --> 00:01:16,800
+ Ma, d'altra parte, so bene che là fuori c'è veramente tanta gente che lo odia,
+
+14
+00:01:16,800 --> 00:01:20,480
+ lo ritiene un problema e lo denigra ad ogni occasione.
+
+15
+00:01:20,480 --> 00:01:27,480
+ Per questo motivo, ho deciso di approfondire un po' la questione e fare un po' di riflessioni in stile pensieristico.
+
+16
+00:01:27,540 --> 00:01:28,380
+ Pensieri in codice.
+
+17
+00:01:28,380 --> 00:01:31,560
+ Quindi, in questo episodio parliamo di PHP.
+
+18
+00:01:31,560 --> 00:01:37,520
+ Ma non delle ultime novità o delle varie versioni, 8.3, 8.4, no.
+
+19
+00:01:37,520 --> 00:01:42,260
+ Oggi parliamo del perché tutti odiano PHP.
+
+20
+00:01:42,260 --> 00:01:50,700
+ Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici.
+
+21
+00:01:50,700 --> 00:01:52,180
+ Con Valerio Galano.
+
+22
+00:01:52,180 --> 00:01:59,220
+ Partiamo da un fatto.
+
+23
+00:01:59,220 --> 00:02:03,540
+ PHP è uno dei linguaggi di programmazione più odiati di sempre.
+
+24
+00:02:03,540 --> 00:02:10,540
+ Prova ad entrare in una stanza piena di programmatori e chiedere che cosa non va nel PHP.
+
+25
+00:02:10,540 --> 00:02:18,700
+ La maggior parte di loro si alzerà e inizierà ad elencarti una sfilza di ragioni per le quali il linguaggio è scadente,
+
+26
+00:02:18,700 --> 00:02:21,540
+ non andrebbe usato, addirittura andrebbe estirpato.
+
+27
+00:02:21,540 --> 00:02:30,100
+ PHP è un linguaggio caotico, le funzioni di base sono incoerenti.
+
+28
+00:02:30,100 --> 00:02:37,160
+ È troppo facile da usare, quindi tanti programmatori alle prime armi producono pessimo codice,
+
+29
+00:02:37,160 --> 00:02:42,920
+ non ha degli standard ben definiti, ha pessime performance, soffre di problemi di sicurezza.
+
+30
+00:02:42,920 --> 00:02:44,920
+ Ho mancato qualcosa?
+
+31
+00:02:44,920 --> 00:02:51,080
+ Probabilmente sì, ma in ogni caso sono abbastanza sicuro che queste siano un problema.
+
+32
+00:02:51,080 --> 00:02:56,200
+ Un esempio realistico delle critiche che normalmente vengono mosse a PHP.
+
+33
+00:02:56,200 --> 00:03:02,080
+ Sono tutti punti interessanti, certo, alcuni validi, altri meno.
+
+34
+00:03:02,080 --> 00:03:07,580
+ Ne potremmo discutere per ore senza arrivare ad una conclusione soddisfacente
+
+35
+00:03:07,580 --> 00:03:14,080
+ e probabilmente lo hanno già fatto tanti altri in modo più esaustivo di quanto potrei fare io.
+
+36
+00:03:14,080 --> 00:03:18,580
+ Quindi non mi interessa aggiungere altro rumore all'argomento.
+
+37
+00:03:18,580 --> 00:03:21,080
+ Ciò che invece vorrei fare oggi
+
+38
+00:03:21,080 --> 00:03:25,280
+ è provare a portare avanti un discorso un po' più ampio,
+
+39
+00:03:25,280 --> 00:03:32,580
+ provare ad analizzare e comprendere le radici di tutte queste motivazioni di odio verso il PHP
+
+40
+00:03:32,580 --> 00:03:36,580
+ e provare a contestualizzarle e discuterne.
+
+41
+00:03:36,580 --> 00:03:37,580
+ Ci stai?
+
+42
+00:03:37,580 --> 00:03:38,580
+ Iniziamo.
+
+43
+00:03:38,580 --> 00:03:47,080
+ Siamo nel 1994 e un programmatore danese di nome Rasmus Lerdorf
+
+44
+00:03:47,080 --> 00:03:50,620
+ sviluppa una piccola suite di strumenti software
+
+45
+00:03:50,620 --> 00:03:52,120
+ basata sul linguaggio C
+
+46
+00:03:52,120 --> 00:03:57,620
+ che gli serve per semplificare la gestione del proprio sito web personale.
+
+47
+00:03:57,620 --> 00:04:06,120
+ Il lavoro di Rasmus non è minimamente pensato per diventare un nuovo linguaggio di programmazione.
+
+48
+00:04:06,120 --> 00:04:12,120
+ È solo un espediente per soddisfare delle necessità che ha al momento.
+
+49
+00:04:12,120 --> 00:04:18,120
+ Non è stato accuratamente progettato né tantomeno realizzato guardando al futuro.
+
+50
+00:04:18,120 --> 00:04:19,620
+ Fatto sta che,
+
+51
+00:04:19,620 --> 00:04:21,120
+ dopo circa un anno,
+
+52
+00:04:21,120 --> 00:04:23,120
+ Rasmus decide,
+
+53
+00:04:23,120 --> 00:04:25,620
+ come facciamo in tanti anche oggi,
+
+54
+00:04:25,620 --> 00:04:30,620
+ di rilasciare gratuitamente il codice sorgente della sua suite
+
+55
+00:04:30,620 --> 00:04:33,620
+ sotto il nome di PHP Tools,
+
+56
+00:04:33,620 --> 00:04:37,120
+ che sta per Personal Home Page Tools.
+
+57
+00:04:37,120 --> 00:04:42,120
+ La funzionalità all'epoca è quella di tracciare le visite di un sito.
+
+58
+00:04:42,120 --> 00:04:43,120
+ In quel momento,
+
+59
+00:04:43,120 --> 00:04:47,620
+ il nome PHP viene soppiantato da FI,
+
+60
+00:04:47,620 --> 00:04:49,160
+ che sta per Forms,
+
+61
+00:04:49,160 --> 00:04:50,160
+ Interpreter,
+
+62
+00:04:50,160 --> 00:04:53,660
+ ma questa nuova nomenclatura non dura molto.
+
+63
+00:04:53,660 --> 00:04:55,160
+ Quello stesso anno,
+
+64
+00:04:55,160 --> 00:04:59,160
+ più precisamente nel settembre del 1995,
+
+65
+00:04:59,160 --> 00:05:06,160
+ il programmatore decide però di aggiungere alcune funzionalità che gli risultano comode,
+
+66
+00:05:06,160 --> 00:05:14,160
+ tra cui l'interpretazione delle variabili dei form e la sintassi utilizzabile all'interno di HTML.
+
+67
+00:05:14,160 --> 00:05:15,160
+ In quel momento,
+
+68
+00:05:15,160 --> 00:05:18,160
+ il nome PHP viene soppiantato da FI,
+
+69
+00:05:18,160 --> 00:05:20,160
+ che sta per Forms,
+
+70
+00:05:20,160 --> 00:05:21,160
+ Interpreter,
+
+71
+00:05:21,160 --> 00:05:25,160
+ ma questa nuova nomenclatura non dura molto.
+
+72
+00:05:25,160 --> 00:05:30,160
+ Un ulteriore rilascio effettuato nel mese successivo, infatti,
+
+73
+00:05:30,160 --> 00:05:33,160
+ riporta presto il nome a PHP,
+
+74
+00:05:33,160 --> 00:05:37,160
+ anche se con un significato leggermente diverso da quello iniziale,
+
+75
+00:05:37,160 --> 00:05:41,160
+ cioè Personal Home Page Construction Kit.
+
+76
+00:05:41,160 --> 00:05:42,160
+ Infine,
+
+77
+00:05:42,160 --> 00:05:47,160
+ quasi a voler ribadire la confusione e la crescita inaspettata del progetto,
+
+78
+00:05:47,160 --> 00:05:50,160
+ dopo circa un altro anno,
+
+79
+00:05:50,160 --> 00:05:53,160
+ a novembre del 1997,
+
+80
+00:05:53,160 --> 00:05:58,160
+ viene pubblicata la versione 2.0, stabile e completamente riscritta,
+
+81
+00:05:58,160 --> 00:06:01,160
+ con il nome di PHP-FI,
+
+82
+00:06:01,160 --> 00:06:04,160
+ tanto per non scontentare nessuno.
+
+83
+00:06:04,160 --> 00:06:10,160
+ Ora, se esaminassimo del codice sviluppato all'epoca con PHP-FI,
+
+84
+00:06:10,160 --> 00:06:16,160
+ e potremmo farlo guardando l'esempio riportato nella pagina ufficiale History of PHP,
+
+85
+00:06:16,160 --> 00:06:18,160
+ che trovi in descrizione,
+
+86
+00:06:18,160 --> 00:06:24,160
+ ci renderemmo facilmente conto che era poco più di un classico HTML
+
+87
+00:06:24,160 --> 00:06:27,160
+ con l'aggiunta di alcuni commenti speciali
+
+88
+00:06:27,160 --> 00:06:33,160
+ che fungevano da istruzioni condizionali o da interfaccia verso il database.
+
+89
+00:06:33,160 --> 00:06:38,160
+ Precursore, sì, ma lontano anni luce dal PHP moderno.
+
+90
+00:06:38,160 --> 00:06:43,160
+ La versione 3, che riporta il nome a semplicemente PHP,
+
+91
+00:06:43,160 --> 00:06:45,160
+ esce poi nel 1998.
+
+92
+00:06:45,160 --> 00:06:53,160
+ Nel 99 tutto il core viene riscritto per creare il nuovo motore Zend Engine,
+
+93
+00:06:53,160 --> 00:06:57,160
+ che nel 2000 fa funzionare la versione 4 di PHP.
+
+94
+00:06:57,160 --> 00:07:04,160
+ E ancora, nel 2004 c'è l'uscita di PHP 5, che si basa su Zend Engine 2.
+
+95
+00:07:04,160 --> 00:07:11,160
+ Poi inizia un periodo di stop nel quale gli sviluppatori lavorano a PHP 6,
+
+96
+00:07:11,160 --> 00:07:14,160
+ il quale non vedrà però mai la luce per via del caos,
+
+97
+00:07:14,160 --> 00:07:17,160
+ senza pari nel processo di sviluppo.
+
+98
+00:07:17,160 --> 00:07:21,160
+ Ed è solo nel 2015, dopo ben 11 anni,
+
+99
+00:07:21,160 --> 00:07:25,160
+ che finalmente esce il PHP 7,
+
+100
+00:07:25,160 --> 00:07:29,160
+ una pietra miliare nell'evoluzione di PHP.
+
+101
+00:07:29,160 --> 00:07:34,160
+ In tutta questa storia, nel 2003 Rasmus rilascia un'intervista
+
+102
+00:07:34,160 --> 00:07:38,160
+ nella quale chiarisce che a lui non piace affatto programmare.
+
+103
+00:07:38,160 --> 00:07:41,160
+ Lui voleva semplicemente riutilizzare del codice.
+
+104
+00:07:41,160 --> 00:07:43,160
+ L'intera evoluzione del linguaggio,
+
+105
+00:07:43,160 --> 00:07:47,160
+ gli è fondamentalmente sfuggita di mano
+
+106
+00:07:47,160 --> 00:07:49,160
+ e lui non aveva né l'intenzione,
+
+107
+00:07:49,160 --> 00:07:54,160
+ né le competenze per creare un linguaggio di programmazione da zero.
+
+108
+00:07:54,160 --> 00:07:58,160
+ In ogni caso, nel 2020 è uscito PHP 8,
+
+109
+00:07:58,160 --> 00:08:03,160
+ che di anno in anno è arrivato alla versione 8.3, poi 8.4
+
+110
+00:08:03,160 --> 00:08:10,160
+ e, come forse già saprai, è da un po' che si parla anche di PHP 9.
+
+111
+00:08:10,160 --> 00:08:12,160
+ Ma cosa è cambiato in tutto questo tempo?
+
+112
+00:08:12,160 --> 00:08:16,160
+ A cosa sono servite tutte queste versioni?
+
+113
+00:08:16,160 --> 00:08:18,160
+ Beh, semplice.
+
+114
+00:08:18,160 --> 00:08:22,160
+ Il linguaggio si è evoluto ed è enormemente migliorato
+
+115
+00:08:22,160 --> 00:08:25,160
+ sotto tantissimi punti di vista,
+
+116
+00:08:25,160 --> 00:08:29,160
+ eliminando progressivamente i suoi limiti tecnici
+
+117
+00:08:29,160 --> 00:08:35,160
+ e rincorrendo ed adeguandosi ai moderni linguaggi di programmazione del settore.
+
+118
+00:08:35,160 --> 00:08:41,160
+ Già PHP 7 era più veloce di Python o Ruby, ad esempio.
+
+119
+00:08:41,160 --> 00:08:47,160
+ Si poteva fare uso di tante funzionalità per la coerenza come la tipizzazione forte.
+
+120
+00:08:47,160 --> 00:08:52,160
+ Esistevano i parser statici di codice per aiutare gli sviluppatori
+
+121
+00:08:52,160 --> 00:09:00,160
+ e tanti framework come Zend o Laravel per dettare standard e best practice.
+
+122
+00:09:00,160 --> 00:09:03,160
+ Alla fine, dalla nascita di PHP 7,
+
+123
+00:09:03,160 --> 00:09:07,160
+ viene rilasciata più o meno una versione all'anno,
+
+124
+00:09:07,160 --> 00:09:10,160
+ con tante migliorie e funzionalità
+
+125
+00:09:10,160 --> 00:09:13,160
+ che rivaleggiano con quelle dei linguaggi concorrenti.
+
+126
+00:09:13,160 --> 00:09:18,160
+ Insomma, spero di essere riuscito a trasmetterti il concetto.
+
+127
+00:09:18,160 --> 00:09:23,160
+ Parliamo di un prodotto che introduce continue migliorie ed evoluzioni
+
+128
+00:09:23,160 --> 00:09:29,160
+ con una community solita e attiva e con una voglia di crescere e combattere.
+
+129
+00:09:29,160 --> 00:09:33,160
+ Il punto a cui voglio arrivare è che, secondo me,
+
+130
+00:09:33,160 --> 00:09:37,160
+ chi oggi dice che PHP è lento o è caotico
+
+131
+00:09:37,160 --> 00:09:39,160
+ o costringe a produrre solo spaghetti code
+
+132
+00:09:39,160 --> 00:09:43,160
+ semplicemente non sa di cosa sta parlando
+
+133
+00:09:43,160 --> 00:09:46,160
+ o ha informazioni vecchie al riguardo.
+
+134
+00:09:46,160 --> 00:09:53,160
+ Il fatto è che spesso tanti di quelli che criticano un linguaggio in generale
+
+135
+00:09:53,160 --> 00:09:57,160
+ in realtà o non lo hanno mai veramente utilizzato
+
+136
+00:09:57,160 --> 00:10:01,160
+ o lo hanno utilizzato in un passato abbastanza lontano
+
+137
+00:10:01,160 --> 00:10:08,160
+ oppure, se lo usano oggi, lo fanno nel modo sbagliato e ne sanno ben poco.
+
+138
+00:10:08,160 --> 00:10:11,160
+ Quindi, sempre secondo me,
+
+139
+00:10:11,160 --> 00:10:16,160
+ il primo motivo per cui PHP è così odiato da tanti
+
+140
+00:10:16,160 --> 00:10:20,160
+ è semplicemente perché non è abbastanza conosciuto.
+
+141
+00:10:20,160 --> 00:10:26,160
+ Con questo, ovviamente, non intendo che le persone non sanno cosa sia PHP.
+
+142
+00:10:26,160 --> 00:10:29,160
+ Qualsiasi programmatore lo conosce.
+
+143
+00:10:29,160 --> 00:10:33,160
+ Quel che voglio dire è che di questo linguaggio
+
+144
+00:10:33,160 --> 00:10:36,160
+ non vengono messi in evidenza i pregi nel modo giusto,
+
+145
+00:10:36,160 --> 00:10:42,160
+ ma si lascia fin troppo che siano gli utilizzatori a doverli scoprire e capire.
+
+146
+00:10:42,160 --> 00:10:47,160
+ Prova anche solo a fare un giro sul sito ufficiale php.net
+
+147
+00:10:47,160 --> 00:10:53,160
+ e vedrai che è chiaramente rimasto ad una impostazione di due decenni fa.
+
+148
+00:10:53,160 --> 00:10:56,160
+ Prova ad esplorare il manuale e ti renderai conto
+
+149
+00:10:56,160 --> 00:10:59,160
+ che non aiuta per nulla il lettore inesperto,
+
+150
+00:10:59,160 --> 00:11:04,160
+ ma dà per scontato che esso sappia già come funziona il linguaggio
+
+151
+00:11:04,160 --> 00:11:09,160
+ e sia solo in cerca della definizione di una qualche funzione specifica.
+
+152
+00:11:09,160 --> 00:11:12,160
+ Non c'è una sezione di formazione di base,
+
+153
+00:11:12,160 --> 00:11:17,160
+ come ad esempio per Node.js o Python o Ruby on Rails,
+
+154
+00:11:17,160 --> 00:11:21,160
+ che addirittura in home page ha un video introduttivo di 30 minuti.
+
+155
+00:11:21,160 --> 00:11:25,160
+ Mancano riferimenti a guide ufficiali per principianti
+
+156
+00:11:25,160 --> 00:11:28,160
+ o esempi dimostrativi da cui iniziare.
+
+157
+00:11:28,160 --> 00:11:33,160
+ Questa impostazione rispecchia appieno la filosofia di divulgazione di PHP.
+
+158
+00:11:33,160 --> 00:11:38,160
+ Qualcosa del tipo: ecco qui, questo è il linguaggio, ora fanne quello che vuoi.
+
+159
+00:11:38,160 --> 00:11:43,160
+ Ma parliamo di un metodo che forse funzionava 20 anni fa o anche di più,
+
+160
+00:11:43,160 --> 00:11:46,160
+ ma che oggi sicuramente non funziona più.
+
+161
+00:11:46,160 --> 00:11:52,160
+ La verità è che il linguaggio PHP si evolve e migliora in continuazione,
+
+162
+00:11:52,160 --> 00:11:54,160
+ ma la sua reputazione no.
+
+163
+00:11:54,160 --> 00:12:01,160
+ La fama di PHP 8.4 è rimasta fondamentalmente al pari di quella di PHP 5
+
+164
+00:12:01,160 --> 00:12:05,160
+ e questo è sicuramente il suo più grande problema.
+
+165
+00:12:05,160 --> 00:12:18,160
+ Ci sono là fuori tantissimi programmatori a cui piace dire che PHP è un linguaggio morto.
+
+166
+00:12:18,160 --> 00:12:24,160
+ Sono gli stessi che, quando magari scoprono che è il tuo linguaggio di riferimento,
+
+167
+00:12:24,160 --> 00:12:29,160
+ ti chiedono: possibile che lavori ancora con PHP?
+
+168
+00:12:29,160 --> 00:12:32,160
+ Perché non studi qualche linguaggio migliore?
+
+169
+00:12:32,160 --> 00:12:33,160
+ Hai presente, no?
+
+170
+00:12:33,160 --> 00:12:36,160
+ La classica domanda: ma PHP non è morto?
+
+171
+00:12:36,160 --> 00:12:41,160
+ Beh, mi spiace per loro, ma in effetti PHP è morto
+
+172
+00:12:41,160 --> 00:12:46,160
+ solo se si ignorano le attuali statistiche di utilizzo dei linguaggi di programmazione
+
+173
+00:12:46,160 --> 00:12:50,160
+ e buona parte di ciò che muove il web nel 2025.
+
+174
+00:12:50,160 --> 00:12:56,160
+ A dirla tutta, se vogliamo essere onesti, guardando la pagina di statistiche V3Tech,
+
+175
+00:12:56,160 --> 00:12:58,160
+ che ti lascio in descrizione,
+
+176
+00:12:58,160 --> 00:13:03,160
+ negli ultimi dieci anni PHP ha perso terreno rispetto agli altri linguaggi.
+
+177
+00:13:03,160 --> 00:13:06,160
+ Guardando la tabella riportata, infatti,
+
+178
+00:13:06,160 --> 00:13:11,160
+ e prendendo in esame ad esempio il periodo tra il 2013 e oggi,
+
+179
+00:13:11,160 --> 00:13:17,160
+ si nota subito che Ruby o Java sono cresciuti, per utilizzo lato server,
+
+180
+00:13:17,160 --> 00:13:24,160
+ rispettivamente dallo 0,5 al 6,1% e dal 4 al 5%.
+
+181
+00:13:24,160 --> 00:13:27,160
+ Un linguaggio specifico per il web come JavaScript, poi,
+
+182
+00:13:27,160 --> 00:13:32,160
+ che inizialmente era utilizzato solo lato client,
+
+183
+00:13:32,160 --> 00:13:39,160
+ lato server è invece passato da meno dello 0,1% a ben 3,8%.
+
+184
+00:13:39,160 --> 00:13:45,160
+ PHP, invece, nello stesso lasso di tempo, è in controtendenza e perde terreno,
+
+185
+00:13:45,160 --> 00:13:54,160
+ passando dal 77,7% del 2013 ad un misero 76,7% a fine 2024.
+
+186
+00:13:54,160 --> 00:13:56,160
+ Si tratta, a ben guardare,
+
+187
+00:13:56,160 --> 00:14:01,160
+ di una discreta diminuzione di ben un punto percentuale in dieci anni.
+
+188
+00:14:01,160 --> 00:14:04,160
+ Facendo quindi una proiezione molto semplice,
+
+189
+00:14:04,160 --> 00:14:07,160
+ possiamo immaginare che a questo ritmo l'utilizzo del linguaggio
+
+190
+00:14:07,160 --> 00:14:14,160
+ si andrà ad azzerare completamente all'incirca nell'arco di soli 760 anni.
+
+191
+00:14:14,160 --> 00:14:16,160
+ Ok, scherzi a parte,
+
+192
+00:14:16,160 --> 00:14:20,160
+ dovresti aver capito che quelli che pensano che PHP sia morto
+
+193
+00:14:20,160 --> 00:14:25,160
+ in effetti di PHP e di web non ne sanno poi molto
+
+194
+00:14:25,160 --> 00:14:28,160
+ e, a meno di grossi sconvolgimenti,
+
+195
+00:14:28,160 --> 00:14:31,160
+ almeno per il momento, dovranno rimanere delusi.
+
+196
+00:14:31,160 --> 00:14:36,160
+ Ma, anche scartando la domanda stupida sulla morte di PHP,
+
+197
+00:14:36,160 --> 00:14:42,160
+ resta però una questione reale che, secondo me, è molto più interessante.
+
+198
+00:14:42,160 --> 00:14:45,160
+ La vera domanda che dovremmo porci, infatti, è:
+
+199
+00:14:45,160 --> 00:14:49,160
+ perché la gente chiede se PHP è morto?
+
+200
+00:14:49,160 --> 00:14:53,160
+ Perché lo ritiene un linguaggio finito o così terribile
+
+201
+00:14:53,160 --> 00:14:56,160
+ da dover sparire dalla faccia della terra?
+
+202
+00:14:56,160 --> 00:15:01,160
+ Abbiamo capito che parte della risposta è per ignoranza e superficialità
+
+203
+00:15:01,160 --> 00:15:04,160
+ o per scarsa capacità di divulgazione,
+
+204
+00:15:04,160 --> 00:15:09,160
+ ma io mi rifiuto di pensare che la questione sia tutta qui,
+
+205
+00:15:09,160 --> 00:15:13,160
+ che la cosa si possa spiegare in maniera così semplice.
+
+206
+00:15:13,160 --> 00:15:17,160
+ D'altronde, la maggior parte dei programmatori che conosco
+
+207
+00:15:17,160 --> 00:15:20,160
+ sono tutt'altro che ignoranti e superficiali.
+
+208
+00:15:20,160 --> 00:15:22,160
+ E poi, il fatto di non sapersi pubblicizzare
+
+209
+00:15:22,160 --> 00:15:27,160
+ a dovere non basta ad attirarsi l'odio delle persone.
+
+210
+00:15:27,160 --> 00:15:30,160
+ Un'altra possibile ragione, quindi, secondo me,
+
+211
+00:15:30,160 --> 00:15:34,160
+ è che quelli che insinuano che PHP sia morto
+
+212
+00:15:34,160 --> 00:15:38,160
+ lo fanno perché, in fondo in fondo, vorrebbero che fosse così.
+
+213
+00:15:38,160 --> 00:15:41,160
+ Vorrebbero che questo linguaggio sparisse.
+
+214
+00:15:41,160 --> 00:15:47,160
+ Mi spiego meglio: PHP è uno dei modi più semplici per un programmatore
+
+215
+00:15:47,160 --> 00:15:50,160
+ per creare un sito, una pagina web o un API.
+
+216
+00:15:50,160 --> 00:15:51,160
+ Muove buona parte.
+
+217
+00:15:51,160 --> 00:15:53,160
+ Muove buona parte del web
+
+218
+00:15:53,160 --> 00:15:57,160
+ ed è enormemente utilizzato proprio per questa sua semplicità.
+
+219
+00:15:57,160 --> 00:16:01,160
+ Se ci aggiungiamo poi anche il più conosciuto dei suoi prodotti,
+
+220
+00:16:01,160 --> 00:16:03,160
+ cioè WordPress,
+
+221
+00:16:03,160 --> 00:16:07,160
+ possiamo tranquillamente affermare che domina il mercato del web,
+
+222
+00:16:07,160 --> 00:16:10,160
+ almeno quello non fortemente specializzato.
+
+223
+00:16:10,160 --> 00:16:14,160
+ E continua, dunque, ad essere una soluzione più che valida
+
+224
+00:16:14,160 --> 00:16:16,160
+ per moltissimi soggetti.
+
+225
+00:16:16,160 --> 00:16:19,160
+ Non tutti, ma moltissimi sì.
+
+226
+00:16:19,160 --> 00:16:20,160
+ E se è valida,
+
+227
+00:16:20,160 --> 00:16:22,160
+ allora ovviamente viene usata.
+
+228
+00:16:22,160 --> 00:16:28,160
+ Inoltre va tenuto presente che spesso sono i programmatori più esperti
+
+229
+00:16:28,160 --> 00:16:33,160
+ e la cultura aziendale a determinare la scelta di abbracciare un linguaggio
+
+230
+00:16:33,160 --> 00:16:37,160
+ piuttosto che un altro o di perseverare nel suo utilizzo.
+
+231
+00:16:37,160 --> 00:16:43,160
+ E tantissimi big del web hanno utilizzato PHP per i loro backend
+
+232
+00:16:43,160 --> 00:16:45,160
+ e per le loro API
+
+233
+00:16:45,160 --> 00:16:49,160
+ e così come tante altre aziende ci hanno sviluppato prodotti
+
+234
+00:16:49,160 --> 00:16:52,160
+ che tutt'oggi portano loro introiti.
+
+235
+00:16:52,160 --> 00:16:56,160
+ Oltre a questo, tanti di coloro che oggi sono senior developer,
+
+236
+00:16:56,160 --> 00:16:58,160
+ come me ad esempio,
+
+237
+00:16:58,160 --> 00:17:03,160
+ si sono formati nel periodo in cui non c'erano così tante alternative
+
+238
+00:17:03,160 --> 00:17:07,160
+ e PHP era uno dei metodi più rapidi ed efficienti
+
+239
+00:17:07,160 --> 00:17:11,160
+ per realizzare progetti concreti di quelli che ci davano da mangiare.
+
+240
+00:17:11,160 --> 00:17:15,160
+ E il risultato di tutto questo è che, volenti o nolenti,
+
+241
+00:17:15,160 --> 00:17:18,160
+ oggi ci sono là fuori migliaia di progetti software,
+
+242
+00:17:18,160 --> 00:17:20,160
+ basati su PHP,
+
+243
+00:17:20,160 --> 00:17:22,160
+ che sono in funzione
+
+244
+00:17:22,160 --> 00:17:25,160
+ e magari vanno a costituire elementi importanti
+
+245
+00:17:25,160 --> 00:17:28,160
+ se non essenziali per moltissime realtà.
+
+246
+00:17:28,160 --> 00:17:32,160
+ Ma quindi, dov'è che voglio arrivare ti starai chiedendo?
+
+247
+00:17:32,160 --> 00:17:37,160
+ Beh, la mia idea è che tante persone sperano che PHP sia morto
+
+248
+00:17:37,160 --> 00:17:41,160
+ perché di fatto se lo trovano praticamente dovunque
+
+249
+00:17:41,160 --> 00:17:45,160
+ quando in effetti vorrebbero doverci avere a che fare il meno possibile.
+
+250
+00:17:45,160 --> 00:17:47,160
+ Loro sono devoti ai loro linguaggi,
+
+251
+00:17:47,160 --> 00:17:50,160
+ sono devoti ai loro linguaggi di riferimento
+
+252
+00:17:50,160 --> 00:17:53,160
+ e non sopportano l'idea di doversi piegare
+
+253
+00:17:53,160 --> 00:17:57,160
+ a utilizzare quel vecchio e inutile accrocchio che è PHP.
+
+254
+00:17:57,160 --> 00:18:00,160
+ Non lo conoscono bene, non ne vogliono sapere nulla.
+
+255
+00:18:00,160 --> 00:18:02,160
+ Per loro è rimasto alla versione 5
+
+256
+00:18:02,160 --> 00:18:06,160
+ ed è una tragedia ogni volta che ci devono mettere le mani.
+
+257
+00:18:06,160 --> 00:18:10,160
+ Non sanno o non vogliono sapere che, come noi abbiamo già detto,
+
+258
+00:18:10,160 --> 00:18:13,160
+ il linguaggio in questi anni si è evoluto tantissimo,
+
+259
+00:18:13,160 --> 00:18:16,160
+ che è diventato migliore, più professionale, più potente,
+
+260
+00:18:16,160 --> 00:18:18,160
+ più completo e ben definito.
+
+261
+00:18:18,160 --> 00:18:21,160
+ Non importa che per qualità e prestazioni
+
+262
+00:18:21,160 --> 00:18:25,160
+ sia praticamente irriconoscibile rispetto a dieci anni fa.
+
+263
+00:18:25,160 --> 00:18:30,160
+ Per loro resta un qualcosa con cui si trovano costretti ad avere a che fare,
+
+264
+00:18:30,160 --> 00:18:35,160
+ vuoi perché si trovano a dover lavorare su progetti preesistenti,
+
+265
+00:18:35,160 --> 00:18:37,160
+ vuoi perché gli viene imposto dall'alto.
+
+266
+00:18:37,160 --> 00:18:41,160
+ Ma in entrambi i casi i poveri programmatori di turno
+
+267
+00:18:41,160 --> 00:18:44,160
+ raramente possono ribellarsi alla situazione.
+
+268
+00:18:44,160 --> 00:18:45,160
+ Difficilmente possono risparmiare,
+
+269
+00:18:45,160 --> 00:18:48,160
+ possono riscrivere interi progetti da zero
+
+270
+00:18:48,160 --> 00:18:52,160
+ o convincere il proprio capo ad adottare un linguaggio diverso
+
+271
+00:18:52,160 --> 00:18:54,160
+ da quello che è stato deciso.
+
+272
+00:18:54,160 --> 00:18:57,160
+ Guardando la questione da questo punto di vista
+
+273
+00:18:57,160 --> 00:19:01,160
+ è facile ipotizzare che in situazioni del genere
+
+274
+00:19:01,160 --> 00:19:05,160
+ l'astio verso le imposizioni non possa far altro che crescere
+
+275
+00:19:05,160 --> 00:19:09,160
+ e, non potendo essere sfogato verso le vere cause,
+
+276
+00:19:09,160 --> 00:19:12,160
+ si trovi invece ad essere riversato sul linguaggio.
+
+277
+00:19:12,160 --> 00:19:20,160
+ PHP è un linguaggio molto particolare.
+
+278
+00:19:20,160 --> 00:19:22,160
+ Secondo la mia esperienza,
+
+279
+00:19:22,160 --> 00:19:24,160
+ e non solo ovviamente,
+
+280
+00:19:24,160 --> 00:19:29,160
+ esso è in grado di incarnare a pieno due filosofie di progettazione
+
+281
+00:19:29,160 --> 00:19:31,160
+ completamente opposte fra loro,
+
+282
+00:19:31,160 --> 00:19:34,160
+ a volte anche addirittura contemporaneamente.
+
+283
+00:19:34,160 --> 00:19:36,160
+ Capiamoci però,
+
+284
+00:19:36,160 --> 00:19:40,160
+ non mi sto riferendo al processo di sviluppo del codice.
+
+285
+00:19:40,160 --> 00:19:41,160
+ Agile o Waterfall,
+
+286
+00:19:41,160 --> 00:19:43,160
+ o simili non c'entrano.
+
+287
+00:19:43,160 --> 00:19:45,160
+ Così come User Stories,
+
+288
+00:19:45,160 --> 00:19:48,160
+ Specifiche e Design o altro, no.
+
+289
+00:19:48,160 --> 00:19:53,160
+ Io sto parlando proprio di come appare il codice una volta scritto.
+
+290
+00:19:53,160 --> 00:19:56,160
+ In pratica, se questo risulta ben strutturato,
+
+291
+00:19:56,160 --> 00:19:58,160
+ leggibile ed efficiente,
+
+292
+00:19:58,160 --> 00:20:01,160
+ oppure il classico groviglio di istruzioni
+
+293
+00:20:01,160 --> 00:20:04,160
+ comunemente definito spaghetti code.
+
+294
+00:20:04,160 --> 00:20:08,160
+ Le persone che dicono che il codice scritto in PHP fa schifo
+
+295
+00:20:08,160 --> 00:20:10,160
+ hanno ragione.
+
+296
+00:20:10,160 --> 00:20:13,160
+ Esistono software implementati in questo linguaggio
+
+297
+00:20:13,160 --> 00:20:17,160
+ che risultano un coacervo di comportamenti scorretti
+
+298
+00:20:17,160 --> 00:20:21,160
+ se considerati dal punto di vista della buona programmazione.
+
+299
+00:20:21,160 --> 00:20:26,160
+ Però anche le persone che dicono che PHP è un ottimo linguaggio
+
+300
+00:20:26,160 --> 00:20:27,160
+ hanno ragione.
+
+301
+00:20:27,160 --> 00:20:31,160
+ Con esso infatti è stato scritto tantissimo codice
+
+302
+00:20:31,160 --> 00:20:33,160
+ che rispetta tutte le buone pratiche,
+
+303
+00:20:33,160 --> 00:20:37,160
+ dai design pattern alla programmazione ad oggetti,
+
+304
+00:20:37,160 --> 00:20:39,160
+ passando per quella asincrona,
+
+305
+00:20:39,160 --> 00:20:42,160
+ quella funzionale e tanti altri paradigmi.
+
+306
+00:20:42,160 --> 00:20:46,160
+ Sulla carta, questa ambivalenza dovrebbe essere un limite
+
+307
+00:20:46,160 --> 00:20:49,160
+ per un linguaggio, un malus, un freno.
+
+308
+00:20:49,160 --> 00:20:53,160
+ Dovrebbe generare confusione nei programmatori
+
+309
+00:20:53,160 --> 00:20:57,160
+ e impedire che essi riescano a destreggiarsi nel codice esistente
+
+310
+00:20:57,160 --> 00:21:01,160
+ e tantomeno siano invogliati a scriverne di nuovo.
+
+311
+00:21:01,160 --> 00:21:05,160
+ Eppure, là fuori, ci sono decine di linguaggi
+
+312
+00:21:05,160 --> 00:21:08,160
+ più strutturati e più ordinati di PHP
+
+313
+00:21:08,160 --> 00:21:13,160
+ che però non raggiungono minimamente lo stesso livello di diffusione.
+
+314
+00:21:13,160 --> 00:21:16,160
+ Linguaggi precisi, linguaggi potenti,
+
+315
+00:21:16,160 --> 00:21:19,160
+ linguaggi specificamente progettati per il web.
+
+316
+00:21:19,160 --> 00:21:23,160
+ Nessuno che riesce ad affermarsi su PHP.
+
+317
+00:21:23,160 --> 00:21:25,160
+ E come è possibile questa cosa?
+
+318
+00:21:25,160 --> 00:21:27,160
+ Beh, la risposta è semplice:
+
+319
+00:21:27,160 --> 00:21:30,160
+ perché PHP è il peggiore.
+
+320
+00:21:30,160 --> 00:21:34,160
+ Nel 1991 Richard Gabriel,
+
+321
+00:21:34,160 --> 00:21:37,160
+ accademico e informatico di professione,
+
+322
+00:21:37,160 --> 00:21:39,160
+ pubblicò un saggio dal titolo
+
+323
+00:21:39,160 --> 00:21:46,160
+ nel quale affrontava gli aspetti positivi e negativi di Lisp,
+
+324
+00:21:46,160 --> 00:21:50,160
+ un linguaggio che lui stesso aveva contribuito a sviluppare
+
+325
+00:21:50,160 --> 00:21:53,160
+ e che aveva avuto grande diffusione
+
+326
+00:21:53,160 --> 00:21:56,160
+ soprattutto a partire dagli anni '80 del secolo scorso.
+
+327
+00:21:56,160 --> 00:21:59,160
+ Nel suo saggio, Gabriel tentò essenzialmente
+
+328
+00:21:59,160 --> 00:22:04,160
+ di identificare le motivazioni di un periodo di difficoltà di Lisp
+
+329
+00:22:04,160 --> 00:22:06,160
+ e, per farlo,
+
+330
+00:22:06,160 --> 00:22:08,160
+ scuse di confrontare tale linguaggio
+
+331
+00:22:08,160 --> 00:22:11,160
+ con uno sempre più dilagante di quel periodo:
+
+332
+00:22:11,160 --> 00:22:12,160
+ il C.
+
+333
+00:22:12,160 --> 00:22:15,160
+ Secondo Gabriel, il problema di Lisp
+
+334
+00:22:15,160 --> 00:22:17,160
+ risiedeva in una "tensione"
+
+335
+00:22:17,160 --> 00:22:21,160
+ fra due opposte filosofie di sviluppo del codice:
+
+336
+00:22:21,160 --> 00:22:23,160
+ una chiamata "Myth Style"
+
+337
+00:22:23,160 --> 00:22:25,160
+ o "Stand for Style"
+
+338
+00:22:25,160 --> 00:22:27,160
+ e incarnata appunto da Lisp
+
+339
+00:22:27,160 --> 00:22:29,160
+ con le sue innumerevoli varianti;
+
+340
+00:22:29,160 --> 00:22:32,160
+ l'altra, chiamata "New Jersey Style"
+
+341
+00:22:32,160 --> 00:22:35,160
+ e capeggiata invece dal C e i suoi derivati.
+
+342
+00:22:35,160 --> 00:22:40,160
+ Nella pratica, i due stili sono essenzialmente simili
+
+343
+00:22:40,160 --> 00:22:43,160
+ ma si distinguono nel peso e nell'importanza
+
+344
+00:22:43,160 --> 00:22:46,160
+ data a quattro specifici aspetti chiave
+
+345
+00:22:46,160 --> 00:22:47,160
+ che sono:
+
+346
+00:22:47,160 --> 00:22:51,160
+ semplicità, correttezza, coerenza e completezza.
+
+347
+00:22:51,160 --> 00:22:53,160
+ In entrambe le filosofie,
+
+348
+00:22:53,160 --> 00:22:56,160
+ tali aspetti ricoprono un ruolo fondamentale
+
+349
+00:22:56,160 --> 00:23:01,160
+ ma il rapporto fra di essi è inteso in modo differente.
+
+350
+00:23:01,160 --> 00:23:04,160
+ Nel momento in cui è necessario, infatti,
+
+351
+00:23:04,160 --> 00:23:07,160
+ dare priorità ad uno piuttosto che ad un altro,
+
+352
+00:23:07,160 --> 00:23:12,160
+ la scelta varia a seconda della filosofia utilizzata.
+
+353
+00:23:12,160 --> 00:23:15,160
+ Il fulcro della differenza tra i due stili
+
+354
+00:23:15,160 --> 00:23:19,160
+ risiede nel valore riservato all'aspetto della semplicità,
+
+355
+00:23:19,160 --> 00:23:22,160
+ la quale è ritenuta importante per entrambi,
+
+356
+00:23:22,160 --> 00:23:27,160
+ ma nel "New Jersey Style" lo è di più che nello "Stand for Style".
+
+357
+00:23:27,160 --> 00:23:31,160
+ In descrizione trovi il link al testo originale
+
+358
+00:23:31,160 --> 00:23:33,160
+ con le due filosofie descritte in dettaglio.
+
+359
+00:23:33,160 --> 00:23:38,160
+ Ma, volendo riassumere e semplificare al massimo,
+
+360
+00:23:38,160 --> 00:23:41,160
+ il concetto è più o meno il seguente:
+
+361
+00:23:41,160 --> 00:23:46,160
+ lo "Stand for Style" è quello più perfezionista dei due.
+
+362
+00:23:46,160 --> 00:23:49,160
+ In esso la semplicità è preziosa
+
+363
+00:23:49,160 --> 00:23:52,160
+ ma non abbastanza da ammettere con promessi
+
+364
+00:23:52,160 --> 00:23:56,160
+ quando si tratta di correttezza o coerenza.
+
+365
+00:23:56,160 --> 00:23:59,160
+ Ogni aspetto del codice deve essere impeccabile
+
+366
+00:23:59,160 --> 00:24:02,160
+ e perfettamente coordinato.
+
+367
+00:24:02,160 --> 00:24:04,160
+ Questo stile non accetta errori.
+
+368
+00:24:04,160 --> 00:24:07,160
+ Tutto deve funzionare senza sbavature
+
+369
+00:24:07,160 --> 00:24:10,160
+ e ogni dettaglio deve essere coperto.
+
+370
+00:24:10,160 --> 00:24:14,160
+ Programmare è come costruire un orologio svizzero:
+
+371
+00:24:14,160 --> 00:24:18,160
+ ogni parte deve avere il suo posto giusto senza compromessi.
+
+372
+00:24:18,160 --> 00:24:20,160
+ Dall'altra parte, invece,
+
+373
+00:24:20,160 --> 00:24:24,160
+ il "New Jersey Style" è un po' più rilassato e pragmatico.
+
+374
+00:24:24,160 --> 00:24:28,160
+ In esso la semplicità è la cosa più importante,
+
+375
+00:24:28,160 --> 00:24:31,160
+ non che la correttezza non sia importante, ovviamente,
+
+376
+00:24:31,160 --> 00:24:36,160
+ ma se è necessario scegliere tra semplicità e precisione,
+
+377
+00:24:36,160 --> 00:24:39,160
+ il "New Jersey Style" sceglie la prima.
+
+378
+00:24:39,160 --> 00:24:42,160
+ Questo stile ammette la possibilità
+
+379
+00:24:42,160 --> 00:24:45,160
+ di sacrificare un po' di coerenza o di completezza
+
+380
+00:24:45,160 --> 00:24:49,160
+ al fine di mantenere le cose facili e comprensibili.
+
+381
+00:24:49,160 --> 00:24:53,160
+ In esso, programmare è come costruire un ponte
+
+382
+00:24:53,160 --> 00:24:55,160
+ con materiali essenziali:
+
+383
+00:24:55,160 --> 00:25:00,160
+ robusto, utile, funzionale e soprattutto semplice.
+
+384
+00:25:00,160 --> 00:25:03,160
+ Quindi, se da una parte lo "Stanford Style"
+
+385
+00:25:03,160 --> 00:25:06,160
+ punta all'eleganza senza difetti,
+
+386
+00:25:06,160 --> 00:25:11,160
+ dall'altra il "New Jersey Style" preferisce un approccio pratico e diretto,
+
+387
+00:25:11,160 --> 00:25:16,160
+ dove l'importante è mantenere tutto semplice e funzionante
+
+388
+00:25:16,160 --> 00:25:19,160
+ anche se a volte bisogna scendere a qualche compromesso.
+
+389
+00:25:19,160 --> 00:25:23,160
+ Gabriel utilizzò l'ISP come esempio di linguaggio
+
+390
+00:25:23,160 --> 00:25:26,160
+ che implementa la filosofia Stanford,
+
+391
+00:25:26,160 --> 00:25:29,160
+ definendola "the right way", il modo giusto.
+
+392
+00:25:29,160 --> 00:25:34,160
+ E "C" come esempio di "New Jersey Style",
+
+393
+00:25:34,160 --> 00:25:39,160
+ il quale per contrapposizione diventò "the wrong way", il modo sbagliato.
+
+394
+00:25:39,160 --> 00:25:42,160
+ A prescindere dalle definizioni, però,
+
+395
+00:25:42,160 --> 00:25:45,160
+ la realtà dei fatti è che già nel '91,
+
+396
+00:25:45,160 --> 00:25:48,160
+ quando Gabriel scrisse il suo saggio,
+
+397
+00:25:48,160 --> 00:25:51,160
+ il "C", con il suo modo sbagliato di essere,
+
+398
+00:25:51,160 --> 00:25:55,160
+ si era diffuso e si stava espandendo sempre di più,
+
+399
+00:25:55,160 --> 00:25:58,160
+ mentre il perfetto l'ISP continuava a perdere terreno.
+
+400
+00:25:58,160 --> 00:26:03,160
+ L'accademico si interrogò appunto su questo fenomeno,
+
+401
+00:26:03,160 --> 00:26:07,160
+ che superficialmente sembrava controintuitivo,
+
+402
+00:26:07,160 --> 00:26:11,160
+ e giunse ad una sorprendente conclusione che definì:
+
+403
+00:26:11,160 --> 00:26:13,160
+ "Worse is better".
+
+404
+00:26:13,160 --> 00:26:15,160
+ Peggio è meglio.
+
+405
+00:26:15,160 --> 00:26:17,160
+ L'idea di base è semplice:
+
+406
+00:26:17,160 --> 00:26:22,160
+ il peggio ha caratteristiche di sopravvivenza migliori del meglio,
+
+407
+00:26:22,160 --> 00:26:27,160
+ e pertanto si diffonde più facilmente, in modo più pervasivo,
+
+408
+00:26:27,160 --> 00:26:31,160
+ e consiste maggiormente al trascorrere del tempo.
+
+409
+00:26:31,160 --> 00:26:33,160
+ Per spiegare questo concetto,
+
+410
+00:26:33,160 --> 00:26:36,160
+ Gabriel raccontò il seguente aneddoto:
+
+411
+00:26:36,160 --> 00:26:38,160
+ Due persone famose,
+
+412
+00:26:38,160 --> 00:26:42,160
+ una del MIT e l'altra di Berkeley, New Jersey,
+
+413
+00:26:42,160 --> 00:26:44,160
+ che lavorava su UNIX,
+
+414
+00:26:44,160 --> 00:26:49,160
+ un giorno si incontrarono per discutere di sistemi operativi.
+
+415
+00:26:49,160 --> 00:26:52,160
+ La persona del MIT era interessata a capire
+
+416
+00:26:52,160 --> 00:26:55,160
+ come UNIX risolvesse un certo problema.
+
+417
+00:26:55,160 --> 00:26:56,160
+ In pratica,
+
+418
+00:26:56,160 --> 00:27:00,160
+ quando un programma utente invoca una routine di sistema
+
+419
+00:27:00,160 --> 00:27:02,160
+ per eseguire un'operazione lunga,
+
+420
+00:27:02,160 --> 00:27:06,160
+ se durante tale operazione si verifica un'interruzione,
+
+421
+00:27:06,160 --> 00:27:10,160
+ lo stato del programma utente deve essere salvato.
+
+422
+00:27:10,160 --> 00:27:13,160
+ E poiché l'invocazione di una routine di sistema
+
+423
+00:27:13,160 --> 00:27:16,160
+ è solitamente una singola istruzione,
+
+424
+00:27:16,160 --> 00:27:20,160
+ il PC non cattura adeguatamente lo stato del processo,
+
+425
+00:27:20,160 --> 00:27:23,160
+ quindi la routine ha essenzialmente due possibilità:
+
+426
+00:27:23,160 --> 00:27:25,160
+ la prima è fare marcia indietro
+
+427
+00:27:25,160 --> 00:27:28,160
+ e ignorare che l'istruzione sia stata avviata,
+
+428
+00:27:28,160 --> 00:27:31,160
+ l'altra è andare avanti e perdere lo stato.
+
+429
+00:27:31,160 --> 00:27:35,160
+ La cosa più corretta da fare è tornare indietro
+
+430
+00:27:35,160 --> 00:27:40,160
+ e riportare il programma all'istruzione che ha invocato la routine,
+
+431
+00:27:40,160 --> 00:27:43,160
+ in modo che alla ripresa dopo l'interruzione
+
+432
+00:27:43,160 --> 00:27:45,160
+ esso ne ripeta la chiamata.
+
+433
+00:27:45,160 --> 00:27:50,160
+ Ma il tizio del MIT non riusciva a trovare alcun codice in UNIX
+
+434
+00:27:50,160 --> 00:27:54,160
+ che gestisse questo caso e chiese al tizio del New Jersey
+
+435
+00:27:54,160 --> 00:27:56,160
+ come veniva risolta la questione.
+
+436
+00:27:56,160 --> 00:28:00,160
+ Il tizio del New Jersey disse che i tecnici UNIX
+
+437
+00:28:00,160 --> 00:28:02,160
+ erano a conoscenza del problema,
+
+438
+00:28:02,160 --> 00:28:06,160
+ ma la soluzione era che la routine terminava sempre,
+
+439
+00:28:06,160 --> 00:28:09,160
+ solo che a volte veniva restituito un codice di errore
+
+440
+00:28:09,160 --> 00:28:13,160
+ che segnalava che non era riuscita a completare la sua azione.
+
+441
+00:28:13,160 --> 00:28:16,160
+ Un programma utente corretto, quindi,
+
+442
+00:28:16,160 --> 00:28:19,160
+ doveva occuparsi di controllare il codice di errore
+
+443
+00:28:19,160 --> 00:28:23,160
+ per determinare se provare di nuovo la routine oppure no.
+
+444
+00:28:23,160 --> 00:28:27,160
+ La responsabilità non era del sistema operativo.
+
+445
+00:28:27,160 --> 00:28:30,160
+ Al tipo del MIT questa soluzione non piaceva
+
+446
+00:28:30,160 --> 00:28:33,160
+ perché non era la cosa giusta da fare,
+
+447
+00:28:33,160 --> 00:28:37,160
+ ma il tizio del New Jersey rispose che la soluzione UNIX
+
+448
+00:28:37,160 --> 00:28:41,160
+ era giusta perché la filosofia di progettazione di UNIX
+
+449
+00:28:41,160 --> 00:28:46,160
+ era la semplicità e che la cosa giusta era troppo complessa.
+
+450
+00:28:46,160 --> 00:28:50,160
+ Inoltre, i programmatori potevano facilmente inserire questo test.
+
+451
+00:28:50,160 --> 00:28:52,160
+ Il tipo del MIT fece allora notare
+
+452
+00:28:52,160 --> 00:28:56,160
+ che così l'implementazione era semplice,
+
+453
+00:28:56,160 --> 00:29:00,160
+ ma l'interfaccia con la funzionalità era complessa.
+
+454
+00:29:00,160 --> 00:29:05,160
+ E il tizio del New Jersey disse che in UNIX è stato scelto il giusto compromesso,
+
+455
+00:29:05,160 --> 00:29:08,160
+ ovvero che la semplicità dell'implementazione
+
+456
+00:29:08,160 --> 00:29:12,160
+ è più importante della semplicità dell'interfaccia.
+
+457
+00:29:12,160 --> 00:29:15,160
+ Il tizio del MIT poi borbottò qualcosa del tipo
+
+458
+00:29:15,160 --> 00:29:18,160
+ che a volte ci vuole un uomo duro per fare un pollo tenero,
+
+459
+00:29:18,160 --> 00:29:21,160
+ ma il tizio del New Jersey non capì.
+
+460
+00:29:21,160 --> 00:29:24,160
+ UNIX era già al tempo piuttosto diffuso
+
+461
+00:29:24,160 --> 00:29:27,160
+ e successivamente ebbe ancora più successo
+
+462
+00:29:27,160 --> 00:29:30,160
+ prima nelle università ed enti di ricerca,
+
+463
+00:29:30,160 --> 00:29:32,160
+ poi in ambito commerciale.
+
+464
+00:29:32,160 --> 00:29:34,160
+ Sicuramente oggi è noto per essere
+
+465
+00:29:34,160 --> 00:29:39,160
+ il primo sistema operativo portabile multiutente e multitasking
+
+466
+00:29:39,160 --> 00:29:41,160
+ ed è implementato in linguaggio C.
+
+467
+00:29:41,160 --> 00:29:45,160
+ È il precursore di tutti i sistemi operativi Linux
+
+468
+00:29:45,160 --> 00:29:49,160
+ che ormai sono enormemente utilizzati in ambito server
+
+469
+00:29:49,160 --> 00:29:50,160
+ ed è stato per tanti anni
+
+470
+00:29:50,160 --> 00:29:52,160
+ la culla del linguaggio C,
+
+471
+00:29:52,160 --> 00:29:56,160
+ ampiamente gettonato tra gli sviluppatori per più di 30 anni.
+
+472
+00:29:56,160 --> 00:30:01,160
+ Sia UNIX che C sono stati progettati utilizzando un approccio
+
+473
+00:30:01,160 --> 00:30:05,160
+ che si è poi concretizzato nel New Jersey style.
+
+474
+00:30:05,160 --> 00:30:08,160
+ Di conseguenza i primi compilatori UNIX e C
+
+475
+00:30:08,160 --> 00:30:11,160
+ avevano strutture semplici,
+
+476
+00:30:11,160 --> 00:30:13,160
+ erano facilmente portabili,
+
+477
+00:30:13,160 --> 00:30:15,160
+ richiedevano poche risorse
+
+478
+00:30:15,160 --> 00:30:19,160
+ e fornivano buona parte delle funzioni che si possono desiderare
+
+479
+00:30:19,160 --> 00:30:22,160
+ da un sistema operativo e da un linguaggio di programmazione.
+
+480
+00:30:22,160 --> 00:30:25,160
+ Banalmente Gabriel fece notare
+
+481
+00:30:25,160 --> 00:30:28,160
+ che in qualsiasi momento metà dei computer esistenti
+
+482
+00:30:28,160 --> 00:30:32,160
+ è composta da esemplari peggiori della media,
+
+483
+00:30:32,160 --> 00:30:34,160
+ quindi più lenti e meno potenti.
+
+484
+00:30:34,160 --> 00:30:39,160
+ UNIX e C funzionavano benissimo anche su quelle macchine.
+
+485
+00:30:39,160 --> 00:30:40,160
+ Mi raccomando,
+
+486
+00:30:40,160 --> 00:30:43,160
+ tieni presente che il testo risale al '91
+
+487
+00:30:43,160 --> 00:30:48,160
+ quando le caratteristiche dell'hardware erano enormemente inferiori ad oggi
+
+488
+00:30:48,160 --> 00:30:52,160
+ ed era comune che alcuni PC non fossero in grado di compilare
+
+489
+00:30:52,160 --> 00:30:55,160
+ ed eseguire software di una certa complessità.
+
+490
+00:30:55,160 --> 00:30:58,160
+ In definitiva la teoria del 'peggio e meglio'
+
+491
+00:30:58,160 --> 00:31:03,160
+ afferma dunque che la semplicità di implementazione e di utilizzo
+
+492
+00:31:03,160 --> 00:31:08,160
+ ha la massima priorità su tutti gli altri aspetti chiave del software.
+
+493
+00:31:08,160 --> 00:31:13,160
+ Se si riesce a creare un linguaggio o un sistema operativo
+
+494
+00:31:13,160 --> 00:31:17,160
+ che implementa anche solo la metà delle proprie caratteristiche
+
+495
+00:31:17,160 --> 00:31:22,160
+ decentemente ma riesce a farlo in modo semplice e su qualsiasi macchina,
+
+496
+00:31:22,160 --> 00:31:26,160
+ allora questo inizierà a diffondersi ovunque come un virus.
+
+497
+00:31:26,160 --> 00:31:32,160
+ Secondo Gabriel, UNIX e C sono virus informatici per eccellenza.
+
+498
+00:31:32,160 --> 00:31:41,160
+ La lezione che Gabriel trae dalla sua analisi, quindi,
+
+499
+00:31:41,160 --> 00:31:46,160
+ è che spesso non è auspicabile scegliere la cosa giusta per prima
+
+500
+00:31:46,160 --> 00:31:52,160
+ ma è meglio puntare sulla diffusione e poi preoccuparsi degli altri dettagli.
+
+501
+00:31:52,160 --> 00:31:55,160
+ Per citare una frase del suo saggio:
+
+502
+00:31:55,160 --> 00:31:59,160
+ "È meglio rendere disponibile la metà della cosa giusta
+
+503
+00:31:59,160 --> 00:32:02,160
+ in modo che si diffonda come un virus.
+
+504
+00:32:02,160 --> 00:32:06,160
+ Una volta che le persone se ne sono invaghite
+
+505
+00:32:06,160 --> 00:32:09,160
+ ci si prende il tempo necessario per migliorarla
+
+506
+00:32:09,160 --> 00:32:13,160
+ fino a raggiungere il 90% della cosa giusta".
+
+507
+00:32:13,160 --> 00:32:15,160
+ Fine citazione.
+
+508
+00:32:15,160 --> 00:32:18,160
+ Dopo che Gabriel raggiunge questa conclusione,
+
+509
+00:32:18,160 --> 00:32:23,160
+ Rasmus Lerdorf inizia a lavorare sul suo Personal On Page Tools
+
+510
+00:32:23,160 --> 00:32:27,160
+ che, come già detto, noi oggi conosciamo appunto come PHP.
+
+511
+00:32:27,160 --> 00:32:31,160
+ Nato come espediente per gestire un sito personale
+
+512
+00:32:31,160 --> 00:32:35,160
+ e far comunicare dei form con dei database,
+
+513
+00:32:35,160 --> 00:32:40,160
+ PHP non è stato creato per divenire poi un vero linguaggio di programmazione.
+
+514
+00:32:40,160 --> 00:32:44,160
+ Era piuttosto una serie di script e funzioni
+
+515
+00:32:44,160 --> 00:32:46,160
+ basate sul linguaggio C.
+
+516
+00:32:46,160 --> 00:32:49,160
+ Eppure, questo nuovo strumento incarnava
+
+517
+00:32:49,160 --> 00:32:52,160
+ e ha sviluppato nel corso del tempo
+
+518
+00:32:52,160 --> 00:32:55,160
+ le stesse inclinazioni descritte da Gabriel
+
+519
+00:32:55,160 --> 00:32:59,160
+ per le caratteristiche chiave del New Jersey Style.
+
+520
+00:32:59,160 --> 00:33:00,160
+ Cito:
+
+521
+00:33:00,160 --> 00:33:03,160
+ 1. Il design deve essere semplice
+
+522
+00:33:03,160 --> 00:33:07,160
+ sia per l'implementazione che per l'interfaccia.
+
+523
+00:33:07,160 --> 00:33:10,160
+ PHP è costruito sul linguaggio C
+
+524
+00:33:10,160 --> 00:33:13,160
+ che già secondo Gabriel rispetta
+
+525
+00:33:13,160 --> 00:33:15,160
+ i criteri fondamentali di semplicità.
+
+526
+00:33:15,160 --> 00:33:20,160
+ Tale caratteristica, quindi, implica già tutta una serie di vantaggi.
+
+527
+00:33:20,160 --> 00:33:21,160
+ Tanto per cominciare,
+
+528
+00:33:21,160 --> 00:33:24,160
+ basarsi su un meccanismo semplice
+
+529
+00:33:24,160 --> 00:33:29,160
+ permette di capirne il funzionamento ed estenderlo con estrema facilità.
+
+530
+00:33:29,160 --> 00:33:34,160
+ Infatti, imparare come funziona il core di PHP al proprio interno
+
+531
+00:33:34,160 --> 00:33:36,160
+ richiede davvero poche ore di studio.
+
+532
+00:33:36,160 --> 00:33:38,160
+ In secondo luogo,
+
+533
+00:33:38,160 --> 00:33:42,160
+ la radice nel linguaggio C permette ai programmatori
+
+534
+00:33:42,160 --> 00:33:45,160
+ di passare facilmente da PHP
+
+535
+00:33:45,160 --> 00:33:48,160
+ ad un altro qualsiasi dei linguaggi della stessa famiglia,
+
+536
+00:33:48,160 --> 00:33:50,160
+ riducendo tempi e costi.
+
+537
+00:33:50,160 --> 00:33:55,160
+ Infine, gran parte dell'interfaccia di PHP è considerata semplice
+
+538
+00:33:55,160 --> 00:33:58,160
+ perché molte delle funzionalità principali
+
+539
+00:33:58,160 --> 00:34:02,160
+ si limitano ad interfacciarsi con varie librerie C
+
+540
+00:34:02,160 --> 00:34:05,160
+ e ad esporle così come sono,
+
+541
+00:34:05,160 --> 00:34:07,160
+ senza aggiungere logiche e complessità.
+
+542
+00:34:07,160 --> 00:34:11,160
+ Col passare del tempo, poi, il linguaggio è cresciuto.
+
+543
+00:34:11,160 --> 00:34:14,160
+ Le estensioni sono aumentate,
+
+544
+00:34:14,160 --> 00:34:16,160
+ così come i campi d'azione coperti.
+
+545
+00:34:16,160 --> 00:34:21,160
+ A poco a poco sono state aggiunte tutte le caratteristiche più moderne
+
+546
+00:34:21,160 --> 00:34:24,160
+ come la programmazione ad oggetti,
+
+547
+00:34:24,160 --> 00:34:26,160
+ quella sincrona e via discorrendo,
+
+548
+00:34:26,160 --> 00:34:30,160
+ ma sempre seguendo il medesimo principio di semplicità.
+
+549
+00:34:30,160 --> 00:34:34,160
+ il design deve essere corretto in tutti gli aspetti osservabili,
+
+550
+00:34:34,160 --> 00:34:39,160
+ ma è preferibile essere semplici piuttosto che corretti.
+
+551
+00:34:39,160 --> 00:34:40,160
+ PHP ha sempre permesso
+
+552
+00:34:40,160 --> 00:34:45,160
+ un'enorme flessibilità su parametri di funzioni e tipi di ritorno,
+
+553
+00:34:45,160 --> 00:34:49,160
+ questo con lo scopo di fornire strumenti potenti
+
+554
+00:34:49,160 --> 00:34:53,160
+ ma rendendoli al tempo stesso più accessibili e semplici possibile.
+
+555
+00:34:53,160 --> 00:34:57,160
+ Per contro, con l'avanzare delle versioni,
+
+556
+00:34:57,160 --> 00:35:02,160
+ chi lo desidera può scegliere di limitare sempre più questi fattori di libertà.
+
+557
+00:35:02,160 --> 00:35:06,160
+ La rigidità può essere introdotta per convenzione,
+
+558
+00:35:06,160 --> 00:35:09,160
+ con l'adozione di un framework,
+
+559
+00:35:09,160 --> 00:35:15,160
+ o anche forzata configurando una serie di restrizioni, eccezioni e strict mode.
+
+560
+00:35:15,160 --> 00:35:20,160
+ In ogni caso, nel processo di evoluzione del linguaggio,
+
+561
+00:35:20,160 --> 00:35:26,160
+ tutte le novità vengono introdotte in base alle richieste dei programmatori della community,
+
+562
+00:35:26,160 --> 00:35:33,160
+ non perché devono essere presenti o sviluppate in un certo modo per presa di posizione accademica.
+
+563
+00:35:33,160 --> 00:35:38,160
+ Insomma, PHP parte di base da un'estrema semplicità di utilizzo,
+
+564
+00:35:38,160 --> 00:35:42,160
+ che poi, a poco a poco, può essere compressa
+
+565
+00:35:42,160 --> 00:35:48,160
+ per fare spazio al livello di correttezza richiesto dallo specifico programmatore,
+
+566
+00:35:48,160 --> 00:35:51,160
+ o, più in generale, dalla community.
+
+567
+00:35:51,160 --> 00:35:55,160
+ 3. Il design non deve essere eccessivamente incoerente.
+
+568
+00:35:55,160 --> 00:36:00,160
+ La coerenza può essere sacrificata per la semplicità in certi casi.
+
+569
+00:36:00,160 --> 00:36:07,160
+ PHP non può essere definito "perfettamente coerente", questo è evidente.
+
+570
+00:36:07,160 --> 00:36:11,160
+ È lecito definirlo "abbastanza coerente".
+
+571
+00:36:11,160 --> 00:36:18,160
+ Abbiamo appena detto che tante funzioni PHP si rifanno direttamente alle sottostanti funzioni in C,
+
+572
+00:36:18,160 --> 00:36:26,160
+ e spesso in tale rapporto è mantenuta la coerenza nel funzionamento e nei parametri tra i due linguaggi.
+
+573
+00:36:26,160 --> 00:36:33,160
+ Questa scelta è una semplificazione che però genera inconsistenza rispetto ad altre funzioni del linguaggio
+
+574
+00:36:33,160 --> 00:36:36,160
+ che non trovano una diretta controparte in C.
+
+575
+00:36:36,160 --> 00:36:42,160
+ D'altra parte, però, in PHP le varie funzioni che riguardano, ad esempio, gli array,
+
+576
+00:36:42,160 --> 00:36:46,160
+ tra di loro sono ben coerenti nel funzionamento.
+
+577
+00:36:46,160 --> 00:36:50,160
+ Quelle che riguardano le stringhe anche sono coerenti fra loro.
+
+578
+00:36:50,160 --> 00:36:58,160
+ Il fatto di ritornare un valore false in tutta una serie di casi è anch'essa una coerenza interna del linguaggio.
+
+579
+00:36:58,160 --> 00:37:05,160
+ Insomma, PHP quando può cerca di essere coerente, ma quando tale coerenza complica in qualsiasi modo
+
+580
+00:37:05,160 --> 00:37:11,160
+ il rapporto con il linguaggio C, allora non esita a sacrificarla.
+
+581
+00:37:11,160 --> 00:37:16,160
+ 4. Il design deve coprire quante più situazioni importanti possibili.
+
+582
+00:37:16,160 --> 00:37:25,160
+ PHP è completo quanto basta per fare ciò per cui è stato progettato, cioè scrivere applicazioni web.
+
+583
+00:37:25,160 --> 00:37:29,160
+ Si può dire che per tale scopo copra un bel po' di situazioni.
+
+584
+00:37:29,160 --> 00:37:34,160
+ Esso non è mai stato progettato per risolvere ogni singolo problema
+
+585
+00:37:34,160 --> 00:37:36,160
+ del mondo della programmazione.
+
+586
+00:37:36,160 --> 00:37:42,160
+ È solo per la sua semplicità che si presta ad essere utilizzato in situazioni diverse.
+
+587
+00:37:42,160 --> 00:37:49,160
+ L'attenzione iniziale per il web ha contribuito a definirne le caratteristiche iniziali, appunto,
+
+588
+00:37:49,160 --> 00:37:52,160
+ e la tendenza continua ancora oggi.
+
+589
+00:37:52,160 --> 00:37:58,160
+ Le modifiche al linguaggio principale infatti sono guidate totalmente dalle esigenze di sviluppatori web.
+
+590
+00:37:58,160 --> 00:38:03,160
+ E gran parte dell'innovazione deriva dalla necessità di svolgere
+
+591
+00:38:03,160 --> 00:38:06,160
+ il lavoro più rapidamente e meglio.
+
+592
+00:38:06,160 --> 00:38:11,160
+ Anche quando si tratta di copiare funzionalità da altri linguaggi,
+
+593
+00:38:11,160 --> 00:38:16,160
+ ciò avviene per rendere più facile la vita degli sviluppatori
+
+594
+00:38:16,160 --> 00:38:22,160
+ e raramente perché un altro linguaggio fa tale operazione in modo più corretto.
+
+595
+00:38:22,160 --> 00:38:28,160
+ Insomma, PHP, con le sue caratteristiche, estensioni, framework, eccetera,
+
+596
+00:38:28,160 --> 00:38:32,160
+ oggi consente di creare applicazioni web.
+
+597
+00:38:32,160 --> 00:38:36,160
+ E tra cinque anni permetterà sempre di creare applicazioni web
+
+598
+00:38:36,160 --> 00:38:39,160
+ solo con alcune funzionalità in più.
+
+599
+00:38:39,160 --> 00:38:48,160
+ Per concludere, possiamo certamente affermare che PHP
+
+600
+00:38:48,160 --> 00:38:52,160
+ ha tutt'oggi un sacco di problemi e limitazioni,
+
+601
+00:38:52,160 --> 00:38:57,160
+ ma ha anche tantissimi pregi, vantaggi e strumenti potenti.
+
+602
+00:38:57,160 --> 00:39:01,160
+ D'altronde, se così non fosse, non sarebbe così largamente utilizzato ancora oggi
+
+603
+00:39:01,160 --> 00:39:06,160
+ come in passato e non farebbe girare milioni di progetti
+
+604
+00:39:06,160 --> 00:39:09,160
+ il cui numero aumenta quotidianamente.
+
+605
+00:39:09,160 --> 00:39:14,160
+ Semplicemente, PHP, con tutti i suoi limiti, è comunque tra i linguaggi
+
+606
+00:39:14,160 --> 00:39:20,160
+ con le migliori caratteristiche necessarie alla diffusione e alla sopravvivenza.
+
+607
+00:39:20,160 --> 00:39:25,160
+ Come nel processo evolutivo, infatti, chi sopravvive non è necessariamente
+
+608
+00:39:25,160 --> 00:39:30,160
+ il migliore del momento, ma colui che meglio sa adattarsi al cambiamento.
+
+609
+00:39:30,160 --> 00:39:35,160
+ E PHP ha dimostrato di sapersi adattare egregiamente.
+
+610
+00:39:35,160 --> 00:39:40,160
+ Nonostante questo, esso continua ad avere una pessima reputazione,
+
+611
+00:39:40,160 --> 00:39:45,160
+ un po' per colpa di chi lo utilizza e lo diffonde nel modo sbagliato,
+
+612
+00:39:45,160 --> 00:39:49,160
+ ma un po' anche perché tanti programmatori là fuori
+
+613
+00:39:49,160 --> 00:39:53,160
+ parlano senza realmente sapere le cose che dicono.
+
+614
+00:39:53,160 --> 00:39:56,160
+ Magari tanti di quelli che criticano il PHP
+
+615
+00:39:56,160 --> 00:39:59,160
+ di PHP non hanno mai scritto nemmeno una riga.
+
+616
+00:39:59,160 --> 00:40:05,160
+ E un comportamento del genere non è tipico solo del caso in oggetto.
+
+617
+00:40:05,160 --> 00:40:10,160
+ Noi oggi ci limitiamo a parlare di questo solo perché è l'argomento dell'episodio.
+
+618
+00:40:10,160 --> 00:40:15,160
+ Le persone odiano PHP perché oggi va di moda odiare PHP.
+
+619
+00:40:15,160 --> 00:40:20,160
+ Magari domani se la prenderanno con qualche altro linguaggio che oggi va per la maggiore.
+
+620
+00:40:20,160 --> 00:40:23,160
+ Chissà, qualcuno ha detto JavaScript?
+
+621
+00:40:23,160 --> 00:40:28,160
+ Ad ogni modo, quello che penso io è che nella cassetta degli attrezzi
+
+622
+00:40:28,160 --> 00:40:34,160
+ di un buon professionista non è assolutamente indispensabile che ci sia PHP.
+
+623
+00:40:34,160 --> 00:40:39,160
+ Si può essere ottimi programmatori conoscendo tutt'altri linguaggi.
+
+624
+00:40:39,160 --> 00:40:43,160
+ Quello per cui però proprio non c'è spazio, secondo me,
+
+625
+00:40:43,160 --> 00:40:46,160
+ è l'ignoranza e l'elitarismo,
+
+626
+00:40:46,160 --> 00:40:51,160
+ che quando inseriti nell'equazione non possono fare altro che danni.
+
+627
+00:40:51,160 --> 00:40:57,160
+ In altre parole, la prossima volta che qualcuno ti dice che PHP fa schifo,
+
+628
+00:40:57,160 --> 00:41:02,160
+ ricordagli che tutto sommato la longevità e la diffusione di PHP
+
+629
+00:41:02,160 --> 00:41:07,160
+ testimoniano che fare le cose nel modo giusto non è sempre meglio
+
+630
+00:41:07,160 --> 00:41:11,160
+ che farle nel modo sbagliato o addirittura in quello peggiore.
+
+631
+00:41:11,160 --> 00:41:17,160
+ Più in generale, se qualcuno critica il linguaggio o il framework che stai usando,
+
+632
+00:41:17,160 --> 00:41:22,160
+ pensa sempre che a lungo andare la cosa non ha importanza.
+
+633
+00:41:22,160 --> 00:41:26,160
+ Scegli la filosofia di progettazione che più fa al caso tuo
+
+634
+00:41:26,160 --> 00:41:33,160
+ e sii felice di sapere che essere i peggiori potrebbe in realtà rivelarsi la cosa migliore.
+
+635
+00:41:33,160 --> 00:41:40,160
+ E poi, diciamocela tutta, il caro vecchio PHP ci ricorda anche una regola di vita molto importante,
+
+636
+00:41:40,160 --> 00:41:44,160
+ e cioè che l'ottimo è nemico del buono.
+
+637
+00:41:44,160 --> 00:41:49,160
+ Quante volte ci siamo trovati con progetti che non hanno mai visto la luce
+
+638
+00:41:49,160 --> 00:41:55,160
+ perché eravamo alla continua ricerca dell'occasione o del momento perfetto?
+
+639
+00:41:55,160 --> 00:41:58,160
+ Quante volte abbiamo rinunciato a fare qualcosa
+
+640
+00:41:58,160 --> 00:42:04,160
+ perché sentivamo di non poterlo fare nel modo migliore o nelle migliori condizioni?
+
+641
+00:42:04,160 --> 00:42:10,160
+ Beh, la lezione che potremmo trarre da PHP è che se vogliamo veramente fare qualcosa,
+
+642
+00:42:10,160 --> 00:42:16,160
+ allora dobbiamo farlo, buttarci, anche se il risultato non sarà perfetto.
+
+643
+00:42:16,160 --> 00:42:24,160
+ Se nella nostra idea c'è del potenziale, allora questo verrà fuori anche se la realizzazione non sarà perfetta.
+
+644
+00:42:24,160 --> 00:42:30,160
+ Così avremo modo di lavorare in un secondo momento su tutti gli aspetti che necessitano di migliorie.
+
+645
+00:42:30,160 --> 00:42:37,160
+ Non lasciamo che la ricerca della perfezione ci paralizzi e ci impedisca di portare a compimento cose
+
+646
+00:42:37,160 --> 00:42:42,160
+ che potenzialmente potrebbero diventare anche molto belle e importanti.
+
+647
+00:42:42,160 --> 00:42:53,160
+ Bene, spero come al solito di averti portato delle riflessioni interessanti.
+
+648
+00:42:53,160 --> 00:43:00,160
+ Cosa ne pensi tu di PHP e unisciti al gruppo se non l'hai già fatto, così possiamo discuterne insieme.
+
+649
+00:43:00,160 --> 00:43:06,160
+ Nel frattempo, prima di lasciarti, ti ricordo che Pensieri in Codice è un progetto indipendente
+
+650
+00:43:06,160 --> 00:43:11,160
+ che realizzo nel mio tempo libero e con le mie risorse personali
+
+651
+00:43:11,160 --> 00:43:15,160
+ e si basa totalmente sulla filosofia Value for Value.
+
+652
+00:43:15,160 --> 00:43:17,160
+ Cosa vuol dire?
+
+653
+00:43:17,160 --> 00:43:22,160
+ Semplice, vuol dire che è gratuito e disponibile per chiunque senza pubblicità.
+
+654
+00:43:22,160 --> 00:43:30,160
+ L'unica cosa che ti chiedo in cambio è, se lo ascolti con continuità, di valutare che valore ha per te.
+
+655
+00:43:30,160 --> 00:43:36,160
+ Ad esempio, pensa a quanto ti potrebbe dispiacere se da domani scomparisse.
+
+656
+00:43:36,160 --> 00:43:43,160
+ Ora, sulla base di questa riflessione, prendi in considerazione l'idea di supportare il podcast.
+
+657
+00:43:43,160 --> 00:43:46,160
+ Scegli tu il modo, hai tante possibilità.
+
+658
+00:43:46,160 --> 00:43:50,160
+ Ad esempio, puoi spendere un po' del tuo tempo come faccio io.
+
+659
+00:43:50,160 --> 00:43:55,160
+ Diffondilo, parlane, fallo ascoltare, condividi gli episodi.
+
+660
+00:43:55,160 --> 00:44:00,160
+ Aiuta a portare più ascoltatori, che è lo scopo principale di tutto.
+
+661
+00:44:00,160 --> 00:44:03,160
+ Oppure, puoi partecipare alle attività.
+
+662
+00:44:03,160 --> 00:44:06,160
+ Ci sono tante, tante cose da fare.
+
+663
+00:44:06,160 --> 00:44:09,160
+ Per esempio, aprire e gestire degli account social
+
+664
+00:44:09,160 --> 00:44:15,160
+ o portare avanti lo sviluppo del sito o degli automatismi che abbiamo creato con la community.
+
+665
+00:44:15,160 --> 00:44:19,160
+ Mi piacerebbe inoltre aggiornare la sigla
+
+666
+00:44:19,160 --> 00:44:22,160
+ e magari la musica in background.
+
+667
+00:44:22,160 --> 00:44:27,160
+ Se vuoi, puoi proporre qualcosa e aiutare a realizzare gli asset.
+
+668
+00:44:27,160 --> 00:44:30,160
+ Ma non limitarti a questi esempi.
+
+669
+00:44:30,160 --> 00:44:34,160
+ Se hai un'idea che pensi che possa essere di giovamento per il progetto
+
+670
+00:44:34,160 --> 00:44:38,160
+ e sai come portarla avanti, scrivimi e parliamone.
+
+671
+00:44:38,160 --> 00:44:42,160
+ Infine, se non hai tempo ma vuoi contribuire lo stesso,
+
+672
+00:44:42,160 --> 00:44:46,160
+ puoi fare una piccola donazione che fa sempre piacere
+
+673
+00:44:46,160 --> 00:44:48,160
+ perché mi ricorda che, in qualche modo,
+
+674
+00:44:48,160 --> 00:44:51,160
+ apprezzi il lavoro che faccio.
+
+675
+00:44:51,160 --> 00:44:54,160
+ E poi, con le donazioni, ti ringrazio a fine episodio
+
+676
+00:44:54,160 --> 00:44:56,160
+ e, arrivato a una certa soglia,
+
+677
+00:44:56,160 --> 00:45:02,160
+ ricevi a casa i gadget come sticker, segnalibri, card laminate e numerate.
+
+678
+00:45:02,160 --> 00:45:08,160
+ C'è tutto scritto nella sezione supporto del sito pensierincodice.it.
+
+679
+00:45:08,160 --> 00:45:10,160
+ Proprio a proposito di questo,
+
+680
+00:45:10,160 --> 00:45:14,160
+ oggi un ringraziamento speciale va a Piolix
+
+681
+00:45:14,160 --> 00:45:17,160
+ per la sua donazione singola che gli vale
+
+682
+00:45:17,160 --> 00:45:20,160
+ il set di sticker e il segnalibro.
+
+683
+00:45:20,160 --> 00:45:24,160
+ E poi agli abbonati Edoardo e Carlo
+
+684
+00:45:24,160 --> 00:45:28,160
+ che ormai supportano Pensieri in Codice praticamente da anni.
+
+685
+00:45:28,160 --> 00:45:31,160
+ Ah, una cosa importante, anzi due.
+
+686
+00:45:31,160 --> 00:45:36,160
+ La prima è che Paypal applica delle tariffe molto alte.
+
+687
+00:45:36,160 --> 00:45:41,160
+ Soprattutto per le donazioni piccole la percentuale è ridicolmente alta.
+
+688
+00:45:41,160 --> 00:45:45,160
+ Quindi, se puoi, preferisci altri metodi, per favore.
+
+689
+00:45:45,160 --> 00:45:49,160
+ Io, intanto, sto cercando di aggiungere altri metodi alternativi.
+
+690
+00:45:49,160 --> 00:45:52,160
+ Ma, soprattutto, quando fai una donazione,
+
+691
+00:45:52,160 --> 00:45:57,160
+ poi scrivimi per dirmi con che nome vuoi essere ringraziato
+
+692
+00:45:57,160 --> 00:46:01,160
+ ed eventualmente l'indirizzo a cui spedire i gadget se ne hai diritto.
+
+693
+00:46:01,160 --> 00:46:06,160
+ Quasi nessuno lo fa e io, quando il sistema me lo permette,
+
+694
+00:46:06,160 --> 00:46:09,160
+ provo a ricontattare il donatore, ma non sempre posso.
+
+695
+00:46:09,160 --> 00:46:14,160
+ Quindi, per segnalare donazioni o semplicemente metterti in contatto,
+
+696
+00:46:14,160 --> 00:46:21,160
+ direttamente con me, l'indirizzo è valerio@pensierincodice.it
+
+697
+00:46:21,160 --> 00:46:26,160
+ Mi raccomando, sempre con due i, pensieri in codice.
+
+698
+00:46:26,160 --> 00:46:29,160
+ E direi che per oggi è tutto.
+
+699
+00:46:29,160 --> 00:46:33,160
+ Quindi, con un episodio che probabilmente supererà i tre quarti d'ora,
+
+700
+00:46:33,160 --> 00:46:37,160
+ io ti saluto, ti do appuntamento al prossimo episodio
+
+701
+00:46:37,160 --> 00:46:43,160
+ e non dimenticare mai che un informatico risolve problemi, a volte, anche usando il computer.
+
+702
+00:46:43,160 --> 00:46:46,160
+ Subtitles by the Amara.org community
+
+703
+00:46:46,160 --> 00:46:49,160
+ @amara.org
+
+704
+00:46:49,160 --> 00:46:54,160
+ Sottotitoli e revisione a cura di QTSS
+
+705
+00:46:54,160 --> 00:46:55,680
+ Autore dei sottotitoli e revisione a cura di QTSS
+
