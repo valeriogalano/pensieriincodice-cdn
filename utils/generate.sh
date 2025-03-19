@@ -8,17 +8,17 @@ fi
 
 EPISODE_NAME=$1
 
-# Scarica il file 'ggml-medium.bin' solo se non esiste già
-if [ ! -f ./models/ggml-medium.bin ]; then
-    curl -o ./models/ggml-medium.bin -L 'https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin'
+# Scarica il file 'ggml-large-v3.bin' solo se non esiste già
+if [ ! -f ./models/ggml-large-v3.bin ]; then
+    curl -o ./models/ggml-large-v3.bin -L 'https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin'
     if [ $? -eq 0 ]; then
         echo "Download completato con successo."
     else
-        echo "Errore durante il download del file ggml-medium.bin."
+        echo "Errore durante il download del file ggml-large-v3.bin."
         exit 1
     fi
 else
-    echo "Il file ggml-medium.bin esiste già, non è necessario scaricarlo."
+    echo "Il file ggml-large-v3.bin esiste già, non è necessario scaricarlo."
 fi
 
 # Converte il file MP3 in WAV
@@ -31,7 +31,7 @@ else
 fi
 
 # Esegue Whisper per trascrivere il file audio
-./whisper --language it -t 7 --print-colors --model ./models/ggml-medium.bin --output-srt --file output.wav --output-file ${EPISODE_NAME}.srt
+./whisper --language it -t 7 --print-colors --model ./models/ggml-large-v3.bin --output-srt --file output.wav --output-file ../transcripts/${EPISODE_NAME}
 if [ $? -eq 0 ]; then
     echo "Trascrizione completata con successo."
 else
