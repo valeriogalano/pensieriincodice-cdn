@@ -31,7 +31,7 @@ else
 fi
 
 # Esegue Whisper per trascrivere il file audio
-./whisper --language it -t 7 --print-colors --model ./models/ggml-large-v3.bin --output-srt --file output.wav --output-file ../transcripts/${EPISODE_NAME}
+./whisper --language it -t 7 --print-colors --model ./models/ggml-large-v3.bin --output-srt --file output.wav --output-file ../public/transcripts/${EPISODE_NAME}
 if [ $? -eq 0 ]; then
     echo "Trascrizione completata con successo."
 else
