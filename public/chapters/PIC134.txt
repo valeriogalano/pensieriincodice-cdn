@@ -1,0 +1,9 @@
+0.000000	0.000000	Introduzione
+103.934966	103.934966	Attaccare un'Intelligenza Artificiale
+559.380816	559.380816	Infezioni intrinseche nei modelli
+947.622218	947.622218	Data poisoning tramite trigger
+1217.150898	1217.150898	Data poisoning tramite tecnica ROME
+1411.099165	1411.099165	Code poisoning
+1657.555517	1657.555517	Delayed poisoning
+1819.752573	1819.752573	Conseguenza
+2531.739115	2531.739115	Conclusione
