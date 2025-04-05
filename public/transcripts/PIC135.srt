@@ -1,0 +1,1000 @@
+1
+00:00:00,000 --> 00:00:06,960
+ Di criptovalute su pensieri in codice non abbiamo ancora mai parlato, o almeno non abbiamo dedicato
+
+2
+00:00:06,960 --> 00:00:13,000
+ un episodio specifico all'argomento. Si tratta però di una delle tecnologie più interessanti
+
+3
+00:00:13,000 --> 00:00:19,760
+ e importanti degli ultimi anni. Il mondo degli asset digitali, infatti, in tutte le sue molteplici
+
+4
+00:00:19,760 --> 00:00:26,560
+ forme sta subendo un processo di espansione e diffusione pari a pochi altri. Le tecnologie
+
+5
+00:00:26,560 --> 00:00:32,040
+ che hanno visto un'esplosione di simili dimensioni si contano letteralmente sulle dita di una
+
+6
+00:00:32,040 --> 00:00:38,020
+ mano. E siccome poco più di un mese fa è stato annunciato l'ennesimo importante passo
+
+7
+00:00:38,020 --> 00:00:44,340
+ avanti, ho voluto cogliere l'occasione per produrre un episodio nel quale fare un'interessantissima
+
+8
+00:00:44,340 --> 00:00:48,940
+ introduzione. Tra poco, dunque, parleremo di criptovalute
+
+9
+00:00:48,940 --> 00:00:55,660
+ e asset digitali e lo faremo con un ospite d'eccezione che su questi argomenti ha fondato
+
+10
+00:00:55,660 --> 00:00:56,540
+ la propria carriera.
+
+11
+00:00:56,540 --> 00:01:00,440
+ E perfino una società di ricerca e analisi. Sigla.
+
+12
+00:01:00,440 --> 00:01:10,040
+ Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici. Con Valerio Galano.
+
+13
+00:01:10,040 --> 00:01:21,260
+ Penso di averlo già detto più di una volta. Pensieri in Codice è sì un podcast con il
+
+14
+00:01:21,260 --> 00:01:26,260
+ quale mi piace, nel mio piccolo, provare a fare un po' di divulgazione informatica,
+
+15
+00:01:26,260 --> 00:01:32,380
+ ma d'altro canto è anche un progetto che utilizzo io stesso per imparare ogni giorno
+
+16
+00:01:32,380 --> 00:01:36,400
+ cose nuove. La maggior parte delle volte ciò si concretizza
+
+17
+00:01:36,400 --> 00:01:43,020
+ nello studiare quante più fonti possibili e nel ricombinare tutte le informazioni così
+
+18
+00:01:43,020 --> 00:01:50,020
+ acquisite in modo semplice e lineare dando vita agli script degli episodi. Ma a volte
+
+19
+00:01:50,020 --> 00:01:55,800
+ capita che certi argomenti, seppur mi appaiano interessanti, siano oggettivamente troppo elevati.
+
+20
+00:01:55,800 --> 00:02:00,960
+ Sicuramente troppo lontani dal mio ambito di competenza per poterne approfondire da solo
+
+21
+00:02:00,960 --> 00:02:06,680
+ gli aspetti più intriganti. Ci sono settori dell'informatica che richiedono
+
+22
+00:02:06,680 --> 00:02:13,440
+ anni di studio e sarebbe davvero presuntuoso da parte mia pensare di poterli comprendere
+
+23
+00:02:13,440 --> 00:02:19,980
+ o addirittura essere in grado di spiegarli con sole 10 o 20 ore di studio. Ed è così
+
+24
+00:02:19,980 --> 00:02:25,340
+ che nascono gli episodi di Pensieri in Codice come quello di oggi, in cui chiedo l'aiuto
+
+25
+00:02:25,340 --> 00:02:30,800
+ di un esperto che gentilmente si presta a condividere un po' della propria conoscenza
+
+26
+00:02:30,800 --> 00:02:37,580
+ con noi e a raccontarci cose interessanti. Dunque, oggi abbiamo qui con noi Andrea Venturelli,
+
+27
+00:02:37,580 --> 00:02:43,580
+ founder di Decrypto e ricercatore in campo di DigitalAsset. Ciao Andrea e benvenuto.
+
+28
+00:02:43,580 --> 00:02:46,580
+ Ciao Valerio, grazie, è un piacere essere qua.
+
+29
+00:02:46,580 --> 00:02:54,880
+ Grazie a te, è un piacere mio. Innanzitutto, Andrea, ci vuoi spiegare di cosa si occupa
+
+30
+00:02:54,880 --> 00:02:58,500
+ specifico, di cosa ti occupi tu in Decrypto?
+
+31
+00:02:58,500 --> 00:03:05,240
+ Allora, Valerio, Decrypto è la mia società che si occupa di ricerca e analisi in campo
+
+32
+00:03:05,240 --> 00:03:09,680
+ Bitcoin e DigitalAsset. Che cosa significa in termini semplici, che cosa facciamo in
+
+33
+00:03:09,680 --> 00:03:14,120
+ termini semplici? Siamo una piccola azienda, ci dedichiamo ad un target molto specifico
+
+34
+00:03:14,120 --> 00:03:20,420
+ e piccolo di clienti, che sono persone che tendenzialmente già hanno degli investimenti
+
+35
+00:03:20,420 --> 00:03:24,420
+ o sono interessati al mondo degli investimenti, non sono ragazzini, ma parliamo di persone
+
+36
+00:03:24,420 --> 00:03:30,780
+ che hanno almeno 35-40 anni e che vogliono gestire al meglio il loro patrimonio. Ecco,
+
+37
+00:03:30,780 --> 00:03:38,280
+ quindi noi facciamo innanzitutto delle analisi dei portafogli per capire lo stato del portafoglio,
+
+38
+00:03:38,280 --> 00:03:42,640
+ della persona, quindi andiamo a capire se ci sono dei problemi lato sicurezza, se ci sono dei
+
+39
+00:03:42,640 --> 00:03:47,480
+ problemi lato dell'asset allocation o metriche finanziarie che potrebbero essere migliorate e
+
+40
+00:03:47,480 --> 00:03:53,960
+ poi eroghiamo dei percorsi di formazione esclusivamente per queste persone. Dico che abbiamo
+
+41
+00:03:53,960 --> 00:03:59,300
+ un po' il piede in due scarpe solitamente, perché noi lavoriamo tanto con degli investitori
+
+42
+00:03:59,300 --> 00:04:09,040
+ privati e quindi abbiamo il polso, riusciamo a capire esattamente che cosa le persone vogliono
+
+43
+00:04:09,040 --> 00:04:13,880
+ e come dovrebbero investire le persone nel mondo dei digital asset, ma dall'altra parte
+
+44
+00:04:13,880 --> 00:04:20,000
+ lavoriamo anche con dei fondi di investimento. I fondi di investimento sono quelle entità
+
+45
+00:04:20,000 --> 00:04:23,500
+ che riescono a guadagnare anche grazie a noi.
+
+46
+00:04:23,500 --> 00:04:31,480
+ Per cui noi avendo un po' il piede in due scarpe diciamo che riusciamo a bilanciare e fare una
+
+47
+00:04:31,480 --> 00:04:36,300
+ formazione che tendenzialmente non si trova su YouTube, non si trova gratuitamente e che è una
+
+48
+00:04:36,300 --> 00:04:41,380
+ formazione di alta qualità per riuscire ad investire e creare un portafoglio che riesca ad
+
+49
+00:04:41,380 --> 00:04:46,480
+ avere delle buone performance, che possa soprattutto rispettare i tuoi obiettivi di vita, i tuoi
+
+50
+00:04:46,480 --> 00:04:53,040
+ obiettivi finanziari nel lungo termine. Bene, quindi tu e la tua azienda siete chiaramente esperti
+
+51
+00:04:53,040 --> 00:04:59,740
+ nel mondo delle criptovalute. In generale però, anche senza essere necessariamente esperti o
+
+52
+00:04:59,740 --> 00:05:08,160
+ investitori, un po' tutti ormai abbiamo sentito almeno parlare di Bitcoin, Ethereum, Solana,
+
+53
+00:05:08,160 --> 00:05:15,780
+ ultimamente Trump o Melania. Allora io ti chiedo, in effetti, se volessimo parlare in
+
+54
+00:05:15,780 --> 00:05:22,580
+ termini teorici o accademici, qual è la vera e propria definizione di criptovaluta?
+
+55
+00:05:22,580 --> 00:05:31,700
+ Allora, utilizzare la parola criptovaluta, a mio modo di vedere e a nostro modo di vedere come
+
+56
+00:05:31,700 --> 00:05:37,480
+ società di ricerca analisi, è abbastanza fuorviante perché in realtà secondo me è molto più semplice
+
+57
+00:05:37,480 --> 00:05:44,900
+ dividere il mercato in due grandi categorie. Da una parte abbiamo la criptovaluta, l'unica criptovaluta
+
+58
+00:05:44,900 --> 00:05:52,120
+ che effettivamente esiste oggi e che viene utilizzata oggi, che si chiama Bitcoin, che penso che quasi tutti oramai
+
+59
+00:05:52,120 --> 00:05:58,180
+ hanno sentito, e poi dall'altra parte invece abbiamo delle aziende. Delle aziende, dei progetti,
+
+60
+00:05:58,180 --> 00:06:06,180
+ ecco, queste aziende e progetti non creano delle criptovalute, non mirano ad essere delle valute,
+
+61
+00:06:06,180 --> 00:06:11,500
+ non mirano ad essere dei mezzi di pagamento. Solana, per esempio, per citarne una, non mira
+
+62
+00:06:11,500 --> 00:06:16,120
+ ad essere un mezzo di pagamento, né tantomeno Ethereum, né tantomeno Trump o Melania, come hai
+
+63
+00:06:16,120 --> 00:06:21,660
+ citato tu, ecco. Ma sono dei progetti, in alcuni casi sono delle aziende, in alcuni casi sono dei progetti,
+
+64
+00:06:21,660 --> 00:06:29,900
+ in alcuni casi sono delle truffe vere e proprie. Ecco, quindi questo mondo è un mondo che purtroppo è ancora,
+
+65
+00:06:29,900 --> 00:06:35,900
+ purtroppo per fortuna, è un mondo che è ancora regolamentato per metà, quindi significa che ci sono
+
+66
+00:06:35,900 --> 00:06:42,380
+ tantissime truffe e che l'aspetto numero uno da tenere a mente, come prima cosa per chi vuole investire
+
+67
+00:06:42,380 --> 00:06:48,200
+ in questo settore, è la sicurezza. È meglio fare meno che fare troppo in questo settore, perché altrimenti
+
+68
+00:06:48,200 --> 00:06:51,200
+ si rischia di sbagliare, si rischiano di perdere soldi, o si rischia di perdere soldi, o si rischia di perdere
+
+69
+00:06:51,200 --> 00:06:57,940
+ di incappare in truffe. E per truffe non intendo la truffa in stile Vanna Marchi, che ti vende il sale o cose di questo tipo,
+
+70
+00:06:57,940 --> 00:07:03,600
+ ma intendo truffe molto più sofisticate, in cui cascano anche esperti o operatori del settore.
+
+71
+00:07:03,600 --> 00:07:10,740
+ Per cui, tornando alla tua domanda Valerio, la distinzione che secondo me e secondo noi, come società di ricerca,
+
+72
+00:07:10,740 --> 00:07:15,500
+ facciamo è proprio quella di dividere in due grandi categorie. Da una parte abbiamo Bitcoin,
+
+73
+00:07:15,500 --> 00:07:20,740
+ che è la criptovaluta, nata per essere un mezzo di pagamento alternativo alle banche, senza intermediari,
+
+74
+00:07:20,740 --> 00:07:30,280
+ soprattutto per poter scambiare del valore in ogni parte del mondo, senza dover chiedere il permesso a nessuno.
+
+75
+00:07:30,280 --> 00:07:38,180
+ Questa è la grande forza di Bitcoin, ed è la vera missione iniziale di Bitcoin. Dopodiché, per chi studia Bitcoin,
+
+76
+00:07:38,180 --> 00:07:46,800
+ è innegabile che Bitcoin, come dire, strizza l'occhio all'oro per come è stato costruito, anche in alcuni termini
+
+77
+00:07:46,800 --> 00:07:50,280
+ che magari poi affronteremo oggi insieme, quando parliamo dei miner.
+
+78
+00:07:50,280 --> 00:07:59,040
+ Quindi, dei minatori, si parla degli estrattori di nuovi Bitcoin, un po' come quelli che estraggono l'oro, i minatori di oro.
+
+79
+00:07:59,040 --> 00:08:05,540
+ Quindi, ci sono diverse somiglianze nel modo in cui è stato costruito Bitcoin per assomigliare all'oro.
+
+80
+00:08:05,540 --> 00:08:12,920
+ Questo è il motivo per cui Bitcoin non solo è mezzo di pagamento, ma per esempio, da alcune persone, compresa anche la nuova
+
+81
+00:08:12,920 --> 00:08:19,820
+ amministrazione americana, è definito proprio oro digitale Bitcoin. Dall'altra parte, invece, non abbiamo
+
+82
+00:08:19,820 --> 00:08:28,980
+ né tantomeno delle monete, né tantomeno un oro digitale, ecco. Dall'altra parte, noi abbiamo quelli che potremmo
+
+83
+00:08:28,980 --> 00:08:37,820
+ definire più con il nome di token, o con il nome di digital asset, o con il nome di altcoin. Ecco, la definizione
+
+84
+00:08:37,820 --> 00:08:43,060
+ probabilmente poco importa se si chiamano altcoin, digital asset o token. A noi quello che ci serve capire, però,
+
+85
+00:08:43,060 --> 00:08:49,360
+ è che questi token sono, prima di tutto, questi strumenti, degli strumenti che servono per
+
+86
+00:08:49,360 --> 00:08:55,820
+ raccogliere il capitale. È un po' come se fossero degli strumenti di crowdfunding, per intenderci. Cioè, noi vogliamo
+
+87
+00:08:55,820 --> 00:09:03,200
+ creare una nuova società, dobbiamo raccogliere del denaro, come se fossimo una normale startup, e anziché andare a chiedere,
+
+88
+00:09:03,200 --> 00:09:10,320
+ per esempio, soldi agli investitori, andare a chiedere debiti in banca, andare a compilare dei bandi, ci sono diverse forme
+
+89
+00:09:10,320 --> 00:09:18,900
+ di finanziamento oggi, fra cui c'è il finanziamento attraverso i token. Quindi noi, innanzitutto, dobbiamo capire questa grandissima differenza. Purtroppo questa differenza,
+
+90
+00:09:18,900 --> 00:09:30,540
+ non è spiegata in termini semplici, non è la luce del sole se noi andiamo su qualsiasi piattaforma di investimento, perché in una piattaforma di investimento noi troviamo bitcoin e poi troviamo tutto il resto.
+
+91
+00:09:30,540 --> 00:09:48,440
+ Come se fosse più o meno tutto uguale. Infatti si parla anche del bitcoin di Trump, come se Trump avesse creato il suo bitcoin. Ed è chiaramente disinformazione, perché Trump non ha creato il suo bitcoin, Trump ha creato semplicemente un token, in particolar modo una memecoin.
+
+92
+00:09:48,440 --> 00:10:02,180
+ Poi magari entriamo anche nella definizione poi più avanti, Valerio, insieme, di vari strumenti che ci sono in questo mondo. Però iniziando nel modo più semplice in assoluto, dividiamo in due grandi categorie.
+
+93
+00:10:02,180 --> 00:10:07,800
+ La criptovaluta bitcoin e il resto, invece, che sono token emessi da aziende.
+
+94
+00:10:09,420 --> 00:10:24,860
+ Ok, chiaro. Quindi, focalizzandoci sul bitcoin in quanto criptovaluta, possiamo dire che l'esistenza di questo strumento è alla base di quello che potremmo definire un sistema monetario totalmente virtuale.
+
+95
+00:10:24,860 --> 00:10:37,820
+ E allora, quello che ti chiedo è, da un punto di vista tecnico, almeno a grandi linee, ci puoi spiegare come fa a funzionare una cosa del genere? In pratica, come fa a funzionare bitcoin?
+
+96
+00:10:38,960 --> 00:10:50,060
+ Allora, questa è una domanda per quanto semplice, può essere estremamente complessa. Partiamo proprio dalle basi, poi cerchiamo di scendere mano a mano in profondità.
+
+97
+00:10:50,060 --> 00:11:08,500
+ Allora, innanzitutto, quando si parla di bitcoin, abbiamo capito dell'unica vera criptovaluta che le persone utilizzano e che, come dire, è molto simile all'oro e per alcune persone, o per esempio il governo americano,
+
+98
+00:11:08,500 --> 00:11:20,080
+ oggi è definito oro digitale, quello che noi innanzitutto dobbiamo capire è che bitcoin nasce nel 2009, per la precisione il 3 gennaio del 2009 e quando nasce?
+
+99
+00:11:20,080 --> 00:11:34,580
+ Nasce nel momento in cui viene creato il primo blocco della blockchain. Blockchain probabilmente è un termine che penso che ormai quasi tutti hanno sentito almeno una volta. Magari lo hanno capito, magari lo hanno capito invece un po' meno.
+
+100
+00:11:38,040 --> 00:12:03,480
+ La blockchain è una tecnologia sottostante a bitcoin. Che cos'è? Significa che la blockchain di bitcoin è formata da un blocco uno dopo l'altro, sequenziali. Significa che all'interno del blocco ci sono tutte le transazioni che noi possiamo mandare, proprio come, dobbiamo vederlo come se fosse una sorta di registro pubblico, trasparente, che tutti possono guardare, ma in forma pseudonima.
+
+101
+00:12:07,580 --> 00:12:27,600
+ Significa che il nostro nome, il nostro cognome, il nostro codice fiscale o il numero della carta d'identità, ma ci sono delle lettere, dei numeri, insomma delle stringhe alfanumeriche. Ecco questo è il modo in cui bitcoin non è anonimo, bitcoin è pseudonimo.
+
+102
+00:12:37,120 --> 00:12:54,840
+ Significa che per andare al blocco, il blocco due è agganciato al blocco uno, il blocco tre è agganciato al blocco due e così via. E che il vero valore di bitcoin è dato dal fatto che questi blocchi non possono essere riavvolti, cioè noi non possiamo riavvolgere la storia.
+
+103
+00:12:54,840 --> 00:13:07,100
+ Questi blocchi sono formati un blocco ogni dieci minuti circa. Questo vuol dire che dal 2009 ad oggi sono stati creati migliaia e migliaia di blocchi.
+
+104
+00:13:07,100 --> 00:13:27,840
+ Questi blocchi al loro interno contengono tutte le transazioni e questa blockchain, quindi questo registro pubblico distribuito, trasparente, con tutti i nostri nomi però in forma alfanumerica, quindi in forma pseudonima, è distribuito su migliaia di nodi in giro per il mondo.
+
+105
+00:13:27,840 --> 00:13:37,080
+ Questo è il motivo per cui viene definito decentralizzato, perché tutti noi con un computer, anche un computer molto vecchio Valerio, perché io ti dico che...
+
+106
+00:13:37,080 --> 00:13:51,160
+ Ho un nodo di bitcoin che gira su un computer, un Mac vecchio su cui ci ho installato Linux, che è del 2010-2011, con un hard disk da un terabyte, un hard disk meccanico da un terabyte.
+
+107
+00:13:51,160 --> 00:14:05,720
+ Ecco, quindi anche un computer vecchio di 15 anni può tenere la blockchain di bitcoin. Questo serve per distribuire e al tempo stesso rendere decentralizzato e inattaccabile tutto il sistema di bitcoin.
+
+108
+00:14:07,060 --> 00:14:18,640
+ Ci sono altre entità, cioè non ci sono solamente i nodi, che sono questi computer in giro per il mondo che ogni 10 minuti si aggiornano per scrivere un nuovo blocco della blockchain.
+
+109
+00:14:18,640 --> 00:14:29,300
+ In questo modo se qualcuno falsifica qualcosa si vede subito, perché ci sono migliaia di nodi che invece possono dire se qualcuno sta falsificando qualche transazione.
+
+110
+00:14:29,300 --> 00:14:37,040
+ Quindi è di gran lunga uno dei sistemi più sicuri che noi abbiamo, molto più sicuro e molto più trasparente dell'attuale sistema bancario.
+
+111
+00:14:37,040 --> 00:14:44,940
+ All'interno del network, della grande macchina di bitcoin, abbiamo altre due principali entità.
+
+112
+00:14:44,940 --> 00:14:50,260
+ La prima entità, di cui ho anche parlato prima, sono i miner, per cui i minatori.
+
+113
+00:14:50,260 --> 00:14:59,240
+ Inizialmente erano dei semplici computer, come dei laptop o dei computer normali, casalinghi.
+
+114
+00:14:59,240 --> 00:15:05,340
+ Nel corso del tempo questi computer, l'industria del mining di bitcoin si è ingrandita sempre di più.
+
+115
+00:15:05,340 --> 00:15:07,020
+ E la competizione ha fatto che i minatori si sono rinforzati.
+
+116
+00:15:07,020 --> 00:15:19,820
+ Ha fatto sì che non si potesse più fare mining con un semplice computer da tavolo o un computer casalingo, ma che bisognasse comprare degli hardware appositi per poter fare questo lavoro.
+
+117
+00:15:19,820 --> 00:15:24,700
+ Ecco, il mining oggi è un'industria vera e propria, è un'industria come l'industria del mining dell'oro.
+
+118
+00:15:24,700 --> 00:15:28,520
+ E le società che fanno mining sono società che sono persino quotate in borsa.
+
+119
+00:15:28,520 --> 00:15:37,000
+ Questa è la seconda entità che lavora nel network di bitcoin per far sì di includere all'interno dei blocchi della blockchain,
+
+120
+00:15:37,000 --> 00:15:42,760
+ di cui abbiamo parlato prima, tutte le transazioni che vengono effettuate ogni dieci minuti.
+
+121
+00:15:42,760 --> 00:15:54,540
+ Il miner che riesce a vincere una sorta di, chiamiamola gara, una sorta di competizione che avviene ogni dieci minuti, si becca una ricompensa.
+
+122
+00:15:54,540 --> 00:16:03,680
+ Questa ricompensa non è altro che l'inflazione di bitcoin e senza andare in troppi tecnicismi passiamo a quella che invece è la terza entità, che siamo noi.
+
+123
+00:16:03,680 --> 00:16:06,980
+ Quindi sono tutti gli utenti che possono utilizzare bitcoin.
+
+124
+00:16:06,980 --> 00:16:16,540
+ Bitcoin viene utilizzato, inizialmente era utilizzato per scambiare denaro in forma peer to peer, quindi in forma decentralizzata senza nessun intermediario.
+
+125
+00:16:16,540 --> 00:16:31,000
+ Oggi bitcoin ha un ruolo invece che è cambiato nel corso del tempo, la narrativa di bitcoin è cambiata nel corso del tempo e oggi per lo più le persone o speculano sul rialzo, il ribasso di bitcoin oppure semplicemente fanno un po' quello che le persone fanno anche con l'oro.
+
+126
+00:16:31,000 --> 00:16:35,540
+ Quindi nel corso del tempo lo accumulano per proteggere il loro potere di acquisto.
+
+127
+00:16:35,540 --> 00:16:36,960
+ Quindi queste sono le tre principali.
+
+128
+00:16:36,960 --> 00:16:46,240
+ Entità da cui è formato bitcoin, abbiamo i nodi, abbiamo i miners e abbiamo gli utenti e questo è a grandi linee Valerio il modo in cui bitcoin funziona oggi.
+
+129
+00:16:46,240 --> 00:17:06,940
+ Chiarissimo, quindi dopo oltre vent'anni dalla nascita di bitcoin il panorama delle criptovalute ne conta ormai decine di migliaia, ma tu oggi ci hai fatto scoprire che non tutte sono realmente definibili criptovalute, anzi che la maggior parte sono invece dei token.
+
+130
+00:17:06,940 --> 00:17:09,380
+ Ci chiarisci questo punto?
+
+131
+00:17:09,380 --> 00:17:15,720
+ Sì, come dicevamo poco fa, noi da una parte abbiamo bitcoin e dall'altra parte abbiamo delle aziende.
+
+132
+00:17:15,720 --> 00:17:31,000
+ Il funzionamento di bitcoin più o meno poi è il funzionamento anche di altri progetti come per esempio sono Ethereum, come per esempio sono Solana, Cardano, Ripple, cioè il funzionamento di base a grandi linee senza entrare in dettagli tecnici è più o meno tutto uguale.
+
+133
+00:17:31,000 --> 00:17:36,920
+ Quello che cambia è che bitcoin è nato come moneta e oggi viene definito...
+
+134
+00:17:36,920 --> 00:17:42,700
+ ...lo strumento oro digitale o strumento speculativo, dall'altra parte invece abbiamo delle aziende che sviluppano degli applicativi di business.
+
+135
+00:17:42,700 --> 00:17:56,180
+ Queste aziende creano delle criptovalute come tu hai giustamente detto Valerio, anche se sono più definibili quasi dei token o degli asset digitali, vengono chiamati oggi.
+
+136
+00:17:56,180 --> 00:18:02,460
+ Qual è la differenza fra per esempio Ethereum e il token di Trump?
+
+137
+00:18:02,460 --> 00:18:06,900
+ La differenza è che il token di Trump è semplicemente un token.
+
+138
+00:18:06,900 --> 00:18:14,660
+ Un token che gravita e viaggia e viene scambiato sulla blockchain, in questo caso di Solana.
+
+139
+00:18:14,660 --> 00:18:23,280
+ Possono essere scambiati sulla blockchain di Solana, possono essere scambiati sulla blockchain di Ethereum, di Sui, di Aptos, di Cardano eccetera.
+
+140
+00:18:23,280 --> 00:18:27,960
+ Quindi vediamo proprio queste blockchain come se fossero delle infrastrutture.
+
+141
+00:18:27,960 --> 00:18:30,960
+ Sopra queste infrastrutture vengono creati per esempio dei token.
+
+142
+00:18:30,960 --> 00:18:36,880
+ Alcuni token sono completamente stupidi e privi di alcun senso come per esempio il token di Trump non aveva alcun senso.
+
+143
+00:18:37,140 --> 00:18:46,640
+ Mentre ci sono degli altri progetti che, un esempio molto semplice da capire, sono i token che rappresentano dei beni reali.
+
+144
+00:18:46,640 --> 00:18:59,780
+ Quindi per esempio dei token che rappresentano la tokenizzazione di oggetti reali come per esempio possono essere degli immobili, degli oggetti di lusso, possono essere delle opere d'arte, possono essere anche degli strumenti finanziari.
+
+145
+00:18:59,780 --> 00:19:06,780
+ Per cui i titoli di stato, per esempio americani, alcuni di essi possono essere comprati sulla blockchain perché tokenizzano.
+
+146
+00:19:06,860 --> 00:19:18,180
+ Quindi vediamo proprio Ethereum come Solana, come altri progetti che magari le persone sentono, ascoltano, non come delle criptovalute ma come delle infrastrutture che servono ai fini di business.
+
+147
+00:19:18,180 --> 00:19:30,460
+ E sopra queste infrastrutture possono viaggiare diversi token che possono essere dall'aspetto più speculativo e stupido che tendenzialmente è quello che fanno vedere i giornali e quello di cui parlano un po' tutti.
+
+148
+00:19:30,460 --> 00:19:36,840
+ Ma in realtà sotto la superficie se scaviamo un pochino, ecco questo poi dopo è il nostro lavoro in decrypto.
+
+149
+00:19:36,840 --> 00:19:59,900
+ Di eliminare tutto il rumore, tutte le porcherie, tutte le schifezze di cui spesso si parla per invece tenere quello che è realmente quelli che sono i segnali, cioè togli il rumore e teniamo i segnali, teniamo le cose importanti, quelle da capire e quelle su cui per esempio un investitore si vuole esporre, si vuole iniziare a per esempio investire in questo settore.
+
+150
+00:20:06,820 --> 00:20:25,440
+ E' un po' dei digital asset, quindi in pratica erogate consulenza riguardo la cosiddetta finanza decentralizzata. Ci vuoi spiegare allora cosa si intende in effetti per finanza decentralizzata e quali sono le differenze pratiche rispetto a quella classica?
+
+151
+00:20:25,440 --> 00:20:36,800
+ Allora questa è un'ottima domanda. Sì, noi ci occupiamo di consulenza tecnologica e non finanziaria, nel senso che i consulenti finanziari sono nostri clienti e proprio perché devono imparare,
+
+152
+00:20:36,800 --> 00:20:46,440
+ questo nuovo, letteralmente un nuovo mondo, un nuovo modo anche di operare, di analizzare, di capire una nuova generazione di asset che prima non esisteva.
+
+153
+00:20:46,440 --> 00:21:05,800
+ Venendo alla tua domanda in merito alla finanza decentralizzata, la finanza, anche qui, chiamarla finanza decentralizzata può sembrare, può essere forviante, perché in realtà la finanza così definita decentralizzata, di decentralizzato se devo essere proprio onesto con te Valerio, a gran poco.
+
+154
+00:21:06,780 --> 00:21:30,500
+ Decentralizzata non sono altro che delle aziende o delle istituzioni che operano sulla blockchain. Che cos'ha di diverso allora se non è decentralizzata questa nuova finanza rispetto alla finanza tradizionale, la finanza che tutti un po' odiamo, la finanza che è difficile, la finanza che fa gli sbagli e quindi socializza le perdite ma invece privatizza i guadagni.
+
+155
+00:21:30,500 --> 00:21:36,220
+ Qual è la differenza fra la finanza, quella di Wall Street, quella che noi vediamo molto lontana dalle nostre vite?
+
+156
+00:21:36,760 --> 00:22:02,360
+ La differenza principale è che la finanza decentralizzata è innanzitutto aperta, è open, è aperta a chiunque. Perché? Perché non ti serve registrarti da nessuna parte, non devi dare il tuo ID, non devi dare la tua carta di identità, non devi dare la tua prova di residenza, le bollette, il selfie, noi tutti sappiamo le verifiche dell'identità che le banche online, i servizi online oggi ci chiedono.
+
+157
+00:22:02,360 --> 00:22:06,740
+ La finanza decentralizzata è aperta a tutti. Questo non significa che quindi ci sono le banche online che ci chiedono le verifiche dell'identità, ma è un'idea che noi tutti sappiamo.
+
+158
+00:22:06,740 --> 00:22:32,540
+ Non ci sono solamente criminali sulla finanza decentralizzata come spesso poi passa nei media mainstream. La finanza decentralizzata è aperta a tutti. Ci sono criminali ma ci sono anche tante persone che invece non potrebbero accedere ai servizi finanziari tradizionali semplicemente perché hanno la sfortuna di essere nati in posti poveri, essere unbanked, quindi non essere attraenti per le banche e quindi le banche non gli aprono i conti correnti a queste persone.
+
+159
+00:22:36,720 --> 00:22:51,540
+ La finanza decentralizzata è aperta a tutti.
+
+160
+00:23:06,700 --> 00:23:36,680
+ La finanza decentralizzata è aperta a tutti.
+
+161
+00:23:36,680 --> 00:24:06,660
+ La finanza decentralizzata è aperta a tutti.
+
+162
+00:24:06,660 --> 00:24:23,100
+ Diversi istituti bancari possono impiegarci settimane se non mesi. Quando l'esercente accetta i pagamenti virtuali i pagamenti non vengono automaticamente accreditati sul tuo conto ma hanno bisogno del tempo per essere accreditati perché ci devono essere tutte le verifiche del caso.
+
+163
+00:24:23,100 --> 00:24:35,100
+ Nel mondo della finanza decentralizzata è tutto molto più semplice. È tutto quindi open, aperto, cross border, quindi non ha bisogno di ponti, non ha bisogno di...
+
+164
+00:24:36,640 --> 00:25:02,120
+ Non ci sono confini e non ha bisogno del permesso di nessuno. Quindi tutti quanti possono accedere, possono creare infiniti portafogli che significa l'equivalente di dire creare infiniti account bancari, avere infiniti IBAN costantemente e preservare la propria privacy ma al tempo stesso garantisce una trasparenza che il mondo finanziario tradizionale non garantisce.
+
+165
+00:25:06,620 --> 00:25:28,760
+ Tutti i documenti, tutte le frizioni che il sistema tradizionale finanziario ha oggi non garantiscono il fatto che questo sistema tradizionale finanziario sia pulito, che sia a prova di criminale, anzi tutt'altro. Noi sappiamo che i criminali preferiscono molto di più i dollari che le criptovalute per esempio.
+
+166
+00:25:28,760 --> 00:25:36,600
+ E quindi il sistema finanziario decentralizzato, così definito, mette insieme una serie...
+
+167
+00:25:36,600 --> 00:25:57,740
+ Tra cui la privacy ma al tempo stesso la trasparenza e al tempo stesso la possibilità di utilizzare un sistema che ovunque tu ti trovi nel mondo puoi accedere ai migliori servizi finanziari a un costo bassissimo senza dover per forza perdere tutta la tua privacy come invece avviene con il mondo finanziario tradizionale.
+
+168
+00:25:57,740 --> 00:26:06,580
+ Chiarissimo. Per concludere, di recente c'è stato un avvenimento piuttosto importante nel mondo delle criptovalute.
+
+169
+00:26:06,580 --> 00:26:15,580
+ Certo, lo dicevo nell'introduzione. Cioè la stablecoin USDT è entrata a far parte del cosiddetto Lightning Network.
+
+170
+00:26:15,580 --> 00:26:23,960
+ Allora ti chiedo innanzitutto cosa vuol dire questa affermazione e poi perché è un avvenimento così importante.
+
+171
+00:26:23,960 --> 00:26:32,300
+ Allora certamente facciamo un passo indietro. Che cos'è USDT e che cos'è Lightning Network?
+
+172
+00:26:32,300 --> 00:26:36,360
+ Per capire che cos'è USDT dobbiamo sapere che cos'è una stablecoin.
+
+173
+00:26:36,560 --> 00:26:48,000
+ Quindi una stablecoin non è altro che, come dicevamo prima, è un token che viaggia sopra una blockchain che rappresenta un bene reale, qualcosa di reale, qualcosa che c'è nel mondo fisico.
+
+174
+00:26:48,000 --> 00:26:58,000
+ In questo caso le stablecoin rappresentano dei dollari. Quindi un dollaro tokenizzato è l'equivalente di un dollaro nella vita reale.
+
+175
+00:26:58,000 --> 00:27:06,540
+ Questo è un business in realtà grandissimo, anzi a dire la verità è il business più grande del mondo cripto, ossia quello di...
+
+176
+00:27:06,540 --> 00:27:20,660
+ prendere dei dollari reali, investirli in titoli di Stato americani che rendono circa un 4-5% oggi e dare a noi utenti dei dollari tokenizzati che possiamo utilizzare per esempio nella finanza decentralizzata.
+
+177
+00:27:20,660 --> 00:27:30,160
+ Questo che può sembrare un business in realtà molto complesso è a dire la verità molto semplice e soprattutto è molto remunerativo.
+
+178
+00:27:30,160 --> 00:27:36,520
+ Cioè USDT che è un dollaro tokenizzato sulle blockchain a cui dietro è garanzia.
+
+179
+00:27:36,520 --> 00:27:44,520
+ Se ci sono dei dollari reali è stato creato da un'azienda di italiani che si chiama Tether che oggi è l'azienda più grande del mondo cripto.
+
+180
+00:27:44,520 --> 00:27:55,940
+ Per dare giusto due metriche, per capire la grandezza di questa azienda che magari non avete sentito, Tether innanzitutto poche settimane fa si è comprata un pezzo dalla Juventus.
+
+181
+00:27:55,940 --> 00:28:06,500
+ Sta facendo investimenti come di venture capital in diversi rami, non solamente sulla blockchain ma anche per esempio in...
+
+182
+00:28:06,500 --> 00:28:15,400
+ ...intelligenza artificiale, per esempio in applicazioni lato privacy che sono sicuro che qui Valerio tratterai o hai già trattato.
+
+183
+00:28:15,400 --> 00:28:30,680
+ Ma quello che è incredibile di USDT è che è un'azienda che è riuscita a fatturare nel 2024, anzi è riuscita ad avere come utili, non come fatturato ma come utili, più di 10 miliardi di dollari con 60 dipendenti.
+
+184
+00:28:30,680 --> 00:28:36,480
+ Quindi è l'azienda al mondo che per numero di dipendenti ha più utili in assoluto.
+
+185
+00:28:36,480 --> 00:28:39,480
+ Quindi stiamo parlando di un'azienda che è enorme.
+
+186
+00:28:39,480 --> 00:28:52,420
+ Ad oggi l'amministratore delegato di Tether è in discussione con la Casa Bianca per scrivere un regolamento per quanto riguarda le stablecoin.
+
+187
+00:28:52,420 --> 00:29:06,340
+ Mentre in Europa USDT e Tether non sono neanche regolamentati perché le nuove regole europee vietano di utilizzare le riserve di Tether nel modo in cui sono utilizzate oggi.
+
+188
+00:29:06,460 --> 00:29:26,520
+ Però senza entrare in dettagli troppo tecnici capiamo una volta che sappiamo ora che cos'è una stablecoin e sappiamo che cos'è USDT e quanto è importante l'azienda Tether nel mondo cripto che è l'azienda che ha creato USDT capiamo che cos'è Lightning Network perché Lightning Network è come se fosse una sorta di livello secondario che viaggia sopra Bitcoin.
+
+189
+00:29:26,520 --> 00:29:36,440
+ Prima abbiamo detto che per creare un blocco della blockchain di Bitcoin ci vogliono i miner, ci vogliono i nodi e soprattutto bisogna aspettare 10 minuti per essere incluso nel blocco successivo.
+
+190
+00:29:36,440 --> 00:29:39,300
+ La nostra transazione deve essere inclusa nel blocco successivo.
+
+191
+00:29:39,300 --> 00:29:59,540
+ Ecco Lightning Network vediamolo come una sorta di autostrada secondaria in cui non ci sono semafori e che è molto più veloce e quindi noi possiamo prendere questa autostrada e scambiarci i nostri Bitcoin in maniera istantanea ovunque nel mondo senza bisogno di blockchain, blocchi, 10 minuti, miners eccetera.
+
+192
+00:29:59,540 --> 00:30:01,980
+ E' tutto molto più semplice e rapido.
+
+193
+00:30:01,980 --> 00:30:06,420
+ La grande notizia è che USDT ossia dei dollari digitali.
+
+194
+00:30:06,420 --> 00:30:10,300
+ I dollari che vengono per lo più utilizzati in posti in cui non ci sono dollari.
+
+195
+00:30:10,300 --> 00:30:15,760
+ Pensiamo ai posti in cui c'è un'inflazione a doppia cifra o addirittura a tripla cifra ogni anno.
+
+196
+00:30:15,760 --> 00:30:23,220
+ Noi ci scandalizziamo perché c'è un'inflazione magari del 5, 6 o 10% come è avvenuto nel 2021-22.
+
+197
+00:30:23,220 --> 00:30:26,520
+ Ecco ci sono posti in cui l'inflazione tocca il 100% ogni anno.
+
+198
+00:30:26,520 --> 00:30:34,020
+ Quindi vuol dire che il tuo guadagno, quello che tu guadagni con il tuo lavoro viene distrutto ogni anno dall'inflazione.
+
+199
+00:30:34,020 --> 00:30:35,920
+ Ci sono questi posti.
+
+200
+00:30:36,400 --> 00:30:50,360
+ Come per esempio l'Argentina o come per esempio il Venezuela in cui USDT è letteralmente un modo per salvare i propri risparmi da quella che è l'inflazione.
+
+201
+00:30:50,360 --> 00:30:53,480
+ Per cui USDT è per lo più utilizzato in questi paesi.
+
+202
+00:30:53,480 --> 00:31:01,200
+ In paesi in cui c'è alta inflazione o paesi che semplicemente vorrebbero detenere dollari e magari non possono perché le banche centrali di questi paesi lo vietano.
+
+203
+00:31:01,200 --> 00:31:06,380
+ Ecco in qualche modo anche l'Unione Europea sta correndo un po' ai ripari cercando di vietare USDT.
+
+204
+00:31:06,380 --> 00:31:10,240
+ Cercare di vietare questa fuoriuscita di euro per comprare dollari.
+
+205
+00:31:10,240 --> 00:31:20,340
+ Questo è il motivo per cui anche nelle ultime settimane la Guard ha annunciato che ci sarà l'euro digitale proprio per contrastare queste stable coin.
+
+206
+00:31:20,340 --> 00:31:33,160
+ La notizia è di, a mio modo di vedere, è molto importante Valerio perché va ad inserire i dollari sopra la blockchain più decentralizzata che noi abbiamo, che è Bitcoin.
+
+207
+00:31:33,160 --> 00:31:36,360
+ Su un network che è estremamente veloce che è il Lightning Network.
+
+208
+00:31:36,360 --> 00:31:40,600
+ Per cui dal mio punto di vista è un'ottima notizia.
+
+209
+00:31:40,600 --> 00:32:00,500
+ Ad oggi però ancora non è possibile utilizzarlo e probabilmente ci vorranno degli anni prima che ci siano abbastanza servizi, liquidità e come dire un ecosistema di applicazioni che ci permettano di avere questi dollari sopra una blockchain decentralizzata come quella di Bitcoin da poter utilizzare in tutto il mondo.
+
+210
+00:32:00,500 --> 00:32:04,040
+ Perfetto, sei stato chiarissimo.
+
+211
+00:32:04,040 --> 00:32:06,040
+ Bene Andrea, io ti ringrazio.
+
+212
+00:32:06,040 --> 00:32:16,080
+ Ti ringrazio per essere stato con noi oggi e soprattutto per averci aiutato a capire un bel po' di cose su questo mondo così interessante e complesso.
+
+213
+00:32:16,080 --> 00:32:23,820
+ Ti ringrazio io Valerio per l'invito e spero che sia stata una puntata utile per i tuoi ascoltatori.
+
+214
+00:32:23,820 --> 00:32:26,460
+ Sicuramente, non ho dubbi.
+
+215
+00:32:26,460 --> 00:32:36,020
+ Bene, so che a questo punto sei già lì col ditino pronto per schippare al prossimo video.
+
+216
+00:32:36,020 --> 00:32:43,700
+ Ma aspetta un secondo perché Andrea mi ha lasciato un regalino per te, caro ascoltatore di Pensieri in Codice.
+
+217
+00:32:43,700 --> 00:33:02,580
+ Se vuoi infatti puoi accedere al sito decrypto.space che ti lascio in descrizione e utilizzare il codice sconto PENSIERI per ottenere un'analisi del tuo portafoglio o una consulenza dedicata del valore di 99€ in maniera totalmente gratuita e senza alcun impegno.
+
+218
+00:33:02,580 --> 00:33:05,240
+ Quindi, mi raccomando, approfittane.
+
+219
+00:33:05,240 --> 00:33:05,800
+ Grazie.
+
+220
+00:33:05,800 --> 00:33:13,360
+ Detto questo, visto che sei così gentile da aver ascoltato fin qui, ti voglio anche ricordare la storia del Value for Value.
+
+221
+00:33:13,360 --> 00:33:13,920
+ Ti va?
+
+222
+00:33:13,920 --> 00:33:23,920
+ Pensieri in Codice è un progetto totalmente indipendente e libero da pubblicità che porto avanti nel mio tempo libero e con le mie risorse personali.
+
+223
+00:33:23,920 --> 00:33:30,120
+ Ciò vuol dire che per sopravvivere questo podcast ha bisogno del tuo supporto.
+
+224
+00:33:30,120 --> 00:33:33,000
+ Supporto che puoi dare in tre modi.
+
+225
+00:33:33,000 --> 00:33:33,800
+ Ti ricordi?
+
+226
+00:33:33,800 --> 00:33:34,680
+ Time
+
+227
+00:33:34,680 --> 00:33:35,580
+ Talent
+
+228
+00:33:35,580 --> 00:33:36,340
+ o Treasure
+
+229
+00:33:36,340 --> 00:33:47,600
+ Per Time intendo proprio il tuo tempo, quello che potresti dedicare a condividere questo episodio o altri con chi pensi che possa apprezzarlo.
+
+230
+00:33:47,600 --> 00:33:52,560
+ Il passaparola può funzionare tantissimo se lo fai con criterio.
+
+231
+00:33:52,560 --> 00:33:59,380
+ Pensaci, se ognuno di voi condividesse questo episodio con un solo amico saremmo già il doppio.
+
+232
+00:33:59,380 --> 00:34:05,360
+ Talent invece vuol dire che se possiedi una capacità o una competenza
+
+233
+00:34:05,360 --> 00:34:13,160
+ che possano tornare utili per il podcast potresti valutare di dedicarne una piccola parte a supportarmi.
+
+234
+00:34:13,160 --> 00:34:19,140
+ Magari sai usare i social meglio di me e ci vuole davvero poco perché io sono negato
+
+235
+00:34:19,140 --> 00:34:24,400
+ e puoi darmi una mano a mettere su un profilo su qualche piattaforma.
+
+236
+00:34:24,400 --> 00:34:33,800
+ Magari sai scrivere e potresti aiutarmi con la stesura degli script o magari hai qualche idea e me la vuoi proporre.
+
+237
+00:34:33,800 --> 00:34:35,140
+ Non esitare perché...
+
+238
+00:34:35,140 --> 00:34:39,880
+ Io amo ricevere feedback utili e soprattutto collaborare con menti brillanti.
+
+239
+00:34:39,880 --> 00:34:45,580
+ Non ti nego che al momento il mio obiettivo principale sarebbe quello di aumentare il
+
+240
+00:34:45,580 --> 00:34:51,340
+ numero di ascolti. Se tu avessi una strategia da proporre e magari addirittura da aiutarmi a
+
+241
+00:34:51,340 --> 00:34:58,180
+ portare avanti sarebbe davvero un'ottima cosa. E infine c'è Treasure che è la cosa più semplice
+
+242
+00:34:58,180 --> 00:35:04,920
+ ma non per questo meno apprezzata. Se ti va e se pensi che il mio lavoro abbia un valore puoi
+
+243
+00:35:04,920 --> 00:35:11,880
+ scegliere di offrire un piccolo supporto economico. Non è obbligatorio ovviamente ma per me sarebbe
+
+244
+00:35:11,880 --> 00:35:17,040
+ prezioso perché mi aiuterebbe a migliorare e portare avanti questo progetto con serenità
+
+245
+00:35:17,040 --> 00:35:24,100
+ diciamo così. Ed è questo il punto in cui ringrazio i due donatori più assidui di questo podcast
+
+246
+00:35:24,100 --> 00:35:31,440
+ Edoardo e Carlo con la loro donazione mensile e oggi a loro si unisce anche una donazione spot
+
+247
+00:35:31,440 --> 00:35:34,360
+ da un anonimo. Grazie anche a te chiunque tu sia.
+
+248
+00:35:34,700 --> 00:35:41,120
+ A questo punto direi che davvero non c'è altro per oggi e quindi noi ci sentiamo al prossimo
+
+249
+00:35:41,120 --> 00:35:48,180
+ episodio senza mai dimenticare che un informatico risolve problemi a volte anche usando il computer.
+
+250
+00:35:48,180 --> 00:35:59,640
+ Grazie a tutti per aver guardato il video, se il video vi è piaciuto iscrivetevi al canale e attivate la campanella per non perdere i prossimi video.
+
