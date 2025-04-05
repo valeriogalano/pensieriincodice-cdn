@@ -2801,20 +2801,3 @@
 701
 00:46:37,160 --> 00:46:43,160
  e non dimenticare mai che un informatico risolve problemi, a volte, anche usando il computer.
-
-702
-00:46:43,160 --> 00:46:46,160
- Subtitles by the Amara.org community
-
-703
-00:46:46,160 --> 00:46:49,160
- @amara.org
-
-704
-00:46:49,160 --> 00:46:54,160
- Sottotitoli e revisione a cura di QTSS
-
-705
-00:46:54,160 --> 00:46:55,680
- Autore dei sottotitoli e revisione a cura di QTSS
-
