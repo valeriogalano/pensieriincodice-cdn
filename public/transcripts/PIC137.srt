@@ -1,0 +1,1333 @@
+1
+00:00:00,440 --> 00:00:07,320
+Oggi parliamo di una delle più importanti e al tempo
+stesso meno conosciute leggi dell'informatica,
+
+2
+00:00:07,320 --> 00:00:14,830
+un vero e proprio pilastro del web così come lo conosciamo
+ma che probabilmente non hai mai sentito nominare.
+
+3
+00:00:14,830 --> 00:00:17,089
+Sto parlando della legge di Postel.
+
+4
+00:00:17,089 --> 00:00:23,550
+Per l'occasione ho deciso di avviare il
+discorso partendo da un altro pilastro del web,
+
+5
+00:00:23,550 --> 00:00:30,640
+uno molto più conosciuto che ti sarà invece sicuramente
+capitato di vedere se frequenti i social network,
+
+6
+00:00:30,640 --> 00:00:33,929
+e cioè i Chuck Norris Facts.
+
+7
+00:00:33,929 --> 00:00:38,202
+Quindi mettiti comodo o comoda e lascia che io ti guidi in
+
+8
+00:00:38,202 --> 00:00:42,474
+questo viaggio un po' surreale attraverso il funzionamento
+
+9
+00:00:42,474 --> 00:00:46,239
+e la filosofia del linguaggio HTML e quindi del web.
+
+10
+00:00:46,240 --> 00:00:46,740
+Sigla!
+
+11
+00:00:50,270 --> 00:00:52,299
+Benvenuti su Pensieri in Codice,
+
+12
+00:00:52,299 --> 00:00:54,670
+il podcast dove si ragiona da informatici,
+
+13
+00:00:54,670 --> 00:00:56,070
+con Valerio Galan.
+
+14
+00:00:56,070 --> 00:01:07,250
+Non so se sia realmente necessario spiegare cosa sono i Chuck Norris Facts,
+
+15
+00:01:07,250 --> 00:01:10,459
+ma nel caso in cui tu non li conosca,
+
+16
+00:01:10,459 --> 00:01:18,849
+in questo blocco ti farò qualche esempio e ti racconterò un
+po' la presunta storia della nascita di questo fenomeno.
+
+17
+00:01:18,849 --> 00:01:20,530
+Se la cosa non ti interessa,
+
+18
+00:01:20,530 --> 00:01:24,650
+perché magari sei già il massimo esperto di Chuck Norris,
+
+19
+00:01:24,650 --> 00:01:30,290
+allora ti consiglio di schippare questo capitolo
+e di passare direttamente a quello successivo.
+
+20
+00:01:30,290 --> 00:01:37,870
+Non preoccuparti perché il resto dell'episodio sarà
+tranquillamente comprensibile anche saltando questa parte.
+
+21
+00:01:37,870 --> 00:01:49,390
+I Chuck Norris Facts sono un insieme di affermazioni ironiche ed esagerate che
+attribuiscono al famoso attore marzialista Chuck Norris qualità sovrumane,
+
+22
+00:01:49,390 --> 00:01:53,230
+imprese straordinarie o capacità impossibili.
+
+23
+00:01:53,230 --> 00:01:59,709
+Si tratta di battute surreali e paradossali che
+giocano con l'immagine iconica dell'attore,
+
+24
+00:01:59,709 --> 00:02:09,669
+noto soprattutto per i suoi molteplici ruoli interpretati in film d'azione
+e serie TV e soprattutto nella celebre serie Walker Texas Ranger.
+
+25
+00:02:09,669 --> 00:02:18,699
+Questi "fatti" non riflettono ovviamente la realtà e
+sono invece costruiti per divertire e creare meme,
+
+26
+00:02:18,699 --> 00:02:22,590
+esagerando i toni fino ai limiti dell'assurdo e oltre.
+
+27
+00:02:22,590 --> 00:02:26,955
+Tra le innumerevoli quindi troviamo battute del tipo "Chuck Norris
+
+28
+00:02:26,955 --> 00:02:31,320
+può sbattere una porta girevole" oppure "lo spazio profondo esiste
+
+29
+00:02:31,320 --> 00:02:35,490
+perché ha paura di stare sullo stesso pianeta con Chuck Norris".
+
+30
+00:02:35,490 --> 00:02:40,224
+La nascita di questo fenomeno non è esattamente individuabile ma
+
+31
+00:02:40,224 --> 00:02:44,740
+da molti viene fatta risalire all'anno 2004 e ad un programma
+
+32
+00:02:44,740 --> 00:02:49,330
+televisivo statunitense intitolato Late Night di Conan O'Brien.
+
+33
+00:02:49,330 --> 00:02:51,280
+Prova ad immaginare,
+
+34
+00:02:51,280 --> 00:02:54,199
+siamo agli inizi degli anni 2000.
+
+35
+00:02:54,199 --> 00:03:01,150
+Internet si sta ancora diffondendo e ha appena
+iniziato a riempirsi di contenuti virali e di meme.
+
+36
+00:03:01,150 --> 00:03:03,050
+Nel 2004 la NBC,
+
+37
+00:03:03,050 --> 00:03:04,770
+che produce il Late Night,
+
+38
+00:03:04,770 --> 00:03:06,389
+acquista la Universal,
+
+39
+00:03:06,389 --> 00:03:12,979
+la quale tra gli altri detiene anche tutti i
+diritti degli episodi di Walker Texas Ranger.
+
+40
+00:03:12,979 --> 00:03:13,740
+Conan O'Brien,
+
+41
+00:03:13,740 --> 00:03:21,129
+che per una decina d'anni è stato un pilastro della
+programmazione a tarda notte negli Stati Uniti,
+
+42
+00:03:21,129 --> 00:03:27,169
+ha quindi improvvisamente accesso completo e
+gratuito a tutta una nuova serie di contenuti.
+
+43
+00:03:27,169 --> 00:03:31,154
+Il conduttore ovviamente non si lascia sfuggire all'occasione di
+
+44
+00:03:31,154 --> 00:03:35,078
+sfruttare la situazione e aggiunge al proprio repertorio comico
+
+45
+00:03:35,078 --> 00:03:39,370
+numerosi commenti sarcastici sulla serie interpretata da Chuck Norris,
+
+46
+00:03:39,370 --> 00:03:43,169
+della quale manda anche in onda innumerevoli estratti.
+
+47
+00:03:43,169 --> 00:03:50,900
+In breve tempo però quella che è nata come una presa in
+giro si trasforma in un susseguirsi di sketch divertenti,
+
+48
+00:03:50,900 --> 00:03:53,719
+entusiasmanti e soprattutto esagerati,
+
+49
+00:03:53,719 --> 00:03:57,669
+nei quali l'attore appare alla stregua di un supereroe.
+
+50
+00:03:57,669 --> 00:04:01,020
+Nel giro di un anno nasce il sito ChuckNorrisFacts.
+
+51
+00:04:00,830 --> 00:04:01,610
+com,
+
+52
+00:04:01,610 --> 00:04:05,139
+un progetto ironico creato da parte di alcuni fan,
+
+53
+00:04:05,139 --> 00:04:12,600
+la cui idea è quella di cavalcare l'onda di O'Brien e
+celebrare in modo scherzoso l'immagine di Chuck Norris,
+
+54
+00:04:12,600 --> 00:04:17,680
+trasformandolo in una sorta di supereroe invincibile e onnipotente.
+
+55
+00:04:17,680 --> 00:04:20,089
+Ora il sito non è più accessibile,
+
+56
+00:04:20,089 --> 00:04:23,100
+ma può essere comunque visionato su Archive.
+
+57
+00:04:22,930 --> 00:04:23,540
+org.
+
+58
+00:04:23,540 --> 00:04:25,850
+Ti lascio il link in descrizione.
+
+59
+00:04:25,850 --> 00:04:27,089
+Ad ogni modo,
+
+60
+00:04:27,089 --> 00:04:31,519
+frasi del tipo "non c'è nessun mento dietro la barba di Chuck Norris,
+
+61
+00:04:31,519 --> 00:04:36,434
+c'è solo un altro pugno" oppure "quando Chuck Norris fa le flessioni
+
+62
+00:04:36,434 --> 00:04:41,064
+non alza se stesso ma spinge il mondo in basso" sono solo alcune
+
+63
+00:04:41,064 --> 00:04:45,410
+delle simpatiche esagerazioni che diventeranno poi centinaia.
+
+64
+00:04:45,410 --> 00:04:49,980
+Il successo dei Chuck Norris Facts è subito immediato e travolgente.
+
+65
+00:04:49,980 --> 00:04:53,389
+Presto queste battute diventano un fenomeno globale,
+
+66
+00:04:53,389 --> 00:04:54,430
+diffuso su forum,
+
+67
+00:04:54,430 --> 00:04:57,410
+social media e persino nei programmi televisivi.
+
+68
+00:04:57,410 --> 00:04:59,689
+Chuck Norris stesso,
+
+69
+00:04:59,689 --> 00:05:01,410
+inizialmente sorpreso,
+
+70
+00:05:01,410 --> 00:05:04,160
+accoglie poi con simpatia il fenomeno,
+
+71
+00:05:04,160 --> 00:05:12,379
+raccontando in diverse interviste che i "fatti" rappresentano
+una dimostrazione di affetto e ironia da parte dei suoi fan.
+
+72
+00:05:12,379 --> 00:05:12,949
+Oggi,
+
+73
+00:05:12,949 --> 00:05:17,106
+possiamo tranquillamente affermare che i Chuck Norris Facts
+
+74
+00:05:17,106 --> 00:05:21,400
+sono uno dei primi esempi di contenuti virali capaci di unire
+
+75
+00:05:21,400 --> 00:05:25,279
+milioni di persone attorno ad un'idea leggera e giocosa,
+
+76
+00:05:25,279 --> 00:05:30,610
+trasformando una star del cinema in un'icona culturale anche del mondo digitale.
+
+77
+00:05:36,279 --> 00:05:38,310
+Ma ora ti starai chiedendo.
+
+78
+00:05:38,310 --> 00:05:42,449
+Che cosa centra Chuck Norris con l'HTML o con la legge di Postel?
+
+79
+00:05:42,449 --> 00:05:43,009
+Beh,
+
+80
+00:05:43,009 --> 00:05:45,259
+devi sapere che Chuck Norris,
+
+81
+00:05:45,259 --> 00:05:51,420
+oltre ad aver contato fino a infinito due volte e a poter dividere per zero,
+
+82
+00:05:51,420 --> 00:05:54,160
+è perfino un colore HTML.
+
+83
+00:05:54,160 --> 00:05:54,709
+Sì,
+
+84
+00:05:54,709 --> 00:05:56,410
+hai capito bene,
+
+85
+00:05:56,410 --> 00:05:58,470
+non "ha" un colore,
+
+86
+00:05:58,470 --> 00:06:02,769
+nel senso che è il suo preferito o quello che lo contraddistingue.
+
+87
+00:06:02,769 --> 00:06:04,209
+Lui "è" un colore.
+
+88
+00:06:04,209 --> 00:06:12,769
+Se infatti si scrive all'interno del codice di una pagina
+HTML qualcosa del tipo "font color = Chuck Norris",
+
+89
+00:06:12,769 --> 00:06:15,490
+tutto attaccato e fra virgolette,
+
+90
+00:06:15,490 --> 00:06:15,649
+beh,
+
+91
+00:06:15,649 --> 00:06:20,879
+si ottiene che il testo incluso nel tag diventa di un bel colore rosso.
+
+92
+00:06:20,879 --> 00:06:22,899
+Rosso come il mar rosso,
+
+93
+00:06:22,899 --> 00:06:28,800
+quello le cui acque e mosea ha diviso ma che Chuck Norris ha anche moltiplicato,
+
+94
+00:06:28,800 --> 00:06:30,240
+sommato e sottratto.
+
+95
+00:06:30,240 --> 00:06:30,529
+Ok,
+
+96
+00:06:30,529 --> 00:06:31,339
+la smetto,
+
+97
+00:06:31,339 --> 00:06:32,240
+era l'ultima,
+
+98
+00:06:32,240 --> 00:06:32,759
+giuro.
+
+99
+00:06:32,759 --> 00:06:40,170
+Com'è possibile però che l'attributo "color =
+Chuck Norris" faccia diventare il testo rosso?
+
+100
+00:06:40,170 --> 00:06:40,769
+Beh,
+
+101
+00:06:40,769 --> 00:06:47,850
+tutto nasce dalla logica con la quale il linguaggio HTML gestisce gli errori.
+
+102
+00:06:47,850 --> 00:06:49,060
+In generale,
+
+103
+00:06:49,060 --> 00:06:52,870
+in HTML non esiste un vero e proprio stato di errore,
+
+104
+00:06:52,870 --> 00:07:00,699
+quindi i browser sono progettati per essere molto
+permissivi e quando si trovano ad interpretare del codice,
+
+105
+00:07:00,699 --> 00:07:07,339
+generalmente fanno del loro meglio per correggere
+eventuali errori commessi dallo sviluppatore.
+
+106
+00:07:07,339 --> 00:07:08,000
+Ad esempio,
+
+107
+00:07:08,000 --> 00:07:12,250
+se in una pagina viene lasciato un tag come un div o un p aperto,
+
+108
+00:07:12,250 --> 00:07:23,240
+allora il browser fa quanto in suo potere per cercare di capire dove quel
+tag avrebbe dovuto essere chiuso e mostrare il risultato nel modo corretto.
+
+109
+00:07:23,240 --> 00:07:32,620
+Un'impostazione di questo tipo però aggiunge al processo di
+interpretazione del codice parecchi artifici e soluzioni imprecise,
+
+110
+00:07:32,620 --> 00:07:36,018
+che portano a fenomeni curiosi come appunto il fatto
+
+111
+00:07:36,018 --> 00:07:39,288
+che la stringa "Chuck Norris" finisca con l'essere
+
+112
+00:07:39,288 --> 00:07:42,879
+considerata un valore corrispondente ad un colore rosso.
+
+113
+00:07:42,879 --> 00:07:52,829
+Il motivo di questa fantasiosa interpretazione nasce da un
+set di regole ufficiali per la gestione dei colori "legacy",
+
+114
+00:07:52,829 --> 00:07:56,399
+cioè quelli provenienti da codice molto vecchio,
+
+115
+00:07:56,399 --> 00:08:00,707
+che raccomanda l'utilizzo di una specifica procedura ma che così
+
+116
+00:08:00,707 --> 00:08:04,815
+facendo porta a convertire il nome dell'attore in una stringa
+
+117
+00:08:04,815 --> 00:08:08,459
+che risulta poi corrispondere ad una tonalità di rosso.
+
+118
+00:08:08,459 --> 00:08:12,509
+Secondo quanto specificato da queste regole infatti,
+
+119
+00:08:12,509 --> 00:08:15,829
+quando si trova davanti ad un valore inconsueto,
+
+120
+00:08:15,829 --> 00:08:16,569
+il parser,
+
+121
+00:08:16,569 --> 00:08:22,769
+cioè il motore che si occupa di trasformare
+il codice HTML nella pagina di un sito,
+
+122
+00:08:22,769 --> 00:08:28,149
+deve tentare di interpretarlo come se fosse un numero esadecimale.
+
+123
+00:08:28,149 --> 00:08:36,000
+La ragione di questa scelta risiede nel fatto che si cerca
+di mantenere la massima retrocompatibilità del linguaggio.
+
+124
+00:08:36,000 --> 00:08:40,155
+L'esadecimale infatti è il sistema più vecchio utilizzato
+
+125
+00:08:40,155 --> 00:08:44,095
+per specificare i valori dei colori in HTML e pertanto
+
+126
+00:08:44,095 --> 00:08:47,320
+esso funziona anche con il codice più datato.
+
+127
+00:08:47,320 --> 00:08:48,340
+Ad ogni modo,
+
+128
+00:08:48,340 --> 00:08:50,809
+se correttamente specificato,
+
+129
+00:08:50,809 --> 00:09:02,909
+un valore in tale formato è composto dal carattere "cancelletto" seguito da tre
+numeri che vanno da 00 a FF e che indicano rispettivamente l'intensità di rosso,
+
+130
+00:09:02,909 --> 00:09:04,049
+di verde e di blu.
+
+131
+00:09:04,049 --> 00:09:05,029
+Mi raccomando,
+
+132
+00:09:05,029 --> 00:09:16,659
+tieni sempre a mente che nel formato esadecimale la numerazione segue
+appunto la base 16 e quindi un singolo numero va da 0 a F e non da 0 a 9,
+
+133
+00:09:16,659 --> 00:09:18,970
+come nella numerazione decimale.
+
+134
+00:09:18,970 --> 00:09:20,769
+Nel processo di rendering,
+
+135
+00:09:20,769 --> 00:09:24,759
+cioè la trasformazione del codice in elementi grafici,
+
+136
+00:09:24,759 --> 00:09:30,610
+il primo passaggio per elaborare un colore
+esadecimale è la rimozione del cancelletto,
+
+137
+00:09:30,610 --> 00:09:35,440
+il quale è considerato una convenzione ma non è utile ai fini del calcolo.
+
+138
+00:09:35,440 --> 00:09:36,129
+Quindi,
+
+139
+00:09:36,129 --> 00:09:37,169
+ad esempio,
+
+140
+00:09:37,169 --> 00:09:42,820
+se avessimo un valore tipo "cancelletto 7F0A89",
+
+141
+00:09:42,820 --> 00:09:48,389
+dopo la prima pulizia otterremmo il corrispettivo 7F0A89,
+
+142
+00:09:48,389 --> 00:09:51,690
+semplicemente senza "cancelletto".
+
+143
+00:09:51,690 --> 00:09:54,509
+Come secondo passo di rendering,
+
+144
+00:09:54,509 --> 00:09:55,129
+poi,
+
+145
+00:09:55,129 --> 00:10:01,620
+qualsiasi carattere che non sia un numero da 0 a 9 o una lettera da A ad F,
+
+146
+00:10:01,620 --> 00:10:05,090
+appunto uniche cifre valide in esadecimale,
+
+147
+00:10:05,090 --> 00:10:07,529
+deve essere sostituito con uno 0.
+
+148
+00:10:07,529 --> 00:10:08,200
+Dunque,
+
+149
+00:10:08,200 --> 00:10:13,610
+se il valore fosse ad esempio "ABCDXY123",
+
+150
+00:10:13,610 --> 00:10:18,470
+esso diventerebbe "ABCD000123".
+
+151
+00:10:18,470 --> 00:10:25,519
+Al terzo passaggio viene invece standardizzata la lunghezza delle stringhe.
+
+152
+00:10:25,519 --> 00:10:25,990
+Se essa,
+
+153
+00:10:25,990 --> 00:10:26,679
+infatti,
+
+154
+00:10:26,679 --> 00:10:29,250
+è vuota o non è divisibile per 3,
+
+155
+00:10:29,250 --> 00:10:33,629
+vanno aggiunti degli 0 fino a raggiungere una lunghezza adeguata,
+
+156
+00:10:33,629 --> 00:10:35,450
+cioè un multiplo di 3.
+
+157
+00:10:35,450 --> 00:10:36,129
+Per esempio,
+
+158
+00:10:36,129 --> 00:10:39,269
+il valore "A" diventerebbe "A00",
+
+159
+00:10:39,269 --> 00:10:43,870
+mentre il valore "ABCDE" diventerebbe "ABCDE0".
+
+160
+00:10:43,870 --> 00:10:45,649
+Al quarto passaggio,
+
+161
+00:10:45,750 --> 00:10:46,220
+poi,
+
+162
+00:10:46,220 --> 00:10:55,049
+il valore va separato in tre parti di pari lunghezza che
+andranno a determinare le componenti di colore rosso,
+
+163
+00:10:55,049 --> 00:10:56,259
+verde e blu.
+
+164
+00:10:56,259 --> 00:11:00,250
+Se ad esempio avessimo "ABCDEF000",
+
+165
+00:11:00,250 --> 00:11:04,190
+la stringa verrebbe divisa in "ABCDEF000",
+
+166
+00:11:04,190 --> 00:11:08,490
+dove il primo blocco rappresenterebbe il rosso,
+
+167
+00:11:08,490 --> 00:11:11,129
+il secondo il verde e il terzo il blu.
+
+168
+00:11:11,129 --> 00:11:14,759
+A questo punto vanno applicate altre rifiniture.
+
+169
+00:11:14,759 --> 00:11:15,809
+Per esempio,
+
+170
+00:11:15,809 --> 00:11:19,659
+se per caso i valori delle componenti fossero maggiori di 8 caratteri,
+
+171
+00:11:19,659 --> 00:11:25,240
+allora andrebbero tagliati rimuovendo i
+caratteri in eccesso partendo da sinistra.
+
+172
+00:11:25,240 --> 00:11:31,570
+E se la lunghezza fosse maggiore di 2 e
+tutte le componenti iniziassero con uno 0,
+
+173
+00:11:31,570 --> 00:11:36,330
+allora andrebbero rimossi gli 0 iniziali fino a portarli a lunghezza 2.
+
+174
+00:11:36,330 --> 00:11:37,169
+E ancora,
+
+175
+00:11:37,169 --> 00:11:41,509
+se i tre valori risultassero più lunghi di 2 caratteri ciascuno,
+
+176
+00:11:41,509 --> 00:11:44,899
+andrebbero mantenuti solo i primi 2 caratteri,
+
+177
+00:11:44,899 --> 00:11:46,399
+scartando il resto.
+
+178
+00:11:46,399 --> 00:11:47,139
+Insomma,
+
+179
+00:11:47,139 --> 00:11:49,370
+sembra complicato a descriverlo così,
+
+180
+00:11:49,370 --> 00:11:54,169
+ma il concetto è che alla fine del processo
+devono rimanere tre numeri da due cifre.
+
+181
+00:11:54,169 --> 00:11:57,870
+Applicate quindi tutte queste trasformazioni,
+
+182
+00:11:57,870 --> 00:12:07,309
+il parser ha finalmente dei valori puliti che può utilizzare per
+renderizzare un colore miscelando i livelli di rosso verde e blu,
+
+183
+00:12:07,309 --> 00:12:09,549
+e l'utente vedrà tale colore.
+
+184
+00:12:09,549 --> 00:12:10,080
+Ora,
+
+185
+00:12:10,080 --> 00:12:12,669
+tornando al nostro caso specifico,
+
+186
+00:12:12,669 --> 00:12:16,819
+quando il browser deve renderizzare il valore Chuck Norris,
+
+187
+00:12:16,819 --> 00:12:23,250
+stabilisce immediatamente che tra le varie
+modalità con cui può essere specificato un colore,
+
+188
+00:12:23,250 --> 00:12:26,110
+l'unica utilizzabile è proprio quella di fallback,
+
+189
+00:12:26,110 --> 00:12:27,850
+quindi quella esadecimale.
+
+190
+00:12:27,850 --> 00:12:35,120
+Questo perché le varie modalità più moderne hanno
+parole chiave nel valore che le identificano,
+
+191
+00:12:35,120 --> 00:12:39,279
+come RGB o HSL o il nome proprio di un colore,
+
+192
+00:12:39,279 --> 00:12:43,769
+tutte cose che chiaramente non corrispondono al nome dell'attore.
+
+193
+00:12:43,769 --> 00:12:49,110
+Il parser dunque avvia la trasformazione che abbiamo descritto poco fa,
+
+194
+00:12:49,110 --> 00:12:51,129
+e qui accade la magia.
+
+195
+00:12:51,129 --> 00:12:52,350
+Innanzitutto,
+
+196
+00:12:52,350 --> 00:12:58,250
+i caratteri non validi della stringa Chuck Norris vengono rimpiazzati con zeri,
+
+197
+00:12:58,250 --> 00:13:04,799
+ottenendo così C00 C00000000.
+
+198
+00:13:04,799 --> 00:13:14,639
+Questo semplicemente perché di tutte le lettere della parola
+solo le C possono essere cifre valide in esadecimale,
+
+199
+00:13:14,639 --> 00:13:16,759
+tutto il resto diventa zero.
+
+200
+00:13:16,759 --> 00:13:20,730
+La cifra ottenuta in tal modo però non è un multiplo di tre,
+
+201
+00:13:20,730 --> 00:13:23,610
+e quindi va aggiunto uno zero per renderla tale.
+
+202
+00:13:23,610 --> 00:13:36,980
+Successivamente essa poi va divisa nelle tre parti di cui abbiamo
+parlato prima e pertanto queste diventano C00C000000 e 0000.
+
+203
+00:13:36,980 --> 00:13:48,190
+Per ciascuna di queste parti ora vanno presi solo i
+primi due caratteri e quindi ciò che ci resta è C000000.
+
+204
+00:13:48,190 --> 00:13:53,500
+A questo punto abbiamo i tre valori per le tre componenti colore,
+
+205
+00:13:53,500 --> 00:13:55,870
+ma solo il primo è diverso da zero,
+
+206
+00:13:55,870 --> 00:14:04,440
+quindi banalmente nel colore ottenuto è presente una certa
+parte di rosso e sono totalmente assenti il verde e il blu,
+
+207
+00:14:04,440 --> 00:14:08,629
+e pertanto il risultato è rosso.
+
+208
+00:14:08,629 --> 00:14:15,906
+La gestione degli errori in HTML si basa su una filosofia nota come robustezza
+
+209
+00:14:15,906 --> 00:14:22,261
+o tolleranza degli errori ed è riassunta efficacemente dal principio
+
+210
+00:14:22,261 --> 00:14:28,339
+"si tollerante con ciò che accetti ma rigoroso con ciò che invii".
+
+211
+00:14:28,340 --> 00:14:31,879
+Questo principio prende il nome di legge di Postel,
+
+212
+00:14:31,879 --> 00:14:37,370
+dal nome dell'informatico che l'ha formulata
+durante i primi anni dello sviluppo di Internet.
+
+213
+00:14:37,370 --> 00:14:39,179
+Come accennato prima,
+
+214
+00:14:39,179 --> 00:14:47,470
+i browser web sono progettati per non bloccarsi o restituire
+errori critici anche quando incontrano HTML mal formato.
+
+215
+00:14:47,470 --> 00:14:57,320
+Essi infatti cercano di interpretare e riparare automaticamente i problemi
+così da mostrare il contenuto nel modo più sensato possibile all'utente.
+
+216
+00:14:57,320 --> 00:15:05,769
+Questa tolleranza nell'interpretazione e nella gestione degli errori
+gioca un ruolo fondamentale nel funzionamento del metalinguaggio,
+
+217
+00:15:05,769 --> 00:15:09,870
+garantendo tutta una serie di caratteristiche tipiche dei siti web.
+
+218
+00:15:09,870 --> 00:15:13,889
+Innanzitutto c'è un tema di accessibilità universale.
+
+219
+00:15:13,889 --> 00:15:17,000
+Il web funziona anche per contenuti scritti male,
+
+220
+00:15:17,000 --> 00:15:20,230
+incompleti o realizzati molti anni addietro,
+
+221
+00:15:20,230 --> 00:15:26,139
+permettendo a chiunque di accedere alle informazioni
+anche se esse non sono in condizioni ottimali.
+
+222
+00:15:26,139 --> 00:15:29,570
+Poi viene garantita un'enorme retrocompatibilità.
+
+223
+00:15:29,570 --> 00:15:33,278
+Gli ultimissimi browser sono perfettamente in grado di
+
+224
+00:15:33,278 --> 00:15:36,851
+visualizzare correttamente anche siti molto vecchi e
+
+225
+00:15:36,851 --> 00:15:40,559
+realizzati addirittura con precedenti versioni di HTML.
+
+226
+00:15:40,559 --> 00:15:51,539
+In tal modo essi garantiscono la continuità della frizione anche a distanza
+di molti anni e abbattono la necessità di manutenere i contenuti vecchi.
+
+227
+00:15:51,539 --> 00:15:55,755
+E infine anche l'esperienza utente giova enormemente di questo
+
+228
+00:15:55,755 --> 00:15:59,569
+atteggiamento perché vengono evitate condizioni d'errore
+
+229
+00:15:59,569 --> 00:16:03,249
+e viene garantita una resa visiva piacevole e uniforme,
+
+230
+00:16:03,250 --> 00:16:08,480
+cose fondamentali per agevolare la frizione
+anche da parte di utenti non esperti.
+
+231
+00:16:08,480 --> 00:16:12,659
+Ovviamente però questa tolleranza ha anche i suoi limiti.
+
+232
+00:16:12,659 --> 00:16:18,809
+Ad esempio può rendere più difficile il debug
+poiché gli errori non sono sempre evidenti,
+
+233
+00:16:18,809 --> 00:16:28,960
+oppure può portare a comportamenti inusuali - vedi l'esempio di Chuck
+Norris - e incoraggiare pratiche di sviluppo poco pulite o poco rigorose.
+
+234
+00:16:28,960 --> 00:16:34,081
+Per questo motivo esistono strumenti specifici chiamati validatori che
+
+235
+00:16:34,081 --> 00:16:39,780
+permettono appunto di validare la bontà del codice HTML scritto e suggeriscono
+
+236
+00:16:39,780 --> 00:16:44,902
+correzioni e migliorie e inoltre con l'uso del nuovo HTML 5 sono state
+
+237
+00:16:44,902 --> 00:16:48,725
+introdotte moltissime funzionalità e linee guida che
+
+238
+00:16:48,725 --> 00:16:52,260
+permettono di realizzare codici HTML più potente,
+
+239
+00:16:52,259 --> 00:16:53,579
+pulito e corretto,
+
+240
+00:16:53,579 --> 00:16:58,930
+pur mantenendo intatto il principio di tolleranza e retrocompatibilità.
+
+241
+00:16:58,930 --> 00:17:03,480
+Ma queste sono altre storie di cui magari parleremo in altri episodi.
+
+242
+00:17:03,480 --> 00:17:06,049
+Tornando invece all'argomento di oggi,
+
+243
+00:17:06,049 --> 00:17:14,119
+la gestione degli errori in HTML grazie proprio alla filosofia
+della legge di Postel risulta essere in effetti molto pragmatica,
+
+244
+00:17:14,119 --> 00:17:21,569
+essa infatti privilegia la continuità e la robustezza
+rispetto alla rigidità e all'ottimizzazione.
+
+245
+00:17:21,569 --> 00:17:25,720
+L'obiettivo principale non è puntare alla perfezione tecnica,
+
+246
+00:17:25,720 --> 00:17:29,890
+bensì garantire che il web funzioni sempre e comunque,
+
+247
+00:17:29,890 --> 00:17:35,609
+anche quando il codice risulta problematico o non aggiornatissimo o incompleto.
+
+248
+00:17:35,609 --> 00:17:40,689
+Più in generale questa legge rappresenta un importante principio di ingegneria
+
+249
+00:17:40,689 --> 00:17:45,639
+della resilienza che permette di massimizzare le capacità di comunicazione e
+
+250
+00:17:45,639 --> 00:17:50,590
+evitare che errori minori compromettano il funzionamento dell'intero sistema.
+
+251
+00:17:50,589 --> 00:17:54,960
+Essa in realtà è applicata a numerosi ambiti del mondo dell'informatica,
+
+252
+00:17:54,960 --> 00:18:00,730
+dalla gestione dei protocolli di rete fino
+alla progettazione dei formati dei file,
+
+253
+00:18:00,730 --> 00:18:06,170
+passando per l'implementazione di modelli di machine learning e software vari.
+
+254
+00:18:06,170 --> 00:18:10,470
+In effetti la legge di Postel non è solo un principio tecnico,
+
+255
+00:18:10,470 --> 00:18:12,700
+ma una vera e propria filosofia.
+
+256
+00:18:12,700 --> 00:18:21,119
+Essa infatti ci ricorda che in molti campi è importante essere
+flessibili e comprensivi per far sì che le cose funzionino.
+
+257
+00:18:21,119 --> 00:18:25,109
+La rigidità e la precisione sono certamente una virtù,
+
+258
+00:18:25,109 --> 00:18:29,170
+ma solo finché non inficiano il funzionamento generale.
+
+259
+00:18:29,170 --> 00:18:36,000
+Se portate all'estremo esse possono diventare un
+intralcio lungo il cammino verso il risultato desiderato.
+
+260
+00:18:36,000 --> 00:18:41,349
+Il web così come lo conosciamo è costruito su fondamenta di resilienza.
+
+261
+00:18:41,349 --> 00:18:47,519
+Un sito del 1996 può essere visualizzato ancora oggi in un browser moderno.
+
+262
+00:18:47,519 --> 00:18:55,759
+Una pagina può essere consultata anche se il css non
+è più valido o addirittura è completamente assente.
+
+263
+00:18:55,759 --> 00:19:05,700
+E tutto questo è possibile proprio grazie al fatto che l'interpretazione
+del linguaggio è stata da sempre basata sulla legge di Postel.
+
+264
+00:19:05,700 --> 00:19:13,609
+Oggi puntata un po' più breve del solito,
+
+265
+00:19:13,609 --> 00:19:22,319
+ma ho capito che se non mi trattengo sulla quantità di informazioni e fonti
+che prendo in considerazione finisce che a stento esce un episodio al mese.
+
+266
+00:19:22,319 --> 00:19:22,910
+Quindi,
+
+267
+00:19:22,910 --> 00:19:33,170
+rapidamente ringrazio i sempre presenti Edoardo e Carlo per la
+loro donazione mensile e Luca F e Marco C per la donazione spot.
+
+268
+00:19:33,170 --> 00:19:35,589
+In particolare Marco,
+
+269
+00:19:35,589 --> 00:19:47,670
+la tua email di questa mattina è stata davvero provvidenziale perché devi sapere
+che è la seconda volta che registro da capo questo intero episodio perché ieri,
+
+270
+00:19:47,670 --> 00:19:50,400
+dopo aver registrato per quasi tre ore,
+
+271
+00:19:50,400 --> 00:19:59,410
+mi sono reso conto che c'era una forte eco e quindi ho dovuto
+buttare via tutto e non hai idea di quanto mi sono innervosito.
+
+272
+00:19:59,410 --> 00:20:05,109
+Ma quello che mi hai scritto stamattina mi ha fatto
+venire voglia di registrare il prima possibile.
+
+273
+00:20:05,109 --> 00:20:09,309
+Tant'è vero che questa parte su di te non è nello script.
+
+274
+00:20:09,309 --> 00:20:15,359
+Ad ogni modo questi quattro fantastici ascoltatori
+hanno aderito alla filosofia value for value.
+
+275
+00:20:15,359 --> 00:20:18,650
+Probabilmente ormai già sai cosa vuol dire,
+
+276
+00:20:18,650 --> 00:20:22,420
+ma devo ripeterlo per chi magari è nuovo e non lo sa,
+
+277
+00:20:22,420 --> 00:20:24,079
+quindi perdonami.
+
+278
+00:20:24,079 --> 00:20:29,329
+Value for value in pratica è la filosofia a cui aderisce questo progetto.
+
+279
+00:20:29,329 --> 00:20:35,430
+Io produco contenuti gratuiti e senza pubblicità
+che sono fastidiose e tracciano gli utenti,
+
+280
+00:20:35,430 --> 00:20:40,130
+però in cambio chiedo a te di farti la seguente domanda.
+
+281
+00:20:40,130 --> 00:20:41,369
+Pensieri in codice,
+
+282
+00:20:41,369 --> 00:20:42,869
+ha un valore per me?
+
+283
+00:20:42,869 --> 00:20:45,440
+Se lo ascolti in modo continuativo,
+
+284
+00:20:45,440 --> 00:20:47,230
+se ti insegna qualcosa,
+
+285
+00:20:47,230 --> 00:20:48,819
+se ti intrattiene,
+
+286
+00:20:48,819 --> 00:20:51,799
+allora forse un piccolo valore ce l'ha.
+
+287
+00:20:51,799 --> 00:20:58,160
+Pensaci e decidi senza nessun obbligo se ti
+va di restituire un po' di questo valore.
+
+288
+00:20:58,160 --> 00:21:00,420
+Tipo un caffè offerto.
+
+289
+00:21:00,420 --> 00:21:02,890
+E come fare per offrirmi un caffè?
+
+290
+00:21:02,890 --> 00:21:10,859
+Ovviamente con una donazione per cui trovi tutti i dettagli
+nella sezione sostieni del sito pensieri in codice.
+
+291
+00:21:10,809 --> 00:21:11,180
+it,
+
+292
+00:21:11,180 --> 00:21:16,349
+ma anche e soprattutto contribuendo alla diffusione del podcast.
+
+293
+00:21:16,349 --> 00:21:17,390
+Consiglialo,
+
+294
+00:21:17,390 --> 00:21:18,750
+fallo ascoltare,
+
+295
+00:21:18,750 --> 00:21:19,880
+parlane in giro,
+
+296
+00:21:19,880 --> 00:21:20,599
+online,
+
+297
+00:21:20,599 --> 00:21:21,500
+offline.
+
+298
+00:21:21,500 --> 00:21:30,599
+Ogni ascoltatore in più che magari si affeziona e diventa
+assiduo è un piccolo passo avanti per tutto il progetto.
+
+299
+00:21:30,599 --> 00:21:35,200
+Oppure supportami con qualche attività che sai o vuoi svolgere.
+
+300
+00:21:35,200 --> 00:21:43,670
+Potresti aiutarmi a gestire un account social o a ricercare
+e mettere insieme fonti o a scrivere gli episodi.
+
+301
+00:21:43,670 --> 00:21:44,769
+Ti dirò di più.
+
+302
+00:21:44,769 --> 00:21:46,779
+Se hai idee e ti va di espormele,
+
+303
+00:21:46,779 --> 00:21:48,589
+io sono qui in ascolto.
+
+304
+00:21:48,589 --> 00:21:54,349
+Ultimamente sto anche pensando che si potrebbero avviare nuove rubriche,
+
+305
+00:21:54,349 --> 00:21:56,970
+ma da solo non riesco a fare tutto.
+
+306
+00:21:56,970 --> 00:21:58,089
+Quindi lanciati!
+
+307
+00:21:58,089 --> 00:22:01,029
+Tanto non sono alla ricerca di professionisti,
+
+308
+00:22:01,029 --> 00:22:05,069
+ma di qualcuno che abbia un po' di tempo e buona volontà.
+
+309
+00:22:05,069 --> 00:22:09,079
+I contatti sono sempre tutti sul sito pensieri in codice.
+
+310
+00:22:08,680 --> 00:22:09,359
+it.
+
+311
+00:22:09,359 --> 00:22:11,240
+Mi raccomando con due "i".
+
+312
+00:22:11,240 --> 00:22:18,900
+In ogni caso noi ci sentiamo al prossimo episodio e non
+dimentichiamo mai che quando ogni sera i bambini vanno a dormire,
+
+313
+00:22:18,900 --> 00:22:22,660
+controllano che nell'armadio non ci sia l'uomo nero.
+
+314
+00:22:22,660 --> 00:22:25,339
+Ma quando ogni sera l'uomo nero va a dormire,
+
+315
+00:22:25,339 --> 00:22:28,779
+controlla che nell'armadio non ci sia Chuck Norris.
+
+316
+00:22:28,839 --> 00:22:29,339
+Ciao!
+

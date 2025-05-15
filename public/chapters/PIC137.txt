@@ -1,0 +1,5 @@
+0.000000	0.000000	Introduzione
+62.831883	62.831883	Chuck Norris Facts
+334.537322	334.537322	Il colore Chuck Norris
+851.626736	851.626736	La legge di Postel 
+1149.314008	1149.314008	Conclusione
