@@ -1,0 +1,1408 @@
+1
+00:00:00,440 --> 00:00:00,570
+Lo so,
+
+2
+00:00:00,570 --> 00:00:01,359
+lo so.
+
+3
+00:00:01,359 --> 00:00:09,179
+Anche tu non vedevi l'ora che uscisse questo quarto e conclusivo
+episodio della serie Pensieri in Codice munity Edition.
+
+4
+00:00:09,179 --> 00:00:12,949
+Il grandissimo Alex Racuja ci ha tenuto pagnia in queste
+
+5
+00:00:12,949 --> 00:00:16,917
+settimane e ci ha mostrato uno scorcio del suo lavoro e del
+
+6
+00:00:16,917 --> 00:00:20,820
+modo di migliorarlo utilizzando l'intelligenza artificiale.
+
+7
+00:00:20,820 --> 00:00:21,300
+Oggi,
+
+8
+00:00:21,300 --> 00:00:24,329
+in questo ultimo episodio invece,
+
+9
+00:00:24,329 --> 00:00:25,809
+il nostro amico,
+
+10
+00:00:25,809 --> 00:00:28,420
+regista e sviluppatore di software,
+
+11
+00:00:28,420 --> 00:00:31,519
+ci darà la sua opinione su una questione che,
+
+12
+00:00:31,519 --> 00:00:32,920
+ora e ora,
+
+13
+00:00:32,920 --> 00:00:34,799
+si pongono in tantissimi.
+
+14
+00:00:34,799 --> 00:00:41,980
+Risponderà infatti alla domanda "l'intelligenza
+artificiale mi lascerà senza lavoro?" Ovviamente,
+
+15
+00:00:41,980 --> 00:00:43,560
+non serve che te lo dica,
+
+16
+00:00:43,560 --> 00:00:44,479
+immagino,
+
+17
+00:00:44,479 --> 00:00:46,829
+per godere al meglio di questa puntata,
+
+18
+00:00:46,829 --> 00:00:51,649
+il mio consiglio è di recuperare prima gli episodi precedenti.
+
+19
+00:00:51,649 --> 00:00:54,500
+Potrei dirti che ti lascio i link in descrizione,
+
+20
+00:00:54,500 --> 00:00:55,060
+al sito,
+
+21
+00:00:55,060 --> 00:00:56,320
+a Spotify eccetera,
+
+22
+00:00:56,320 --> 00:00:59,380
+ma sappiamo entrambi che me ne dimenticherò.
+
+23
+00:00:59,380 --> 00:01:01,200
+Quindi tu fai in autonomia,
+
+24
+00:01:01,200 --> 00:01:02,719
+che tanto è semplice,
+
+25
+00:01:02,719 --> 00:01:07,450
+vai nel feed e ascolta gli ultimi tre episodi di questo podcast,
+
+26
+00:01:07,450 --> 00:01:10,000
+quelli con Alex Racuja nel titolo.
+
+27
+00:01:10,000 --> 00:01:13,359
+Io ora ti affido alle sapienti mani,
+
+28
+00:01:13,359 --> 00:01:16,040
+anzi alla sapiente voce di Alex,
+
+29
+00:01:16,040 --> 00:01:20,200
+ti auguro un buon ascolto e noi ci risentiamo tra un po'.
+
+30
+00:01:20,200 --> 00:01:22,590
+Sigla.
+
+31
+00:01:22,590 --> 00:01:25,750
+Benvenuti su Pensieri in codice,
+
+32
+00:01:25,750 --> 00:01:28,739
+il podcast dove si ragiona da informatici,
+
+33
+00:01:28,739 --> 00:01:30,709
+con Valerio Galano.
+
+34
+00:01:30,709 --> 00:01:32,950
+Or bene,
+
+35
+00:01:32,950 --> 00:01:39,379
+a vale di questi tre episodi che avete ascoltato,
+
+36
+00:01:39,409 --> 00:01:42,774
+tre puntate in cui vi ho raccontato e l'intelligenza
+
+37
+00:01:42,774 --> 00:01:46,582
+artificiale si è palesata e ha aiutato in maniera piuttosto
+
+38
+00:01:46,582 --> 00:01:49,819
+sensibile la realizzazione del mio spot televisivo,
+
+39
+00:01:49,819 --> 00:01:52,510
+sia in preproduzione che in postproduzione,
+
+40
+00:01:52,510 --> 00:01:56,799
+adesso siamo arrivati all'ultima parte di questa tetralogia e ovviamente,
+
+41
+00:01:56,799 --> 00:01:58,920
+e in tutte le tetralogie,
+
+42
+00:01:58,920 --> 00:02:07,069
+e in tutte le conclusioni uno si aspetta di sentire da
+parte mia un po' di considerazioni a caldo o a freddo.
+
+43
+00:02:07,069 --> 00:02:11,050
+La realtà è che io voglio rispondere con questa ultima puntata,
+
+44
+00:02:11,050 --> 00:02:15,539
+con questo ultimo episodio alla domanda che sicuramente vi siete fatti tutti,
+
+45
+00:02:15,539 --> 00:02:17,669
+sia per voi stessi sia per il sottoscritto,
+
+46
+00:02:17,669 --> 00:02:21,219
+ovvero sia l'intelligenza artificiale prenderà il mio lavoro?
+
+47
+00:02:21,219 --> 00:02:25,064
+Per rispondere ho bisogno di fare qualche passo indietro e nel farlo vi
+
+48
+00:02:25,064 --> 00:02:28,748
+dirò alcune cose che di solito la gente non vi dice per cui potreste
+
+49
+00:02:28,748 --> 00:02:32,539
+essere interessati ad alcuni aspetti di quello che sto per raccontarvi.
+
+50
+00:02:32,539 --> 00:02:32,990
+Allora,
+
+51
+00:02:32,990 --> 00:02:34,069
+e vi ho già detto,
+
+52
+00:02:34,069 --> 00:02:39,340
+questo spot televisivo è abbastanza nelle mie
+corde perché li faccio da tantissimi anni,
+
+53
+00:02:39,340 --> 00:02:41,889
+questa categoria di produzione.
+
+54
+00:02:41,889 --> 00:02:42,460
+A oggi,
+
+55
+00:02:42,460 --> 00:02:43,780
+il 2025,
+
+56
+00:02:43,780 --> 00:02:45,689
+uno spot del genere sul mercato italiano,
+
+57
+00:02:45,689 --> 00:02:50,729
+parlo del mercato italiano però poi le cose si
+possono in qualche modo appiccicare anche all'estero,
+
+58
+00:02:50,729 --> 00:02:55,349
+sul mercato italiano uno spot del genere può costare al cliente una cifra dai 7.
+
+59
+00:02:55,159 --> 00:02:56,710
+500 ai 15.
+
+60
+00:02:56,509 --> 00:02:57,729
+000 euro,
+
+61
+00:02:57,729 --> 00:03:01,210
+in dipendenza da eventuali lavori extra che si fanno,
+
+62
+00:03:01,210 --> 00:03:02,759
+degli effetti speciali,
+
+63
+00:03:02,759 --> 00:03:04,340
+delle correzioni,
+
+64
+00:03:04,340 --> 00:03:09,159
+delle acquisizioni di diritti o eventualmente uno speaker più o meno quotato,
+
+65
+00:03:09,159 --> 00:03:12,392
+senza considerare le ricadute social che però di solito
+
+66
+00:03:12,392 --> 00:03:15,682
+hanno dei prezzi molto più bassi perché si basano su del
+
+67
+00:03:15,682 --> 00:03:18,800
+contenuto che viene girato il giorno della produzione.
+
+68
+00:03:18,800 --> 00:03:21,599
+Non vi dico la cifra esatta perché dipende molto,
+
+69
+00:03:21,599 --> 00:03:24,360
+non vi dico la cifra che è costato al cliente questo spot,
+
+70
+00:03:24,360 --> 00:03:28,099
+però questa è la cifra che non include i costi di emissione,
+
+71
+00:03:28,099 --> 00:03:31,850
+significa che ogni volta che uno spot in un suo taglio preciso,
+
+72
+00:03:31,850 --> 00:03:33,589
+cioè 10-15 secondi,
+
+73
+00:03:33,589 --> 00:03:34,959
+sono due spot diversi,
+
+74
+00:03:34,959 --> 00:03:37,500
+vengono inviati ad un gruppo di emittenti,
+
+75
+00:03:37,500 --> 00:03:41,379
+il costo non è concentrato in questo forfeito iniziale.
+
+76
+00:03:41,379 --> 00:03:42,060
+Ecco,
+
+77
+00:03:42,060 --> 00:03:46,048
+una campagna pubblicitaria di questo tipo di spot non è una campagna
+
+78
+00:03:46,048 --> 00:03:50,729
+pubblicitaria normale perché di solito questi spot vengono promossi subito prima
+
+79
+00:03:50,729 --> 00:03:55,180
+dell'inizio di settembre e subito dopo Natale perché sono i giorni dell'anno,
+
+80
+00:03:55,180 --> 00:03:58,930
+le settimane dell'anno in cui gli spazi pubblicitari costano di meno.
+
+81
+00:03:58,930 --> 00:03:59,150
+Ecco,
+
+82
+00:03:59,150 --> 00:04:04,039
+gli spazi pubblicitari che costano di più in
+Italia sono quelli poco prima di Sanremo,
+
+83
+00:04:04,039 --> 00:04:10,099
+cioè tra il telegiornale Sanremo che è la
+prima e la seconda interruzione pubblicitaria,
+
+84
+00:04:10,099 --> 00:04:15,490
+quelli che costano di meno sono quelli che
+vengono proposti a fine estate e a fine Natale.
+
+85
+00:04:15,490 --> 00:04:23,100
+Una campagna di questo tipo può costare dai 200 ai 300
+mila euro per un numero di passaggi sulle reti Mediaset,
+
+86
+00:04:23,100 --> 00:04:23,519
+Rai,
+
+87
+00:04:23,519 --> 00:04:23,949
+Sky,
+
+88
+00:04:23,949 --> 00:04:30,350
+Discovery Corner e la 7 dai 150 ai 225 passaggi più o meno,
+
+89
+00:04:30,350 --> 00:04:32,050
+poi a volte di più,
+
+90
+00:04:32,050 --> 00:04:33,699
+a volte di meno.
+
+91
+00:04:33,699 --> 00:04:35,259
+L'ordine di grandezza è questo.
+
+92
+00:04:35,259 --> 00:04:41,639
+Potete capire che la produzione dello spot e anche la sua
+ideazione costano molto poco rispetto alla campagna pubblicitaria.
+
+93
+00:04:41,639 --> 00:04:42,490
+Ecco,
+
+94
+00:04:42,490 --> 00:04:44,800
+questo è il primo passo,
+
+95
+00:04:44,800 --> 00:04:47,060
+il primo step che volevo raccontarvi.
+
+96
+00:04:47,060 --> 00:04:51,456
+La seconda cosa che volevo raccontarvi è la grande massima che ha piarato fuori
+
+97
+00:04:51,456 --> 00:04:55,523
+l'amministratore delegato di NVIDIA che diceva alla gente "Voi non dovete
+
+98
+00:04:55,523 --> 00:04:59,699
+preoccuparvi che il vostro lavoro venga fatto dall'intelligenza artificiale,
+
+99
+00:04:59,699 --> 00:05:05,220
+dovete preoccuparvi che il vostro lavoro verrà sostituito
+da qualcuno che usa l'intelligenza artificiale".
+
+100
+00:05:05,220 --> 00:05:05,769
+Ora,
+
+101
+00:05:05,769 --> 00:05:07,160
+quello che mi chiedo è,
+
+102
+00:05:07,160 --> 00:05:12,879
+il mio cliente finale potrebbe fare uno spot senza passare attraverso di me,
+
+103
+00:05:12,879 --> 00:05:14,699
+dal mio magazzino di produzione?
+
+104
+00:05:14,699 --> 00:05:16,360
+Volendo forse sì,
+
+105
+00:05:16,360 --> 00:05:23,100
+ma sono sicuro che l'ultima cosa che può volere quello che ci
+ha missionato lo spot è farselo lui per due semplici motivi.
+
+106
+00:05:23,100 --> 00:05:23,300
+Uno,
+
+107
+00:05:23,300 --> 00:05:27,370
+non credo che abbia voglia di imparare a usare questi strumenti e due,
+
+108
+00:05:27,370 --> 00:05:30,399
+anche se la cosa lo farebbe rispiamare tantissimo,
+
+109
+00:05:30,399 --> 00:05:37,740
+dobbiamo considerare che la persona o il gruppo di persone che
+ci missionano questi spot non sono i padroni dell'azienda,
+
+110
+00:05:37,740 --> 00:05:40,519
+sono persone che lavorano per questa azienda,
+
+111
+00:05:40,519 --> 00:05:47,379
+per cui il loro obiettivo è fare in modo di
+rispettare i budget e le volontà di chi li anda,
+
+112
+00:05:47,379 --> 00:05:48,480
+dei loro capi,
+
+113
+00:05:48,480 --> 00:05:54,240
+e se fare una cosa internamente può portare un grandissimo risparmio di denaro,
+
+114
+00:05:54,240 --> 00:05:57,839
+farla male può portare un grandissimo rischio di carriera,
+
+115
+00:05:57,839 --> 00:06:01,939
+per cui l'idea è che queste persone non faranno mai il lavoro al posto mio,
+
+116
+00:06:01,939 --> 00:06:02,740
+assolutamente,
+
+117
+00:06:02,740 --> 00:06:04,560
+lo faranno fare a qualcun altro.
+
+118
+00:06:04,560 --> 00:06:05,220
+Ma la domanda è,
+
+119
+00:06:05,220 --> 00:06:07,319
+chi potrebbe essere questo qualcun altro?
+
+120
+00:06:07,319 --> 00:06:07,829
+Ora,
+
+121
+00:06:07,829 --> 00:06:12,939
+vi ho raccontato quello che è lo stato dell'arte
+di un certo tipo di modo di fare spot,
+
+122
+00:06:12,939 --> 00:06:17,235
+però è anche vero che Google con VO3 ha realizzato dei video che
+
+123
+00:06:17,235 --> 00:06:21,266
+sono effettivamente indistinguibili o unque sufficientemente
+
+124
+00:06:21,266 --> 00:06:24,240
+indistinguibili da quelli realizzati davvero,
+
+125
+00:06:24,240 --> 00:06:28,029
+e ho visto un po' di case study di spot televisivi realizzati con 2.
+
+126
+00:06:27,850 --> 00:06:28,990
+000 euro,
+
+127
+00:06:28,990 --> 00:06:32,319
+con un sacco di dispegno di energia e di soldi in prompt,
+
+128
+00:06:32,319 --> 00:06:33,720
+in visualizzazioni,
+
+129
+00:06:33,720 --> 00:06:35,920
+che sono tipo 400 prompt,
+
+130
+00:06:35,920 --> 00:06:38,389
+di questi 400 ne abbiamo presi 25,
+
+131
+00:06:38,389 --> 00:06:40,199
+però li abbiamo usati per fare lo spot.
+
+132
+00:06:40,199 --> 00:06:40,560
+E cacchio,
+
+133
+00:06:40,560 --> 00:06:40,839
+cioè,
+
+134
+00:06:40,839 --> 00:06:46,160
+secondo me alla fine qualcuno che è dotato di una macchina fotografica,
+
+135
+00:06:46,160 --> 00:06:49,649
+di una buona conoscenza di questi strumenti,
+
+136
+00:06:49,649 --> 00:06:53,009
+potrebbe realizzare effettivamente questo spot da solo,
+
+137
+00:06:53,009 --> 00:06:54,879
+senza considerare l'utilizzo,
+
+138
+00:06:54,879 --> 00:06:59,620
+il prendersi in carico un'intera casa di produzione.
+
+139
+00:06:59,620 --> 00:07:01,620
+Perché le case di produzione sono sempre più piccole,
+
+140
+00:07:01,620 --> 00:07:03,149
+sono sempre più esseri umani,
+
+141
+00:07:03,149 --> 00:07:05,920
+piuttosto che grandi pagnie con tanta gente.
+
+142
+00:07:06,009 --> 00:07:07,089
+Esseri umani che,
+
+143
+00:07:07,089 --> 00:07:08,120
+magari e me,
+
+144
+00:07:08,120 --> 00:07:10,910
+che io non sono il miglior regista del mondo,
+
+145
+00:07:10,910 --> 00:07:11,319
+no,
+
+146
+00:07:11,319 --> 00:07:12,800
+ho un po' di esperienza,
+
+147
+00:07:12,800 --> 00:07:15,379
+mi reputo piuttosto bravo e montatore,
+
+148
+00:07:15,379 --> 00:07:25,819
+piuttosto bravo e sound designer e soprattutto sulla musica posso dire
+con poca modestia che quando io scelgo una musica cazzarola è quella,
+
+149
+00:07:25,819 --> 00:07:30,399
+cioè io riesco sempre ad azzeccare la musica adatta al video.
+
+150
+00:07:30,399 --> 00:07:31,009
+Sì,
+
+151
+00:07:31,009 --> 00:07:31,680
+ragazzi,
+
+152
+00:07:31,680 --> 00:07:33,540
+ascolto tanta musica,
+
+153
+00:07:33,540 --> 00:07:35,720
+ho suonato per 15 anni,
+
+154
+00:07:35,720 --> 00:07:39,110
+non è tanto perché ascolto la musica perché ho suonato per 15 anni,
+
+155
+00:07:39,110 --> 00:07:41,740
+probabilmente è una di quelle cose che di culo mi va bene,
+
+156
+00:07:41,740 --> 00:07:43,139
+però mi funziona sempre,
+
+157
+00:07:43,139 --> 00:07:46,009
+cioè le musiche non me le hanno mai contestate,
+
+158
+00:07:46,009 --> 00:07:46,980
+mai mai mai mai,
+
+159
+00:07:46,980 --> 00:07:53,290
+al massimo mi hanno detto su due scelte che ho fatto cosa volevano
+e magari non corrispondeva esattamente con la mia preferita,
+
+160
+00:07:53,290 --> 00:07:54,519
+ma ci ho sempre azzeccato.
+
+161
+00:07:54,519 --> 00:07:56,560
+Per cui l'insieme di tutte queste cose,
+
+162
+00:07:56,560 --> 00:07:58,120
+il doppiaggio che fra un anno,
+
+163
+00:07:58,120 --> 00:08:02,639
+un anno e mezzo sarà veramente indistinguibile da quello di uno speaker,
+
+164
+00:08:02,639 --> 00:08:04,399
+faranno sì che un ragazzo,
+
+165
+00:08:04,399 --> 00:08:05,199
+un giovane,
+
+166
+00:08:05,199 --> 00:08:06,100
+nella sua stanzetta,
+
+167
+00:08:06,100 --> 00:08:07,870
+ancora abitando con i suoi genitori,
+
+168
+00:08:07,870 --> 00:08:09,519
+che è una cosa buonissima,
+
+169
+00:08:09,519 --> 00:08:14,239
+potrà permettersi di far pagare questo spot 750/1500 euro,
+
+170
+00:08:14,239 --> 00:08:16,839
+cioè un ordine di grandezza in meno.
+
+171
+00:08:16,839 --> 00:08:17,339
+Ora,
+
+172
+00:08:17,339 --> 00:08:21,000
+voi capite che con questi ordini di grandezza il cliente,
+
+173
+00:08:21,000 --> 00:08:24,970
+cioè quello che a noi ne ha dati 7500/15000 può iniziare a tremare,
+
+174
+00:08:24,970 --> 00:08:25,490
+e dire,
+
+175
+00:08:25,490 --> 00:08:27,940
+questa potrebbe essere una grande occasione.
+
+176
+00:08:27,940 --> 00:08:31,250
+Una grande occasione di risparmiare dei soldi che possono essere poi,
+
+177
+00:08:31,250 --> 00:08:33,070
+ovvio che non è che i soldi se li tiene lui,
+
+178
+00:08:33,070 --> 00:08:37,889
+però possono essere utilizzati da altre parti per
+investire di più nella campagna di marketing social,
+
+179
+00:08:37,889 --> 00:08:39,360
+eccetera eccetera eccetera.
+
+180
+00:08:39,360 --> 00:08:42,330
+Io credo che nell'arco di un anno o due,
+
+181
+00:08:42,330 --> 00:08:53,639
+il mio lavoro attuale verrà ridimensionato in modo tale per cui il mio
+concorrente sarà veramente il videomaker che ha un ordine di grandezza di meno.
+
+182
+00:08:53,639 --> 00:08:55,320
+Ha meno esperienza,
+
+183
+00:08:55,320 --> 00:08:56,179
+certamente,
+
+184
+00:08:56,179 --> 00:09:00,389
+però l'esperienza la ripaga col prezzo basso e col fatto di poter,
+
+185
+00:09:00,389 --> 00:09:01,169
+anche per certi versi,
+
+186
+00:09:01,169 --> 00:09:02,220
+lavorare in perdita.
+
+187
+00:09:02,220 --> 00:09:02,730
+Nel senso,
+
+188
+00:09:02,730 --> 00:09:06,279
+la prima volta che fai un lavoro lo fai a 1500/1000 euro,
+
+189
+00:09:06,279 --> 00:09:06,820
+per dire,
+
+190
+00:09:06,820 --> 00:09:09,710
+e magari spendi 500/1000 euro in token,
+
+191
+00:09:09,710 --> 00:09:11,649
+in acquisti di crediti su Google,
+
+192
+00:09:11,649 --> 00:09:12,039
+Aveo,
+
+193
+00:09:12,039 --> 00:09:14,080
+eccetera eccetera eccetera.
+
+194
+00:09:14,080 --> 00:09:15,320
+Magari ci perdi,
+
+195
+00:09:15,320 --> 00:09:16,450
+però l'hai fatto,
+
+196
+00:09:16,450 --> 00:09:18,720
+a quel punto il mercato è finito.
+
+197
+00:09:18,720 --> 00:09:24,970
+Perché il mercato ha capito che quello spot
+che prima si faceva con 7500/15000 euro,
+
+198
+00:09:24,970 --> 00:09:28,000
+adesso si può fare con 750/1500.
+
+199
+00:09:28,000 --> 00:09:28,200
+Punto.
+
+200
+00:09:28,200 --> 00:09:30,430
+Sono arrabbiato col videomaker?
+
+201
+00:09:30,430 --> 00:09:30,839
+No.
+
+202
+00:09:30,839 --> 00:09:33,240
+Il mercato funziona con se stesso.
+
+203
+00:09:33,240 --> 00:09:35,120
+Il mercato si autoregola.
+
+204
+00:09:35,120 --> 00:09:37,590
+Sono visceralmente anticapitalista,
+
+205
+00:09:37,590 --> 00:09:42,179
+nel senso in cui il capitalismo viene utilizzato per schiacciare i deboli.
+
+206
+00:09:42,179 --> 00:09:43,000
+Però in questo caso,
+
+207
+00:09:43,000 --> 00:09:43,789
+cioè nel senso,
+
+208
+00:09:43,789 --> 00:09:45,839
+se il mercato decide questa cosa qui,
+
+209
+00:09:45,839 --> 00:09:49,410
+che si può spendere ancora un decimo rispetto a prima,
+
+210
+00:09:49,410 --> 00:09:51,610
+allora vuol dire che è giusto così.
+
+211
+00:09:51,610 --> 00:09:52,990
+Vedevo in qualche modo adeguato.
+
+212
+00:09:52,990 --> 00:09:58,490
+E così siamo arrivati al termine di questo
+gruppo di 4 episodi in cui vi ho raccontato,
+
+213
+00:09:58,490 --> 00:10:00,470
+all'incirca in un'oretta di tempo,
+
+214
+00:10:00,470 --> 00:10:04,649
+mi duole se vi ho fatto perdere troppi istanti della vostra vita,
+
+215
+00:10:04,649 --> 00:10:07,159
+e ho utilizzato questi strumenti,
+
+216
+00:10:07,159 --> 00:10:08,830
+chiamiamoli strumenti per adesso,
+
+217
+00:10:08,830 --> 00:10:12,872
+che fanno uso dell'intelligenza artificiale o di quella classe
+
+218
+00:10:12,872 --> 00:10:16,786
+di algoritmi che vengono assegnati giustamente nello spettro
+
+219
+00:10:16,786 --> 00:10:20,380
+dell'intelligenza digitale per realizzare il mio lavoro.
+
+220
+00:10:20,379 --> 00:10:23,529
+E vi ho anche raccontato che molto probabilmente fra un anno,
+
+221
+00:10:23,529 --> 00:10:24,370
+fra due anni,
+
+222
+00:10:24,370 --> 00:10:34,340
+il mio lavoro verrà svolto da qualcun altro che riuscirà a farlo con un livello
+qualitativo assolutamente parabile ad un prezzo assolutamente non parabile.
+
+223
+00:10:34,340 --> 00:10:37,019
+E se mi chiedessero che cose intenzione di fare,
+
+224
+00:10:37,019 --> 00:10:37,370
+boh,
+
+225
+00:10:37,370 --> 00:10:41,000
+io quello che sto facendo adesso è divertirmi con queste cose,
+
+226
+00:10:41,000 --> 00:10:42,220
+sperimentandole,
+
+227
+00:10:42,220 --> 00:10:45,559
+cercando di trarne il maggior risultato possibile,
+
+228
+00:10:45,559 --> 00:10:49,789
+nel senso cercando di riuscire a farne allo stesso tempo più cose,
+
+229
+00:10:49,789 --> 00:10:53,179
+cose migliori o abbassare i tempi di produzione.
+
+230
+00:10:53,179 --> 00:10:54,559
+Però per esperienza,
+
+231
+00:10:54,559 --> 00:10:57,000
+ed è questa una cosa abbastanza une,
+
+232
+00:10:57,000 --> 00:10:59,649
+ho visto che facendo questo lavoro da 25 anni,
+
+233
+00:10:59,649 --> 00:11:03,840
+tendenzialmente il tempo che si impiega a realizzare un certo task,
+
+234
+00:11:03,840 --> 00:11:08,730
+una certa parte del processo produttivo è quasi sempre lo stesso,
+
+235
+00:11:08,730 --> 00:11:10,549
+solo che è aumentato il livello qualitativo,
+
+236
+00:11:10,549 --> 00:11:11,629
+è aumentato il controllo,
+
+237
+00:11:11,629 --> 00:11:13,639
+sono aumentate un sacco di cose.
+
+238
+00:11:13,639 --> 00:11:24,159
+Io quando ho iniziato a lavorare facevo video in 320x240 all'interno di uno
+schermo di un'animazione su un cd-rom e adesso le mie produzioni sono in 4k.
+
+239
+00:11:24,159 --> 00:11:26,559
+Prima lavoravo a 15 fotogrammi al secondo,
+
+240
+00:11:26,559 --> 00:11:29,039
+adesso lavoro quando vado in televisione a 50,
+
+241
+00:11:29,039 --> 00:11:31,340
+quando vado sul puter a 60,
+
+242
+00:11:31,340 --> 00:11:36,249
+ho tantissime informazioni più da gestire e da processare e lo faccio con una
+
+243
+00:11:36,249 --> 00:11:41,284
+qualità sempre migliore o unque con una qualità che mi soddisfa sempre di più e
+
+244
+00:11:41,284 --> 00:11:46,319
+anche il mio lavoro è cambiato e adesso anche quando faccio delle cose pro bono,
+
+245
+00:11:46,320 --> 00:11:49,149
+anche quando faccio delle cose in cui non devo impiegare la testa,
+
+246
+00:11:49,149 --> 00:11:53,289
+anche quando faccio delle cose in cui basterebbe un qualsiasi tipo di lavoro,
+
+247
+00:11:53,289 --> 00:11:56,694
+mi rendo conto che impiego quei tre minuti in più per fare
+
+248
+00:11:56,694 --> 00:11:59,983
+delle cose più belle e vedo che tutti questi ingredienti
+
+249
+00:11:59,983 --> 00:12:03,330
+che sono messi a disposizione da tante tecnologie diverse,
+
+250
+00:12:03,330 --> 00:12:04,710
+da tante aziende diverse,
+
+251
+00:12:04,710 --> 00:12:13,240
+mi servono per fare qualcosa che sia sempre più ricco e se fossi cinico
+direi che lo faccio per mantenermi sempre su una sorta di cresta dell'onda,
+
+252
+00:12:13,240 --> 00:12:14,500
+per migliorare me stesso.
+
+253
+00:12:14,500 --> 00:12:15,110
+Perché?
+
+254
+00:12:15,110 --> 00:12:17,990
+Perché la realtà è che così facendo mi diverto di più,
+
+255
+00:12:17,990 --> 00:12:19,519
+perché per e sono fatto io,
+
+256
+00:12:19,519 --> 00:12:22,519
+rifare lo stesso lavoro due volte lo trovo piuttosto noioso.
+
+257
+00:12:22,519 --> 00:12:24,059
+Alla terza incio a distrarmi,
+
+258
+00:12:24,059 --> 00:12:33,120
+alla quarta non capisco più niente e ho delle grosse regressioni e
+invece trovando sempre delle cose diverse in maniera piuttosto naturale,
+
+259
+00:12:33,120 --> 00:12:33,909
+giocando,
+
+260
+00:12:33,909 --> 00:12:36,629
+finisce che mi diverto e sono più contento.
+
+261
+00:12:36,629 --> 00:12:38,899
+Cosa mi riserverà il futuro?
+
+262
+00:12:38,899 --> 00:12:39,360
+Non lo so,
+
+263
+00:12:39,360 --> 00:12:41,720
+ma credo che nessuno lo sappia in questo momento.
+
+264
+00:12:41,720 --> 00:12:42,679
+Detto questo,
+
+265
+00:12:42,679 --> 00:12:45,409
+io vi ringrazio tantissimo di avermi ascoltato,
+
+266
+00:12:45,409 --> 00:12:51,220
+spero che per dieci secondi vi abbia raccontato
+qualcosa che non sapevate o che non sapevate di sapere,
+
+267
+00:12:51,220 --> 00:12:55,240
+questo già sarebbe per me un grande traguardo.
+
+268
+00:12:55,240 --> 00:12:58,019
+Devo ancora dire grazissimo a Valerio,
+
+269
+00:12:58,019 --> 00:13:01,470
+Valerio è davvero un bravissimo podcaster,
+
+270
+00:13:01,470 --> 00:13:05,259
+ha una concezione del podcast molto diversa da quella che ho io,
+
+271
+00:13:05,259 --> 00:13:13,929
+ma ciò nonostante ogni volta che arriva una puntata del suo podcast Pensieri
+in Codice salta automaticamente in cima alle cose che voglio ascoltare.
+
+272
+00:13:13,929 --> 00:13:14,799
+Uno perché,
+
+273
+00:13:14,799 --> 00:13:15,879
+e dice sempre lui,
+
+274
+00:13:15,879 --> 00:13:19,830
+il tempo è tiranno e fare le cose fatte bene necessita di tante risorse,
+
+275
+00:13:19,830 --> 00:13:29,700
+per cui è difficile mantenere un ritmo elevato e due perché unque il suo modo
+di raccontare le cose scrittato è davvero ricco ed è davvero interessante.
+
+276
+00:13:29,700 --> 00:13:34,070
+Ogni volta che ascolto un suo podcast sempre ho imparato qualcosa,
+
+277
+00:13:34,070 --> 00:13:36,460
+anche senza usare il puter.
+
+278
+00:13:36,460 --> 00:13:42,240
+Sarei veramente tanto curioso di sapere che cosa vi è
+rimasto attaccato da questa chiacchierata che ho fatto.
+
+279
+00:13:42,240 --> 00:13:44,980
+Di conseguenza nel gruppo Telegram di Pensieri in Codice,
+
+280
+00:13:44,980 --> 00:13:49,019
+i riferimenti vi le darà Valerio subito a valle di questa puntata.
+
+281
+00:13:49,019 --> 00:13:52,120
+Sarebbe bello appunto avere uno scambio,
+
+282
+00:13:52,120 --> 00:13:56,730
+un'interazione in cui posso scoprire un sacco di cose anche di voi,
+
+283
+00:13:56,730 --> 00:14:00,779
+anche di e a voi sta cambiando la vita l'intelligenza artificiale.
+
+284
+00:14:00,779 --> 00:14:07,299
+Se invece pensate che sia veramente super figo e abbia un sacco
+di cose interessanti potete venire ad ascoltare il mio podcast.
+
+285
+00:14:07,299 --> 00:14:10,830
+Potete ascoltare il mio podcast che si chiama "Techno Peels",
+
+286
+00:14:10,830 --> 00:14:13,360
+lo trovate nei link dell'episodio,
+
+287
+00:14:13,360 --> 00:14:24,139
+ma basta anche cercare "Techno Peels" con la "ch" "Techno" e insomma sentite
+il sottoscritto che fa questa cosa qui da 800 puntate e forse di più,
+
+288
+00:14:24,139 --> 00:14:27,612
+raccontando il suo flusso di coscienza più o meno digitale e
+
+289
+00:14:27,612 --> 00:14:31,141
+di e affronto i miei problemi sia nell'ambito informatico che
+
+290
+00:14:31,141 --> 00:14:34,500
+nell'ambito della produzione e della post-produzione video.
+
+291
+00:14:34,500 --> 00:14:35,470
+Ho detto tutto,
+
+292
+00:14:35,470 --> 00:14:36,350
+grazie ancora,
+
+293
+00:14:36,350 --> 00:14:37,519
+un forte abbraccio,
+
+294
+00:14:37,519 --> 00:14:38,100
+ciao!
+
+295
+00:14:38,100 --> 00:14:44,740
+Grazie Alex,
+
+296
+00:14:44,740 --> 00:14:45,669
+di tutto,
+
+297
+00:14:45,669 --> 00:14:48,250
+dell'impegno che hai messo in questa serie,
+
+298
+00:14:48,250 --> 00:14:57,600
+di tutte le cose che ci hai fatto scoprire e capire e anche
+dell'immeritatissima stima che per qualche motivo hai nei miei confronti.
+
+299
+00:14:57,600 --> 00:15:00,669
+Io sono stato onorato di averti ospite,
+
+300
+00:15:00,669 --> 00:15:08,730
+sono contentissimo del risultato di questo lavoro e spero
+che in futuro avrai voglia di ripetere questa esperienza.
+
+301
+00:15:08,730 --> 00:15:10,019
+Per chi ci ascolta,
+
+302
+00:15:10,019 --> 00:15:10,509
+invece,
+
+303
+00:15:10,509 --> 00:15:12,049
+hai sentito Alex?
+
+304
+00:15:12,049 --> 00:15:12,269
+Dai,
+
+305
+00:15:12,269 --> 00:15:16,539
+unisciti anche tu al gruppo Telegram per discutere con noi,
+
+306
+00:15:16,539 --> 00:15:17,960
+ma soprattutto con lui,
+
+307
+00:15:17,960 --> 00:15:22,259
+di tutto ciò di cui abbiamo parlato in queste ultime settimane.
+
+308
+00:15:22,259 --> 00:15:30,440
+Sono più che sicuro che il nostro amico sarà in grado e felice di
+rispondere a tutte le tue domande e approfondire le varie questioni.
+
+309
+00:15:30,440 --> 00:15:32,450
+A valle di questo esperimento,
+
+310
+00:15:32,450 --> 00:15:37,700
+mi riferisco alla versione munity Edition di Pensieri in Codice,
+
+311
+00:15:37,700 --> 00:15:41,500
+posso dire che le cose sono andate piuttosto bene,
+
+312
+00:15:41,500 --> 00:15:42,750
+a mio parere.
+
+313
+00:15:42,750 --> 00:15:43,509
+Tu invece,
+
+314
+00:15:43,509 --> 00:15:44,669
+cosa ne pensi?
+
+315
+00:15:44,669 --> 00:15:46,929
+Ti piace questo tipo di format?
+
+316
+00:15:46,929 --> 00:15:51,940
+Fammelo sapere perché è importante per gli sviluppi di questo progetto.
+
+317
+00:15:51,940 --> 00:15:55,669
+Se poi vuoi provare a partecipare anche tu e ha fatto Alex,
+
+318
+00:15:55,690 --> 00:16:02,899
+e al solito mi puoi contattare su Telegram o
+via mail scrivendo a valerio@pensieriincodice.
+
+319
+00:16:02,679 --> 00:16:05,470
+it oppure sul sito pensieriincodice.
+
+320
+00:16:05,250 --> 00:16:05,789
+it,
+
+321
+00:16:05,789 --> 00:16:07,549
+sempre con due i indirizzi,
+
+322
+00:16:07,549 --> 00:16:08,830
+mi racando.
+
+323
+00:16:08,830 --> 00:16:09,950
+e dico sempre,
+
+324
+00:16:09,950 --> 00:16:11,419
+non è difficile,
+
+325
+00:16:11,419 --> 00:16:14,019
+è quasi e registrare un vocale.
+
+326
+00:16:14,019 --> 00:16:16,100
+E poi ne parliamo insieme,
+
+327
+00:16:16,100 --> 00:16:16,669
+se vuoi.
+
+328
+00:16:16,669 --> 00:16:20,080
+Se invece vuoi contattare Alex personalmente,
+
+329
+00:16:20,080 --> 00:16:21,509
+magari per lavoro,
+
+330
+00:16:21,509 --> 00:16:28,509
+magari per acquistare una delle sue app o vuoi ascoltare
+i suoi tantissimi e interessantissimi contenuti,
+
+331
+00:16:28,509 --> 00:16:30,529
+e già anticipato da lui,
+
+332
+00:16:30,529 --> 00:16:32,840
+in descrizione trovi un bel po' di link.
+
+333
+00:16:32,840 --> 00:16:35,190
+Questi non mi dimentico di metterli.
+
+334
+00:16:35,190 --> 00:16:45,200
+Prima di chiudere approfitto per ringraziare i donatori mensili Edoardo e
+Carlo per il sostegno e l'apprezzamento che continuano a dimostrare da anni.
+
+335
+00:16:45,200 --> 00:16:50,990
+Se anche tu vuoi concretizzare il valore che
+ha per te questo progetto con una donazione,
+
+336
+00:16:50,990 --> 00:16:57,259
+puoi farlo tramite vari sistemi che trovi elencati
+nella sezione sostieni del sito pensieriincodice.
+
+337
+00:16:57,059 --> 00:16:59,609
+it o nella descrizione dell'episodio.
+
+338
+00:16:59,609 --> 00:17:03,269
+Per oggi dunque direi che ci siamo detti abbastanza.
+
+339
+00:17:03,269 --> 00:17:07,069
+Un saluto e ancora un ringraziamento ad Alex Racuglia,
+
+340
+00:17:07,069 --> 00:17:14,309
+un saluto a te che ci hai ascoltato e non
+dimenticare mai che un informatico risolve problemi,
+
+341
+00:17:14,309 --> 00:17:15,410
+a volte,
+
+342
+00:17:15,410 --> 00:17:16,670
+anche usando il puter.
+
