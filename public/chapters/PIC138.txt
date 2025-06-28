@@ -1,4 +1,4 @@
 0.000000	0.000000	Introduzione
 97.368299	97.368299	Pensieri in codice - Community Edition
-290.113968	290.113968	L'impatto dell'Intelligenza Artificiale su uno spot televisivo (parte 1 di 4)
+290.113968	290.113968	La pre-produzione di uno spot con l'Intelligenza Artificiale
 1667.093138	1667.093138	Conclusione
