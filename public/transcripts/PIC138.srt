@@ -1,0 +1,2664 @@
+1
+00:00:00,400 --> 00:00:09,109
+Che l'intelligenza artificiale stia prepotentemente cambiando
+moltissimi aspetti della nostra vita ormai lo sanno anche i sassi.
+
+2
+00:00:09,109 --> 00:00:09,900
+Cambia il lavoro,
+
+3
+00:00:09,900 --> 00:00:11,679
+cambia l'intrattenimento,
+
+4
+00:00:11,679 --> 00:00:12,640
+cambia lo shopping,
+
+5
+00:00:12,640 --> 00:00:14,220
+cambia l'apprendimento,
+
+6
+00:00:14,220 --> 00:00:17,629
+la ricerca di informazioni e chi più ne ha più ne metta.
+
+7
+00:00:17,629 --> 00:00:23,120
+E come si fa a parlare di così tanti argomenti e delle loro sfaccettature,
+
+8
+00:00:23,120 --> 00:00:32,299
+che sono così interessanti ma anche così numerosi da essere impossibili
+da conoscere a sufficienza per imbastire su di essi un discorso serio?
+
+9
+00:00:32,299 --> 00:00:32,590
+Beh,
+
+10
+00:00:32,590 --> 00:00:33,229
+facile!
+
+11
+00:00:33,229 --> 00:00:35,439
+Si chiede aiuto a chi ne sa di più.
+
+12
+00:00:35,439 --> 00:00:36,600
+Quello di oggi,
+
+13
+00:00:36,600 --> 00:00:37,119
+quindi,
+
+14
+00:00:37,119 --> 00:00:48,300
+è il primo episodio di una quadrilogia in cui un professionista ci parlerà
+di come l'AI ha cambiato il suo modo di realizzare spot televisivi,
+
+15
+00:00:48,300 --> 00:00:53,969
+raccontandoci un caso reale e spiegando le varie fasi del processo produttivo.
+
+16
+00:00:53,969 --> 00:00:59,700
+E ti assicuro che sarà interessantissimo e
+che impareremo entrambi un sacco di cose,
+
+17
+00:00:59,700 --> 00:01:00,520
+fidati!
+
+18
+00:01:00,520 --> 00:01:01,780
+Prima di cominciare,
+
+19
+00:01:01,780 --> 00:01:02,310
+però,
+
+20
+00:01:02,310 --> 00:01:07,189
+voglio dirti che l'episodio di oggi è speciale anche per un altro motivo.
+
+21
+00:01:07,189 --> 00:01:07,780
+Esso,
+
+22
+00:01:07,780 --> 00:01:08,459
+infatti,
+
+23
+00:01:08,459 --> 00:01:10,799
+dà il via ad una nuova rubrica,
+
+24
+00:01:10,799 --> 00:01:12,060
+una rubrica che,
+
+25
+00:01:12,060 --> 00:01:13,040
+onestamente,
+
+26
+00:01:13,040 --> 00:01:17,239
+mi sta molto a cuore e che spero diventi un appuntamento fisso,
+
+27
+00:01:17,280 --> 00:01:17,879
+ma che,
+
+28
+00:01:17,879 --> 00:01:19,900
+come scoprirai fra poco,
+
+29
+00:01:19,900 --> 00:01:22,769
+dipenderà essenzialmente da te.
+
+30
+00:01:22,769 --> 00:01:23,400
+Sigla!
+
+31
+00:01:23,400 --> 00:01:28,959
+Benvenuti su Pensieri in Codice,
+
+32
+00:01:28,959 --> 00:01:31,599
+il podcast dove si ragiona da informatici,
+
+33
+00:01:31,599 --> 00:01:33,120
+con Valerio Galano.
+
+34
+00:01:37,739 --> 00:01:39,689
+Se penso a questo progetto,
+
+35
+00:01:39,689 --> 00:01:41,319
+a Pensieri in Codice,
+
+36
+00:01:41,319 --> 00:01:43,700
+mi vengono in mente tante cose.
+
+37
+00:01:43,700 --> 00:01:52,140
+La consapevolezza che c'è là fuori un numero inspiegabilmente
+alto di persone che ascoltano quello che io ho da dire,
+
+38
+00:01:52,140 --> 00:01:53,159
+ad esempio.
+
+39
+00:01:53,159 --> 00:01:58,520
+Oppure la soddisfazione di aver prodotto una serie di contenuti nei
+
+40
+00:01:58,520 --> 00:02:03,960
+quali ho riversato sempre il massimo dell'impegno di cui disponevo e
+
+41
+00:02:03,960 --> 00:02:09,400
+del cui livello di qualità mi posso dichiarare piuttosto soddisfatto.
+
+42
+00:02:09,400 --> 00:02:18,379
+Ma la cosa alla quale do assolutamente il maggior valore è la
+community che si è venuta a costruire attorno al progetto.
+
+43
+00:02:18,379 --> 00:02:19,110
+Mi riferisco,
+
+44
+00:02:19,110 --> 00:02:19,919
+ovviamente,
+
+45
+00:02:19,919 --> 00:02:30,189
+alle persone che partecipano al gruppo Telegram e che ogni giorno discutono
+dei più disparati argomenti e si confrontano e così facendo crescono,
+
+46
+00:02:30,189 --> 00:02:31,080
+imparano e,
+
+47
+00:02:31,080 --> 00:02:32,050
+ovviamente,
+
+48
+00:02:32,050 --> 00:02:33,900
+fanno crescere anche me.
+
+49
+00:02:33,900 --> 00:02:34,210
+E,
+
+50
+00:02:34,219 --> 00:02:35,259
+soprattutto,
+
+51
+00:02:35,259 --> 00:02:38,889
+queste persone mi supportano in tantissimi modi.
+
+52
+00:02:38,889 --> 00:02:42,770
+Ultimamente ti parlo di "value for value" ad ogni episodio,
+
+53
+00:02:42,770 --> 00:02:43,189
+no?
+
+54
+00:02:43,189 --> 00:02:47,980
+Del fatto che questo progetto è completamente gratuito ma ha bisogno
+
+55
+00:02:47,980 --> 00:02:52,979
+anche del tuo supporto per andare avanti e ti dico anche che tra i vari
+
+56
+00:02:52,979 --> 00:02:57,699
+modi di contribuire c'è quello di dedicargli un po' del tuo talento.
+
+57
+00:02:57,699 --> 00:02:58,159
+Beh,
+
+58
+00:02:58,159 --> 00:03:06,460
+alla fine questo appello ha suscitato una risposta di
+affetto che ha permesso la nascita di questo episodio e,
+
+59
+00:03:06,460 --> 00:03:07,620
+sono sicuro,
+
+60
+00:03:07,620 --> 00:03:10,250
+anche di tanti altri a venire.
+
+61
+00:03:10,250 --> 00:03:11,099
+Devi sapere,
+
+62
+00:03:11,099 --> 00:03:11,909
+infatti,
+
+63
+00:03:11,909 --> 00:03:15,775
+che un giorno la persona alla cui voce stai per ascoltare -
+
+64
+00:03:15,775 --> 00:03:19,641
+che oltre ad essere un ascoltatore è anche un amico - mi ha
+
+65
+00:03:19,641 --> 00:03:23,250
+scritto per dirmi "Bella sta storia del value for value,
+
+66
+00:03:23,250 --> 00:03:27,780
+se vuoi io ti presto il mio talento per raccontare qualcosa di interessante".
+
+67
+00:03:27,789 --> 00:03:28,629
+E io "Fico!
+
+68
+00:03:28,629 --> 00:03:30,389
+Visto che ne sai a pacchi,
+
+69
+00:03:30,389 --> 00:03:37,719
+perché non descrivi come ha impattato l'intelligenza
+artificiale sulla produzione di contenuti video?" E lui "Fico!
+
+70
+00:03:37,719 --> 00:03:40,240
+Ma questa roba al momento è un casino,
+
+71
+00:03:40,240 --> 00:03:47,789
+quindi ti spiego come ha influito sul mio lavoro e ci faccio
+una serie di episodi perché ho un botto di cose da dire".
+
+72
+00:03:47,789 --> 00:03:48,729
+E io "Fico!
+
+73
+00:03:48,729 --> 00:03:49,830
+Sai che c'è?
+
+74
+00:03:49,830 --> 00:03:57,099
+Potrei approfittarne per fare una rubrica aperta a tutti i
+membri della community che vogliono raccontare qualcosa".
+
+75
+00:03:57,099 --> 00:03:57,900
+E lui "Fico!
+
+76
+00:03:57,900 --> 00:04:00,110
+Perché no?" Ed eccoci qua.
+
+77
+00:04:00,110 --> 00:04:10,000
+Ovviamente noi non parliamo come in una commedia demenziale americana
+dei primi anni 2000 e lui fra poco spiegherà meglio questo scambio,
+
+78
+00:04:10,000 --> 00:04:17,660
+ma ad ogni modo da questo discorso più o meno è nata
+l'idea di Pensieri in Codice Community Edition,
+
+79
+00:04:17,660 --> 00:04:29,449
+uno spazio in cui anche tu che stai ascoltando e che ritieni di avere qualcosa
+di interessante da dire su argomenti legati all'informatica puoi partecipare.
+
+80
+00:04:29,449 --> 00:04:34,480
+Dei dettagli di questa cosa però ne discutiamo alla fine dell'episodio.
+
+81
+00:04:34,480 --> 00:04:44,930
+Per ora ho già blatterato fin troppo e non vedo l'ora di lasciare la parola
+al primo ospite del primo episodio di Pensieri in Codice Community Edition,
+
+82
+00:04:44,930 --> 00:04:50,220
+il grandissimo Alex Racuglia.
+
+83
+00:04:50,220 --> 00:04:52,029
+Buongiorno a tutti,
+
+84
+00:04:52,029 --> 00:04:58,019
+io sono Alex Racuglia e definirmi è una cosa un po' più complicata del solito.
+
+85
+00:04:58,019 --> 00:05:03,310
+Ufficialmente io sono un regista e produttore
+di spot televisivi e video promozionali,
+
+86
+00:05:03,310 --> 00:05:09,180
+ma ho iniziato la mia "carriera" studiando
+informatica sia alle superiori che all'università.
+
+87
+00:05:09,180 --> 00:05:13,879
+Poi i casi della vita mi hanno portato a
+lavorare nel campo del video pesantemente.
+
+88
+00:05:13,879 --> 00:05:25,860
+Però ho sempre mantenuto un piede nell'informatica per cui posso dire di essere
+un regista con la passione del digitale e anche della produzione digitale,
+
+89
+00:05:25,860 --> 00:05:29,332
+ma dato che negli ultimi dieci anni ho ricominciato a
+
+90
+00:05:29,332 --> 00:05:32,933
+scrivere software e ho aperto una piccolissima software
+
+91
+00:05:32,933 --> 00:05:36,470
+house che sviluppa applicazioni per chi fa audio video,
+
+92
+00:05:36,470 --> 00:05:40,899
+posso anche dire di essere un informatico con la passione del cinema.
+
+93
+00:05:40,899 --> 00:05:42,740
+Sono anche un podcaster,
+
+94
+00:05:42,740 --> 00:05:50,889
+ho prodotto negli ultimi 14 anni qualcosa
+come 1200 episodi in varie trasmissioni,
+
+95
+00:05:50,889 --> 00:05:53,459
+circa una decina di trasmissioni.
+
+96
+00:05:53,459 --> 00:05:54,920
+La più longeva di tutte,
+
+97
+00:05:54,920 --> 00:05:55,839
+che è ancora viva,
+
+98
+00:05:55,839 --> 00:05:57,160
+la registro in automobile,
+
+99
+00:05:57,160 --> 00:05:58,579
+come sto facendo in questo momento,
+
+100
+00:05:58,579 --> 00:06:04,040
+perché ho scoperto che l'automobile non è soltanto
+un posto in cui l'audio è relativamente isolato,
+
+101
+00:06:04,060 --> 00:06:07,009
+ma è anche un posto in cui siamo effettivamente isolati,
+
+102
+00:06:07,009 --> 00:06:10,689
+possiamo parlare ad alta voce come se stessimo pensando.
+
+103
+00:06:10,689 --> 00:06:13,410
+Ovviamente l'automobile è anche un mezzo rumoroso,
+
+104
+00:06:13,410 --> 00:06:17,082
+per cui negli ultimi anni ho utilizzato diversi software
+
+105
+00:06:17,082 --> 00:06:20,884
+per la pulizia dell'audio e di conseguenza questo è quello
+
+106
+00:06:20,884 --> 00:06:24,300
+che sentite intanto che vado da casa verso l'ufficio.
+
+107
+00:06:24,300 --> 00:06:25,220
+Valerio,
+
+108
+00:06:25,220 --> 00:06:28,439
+che conosco da prima della pandemia probabilmente,
+
+109
+00:06:28,439 --> 00:06:30,089
+è una persona deliziosa,
+
+110
+00:06:30,089 --> 00:06:33,470
+l'ho incontrato un paio di volte quando sono stato suo ospite,
+
+111
+00:06:33,470 --> 00:06:35,060
+sono stato veramente suo ospite,
+
+112
+00:06:35,060 --> 00:06:37,639
+è stato come incontrare una persona di altri tempi,
+
+113
+00:06:37,639 --> 00:06:39,069
+una bella persona,
+
+114
+00:06:39,069 --> 00:06:40,420
+chiacchieriamo,
+
+115
+00:06:40,420 --> 00:06:42,259
+facciamo cose insieme,
+
+116
+00:06:42,259 --> 00:06:47,052
+ci divertiamo e parlando qualche tempo fa mi ha detto "sarebbe interessante
+
+117
+00:06:47,052 --> 00:06:51,530
+parlare di come l'intelligenza artificiale ha impattato il mondo della
+
+118
+00:06:51,530 --> 00:06:56,638
+produzione video" e mi sono detto "sarebbe interessante parlarne" però quando ci
+
+119
+00:06:56,638 --> 00:07:01,747
+ho pensato a bocce ferme ho detto "però è difficile" cioè ogni giorno su twitter
+
+120
+00:07:01,747 --> 00:07:06,603
+o su x come volete chiamarlo c'è un nuovo modello che consente di realizzare
+
+121
+00:07:06,603 --> 00:07:10,828
+video sempre più realistici al punto tale che circa un anno fa non
+
+122
+00:07:10,828 --> 00:07:15,180
+avrei mai detto che quello che vedo è sintetico e invece adesso lo è.
+
+123
+00:07:15,180 --> 00:07:16,589
+La sticella si è alzata,
+
+124
+00:07:16,589 --> 00:07:18,790
+le modalità di produzione del video,
+
+125
+00:07:18,790 --> 00:07:19,300
+dell'audio,
+
+126
+00:07:19,300 --> 00:07:25,529
+del parlato sono sempre più complesse e parlare di questa
+cosa sarebbe stato veramente un po' un po' complicato per me,
+
+127
+00:07:25,529 --> 00:07:27,529
+non tanto perché non sto seguendo il mercato,
+
+128
+00:07:27,529 --> 00:07:34,319
+quanto perché è un mercato in tale evoluzione che probabilmente
+fra un mese quello che vi sto dicendo potrebbe risultare antico.
+
+129
+00:07:34,319 --> 00:07:38,814
+Però ho pensato potrebbe essere interessante raccontare come l'intelligenza
+
+130
+00:07:38,814 --> 00:07:43,604
+artificiale nelle sue varie incarnazioni influisce sul mio lavoro effettivamente
+
+131
+00:07:43,604 --> 00:07:47,980
+e ho deciso di prendere ad esempio l'ultimo prodotto su cui sto lavorando,
+
+132
+00:07:47,980 --> 00:07:52,366
+l'ultimo progetto che è uno spot televisivo per il mercato australiano per conto
+
+133
+00:07:52,366 --> 00:07:56,752
+di un cliente francese perché in questo prodotto effettivamente c'è stata la più
+
+134
+00:07:56,752 --> 00:08:00,705
+grande rivoluzione dell'intelligenza artificiale per me da quando faccio
+
+135
+00:08:00,705 --> 00:08:04,550
+questo vestire e allora voglio raccontarvi un pochettino come funziona,
+
+136
+00:08:04,550 --> 00:08:05,430
+come ha funzionato,
+
+137
+00:08:05,430 --> 00:08:06,680
+come sta funzionando,
+
+138
+00:08:06,680 --> 00:08:10,100
+perché non è ancora stato distribuito all'MIT.
+
+139
+00:08:10,100 --> 00:08:12,180
+Cercherò di essere breve,
+
+140
+00:08:12,180 --> 00:08:15,586
+di tralasciare le cose troppo complicate o i dettagli non
+
+141
+00:08:15,586 --> 00:08:18,816
+significativi ma è anche vero che sono una persona che
+
+142
+00:08:18,816 --> 00:08:21,870
+parla molto per cui mi forzerò di essere condensato.
+
+143
+00:08:21,870 --> 00:08:29,500
+Prima di parlare però effettivamente di come l'intelligenza artificiale
+in alcune fase della lavorazione di questo progetto è entrata,
+
+144
+00:08:29,500 --> 00:08:31,838
+devo raccontarvi un pochettino come funziona la
+
+145
+00:08:31,838 --> 00:08:34,419
+realizzazione di uno spot televisivo ma in realtà di
+
+146
+00:08:34,419 --> 00:08:37,049
+quasi tutti quelli che sono le produzioni audiovisive.
+
+147
+00:08:37,049 --> 00:08:42,700
+Allora tutto quello che viene realizzato in
+video passa attraverso essenzialmente tre fasi.
+
+148
+00:08:42,700 --> 00:08:43,940
+La fase di pre produzione,
+
+149
+00:08:43,940 --> 00:08:45,820
+di produzione e di post produzione.
+
+150
+00:08:45,820 --> 00:08:47,389
+Interessante come cosa.
+
+151
+00:08:47,389 --> 00:08:52,679
+Dovrò fare un paio di passi indietro per raccontarvi
+il motivo per cui si chiama in questo modo.
+
+152
+00:08:52,679 --> 00:09:00,460
+Allora fino a qualche tempo fa la fase di produzione che è effettivamente
+quella in cui il giorno in cui si gira lo spot su quelle telecamere,
+
+153
+00:09:00,460 --> 00:09:02,509
+con gli attori sul set,
+
+154
+00:09:02,509 --> 00:09:03,730
+con la scenografia,
+
+155
+00:09:03,730 --> 00:09:11,399
+cioè proprio quella in cui viene girato era la fase più costosa
+e più importante perché era quella che coinvolgeva più persone.
+
+156
+00:09:11,399 --> 00:09:15,029
+Non di rado mi è capitato di lavorare su set con 20 persone.
+
+157
+00:09:15,029 --> 00:09:19,093
+Capite che 20 persone di una certa caratura professionale hanno
+
+158
+00:09:19,093 --> 00:09:22,776
+un costo tale per cui quella giornata di lavoro di solito
+
+159
+00:09:22,776 --> 00:09:26,649
+rappresentava l'80 per cento del costo del totale dello spot,
+
+160
+00:09:26,649 --> 00:09:28,639
+anche il 90 per cento,
+
+161
+00:09:28,639 --> 00:09:31,529
+per cui la produzione era il fulcro.
+
+162
+00:09:31,529 --> 00:09:32,649
+Un giorno solo,
+
+163
+00:09:32,649 --> 00:09:37,879
+due giorni di produzione che però si prendevano l'80-90 per cento del lavoro.
+
+164
+00:09:37,879 --> 00:09:40,120
+Adesso le cose sono molto diverse,
+
+165
+00:09:40,120 --> 00:09:42,669
+però rimaniamo su questa linea d'oro.
+
+166
+00:09:42,669 --> 00:09:45,639
+Prima della produzione c'è tutta la fase di preproduzione,
+
+167
+00:09:45,639 --> 00:09:48,120
+cioè come si prepara il giorno di produzione.
+
+168
+00:09:48,120 --> 00:09:51,980
+Tutto quello che arriva dall'ideazione all'organizzazione,
+
+169
+00:09:51,980 --> 00:09:53,120
+a fare 200.
+
+170
+00:09:52,919 --> 00:09:54,539
+000 telefonate,
+
+171
+00:09:54,539 --> 00:10:00,700
+insomma fare in modo che tutte quelle persone
+si ritrovino su quel set con tutti i materiali,
+
+172
+00:10:00,700 --> 00:10:02,500
+con tutte le attrezzature,
+
+173
+00:10:02,500 --> 00:10:04,990
+con tutto quello che serve per poter girare.
+
+174
+00:10:04,990 --> 00:10:07,179
+E poi c'è la fase di post produzione,
+
+175
+00:10:07,179 --> 00:10:11,399
+la fase in cui tutto il girato viene montato e messo insieme,
+
+176
+00:10:11,399 --> 00:10:13,000
+con la color correction,
+
+177
+00:10:13,000 --> 00:10:14,620
+con gli effetti speciali,
+
+178
+00:10:14,620 --> 00:10:15,980
+con il sound design,
+
+179
+00:10:15,980 --> 00:10:16,929
+il montaggio,
+
+180
+00:10:16,929 --> 00:10:18,279
+la motion graphics,
+
+181
+00:10:18,279 --> 00:10:21,960
+tutto quello che serve per costruire il prodotto finito.
+
+182
+00:10:21,960 --> 00:10:25,899
+Diciamo che la fase di produzione crea gli ingredienti,
+
+183
+00:10:25,899 --> 00:10:29,970
+e poi la fase di post produzione mette insieme
+questi ingredienti e produce la torta.
+
+184
+00:10:29,970 --> 00:10:34,889
+E la fase di preproduzione è inventarsi la ricetta.
+
+185
+00:10:34,889 --> 00:10:41,899
+Oggi vorrei concentrarmi essenzialmente sulla fase di
+preproduzione perché nel mio caso le cose sono un po' cambiate.
+
+186
+00:10:41,899 --> 00:10:43,779
+Ancora un piccolo cerno storico,
+
+187
+00:10:43,779 --> 00:10:46,059
+concedetemi di dilungarmi un pochettino.
+
+188
+00:10:46,059 --> 00:10:48,500
+Quando c'è stata la rivoluzione digitale,
+
+189
+00:10:48,500 --> 00:10:50,539
+cioè si è smesso di girare in pellicola,
+
+190
+00:10:50,539 --> 00:10:54,539
+si è iniziato ad utilizzare degli strumenti che possono essere anche consumer,
+
+191
+00:10:54,539 --> 00:10:57,210
+la fase di produzione ha iniziato a costare sempre di meno.
+
+192
+00:10:57,210 --> 00:11:03,389
+C'era sempre meno bisogno di tanta gente e la fase di
+preproduzione è iniziata a diventare più importante,
+
+193
+00:11:03,389 --> 00:11:04,759
+perché bisognava,
+
+194
+00:11:04,759 --> 00:11:06,660
+per ottimizzare la produzione,
+
+195
+00:11:06,660 --> 00:11:11,279
+per far sì di non sprecare soldi in quell'unico giorno che è costosissimo,
+
+196
+00:11:11,279 --> 00:11:12,820
+bisogna pianificare molto bene.
+
+197
+00:11:12,820 --> 00:11:13,690
+Più si pianifica,
+
+198
+00:11:13,690 --> 00:11:17,019
+più si si organizza e più quel giorno costa molto meno.
+
+199
+00:11:17,019 --> 00:11:17,880
+Risparmiare,
+
+200
+00:11:17,880 --> 00:11:18,559
+che ne so,
+
+201
+00:11:18,559 --> 00:11:19,900
+a una o due persone,
+
+202
+00:11:19,900 --> 00:11:23,320
+alla fine può significare risparmiare tantissimo tempo.
+
+203
+00:11:23,320 --> 00:11:26,009
+Un giorno di produzione può costare come 5,
+
+204
+00:11:26,009 --> 00:11:27,720
+6 o 10 di preproduzione,
+
+205
+00:11:27,720 --> 00:11:31,100
+per cui la fase di preproduzione è diventata molto più importante.
+
+206
+00:11:31,100 --> 00:11:33,690
+Che cosa significa preproduzione?
+
+207
+00:11:33,690 --> 00:11:35,990
+La preproduzione parte dall'idea.
+
+208
+00:11:35,990 --> 00:11:38,380
+Il cliente vuole promuovere un prodotto,
+
+209
+00:11:38,380 --> 00:11:43,139
+di solito si rivolge a un'agenzia creativa
+che non è la stessa agenzia di produzione.
+
+210
+00:11:43,139 --> 00:11:45,230
+L'agenzia creativa gli propone un'idea,
+
+211
+00:11:45,230 --> 00:11:45,580
+ne so,
+
+212
+00:11:45,580 --> 00:11:47,820
+secondo voi l'idea per questo spot è questa roba qui.
+
+213
+00:11:47,820 --> 00:11:51,629
+A questo punto ci si organizza e si inizia a pensare se questa idea piace,
+
+214
+00:11:51,629 --> 00:11:53,620
+si inizia a preparare la sceneggiatura.
+
+215
+00:11:53,620 --> 00:11:53,980
+Oddio,
+
+216
+00:11:53,980 --> 00:11:55,860
+prima si inizia a preparare il copyright,
+
+217
+00:11:55,860 --> 00:11:59,370
+il copy che è essenzialmente tutto quello che viene detto nello spot.
+
+218
+00:11:59,370 --> 00:12:01,259
+Se si hanno a disposizione 15 secondi,
+
+219
+00:12:01,259 --> 00:12:03,169
+sono 15 secondi di parlato,
+
+220
+00:12:03,169 --> 00:12:05,599
+si parte da quelli perché sono molto importanti,
+
+221
+00:12:05,599 --> 00:12:08,289
+perché il parlato è uno dei canali di comunicazione,
+
+222
+00:12:08,289 --> 00:12:09,519
+oltre a quello visivo.
+
+223
+00:12:09,519 --> 00:12:12,100
+Dopo aver prodotto il copy e il copy viene approvato,
+
+224
+00:12:12,100 --> 00:12:14,409
+dal cliente si passa alla sceneggiatura,
+
+225
+00:12:14,409 --> 00:12:19,799
+ovvero si descrive che cosa viene visualizzato per
+ogni singola parola o ogni singola frase del copy.
+
+226
+00:12:19,799 --> 00:12:22,549
+Questa è una fase relativamente breve per uno spot,
+
+227
+00:12:22,549 --> 00:12:24,509
+una fase lunghissima per un film,
+
+228
+00:12:24,509 --> 00:12:29,830
+però rimaniamo sullo spot televisivo che è un
+esempio relativamente semplice e molto efficace.
+
+229
+00:12:29,830 --> 00:12:32,299
+Una volta che anche la sceneggiatura è approvata,
+
+230
+00:12:32,299 --> 00:12:34,019
+si passa allo storyboard,
+
+231
+00:12:34,019 --> 00:12:38,100
+cioè alla visualizzazione con dei disegni di tutte le inquadrature.
+
+232
+00:12:38,100 --> 00:12:38,819
+Ora,
+
+233
+00:12:38,819 --> 00:12:41,269
+adesso vi faccio l'esempio in pratica.
+
+234
+00:12:41,269 --> 00:12:44,820
+Lo spot che sto realizzando è per una collezione di moto,
+
+235
+00:12:44,860 --> 00:12:46,789
+di modellini di moto,
+
+236
+00:12:46,789 --> 00:12:49,309
+di MotoGP e di Superbike.
+
+237
+00:12:49,309 --> 00:12:51,860
+Moto relativamente famose,
+
+238
+00:12:51,860 --> 00:12:56,320
+nel senso c'è la moto con cui Valentino Rossi ha vinto il suo mondiale,
+
+239
+00:12:56,320 --> 00:12:57,610
+la moto di Casey Stoner,
+
+240
+00:12:57,610 --> 00:12:58,820
+la moto di Bagnaia,
+
+241
+00:12:58,820 --> 00:13:00,029
+quelle moto lì.
+
+242
+00:13:00,029 --> 00:13:01,509
+Devo essere sincero,
+
+243
+00:13:01,509 --> 00:13:06,700
+io ho fatto tantissimi video di spot di modellini
+e una delle cose su cui sono più specializzato.
+
+244
+00:13:06,700 --> 00:13:09,110
+Devo dire che il prodotto è molto ben realizzato,
+
+245
+00:13:09,110 --> 00:13:09,940
+è buona fattura.
+
+246
+00:13:09,940 --> 00:13:12,129
+Quello che si fa ultimamente è non prendere,
+
+247
+00:13:12,129 --> 00:13:15,629
+non usare uno storyboard disegnato da uno storyboard artist,
+
+248
+00:13:15,629 --> 00:13:17,000
+cioè praticamente un tizio,
+
+249
+00:13:17,000 --> 00:13:17,830
+un disegnitore,
+
+250
+00:13:17,830 --> 00:13:21,400
+un illustratore che produce le tavole dello storyboard.
+
+251
+00:13:21,400 --> 00:13:24,600
+Se si ha a disposizione veramente il prodotto,
+
+252
+00:13:24,600 --> 00:13:27,659
+e avevamo a disposizione delle fotografie di tutti i modelli,
+
+253
+00:13:27,659 --> 00:13:32,289
+abbiamo preparato lo storyboard praticamente facendo una previsualizzazione,
+
+254
+00:13:32,289 --> 00:13:33,490
+che è una cosa diversa.
+
+255
+00:13:33,490 --> 00:13:34,090
+In pratica,
+
+256
+00:13:34,090 --> 00:13:35,460
+invece di fare i disegni,
+
+257
+00:13:35,460 --> 00:13:37,529
+mettevamo delle fotografie compositate.
+
+258
+00:13:37,529 --> 00:13:39,539
+In Photoshop di solito fa questa cosa,
+
+259
+00:13:39,539 --> 00:13:42,409
+in modo da mostrare effettivamente ogni singola inquadratura,
+
+260
+00:13:42,409 --> 00:13:43,490
+che cosa avremmo mostrato,
+
+261
+00:13:43,490 --> 00:13:46,259
+mostrando effettivamente l'oggetto vero e non un suo disegno.
+
+262
+00:13:46,259 --> 00:13:48,580
+E così siamo andati avanti e abbiamo proceduto.
+
+263
+00:13:48,580 --> 00:13:50,269
+Una volta che lo storyboard è approvato,
+
+264
+00:13:50,269 --> 00:13:52,690
+cioè sappiamo tutte le inquadrature che vanno girate,
+
+265
+00:13:52,690 --> 00:13:54,600
+si va a girare e si gira.
+
+266
+00:13:54,600 --> 00:13:58,220
+Oggi voglio concentrarmi effettivamente solo a fase di preproduzione,
+
+267
+00:13:58,220 --> 00:14:03,409
+perché è stata quella in cui l'intelligenza
+artificiale è intervenuta più pesantemente,
+
+268
+00:14:03,409 --> 00:14:05,840
+lasciando poi le altre puntate,
+
+269
+00:14:05,840 --> 00:14:07,889
+le prossime volte in cui racconterò qualcosa,
+
+270
+00:14:07,889 --> 00:14:09,440
+al resto della produzione.
+
+271
+00:14:09,440 --> 00:14:10,179
+Allora,
+
+272
+00:14:10,179 --> 00:14:12,279
+in questo progetto in particolare,
+
+273
+00:14:12,279 --> 00:14:15,470
+era la seconda volta che interagivo con questo cliente.
+
+274
+00:14:15,470 --> 00:14:18,149
+La prima volta ci hanno fatto fare un'offerta economica,
+
+275
+00:14:18,149 --> 00:14:21,440
+ci hanno chiesto "Noi dobbiamo fare uno spot per fare questa roba qui.
+
+276
+00:14:21,440 --> 00:14:24,220
+Quanto ci costa?" Senza neanche parlare di idee,
+
+277
+00:14:24,220 --> 00:14:24,860
+di cose,
+
+278
+00:14:24,860 --> 00:14:26,220
+nel senso non c'era una gara di mezzo.
+
+279
+00:14:26,220 --> 00:14:27,610
+Volevano sapere quanto costava,
+
+280
+00:14:27,610 --> 00:14:30,000
+perché hanno visto le altre cose che noi facevamo e sanno che noi,
+
+281
+00:14:30,000 --> 00:14:31,419
+come azienda di produzione,
+
+282
+00:14:31,419 --> 00:14:33,220
+facciamo bene questo tipo di prodotto.
+
+283
+00:14:33,220 --> 00:14:35,120
+L'altra volta non è andata bene,
+
+284
+00:14:35,120 --> 00:14:38,159
+hanno scelto di rimanere sul loro fornitore abituale.
+
+285
+00:14:38,159 --> 00:14:39,809
+Stavolta hanno deciso "Facciamo il salto,
+
+286
+00:14:39,809 --> 00:14:43,440
+dalla quale andiamo su questi nuovi" e hanno avuto bisogno delle idee creative.
+
+287
+00:14:43,440 --> 00:14:46,620
+Idea creativa che doveva partire dal sottoscritto,
+
+288
+00:14:46,620 --> 00:14:49,629
+che nonostante non è un vero e proprio copywriter,
+
+289
+00:14:49,629 --> 00:14:51,899
+ogni tanto mi sono occupato di questo,
+
+290
+00:14:51,899 --> 00:14:53,850
+su progetti relativamente semplici,
+
+291
+00:14:53,850 --> 00:14:55,389
+e poi proviamo anche a fare questo.
+
+292
+00:14:55,389 --> 00:14:56,340
+Com'è funzionato?
+
+293
+00:14:56,340 --> 00:14:56,690
+Eh,
+
+294
+00:14:56,690 --> 00:14:58,120
+questa cosa è stata molto divertente,
+
+295
+00:14:58,120 --> 00:15:00,230
+perché era la prima volta che lavoravo con un cliente,
+
+296
+00:15:00,230 --> 00:15:00,940
+però il cliente,
+
+297
+00:15:00,940 --> 00:15:02,200
+molto correttamente,
+
+298
+00:15:02,200 --> 00:15:04,580
+ci ha mostrato gli spot degli anni passati.
+
+299
+00:15:04,580 --> 00:15:05,299
+Nel senso,
+
+300
+00:15:05,299 --> 00:15:06,480
+cosa abbiamo fatto in passato,
+
+301
+00:15:06,480 --> 00:15:07,200
+cosa ci piace,
+
+302
+00:15:07,200 --> 00:15:08,529
+vogliamo una roba come questa,
+
+303
+00:15:08,529 --> 00:15:11,269
+per cui ci ha dato una grandissima traccia da seguire.
+
+304
+00:15:11,269 --> 00:15:13,139
+Non è proprio partire da zero.
+
+305
+00:15:13,139 --> 00:15:16,620
+Però è anche vero che quando un cliente cambia fornitore,
+
+306
+00:15:16,620 --> 00:15:19,129
+si aspetta comunque qualcosa di nuovo,
+
+307
+00:15:19,129 --> 00:15:21,600
+qualcosa di leggermente differente,
+
+308
+00:15:21,600 --> 00:15:22,700
+ma è anche vero,
+
+309
+00:15:22,700 --> 00:15:26,179
+perché se io comunque mi chiedono "Fai una
+cosa che hanno fatto tutti gli altri",
+
+310
+00:15:26,179 --> 00:15:27,039
+comunque a modo mio,
+
+311
+00:15:27,039 --> 00:15:28,539
+ma non perché sono un genio,
+
+312
+00:15:28,539 --> 00:15:31,100
+ma perché forse anche proprio per i miei limiti,
+
+313
+00:15:31,100 --> 00:15:35,279
+ci infilerò qualcosa che secondo me è più importante o non importante.
+
+314
+00:15:35,279 --> 00:15:36,889
+Stavolta che ero molto in,
+
+315
+00:15:36,889 --> 00:15:38,019
+non dico in panico,
+
+316
+00:15:38,019 --> 00:15:41,289
+ero un po' dubbioso sulle mie capacità per la sindrome del foglio bianco,
+
+317
+00:15:41,289 --> 00:15:43,350
+ho fatto un paio di riunioni su Zoom,
+
+318
+00:15:43,350 --> 00:15:46,409
+mi sono preso tutte le informazioni di tutto quello che c'era,
+
+319
+00:15:46,409 --> 00:15:49,100
+e ho iniziato a preparare un documento molto complesso,
+
+320
+00:15:49,100 --> 00:15:49,659
+molto ricco,
+
+321
+00:15:49,659 --> 00:15:50,070
+in pages,
+
+322
+00:15:50,070 --> 00:15:50,679
+cioè in Word,
+
+323
+00:15:50,679 --> 00:15:52,379
+fate finta che l'abbia fatto in Word,
+
+324
+00:15:52,379 --> 00:15:53,710
+con tutto quello che mi serviva,
+
+325
+00:15:53,710 --> 00:15:54,779
+tutte le informazioni,
+
+326
+00:15:54,779 --> 00:15:55,580
+tutto quanto.
+
+327
+00:15:55,580 --> 00:15:57,549
+Ho fatto la cosa che non si dovrebbe fare,
+
+328
+00:15:57,549 --> 00:15:58,320
+ma l'ho fatta.
+
+329
+00:15:58,320 --> 00:15:59,860
+Sindrome del foglio bianco,
+
+330
+00:15:59,860 --> 00:16:01,629
+ho preso queste informazioni,
+
+331
+00:16:01,629 --> 00:16:02,639
+ho chiesto a ChatGPT,
+
+332
+00:16:02,639 --> 00:16:06,769
+"ChatGPT scrivimi il copy per uno spot televisivo di 14 secondi,
+
+333
+00:16:06,769 --> 00:16:07,350
+non 15,
+
+334
+00:16:07,350 --> 00:16:08,970
+dopo vi spiegherò perché 14,
+
+335
+00:16:08,970 --> 00:16:10,340
+che presenti questa roba qui,
+
+336
+00:16:10,340 --> 00:16:11,100
+con questo stile,
+
+337
+00:16:11,100 --> 00:16:13,960
+mettendogli anche gli spot precedenti.
+
+338
+00:16:13,960 --> 00:16:14,379
+GPT,
+
+339
+00:16:14,379 --> 00:16:15,899
+modello 4 o mini,
+
+340
+00:16:15,899 --> 00:16:16,899
+se non sbaglio,
+
+341
+00:16:16,899 --> 00:16:19,700
+mi ha risposto con una cosa sensata.
+
+342
+00:16:19,700 --> 00:16:23,289
+Ho fatto rifare questa cosa qui tipo 5-10 volte,
+
+343
+00:16:23,289 --> 00:16:25,840
+fino a quando sono arrivato a un buon risultato,
+
+344
+00:16:25,840 --> 00:16:29,820
+e io sapevo che questo risultato non era
+quello che sarebbe stato poi di definitivo,
+
+345
+00:16:29,840 --> 00:16:31,559
+però è stato interessante,
+
+346
+00:16:31,559 --> 00:16:36,039
+perché è stata una interessantissima traccia
+da sottoporre prima di tutta l'agenzia,
+
+347
+00:16:36,039 --> 00:16:36,980
+di connessione,
+
+348
+00:16:36,980 --> 00:16:37,659
+l'account,
+
+349
+00:16:37,659 --> 00:16:39,199
+e poi al cliente finale,
+
+350
+00:16:39,199 --> 00:16:41,750
+perché così gli ho detto "questa è la nostra idea".
+
+351
+00:16:41,750 --> 00:16:43,579
+A questo punto è il cliente che dice "no,
+
+352
+00:16:43,579 --> 00:16:45,259
+ma io penso che sia meglio fare così,
+
+353
+00:16:45,259 --> 00:16:46,089
+meglio fare così",
+
+354
+00:16:46,089 --> 00:16:48,620
+e di conseguenza ha dato le sue indicazioni di miglioramento,
+
+355
+00:16:48,620 --> 00:16:52,919
+per cui il copy è stata una cosa prodotta di sotto mani,
+
+356
+00:16:52,919 --> 00:16:55,390
+con l'int iniziale di ChatGPT,
+
+357
+00:16:55,390 --> 00:16:59,660
+che poi tutto quello che ha tirato fuori di
+ChatGPT è stato totalmente rimaneggiato,
+
+358
+00:16:59,660 --> 00:17:01,769
+che dell'originale non è rimasto niente,
+
+359
+00:17:01,769 --> 00:17:06,480
+però è stato già il primo passo dell'intelligenza
+artificiale che mi ha dato uno spunto.
+
+360
+00:17:06,480 --> 00:17:14,769
+Io poi nel tempo mi sono creato un po' di prompt già pronti
+per avere dei copy già indicativi di come potrebbe essere,
+
+361
+00:17:14,769 --> 00:17:21,460
+perché appunto con l'intelligenza artificiale
+adesso il Fortis è nel scrivere un prompt adeguato.
+
+362
+00:17:21,460 --> 00:17:26,690
+Per cui quello è stato il primo momento in
+cui l'intelligenza artificiale è entrata,
+
+363
+00:17:26,690 --> 00:17:27,609
+ma non è finito.
+
+364
+00:17:27,609 --> 00:17:29,150
+Una volta provato il copy,
+
+365
+00:17:29,150 --> 00:17:32,769
+la cosa interessante è che io ho prodotto la sceneggiatura.
+
+366
+00:17:32,769 --> 00:17:35,779
+Questi spot sono molto simetrici l'uno dall'altro,
+
+367
+00:17:35,779 --> 00:17:41,059
+per cui è stato molto molto facile preparare una discussione del visual,
+
+368
+00:17:41,059 --> 00:17:43,340
+e lì è arrivato il momento,
+
+369
+00:17:43,340 --> 00:17:45,480
+un momento topico direi,
+
+370
+00:17:45,480 --> 00:17:48,869
+perché ho ricevuto delle correzioni da parte del cliente.
+
+371
+00:17:48,869 --> 00:17:50,659
+In che senso delle correzioni?
+
+372
+00:17:50,659 --> 00:17:52,430
+Perché le correzioni ci stanno tutte nel senso,
+
+373
+00:17:52,430 --> 00:17:54,200
+uno può dire "vorrei visualizzare questo",
+
+374
+00:17:54,200 --> 00:17:56,299
+"vorrei visualizzare quell'altro",
+
+375
+00:17:56,299 --> 00:18:02,410
+però il cliente ha mandato un report e questo
+report era chiaramente stato scritto da chat gpt.
+
+376
+00:18:02,410 --> 00:18:07,220
+Se voi gli mostrate a chat gpt uno scritto e
+gli dite "come potrei migliorare questa cosa?",
+
+377
+00:18:07,220 --> 00:18:09,750
+chat gpt vi risponde anche con il markdown.
+
+378
+00:18:09,750 --> 00:18:13,599
+E allora nessun essere umano scrive in markdown una mail.
+
+379
+00:18:13,599 --> 00:18:15,960
+Per cui questa cosa qua è stata divertentissima,
+
+380
+00:18:15,960 --> 00:18:18,240
+perché ho ricevuto appunto il feedback,
+
+381
+00:18:18,240 --> 00:18:19,930
+un feedback dato da chat gpt.
+
+382
+00:18:19,930 --> 00:18:21,569
+Poi ho scoperto che il cliente,
+
+383
+00:18:21,569 --> 00:18:22,539
+questo cliente,
+
+384
+00:18:22,539 --> 00:18:23,210
+questa persona,
+
+385
+00:18:23,210 --> 00:18:27,200
+spesso e volentieri si fa aiutare chat gpt nella scrittura delle proprie mail,
+
+386
+00:18:27,200 --> 00:18:28,970
+per cui è stato bellissimo questa cosa qua.
+
+387
+00:18:28,970 --> 00:18:31,250
+Inizialmente mi sono sentito un pochettino offeso,
+
+388
+00:18:31,250 --> 00:18:33,690
+proprio perché io ho fatto la stronzata,
+
+389
+00:18:33,690 --> 00:18:38,500
+ho fatto la furbata di farmi scrivere la prima versione del copy,
+
+390
+00:18:38,500 --> 00:18:42,619
+che poi dopo è stato rimaneggiato da me ed altre persone dell'agenzia,
+
+391
+00:18:42,619 --> 00:18:45,650
+con chat gpt e di conseguenza chi di chat gpt perisce,
+
+392
+00:18:45,650 --> 00:18:47,380
+di chat gpt alla fine perisce,
+
+393
+00:18:47,380 --> 00:18:48,309
+però vabbè.
+
+394
+00:18:48,309 --> 00:18:53,119
+E successivamente abbiamo iniziato a produrre lo storyboard.
+
+395
+00:18:53,119 --> 00:18:58,609
+Ora sullo storyboard c'è stato una sorta di momento di indecisione.
+
+396
+00:18:58,609 --> 00:19:03,070
+Allora stiamo parlando di modelli di motociclette,
+
+397
+00:19:03,070 --> 00:19:03,880
+di moto,
+
+398
+00:19:03,880 --> 00:19:06,210
+della moto gp e della superbike.
+
+399
+00:19:06,210 --> 00:19:07,519
+Di solito questi video,
+
+400
+00:19:07,519 --> 00:19:08,890
+queste spot televisivi,
+
+401
+00:19:08,890 --> 00:19:10,859
+iniziano con uno o due inquadrature,
+
+402
+00:19:10,859 --> 00:19:13,099
+forse anche tre inquadrature molto veloci,
+
+403
+00:19:13,099 --> 00:19:14,740
+che mostrano l'oggetto reale,
+
+404
+00:19:14,740 --> 00:19:18,700
+cioè la moto in pista che gareggia eccetera eccetera.
+
+405
+00:19:18,700 --> 00:19:21,359
+Inizialmente l'idea era anche questa,
+
+406
+00:19:21,359 --> 00:19:29,740
+anche se non c'erano molti contatti con chi fa moto gp
+eccetera eccetera e tutte le agenzie di brocheraggio,
+
+407
+00:19:29,740 --> 00:19:30,200
+di stock,
+
+408
+00:19:30,200 --> 00:19:30,799
+di immagini,
+
+409
+00:19:30,799 --> 00:19:32,380
+non avevano queste informazioni.
+
+410
+00:19:32,380 --> 00:19:37,109
+Di conseguenza inizialmente si è detto "potremmo
+utilizzare delle foto e animarle?" No,
+
+411
+00:19:37,109 --> 00:19:42,109
+perché i diritti che erano stati acquisiti
+per le fotografie da mettere nel fascicolo,
+
+412
+00:19:42,109 --> 00:19:44,900
+non coprivano la pubblicazione delle foto in video,
+
+413
+00:19:44,900 --> 00:19:46,779
+tanto meno la modifica delle foto.
+
+414
+00:19:46,779 --> 00:19:51,668
+Per cui a un certo punto il cliente ha detto "non è necessario effettivamente
+
+415
+00:19:51,668 --> 00:19:56,494
+metterci la foto in sé" e la proposta è stata quella "perché non partiamo da
+
+416
+00:19:56,494 --> 00:20:01,070
+alcuni shot che mostrano una pista di gara motociclistica di notte?" Ora,
+
+417
+00:20:01,069 --> 00:20:03,720
+io devo essere sincero da un po' che non seguo il moto gp.
+
+418
+00:20:03,720 --> 00:20:06,539
+So che la formula 1 ha delle gare notturne a Dubai,
+
+419
+00:20:06,539 --> 00:20:07,970
+negli Emirati Arabi,
+
+420
+00:20:07,970 --> 00:20:14,319
+in cui illuminano a giorno questa pista con delle
+luci che consumeranno come 18 centrali nucleari,
+
+421
+00:20:14,319 --> 00:20:17,210
+però non mi ricordo se questa cosa la fanno anche per le moto.
+
+422
+00:20:17,210 --> 00:20:17,380
+Vabbè,
+
+423
+00:20:17,380 --> 00:20:20,390
+allora mi sono messo a cercare nelle varie banche dati,
+
+424
+00:20:20,390 --> 00:20:23,990
+nelle varie servizi di abbonamento a cui sono abbonato,
+
+425
+00:20:23,990 --> 00:20:27,700
+dei video di stock che avevano solo delle gare notturne.
+
+426
+00:20:27,700 --> 00:20:28,500
+C'erano,
+
+427
+00:20:28,500 --> 00:20:30,059
+ma erano veramente miseri.
+
+428
+00:20:30,059 --> 00:20:30,400
+Cioè,
+
+429
+00:20:30,400 --> 00:20:33,019
+pratica uno con una moto che faceva un giro di pista,
+
+430
+00:20:33,019 --> 00:20:34,799
+però era veramente triste,
+
+431
+00:20:34,799 --> 00:20:38,019
+perché le piste notturne sono illuminate pochissimo,
+
+432
+00:20:38,019 --> 00:20:40,220
+non sono come quelle del gran premio.
+
+433
+00:20:40,220 --> 00:20:41,480
+Ero veramente in crisi,
+
+434
+00:20:41,480 --> 00:20:43,200
+poi a un certo punto mi sono detto,
+
+435
+00:20:43,200 --> 00:20:43,799
+insomma,
+
+436
+00:20:43,799 --> 00:20:47,109
+questa richiesta qua è una richiesta talmente strana,
+
+437
+00:20:47,109 --> 00:20:51,009
+perché non posso generare le immagini con un servizio come Medjourney,
+
+438
+00:20:51,009 --> 00:20:51,619
+Firefly,
+
+439
+00:20:51,619 --> 00:20:52,759
+OpenAI o Google?
+
+440
+00:20:52,759 --> 00:20:53,250
+Cioè,
+
+441
+00:20:53,250 --> 00:20:56,559
+ci sono tantissimi servizi di generazione delle immagini,
+
+442
+00:20:56,559 --> 00:20:57,650
+perché non lo facciamo?
+
+443
+00:20:57,650 --> 00:21:00,010
+Perché poi non sono sicuro di riuscire ad animarla.
+
+444
+00:21:00,010 --> 00:21:00,539
+Allora,
+
+445
+00:21:00,539 --> 00:21:01,650
+io sono abbonato,
+
+446
+00:21:01,650 --> 00:21:04,130
+cioè la mia azienda è abbonata a Freepik,
+
+447
+00:21:04,130 --> 00:21:07,579
+che col piano annuale ti mette a disposizione 200.
+
+448
+00:21:07,440 --> 00:21:12,640
+000 crediti da spendere nella generazione di
+contenuti con l'intelligenza artificiale.
+
+449
+00:21:12,640 --> 00:21:15,490
+La generazione di un'immagine di solito costa un credito,
+
+450
+00:21:15,490 --> 00:21:18,970
+la generazione di un video può arrivare a costare anche mille crediti,
+
+451
+00:21:18,970 --> 00:21:20,859
+a seconda del servizio che si usa.
+
+452
+00:21:20,859 --> 00:21:21,740
+E io ho detto,
+
+453
+00:21:21,740 --> 00:21:22,019
+beh,
+
+454
+00:21:22,019 --> 00:21:22,759
+proviamo.
+
+455
+00:21:22,759 --> 00:21:24,150
+Ho generato un po' di immagini,
+
+456
+00:21:24,150 --> 00:21:26,980
+finché non sono arrivato ad alcune che mi piacevano,
+
+457
+00:21:26,980 --> 00:21:30,549
+un'inquadratura di un motociclista di un guanto che accelera,
+
+458
+00:21:30,549 --> 00:21:34,369
+un'inquadratura di un semaforo che da rosso diventa verde,
+
+459
+00:21:34,369 --> 00:21:36,769
+e un'inquadratura di una moto che parte,
+
+460
+00:21:36,769 --> 00:21:38,289
+inquadrata dal basso.
+
+461
+00:21:38,289 --> 00:21:41,380
+E a questo punto proviamo a generare dei video sulla base di queste.
+
+462
+00:21:41,380 --> 00:21:44,500
+E li abbiamo generati utilizzando Kling,
+
+463
+00:21:44,500 --> 00:21:45,690
+Kling 1.
+
+464
+00:21:45,400 --> 00:21:46,170
+6,
+
+465
+00:21:46,170 --> 00:21:48,220
+andava piuttosto bene,
+
+466
+00:21:48,220 --> 00:21:48,769
+e sì,
+
+467
+00:21:48,769 --> 00:21:51,380
+praticamente al primo colpo,
+
+468
+00:21:51,380 --> 00:21:52,710
+in due inquadrature,
+
+469
+00:21:52,710 --> 00:21:53,690
+al terzo colpo,
+
+470
+00:21:53,690 --> 00:21:55,509
+in un'altra inquadratura,
+
+471
+00:21:55,509 --> 00:21:56,890
+il video è stato generato.
+
+472
+00:21:56,890 --> 00:21:59,170
+Questo video è durato inizialmente 5-8 secondi,
+
+473
+00:21:59,170 --> 00:22:01,839
+io l'ho fatto durare 5 secondi per poter spendere il meno possibile,
+
+474
+00:22:01,839 --> 00:22:03,000
+ma non perché sono pitocco,
+
+475
+00:22:03,000 --> 00:22:05,259
+perché non si sa mai cosa ci può servire domani,
+
+476
+00:22:05,259 --> 00:22:08,299
+anche perché poi aver preso un secondo di uno di questi shot,
+
+477
+00:22:08,299 --> 00:22:09,980
+e questa è la cosa fondamentale,
+
+478
+00:22:09,980 --> 00:22:12,410
+un video di 5 secondi può essere brutto,
+
+479
+00:22:12,410 --> 00:22:17,140
+ma un estratto di un secondo all'interno di un
+montaggio può essere invece molto significativo.
+
+480
+00:22:17,140 --> 00:22:18,269
+Ed è quello che ho fatto,
+
+481
+00:22:18,269 --> 00:22:18,910
+nel senso,
+
+482
+00:22:18,910 --> 00:22:20,500
+ho tirato fuori questi un secondo,
+
+483
+00:22:20,500 --> 00:22:21,019
+un secondo,
+
+484
+00:22:21,019 --> 00:22:21,579
+un secondo,
+
+485
+00:22:21,579 --> 00:22:22,099
+e funziona.
+
+486
+00:22:22,099 --> 00:22:25,769
+Allora alla fin fine l'ho infilato dentro lo storyboard e glielo ho mandato,
+
+487
+00:22:25,769 --> 00:22:26,900
+e andava bene,
+
+488
+00:22:26,900 --> 00:22:28,150
+questa cosa è andata bene.
+
+489
+00:22:28,150 --> 00:22:31,750
+Per cui il secondo punto in cui è arrivata l'intelligenza artificiale,
+
+490
+00:22:31,750 --> 00:22:34,289
+la generazione di immagini e la generazione di video,
+
+491
+00:22:34,289 --> 00:22:37,210
+che poi verranno utilizzati nello spot vero e proprio.
+
+492
+00:22:37,210 --> 00:22:39,019
+Per realizzarlo lo storyboard,
+
+493
+00:22:39,019 --> 00:22:42,269
+noi avevamo a disposizione le fotografie di questi modelli,
+
+494
+00:22:42,269 --> 00:22:43,539
+fotografati in studio,
+
+495
+00:22:43,539 --> 00:22:44,410
+però su sfondo bianco,
+
+496
+00:22:44,410 --> 00:22:45,630
+perché sono abbastanza scuri,
+
+497
+00:22:45,630 --> 00:22:47,859
+in modo tale da poter essere scontornati,
+
+498
+00:22:47,859 --> 00:22:51,579
+e con Photoshop ho separato il soggetto dallo sfondo,
+
+499
+00:22:51,579 --> 00:22:54,349
+sempre utilizzando l'intelligenza artificiale,
+
+500
+00:22:54,349 --> 00:22:57,200
+ormai i modelli di selezione del soggetto sono molto,
+
+501
+00:22:57,200 --> 00:22:57,670
+molto,
+
+502
+00:22:57,670 --> 00:22:58,700
+molto accurati,
+
+503
+00:22:58,700 --> 00:23:00,200
+e poi sempre con Photoshop,
+
+504
+00:23:00,200 --> 00:23:01,940
+con la generazione di immagini,
+
+505
+00:23:01,940 --> 00:23:04,880
+anche questi costano un credito a generazione,
+
+506
+00:23:04,880 --> 00:23:09,700
+noi abbiamo a disposizione mille crediti al mese con il nostro abbonamento,
+
+507
+00:23:09,700 --> 00:23:12,779
+ho fatto ambientare questi modelli all'interno di uno studio,
+
+508
+00:23:12,779 --> 00:23:16,160
+andando a simulare anche la riflessione del piano.
+
+509
+00:23:16,160 --> 00:23:20,599
+Per cui mentre la fotografia è stata fatta su un foglio di carta bianco,
+
+510
+00:23:20,599 --> 00:23:21,509
+mettiamola così,
+
+511
+00:23:21,509 --> 00:23:23,289
+su uno sfondo bianco di cartoncino,
+
+512
+00:23:23,289 --> 00:23:26,650
+ho fatto cambiare lo sfondo facendolo diventare scuro,
+
+513
+00:23:26,650 --> 00:23:27,390
+riflettente,
+
+514
+00:23:27,390 --> 00:23:28,619
+ed è questa cosa qua,
+
+515
+00:23:28,619 --> 00:23:33,910
+fondamentalmente lo storyboard si è creato con questa ultima nuova generazione.
+
+516
+00:23:33,910 --> 00:23:36,099
+Tutto questo nella fase di preproduzione.
+
+517
+00:23:36,099 --> 00:23:37,210
+Un'ultima cosa,
+
+518
+00:23:37,210 --> 00:23:40,900
+e poi concludo la mia spattafiata sulla preproduzione,
+
+519
+00:23:40,900 --> 00:23:42,740
+quando si prepara un copy,
+
+520
+00:23:42,740 --> 00:23:45,700
+cioè il testo che viene poi pronunciato dallo speaker,
+
+521
+00:23:45,700 --> 00:23:50,099
+bisogna essere consci del fatto che c'è un tempo massimo di ascolto,
+
+522
+00:23:50,099 --> 00:23:53,309
+e il tempo massimo di ascolto è quello della durata dello spot.
+
+523
+00:23:53,309 --> 00:23:54,599
+Nel caso dell'Italia,
+
+524
+00:23:54,599 --> 00:23:58,980
+uno spot da 15 secondi ha 15 secondi di audio,
+
+525
+00:23:58,980 --> 00:24:01,809
+di conseguenza tutto il parlato deve stare in 15 secondi.
+
+526
+00:24:01,809 --> 00:24:04,140
+Poi se c'è anche un minimo di musica va bene,
+
+527
+00:24:04,140 --> 00:24:12,670
+però di solito è in background perché in 15 secondi bisogna dire un
+sacco di cose e non c'è tempo per avere anche un attacco musicale.
+
+528
+00:24:12,670 --> 00:24:17,569
+Di solito io testo questo tipo di cosa o registrandolo io direttamente,
+
+529
+00:24:17,569 --> 00:24:26,349
+ma ultimamente faccio uso dei servizi di text-to-speech di Microsoft e Azure
+che hanno una buona qualità e soprattutto sono abbastanza intellegibili,
+
+530
+00:24:26,349 --> 00:24:29,990
+che va bene perché un conto è farlo in italiano o in inglese,
+
+531
+00:24:29,990 --> 00:24:34,240
+che ancora ancora potrei in qualche modo
+cavarla dicendo "the pain is on the table",
+
+532
+00:24:34,240 --> 00:24:36,190
+però nel caso di lingue straniere,
+
+533
+00:24:36,190 --> 00:24:38,960
+mi sto lavorando in questi giorni su Ungheria,
+
+534
+00:24:38,960 --> 00:24:39,549
+Polonia,
+
+535
+00:24:39,549 --> 00:24:40,180
+Grecia,
+
+536
+00:24:40,180 --> 00:24:41,589
+oltre che Australia,
+
+537
+00:24:41,589 --> 00:24:42,119
+è lì,
+
+538
+00:24:42,119 --> 00:24:43,990
+devo per forza sintetizzarlo.
+
+539
+00:24:43,990 --> 00:24:48,660
+Ho visto che ovviamente gli speaker sono un pochettino
+più veloci e possono essere un pochettino tagliati,
+
+540
+00:24:48,660 --> 00:24:54,710
+per cui uno speaker digitale veloce da 140-150 parole al minuto,
+
+541
+00:24:54,710 --> 00:24:56,619
+che non sono per niente poche,
+
+542
+00:24:56,619 --> 00:24:59,609
+può essere comunque velocizzato del 5%.
+
+543
+00:24:59,609 --> 00:25:00,750
+Io faccio così,
+
+544
+00:25:00,750 --> 00:25:01,920
+prendo il copy,
+
+545
+00:25:01,920 --> 00:25:06,990
+lo faccio speakerare dai servizi digitali di Microsoft e Azure,
+
+546
+00:25:06,990 --> 00:25:10,609
+utilizzando la voce col tono più enfatico,
+
+547
+00:25:10,609 --> 00:25:11,650
+entusiasta possibile.
+
+548
+00:25:11,650 --> 00:25:14,309
+Ovvio che se faccio un documentario sono un po' più neutro,
+
+549
+00:25:14,309 --> 00:25:16,049
+però su un video promozionale,
+
+550
+00:25:16,049 --> 00:25:17,009
+un pubblicitario,
+
+551
+00:25:17,009 --> 00:25:19,430
+cerco di essere un pochettino più enfatico.
+
+552
+00:25:19,430 --> 00:25:26,490
+E poi tengo conto del fatto che posso velocizzare questo
+tempo di circa il 5% senza andare a fare dei tagli.
+
+553
+00:25:26,490 --> 00:25:33,829
+La velocizzazione a tempi superiori di solito prevede
+degli interventi molto più drastici in post produzione,
+
+554
+00:25:33,829 --> 00:25:38,460
+andando a tagliare delle singole sillabe e andando a resicare un fotogramma qui,
+
+555
+00:25:38,490 --> 00:25:39,460
+un fotogramma là.
+
+556
+00:25:39,460 --> 00:25:41,059
+E' una cosa molto molto delicata,
+
+557
+00:25:41,059 --> 00:25:45,160
+necessita di un sacco di tempo e anche un sacco
+di scherzo per essere portata avanti bene.
+
+558
+00:25:45,160 --> 00:25:48,859
+Per cui tendenzialmente mi faccio questa sorta di test.
+
+559
+00:25:48,859 --> 00:25:51,089
+Una volta che il copy è pronto,
+
+560
+00:25:51,089 --> 00:25:54,019
+io faccio il giro e dico al cliente "guarda,
+
+561
+00:25:54,019 --> 00:25:54,509
+sì va bene,
+
+562
+00:25:54,509 --> 00:25:55,259
+oppure sì va bene,
+
+563
+00:25:55,259 --> 00:25:56,150
+ma deve correre un po',
+
+564
+00:25:56,150 --> 00:25:56,869
+oppure guarda,
+
+565
+00:25:56,869 --> 00:25:57,339
+staremo qui,
+
+566
+00:25:57,339 --> 00:25:58,869
+proprio non ci possiamo stare dentro,
+
+567
+00:25:58,869 --> 00:26:00,059
+dobbiamo togliere qualcosa,
+
+568
+00:26:00,059 --> 00:26:01,220
+dobbiamo cambiare qualcosa".
+
+569
+00:26:01,220 --> 00:26:02,470
+Nel caso dell'Australia,
+
+570
+00:26:02,470 --> 00:26:03,289
+in particolare,
+
+571
+00:26:03,289 --> 00:26:09,900
+gli spot televisivi in Australia hanno mezzo secondo di audio
+silenzioso all'inizio e mezzo secondo di audio silenzioso alla fine,
+
+572
+00:26:09,900 --> 00:26:12,670
+per cui alla fine l'audio diventa,
+
+573
+00:26:12,670 --> 00:26:14,839
+per uno spot di 15 secondi,
+
+574
+00:26:14,839 --> 00:26:16,890
+diventa di 14 secondi,
+
+575
+00:26:16,890 --> 00:26:20,930
+che insomma comincia a essere un certo taglio.
+
+576
+00:26:20,930 --> 00:26:23,460
+Diciamo che abbiamo il 7,
+
+577
+00:26:23,220 --> 00:26:25,299
+5% di audio in meno,
+
+578
+00:26:25,299 --> 00:26:27,279
+non è una percentuale trascurabile,
+
+579
+00:26:27,279 --> 00:26:30,829
+perché a volte potrebbe significare due o tre parole in meno,
+
+580
+00:26:30,829 --> 00:26:34,779
+e due o tre parole in meno possono veramente
+fare la differenza in uno spot da 15.
+
+581
+00:26:34,779 --> 00:26:35,089
+Bene,
+
+582
+00:26:35,089 --> 00:26:37,680
+questo è tutto quello che io uso in preproduzione,
+
+583
+00:26:37,680 --> 00:26:42,059
+anziché ho usato in questo caso in preproduzione con l'intelligenza artificiale.
+
+584
+00:26:42,059 --> 00:26:43,200
+E se ci penso bene,
+
+585
+00:26:43,200 --> 00:26:46,640
+dopo questi 20-25 minuti di chiacchierata,
+
+586
+00:26:46,640 --> 00:26:51,440
+si tratta di una quantità notevole di tutti i scollegati tra loro,
+
+587
+00:26:51,440 --> 00:26:53,079
+tutti che vanno interpretati,
+
+588
+00:26:53,079 --> 00:26:56,289
+tutti che vanno in qualche modo studiati e approfonditi,
+
+589
+00:26:56,289 --> 00:27:05,609
+però sono effettivamente tutti strumenti che aiutano e che
+rendono il processo di preproduzione sicuramente non più veloce,
+
+590
+00:27:05,609 --> 00:27:08,150
+ma producendo un semilavorato,
+
+591
+00:27:08,150 --> 00:27:09,890
+cioè qualcosa su cui puoi lavorare,
+
+592
+00:27:09,890 --> 00:27:10,299
+migliore,
+
+593
+00:27:10,299 --> 00:27:11,349
+mettiamolo così,
+
+594
+00:27:11,349 --> 00:27:15,299
+semilavorato più comprensibile e che aumenta il determinismo.
+
+595
+00:27:15,299 --> 00:27:18,329
+Più si utilizzano questi strumenti in generale,
+
+596
+00:27:18,329 --> 00:27:23,779
+più è più facile prevedere cosa succederà in fase di
+produzione e di conseguenza andare più a colpo sicuro,
+
+597
+00:27:23,779 --> 00:27:26,519
+perché è la cosa più comoda e più difficile da fare,
+
+598
+00:27:26,519 --> 00:27:31,730
+arrivare in produzione sapendo esattamente tutto
+quello che si fa e esattamente come verrà fuori.
+
+599
+00:27:31,730 --> 00:27:34,150
+Direi che per oggi mi sono dilungato sin troppo,
+
+600
+00:27:34,150 --> 00:27:36,259
+per cui continuiamo la prossima volta,
+
+601
+00:27:36,259 --> 00:27:36,569
+ok?
+
+602
+00:27:36,569 --> 00:27:37,349
+Un abbraccio,
+
+603
+00:27:37,349 --> 00:27:43,339
+vi ringrazio di avermi ascoltato e ringrazio tantissimo Valerio
+dell'opportunità che mi ha dato di raccontarvi questa cosa.
+
+604
+00:27:43,339 --> 00:27:44,460
+Alla prossima puntata!
+
+605
+00:27:44,460 --> 00:27:46,680
+Allora,
+
+606
+00:27:46,680 --> 00:27:47,200
+avevo ragione o no?
+
+607
+00:27:47,200 --> 00:27:56,230
+Nelle prossime settimane usciranno anche gli altri tre episodi della serie.
+
+608
+00:27:56,230 --> 00:27:59,059
+Alex mi ha già inviato il secondo perché lui,
+
+609
+00:27:59,059 --> 00:28:00,160
+a differenza mia,
+
+610
+00:28:00,160 --> 00:28:03,329
+riesce ad essere estremamente produttivo.
+
+611
+00:28:03,329 --> 00:28:04,140
+Intanto,
+
+612
+00:28:04,140 --> 00:28:09,490
+se ti va di seguire le sue numerosissime attività sui suoi vari canali,
+
+613
+00:28:09,490 --> 00:28:16,099
+ti lascio in descrizione un po' di link dove
+trovare tantissimi altri contenuti simili a questo.
+
+614
+00:28:16,099 --> 00:28:20,019
+Se poi vuoi discutere di questi ed altri argomenti con lui,
+
+615
+00:28:20,019 --> 00:28:20,759
+o con me,
+
+616
+00:28:20,759 --> 00:28:23,569
+o con entrambi e la community,
+
+617
+00:28:23,569 --> 00:28:29,960
+ricorda sempre che puoi iscriverti - se non lo sei
+già - al canale Telegram di Pensieri in Codice,
+
+618
+00:28:29,960 --> 00:28:32,269
+che trovi sempre in descrizione.
+
+619
+00:28:32,269 --> 00:28:34,759
+Ma ora veniamo a noi e parliamo di te.
+
+620
+00:28:34,759 --> 00:28:35,240
+Sì,
+
+621
+00:28:35,240 --> 00:28:37,720
+proprio di te che stai ascoltando.
+
+622
+00:28:37,720 --> 00:28:40,039
+Se hai un'idea che ti affascina,
+
+623
+00:28:40,039 --> 00:28:42,789
+un'esperienza interessante da raccontare,
+
+624
+00:28:42,789 --> 00:28:45,650
+o semplicemente un argomento che ti appassiona,
+
+625
+00:28:45,650 --> 00:28:47,339
+legato all'informatica,
+
+626
+00:28:47,339 --> 00:28:50,250
+o che ritieni adatto per Pensieri in Codice,
+
+627
+00:28:50,250 --> 00:28:52,029
+perché non lo condividi?
+
+628
+00:28:52,029 --> 00:29:01,640
+Sarebbe un modo per metterti alla prova e per supportare questo progetto
+prendendo parte al movimento Value for Value impiegando il tuo talento.
+
+629
+00:29:01,640 --> 00:29:03,549
+Alla fine non è complicato,
+
+630
+00:29:03,549 --> 00:29:08,200
+è un po' come registrare un vocale e comunque ci sarei sempre io a guidarti.
+
+631
+00:29:08,200 --> 00:29:15,059
+Per partecipare basta che mi contatti su Telegram o
+all'indirizzo valerio "chiocciolapensieriincodice.
+
+632
+00:29:14,769 --> 00:29:18,279
+it" con due "i" e ci mettiamo d'accordo su come fare.
+
+633
+00:29:18,279 --> 00:29:20,759
+Non serve essere un esperto,
+
+634
+00:29:20,759 --> 00:29:23,240
+non serve una grande attrezzatura,
+
+635
+00:29:23,240 --> 00:29:27,730
+basta lo smartphone e la voglia di raccontare e condividere.
+
+636
+00:29:27,730 --> 00:29:28,519
+E chi lo sa,
+
+637
+00:29:28,519 --> 00:29:34,680
+potresti scoprire che ti piace fare podcast
+e decidere di aprire un progetto tutto tuo.
+
+638
+00:29:34,680 --> 00:29:35,200
+Quindi,
+
+639
+00:29:35,200 --> 00:29:37,089
+non essere timido o timida,
+
+640
+00:29:37,089 --> 00:29:38,539
+trova un argomento,
+
+641
+00:29:38,539 --> 00:29:41,519
+riordina un po' i pensieri e parliamone.
+
+642
+00:29:41,519 --> 00:29:44,309
+Io non vedo l'ora di sentire le tue idee.
+
+643
+00:29:44,309 --> 00:29:46,240
+Per oggi dunque è tutto,
+
+644
+00:29:46,240 --> 00:29:49,599
+noi ci risentiamo al prossimo episodio del quale,
+
+645
+00:29:49,599 --> 00:29:50,319
+chissà,
+
+646
+00:29:50,319 --> 00:29:57,650
+potresti essere tu il protagonista e non dimenticare
+mai che un informatico risolve problemi,
+
+647
+00:29:57,650 --> 00:29:58,299
+a volte,
+
+648
+00:29:58,299 --> 00:30:00,359
+anche usando il computer!
+

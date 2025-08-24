@@ -1,0 +1,979 @@
+WEBVTT
+
+00:00:00.030 --> 00:00:06.230
+<v SPEAKER_02> Sono più di 20 anni che lavoro come sviluppatore di software. Ho iniziato con lo scrivere
+
+00:00:06.230 --> 00:00:12.630
+<v SPEAKER_02> semplice codice fino ad arrivare ad oggi alla progettazione e realizzazione di interi prodotti
+
+00:00:12.630 --> 00:00:19.750
+<v SPEAKER_02> e servizi basati su web e cloud. Negli ultimi anni poi, credo un po' come tutti, ho incluso
+
+00:00:19.750 --> 00:00:25.950
+<v SPEAKER_02> nei miei processi di lavoro tutta una serie di strumenti basati sul Large Language Model
+
+00:00:25.950 --> 00:00:32.110
+<v SPEAKER_02> e devo dire che sono piuttosto contento dei risultati. Da un paio di mesi a questa parte,
+
+00:00:32.110 --> 00:00:39.190
+<v SPEAKER_02> però, mi sono piovuti addosso decine di articoli e post, tanti mi sono stati perfino condivisi
+
+00:00:39.190 --> 00:00:47.030
+<v SPEAKER_02> in privato, che parlano della nuova frontiera dello sviluppo software, il VibeCoding. Ora,
+
+00:00:47.030 --> 00:00:53.630
+<v SPEAKER_02> siccome di sviluppo software ho la presunzione di capirne un pochino, sono rimasto piuttosto
+
+00:00:53.630 --> 00:00:59.230
+<v SPEAKER_02> inorridito da alcune delle cose che ho letto e sentito. Quindi, ho deciso di prendere anche
+
+00:00:59.230 --> 00:01:04.510
+<v SPEAKER_02> io parte al discorso e di raccontarti un po' la mia opinione in merito. Sigla!
+
+00:01:08.425 --> 00:01:14.225
+<v SPEAKER_00> Benvenuti su Pensieri in codice, il podcast dove si ragiona da informatici, con Valerio Galano.
+
+00:01:19.562 --> 00:01:26.242
+<v SPEAKER_02> Oramai è un paradigma piuttosto consolidato. Ogni volta che salta fuori una novità tecnologica
+
+00:01:26.242 --> 00:01:32.882
+<v SPEAKER_02> di un certo rilievo, partono subito gli schieramenti. Da un lato c'è chi demonizza, non funzionerà
+
+00:01:32.882 --> 00:01:39.202
+<v SPEAKER_02> mai, ci toglierà il lavoro, sarà una bolla, eccetera. Dall'altro c'è invece chi osanna,
+
+00:01:39.202 --> 00:01:45.522
+<v SPEAKER_02> è una nuova frontiera, ci cambierà la vita, renderà obsoleto tutto il resto e così via.
+
+00:01:45.722 --> 00:01:52.122
+<v SPEAKER_02> Nel mezzo di tutto questo poi di solito restano quelli come me, e immagino anche come te,
+
+00:01:52.122 --> 00:01:58.602
+<v SPEAKER_02> che per quanto possibile cercano di ignorare entrambe le tifoserie e di farsi la propria
+
+00:01:58.602 --> 00:02:04.582
+<v SPEAKER_02> idea che solitamente risulta essere un po' più moderata. Ora, non so se perché si parla
+
+00:02:04.582 --> 00:02:10.442
+<v SPEAKER_02> di un argomento che conosco molto bene, ma nel caso del vibecoding, molto più che in
+
+00:02:10.442 --> 00:02:16.482
+<v SPEAKER_02> altri perlomeno, ho notato la forte presenza di un ulteriore gruppo di soggetti che si
+
+00:02:16.482 --> 00:02:21.762
+<v SPEAKER_02> esprimono sulla questione, quelli che non ci hanno capito niente. È da qualche settimana
+
+00:02:21.762 --> 00:02:27.882
+<v SPEAKER_02> ormai che si parla tanto sul web di questa nuova tecnologia di sviluppo del software
+
+00:02:27.882 --> 00:02:33.442
+<v SPEAKER_02> basata su intelligenza artificiale, tanto per cambiare, ma in molti, soprattutto tra
+
+00:02:33.442 --> 00:02:38.602
+<v SPEAKER_02> quelli che ne decantano i pregi, dimostrano a mio parere di non avere le idee chiare
+
+00:02:38.602 --> 00:02:46.282
+<v SPEAKER_02> su cosa effettivamente essa sia. Mi sono passati davanti vari articoli e post sul vibecoding e ho
+
+00:02:46.282 --> 00:02:52.602
+<v SPEAKER_02> letto cose che, onestamente, non stanno né in cielo né in terra. Col vibecoding passi
+
+00:02:52.602 --> 00:02:58.842
+<v SPEAKER_02> dall'essere programmatore a product engineer. Oppure il vibecoding consente alle persone di
+
+00:02:58.842 --> 00:03:05.522
+<v SPEAKER_02> altre discipline di diventare rapidamente programmatori. Ma no, col cavolo. Mi dispiace,
+
+00:03:05.522 --> 00:03:12.082
+<v SPEAKER_02> ma queste affermazioni semplicemente non sono vere. Chi le ha formulate o non ha capito di cosa
+
+00:03:12.082 --> 00:03:19.642
+<v SPEAKER_02> stava parlando, o peggio ancora, cerca di far passare un concetto falso, un po' di fuffa. Il
+
+00:03:19.642 --> 00:03:27.202
+<v SPEAKER_02> vibecoding ha un suo perché e forse anche una sua utilità, ma il discorso è, come al solito,
+
+00:03:27.202 --> 00:03:33.722
+<v SPEAKER_02> molto più complesso di quanto sembri. Quindi facciamo un bel respiro, cominciamo dal principio
+
+00:03:33.722 --> 00:03:36.202
+<v SPEAKER_02> e proviamo a procedere con ordine.
+
+00:03:41.262 --> 00:03:46.982
+<v SPEAKER_02> Innanzitutto, cominciamo col capire esattamente il significato della locuzione VibeCoding.
+
+00:03:46.982 --> 00:03:52.982
+<v SPEAKER_02> La definizione è stata formulata per la prima volta da Andrej Karpati, sperando che si pronunci
+
+00:03:52.982 --> 00:04:00.182
+<v SPEAKER_02> così, che ha un dottorato alla Stanford University in Deep Learning, oggi lavora presso Eureka
+
+00:04:00.182 --> 00:04:07.742
+<v SPEAKER_02> Labs AI e in passato è stato direttore AI di Tesla e fondatore di OpenAI. Quante AI?
+
+00:04:07.942 --> 00:04:14.102
+<v SPEAKER_02> Insomma, uno che di intelligenza artificiale da un lato sicuramente ne capisce, ma dall'altro
+
+00:04:14.102 --> 00:04:19.542
+<v SPEAKER_02> ha anche tutto l'interesse a fare notizia. Ad ogni modo la storia inizia da un suo tweet
+
+00:04:19.542 --> 00:04:25.462
+<v SPEAKER_02> del 3 febbraio in cui racconta di questo suo nuovo modo di approcciarsi allo sviluppo del
+
+00:04:25.462 --> 00:04:26.102
+<v SPEAKER_02> codice.
+
+00:04:27.449 --> 00:04:32.349
+<v SPEAKER_01> C'è un nuovo tipo di programmazione che io chiamo Vibe Coding, in cui ci si abbandona
+
+00:04:32.349 --> 00:04:37.449
+<v SPEAKER_01> completamente alle vibrazioni, si abbracciano gli esponenziali e si dimentica che il codice
+
+00:04:37.449 --> 00:04:37.949
+<v SPEAKER_01> esiste.
+
+00:04:38.991 --> 00:04:44.611
+<v SPEAKER_02> Karpathy, con queste sue parole un po' zen, si riferisce al fatto che ormai alcuni ambienti
+
+00:04:44.611 --> 00:04:50.931
+<v SPEAKER_02> di sviluppo integrano dei large language model in modo sufficientemente avanzato da permettere
+
+00:04:50.931 --> 00:04:56.091
+<v SPEAKER_02> all'utente di chiedere di scrivere direttamente codice basandosi sull'intera codebase di un
+
+00:04:56.091 --> 00:05:03.651
+<v SPEAKER_02> progetto. In particolare, lui menziona l'editor cursor, i cui modelli generativi possono modificare
+
+00:05:03.651 --> 00:05:09.651
+<v SPEAKER_02> autonomamente il codice, e aggiunge perfino che utilizza Super Whisper che gli permette
+
+00:05:09.651 --> 00:05:15.371
+<v SPEAKER_02> di dialogare con il computer tramite la voce e non toccare quasi più la tastiera. Insomma,
+
+00:05:15.371 --> 00:05:20.971
+<v SPEAKER_02> cerca chiaramente di far subodorare un po' quel qualcosa di estremamente avveneristico
+
+00:05:20.971 --> 00:05:26.651
+<v SPEAKER_02> che abbiamo visto in tanti film di fantascienza, in cui l'operatore chiede al computer di fare
+
+00:05:26.651 --> 00:05:28.011
+<v SPEAKER_02> cose e quello esegue.
+
+00:05:28.030 --> 00:05:33.530
+<v SPEAKER_01> 워싱턴에서 MBC 뉴스 이덕영입니다.
+
+00:05:29.414 --> 00:05:34.174
+<v SPEAKER_01> Chiedo le cose più stupide come diminuisci il padding della barra laterale della metà
+
+00:05:34.174 --> 00:05:36.134
+<v SPEAKER_01> perché sono troppo pigro per trovarlo.
+
+00:05:36.134 --> 00:05:39.214
+<v SPEAKER_01> Accetto sempre tutto, non leggo più le differenze.
+
+00:05:39.214 --> 00:05:44.254
+<v SPEAKER_01> Quando ricevo messaggi di errore, li copio e li incollo senza commenti, di solito questo
+
+00:05:44.254 --> 00:05:45.534
+<v SPEAKER_01> risolve il problema.
+
+00:05:45.534 --> 00:05:50.774
+<v SPEAKER_01> A volte i large language model non riescono a risolvere un bug, quindi mi limito ad aggirarlo
+
+00:05:50.774 --> 00:05:53.414
+<v SPEAKER_01> o a chiedere modifiche casuali finché non scompare.
+
+00:05:54.220 --> 00:06:01.000
+<v SPEAKER_02> Queste frasi rappresentano il vero cuore della definizione di VibeCoding, chiedere una modifica
+
+00:06:01.000 --> 00:06:08.640
+<v SPEAKER_02> all'AI e accettare l'output risultante acriticamente, senza nemmeno leggere il codice prodotto ma
+
+00:06:08.640 --> 00:06:11.720
+<v SPEAKER_02> integrandolo direttamente in quello esistente.
+
+00:06:11.720 --> 00:06:18.260
+<v SPEAKER_02> Come afferma lo stesso Carpathy, questo approccio il più delle volte funziona, e in caso di
+
+00:06:18.260 --> 00:06:24.260
+<v SPEAKER_02> problemi lui si limita a sottoporre gli errori allo stesso Large Language Model e integrare
+
+00:06:24.260 --> 00:06:26.860
+<v SPEAKER_02> direttamente l'eventuale soluzione proposta.
+
+00:06:26.860 --> 00:06:33.260
+<v SPEAKER_02> Tali operazioni vengono poi ripetute finché il problema in questione non viene risolto,
+
+00:06:33.260 --> 00:06:37.220
+<v SPEAKER_02> ed è questo che intende con abbracciare gli esponenziali.
+
+00:06:37.220 --> 00:06:43.260
+<v SPEAKER_02> Se poi, dopo un certo numero di iterazioni, diventa chiaro che non ci si sta avvicinando
+
+00:06:43.260 --> 00:06:49.500
+<v SPEAKER_02> all'obiettivo, Carpathy afferma che la soluzione può essere comunque trovata aggirando il
+
+00:06:49.500 --> 00:06:53.460
+<v SPEAKER_02> bug o chiedendo modifiche casuali a oltranza.
+
+00:06:54.329 --> 00:06:58.369
+<v SPEAKER_01> Non è male per i progetti da buttare giù nel fine settimana, ma comunque abbastanza
+
+00:06:58.369 --> 00:06:59.369
+<v SPEAKER_01> divertente.
+
+00:06:59.369 --> 00:07:04.129
+<v SPEAKER_01> Sto costruendo un progetto o una web app, ma non si tratta di vera e propria codifica.
+
+00:07:04.129 --> 00:07:08.569
+<v SPEAKER_01> Vedo solo cose, dico cose, eseguo cose e copio e incollo cose.
+
+00:07:08.569 --> 00:07:09.849
+<v SPEAKER_01> E per lo più funziona.
+
+00:07:10.934 --> 00:07:16.374
+<v SPEAKER_02> Lo sviluppo di software con l'assistenza dell'intelligenza artificiale esiste ormai
+
+00:07:16.374 --> 00:07:22.694
+<v SPEAKER_02> da qualche anno, e sappiamo da varie statistiche che è anche molto diffuso, ma con il VibeCoding
+
+00:07:22.694 --> 00:07:24.654
+<v SPEAKER_02> si ascende ad un livello successivo.
+
+00:07:24.654 --> 00:07:32.014
+<v SPEAKER_02> Con questo nuovo paradigma, il codice di fatto non viene più considerato, continua ad esistere
+
+00:07:32.014 --> 00:07:38.654
+<v SPEAKER_02> perché è un componente essenziale di qualsiasi software, ma lo sviluppatore, sempre se vogliamo
+
+00:07:38.654 --> 00:07:42.414
+<v SPEAKER_02> continuare a chiamarlo così, non vi accede più in alcun modo.
+
+00:07:42.414 --> 00:07:49.654
+<v SPEAKER_02> Al di là del sensazionalismo, però, frasi come «non è male per progetti del fine settimana»
+
+00:07:49.654 --> 00:07:56.094
+<v SPEAKER_02> e «per lo più funziona» dovrebbero già far capire che il VibeCoding non è la nuova
+
+00:07:56.094 --> 00:08:02.534
+<v SPEAKER_02> frontiera dello sviluppo software, quanto piuttosto un metodo accessibile per fare qualche
+
+00:08:02.534 --> 00:08:03.974
+<v SPEAKER_02> esperimento o poco più.
+
+00:08:04.294 --> 00:08:10.574
+<v SPEAKER_02> Tuttavia, sembra che in tanti, là fuori, nella foga di gridare al nuovo miracolo, che
+
+00:08:10.574 --> 00:08:16.174
+<v SPEAKER_02> ormai se non ne vediamo uno a settimana non siamo contenti, non siano neanche arrivati
+
+00:08:16.174 --> 00:08:18.774
+<v SPEAKER_02> a leggere il tweet fino in fondo.
+
+00:08:18.774 --> 00:08:21.334
+<v SPEAKER_02> O non lo abbiano capito, chissà.
+
+00:08:26.331 --> 00:08:33.051
+<v SPEAKER_02> il VibeCoding non è una nuova funzionalità degli ambienti di sviluppo o degli LLM, non
+
+00:08:33.051 --> 00:08:41.731
+<v SPEAKER_02> è un nuovo strumento e insomma non è un'innovazione, è semplicemente un modo diverso di utilizzare
+
+00:08:41.731 --> 00:08:48.691
+<v SPEAKER_02> una serie di tool che già esistevano e già utilizzavano in tanti. Probabilmente tra l'altro
+
+00:08:48.691 --> 00:08:55.491
+<v SPEAKER_02> c'è in giro tanta gente che già faceva VibeCoding senza che ancora a tale modus operandi fosse
+
+00:08:55.491 --> 00:09:01.251
+<v SPEAKER_02> dato il nome proprio da Carpati. Negli ultimi anni infatti sempre più sviluppatori hanno
+
+00:09:01.251 --> 00:09:07.571
+<v SPEAKER_02> iniziato ad utilizzare l'intelligenza artificiale per farsi assistere nella scrittura del codice,
+
+00:09:07.571 --> 00:09:14.731
+<v SPEAKER_02> scovare bug, ottimizzare le funzioni, implementare modifiche, nuove feature o anche solo farsi
+
+00:09:14.731 --> 00:09:22.611
+<v SPEAKER_02> suggerire strategie e idee. L'AI, forse più che in ogni altro campo, è diventata davvero
+
+00:09:22.611 --> 00:09:28.691
+<v SPEAKER_02> il copilota di quasi ogni sviluppatore. Nel corso di quest'ultimo paio d'anni poi l'approccio
+
+00:09:28.691 --> 00:09:34.091
+<v SPEAKER_02> si è anche notevolmente evoluto. Si è partiti da una fase iniziale nella quale si chiedeva
+
+00:09:34.091 --> 00:09:41.211
+<v SPEAKER_02> semplicemente a chatbot come chatGPT di scrivere o modificare uno snippet di codice. Successivamente
+
+00:09:41.211 --> 00:09:46.611
+<v SPEAKER_02> gli LLM sono stati integrati direttamente negli ambienti di sviluppo, in modo da dare
+
+00:09:46.771 --> 00:09:53.131
+<v SPEAKER_02> possibilità agli sviluppatori di dialogare con essi senza dover spostare l'attenzione su siti
+
+00:09:53.131 --> 00:10:00.611
+<v SPEAKER_02> o strumenti esterni. Poi sono giunte funzionalità avanzate che permettono ai modelli AI integrati di
+
+00:10:00.611 --> 00:10:06.251
+<v SPEAKER_02> manipolare direttamente il codice su ordine dello sviluppatore scrivendo e modificando i
+
+00:10:06.251 --> 00:10:13.971
+<v SPEAKER_02> file all'interno dei progetti. A tale livello l'LLM di turno analizza la richiesta del programmatore
+
+00:10:13.971 --> 00:10:20.851
+<v SPEAKER_02> e il codice disponibile e propone la sua soluzione mostrando le differenze tra l'implementazione
+
+00:10:20.851 --> 00:10:26.611
+<v SPEAKER_02> attuale e quella suggerita, lasciando all'umano la possibilità di accettarla, rifiutarla o volendo
+
+00:10:26.611 --> 00:10:34.891
+<v SPEAKER_02> modificarla. All'interno di tutto questo percorso di evoluzione il vibe coding è semplicemente un
+
+00:10:34.891 --> 00:10:41.171
+<v SPEAKER_02> approccio nel quale lo sviluppatore sceglie di accettare acriticamente il codice proposto
+
+00:10:41.171 --> 00:10:47.691
+<v SPEAKER_02> dalla macchina. L'umano quindi non fa revisione né tenta di raffinare l'output della macchina,
+
+00:10:47.691 --> 00:10:54.011
+<v SPEAKER_02> anzi non lo legge nemmeno. In pratica viene chiesto al modello di effettuare uno sviluppo
+
+00:10:54.011 --> 00:11:00.051
+<v SPEAKER_02> o una modifica e si prende subito il risultato per buono, passando direttamente a testarne il
+
+00:11:00.051 --> 00:11:07.491
+<v SPEAKER_02> funzionamento. Se vengono fuori dei problemi o degli errori li si riporta direttamente all'LLM
+
+00:11:07.491 --> 00:11:13.851
+<v SPEAKER_02> e gli si chiede di correggerli e di nuovo si accetta la correzione ad occhi chiusi. Quando
+
+00:11:13.851 --> 00:11:20.371
+<v SPEAKER_02> il problema è risolto si procede con la richiesta successiva e così via. Il processo di sviluppo
+
+00:11:20.371 --> 00:11:26.851
+<v SPEAKER_02> continua in questo modo finché non si è arrivati al risultato desiderato. Ora sorvolando su alcuni
+
+00:11:26.851 --> 00:11:33.291
+<v SPEAKER_02> aspetti pratici dei quali parleremo più avanti, un tale approccio visto dall'esterno sembra avere
+
+00:11:33.291 --> 00:11:39.371
+<v SPEAKER_02> una diretta implicazione, cioè se il processo di sviluppo di un software non concerne più il
+
+00:11:39.371 --> 00:11:46.291
+<v SPEAKER_02> controllare il codice allora diventa alla portata di chiunque. Tradotto, non serve più essere
+
+00:11:46.291 --> 00:11:52.851
+<v SPEAKER_02> programmatori o informatici per scrivere codice. Questo collegamento logico ha fatto scaldare
+
+00:11:52.851 --> 00:11:58.731
+<v SPEAKER_02> enormemente gli animi perché sembrerebbe spazzar via la necessità di un'intera categoria di
+
+00:11:58.731 --> 00:12:05.091
+<v SPEAKER_02> professionisti. C'è chi è arrivato a dire perfino che il business potrebbe sviluppare direttamente
+
+00:12:05.091 --> 00:12:11.251
+<v SPEAKER_02> i software in autonomia. Beh, non è esattamente così. Cominciamo a spiegare il perché dai motivi
+
+00:12:11.251 --> 00:12:17.171
+<v SPEAKER_02> oggetti e poi passiamo nel prossimo blocco ad alzare un po' l'asticella perché, come dire,
+
+00:12:17.171 --> 00:12:23.211
+<v SPEAKER_02> fatti non foste a vivere come bruti ma a perseguire virtute e canoscenza. Innanzitutto,
+
+00:12:23.731 --> 00:12:29.931
+<v SPEAKER_02> il solo fatto di pensare che si possa realizzare un software senza coinvolgere un soggetto che
+
+00:12:29.931 --> 00:12:37.211
+<v SPEAKER_02> abbia conoscenze di coding implica che esista qualcuno che abbia almeno un'idea da implementare.
+
+00:12:37.211 --> 00:12:44.011
+<v SPEAKER_02> Magari parliamo di un'azienda che vuole realizzare un servizio, di un manager che ha ideato un nuovo
+
+00:12:44.011 --> 00:12:49.811
+<v SPEAKER_02> strumento, una nuova feature o magari semplicemente di una persona qualunque che ha un problema da
+
+00:12:49.811 --> 00:12:55.571
+<v SPEAKER_02> risolvere. In ogni caso dovrebbe esserci un qualcuno che vuole avviare un business o un
+
+00:12:55.571 --> 00:13:02.931
+<v SPEAKER_02> progetto basandosi su una codebase interamente realizzata da una IA senza conoscere in alcun
+
+00:13:02.931 --> 00:13:09.251
+<v SPEAKER_02> modo il codice da essa sviluppato. Riformulo, stiamo parlando di andare in produzione con un
+
+00:13:09.251 --> 00:13:16.651
+<v SPEAKER_02> software di cui nessuno ha esaminato e validato il codice. I test effettuati nel VibeCoding infatti
+
+00:13:16.731 --> 00:13:23.011
+<v SPEAKER_02> saranno di tipo funzionale a salire, cioè riguarderanno l'utilizzo dell'applicazione e
+
+00:13:23.011 --> 00:13:28.931
+<v SPEAKER_02> non il codice come accadrebbe con unit o integration test. E non venirmi a dire che
+
+00:13:28.931 --> 00:13:34.451
+<v SPEAKER_02> l'IA potrebbe scrivere anche i test perché se comunque nessuno li esamina e li valida
+
+00:13:34.451 --> 00:13:40.611
+<v SPEAKER_02> siamo punti a capo, tanto vale chiedere all'hoste se il vino è buono. Ora ad essere onesti là fuori
+
+00:13:40.611 --> 00:13:46.491
+<v SPEAKER_02> c'è tanto codice che è tutt'oggi in funzione e che viene manutenuto da persone che non lo
+
+00:13:46.491 --> 00:13:52.091
+<v SPEAKER_02> hanno mai letto prima, in generale perché è stato sviluppato da altri che poi hanno cambiato
+
+00:13:52.091 --> 00:13:59.091
+<v SPEAKER_02> magari azienda o progetto, ma almeno una volta è passato al vaglio di un umano. Utilizzare invece
+
+00:13:59.091 --> 00:14:06.851
+<v SPEAKER_02> un codice mai verificato da nessuno è un qualcosa che onestamente da professionista non consiglierei
+
+00:14:06.851 --> 00:14:13.651
+<v SPEAKER_02> a nessuno dei miei clienti. Secondo un recentissimo studio che trovi in descrizione, infatti, gli
+
+00:14:13.651 --> 00:14:20.651
+<v SPEAKER_02> stessi LLM così ampiamente utilizzati sia per lo sviluppo assistito che per il vibe coding sono
+
+00:14:20.651 --> 00:14:27.891
+<v SPEAKER_02> particolarmente propensi a generare codice con bug. Nello specifico le ricerche hanno dimostrato che
+
+00:14:27.891 --> 00:14:34.571
+<v SPEAKER_02> nelle operazioni di creazione, quindi non parliamo di completare una o più righe iniziate dallo
+
+00:14:34.571 --> 00:14:41.051
+<v SPEAKER_02> sviluppatore ma di scrivere blocchi interi ex novo, il tasso di generazione di codice buggato
+
+00:14:41.051 --> 00:14:47.771
+<v SPEAKER_02> è circa uguale a quello di generazione di codice corretto. In altre parole ci azzeccano la metà
+
+00:14:47.771 --> 00:14:55.331
+<v SPEAKER_02> delle volte. A questo fatto aggiungiamo poi che gli stessi LLM risultano essere, da un altro studio
+
+00:14:55.331 --> 00:15:02.331
+<v SPEAKER_02> sempre recentissimo, questa volta di Microsoft, notevolmente carenti nella capacità di eseguire
+
+00:15:02.331 --> 00:15:08.531
+<v SPEAKER_02> il debug del codice. Secondo gli autori della ricerca, infatti, le IA raramente riescono a
+
+00:15:08.531 --> 00:15:15.451
+<v SPEAKER_02> completare anche solo metà del processo di debugging e questo perché, secondo loro, nei dati
+
+00:15:15.451 --> 00:15:21.371
+<v SPEAKER_02> di addestramento dei modelli attuali non sono presenti abbastanza informazioni che rappresentino
+
+00:15:21.371 --> 00:15:28.371
+<v SPEAKER_02> i processi decisionali sequenziali, cioè il modo in cui gli umani fanno debug. Quanto detto finora
+
+00:15:28.371 --> 00:15:34.851
+<v SPEAKER_02> quindi, dovrebbe essere sufficiente a far decadere l'idea che sottoponendo all'infinito in bug al
+
+00:15:34.851 --> 00:15:41.171
+<v SPEAKER_02> modello e cercando di aggirare i problemi, con il VibeCoding si possa mai arrivare ad un codice
+
+00:15:41.171 --> 00:15:48.611
+<v SPEAKER_02> stabile e senza bug. Quindi passiamo al secondo motivo. Da quanto si legge in tanti articoli
+
+00:15:48.611 --> 00:15:56.491
+<v SPEAKER_02> sul VibeCoding sembrerebbe, qualcuno l'ha proprio scritto, che esso permetta alle figure che ideano
+
+00:15:56.491 --> 00:16:03.451
+<v SPEAKER_02> un prodotto software di realizzarne un prototipo senza alcuna necessità di coinvolgere il team di
+
+00:16:03.451 --> 00:16:10.131
+<v SPEAKER_02> sviluppo. Questo prototipo verrebbe generato in tempi brevi e modificato e convalidato interagendo
+
+00:16:10.131 --> 00:16:16.171
+<v SPEAKER_02> direttamente col cliente per poi, una volta accettato, essere passato agli sviluppatori
+
+00:16:16.171 --> 00:16:22.531
+<v SPEAKER_02> per la vera e propria realizzazione. Ok, questa è una cosa che potrebbe pensare solo chi non ha mai
+
+00:16:22.531 --> 00:16:29.171
+<v SPEAKER_02> sviluppato un software per professione. Nel mondo reale non ha alcun senso che un commerciale e un
+
+00:16:29.211 --> 00:16:35.011
+<v SPEAKER_02> cliente si accordino sull'acquisto di un software se prima non è stato fatto almeno uno studio di
+
+00:16:35.011 --> 00:16:40.411
+<v SPEAKER_02> fattibilità da parte dello sviluppatore. Escludere chi sviluppa dal processo di
+
+00:16:40.411 --> 00:16:46.931
+<v SPEAKER_02> prototipazione è semplicemente la ricetta per il disastro. Se infatti il cliente dovesse accettare,
+
+00:16:46.931 --> 00:16:53.771
+<v SPEAKER_02> nessuno garantisce che quanto gli sia stato promesso sia effettivamente realizzabile e
+
+00:16:53.771 --> 00:17:00.011
+<v SPEAKER_02> con quanto sforzo. C'è il rischio che le risorse necessarie per la realizzazione siano tali da
+
+00:17:00.011 --> 00:17:06.651
+<v SPEAKER_02> rendere il prodotto eccessivamente costoso o lungo da realizzare. E anche qui, se c'è qualche folle
+
+00:17:06.651 --> 00:17:12.091
+<v SPEAKER_02> là fuori che pensa di poter chiedere sempre all'IA uno studio di fattibilità o una stima su
+
+00:17:12.091 --> 00:17:19.571
+<v SPEAKER_02> tempi e costi... beh, in descrizione trovi un po' di esempi di allucinazioni a causa delle quali vari
+
+00:17:19.571 --> 00:17:25.971
+<v SPEAKER_02> modelli anche specializzati hanno inventato la qualunque, da parole irlandesi a precedenti
+
+00:17:25.971 --> 00:17:32.091
+<v SPEAKER_02> legali passando per anamnesi mediche. Pensa un po' tu se non potrebbero inventarsi tempi e costi
+
+00:17:32.091 --> 00:17:39.491
+<v SPEAKER_02> per la realizzazione di un progetto totalmente a caso. E poi ancora, un problema a cui nessuno
+
+00:17:39.491 --> 00:17:45.651
+<v SPEAKER_02> pensa tranne gli sviluppatori è che negli ultimi anni il volume del codice sta crescendo in maniera
+
+00:17:45.651 --> 00:17:51.691
+<v SPEAKER_02> esponenziale. Sempre più codice da archiviare, da visionare, da tenere al sicuro da furto e da
+
+00:17:51.691 --> 00:17:58.291
+<v SPEAKER_02> backdoor o da attacchi alla catena delle dipendenze eccetera. E questo ha un costo. L'utilizzo delle
+
+00:17:58.291 --> 00:18:04.731
+<v SPEAKER_02> AI ha già mostrato un incremento nel volume del codice rispetto a quello prodotto da umani. E se
+
+00:18:04.731 --> 00:18:10.651
+<v SPEAKER_02> ci aggiungiamo anche che nel vibe coding nessuno si occupa o nemmeno si interessa di andare a
+
+00:18:10.651 --> 00:18:16.931
+<v SPEAKER_02> controllare cosa è stato generato, il problema ovviamente non può che peggiorare. E infine,
+
+00:18:16.931 --> 00:18:24.131
+<v SPEAKER_02> ma non meno importante, c'è la questione della qualità del codice. Sì, perché magari non tutti
+
+00:18:24.131 --> 00:18:30.291
+<v SPEAKER_02> lo sanno, ma un codice che risolve un qualche problema può essere sviluppato in tanti modi
+
+00:18:30.291 --> 00:18:38.291
+<v SPEAKER_02> diversi e a diversi livelli qualitativi. Normalmente la qualità, la sicurezza e l'affidabilità vengono
+
+00:18:38.291 --> 00:18:44.211
+<v SPEAKER_02> verificate dagli sviluppatori tramite test, code review e altre operazioni manuali o costruite
+
+00:18:44.211 --> 00:18:50.891
+<v SPEAKER_02> ad hoc per le varie funzioni. Ma ora la mia domanda è, quanto può saperne un umano della qualità e
+
+00:18:50.891 --> 00:18:57.211
+<v SPEAKER_02> della sicurezza del software prodotto da un modello AI se si limita solamente a dialogare
+
+00:18:57.211 --> 00:19:00.011
+<v SPEAKER_02> con quest'ultimo senza mai visionare il codice?
+
+00:19:05.185 --> 00:19:11.585
+<v SPEAKER_02> Come già detto in precedenza, la mia impressione è che il VibeCoding non sia stato affatto
+
+00:19:11.585 --> 00:19:18.445
+<v SPEAKER_02> diffuso nel più chiaro dei modi da alcuni, e che per questo motivo sia stato poi frainteso
+
+00:19:18.445 --> 00:19:24.785
+<v SPEAKER_02> a catena da molti altri. C'è infatti chi sembra applicare la definizione VibeCoding
+
+00:19:24.785 --> 00:19:32.165
+<v SPEAKER_02> a qualsiasi forma di scrittura di codice supportata dall'intelligenza artificiale, e questo crea
+
+00:19:32.165 --> 00:19:37.845
+<v SPEAKER_02> da un lato confusione e dall'altro difficoltà nel valutare correttamente la situazione.
+
+00:19:37.845 --> 00:19:45.085
+<v SPEAKER_02> In realtà ciò che Carpati cerca di esprimere nel famoso tweet è che il VibeCoding consiste
+
+00:19:45.085 --> 00:19:52.645
+<v SPEAKER_02> specificamente nell'accettare incondizionatamente il codice prodotto dall'LLM, e questo senza
+
+00:19:52.645 --> 00:19:58.525
+<v SPEAKER_02> neanche visionarlo. Ciò rende il VibeCoding una strategia molto diversa dallo sviluppare
+
+00:19:58.525 --> 00:20:04.725
+<v SPEAKER_02> software avvalendosi del supporto di una IA in modo responsabile, che è invece un
+
+00:20:04.725 --> 00:20:10.605
+<v SPEAKER_02> processo che richiede un notevole controllo sul codice da parte dello sviluppatore. In
+
+00:20:10.605 --> 00:20:16.525
+<v SPEAKER_02> un flusso di questo tipo, infatti, l'umano descrive comunque la propria richiesta e riceve
+
+00:20:16.525 --> 00:20:24.045
+<v SPEAKER_02> una risposta dalla macchina, ma poi deve valutarla approfonditamente prima di integrarla all'interno
+
+00:20:24.045 --> 00:20:30.325
+<v SPEAKER_02> della propria codebase. L'idea alla base dello sviluppo assistito, in effetti, è che il codice
+
+00:20:30.325 --> 00:20:36.525
+<v SPEAKER_02> prodotto da una macchina potrebbe potenzialmente avere mille difetti e cose che non vanno. Ed è
+
+00:20:36.525 --> 00:20:43.325
+<v SPEAKER_02> per questo motivo che io considero responsabilità dello sviluppatore verificarlo prima di accettarlo.
+
+00:20:43.325 --> 00:20:51.085
+<v SPEAKER_02> Nell'output dell'LLM potrebbero esserci degli errori o una soluzione proposta potrebbe non
+
+00:20:51.085 --> 00:20:57.485
+<v SPEAKER_02> risolvere correttamente il problema. L'impostazione del codice potrebbe non essere in linea con le
+
+00:20:57.485 --> 00:21:04.485
+<v SPEAKER_02> convenzioni del progetto, potrebbero venire introdotti dei bug, perfino il codice potrebbe
+
+00:21:04.485 --> 00:21:09.565
+<v SPEAKER_02> non essere sufficientemente chiaro e questo introdurrebbe una serie di problemi per la
+
+00:21:09.565 --> 00:21:17.205
+<v SPEAKER_02> futura manutenzione. Assumendo poi una visione un po' più ampia, la risposta di un LLM potrebbe
+
+00:21:17.205 --> 00:21:24.245
+<v SPEAKER_02> non essere compatibile con future implementazioni che sono state già progettate e pianificate,
+
+00:21:24.245 --> 00:21:31.165
+<v SPEAKER_02> cosa che il modello non può sapere considerare. Insomma, la questione alla fine è semplice.
+
+00:21:31.165 --> 00:21:37.925
+<v SPEAKER_02> L'intervento umano nella scrittura del codice è ancora indispensabile se si vuole produrre
+
+00:21:37.925 --> 00:21:46.765
+<v SPEAKER_02> del software di qualità. Ma nemmeno anche se solo si vuole produrre codice che funziona tutte le
+
+00:21:46.765 --> 00:21:53.925
+<v SPEAKER_02> volte e non solo la maggior parte di esse. La verità che in tanti ancora non capiscono o che
+
+00:21:53.925 --> 00:22:00.765
+<v SPEAKER_02> si ostinano a non voler considerare è che il lavoro di uno sviluppatore di software non è
+
+00:22:00.765 --> 00:22:07.605
+<v SPEAKER_02> solo quello di sfornare codice e funzionalità. Noi sviluppatori scriviamo il codice per far sì
+
+00:22:07.605 --> 00:22:15.085
+<v SPEAKER_02> che funzioni in modo definito e dimostrabile e che possa essere compreso non solo dalle macchine
+
+00:22:15.085 --> 00:22:21.605
+<v SPEAKER_02> ma anche da altri esseri umani, perché esso deve essere ispezionabile e deve supportare sviluppi
+
+00:22:21.605 --> 00:22:28.925
+<v SPEAKER_02> futuri in maniera continuativa. Noi consideriamo cose come le prestazioni, l'accessibilità,
+
+00:22:28.925 --> 00:22:36.085
+<v SPEAKER_02> la sicurezza, la manutenibilità, l'efficienza dei costi, i progetti futuri, le risorse attuali.
+
+00:22:36.085 --> 00:22:42.125
+<v SPEAKER_02> L'ingegneria del software è una questione di comprensione, risoluzione e soprattutto
+
+00:22:42.205 --> 00:22:48.125
+<v SPEAKER_02> compromessi. Il compito di uno sviluppatore è quello di scegliere tra decine di potenziali
+
+00:22:48.125 --> 00:22:54.165
+<v SPEAKER_02> soluzioni bilanciando una molteplicità di requisiti che possono essere sia espliciti
+
+00:22:54.165 --> 00:23:00.605
+<v SPEAKER_02> ma anche e soprattutto impliciti. E poi, permettimi di essere anche un po' poetico,
+
+00:23:00.605 --> 00:23:08.125
+<v SPEAKER_02> programmare per me è esplorare di continuo nuovi mondi e creare qualcosa di nuovo all'interno di
+
+00:23:08.125 --> 00:23:14.125
+<v SPEAKER_02> ciascuno di essi. Spesso un qualcosa che nessuno mai prima di me ha realizzato in quel modo.
+
+00:23:14.125 --> 00:23:21.325
+<v SPEAKER_02> Programmare è indagare problemi e risolverli utilizzando il proprio ingegno. E nel farlo,
+
+00:23:21.325 --> 00:23:27.765
+<v SPEAKER_02> non solo si produce qualcosa, ma si cresce anche imparando cose, comprendendo fatti,
+
+00:23:27.765 --> 00:23:35.085
+<v SPEAKER_02> unendo i fili e scoprendo connessioni nascoste. Spesso si torna a casa, anche se io lavoro,
+
+00:23:35.085 --> 00:23:40.605
+<v SPEAKER_02> sono in smart working, quindi da casa difficilmente mi sposto, con un'ampia
+
+00:23:40.605 --> 00:23:47.085
+<v SPEAKER_02> comprensione del problema e della soluzione realizzata. Una comprensione più ampia e
+
+00:23:47.085 --> 00:23:49.325
+<v SPEAKER_02> più profonda di chiunque altro.
+
+00:23:54.692 --> 00:24:00.532
+<v SPEAKER_02> Schiarita un po' la situazione, però, mi sento anche di non voler demonizzare al 100%
+
+00:24:00.532 --> 00:24:07.252
+<v SPEAKER_02> il vibecoding. Io ho sempre pensato che l'accesso agli strumenti informatici dovesse essere
+
+00:24:07.252 --> 00:24:13.452
+<v SPEAKER_02> possibile per tutti. Pensieri in codice è un po' il mio contributo a quest'idea,
+
+00:24:13.452 --> 00:24:19.612
+<v SPEAKER_02> e forse il vibecoding potrebbe rappresentare una possibilità in questo senso. Ci sono
+
+00:24:19.612 --> 00:24:26.372
+<v SPEAKER_02> là fuori persone che svolgono ogni giorno compiti estremamente noiosi e soprattutto
+
+00:24:26.372 --> 00:24:31.932
+<v SPEAKER_02> ripetitivi. Uno strumento che dia loro la possibilità di automatizzarli, anche se
+
+00:24:31.932 --> 00:24:38.212
+<v SPEAKER_02> non in modo perfetto, non potrebbe che farmi piacere. Il problema maggiore nel mondo dello
+
+00:24:38.212 --> 00:24:43.892
+<v SPEAKER_02> sviluppo software, lo sappiamo tutti, è la curva di apprendimento. Prendiamo il pincopallino
+
+00:24:43.892 --> 00:24:50.052
+<v SPEAKER_02> qualsiasi che ha il suo noiosissimo flusso di dati manuale. Se volesse automatizzarlo,
+
+00:24:50.052 --> 00:24:57.012
+<v SPEAKER_02> dovrebbe o spendere una cifra notevole facendosi seguire da un professionista, oppure impiegare
+
+00:24:57.012 --> 00:25:02.732
+<v SPEAKER_02> tanto del proprio tempo ad imparare un linguaggio di programmazione o un qualche altro strumento.
+
+00:25:02.732 --> 00:25:09.132
+<v SPEAKER_02> Io, personalmente, mi metterei a studiare perché mi piace, ma non è detto che tanti
+
+00:25:09.132 --> 00:25:15.292
+<v SPEAKER_02> altri debbano pensarla per forza allo stesso modo. Allora perché dovrebbe essere un male
+
+00:25:15.292 --> 00:25:23.052
+<v SPEAKER_02> che queste persone abbiano a disposizione un metodo per creare i propri semplici e personali
+
+00:25:23.052 --> 00:25:29.452
+<v SPEAKER_02> automatismi? Ovviamente, occhio che qui la parola fondamentale è personali, perché
+
+00:25:29.452 --> 00:25:35.852
+<v SPEAKER_02> il VibeCoding può andar bene al massimo per fare esperimenti o sviluppare un progettino
+
+00:25:35.852 --> 00:25:41.972
+<v SPEAKER_02> della domenica, che non coinvolga in alcun modo aspetti importanti. Ma se si rispettano
+
+00:25:41.972 --> 00:25:49.292
+<v SPEAKER_02> questi limiti, perché no? Basta che non si parli di dati, di soldi, di privacy, di sicurezza o,
+
+00:25:49.292 --> 00:25:55.772
+<v SPEAKER_02> in generale, di software che potrebbero essere usati da altri al di fuori di chi le ha creati.
+
+00:25:55.772 --> 00:26:03.132
+<v SPEAKER_02> Insomma, per progetti personali, totalmente innocui e a bassissimo impatto, allora un po'
+
+00:26:03.132 --> 00:26:09.732
+<v SPEAKER_02> di VibeCoding ci potrebbe anche stare. A parte questa, però, onestamente non vedo
+
+00:26:09.732 --> 00:26:16.292
+<v SPEAKER_02> altre applicazioni pratiche reali. Ho letto di tanti che hanno scritto che il VibeCoding
+
+00:26:16.292 --> 00:26:21.812
+<v SPEAKER_02> potrebbe portare vantaggi ai programmatori esperti che hanno l'istinto di individuare
+
+00:26:21.812 --> 00:26:27.852
+<v SPEAKER_02> i problemi nei test anche senza leggere il codice, ma non mi sembra una teoria che possa
+
+00:26:27.852 --> 00:26:34.292
+<v SPEAKER_02> reggere. Dopo 20 anni e oltre di sviluppo, ho imparato a giudicare il codice quasi a colpo
+
+00:26:34.292 --> 00:26:40.932
+<v SPEAKER_02> d'occhio. Infatti, sfrutto abitualmente e proficuamente il supporto di varie LLM. Ma,
+
+00:26:40.932 --> 00:26:47.692
+<v SPEAKER_02> anche se vedessi dei possibili problemi in un test, come li risolverei senza andare a mettere
+
+00:26:47.692 --> 00:26:54.172
+<v SPEAKER_02> le mani nel codice? Dovrei farlo per forza! E siccome l'unica differenza tra VibeCoding e
+
+00:26:54.172 --> 00:27:00.572
+<v SPEAKER_02> sviluppo assistito da IEA è proprio andare a guardare il codice, in tal caso non starei
+
+00:27:00.572 --> 00:27:07.572
+<v SPEAKER_02> più facendo VibeCoding e quindi la tesi iniziale di tutto il discorso è facilmente smentita. Stessa
+
+00:27:07.572 --> 00:27:15.132
+<v SPEAKER_02> identica cosa vale poi per tutte quelle affermazioni tipo il VibeCoding ha il potenziale per aumentare
+
+00:27:15.132 --> 00:27:21.892
+<v SPEAKER_02> significativamente la produttività, oppure il VibeCoding permette alle aziende di essere più
+
+00:27:21.892 --> 00:27:28.932
+<v SPEAKER_02> competitive. No, assolutamente no. Ma ce lo vedi un team di sviluppo aziendale a fare VibeCoding?
+
+00:27:28.932 --> 00:27:34.212
+<v SPEAKER_02> Che accadrebbe se al momento di fare emerge del codice dei vari membri venissero fuori dei
+
+00:27:34.212 --> 00:27:40.932
+<v SPEAKER_02> conflitti? Chi li risolverebbe se nessuno sa come funziona il codice scritto? C'è perfino chi si è
+
+00:27:40.932 --> 00:27:47.692
+<v SPEAKER_02> spinto a dire che il VibeCoding potrebbe essere usato per affinare l'istinto degli sviluppatori
+
+00:27:47.692 --> 00:27:54.572
+<v SPEAKER_02> a riconoscere gli errori prodotti dall'IA e fargli capire che cosa un LLM può o non può fare
+
+00:27:54.572 --> 00:28:01.852
+<v SPEAKER_02> bene. Ora, a parte il fatto che gli sviluppatori senior in generale già si allenano abbondantemente
+
+00:28:01.852 --> 00:28:07.732
+<v SPEAKER_02> con le code review dei junior e non credo abbiano bisogno di ulteriore palestra in merito, ma poi,
+
+00:28:07.732 --> 00:28:14.732
+<v SPEAKER_02> per sviluppare l'istinto, loro hanno affrontato anni di sviluppo lambiccandosi il cervello sul
+
+00:28:14.732 --> 00:28:21.632
+<v SPEAKER_02> codice. Se pensassimo veramente di includere il VibeCoding nel processo professionale, come
+
+00:28:21.632 --> 00:28:27.392
+<v SPEAKER_02> cambierebbe il metodo di apprendimento? Col passare del tempo, chi sarebbe più veramente in
+
+00:28:27.392 --> 00:28:35.212
+<v SPEAKER_02> grado di verificarlo questo codice? La verità è che, come professionisti, abbiamo bisogno di
+
+00:28:35.212 --> 00:28:42.332
+<v SPEAKER_02> leggere il codice. Per una programmazione di qualità non va inserito alcun codice nei repository se noi
+
+00:28:42.372 --> 00:28:48.612
+<v SPEAKER_02> stessi non siamo in grado come minimo di spiegare a qualcun altro esattamente cosa fa. In più,
+
+00:28:48.612 --> 00:28:55.332
+<v SPEAKER_02> l'ottimo sarebbe che la codebase non necessitasse di essere spiegata ad un altro sviluppatore ma
+
+00:28:55.332 --> 00:29:02.092
+<v SPEAKER_02> che fosse sufficientemente chiara da permettere a questi di interpretarla autonomamente. Il codice
+
+00:29:02.092 --> 00:29:08.212
+<v SPEAKER_02> dovrebbe essere sempre sistemato e pulito. E questo processo, ormai lo abbiamo capito,
+
+00:29:08.212 --> 00:29:16.172
+<v SPEAKER_02> non è VibeCoding. Il VibeCoding è una possibilità e come tale non va esclusa a priori ma messa in
+
+00:29:16.172 --> 00:29:23.052
+<v SPEAKER_02> pratica solo dopo averne valutato attentamente i pro e i contro. Non è un boost di produttività,
+
+00:29:23.052 --> 00:29:29.812
+<v SPEAKER_02> non è un moltiplicatore di qualità, è solo un accesso estremamente semplificato alla realizzazione
+
+00:29:29.812 --> 00:29:36.972
+<v SPEAKER_02> di cose estremamente semplici. Può essere un buon metodo per produrre qualcosa di temporaneo o poco
+
+00:29:36.972 --> 00:29:44.412
+<v SPEAKER_02> importante se usata bene ma se usata male diventa subito un generatore di problemi e di debito
+
+00:29:44.412 --> 00:29:44.932
+<v SPEAKER_02> tecnico.
+
+00:27:34.979 --> 00:27:35.479
+<v SPEAKER_00> the
+
+00:29:49.962 --> 00:29:55.882
+<v SPEAKER_02> Bene, ti ho raccontato la mia sul VibeCoding. Sono sicuro che ci sarà là fuori chi avrà
+
+00:29:55.882 --> 00:30:01.542
+<v SPEAKER_02> opinioni diverse dalle mie e mi piacerebbe conoscerle, quindi non esitare a scrivermi
+
+00:30:01.542 --> 00:30:09.022
+<v SPEAKER_02> a valerio-pensierincodice.it con due i, a lasciare un commento ove possibile tipo su
+
+00:30:09.022 --> 00:30:15.842
+<v SPEAKER_02> YouTube o Spotify o a unirti al gruppo Telegram del podcast dove troverai tante altre persone
+
+00:30:15.842 --> 00:30:22.862
+<v SPEAKER_02> interessanti. Intanto io ringrazio l'amico Davide Fasoli di Insider dentro la tecnologia
+
+00:30:22.862 --> 00:30:28.602
+<v SPEAKER_02> per averci prestato la voce per leggere il tweet di Carpati. Se non conosci Insider,
+
+00:30:28.602 --> 00:30:34.202
+<v SPEAKER_02> beh sappi che è uno dei podcast fissi del mio feed. Ogni settimana propone un escursus
+
+00:30:34.202 --> 00:30:40.402
+<v SPEAKER_02> su un argomento tecnologico attualissimo spaziando dall'intelligenza artificiale all'aeronautica
+
+00:30:40.402 --> 00:30:46.442
+<v SPEAKER_02> militare. Mi raccomando, lo trovi su tutte le principali piattaforme podcast e in più
+
+00:30:46.442 --> 00:30:52.282
+<v SPEAKER_02> ti lascio il link al sito ufficiale in descrizione. Come sempre poi ringrazio coloro che ormai
+
+00:30:52.282 --> 00:30:58.722
+<v SPEAKER_02> sono di diritto i produttori esecutivi di Pensieri in Codice, Edoardo e Carlo. Loro
+
+00:30:58.722 --> 00:31:05.282
+<v SPEAKER_02> due ogni mese con la loro donazione incarnano di fatto lo spirito treasure del value for
+
+00:31:06.282 --> 00:31:11.042
+<v SPEAKER_02> value. Value for value, ti ricordo, vuol dire che se stai ascoltando Pensieri in Codice,
+
+00:31:11.042 --> 00:31:16.642
+<v SPEAKER_02> se magari hai ascoltato tutte le puntate, se addirittura sei lì a chiederti quando
+
+00:31:16.642 --> 00:31:22.482
+<v SPEAKER_02> uscirà il prossimo episodio, beh, allora non puoi negare che questo progetto ha un po'
+
+00:31:22.482 --> 00:31:28.762
+<v SPEAKER_02> di valore per te. Quanto vale? Non lo so. Questo lo decidi tu. E poi una volta che avrai
+
+00:31:28.762 --> 00:31:35.242
+<v SPEAKER_02> una risposta, mi sembra giusto che tu restituisca una minima parte di questo valore. Al prossimo
+
+00:31:35.762 --> 00:31:42.402
+<v SPEAKER_02> progetto, non a me. Time, talent and treasure. Magari decidi che vale un po' del tuo tempo.
+
+00:31:42.402 --> 00:31:47.042
+<v SPEAKER_02> E allora parliamo della risorsa time della filosofia value for value.
+
+00:31:47.479 --> 00:31:53.399
+<v SPEAKER_02> In tal caso restituisci valore condividendo gli episodi, parlandone ad amici, parenti,
+
+00:31:53.399 --> 00:31:59.839
+<v SPEAKER_02> colleghi, al macellaio appassionato di informatica, insomma, a chi pensi che possa piacere.
+
+00:31:59.839 --> 00:32:05.119
+<v SPEAKER_02> Oppure, magari puoi decidere che pensieri in codice valga un po' del tuo talent.
+
+00:32:05.119 --> 00:32:06.799
+<v SPEAKER_02> Talento nel fare cosa?
+
+00:32:06.799 --> 00:32:08.359
+<v SPEAKER_02> Non lo so, proponiti.
+
+00:32:08.359 --> 00:32:14.879
+<v SPEAKER_02> A me, lo ripeto almeno da qualche episodio, piacerebbe tanto aprire degli account social
+
+00:32:14.879 --> 00:32:18.479
+<v SPEAKER_02> e iniziare a condividere spezzoni, news e roba così.
+
+00:32:18.479 --> 00:32:25.599
+<v SPEAKER_02> Purtroppo, però, non ho né le competenze né il tempo per mettere su tutto, ti andrebbe
+
+00:32:25.599 --> 00:32:26.599
+<v SPEAKER_02> di darmi una mano?
+
+00:32:26.599 --> 00:32:31.759
+<v SPEAKER_02> Non serve essere il guru dei social, già aprire e fare un po' di attività sarebbe
+
+00:32:31.759 --> 00:32:33.279
+<v SPEAKER_02> un enorme passo avanti.
+
+00:32:33.279 --> 00:32:39.279
+<v SPEAKER_02> Dai, su che per quanto mi impegni da solo, difficilmente riuscirò a far crescere il
+
+00:32:39.279 --> 00:32:40.279
+<v SPEAKER_02> progetto.
+
+00:32:40.279 --> 00:32:45.999
+<v SPEAKER_02> Dai, lo so che sei lì, ma fino ad ora non ti sei ancora fatto avanti perché magari
+
+00:32:45.999 --> 00:32:50.439
+<v SPEAKER_02> ti vergogno, pensi di non essere all'altezza, ma non è così.
+
+00:32:50.439 --> 00:32:51.959
+<v SPEAKER_02> Scrivimi, io sono qui.
+
+00:32:51.959 --> 00:32:56.399
+<v SPEAKER_02> E infine c'è Treasure, che sta banalmente per donazioni.
+
+00:32:56.399 --> 00:33:02.399
+<v SPEAKER_02> Quindi, se ti va di restituire un po' di valore in questo modo, trovi i link sia in
+
+00:33:02.399 --> 00:33:06.879
+<v SPEAKER_02> descrizione che sul sito pensieriincodice.it, sempre con due i.
+
+00:33:06.879 --> 00:33:13.919
+<v SPEAKER_02> Detto questo, io ti ringrazio per aver ascoltato fin qui, ti saluto e ti ricordo sempre che
+
+00:33:13.919 --> 00:33:18.879
+<v SPEAKER_02> un informatico risolve problemi, a volte anche usando il computer.

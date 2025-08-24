@@ -1,0 +1,1236 @@
+1
+00:00:00,080 --> 00:00:05,260
+ Prima di iniziare con l'episodio di oggi, ti devo raccontare una breve storia triste.
+
+2
+00:00:05,260 --> 00:00:11,020
+ Lo script che stai per ascoltare è pronto ormai da più di due settimane e secondo le
+
+3
+00:00:11,020 --> 00:00:14,500
+ mie previsioni avrei dovuto registrarlo sabato 19.
+
+4
+00:00:14,500 --> 00:00:20,180
+ Tuttavia, al piano sopra casa nostra, che è anche l'ultimo, stanno facendo tutta una
+
+5
+00:00:20,180 --> 00:00:21,800
+ serie di lavori di ripristino.
+
+6
+00:00:21,800 --> 00:00:27,940
+ E fin qui tutto ok, starai pensando che il problema sia al massimo il rumore, ma in realtà
+
+7
+00:00:27,940 --> 00:00:33,280
+ ovviamente di sabato e domenica non si lavora e da questo anche la mia scelta di registrare
+
+8
+00:00:33,280 --> 00:00:34,020
+ è nel weekend.
+
+9
+00:00:34,020 --> 00:00:40,960
+ Il problema però è stato che i geni dell'edilizia che stanno lavorando, si sentono le virgolette,
+
+10
+00:00:40,960 --> 00:00:47,440
+ al cantiere, hanno ben pensato di rimuovere il tetto di una parte dell'appartamento prima
+
+11
+00:00:47,440 --> 00:00:50,140
+ di impermeabilizzare la parte sottostante.
+
+12
+00:00:50,140 --> 00:00:56,360
+ Ora, se anche tu stai pensando che questa sia una mossa degna del criceto più stupido
+
+13
+00:00:56,360 --> 00:00:57,760
+ della cucciolata...
+
+14
+00:00:57,760 --> 00:00:59,360
+ Non posso che darti ragione.
+
+15
+00:00:59,360 --> 00:01:05,700
+ Anzi, posso solo aggiungere che si tratta ancor più di una cazzata se nei giorni successivi
+
+16
+00:01:05,700 --> 00:01:08,500
+ è prevista un'allerta meteo gialla per temporali.
+
+17
+00:01:08,500 --> 00:01:11,400
+ Risultato di tutta questa genialità all'opera?
+
+18
+00:01:11,400 --> 00:01:16,840
+ Beh, semplicemente hanno allagato metà del nostro appartamento, camera da letto, studio
+
+19
+00:01:16,840 --> 00:01:21,800
+ e soprattutto la cabina armadio, cioè il posto dove io normalmente registro pensieri
+
+20
+00:01:21,800 --> 00:01:24,800
+ in codice perché c'è l'acustica migliore di tutta la casa.
+
+21
+00:01:24,800 --> 00:01:27,580
+ Ora, senza volerla portare troppo per l'occhio, la cabina armadio è un posto dove io normalmente
+
+22
+00:01:27,580 --> 00:01:32,360
+ registro per le lunghe la questione che la risoluzione del problema è ben lungi dall'essere
+
+23
+00:01:32,360 --> 00:01:38,560
+ in vista, quindi mi sono detto che se aspetto che tutto sia sistemato, prima di pubblicare
+
+24
+00:01:38,560 --> 00:01:40,140
+ altri episodi passeranno mesi.
+
+25
+00:01:40,140 --> 00:01:44,940
+ Quindi ho deciso di provare a registrare in un'altra stanza.
+
+26
+00:01:44,940 --> 00:01:51,880
+ Purtroppo l'acustica è peggiore e arrivano i rumori della strada, ma io davvero non ho
+
+27
+00:01:51,880 --> 00:01:52,540
+ altro modo.
+
+28
+00:01:52,540 --> 00:01:57,540
+ Allora, detto questo, non ci resta che ringraziare questa gente e l'autore.
+
+29
+00:01:57,540 --> 00:02:02,060
+ Grazie per la loro inettitudine e goderci l'episodio di Pensieri in Codice.
+
+30
+00:02:02,060 --> 00:02:11,920
+ Raramente ci pensiamo, ma i numeri casuali sono una componente fondamentale della nostra
+
+31
+00:02:11,920 --> 00:02:14,420
+ vita quotidiana, sia digitale che non.
+
+32
+00:02:14,420 --> 00:02:21,000
+ Sono utilizzati ad esempio in campo scientifico, in informatica, nei giochi d'azzardo e persino
+
+33
+00:02:21,000 --> 00:02:23,100
+ nella letteratura o nella musica.
+
+34
+00:02:23,100 --> 00:02:27,360
+ Sicurezza, machine learning, simulazione, videogame, le applicazioni sono in tutti i
+
+35
+00:02:27,360 --> 00:02:28,680
+ modi e sono infinite.
+
+36
+00:02:28,680 --> 00:02:34,660
+ Per questo motivo la generazione di numeri casuali è impiegata in una enorme varietà
+
+37
+00:02:34,660 --> 00:02:40,040
+ di software ed è disponibile pressoché in qualsiasi linguaggio di programmazione e per
+
+38
+00:02:40,040 --> 00:02:41,420
+ qualsiasi piattaforma.
+
+39
+00:02:41,420 --> 00:02:45,360
+ Ma in pratica, come vengono generati dei numeri casuali?
+
+40
+00:02:45,360 --> 00:02:51,700
+ Beh, il discorso in realtà è più articolato di quanto possa sembrare e di conseguenza
+
+41
+00:02:51,700 --> 00:02:53,320
+ è molto interessante.
+
+42
+00:02:53,320 --> 00:02:57,180
+ Quindi oggi ne parliamo insieme e proviamo come al solito.
+
+43
+00:02:57,180 --> 00:03:00,400
+ Come al solito a mettere in fila un po' di ragionamenti e curiosità.
+
+44
+00:03:00,400 --> 00:03:02,860
+ Ovviamente però dopo la sigla.
+
+45
+00:03:02,860 --> 00:03:10,900
+ Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici.
+
+46
+00:03:10,900 --> 00:03:12,300
+ Con Valerio Galano.
+
+47
+00:03:12,300 --> 00:03:19,980
+ Facciamo così, proviamo a fare un gioco.
+
+48
+00:03:19,980 --> 00:03:27,000
+ Pensa ad un numero a caso tra 1 e 10, quello che preferisci, con 1 e 10 compresi.
+
+49
+00:03:27,000 --> 00:03:33,580
+ Non c'è bisogno che fermi la riproduzione, ti lascio io qualche secondo per decidere,
+
+50
+00:03:33,580 --> 00:03:35,560
+ ma non troppi, mi raccomando.
+
+51
+00:03:35,560 --> 00:03:41,780
+ Fai veloce, giusto qualche attimo, un numero a tua scelta tra 1 e 10.
+
+52
+00:03:41,780 --> 00:03:45,220
+ Ancora un istante, ci siamo quasi, stop.
+
+53
+00:03:45,220 --> 00:03:46,220
+ Deciso?
+
+54
+00:03:46,220 --> 00:03:47,220
+ Bene.
+
+55
+00:03:47,220 --> 00:03:52,680
+ Ora, secondo me, ci sono buone probabilità che tu abbia scelto il numero 7.
+
+56
+00:03:52,680 --> 00:03:53,680
+ Ho indovinato?
+
+57
+00:03:53,680 --> 00:03:56,820
+ Se ho indovinato, sicuramente ti starai chiedendo.
+
+58
+00:03:56,820 --> 00:03:58,940
+ Come io abbia fatto?
+
+59
+00:03:58,940 --> 00:04:03,600
+ Sappi che ne sono un mago, ne spio i tuoi dispositivi.
+
+60
+00:04:03,600 --> 00:04:09,200
+ Se invece ho sbagliato, ti starai chiedendo: ma perché ha detto proprio 7?
+
+61
+00:04:09,200 --> 00:04:16,660
+ Beh, in entrambi i casi, la risposta è semplice: la realtà è che la maggior parte delle persone
+
+62
+00:04:16,660 --> 00:04:23,140
+ messe di fronte alla scelta di un numero casuale tra 1 e 10, scelgono il 7.
+
+63
+00:04:23,140 --> 00:04:26,640
+ E' una cosa assolutamente naturale.
+
+64
+00:04:26,640 --> 00:04:33,520
+ All'interno tale scelta c'è un ragionamento inconscio, del tutto arbitrario, ma che risulta
+
+65
+00:04:33,520 --> 00:04:39,580
+ tutto sommato piuttosto verosimile e che pertanto influenza realmente la decisione.
+
+66
+00:04:39,580 --> 00:04:46,400
+ Possono cambiare i dettagli, ma il ragionamento è più o meno il seguente: i numeri da 1
+
+67
+00:04:46,400 --> 00:04:52,560
+ a 10 sono la sequenza 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+68
+00:04:52,560 --> 00:04:53,560
+ Giusto?
+
+69
+00:04:53,560 --> 00:04:56,460
+ Ora, 1 e 10 sono gli estremi.
+
+70
+00:04:56,460 --> 00:05:01,900
+ Non hanno proprio l'aria di essere una scelta casuale, no, quindi li scartiamo.
+
+71
+00:05:01,900 --> 00:05:09,140
+ I numeri pari, poi, sono numeri più amichevoli dei dispari nella vita reale, più facili
+
+72
+00:05:09,140 --> 00:05:16,020
+ da dividere per due, più rotondi, morbidi, in generale sembrano la scelta più facile,
+
+73
+00:05:16,020 --> 00:05:19,260
+ non quella casuale, quindi eliminiamo anche loro.
+
+74
+00:05:19,260 --> 00:05:23,280
+ Ci restano allora 3, 5, 7 e 9.
+
+75
+00:05:23,280 --> 00:05:26,280
+ Ma 5 è esattamente nel mezzo.
+
+76
+00:05:26,280 --> 00:05:33,420
+ È pari a 10 diviso 2, nemmeno questo ha l'aspetto di un numero scelto a caso, giusto?
+
+77
+00:05:33,420 --> 00:05:39,920
+ E lo stesso discorso vale per 9, che è uguale a 3 per 3, poi non è primo, insomma non ci
+
+78
+00:05:39,920 --> 00:05:40,920
+ piace.
+
+79
+00:05:40,920 --> 00:05:48,380
+ E dunque, la scelta resta tra il 3 e il 7, ma il 3 è così evocativo, quante volte
+
+80
+00:05:48,380 --> 00:05:55,400
+ usiamo 3 nella vita rispetto a 7: la Trinità, i tre moschettieri, le trilogie dei film,
+
+81
+00:05:55,400 --> 00:05:56,100
+ le tre grazie.
+
+82
+00:05:56,100 --> 00:06:02,060
+ Potremmo andare avanti all'infinito: è una scelta troppo facile, non ci stiamo proprio
+
+83
+00:06:02,060 --> 00:06:07,360
+ impegnando se scegliamo 3, e quindi, quindi alla fine resta solo 7.
+
+84
+00:06:07,360 --> 00:06:13,920
+ È la scelta che nella nostra testa risulta meno ovvia e di conseguenza quella che sembra
+
+85
+00:06:13,920 --> 00:06:19,760
+ la più casuale, ed ecco perché, pur non eseguendo consciamente questo ragionamento
+
+86
+00:06:19,760 --> 00:06:25,920
+ o uno simile, la maggior parte delle persone alla fine sceglie proprio il numero 7: se pensi
+
+87
+00:06:25,920 --> 00:06:31,440
+ che io stia delirando, ti lascio un paio di link in descrizione, puoi approfondire per
+
+88
+00:06:31,440 --> 00:06:36,320
+ conto tuo e magari condividere anche le tue scoperte sul gruppo Telegram di Pensieri in
+
+89
+00:06:36,320 --> 00:06:40,400
+ Codice che trovi sul sito pensierincodice.it se ti va.
+
+90
+00:06:40,400 --> 00:06:46,380
+ Ad ogni modo, la cosa interessante di tutto questo discorso è che potrebbe sembrare che
+
+91
+00:06:46,380 --> 00:06:54,060
+ in qualche modo il numero 7, tra quelli compresi tra 1 e 10, abbia una sorta di caratteristica
+
+92
+00:06:54,060 --> 00:06:55,740
+ casualità intrinseca.
+
+93
+00:06:55,740 --> 00:07:02,200
+ Se lo scelgono in tanti avrà un qualche livello di casualità maggiore degli altri, no?
+
+94
+00:07:02,200 --> 00:07:09,360
+ Beh in realtà no, assolutamente no, una cosa del genere non vale per nessun numero.
+
+95
+00:07:09,360 --> 00:07:15,340
+ La prima cosa da capire quando si parla di numeri casuali è che la casualità risiede
+
+96
+00:07:15,340 --> 00:07:20,640
+ nella sequenza delle scelte e non nel singolo numero scelto.
+
+97
+00:07:20,640 --> 00:07:25,560
+ Quando poco fa ti ho chiesto di scegliere un numero, tu potresti aver scelto:
+
+98
+00:07:25,560 --> 00:07:34,680
+ 7 o 3 o 5 o qualsiasi altro, ma in ogni caso, come posso io sapere che la tua è stata effettivamente
+
+99
+00:07:34,680 --> 00:07:36,320
+ una scelta casuale?
+
+100
+00:07:36,320 --> 00:07:37,320
+ Non posso.
+
+101
+00:07:37,320 --> 00:07:43,980
+ Per farlo avrei bisogno di altre informazioni, dovrei chiederti di scegliere di nuovo e di
+
+102
+00:07:43,980 --> 00:07:50,420
+ nuovo e poi di nuovo ancora, per un bel po' di volte e solo allora potrei iniziare a capire
+
+103
+00:07:50,420 --> 00:07:55,380
+ se le tue scelte sono veramente casuali.
+
+104
+00:07:55,380 --> 00:08:02,520
+ Se tu mi rispondessi sempre 3, 3, 3 e così via ad esempio, saprei che in realtà non
+
+105
+00:08:02,520 --> 00:08:05,740
+ c'è proprio nulla di casuale nelle tue scelte.
+
+106
+00:08:05,740 --> 00:08:13,400
+ La caratteristica di un numero di essere casuale infatti risiede non nel numero stesso ma nella
+
+107
+00:08:13,400 --> 00:08:17,560
+ sequenza di numeri casuali di cui esso fa parte.
+
+108
+00:08:17,560 --> 00:08:24,400
+ Diciamolo anche in un altro modo: un numero singolo non è mai casuale di per sé, quello
+
+109
+00:08:24,400 --> 00:08:25,200
+ che individua
+
+110
+00:08:25,200 --> 00:08:32,420
+ la casualità è la sequenza o se vogliamo più genericamente il contesto in cui è inserito.
+
+111
+00:08:32,420 --> 00:08:40,520
+ In pratica 3 o 7 o qualsiasi altro numero non sono casuali di natura ma lo diventano
+
+112
+00:08:40,520 --> 00:08:48,540
+ ad esempio nella sequenza 5, 3, 6, 9, 7, 2, 1, 10, 4, 8.
+
+113
+00:08:48,540 --> 00:08:55,020
+ Questo almeno se intendiamo la questione nei limiti entro i quali la mente umana o perlomeno
+
+114
+00:08:55,020 --> 00:08:58,320
+ la mia è in grado di generare la casualità.
+
+115
+00:08:58,320 --> 00:09:05,660
+ Questa sequenza infatti l'ho creata a tavolino scegliendo io stesso ogni volta un numero tra
+
+116
+00:09:05,660 --> 00:09:12,780
+ 1 e 10 e se la valuti attentamente ti accorgerai che non è nemmeno particolarmente casuale.
+
+117
+00:09:12,780 --> 00:09:15,060
+ Io me ne sono accorto solo dopo.
+
+118
+00:09:15,060 --> 00:09:21,980
+ Ad esempio la prima cosa che si può notare è che nessun numero si ripete e già questo
+
+119
+00:09:21,980 --> 00:09:24,840
+ di per sé non è un comportamento realistico.
+
+120
+00:09:24,840 --> 00:09:34,060
+ Se fosse una sequenza veramente casuale le probabilità che su 10 scelte tra 10 numeri
+
+121
+00:09:34,060 --> 00:09:38,960
+ nessuno di essi si ripeta sarebbero veramente basse in realtà.
+
+122
+00:09:38,960 --> 00:09:46,340
+ In natura, come vedremo fra poco, la casualità è qualcosa di abbastanza strano.
+
+123
+00:09:46,340 --> 00:09:54,660
+ Ma allora, noi che siamo informatici, o appassionati di informatica, o smanettoni
+
+124
+00:09:54,660 --> 00:10:01,300
+ di ogni genere, potremmo pensare che, visti i limiti umani, basti sviluppare un software
+
+125
+00:10:01,300 --> 00:10:04,440
+ per essere in grado di generare una sequenza casuale.
+
+126
+00:10:04,440 --> 00:10:09,660
+ Ma in realtà neanche questo è vero, o almeno non è così semplice.
+
+127
+00:10:09,660 --> 00:10:16,200
+ Di software del genere ce ne sono in giro parecchi, ad esempio ce n'è almeno uno pressoché
+
+128
+00:10:16,200 --> 00:10:23,240
+ in ogni linguaggio di programmazione, ma in effetti nessuno di questi da solo è in grado
+
+129
+00:10:23,240 --> 00:10:24,480
+ di generare sequenze casuali.
+
+130
+00:10:24,480 --> 00:10:34,680
+ Il massimo che può fare un software infatti è generare sequenze che sembrino casuali.
+
+131
+00:10:34,680 --> 00:10:46,300
+ A differenza di quanto si potrebbe intuitivamente pensare, utilizzando solo degli strumenti software
+
+132
+00:10:46,300 --> 00:10:52,300
+ è impossibile scegliere un numero veramente casuale, o tantomeno generare una sequenza
+
+133
+00:10:52,300 --> 00:10:54,300
+ di numeri veramente casuali.
+
+134
+00:10:54,300 --> 00:11:00,880
+ Il software infatti per sua natura opera in modo deterministico, cioè ogni operazione
+
+135
+00:11:00,880 --> 00:11:06,840
+ eseguita da un programma è una conseguenza diretta di istruzioni e regole definite dal
+
+136
+00:11:06,840 --> 00:11:08,100
+ suo programmatore.
+
+137
+00:11:08,100 --> 00:11:14,880
+ Basta pensare alla definizione di algoritmo per capirlo: una sequenza finita di istruzioni
+
+138
+00:11:14,880 --> 00:11:21,340
+ o operazioni ben definite e ordinate dove ogni passo deve essere chiaro e non ambiguo.
+
+139
+00:11:21,340 --> 00:11:24,120
+ Non è previsto in alcun modo che un algoritmo
+
+140
+00:11:24,120 --> 00:11:30,680
+ si comporti secondo dinamiche casuali. Allo stesso input deve corrispondere sempre
+
+141
+00:11:30,680 --> 00:11:35,560
+ lo stesso output. Pertanto non c'è modo che un algoritmo da
+
+142
+00:11:35,560 --> 00:11:41,240
+ solo generi un numero casuale. Se lo fa è un algoritmo con dei problemi.
+
+143
+00:11:41,240 --> 00:11:49,000
+ Un software che deve generare numeri casuali quindi in realtà utilizza un algoritmo deterministico
+
+144
+00:11:49,000 --> 00:11:53,940
+ che produce una sequenza di numeri che sembrano casuali ma non lo sono
+
+145
+00:11:53,940 --> 00:12:01,540
+ realmente. Algoritmi del genere sono principalmente basati su una qualche formula o proprietà
+
+146
+00:12:01,540 --> 00:12:08,280
+ matematica e possono essere anche molto differenti fra loro. Ciascuno di essi produce un risultato
+
+147
+00:12:08,280 --> 00:12:14,520
+ simile ma con le proprie caratteristiche e peculiarità. Uno dei più semplici, tanto
+
+148
+00:12:14,520 --> 00:12:17,860
+ per fare un esempio, abbastanza semplice da poter
+
+149
+00:12:17,860 --> 00:12:23,760
+ essere descritto in un podcast solo audio come pensieri in codice, è il generatore
+
+150
+00:12:23,760 --> 00:12:32,080
+ lineare congruenziale o LCG . In pratica si tratta di una formula
+
+151
+00:12:32,080 --> 00:12:39,960
+ matematica che, preso un numero in input x0, che viene definito seme, lo moltiplica per
+
+152
+00:12:39,960 --> 00:12:46,920
+ un secondo numero prefissato, gli somma un terzo, sempre prefissato, e infine divide tutto per un
+
+153
+00:12:46,920 --> 00:12:53,580
+ quarto numero, ovviamente anche quest'ultimo prefissato. Il resto dell'operazione di divisione
+
+154
+00:12:53,580 --> 00:13:01,900
+ diventa x1, cioè uno dei numeri della sequenza casuale. Poi, l'algoritmo prosegue a rieseguire
+
+155
+00:13:01,900 --> 00:13:08,940
+ l'intero calcolo utilizzando x1 come numero di partenza, al fine di ottenere un valore x2,
+
+156
+00:13:08,940 --> 00:13:14,520
+ e poi di nuovo parte da x2 per ottenere x3, e prosegue così.
+
+157
+00:13:14,520 --> 00:13:23,400
+ Il risultato di questa elaborazione è una lista di numeri x0, x1, x2, x3, ecc., che non
+
+158
+00:13:23,400 --> 00:13:30,360
+ sono realmente casuali, ma lo sembrano, perché seguono una distribuzione statistica che imita
+
+159
+00:13:30,360 --> 00:13:36,840
+ la casualità naturale. I numeri appartenenti a questo tipo di sequenze vengono chiamati numeri
+
+160
+00:13:36,840 --> 00:13:42,960
+ pseudocasuali, e il nome pseudocasuali deriva appunto dal fatto che sembrano casuali,
+
+161
+00:13:42,960 --> 00:13:49,720
+ ma in realtà non lo sono, perché la sequenza è perfettamente e completamente prevedibile se se
+
+162
+00:13:49,720 --> 00:13:53,220
+ ne conosce il numero iniziale, cioè il seme, l'algoritmo prosegue così.
+
+163
+00:13:53,220 --> 00:14:02,400
+ Questa particolare caratteristica della sequenza numerica, che prende il nome di deterministicità,
+
+164
+00:14:02,400 --> 00:14:09,500
+ è molto importante nel campo dello sviluppo software, perché permette di riprodurre specifiche
+
+165
+00:14:09,500 --> 00:14:16,620
+ situazioni agevolando enormemente i processi di test e di debug. Se infatti avessimo necessità
+
+166
+00:14:16,620 --> 00:14:23,040
+ di verificare più volte il corretto funzionamento di un nostro algoritmo che sfrutta una sequenza
+
+167
+00:14:23,040 --> 00:14:30,420
+ pseudocasuale, non dovremmo fare altro che eseguirlo ogni volta a partire da un certo valore del seme,
+
+168
+00:14:30,420 --> 00:14:37,440
+ per essere sicuri che i numeri generati siano sempre uguali, non andando così a disturbare
+
+169
+00:14:37,440 --> 00:14:45,000
+ la nostra analisi sul resto del codice. La deterministicità però non è l'unica caratteristica
+
+170
+00:14:45,000 --> 00:14:52,860
+ interessante delle sequenze pseudocasuali. Come abbiamo già detto, infatti, nonostante non dovrebbero esserci
+
+171
+00:14:52,860 --> 00:15:00,000
+ pattern evidenti o correlazioni significative tra i numeri generati, in realtà una sequenza
+
+172
+00:15:00,000 --> 00:15:07,980
+ pseudocasuale è sempre e solo apparentemente casuale. In primo luogo perché è in realtà una sequenza
+
+173
+00:15:07,980 --> 00:15:15,180
+ ciclica. Proseguendo infatti a sufficienza a generare numeri, prima o poi si ottiene che i valori si
+
+174
+00:15:15,180 --> 00:15:22,680
+ ripetono in modo ciclico. In pratica, scorrendo l'elenco abbastanza a lungo, esso risulta come una o più
+
+175
+00:15:22,680 --> 00:15:28,800
+ catenazioni della stessa serie numerica. Questo fenomeno è dovuto al fatto che gli algoritmi che
+
+176
+00:15:28,800 --> 00:15:36,500
+ generano sequenze pseudocasuali lavorano su un insieme finito di stati, e quindi una volta che
+
+177
+00:15:36,500 --> 00:15:43,840
+ si ripete uno stato precedente, l'intera sequenza si ripete di conseguenza. La lunghezza della sequenza
+
+178
+00:15:43,840 --> 00:15:52,500
+ prima della ripetizione è chiamata periodo, e un buon algoritmo dovrebbe avere un periodo molto lungo per evitare che
+
+179
+00:15:52,500 --> 00:16:01,220
+ la ripetizione dei numeri sia evidente o che generi problemi nell'utilizzo. In secondo luogo poi, una terza
+
+180
+00:16:01,220 --> 00:16:07,800
+ caratteristica interessante è che una buona sequenza pseudocasuale distribuisce i numeri in modo
+
+181
+00:16:07,800 --> 00:16:15,460
+ uniforme sull'intervallo predefinito. Ciò vuol dire che ogni valore dell'intervallo dovrebbe avere la
+
+182
+00:16:15,460 --> 00:16:21,840
+ stessa probabilità di essere scelto, almeno in media, lungo una sequenza sufficientemente lunga.
+
+183
+00:16:22,320 --> 00:16:29,780
+ In altre parole, se ho 10 numeri tra cui scegliere e genero una sequenza pseudocasuale di 1000 elementi,
+
+184
+00:16:29,780 --> 00:16:37,300
+ ciascuno dei numeri a mia disposizione dovrebbe comparire circa 100 volte. L'uno dovrebbe essere presente 100 volte,
+
+185
+00:16:37,300 --> 00:16:45,880
+ il 2 anche, la stessa cosa per il 3 e così via. Possiamo fare anche un esempio pratico pensando di utilizzare un dado.
+
+186
+00:16:45,880 --> 00:16:52,140
+ Se il nostro dado non è truccato, ad ogni lancio ci saranno sempre le stesse probabilità che esca
+
+187
+00:16:52,140 --> 00:16:59,100
+ una qualsiasi delle 6 facce. Se quindi eseguo un gran numero di lanci, il numero di volte in cui
+
+188
+00:16:59,100 --> 00:17:06,520
+ apparirà ciascuna faccia tenderà ad essere circa pari a un sesto dei lanci. Se appunto faccio 1000
+
+189
+00:17:06,520 --> 00:17:14,340
+ tentativi, ciascuna faccia dovrebbe comparire intorno alle 166 volte. Ovviamente non si parla di numeri
+
+190
+00:17:14,340 --> 00:17:21,960
+ esatti, ma di cifre che si avvicinano alla media con l'aumentare delle iterazioni. Infine, le ultime caratteristiche
+
+191
+00:17:21,960 --> 00:17:30,440
+ degne di nota sono che un buon algoritmo che genera sequenze pseudo-casuali dovrebbe essere computazionalmente
+
+192
+00:17:30,440 --> 00:17:37,980
+ efficiente e estremamente sensibile al seme. In altre parole, la generazione di un nuovo numero
+
+193
+00:17:37,980 --> 00:17:44,620
+ pseudo-casuale deve avvenire rapidamente e con un basso impiego di risorse, specialmente in contesti
+
+194
+00:17:44,620 --> 00:17:51,780
+ come simulazioni o criptografia dove sono richiesti milioni di numeri pseudo-casuali. E infine, piccole
+
+195
+00:17:51,780 --> 00:17:59,180
+ variazioni del seme devono produrre sequenze completamente diverse, una proprietà fondamentale
+
+196
+00:17:59,180 --> 00:18:05,440
+ per garantire che in seguito a esecuzioni diverse del codice sia rispettata la variabilità nei
+
+197
+00:18:05,440 --> 00:18:16,860
+ risultati. Abbiamo quindi detto che il software da solo è in grado di generare unicamente delle
+
+198
+00:18:16,860 --> 00:18:21,600
+ sequenze di numeri pseudo-casuali e abbiamo descritto sommariamente come
+
+199
+00:18:21,600 --> 00:18:29,340
+ esse sono caratterizzate, ma per molte applicazioni reali questo tipo di approccio può non essere
+
+200
+00:18:29,340 --> 00:18:37,440
+ sufficiente, anzi spesso non lo è. Esistono molti casi d'uso in cui sequenze pseudo-casuali non
+
+201
+00:18:37,440 --> 00:18:44,200
+ bastano a soddisfare le necessità degli utilizzatori e sono invece necessarie sequenze di
+
+202
+00:18:44,200 --> 00:18:51,420
+ numeri che siano veramente casuali. Una sequenza veramente casuale è tale quando ciascun numero
+
+203
+00:18:51,420 --> 00:18:58,500
+ viene generato in modo completamente imprevedibile, senza alcuna regola deterministica sottostante.
+
+204
+00:18:58,500 --> 00:19:06,660
+ Questo significa che ogni numero nella sequenza è scelto senza alcun legame con i precedenti o
+
+205
+00:19:06,660 --> 00:19:14,100
+ i futuri e nessuna conoscenza dei valori già generati permette a nessuno uomo o macchina che
+
+206
+00:19:14,100 --> 00:19:21,240
+ sia di prevedere quelli successivi. Una cosa questa che, come abbiamo appena detto nel blocco precedente,
+
+207
+00:19:21,240 --> 00:19:28,620
+ nessun software è in grado di realizzare autonomamente. Le sequenze di numeri realmente
+
+208
+00:19:28,620 --> 00:19:36,000
+ casuali dunque, a differenza di quelle pseudo-casuali, non sono cicliche, non sono replicabili in alcun
+
+209
+00:19:36,000 --> 00:19:43,380
+ modo e non sono nemmeno equamente distribuite. Se disegnassimo un diagramma cartesiano per
+
+210
+00:19:43,380 --> 00:19:51,060
+ rappresentare la tipica distribuzione dei valori di una sequenza realmente casuale, in cui l'asse orizzontale
+
+211
+00:19:51,060 --> 00:19:57,900
+ contiene la scala dei possibili numeri risultanti e quello verticale la frequenza con cui essi
+
+212
+00:19:57,900 --> 00:20:06,780
+ appaiono, otterremmo una classica forma a campana, detta anche gaussiana o normale. Il nome "normale"
+
+213
+00:20:06,780 --> 00:20:13,800
+ deriva appunto dal fatto che, in natura, molte variabili legate al ripetersi di eventi casuali
+
+214
+00:20:13,800 --> 00:20:20,880
+ si comportano secondo tale modello, cioè la maggior parte dei risultati si concentra attorno al valore
+
+215
+00:20:20,880 --> 00:20:28,500
+ medio, mentre i valori estremi si verificano più raramente. Per capirci, riprendiamo l'esempio di
+
+216
+00:20:28,500 --> 00:20:36,180
+ prima del dado. Abbiamo detto che, se ne lanciamo uno, le probabilità di ottenere valori da 1 a 6
+
+217
+00:20:36,180 --> 00:20:42,600
+ sono equivalenti ed equamente distribuite. Ma se ne lanciamo due contemporaneamente,
+
+218
+00:20:42,600 --> 00:20:50,700
+ allora le cose cambiano. Con due dadi, infatti, il numero 2 o il 12 avranno una sola
+
+219
+00:20:50,700 --> 00:20:59,100
+ possibilità di venire fuori come risultato, mentre il 6 ne avrà ben 5 di possibilità. Basta fare i
+
+220
+00:20:59,100 --> 00:21:07,700
+ calcoli: per totalizzare 2 dovremmo ottenere un 1 su entrambi i dadi e per totalizzare 12 dovremmo
+
+221
+00:21:07,700 --> 00:21:20,520
+ avere due 6. Al contrario, però, per totalizzare un 6 potremmo avere un 1 e un 5 o un 2 e un 4 o 2 3 o un 4 e un 2 o
+
+222
+00:21:20,520 --> 00:21:29,940
+ infine un 5 e un 1. 5 possibilità di totalizzare 6 contro una di totalizzare 2 o 12. Più aumentiamo
+
+223
+00:21:29,940 --> 00:21:36,080
+ il numero di dadi lanciati contemporaneamente e più aumenta questo fenomeno che favorisce
+
+224
+00:21:36,080 --> 00:21:42,540
+ l'uscita dei numeri intorno alla media dell'intervallo. In natura, questo è il comportamento
+
+225
+00:21:42,540 --> 00:21:50,340
+ più comune. A questo punto, insomma, dovrebbe essere chiaro che, per scegliere un numero veramente casuale,
+
+226
+00:21:50,340 --> 00:21:57,360
+ è necessaria una fonte fisica di casualità, qualcosa che non risiede in un software ma
+
+227
+00:21:57,360 --> 00:22:04,320
+ nel mondo materiale. Un numero veramente casuale, infatti, può essere ottenuto solo sfruttando
+
+228
+00:22:04,320 --> 00:22:11,440
+ fenomeni fisici imprevedibili e non deterministici. A differenza dei numeri pseudocasuali generati
+
+229
+00:22:11,440 --> 00:22:16,960
+ da algoritmi, i numeri veramente casuali derivano quindi da processi naturali che
+
+230
+00:22:16,960 --> 00:22:20,160
+ non possono essere predetti o controllati da un modello artificiale.
+
+231
+00:22:20,160 --> 00:22:27,920
+ Esempi di tali processi sono il rumore termico, il decadimento radioattivo, le fluttuazioni
+
+232
+00:22:27,920 --> 00:22:34,520
+ quantistiche o, in generale, tutto ciò che è caotico e imprevedibile. Non c'è limite
+
+233
+00:22:34,520 --> 00:22:40,540
+ ai fenomeni che possono essere utilizzati per perseguire l'obiettivo. Esistono casi
+
+234
+00:22:40,540 --> 00:22:46,200
+ in cui vengono misurate le attività atmosferiche o le particelle provenienti dallo spazio o
+
+235
+00:22:46,200 --> 00:22:49,980
+ le onde radio. Un metodo veramente ingegnoso, ad esempio,
+
+236
+00:22:49,980 --> 00:22:56,060
+ è quello di inquadrare, tramite una telecamera, uno scaffale pieno di lampade lava quelle
+
+237
+00:22:56,060 --> 00:23:01,940
+ lampade con l'acqua e la sostanza colorata che si muove in continuazione e utilizzarne
+
+238
+00:23:01,940 --> 00:23:12,940
+ le immagini come sorgente di casualità. Ricapitolando il discorso, quindi, un software
+
+239
+00:23:12,940 --> 00:23:18,840
+ da solo può generare solo sequenze di numeri pseudocasuali, mentre i fenomeni naturali
+
+240
+00:23:18,840 --> 00:23:19,800
+ sono gli unici
+
+241
+00:23:19,800 --> 00:23:26,740
+ realmente casuali. E quindi, come funzionano i programmi nei nostri computer che generano
+
+242
+00:23:26,740 --> 00:23:33,520
+ i numeri casuali? Come si fa ad assicurare la varietà e l'imprevedibilità negli algoritmi
+
+243
+00:23:33,520 --> 00:23:37,800
+ in cui essa è necessaria? Semplice, si utilizza un approccio ibrido.
+
+244
+00:23:37,800 --> 00:23:43,400
+ Da circa una decina d'anni a questa parte, i processori integrano al proprio interno
+
+245
+00:23:43,400 --> 00:23:49,620
+ dei componenti chiamati generatori di numeri casuali, hardware o HRNG.
+
+246
+00:23:49,620 --> 00:23:56,120
+ Hardware Random Number Generator. Questi sistemi si basano su vari metodi, come la misurazione
+
+247
+00:23:56,120 --> 00:24:02,500
+ del rumore termico o di quello elettrico prodotti dai vari componenti hardware, per effettuare
+
+248
+00:24:02,500 --> 00:24:10,080
+ la scelta di un valore casuale. Il numero così generato dall'HRNG è, di fatto, veramente
+
+249
+00:24:10,080 --> 00:24:16,340
+ casuale, e nell'ambito di questa strategia ibrida viene poi utilizzato come seme per
+
+250
+00:24:16,340 --> 00:24:19,440
+ avviare un algoritmo pseudocasuale.
+
+251
+00:24:19,440 --> 00:24:24,560
+ L'approccio del genere permette di sfruttare contemporaneamente i punti di forza di entrambi
+
+252
+00:24:24,560 --> 00:24:30,260
+ i metodi, e di conseguenza di mitigare i punti deboli di ciascuno. Quello che si ottiene
+
+253
+00:24:30,260 --> 00:24:36,200
+ è quindi una combinazione dei vantaggi di casualità reale dati dall'entropia con quelli
+
+254
+00:24:36,200 --> 00:24:42,540
+ di efficienza e praticità degli algoritmi pseudocasuali. Tre dei principali svantaggi
+
+255
+00:24:42,540 --> 00:24:49,260
+ legati al dover osservare fenomeni fisici per generare numeri casuali sono infatti il
+
+256
+00:24:49,260 --> 00:24:55,800
+ tempo necessario, la non riproducibilità degli eventi e la distribuzione non omogenea
+
+257
+00:24:55,800 --> 00:25:00,560
+ dei risultati che, come abbiamo già detto, si distribuiscono a campana.
+
+258
+00:25:00,560 --> 00:25:08,140
+ Invocando un HRNG per generare solo il primo numero casuale, quindi, si risparmia tempo
+
+259
+00:25:08,140 --> 00:25:13,740
+ e poi basta annotarlo da qualche parte per poterlo riutilizzare eventualmente in caso
+
+260
+00:25:13,740 --> 00:25:19,080
+ di necessità. Al tempo stesso, però, utilizzando tale numero come seme per
+
+261
+00:25:19,080 --> 00:25:24,980
+ un algoritmo pseudocasuale, si ottiene una sequenza che gode delle caratteristiche di
+
+262
+00:25:24,980 --> 00:25:31,840
+ riproducibilità e di equa distribuzione nei risultati e che viene generata in tempi molto
+
+263
+00:25:31,840 --> 00:25:36,100
+ più brevi di quelli necessari se si dovessero osservare i fenomeni fisici.
+
+264
+00:25:36,100 --> 00:25:43,780
+ Infine, utilizzando un seme veramente casuale per avviare un qualsiasi algoritmo pseudocasuale,
+
+265
+00:25:43,780 --> 00:25:48,900
+ si migliora anche la casualità risultante dall'elaborazione e la lunghezza
+
+266
+00:25:48,900 --> 00:25:55,540
+ del periodo della serie. Insomma, in definitiva, l'approccio ibrido offre un risultato equilibrato
+
+267
+00:25:55,540 --> 00:26:02,840
+ tra casualità, efficienza e riproducibilità. Esso infatti garantisce che la sequenza generata
+
+268
+00:26:02,840 --> 00:26:09,120
+ sia sufficientemente imprevedibile e sicura, mantenendo però al tempo stesso la velocità
+
+269
+00:26:09,120 --> 00:26:14,600
+ e la praticità degli algoritmi deterministici, senza dipendere costantemente da sorgenti
+
+270
+00:26:14,600 --> 00:26:18,720
+ fisiche di casualità. Infine, prima di chiudere,
+
+271
+00:26:18,720 --> 00:26:24,060
+ provo ad anticipare una domanda che potresti porti dopo aver ascoltato questo episodio.
+
+272
+00:26:24,060 --> 00:26:31,060
+ Tale domanda è: può un Large Language Model generare numeri casuali? D'altronde sembra
+
+273
+00:26:31,060 --> 00:26:34,900
+ quasi che ormai essi possano fare qualunque cosa, secondo alcuni.
+
+274
+00:26:34,900 --> 00:26:43,240
+ Beh, la risposta è semplice: un LLM NON può generare numeri veramente casuali, e in realtà
+
+275
+00:26:43,240 --> 00:26:48,540
+ neanche pseudocasuali. Come abbiamo già detto più volte, la vera casualità
+
+276
+00:26:48,540 --> 00:26:57,060
+ deriva solo da processi fisici che sono intrinsecamente imprevedibili, e gli algoritmi di Machine Learning
+
+277
+00:26:57,060 --> 00:27:03,100
+ eseguiti su macchine essenzialmente deterministiche non hanno accesso a tali processi fisici.
+
+278
+00:27:03,100 --> 00:27:09,100
+ Inoltre, il funzionamento delle intelligenze artificiali si basa su modelli matematici
+
+279
+00:27:09,100 --> 00:27:14,580
+ e statistici che vengono prodotti esaminando dei set di dati in fase di addestramento.
+
+280
+00:27:14,580 --> 00:27:18,360
+ I modelli generativi che, lo dice il nome, sono quelli
+
+281
+00:27:18,360 --> 00:27:24,620
+ in grado di generare qualcosa, non possono comunque discostarsi completamente dalle strutture
+
+282
+00:27:24,620 --> 00:27:31,840
+ e dai pattern presenti nei dati di addestramento, e questo limita fortemente anche la loro capacità
+
+283
+00:27:31,840 --> 00:27:41,440
+ di generare numeri pseudocasuali. E così siamo giunti alla fine di questo
+
+284
+00:27:41,440 --> 00:27:48,180
+ episodio. È stato interessante? Io, onestamente, ero un po' stufo di parlare sempre di intelligenza
+
+285
+00:27:48,180 --> 00:27:52,840
+ artificiale, anche se, almeno per il momento, sembra essere il tema più gettonato.
+
+286
+00:27:52,840 --> 00:27:59,340
+ Prima di lasciarti, ti ricordo che Pensieri in Codice è un progetto indipendente che
+
+287
+00:27:59,340 --> 00:28:05,460
+ realizzo nel mio tempo libero e con le mie risorse personali. A questo proposito, come
+
+288
+00:28:05,460 --> 00:28:11,040
+ ormai di consueto da varie puntate a questa parte, ti ricordo anche che si basa interamente
+
+289
+00:28:11,040 --> 00:28:18,000
+ sulla filosofia Value for Value. Ciò significa che è completamente gratuito e disponibile per chiunque
+
+290
+00:28:18,000 --> 00:28:25,920
+ senza pubblicità, ma se lo ascolti spesso vuol dire che per te un po' di valore ce l'ha, tutto sommato.
+
+291
+00:28:25,920 --> 00:28:33,880
+ E quindi ti chiedo di restituirne un po' in qualche modo, secondo le tue modalità preferite. Puoi
+
+292
+00:28:33,880 --> 00:28:40,800
+ spenderci un po' del tuo tempo diffondendolo, parlandone e condividendo gli episodi. Puoi dare
+
+293
+00:28:40,800 --> 00:28:47,820
+ una mano. Ci sono un sacco di cose da fare, per esempio aprire degli account social o aiutarmi con
+
+294
+00:28:47,820 --> 00:28:54,360
+ la stesura degli episodi o risolvere issue su progetti github. O infine puoi mettere mano al
+
+295
+00:28:54,360 --> 00:29:00,120
+ portafoglio e fare una piccola donazione o acquistare un libro dalla mia lista desideri
+
+296
+00:29:00,120 --> 00:29:08,400
+ Amazon. Dai libri viene spesso buona parte delle mie idee. A tal proposito oggi ringrazio come sempre
+
+297
+00:29:08,400 --> 00:29:17,640
+ Edoardo e Carlo per la loro donazione mensile e poi Antonio che ha messo su uno script in Python per
+
+298
+00:29:17,640 --> 00:29:23,100
+ semplificarmi la condivisione delle notizie interessanti su Linkedin. E' a questo che mi
+
+299
+00:29:23,100 --> 00:29:28,680
+ riferisco quando parlo di progetti github. Se non lo sapessi, infatti nel gruppo Telegram,
+
+300
+00:29:28,680 --> 00:29:34,660
+ su Mastodon e da qualche settimana anche su Linkedin, condivido un flusso più o meno
+
+301
+00:29:34,660 --> 00:29:40,880
+ costante di articoli che leggo ogni giorno e che trovo interessanti. Quindi se la cosa
+
+302
+00:29:40,880 --> 00:29:47,460
+ ti interessa trovi il link al gruppo Telegram e le info su come contribuire sul sito per
+
+303
+00:29:47,460 --> 00:29:55,140
+ pensierincodice.it. Mentre trovi me come Valerio Galano tutto attaccato su Linkedin o chiocciola
+
+304
+00:29:55,140 --> 00:30:03,220
+ valeriogalano@mastodon.1 su Mastodon appunto. Bene, detto questo direi che per oggi possiamo
+
+305
+00:30:03,220 --> 00:30:10,700
+ chiudere qui. Io ti ringrazio come sempre per aver ascoltato oggi a maggior ragione. Spero che la
+
+306
+00:30:10,700 --> 00:30:17,280
+ qualità audio non verrà fuori troppo terribile anche perché per evitare i rumori di fondo ho provato
+
+307
+00:30:17,280 --> 00:30:23,720
+ ad impostare il gain al minimo possibile e parlare molto vicino al microfono. E niente,
+
+308
+00:30:23,720 --> 00:30:29,580
+ magari sarai tu a farmelo sapere. Io ti do appuntamento al prossimo episodio e ti
+
+309
+00:30:29,580 --> 00:30:35,820
+ ricordo sempre che un informatico risolve problemi, a volte anche usando il computer.
+

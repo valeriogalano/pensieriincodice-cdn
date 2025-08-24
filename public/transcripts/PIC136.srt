@@ -1,0 +1,932 @@
+1
+00:00:00,000 --> 00:00:06,780
+ Sono più di vent'anni che lavoro come sviluppatore di software. Ho iniziato con lo scrivere semplice
+
+2
+00:00:06,780 --> 00:00:13,240
+ codice fino ad arrivare ad oggi alla progettazione e realizzazione di interi prodotti e servizi
+
+3
+00:00:13,240 --> 00:00:19,720
+ basati su web e cloud. Negli ultimi anni, poi, credo un po' come tutti, ho incluso
+
+4
+00:00:19,720 --> 00:00:25,500
+ nei miei processi di lavoro tutta una serie di strumenti basati sul Large Language Model
+
+5
+00:00:25,500 --> 00:00:31,400
+ e, devo dire, che sono piuttosto contento dei risultati. Da un paio di mesi a questa
+
+6
+00:00:31,400 --> 00:00:38,580
+ parte, però, mi sono piovuti addosso decine di articoli e post, tanti mi sono stati perfino
+
+7
+00:00:38,580 --> 00:00:45,080
+ condivisi in privato, che parlano della nuova frontiera dello sviluppo software, il vibe
+
+8
+00:00:45,080 --> 00:00:52,260
+ coding. Ora, siccome di sviluppo software ho la presunzione di capirne un pochino, sono
+
+9
+00:00:52,260 --> 00:00:55,480
+ rimasto piuttosto inorridito da alcune delle cose.
+
+10
+00:00:55,480 --> 00:01:02,920
+ Quindi, ho deciso di prendere anche io parte al discorso e di raccontarti un po' la mia
+
+11
+00:01:02,920 --> 00:01:04,600
+ opinione in merito. Sigla.
+
+12
+00:01:04,600 --> 00:01:25,380
+ Oramai è un paradigma piuttosto consolidato. Ogni volta che salta fuori una novità,
+
+13
+00:01:25,380 --> 00:01:31,000
+ tecnologica di un certo rilievo, partono subito gli schieramenti. Da un lato c'è
+
+14
+00:01:31,000 --> 00:01:37,200
+ chi demonizza, non funzionerà mai, ci toglierà il lavoro, sarà una bolla, eccetera. Dall'altro
+
+15
+00:01:37,200 --> 00:01:43,900
+ c'è invece chi osanna, è una nuova frontiera, ci cambierà la vita, renderà obsoleto tutto
+
+16
+00:01:43,900 --> 00:01:49,480
+ il resto, e così via. Nel mezzo di tutto questo, poi, di solito, restano quelli come
+
+17
+00:01:49,480 --> 00:01:55,360
+ me, e immagino anche come te, che, per quanto possibile, cercano di ignorare entrambe le
+
+18
+00:01:55,360 --> 00:02:02,220
+ tifoserie e di farsi la propria idea che solitamente risulta essere un po' più moderata.
+
+19
+00:02:02,220 --> 00:02:09,840
+ Ora, non so se perché si parla di un argomento che conosco molto bene, ma nel caso del vibecoding,
+
+20
+00:02:09,840 --> 00:02:15,640
+ molto più che in altri perlomeno, ho notato la forte presenza di un ulteriore gruppo di
+
+21
+00:02:15,640 --> 00:02:20,740
+ soggetti che si esprimono sulla questione, quelli che non ci hanno capito niente. È
+
+22
+00:02:20,740 --> 00:02:25,280
+ da qualche settimana, ormai, che si parla tanto sul web di questa nuova tecnologia,
+
+23
+00:02:25,280 --> 00:02:32,460
+ di sviluppo del software basata su intelligenza artificiale, tanto per cambiare, ma in molti,
+
+24
+00:02:32,460 --> 00:02:37,900
+ soprattutto tra quelli che ne decantano i pregi, dimostrano, a mio parere, di non avere
+
+25
+00:02:37,900 --> 00:02:43,820
+ le idee chiare su cosa effettivamente essa sia. Mi sono passati davanti vari articoli
+
+26
+00:02:43,820 --> 00:02:50,080
+ e post sul vibecoding e ho letto cose che, onestamente, non stanno né in cielo né in
+
+27
+00:02:50,080 --> 00:02:55,200
+ terra. Col vibecoding passi dall'essere programmatore a product engineer.
+
+28
+00:02:55,200 --> 00:03:01,240
+ Oppure il vibecoding consente alle persone di altre discipline di diventare rapidamente
+
+29
+00:03:01,240 --> 00:03:08,880
+ programmatori. Ma no, col cavolo. Mi dispiace, ma queste affermazioni semplicemente non sono vere.
+
+30
+00:03:08,880 --> 00:03:16,580
+ Chi le ha formulate o non ha capito di cosa stava parlando, o peggio ancora, cerca di far passare un
+
+31
+00:03:16,580 --> 00:03:25,120
+ concetto falso, un po' di fuffa. Il vibecoding ha un suo perché, e forse anche una sua utilità, ma è
+
+32
+00:03:25,120 --> 00:03:32,980
+ come al solito molto più complesso di quanto sembri. Quindi, facciamo un bel respiro, cominciamo
+
+33
+00:03:32,980 --> 00:03:36,360
+ dal principio e proviamo a procedere con ordine.
+
+34
+00:03:36,360 --> 00:03:47,040
+ Innanzitutto, cominciamo col capire esattamente il significato della locuzione vibecoding.
+
+35
+00:03:47,040 --> 00:03:55,040
+ La definizione è stata formulata per la prima volta da Andrej Karpaty, che ha un dottorato
+
+36
+00:03:55,040 --> 00:04:02,300
+ a Stanford University in Deep Learning, oggi lavora presso Eureka Labs AI, e in passato è stato
+
+37
+00:04:02,300 --> 00:04:10,300
+ direttore AI di Tesla e fondatore di OpenAI. Quante AI? Insomma, uno che di intelligenza
+
+38
+00:04:10,300 --> 00:04:15,660
+ artificiale da un lato sicuramente ne capisce, ma dall'altro ha anche tutto l'interesse a fare
+
+39
+00:04:15,660 --> 00:04:22,380
+ notizia. Ad ogni modo, la storia inizia da un suo tweet del 3 febbraio, in cui racconta di questo
+
+40
+00:04:24,960 --> 00:04:28,200
+ tipo di problematiche, come il codice di sviluppo del codice.
+
+41
+00:04:28,200 --> 00:04:32,360
+ "C'è un nuovo tipo di programmazione che io chiamo vibecoding in cui ci si abbandona
+
+42
+00:04:32,360 --> 00:04:37,480
+ completamente alle vibrazioni, si abbracciano gli esponenziali e si dimentica che il codice
+
+43
+00:04:37,480 --> 00:04:38,480
+ esiste".
+
+44
+00:04:38,480 --> 00:04:44,620
+ Karpaty, con queste sue parole un po' zen, si riferisce al fatto che ormai alcuni ambienti
+
+45
+00:04:44,620 --> 00:04:50,940
+ di sviluppo integrano dei large language model in modo sufficientemente avanzato da permettere
+
+46
+00:04:50,940 --> 00:04:54,880
+ all'utente di chiedere di scrivere direttamente codice basandosi su un codice.
+
+47
+00:04:54,880 --> 00:05:03,640
+ In particolare, lui menziona l'editor cursor, i cui modelli generativi possono modificare
+
+48
+00:05:03,640 --> 00:05:09,680
+ autonomamente il codice, e aggiunge perfino che utilizza SuperWhisper, che gli permette
+
+49
+00:05:09,680 --> 00:05:14,340
+ di dialogare con il computer tramite la voce e non toccare quasi più la tastiera.
+
+50
+00:05:14,340 --> 00:05:21,000
+ Insomma, cerca chiaramente di far subodorare un po' quel qualcosa di estremamente avveniristico
+
+51
+00:05:21,000 --> 00:05:24,800
+ che abbiamo visto in tanti film di fantascienza, in cui l'operatore, per esempio, può dire
+
+52
+00:05:24,800 --> 00:05:28,180
+ al computer di fare cose e quello esegue.
+
+53
+00:05:28,180 --> 00:05:34,180
+ "Chiedo le cose più stupide come diminuisci il padding della barra laterale della metà
+
+54
+00:05:34,180 --> 00:05:36,180
+ perché sono troppo pigro per trovarlo.
+
+55
+00:05:36,180 --> 00:05:39,180
+ Accetto sempre tutto, non leggo più le differenze.
+
+56
+00:05:39,180 --> 00:05:43,400
+ Quando ricevo messaggi di errore, li copio e li incollo senza commenti.
+
+57
+00:05:43,400 --> 00:05:45,560
+ Di solito questo risolve il problema.
+
+58
+00:05:45,560 --> 00:05:50,800
+ A volte i large language model non riescono a risolvere un bug, quindi mi limito ad aggirarlo
+
+59
+00:05:50,800 --> 00:05:54,720
+ o a chiedere modifiche casuali finché non scompare".
+
+60
+00:05:54,720 --> 00:06:01,020
+ Questi casi rappresentano il vero cuore della definizione di vibe coding: chiedere una modifica
+
+61
+00:06:01,020 --> 00:06:08,640
+ all'AI e accettare l'output risultante acriticamente, senza nemmeno leggere il codice prodotto ma
+
+62
+00:06:08,640 --> 00:06:11,680
+ integrandolo direttamente in quello esistente.
+
+63
+00:06:11,680 --> 00:06:18,260
+ Come afferma lo stesso Carpati, questo approccio il più delle volte funziona, e in caso di
+
+64
+00:06:18,260 --> 00:06:24,640
+ problemi lui si limita a sottoporre gli errori allo stesso large language model e integrare
+
+65
+00:06:24,640 --> 00:06:26,820
+ esattamente l'eventuale soluzione proposta.
+
+66
+00:06:26,820 --> 00:06:32,880
+ Tali operazioni vengono poi ripetute finché il problema in questione non viene risolto.
+
+67
+00:06:32,880 --> 00:06:37,180
+ Ed è questo che intende con "abbracciare gli esponenziali".
+
+68
+00:06:37,180 --> 00:06:43,260
+ Se poi, dopo un certo numero di iterazioni, diventa chiaro che non ci si sta avvicinando
+
+69
+00:06:43,260 --> 00:06:50,340
+ all'obiettivo, Carpati afferma che la soluzione può essere comunque trovata aggirando il bug
+
+70
+00:06:50,340 --> 00:06:54,560
+ o chiedendo modifiche casuali a oltranza.
+
+71
+00:06:54,560 --> 00:06:58,400
+ E' normale per i progetti da buttare giù nel fine settimana, ma comunque abbastanza
+
+72
+00:06:58,400 --> 00:06:59,400
+ divertente.
+
+73
+00:06:59,400 --> 00:07:04,420
+ Sto costruendo un progetto o una web app, ma non si tratta di vera e propria codifica:
+
+74
+00:07:04,420 --> 00:07:09,820
+ vedo solo cose, dico cose, eseguo cose e copio e incollo cose, e per lo più funziona.
+
+75
+00:07:09,820 --> 00:07:16,380
+ Lo sviluppo di software con "l'assistenza" dell'intelligenza artificiale esiste ormai
+
+76
+00:07:16,380 --> 00:07:22,080
+ da qualche anno, e sappiamo da varie statistiche che è anche molto diffuso, ma con il vibe
+
+77
+00:07:22,080 --> 00:07:24,480
+ coding si ascende ad un livello successivo.
+
+78
+00:07:24,480 --> 00:07:31,980
+ Con questo nuovo paradigma il codice di fatto non viene più considerato: continua ad esistere
+
+79
+00:07:31,980 --> 00:07:38,620
+ perché è un componente essenziale di qualsiasi software, ma lo sviluppatore, sempre se vogliamo
+
+80
+00:07:38,620 --> 00:07:42,360
+ continuare a chiamarlo così, non vi accede più in alcun modo.
+
+81
+00:07:42,360 --> 00:07:48,560
+ Al di là del sensazionalismo, però, frasi come "non è male per progetti del fine
+
+82
+00:07:48,560 --> 00:07:54,400
+ settimana" e "per lo più funziona" dovrebbero già far capire che il vibe
+
+83
+00:07:54,400 --> 00:08:01,740
+ coding non è la nuova frontiera dello sviluppo software, quanto piuttosto un metodo accessibile
+
+84
+00:08:01,740 --> 00:08:04,500
+ per fare qualche esperimento o poco più.
+
+85
+00:08:04,500 --> 00:08:10,920
+ Tuttavia, sembra che in tanti là fuori, nella foga di gridare al nuovo miracolo che ormai
+
+86
+00:08:10,920 --> 00:08:16,880
+ se non ne vediamo uno a settimana non siamo contenti, non siano neanche arrivati a leggere
+
+87
+00:08:16,880 --> 00:08:24,320
+ il tweet fino in fondo, o non lo abbiano capito, chissà.
+
+88
+00:08:24,320 --> 00:08:33,080
+ Il vibe coding non è una nuova funzionalità degli ambienti di sviluppo o degli LLM, non
+
+89
+00:08:33,080 --> 00:08:41,700
+ è un nuovo strumento e, insomma, non è un'innovazione, è semplicemente un modo diverso di utilizzare
+
+90
+00:08:41,700 --> 00:08:46,720
+ una serie di tool che già esistevano e già utilizzavano in tanti.
+
+91
+00:08:46,720 --> 00:08:54,240
+ Probabilmente, tra l'altro, c'è in giro tanta gente che già faceva vibe coding senza che
+
+92
+00:08:54,240 --> 00:08:57,700
+ le modus operandi fosse dato il nome proprio da Carpati.
+
+93
+00:08:57,700 --> 00:09:03,600
+ Negli ultimi anni, infatti, sempre più sviluppatori hanno iniziato ad utilizzare l'intelligenza
+
+94
+00:09:03,600 --> 00:09:10,700
+ artificiale per farsi assistere nella scrittura del codice: scovare bug, ottimizzare le funzioni,
+
+95
+00:09:10,700 --> 00:09:17,140
+ implementare modifiche e nuove feature, o anche solo farsi suggerire strategie e idee.
+
+96
+00:09:17,140 --> 00:09:24,160
+ L'AI, forse più che in ogni altro campo, è diventata davvero il copilota di quasi
+
+97
+00:09:24,160 --> 00:09:25,280
+ ogni sviluppatore.
+
+98
+00:09:25,280 --> 00:09:30,660
+ Nel corso di quest'ultimo paio d'anni, poi, l'approccio si è anche notevolmente evoluto.
+
+99
+00:09:30,660 --> 00:09:37,040
+ Si è partiti da una fase iniziale nella quale si chiedeva semplicemente a chatbot come ChatGPT
+
+100
+00:09:37,040 --> 00:09:39,920
+ di scrivere o modificare uno snippet di codice.
+
+101
+00:09:39,920 --> 00:09:45,920
+ Successivamente gli LLM sono stati integrati direttamente negli ambienti di sviluppo, in
+
+102
+00:09:45,920 --> 00:09:51,880
+ modo da dare la possibilità agli sviluppatori di dialogare con essi senza dover spostare
+
+103
+00:09:51,880 --> 00:09:54,080
+ l'attenzione su siti o strumenti esterni.
+
+104
+00:09:54,080 --> 00:10:01,320
+ Poi, sono giunte funzionalità avanzate che permettono ai modelli AI integrati di manipolare
+
+105
+00:10:01,320 --> 00:10:07,440
+ direttamente il codice su ordine dello sviluppatore scrivendo e modificando i file all'interno
+
+106
+00:10:07,440 --> 00:10:08,440
+ dei progetti.
+
+107
+00:10:08,440 --> 00:10:16,140
+ A tale livello, l'LLM di turno analizza la richiesta del programmatore e il codice disponibile
+
+108
+00:10:16,140 --> 00:10:24,000
+ e propone la sua soluzione mostrando le differenze tra l'implementazione attuale e quella suggerita,
+
+109
+00:10:24,000 --> 00:10:27,680
+ e la possibilità di accettarla, rifiutarla o volendo modificarla.
+
+110
+00:10:27,680 --> 00:10:35,620
+ All'interno di tutto questo percorso di evoluzione, il vibe coding è semplicemente un approccio
+
+111
+00:10:35,620 --> 00:10:42,440
+ nel quale lo sviluppatore sceglie di accettare acriticamente il codice proposto dalla macchina.
+
+112
+00:10:42,440 --> 00:10:48,540
+ L'umano, quindi, non fa revisione né tenta di raffinare l'output della macchina, anzi
+
+113
+00:10:48,540 --> 00:10:53,920
+ non lo legge nemmeno. In pratica, viene chiesto al modello di effettuare uno sviluppo che
+
+114
+00:10:53,920 --> 00:10:59,940
+ non abbia servito e si prende subito il risultato per buono, passando direttamente a testarne
+
+115
+00:10:59,940 --> 00:11:06,180
+ il funzionamento. Se vengono fuori dei problemi o degli errori, li si riporta direttamente
+
+116
+00:11:06,180 --> 00:11:12,680
+ all'LLM e gli si chiede di correggerli e di nuovo si accetta la correzione ad occhi
+
+117
+00:11:12,680 --> 00:11:18,520
+ chiusi. Quando il problema è risolto, si procede con la richiesta successiva e così
+
+118
+00:11:18,520 --> 00:11:23,840
+ via. Il processo di sviluppo continua in questo modo finché non si è arrivati al risultato
+
+119
+00:11:23,840 --> 00:11:28,460
+ desiderato. Ora, sorvolando su alcuni aspetti pratici dei
+
+120
+00:11:28,460 --> 00:11:33,940
+ quali parleremo più avanti, un tale approccio visto dall'esterno sembra avere una diretta
+
+121
+00:11:33,940 --> 00:11:40,000
+ implicazione. Cioè, se il processo di sviluppo di un software non concerne più il controllare
+
+122
+00:11:40,000 --> 00:11:46,280
+ il codice, allora diventa alla portata di chiunque. Tradotto, non serve più essere
+
+123
+00:11:46,280 --> 00:11:53,760
+ programmatori o informatici per scrivere codice. Questo collegamento logico ha fatto scaldare
+
+124
+00:11:53,760 --> 00:11:58,640
+ veramente gli animi, perché sembrerebbe spazzar via la necessità di un'intera categoria
+
+125
+00:11:58,640 --> 00:12:04,300
+ di professionisti. C'è chi è arrivato a dire perfino che il business potrebbe sviluppare
+
+126
+00:12:04,300 --> 00:12:10,140
+ direttamente i software in autonomia. Beh, non è esattamente così. Cominciamo a spiegare
+
+127
+00:12:10,140 --> 00:12:16,180
+ il perché dai motivi oggettivi e poi passiamo nel prossimo blocco ad alzare un po' l'asticella,
+
+128
+00:12:16,180 --> 00:12:23,680
+ perché, come dire, fatti non foste a viver come bruti ma a perseguire virtute e canoscenza.
+
+129
+00:12:23,680 --> 00:12:29,820
+ Il solo fatto di pensare che si possa realizzare un software senza coinvolgere un soggetto
+
+130
+00:12:29,820 --> 00:12:36,240
+ che abbia conoscenze di coding implica che esista qualcuno che abbia almeno un'idea
+
+131
+00:12:36,240 --> 00:12:42,240
+ da implementare. Magari parliamo di un'azienda che vuole realizzare un servizio, di un manager
+
+132
+00:12:42,240 --> 00:12:47,940
+ che ha ideato un nuovo strumento o una nuova feature, o magari semplicemente di una persona
+
+133
+00:12:47,940 --> 00:12:53,600
+ qualunque che ha un problema da risolvere. In ogni caso dovrebbe esserci un qualcuno che
+
+134
+00:12:53,600 --> 00:13:00,920
+ vuole avviare un business o un progetto basandosi su una codebase interamente realizzata da
+
+135
+00:13:00,920 --> 00:13:04,940
+ una IA, senza conoscere in alcun modo il codice da essa sviluppato.
+
+136
+00:13:04,940 --> 00:13:12,460
+ Riformulo, stiamo parlando di andare in produzione con un software di cui nessuno ha esaminato
+
+137
+00:13:12,460 --> 00:13:19,000
+ e validato il codice. I test effettuati nel vibe coding, infatti, saranno di tipo funzionale
+
+138
+00:13:19,000 --> 00:13:23,520
+ a salire, cioè riguarderanno l'utilizzo dell'applicazione e non il prodotto.
+
+139
+00:13:23,520 --> 00:13:33,000
+ E non venirmi a dire che l'IA potrebbe scrivere anche i test, perché se comunque nessuno
+
+140
+00:13:33,000 --> 00:13:38,120
+ li esamina e li valida siamo punti a capo, tanto vale chiedere all'oste se il vino è
+
+141
+00:13:38,120 --> 00:13:41,520
+ buono. Ora, ad essere onesti, là fuori c'è tanto
+
+142
+00:13:41,520 --> 00:13:46,820
+ codice che è tutt'oggi in funzione e che viene manutenuto da persone che non lo hanno
+
+143
+00:13:46,820 --> 00:13:53,440
+ mai letto prima, in generale perché è stato sviluppato da altri che poi hanno cambiato
+
+144
+00:13:53,440 --> 00:13:58,940
+ il codice o il progetto, ma almeno una volta è passato al vaglio di un umano. Utilizzare
+
+145
+00:13:58,940 --> 00:14:06,040
+ invece un codice mai verificato da nessuno è un qualcosa che, onestamente, da professionista
+
+146
+00:14:06,040 --> 00:14:09,200
+ non consiglierei a nessuno dei miei clienti.
+
+147
+00:14:09,200 --> 00:14:15,480
+ Secondo un recentissimo studio che trovi in descrizione, infatti, gli stessi LLM così
+
+148
+00:14:15,480 --> 00:14:22,040
+ ampiamente utilizzati sia per lo sviluppo assistito che per il vibe coding sono particolarmente
+
+149
+00:14:22,040 --> 00:14:23,360
+ propensi a generare
+
+150
+00:14:23,360 --> 00:14:30,300
+ codice con bug. Nello specifico, le ricerche hanno dimostrato che nelle operazioni di creazione
+
+151
+00:14:30,300 --> 00:14:35,420
+ - quindi non parliamo di completare una o più righe iniziate dallo sviluppatore ma
+
+152
+00:14:35,420 --> 00:14:41,800
+ di scrivere blocchi interi ex novo - il tasso di generazione di codice buggato è circa
+
+153
+00:14:41,800 --> 00:14:48,140
+ uguale a quello di generazione di codice corretto. In altre parole, ci azzeccano la metà delle
+
+154
+00:14:48,140 --> 00:14:53,280
+ volte. A questo fatto aggiungiamo poi che gli stessi
+
+155
+00:14:53,280 --> 00:14:59,220
+ modelli risultano essere, da un altro studio, sempre recentissimo, questa volta di Microsoft,
+
+156
+00:14:59,220 --> 00:15:05,440
+ notevolmente carenti nella capacità di eseguire il debug del codice. Secondo gli autori della
+
+157
+00:15:05,440 --> 00:15:11,220
+ ricerca, infatti, le IA raramente riescono a completare anche solo metà del processo
+
+158
+00:15:11,220 --> 00:15:17,400
+ di debugging. E questo perché, secondo loro, nei dati di addestramento dei modelli attuali
+
+159
+00:15:17,400 --> 00:15:23,200
+ non sono presenti abbastanza informazioni che rappresentino i "processi decisionari"
+
+160
+00:15:23,200 --> 00:15:29,600
+ sequenziali, cioè il modo in cui gli umani fanno debug. Quanto detto finora quindi, dovrebbe
+
+161
+00:15:29,600 --> 00:15:35,680
+ essere sufficiente a far decadere l'idea che, sottoponendo all'infinito i bug al modello
+
+162
+00:15:35,680 --> 00:15:41,220
+ e cercando di aggirare i problemi, con il vibe coding si possa mai arrivare ad un codice
+
+163
+00:15:41,220 --> 00:15:45,640
+ stabile e senza bug. Quindi passiamo al secondo motivo.
+
+164
+00:15:45,640 --> 00:15:53,120
+ Da quanto si legge in tanti articoli sul vibe coding, sembrerebbe - qualcuno l'ha proprio
+
+165
+00:15:53,120 --> 00:15:59,520
+ scoperto - che esso permetta alle figure che ideano un prodotto/software di realizzarne
+
+166
+00:15:59,520 --> 00:16:06,040
+ un prototipo senza alcuna necessità di coinvolgere il team di sviluppo. Questo prototipo verrebbe
+
+167
+00:16:06,040 --> 00:16:12,440
+ generato in tempi brevi e modificato e convalidato interagendo direttamente col cliente, per
+
+168
+00:16:12,440 --> 00:16:18,440
+ poi, una volta accettato, essere passato agli sviluppatori per la vera e propria realizzazione.
+
+169
+00:16:18,440 --> 00:16:23,040
+ Ok, questa è una cosa che potrebbe pensare solo chi non ha mai sviluppato un prodotto
+
+170
+00:16:23,040 --> 00:16:30,580
+ per professione. Nel mondo reale, non ha alcun senso che un commerciale e un cliente si accordino
+
+171
+00:16:30,580 --> 00:16:35,800
+ sull'acquisto di un software se prima non è stato fatto almeno uno studio di fattibilità
+
+172
+00:16:35,800 --> 00:16:41,680
+ da parte dello sviluppatore. Escludere chi sviluppa dal processo di prototipazione è
+
+173
+00:16:41,680 --> 00:16:48,060
+ semplicemente la ricetta per il disastro. Se infatti il cliente dovesse accettare, nessuno
+
+174
+00:16:48,060 --> 00:16:52,960
+ garantisce che quanto gli sia stato promesso sia effettivamente realizzato.
+
+175
+00:16:52,960 --> 00:17:01,140
+ Il rischio che le risorse necessarie per la realizzazione siano tali da rendere il prodotto
+
+176
+00:17:01,140 --> 00:17:07,340
+ eccessivamente costoso o lungo da realizzare. E anche qui, se c'è qualche folle là fuori
+
+177
+00:17:07,340 --> 00:17:12,260
+ che pensa di poter chiedere sempre all'IA uno studio di fattibilità o una stima su
+
+178
+00:17:12,260 --> 00:17:18,760
+ tempi e costi, beh, in descrizione trovi un po' di esempi di allucinazioni a causa delle
+
+179
+00:17:18,760 --> 00:17:22,880
+ quali vari modelli, anche specializzati, hanno inventato l'acquisto.
+
+180
+00:17:22,880 --> 00:17:29,060
+ Qualunque. Da parole irlandesi a precedenti legali passando per anamnesi mediche. Pensa
+
+181
+00:17:29,060 --> 00:17:34,220
+ un po' tu se non potrebbero inventarsi tempi e costi per la realizzazione di un progetto
+
+182
+00:17:34,220 --> 00:17:40,020
+ totalmente a caso. E poi ancora, un problema a cui nessuno pensa
+
+183
+00:17:40,020 --> 00:17:45,360
+ tranne gli sviluppatori è che negli ultimi anni il volume del codice sta crescendo in
+
+184
+00:17:45,360 --> 00:17:50,960
+ maniera esponenziale. Sempre più codice da archiviare, da visionare, da tenere al sicuro
+
+185
+00:17:52,800 --> 00:17:58,980
+ attacchi alla catena delle dipendenze, eccetera. E questo ha un costo. L'utilizzo delle AI ha
+
+186
+00:17:58,980 --> 00:18:04,280
+ già mostrato un incremento nel volume del codice rispetto a quello prodotto da umani.
+
+187
+00:18:04,280 --> 00:18:10,220
+ E se ci aggiungiamo anche che nel vibe coding nessuno si occupa o nemmeno si interessa di
+
+188
+00:18:10,220 --> 00:18:16,040
+ andare a controllare cosa è stato generato, il problema ovviamente non può che peggiorare.
+
+189
+00:18:16,040 --> 00:18:22,720
+ E infine, ma non meno importante, c'è la questione della qualità del codice. Sì,
+
+190
+00:18:22,720 --> 00:18:28,740
+ perché magari non tutti lo sanno, ma un codice che risolve un qualche problema può essere
+
+191
+00:18:28,740 --> 00:18:35,780
+ sviluppato in tanti modi diversi e a diversi livelli qualitativi. Normalmente la qualità,
+
+192
+00:18:35,780 --> 00:18:41,040
+ la sicurezza e l'affidabilità vengono verificate dagli sviluppatori tramite test,
+
+193
+00:18:41,040 --> 00:18:45,980
+ code review e altre operazioni manuali o costruite ad hoc per le varie funzioni.
+
+194
+00:18:45,980 --> 00:18:52,400
+ Ma ora la mia domanda è, quanto può saperne un umano della qualità e della sicurezza del
+
+195
+00:18:52,640 --> 00:18:58,780
+ software prodotto da un modello AI se si limita solamente a dialogare con quest'ultimo senza
+
+196
+00:18:58,780 --> 00:19:00,120
+ mai visionare il codice?
+
+197
+00:19:00,120 --> 00:19:11,600
+ Come già detto in precedenza, la mia impressione è che il vibe coding non sia stato affatto
+
+198
+00:19:11,600 --> 00:19:18,460
+ diffuso nel più chiaro dei modi da alcuni e che per questo motivo sia stato poi frainteso
+
+199
+00:19:18,460 --> 00:19:22,560
+ a catena da molti altri. C'è infatti chi sembra applicare il codice in un modo più
+
+200
+00:19:22,560 --> 00:19:22,620
+ semplice e che non è stato affatto diffuso da alcuni modi, ma che non è stato affatto diffuso da alcuni.
+
+201
+00:19:22,620 --> 00:19:22,640
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+202
+00:19:22,640 --> 00:19:22,660
+ Come può saperne un umano della qualità e della sicurezza del software?
+
+203
+00:19:22,660 --> 00:19:52,540
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+204
+00:19:52,540 --> 00:20:22,520
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+205
+00:20:22,520 --> 00:20:52,500
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+206
+00:20:52,500 --> 00:21:22,480
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+207
+00:21:22,480 --> 00:21:52,460
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+208
+00:21:52,460 --> 00:22:22,440
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+209
+00:22:22,440 --> 00:22:52,420
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+210
+00:22:52,420 --> 00:23:22,400
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+211
+00:23:22,400 --> 00:23:52,380
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+212
+00:23:52,380 --> 00:24:22,360
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+213
+00:24:22,360 --> 00:24:52,340
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+214
+00:24:52,340 --> 00:25:22,320
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+215
+00:25:22,320 --> 00:25:52,300
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+216
+00:25:52,300 --> 00:26:22,280
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+217
+00:26:22,280 --> 00:26:52,260
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+218
+00:26:52,260 --> 00:27:22,240
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+219
+00:27:22,240 --> 00:27:52,220
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+220
+00:27:52,220 --> 00:28:22,200
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+221
+00:28:22,200 --> 00:28:52,180
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+222
+00:28:52,180 --> 00:29:22,160
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+223
+00:29:22,160 --> 00:29:52,140
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+224
+00:29:52,140 --> 00:30:22,120
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+225
+00:30:22,120 --> 00:30:52,100
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+226
+00:30:52,100 --> 00:31:22,080
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+227
+00:31:22,080 --> 00:31:52,060
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+228
+00:31:52,060 --> 00:32:22,040
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+229
+00:32:22,040 --> 00:32:52,020
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+230
+00:32:52,020 --> 00:33:18,680
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+231
+00:33:18,680 --> 00:33:18,760
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+232
+00:33:18,760 --> 00:33:22,000
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+
+233
+00:33:22,000 --> 00:33:30,220
+ La mia domanda è, come può saperne un umano della qualità e della sicurezza del software?
+

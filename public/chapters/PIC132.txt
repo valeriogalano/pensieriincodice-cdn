@@ -1,0 +1,7 @@
+0.000000	0.000000	Breve storia triste
+125.704995	125.704995	Introduzione
+196.608699	196.608699	Cosa si intende pe numeri casuali
+637.848004	637.848004	Sequenze pseudo-casuali
+1089.175733	1089.175733	Sequenze realmente casuali
+1387.993192	1387.993192	Un approccio ibrido
+1657.078634	1657.078634	Conclusione

@@ -1,0 +1,7 @@
+0.000000	0.000000	Introduzione
+78.765431	78.765431	Fraintendimenti
+219.689772	219.689772	Definizione
+505.087081	505.087081	Caratteristiche e limiti
+1143.807066	1143.807066	Sviluppo assistito vs Vibe coding
+1432.816535	1432.816535	Non è tutto da buttare
+1788.545386	1788.545386	Conclusione

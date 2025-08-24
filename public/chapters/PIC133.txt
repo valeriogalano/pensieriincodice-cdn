@@ -1,0 +1,7 @@
+0.000000	0.000000	Introduzione
+115.528721	115.528721	PHP è lento, incoerente e caotico
+728.031905	728.031905	PHP è morto. Lunga vita a PHP
+1156.738109	1156.738109	Peggio è meglio
+1897.177355	1897.177355	PHP è il peggiore
+2323.193471	2323.193471	Gli insegnamenti del PHP
+2565.611779	2565.611779	Conclusione

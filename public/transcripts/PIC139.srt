@@ -1,0 +1,1325 @@
+1
+00:00:00,520 --> 00:00:08,070
+So benissimo che non vedevi l'ora che uscisse questo
+secondo episodio di Pensieri in Codice Community Edition,
+
+2
+00:00:08,070 --> 00:00:13,490
+perché ho ricevuto moltissimi feedback
+positivi su quello della settimana scorsa.
+
+3
+00:00:13,490 --> 00:00:14,660
+E chi sono io,
+
+4
+00:00:14,660 --> 00:00:15,410
+allora,
+
+5
+00:00:15,410 --> 00:00:17,089
+per deluderti?
+
+6
+00:00:17,089 --> 00:00:17,539
+Oggi,
+
+7
+00:00:17,539 --> 00:00:18,449
+quindi,
+
+8
+00:00:18,449 --> 00:00:22,382
+il nostro Alex Racuglia continua il suo racconto su come
+
+9
+00:00:22,382 --> 00:00:26,660
+l'intelligenza artificiale abbia influito sulla realizzazione
+
+10
+00:00:26,660 --> 00:00:30,109
+di un suo spot televisivo sul mercato australiano.
+
+11
+00:00:30,109 --> 00:00:31,239
+Nello specifico,
+
+12
+00:00:31,239 --> 00:00:32,619
+in questo episodio,
+
+13
+00:00:32,619 --> 00:00:36,450
+ci parlerà della fase della produzione e,
+
+14
+00:00:36,450 --> 00:00:38,619
+se non lo hai già fatto,
+
+15
+00:00:38,619 --> 00:00:42,070
+per capire al meglio l'argomento trattato,
+
+16
+00:00:42,070 --> 00:00:47,240
+ti consiglio di ascoltare prima l'episodio scorso di Pensieri in Codice,
+
+17
+00:00:47,240 --> 00:00:48,890
+cioè il 138.
+
+18
+00:00:48,890 --> 00:00:49,909
+Se necessario,
+
+19
+00:00:49,909 --> 00:00:52,439
+ti lascio il link in descrizione.
+
+20
+00:00:52,439 --> 00:00:53,719
+Detto questo,
+
+21
+00:00:53,750 --> 00:00:59,280
+ti lascio nelle sapienti mani di Alex e noi ci risentiamo tra un po'.
+
+22
+00:00:59,280 --> 00:01:00,000
+Sigla!
+
+23
+00:01:13,989 --> 00:01:14,920
+Ciao a tutti,
+
+24
+00:01:14,920 --> 00:01:19,141
+sono ancora Alex Racuglia e questo è il secondo episodio in cui
+
+25
+00:01:19,141 --> 00:01:23,494
+io parlo di come l'intelligenza artificiale sta influendo sul mio
+
+26
+00:01:23,494 --> 00:01:27,980
+lavoro di produttore e regista di spot televisivi videopromozionali.
+
+27
+00:01:27,980 --> 00:01:29,640
+Non voglio dilungarmi troppo,
+
+28
+00:01:29,640 --> 00:01:35,760
+la prima parte piuttosto corposa l'avete sentita
+nella puntata precedente di questo podcast,
+
+29
+00:01:35,760 --> 00:01:37,319
+di Pensieri in Codice.
+
+30
+00:01:37,319 --> 00:01:43,140
+Adesso vi racconterò in che modo l'intelligenza
+artificiale è entrata anche nel processo di produzione.
+
+31
+00:01:43,140 --> 00:01:46,439
+La volta scorsa vi ho detto che la fase di produzione è quella fisica,
+
+32
+00:01:46,439 --> 00:01:47,250
+effettivamente,
+
+33
+00:01:47,250 --> 00:01:50,140
+in cui si accendono le telecamere e si fanno le riprese.
+
+34
+00:01:50,140 --> 00:01:54,909
+Per cui uno potrebbe dire "ma come l'intelligenza
+artificiale aiuta questo processo?" Allora,
+
+35
+00:01:54,909 --> 00:01:57,140
+nel mio caso non è mai successo,
+
+36
+00:01:57,140 --> 00:02:01,319
+ma questa volta sì e voglio raccontarvi il come e il perché.
+
+37
+00:02:01,319 --> 00:02:07,969
+E per raccontarvi il come e il perché devo fare una piccola
+digressione tecnica che magari potrebbe anche interessarmi.
+
+38
+00:02:07,969 --> 00:02:10,000
+Oggi voglio parlarvi di slow motion.
+
+39
+00:02:10,000 --> 00:02:11,259
+Che cos'è lo slow motion?
+
+40
+00:02:11,259 --> 00:02:14,180
+Fondamentalmente è mostrare delle immagini a rallentatore,
+
+41
+00:02:14,180 --> 00:02:15,710
+dei video a rallentatore.
+
+42
+00:02:15,710 --> 00:02:16,569
+Ne siamo consci,
+
+43
+00:02:16,569 --> 00:02:20,844
+lo guardiamo tutte le volte quando vediamo dei filmati che
+
+44
+00:02:20,844 --> 00:02:25,698
+qualcosa non è in tempo reale ma è rallentata e dal punto di vista
+
+45
+00:02:25,698 --> 00:02:30,189
+comunicativo il rallentity consente di vedere meglio l'azione.
+
+46
+00:02:30,189 --> 00:02:33,680
+Stiamo pensando al replay di un'azione,
+
+47
+00:02:33,680 --> 00:02:38,557
+di una partita di calcio o di pallacanestro o di qualsiasi altro sport
+
+48
+00:02:38,557 --> 00:02:43,229
+e di conseguenza rendere il tutto molto più fluido perché qualsiasi
+
+49
+00:02:43,229 --> 00:02:47,007
+movimento scattoso diventa molto più fluido rallentato
+
+50
+00:02:47,007 --> 00:02:50,580
+e infine enfaticamente rende il movimento più epico.
+
+51
+00:02:50,580 --> 00:02:59,639
+Se ci pensate bene tutti tutti i film epici degli ultimi tempi
+hanno una scena a rallentatore per enfatizzare un certo momento.
+
+52
+00:02:59,639 --> 00:03:00,490
+Vabbè,
+
+53
+00:03:00,490 --> 00:03:02,150
+ma a parte tutto questo,
+
+54
+00:03:02,150 --> 00:03:08,710
+io ho sempre girato gli spot televisivi di
+oggetti inanimati sempre con movimento.
+
+55
+00:03:08,710 --> 00:03:15,960
+Io credo che non possa esistere un video in
+cui un'inquadratura è doppiamente statica.
+
+56
+00:03:15,960 --> 00:03:17,319
+Difficilmente,
+
+57
+00:03:17,319 --> 00:03:26,060
+molto ma molto ma molto difficilmente io come regista tengo la
+camera fissa su un cavalletto perché mi manca il dinamismo.
+
+58
+00:03:26,060 --> 00:03:31,160
+Cioè il grande vantaggio del video del cinema rispetto alla fotografia
+
+59
+00:03:31,160 --> 00:03:35,542
+è quello di mostrare il movimento e quanto più movimento c'è
+
+60
+00:03:35,542 --> 00:03:39,709
+in maniera comunque armonica e più il video ha un senso e
+
+61
+00:03:39,709 --> 00:03:44,019
+acquista secondo me anche valore anche potenza comunicativa.
+
+62
+00:03:44,020 --> 00:03:48,669
+Quando giro degli spot come questi o utilizzo la camera su uno slider,
+
+63
+00:03:48,669 --> 00:03:50,270
+cioè tengo gli oggetti fissi,
+
+64
+00:03:50,270 --> 00:03:55,439
+muovo la camera in modo tale da dare un effetto
+di parallasse o nel caso di questo spot,
+
+65
+00:03:55,439 --> 00:03:58,000
+in alcuni inquadratori di questo spot,
+
+66
+00:03:58,000 --> 00:03:59,319
+tengo gli oggetti fissi,
+
+67
+00:03:59,319 --> 00:04:03,935
+cioè tengo la camera fissa su un cavalletto e gli oggetti rotanti su una
+
+68
+00:04:03,935 --> 00:04:08,550
+piattaforma rotante in modo tale che il movimento rotatorio del soggetto
+
+69
+00:04:08,550 --> 00:04:13,040
+consenta di vederne tanti dettagli e enfatizzarne la tridimensionalità.
+
+70
+00:04:13,040 --> 00:04:16,399
+Si utilizzano delle luci più o meno drammatiche,
+
+71
+00:04:16,399 --> 00:04:19,199
+nel senso che non c'è una diffusione unica,
+
+72
+00:04:19,199 --> 00:04:23,970
+una luce bella morbida ma di solito si utilizzano delle luci di taglio laterali,
+
+73
+00:04:23,970 --> 00:04:26,189
+non troppo dure però comunque laterali,
+
+74
+00:04:26,189 --> 00:04:31,740
+in modo tale che i piccoli dettagli tridimensionali
+dei modelli vengano enfatizzati dalle ombre,
+
+75
+00:04:31,740 --> 00:04:33,050
+dal chiaroscuro,
+
+76
+00:04:33,050 --> 00:04:35,680
+per cui c'è un certo contrasto ricercato.
+
+77
+00:04:35,680 --> 00:04:39,500
+Anche per esempio se immaginiamo una superficie metallica,
+
+78
+00:04:39,500 --> 00:04:41,000
+dunque pseudo riflettente,
+
+79
+00:04:41,000 --> 00:04:45,829
+aggiungere dei piccoli riflessi o delle piccole
+luci dalla parte opposta della luce principale,
+
+80
+00:04:45,829 --> 00:04:50,446
+genera quei riflessi che si muovono in senso contrario e enfatizzano i punti
+
+81
+00:04:50,446 --> 00:04:54,703
+luce delle superfici più lisce e di conseguenza anche quelle che hanno
+
+82
+00:04:54,703 --> 00:04:58,840
+meno dettaglio ma hanno tridimensionalità perché sono un po' bombate,
+
+83
+00:04:58,840 --> 00:05:00,990
+immaginatevi il serbatoio di una moto,
+
+84
+00:05:00,990 --> 00:05:02,480
+vengono enfatizzate.
+
+85
+00:05:02,480 --> 00:05:09,300
+Per cui io quando faccio questi spot giro queste cose con camera in
+movimento oppure con camera fissa ma con oggetto in movimento rotatorio,
+
+86
+00:05:09,300 --> 00:05:11,800
+in modo da enfatizzarne la tridimensionalità.
+
+87
+00:05:12,060 --> 00:05:16,980
+Questo è una questione di stile ma tendenzialmente
+quasi tutti gli spot vengono fatti in questo modo,
+
+88
+00:05:16,980 --> 00:05:18,600
+quelli di questo tipo.
+
+89
+00:05:18,600 --> 00:05:20,279
+Perché lavorare sul ralenti?
+
+90
+00:05:20,279 --> 00:05:25,370
+Io utilizzo moltissimo il ralenti proprio
+perché così posso enfatizzare i movimenti,
+
+91
+00:05:25,370 --> 00:05:29,977
+soprattutto perché se stiamo parlando di oggetti reali è un conto ma i modelli
+
+92
+00:05:29,977 --> 00:05:34,469
+sono piccoli e di conseguenza anche uno spostamento di un millimetro risulta
+
+93
+00:05:34,469 --> 00:05:38,143
+essere ingrandito molto perché la camera deve ingrandire molto
+
+94
+00:05:38,143 --> 00:05:41,759
+il modello perché sembri più grosso di quello che è in realtà.
+
+95
+00:05:41,759 --> 00:05:45,800
+Anche il singolo dettaglio con un millimetro
+può comportare un grande spostamento.
+
+96
+00:05:45,800 --> 00:05:51,149
+Allora di solito io utilizzo il ralenti per diminuire questo spostamento.
+
+97
+00:05:51,149 --> 00:05:58,949
+Mettiamo caso che la rotazione del modello
+sul piatto rotante è di 360° in 30 secondi,
+
+98
+00:05:58,949 --> 00:06:02,410
+mediamente il mio rotatore è così,
+
+99
+00:06:02,410 --> 00:06:05,680
+significa che abbiamo 36° ogni 3 secondi,
+
+100
+00:06:05,680 --> 00:06:07,480
+12° al secondo.
+
+101
+00:06:07,480 --> 00:06:10,250
+Non sono pochi 12° al secondo,
+
+102
+00:06:10,250 --> 00:06:15,829
+se volete sapere che cos'è 12° sappiate che i 5 minuti di un orologio sono 15°,
+
+103
+00:06:15,829 --> 00:06:17,399
+per cui non sono pochi,
+
+104
+00:06:17,399 --> 00:06:22,959
+soprattutto se enfatizzati e ingranditi
+tantissimo dalle inquadrature molto ravvicinate.
+
+105
+00:06:22,959 --> 00:06:31,339
+Allora la mia idea è quella di rallentare in modo tale da
+non avere questi 12° al secondo ma avere 6° al secondo,
+
+106
+00:06:31,339 --> 00:06:32,360
+3° al secondo,
+
+107
+00:06:32,360 --> 00:06:39,230
+in questo modo il movimento è più lento più morbido e
+di conseguenza anche i dettagli si percepiscono di più.
+
+108
+00:06:39,230 --> 00:06:41,089
+Come si fa a fare lo slow motion,
+
+109
+00:06:41,089 --> 00:06:41,720
+i rallenti?
+
+110
+00:06:41,720 --> 00:06:47,740
+Vi racconto prima storicamente come si è sempre fatto
+e poi dopo come la tecnologia è avanzata in questo.
+
+111
+00:06:47,740 --> 00:06:52,080
+Storicamente si è sempre fatto con quello
+che viene chiamato overcranking al cinema.
+
+112
+00:06:52,080 --> 00:06:53,540
+Torniamo all'origine.
+
+113
+00:06:53,540 --> 00:06:54,139
+Cinema,
+
+114
+00:06:54,139 --> 00:06:55,360
+la pellicola,
+
+115
+00:06:55,360 --> 00:06:58,610
+la pellicola viene proiettata a 24 fotogrammi al secondo,
+
+116
+00:06:58,610 --> 00:07:02,019
+cioè 24 fotografie che vengono proiettate al secondo.
+
+117
+00:07:02,019 --> 00:07:04,800
+Ora i tecnici di cinema sanno che non è esattamente così,
+
+118
+00:07:04,800 --> 00:07:06,990
+ci sono due imprecisioni in questa frase,
+
+119
+00:07:06,990 --> 00:07:10,759
+ma in prima approssimazione immaginatevi questa cosa qua,
+
+120
+00:07:10,759 --> 00:07:16,910
+una fotografia che viene proiettata dura un ventiquattresimo
+di secondo e dopo passa alla fotografia successiva.
+
+121
+00:07:16,910 --> 00:07:21,040
+Per praticità di calcoli oggi parleremo di 25 fotogrammi al secondo,
+
+122
+00:07:21,040 --> 00:07:21,420
+ok?
+
+123
+00:07:21,420 --> 00:07:25,600
+Ma solo perché così è più comodo fare i calcoli e raccontarvi a voi.
+
+124
+00:07:25,600 --> 00:07:30,189
+25 fotogrammi al secondo significa che ogni fotogramma viene preso a 0,
+
+125
+00:07:30,149 --> 00:07:32,959
+04 secondi dal fotogramma precedente.
+
+126
+00:07:32,959 --> 00:07:36,800
+È un po' come se noi immortalassimo la realtà ogni 0,
+
+127
+00:07:36,680 --> 00:07:38,069
+04 secondi,
+
+128
+00:07:38,069 --> 00:07:38,720
+ok?
+
+129
+00:07:38,720 --> 00:07:43,790
+Per cui se io devo fare un secondo di cinema a 25 fotogrammi al secondo,
+
+130
+00:07:43,790 --> 00:07:46,519
+devo scattare 25 fotografie,
+
+131
+00:07:46,519 --> 00:07:48,629
+una fotografia all'istante 0,
+
+132
+00:07:48,629 --> 00:07:50,230
+seconda fotografia 0,
+
+133
+00:07:50,089 --> 00:07:50,860
+04,
+
+134
+00:07:50,860 --> 00:07:52,259
+terza fotografia 0,
+
+135
+00:07:52,120 --> 00:07:53,040
+08,
+
+136
+00:07:53,040 --> 00:07:54,129
+quarta fotografia 0,
+
+137
+00:07:54,000 --> 00:07:56,399
+12 eccetera eccetera eccetera,
+
+138
+00:07:56,399 --> 00:07:56,620
+ok?
+
+139
+00:07:56,620 --> 00:07:58,759
+Giro a 25 fotogrammi al secondo,
+
+140
+00:07:58,759 --> 00:08:02,149
+proietto 25 fotogrammi al secondo uno a uno,
+
+141
+00:08:02,149 --> 00:08:02,759
+ok?
+
+142
+00:08:02,759 --> 00:08:04,250
+Se io faccio l'overcranking,
+
+143
+00:08:04,250 --> 00:08:07,269
+cioè io giro a una frequenza di fotogrammi superiore,
+
+144
+00:08:07,269 --> 00:08:08,100
+cosa succede?
+
+145
+00:08:08,100 --> 00:08:15,680
+Mettiamo che invece di girare a 25 fotogrammi al secondo
+giri 50 fotogrammi al secondo scatto una fotografia ogni 0,
+
+146
+00:08:15,519 --> 00:08:19,663
+02 secondi ok il tempo di proiezione è sempre lo stesso per
+
+147
+00:08:19,663 --> 00:08:23,945
+cui sempre 25 fotogrammi al secondo ma se io in un secondo ho
+
+148
+00:08:23,945 --> 00:08:28,089
+girato 50 fotogrammi proiettandoli 25 fotogrammi al secondo
+
+149
+00:08:28,089 --> 00:08:32,440
+diventeranno due secondi ok per cui quello che io ho preso a 0,
+
+150
+00:08:32,250 --> 00:08:33,509
+02 0,
+
+151
+00:08:33,500 --> 00:08:34,620
+04 0,
+
+152
+00:08:34,370 --> 00:08:36,879
+06 viene mostrato 0,
+
+153
+00:08:36,779 --> 00:08:38,039
+04 0,
+
+154
+00:08:37,789 --> 00:08:39,000
+08 0,
+
+155
+00:08:38,840 --> 00:08:43,327
+12 di conseguenza una dilatazione del tempo ho ottenuto essenzialmente un
+
+156
+00:08:43,327 --> 00:08:48,058
+rallenty un rallentamento del 50 per cento lo slow motion più classico poi si
+
+157
+00:08:48,058 --> 00:08:52,788
+possono fare tutti i tipi di moltiplicazioni io spesso e volentieri giro a 60
+
+158
+00:08:52,788 --> 00:08:57,580
+fotogrammi al secondo per poter andare a 25 fotogrammi al secondo 25 perché lo
+
+159
+00:08:57,580 --> 00:09:02,189
+standard televisivo pal e a 25 fotogrammi al secondo questo è se vi pare 60
+
+160
+00:09:02,189 --> 00:09:07,041
+diviso 25 fa non mi ricordo più quella proporzione 12 quinti insomma abbiamo un
+
+161
+00:09:07,041 --> 00:09:11,953
+rallenty ancora più più rallentato perché io giro questo questo rallenty così in
+
+162
+00:09:11,953 --> 00:09:16,623
+questo modo i movimenti sono molto più minimali e soprattutto posso lavorare
+
+163
+00:09:16,623 --> 00:09:21,535
+molto sul cambio del tempo magari a velocizzare alcune parti e rallentarne altre
+
+164
+00:09:21,535 --> 00:09:26,448
+avendo comunque molte più informazioni possibili potrei lavorare a 120 sì ma non
+
+165
+00:09:26,448 --> 00:09:31,178
+ho un strumento che me lo faccia fare a 4k giro anche in 4k perché così posso
+
+166
+00:09:31,178 --> 00:09:36,091
+avere molta più risoluzione e posso fare reframing posso insomma alla fine ho un
+
+167
+00:09:36,091 --> 00:09:41,003
+fotogramma molto più più dettagliato è molto più nitido questo è quello che si è
+
+168
+00:09:41,003 --> 00:09:45,612
+sempre fatto nel cinema si fa overcranking per poi rallentare mantenendo la
+
+169
+00:09:45,612 --> 00:09:50,100
+frequenza di proiezione identica non è sempre una cosa che viene fatta in
+
+170
+00:09:50,100 --> 00:09:54,831
+maniera esplicita pensiamo al film 300 di zack snyder è molto evidente quando
+
+171
+00:09:54,831 --> 00:09:59,379
+c'è il momento del rallenty perché a volte è quasi è quasi statico o anche
+
+172
+00:09:59,379 --> 00:10:03,746
+matrix ma in altri film invece questa cosa viene sfruttata per dare più
+
+173
+00:10:03,746 --> 00:10:08,355
+pesantezza ai movimenti senza che sia percepibile il film braveheart di mel
+
+174
+00:10:08,355 --> 00:10:12,722
+gibson le scene di battaglia sono state girate se non ricordo a 28 o 30
+
+175
+00:10:12,722 --> 00:10:17,573
+fotogrammi al secondo proprio per dare quel minimo dei ralenti del 20 per cento
+
+176
+00:10:17,573 --> 00:10:22,365
+impercettibile dal punto di vista della cioè non si sta capendo che è una cosa
+
+177
+00:10:22,365 --> 00:10:26,731
+rallentata però fa sentire le armi più pesanti il combattimento più più
+
+178
+00:10:26,731 --> 00:10:31,583
+inerziale ok sappiate che è un trucco che si usa sempre nella storia del cinema
+
+179
+00:10:31,583 --> 00:10:36,253
+questo si è sempre fatto così fino all'avento della delle camere digitali le
+
+180
+00:10:36,253 --> 00:10:40,983
+camere digitali soprattutto all'inizio avevano dei grossi limiti non potevano
+
+181
+00:10:40,983 --> 00:10:45,774
+girare ad alte frequenze di fotogrammi per cui potevano andare a 24 fotogrammi
+
+182
+00:10:45,774 --> 00:10:50,384
+al secondo non potevano andare a 50 perché non ci stavano non avevano banda
+
+183
+00:10:50,384 --> 00:10:55,114
+c'erano un sacco di limiti e allora sono stati sviluppati degli algoritmi per
+
+184
+00:10:55,114 --> 00:10:59,723
+cercare di interpolare fotogrammi in modo tale da far sì che se parti da 25
+
+185
+00:10:59,723 --> 00:11:04,454
+fotogrammi vuoi averne 50 i 25 che crei sono una sorta di blend fatto bene in
+
+186
+00:11:04,454 --> 00:11:08,820
+maniera sensata degli originali inizialmente si faceva un rallentamento
+
+187
+00:11:08,820 --> 00:11:13,490
+tendenzialmente era dimezzando mostrando due volte lo stesso fotogramma però
+
+188
+00:11:13,490 --> 00:11:18,160
+questa roba faceva vedere che era una cosa molto scattosa poi si è fatto una
+
+189
+00:11:18,160 --> 00:11:22,830
+cross dissolve tra fotogrammi però anche questo già generava un effetto scia
+
+190
+00:11:22,830 --> 00:11:27,621
+poco bello molto molto poco esteticamente appagante il primo algoritmo sensato
+
+191
+00:11:27,621 --> 00:11:32,291
+che è stato portato per realizzare questo tipo di cose si chiamava si chiama
+
+192
+00:11:32,291 --> 00:11:37,082
+tuttora optical flow optical flow si basa sulla stessa ricerca che viene fatta
+
+193
+00:11:37,082 --> 00:11:41,995
+per la comprensione delle immagini in pratica optical flow prende due fotogrammi
+
+194
+00:11:41,995 --> 00:11:46,786
+consecutivi quelli reali girati e per ogni pixel del primo fotogramma cerca di
+
+195
+00:11:46,786 --> 00:11:51,516
+capire dove sta il pixel nel fotogramma successivo andando a fare una ricerca
+
+196
+00:11:51,516 --> 00:11:56,307
+locale e di conseguenza generando una sorta di vettore di spostamento per ogni
+
+197
+00:11:56,307 --> 00:11:59,279
+singolo pixel di conseguenza se io ho un vettore
+
+198
+00:11:59,279 --> 00:12:02,130
+di spostamento so che il pixel a coordinate 10,
+
+199
+00:12:02,000 --> 00:12:05,309
+10 nel fotogramma successivo sta a 20,
+
+200
+00:12:05,179 --> 00:12:08,740
+20 a metà strada il pixel si troverà a 15,
+
+201
+00:12:08,629 --> 00:12:13,452
+15 per cui per ogni singolo pixel viene creata una sorta di mappa di distorsione
+
+202
+00:12:13,452 --> 00:12:18,275
+totale dell'immagine in modo tale che si possa sapere si possa andare a creare a
+
+203
+00:12:18,275 --> 00:12:22,800
+creare dei fotogrammi intermedi questa cosa funziona abbastanza bene su dei
+
+204
+00:12:22,800 --> 00:12:27,385
+movimenti relativamente lenti non troppo esagerati soprattutto quando non ci
+
+205
+00:12:27,385 --> 00:12:32,088
+sono effetti di parallasse cioè se io sto riprendendo qualcuno che si muove su
+
+206
+00:12:32,088 --> 00:12:36,494
+uno sfondo statico funziona se io sto riprendendo uno sfondo con camera e
+
+207
+00:12:36,494 --> 00:12:41,079
+movimento funziona se io una persona che si muove e il movimento si muove in
+
+208
+00:12:41,079 --> 00:12:45,842
+senso contrario perché la camera si muove in senso contrario allora l'effetto è
+
+209
+00:12:45,842 --> 00:12:50,665
+diciamo che abbiamo dei grossi problemi oppure quando c'è molto movimento questo
+
+210
+00:12:50,665 --> 00:12:55,368
+è stato vero fino a un anno fa per me perché utilizzavo l'algoritmo di optical
+
+211
+00:12:55,368 --> 00:12:59,953
+flow di adobe after effects che è uno dei migliori prima si usava twixtor ma
+
+212
+00:12:59,953 --> 00:13:02,870
+adesso diciamo che la differenza qualitativa tra
+
+213
+00:13:02,870 --> 00:13:05,550
+twixtor e after effects è ormai trascurabile.
+
+214
+00:13:05,549 --> 00:13:09,907
+Un anno fa apple ha presentato l'ultima versione di final cut pro la versione 11
+
+215
+00:13:09,907 --> 00:13:14,104
+che aggiungeva una nuova feature utilizzare un modello di machine learning di
+
+216
+00:13:14,104 --> 00:13:18,193
+intelligenza artificiale per fare l'interpolazione tra fotogrammi che io ho
+
+217
+00:13:18,193 --> 00:13:22,228
+provato così un passant e devo dire che dà dei risultati anche migliori in
+
+218
+00:13:22,228 --> 00:13:26,425
+pratica è una sorta di evoluzione basata sull' intelligenza artificiale su un
+
+219
+00:13:26,425 --> 00:13:30,675
+modello che secondo me non è anche troppo complesso che mi piacerebbe scoprire
+
+220
+00:13:30,675 --> 00:13:34,925
+qual è perché apple non inventa niente che genera fa la stessa cosa che faceva
+
+221
+00:13:34,925 --> 00:13:39,068
+l'optical flow utilizzando l'intelligenza artificiale di conseguenza creando
+
+222
+00:13:39,068 --> 00:13:42,188
+questa mappa di spostamento dei pixel però essendo basata
+
+223
+00:13:42,188 --> 00:13:45,363
+sull'intelligenza artificiale funziona un po meglio quando
+
+224
+00:13:45,363 --> 00:13:48,429
+abbiamo degli oggetti che si sovrappongono in parallasse.
+
+225
+00:13:48,429 --> 00:13:52,900
+Allora l'ho usata in un altro video mi ha funzionato abbastanza ovviamente
+
+226
+00:13:52,900 --> 00:13:57,668
+quando i movimenti sono esagerati va in crisi anche lei però quando i movimenti
+
+227
+00:13:57,668 --> 00:14:02,436
+sono contenuti la qualità era abbastanza sensata e allora durante le riprese di
+
+228
+00:14:02,436 --> 00:14:07,145
+questo spot ho detto facciamo una cosa proviamo a fare delle riprese di questi
+
+229
+00:14:07,145 --> 00:14:11,674
+oggetti di provare a fare il rallenty immediatamente subito dopo le riprese
+
+230
+00:14:11,674 --> 00:14:16,085
+cioè con il file in mano e vedere cosa cosa succede solo che mi son detto
+
+231
+00:14:16,085 --> 00:14:20,317
+questi oggetti questi questi oggetti sono molto piccoli di conseguenza
+
+232
+00:14:20,317 --> 00:14:24,369
+riprenderli è difficile e soprattutto ho una perdita di risoluzione.
+
+233
+00:14:24,370 --> 00:14:29,472
+Cosa ho fatto invece di fare un video ho deciso di scattare delle foto a raffica
+
+234
+00:14:29,472 --> 00:14:34,449
+ho preso una macchina fotografica una canon eos 60d niente di trascendentale e
+
+235
+00:14:34,449 --> 00:14:39,363
+di scattare foto a raffica ovvero quando tenete premuto il pulsante fate clic
+
+236
+00:14:39,363 --> 00:14:44,340
+clic clic clic ok le raffiche della 60d non sono come quelle della 7d che sono
+
+237
+00:14:44,340 --> 00:14:49,443
+molto più pensate per riprese sportive però devo dire che diciamo che riuscivo a
+
+238
+00:14:49,443 --> 00:14:54,483
+scattare una raffica di 6 fotografie in un secondo 6 fotogrammi ok 6 fotogrammi
+
+239
+00:14:54,483 --> 00:14:59,523
+in un secondo allora ho fatto questa cosa qui facevo le fotografie dei dettagli
+
+240
+00:14:59,523 --> 00:15:04,563
+la macchina fotografica 18 megapixel per cui fate conto che sono immagini in 5k
+
+241
+00:15:04,563 --> 00:15:09,288
+5000 per 3000 più o meno facendo queste fotografie poi andando a rimappare
+
+242
+00:15:09,288 --> 00:15:14,076
+queste fotografie in 1080 cioè facendo uno zoom dentro riuscivo ad avere un
+
+243
+00:15:14,076 --> 00:15:18,990
+ingrandimento eccezionale dei dettagli che comunque sono molto belli dettagli
+
+244
+00:15:18,990 --> 00:15:23,967
+dei modelli immaginate che l'inquadratura o un'inquadratura poteva prendere un
+
+245
+00:15:23,967 --> 00:15:29,006
+taglio di circa due centimetri in altezza che poi riportate su un televisore da
+
+246
+00:15:29,006 --> 00:15:33,731
+40 pollici è una cosa non indifferente avere un dettaglio di questo tipo e
+
+247
+00:15:33,731 --> 00:15:38,708
+praticamente chiunque guarderà questi filmati lo farà sul televisore di casa e
+
+248
+00:15:38,708 --> 00:15:43,055
+quasi tutti hanno un televisore da almeno 40 pollici in casa per cui
+
+249
+00:15:43,055 --> 00:15:48,095
+l'enfatizzazione del dettaglio è bella anche perché se questi dettagli sembrano
+
+250
+00:15:48,095 --> 00:15:53,135
+così grandi il modello sembra così grande ho fatto questa serie di fotografie 6
+
+251
+00:15:53,135 --> 00:15:57,986
+fotografie portavo queste 6 fotografie in after effects e generavo creavo un
+
+252
+00:15:57,986 --> 00:16:03,089
+video di 6 fotogrammi giustamente andando a stabilizzare l'immagine cioè andando
+
+253
+00:16:03,089 --> 00:16:07,751
+praticamente a tenere un dettaglio fisso e poi andare a fare un minimo di
+
+254
+00:16:07,751 --> 00:16:12,791
+contromovimento molto lieve andando a specificare che questo video era un video
+
+255
+00:16:12,791 --> 00:16:17,831
+a 25 fotogrammi al secondo perché quando scattate delle fotografie e le portate
+
+256
+00:16:17,831 --> 00:16:22,556
+dentro un programma di montaggio programma di montaggio devi dire sì ok ma
+
+257
+00:16:22,556 --> 00:16:26,903
+quanto dura ogni singola fotografia gli dico ogni fotografia dura un
+
+258
+00:16:26,903 --> 00:16:32,005
+venticinquesimo alla fine io facevo dei filmati ho provato a fare un filmato che
+
+259
+00:16:32,005 --> 00:16:36,478
+durava 6 venticinquesimi di secondo sei fotogrammi ognuno dei quali 25
+
+260
+00:16:36,478 --> 00:16:40,951
+fotogrammi al secondo a questo punto prendevo questo filmato esportato
+
+261
+00:16:40,951 --> 00:16:45,928
+stabilizzato centrato eccetera eccetera eccetera eccetera e applicavo a questo
+
+262
+00:16:45,928 --> 00:16:51,031
+punto la l'interpolazione con l'intelligenza artificiale di apple e ho allungato
+
+263
+00:16:51,031 --> 00:16:55,945
+questo filmato dal 6 venticinquesimi di secondo che sono un quarto di secondo
+
+264
+00:16:55,945 --> 00:17:00,733
+più o meno e allungavo due secondi e in tempo reale sul set perché mi porto
+
+265
+00:17:00,733 --> 00:17:05,458
+sempre il computer sul set sempre devo sempre riguardare le cose a schermo
+
+266
+00:17:05,458 --> 00:17:10,435
+grande prima di dire con inquadratura l'ho fatta bene a questo punto vedevo la
+
+267
+00:17:10,435 --> 00:17:15,223
+cosa era naturalissima questo movimento era perfetto assolutamente perfetto
+
+268
+00:17:15,223 --> 00:17:20,137
+l'intelligenza artificiale con questo tipo di contromovimento aveva raggiunto
+
+269
+00:17:20,137 --> 00:17:25,114
+l'optimum sono stato basito entusiasta ero proprio mi sono messo a cantare sul
+
+270
+00:17:25,114 --> 00:17:29,965
+set cavoli che figata ho fatto vedere il risultato a tutti quanti ed eravamo
+
+271
+00:17:29,965 --> 00:17:35,067
+talmente contenti che abbiamo deciso di dirà di girare velocemente i dettagli di
+
+272
+00:17:35,067 --> 00:17:39,729
+tutte le moto 15 modelli di moto per ogni modello ho girato una decina di
+
+273
+00:17:39,729 --> 00:17:44,832
+dettagli diversi il manubrio la ruota anteriore la ruota posteriore la catena la
+
+274
+00:17:44,832 --> 00:17:49,746
+parte del motore la parte sopra il serbatoio tutto arrivando appunto ad avere
+
+275
+00:17:49,746 --> 00:17:54,408
+tantissimi dettagli da cui scegliere anche perché poi queste informazioni
+
+276
+00:17:54,408 --> 00:17:59,322
+volendo post potrebbero essere utilizzate nella comunicazione social sul sito
+
+277
+00:17:59,322 --> 00:18:04,299
+noi questa cosa abbiamo girato e poi in qualche modo vedremo se tra virgolette
+
+278
+00:18:04,299 --> 00:18:08,835
+rivendergliela è stato illuminante per cui per una volta l'intelligenza
+
+279
+00:18:08,835 --> 00:18:13,560
+artificiale mi è venuto in aiuto un altro modello ancora un altro storment
+
+280
+00:18:13,560 --> 00:18:18,663
+ancora mi è venuto in aiuto però questa volta in fase di produzione e sono molto
+
+281
+00:18:18,663 --> 00:18:23,766
+felice di questa cosa qui questa forse è stata la grande scoperta di questo spot
+
+282
+00:18:23,766 --> 00:18:28,869
+vi sto dicendo un segreto interessantissimo ma credo che tutti possiate possiate
+
+283
+00:18:28,869 --> 00:18:33,720
+comprenderlo questo è stato la il momento chiave direi che per oggi ho detto
+
+284
+00:18:33,720 --> 00:18:38,822
+tutto quello che dovevo dire per cui vi do appuntamento alla prossima puntata in
+
+285
+00:18:38,822 --> 00:18:43,925
+cui vi racconterò se e come l'intelligenza artificiale influisce e impatta anche
+
+286
+00:18:43,925 --> 00:18:48,965
+nel processo di post produzione grazie di avermi seguito e rilascio la rilascio
+
+287
+00:18:48,965 --> 00:18:53,753
+la parola rilascio il microfono a valerio ciao grazie mille alex ancora una
+
+288
+00:18:53,753 --> 00:18:58,856
+volta un contenuto super interessante e soprattutto spiegato in modo così chiaro
+
+289
+00:18:58,856 --> 00:19:03,707
+che l'ho capito perfino io che di prodotti video non so praticamente un tubo
+
+290
+00:19:03,707 --> 00:19:08,621
+quindi veramente grazie a te che hai ascoltato invece ricordo che questo è il
+
+291
+00:19:08,621 --> 00:19:13,724
+secondo di quattro episodi a cura di alex che usciranno nelle prossime settimane
+
+292
+00:19:13,724 --> 00:19:18,323
+sempre qui su pensieri in codice per la nuova rubrica pensieri in codice
+
+293
+00:19:18,323 --> 00:19:23,237
+community edition in cui sono gli ascoltatori stessi del podcast a parlare di
+
+294
+00:19:23,237 --> 00:19:28,340
+ciò che conoscono e che li affascina quindi e solo ora mi rendo conto che non lo
+
+295
+00:19:28,340 --> 00:19:32,624
+dico quasi mai ma se non vuoi perderti le nuove uscite ricordati di
+
+296
+00:19:32,624 --> 00:19:36,719
+iscriverti trovi questo podcast su tutte le maggiori piattaforme
+
+297
+00:19:36,719 --> 00:19:40,939
+apple podcast spotify youtube eccetera e sul sito pensieriincodice.
+
+298
+00:19:40,650 --> 00:19:46,537
+it mi raccomando con due i per ascoltare invece tutti gli altri contenuti
+
+299
+00:19:46,537 --> 00:19:52,585
+prodotti da alex raccuglia e ti assicuro che sono davvero tanti variegati e
+
+300
+00:19:52,585 --> 00:19:58,711
+soprattutto interessanti ti lascio in descrizione un po di link da esplorare
+
+301
+00:19:58,711 --> 00:20:04,679
+infine ricorda che pensieri in codice è un progetto indipendente che porto
+
+302
+00:20:04,679 --> 00:20:11,124
+avanti esclusivamente a scopo divulgativo con le mie risorse personali e nel mio
+
+303
+00:20:11,124 --> 00:20:17,330
+tempo libero e che pertanto ha bisogno del tuo supporto per andare avanti noi
+
+304
+00:20:17,330 --> 00:20:23,775
+qui e con noi intendo sia io che la community abbiamo abbracciato ormai da un po
+
+305
+00:20:23,775 --> 00:20:29,663
+di tempo la filosofia value for value che in pratica vuol dire che tu che
+
+306
+00:20:29,663 --> 00:20:36,028
+ascolti non devi pagare nulla non devi ascoltare pubblicità non vieni tracciato
+
+307
+00:20:36,028 --> 00:20:42,075
+e non cedi i tuoi dati però in cambio io ti chiedo di fermarti un secondo a
+
+308
+00:20:42,075 --> 00:20:48,043
+riflettere su quanto questo progetto vale per te hai imparato qualcosa hai
+
+309
+00:20:48,043 --> 00:20:54,329
+pensato wow a questo non ci avevo pensato ti è scappato un sorriso bene allora
+
+310
+00:20:54,329 --> 00:21:00,376
+forse pensieri in codice ti ha dato qualcosa in cambio se vuoi senza nessun
+
+311
+00:21:00,376 --> 00:21:06,264
+obbligo e mi raccomando puoi pensare di restituire in qualche modo quella
+
+312
+00:21:06,264 --> 00:21:12,629
+piccola unità di valore puoi farlo in vari modi con una donazione lasciando una
+
+313
+00:21:12,629 --> 00:21:18,438
+recensione facendo conoscere il progetto ad altri potenziali ascoltatori
+
+314
+00:21:18,438 --> 00:21:24,564
+aiutando con la gestione dei social oppure puoi fare come sta facendo alex e
+
+315
+00:21:24,564 --> 00:21:30,930
+prestare in qualche modo il tuo talento quindi se hai un'idea o un argomento di
+
+316
+00:21:30,930 --> 00:21:37,056
+cui ti piacerebbe parlare nella rubrica pensieri in codice community edition
+
+317
+00:21:37,056 --> 00:21:40,557
+come ha fatto lui oggi scrivimi su telegram
+
+318
+00:21:40,557 --> 00:21:43,820
+o all'indirizzo valerio@pensieriincodice.
+
+319
+00:21:43,509 --> 00:21:49,235
+it e ne parliamo insieme dunque detto questo direi che possiamo anche salutarci
+
+320
+00:21:49,235 --> 00:21:54,889
+e darci appuntamento al prossimo episodio ma mi raccomando non dimenticare mai
+
+321
+00:21:54,889 --> 00:21:58,968
+che un informatico risolve problemi a volte anche usando
+
+322
+00:21:58,968 --> 00:22:02,690
+il computer Sottotitoli creati dalla comunità Amara.
+
+323
+00:22:02,619 --> 00:22:04,990
+org Sottotitoli creati dalla comunità Amara.
+
+324
+00:22:05,750 --> 00:22:08,960
+org Sottotitoli creati dalla comunità Amara.
+
+325
+00:22:08,690 --> 00:22:11,309
+org
+
