@@ -28,14 +28,15 @@ function convert_file($input_filename, $output_filename)
     ]));
 }
 
-$path = dirname(__FILE__) . '/../public/chapters/';
+$inputPath = dirname(__FILE__) . '/../raw/chapters/';
+$outputPath = dirname(__FILE__) . '/../public/chapters/';
 
-// Convert all files in the public/chapters directory
-$files = glob($path .'*.txt');
+// Convert all files in the raw/chapters directory
+$files = glob($inputPath .'*.txt');
 foreach ($files as $file) {
 
     // Output filename
-    $outputFilename = $path . pathinfo($file, PATHINFO_FILENAME) . '.json';
+    $outputFilename = $outputPath . pathinfo($file, PATHINFO_FILENAME) . '.json';
 
     // If output file exists, skip
     if (file_exists($outputFilename)) {
