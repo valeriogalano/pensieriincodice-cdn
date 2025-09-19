@@ -23,6 +23,10 @@ opencv_converter = OpenCVConverter()
 overlayer = Overlayer()
 
 
+def is_already_processed(episode_number: str):
+    return os.path.exists(f"../../public/covers/PIC{episode_number}.png")
+
+
 def download_frame(episode_tag: str):
     tag = ""
     if episode_tag != "untagged":
@@ -37,14 +41,6 @@ def download_frame(episode_tag: str):
     return frame_path
 
 
-def clean_up(paths: list[str]):
-    for a_path in paths:
-        try:
-            os.remove(a_path)
-        except FileNotFoundError:
-            pass
-
-
 def main():
     os.makedirs("tmp", exist_ok=True)
     frame_path = {}
@@ -57,15 +53,20 @@ def main():
 
         for cover in covers:
             cover_name = str(cover).split("/")[-1].split(".")[0]
+            episode_number = cover_name.split("-")[0]
+            if is_already_processed(episode_number):
+                logger.info("Cover %s already processed", cover_name)
+                continue
+
             cover_extension = str(cover).split(".")[-1]
             cover_path = f"{covers_dir}/{cover_name}.{cover_extension}"
             scaled_cover_path = (
-                f"{covers_dir}/{cover_name}_scaled.{cover_extension}"
+                f"tmp/{cover_name}_scaled.{cover_extension}"
             )
             converted_cover_path = (
-                f"{covers_dir}/{cover_name}_converted.{cover_extension}"
+                f"tmp/{cover_name}_converted.png"
             )
-            overlayed_cover_path = f"{covers_dir}/{cover_name}_final.{cover_extension}"
+            overlayed_cover_path = f"../../public/covers/PIC{cover_name}.png"
 
             episode_tag = "untagged"
             if "-" in cover_name:
@@ -95,7 +96,6 @@ def main():
                 overlayed_cover_path
             )
             logger.info("Cover %s formatted", cover_name)
-            clean_up([converted_cover_path, scaled_cover_path])
     finally:
         shutil.rmtree('tmp')
 
