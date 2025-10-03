@@ -1,0 +1,7 @@
+0.000000	0.000000	Introduzione
+99.097172	99.097172	C'era una volta l'Intelligenza Artificiale in Trentino
+417.753677	417.753677	AlFresco
+840.734956	840.734956	PEACH
+1126.434832	1126.434832	NNR Table
+1441.000168	1441.000168	L'intelligenza Artificiale secondo Oliviero Stock
+1820.342326	1820.342326	Conclusione

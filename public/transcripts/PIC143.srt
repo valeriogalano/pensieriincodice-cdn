@@ -1,0 +1,2346 @@
+1
+00:00:01,000 --> 00:00:03,606
+Oggi il termine "intelligenza artificiale"
+
+2
+00:00:03,606 --> 00:00:05,000
+è sulla bocca di tutti,
+
+3
+00:00:05,000 --> 00:00:06,000
+ma solo pochi decenni fa,
+
+4
+00:00:06,000 --> 00:00:12,000
+tante delle tecnologie che oggi sono date
+per scontate erano a dir poco sperimentali,
+
+5
+00:00:12,000 --> 00:00:13,460
+oppure pionieristiche,
+
+6
+00:00:13,460 --> 00:00:16,000
+o addirittura non ne esistevano proprio.
+
+7
+00:00:16,000 --> 00:00:17,239
+E troppo spesso,
+
+8
+00:00:17,239 --> 00:00:18,820
+di queste scintille,
+
+9
+00:00:18,820 --> 00:00:21,000
+di queste evoluzioni o genesi,
+
+10
+00:00:21,000 --> 00:00:28,000
+si perde traccia nel corso del tempo o nel marasma della
+corsa a sviluppare l'ultima e più avanzata versione,
+
+11
+00:00:28,000 --> 00:00:32,240
+che magari poco aggiunge in termini di valore reale,
+
+12
+00:00:32,240 --> 00:00:36,000
+ma viene puntualmente corroborata dall'ennesimo roboante annuncio.
+
+13
+00:00:36,000 --> 00:00:36,710
+Secondo me,
+
+14
+00:00:36,710 --> 00:00:37,250
+invece,
+
+15
+00:00:37,250 --> 00:00:42,000
+è sempre bene ricordare le storie interessanti sulle quali poggiano informatica,
+
+16
+00:00:42,000 --> 00:00:45,000
+software e tecnologie moderni.
+
+17
+00:00:45,000 --> 00:00:46,869
+Soprattutto se si tratta di idee,
+
+18
+00:00:46,869 --> 00:00:54,000
+invenzioni e lavori che hanno come unica colpa quella
+di essere stati concepiti e realizzati troppo presto,
+
+19
+00:00:54,429 --> 00:01:00,000
+prima che la società o il contesto tecnologico fossero pronti ad accoglierli.
+
+20
+00:01:00,000 --> 00:01:00,500
+Oggi,
+
+21
+00:01:00,500 --> 00:01:00,990
+quindi,
+
+22
+00:01:00,990 --> 00:01:05,607
+basandomi fortemente sul libro "Meglio artificiale che niente"
+
+23
+00:01:05,607 --> 00:01:07,000
+di Olivier Rostock,
+
+24
+00:01:07,000 --> 00:01:12,000
+importante esponente dell'intelligenza artificiale in Italia e non solo,
+
+25
+00:01:12,000 --> 00:01:19,000
+voglio raccontarti la storia di uno dei maggiori
+istituti europei per l'intelligenza artificiale,
+
+26
+00:01:19,000 --> 00:01:20,560
+che vide la luce,
+
+27
+00:01:20,560 --> 00:01:25,000
+pensa un po' a Trento a metà degli anni Ottanta.
+
+28
+00:01:25,000 --> 00:01:26,000
+Sigla!
+
+29
+00:01:30,750 --> 00:01:32,829
+Benvenuti su Pensieri in codice,
+
+30
+00:01:32,829 --> 00:01:34,750
+il podcast dove si ragiona da informatici.
+
+31
+00:01:34,750 --> 00:01:36,750
+Con Valerio Galano.
+
+32
+00:01:40,750 --> 00:01:47,909
+Il Trentino Alto Adige rivendica le ragioni della
+propria autonomia a partire dalla metà dell'Ottocento e,
+
+33
+00:01:47,909 --> 00:01:50,670
+negli anni Ottanta del secolo scorso,
+
+34
+00:01:50,670 --> 00:01:53,820
+periodo nel quale inizia la nostra storia,
+
+35
+00:01:53,819 --> 00:01:58,129
+gode già di uno status di autogoverno in moltissimi campi.
+
+36
+00:01:58,129 --> 00:02:04,159
+Nonostante in quegli anni non sia considerata
+esattamente un polo culturale d'eccellenza,
+
+37
+00:02:04,159 --> 00:02:10,569
+la provincia autonoma di Trento ospita industrie
+di rilievo e presenta una notevole efficienza,
+
+38
+00:02:10,569 --> 00:02:11,229
+dovuta,
+
+39
+00:02:11,229 --> 00:02:12,949
+oltre che all'autonomia,
+
+40
+00:02:12,949 --> 00:02:16,149
+anche ad una tradizione di buona amministrazione.
+
+41
+00:02:16,150 --> 00:02:18,300
+Ed è proprio in questo clima,
+
+42
+00:02:18,300 --> 00:02:21,110
+per l'esattezza nel 1982,
+
+43
+00:02:21,110 --> 00:02:21,570
+che,
+
+44
+00:02:21,569 --> 00:02:25,469
+si narra grazie ai buoni auspici di Romano Prodi,
+
+45
+00:02:25,469 --> 00:02:30,159
+che all'epoca è presidente dell'Istituto per la ricostruzione industriale,
+
+46
+00:02:30,159 --> 00:02:35,889
+due illustri personaggi di questa storia vengono messi in contatto fra loro.
+
+47
+00:02:35,889 --> 00:02:37,989
+Il primo è Bruno Kessler,
+
+48
+00:02:37,990 --> 00:02:38,759
+politico,
+
+49
+00:02:38,759 --> 00:02:41,569
+all'epoca sottosegretario all'interno,
+
+50
+00:02:41,569 --> 00:02:44,590
+ex presidente della provincia di Trento,
+
+51
+00:02:44,590 --> 00:02:46,269
+in carica per 14 anni,
+
+52
+00:02:46,269 --> 00:02:48,589
+poi senatore della Repubblica.
+
+53
+00:02:48,590 --> 00:02:50,430
+L'altro è Luigi Stringa,
+
+54
+00:02:50,430 --> 00:02:51,069
+fisico,
+
+55
+00:02:51,069 --> 00:02:57,370
+professore all'Università di Trento ed esperto
+di intelligenza artificiale e linguistica.
+
+56
+00:02:57,370 --> 00:02:59,069
+Come già detto,
+
+57
+00:02:59,069 --> 00:03:00,620
+sono gli anni '80,
+
+58
+00:03:00,620 --> 00:03:03,069
+ed è un periodo fervente per l'IA.
+
+59
+00:03:03,069 --> 00:03:04,629
+Nel 1985,
+
+60
+00:03:04,629 --> 00:03:05,509
+ad esempio,
+
+61
+00:03:05,509 --> 00:03:12,430
+si tiene a Los Angeles la nona edizione dell'International
+Joint Conference on Artificial Intelligence,
+
+62
+00:03:12,430 --> 00:03:15,759
+il più importante congresso mondiale sull'argomento,
+
+63
+00:03:15,759 --> 00:03:18,870
+e si registrano ben 8000 partecipanti.
+
+64
+00:03:18,870 --> 00:03:27,389
+Il mondo informatico e scientifico sta reagendo alla sfida lanciata
+dal Giappone di produrre una nuova classe di computer che,
+
+65
+00:03:27,389 --> 00:03:30,609
+oltre ad avere capacità di calcolo parallelo,
+
+66
+00:03:30,610 --> 00:03:34,620
+siano anche predisposti per il calcolo logico.
+
+67
+00:03:34,620 --> 00:03:34,949
+È,
+
+68
+00:03:34,949 --> 00:03:35,699
+di fatto,
+
+69
+00:03:35,699 --> 00:03:39,060
+una spinta strategica verso la diffusione dell'IA,
+
+70
+00:03:39,060 --> 00:03:41,939
+che prende il nome di Fifth Generation Computing,
+
+71
+00:03:41,939 --> 00:03:45,959
+e alla quale gli Stati Uniti non sono certo disposti a rinunciare.
+
+72
+00:03:45,959 --> 00:03:46,810
+Ne consegue,
+
+73
+00:03:46,810 --> 00:03:47,370
+quindi,
+
+74
+00:03:47,370 --> 00:03:52,930
+una risposta importante in termini di
+investimenti e attenzione anche in Occidente.
+
+75
+00:03:52,930 --> 00:03:54,650
+L'intuizione di Stringa,
+
+76
+00:03:54,650 --> 00:03:56,069
+in questo periodo,
+
+77
+00:03:56,069 --> 00:04:04,020
+è quella di approfittare della sua conoscenza con Kessler per
+proporre la costruzione di un nuovo istituto di ricerca a Trento,
+
+78
+00:04:04,020 --> 00:04:06,060
+che abbia come tema principale,
+
+79
+00:04:06,060 --> 00:04:06,710
+appunto,
+
+80
+00:04:06,710 --> 00:04:09,180
+quello dell'intelligenza artificiale,
+
+81
+00:04:09,180 --> 00:04:10,229
+e in secondo luogo,
+
+82
+00:04:10,229 --> 00:04:13,270
+reindirizzando competenze già esistenti,
+
+83
+00:04:13,270 --> 00:04:15,400
+quello della microelettronica.
+
+84
+00:04:15,400 --> 00:04:16,029
+Kessler,
+
+85
+00:04:16,029 --> 00:04:21,549
+incoraggiato da pareri favorevoli e dalla
+stessa ecomedia che giunge da oltreoceano,
+
+86
+00:04:21,550 --> 00:04:29,360
+si entusiasma per l'idea e fa destinare al progetto
+un budget notevole da parte della provincia autonoma.
+
+87
+00:04:29,360 --> 00:04:30,430
+Nasce così,
+
+88
+00:04:30,430 --> 00:04:31,860
+nel 1985,
+
+89
+00:04:31,860 --> 00:04:32,970
+il nuovo IRST,
+
+90
+00:04:32,970 --> 00:04:36,879
+istituto per la ricerca scientifica e tecnologica.
+
+91
+00:04:36,879 --> 00:04:44,769
+Kestringa vuole idealmente collocare come una via di
+mezzo tra i concetti di università e di industria.
+
+92
+00:04:44,769 --> 00:04:46,870
+Una sorta di "terza via",
+
+93
+00:04:46,870 --> 00:04:49,840
+il cui scopo è quello di fare ricerca e sviluppo,
+
+94
+00:04:49,840 --> 00:04:54,340
+ma anche di inseguire ricadute pratiche e di concreta necessità.
+
+95
+00:04:54,340 --> 00:04:57,190
+Le aree di ricerca sono Machine Vision,
+
+96
+00:04:57,189 --> 00:04:58,710
+riconoscimento del parlato,
+
+97
+00:04:58,710 --> 00:05:00,060
+linguaggio naturale,
+
+98
+00:05:00,060 --> 00:05:01,590
+logica e ragionamento.
+
+99
+00:05:01,590 --> 00:05:02,860
+Le idee di Stringa,
+
+100
+00:05:02,860 --> 00:05:03,230
+poi,
+
+101
+00:05:03,230 --> 00:05:06,160
+sono molto incentrate sul mondo fisico,
+
+102
+00:05:06,159 --> 00:05:13,979
+e fin dall'inizio si pensa ad un progetto di AI che
+sia però integrato a sistemi di interazione robot.
+
+103
+00:05:13,980 --> 00:05:15,129
+Ed è così che,
+
+104
+00:05:15,129 --> 00:05:17,870
+secondo i racconti di Olivier Rostock,
+
+105
+00:05:17,870 --> 00:05:26,240
+già dal 1990 era comune incontrare il robot Maya che
+si aggirava lentamente per i corridoi dell'istituto,
+
+106
+00:05:26,240 --> 00:05:30,750
+anche se con fare incerto e lunghe ed inspiegabili pause.
+
+107
+00:05:30,750 --> 00:05:33,379
+E pare anche che non fosse l'unico.
+
+108
+00:05:33,379 --> 00:05:34,259
+Altri robot,
+
+109
+00:05:34,259 --> 00:05:35,740
+più piccoli infatti,
+
+110
+00:05:35,740 --> 00:05:38,300
+intesi per compiti e ruoli specifici,
+
+111
+00:05:38,300 --> 00:05:40,310
+si muovevano per la struttura,
+
+112
+00:05:40,310 --> 00:05:43,669
+imparando e interagendo con gli umani presenti.
+
+113
+00:05:43,669 --> 00:05:45,370
+È interessante notare,
+
+114
+00:05:45,370 --> 00:05:45,750
+poi,
+
+115
+00:05:45,750 --> 00:05:51,610
+come nonostante i fatti riportati risalgano principalmente agli anni 80 e 90,
+
+116
+00:05:51,610 --> 00:05:59,550
+molti degli aneddoti che Stock ha incluso nel suo libro ricordano
+da vicino atteggiamenti e linee di pensiero piuttosto moderni.
+
+117
+00:05:59,550 --> 00:06:03,160
+La forte attenzione all'interazione uomo-macchina,
+
+118
+00:06:03,160 --> 00:06:04,019
+ad esempio.
+
+119
+00:06:04,019 --> 00:06:08,759
+All'epoca vista come lo sviluppo di interfacce sensoristica specifica,
+
+120
+00:06:08,759 --> 00:06:16,990
+mentre oggi come il modo per sfruttare l'hardware esistente e
+già ampiamente diffuso rappresentato da computer e smartphone.
+
+121
+00:06:16,990 --> 00:06:19,519
+O anche i modi di fare di stringa,
+
+122
+00:06:19,519 --> 00:06:24,750
+come amava le luci della ribalta e spesso faceva uscite notevoli con la stampa.
+
+123
+00:06:24,750 --> 00:06:31,069
+Era solito promettere risultati eccezionali
+e ricadute straordinarie sul territorio,
+
+124
+00:06:31,069 --> 00:06:33,550
+promesse che successivamente,
+
+125
+00:06:33,550 --> 00:06:34,850
+in momenti critici,
+
+126
+00:06:34,850 --> 00:06:38,459
+venivano rilanciate più in alto e sempre più lontano.
+
+127
+00:06:38,459 --> 00:06:39,319
+Oggi,
+
+128
+00:06:39,319 --> 00:06:40,269
+ad ogni modo,
+
+129
+00:06:40,269 --> 00:06:46,310
+l'IRST di Trento è stato riorganizzato e
+rinominato come "Fondazione Bruno Kessler",
+
+130
+00:06:46,310 --> 00:06:50,230
+e se vuoi approfondirne la veste e le attività moderne,
+
+131
+00:06:50,230 --> 00:06:53,470
+trovi in descrizione il link al sito ufficiale.
+
+132
+00:06:58,069 --> 00:07:03,610
+Una delle applicazioni di intelligenza
+artificiale nate e sviluppate all'Irst di Trento,
+
+133
+00:07:03,610 --> 00:07:06,780
+a cui viene dato maggior risalto all'interno del libro,
+
+134
+00:07:06,779 --> 00:07:09,789
+è certamente il progetto chiamato "Alfresco".
+
+135
+00:07:09,790 --> 00:07:13,560
+Si tratta di un sistema - perché chiamarlo solo software,
+
+136
+00:07:13,560 --> 00:07:14,850
+come vedremo a breve,
+
+137
+00:07:14,850 --> 00:07:19,800
+sarebbe assolutamente riduttivo - il cui scopo è quello di interagire
+
+138
+00:07:19,800 --> 00:07:24,254
+con l'utente per illustrare in modo estensivo e personalizzato
+
+139
+00:07:24,254 --> 00:07:28,709
+le caratteristiche di tutta una serie di affreschi del 300 d.C.
+
+140
+00:07:28,709 --> 00:07:35,109
+Gli utilizzatori possono porre domande ed ottenere
+risposte specifiche e dettagliate sulle varie opere,
+
+141
+00:07:35,110 --> 00:07:42,670
+possono ricevere informazioni collaterali riguardanti
+i luoghi di realizzazione o gli autori e la loro vita,
+
+142
+00:07:42,670 --> 00:07:49,250
+e possono perfino isolare parti specifiche
+dell'immagine ed approfondirne la conoscenza.
+
+143
+00:07:49,250 --> 00:07:55,230
+Le descrizioni dei vari aspetti del sistema
+sono abbastanza complesse e dettagliate,
+
+144
+00:07:55,230 --> 00:08:04,560
+e se ti intriga l'argomento io ti consiglio di leggere il libro
+di stock di cui ti lascio il link sponsorizzato in descrizione.
+
+145
+00:08:04,560 --> 00:08:09,870
+Ma proviamo comunque a capire quanto avvenieristico è stato Alfresco.
+
+146
+00:08:09,870 --> 00:08:14,990
+Similmente ad un moderno chatbot con accesso alla knowledge base aziendale,
+
+147
+00:08:14,990 --> 00:08:25,580
+Alfresco - e ripetiamo ancora che stiamo parlando degli anni 80 e 90 -
+possiede un proprio archivio composto sia da dati strutturati che non.
+
+148
+00:08:25,579 --> 00:08:32,909
+Fra le tante si possono trovare innanzitutto le informazioni
+di base sulle varie opere e le relative immagini ovviamente,
+
+149
+00:08:32,909 --> 00:08:35,730
+ma poi sono anche presenti video,
+
+150
+00:08:35,730 --> 00:08:37,170
+opinioni di critici,
+
+151
+00:08:37,169 --> 00:08:39,439
+fatti storici e schede di autori.
+
+152
+00:08:39,440 --> 00:08:44,605
+Questo archivio viene poi interrogato da un "componente asserzionale"
+
+153
+00:08:44,605 --> 00:08:51,100
+il cui compito è quello di collegare le
+informazioni secondo schemi e gerarchie logiche,
+
+154
+00:08:51,100 --> 00:08:55,779
+e al tempo stesso personalizzate sulla base dell'utente richiedente.
+
+155
+00:08:55,779 --> 00:08:56,470
+E infine,
+
+156
+00:08:56,470 --> 00:08:58,379
+a monte di tutte le operazioni,
+
+157
+00:08:58,379 --> 00:09:04,759
+vi è un'interfaccia composta da schermi interattivi
+ed uno strumento di analisi e comprensione dei testi,
+
+158
+00:09:04,759 --> 00:09:14,460
+che permette agli utilizzatori di inserire le proprie richieste e le
+elabora riuscendo persino a fare deduzioni ed interpretazioni complesse.
+
+159
+00:09:14,460 --> 00:09:18,430
+Le difficoltà di questo approccio sono ovviamente innumerevoli,
+
+160
+00:09:18,430 --> 00:09:22,950
+e non sto qui a dirti quante ne descrive Olivier Rostock nel suo libro,
+
+161
+00:09:22,950 --> 00:09:26,509
+né quante altre da programmatore quale sono,
+
+162
+00:09:26,509 --> 00:09:34,220
+mi vengono in mente che magari erano fin troppo specifiche
+o complesse o noiose da riportare in un testo divulgativo.
+
+163
+00:09:34,220 --> 00:09:34,950
+Ad ogni modo,
+
+164
+00:09:34,950 --> 00:09:35,440
+però,
+
+165
+00:09:35,440 --> 00:09:37,150
+la sfida più interessante,
+
+166
+00:09:37,149 --> 00:09:38,870
+forse tra quelle descritte,
+
+167
+00:09:38,870 --> 00:09:46,350
+riguarda proprio la comprensione del testo e dei concetti
+nell'ambito dell'interazione tra l'utente e al fresco.
+
+168
+00:09:46,350 --> 00:09:47,769
+A questo proposito,
+
+169
+00:09:47,769 --> 00:09:53,689
+ho dimenticato di specificare che il sistema
+viene sviluppato a partire dall'italiano,
+
+170
+00:09:53,690 --> 00:10:01,670
+che non è esattamente la più semplice delle lingue in termini di
+possibili costruzioni dei periodi ed espressioni comunicative.
+
+171
+00:10:01,669 --> 00:10:03,389
+Un problema fondamentale,
+
+172
+00:10:03,389 --> 00:10:03,889
+infatti,
+
+173
+00:10:03,889 --> 00:10:07,180
+è rappresentato dalle cosiddette frasi ellittiche,
+
+174
+00:10:07,180 --> 00:10:15,840
+cioè in pratica quelle frasi in cui il soggetto o predicato non
+sono espressi chiaramente ma sono invece intuibili dal contesto.
+
+175
+00:10:15,840 --> 00:10:21,019
+Tali tipologie di espressione rientrano nell'ambito del paradosso di Moravec,
+
+176
+00:10:21,019 --> 00:10:21,949
+secondo cui,
+
+177
+00:10:21,950 --> 00:10:26,430
+nonostante le macchine siano in grado di svolgere attività complesse,
+
+178
+00:10:26,430 --> 00:10:28,150
+come i calcoli matematici,
+
+179
+00:10:28,149 --> 00:10:30,189
+molto meglio degli esseri umani,
+
+180
+00:10:30,190 --> 00:10:34,650
+risulta ancora difficile automatizzare compiti invece più semplici,
+
+181
+00:10:34,649 --> 00:10:38,149
+come il riconoscimento del sarcasmo o dei sottintesi.
+
+182
+00:10:38,149 --> 00:10:41,909
+Per al fresco è lo stesso stock a fornirci vari esempi,
+
+183
+00:10:41,909 --> 00:10:44,089
+dei quali ti riporto il seguente.
+
+184
+00:10:44,090 --> 00:10:45,289
+Utente.
+
+185
+00:10:45,289 --> 00:10:48,679
+Giotto ritrasse San Francesco in un'opera di Assisi?
+
+186
+00:10:48,680 --> 00:10:49,310
+Sistema.
+
+187
+00:10:49,309 --> 00:10:49,649
+Sì,
+
+188
+00:10:49,649 --> 00:10:52,259
+per esempio nella predica degli uccelli.
+
+189
+00:10:52,259 --> 00:10:53,730
+Utente.
+
+190
+00:10:53,730 --> 00:10:56,000
+E gioacchino in un affresco di Padova?
+
+191
+00:10:56,000 --> 00:11:00,750
+In questo esempio le interpretazioni della
+seconda domanda potrebbero essere varie,
+
+192
+00:11:00,750 --> 00:11:07,529
+soprattutto se consideri che l'interazione tra uomo e
+macchina si riconduce sempre alla modalità scritta,
+
+193
+00:11:07,529 --> 00:11:11,710
+facendo perdere così tutte le informazioni riguardanti l'intonazione.
+
+194
+00:11:11,710 --> 00:11:20,769
+Per una persona è facile capire che il senso della domanda
+è "Giotto ritrasse gioacchino in un affresco di Padova?",
+
+195
+00:11:20,769 --> 00:11:26,470
+ma come potrebbe il parser linguistico di
+al fresco giungere alla stessa conclusione?
+
+196
+00:11:26,470 --> 00:11:27,120
+L'idea,
+
+197
+00:11:27,120 --> 00:11:28,490
+geniale per l'epoca,
+
+198
+00:11:28,490 --> 00:11:36,430
+è quella di far interagire continuamente l'interprete
+semantico-lessicale con il componente delle conoscenze di base.
+
+199
+00:11:36,430 --> 00:11:43,330
+In questo modo diventa possibile eliminare tutte
+quelle combinazioni che non hanno riscontri nei dati,
+
+200
+00:11:43,329 --> 00:11:46,519
+riducendo così le scelte a disposizione.
+
+201
+00:11:46,519 --> 00:11:47,170
+In più,
+
+202
+00:11:47,170 --> 00:11:53,750
+un meccanismo basato sull'assegnazione di pesi
+ai vari nodi che rappresentano ciascun concetto,
+
+203
+00:11:53,750 --> 00:11:58,539
+qualcosa di molto simile a ciò che avviene per i moderni large language model,
+
+204
+00:11:58,539 --> 00:12:05,099
+viene utilizzato per conferire una maggiore o
+minore attenzione agli oggetti dell'interazione,
+
+205
+00:12:05,100 --> 00:12:11,309
+aiutando così ad indirizzare il discorso e
+sfoltire ulteriormente le possibili alternative.
+
+206
+00:12:11,309 --> 00:12:11,759
+Dunque,
+
+207
+00:12:11,759 --> 00:12:13,569
+nell'esempio menzionato prima,
+
+208
+00:12:13,569 --> 00:12:17,989
+un'interpretazione potrebbe essere "Gioacchino ritrasse San Francesco"
+
+209
+00:12:17,989 --> 00:12:20,230
+oppure "Gioacchino ritrasse Giotto",
+
+210
+00:12:20,230 --> 00:12:24,610
+ma queste opzioni sono da escludere perché non si trovano informazioni
+
+211
+00:12:24,610 --> 00:12:28,929
+su Gioacchino che ha dipinto Giotto o perché l'utente ha già espresso
+
+212
+00:12:28,929 --> 00:12:32,940
+il proprio interesse per Giotto come artista e non come soggetto.
+
+213
+00:12:32,940 --> 00:12:35,980
+Un altro aspetto interessante di Alfresco,
+
+214
+00:12:35,980 --> 00:12:36,329
+poi,
+
+215
+00:12:36,329 --> 00:12:43,789
+è una funzionalità atta a sincronizzare il parser del linguaggio
+naturale con l'utilizzo di schermi sensibili al tocco.
+
+216
+00:12:43,789 --> 00:12:46,039
+Durante la costruzione delle frasi,
+
+217
+00:12:46,039 --> 00:12:46,389
+dunque,
+
+218
+00:12:46,389 --> 00:12:49,920
+è possibile evidenziare parti dell'Alfresco visualizzato.
+
+219
+00:12:49,920 --> 00:12:50,710
+In tal modo,
+
+220
+00:12:50,710 --> 00:12:52,490
+chi interroga il sistema,
+
+221
+00:12:52,490 --> 00:12:54,430
+mentre scrive la propria richiesta,
+
+222
+00:12:54,430 --> 00:12:56,638
+può utilizzare aggettivi come "questo"
+
+223
+00:12:56,638 --> 00:12:57,261
+o "quello"
+
+224
+00:12:57,261 --> 00:12:58,620
+e indicare direttamente,
+
+225
+00:12:58,620 --> 00:12:59,799
+toccando lo schermo,
+
+226
+00:12:59,799 --> 00:13:02,230
+l'elemento a cui sta facendo riferimento.
+
+227
+00:13:02,230 --> 00:13:03,990
+Le capacità di Alfresco,
+
+228
+00:13:03,990 --> 00:13:04,410
+poi,
+
+229
+00:13:04,410 --> 00:13:10,830
+comprendono la possibilità di restituire non solo
+informazioni generiche e immagini di affreschi,
+
+230
+00:13:10,829 --> 00:13:12,509
+ma anche spezzoni di film,
+
+231
+00:13:12,509 --> 00:13:17,519
+informazioni puntuali e descrizioni complesse create in lingua naturale.
+
+232
+00:13:17,519 --> 00:13:22,529
+Il tutto costruito attorno agli specifici interessi dell'utilizzatore,
+
+233
+00:13:22,529 --> 00:13:26,220
+la cui conoscenza viene affinata di interazione in interazione,
+
+234
+00:13:26,220 --> 00:13:34,649
+è condito da un approccio ipermediale volto a collegare fra loro
+le informazioni e fornire un percorso da seguire e da esplorare.
+
+235
+00:13:34,649 --> 00:13:40,889
+La ricerca e lo sviluppo di Alfresco procedono
+fino a poco dopo la metà degli anni '90.
+
+236
+00:13:40,889 --> 00:13:43,329
+Come ammette lo stesso Olivier Rostock,
+
+237
+00:13:43,329 --> 00:13:49,539
+probabilmente oggi varie delle tecnologie e delle
+soluzioni adottate all'epoca sarebbero diverse,
+
+238
+00:13:49,539 --> 00:13:56,709
+ma ciò non toglie che si sia trattato di un filone di ricerca
+straordinario ed estremamente avanzato per i suoi tempi.
+
+239
+00:14:02,250 --> 00:14:04,340
+Verso la seconda metà degli anni '90,
+
+240
+00:14:04,340 --> 00:14:11,649
+inizia a farsi strada una forte tendenza a livello internazionale
+che riguarda il connubio tra informatica e turismo.
+
+241
+00:14:11,649 --> 00:14:12,970
+In quel periodo,
+
+242
+00:14:12,970 --> 00:14:14,460
+perfino Bill Gates,
+
+243
+00:14:14,460 --> 00:14:18,170
+come riportato dallo stesso Olivier Rostock nel suo libro,
+
+244
+00:14:18,169 --> 00:14:24,089
+dichiara che la Microsoft concentrerà il
+proprio sviluppo su tre pilastri principali,
+
+245
+00:14:24,090 --> 00:14:24,810
+sanità,
+
+246
+00:14:24,809 --> 00:14:26,569
+istruzione e turismo.
+
+247
+00:14:26,570 --> 00:14:28,460
+Da un punto di vista generale,
+
+248
+00:14:28,460 --> 00:14:35,090
+il processo di informatizzazione del mondo turistico
+viene tendenzialmente immaginato su tre fasi.
+
+249
+00:14:35,090 --> 00:14:38,410
+La messa a disposizione di informazioni generiche,
+
+250
+00:14:38,409 --> 00:14:44,169
+l'introduzione di transazioni elettroniche e
+la personalizzazione del contenuto per utente.
+
+251
+00:14:44,169 --> 00:14:46,419
+Una situazione questa nella quale,
+
+252
+00:14:46,419 --> 00:14:52,289
+grazie all'esperienza maturata con Alfresco su
+esposizione e personalizzazione dei contenuti,
+
+253
+00:14:52,289 --> 00:14:57,769
+l'earst ovviamente parte già con un certo
+vantaggio rispetto a tanti attori contemporanei.
+
+254
+00:14:57,769 --> 00:14:59,100
+Con la nuova tendenza,
+
+255
+00:14:59,100 --> 00:14:59,769
+quindi,
+
+256
+00:14:59,769 --> 00:15:09,939
+si apre l'opportunità di investigare le varie possibilità di personalizzazione
+e adattamento della presentazione delle informazioni al visitatore di un museo.
+
+257
+00:15:09,940 --> 00:15:16,440
+Il primo punto è studiare come presentare l'informazione
+nel modo migliore nel corso della visita,
+
+258
+00:15:16,440 --> 00:15:22,250
+cercando di adattare il tutto allo specifico
+visitatore e ai suoi interessi e al suo comportamento.
+
+259
+00:15:22,250 --> 00:15:22,669
+Poi,
+
+260
+00:15:22,669 --> 00:15:23,679
+subito dopo,
+
+261
+00:15:23,680 --> 00:15:26,820
+lo scenario si amplia al dialogo in più lingue,
+
+262
+00:15:26,819 --> 00:15:29,849
+utile al contesto della prenotazione turistica.
+
+263
+00:15:29,850 --> 00:15:31,450
+Con il tempo,
+
+264
+00:15:31,450 --> 00:15:36,420
+porta allo sviluppo sia di sistemi di riconoscimento del parlato in tempo reale,
+
+265
+00:15:36,419 --> 00:15:38,969
+sia di potenti sistemi di traduzione,
+
+266
+00:15:38,970 --> 00:15:44,090
+fino ad arrivare alla tecnologia di conversazione multilingua simultanea.
+
+267
+00:15:44,090 --> 00:15:46,340
+Da questa specifica esperienza,
+
+268
+00:15:46,340 --> 00:15:47,180
+inoltre,
+
+269
+00:15:47,180 --> 00:15:49,690
+nascerà poi un'ulteriore evoluzione,
+
+270
+00:15:49,690 --> 00:15:54,610
+che porterà ad un altro interessante progetto ma del quale parleremo a breve.
+
+271
+00:15:54,610 --> 00:15:55,840
+Restando in tema,
+
+272
+00:15:55,840 --> 00:15:56,410
+però,
+
+273
+00:15:56,409 --> 00:16:06,250
+il campo delle visite museali e dei beni culturali risulta essere un
+contesto particolarmente adatto per lo sviluppo di interfacce intelligenti,
+
+274
+00:16:06,250 --> 00:16:14,649
+spingendo così sul settore dell'IA rivolta all'uomo e
+iniziando a percorrere la strada del moderno edutainment.
+
+275
+00:16:14,649 --> 00:16:18,539
+Ed è proprio da queste premesse che nasce il progetto Pitch,
+
+276
+00:16:18,539 --> 00:16:22,641
+una combinazione di computer mobili di piccole dimensioni - dato
+
+277
+00:16:22,641 --> 00:16:26,427
+che all'epoca non esistevano gli smartphone - di sistemi di
+
+278
+00:16:26,427 --> 00:16:30,339
+riconoscimento della posizione e di reti di trasmissioni dati.
+
+279
+00:16:30,340 --> 00:16:37,450
+Su questa infrastruttura si lavora con l'obiettivo di
+costruire una guida artificiale pensata per l'individuo.
+
+280
+00:16:37,450 --> 00:16:46,910
+Una guida adattiva alle cui presentazioni a due persone diverse - anche se
+con uguale esperienza e profilo a priori - non devono essere identiche,
+
+281
+00:16:46,909 --> 00:16:55,089
+bensì determinate da quelli che sembrano essere gli interessi dei
+singoli visitatori prescontrati nel corso della visita stessa.
+
+282
+00:16:55,090 --> 00:16:57,620
+Il sistema deve essere discreto,
+
+283
+00:16:57,620 --> 00:17:02,791
+ma anche in grado di comportarsi come un accompagnatore sensibile - presentare
+
+284
+00:17:02,791 --> 00:17:07,570
+le cose giuste per l'utente ed arrivare perfino a creare istantaneamente
+
+285
+00:17:07,570 --> 00:17:11,760
+un piccolo documentario appositamente pensato per la situazione.
+
+286
+00:17:11,759 --> 00:17:22,150
+Un altro tema importante poi riguarda il capire esattamente di quale dettaglio
+dell'opera esposta il visitatore desidera avere maggiori informazioni,
+
+287
+00:17:22,150 --> 00:17:29,130
+e per fare questo vengono utilizzate tecniche di riconoscimento
+delle immagini e strategie mutuate da al fresco.
+
+288
+00:17:29,130 --> 00:17:29,810
+Ancora,
+
+289
+00:17:29,809 --> 00:17:34,325
+nell'ambito del progetto Pitch si sperimenta la creazione automatica
+
+290
+00:17:34,325 --> 00:17:38,578
+di un rapporto personale sulla visita - una sorta di ricordo dei
+
+291
+00:17:38,578 --> 00:17:42,569
+punti di maggiore interesse per ciascun visitatore - che poi,
+
+292
+00:17:42,569 --> 00:17:43,970
+una volta tornato a casa,
+
+293
+00:17:43,970 --> 00:17:47,250
+può essere la base per ulteriori approfondimenti.
+
+294
+00:17:47,250 --> 00:17:47,940
+Infine,
+
+295
+00:17:47,940 --> 00:17:52,487
+uno degli aspetti più innovativi conseguito nell'ultimo anno del
+
+296
+00:17:52,487 --> 00:17:57,314
+progetto riguarda l'integrazione tra presentazioni visuali su grande
+
+297
+00:17:57,314 --> 00:18:01,932
+schermo - rivolte ad un intero gruppo da un lato - e informazioni
+
+298
+00:18:01,932 --> 00:18:06,550
+personalizzate rivolte a ciascun membro di tale gruppo dall'altro,
+
+299
+00:18:06,549 --> 00:18:11,289
+sincronizzando il tutto opportunamente sui vari dispositivi personali.
+
+300
+00:18:11,289 --> 00:18:14,529
+Il progetto Pitch si conclude nel 2005,
+
+301
+00:18:14,529 --> 00:18:16,519
+con un bilancio molto positivo,
+
+302
+00:18:16,519 --> 00:18:19,910
+con tanti risultati di assoluta avanguardia scientifica,
+
+303
+00:18:19,910 --> 00:18:23,970
+vari prototipi innovativi e grandi prospettive applicative.
+
+304
+00:18:23,970 --> 00:18:28,059
+Un lungo articolo scientifico sull'argomento viene premiato
+
+305
+00:18:28,059 --> 00:18:32,352
+quale miglior lavoro pubblicato nel 2007 sulla più prestigiosa
+
+306
+00:18:32,352 --> 00:18:36,509
+rivista internazionale dedicata alle interfacce intelligenti,
+
+307
+00:18:36,509 --> 00:18:43,009
+e gli spunti di ricerca che ne derivano - anche di
+base per varie tecnologie attuali - sono innumerevoli.
+
+308
+00:18:48,250 --> 00:18:51,369
+Partendo dall'esperienza sulla comunicazione multilingua,
+
+309
+00:18:51,369 --> 00:18:53,979
+sviluppata nell'ambito del progetto Pitch,
+
+310
+00:18:53,980 --> 00:18:57,329
+che comprende elaborazione del linguaggio naturale,
+
+311
+00:18:57,329 --> 00:19:01,349
+modellazione dell'utente e sistemi di raccomandazione automatica,
+
+312
+00:19:01,349 --> 00:19:02,689
+ragionamenti su grafi,
+
+313
+00:19:02,690 --> 00:19:07,259
+sistemi di pianificazione collaborativa e interfacce uomo-macchina,
+
+314
+00:19:07,259 --> 00:19:11,210
+l'IRST dà il via ad un progetto ancora più ambizioso.
+
+315
+00:19:11,210 --> 00:19:13,519
+Nella prima fase delle attività,
+
+316
+00:19:13,519 --> 00:19:20,839
+all'istituto si lavora ad una specifica tecnologia per
+favorire la comunicazione sociale tra bambini autistici.
+
+317
+00:19:20,839 --> 00:19:21,269
+Poi,
+
+318
+00:19:21,269 --> 00:19:24,539
+da essa si avvia un secondo programma,
+
+319
+00:19:24,539 --> 00:19:28,363
+che riguarda invece lo sviluppo di un'altra tecnologia
+
+320
+00:19:28,363 --> 00:19:32,257
+che contribuisca ad avvicinare due parti in conflitto e
+
+321
+00:19:32,257 --> 00:19:36,290
+facilitare la comprensione reciproca e la riconciliazione.
+
+322
+00:19:36,289 --> 00:19:46,109
+Non si tratta di un meccanismo volto alla risoluzione di un conflitto
+attraverso la semplice negoziazione delle esigenze delle due parti,
+
+323
+00:19:46,109 --> 00:19:52,409
+come si potrebbe immaginare uno strumento adatto a
+supportare ad esempio dei negoziatori professionisti.
+
+324
+00:19:52,410 --> 00:19:56,910
+L'obiettivo è invece quello di realizzare un sistema,
+
+325
+00:19:56,910 --> 00:19:58,710
+chiamato poi NNR Table,
+
+326
+00:19:58,710 --> 00:20:03,819
+cioè tavolo per la negoziazione e riconciliazione delle narrative,
+
+327
+00:20:03,819 --> 00:20:10,690
+che possa contribuire alla comprensione reciproca
+tra due persone comuni coinvolte in un conflitto,
+
+328
+00:20:10,690 --> 00:20:16,220
+attraverso un processo di creazione di una narrativa accettabile da entrambe.
+
+329
+00:20:16,220 --> 00:20:20,133
+In una condizione di conflitto non è possibile ottenere
+
+330
+00:20:20,133 --> 00:20:23,626
+un risultato di composizione se le due parti sono
+
+331
+00:20:23,626 --> 00:20:27,400
+rigide nella loro narrativa senza considerare l'altro.
+
+332
+00:20:27,400 --> 00:20:35,280
+Il sistema quindi è pensato per offrire dinamicamente
+opzioni e vincoli per uscire da una situazione di impasse.
+
+333
+00:20:35,279 --> 00:20:38,650
+Tutto si basa essenzialmente su due elementi,
+
+334
+00:20:38,650 --> 00:20:40,780
+uno culturale ed uno tecnologico.
+
+335
+00:20:40,779 --> 00:20:44,569
+Da una parte la teoria della risoluzione dei conflitti,
+
+336
+00:20:44,569 --> 00:20:50,250
+dall'altra l'automazione tramite le interfacce
+collaborative su tavolo elettronico,
+
+337
+00:20:50,250 --> 00:20:55,569
+cioè un tipo di grande schermo orizzontale
+sensibile al tocco multiplo di più persone.
+
+338
+00:20:55,569 --> 00:20:57,710
+L'intenzione dell'istituto,
+
+339
+00:20:57,710 --> 00:21:00,599
+e di Oliviero Stock che è responsabile del progetto,
+
+340
+00:21:00,599 --> 00:21:05,819
+è quella di sperimentare la NNR Table con giovani arabi palestinesi ed ebrei,
+
+341
+00:21:05,819 --> 00:21:09,819
+ed in questa fase del progetto di concentrarsi su studio,
+
+342
+00:21:09,819 --> 00:21:10,799
+discussione,
+
+343
+00:21:10,799 --> 00:21:12,750
+progettazione e critica.
+
+344
+00:21:12,750 --> 00:21:17,680
+Ciascun soggetto coinvolto nelle operazioni porta il proprio pezzo di narrativa,
+
+345
+00:21:17,680 --> 00:21:21,640
+e sul tavolo vengono evidenziati i punti di disaccordo.
+
+346
+00:21:21,639 --> 00:21:27,809
+Gli ostacoli possono essere rimossi soltanto toccando insieme l'interfaccia.
+
+347
+00:21:27,809 --> 00:21:36,549
+Siamo nella seconda metà degli anni 2000 e il progetto è
+piuttosto ambizioso e anche costellato di insidie su più livelli.
+
+348
+00:21:36,549 --> 00:21:39,529
+Conclusa l'implementazione del sistema,
+
+349
+00:21:39,529 --> 00:21:40,109
+infatti,
+
+350
+00:21:40,110 --> 00:21:46,730
+l'applicazione viene ampliata prendendo come
+soggetti delle sessioni giovani di 16 o 17 anni,
+
+351
+00:21:46,730 --> 00:21:49,610
+sempre ebrei e arabi palestinesi.
+
+352
+00:21:49,610 --> 00:21:56,140
+Naturalmente l'idea è quella di sperimentare con
+ragazzi di ambienti nazionalistici militanti,
+
+353
+00:21:56,139 --> 00:21:58,399
+anche se non proprio i più estremi,
+
+354
+00:21:58,400 --> 00:22:04,080
+i quali difficilmente acconsentirebbero
+anche solo a sedere uno di fronte all'altro.
+
+355
+00:22:04,079 --> 00:22:10,159
+Per questo motivo ogni volta che le sedute avvengono
+a ridosso di una azione militare israeliana,
+
+356
+00:22:10,160 --> 00:22:12,980
+i palestinesi si rifiutano di partecipare,
+
+357
+00:22:12,980 --> 00:22:14,650
+e così anche il viceversa.
+
+358
+00:22:14,650 --> 00:22:15,440
+E purtroppo,
+
+359
+00:22:15,440 --> 00:22:16,690
+come ben sappiamo,
+
+360
+00:22:16,690 --> 00:22:19,950
+da quelle parti eventi del genere sono piuttosto frequenti.
+
+361
+00:22:19,950 --> 00:22:23,789
+Stock racconta che il suo lavoro in quel periodo,
+
+362
+00:22:23,789 --> 00:22:24,269
+cito,
+
+363
+00:22:24,269 --> 00:22:26,430
+"fu molto impegnativo e lungo,
+
+364
+00:22:26,430 --> 00:22:30,470
+ma alla fine i risultati furono davvero incoraggianti".
+
+365
+00:22:30,470 --> 00:22:31,870
+Fine citazione.
+
+366
+00:22:31,869 --> 00:22:33,059
+Il team di progetto,
+
+367
+00:22:33,059 --> 00:22:33,659
+infatti,
+
+368
+00:22:33,660 --> 00:22:43,600
+riesce a dimostrare che il partecipare ad una sessione con la NNR Table
+produce un effetto positivo sull'atteggiamento verso la parte avversa,
+
+369
+00:22:43,599 --> 00:22:52,319
+e i parametri che identificano vari aspetti del riconoscimento
+dell'altro presentano significativi miglioramenti.
+
+370
+00:22:52,319 --> 00:22:54,480
+Nonostante questi risultati,
+
+371
+00:22:54,480 --> 00:22:55,059
+però,
+
+372
+00:22:55,059 --> 00:23:02,639
+nel 2012 Trento fu tappezzata di manifesti che
+esponevano il nome di Olivier Rostock con la dicitura,
+
+373
+00:23:02,639 --> 00:23:03,089
+cito,
+
+374
+00:23:03,089 --> 00:23:05,669
+"Collabora con l'Università di Haifa,
+
+375
+00:23:05,670 --> 00:23:06,259
+Israele,
+
+376
+00:23:06,259 --> 00:23:09,735
+nel settore dell'intelligenza artificiale all'interno
+
+377
+00:23:09,735 --> 00:23:12,824
+di un accordo scientifico-militare tra Italia e
+
+378
+00:23:12,824 --> 00:23:16,299
+Israele per lo sviluppo di tecnologie di interdizione,
+
+379
+00:23:16,299 --> 00:23:18,869
+sorveglianza e guerra elettronica".
+
+380
+00:23:18,869 --> 00:23:19,829
+Fine citazione.
+
+381
+00:23:19,829 --> 00:23:20,230
+Cosa,
+
+382
+00:23:20,230 --> 00:23:20,889
+questa,
+
+383
+00:23:20,889 --> 00:23:22,549
+ovviamente non vera,
+
+384
+00:23:22,549 --> 00:23:25,750
+ma anzi diametralmente opposta alla realtà,
+
+385
+00:23:25,750 --> 00:23:28,069
+in quanto il progetto NNR Table,
+
+386
+00:23:28,069 --> 00:23:29,099
+in sostanza,
+
+387
+00:23:29,099 --> 00:23:36,230
+era una base su cui lavorare per un futuro uso diffuso
+di tecnologia per ottenere la pace partendo dal basso.
+
+388
+00:23:36,230 --> 00:23:37,400
+Nel 2006,
+
+389
+00:23:37,400 --> 00:23:38,130
+comunque,
+
+390
+00:23:38,130 --> 00:23:42,102
+il progetto giunge al termine con un bilancio estremamente
+
+391
+00:23:42,102 --> 00:23:45,670
+positivo e attestazioni di qualità da vari organi di
+
+392
+00:23:45,670 --> 00:23:48,970
+revisione scientifica nazionali e internazionali,
+
+393
+00:23:48,970 --> 00:23:57,269
+e con la sigla di accordi tra l'IRST e l'Università di Haifa
+per la prosecuzione della ricerca e sviluppo nel campo.
+
+394
+00:24:02,750 --> 00:24:03,480
+come già detto,
+
+395
+00:24:03,480 --> 00:24:09,980
+questo episodio è fortemente basato sulle descrizioni
+riportate nel libro "Meglio artificiale che niente",
+
+396
+00:24:09,980 --> 00:24:17,539
+mi sembra doveroso anche accennare a quella che è la definizione
+di intelligenza artificiale così come espressa dall'autore,
+
+397
+00:24:17,539 --> 00:24:19,190
+Oliviero Stock.
+
+398
+00:24:19,190 --> 00:24:32,320
+Innanzitutto precisiamo che il professor Stock è entrato a far parte dell'Irst
+nel 1987 e ne è diventato direttore nel periodo tra il 1997 e il 2001.
+
+399
+00:24:32,319 --> 00:24:39,069
+Tra l'altro è stato presidente dell'Associazione
+Italiana ed Europea per l'intelligenza artificiale,
+
+400
+00:24:39,069 --> 00:24:44,750
+non che presidente dell'Associazione Mondiale di Linguistica Computazionale.
+
+401
+00:24:44,750 --> 00:24:48,680
+Cito dunque direttamente le sue parole sull'argomento,
+
+402
+00:24:48,680 --> 00:24:49,730
+prese dal libro,
+
+403
+00:24:49,730 --> 00:24:52,539
+per la precisione a pagina 223.
+
+404
+00:24:52,539 --> 00:24:53,329
+"Per me,
+
+405
+00:24:53,329 --> 00:25:00,309
+la I resta prima di tutto il tentativo di far
+fare alle macchine lo sforzo di capire noi,
+
+406
+00:25:00,309 --> 00:25:02,309
+e non viceversa".
+
+407
+00:25:02,309 --> 00:25:02,470
+Fine citazione.
+
+408
+00:25:02,470 --> 00:25:12,029
+Un'affermazione questa che evidenzia forse più un aspetto cruciale
+della filosofia del suo autore che della tecnologia in sé.
+
+409
+00:25:12,029 --> 00:25:13,750
+L'intenzione che ne traspare,
+
+410
+00:25:13,750 --> 00:25:18,309
+come si è visto anche nelle varie applicazioni descritte in precedenza,
+
+411
+00:25:18,309 --> 00:25:25,319
+è sicuramente di creare qualcosa che arricchisca
+l'esperienza e le possibilità umane,
+
+412
+00:25:25,319 --> 00:25:28,950
+e non punga subito in primo piano l'aspetto commerciale.
+
+413
+00:25:28,950 --> 00:25:34,549
+I maggiori programmi dell'Irst infatti puntavano a favorire aspetti culturali,
+
+414
+00:25:34,549 --> 00:25:36,279
+di confronto fra persone,
+
+415
+00:25:36,279 --> 00:25:41,480
+di assistenza per i più deboli e di coesione e miglioramento sociale.
+
+416
+00:25:41,480 --> 00:25:48,259
+Erano tentativi di creare strumenti di supporto
+per la risoluzione di problemi reali e concreti,
+
+417
+00:25:48,259 --> 00:25:54,220
+non tecnologie in cerca di un problema da risolvere
+realizzate solo perché era possibile farlo,
+
+418
+00:25:54,220 --> 00:25:56,069
+ma senza un obiettivo chiaro.
+
+419
+00:25:56,069 --> 00:26:00,269
+Cosa che negli ultimi tempi ormai accade piuttosto spesso.
+
+420
+00:26:00,269 --> 00:26:02,710
+Al di là delle visioni personali,
+
+421
+00:26:02,710 --> 00:26:03,299
+poi,
+
+422
+00:26:03,299 --> 00:26:10,269
+lo stesso Stok afferma che la maniera classica
+di definire l'IA è quella ingegneristica,
+
+423
+00:26:10,269 --> 00:26:19,599
+che parla di sistemi basati su elaboratori che svolgono funzioni
+che quando svolte da esseri umani si ritiene denotino intelligenza.
+
+424
+00:26:19,599 --> 00:26:21,809
+Come fa notare egli stesso però,
+
+425
+00:26:21,809 --> 00:26:26,079
+si tratta di una definizione che rimanda ad un'altra definizione,
+
+426
+00:26:26,079 --> 00:26:27,649
+quella di intelligenza,
+
+427
+00:26:27,650 --> 00:26:31,640
+e questa seconda definizione purtroppo non è univoca.
+
+428
+00:26:31,639 --> 00:26:35,629
+Menziona poi il solito aspetto critico delle reti neurali,
+
+429
+00:26:35,630 --> 00:26:45,790
+che viene ricondotto al fatto che esse sono considerate come scatole nere che
+giungono ad una soluzione ma non forniscono un'esplicita spiegazione del come.
+
+430
+00:26:45,789 --> 00:26:46,829
+Questo,
+
+431
+00:26:46,829 --> 00:26:49,490
+ci ricorda Stok a pagina 236,
+
+432
+00:26:49,490 --> 00:26:52,259
+non solo è piuttosto problematico,
+
+433
+00:26:52,259 --> 00:26:56,160
+naturalmente per un campo che aspira ad essere scientifico,
+
+434
+00:26:56,160 --> 00:26:59,710
+ma è anche inaccettabile in tanti contesti applicativi.
+
+435
+00:26:59,710 --> 00:27:01,039
+Fine citazione.
+
+436
+00:27:01,039 --> 00:27:03,900
+La cosa più interessante però è che,
+
+437
+00:27:03,900 --> 00:27:06,750
+essendo lui anche un linguista,
+
+438
+00:27:06,750 --> 00:27:15,759
+tende a fondere i due concetti riportando la discussione ad una corrente
+di pensiero che più volte abbiamo menzionato anche qui su questo podcast.
+
+439
+00:27:15,759 --> 00:27:16,950
+Negli anni 80,
+
+440
+00:27:16,950 --> 00:27:20,450
+durante la prima lezione del suo corso di dottorato,
+
+441
+00:27:20,450 --> 00:27:21,360
+ci racconta,
+
+442
+00:27:21,360 --> 00:27:25,690
+egli iniziava parlando di un sondaggio letto su un giornale.
+
+443
+00:27:25,690 --> 00:27:31,577
+Tale sondaggio includeva la domanda "secondo
+voi qual è l'animale più intelligente?"
+
+444
+00:27:31,577 --> 00:27:35,110
+e la risposta più comune era stata "il pappagallo".
+
+445
+00:27:35,110 --> 00:27:35,790
+Cito,
+
+446
+00:27:35,789 --> 00:27:39,819
+effettivamente il linguaggio è indice di intelligenza,
+
+447
+00:27:39,819 --> 00:27:44,569
+ma la capacità linguistica non va appresa troppo superficialmente.
+
+448
+00:27:44,569 --> 00:27:53,149
+È estremamente facile riprodurre aspetti dell'apparenza del
+linguaggio e con questo dare talora l'impressione dell'intelligenza.
+
+449
+00:27:53,150 --> 00:28:02,850
+Prima di tutto ci si dovrebbe domandare se un'eccellente padronanza della
+forma linguistica corrisponda a ugualmente valide capacità di ragionamento,
+
+450
+00:28:02,849 --> 00:28:03,960
+qualità che noi,
+
+451
+00:28:03,960 --> 00:28:04,759
+naturalmente,
+
+452
+00:28:04,759 --> 00:28:07,269
+attribuiamo a chi sa parlare così bene.
+
+453
+00:28:07,269 --> 00:28:08,579
+Fine citazione.
+
+454
+00:28:08,579 --> 00:28:13,740
+Non ripeterò cose già dette in vari altri episodi di questo podcast,
+
+455
+00:28:13,740 --> 00:28:16,440
+ma mi è piaciuto vedere questo concetto,
+
+456
+00:28:16,440 --> 00:28:18,450
+su cui anch'io insisto tanto,
+
+457
+00:28:18,450 --> 00:28:22,279
+espresso in modo così diretto e chiaro in queste poche frasi.
+
+458
+00:28:22,279 --> 00:28:30,259
+E poi Oliviero Stock si interroga anche su problemi
+legati ad intelligenza artificiale e conoscenza umana,
+
+459
+00:28:30,259 --> 00:28:32,029
+altro argomento a me caro.
+
+460
+00:28:32,029 --> 00:28:33,740
+Le domande sono tante.
+
+461
+00:28:33,740 --> 00:28:40,160
+Sarà sufficiente la conoscenza umana per dare vita
+a intelligenze artificiali sempre più potenti?
+
+462
+00:28:40,160 --> 00:28:47,320
+Saranno sufficienti tutte le informazioni scritte o
+registrate per rappresentare la pluralità del sapere umano?
+
+463
+00:28:47,319 --> 00:28:52,839
+Quanto saranno adeguate le capacità di
+adattarsi alle varie situazioni comunicative,
+
+464
+00:28:52,839 --> 00:28:56,949
+pensando che esse si basano su competenze di tipo linguistico,
+
+465
+00:28:56,950 --> 00:28:58,610
+pragmatico e sociale?
+
+466
+00:28:58,610 --> 00:28:58,990
+E poi,
+
+467
+00:28:58,990 --> 00:29:08,889
+sapendo che gli esseri umani parlano perché intendono conseguire un
+obiettivo agendo sul pensiero delle altre persone attraverso le parole,
+
+468
+00:29:08,889 --> 00:29:10,959
+con la proliferazione della IA,
+
+469
+00:29:10,960 --> 00:29:14,269
+cosa accadrà al concetto di intenzionalità?
+
+470
+00:29:14,269 --> 00:29:20,900
+E alla condivisione di conoscenze e valori che
+costituisce il fondamento delle relazioni sociali?
+
+471
+00:29:20,900 --> 00:29:24,560
+Cosa accadrà alla diversità dei contenuti?
+
+472
+00:29:24,559 --> 00:29:27,960
+Chi produrrà informazioni realmente nuove?
+
+473
+00:29:27,960 --> 00:29:30,990
+Come cambierà il concetto di creatività?
+
+474
+00:29:30,990 --> 00:29:31,460
+Lo so,
+
+475
+00:29:31,460 --> 00:29:37,279
+quest'ultima parte ti lascerà con più dubbi di
+quelli che avevi prima di ascoltare l'episodio,
+
+476
+00:29:37,279 --> 00:29:38,569
+ma questo è il bello,
+
+477
+00:29:38,569 --> 00:29:38,990
+no?
+
+478
+00:29:38,990 --> 00:29:44,299
+Probabilmente tanta importanza la acquisiranno aspetti come il pensiero critico,
+
+479
+00:29:44,299 --> 00:29:48,730
+il giudizio di valore e la capacità di pensare in modo originale,
+
+480
+00:29:48,730 --> 00:29:49,860
+e poi l'empatia,
+
+481
+00:29:49,860 --> 00:29:51,210
+la gentilezza.
+
+482
+00:29:51,210 --> 00:29:52,750
+In conclusione,
+
+483
+00:29:52,750 --> 00:29:59,309
+devo dire che mi trovo piuttosto allineato a quello
+che è il pensiero di Olivier Rostock sull'argomento,
+
+484
+00:29:59,309 --> 00:30:08,190
+e pertanto mi piace concludere questo blocco con l'ennesima
+sua affermazione che ritengo estremamente interessante,
+
+485
+00:30:08,190 --> 00:30:09,340
+e cioè che l'IA,
+
+486
+00:30:09,339 --> 00:30:12,190
+se presa come una visione ampia,
+
+487
+00:30:12,190 --> 00:30:13,539
+non solo tecnica,
+
+488
+00:30:13,539 --> 00:30:16,750
+ci costringe a ragionare sugli esseri umani.
+
+489
+00:30:22,250 --> 00:30:24,299
+Siamo in conclusione dell'episodio,
+
+490
+00:30:24,299 --> 00:30:32,250
+e io spero che gli argomenti trattati ti abbiano interessato al punto da
+farti persino valutare e di acquistare e leggere il libro da cui sono tratti,
+
+491
+00:30:32,250 --> 00:30:37,440
+che ti ricordo intitolarsi meglio Artificiale che Niente di Olivier Rostock,
+
+492
+00:30:37,440 --> 00:30:40,690
+e di cui ti lascio il link affiliato in descrizione.
+
+493
+00:30:40,690 --> 00:30:48,660
+Ti assicuro che ne vale la pena perché ciò che ti ho raccontato
+oggi è solo una minima parte delle informazioni riportate.
+
+494
+00:30:48,660 --> 00:30:52,000
+L'autore ha vissuto gli eventi in prima persona,
+
+495
+00:30:52,000 --> 00:30:57,549
+quindi la narrazione è estremamente dettagliata
+anche sulla situazione storico-politica,
+
+496
+00:30:57,549 --> 00:31:01,690
+e il testo è pieno di aneddoti interessanti e a volte divertenti.
+
+497
+00:31:01,690 --> 00:31:02,650
+Inoltre,
+
+498
+00:31:02,650 --> 00:31:05,730
+ti ricordo che acquistare dai link affiliati vuol dire,
+
+499
+00:31:05,730 --> 00:31:08,200
+senza spendere un centesimo in più,
+
+500
+00:31:08,200 --> 00:31:10,240
+supportare il progetto,
+
+501
+00:31:10,240 --> 00:31:12,799
+perché una minima percentuale,
+
+502
+00:31:12,799 --> 00:31:14,740
+una roba tipo il 3%,
+
+503
+00:31:14,740 --> 00:31:16,319
+non mi ricordo esattamente,
+
+504
+00:31:16,319 --> 00:31:19,539
+viene girata da Amazon a Pensieri in Codice.
+
+505
+00:31:19,539 --> 00:31:24,309
+Come ormai dico in ogni episodio da un po' di tempo a questa parte,
+
+506
+00:31:24,309 --> 00:31:27,970
+questo podcast è completamente indipendente,
+
+507
+00:31:27,970 --> 00:31:36,740
+perché voglio parlare di quello che mi interessa senza dover dare
+conto a nessuno e privo di pubblicità perché pubblicità mirata,
+
+508
+00:31:36,740 --> 00:31:39,420
+tracciamento degli utenti e schifezze così,
+
+509
+00:31:39,420 --> 00:31:41,769
+preferisco lasciarle fuori.
+
+510
+00:31:41,769 --> 00:31:51,660
+Ciò vuol dire che tutto si fonda sul mio tempo libero e sul supporto
+che tu decidi di darmi in uno o più dei vari modi a disposizione.
+
+511
+00:31:51,660 --> 00:31:52,640
+Ad esempio,
+
+512
+00:31:52,640 --> 00:32:01,510
+potresti spendere un po' del tuo tempo per trovare nuovi ascoltatori
+facendo conoscere il progetto a qualcuno che ritieni possa apprezzarlo.
+
+513
+00:32:01,509 --> 00:32:02,420
+Blink blink.
+
+514
+00:32:02,420 --> 00:32:08,980
+O puoi spendere un po' del tuo talento aiutando
+con tutte le varie cose che ci sono da fare.
+
+515
+00:32:08,980 --> 00:32:10,430
+So che non si direbbe,
+
+516
+00:32:10,430 --> 00:32:14,230
+nemmeno io lo credevo prima di iniziare questa avventura,
+
+517
+00:32:14,230 --> 00:32:19,640
+ma anche un semplice podcast richiede una quantità di attività notevole,
+
+518
+00:32:19,640 --> 00:32:21,000
+è come un lavoro.
+
+519
+00:32:21,000 --> 00:32:24,089
+A tante cose purtroppo devo rinunciare,
+
+520
+00:32:24,089 --> 00:32:25,879
+come la gestione dei social.
+
+521
+00:32:25,880 --> 00:32:28,370
+Per altre invece c'è qualcuno che mi aiuta,
+
+522
+00:32:28,369 --> 00:32:29,989
+come Antonio e Francesco,
+
+523
+00:32:29,990 --> 00:32:31,750
+che si occupano delle copertine,
+
+524
+00:32:31,750 --> 00:32:37,180
+degli automatismi per la pubblicazione delle
+news su Mastodon e nel gruppo Telegram,
+
+525
+00:32:37,180 --> 00:32:42,050
+di cui a proposito trovi i link sul sito pensieriincodice.it,
+
+526
+00:32:42,049 --> 00:32:43,649
+mi raccomando con due "i".
+
+527
+00:32:43,650 --> 00:32:45,070
+E poi ci sono i donatori,
+
+528
+00:32:45,069 --> 00:32:47,449
+per questo episodio sono Edoardo,
+
+529
+00:32:47,450 --> 00:32:48,300
+Carlo e Alex,
+
+530
+00:32:48,299 --> 00:32:55,460
+che mensilmente o saltuariamente dimostrano il loro
+apprezzamento con donazioni tramite Paypal o Satispay.
+
+531
+00:32:55,460 --> 00:32:58,019
+Sempre link su pensieriincodice,
+
+532
+00:32:58,019 --> 00:32:59,559
+sempre con due "i".
+
+533
+00:32:59,559 --> 00:33:00,769
+E tra l'altro,
+
+534
+00:33:00,769 --> 00:33:01,920
+sempre sul sito,
+
+535
+00:33:01,920 --> 00:33:07,240
+trovi le varie soglie alle quali i donatori hanno diritto a ricevere i gadget,
+
+536
+00:33:07,240 --> 00:33:07,860
+di cui,
+
+537
+00:33:07,860 --> 00:33:08,920
+ricordiamolo,
+
+538
+00:33:08,920 --> 00:33:14,720
+la card laminata è personalizzata col tuo
+nome e in edizione limitata e numerata.
+
+539
+00:33:14,720 --> 00:33:17,539
+Non so per quanto sarà ancora disponibile,
+
+540
+00:33:17,539 --> 00:33:18,450
+te lo dico.
+
+541
+00:33:18,450 --> 00:33:24,100
+Comunque non vorrei che pensassi che con
+questo progetto io intendo diventare ricco.
+
+542
+00:33:24,099 --> 00:33:30,169
+L'idea è che mi fa piacere se il valore del mio impegno lo decidi tu,
+
+543
+00:33:30,170 --> 00:33:39,240
+decidi quanto vale per te pensieriincodice e valuti di conseguenza
+il modo migliore per restituire un po' di tale valore.
+
+544
+00:33:39,240 --> 00:33:40,190
+E bada bene,
+
+545
+00:33:40,190 --> 00:33:41,769
+non è un obbligo.
+
+546
+00:33:41,769 --> 00:33:51,119
+Detto questo ti anticipo che molto probabilmente il prossimo
+sarà un episodio del nuovo formato Community Edition,
+
+547
+00:33:51,119 --> 00:33:58,739
+in cui è uno o più membri della Community di Pensieri in
+Codice a parlare di un argomento che ritiene interessante.
+
+548
+00:33:58,740 --> 00:34:00,579
+Se vuoi provarci anche tu,
+
+549
+00:34:00,579 --> 00:34:06,490
+scrivimi su Telegram o all'indirizzo valerio@pensieriincodice.it.
+
+550
+00:34:06,490 --> 00:34:09,199
+Devo ripeterlo con due "i"?
+
+551
+00:34:09,199 --> 00:34:09,509
+Ok.
+
+552
+00:34:09,510 --> 00:34:11,540
+Nel frattempo io ti saluto,
+
+553
+00:34:11,539 --> 00:34:21,440
+ti ringrazio per aver ascoltato fino alla fine e ti do appuntamento al
+prossimo episodio ricordandoti sempre che un informatico risolve problemi,
+
+554
+00:34:21,440 --> 00:34:24,220
+a volte anche usando il computer.
+
+555
+00:34:24,219 --> 00:34:24,719
+Ciao!
+
