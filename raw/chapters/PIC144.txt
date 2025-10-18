@@ -1,0 +1,3 @@
+0.000000	0.000000	Introduzione
+125.228141	125.228141	Il Plugin Maledetto - Cronaca di un attacco notturno
+720.879478	720.879478	Conclusione

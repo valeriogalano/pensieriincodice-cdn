@@ -1,0 +1,1243 @@
+1
+00:00:01,000 --> 00:00:04,509
+Se sei entrato a far parte del gruppo Telegram di Pensieri in Codice,
+
+2
+00:00:04,509 --> 00:00:08,000
+molto probabilmente conosci già Giuseppe Pugliese,
+
+3
+00:00:08,000 --> 00:00:13,000
+uno dei membri storici e più attivi della community di questo podcast.
+
+4
+00:00:13,000 --> 00:00:13,910
+E altrettanto,
+
+5
+00:00:13,910 --> 00:00:19,000
+probabilmente avrai già ascoltato almeno uno dei suoi innumerevoli,
+
+6
+00:00:19,000 --> 00:00:21,000
+intensi e appassionati vocali,
+
+7
+00:00:21,000 --> 00:00:22,969
+in cui parla del suo lavoro,
+
+8
+00:00:22,969 --> 00:00:26,000
+o commenta il video di un qualche YouTuber,
+
+9
+00:00:26,000 --> 00:00:28,000
+o l'ultima novità dal mondo Microsoft.
+
+10
+00:00:28,000 --> 00:00:33,000
+Ma quello che forse non sai è che Giuseppe è un tipo che,
+
+11
+00:00:33,000 --> 00:00:35,020
+quando fa una cosa,
+
+12
+00:00:35,020 --> 00:00:38,000
+ci mette veramente anima e corpo.
+
+13
+00:00:38,000 --> 00:00:39,799
+Si impegna sempre al massimo,
+
+14
+00:00:39,799 --> 00:00:45,219
+non si risparmia mai e cura ogni aspetto in modo quasi maniacale,
+
+15
+00:00:45,219 --> 00:00:48,000
+fino a sistemare ogni più piccolo dettaglio.
+
+16
+00:00:48,000 --> 00:00:48,570
+Così,
+
+17
+00:00:48,570 --> 00:00:57,000
+il giorno in cui mi ha detto che avrebbe preparato un episodio
+per il mio nuovo format Pensieri in Codice Community Edition,
+
+18
+00:00:57,000 --> 00:01:03,000
+sapevo che ne sarebbe venuto fuori qualcosa
+di molto interessante e ben realizzato,
+
+19
+00:01:03,000 --> 00:01:08,000
+ma non immaginavo che mi avrebbe mandato quello che stai per ascoltare.
+
+20
+00:01:08,000 --> 00:01:10,450
+Tra poco capirai tu cosa intendo,
+
+21
+00:01:10,450 --> 00:01:15,000
+perché io non voglio anticipare assolutamente alcunché.
+
+22
+00:01:15,000 --> 00:01:17,000
+Ti do solo un piccolo consiglio.
+
+23
+00:01:17,000 --> 00:01:21,030
+Se normalmente ascolti i podcast a velocità aumentata,
+
+24
+00:01:21,030 --> 00:01:24,000
+questo ascoltalo a uno per.
+
+25
+00:01:24,000 --> 00:01:28,209
+L'episodio è breve e ti porterà via al massimo un quarto d'ora,
+
+26
+00:01:28,209 --> 00:01:30,000
+ma se mi darai ascolto,
+
+27
+00:01:30,000 --> 00:01:39,000
+ti assicuro che varrà la pena di impiegare questo tempo e riuscirai
+a goderti appieno l'atmosfera che Giuseppe è riuscito a creare.
+
+28
+00:01:39,000 --> 00:01:39,569
+Fidati,
+
+29
+00:01:39,569 --> 00:01:42,000
+poi mi farai sapere se ho ragione oppure no.
+
+30
+00:01:42,000 --> 00:01:42,280
+Ah,
+
+31
+00:01:42,280 --> 00:01:43,359
+e mi raccomando,
+
+32
+00:01:43,359 --> 00:01:49,000
+ascolta fino alla fine perché ho anche una
+novità molto interessante da comunicarti.
+
+33
+00:01:49,000 --> 00:01:50,000
+Ok?
+
+34
+00:01:50,000 --> 00:01:51,000
+Buon ascolto!
+
+35
+00:01:54,500 --> 00:01:56,579
+Benvenuti su Pensieri in Codice,
+
+36
+00:01:56,579 --> 00:01:58,500
+il podcast dove si ragiona da informatici.
+
+37
+00:01:58,500 --> 00:02:00,500
+Con Valerio Galano.
+
+38
+00:02:19,150 --> 00:02:21,150
+A cosa servono le storie?
+
+39
+00:02:21,150 --> 00:02:24,430
+Me lo sono sempre chiesto.
+
+40
+00:02:24,430 --> 00:02:31,710
+Alla fine sono arrivato alla conclusione che le storie sono dall'alba
+dei tempi un modo per cristallizzare nel tempo un concetto,
+
+41
+00:02:31,710 --> 00:02:33,129
+un insegnamento,
+
+42
+00:02:33,129 --> 00:02:34,469
+un modo di vivere.
+
+43
+00:02:34,469 --> 00:02:37,349
+Questa storia risale al 2017.
+
+44
+00:02:37,349 --> 00:02:44,030
+L'ho ritrovata per caso sepolta tra gli appunti digitali di uno speciale
+di glicce che avevo iniziato a scrivere e poi ho messo da parte.
+
+45
+00:02:45,430 --> 00:02:48,230
+è una di quelle notti che si scolpiscono nella memoria.
+
+46
+00:02:51,500 --> 00:02:56,740
+Che ancora oggi mi tornano in mente ogni volta che sento la parola plug-in.
+
+47
+00:03:03,750 --> 00:03:05,750
+Vale la pena raccontarla!
+
+48
+00:03:08,500 --> 00:03:11,500
+Oggi vi porto con me in una storia fatta di sonno negato.
+
+49
+00:03:14,750 --> 00:03:18,750
+Codice maligno o stingoprestorici?
+
+50
+00:03:26,000 --> 00:03:28,000
+Una corsa contro il tempo.
+
+51
+00:03:28,000 --> 00:03:30,090
+Per salvare un sito,
+
+52
+00:03:30,090 --> 00:03:32,000
+e forse anche un cliente,
+
+53
+00:03:32,000 --> 00:03:33,000
+da un disastro irreparabile.
+
+54
+00:03:33,000 --> 00:03:35,379
+Ore 18.
+
+55
+00:03:35,379 --> 00:03:37,000
+Tutto a inizio.
+
+56
+00:03:40,250 --> 00:03:45,270
+Avevo finito una rinune preliminare con un nuovo cliente,
+
+57
+00:03:45,270 --> 00:03:49,700
+mi aveva contattato per rifare da zero il
+tema del suo e-commerce di abbigliamento.
+
+58
+00:03:49,699 --> 00:03:52,019
+Classico progetto che prendo con entusiasmo,
+
+59
+00:03:52,020 --> 00:03:52,689
+pensai.
+
+60
+00:03:52,689 --> 00:03:59,169
+Specie quando si tratta di mettere le mani su
+qualcosa di disastrato da chi l'ha preceduto.
+
+61
+00:04:00,379 --> 00:04:02,060
+Ore 20 e 30,
+
+62
+00:04:02,060 --> 00:04:03,420
+il primo passo.
+
+63
+00:04:03,419 --> 00:04:07,049
+Installo un plugin di diagnostica per capire come gira il sito,
+
+64
+00:04:07,050 --> 00:04:08,580
+tanto per portarmi avanti,
+
+65
+00:04:08,580 --> 00:04:09,390
+poi cena,
+
+66
+00:04:09,389 --> 00:04:10,169
+tanto caldo,
+
+67
+00:04:10,169 --> 00:04:11,149
+troppo caldo,
+
+68
+00:04:11,150 --> 00:04:12,180
+stanchezza.
+
+69
+00:04:12,180 --> 00:04:13,300
+Le notti insonni,
+
+70
+00:04:13,300 --> 00:04:18,259
+per finire il redesign del sito della galleria d'arte su cui stavo lavorando,
+
+71
+00:04:18,259 --> 00:04:19,500
+si facevano sentire.
+
+72
+00:04:19,500 --> 00:04:20,959
+Un po' di Netflix,
+
+73
+00:04:20,959 --> 00:04:21,599
+sonno,
+
+74
+00:04:21,600 --> 00:04:22,860
+buonanotte.
+
+75
+00:04:22,860 --> 00:04:24,699
+Almeno così pensavo.
+
+76
+00:04:27,750 --> 00:04:30,019
+Ore 3.30.
+
+77
+00:04:30,019 --> 00:04:32,120
+Risveglio improvviso.
+
+78
+00:04:32,120 --> 00:04:34,959
+Il telefono vibra come impazzito.
+
+79
+00:04:34,959 --> 00:04:36,120
+La band al mio polso anche,
+
+80
+00:04:36,120 --> 00:04:40,149
+avendo le notifiche prioritarie impostate anche di notte,
+
+81
+00:04:40,149 --> 00:04:42,709
+in modo da poterli svegliare repentinamente.
+
+82
+00:04:42,709 --> 00:04:44,509
+In caso di problemi,
+
+83
+00:04:44,509 --> 00:04:46,990
+un'onda di mail dal tool diagnostico.
+
+84
+00:04:46,990 --> 00:04:48,180
+Accendo lo schermo.
+
+85
+00:04:48,180 --> 00:04:50,960
+La stanza si illumina come in un film horror.
+
+86
+00:04:50,959 --> 00:04:54,269
+Capisco subito che qualcosa non va.
+
+87
+00:04:54,819 --> 00:04:57,319
+Ore 3.32.
+
+88
+00:04:57,319 --> 00:04:58,019
+Il disastro.
+
+89
+00:04:58,019 --> 00:05:00,189
+Le notifiche parlano chiaro.
+
+90
+00:05:00,189 --> 00:05:01,740
+Il sito è stato invaso,
+
+91
+00:05:01,740 --> 00:05:02,740
+da codice malevolo.
+
+92
+00:05:02,740 --> 00:05:03,629
+Centinaia,
+
+93
+00:05:03,629 --> 00:05:04,829
+se non migliaia,
+
+94
+00:05:04,829 --> 00:05:06,219
+di login falliti,
+
+95
+00:05:06,220 --> 00:05:08,380
+con credenziali di amministratore a raffica.
+
+96
+00:05:08,379 --> 00:05:09,860
+Era un brutto forse.
+
+97
+00:05:09,860 --> 00:05:11,379
+Scatto in piedi,
+
+98
+00:05:11,379 --> 00:05:14,019
+cerco di non svegliare mio fratello nella stanza accanto,
+
+99
+00:05:14,019 --> 00:05:15,019
+corro al pc.
+
+100
+00:05:19,000 --> 00:05:20,370
+Ore 3.35.
+
+101
+00:05:20,370 --> 00:05:22,000
+Inizia la guerra.
+
+102
+00:05:22,000 --> 00:05:23,000
+Mi collego.
+
+103
+00:05:23,000 --> 00:05:26,170
+Per fortuna le credenziali che avevo funzionavano ancora,
+
+104
+00:05:26,170 --> 00:05:28,000
+ma il sito è lentissimo.
+
+105
+00:05:28,000 --> 00:05:31,000
+Segno evidente che qualcosa di grosso sta accadendo.
+
+106
+00:05:31,000 --> 00:05:33,000
+Mi preparo al peggio.
+
+107
+00:05:36,379 --> 00:05:37,860
+Ore 4 e 20.
+
+108
+00:05:37,860 --> 00:05:39,259
+Il primo colpevole.
+
+109
+00:05:39,259 --> 00:05:40,680
+Losting.
+
+110
+00:05:40,680 --> 00:05:44,019
+Scopro che il sito gira ancora su PHP 5.2.
+
+111
+00:05:44,019 --> 00:05:46,089
+Lasciamo stare le bestemmie.
+
+112
+00:05:46,089 --> 00:05:46,469
+Sì,
+
+113
+00:05:46,470 --> 00:05:47,900
+avete capito bene.
+
+114
+00:05:47,899 --> 00:05:50,459
+Rilasciato nel novembre 2006.
+
+115
+00:05:50,459 --> 00:05:52,889
+Io neanche avevo la barba.
+
+116
+00:05:52,889 --> 00:05:54,990
+Forzo Losting a usare PHP 7,
+
+117
+00:05:54,990 --> 00:05:57,120
+che comunque è del 2015,
+
+118
+00:05:57,120 --> 00:06:01,590
+ma è il massimo che arruba mi consente di impostare.
+
+119
+00:06:01,589 --> 00:06:02,959
+Un passo avanti,
+
+120
+00:06:02,959 --> 00:06:05,659
+ma siamo nel fango più totale.
+
+121
+00:06:05,660 --> 00:06:10,180
+Cercando di rimanere polite a livello di
+linguaggio visto che questo non è il mio ambiente,
+
+122
+00:06:10,180 --> 00:06:14,780
+non è il mio podcast e quindi cerchiamo di mantenere un grado di civiltà.
+
+123
+00:06:17,990 --> 00:06:20,329
+Ore 4 e 30.
+
+124
+00:06:20,329 --> 00:06:21,009
+Panico.
+
+125
+00:06:21,009 --> 00:06:22,310
+Le email continuano.
+
+126
+00:06:22,310 --> 00:06:23,500
+Sudore,
+
+127
+00:06:23,500 --> 00:06:24,709
+confusione,
+
+128
+00:06:24,709 --> 00:06:26,870
+rabbia.
+
+129
+00:06:26,870 --> 00:06:27,959
+Non trovo la falla.
+
+130
+00:06:27,959 --> 00:06:30,189
+Poi come un lampo mi viene in mente.
+
+131
+00:06:30,189 --> 00:06:32,470
+Cazzo guarda i plugin!
+
+132
+00:06:32,470 --> 00:06:37,310
+Ed ecco il fatto di rimanere polite e se ne va a quel paese.
+
+133
+00:06:39,750 --> 00:06:41,930
+Ore 4 e 32.
+
+134
+00:06:41,930 --> 00:06:43,250
+La pista giusta.
+
+135
+00:06:43,250 --> 00:06:45,750
+Scorro la lista dei plugin installati.
+
+136
+00:06:45,750 --> 00:06:48,750
+Quasi tutti sono obsoliti.
+
+137
+00:06:48,750 --> 00:06:50,250
+Avvio gli aggiornamenti.
+
+138
+00:06:50,250 --> 00:06:51,750
+Tutti vanno a buon fine.
+
+139
+00:06:51,750 --> 00:06:53,750
+Tranne uno.
+
+140
+00:06:57,069 --> 00:06:59,469
+Ore 4 e 35.
+
+141
+00:06:59,470 --> 00:07:01,060
+Il plug-in maledetto.
+
+142
+00:07:01,060 --> 00:07:03,189
+Cerco su Google.
+
+143
+00:07:03,189 --> 00:07:04,939
+Il plug-in è una barzelletta.
+
+144
+00:07:04,939 --> 00:07:06,120
+Una stella,
+
+145
+00:07:06,120 --> 00:07:08,230
+codice scritto da un cane cieco,
+
+146
+00:07:08,230 --> 00:07:11,910
+funzioni inutili anche per chi sa usare un tema figlio.
+
+147
+00:07:11,910 --> 00:07:14,620
+Ma la cosa peggiore è craccato.
+
+148
+00:07:14,620 --> 00:07:16,670
+Aveva codice maligno integrato.
+
+149
+00:07:16,670 --> 00:07:18,120
+SQL injection,
+
+150
+00:07:18,120 --> 00:07:18,610
+XSS,
+
+151
+00:07:18,610 --> 00:07:20,240
+attacchi al sito,
+
+152
+00:07:20,240 --> 00:07:20,819
+a te,
+
+153
+00:07:20,819 --> 00:07:21,789
+al tuo pc,
+
+154
+00:07:21,790 --> 00:07:23,150
+ai tuoi utenti,
+
+155
+00:07:23,149 --> 00:07:23,669
+a tua nonna,
+
+156
+00:07:23,670 --> 00:07:25,120
+al conto bancario,
+
+157
+00:07:25,120 --> 00:07:28,750
+qualsiasi cosa poteva fare di schifoso e maligno,
+
+158
+00:07:28,750 --> 00:07:29,909
+lo stava facendo.
+
+159
+00:07:29,909 --> 00:07:30,469
+Boom.
+
+160
+00:07:30,470 --> 00:07:31,990
+Fine dei giochi.
+
+161
+00:07:31,990 --> 00:07:34,189
+Avevo trovato il bastardo.
+
+162
+00:07:34,189 --> 00:07:37,120
+Ma da lì in poi non c'era tempo per festeggiare.
+
+163
+00:07:37,120 --> 00:07:38,870
+Era solo il inizio di una lunga,
+
+164
+00:07:38,870 --> 00:07:42,350
+lunghissima notte.
+
+165
+00:07:43,750 --> 00:07:46,259
+Ore 09.
+
+166
+00:07:46,259 --> 00:07:48,959
+Pulizie di fine disastro.
+
+167
+00:07:48,959 --> 00:07:51,250
+Il sole filtrava attraverso le tapparelle,
+
+168
+00:07:51,250 --> 00:07:54,709
+ma per me era ancora notte fonda.
+
+169
+00:07:54,709 --> 00:08:02,179
+E ho passato le ultime quattro ore e mezza come uno di quei poveracci
+che alla fine di una festa disastrosa si ritrovano a pulire il locale,
+
+170
+00:08:02,180 --> 00:08:03,899
+tra vomito e bicchieri rotti,
+
+171
+00:08:03,899 --> 00:08:09,560
+e gente che non era nemmeno invitata era riversa sul pavimento inerme.
+
+172
+00:08:09,560 --> 00:08:11,949
+Ripulire il sito è stato proprio così.
+
+173
+00:08:11,949 --> 00:08:13,759
+Rimuovere ogni file compromesso,
+
+174
+00:08:13,759 --> 00:08:15,110
+scansionare ogni riga di codice,
+
+175
+00:08:15,110 --> 00:08:15,810
+ogni cartella,
+
+176
+00:08:15,810 --> 00:08:17,319
+ogni tabellata editata base,
+
+177
+00:08:17,319 --> 00:08:18,110
+Wordpress.
+
+178
+00:08:18,110 --> 00:08:21,220
+Un po' tutte le cartelle che erano all'interno del hosting.
+
+179
+00:08:21,220 --> 00:08:22,220
+Un disastro.
+
+180
+00:08:22,220 --> 00:08:23,000
+Alla fine,
+
+181
+00:08:23,000 --> 00:08:24,430
+alle nove del mattino,
+
+182
+00:08:24,430 --> 00:08:26,590
+esausto ma soddisfatto,
+
+183
+00:08:26,590 --> 00:08:28,210
+ricarico il sito.
+
+184
+00:08:28,209 --> 00:08:30,120
+Era tornato in piedi.
+
+185
+00:08:30,120 --> 00:08:31,590
+Ma non solo.
+
+186
+00:08:31,590 --> 00:08:32,670
+Era più veloce,
+
+187
+00:08:32,669 --> 00:08:33,829
+più scattante,
+
+188
+00:08:33,830 --> 00:08:35,230
+più sicuro di prima.
+
+189
+00:08:35,230 --> 00:08:44,269
+Quasi come se quella notte infernale gli avesse dato una seconda
+vita e io nel mio piccolo avevo domato un mostro invisibile.
+
+190
+00:09:04,750 --> 00:09:05,850
+Lezioni da portarsi a casa,
+
+191
+00:09:05,850 --> 00:09:06,750
+cari signori.
+
+192
+00:09:06,750 --> 00:09:08,750
+Attenzione a chi affidate il proprio sito.
+
+193
+00:09:08,750 --> 00:09:10,820
+Se il vostro business video è online,
+
+194
+00:09:10,820 --> 00:09:11,750
+il sito è come a casa vostra.
+
+195
+00:09:11,750 --> 00:09:13,850
+Non lasciate in mano uno sconosciuto,
+
+196
+00:09:13,850 --> 00:09:15,750
+dandogli la chiave della vostra abitazione.
+
+197
+00:09:15,750 --> 00:09:17,750
+Con troppa leggerezza!
+
+198
+00:09:17,750 --> 00:09:19,750
+Se non potete pagare subito,
+
+199
+00:09:19,750 --> 00:09:20,750
+parlate chiaro.
+
+200
+00:09:20,750 --> 00:09:22,750
+Un professionista serio saprà venirvi incontro.
+
+201
+00:09:22,750 --> 00:09:23,649
+E soprattutto,
+
+202
+00:09:23,649 --> 00:09:25,750
+non cacherà sul vostro pavimento.
+
+203
+00:09:25,750 --> 00:09:26,750
+Non improvvisate.
+
+204
+00:09:26,750 --> 00:09:27,750
+Chi diete aiuto,
+
+205
+00:09:27,750 --> 00:09:29,870
+chi si improvvisa webmaster,
+
+206
+00:09:29,870 --> 00:09:31,750
+spesso crea più danni che soluzioni.
+
+207
+00:09:31,750 --> 00:09:32,590
+E in certi casi,
+
+208
+00:09:32,590 --> 00:09:34,750
+i danni possono essere persino penali.
+
+209
+00:09:34,750 --> 00:09:36,750
+Controllate hosting e plugin.
+
+210
+00:09:36,750 --> 00:09:38,750
+Non usate plugin craccati.
+
+211
+00:09:38,750 --> 00:09:39,750
+Non risparmiate sui server.
+
+212
+00:09:39,750 --> 00:09:43,750
+Le versioni vecchie di VHP sono forte spalancate per chi sa dove colpire.
+
+213
+00:09:43,750 --> 00:09:44,750
+P.S.
+
+214
+00:09:44,750 --> 00:09:46,830
+Se io sono come un neofita,
+
+215
+00:09:46,830 --> 00:09:51,750
+come faccio ad accorgermi che il plugin potrebbe
+essere craccato o avere qualcosa che non va?
+
+216
+00:09:51,750 --> 00:09:54,850
+Basta che vi fate dare un accesso a WordPress,
+
+217
+00:09:54,850 --> 00:09:55,750
+al vostro WordPress.
+
+218
+00:09:55,750 --> 00:09:58,750
+Provate ad aggiornare i plugin se ci sono aggiornamenti.
+
+219
+00:09:58,750 --> 00:10:00,029
+Se non si aggiorna,
+
+220
+00:10:00,029 --> 00:10:02,750
+potrebbe esserci qualcosa che non va.
+
+221
+00:10:02,750 --> 00:10:04,750
+Guardate i lavori di chi vi ripopone il sito.
+
+222
+00:10:04,750 --> 00:10:07,899
+Se il suo portofolio è sempre uscito dall'anno domini 2009,
+
+223
+00:10:07,899 --> 00:10:11,750
+facilmente la sua competenza è ferma anche a quel periodo.
+
+224
+00:10:11,750 --> 00:10:13,750
+Se non precedente.
+
+225
+00:10:13,750 --> 00:10:15,750
+Grazie a tutti per l'attenzione.
+
+226
+00:10:15,750 --> 00:10:19,750
+Ringrazio Valerio per avermi dato la possibilità
+di condividervi questa puntata extra.
+
+227
+00:10:19,750 --> 00:10:22,750
+Volevo sottolineare che questa storia andava raccontata.
+
+228
+00:10:22,750 --> 00:10:27,750
+Perché istruire chi non è del mestiere è il primo
+passo per evitare che certi errori si ripetano.
+
+229
+00:10:27,750 --> 00:10:29,149
+Perché ogni sito bucato,
+
+230
+00:10:29,149 --> 00:10:30,750
+ogni progetto gestito male,
+
+231
+00:10:30,750 --> 00:10:32,009
+ogni plugin craccato,
+
+232
+00:10:32,009 --> 00:10:34,750
+nasce sempre dallo stesso errore.
+
+233
+00:10:34,750 --> 00:10:37,750
+FIDARSI DI CHI ABBOZZA.
+
+234
+00:10:37,750 --> 00:10:40,416
+Grazie di nuovo a tutti e ringrazio di nuovo per l'unesima
+
+235
+00:10:40,416 --> 00:10:43,128
+volta Valerio per avermi dato la possibilità di fare un po'
+
+236
+00:10:43,128 --> 00:10:45,750
+di testa mia in quanto mi ha lasciato totale carta bianca.
+
+237
+00:10:45,750 --> 00:10:47,750
+Io gli ho dato solo un piccolo script di questa puntata.
+
+238
+00:10:47,750 --> 00:10:48,490
+E quindi,
+
+239
+00:10:48,490 --> 00:10:51,840
+se volete ascoltare delle puntate un po' meno creepy,
+
+240
+00:10:51,840 --> 00:10:53,080
+a tema web design,
+
+241
+00:10:53,080 --> 00:10:55,750
+videogiochi e server dati,
+
+242
+00:10:55,750 --> 00:10:56,879
+in tono leggermente più colorito,
+
+243
+00:10:56,879 --> 00:10:58,750
+fate un salto dalle mie parti.
+
+244
+00:10:58,750 --> 00:11:02,750
+Ovviamente Valerio sono sicuro che vi lascerà
+tutti i riferimenti nelle show notes.
+
+245
+00:11:07,000 --> 00:11:11,139
+E come recita il motto del podcast che mi sta ospitando,
+
+246
+00:11:11,139 --> 00:11:13,509
+un informatico risolve problemi,
+
+247
+00:11:13,509 --> 00:11:16,000
+a volte anche usando il computer.
+
+248
+00:12:05,750 --> 00:12:13,750
+Davvero complimenti a Giuseppe e un enorme grazie per aver
+prodotto questo splendido contenuto per Pensieri in Codice.
+
+249
+00:12:13,750 --> 00:12:14,509
+Allora,
+
+250
+00:12:14,509 --> 00:12:16,750
+avevo ragione oppure no?
+
+251
+00:12:16,750 --> 00:12:19,750
+È questo un episodio veramente speciale o no?
+
+252
+00:12:19,750 --> 00:12:24,750
+Da qui in poi puoi anche aumentare nuovamente la velocità di riproduzione.
+
+253
+00:12:24,750 --> 00:12:31,750
+Ti confesso che il nostro Giuseppe mi aveva già
+consegnato la registrazione più di un mese fa,
+
+254
+00:12:31,750 --> 00:12:36,840
+ma ho voluto attendere che fosse il momento giusto per pubblicarla,
+
+255
+00:12:36,840 --> 00:12:40,750
+perché ci tenevo un sacco che capitasse in un periodo buono.
+
+256
+00:12:40,750 --> 00:12:41,820
+Ad ogni modo,
+
+257
+00:12:41,820 --> 00:12:49,750
+se non ti è bastato e vuoi ascoltare altri contenuti
+prodotti da questo giovane informatico e podcaster,
+
+258
+00:12:49,750 --> 00:12:53,769
+ti faccio presente che lui pubblica un podcast tutto suo,
+
+259
+00:12:53,769 --> 00:12:55,779
+che si chiama Glitch.
+
+260
+00:12:55,779 --> 00:12:58,750
+Trovi ovviamente il link in descrizione.
+
+261
+00:12:58,750 --> 00:13:04,759
+Lì potrai ascoltarlo o parlare di tanti
+argomenti legati al mondo dell'informatica,
+
+262
+00:13:04,759 --> 00:13:05,769
+di Microsoft,
+
+263
+00:13:05,769 --> 00:13:08,750
+di news e di tanto altro.
+
+264
+00:13:08,750 --> 00:13:09,759
+Mi raccomando,
+
+265
+00:13:09,759 --> 00:13:11,189
+se già non lo conosci,
+
+266
+00:13:11,190 --> 00:13:13,750
+vallo a recuperare che ne vale la pena.
+
+267
+00:13:13,750 --> 00:13:14,769
+Ora però,
+
+268
+00:13:14,769 --> 00:13:17,870
+passiamo un attimo ad un altro argomento,
+
+269
+00:13:17,870 --> 00:13:23,750
+perché so che hai tanta curiosità di sapere
+di quale novità parlavo nell'introduzione.
+
+270
+00:13:23,750 --> 00:13:24,309
+Beh,
+
+271
+00:13:24,309 --> 00:13:32,750
+la novità è che da un mesetto circa ho l'onore
+di essere ospite di un podcast di Runtime Radio,
+
+272
+00:13:32,750 --> 00:13:35,750
+condotto da Alex Racuja e Simone Pizzi,
+
+273
+00:13:35,750 --> 00:13:37,750
+in cui parliamo di alta cucina.
+
+274
+00:13:37,750 --> 00:13:38,019
+No,
+
+275
+00:13:38,019 --> 00:13:38,769
+non è vero,
+
+276
+00:13:38,769 --> 00:13:39,750
+sto scherzando.
+
+277
+00:13:39,750 --> 00:13:42,750
+Ovviamente parliamo di intelligenza artificiale,
+
+278
+00:13:42,750 --> 00:13:45,750
+ma da un'angolazione piuttosto specifica.
+
+279
+00:13:45,750 --> 00:13:53,750
+In ogni episodio ci confrontiamo su come la AI
+influisce sul nostro modo di sviluppare il software.
+
+280
+00:13:53,750 --> 00:14:01,930
+Tutto è esaminato da un punto di vista estremamente soggettivo
+e ciascuno degli ospiti condivide il proprio workflow,
+
+281
+00:14:01,930 --> 00:14:04,750
+le proprie esperienze e opinioni.
+
+282
+00:14:04,750 --> 00:14:05,830
+Se tutto va bene,
+
+283
+00:14:05,830 --> 00:14:08,930
+a breve dovremmo registrare il terzo episodio,
+
+284
+00:14:08,930 --> 00:14:12,750
+e io spero che la cosa vada avanti per un bel po',
+
+285
+00:14:12,750 --> 00:14:21,750
+anche perché sono veramente fiero di poter partecipare ad una trasmissione
+che raggruppa persone che ammiro e di potermi confrontare con loro.
+
+286
+00:14:21,750 --> 00:14:24,470
+Ovviamente anche di questo podcast,
+
+287
+00:14:24,470 --> 00:14:26,750
+il cui titolo è Good Vibrations,
+
+288
+00:14:26,750 --> 00:14:28,769
+sviluppare nell'era dell'AI,
+
+289
+00:14:28,769 --> 00:14:31,750
+ti lascio il link in descrizione.
+
+290
+00:14:31,750 --> 00:14:37,940
+Sarei estremamente felice se ascoltassi i primi episodi e ci facessi sapere,
+
+291
+00:14:37,940 --> 00:14:38,940
+tramite recensione,
+
+292
+00:14:38,940 --> 00:14:41,000
+commento o messaggio su Telegram,
+
+293
+00:14:41,000 --> 00:14:41,750
+cosa ne pensi.
+
+294
+00:14:41,750 --> 00:14:43,029
+Detto questo,
+
+295
+00:14:43,029 --> 00:14:51,750
+direi che non è rimasto spazio per la solita pappardella in cui
+ti chiedo il sostegno e ti parlo di value for value eccetera,
+
+296
+00:14:51,750 --> 00:14:57,759
+ma tanto so che se hai ascoltato o ascolterai
+altri episodi di Pensieri in Codice,
+
+297
+00:14:57,759 --> 00:15:01,750
+avrai modo di conoscere tutti i modi per sostenere il progetto.
+
+298
+00:15:01,750 --> 00:15:05,180
+Ti dico solo che se non lo hai già fatto,
+
+299
+00:15:05,180 --> 00:15:09,930
+ti consiglio di unirti al gruppo e al canale Telegram,
+
+300
+00:15:09,930 --> 00:15:17,770
+così potrai conoscere tante persone interessanti come
+Giuseppe e restare sempre aggiornato su tutte le novità.
+
+301
+00:15:17,769 --> 00:15:20,750
+Per oggi dunque possiamo chiuderla qui.
+
+302
+00:15:20,750 --> 00:15:25,149
+Io ti ringrazio per aver ascoltato fino alla fine,
+
+303
+00:15:25,149 --> 00:15:29,819
+ti saluto e ti ricordo sempre che un informatico risolve problemi,
+
+304
+00:15:29,819 --> 00:15:32,750
+a volte anche usando il computer.
+
