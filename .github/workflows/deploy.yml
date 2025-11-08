@@ -3,6 +3,8 @@ name: Deploy files to Qadisha
 on:
   # Runs on pushes targeting the default branch
   push:
+    paths:
+      - 'public/*'
     branches: ["main"]
 
   # Runs on pull requests to the default branch
