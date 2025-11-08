@@ -3,7 +3,7 @@ import whisper
 
 def generate_transcripts(episodes_dir, transcripts_dir):
     # Carica il modello di Whisper
-    model = whisper.load_model("base")
+    model = whisper.load_model("large")
     # Assicurati che la cartella dei trascritti esista
     os.makedirs(transcripts_dir, exist_ok=True)
 
