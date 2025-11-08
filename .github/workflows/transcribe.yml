@@ -4,8 +4,6 @@ on:
   push:
     paths:
       - 'public/episodes/*.mp3'
-    paths-ignore:
-      - 'public/transcripts/**'
   workflow_dispatch:
 
 jobs:
