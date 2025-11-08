@@ -52,7 +52,8 @@ jobs:
       - name: Run transcript script
         run: python utils/generate_transcripts.py
 
-      - name: Commit converted files
+      - name: Commit generated transcriptions
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Generate missing transcriptions"
+          file_pattern: 'public/transcripts/*.srt'
