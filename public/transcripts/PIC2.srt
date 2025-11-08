@@ -1,0 +1,292 @@
+1
+0.000 --> 9.840
+ Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+
+2
+9.840 --> 26.400
+ Salve a tutti ragazzi e bentornati su Pensieri in codice. Per la puntata di oggi vorrei parlare
+
+3
+26.400 --> 33.720
+ di bug. Noi tutti siamo abituati ai bug nei nostri videogame, nei nostri social o nei
+
+4
+33.720 --> 40.320
+ nostri smartphone. Tuttavia nel corso della storia ci sono stati alcuni bug che seppur molto piccoli
+
+5
+40.320 --> 45.920
+ hanno causato danni economici enormi. Per questo episodio ho quindi pensato di stilare la lista
+
+6
+45.920 --> 58.880
+ dei 10 bug più costosi nella storia. 1962 Cape Canaveral. La NASA lancia il
+
+7
+58.880 --> 66.080
+ Mariner One verso Venere. Dopo soli 290 secondi dalla partenza, la navicella inizia a deviare
+
+8
+66.080 --> 71.960
+ dalla rotta prestabilita. La situazione è irrecuperabile, l'ingegnere a terra è costretto
+
+9
+71.960 --> 77.920
+ ad attivare il sistema di autodistruzione. Inizialmente si pensa ad un sabotaggio, ma ad
+
+10
+77.920 --> 82.960
+ una seconda analisi ci si accorge che il tecnico che ha ricopiato il software dal blocco note
+
+11
+82.960 --> 88.960
+ su di un calcolatore ha omesso un simbolo di punteggiatura, molto probabilmente un trattino.
+
+12
+88.960 --> 94.760
+ Per questo motivo il software a bordo della navicella non è stato in grado di compensare
+
+13
+94.760 --> 100.640
+ alcuna variazione di velocità. Il costo della navicella andata completamente distrutta fu
+
+14
+100.640 --> 114.280
+ all'epoca di 18 milioni di dollari. 19 giugno 1978. Connecticut. Il tetto del
+
+15
+114.280 --> 122.000
+ Hartford Coliseum crolla sotto il peso di una coltre di neve bagnata. Dalle indagini emerge che
+
+16
+122.000 --> 127.160
+ il software CAD utilizzato per la progettazione non era in grado di gestire più di una variabile
+
+17
+127.320 --> 133.440
+ per volta. Per questo motivo aveva calcolato la struttura del tetto tenendo in considerazione
+
+18
+133.440 --> 139.040
+ solamente il peso dei materiali stessi. Fortunatamente non ci furono vittime,
+
+19
+139.040 --> 150.680
+ ma i danni stimati furono di oltre 90 milioni di dollari. 1988. Uno studente della Cornell
+
+20
+150.800 --> 156.880
+ University, tale Robert Morris, decise di scrivere un software per qualcosa che definì
+
+21
+156.880 --> 163.800
+ lui stesso un innocuo esperimento. Questo software però mandò in crash centinaia di computer a
+
+22
+163.800 --> 169.600
+ causa di un errore di codifica. Lo studente fu multato per 10 mila dollari, ma il costo per
+
+23
+169.600 --> 176.160
+ sistemare i danni fu di oltre 100 milioni di dollari. Attualmente Morris è professore
+
+24
+176.160 --> 181.520
+ al MIT e il codice del suo innocuo esperimento è custodito presso l'università di Boston.
+
+25
+181.520 --> 195.280
+ Nel gennaio del 1990, 60 mila utenti della AT&T, una delle più grandi società di telecomunicazioni
+
+26
+195.280 --> 199.720
+ americane, si trovano in impossibilità di effettuare chiamate long distance,
+
+27
+199.720 --> 204.080
+ quelle che noi conosciamo come interurbane. Inizialmente si pensò ad un accheraggio,
+
+28
+204.320 --> 210.240
+ successivamente però ci si rese conto che la AT&T, circa un mese prima, aveva effettuato
+
+29
+210.240 --> 215.680
+ alcune modifiche sui propri sistemi per rincrementarne le performance e la velocità.
+
+30
+215.680 --> 221.920
+ Questo incremento di velocità però aveva portato a destabilizzare il sistema di bilanciamento del
+
+31
+221.920 --> 227.840
+ carico tra gli switch, causando il blocco a cascata di tutti e 114 gli switch disponibili.
+
+32
+227.840 --> 233.280
+ Le perdite estimate per AT&T furono di circa 60 milioni di dollari.
+
+33
+234.080 --> 246.440
+ Nel 1994 fu invece il turno di Intel. La nota società produttrice di processori lanciò sul
+
+34
+246.440 --> 251.760
+ mercato una linea di Pentium che risentiva di un problema nel calcolo delle operazioni
+
+35
+251.760 --> 257.600
+ matematiche che coinvolgevano i numeri in virgola mobile. In pratica c'era la possibilità di
+
+36
+257.600 --> 264.040
+ sbagliare il calcolo della decima cifra dopo la virgola. Dopo l'insurrezione dei consumatori
+
+37
+264.320 --> 271.280
+ la Intel si offri di sostituire tutti i processori a coloro che ne avessero fatto richiesta. Così
+
+38
+271.280 --> 276.360
+ il costo totale dell'operazione ammontò a circa 475 milioni di dollari.
+
+39
+276.360 --> 289.240
+ Nel 1996 invece l'ESA, l'Agenzia Spaziale Europea, riuscì a battere il record del
+
+40
+289.960 --> 296.520
+ Il responsabile a terra fu infatti costretto a premere il tasto di autodistruzione in ben
+
+41
+296.520 --> 304.360
+ 36 secondi dal lancio. Il software di controllo di volo dell'Ariane 5 infatti tentò di convertire
+
+42
+304.360 --> 311.560
+ un numero in virgola mobile a 64 bit in un intero a 16 bit causando il crash del computer principale
+
+43
+311.560 --> 317.120
+ e di quello di riserva che era perfettamente identico e montava lo stesso identico software.
+
+44
+317.120 --> 324.600
+ Il costo per lo sviluppo del razzo era stato di 8 miliardi di dollari e inoltre
+
+45
+324.600 --> 329.520
+ esso portava con sé come carico un satellite del valore di 500 milioni di dollari.
+
+46
+329.520 --> 342.560
+ 1998, di nuovo protagonista alla NASA. Il Mars Climate Orbiter era una sonda progettata
+
+47
+342.560 --> 347.920
+ per studiare il clima e l'atmosfera di Marte. Questa sonda avrebbe dovuto appunto orbitare
+
+48
+347.920 --> 353.280
+ attorno al pianeta rosso ma si schiantò sulla sua superficie poiché tentò di orbitare troppo in
+
+49
+353.280 --> 359.520
+ basso. Dalle indagini venne fuori che il problema fu banalmente dovuto ad un errore di conversione
+
+50
+359.520 --> 366.320
+ tra il sistema inglese e quello metrico decimale a montare del danno 125 milioni di dollari.
+
+51
+366.320 --> 379.760
+ 2004, Regno Unito. Due agenzie governative, il Child Support Agency e il Department of Work
+
+52
+379.760 --> 385.640
+ and Pensions, decisero di ristrutturare contemporaneamente i propri sistemi informatici.
+
+53
+385.640 --> 392.320
+ I software che ne risultarono furono talmente incompatibili da causare milioni di transazioni
+
+54
+392.320 --> 398.080
+ errate sia in eccesso che in difetto, riscossioni non effettuate e rallentamenti burocratici.
+
+55
+398.080 --> 403.360
+ Il costo per i contribuenti inglesi ammonto a un miliardo di dollari.
+
+56
+403.360 --> 415.520
+ Nell'agosto del 2009, una Lexus ES 350 si schiantò a oltre 150 mila orarie causando la
+
+57
+415.520 --> 421.720
+ morte di quattro persone. Prima dell'incidente, uno dei passeggeri chiamò il 911 dicendo che
+
+58
+421.720 --> 427.680
+ l'auto era priva di freni e senza controllo. A novembre dello stesso anno, la Toyota dovette
+
+59
+427.680 --> 432.240
+ richiamare nove milioni di auto da tutto il mondo per correggere un bug nel software del
+
+60
+432.240 --> 438.640
+ sistema antibloccaggio dei freni. Il costo totale stimato per l'operazione fu di oltre 3 miliardi
+
+61
+438.640 --> 447.800
+ di dollari. Nell'agosto del 2012, il Knight Capital Group,
+
+62
+448.040 --> 454.080
+ una delle più grandi società americane di servizi finanziari, inviò in automatico una serie di ordini
+
+63
+454.080 --> 460.160
+ di acquisto in contemporanea invece che nell'arco di giorni, così come era stato previsto. Le perdite
+
+64
+460.160 --> 466.640
+ di questa operazione furono di ben 4 volte superiori ai guadagni. L'errore fu causato da un server
+
+65
+466.640 --> 473.640
+ all'interno della farm che non era stato aggiornato e pertanto eseguiva del codice obsoleto. Nell'arco
+
+66
+473.680 --> 478.800
+ di due giorni le azioni della società persano ben il 75% e il totale delle perdite
+
+67
+478.800 --> 489.080
+ estimate fu di 440 milioni di dollari. Con questo siamo arrivati alla fine della
+
+68
+489.080 --> 495.280
+ nostra lista dei 10 bug più costosi della storia. Come abbiamo visto anche dei minimi
+
+69
+495.280 --> 501.240
+ errori possono provocare danni enormi. Spero che l'episodio vi sia piaciuto e come al solito
+
+70
+501.520 --> 509.720
+ vi invito a lasciare un commento per farmi sapere cosa vi è piaciuto, cosa no e se magari conoscete
+
+71
+509.720 --> 516.080
+ voi dei bug che ho dimenticato di inserire in questa lista. Per ora vi saluto e ci sentiamo
+
+72
+516.080 --> 519.000
+ al prossimo episodio di pensieri in codice.
+
+73
+531.240 --> 534.480
+ Sottotitoli creati dalla comunità Amara.org
+
