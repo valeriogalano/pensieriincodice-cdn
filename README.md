@@ -56,6 +56,57 @@ La repository è organizzata in cartelle per mantenere l'ordine e facilitare la 
 └── README.md                      # questo file
 ```
 
+## Utilizzo locale: generazione trascrizioni in Python (Whisper)
+
+Puoi generare in locale i file di trascrizione `.srt` degli episodi usando lo script `utils/generate_transcripts.py`, che sfrutta OpenAI Whisper.
+
+- Come funziona: legge i file `.mp3` in `public/episodes` e crea (se mancanti) i corrispondenti `.srt` in `public/transcripts`.
+- Modello usato: `base` (italiano). Gli `.srt` esistenti vengono lasciati intatti.
+
+### Requisiti
+- Python 3.9+ (consigliato 3.10/3.11)
+- `ffmpeg` installato nel sistema (necessario per Whisper)
+  - macOS: `brew install ffmpeg`
+  - Ubuntu/Debian: `sudo apt update && sudo apt install ffmpeg`
+  - Windows: scarica da https://www.gyan.dev/ffmpeg/ e aggiungi `ffmpeg` al PATH
+
+### Installazione dipendenze
+Esegui i comandi dalla root del progetto.
+
+```bash
+# (opzionale) crea e attiva un virtualenv
+python3 -m venv .venv
+source .venv/bin/activate   # su Windows: .venv\Scripts\activate
+
+# installa le dipendenze
+pip install -r requirements.txt
+
+# se Whisper non fosse presente nel requirements.txt, installalo così:
+# pip install openai-whisper
+```
+
+Nota: Whisper installerà anche PyTorch. Se disponi di GPU, verrà usata automaticamente quando supportata (CUDA su NVIDIA, MPS su Apple Silicon con versioni recenti di PyTorch).
+
+### Preparazione dei file
+- Copia gli episodi `.mp3` nella cartella `public/episodes`.
+- Assicurati che la cartella `public/transcripts` esista; in caso contrario verrà creata dallo script.
+
+### Esecuzione
+Esegui lo script dalla root del repository (importante: usa la root perché lo script imposta percorsi relativi `./public/...`).
+
+```bash
+python utils/generate_transcripts.py
+```
+
+Output atteso:
+- Per ogni `*.mp3` in `public/episodes`, se non esiste già, viene creato `public/transcripts/<nomefile>.srt`.
+- Log a console con lo stato della trascrizione e i file creati.
+
+### Troubleshooting
+- Errore su `ffmpeg` non trovato: installa `ffmpeg` e riapri il terminale.
+- Prestazioni lente: su CPU può richiedere tempo; usa un modello più piccolo (ad es. `tiny`/`small`) o una macchina con GPU.
+- Apple Silicon: con versioni recenti di PyTorch, l'accelerazione MPS è automatica; aggiorna PyTorch se non viene rilevata.
+
 ---
 
 ## Contributi
