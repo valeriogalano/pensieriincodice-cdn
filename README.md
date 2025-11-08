@@ -56,9 +56,55 @@ La repository è organizzata in cartelle per mantenere l'ordine e facilitare la 
 └── README.md                      # questo file
 ```
 
-## Utilizzo locale: generazione trascrizioni in Python (Whisper)
+## Utilizzo locale: generazione trascrizioni con shell (whisper.cpp)
 
-Puoi generare in locale i file di trascrizione `.srt` degli episodi usando lo script `utils/generate_transcripts.py`, che sfrutta OpenAI Whisper.
+Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script `utils/generate_transcripts.sh`, che sfrutta `whisper.cpp`.
+
+- Come funziona: legge i file `.mp3` in `public/episodes` e crea (se mancanti) i corrispondenti `.srt` in `public/transcripts`.
+- Modello usato: `ggml-large-v3` (italiano). Gli `.srt` esistenti vengono lasciati intatti.
+- Il modello viene scaricato automaticamente nella prima esecuzione in `utils/models/`.
+
+### Requisiti
+- `ffmpeg` installato nel sistema
+  - macOS: `brew install ffmpeg`
+  - Ubuntu/Debian: `sudo apt update && sudo apt install ffmpeg`
+- `curl` (per scaricare il modello al primo avvio)
+- Un binario `whisper` di `whisper.cpp` posizionato nella cartella `utils/`
+  - Opzione A (precompilato): scarica un binario dalla pagina release di whisper.cpp e rinominalo in `whisper`, poi mettilo in `utils/` e rendilo eseguibile: `chmod +x utils/whisper`
+  - Opzione B (compilazione):
+    - `git clone https://github.com/ggerganov/whisper.cpp`
+    - `cd whisper.cpp && make` (richiede un toolchain C/C++; su macOS `xcode-select --install`, su Ubuntu `sudo apt install build-essential`)
+    - copia il binario prodotto (`main`) in `utils/` e rinominalo `whisper`: `cp main ../utils/whisper && chmod +x ../utils/whisper`
+
+### Preparazione dei file
+- Copia gli episodi `.mp3` nella cartella `public/episodes`.
+- La cartella `public/transcripts` verrà creata automaticamente se assente.
+
+### Esecuzione
+Esegui dalla cartella `utils` (lo script usa percorsi relativi alla sua posizione):
+
+```bash
+cd utils
+./generate_transcripts.sh            # genera tutte le trascrizioni mancanti
+./generate_transcripts.sh PIC123     # genera solo per lo specifico episodio PIC123.mp3
+```
+
+Output atteso:
+- Alla prima esecuzione scarica `models/ggml-large-v3.bin`.
+- Converte temporaneamente gli MP3 in WAV, invoca `./whisper` e scrive gli `.srt` in `public/transcripts/`.
+- Non sovrascrive trascrizioni già presenti.
+
+### Troubleshooting
+- `permission denied`: esegui `chmod +x utils/generate_transcripts.sh utils/whisper`.
+- `./whisper: file o directory non esistente`: assicurati che il binario si chiami `whisper` e sia in `utils/`.
+- `ffmpeg` non trovato: installalo e riapri il terminale.
+- Errori di download del modello: verifica la connessione o riprova più tardi.
+
+---
+
+## Alternativa: generazione trascrizioni in Python (OpenAI Whisper)
+
+Puoi anche generare i file di trascrizione `.srt` usando lo script `utils/generate_transcripts.py`, che sfrutta OpenAI Whisper.
 
 - Come funziona: legge i file `.mp3` in `public/episodes` e crea (se mancanti) i corrispondenti `.srt` in `public/transcripts`.
 - Modello usato: `base` (italiano). Gli `.srt` esistenti vengono lasciati intatti.
