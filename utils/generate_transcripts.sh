@@ -4,21 +4,22 @@ set -euo pipefail
 
 EPISODES_DIR="../public/episodes"
 TRANSCRIPTS_DIR="../public/transcripts"
-MODEL_PATH="./models/ggml-large-v3.bin"
+MODEL_NAME="ggml-large-v3.bin"
+MODEL_PATH="./models/$MODEL_NAME"
 
 mkdir -p "$(dirname "$MODEL_PATH")" "$TRANSCRIPTS_DIR"
 
 # Scarica il modello Whisper solo se non esiste già
 if [ ! -f "$MODEL_PATH" ]; then
   echo "Modello non trovato. Download in corso..."
-  if curl -fSL -o "$MODEL_PATH" 'https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin'; then
+  if curl -fSL -o "$MODEL_PATH" "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/$MODEL_NAME"; then
     echo "Download completato con successo."
   else
-    echo "Errore durante il download del file ggml-large-v3.bin." >&2
+    echo "Errore durante il download del file $MODEL_NAME." >&2
     exit 1
   fi
 else
-  echo "Il file ggml-large-v3.bin esiste già, non è necessario scaricarlo."
+  echo "Il file $MODEL_NAME esiste già, non è necessario scaricarlo."
 fi
 
 process_episode() {
