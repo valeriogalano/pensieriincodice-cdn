@@ -1,4 +1,4 @@
-name: Trascrizione Podcast
+name: Generate missing transcriptions
 
 on:
   push:
