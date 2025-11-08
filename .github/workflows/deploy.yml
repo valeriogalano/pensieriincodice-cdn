@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'public/*'
+      - 'raw/*'
     branches: ["main"]
 
   # Runs on pull requests to the default branch
