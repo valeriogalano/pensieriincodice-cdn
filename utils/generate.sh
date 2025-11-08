@@ -21,8 +21,8 @@ else
     echo "Il file ggml-large-v3.bin esiste già, non è necessario scaricarlo."
 fi
 
-# Converte il file MP3 in WAV
-ffmpeg -i ../public/episodes/${EPISODE_NAME}.mp3 -acodec pcm_s16le -ar 16000 -ac 1 output.wav
+# Converte il file MP3 in WAV con il nome dell'episodio
+ffmpeg -i ../public/episodes/${EPISODE_NAME}.mp3 -acodec pcm_s16le -ar 16000 -ac 1 ${EPISODE_NAME}.wav
 if [ $? -eq 0 ]; then
     echo "Conversione MP3 to WAV completata con successo."
 else
@@ -31,19 +31,15 @@ else
 fi
 
 # Esegue Whisper per trascrivere il file audio
-./whisper --language it -t 7 --print-colors --model ./models/ggml-large-v3.bin --output-srt --file output.wav --output-file ../public/transcripts/${EPISODE_NAME}
+./whisper --language it -t 7 --print-colors --max-len 25 --split-on-word true --model ./models/ggml-large-v3.bin --output-srt --file ${EPISODE_NAME}.wav
 if [ $? -eq 0 ]; then
     echo "Trascrizione completata con successo."
+    # Sposta il file SRT generato nella directory transcripts
+    mv ${EPISODE_NAME}.wav.srt ../public/transcripts/${EPISODE_NAME}.srt
 else
     echo "Errore durante la trascrizione del file audio."
     exit 1
 fi
 
-# Cancella file output.wav
-rm output.wav
-if [ $? -eq 0 ]; then
-    echo "File output.wav cancellato con successo."
-else
-    echo "Errore durante la cancellazione del file output.wav."
-    exit 1
-fi
+# Cancella file WAV temporaneo
+rm ${EPISODE_NAME}.wav
