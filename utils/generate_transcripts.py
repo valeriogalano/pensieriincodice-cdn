@@ -17,7 +17,14 @@ def generate_transcripts(episodes_dir, transcripts_dir):
             # Controlla se il file SRT già esiste
             if not os.path.exists(srt_path):
                 print(f"Trascrizione di {filename} in corso...")
-                result = model.transcribe(mp3_path, language="it")
+                result = model.transcribe(
+                    mp3_path,
+                    language="it",
+                    temperature=0.0,
+                    beam_size=5,
+                    best_of=5,
+                    initial_prompt="Trascrizione in italiano con punteggiatura corretta."
+                )
                 with open(srt_path, 'w', encoding='utf-8') as srt_file:
                     for i, segment in enumerate(result['segments']):
                         srt_file.write(f"{i+1}\n")
