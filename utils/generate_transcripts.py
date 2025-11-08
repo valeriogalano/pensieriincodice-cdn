@@ -23,8 +23,7 @@ def generate_transcripts(episodes_dir, transcripts_dir):
                     temperature=0.0,
                     beam_size=5,
                     best_of=5,
-                    initial_prompt="Trascrizione in italiano con punteggiatura corretta.",
-                    max_len=25
+                    initial_prompt="Trascrizione in italiano con punteggiatura corretta."
                 )
                 with open(srt_path, 'w', encoding='utf-8') as srt_file:
                     for i, segment in enumerate(result['segments']):
