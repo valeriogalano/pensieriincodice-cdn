@@ -1,292 +1,280 @@
 1
-0.000 --> 9.840
- Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
+00:00:00,000 --> 00:00:09,840
+Pensieri in codice, idee dal mondo del software a cura di Valerio Galano.
 
 2
-9.840 --> 26.400
- Salve a tutti ragazzi e bentornati su Pensieri in codice. Per la puntata di oggi vorrei parlare
+00:00:19,840 --> 00:00:26,680
+Salve a tutti ragazzi e bentornati su Pensieri in codice. Per la puntata di oggi vorrei parlare di
 
 3
-26.400 --> 33.720
- di bug. Noi tutti siamo abituati ai bug nei nostri videogame, nei nostri social o nei
+00:00:26,680 --> 00:00:33,720
+bug. Noi tutti siamo abituati ai bug nei nostri videogame, nei nostri social o nei
 
 4
-33.720 --> 40.320
- nostri smartphone. Tuttavia nel corso della storia ci sono stati alcuni bug che seppur molto piccoli
+00:00:33,720 --> 00:00:39,040
+nostri smartphone. Tuttavia nel corso della storia ci sono stati alcuni bug che seppur
 
 5
-40.320 --> 45.920
- hanno causato danni economici enormi. Per questo episodio ho quindi pensato di stilare la lista
+00:00:39,040 --> 00:00:44,920
+molto piccoli hanno causato danni economici enormi. Per questo episodio ho quindi pensato
 
 6
-45.920 --> 58.880
- dei 10 bug più costosi nella storia. 1962 Cape Canaveral. La NASA lancia il
+00:00:44,920 --> 00:00:58,800
+di stilare la lista dei dieci bug più costosi della storia. 1962 Cape Canaveral. La NASA lancia
 
 7
-58.880 --> 66.080
- Mariner One verso Venere. Dopo soli 290 secondi dalla partenza, la navicella inizia a deviare
+00:00:58,800 --> 00:01:06,840
+il mariner 1 verso Venere. Dopo soli 290 secondi dalla partenza la navicella inizia a deviare dalla
 
 8
-66.080 --> 71.960
- dalla rotta prestabilita. La situazione è irrecuperabile, l'ingegnere a terra è costretto
+00:01:06,840 --> 00:01:12,960
+rotta prestabilita. La situazione è irrecuperabile. L'ingegnere a terra è costretto ad attivare il
 
 9
-71.960 --> 77.920
- ad attivare il sistema di autodistruzione. Inizialmente si pensa ad un sabotaggio, ma ad
+00:01:12,960 --> 00:01:19,200
+sistema di autodistruzione. Inizialmente si pensa ad un sabotaggio ma ad una seconda analisi ci si
 
 10
-77.920 --> 82.960
- una seconda analisi ci si accorge che il tecnico che ha ricopiato il software dal blocco note
+00:01:19,200 --> 00:01:25,680
+accorge che il tecnico che ha ricopiato il software dal blocco note su di un calcolatore ha omesso un
 
 11
-82.960 --> 88.960
- su di un calcolatore ha omesso un simbolo di punteggiatura, molto probabilmente un trattino.
+00:01:25,680 --> 00:01:31,760
+simbolo di punteggiatura, molto probabilmente un trattino. Per questo motivo il software a
 
 12
-88.960 --> 94.760
- Per questo motivo il software a bordo della navicella non è stato in grado di compensare
+00:01:31,760 --> 00:01:37,640
+bordo della navicella non è stato in grado di compensare alcuna variazione di velocità. Il costo
 
 13
-94.760 --> 100.640
- alcuna variazione di velocità. Il costo della navicella andata completamente distrutta fu
+00:01:37,640 --> 00:01:43,160
+della navicella, andata completamente distrutta, fu all'epoca di 18 milioni di dollari.
 
 14
-100.640 --> 114.280
- all'epoca di 18 milioni di dollari. 19 giugno 1978. Connecticut. Il tetto del
+00:01:43,160 --> 00:01:58,080
+19 giugno 1978 Connecticut. Il tetto del Hartford Coliseum crolla sotto il peso di una coltre di
 
 15
-114.280 --> 122.000
- Hartford Coliseum crolla sotto il peso di una coltre di neve bagnata. Dalle indagini emerge che
+00:01:58,080 --> 00:02:05,440
+neve bagnata. Dalle indagini emerge che il software CAD utilizzato per la progettazione non era in
 
 16
-122.000 --> 127.160
- il software CAD utilizzato per la progettazione non era in grado di gestire più di una variabile
+00:02:05,440 --> 00:02:11,200
+grado di gestire più di una variabile per volta. Per questo motivo aveva calcolato la struttura
 
 17
-127.320 --> 133.440
- per volta. Per questo motivo aveva calcolato la struttura del tetto tenendo in considerazione
+00:02:11,200 --> 00:02:18,040
+del tetto tenendo in considerazione solamente il peso dei materiali stessi. Fortunatamente
 
 18
-133.440 --> 139.040
- solamente il peso dei materiali stessi. Fortunatamente non ci furono vittime,
+00:02:18,040 --> 00:02:22,680
+non ci furono vittime, ma i danni stimati furono di oltre 90 milioni di dollari.
 
 19
-139.040 --> 150.680
- ma i danni stimati furono di oltre 90 milioni di dollari. 1988. Uno studente della Cornell
+00:02:22,680 --> 00:02:34,920
+1988. Uno studente della Cornell University, tale Robert Morris, decise di scrivere un software
 
 20
-150.800 --> 156.880
- University, tale Robert Morris, decise di scrivere un software per qualcosa che definì
+00:02:34,920 --> 00:02:41,720
+per qualcosa che definì lui stesso un innocuo esperimento. Questo software però mandò in
 
 21
-156.880 --> 163.800
- lui stesso un innocuo esperimento. Questo software però mandò in crash centinaia di computer a
+00:02:41,720 --> 00:02:48,240
+crash centinaia di computer a causa di un errore di codifica. Lo studente fu multato per 10 mila
 
 22
-163.800 --> 169.600
- causa di un errore di codifica. Lo studente fu multato per 10 mila dollari, ma il costo per
+00:02:48,240 --> 00:02:55,320
+dollari, ma il costo per sistemare i danni fu di oltre 100 milioni di dollari. Attualmente Morris
 
 23
-169.600 --> 176.160
- sistemare i danni fu di oltre 100 milioni di dollari. Attualmente Morris è professore
+00:02:55,320 --> 00:03:01,080
+è professore al MIT e il codice del suo innocuo esperimento è custodito presso l'università di
 
 24
-176.160 --> 181.520
- al MIT e il codice del suo innocuo esperimento è custodito presso l'università di Boston.
+00:03:01,080 --> 00:03:14,440
+Boston. Nel gennaio del 1990, 60 mila utenti della AT&T, una delle più grandi società di
 
 25
-181.520 --> 195.280
- Nel gennaio del 1990, 60 mila utenti della AT&T, una delle più grandi società di telecomunicazioni
+00:03:14,440 --> 00:03:19,040
+telecomunicazioni americane, si trovò nell'impossibilità di effettuare chiamate long
 
 26
-195.280 --> 199.720
- americane, si trovano in impossibilità di effettuare chiamate long distance,
+00:03:19,040 --> 00:03:24,320
+distance, quelle che noi conosciamo come interurbane. Inizialmente si pensò ad un hackeraggio,
 
 27
-199.720 --> 204.080
- quelle che noi conosciamo come interurbane. Inizialmente si pensò ad un accheraggio,
+00:03:24,320 --> 00:03:30,200
+successivamente però ci si rese conto che la AT&T, circa un mese prima, aveva effettuato
 
 28
-204.320 --> 210.240
- successivamente però ci si rese conto che la AT&T, circa un mese prima, aveva effettuato
+00:03:30,520 --> 00:03:35,640
+alcune modifiche sui propri sistemi per incrementarne le performance e la velocità.
 
 29
-210.240 --> 215.680
- alcune modifiche sui propri sistemi per rincrementarne le performance e la velocità.
+00:03:35,640 --> 00:03:41,880
+Questo incremento di velocità però aveva portato a destabilizzare il sistema di bilanciamento del
 
 30
-215.680 --> 221.920
- Questo incremento di velocità però aveva portato a destabilizzare il sistema di bilanciamento del
+00:03:41,880 --> 00:03:47,800
+carico tra gli switch, causando il blocco a cascata di tutti e 114 gli switch disponibili.
 
 31
-221.920 --> 227.840
- carico tra gli switch, causando il blocco a cascata di tutti e 114 gli switch disponibili.
+00:03:47,800 --> 00:03:53,360
+Le perdite estimate per AT&T furono di circa 60 milioni di dollari.
 
 32
-227.840 --> 233.280
- Le perdite estimate per AT&T furono di circa 60 milioni di dollari.
+00:03:53,360 --> 00:04:05,560
+Nel 1994 fu invece il turno di Intel. La nota società produttrice di processori
 
 33
-234.080 --> 246.440
- Nel 1994 fu invece il turno di Intel. La nota società produttrice di processori lanciò sul
+00:04:05,560 --> 00:04:11,320
+lanciò sul mercato una linea di Pentium che risentiva di un problema nel calcolo delle
 
 34
-246.440 --> 251.760
- mercato una linea di Pentium che risentiva di un problema nel calcolo delle operazioni
+00:04:11,320 --> 00:04:16,760
+operazioni matematiche che coinvolgevano i numeri in virgola mobile. In pratica c'era
 
 35
-251.760 --> 257.600
- matematiche che coinvolgevano i numeri in virgola mobile. In pratica c'era la possibilità di
+00:04:16,760 --> 00:04:22,760
+la possibilità di sbagliare il calcolo della decima cifra dopo la virgola. Dopo l'insurrezione
 
 36
-257.600 --> 264.040
- sbagliare il calcolo della decima cifra dopo la virgola. Dopo l'insurrezione dei consumatori
+00:04:22,760 --> 00:04:29,760
+dei consumatori, la Intel si offrì di sostituire tutti i processori a coloro che ne avessero fatto
 
 37
-264.320 --> 271.280
- la Intel si offri di sostituire tutti i processori a coloro che ne avessero fatto richiesta. Così
+00:04:29,760 --> 00:04:36,280
+richiesta. Così il costo totale dell'operazione ammontò a circa 475 milioni di dollari.
 
 38
-271.280 --> 276.360
- il costo totale dell'operazione ammontò a circa 475 milioni di dollari.
+00:04:36,600 --> 00:04:49,280
+Nel 1996 invece l'ESA, l'agenzia spaziale europea, riuscì a battere il record del
 
 39
-276.360 --> 289.240
- Nel 1996 invece l'ESA, l'Agenzia Spaziale Europea, riuscì a battere il record del
+00:04:49,280 --> 00:04:55,960
+Mariner 1. Il responsabile a terra fu infatti costretto a premere il tasto di autodistruzione
 
 40
-289.960 --> 296.520
- Il responsabile a terra fu infatti costretto a premere il tasto di autodistruzione in ben
+00:04:55,960 --> 00:05:02,840
+in ben 36 secondi dal lancio. Il software di controllo di volo dell'Aerian 5 infatti
 
 41
-296.520 --> 304.360
- 36 secondi dal lancio. Il software di controllo di volo dell'Ariane 5 infatti tentò di convertire
+00:05:02,840 --> 00:05:10,200
+tentò di convertire un numero in virgola mobile a 64 bit in un intero a 16 bit causando il crash
 
 42
-304.360 --> 311.560
- un numero in virgola mobile a 64 bit in un intero a 16 bit causando il crash del computer principale
+00:05:10,200 --> 00:05:16,000
+del computer principale e di quello di riserva che era perfettamente identico e montava lo stesso
 
 43
-311.560 --> 317.120
- e di quello di riserva che era perfettamente identico e montava lo stesso identico software.
+00:05:16,000 --> 00:05:24,560
+identico software. Il costo per lo sviluppo del razzo era stato di 8 miliardi di dollari e inoltre
 
 44
-317.120 --> 324.600
- Il costo per lo sviluppo del razzo era stato di 8 miliardi di dollari e inoltre
+00:05:24,560 --> 00:05:29,480
+esso portava con sé come carico un satellite del valore di 500 milioni di dollari.
 
 45
-324.600 --> 329.520
- esso portava con sé come carico un satellite del valore di 500 milioni di dollari.
+00:05:33,480 --> 00:05:42,680
+1998, di nuovo protagonista la NASA. Il Mars Climate Orbiter era una sonda progettata per
 
 46
-329.520 --> 342.560
- 1998, di nuovo protagonista alla NASA. Il Mars Climate Orbiter era una sonda progettata
+00:05:42,680 --> 00:05:48,440
+studiare il clima e l'atmosfera di Marte. Questa sonda avrebbe dovuto appunto orbitare attorno al
 
 47
-342.560 --> 347.920
- per studiare il clima e l'atmosfera di Marte. Questa sonda avrebbe dovuto appunto orbitare
+00:05:48,440 --> 00:05:55,040
+pianeta rosso ma si schiantò sulla sua superficie poiché tentò di orbitare troppo in basso. Dalle
 
 48
-347.920 --> 353.280
- attorno al pianeta rosso ma si schiantò sulla sua superficie poiché tentò di orbitare troppo in
+00:05:55,040 --> 00:06:00,280
+indagini venne fuori che il problema fu banalmente dovuto ad un errore di conversione tra il sistema
 
 49
-353.280 --> 359.520
- basso. Dalle indagini venne fuori che il problema fu banalmente dovuto ad un errore di conversione
+00:06:00,280 --> 00:06:06,320
+inglese e quello metrico decimale a montare del danno 125 milioni di dollari.
 
 50
-359.520 --> 366.320
- tra il sistema inglese e quello metrico decimale a montare del danno 125 milioni di dollari.
+00:06:06,320 --> 00:06:20,120
+2004, Regno Unito. Due agenzie governative, il Child Support Agency e il Department of Work and
 
 51
-366.320 --> 379.760
- 2004, Regno Unito. Due agenzie governative, il Child Support Agency e il Department of Work
+00:06:20,120 --> 00:06:27,520
+Pensions decisero di ristrutturare contemporaneamente i propri sistemi informatici. I software che ne
 
 52
-379.760 --> 385.640
- and Pensions, decisero di ristrutturare contemporaneamente i propri sistemi informatici.
+00:06:27,520 --> 00:06:33,120
+risultarono furono talmente incompatibili da causare milioni di transazioni errate sia in
 
 53
-385.640 --> 392.320
- I software che ne risultarono furono talmente incompatibili da causare milioni di transazioni
+00:06:33,120 --> 00:06:39,400
+eccesso che in difetto, riscossioni non effettuate e rallentamenti burocratici. Il
 
 54
-392.320 --> 398.080
- errate sia in eccesso che in difetto, riscossioni non effettuate e rallentamenti burocratici.
+00:06:39,400 --> 00:06:50,560
+costo per i contribuenti inglesi ammontò a un miliardo di dollari. Nell'agosto del 2009 una
 
 55
-398.080 --> 403.360
- Il costo per i contribuenti inglesi ammonto a un miliardo di dollari.
+00:06:50,560 --> 00:06:57,960
+Lexus ES 350 si schiantò a oltre 150 mila orarie causando la morte di quattro persone. Prima
 
 56
-403.360 --> 415.520
- Nell'agosto del 2009, una Lexus ES 350 si schiantò a oltre 150 mila orarie causando la
+00:06:57,960 --> 00:07:03,760
+dell'incidente uno dei passeggeri chiamò il 911 dicendo che l'auto era priva di freni e senza
 
 57
-415.520 --> 421.720
- morte di quattro persone. Prima dell'incidente, uno dei passeggeri chiamò il 911 dicendo che
+00:07:03,760 --> 00:07:10,000
+controllo. A novembre dello stesso anno la Toyota dovette richiamare 9 milioni di auto da tutto il
 
 58
-421.720 --> 427.680
- l'auto era priva di freni e senza controllo. A novembre dello stesso anno, la Toyota dovette
+00:07:10,000 --> 00:07:15,360
+mondo per correggere un bug nel software del sistema antibloccaggio dei freni. Il costo totale
 
 59
-427.680 --> 432.240
- richiamare nove milioni di auto da tutto il mondo per correggere un bug nel software del
+00:07:15,720 --> 00:07:27,640
+stimato per l'operazione fu di oltre 3 miliardi di dollari. Nell'agosto del 2012 in Night Capital
 
 60
-432.240 --> 438.640
- sistema antibloccaggio dei freni. Il costo totale stimato per l'operazione fu di oltre 3 miliardi
+00:07:27,640 --> 00:07:33,400
+Group, una delle più grandi società americane di servizi finanziari, inviò in automatico una
 
 61
-438.640 --> 447.800
- di dollari. Nell'agosto del 2012, il Knight Capital Group,
+00:07:33,400 --> 00:07:38,040
+serie di ordini di acquisto in contemporanea invece che nell'arco di giorni così come era
 
 62
-448.040 --> 454.080
- una delle più grandi società americane di servizi finanziari, inviò in automatico una serie di ordini
+00:07:38,040 --> 00:07:43,720
+stato previsto. Le perdite di questa operazione furono di ben quattro volte superiori ai guadagni.
 
 63
-454.080 --> 460.160
- di acquisto in contemporanea invece che nell'arco di giorni, così come era stato previsto. Le perdite
+00:07:44,520 --> 00:07:49,440
+L'errore fu causato da un server all'interno della farm che non era stato aggiornato e
 
 64
-460.160 --> 466.640
- di questa operazione furono di ben 4 volte superiori ai guadagni. L'errore fu causato da un server
+00:07:49,440 --> 00:07:55,000
+pertanto eseguiva del codice obsoleto. Nell'arco di due giorni le azioni della
 
 65
-466.640 --> 473.640
- all'interno della farm che non era stato aggiornato e pertanto eseguiva del codice obsoleto. Nell'arco
+00:07:55,000 --> 00:08:01,920
+società persero ben il 75 per cento e il totale delle perdite stimate fu di 440 milioni di dollari.
 
 66
-473.680 --> 478.800
- di due giorni le azioni della società persano ben il 75% e il totale delle perdite
+00:08:05,920 --> 00:08:12,400
+Con questo siamo arrivati alla fine della nostra lista dei 10 bug più costosi della
 
 67
-478.800 --> 489.080
- estimate fu di 440 milioni di dollari. Con questo siamo arrivati alla fine della
+00:08:12,400 --> 00:08:18,520
+storia. Come abbiamo visto anche dei minimi errori possono provocare danni enormi. Spero
 
 68
-489.080 --> 495.280
- nostra lista dei 10 bug più costosi della storia. Come abbiamo visto anche dei minimi
+00:08:18,520 --> 00:08:24,880
+che l'episodio vi sia piaciuto e come al solito vi invito a lasciare un commento per farmi sapere
 
 69
-495.280 --> 501.240
- errori possono provocare danni enormi. Spero che l'episodio vi sia piaciuto e come al solito
+00:08:24,880 --> 00:08:32,800
+cosa vi è piaciuto, cosa no e se magari conoscete voi dei bug che ho dimenticato di inserire in
 
 70
-501.520 --> 509.720
- vi invito a lasciare un commento per farmi sapere cosa vi è piaciuto, cosa no e se magari conoscete
-
-71
-509.720 --> 516.080
- voi dei bug che ho dimenticato di inserire in questa lista. Per ora vi saluto e ci sentiamo
-
-72
-516.080 --> 519.000
- al prossimo episodio di pensieri in codice.
-
-73
-531.240 --> 534.480
- Sottotitoli creati dalla comunità Amara.org
+00:08:32,800 --> 00:08:39,040
+questa lista. Per ora vi saluto e ci sentiamo al prossimo episodio di Pensieri in Codice.
 
