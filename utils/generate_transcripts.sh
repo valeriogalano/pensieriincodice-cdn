@@ -50,6 +50,7 @@ process_episode() {
   echo "[${EPISODE_NAME}] Trascrizione con whisper..."
   if ./whisper -l it -t 7 --model "$MODEL_PATH" \
       --output-srt --beam-size 5 --best-of 5 \
+      --split-on-word --max-len 40 \
       --file "$WAV_PATH"; then
     echo "[${EPISODE_NAME}] Trascrizione completata."
     mv "$OUT_SRT_TEMP" "$OUT_SRT_FINAL"
