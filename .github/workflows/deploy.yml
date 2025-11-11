@@ -4,8 +4,8 @@ on:
   # Runs on pushes targeting the default branch
   push:
     paths:
-      - 'public/*'
-      - 'raw/*'
+      - 'public/**'
+      - 'raw/**'
     branches: ["main"]
 
   # Runs on pull requests to the default branch
