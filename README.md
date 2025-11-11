@@ -56,6 +56,32 @@ La repository è organizzata in cartelle per mantenere l'ordine e facilitare la 
 └── README.md                      # questo file
 ```
 
+## Aggiunta di nuovi contenuti
+
+### Aggiunta capitoli
+
+I file con i capitoli degli episodi vanno posizionati nella cartella `raw/chapters/` con la seguente nomenclatura:
+
+- **Nome file**: `PIC<numero_episodio>.txt`
+- **Esempio**: `PIC145.txt` per l'episodio 145
+
+Il file verrà automaticamente elaborato e convertito in formato JSON nella cartella `public/chapters/`.
+
+### Aggiunta cover
+
+Le cover degli episodi vanno posizionate nella cartella `raw/covers/` con la seguente nomenclatura:
+
+- **Cover standard**: `<numero_episodio>.png`
+- **Cover Community Edition**: `<numero_episodio>-ce.png`
+
+**Esempi**:
+- `145.png` per la cover standard dell'episodio 145
+- `145-ce.png` per la cover Community Edition dell'episodio 145
+
+Il suffisso `-ce` serve per distinguere le cover degli episodi Community Edition che differiscono da quelle regolari. I file verranno automaticamente elaborati e copiati nella cartella `public/covers/`.
+
+---
+
 ## Utilizzo locale: generazione trascrizioni con shell (whisper.cpp)
 
 Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script `utils/generate_transcripts.sh`, che sfrutta `whisper.cpp`.
@@ -152,32 +178,6 @@ Output atteso:
 - Errore su `ffmpeg` non trovato: installa `ffmpeg` e riapri il terminale.
 - Prestazioni lente: su CPU può richiedere tempo; usa un modello più piccolo (ad es. `tiny`/`small`) o una macchina con GPU.
 - Apple Silicon: con versioni recenti di PyTorch, l'accelerazione MPS è automatica; aggiorna PyTorch se non viene rilevata.
-
----
-
-## Aggiunta di nuovi contenuti
-
-### Aggiunta capitoli
-
-I file con i capitoli degli episodi vanno posizionati nella cartella `raw/chapters/` con la seguente nomenclatura:
-
-- **Nome file**: `PIC<numero_episodio>.txt`
-- **Esempio**: `PIC145.txt` per l'episodio 145
-
-Il file verrà automaticamente elaborato e convertito in formato JSON nella cartella `public/chapters/`.
-
-### Aggiunta cover
-
-Le cover degli episodi vanno posizionate nella cartella `raw/covers/` con la seguente nomenclatura:
-
-- **Cover standard**: `<numero_episodio>.png` 
-- **Cover Community Edition**: `<numero_episodio>-ce.png`
-
-**Esempi**:
-- `145.png` per la cover standard dell'episodio 145
-- `145-ce.png` per la cover Community Edition dell'episodio 145
-
-Il suffisso `-ce` serve per distinguere le cover degli episodi Community Edition che differiscono da quelle regolari. I file verranno automaticamente elaborati e copiati nella cartella `public/covers/`.
 
 ---
 
