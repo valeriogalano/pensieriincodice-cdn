@@ -36,7 +36,7 @@ $files = glob($inputPath .'*.txt');
 foreach ($files as $file) {
 
     // Output filename
-    $outputFilename = $outputPath . pathinfo($file, PATHINFO_FILENAME) . '.json';
+    $outputFilename = $outputPath . 'PIC' . pathinfo($file, PATHINFO_FILENAME) . '.json';
 
     // If output file exists, skip
     if (file_exists($outputFilename)) {
