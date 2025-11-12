@@ -1,9 +1,9 @@
 name: Generate missing transcriptions
 
 on:
-  push:
-    paths:
-      #- 'public/episodes/*.mp3'
+#  push:
+#    paths:
+#      - 'public/episodes/*.mp3'
   workflow_dispatch:
 
 jobs:
