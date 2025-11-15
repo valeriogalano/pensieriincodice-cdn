@@ -23,8 +23,27 @@ opencv_converter = OpenCVConverter()
 overlayer = Overlayer()
 
 
-def is_already_processed(episode_number: str):
-    return os.path.exists(f"../../public/covers/PIC{episode_number}.png")
+def _dest_filename(cover_name: str) -> str:
+    """Return destination filename without extension, ensuring single PIC prefix.
+
+    Examples:
+    - cover_name="PIC144" -> "PIC144"
+    - cover_name="144" -> "PIC144"
+    - cover_name="PIC144-ce" -> "PIC144-ce"
+    - cover_name="144-ce" -> "PIC144-ce"
+    """
+    if cover_name.upper().startswith("PIC"):
+        return cover_name
+    return f"PIC{cover_name}"
+
+
+def _dest_path_for_cover(cover_name: str) -> str:
+    return f"../../public/covers/{_dest_filename(cover_name)}.png"
+
+
+def is_already_processed(cover_name: str):
+    """Check if the final destination file for this cover already exists."""
+    return os.path.exists(_dest_path_for_cover(cover_name))
 
 
 def download_frame(episode_tag: str):
@@ -53,9 +72,11 @@ def main():
 
         for cover in covers:
             cover_name = str(cover).split("/")[-1].split(".")[0]
-            episode_number = cover_name.split("-")[0]
-            if is_already_processed(episode_number):
-                logger.info("Cover %s already processed", cover_name)
+
+            # Compute destination path and skip if it already exists
+            overlayed_cover_path = _dest_path_for_cover(cover_name)
+            if os.path.exists(overlayed_cover_path):
+                logger.info("Cover %s already processed (destination exists)", cover_name)
                 continue
 
             cover_extension = str(cover).split(".")[-1]
@@ -66,7 +87,8 @@ def main():
             converted_cover_path = (
                 f"tmp/{cover_name}_converted.png"
             )
-            overlayed_cover_path = f"../../public/covers/PIC{cover_name}.png"
+            # Destination path (ensures no double PIC prefix)
+            overlayed_cover_path = _dest_path_for_cover(cover_name)
 
             episode_tag = "untagged"
             if "-" in cover_name:
