@@ -2,10 +2,12 @@
 
 set -euo pipefail
 
-EPISODES_DIR="../public/episodes"
-TRANSCRIPTS_DIR="../public/transcripts"
+# Percorsi aggiornati: questo script ora risiede in utils/transcripts/
+EPISODES_DIR="../../public/episodes"
+TRANSCRIPTS_DIR="../../public/transcripts"
 MODEL_NAME="ggml-large-v3.bin"
-MODEL_PATH="./models/$MODEL_NAME"
+MODEL_PATH="../models/$MODEL_NAME"
+WHISPER_BIN="../whisper"
 
 mkdir -p "$(dirname "$MODEL_PATH")" "$TRANSCRIPTS_DIR"
 
@@ -49,7 +51,7 @@ process_episode() {
   fi
 
   echo "[${EPISODE_NAME}] Trascrizione con whisper..."
-  if ./whisper -l it -t 7 --model "$MODEL_PATH" \
+  if "$WHISPER_BIN" -l it -t 7 --model "$MODEL_PATH" \
       --output-srt --beam-size 5 --best-of 5 \
       --split-on-word --max-len 15 \
       --prompt 'Trascrizione in italiano con punteggiatura corretta' \

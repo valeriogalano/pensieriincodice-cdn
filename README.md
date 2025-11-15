@@ -51,6 +51,11 @@ La repository è organizzata in cartelle per mantenere l'ordine e facilitare la 
 │   └── covers/                    # locandine degli episodi da elaborare
 │
 ├── utils/
+│   ├── audio/                     # strumenti audio (es. ID3 tagger)
+│   ├── chapters/                  # strumenti per i capitoli (txt -> json)
+│   ├── covers/                    # utility per cover (script locali)
+│   ├── transcripts/               # strumenti per generare trascrizioni
+│   ├── models/                    # modelli per whisper.cpp (scaricati al primo avvio)
 │   └── cover_formatter/           # usato nella GitHub action
 │
 └── README.md                      # questo file
@@ -84,7 +89,7 @@ Il suffisso `-ce` serve per distinguere le cover degli episodi Community Edition
 
 ## Utilizzo locale: generazione trascrizioni con shell (whisper.cpp)
 
-Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script `utils/generate_transcripts.sh`, che sfrutta `whisper.cpp`.
+Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script `utils/transcripts/generate_transcripts.sh`, che sfrutta `whisper.cpp`.
 
 - Come funziona: legge i file `.mp3` in `public/episodes` e crea (se mancanti) i corrispondenti `.srt` in `public/transcripts`.
 - Modello usato: `ggml-large-v3` (italiano). Gli `.srt` esistenti vengono lasciati intatti.
@@ -107,10 +112,10 @@ Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script 
 - La cartella `public/transcripts` verrà creata automaticamente se assente.
 
 ### Esecuzione
-Esegui dalla cartella `utils` (lo script usa percorsi relativi alla sua posizione):
+Esegui dalla cartella `utils/transcripts` (lo script usa percorsi relativi alla sua posizione):
 
 ```bash
-cd utils
+cd utils/transcripts
 ./generate_transcripts.sh            # genera tutte le trascrizioni mancanti
 ./generate_transcripts.sh PIC123     # genera solo per lo specifico episodio PIC123.mp3
 ```
@@ -121,7 +126,7 @@ Output atteso:
 - Non sovrascrive trascrizioni già presenti.
 
 ### Troubleshooting
-- `permission denied`: esegui `chmod +x utils/generate_transcripts.sh utils/whisper`.
+- `permission denied`: esegui `chmod +x utils/transcripts/generate_transcripts.sh utils/whisper`.
 - `./whisper: file o directory non esistente`: assicurati che il binario si chiami `whisper` e sia in `utils/`.
 - `ffmpeg` non trovato: installalo e riapri il terminale.
 - Errori di download del modello: verifica la connessione o riprova più tardi.
@@ -130,7 +135,7 @@ Output atteso:
 
 ## Alternativa: generazione trascrizioni in Python (OpenAI Whisper)
 
-Puoi anche generare i file di trascrizione `.srt` usando lo script `utils/generate_transcripts.py`, che sfrutta OpenAI Whisper.
+Puoi anche generare i file di trascrizione `.srt` usando lo script `utils/transcripts/generate_transcripts.py`, che sfrutta OpenAI Whisper.
 
 - Come funziona: legge i file `.mp3` in `public/episodes` e crea (se mancanti) i corrispondenti `.srt` in `public/transcripts`.
 - Modello usato: `base` (italiano). Gli `.srt` esistenti vengono lasciati intatti.
@@ -167,7 +172,7 @@ Nota: Whisper installerà anche PyTorch. Se disponi di GPU, verrà usata automat
 Esegui lo script dalla root del repository (importante: usa la root perché lo script imposta percorsi relativi `./public/...`).
 
 ```bash
-python utils/generate_transcripts.py
+python utils/transcripts/generate_transcripts.py
 ```
 
 Output atteso:

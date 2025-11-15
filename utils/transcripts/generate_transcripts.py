@@ -35,4 +35,5 @@ def generate_transcripts(episodes_dir, transcripts_dir):
                 print(f"La trascrizione per {filename} esiste già. Saltando...")
 
 if __name__ == "__main__":
+    # Eseguire dalla root del repo
     generate_transcripts("./public/episodes", "./public/transcripts")
