@@ -1,5 +1,6 @@
 import os
 import shutil
+import subprocess
 from pathlib import Path
 
 import requests
@@ -118,6 +119,64 @@ def main():
                 overlayed_cover_path
             )
             logger.info("Cover %s formatted", cover_name)
+
+            # Optimize resulting PNG with pngquant, if available
+            try:
+                def _pngquant_exists() -> bool:
+                    # Prefer shutil.which but keep fallback to PATH execution
+                    from shutil import which
+                    return which("pngquant") is not None
+
+                def _optimize_png(png_path: str) -> None:
+                    if not _pngquant_exists():
+                        logger.warning("pngquant non trovato: salto l'ottimizzazione della cover %s", cover_name)
+                        return
+
+                    optimized_tmp = f"tmp/{Path(png_path).stem}_optimized.png"
+                    # Build pngquant command
+                    cmd = [
+                        "pngquant",
+                        "--quality=70-90",
+                        "--speed", "1",
+                        "--strip",
+                        "--skip-if-larger",
+                        "--output", optimized_tmp,
+                        "--",
+                        png_path,
+                    ]
+
+                    result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+                    if result.returncode == 0 and os.path.exists(optimized_tmp):
+                        try:
+                            orig_size = os.path.getsize(png_path)
+                            opt_size = os.path.getsize(optimized_tmp)
+                            os.replace(optimized_tmp, png_path)  # atomic replace
+                            saved_pct = (1 - (opt_size / orig_size)) * 100 if orig_size else 0
+                            logger.info(
+                                "Cover %s ottimizzata con pngquant: %.1f%% in meno (%d -> %d bytes)",
+                                cover_name, saved_pct, orig_size, opt_size
+                            )
+                        except Exception as e:
+                            logger.warning("Impossibile sostituire il PNG ottimizzato per %s: %s", cover_name, e)
+                    else:
+                        # pngquant return code 99 typically means file would be larger; keep original
+                        if result.returncode not in (0, 99):
+                            logger.warning(
+                                "pngquant ha restituito codice %s per %s: %s",
+                                result.returncode, cover_name, result.stderr.decode(errors="ignore")
+                            )
+                        # Clean up tmp file if it exists but wasn't used
+                        if os.path.exists(optimized_tmp):
+                            try:
+                                os.remove(optimized_tmp)
+                            except Exception:
+                                pass
+
+                _optimize_png(overlayed_cover_path)
+            except Exception as e:
+                # Never fail the whole pipeline for optimization
+                logger.warning("Errore durante l'ottimizzazione della cover %s: %s", cover_name, e)
     finally:
         shutil.rmtree('tmp')
 
