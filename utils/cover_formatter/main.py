@@ -136,7 +136,7 @@ def main():
                     # Build pngquant command
                     cmd = [
                         "pngquant",
-                        "--quality=70-90",
+                        "--quality=60-80",
                         "--speed", "1",
                         "--strip",
                         "--skip-if-larger",
