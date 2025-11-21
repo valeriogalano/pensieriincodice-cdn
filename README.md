@@ -59,6 +59,107 @@ La repository è organizzata in cartelle per mantenere l'ordine e facilitare la 
 │   └── cover_formatter/           # usato nella GitHub action
 │
 └── README.md                      # questo file
+
+```
+
+## Generare i capitoli (txt → json) in locale
+
+Questo progetto include uno script PHP che converte i file di capitoli in formato testo in file JSON compatibili con il player. Lo script rileva automaticamente eventuali URL presenti nelle righe dei capitoli e li inserisce nel JSON.
+
+### Requisiti
+- PHP 5.6 o superiore (consigliato). Funziona anche con versioni precedenti purché `json_encode` sia disponibile.
+
+### Dove mettere i file di input
+- Capitoli: `raw/chapters/{EPISODIO}.txt`
+  - Formato di ogni riga: `start end titolo [URL]`
+  - Esempi:
+    - `0.000000 168.000000 Intro`
+    - `924.312130 924.312130 Link al sito https://pensieriincodice.it` → aggiunge `url` al capitolo
+    - `168.000000 260.000000 Sezione con immagine https://example.com/cover.png` → aggiunge `img` al capitolo
+
+Note sul parsing URL:
+- Lo script cerca il primo URL `http://` o `https://` presente nella riga (in qualunque posizione dopo i tempi).
+- Se l'URL punta a un'immagine (`.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`, `.svg`), viene inserito nel campo `img`.
+- Negli altri casi viene inserito nel campo `url`.
+- L'URL, se presente, viene rimosso dal testo del titolo.
+- Se la riga contiene solo un link o solo un'immagine (cioè nessun altro testo oltre agli URL), il campo `title` viene omesso.
+
+Nota: `{EPISODIO}` è il numero dell'episodio (es. `145`).
+
+### Output generato
+- I JSON vengono creati in `public/chapters/` con nome `PIC{EPISODIO}.json` (es. `public/chapters/PIC145.json`).
+
+### Come eseguire lo script
+Dal root della repo:
+
+```bash
+php utils/chapters/convert_chapters.php
+```
+
+Opzioni utili:
+
+- `--force`: forza la rigenerazione anche se il JSON di output esiste già.
+
+Esempi:
+
+```bash
+# conversione standard (salta gli episodi già convertiti)
+php utils/chapters/convert_chapters.php
+
+# forza la rigenerazione di tutti i JSON
+php utils/chapters/convert_chapters.php --force
+```
+
+Lo script:
+- scansiona `raw/chapters/` per tutti i file `.txt`;
+- per ogni riga, estrae `startTime`, `title` e, se presente, un URL (come `url` o `img` a seconda dell'estensione);
+- ordina i capitoli per `startTime` e salva in `public/chapters/PIC{EPISODIO}.json`.
+
+### Rigenerare un episodio già convertito
+Per evitare lavoro inutile, lo script salta i file la cui uscita JSON è già presente. Se modifichi i capitoli o aggiungi dei link e vuoi rigenerare il JSON:
+
+1. elimina il file `public/chapters/PIC{EPISODIO}.json` relativo;
+2. rilancia il comando:
+   ```bash
+   php utils/chapters/convert_chapters.php
+   ```
+
+### Esempio pratico
+Con il file `raw/chapters/145.txt` contenente una riga:
+
+```
+924.312130 924.312130 Qualche esempio https://pensieriincodice.it
+```
+
+il JSON `public/chapters/PIC145.json` conterrà, alla posizione `924.31213`, un capitolo con `title: "Qualche esempio"` e `url: "https://pensieriincodice.it"`.
+
+E se la riga fosse:
+
+```
+260.000000 300.000000 Sezione immagine https://example.com/img.png
+```
+
+nel capitolo verrebbe aggiunto `"img": "https://example.com/img.png"` al posto di `url`.
+
+### Messaggi a console
+Durante l'esecuzione vedrai righe come:
+- `Converting raw/chapters/145.txt` quando un episodio viene elaborato
+- `Skipping raw/chapters/129.txt (output exists)` quando il relativo JSON esiste già
+
+### Struttura del JSON
+Ogni file generato ha la forma:
+
+```json
+{
+  "version": "1.2.0",
+  "chapters": [
+    { "startTime": 0, "title": "Intro" },
+    { "startTime": 924.31213, "title": "Qualche esempio", "url": "https://pensieriincodice.it" },
+    { "startTime": 260, "title": "Sezione immagine", "img": "https://example.com/img.png" },
+    { "startTime": 724.31213, "img": "https://example.com/only-image.png" },
+    { "startTime": 1024.5, "url": "https://example.com/only-link" }
+  ]
+}
 ```
 
 ## Aggiunta di nuovi contenuti
@@ -67,8 +168,8 @@ La repository è organizzata in cartelle per mantenere l'ordine e facilitare la 
 
 I file con i capitoli degli episodi vanno posizionati nella cartella `raw/chapters/` con la seguente nomenclatura:
 
-- **Nome file**: `PIC<numero_episodio>.txt`
-- **Esempio**: `PIC145.txt` per l'episodio 145
+- **Nome file**: `<numero_episodio>.txt`
+- **Esempio**: `145.txt` per l'episodio 145
 
 Il file verrà automaticamente elaborato e convertito in formato JSON nella cartella `public/chapters/`.
 
