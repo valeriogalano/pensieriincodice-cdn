@@ -41,7 +41,7 @@ jobs:
           php-version: '8.3'
 
       - name: Convert chapters files
-        run: php ./utils/chapters/convert_chapters.php
+        run: php ./utils/chapters_converter/chapters_converter.php
 
       - name: Setup Python
         uses: actions/setup-python@v4

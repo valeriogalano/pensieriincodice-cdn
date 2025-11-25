@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-# Percorsi aggiornati: questo script ora risiede in utils/transcripts/
 EPISODES_DIR="../../public/episodes"
 TRANSCRIPTS_DIR="../../public/transcripts"
 MODEL_NAME="ggml-large-v3.bin"

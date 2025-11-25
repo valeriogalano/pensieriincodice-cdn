@@ -91,7 +91,7 @@ Nota: `{EPISODIO}` è il numero dell'episodio (es. `145`).
 Dal root della repo:
 
 ```bash
-php utils/chapters/convert_chapters.php
+php utils/chapters_converter/chapters_converter.php
 ```
 
 Opzioni utili:
@@ -102,10 +102,10 @@ Esempi:
 
 ```bash
 # conversione standard (salta gli episodi già convertiti)
-php utils/chapters/convert_chapters.php
+php utils/chapters_converter/chapters_converter.php
 
 # forza la rigenerazione di tutti i JSON
-php utils/chapters/convert_chapters.php --force
+php utils/chapters_converter/chapters_converter.php --force
 ```
 
 Lo script:
@@ -119,7 +119,7 @@ Per evitare lavoro inutile, lo script salta i file la cui uscita JSON è già pr
 1. elimina il file `public/chapters/PIC{EPISODIO}.json` relativo;
 2. rilancia il comando:
    ```bash
-   php utils/chapters/convert_chapters.php
+   php utils/chapters_converter/chapters_converter.php
    ```
 
 ### Esempio pratico
@@ -324,11 +324,11 @@ Output a console tipico:
 
 ## Generazione trascrizioni (in locale)
 
-Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script `utils/transcripts/generate_transcripts.sh`, che sfrutta `whisper.cpp`.
+Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script `utils/transcripts_generator/transcripts_generator.sh`, che sfrutta `whisper.cpp`.
 
 - Come funziona: legge i file `.mp3` in `public/episodes` e crea (se mancanti) i corrispondenti `.srt` in `public/transcripts`.
 - Modello usato: `ggml-large-v3` (italiano). Gli `.srt` esistenti vengono lasciati intatti.
-- Il modello viene scaricato automaticamente nella prima esecuzione in `utils/models/`.
+- Il modello viene scaricato automaticamente nella prima esecuzione in `utils/transcripts_generator/models/`.
 
 ### Requisiti
 - `ffmpeg` installato nel sistema
@@ -347,12 +347,12 @@ Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script 
 - La cartella `public/transcripts` verrà creata automaticamente se assente.
 
 ### Esecuzione
-Esegui dalla cartella `utils/transcripts` (lo script usa percorsi relativi alla sua posizione):
+Esegui dalla cartella `utils/transcripts_generator` (lo script usa percorsi relativi alla sua posizione):
 
 ```bash
-cd utils/transcripts
-./generate_transcripts.sh            # genera tutte le trascrizioni mancanti
-./generate_transcripts.sh PIC123     # genera solo per lo specifico episodio PIC123.mp3
+cd utils/transcripts_generator
+./transcripts_generator.sh            # genera tutte le trascrizioni mancanti
+./transcripts_generator.sh PIC123     # genera solo per lo specifico episodio PIC123.mp3
 ```
 
 Output atteso:
@@ -361,7 +361,7 @@ Output atteso:
 - Non sovrascrive trascrizioni già presenti.
 
 ### Troubleshooting
-- `permission denied`: esegui `chmod +x utils/transcripts/generate_transcripts.sh utils/whisper`.
+- `permission denied`: esegui `chmod +x utils/transcripts_generator/transcripts_generator.sh utils/whisper`.
 - `./whisper: file o directory non esistente`: assicurati che il binario si chiami `whisper` e sia in `utils/`.
 - `ffmpeg` non trovato: installalo e riapri il terminale.
 - Errori di download del modello: verifica la connessione o riprova più tardi.

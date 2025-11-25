@@ -1,6 +1,4 @@
 <?php
-// Spostato in utils/chapters/ (prima era utils/convert_chapters.php)
-// Converte i file txt dei capitoli in JSON per il player
 
 function convert_file($input_filename, $output_filename)
 {
@@ -66,7 +64,7 @@ function convert_file($input_filename, $output_filename)
     ]));
 }
 
-// Aggiornati i percorsi: ora siamo in utils/chapters, quindi serve salire di due livelli
+// Aggiornati i percorsi: ora siamo in utils/chapters_converter, quindi serve salire di due livelli
 $inputPath = dirname(__FILE__) . '/../../raw/chapters/';
 $outputPath = dirname(__FILE__) . '/../../public/chapters/';
 
