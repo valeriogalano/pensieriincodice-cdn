@@ -53,7 +53,6 @@ La repository è organizzata in cartelle per mantenere l'ordine e facilitare la 
 ├── utils/
 │   ├── audio/                     # strumenti audio (es. ID3 tagger)
 │   ├── chapters/                  # strumenti per i capitoli (txt -> json)
-│   ├── covers/                    # utility per cover (script locali)
 │   ├── transcripts/               # strumenti per generare trascrizioni
 │   ├── models/                    # modelli per whisper.cpp (scaricati al primo avvio)
 │   └── cover_formatter/           # usato nella GitHub action
@@ -186,7 +185,7 @@ Le cover degli episodi vanno posizionate nella cartella `raw/covers/` con la seg
 
 Il suffisso `-ce` serve per distinguere le cover degli episodi Community Edition che differiscono da quelle regolari. I file verranno automaticamente elaborati e copiati nella cartella `public/covers/`.
 
-### Generare le cover (Cover Formatter)
+### Generare le cover (in locale)
 
 Per generare le cover finali con il frame e il numero episodio, è disponibile uno script Python in `utils/cover_formatter`.
 
@@ -243,7 +242,88 @@ Note:
 - Il numero episodio viene disegnato solo se nel nome file è presente almeno una cifra.
 - Il frame appropriato viene scaricato in base al tag del filename: ad esempio `145-ce.png` userà `frame-ce.png`.
 
-## Generazione trascrizioni
+## Aggiungere tag ID3 agli MP3 (uso locale)
+
+Questo repository include uno script Python per aggiungere automaticamente i tag ID3v2 ai file MP3 degli episodi che ne sono sprovvisti.
+
+### Dove si trova
+- Script: `utils/audio/id3_tagger.py`
+
+### Cosa fa
+- Legge tutti i file `*.mp3` in una cartella specificata con `--audio_dir`.
+- Se un file ha già tag ID3, lo salta automaticamente.
+- Per i file senza tag, imposta i campi principali con valori predefiniti:
+  - `Title (TIT2)`: "Episodio {NUMERO}" (il numero è estratto dal nome file, es. `PIC145.mp3` → 145). Se il numero non è reperibile, usa il nome file.
+  - `Artist (TPE1)`: "Valerio Galano"
+  - `Album (TALB)`: "Pensieri in codice"
+  - `Album Artist (TPE2)`: "Valerio Galano"
+  - `Genre (TCON)`: "Technology"
+  - `Comment (COMM)`: "Il podcast dove si ragiona da informatici" (lingua `ita`)
+- Opzionalmente incorpora una cover (fronte) se fornita con l’opzione `--cover`.
+
+### Requisiti
+- Python 3.8+
+- `pip` per installare le dipendenze
+
+Installa la dipendenza necessaria (una tantum):
+
+```bash
+pip install mutagen
+```
+
+Se usi un ambiente virtuale:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate   # su Windows: .venv\Scripts\activate
+pip install mutagen
+```
+
+### Preparazione file
+- Metti gli MP3 degli episodi in `public/episodes` (o in un’altra cartella a tua scelta) con una nomenclatura tipo `PIC145.mp3`, `PIC146.mp3`, ecc.
+- Se vuoi incorporare una cover, prepara un file PNG della cover dell’episodio.
+  - Nota: lo script imposta `mime='image/png'`, quindi usa preferibilmente cover in formato PNG.
+
+### Esecuzione
+Esegui dal root della repo specificando la cartella con gli MP3:
+
+```bash
+python3 utils/audio/id3_tagger.py --audio_dir public/episodes
+```
+
+Con cover (stessa cover per tutti i file elaborati in quella run):
+
+```bash
+python3 utils/audio/id3_tagger.py \
+  --audio_dir public/episodes \
+  --cover public/covers/PIC145.png
+```
+
+Esempio con una cartella temporanea:
+
+```bash
+python3 utils/audio/id3_tagger.py --audio_dir /percorso/ai/tuoi/mp3
+```
+
+Output a console tipico:
+- `Skipping PIC145.mp3 (already has ID3 tags)` → file già taggato, saltato
+- `Adding ID3 tags to PIC146.mp3...` → tag aggiunti
+- Al termine stampa un riepilogo con `Processed`, `Skipped`, `Failed`.
+
+### Note e limitazioni
+- Estrazione numero episodio: avviene cercando le cifre nel nome file (es. `PIC123.mp3` → 123). Se non trova numeri, il titolo sarà il nome file.
+- Cover: l’opzione `--cover` applica la stessa immagine a tutti i file processati in quella esecuzione.
+- Lo script aggiunge i tag solo ai file che risultano privi di tag ID3; non sovrascrive tag esistenti.
+
+### Troubleshooting
+- Errore `ModuleNotFoundError: No module named 'mutagen'`:
+  - Soluzione: installa la dipendenza con `pip install mutagen` (nell’ambiente corretto).
+- Permessi negati o file in uso:
+  - Assicurati che i file MP3 non siano aperti da altri programmi e di avere permessi di scrittura nella cartella.
+- Cover non incorporata:
+  - Verifica il percorso passato a `--cover` e usa un file `.png` esistente.
+
+## Generazione trascrizioni (in locale)
 
 Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script `utils/transcripts/generate_transcripts.sh`, che sfrutta `whisper.cpp`.
 
