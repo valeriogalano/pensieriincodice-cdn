@@ -186,6 +186,73 @@ Le cover degli episodi vanno posizionate nella cartella `raw/covers/` con la seg
 
 Il suffisso `-ce` serve per distinguere le cover degli episodi Community Edition che differiscono da quelle regolari. I file verranno automaticamente elaborati e copiati nella cartella `public/covers/`.
 
+### Generare le cover (Cover Formatter)
+
+Per generare le cover finali con il frame e il numero episodio, è disponibile uno script Python in `utils/cover_formatter`.
+
+#### Requisiti
+- Python 3.9+ (consigliato 3.10/3.11)
+- `pip` per installare le dipendenze
+- Connessione Internet (lo script scarica automaticamente il frame dal repository degli asset)
+- Opzionale: `pngquant` per ottimizzare i PNG finali
+  - macOS: `brew install pngquant`
+  - Ubuntu/Debian: `sudo apt update && sudo apt install pngquant`
+
+Le dipendenze Python specifiche del tool sono elencate in `utils/cover_formatter/requirements.txt` (include OpenCV e NumPy).
+
+#### Installazione dipendenze (una tantum)
+Esegui dalla cartella del formatter:
+
+```bash
+cd utils/cover_formatter
+
+# (opzionale) ambiente virtuale
+python3 -m venv .venv
+source .venv/bin/activate   # su Windows: .venv\Scripts\activate
+
+# installa le dipendenze del formatter
+pip install -r requirements.txt
+```
+
+#### Preparazione input
+Metti le immagini sorgenti in `raw/covers/`. Sono accettati file `.png` o `.jpg` con questi nomi comuni:
+- `145.png` → episodio 145
+- `PIC145.png` → episodio 145
+- `145-ce.png` → episodio 145, tag `ce` (Community Edition)
+- `PIC145-ce.jpg` → episodio 145, tag `ce`
+
+Lo script rileva automaticamente:
+- il numero dell’episodio dal nome file (verrà scritto in alto a sinistra sulla cover);
+- il “tag” dopo il trattino (es. `-ce`) per selezionare il frame corretto.
+
+#### Esecuzione
+Lancia lo script dalla cartella `utils/cover_formatter` specificando la cartella delle immagini di input:
+
+```bash
+cd utils/cover_formatter
+python main.py --images_dir ../../raw/covers
+```
+
+Output atteso:
+- Le cover finali vengono scritte in `public/covers/` con nome `PIC{EPISODIO}.png` (es. `public/covers/PIC145.png`).
+- Se `pngquant` è presente, i PNG vengono ottimizzati automaticamente.
+- Le cover già presenti in `public/covers/` vengono saltate (non vengono rigenerate).
+
+Note:
+- Esegui lo script dalla cartella `utils/cover_formatter` perché usa percorsi relativi per la cartella di output (`../../public/covers`).
+- Il numero episodio viene disegnato solo se nel nome file è presente almeno una cifra.
+- Il frame appropriato viene scaricato in base al tag del filename: ad esempio `145-ce.png` userà `frame-ce.png`.
+
+#### Commit rapido della cover
+Per committare velocemente una singola cover già generata, puoi usare lo script:
+
+```bash
+cd utils/covers
+./cover_commit.sh
+```
+
+Ti verrà richiesto il numero dell’episodio e lo script aggiungerà e puscherà `public/covers/PIC{NUMERO}.png`.
+
 ---
 
 ## Utilizzo locale: generazione trascrizioni con shell (whisper.cpp)

@@ -42,6 +42,23 @@ def _dest_path_for_cover(cover_name: str) -> str:
     return f"../../public/covers/{_dest_filename(cover_name)}.png"
 
 
+def _extract_episode_number(cover_name: str) -> str | None:
+    """Extract the numeric episode from a cover name.
+
+    Examples:
+    - "PIC144" -> "144"
+    - "144" -> "144"
+    - "PIC144-ce" -> "144"
+    - "144-ce" -> "144"
+    - "PIC145-extra-text" -> "145"
+    Returns None if no digits are found.
+    """
+    import re
+
+    m = re.search(r"(\d+)", cover_name)
+    return m.group(1) if m else None
+
+
 def is_already_processed(cover_name: str):
     """Check if the final destination file for this cover already exists."""
     return os.path.exists(_dest_path_for_cover(cover_name))
@@ -116,7 +133,8 @@ def main():
             overlayer.overlay(
                 image_to_overlay,
                 frame_path[episode_tag],
-                overlayed_cover_path
+                overlayed_cover_path,
+                episode_number=_extract_episode_number(cover_name)
             )
             logger.info("Cover %s formatted", cover_name)
 
