@@ -243,19 +243,7 @@ Note:
 - Il numero episodio viene disegnato solo se nel nome file è presente almeno una cifra.
 - Il frame appropriato viene scaricato in base al tag del filename: ad esempio `145-ce.png` userà `frame-ce.png`.
 
-#### Commit rapido della cover
-Per committare velocemente una singola cover già generata, puoi usare lo script:
-
-```bash
-cd utils/covers
-./cover_commit.sh
-```
-
-Ti verrà richiesto il numero dell’episodio e lo script aggiungerà e puscherà `public/covers/PIC{NUMERO}.png`.
-
----
-
-## Utilizzo locale: generazione trascrizioni con shell (whisper.cpp)
+## Generazione trascrizioni
 
 Prima opzione (consigliata per velocità/zero dipendenze Python): usa lo script `utils/transcripts/generate_transcripts.sh`, che sfrutta `whisper.cpp`.
 
@@ -298,59 +286,6 @@ Output atteso:
 - `./whisper: file o directory non esistente`: assicurati che il binario si chiami `whisper` e sia in `utils/`.
 - `ffmpeg` non trovato: installalo e riapri il terminale.
 - Errori di download del modello: verifica la connessione o riprova più tardi.
-
----
-
-## Alternativa: generazione trascrizioni in Python (OpenAI Whisper)
-
-Puoi anche generare i file di trascrizione `.srt` usando lo script `utils/transcripts/generate_transcripts.py`, che sfrutta OpenAI Whisper.
-
-- Come funziona: legge i file `.mp3` in `public/episodes` e crea (se mancanti) i corrispondenti `.srt` in `public/transcripts`.
-- Modello usato: `base` (italiano). Gli `.srt` esistenti vengono lasciati intatti.
-
-### Requisiti
-- Python 3.9+ (consigliato 3.10/3.11)
-- `ffmpeg` installato nel sistema (necessario per Whisper)
-  - macOS: `brew install ffmpeg`
-  - Ubuntu/Debian: `sudo apt update && sudo apt install ffmpeg`
-  - Windows: scarica da https://www.gyan.dev/ffmpeg/ e aggiungi `ffmpeg` al PATH
-
-### Installazione dipendenze
-Esegui i comandi dalla root del progetto.
-
-```bash
-# (opzionale) crea e attiva un virtualenv
-python3 -m venv .venv
-source .venv/bin/activate   # su Windows: .venv\Scripts\activate
-
-# installa le dipendenze
-pip install -r requirements.txt
-
-# se Whisper non fosse presente nel requirements.txt, installalo così:
-# pip install openai-whisper
-```
-
-Nota: Whisper installerà anche PyTorch. Se disponi di GPU, verrà usata automaticamente quando supportata (CUDA su NVIDIA, MPS su Apple Silicon con versioni recenti di PyTorch).
-
-### Preparazione dei file
-- Copia gli episodi `.mp3` nella cartella `public/episodes`.
-- Assicurati che la cartella `public/transcripts` esista; in caso contrario verrà creata dallo script.
-
-### Esecuzione
-Esegui lo script dalla root del repository (importante: usa la root perché lo script imposta percorsi relativi `./public/...`).
-
-```bash
-python utils/transcripts/generate_transcripts.py
-```
-
-Output atteso:
-- Per ogni `*.mp3` in `public/episodes`, se non esiste già, viene creato `public/transcripts/<nomefile>.srt`.
-- Log a console con lo stato della trascrizione e i file creati.
-
-### Troubleshooting
-- Errore su `ffmpeg` non trovato: installa `ffmpeg` e riapri il terminale.
-- Prestazioni lente: su CPU può richiedere tempo; usa un modello più piccolo (ad es. `tiny`/`small`) o una macchina con GPU.
-- Apple Silicon: con versioni recenti di PyTorch, l'accelerazione MPS è automatica; aggiorna PyTorch se non viene rilevata.
 
 ---
 
