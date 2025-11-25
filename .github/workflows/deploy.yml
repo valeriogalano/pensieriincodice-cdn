@@ -64,7 +64,7 @@ jobs:
         run: pip install mutagen
 
       - name: Add ID3 tags to audio files
-        run: python ./utils/audio/id3_tagger.py --audio_dir=./public/episodes
+        run: python ./utils/id3_tagger/id3_tagger.py --audio_dir=./public/episodes
 
       - name: Commit converted files
         uses: stefanzweifel/git-auto-commit-action@v5

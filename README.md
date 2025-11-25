@@ -36,26 +36,25 @@ La repository è organizzata in cartelle per mantenere l'ordine e facilitare la 
 ```
 /
 ├── .github/
-│   ├── workflows/                  # GitHub actions
+│   └── workflows/                  # GitHub actions
 │
 ├── public/
 │   ├── chapters/                  # file json con i capitoli degli episodi
 │   ├── covers/                    # locandine episodi definitive
 │   ├── episodes/                  # file mp3 degli episodi
 │   ├── images/                    # per le immagini
-│   ├── transcripts/               # trascrizioni episodi
-│   └── video/                     # per i video
+│   └── transcripts/               # trascrizioni episodi
 │
 ├── raw/
 │   ├── chapters/                  # file txt con i capitoli degli episodi
 │   └── covers/                    # locandine degli episodi da elaborare
 │
 ├── utils/
-│   ├── audio/                     # strumenti audio (es. ID3 tagger)
 │   ├── chapters/                  # strumenti per i capitoli (txt -> json)
-│   ├── transcripts/               # strumenti per generare trascrizioni
-│   ├── models/                    # modelli per whisper.cpp (scaricati al primo avvio)
-│   └── cover_formatter/           # usato nella GitHub action
+│   ├── cover_formatter/           # usato nella GitHub action
+│   ├── id3_tagger/                # strumenti audio (es. ID3 tagger)
+│   └── transcripts/               # strumenti per generare trascrizioni
+│       └── models/                # modelli per whisper.cpp (scaricati al primo avvio)
 │
 └── README.md                      # questo file
 
@@ -247,7 +246,7 @@ Note:
 Questo repository include uno script Python per aggiungere automaticamente i tag ID3v2 ai file MP3 degli episodi che ne sono sprovvisti.
 
 ### Dove si trova
-- Script: `utils/audio/id3_tagger.py`
+- Script: `utils/id3_tagger/id3_tagger.py`
 
 ### Cosa fa
 - Legge tutti i file `*.mp3` in una cartella specificata con `--audio_dir`.

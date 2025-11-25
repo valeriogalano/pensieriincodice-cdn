@@ -6,7 +6,7 @@ set -euo pipefail
 EPISODES_DIR="../../public/episodes"
 TRANSCRIPTS_DIR="../../public/transcripts"
 MODEL_NAME="ggml-large-v3.bin"
-MODEL_PATH="../models/$MODEL_NAME"
+MODEL_PATH="./models/$MODEL_NAME"
 WHISPER_BIN="../whisper"
 
 mkdir -p "$(dirname "$MODEL_PATH")" "$TRANSCRIPTS_DIR"
