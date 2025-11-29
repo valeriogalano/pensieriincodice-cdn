@@ -16,12 +16,25 @@ argparser = argparse.ArgumentParser()
 argparser.add_argument(
     "--images_dir", type=str, help="Path to the images directory"
 )
+argparser.add_argument(
+    "--font_url",
+    type=str,
+    default=None,
+    help="Optional URL to a .otf/.ttf font to render the episode number (e.g. the Courier 10 Pitch).",
+)
+argparser.add_argument(
+    "--font_path",
+    type=str,
+    default=None,
+    help="Optional local path to a .otf/.ttf font to render the episode number. Overrides --font_url if both provided.",
+)
 
-covers_dir = argparser.parse_args().images_dir
+args = argparser.parse_args()
+covers_dir = args.images_dir
 
 opencv_scaler = OpenCVScaler()
 opencv_converter = OpenCVConverter()
-overlayer = Overlayer()
+overlayer = Overlayer()  # will be replaced in main() if font is provided
 
 
 def _dest_filename(cover_name: str) -> str:
@@ -81,6 +94,38 @@ def download_frame(episode_tag: str):
 def main():
     os.makedirs("tmp", exist_ok=True)
     frame_path = {}
+    font_path = None
+
+    # Resolve font path if provided
+    try:
+        if args.font_path:
+            if os.path.exists(args.font_path):
+                font_path = args.font_path
+            else:
+                logger.warning("Font path provided but not found: %s", args.font_path)
+        elif args.font_url:
+            try:
+                resp = requests.get(args.font_url)
+                resp.raise_for_status()
+                # Try to keep original filename if present, otherwise default
+                import urllib.parse
+                parsed = urllib.parse.urlparse(args.font_url)
+                name = os.path.basename(parsed.path) or "custom_font.otf"
+                safe_name = name.replace(" ", "_")
+                tmp_font_path = os.path.join("tmp", safe_name)
+                with open(tmp_font_path, "wb") as f:
+                    f.write(resp.content)
+                font_path = tmp_font_path
+                logger.info("Scaricato il font personalizzato in %s", tmp_font_path)
+            except Exception as e:
+                logger.warning("Impossibile scaricare il font da URL: %s", e)
+    except Exception:
+        # Non-bloccare la pipeline per errori sul font
+        pass
+
+    # Recreate overlayer with chosen font (if any)
+    global overlayer
+    overlayer = Overlayer(font_path=font_path)
 
     try:
         extensions = ('*.png', '*.jpg')

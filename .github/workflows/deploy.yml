@@ -58,7 +58,8 @@ jobs:
       - name: Run cover formatter
         run: |
           cd ./utils/cover_formatter
-          python main.py --images_dir=../../raw/covers
+          python main.py --images_dir=../../raw/covers \
+            --font_url="https://raw.githubusercontent.com/valeriogalano/pensieriincodice-assets/refs/heads/main/fonts/Courier%2010%20Pitch%20Regular.otf"
 
       - name: Install mutagen for ID3 tagging
         run: pip install mutagen

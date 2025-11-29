@@ -4,11 +4,22 @@ import numpy as np
 from typing import Optional
 
 import cv2 as cv
+try:
+    from PIL import Image, ImageDraw, ImageFont
+    _PIL_AVAILABLE = True
+except Exception:
+    # Pillow is optional; we fallback to OpenCV text if unavailable
+    _PIL_AVAILABLE = False
 
 
 class Overlayer:
-    def __init__(self) -> None:
-        pass
+    def __init__(self, font_path: Optional[str] = None) -> None:
+        """Overlayer utility.
+
+        font_path: optional path to a .otf/.ttf font to render the episode number.
+                    If not provided or invalid, falls back to OpenCV builtin font.
+        """
+        self.font_path = font_path if font_path else None
 
     def _read_image(self, image_path: str) -> Optional[np.ndarray]:
         return cv.imread(image_path, cv.IMREAD_COLOR)
@@ -17,7 +28,7 @@ class Overlayer:
         return cv.imread(frame_path, cv.IMREAD_UNCHANGED)
 
     def _draw_episode_number(self, img: np.ndarray, episode_number: str) -> None:
-        """Draw the episode number in the top-left corner with an outline for readability."""
+        """Draw the episode number in the top-left corner (bold white, no outline)."""
         if not episode_number:
             return
 
@@ -26,25 +37,56 @@ class Overlayer:
         # Previous sizing was too small and too close to the corner.
         # Increase scale and padding to better match the visual reference.
         base = max(h, w)
-        # Raddoppia la grandezza del numero: ~17.0 su 3000px (prima ~8.5)
-        font_scale = max(7.0, base / 175.0)
+        # Aumenta la grandezza del numero del 50%
+        font_scale = 1.5 * max(7.0, base / 175.0)
         # Spessore proporzionato alla nuova scala per mantenere l'effetto bold
         thickness = int(max(6, round(font_scale * 3.2)))
-        font = cv.FONT_HERSHEY_SIMPLEX
-
         text = f"{episode_number}"
 
-        # Padding from the top-left corner (spostato un po' più a destra)
-        pad_x = int(max(100, base * 0.05))  # ~150px on 3000px
-        pad_y = int(max(140, base * 0.065)) # ~195px on 3000px
+        # Padding from the top-left corner (move number even higher)
+        pad_x = int(max(100, base * 0.05))   # ~150px on 3000px
+        pad_y = int(max(90, base * 0.03))    # ~90px on 3000px (was ~135px)
 
+        # If we have a font path and Pillow, use it for custom font rendering
+        if self.font_path and _PIL_AVAILABLE:
+            try:
+                # Heuristic: map previous scale to a pixel font size
+                # Increase size by 50% to make the number larger
+                font_size = int(max(120, round((base / 6.8) * 1.5)))
+                font = ImageFont.truetype(self.font_path, font_size)
+
+                # Convert BGR OpenCV image to RGB PIL image
+                pil_img = Image.fromarray(cv.cvtColor(img, cv.COLOR_BGR2RGB))
+                draw = ImageDraw.Draw(pil_img)
+
+                # Measure text to align baseline similarly to OpenCV logic
+                bbox = draw.textbbox((0, 0), text, font=font, stroke_width=0)
+                text_w = bbox[2] - bbox[0]
+                text_h = bbox[3] - bbox[1]
+                org = (pad_x, pad_y)
+
+                # Draw solid bold white text (no outline)
+                draw.text(
+                    org,
+                    text,
+                    font=font,
+                    fill=(255, 255, 255),
+                    stroke_width=0,
+                )
+
+                # Convert back to OpenCV BGR
+                img[:, :, :] = cv.cvtColor(np.array(pil_img), cv.COLOR_RGB2BGR)
+                return
+            except Exception as e:
+                logger.warning("PIL font rendering failed, fallback to OpenCV: %s", e)
+
+        # Fallback: OpenCV builtin font
+        font = cv.FONT_HERSHEY_SIMPLEX
         # For better alignment, get text size
         (text_w, text_h), baseline = cv.getTextSize(text, font, font_scale, thickness)
         org = (pad_x, pad_y + text_h)
 
-        # Draw outline (black) – leggermente più spesso per mantenere contrasto
-        cv.putText(img, text, org, font, font_scale, (0, 0, 0), thickness + 3, cv.LINE_AA)
-        # Draw main text (white)
+        # Draw main text (white only, no black outline)
         cv.putText(img, text, org, font, font_scale, (255, 255, 255), thickness, cv.LINE_AA)
 
     def overlay(self, image_path: str, frame_path: str, output_path: str, episode_number: str | None = None) -> None:
