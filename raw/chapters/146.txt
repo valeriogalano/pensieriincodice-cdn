@@ -1,0 +1,8 @@
+0.000000	59.548869	Introduzione
+59.571344	249.895869	Disclamer
+249.805068	1148.691457	Pianificare le cose da fare
+481.547751	512.121656	https://get.todoist.io/valeriogalano5066
+1148.165076	1861.181672	Gestire le informazioni
+1352.830670	1382.955473	https://obsidian.md
+1605.426591	1635.961256	https://readwise.io/i/valerio61
+1861.764962	2115.140226	Conclusione

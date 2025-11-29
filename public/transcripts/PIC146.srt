@@ -1,0 +1,1316 @@
+1
+00:00:00,000 --> 00:00:05,920
+ Oggi torno a fare qualcosa che su Pensieri in Codice manca da un po'. Ti descrivo un
+
+2
+00:00:05,920 --> 00:00:11,100
+ aspetto rilevante della mia quotidianità che penso possa risultare in qualche modo
+
+3
+00:00:11,100 --> 00:00:17,180
+ interessante per qualcuno là fuori. Riprendendo infatti un filone che di tanto in tanto riappare
+
+4
+00:00:17,180 --> 00:00:22,960
+ su questo podcast in varie forme, cioè quello dell'organizzazione e della pianificazione
+
+5
+00:00:22,960 --> 00:00:29,820
+ delle attività, ho deciso di condividere il mio setup software attuale completo. A breve,
+
+6
+00:00:29,820 --> 00:00:37,700
+ ti racconto con quali app e servizi ogni giorno pianifico e organizzo tutto quello
+
+7
+00:00:37,700 --> 00:00:43,540
+ che faccio e le informazioni che gestisco. E approfitto per condividerti anche qualche
+
+8
+00:00:43,540 --> 00:00:45,060
+ riflessione. Sigla!
+
+9
+00:00:45,060 --> 00:01:06,520
+ Spesso, quando mi trovo a parlare con qualcuno del mio lavoro o di Pensieri in Codice o dei
+
+10
+00:01:06,520 --> 00:01:12,120
+ vari altri miei hobby, mi capita di sentirmi rivolgere una domanda. Ma come fai a fare
+
+11
+00:01:12,120 --> 00:01:15,040
+ tante cose senza impazzire? Dove lo trovi?
+
+12
+00:01:15,040 --> 00:01:22,380
+ Trovi il tempo? Beh, la risposta super breve è molto semplice, mi organizzo. Però, col
+
+13
+00:01:22,380 --> 00:01:29,020
+ tempo, mi sono reso conto che questa attività che per me è tanto naturale, per alcuni non
+
+14
+00:01:29,020 --> 00:01:35,240
+ lo è affatto. Anzi, a volte vedo che se ne descrivo certi aspetti, c'è chi veramente
+
+15
+00:01:35,240 --> 00:01:41,500
+ ne rimane impressionato. Ogni settimana io svolgo la mia attività di consulente, scrivo
+
+16
+00:01:41,500 --> 00:01:44,980
+ e registro Pensieri in Codice, ascolto vari podcast.
+
+17
+00:01:44,980 --> 00:01:51,860
+ Leggo articoli, libri, guardo serie tv, anime. In questo periodo sto recuperando tutto Gintama.
+
+18
+00:01:51,860 --> 00:01:55,960
+ Poi faccio palestra, passeggiate, giro in moto, tiro con l'arco.
+
+19
+00:01:55,960 --> 00:02:01,900
+ Capiamoci bene, io non penso seriamente che incastrare queste attività nell'ambito di
+
+20
+00:02:01,900 --> 00:02:08,900
+ una normale vita sociale sia chissà quale risultato. Ne credo che ciò che sto per descriverti
+
+21
+00:02:08,900 --> 00:02:14,620
+ sia chissà quanto straordinario. Per me è qualcosa di abbastanza normale.
+
+22
+00:02:14,620 --> 00:02:21,760
+ E sono sicuro che anche per tanti là fuori sia lo stesso. Questo episodio quindi è pensato per
+
+23
+00:02:21,760 --> 00:02:28,840
+ tutti gli altri. Quelli che magari non hanno mai riflettuto a fondo sulla questione, o non hanno
+
+24
+00:02:28,840 --> 00:02:35,380
+ trovato il loro equilibrio, o non hanno sentito il bisogno di spendere energie in tal senso.
+
+25
+00:02:35,380 --> 00:02:42,720
+ Se sei tra questi, ti voglio dire una cosa importante prima di cominciare. La pianificazione,
+
+26
+00:02:42,720 --> 00:02:44,400
+ l'organizzazione, l'utilizzo...
+
+27
+00:02:44,400 --> 00:02:51,000
+ L'utilizzo di app e strategie specifiche non servono a non dimenticarti le cose da fare,
+
+28
+00:02:51,000 --> 00:02:57,280
+ o a incastrare più commissioni e compiti nella stessa giornata. Certo aiutano a fare anche cose
+
+29
+00:02:57,280 --> 00:03:03,540
+ del genere, ma non è questo lo scopo finale. L'obiettivo che devi avere in mente quando pensi
+
+30
+00:03:03,540 --> 00:03:10,640
+ ad un sistema di pianificazione è sempre e solo uno. Ridurre il livello di stress.
+
+31
+00:03:10,640 --> 00:03:13,900
+ Un metodo di organizzazione ben riuscito,
+
+32
+00:03:13,900 --> 00:03:19,500
+ non è quello che ti salva da ogni possibile imprevisto, o che ti permette di diventare
+
+33
+00:03:19,500 --> 00:03:26,280
+ infallibile, bensì quello che ti protegge dallo stress e dalla frustrazione di tutte
+
+34
+00:03:26,280 --> 00:03:33,020
+ le incombenze quotidiane. Se vuoi, se l'argomento ti interessa, fammelo sapere. Trovi email
+
+35
+00:03:33,020 --> 00:03:39,300
+ e link telegram sul sito pensierincodice.it e magari vediamo come affrontare l'argomento
+
+36
+00:03:39,300 --> 00:03:42,380
+ da un punto di vista più ampio e generale.
+
+37
+00:03:42,380 --> 00:03:49,260
+ Metodi, strategie, strumenti vari. Oggi invece ti parlerò solo degli strumenti che stanno
+
+38
+00:03:49,260 --> 00:03:55,540
+ funzionando per me in questo specifico periodo. E ti anticipo già che si tratta di un ecosistema
+
+39
+00:03:55,540 --> 00:04:01,760
+ estremamente ristretto, cucito su di me, che ho sviluppato nel corso di quasi dieci anni
+
+40
+00:04:01,760 --> 00:04:05,900
+ di esperimenti, cambiamenti e rifiniture. Iniziamo!
+
+41
+00:04:10,300 --> 00:04:17,760
+ La prima grande questione cruciale da gestire per me è sempre stata l'organizzare e tenere
+
+42
+00:04:17,760 --> 00:04:23,180
+ traccia di quelle che possiamo genericamente definire le cose da fare. Tutti abbiamo cose
+
+43
+00:04:23,180 --> 00:04:31,640
+ da fare ogni giorno. Commissioni, compiti, appuntamenti. Io, a prescindere da quanto potessi essere efficiente
+
+44
+00:04:31,640 --> 00:04:38,940
+ o meno nello svolgere ciascuna attività, ho sempre avuto grossi problemi nel tenerle a mente. Lo sai
+
+45
+00:04:38,940 --> 00:04:40,260
+ certamente benissimo.
+
+46
+00:04:40,260 --> 00:04:46,960
+ Anche tu, che si parli di lavoro o di vita privata, esistono compiti che vanno svolti il prima possibile,
+
+47
+00:04:46,960 --> 00:04:54,080
+ altri che vanno svolti entro il tale giorno, o entro la settimana, o il mese, o entro sei mesi,
+
+48
+00:04:54,080 --> 00:05:01,320
+ o tra due anni. Ci sono cose urgenti e cose che invece possono essere rimandate a quando si ha
+
+49
+00:05:01,320 --> 00:05:08,140
+ tempo libero. Alcune attività hanno un periodo specifico nel quale ha senso che vengano svolte
+
+50
+00:05:08,140 --> 00:05:10,160
+ e che altrimenti diventano inutili.
+
+51
+00:05:10,160 --> 00:05:10,160
+ Alcune attività hanno un periodo specifico nel quale ha senso che vengano svolte e che altrimenti diventano inutili.
+
+52
+00:05:10,160 --> 00:05:10,240
+ Alcune attività hanno un periodo specifico nel quale ha senso che vengano svolte e che altrimenti diventano inutili.
+
+53
+00:05:10,240 --> 00:05:16,160
+ Altre richiedono di coordinarsi con terze persone o addirittura dipendono interamente
+
+54
+00:05:16,160 --> 00:05:23,160
+ da loro decisioni o azioni. Insomma, nella vita c'è veramente un mare di cose da tenere a mente
+
+55
+00:05:23,160 --> 00:05:28,860
+ per evitare di commettere errori, di perdere occasioni o di deludere se stessi o gli altri.
+
+56
+00:05:28,860 --> 00:05:35,620
+ Il problema più grosso in questo scenario è che il nostro cervello non è fatto per
+
+57
+00:05:35,620 --> 00:05:40,020
+ trattenere informazioni, bensì per elaborarle. Ci sono innumerevoli
+
+58
+00:05:40,140 --> 00:05:45,320
+ studi scientifici a questo proposito. Ne abbiamo già parlato in precedenti episodi
+
+59
+00:05:45,320 --> 00:05:51,360
+ e probabilmente ne parleremo di nuovo in futuro. Intanto ti lascio in descrizione qualche libro
+
+60
+00:05:51,360 --> 00:05:56,060
+ divulgativo che mi è capitato di leggere sull'argomento e che è stato di ispirazione
+
+61
+00:05:56,060 --> 00:06:02,340
+ per i vecchi episodi. A proposito, in questo episodio troverai molti link, quasi tutti
+
+62
+00:06:02,340 --> 00:06:09,980
+ affiliati o con referral. Quindi, se vuoi dare una mano al progetto, ti ricordo che iscrivendoti ai servizi
+
+63
+00:06:10,040 --> 00:06:16,720
+ o comprando a partire da tali link, pur non pagando un centesimo in più, destinerai una minima parte
+
+64
+00:06:16,720 --> 00:06:22,620
+ della cifra spesa a pensieri in codice. Volendo, anche questo è un modo per restituire un po' del
+
+65
+00:06:22,620 --> 00:06:28,300
+ valore che senti di ricevere da questo podcast. Poi ti ripeto meglio la questione del value for
+
+66
+00:06:28,300 --> 00:06:33,240
+ value nel blocco conclusivo. Tornando a noi però, quanto detto poco fa,
+
+67
+00:06:33,240 --> 00:06:39,340
+ significa che il solo fatto di cercare di tenere a mente la lista delle cose da fare,
+
+68
+00:06:39,940 --> 00:06:46,680
+ rappresenta uno sforzo cognitivo notevole che sottrae energie mentali e disturba lo svolgimento
+
+69
+00:06:46,680 --> 00:06:53,360
+ delle attività stesse durante la giornata. In pratica, cercare di ricordare tutto quello che
+
+70
+00:06:53,360 --> 00:07:01,220
+ dobbiamo fare mentre facciamo altro, ci affatica mentalmente e ci stressa, e probabilmente ci porta
+
+71
+00:07:01,220 --> 00:07:08,500
+ ad ottenere risultati inferiori a dispetto di una maggiore profusione di impegno. Senza considerare
+
+72
+00:07:09,840 --> 00:07:16,720
+ non riusciamo nemmeno a ricordare con precisione tutto, e ci capita quindi di non rispettare qualche
+
+73
+00:07:16,720 --> 00:07:22,620
+ scadenza, o di ricordarci all'ultimo secondo di un certo impegno, o magari di fare tardi agli
+
+74
+00:07:22,620 --> 00:07:29,340
+ appuntamenti. A te non è mai capitato, a me capitava spesso, ed era motivo di grande stress.
+
+75
+00:07:29,340 --> 00:07:35,980
+ Dimenticavo o rimandavo cose da fare, passavo nottate a lavorare su progetti da consegnare
+
+76
+00:07:39,740 --> 00:07:47,160
+ le occasioni di svago. Questo finché, nell'estate del 2016, ho iniziato il mio percorso nel mondo
+
+77
+00:07:47,160 --> 00:07:54,140
+ della pianificazione. Esasperato dal cercare di tenere tutto a mente, cosa che per inciso già
+
+78
+00:07:54,140 --> 00:08:00,740
+ allora sentivo in qualche modo essere energia totalmente sprecata, ho deciso di installare
+
+79
+00:08:00,740 --> 00:08:08,260
+ e sperimentare l'app Todoist. Il primo approccio con questo strumento, a pensarci ora, è stato
+
+80
+00:08:09,640 --> 00:08:26,240
+ di non farmi sfuggire più alcunché. Il vantaggio dal punto di vista cognitivo però mi è apparso
+
+81
+00:08:26,240 --> 00:08:32,680
+ evidente da subito. Il fatto stesso di non dovermi ripetere in continuazione e di non dimenticare
+
+82
+00:08:32,680 --> 00:08:39,480
+ questo o quello mi permetteva di essere più rilassato e dedicarmi totalmente all'attività in corso. Col
+
+83
+00:08:39,540 --> 00:08:46,020
+ passare del tempo, poi, il mio approccio alla questione è notevolmente migliorato. Ho iniziato
+
+84
+00:08:46,020 --> 00:08:51,980
+ studiando alcune tecniche di pianificazione, come la GTD, il Pomodoro, la matrice di Eisenhower e
+
+85
+00:08:51,980 --> 00:08:59,400
+ via discorrendo, e piano piano le ho fuse insieme costruendo un mio metodo personalizzato. Come già
+
+86
+00:08:59,400 --> 00:09:05,600
+ anticipato, oggi non ho intenzione di approfondire l'argomento strategie, quindi se ti interessa
+
+87
+00:09:05,600 --> 00:09:09,440
+ fammelo sapere e magari potrei farci uno o più episodi.
+
+88
+00:09:09,440 --> 00:09:16,520
+ Qualcosa però te lo devo accennare in modo da capire perché utilizzo determinati strumenti.
+
+89
+00:09:16,520 --> 00:09:23,300
+ Quindi, le attività nella mia lista di cose da fare si distinguono essenzialmente in due categorie:
+
+90
+00:09:23,300 --> 00:09:33,020
+ quelle che vanno svolte ad un preciso orario e quelle che invece non sono legate ad un momento
+
+91
+00:09:33,020 --> 00:09:39,340
+ specifico. Le prime sono ad esempio le riunioni, gli appuntamenti, gli eventi,
+
+92
+00:09:39,340 --> 00:09:45,580
+ insomma tutte quelle attività che non dipendono unicamente da me ma che sono legate ad altre
+
+93
+00:09:45,580 --> 00:09:51,480
+ persone o ad un momento specifico al di fuori del quale non avrebbero più senso. Le seconde
+
+94
+00:09:51,480 --> 00:09:57,660
+ invece sono tutte le altre, ad esempio commissioni, compiti e tutto ciò che
+
+95
+00:09:57,660 --> 00:10:03,480
+ generalmente posso più o meno decidere quando fare, scegliendo autonomamente un
+
+96
+00:10:03,480 --> 00:10:09,240
+ momento della giornata e spostandole se necessario. Ora, capiamoci bene: per
+
+97
+00:10:09,240 --> 00:10:15,000
+ gestire una lista di attività, di entrambe le tipologie appena descritte, basterebbe
+
+98
+00:10:15,000 --> 00:10:20,760
+ tranquillamente anche una semplice agenda o un quaderno. Nel corso di questi anni ho
+
+99
+00:10:20,760 --> 00:10:26,400
+ capito che la tecnica è l'aspetto più importante in questi casi. Tuttavia,
+
+100
+00:10:26,400 --> 00:10:33,240
+ penso anche che se posso semplificarmi la vita utilizzando una determinata tecnologia e non
+
+101
+00:10:33,240 --> 00:10:39,140
+ vi sono particolari controindicazioni nell'usarla, sarei uno sciocco a non approfittarne.
+
+102
+00:10:39,140 --> 00:10:45,320
+ Insomma, alla fine della fiera sono riuscito a coprire entrambe le tipologie di attività che
+
+103
+00:10:45,320 --> 00:10:54,740
+ ti ho descritto con due applicazioni principali: i calendari e il servizio/app Todoist. Con i
+
+104
+00:10:54,740 --> 00:11:01,460
+ calendari posso memorizzare facilmente tutti gli impegni che vanno svolti ad orari fissi.
+
+105
+00:11:01,460 --> 00:11:09,040
+ Parlo al plurale calendari perché ne utilizzo uno per le mie questioni personali e poi
+
+106
+00:11:09,040 --> 00:11:15,520
+ uno per ogni cliente che seguo, in modo da tenere tutte le informazioni facilmente separate.
+
+107
+00:11:15,520 --> 00:11:22,540
+ In dettaglio, il mio calendario personale è su Proton Calendar e fa parte della suite di
+
+108
+00:11:22,540 --> 00:11:27,520
+ applicazioni Proton che trovo veramente ottime dal punto di vista della pulizia
+
+109
+00:11:27,520 --> 00:11:31,760
+ dell'interfaccia e delle funzionalità circoscritte ed efficaci.
+
+110
+00:11:31,760 --> 00:11:38,940
+ Proton inoltre ha un'attenzione particolare per la criptografia, il rispetto della privacy
+
+111
+00:11:38,940 --> 00:11:44,820
+ ecc. Credo di averne già parlato in un vecchio episodio della rubrica Espresso,
+
+112
+00:11:44,820 --> 00:11:48,600
+ ma in ogni caso ti consiglio di dargli un'occhiata e provare personalmente,
+
+113
+00:11:48,600 --> 00:11:54,840
+ trovi sempre il link affiliato in descrizione. Oltre al calendario, che in realtà è una delle
+
+114
+00:11:54,840 --> 00:12:01,560
+ app meno rilevanti, del pacchetto fanno parte anche la mail, che mi piace davvero molto,
+
+115
+00:12:01,560 --> 00:12:08,840
+ una VPN, un gestore di password molto comodo, un drive per la condivisione file, un web,
+
+116
+00:12:08,840 --> 00:12:13,280
+ wallet bitcoin e qualcos'altro che ora mi sfugge sicuramente.
+
+117
+00:12:13,280 --> 00:12:20,900
+ Comunque, per ogni cliente poi, utilizzo o il calendario messo a disposizione dall'ufficio IT,
+
+118
+00:12:20,900 --> 00:12:27,140
+ oppure, se magari il cliente è piccolo e non dispone di strumenti aziendali,
+
+119
+00:12:27,140 --> 00:12:33,060
+ un calendario appositamente creato per lui su Proton. Questa suddivisione mi permette
+
+120
+00:12:33,060 --> 00:12:38,060
+ di avere tutti gli eventi separati per cliente, ma anche una visione d'insieme
+
+121
+00:12:38,740 --> 00:12:45,920
+ utilizzando l'app nativa di Apple, in modo da sincronizzare il tutto anche tra iPhone e Mac.
+
+122
+00:12:45,920 --> 00:12:53,860
+ Sono abbastanza sicuro che possa funzionare anche con Android e Windows e, in ogni caso volendo,
+
+123
+00:12:53,860 --> 00:12:58,840
+ si possono collegare anche tutti i calendari a Proton e utilizzare la VistaWeb e la loro
+
+124
+00:12:58,840 --> 00:13:05,300
+ app per smartphone. Non credo sia necessario descrivere i vantaggi dell'utilizzare calendari
+
+125
+00:13:05,300 --> 00:13:08,640
+ digitali. Sicuramente li starai immaginando, sincronizzandoli.
+
+126
+00:13:08,640 --> 00:13:34,480
+ Per le attività non legate ad orari precisi, invece, Todoist è una manna dal cielo. Cioè,
+
+127
+00:13:34,480 --> 00:13:38,460
+ io ora te lo descrivo, ma tu intanto fidati.
+
+128
+00:13:38,540 --> 00:13:45,560
+ Provala. Ha veramente un mare di funzionalità ed è in continua evoluzione. Si tratta di
+
+129
+00:13:45,560 --> 00:13:51,680
+ un'app di gestione delle attività, ovviamente, che trovo particolarmente adatta al mio modo
+
+130
+00:13:51,680 --> 00:13:57,760
+ di pensare e di organizzarmi e che mi permette di memorizzare facilmente attività singole,
+
+131
+00:13:57,760 --> 00:14:04,080
+ ricorsive e scadenze. Le attività singole, vabbè, sono quelle del tipo compra il latte,
+
+132
+00:14:04,080 --> 00:14:08,440
+ non credo sia necessario dire altro. Le ricorsive, invece, sono quelle che
+
+133
+00:14:08,440 --> 00:14:15,060
+ si ripetono a determinati intervalli, come, che so, dai l'acqua alle piante ogni tre giorni,
+
+134
+00:14:15,060 --> 00:14:24,200
+ oppure ogni sabato. Mentre le scadenze sono quelle del tipo paga la retta della scuola entro il primo
+
+135
+00:14:24,200 --> 00:14:30,580
+ settembre, non ho figli, non ho idea di quando vada pagata la retta. Occhio però, le scadenze
+
+136
+00:14:30,580 --> 00:14:38,340
+ potrebbero sembrare attività da calendario, perché hanno una data precisa entro cui non sono più valide.
+
+137
+00:14:38,340 --> 00:14:46,080
+ Ma io le archivio sempre in Todoist perché, in realtà, possono essere svolte anche prima della
+
+138
+00:14:46,080 --> 00:14:52,280
+ data designata. Per questo motivo preferisco averle in un sistema che mi permetta di pianificarle
+
+139
+00:14:52,280 --> 00:14:58,020
+ quando voglio, pur mantenendo l'informazione della data entro cui non saranno più valide,
+
+140
+00:14:58,020 --> 00:15:01,360
+ cosa che quest'app mi permette di fare facilmente.
+
+141
+00:15:01,360 --> 00:15:07,500
+ Delle funzionalità di Todoist ne ho parlato già in un vecchio episodio della rubrica Espresso,
+
+142
+00:15:08,240 --> 00:15:13,600
+ ti lascio in descrizione. È pur vero però che da allora hanno aggiunto moltissime novità,
+
+143
+00:15:13,600 --> 00:15:21,680
+ ma lascio a te il piacere di scoprirle. Quello che invece ti dirò è che con quest'app ogni giorno io
+
+144
+00:15:21,680 --> 00:15:29,200
+ pianifico interamente la mia giornata lavorativa e personale, imposto quali momenti dedicare a cosa
+
+145
+00:15:29,200 --> 00:15:35,820
+ e tutte le notifiche di cui avrò bisogno durante il giorno. Ci sono persino i promemoria basati su
+
+146
+00:15:38,140 --> 00:15:43,400
+ le tisane. Se c'è proprio quel particolare tipo di tisana che vendono solo al negozietto lungo la
+
+147
+00:15:43,400 --> 00:15:50,280
+ strada tra casa e palestra, posso impostare una notifica che mi ricordi di comprarla quando ci
+
+148
+00:15:50,280 --> 00:15:56,600
+ passo davanti. Anche utilizzando Todoist cerco di separare al meglio le attività lavorative da
+
+149
+00:15:56,600 --> 00:16:03,540
+ quelle personali, anche se non sempre è possibile perché non tutti i clienti hanno un proprio tool
+
+150
+00:16:03,540 --> 00:16:08,040
+ di gestione dei compiti interno. Ma a questo si può sopperire utilizzando un'app che si chiama
+
+151
+00:16:08,040 --> 00:16:16,040
+ Utilizzando la suddivisione in progetti e i colori. Ogni mattina poi dedico tra i 15 e i 30 minuti per
+
+152
+00:16:16,040 --> 00:16:22,520
+ individuare tra tutte le cose da fare quelle più urgenti, quelle che possono rientrare nella giornata
+
+153
+00:16:22,520 --> 00:16:28,980
+ e quelle che invece vanno rimandate. E per ciascuna faccio una stima di quanto tempo potrebbe essere
+
+154
+00:16:28,980 --> 00:16:35,940
+ necessario per completarla. Questa operazione è importantissima. Primo per evitare di caricarmi
+
+155
+00:16:35,940 --> 00:16:37,580
+ troppo o troppo poco.
+
+156
+00:16:37,940 --> 00:16:43,840
+ E poi per individuare eventuali compiti eccessivamente onerosi da svolgere in una
+
+157
+00:16:43,840 --> 00:16:50,980
+ volta sola. In tal caso procedo a suddividerli in sottocompiti più circoscritti da pianificare
+
+158
+00:16:50,980 --> 00:16:57,500
+ su più giorni. Una volta fatto ciò sono pronto per affrontare la mia giornata sapendo di essermi
+
+159
+00:16:57,500 --> 00:17:04,040
+ dato degli obiettivi sfidanti ma non impossibili. E questo mi permette di impegnarmi con buona
+
+160
+00:17:04,040 --> 00:17:07,220
+ speranza di riuscire a completare tutto senza stress.
+
+161
+00:17:07,840 --> 00:17:13,580
+ Con una precisa lista di cose da fare e di appuntamenti non mi è più necessario dedicare
+
+162
+00:17:13,580 --> 00:17:20,260
+ alcuna energia cognitiva a ricordarmi quale sia il prossimo compito da affrontare. Semplicemente
+
+163
+00:17:20,260 --> 00:17:26,740
+ consulto le mie app e ho la risposta immediata. Una volta a settimana poi spendo anche una mezz'ora
+
+164
+00:17:26,740 --> 00:17:32,680
+ per verificare l'andamento dei giorni precedenti e decidere se è necessario cambiare qualcosa
+
+165
+00:17:32,680 --> 00:17:37,660
+ nell'approccio per i giorni successivi. Dedico anche un po' di tempo a revisioni e
+
+166
+00:17:37,740 --> 00:17:43,380
+ pianificazioni mensili e annuali ma come ti dicevo se ti interessa questi sono tutti
+
+167
+00:17:43,380 --> 00:17:45,560
+ gli argomenti per un altro episodio.
+
+168
+00:17:45,560 --> 00:17:52,760
+ È importante tenere a mente che il mio sistema è in perenne adattamento perché per me la
+
+169
+00:17:52,760 --> 00:17:58,780
+ vita stessa è in perenne cambiamento e non avrebbe alcun senso sperare di trovare un
+
+170
+00:17:58,780 --> 00:18:06,440
+ sistema perfetto da utilizzare ora e per sempre. Il fatto stesso di aver adottato il minimo
+
+171
+00:18:07,640 --> 00:18:15,160
+ di applicazioni fa in modo che la mia pianificazione sia sempre abbastanza agile senza dover spendere
+
+172
+00:18:15,160 --> 00:18:21,260
+ troppo tempo nella pianificazione stessa ma riuscendo comunque a gestire tutto ciò di cui
+
+173
+00:18:21,260 --> 00:18:29,180
+ sento il bisogno. Nonostante le mie app e tutta questa organizzazione però ovviamente possono
+
+174
+00:18:29,180 --> 00:18:36,260
+ capitare e capitano te l'assicuro moltissimi imprevisti. Le stime si rivelano sbagliate,
+
+175
+00:18:37,540 --> 00:18:43,880
+ emergenze, la pianificazione salta, gli obiettivi non vengono raggiunti. L'aver deciso come
+
+176
+00:18:43,880 --> 00:18:49,380
+ impiegare il mio tempo non implica che il mondo sia intenzionato a rispettare i miei
+
+177
+00:18:49,380 --> 00:18:58,120
+ piani però per me sapere se, come e quando poter recuperare un'attività non svolta è
+
+178
+00:18:58,120 --> 00:19:03,840
+ la chiave per poter gestire qualsiasi imprevisto senza alcuna preoccupazione.
+
+179
+00:19:07,440 --> 00:19:14,380
+ Una volta adomate tutte le incombenze della vita quotidiana, personale o lavorativa,
+
+180
+00:19:14,380 --> 00:19:20,780
+ una gran parte delle problematiche e dei motivi di stress più comuni poteva dirsi risolta,
+
+181
+00:19:20,780 --> 00:19:26,920
+ almeno per me. Dopo aver acquisito i miei strumenti e metodi di pianificazione con
+
+182
+00:19:26,920 --> 00:19:32,880
+ il passare del tempo, l'affinare della tecnica e la pratica quotidiana interruzioni,
+
+183
+00:19:32,880 --> 00:19:37,340
+ imprevisti e novità, sebbene inevitabili, non mi spaventavano più.
+
+184
+00:19:37,340 --> 00:19:44,480
+ A quel punto però mi si era aperto del margine per spingermi oltre e iniziare a valutare e poi
+
+185
+00:19:44,480 --> 00:19:52,460
+ ottimizzare il modo in cui svolgevo alcune di quelle operazioni, nello specifico l'acquisizione,
+
+186
+00:19:52,460 --> 00:19:59,220
+ la conservazione e la rielaborazione delle informazioni. Ogni giorno infatti, per lavoro
+
+187
+00:19:59,220 --> 00:20:07,240
+ o per hobby, sono da sempre sottoposto ad un flusso continuo di informazioni: manuali,
+
+188
+00:20:07,240 --> 00:20:14,440
+ news, libri, video, podcast, ricerche, tutti dati che, per dovere o per diletto,
+
+189
+00:20:14,440 --> 00:20:18,580
+ transitano per il mio cervello e che in qualche modo devo gestire.
+
+190
+00:20:18,580 --> 00:20:24,560
+ Lo facciamo tutti, no? Seguiamo i nostri feed preferiti, gli account social interessanti,
+
+191
+00:20:24,560 --> 00:20:31,240
+ leggiamo i giornali, i libri, studiamo strategie per risolvere problemi, impariamo nuove cose.
+
+192
+00:20:31,240 --> 00:20:37,140
+ Essenzialmente riceviamo un flusso costante in entrata di informazioni, nozioni,
+
+193
+00:20:37,140 --> 00:20:43,500
+ e novità. Poi, a nostra volta, rielaboriamo parte di questi dati sulla base di ciò che
+
+194
+00:20:43,500 --> 00:20:49,760
+ già sappiamo, delle esperienze che abbiamo vissuto e della forma mentis che possediamo,
+
+195
+00:20:49,760 --> 00:20:55,020
+ e produciamo da tutto ciò nostre nuove idee e riflessioni originali.
+
+196
+00:20:55,020 --> 00:21:01,620
+ Ora, se siamo soliti attraversare questo processo senza una strategia o un metodo
+
+197
+00:21:01,620 --> 00:21:07,040
+ precisi, alla fine qualcosa ci resta perché riusciamo a interiorizzarlo o memorizzarlo.
+
+198
+00:21:07,040 --> 00:21:15,220
+ Ma molto altro, anche se di nostro interesse, per forza di cose va perso, sempre perché il nostro
+
+199
+00:21:15,220 --> 00:21:21,400
+ cervello non è progettato come un archivio. Ma dato che incamerare tante informazioni,
+
+200
+00:21:21,400 --> 00:21:27,640
+ rielaborarle e crearne di nuove è di per sé un grosso dispendio di energie mentali,
+
+201
+00:21:27,640 --> 00:21:34,440
+ è un vero peccato che tale impegno vada sprecato e molti risultati dei nostri sforzi vadano persi o
+
+202
+00:21:34,440 --> 00:21:36,940
+ dimenticati anche se potenzialmente utili.
+
+203
+00:21:36,940 --> 00:21:44,060
+ Dunque, è sulla base di questa riflessione che, all'incirca nei primi mesi del 2023,
+
+204
+00:21:44,060 --> 00:21:51,720
+ ho deciso di iniziare ad utilizzare quello che viene definito un "secondo cervello" per
+
+205
+00:21:51,720 --> 00:21:59,000
+ archiviare e riordinare tutte le informazioni che ritengo interessanti, sia ricevute che generate da
+
+206
+00:21:59,000 --> 00:22:05,280
+ me. Non approfondirò ora i dettagli di come funziona un second brain perché te ne ho già
+
+207
+00:22:05,280 --> 00:22:06,840
+ parlato in un episodio.
+
+208
+00:22:06,840 --> 00:22:21,720
+ Se vuoi possiamo approfondire anche questo argomento in futuro, nel caso fammelo sapere.
+
+209
+00:22:21,720 --> 00:22:28,960
+ Oggi però siamo qui per parlare di strumenti e quindi ti dico che io ho deciso di implementare
+
+210
+00:22:28,960 --> 00:22:36,740
+ il mio second brain utilizzando un software chiamato Obsidian. Obsidian è essenzialmente un'applicazione
+
+211
+00:22:36,740 --> 00:22:44,240
+ per appunti sottosteroidi con moltissime estensioni e possibilità di archiviare ogni tipo di dato.
+
+212
+00:22:44,240 --> 00:22:50,740
+ Di base permette di scrivere note in formato Markdown e di collegarle fra loro in modo molto
+
+213
+00:22:50,740 --> 00:22:57,980
+ semplice con dei link ipertestuali. Ma può essere anche usata per creare cataloghi, piccoli database,
+
+214
+00:22:57,980 --> 00:23:04,960
+ diagrammi. Volendo si può collegare a molti servizi esterni come large language model,
+
+215
+00:23:04,960 --> 00:23:06,640
+ traduttori e tanto altro.
+
+216
+00:23:06,640 --> 00:23:13,880
+ E una volta realizzate permette anche di sincronizzare tutte le note tra più computer e smartphone.
+
+217
+00:23:13,880 --> 00:23:21,500
+ Io la utilizzo ormai per archiviare ed elaborare praticamente tutte le informazioni che mi interessano.
+
+218
+00:23:21,500 --> 00:23:28,300
+ Ci scrivo gli episodi di pensieri in codice, annoto brani di libri e di articoli, riflessioni su ciò che
+
+219
+00:23:28,300 --> 00:23:36,540
+ leggo, guardo, ascolto. Prendo appunti su tutte le operazioni che svolgo per lavoro così da non doverle
+
+220
+00:23:36,540 --> 00:23:43,260
+ correre da zero nel caso in cui sia necessario ripeterle. Scrivo le cose da ricordare riguardo
+
+221
+00:23:43,260 --> 00:23:50,740
+ un avvenimento o una persona e persino i passaggi di procedure svolte periodicamente o le ricette
+
+222
+00:23:50,740 --> 00:23:57,200
+ che sperimento con le varianti che preferisco. Non importa l'argomento. Se è un'informazione
+
+223
+00:23:57,200 --> 00:24:03,040
+ che ritengo possa potenzialmente servire in futuro o che mi colpisce in qualche modo
+
+224
+00:24:03,040 --> 00:24:06,440
+ allora finisce nel second brain.
+
+225
+00:24:06,440 --> 00:24:13,320
+ Mi permette poi di recuperare tutto in modo molto semplice tramite un potente motore di ricerca interno,
+
+226
+00:24:13,320 --> 00:24:20,660
+ il sistema di etichettatura o i link ipertestuali che vanno da una nota all'altra, questo sia da computer
+
+227
+00:24:20,660 --> 00:24:28,420
+ che da smartphone. Tutte le note inoltre sono anche visibili all'interno di un diagramma interattivo
+
+228
+00:24:28,420 --> 00:24:36,340
+ che le collega in base agli argomenti, le etichette o i link. E come potrai immaginare questa visualizzazione
+
+229
+00:24:36,340 --> 00:24:41,180
+ mi è molto comoda per creare contenuti come gli episodi di pensieri in codice.
+
+230
+00:24:41,180 --> 00:24:47,640
+ Avere tutte le informazioni in un unico posto poi ha anche un altro enorme vantaggio,
+
+231
+00:24:47,640 --> 00:24:52,520
+ anche se questo onestamente è vero a prescindere da quale strumento si utilizzi.
+
+232
+00:24:52,520 --> 00:25:00,660
+ Qualunque cosa io stia cercando so dove trovarla e se non è presente nel second brain allora vuol
+
+233
+00:25:00,660 --> 00:25:05,820
+ dire che non ne sono in possesso e mi tocca porre rimedio in qualche modo.
+
+234
+00:25:06,240 --> 00:25:13,740
+ A questo punto però ti vedo lì che stai pensando ma quanto tempo ci vuole ad archiviare tutta questa
+
+235
+00:25:13,740 --> 00:25:21,700
+ roba e se poi in futuro non servirà mai? Beh qui entrano in gioco tutta una serie di strategie di
+
+236
+00:25:21,700 --> 00:25:27,680
+ utilizzo del second brain che come già detto ho descritto un po' nell'episodio dedicato e che se
+
+237
+00:25:27,680 --> 00:25:34,900
+ vorrai potremo esaminare ed approfondire in futuro. Ma per il momento ti dico solo che personalmente
+
+238
+00:25:34,900 --> 00:25:36,140
+ anche per questo aspetto non è un problema. E' un problema che non è un problema che non è un problema
+
+239
+00:25:36,140 --> 00:25:44,040
+ della raccolta dati. Con il tempo ho sviluppato un mio metodo che per me sta funzionando abbastanza
+
+240
+00:25:44,040 --> 00:25:52,840
+ bene e che ora ti illustro brevemente. Innanzitutto devi sapere che io inserisco manualmente pochissime
+
+241
+00:25:52,840 --> 00:25:59,780
+ informazioni in Obsidian. In pratica scrivo di mio pugno solo gli episodi di pensieri in codice,
+
+242
+00:25:59,780 --> 00:26:06,040
+ i dettagli delle operazioni e delle analisi che faccio per lavoro, le mie riflessioni e
+
+243
+00:26:06,040 --> 00:26:13,260
+ le note personali riguardo a ciò che non voglio dimenticare. Insomma tutte informazioni queste che
+
+244
+00:26:13,260 --> 00:26:19,960
+ dovrei comunque scrivere io in qualche modo anche solo temporaneamente. Allora invece di annotarle su
+
+245
+00:26:19,960 --> 00:26:26,700
+ un foglio di carta o in un file a caso che molto probabilmente andrebbero persi in pochissimo tempo
+
+246
+00:26:26,700 --> 00:26:33,440
+ aggiungo o aggiorno una nota in Obsidian. Tutto il resto delle informazioni che mi interessano,
+
+247
+00:26:33,440 --> 00:26:35,740
+ brani di libri, di articoli,
+
+248
+00:26:35,740 --> 00:26:43,540
+ pagine web, estratti di video o di podcast, annotazioni, link presi al volo, ogni parola
+
+249
+00:26:43,540 --> 00:26:51,960
+ arriva direttamente nel mio second brain attraverso un servizio chiamato Readwise. Readwise nasce come
+
+250
+00:26:51,960 --> 00:26:58,340
+ un aggregatore di informazioni salienti pensato per aiutare l'utente a raccogliere, rivedere e
+
+251
+00:26:58,340 --> 00:27:04,960
+ ricordare le parti importanti estratte da tutta una varietà di sorgenti. Tramite una serie di
+
+252
+00:27:05,640 --> 00:27:11,260
+ video per i principali browser e due app per smartphone, in pratica questo servizio mi permette
+
+253
+00:27:11,260 --> 00:27:16,720
+ di accentrare tutte le informazioni con cui entro in contatto che stimolano in qualche
+
+254
+00:27:16,720 --> 00:27:23,820
+ modo il mio interesse. Innanzitutto Readwise integra un aggregatore e lettore di feed,
+
+255
+00:27:23,820 --> 00:27:29,200
+ quindi lo si può usare per restare al passo con gli ultimi articoli pubblicati dai propri
+
+256
+00:27:29,200 --> 00:27:35,420
+ blog preferiti. Poi permette di archiviare qualsiasi pagina web, twitter, video,
+
+257
+00:27:35,540 --> 00:27:41,580
+ eccetera grazie ad un'estensione installata nel browser o la condivisione via app all'interno
+
+258
+00:27:41,580 --> 00:27:48,220
+ di uno smartphone. Infine, mette persino a disposizione una serie di indirizzi email con
+
+259
+00:27:48,220 --> 00:27:54,920
+ i quali è possibile iscriversi alle newsletter per riceverle direttamente all'interno dell'aggregatore.
+
+260
+00:27:54,920 --> 00:28:01,640
+ Una volta configurato a piacimento lo strumento, tramite una classica interfaccia in stile lettore
+
+261
+00:28:01,640 --> 00:28:05,440
+ di feed, è poi possibile leggere tutti questi contenuti.
+
+262
+00:28:05,440 --> 00:28:11,260
+ Quindi, evidenziarne le parti più interessanti ed aggiungere annotazioni ed etichette.
+
+263
+00:28:11,260 --> 00:28:17,540
+ Ma non finisce qui, perché Readwise è anche in grado di interfacciarsi con le principali
+
+264
+00:28:17,540 --> 00:28:26,360
+ piattaforme o lettori di ebook, come Kindle, Kobo o Apple Libri, e scaricare le parti evidenziate
+
+265
+00:28:26,360 --> 00:28:30,760
+ e i commenti aggiunti direttamente sui dispositivi durante la lettura.
+
+266
+00:28:30,760 --> 00:28:35,120
+ E infine, e questa è la cosa che proprio mi fa impazzire,
+
+267
+00:28:35,340 --> 00:28:41,480
+ grazie all'app per smartphone è perfino possibile fotografare le pagine dei libri
+
+268
+00:28:41,480 --> 00:28:46,800
+ cartacei ed evidenziare e commentare direttamente il testo sulla foto.
+
+269
+00:28:46,800 --> 00:28:52,660
+ Cioè, seriamente, provalo questo Readwise. Ti lascio il link affiliato in descrizione
+
+270
+00:28:52,660 --> 00:28:58,900
+ e poi mi farai sapere cosa ne pensi. Comunque, io lo utilizzo per consultare e studiare
+
+271
+00:28:58,900 --> 00:29:04,820
+ praticamente tutte le fonti web che seguo abitualmente e tutti i documenti che mi capita
+
+272
+00:29:05,240 --> 00:29:12,020
+ incontrare durante le mie ricerche o la navigazione in generale. In più, evidenzio e commento tutte le
+
+273
+00:29:12,020 --> 00:29:18,820
+ parti interessanti che incontro durante le mie letture, sia digitali che cartacee. Se una cosa
+
+274
+00:29:18,820 --> 00:29:26,840
+ mi colpisce, mi interessa o desta in me qualche reazione, un paio di clic o di tocchi e il gioco
+
+275
+00:29:26,840 --> 00:29:34,020
+ è fatto. E a questo punto avviene la magia. Periodicamente Obsidian si interfaccia con le
+
+276
+00:29:35,140 --> 00:29:41,340
+ Readwise e scarica tutte le informazioni che ho evidenziato, trasformandole in note ed
+
+277
+00:29:41,340 --> 00:29:47,280
+ archiviandole ordinatamente in cartelle distinte a seconda della tipologia. In questo modo,
+
+278
+00:29:47,280 --> 00:29:53,180
+ ogni volta che apro il mio Second Brain posso facilmente rileggere i testi che mi hanno colpito,
+
+279
+00:29:53,180 --> 00:29:59,340
+ svolgervi ricerche approfondite all'interno ed eventualmente collegarli ad altre note
+
+280
+00:29:59,340 --> 00:30:04,900
+ già esistenti. Gli episodi di Pensieri in Codice, ad esempio, sono note di Obsidian,
+
+281
+00:30:05,040 --> 00:30:11,860
+ piene zeppe di riferimenti e collegamenti verso altre note, le quali contengono i riferimenti
+
+282
+00:30:11,860 --> 00:30:19,720
+ alle sorgenti originali, volendo tutto il testo completo, e poi i commenti e le parti evidenziate.
+
+283
+00:30:19,720 --> 00:30:27,240
+ Ormai Readwise per me è diventato davvero uno strumento assolutamente indispensabile per la
+
+284
+00:30:27,240 --> 00:30:33,700
+ produzione di contenuti, documenti e analisi. Avere a portata di mano in un unico strumento
+
+285
+00:30:34,940 --> 00:30:41,020
+ di cui ho bisogno, magari già parzialmente lavorate, mi semplifica enormemente la vita.
+
+286
+00:30:41,020 --> 00:30:47,720
+ Alla fine è e sarà sempre una questione soggettiva, ma posso dirti che al momento
+
+287
+00:30:47,720 --> 00:30:54,780
+ con la combinazione di queste due app io riesco a gestire con soddisfazione e senza stress tutti
+
+288
+00:30:54,780 --> 00:31:04,840
+ i flussi di informazione di cui ho bisogno. Spero che questo episodio ti sia risultato
+
+289
+00:31:04,840 --> 00:31:11,180
+ interessante. Era da un po' che volevo condividere le mie principali app per l'organizzazione,
+
+290
+00:31:11,180 --> 00:31:18,460
+ ma ho aspettato di accertarmi che l'ecosistema fosse in equilibrio prima di farlo. Al momento,
+
+291
+00:31:18,460 --> 00:31:23,840
+ combinando questi quattro strumenti, riesco a gestire tutto e, devo dire,
+
+292
+00:31:23,840 --> 00:31:29,840
+ anche con una certa soddisfazione. Ci è voluto del tempo per trovare una quadra e,
+
+293
+00:31:29,840 --> 00:31:34,740
+ più di una volta, ho sperimentato sulla mia pelle cosa vuol dire sbagliare il setup in
+
+294
+00:31:34,740 --> 00:31:41,040
+ un ambito del genere. In questi anni una cosa ho imparato che, secondo me, è fondamentale e,
+
+295
+00:31:41,040 --> 00:31:46,820
+ prima di chiudere, te la voglio condividere nel caso in cui anche tu decida di iniziare
+
+296
+00:31:46,820 --> 00:31:54,260
+ a costruire il tuo ecosistema. Bisogna fare molta attenzione a non sovrapporre le competenze.
+
+297
+00:31:54,260 --> 00:32:00,700
+ Ciascuna app deve avere un ruolo chiaro che non si deve sovrapporre con quello di un'altra,
+
+298
+00:32:00,700 --> 00:32:04,600
+ altrimenti diventa un casino da gestire. I file devono
+
+299
+00:32:04,640 --> 00:32:10,140
+ stare tutti da una parte, le note tutte dall'altra, gli appuntamenti in una sola app,
+
+300
+00:32:10,140 --> 00:32:17,520
+ le attività anche. Non sto dicendo che serve un'app per ogni cosa. Dico solo che non devono
+
+301
+00:32:17,520 --> 00:32:25,000
+ esserci due app usate per la stessa funzionalità. Se però cominci a suddividere le note o le cose
+
+302
+00:32:25,000 --> 00:32:31,780
+ da fare in due o più app diverse senza una logica chiara e precisa, dopo un po' inizierai ad avere
+
+303
+00:32:31,780 --> 00:32:34,540
+ grossi problemi. Bene, detto questo,
+
+304
+00:32:34,540 --> 00:32:40,060
+ direi che per oggi possiamo chiudere qui. Mi raccomando, se vuoi provare una delle app che
+
+305
+00:32:40,060 --> 00:32:45,960
+ ti ho descritto o acquistare uno dei libri sull'argomento, usa il link affiliato che trovi
+
+306
+00:32:45,960 --> 00:32:52,480
+ in descrizione, così mi darai una mano a sostenere questo progetto. Pensieri in codice, ormai lo sai,
+
+307
+00:32:52,480 --> 00:32:59,340
+ non è un podcast sponsorizzato con una redazione alle spalle, ma un progetto totalmente indipendente
+
+308
+00:32:59,340 --> 00:33:04,440
+ e libero da pubblicità, che porto avanti nel mio tempo libero e con le mie risorse
+
+309
+00:33:04,440 --> 00:33:10,600
+ personali. Per questo motivo si basa sulla filosofia del value for value. Ciò vuol dire
+
+310
+00:33:10,600 --> 00:33:17,840
+ che se questo episodio ti è piaciuto, se ascolti spesso il podcast, se insomma trovi del valore in
+
+311
+00:33:17,840 --> 00:33:23,920
+ quello che faccio, sei gentilmente incoraggiato a restituirne una piccola parte. E per fare ciò
+
+312
+00:33:23,920 --> 00:33:30,420
+ ci sono tre modi. Puoi dedicare il tuo tempo condividendo l'episodio con amici o colleghi,
+
+313
+00:33:30,420 --> 00:33:34,300
+ o lasciando recensioni sulle app o le piattaforme,
+
+314
+00:33:34,340 --> 00:33:40,000
+ che lo permettono. Dal prossimo episodio magari mi organizzo anche per leggerle qui nel blocco di
+
+315
+00:33:40,000 --> 00:33:45,760
+ chiusura, quindi tu scrivimi una mail per avvisarmi quando ne lasci una, perché le piattaforme non lo
+
+316
+00:33:45,760 --> 00:33:53,000
+ fanno. Poi puoi mettere a disposizione il tuo talento, magari aiutandomi con la gestione dei
+
+317
+00:33:53,000 --> 00:33:59,560
+ social, o proponendoti per un episodio di community edition, mi farebbe comodo qualcuno
+
+318
+00:33:59,560 --> 00:34:04,240
+ che mi aiuti a scrivere gli episodi, ad individuare delle clip interessanti,
+
+319
+00:34:04,240 --> 00:34:10,700
+ a fare montaggi diversi. Inoltre, se hai un'idea interessante, non esitare a proporla,
+
+320
+00:34:10,700 --> 00:34:16,180
+ magari possiamo fare insieme cose a cui io non ho nemmeno pensato, quindi prova a farti avanti,
+
+321
+00:34:16,180 --> 00:34:21,400
+ al massimo scambiamo due chiacchiere. Infine, puoi contribuire con il tuo tesoro,
+
+322
+00:34:21,400 --> 00:34:27,860
+ ovvero facendo una piccola donazione tramite uno dei metodi che trovi sul sito pensierincodice.it,
+
+323
+00:34:27,860 --> 00:34:34,140
+ mi raccomando con due i, alla sezione sostieni. E a questo proposito ringrazio di cuore Edoard
+
+324
+00:34:34,140 --> 00:34:39,860
+ e Carlo, i nostri donatori ricorrenti, per il loro prezioso supporto. Ragazzi,
+
+325
+00:34:39,860 --> 00:34:46,320
+ la vostra card laminata da sostenitori è stata spedita, dovreste riceverla entro qualche giorno.
+
+326
+00:34:46,320 --> 00:34:52,220
+ Bene, direi che per oggi abbiamo concluso. Io ti ringrazio di aver ascoltato fin qui,
+
+327
+00:34:52,220 --> 00:34:59,220
+ ti saluto e ti do appuntamento al prossimo episodio. E ricorda sempre che un informatico
+
+328
+00:34:59,220 --> 00:35:03,140
+ risolve problemi, a volte, anche usando il computer.
+
+329
+00:35:03,140 --> 00:35:14,140
+ *musica*
+
