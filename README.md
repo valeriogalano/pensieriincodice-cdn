@@ -16,6 +16,20 @@
 
 ---
 
+## Indice
+
+- [Scopo del Progetto](#scopo-del-progetto)
+- [Struttura della Repository](#struttura-della-repository)
+- [Generazione trascrizioni (in locale)](#generazione-trascrizioni-in-locale)
+- [Aggiunta di nuovi contenuti](#aggiunta-di-nuovi-contenuti)
+  - [Aggiunta capitoli](#aggiunta-capitoli)
+  - [Aggiunta cover](#aggiunta-cover)
+- [Aggiungere tag ID3 agli MP3](#aggiungere-tag-id3-agli-mp3)
+- [Contributi](#contributi)
+- [Importante](#importante)
+
+---
+
 ## Scopo del Progetto
 
 Questa repository funge da **CDN** per il podcast di [Pensieri in Codice](https://pensieriincodice.it/)
