@@ -1,0 +1,1372 @@
+1
+00:00:00,000 --> 00:00:07,280
+ Di vibe coding abbiamo già parlato una decina di episodi fa, facendo un po' di analisi per capire
+
+2
+00:00:07,280 --> 00:00:14,520
+ la definizione, le caratteristiche e le implicazioni di questa pratica. Oggi, dopo alcuni mesi e dopo
+
+3
+00:00:14,520 --> 00:00:22,520
+ averla sperimentata in prima persona, sono di nuovo qui a raccontarti la mia personale esperienza,
+
+4
+00:00:22,520 --> 00:00:29,520
+ o almeno una delle tante, quella che mi sembra la più interessante, e come sempre a condividere
+
+5
+00:00:29,520 --> 00:00:32,620
+ le mie riflessioni sull'argomento. Sigla!
+
+6
+00:00:32,620 --> 00:00:42,460
+ Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici, con Valerio Galan.
+
+7
+00:00:42,460 --> 00:00:54,540
+ Questo esperimento ha avuto inizio alcune settimane fa, in una tiepida domenica di ottobre
+
+8
+00:00:54,540 --> 00:00:59,340
+ in cui avevo deciso di eliminare per un po' l'applicazione di Instagram dal mio
+
+9
+00:00:59,340 --> 00:00:59,500
+ iPhone.
+
+10
+00:00:59,500 --> 00:01:06,960
+ Mi sembrava di essere mentalmente ringiovanito di 10 anni. Ero dunque così alla ricerca di un modo
+
+11
+00:01:06,960 --> 00:01:12,500
+ intelligente di impiegare le centinaia di migliaia di neuroni risparmiati grazie alla mancata
+
+12
+00:01:12,500 --> 00:01:19,960
+ esposizione a meme e scrolling infinito, che mi sono detto, perché non dedicarmi un po' a migliorare
+
+13
+00:01:19,960 --> 00:01:27,220
+ il mio progetto di Pensieri in Codice? Ora, se c'è una cosa che manca nel mio podcast, io lo dico
+
+14
+00:01:27,220 --> 00:01:29,480
+ anche a fine puntata.
+
+15
+00:01:29,480 --> 00:01:37,180
+ E' un po' di attività sui social. Qualcosa che possa attirare nuovi ascoltatori, ma che sia anche
+
+16
+00:01:37,180 --> 00:01:44,720
+ organico e disciplinato. Dei contenuti adatti al mezzo, insomma. E il motivo per cui non ho mai
+
+17
+00:01:44,720 --> 00:01:51,520
+ affrontato questa questione è, ovviamente, la mancanza di tempo per svolgere tutte le operazioni
+
+18
+00:01:51,520 --> 00:01:57,940
+ necessarie a realizzare contenuti con le giuste caratteristiche. Sì perché, per un prodotto solo
+
+19
+00:01:57,940 --> 00:01:59,460
+ audio, come Pensieri in Codice, è un po' di attività sui social. E' un po' di attività sui social.
+
+20
+00:01:59,460 --> 00:02:07,620
+ Pensieri in Codice, i social non sono esattamente un terreno fertile. Pensaci, Instagram, TikTok,
+
+21
+00:02:07,620 --> 00:02:15,840
+ Facebook, nessuno di questi è adatto alla pubblicazione di solo audio. Sono tutti pensati
+
+22
+00:02:15,840 --> 00:02:22,640
+ per video, foto o al massimo testo. La soluzione più corretta, quindi, per creare e portare avanti
+
+23
+00:02:22,640 --> 00:02:29,440
+ un social per questo progetto sarebbe quella di produrre immagini, caroselli e video appositi.
+
+24
+00:02:29,440 --> 00:02:36,860
+ Ma per fare questo c'è bisogno di qualcuno che ci si dedichi e io già spendo una quantità notevole
+
+25
+00:02:36,860 --> 00:02:43,500
+ di tempo solo per realizzare gli episodi. Invece di arrendermi e lasciar perdere, però, ho pensato
+
+26
+00:02:43,500 --> 00:02:50,880
+ che valesse la pena di cercare una soluzione intermedia, qualcosa di accettabile ma che non
+
+27
+00:02:50,880 --> 00:02:57,460
+ mi richiedesse ulteriori eccessivi sforzi editoriali e di montaggio, che poi sono quelli
+
+28
+00:02:57,460 --> 00:02:59,420
+ che consumerebbero più tempo.
+
+29
+00:02:59,420 --> 00:03:07,960
+ E riflettendo e cercando online mi sono ricordato che esistono dei servizi dedicati al podcasting
+
+30
+00:03:07,960 --> 00:03:15,760
+ che creano i cosiddetti audiograms, cioè dei video che contengono l'audio di spezzoni degli
+
+31
+00:03:15,760 --> 00:03:22,700
+ episodi montati in una grafica dedicata. Forse ti sarà capitato di vederne qualcuno. In pratica
+
+32
+00:03:22,700 --> 00:03:29,200
+ sono delle clip di spezzoni significativi di un podcast montati però con un'immagine,
+
+33
+00:03:29,200 --> 00:03:35,160
+ una locandina, il titolo, la trascrizione e possibilmente qualche elemento in movimento,
+
+34
+00:03:35,160 --> 00:03:41,460
+ che di solito è una forma d'onda dell'audio. La mia ricerca mi ha portato a trovare vari
+
+35
+00:03:41,460 --> 00:03:47,660
+ servizi adatti allo scopo, ma purtroppo, dopo qualche ora di test, sono giunto alla conclusione
+
+36
+00:03:47,660 --> 00:03:52,700
+ che difficilmente avrei potuto risolvere la questione percorrendo questa strada. Molti
+
+37
+00:03:52,700 --> 00:03:58,980
+ di questi strumenti o servizi non hanno portato a risultati accettabili, alcuni non hanno
+
+38
+00:03:58,980 --> 00:04:03,920
+ portato proprio a risultati, della serie "la prova gratuita" non mi ha permesso di produrre
+
+39
+00:04:03,920 --> 00:04:10,920
+ nemmeno un audiogram completo. Alcuni ancora hanno funzionato, ma presentano un altro limite
+
+40
+00:04:10,920 --> 00:04:17,680
+ per me insormontabile: il prezzo. Capiamoci, non sto dicendo che non voglio assolutamente
+
+41
+00:04:17,680 --> 00:04:22,800
+ pagare per un servizio del genere, né mi sto lamentando dell'effettivo ammontare del
+
+42
+00:04:22,800 --> 00:04:28,760
+ costo, perché 30 dollari sono più che accettabili per la possibilità di creare infiniti audiogrammi,
+
+43
+00:04:28,760 --> 00:04:36,300
+ il problema è piuttosto del mio specifico progetto. Pensieri in Codice non è un podcast
+
+44
+00:04:36,300 --> 00:04:42,120
+ professionale né un prodotto commerciale, è un piccolo progetto di divulgazione che
+
+45
+00:04:42,120 --> 00:04:48,360
+ io porto avanti per hobby, nel mio tempo libero. Al massimo riesco a pubblicare un paio di
+
+46
+00:04:48,360 --> 00:04:56,380
+ episodi al mese, quindi la spesa per un servizio del genere difficilmente potrebbe essere giustificabile
+
+47
+00:04:56,380 --> 00:04:58,540
+ né tanto meno ammortizzabile.
+
+48
+00:04:58,540 --> 00:05:04,960
+ Neanche lontanamente. Avrei dovuto escogitare un modo per riattivare le pubblicità e spendere
+
+49
+00:05:04,960 --> 00:05:12,000
+ l'intero ammontare delle donazioni solo per pagare una frazione di questa cifra, non avrebbe
+
+50
+00:05:12,000 --> 00:05:20,820
+ avuto senso. E quindi, ti starai chiedendo, la mia mattinata di analisi e di ricerca si
+
+51
+00:05:20,820 --> 00:05:28,320
+ è conclusa così, con un nulla di fatto e tanta delusione. Finché, dopo qualche ora,
+
+52
+00:05:28,320 --> 00:05:30,620
+ sono ricordato di essere un programmatore.
+
+53
+00:05:30,620 --> 00:05:42,880
+ Siccome io sono un po' come il Tenente Colombo, che non riesce ad acquietarsi se non ha ricollegato
+
+54
+00:05:42,880 --> 00:05:48,240
+ tutti i fili di una questione, qualche ora dopo il mio primo tentativo, ci stavo ancora
+
+55
+00:05:48,240 --> 00:05:54,640
+ pensando e mi sono chiesto: ma quanto potrà mai essere complicato scrivermi da solo un
+
+56
+00:05:54,640 --> 00:05:58,100
+ software che faccia questa operazione per me in modo
+
+57
+00:05:58,100 --> 00:06:04,720
+ automatizzato? E inizialmente la risposta a questa domanda è stata parecchio. In effetti,
+
+58
+00:06:04,720 --> 00:06:10,560
+ con il mio passato da programmatore web, specializzato in back-end o nello sviluppo di soluzioni
+
+59
+00:06:10,560 --> 00:06:17,420
+ cloud, non ho conoscenze specifiche su come realizzare video, forme d'onda e cose di questo
+
+60
+00:06:17,420 --> 00:06:23,940
+ genere. Si tratta probabilmente di conoscere come funziona il suono, la matematica che
+
+61
+00:06:23,940 --> 00:06:27,880
+ c'è dietro. Per non parlare del montaggio video, la gestione
+
+62
+00:06:27,880 --> 00:06:34,920
+ dei frame, insomma, non so nemmeno cosa mi sarebbe servito conoscere. Ma fortunatamente
+
+63
+00:06:34,920 --> 00:06:42,060
+ tutta questa storia e questi ragionamenti sono accaduti in un momento stranamente propizio.
+
+64
+00:06:42,060 --> 00:06:48,300
+ Innanzitutto, avevo da poco pubblicato l'episodio di Pensieri in Codice sul vibe coding e al
+
+65
+00:06:48,300 --> 00:06:57,660
+ tempo stesso, poi, avevo iniziato la mia partecipazione al nuovo podcast di Runtime chiamato Good Vibration,
+
+66
+00:06:57,660 --> 00:07:04,220
+ dove con Simone Pizzi, Alex Raccuglia e Luca Francesca ci confrontiamo ogni 2 martedì parlando
+
+67
+00:07:04,220 --> 00:07:11,140
+ proprio di vibe coding. E quindi ho pensato: perché non provare? Vediamo se riesco a sviluppare
+
+68
+00:07:11,140 --> 00:07:18,660
+ questo strumento utilizzando il vibe coding. Magari avrò successo, magari no, ma in ogni
+
+69
+00:07:18,660 --> 00:07:27,440
+ caso avrò sperimentato qualcosa di nuovo ed interessante. Beh, spoiler: ho provato e ci sono anche
+
+70
+00:07:27,440 --> 00:07:31,800
+ delle cose che mi hanno piaciuto: ho realizzato uno script che prende uno spezzone di episodio
+
+71
+00:07:31,800 --> 00:07:38,460
+ di un podcast e genera delle clip in formati diversi in modo completamente autonomo. Un
+
+72
+00:07:38,460 --> 00:07:45,000
+ aspetto interessante di questa storia è che, per cercare di sperimentare al meglio la pratica
+
+73
+00:07:45,000 --> 00:07:51,360
+ del vibe coding, ho deciso di scrivere lo script in questione in linguaggio Python e
+
+74
+00:07:51,360 --> 00:07:57,220
+ non in PHP, che è quello che uso per professione. Questo principalmente mi ha dato due vantaggi:
+
+75
+00:07:57,220 --> 00:08:05,020
+ il primo è che Python è oggettivamente più adatto allo scopo rispetto al PHP, ma il secondo e più
+
+76
+00:08:05,020 --> 00:08:12,500
+ importante è che, non conoscendo io praticamente nulla di Python, sono stato costretto a fare
+
+77
+00:08:12,500 --> 00:08:18,200
+ vibe coding. Anche guardando il codice del progetto, infatti, cosa che ho provato a fare di
+
+78
+00:08:18,200 --> 00:08:27,000
+ tanto in tanto, non ci ho capito granché e, a parte per qualche concetto abbastanza banale, mi sono trovato
+
+79
+00:08:27,000 --> 00:08:34,140
+ sempre nella situazione di dover utilizzare la gente AI per apportare modifiche. In questo modo
+
+80
+00:08:34,140 --> 00:08:40,120
+ ho potuto sperimentare abbastanza a fondo questa pratica e devo dire che, come già immaginavo,
+
+81
+00:08:40,120 --> 00:08:45,180
+ ho imparato veramente un bel po' di cose, anche su come gestire il normale sviluppo
+
+82
+00:08:45,180 --> 00:08:49,580
+ di codici assistito da LLM. Ora ti racconto come è andata.
+
+83
+00:08:49,580 --> 00:08:56,780
+ Giorno 19 ottobre 2021
+
+84
+00:08:56,780 --> 00:08:59,400
+ ore 16 circa
+
+85
+00:08:59,400 --> 00:09:06,720
+ entro nella bolla, inizio a cercare di capire come spiegare ad un LLM tutto quello che voglio ottenere
+
+86
+00:09:06,720 --> 00:09:12,620
+ da questo progetto. Rifletto, ragiono, scrivo requisiti e caratteristiche desiderate.
+
+87
+00:09:12,620 --> 00:09:15,020
+ Il prompt iniziale cresce.
+
+88
+00:09:15,020 --> 00:09:16,940
+ ore 16 e 30
+
+89
+00:09:16,940 --> 00:09:20,320
+ sottometto il prompt e attendo l'elaborazione.
+
+90
+00:09:20,320 --> 00:09:22,220
+ ore 16 e 40
+
+91
+00:09:22,220 --> 00:09:26,560
+ fallimento totale. Lo script non si avvia nemmeno.
+
+92
+00:09:26,560 --> 00:09:33,120
+ errori su errori e non ho idea di quali funzionalità dovrebbero essere state effettivamente implementate
+
+93
+00:09:33,120 --> 00:09:34,120
+ e quali no.
+
+94
+00:09:34,120 --> 00:09:35,840
+ ore 16 e 43
+
+95
+00:09:35,840 --> 00:09:42,260
+ come da raccomandazioni di Andrew Karpaty, nel suo tweet in cui per primo ha definito
+
+96
+00:09:42,260 --> 00:09:47,500
+ il vibecoding, provo a sottomettere all'agente AI gli errori riscontrati.
+
+97
+00:09:47,500 --> 00:09:49,900
+ ore 16 e 45
+
+98
+00:09:49,900 --> 00:09:55,780
+ gli errori sono cambiati. Forse i precedenti sono stati corretti, ma ne sono spuntati fuori
+
+99
+00:09:55,780 --> 00:09:56,340
+ di nuovi.
+
+100
+00:09:56,340 --> 00:10:00,160
+ riprovo a dar l'impasto al large language model.
+
+101
+00:10:00,160 --> 00:10:02,380
+ ore 16 e 47
+
+102
+00:10:02,380 --> 00:10:09,560
+ ancora errori, sempre nuovi. Forse questo vibecoding non è poi sto granché. Vado a prepararmi
+
+103
+00:10:09,560 --> 00:10:10,560
+ un tè.
+
+104
+00:10:10,560 --> 00:10:11,560
+ ore 17 e 20
+
+105
+00:10:11,560 --> 00:10:13,560
+ cancello l'intero progetto.
+
+106
+00:10:13,560 --> 00:10:14,560
+ ore 18
+
+107
+00:10:14,560 --> 00:10:20,020
+ mi sono fatto uno schema a grandi linee di tutte le attività che dovrei eseguire se
+
+108
+00:10:20,020 --> 00:10:26,120
+ volessi sviluppare questo progetto in PHP. Roba tipo: definizione delle cartelle.
+
+109
+00:10:26,120 --> 00:10:33,040
+ creazione di comando da console che accetti i parametri. implementazione chiamata curl
+
+110
+00:10:33,040 --> 00:10:38,200
+ per il download del feed. interpretazione di file xml. ecc.
+
+111
+00:10:38,200 --> 00:10:44,160
+ ho raccolto le idee. cercato informazioni che mi mancavano. pianificato l'intero processo
+
+112
+00:10:44,160 --> 00:10:46,240
+ dall'inizio alla fine.
+
+113
+00:10:46,240 --> 00:10:50,400
+ ora la mia intenzione è quella di guidare l'agente passo passo.
+
+114
+00:10:50,400 --> 00:10:55,900
+ ore 18 e 11 il progetto nasce con un timidissimo primo commento.
+
+115
+00:10:55,900 --> 00:11:11,000
+ mi sono messo sulle fondamenta una struttura di cartelle ordinata e un primo comando da
+
+116
+00:11:11,000 --> 00:11:17,700
+ terminale. ore 18 e 18 ho aggiunto la lettura del feed da remoto e l'estrazione del file
+
+117
+00:11:17,700 --> 00:11:25,680
+ audio e la visualizzazione dei dettagli dell'episodio. ore 18 e 21 titolo del podcast e copertina
+
+118
+00:11:25,680 --> 00:11:34,460
+ fanno la loro comparsa a schermo. ore 18 e 28 entrano in scena le trascrizioni. è pronto
+
+119
+00:11:34,460 --> 00:11:42,260
+ il parser dei file .srt che permetterà di creare i sottotitoli. ore 18 e 36 pronta l'estrazione
+
+120
+00:11:42,260 --> 00:11:49,800
+ dell'audio degli episodi. ore 19 e 21 nasce il primo audiogramma. lo script estrae segmenti
+
+121
+00:11:49,800 --> 00:11:55,460
+ audio, trascrizione, titolo, locandina e dettagli vari e li utilizza per creare il
+
+122
+00:11:55,460 --> 00:12:02,780
+ video in formato orizzontale, quadrato e verticale, con tanto di forma d'onda. da qui in poi ci
+
+123
+00:12:02,780 --> 00:12:08,820
+ sono state tante altre lavorazioni, ma più che altro si è trattato di migliorie, parametri
+
+124
+00:12:08,820 --> 00:12:14,800
+ utili, miglioramenti estetici, aggiunta o rimozione di vari elementi e così via discorrendo.
+
+125
+00:12:14,800 --> 00:12:16,400
+ morale della favola?
+
+126
+00:12:16,400 --> 00:12:23,780
+ nell'arco di circa 4 ore di una pigra domenica pomeriggio di ottobre ho posto le basi per
+
+127
+00:12:23,780 --> 00:12:25,240
+ uno script che leggesse il film.
+
+128
+00:12:25,240 --> 00:12:31,400
+ il video di un podcast. estraesse i soundbite degli episodi. scaricasse la locandina, audio,
+
+129
+00:12:31,400 --> 00:12:38,720
+ titolo, trascrizione e altra roba varia. e usasse il tutto per costruire tre video pronti
+
+130
+00:12:38,720 --> 00:12:40,920
+ da condividere. non male direi.
+
+131
+00:12:40,920 --> 00:12:51,640
+ la prima cosa che ho realizzato scrivendo questo episodio è che il mio primo esperimento
+
+132
+00:12:51,640 --> 00:12:55,020
+ di vibe coding ricade perfettamente nei dettami di un podcast.
+
+133
+00:12:55,020 --> 00:13:03,380
+ l'ottanta per cento dei risultati è arrivato dal venti per cento degli sforzi. oggi lo script
+
+134
+00:13:03,380 --> 00:13:08,180
+ di generazione degli audiogrammi, che per inciso ti lascio in descrizione se vuoi andare
+
+135
+00:13:08,180 --> 00:13:14,480
+ a guardare, è molto più avanzato di quello che ho sviluppato quel giorno. ora lo si può
+
+136
+00:13:14,480 --> 00:13:20,360
+ usare in modo interattivo, si può lanciare con parametri a riga di comando, oppure si
+
+137
+00:13:20,360 --> 00:13:24,800
+ possono creare dei file di configurazione preconfezionati per un'audiogramma.
+
+138
+00:13:24,800 --> 00:13:29,860
+ per esempio, per più podcast. così chi deve gestire più programmi contemporaneamente
+
+139
+00:13:29,860 --> 00:13:35,400
+ deve solo passare il file di configurazione giusto. si possono scegliere i colori, quale
+
+140
+00:13:35,400 --> 00:13:41,500
+ video generare, se aggiungere o meno elementi come la trascrizione, il titolo o una call
+
+141
+00:13:41,500 --> 00:13:48,460
+ to action. ma il concetto di base resta quello originale, progettato e realizzato il 19 ottobre.
+
+142
+00:13:48,460 --> 00:13:54,580
+ onestamente non penso proprio che avrei potuto implementare la stessa quantità di
+
+143
+00:13:54,580 --> 00:14:01,780
+ funzionalità nello stesso tempo, anche usando un linguaggio che conosco come il php. non
+
+144
+00:14:01,780 --> 00:14:07,260
+ ci sarei riuscito, proprio perché non ho conoscenze in ambito di programmazione audio
+
+145
+00:14:07,260 --> 00:14:12,420
+ e video. in quelle quattro ore di vibe coding sono riuscito a mettere in piedi una prima
+
+146
+00:14:12,420 --> 00:14:19,340
+ versione funzionante dello script, una versione certo basilare, ma che faceva da prova di
+
+147
+00:14:19,340 --> 00:14:24,360
+ concetto per tutto ciò che mi serviva. ero francamente entusiasta.
+
+148
+00:14:24,360 --> 00:14:35,180
+ fino ad ora ho parlato esclusivamente di vibe coding, però devo confessarti che di tanto in
+
+149
+00:14:35,180 --> 00:14:41,300
+ tanto non ho resistito alla curiosità e mi sono andato a guardare il codice dello script tra i
+
+150
+00:14:41,300 --> 00:14:47,780
+ vari punti di avanzamento. è pur vero che non sono un programmatore python, quindi probabilmente il
+
+151
+00:14:47,780 --> 00:14:54,240
+ mio giudizio non vale granché, però ho notato che alcune parti, ad esempio la gestione delle
+
+152
+00:14:54,240 --> 00:15:01,660
+ configurazioni, sembravano estremamente prolisse, davvero tanto codice per fare certe robe. poi,
+
+153
+00:15:01,660 --> 00:15:09,060
+ guardando all'organizzazione dei file e alla suddivisione del contenuto, non ho avuto una
+
+154
+00:15:09,060 --> 00:15:17,100
+ gran sensazione di ordine ed eleganza, quanto piuttosto quella di un collage di patch appiccicate
+
+155
+00:15:17,100 --> 00:15:24,020
+ una sull'altra. ovviamente il progetto non è finito, sempre seguendo il principio di Pareto, più mi avvicino
+
+156
+00:15:24,020 --> 00:15:29,880
+ al risultato finale che vorrei ottenere, più la velocità di sviluppo rallenta e il numero di
+
+157
+00:15:29,880 --> 00:15:35,840
+ prompt aumenta. ma viste le buone premesse, io questo progetto lo sto portando avanti,
+
+158
+00:15:35,840 --> 00:15:41,140
+ sempre in vibe coding, e da allora non ho solo aggiunto funzionalità,
+
+159
+00:15:41,140 --> 00:15:46,640
+ ma ho anche fatto un po' d'ordine, sia nel codice che nella mia testa. innanzitutto,
+
+160
+00:15:46,640 --> 00:15:53,800
+ ho capito che il vibe coding ha un costo nascosto che, se non lo si sperimenta in prima persona, può
+
+161
+00:15:53,800 --> 00:16:00,880
+ essere complicato da comprendere. non parlo di un costo economico che comunque c'è e non è affatto
+
+162
+00:16:00,880 --> 00:16:08,100
+ banale, credimi, bensì di un costo in termini di energie mentali. creare un prompt, affinarlo,
+
+163
+00:16:08,100 --> 00:16:14,960
+ scegliere cosa chiedere, scrivere nel modo più chiaro e preciso possibile per il modello, testare
+
+164
+00:16:14,960 --> 00:16:23,580
+ il risultato, capire se è corretto o sbagliato, se è qualcosa da cui si può andare avanti o che va rifiutato per ricordare
+
+165
+00:16:23,580 --> 00:16:29,760
+ e ricominciare da un passo indietro. è come avere un assistente super veloce e super volenteroso,
+
+166
+00:16:29,760 --> 00:16:37,500
+ che però ti sbatte sul tavolo tantissime opzioni, e tu devi vagliarle, scartare quelle che non vanno
+
+167
+00:16:37,500 --> 00:16:43,680
+ bene e tenere quelle che fanno al caso tuo. e per fare queste operazioni nel modo giusto,
+
+168
+00:16:43,680 --> 00:16:48,040
+ secondo me, serve esperienza, ma ne riparliamo meglio a breve.
+
+169
+00:16:53,360 --> 00:17:04,840
+ a questo punto, prima di andare avanti, vorrei condividere con te qualche consiglio pratico derivante dalla mia, seppur breve, esperienza maturata nel campo del vibe coding.
+
+170
+00:17:04,840 --> 00:17:17,700
+ magari vuoi provare e forse ti posso essere utile. non mi voglio dilungare troppo con questo capitolo, quindi non starò a dirti quale editor usare o quale modello dà i risultati migliori,
+
+171
+00:17:17,700 --> 00:17:23,140
+ anche perché credo che siano questioni un po' soggettive e che dipendano da vari fattori.
+
+172
+00:17:23,140 --> 00:17:35,620
+ semplicemente, scegli lo strumento che ti ispira di più, e se puoi, prova anche la versione pro per un mese, magari qualcuno che ha il primo mese gratis, non so,
+
+173
+00:17:35,620 --> 00:17:44,320
+ giusto per avere un'esperienza completa. detto questo, i miei consigli per il tuo progetto sono essenzialmente tre.
+
+174
+00:17:44,320 --> 00:17:52,920
+ primo, sperimenta, sperimenta, sperimenta, sperimenta, soprattutto all'inizio, quando puoi buttare
+
+175
+00:17:52,920 --> 00:18:00,720
+ tutto a mare e ricominciare velocemente. un buon vibe coding non è tutto merito del modello, ma buona
+
+176
+00:18:00,720 --> 00:18:07,760
+ parte dipende da come strutturi le richieste e come fai le tue scelte. secondo, tieni il progetto
+
+177
+00:18:07,760 --> 00:18:15,100
+ piccolo. all'inizio, soprattutto, avrai voglia di aggiungere l'impossibile. costruirai una baita,
+
+178
+00:18:15,100 --> 00:18:22,700
+ poi aggiungerai un piano, e senza sapere come ti troverai a collocare l'attico al centesimo. sappi che
+
+179
+00:18:22,700 --> 00:18:30,080
+ questa cosa non funziona, almeno non subito. per raggiungere un risultato del genere, dovrai essere
+
+180
+00:18:30,080 --> 00:18:37,720
+ capace tu di frammentare il progetto nel modo giusto agli occhi della gente. altrimenti, raggiunta
+
+181
+00:18:37,720 --> 00:18:45,060
+ una quantità importante di codice, questo inizierà a svalvolare. terzo, di tanto in tanto fai pulizia.
+
+182
+00:18:45,060 --> 00:18:52,480
+ quando modifichi in continuazione in vibe coding, vedrai apparire sempre più schifezze nel codice.
+
+183
+00:18:52,480 --> 00:18:58,280
+ retrocompatibilità non richieste, commenti non necessari, righe di codice che servono a
+
+184
+00:18:58,280 --> 00:19:04,340
+ fissare altro codice che sta due righe sopra. la gente non ha una vera e propria comprensione
+
+185
+00:19:04,340 --> 00:19:11,240
+ del codice, soprattutto se legge e modifica blocchi diversi in momenti diversi. pertanto,
+
+186
+00:19:11,240 --> 00:19:17,580
+ ogni tanto puoi chiedergli di analizzare e rifattorizzare tutto o in parte,
+
+187
+00:19:17,580 --> 00:19:22,260
+ sempre controllando che non ti sfasci nulla, mi raccomando, in modo da
+
+188
+00:19:22,260 --> 00:19:29,820
+ mantenere il progetto un po' più compatto, leggibile e ordinato. magari potrebbe non
+
+189
+00:19:29,820 --> 00:19:37,680
+ servire a te, ma comunque farà la differenza anche per la qualità del vibe coding successivo. e lo so,
+
+190
+00:19:37,680 --> 00:19:45,720
+ a parte il primo, gli altri consigli hanno molto senso anche in un progetto di sviluppo di tipo
+
+191
+00:19:45,720 --> 00:19:51,000
+ tradizionale, ma magari non tutti ci pensano. detto questo, torniamo al nostro discorso.
+
+192
+00:19:52,040 --> 00:20:02,960
+ ora, io se fossi in te, cioè se stessi ascoltando un programmatore di quasi 25 anni di esperienza
+
+193
+00:20:02,960 --> 00:20:07,920
+ in ambito professionale, che da piccolo si divertiva a scrivere i propri programmini
+
+194
+00:20:07,920 --> 00:20:14,880
+ per ms-dos in basic, che mi parla di vibe coding, avrei una bella serie di domande da
+
+195
+00:20:14,880 --> 00:20:21,820
+ fare. ma questa pratica ha senso, ora siamo tutti programmatori, è una roba che
+
+196
+00:20:21,820 --> 00:20:27,580
+ vale la pena di utilizzare sempre, o è meglio affidarsi ancora ai professionisti. insomma,
+
+197
+00:20:27,580 --> 00:20:33,040
+ hai capito il concetto. io queste ed altre domande ho provato a farmele da solo,
+
+198
+00:20:33,040 --> 00:20:39,040
+ alla luce di questa mia nuova esperienza. ci ho riflettuto un po', e devo dire che almeno
+
+199
+00:20:39,040 --> 00:20:46,720
+ per ora mi sento di confermare quanto immaginavo nell'episodio 136. da professionista non posso
+
+200
+00:20:46,720 --> 00:20:51,600
+ fare altro se non metterti in guardia dal fatto che un codice sviluppato tramite
+
+201
+00:20:51,600 --> 00:20:59,500
+ vibe coding non può e non deve essere utilizzato per contesti seri o che abbiano anche solo
+
+202
+00:20:59,500 --> 00:21:05,920
+ un minimo di importanza. se un malfunzionamento di quel codice potesse causare
+
+203
+00:21:05,920 --> 00:21:12,280
+ danni a qualcuno, fermare un'attività di una qualche rilevanza, o comportare una breccia
+
+204
+00:21:12,280 --> 00:21:19,220
+ di sicurezza di qualsiasi tipo, allora sarebbe da irresponsabili utilizzarlo. sarebbe come
+
+205
+00:21:19,220 --> 00:21:21,380
+ mettere in produzione il codice sviluppato
+
+206
+00:21:21,380 --> 00:21:28,280
+ da un collega senza che questo sia passato per neanche una review. non va bene nemmeno
+
+207
+00:21:28,280 --> 00:21:33,620
+ se quel collega è il miglior sviluppatore della storia, figuriamoci un llm. detto questo
+
+208
+00:21:33,620 --> 00:21:39,520
+ però c'è un però. lo accennavo già nell'episodio 136, ma qui vorrei provare ad esprimere il
+
+209
+00:21:39,520 --> 00:21:51,160
+ concetto in modo diverso. ascolta un attimo.
+
+210
+00:21:51,160 --> 00:22:20,220
+ schesi dall'aereo, tokyo è un flipper gigante, luci che corrono, folla pesante, io cerco la metro, guardo il cellulare, tu invece sorridi, ti lasci guidare, dici che l'aria ha un suono diverso, che in questo caos non mi sono perso, cogli i dettagli che l'occhio non vede, il ritmo nascosto in cui tu credi, siamo in due.
+
+211
+00:22:20,220 --> 00:22:20,280
+ schesi dall'aereo, Tokyo è un flipper gigante, luci che corrono, folla pesante, io cerco la metro, guardo il cellulare, tu invece sorridi, ti lasci guidare, dici che l'aria ha un suono diverso, che in questo caos non mi sono perso, cogli i dettagli che l'occhio non vede, il ritmo nascosto in cui tu credi, siamo in due.
+
+212
+00:22:20,280 --> 00:22:50,260
+ schesi dall'aereo, Tokyo è un flipper gigante, luci che corrono, folla pesante, io cerco la metro, guardo il cellulare, tu invece sorridi, ti lasci guidare, dici che l'aria ha un suono diverso, che in questo caos non mi sono perso, cogli i dettagli che l'occhio non vede, il ritmo nascosto in cui tu credi, siamo in due.
+
+213
+00:22:50,260 --> 00:23:20,240
+ schesi dall'aereo, Tokyo è un flipper gigante, luci che corrono, folla pesante, io cerco la metro, guardo il cellulare, tu invece sorridi, ti lasci guidare, dici che l'aria ha un suono diverso, che in questo caos non mi sono perso, cogli i dettagli che l'occhio non vede, il ritmo nascosto in cui tu credi, siamo in due.
+
+214
+00:23:20,240 --> 00:23:50,220
+ schesi dall'aereo, Tokyo è un flipper gigante, luci che corrono, folla pesante, io cerco la metro, guardo il cellulare, tu invece sorridi, ti lasci guidare, dici che l'aria ha un suono diverso, che in questo caos non mi sono perso, cogli i dettagli che l'occhio non vede, il ritmo nascosto in cui tu credi, siamo in due.
+
+215
+00:23:50,220 --> 00:24:03,020
+ E ciò è possibile solo e unicamente grazie a degli strumenti basati su AI, che abbattono enormemente la complessità di un'attività tanto specializzata come il comporre e suonare musica.
+
+216
+00:24:03,020 --> 00:24:20,020
+ Le mie canzoni hanno visto la luce solo perché esiste su uno o chi per esso, perché in caso contrario certamente non avrei avuto le capacità per comporle da solo, e difficilmente avrei destinato le risorse necessarie per farlo fare ad un professionista.
+
+217
+00:24:20,020 --> 00:24:36,340
+ E operativamente parlando sono nate da una serie di richieste incrementali fatte ad un LLM, richieste con le quali a poco a poco ho affinato il risultato fino a giungere alla generazione di ciò che desideravo.
+
+218
+00:24:36,340 --> 00:24:39,840
+ In pratica ho fatto l'equivalente musicale del vibe coding.
+
+219
+00:24:39,840 --> 00:24:49,120
+ Quello che sto cercando di dire, se riportiamo il discorso sullo sviluppo software, è che secondo me, grazie al vibe coding,
+
+220
+00:24:49,120 --> 00:25:02,240
+ ci saranno persone che potranno realizzare tante idee che fino ad ora non hanno mai perseguito per via dello squilibrio tra valore del risultato e risorse necessarie.
+
+221
+00:25:02,240 --> 00:25:08,780
+ Come giusto che sia, nasceranno creature che avranno valore solo per il loro creatore.
+
+222
+00:25:08,780 --> 00:25:14,260
+ Magari saranno estremamente personalizzate e cucite su bisogni particolari.
+
+223
+00:25:14,260 --> 00:25:17,080
+ Magari saranno esercizi di stile.
+
+224
+00:25:17,080 --> 00:25:19,080
+ Magari saranno giusto...
+
+225
+00:25:19,080 --> 00:25:21,540
+ ...un modo di divertirsi e di sperimentare.
+
+226
+00:25:21,540 --> 00:25:25,660
+ Ma diverranno reali invece di restare in un cassetto.
+
+227
+00:25:25,660 --> 00:25:30,060
+ Detto questo, però, deve essere chiaro anche un altro fatto.
+
+228
+00:25:30,060 --> 00:25:35,000
+ Non è che perché ho scritto quattro canzoni con l'IA io adesso pensi di essere un compositore.
+
+229
+00:25:35,000 --> 00:25:42,000
+ Io a stento so suonare il campanello di casa e non so nemmeno quante sono le note in tutto.
+
+230
+00:25:42,000 --> 00:25:46,520
+ I risultati che ho ottenuto vanno sicuramente bene per me.
+
+231
+00:25:46,520 --> 00:25:51,440
+ Ma essere un musicista o essere un artista è un'altra storia.
+
+232
+00:25:51,440 --> 00:25:57,520
+ Lì c'è consapevolezza di cosa si sta realizzando e di come funziona la musica.
+
+233
+00:25:57,520 --> 00:26:04,160
+ Mentre a me l'IA nasconde tutta questa parte portandomi direttamente al risultato finale.
+
+234
+00:26:04,160 --> 00:26:06,620
+ Senza che io abbia idea del come.
+
+235
+00:26:06,620 --> 00:26:11,620
+ In pratica esattamente la stessa cosa accade nel vibe coding.
+
+236
+00:26:11,620 --> 00:26:15,400
+ Si ottiene uno script, un'app o un sito che funziona,
+
+237
+00:26:15,400 --> 00:26:17,620
+ ma non si sa come funziona.
+
+238
+00:26:17,620 --> 00:26:23,100
+ Tutta la fase di comprensione del come è fatto viene saltata e ignorata.
+
+239
+00:26:23,100 --> 00:26:28,220
+ Ecco, in verità non voglio addentrarmi in un discorso su chi è artista o meno
+
+240
+00:26:28,220 --> 00:26:30,260
+ o chi è sviluppatore o meno
+
+241
+00:26:30,260 --> 00:26:36,180
+ perché, a parer mio, tutto dipende dalla definizione di artista e di sviluppatore.
+
+242
+00:26:36,180 --> 00:26:37,320
+ Quindi facciamo notte.
+
+243
+00:26:37,320 --> 00:26:41,380
+ Piuttosto concludo questo capitolo dicendo che, secondo me,
+
+244
+00:26:41,380 --> 00:26:45,380
+ il vibe coding, ma anche l'IA generativa in generale,
+
+245
+00:26:45,380 --> 00:26:52,380
+ rappresenta un abilitatore in tantissimi campi per chi non ha alcuna competenza
+
+246
+00:26:52,380 --> 00:26:58,380
+ e un potenziatore in quegli stessi campi per chi invece le competenze le ha già.
+
+247
+00:26:58,380 --> 00:27:06,820
+ Prima di chiudere c'è un piccolo discorso che voglio fare
+
+248
+00:27:06,820 --> 00:27:13,380
+ che riguarda un fenomeno che il mio amico Alex Raccuglia ha battezzato come wild coding.
+
+249
+00:27:13,380 --> 00:27:15,140
+ Wild come?
+
+250
+00:27:15,140 --> 00:27:16,380
+ Selvaggio.
+
+251
+00:27:16,380 --> 00:27:22,720
+ Il wild coding è quella sorta di frenesia che ti può prendere nel momento in cui ti rendi conto
+
+252
+00:27:22,720 --> 00:27:28,140
+ che in vibe coding ora puoi generare tutte quelle cose che fino a qualche tempo fa
+
+253
+00:27:28,140 --> 00:27:31,560
+ semplicemente la tua mente scartava automaticamente
+
+254
+00:27:31,560 --> 00:27:35,840
+ perché sapeva che non avresti mai avuto il tempo o la voglia di realizzarle.
+
+255
+00:27:35,840 --> 00:27:41,140
+ Dopo aver sperimentato quanto è semplice e veloce produrre certi tipi di strumenti
+
+256
+00:27:41,140 --> 00:27:44,900
+ solo spiegandone il funzionamento ad un agente AI,
+
+257
+00:27:44,900 --> 00:27:48,860
+ può capitare di iniziare a fare un'associazione mentale
+
+258
+00:27:48,860 --> 00:27:54,100
+ per cui ad un'idea corrisponde direttamente un nuovo progetto in vibe coding.
+
+259
+00:27:54,100 --> 00:27:56,420
+ Beh, bisogna farci attenzione.
+
+260
+00:27:56,420 --> 00:27:59,900
+ Te lo dico perché a me è successo praticamente subito.
+
+261
+00:27:59,900 --> 00:28:04,860
+ Dopo il primo progetto che ti ho descritto ne ho iniziato subito un altro,
+
+262
+00:28:04,860 --> 00:28:08,260
+ poi sono passato alle canzoni, poi alle immagini
+
+263
+00:28:08,260 --> 00:28:11,340
+ e poi altro di cui non voglio ancora parlare.
+
+264
+00:28:11,340 --> 00:28:14,180
+ La trappola funziona in questo modo.
+
+265
+00:28:14,660 --> 00:28:17,880
+ Devi fare un lavoretto che hai sempre fatto a mano
+
+266
+00:28:17,880 --> 00:28:21,960
+ ma questa volta decidi che potresti provare a farlo
+
+267
+00:28:21,960 --> 00:28:25,860
+ usando un programmino che realizzerai in vibe coding.
+
+268
+00:28:25,860 --> 00:28:31,060
+ In mezz'ora scarsa hai portato a casa quel famoso 80% di programma
+
+269
+00:28:31,060 --> 00:28:32,980
+ di cui parla il principio di Pareto.
+
+270
+00:28:32,980 --> 00:28:37,260
+ Nel frattempo però ti sono venute altre 100 piccole idee
+
+271
+00:28:37,260 --> 00:28:39,640
+ che potresti aggiungere a quella in corso.
+
+272
+00:28:39,640 --> 00:28:41,940
+ Tanto le fai veloci veloci in vibe coding
+
+273
+00:28:41,940 --> 00:28:44,420
+ e così inizi a lavorare
+
+274
+00:28:44,420 --> 00:28:47,840
+ anche alle idee collaterali e il progetto si amplia.
+
+275
+00:28:47,840 --> 00:28:51,140
+ Altre idee intanto si affollano nella tua mente,
+
+276
+00:28:51,140 --> 00:28:53,680
+ altri progetti, altri ambiti,
+
+277
+00:28:53,680 --> 00:28:56,440
+ cose a cui avevi pensato 10 anni fa
+
+278
+00:28:56,440 --> 00:28:58,740
+ ma che non hai mai potuto fare,
+
+279
+00:28:58,740 --> 00:29:03,100
+ quella proposta che ti fece tuo cugino quella volta e così via.
+
+280
+00:29:03,100 --> 00:29:07,900
+ In breve ti ritrovi con 10 progetti aperti e nessuno completato.
+
+281
+00:29:07,900 --> 00:29:10,780
+ 100 distrazioni è un'enorme confusione.
+
+282
+00:29:10,780 --> 00:29:13,840
+ Impartisci i comandi solo perché puoi farlo.
+
+283
+00:29:14,180 --> 00:29:19,120
+ Magari senza chiederti nemmeno per bene se quella modifica serva oppure no.
+
+284
+00:29:19,120 --> 00:29:24,180
+ Lavorando allo script degli audiogrammi ad un certo punto ho percepito di non
+
+285
+00:29:24,180 --> 00:29:29,780
+ stare più ragionando abbastanza quando ad esempio mi è capitato di rimuovere
+
+286
+00:29:29,780 --> 00:29:33,820
+ delle funzionalità che avevo aggiunto qualche giorno prima perché a quel punto
+
+287
+00:29:33,820 --> 00:29:37,140
+ avevo capito che non erano necessarie.
+
+288
+00:29:37,140 --> 00:29:41,700
+ In altri tempi l'avrei dedotto a tavolino prima di implementarli in fase
+
+289
+00:29:41,700 --> 00:29:42,980
+ di progettazione.
+
+290
+00:29:42,980 --> 00:29:45,860
+ Non so da cosa dipenda questo fenomeno.
+
+291
+00:29:45,860 --> 00:29:51,620
+ Ho il sospetto che non sia solo la percezione di potere che dà il vibe coding
+
+292
+00:29:51,620 --> 00:29:58,680
+ ma che forse un peso lo abbiano anche i tempi di attesa tra quando inserisci un prompt
+
+293
+00:29:58,680 --> 00:30:01,180
+ e quando la sua esecuzione termina.
+
+294
+00:30:01,180 --> 00:30:07,180
+ A volte ci possono volere minuti tra un'operazione e l'altra e ti assicuro che sono sufficienti
+
+295
+00:30:07,180 --> 00:30:11,340
+ per poter lavorare a due progetti contemporaneamente.
+
+296
+00:30:11,340 --> 00:30:12,300
+ Altra cosa.
+
+297
+00:30:12,740 --> 00:30:15,540
+ Sbagliatissima ma che mi è capitata.
+
+298
+00:30:15,540 --> 00:30:22,900
+ Prima del vibe coding ma anche prima dello sviluppo assistito da ai questi momenti morti
+
+299
+00:30:22,900 --> 00:30:28,820
+ non esistevano perché eravamo impegnati in prima persona a scrivere il codice quindi
+
+300
+00:30:28,820 --> 00:30:33,140
+ il cervello non aveva campo libero per spaziare.
+
+301
+00:30:33,140 --> 00:30:38,700
+ Probabilmente ho ancora bisogno di riflettere in merito ma paradossalmente queste pause
+
+302
+00:30:38,700 --> 00:30:42,500
+ secondo me sono contemporaneamente troppo lunghe.
+
+303
+00:30:42,500 --> 00:30:43,540
+ E troppo brevi.
+
+304
+00:30:43,540 --> 00:30:50,080
+ Da un lato è un po' come se il dover aspettare mentre la gente lavora mi crei una forma di
+
+305
+00:30:50,080 --> 00:30:53,720
+ ansia per cui la mia mente corre avanti.
+
+306
+00:30:53,720 --> 00:31:01,620
+ Come se mi si attivasse l'effetto zigani che mi sentissi in difetto a non produrre pensieri
+
+307
+00:31:01,620 --> 00:31:02,660
+ in quel frattempo.
+
+308
+00:31:02,660 --> 00:31:09,700
+ Al tempo stesso però forse il fatto che un LLM impieghi così poco tempo a sviluppare
+
+309
+00:31:09,700 --> 00:31:11,660
+ una modifica che per me invece richiederebbe
+
+310
+00:31:12,260 --> 00:31:19,360
+ mezz'ora, un'ora o magari di più mi fa perdere quella sensazione di rischiare di sprecare
+
+311
+00:31:19,360 --> 00:31:21,800
+ tempo implementando qualcosa di inutile.
+
+312
+00:31:21,800 --> 00:31:27,720
+ Onestamente non so bene come funzioni questa cosa ma se hai qualche idea in merito mi piacerebbe
+
+313
+00:31:27,720 --> 00:31:32,080
+ sentirla e ne potremmo discutere insieme sul gruppo Telegram di Pensieri in Codice.
+
+314
+00:31:32,080 --> 00:31:42,240
+ Bene, anche stavolta episodio lunghissimo nonostante l'influenza.
+
+315
+00:31:42,260 --> 00:31:44,600
+ La tosse, il mal di gola, tutto.
+
+316
+00:31:44,600 --> 00:31:49,500
+ Sto cercando di darmi una regolata perché magari se riuscissi ad essere un po' meno
+
+317
+00:31:49,500 --> 00:31:56,060
+ prolisso riuscirei anche a pubblicare più episodi ma boh io più scrivo e più mi viene
+
+318
+00:31:56,060 --> 00:31:56,720
+ da scrivere.
+
+319
+00:31:56,720 --> 00:32:00,800
+ Ad ogni modo spero che questa disquisizione ti sia piaciuta.
+
+320
+00:32:00,800 --> 00:32:06,620
+ Oggi non ho granché fonti da lasciarti in descrizione perché è praticamente tutta
+
+321
+00:32:06,620 --> 00:32:12,020
+ farina del mio sacco quindi ti lascio i miei link a episodi e progetti.
+
+322
+00:32:12,020 --> 00:32:18,160
+ Ti ricordo invece che Pensieri in Codice si basa sulla filosofia value for value quindi
+
+323
+00:32:18,160 --> 00:32:24,340
+ io mi impegno a darti il prodotto migliore possibile per le mie capacità e tu se ci
+
+324
+00:32:24,340 --> 00:32:28,140
+ trovi un valore ti impegni a restituirlo in qualche modo.
+
+325
+00:32:28,140 --> 00:32:33,100
+ Puoi farlo nei soliti tre modi time, talent and treasure.
+
+326
+00:32:33,100 --> 00:32:41,080
+ Trovi tutti i dettagli all'indirizzo pensierincodice.it slash sostieni mi raccomando con due i ma brevemente
+
+327
+00:32:42,020 --> 00:33:12,000
+ e poi ti lascio a te.
+
+328
+00:33:12,020 --> 00:33:17,600
+ Posso venirlo a sapere allora perché non me lo racconti mandandomi una mail a valerio
+
+329
+00:33:17,600 --> 00:33:23,220
+ chiocciolapensierincodice.it sempre con due i mi farebbe davvero piacere conoscere queste
+
+330
+00:33:23,220 --> 00:33:27,820
+ storie di condivisione e magari potrebbero venirne fuori idee interessanti.
+
+331
+00:33:27,820 --> 00:33:35,160
+ Secondo puoi dare una mano con il tuo talento ad esempio sto pensando di rifare tutto l'aspetto
+
+332
+00:33:35,160 --> 00:33:40,520
+ grafico del sito che ormai è oggettivamente obsoleto ti va di aiutarmi potremmo farlo
+
+333
+00:33:40,520 --> 00:33:41,620
+ anche in vibe coding.
+
+334
+00:33:42,020 --> 00:33:47,520
+ Terzo puoi fare una donazione come fanno ad esempio i donatori ricorrenti che sostengono
+
+335
+00:33:47,520 --> 00:33:53,760
+ il podcast ogni mese edoardo e carlo a cui oggi si aggiungono anche due nuovi donatori
+
+336
+00:33:53,760 --> 00:33:56,060
+ spot nicola e raffaele.
+
+337
+00:33:56,060 --> 00:34:02,360
+ Bene detto questo direi che per oggi ci possiamo anche salutare e io posso andare a morire
+
+338
+00:34:02,360 --> 00:34:03,020
+ di tosse.
+
+339
+00:34:03,020 --> 00:34:11,100
+ Questo sarà l'ultimo episodio del 2025 quindi ti auguro di trascorrere delle serene feste
+
+340
+00:34:11,100 --> 00:34:12,000
+ con chi desidera.
+
+341
+00:34:12,020 --> 00:34:19,080
+ E per l'ultima volta quest'anno ti ricordo che un informatico risolve problemi a volte
+
+342
+00:34:19,080 --> 00:34:20,880
+ anche usando il computer.
+
+343
+00:34:20,880 --> 00:34:32,340
+ Il nostro corso gratuito è www.mesmerism.info e il nostro sito è www.mesmerism.info.
+

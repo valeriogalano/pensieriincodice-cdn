@@ -1,0 +1,11 @@
+0.000000	0.000000	Introduzione
+47.349820	47.349820	Il problema
+335.023748	335.023748	L'idea
+534.045120	534.045120	Cronache di Vibe coding
+765.545807	765.545807	Il principio di Pareto
+868.650516	868.650516	Non è tutto oro...
+1012.943864	1012.943864	Consigli pratici
+1195.839675	1195.839675	Vibe coding come abilitatore
+1305.096188	1305.096188	Costanza al comando
+1622.520504	1622.520504	Wild coding
+1896.655046	1896.655046	Conclusione
