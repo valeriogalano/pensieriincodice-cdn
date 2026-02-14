@@ -1,0 +1,1172 @@
+1
+00:00:00,000 --> 00:00:29,980
+ [Musica]
+
+2
+00:00:29,980 --> 00:00:46,560
+ Come ormai saprai se ascolti questo podcast da un po', io amo parlare di software, di intelligenza artificiale, di cloud e di tutte quelle tecnologie che stanno cambiando noi e il nostro presente.
+
+3
+00:00:46,560 --> 00:00:56,280
+ Ma credo anche che sia importante guardare al passato. Di tanto in tanto, secondo me, è fondamentale voltarsi indietro.
+
+4
+00:00:56,600 --> 00:01:07,480
+ Soprattutto quando scopriamo che tante delle cose che oggi diamo per scontate hanno radici profonde e a volte sorprendenti proprio qui in Italia.
+
+5
+00:01:07,480 --> 00:01:17,060
+ Oggi, infatti, voglio raccontarti una storia particolare. Una storia di visione, di ingegneria, di design e di coraggio.
+
+6
+00:01:17,060 --> 00:01:26,480
+ La storia di come, in un paese che si stava ancora rialzando dalla guerra, un gruppo di persone straordinarie ha realizzato un progetto.
+
+7
+00:01:26,480 --> 00:01:30,840
+ Un prodotto talmente innovativo da essere quasi incompreso.
+
+8
+00:01:30,840 --> 00:01:46,920
+ Dopo la sigla, dunque, parleremo di Elea 9003, il primo calcolatore elettronico commerciale prodotto in Italia e uno tra i primi più tecnologicamente avanzati del suo tempo a livello mondiale.
+
+9
+00:01:46,920 --> 00:01:55,920
+ Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici.
+
+10
+00:01:55,920 --> 00:01:58,040
+ Informatici con Valerio Galano.
+
+11
+00:01:58,040 --> 00:02:14,140
+ Questa storia ha inizio a Divrea, una cittadina piemontese situata quasi al confine con la Valle d'Aosta.
+
+12
+00:02:14,140 --> 00:02:25,140
+ Siamo nei primi anni successivi alla Seconda Guerra Mondiale e l'Italia è ancora un paese di metalli, di cantieri, di macchine basate su tecnologie meccaniche.
+
+13
+00:02:25,140 --> 00:02:46,540
+ È un periodo nel quale molte aziende e diversi enti pubblici si sono dotati dei cosiddetti centri meccanografici, laboratori attrezzati con macchine adibite all'elaborazione automatizzata dei dati, ma ben lontane dai cervelli elettronici di stampo inglese o americano.
+
+14
+00:02:46,540 --> 00:02:54,560
+ Macchine che al crescere della mole dei dati trattati diventano rapidamente inefficienti e lente.
+
+15
+00:02:54,560 --> 00:03:05,740
+ Ma soprattutto macchine non universali, cioè in grado di risolvere solo i pochi e specifici problemi per i quali sono state appositamente costruite.
+
+16
+00:03:05,740 --> 00:03:21,320
+ A Divrea, però, sorge la sede della Olivetti, azienda storica di proprietà dell'omonima famiglia e all'epoca specializzata nella produzione di macchine da scrivere e di calcolatrici meccaniche di altissima qualità.
+
+17
+00:03:21,320 --> 00:03:24,280
+ La Olivetti non è solo un'impresa.
+
+18
+00:03:24,280 --> 00:03:29,840
+ È un'eccellenza nel suo campo, nonché un vero e proprio laboratorio sociale.
+
+19
+00:03:29,840 --> 00:03:43,680
+ L'allora direttore Adriano Olivetti, personaggio enigmatico ed imprenditore illuminato, crede fermamente che la produzione industriale debba essere al servizio dell'uomo, non il contrario.
+
+20
+00:03:43,680 --> 00:03:53,680
+ Dunque, possiamo facilmente immaginare come la sua convinzione che il progresso deve guidare la società verso verità, giustizia, bellezza...
+
+21
+00:03:53,680 --> 00:04:03,480
+ e amore, solo una delle tantissime frasi che potremmo citare dai suoi discorsi, sia una bussola morale per l'intera azienda.
+
+22
+00:04:03,480 --> 00:04:18,880
+ Volendo fissare una data di inizio per questa storia, possiamo certamente considerare simbolico l'anno 1949, quando il premio Nobel per la fisica Enrico Fermi fa visita agli stabilimenti della Olivetti.
+
+23
+00:04:18,880 --> 00:04:22,220
+ Non abbiamo reso conti ufficiali di quel giorno.
+
+24
+00:04:22,220 --> 00:04:25,480
+ E non sappiamo se Adriano fosse presente o meno.
+
+25
+00:04:25,480 --> 00:04:35,900
+ Ma è bello pensare ai due personaggi che chiacchierano e si confrontano su temi di tecnologia, scienza, catene produttive e innovazioni future.
+
+26
+00:04:35,900 --> 00:04:48,820
+ Probabilmente non è andata veramente così, ma in caso contrario potremmo ben star certi che il fisico avrebbe scorto nell'imprenditore non solo un produttore di macchine meccaniche,
+
+27
+00:04:48,820 --> 00:04:51,820
+ ma un potenziale pioniere della nascente...
+
+28
+00:04:51,820 --> 00:04:53,540
+ Nascente elettronica.
+
+29
+00:04:53,540 --> 00:05:03,180
+ D'altronde, proprio in quegli anni, oltreoceano questa branca dell'ingegneria sta prendendo sempre più spazio nel panorama dell'automatizzazione,
+
+30
+00:05:03,180 --> 00:05:08,160
+ con la sua possibilità di risolvere qualsiasi problema traducibile in algoritmo.
+
+31
+00:05:08,160 --> 00:05:13,960
+ E la Olivetti è la candidata perfetta per raccogliere la sfida in Italia.
+
+32
+00:05:13,960 --> 00:05:21,400
+ Nel frattempo, nel settembre di quello stesso anno,
+
+33
+00:05:21,400 --> 00:05:30,060
+ un giovane laureando in ingegneria al secolo Michele Canepa risponde ad un annuncio di lavoro pubblicato sul Corriere della Sera
+
+34
+00:05:30,060 --> 00:05:37,480
+ e, pochi giorni dopo, si ritrova a Milano a sostenere un colloquio a tu per tu con Adriano Olivetti.
+
+35
+00:05:37,480 --> 00:05:47,140
+ La Olivetti non è un'azienda piccola, ma Adriano, quando può, ama dedicare il proprio tempo anche al reclutamento del personale.
+
+36
+00:05:47,140 --> 00:05:51,140
+ Il fatto che proprio quel giorno incontri Canepa è probabilmente...
+
+37
+00:05:51,140 --> 00:05:53,920
+ un vero e proprio colpo di fortuna.
+
+38
+00:05:53,920 --> 00:06:00,720
+ Il giovane, pur non essendo ancora laureato, fa infatti un'ottima impressione sull'imprenditore
+
+39
+00:06:00,720 --> 00:06:05,920
+ e quest'ultimo lo esorta a completare gli studi prima di ripresentarsi.
+
+40
+00:06:05,920 --> 00:06:09,320
+ La Olivetti lo aspetterà e lo assumerà allora.
+
+41
+00:06:09,320 --> 00:06:20,720
+ Così, il 2 gennaio 1950, Michele Canepa, divenuto ufficialmente ingegnere, inizia il suo nuovo percorso lavorativo presso l'azienda di Ivrea,
+
+42
+00:06:20,720 --> 00:06:25,420
+ e immediatamente si distingue per le sue capacità tecniche.
+
+43
+00:06:25,420 --> 00:06:37,700
+ Nel successivo mese di agosto, una delegazione mista, composta da ingegneri della Olivetti e dell'Istituto Nazionale per le Applicazioni del Calcolo dell'Università di Roma, parte per gli Stati Uniti.
+
+44
+00:06:37,700 --> 00:06:50,300
+ La missione è visionare e studiare le calcolatrici elettroniche d'oltreoceano, per acquisire le conoscenze necessarie alla progettazione e realizzazione di un prodotto simile in Italia.
+
+45
+00:06:50,300 --> 00:06:54,480
+ E Canepa è la figura perfetta per questo scopo.
+
+46
+00:06:54,480 --> 00:07:13,540
+ Il viaggio sarebbe dovuto terminare dopo un mese, a inizio settembre, ma i vari incontri si protraggono fino ad ottobre e soprattutto fanno acquisire alla Olivetti la consapevolezza che per la costruzione di una calcolatrice elettronica vi sono molti ostacoli da superare.
+
+47
+00:07:13,540 --> 00:07:19,880
+ Non a caso, da Ivrea si decide di non far rientrare Canepa, al quale viene data la possibilità...
+
+48
+00:07:19,880 --> 00:07:28,240
+ di lavorare attivamente alla realizzazione del calcolatore Mark IV presso il Computational Laboratory di Harvard.
+
+49
+00:07:28,240 --> 00:07:44,200
+ Qui l'ingegnere si distingue in fretta, contribuisce a progettare l'addizionatore del Mark IV migliorandone l'impostazione iniziale e in seguito viene coinvolto nella progettazione e realizzazione del moltiplicatore e del divisore.
+
+50
+00:07:44,200 --> 00:07:49,460
+ In poco più di un anno riesce da un lato ad apprendere varie tecniche e tecnologie...
+
+51
+00:07:49,460 --> 00:08:19,040
+ innovative e dall'altro metodi nuovi di lavoro. Soprattutto scopre che la vera innovazione nasce dalla libertà di sperimentare e dalla possibilità di sbagliare e ricominciare. Acquisisce una visione diversa e si convince che l'Italia, ancora dominata dalla meccanica, può anch'essa aspirare a costruire il proprio cervello elettronico. Però, al suo ritorno nel 1952, scopre anche che...
+
+52
+00:08:19,040 --> 00:08:48,620
+ la realtà è ben più incerta. Le risorse sono scarse, i componenti costosi, le linee di credito limitate. La Olivetti prova ad intraprendere un primo timido progetto, la realizzazione di un prototipo di macchina calcolatrice elettronica finalizzata alla gestione di conti correnti bancari. Ma un conto è progettare un prototipo rudimentale a scopi di studio. E tutt'altra storia è immaginare una macchina...
+
+53
+00:08:48,620 --> 00:09:15,820
+ capace di soddisfare davvero le esigenze di un istituto bancario con migliaia di correntisti ed innumerevoli operazioni. E poi gli scaffali dei magazzini ad Ivrea sono ancora pieni di macchine da scrivere e gli affari della storica divisione vanno a gonfie vele. È difficile giustificare o anche solo pensare ad un cambio di direzione improvviso. Ma la scintilla è ormai accesa.
+
+54
+00:09:18,200 --> 00:09:29,120
+ Il nuovo bagaglio di conoscenze e soprattutto la convinzione che il progetto di un calcolatore elettronico ideato e costruito in Italia sia in qualche modo possibile.
+
+55
+00:09:47,780 --> 00:09:54,240
+ Una grossa cifra per sovvenzionare la realizzazione di progetti tecnologici innovativi.
+
+56
+00:09:54,240 --> 00:10:10,100
+ Il fisico Marcello Conversi, sostenuto dall'Istituto di Fisica e la Facoltà di Scienze, propone al rettore dell'Università di Pisa una scommessa audace. Costruire una calcolatrice elettronica tutta italiana.
+
+57
+00:10:10,100 --> 00:10:17,360
+ L'idea è accolta inizialmente con un certo scetticismo, ma fortunatamente pochi giorni dopo...
+
+58
+00:10:17,360 --> 00:10:31,820
+ Dopo la proposta, il rettore Avanzi riceve una lettera da parte del già citato premio Nobel Enrico Fermi che dichiara il suo pieno supporto all'iniziativa conferendole autorità e soprattutto credibilità.
+
+59
+00:10:31,820 --> 00:10:46,940
+ La strada diviene quindi praticabile e sostenibile. Tuttavia, la mancanza di un partner industriale rimane un ostacolo non da poco. È impensabile per i soli ambienti accademici poter tirare su l'intera catena di produttori.
+
+60
+00:10:46,940 --> 00:11:08,380
+ La necessità di una collaborazione con il settore privato è evidente a tutti e la Olivetti, con la sua capacità produttiva, le sue conoscenze di elettronica e la sua visione umanistica, appare la candidata perfetta per ricoprire il ruolo di partner.
+
+61
+00:11:08,380 --> 00:11:16,920
+ Come abbiamo già detto, in Olivetti la strada della calcolatrice elettronica era già stata tracciata qualche anno prima da Michele.
+
+62
+00:11:16,920 --> 00:11:29,140
+ Tuttavia, una collaborazione del genere richiede una figura che abbia non solo competenze tecniche, ma anche capacità organizzative e di mediazione.
+
+63
+00:11:29,140 --> 00:11:45,720
+ C'è un'altra figura al tempo in azienda che potrebbe ricoprire il ruolo di direttore e coordinatore tra il mondo industriale e quello accademico per un così importante progetto, ed è l'ingegnere Mario Ciu.
+
+64
+00:11:46,900 --> 00:12:16,880
+ C'è un'altra figura al tempo in azienda che potrebbe ricoprire il ruolo di direttore e coordinatore tra il mondo industriale e quello accademico per un così importante progetto, ed è l'ingegnere Mario Ciu.
+
+65
+00:12:16,880 --> 00:12:46,860
+ C'è un'altra figura al tempo in azienda che potrebbe ricoprire il ruolo di direttore e coordinatore tra il mondo industriale e quello accademico per un così importante progetto, ed è l'ingegnere Mario Ciu.
+
+66
+00:12:46,860 --> 00:13:16,840
+ C'è un'altra figura al tempo in azienda che potrebbe ricoprire il ruolo di direttore e coordinatore tra il mondo industriale e quello accademico per un così importante progetto, ed è l'ingegnere Mario Ciu.
+
+67
+00:13:16,840 --> 00:13:46,820
+ C'è un'altra figura al tempo in azienda che potrebbe ricoprire il ruolo di direttore e coordinatore tra il mondo industriale e quello accademico per un così importante progetto, ed è l'ingegnere Mario Ciu.
+
+68
+00:13:46,820 --> 00:14:16,800
+ C'è un'altra figura al tempo in azienda che potrebbe ricoprire il ruolo di direttore e coordinatore tra il mondo industriale e quello accademico per un così importante progetto, ed è l'ingegnere Mario Ciu.
+
+69
+00:14:16,800 --> 00:14:46,780
+ C'è un'altra figura al tempo in azienda che potrebbe ricoprire il ruolo di direttore e coordinatore tra il mondo industriale e quello accademico per un così importante progetto, ed è l'ingegnere Mario Ciu.
+
+70
+00:14:46,780 --> 00:15:12,120
+ I stucchi o i soffitti alti ed affrescati non appaiono certo la scelta migliore per allestire un laboratorio, ma è evidente che Mario deve aver visto in tale sede qualcosa di estremamente invitante, forse prima fra tutte la possibilità di lavorare in tranquillità e circondati dal verde, presupposto questo certamente in linea con il modo di ragionare della Olivetti al tempo.
+
+71
+00:15:12,120 --> 00:15:16,760
+ C'è un'altra figura al tempo in azienda che potrebbe ricoprire il ruolo di direttore e coordinatore tra il mondo industriale e quello accademico per un così importante progetto, ed è l'ingegnere Mario Ciu.
+
+72
+00:15:16,760 --> 00:15:38,640
+ Per adeguare gli spazi, Ciu trasferirà l'LRE, cioè il Laboratorio di Ricerche Elettroniche, e tutta la sua squadra di ingegneri, tra i quali spiccano personaggi che diventeranno future leggende, come ad esempio Pier Giorgio Perotto, padre della Programma 101 di cui parleremo approfonditamente in un futuro episodio.
+
+73
+00:15:38,640 --> 00:15:45,640
+ A questo punto può finalmente prendere il via la realizzazione dei primi due prototipi del progetto.
+
+74
+00:15:46,740 --> 00:15:59,920
+ A Barbaricina, la Olivetti lavora per realizzare quella che viene denominata la macchina zero, e contemporaneamente all'Istituto di Fisica di Pisa si lavora invece alla macchina ridotta.
+
+75
+00:15:59,920 --> 00:16:16,240
+ La prima servirà come base per la produzione di un modello commerciale, la seconda invece avrà il compito di verificare la bontà delle soluzioni tecniche del progetto e a sua volta fungerà da base per la futura macchina definitiva.
+
+76
+00:16:16,720 --> 00:16:27,000
+ Le menti all'opera sono eccelse, l'entusiasmo è a mille e le premesse ottime. Tuttavia c'è un problema che inizia a stagliarsi all'orizzonte.
+
+77
+00:16:27,000 --> 00:16:36,160
+ Per quanto avanzati, entrambi i progetti in fase di realizzazione sono pensati per utilizzare valvole termoioniche.
+
+78
+00:16:36,160 --> 00:16:46,700
+ Le valvole termoioniche, pur rappresentando la tecnologia più utilizzata al momento, nonché quella più semplice da reperire e da imparare,
+
+79
+00:16:46,700 --> 00:16:55,600
+ soffrono di vari limiti, tra i quali l'essere ingombranti e l'andare soggetti a surriscaldamento.
+
+80
+00:16:55,600 --> 00:17:11,960
+ Visto ciò che accadrà da qui a qualche anno, è lecito immaginare che già nei primi mesi di progetto Mario, i suoi ragazzi e la Olivetti siano consci del fatto che non è possibile costruire il futuro utilizzando una tecnologia del passato.
+
+81
+00:17:11,960 --> 00:17:16,600
+ Da un lato serve sviluppare competenze e realizzare prototipi personali.
+
+82
+00:17:16,680 --> 00:17:21,220
+ E sperimentare soluzioni con ciò di cui si dispone nell'immediato, certo.
+
+83
+00:17:21,220 --> 00:17:31,560
+ Ma, dall'altro, è anche importante guardarsi attorno e recepire e includere le migliori innovazioni provenienti da tutto il mondo.
+
+84
+00:17:31,560 --> 00:17:37,520
+ 1956. È trascorso un altro anno.
+
+85
+00:17:37,520 --> 00:17:46,520
+ Già da qualche tempo, da oltreoceano, arrivano notizie riguardo una certa innovazione tecnologica che sembra destinata...
+
+86
+00:17:46,520 --> 00:17:49,300
+ ...a soppiantare le valvole termoioniche.
+
+87
+00:17:49,300 --> 00:17:52,340
+ Questa innovazione è il transistor.
+
+88
+00:17:52,340 --> 00:18:02,360
+ Nell'aprile del 1955, mentre Mario Chu sceglieva la villa di Barbaricina come futura sede del LRE,
+
+89
+00:18:02,360 --> 00:18:11,940
+ negli Stati Uniti, la IBM annunciava l'avvio della produzione di un nuovo modello di calcolatrice commerciale chiamata 608.
+
+90
+00:18:11,940 --> 00:18:16,500
+ Questo prodotto è particolarmente interessante per il gruppo.
+
+91
+00:18:16,500 --> 00:18:29,760
+ Perché si tratta di una calcolatrice a transistor, il cui prototipo, però, risalente all'anno precedente, si basava invece su valvole termoioniche.
+
+92
+00:18:29,760 --> 00:18:36,500
+ Quello fatto da IBM è proprio il tipo di cambio di passo di cui ha bisogno il progetto di Barbaricina.
+
+93
+00:18:36,500 --> 00:18:43,800
+ E l'annuncio non passa quindi inosservato, in particolare a Roberto Olivetti, figlio di Adriano,
+
+94
+00:18:43,800 --> 00:18:45,800
+ che lavora alacremente per procurare...
+
+95
+00:18:45,800 --> 00:18:51,180
+ per procurarsi campioni e informazioni sui prodotti dei concorrenti statunitensi.
+
+96
+00:18:51,180 --> 00:18:58,880
+ Appare chiaro ai più lungimiranti che per l'azienda di Ivrea è giunto il momento di passare a questa nuova tecnologia.
+
+97
+00:18:58,880 --> 00:19:05,600
+ Ma i costi non sono affatto banali e non si può immaginare che l'altra area dell'azienda,
+
+98
+00:19:05,600 --> 00:19:11,920
+ cioè la divisione che produce macchine da scrivere e calcolatrici meccaniche, li assorba per sempre.
+
+99
+00:19:11,920 --> 00:19:15,780
+ Le sovvenzioni regionali non sono sufficienti.
+
+100
+00:19:15,780 --> 00:19:23,780
+ Tanto più perché Adriano, per spingere la collaborazione, ha rinunciato a gran parte di esse a favore del partner universitario.
+
+101
+00:19:23,780 --> 00:19:30,660
+ E anche se il mercato internazionale sta andando nella nuova direzione dell'elettronica,
+
+102
+00:19:30,660 --> 00:19:36,520
+ in Italia la maggior parte delle aziende della politica non sembra ancora averlo capito.
+
+103
+00:19:36,520 --> 00:19:40,040
+ Quindi non c'è da aspettarsi aiuti dallo Stato.
+
+104
+00:19:40,040 --> 00:19:44,960
+ La migliore opzione possibile dunque diventa quella più audace.
+
+105
+00:19:45,600 --> 00:19:51,860
+ Produrre transistori direttamente in Italia senza importarli dai concorrenti d'oltreoceano.
+
+106
+00:19:51,860 --> 00:19:59,740
+ Una scelta che non solo riduce i costi a lungo termine, ma permette anche di vendere componenti ai concorrenti.
+
+107
+00:19:59,740 --> 00:20:09,120
+ Nasce così il 16 ottobre del 1957, dopo una serie di trattative tentate con varie aziende italiane,
+
+108
+00:20:09,120 --> 00:20:14,060
+ la SGS, Società Generale Semiconduttori.
+
+109
+00:20:14,060 --> 00:20:15,580
+ Una collaborazione di un'azienda italiana, che si chiama SGS,
+
+110
+00:20:15,580 --> 00:20:23,160
+ tra Olivetti e Teletra, un'azienda sempre italiana che costruisce apparati di telecomunicazione.
+
+111
+00:20:23,160 --> 00:20:30,420
+ Nello stabilimento di quest'ultima, situato ad Argate e Brianza, inizia una produzione di transistor,
+
+112
+00:20:30,420 --> 00:20:36,520
+ diodi e altri componenti indispensabili nella realizzazione di calcolatrici elettroniche.
+
+113
+00:20:36,520 --> 00:20:43,080
+ Si tratta di un'impresa ambiziosa che purtroppo non decollerà prima di un paio d'anni dall'avvio
+
+114
+00:20:43,080 --> 00:20:45,560
+ e di conseguenza condizionerà il mercato.
+
+115
+00:20:45,560 --> 00:20:55,260
+ Al tempo stesso, però, rappresenterà anche un grande passo in avanti nella diminuzione
+
+116
+00:20:55,260 --> 00:20:58,220
+ delle dimensioni dei prodotti dell'azienda di Ivrea.
+
+117
+00:20:58,220 --> 00:21:04,860
+ Tra l'altro, la SGS sarà anche un'importante esperienza formativa per Federico Faggin,
+
+118
+00:21:04,860 --> 00:21:10,660
+ padre del moderno microprocessore, che nel frattempo si è unito al Centro Studi per le
+
+119
+00:21:10,660 --> 00:21:12,440
+ Calcolatrici Elettroniche di CHU.
+
+120
+00:21:12,440 --> 00:21:15,440
+ Il passaggio dalle valvole ai transienti.
+
+121
+00:21:15,440 --> 00:21:20,360
+ Il prodotto di transistor contribuisce certamente a ridurre la dimensione della macchina zero,
+
+122
+00:21:20,360 --> 00:21:25,860
+ ma non la rende meno un ammasso inguardabile di cavi e circuiti.
+
+123
+00:21:25,860 --> 00:21:33,000
+ Se si vuole ottenere un prodotto appetibile per il mercato, secondo Adriano, è indispensabile
+
+124
+00:21:33,000 --> 00:21:35,580
+ renderla un oggetto di design.
+
+125
+00:21:35,580 --> 00:21:41,920
+ D'altronde, l'intera storia della Olivetti ci insegna che design e comunicazione sono
+
+126
+00:21:41,920 --> 00:21:45,420
+ elementi indispensabili per quella che viene chiamata la macchina zero.
+
+127
+00:21:45,420 --> 00:21:55,360
+ Dalla lettera 22 alla divisumma, le caratteristiche estetiche e di marketing dei prodotti Olivetti
+
+128
+00:21:55,360 --> 00:21:58,700
+ sono sempre state studiate fin nei minimi dettagli.
+
+129
+00:21:58,700 --> 00:22:07,120
+ Così, nel dicembre del 1957, l'architetto Ettore Sottas, accompagnato dallo stesso Adriano
+
+130
+00:22:07,120 --> 00:22:13,120
+ che lo ha scelto per il compito di vestire il prototipo, fa visita per la prima volta
+
+131
+00:22:13,120 --> 00:22:15,340
+ al laboratorio di Barbaricina.
+
+132
+00:22:15,340 --> 00:22:22,140
+ Con l'obiettivo non solo di vedere il prodotto, ma soprattutto di conoscere la mentalità
+
+133
+00:22:22,140 --> 00:22:23,180
+ dei suoi autori.
+
+134
+00:22:23,180 --> 00:22:30,780
+ Il lavoro che svolgerà Sottas nei mesi successivi è a dir poco avvenieristico, ed è anche
+
+135
+00:22:30,780 --> 00:22:37,320
+ perfettamente in linea con le idee della Olivetti, una fusione di funzionalità ed estetica.
+
+136
+00:22:37,320 --> 00:22:43,500
+ Innanzitutto, nella maggior parte delle altre calcolatrici elettroniche realizzate fino
+
+137
+00:22:43,500 --> 00:22:44,860
+ a quel momento nel mondo.
+
+138
+00:22:45,320 --> 00:22:52,560
+ Gli armadi che contenevano le varie componenti erano addossati alle pareti, per cui la loro
+
+139
+00:22:52,560 --> 00:22:55,380
+ altezza non rappresentava un problema.
+
+140
+00:22:55,380 --> 00:23:01,540
+ La macchina zero, invece, è costituita da armadi che devono essere accessibili da entrambi
+
+141
+00:23:01,540 --> 00:23:05,340
+ i lati, e dunque posizionati in mezzo alla stanza.
+
+142
+00:23:05,340 --> 00:23:11,260
+ Per questo motivo, l'architetto decide di ridurne l'altezza per far sì che i tecnici
+
+143
+00:23:11,260 --> 00:23:13,160
+ possano vedersi e parlarsi.
+
+144
+00:23:13,160 --> 00:23:15,300
+ Poi, per facilitarlo,
+
+145
+00:23:15,300 --> 00:23:20,340
+ per facilitare la manutenzione che all'epoca era giornaliera, gli armadi vengono anche
+
+146
+00:23:20,340 --> 00:23:26,600
+ dotati di bande colorate differentemente a seconda della funzionalità e di una struttura
+
+147
+00:23:26,600 --> 00:23:31,140
+ con un'ala centrale fissa e due laterali incernierate.
+
+148
+00:23:31,140 --> 00:23:38,200
+ Infine, vengono attuate una serie di manovre per ripulire e stilizzare la macchina.
+
+149
+00:23:38,200 --> 00:23:45,280
+ I cavi, inizialmente stesi a terra, vengono sollevati e incanalati con strutture che sembrano
+
+150
+00:23:45,280 --> 00:23:49,060
+ ponti tra diverse unità della calcolatrice.
+
+151
+00:23:49,060 --> 00:23:56,820
+ Le porte vengono realizzate in alluminio anodizzato color argento, mentre le teste delle viti a
+
+152
+00:23:56,820 --> 00:23:59,460
+ brucola, sporgenti, in colore nero.
+
+153
+00:23:59,460 --> 00:24:02,000
+ E infine, il tocco da maestro.
+
+154
+00:24:02,000 --> 00:24:07,980
+ Una serie di lucine al neon danno l'impressione che la macchina stia pensando.
+
+155
+00:24:07,980 --> 00:24:14,480
+ Data la sua destinazione ad ambienti di lavoro collettivi, la calcolatrice elettronica diventa
+
+156
+00:24:14,480 --> 00:24:19,640
+ così un personaggio intorno al quale si viene a creare un'atmosfera particolare.
+
+157
+00:24:19,640 --> 00:24:25,840
+ Sotzas elabora persino il logo, che è ispirato ad un dettaglio di uno dei componenti.
+
+158
+00:24:25,840 --> 00:24:33,000
+ Una matrice di linee orizzontali, verticali e diagonali che astrae l'intreccio di fili di rame
+
+159
+00:24:33,000 --> 00:24:37,760
+ e anelli di ferrite che componevano la memoria della calcolatrice.
+
+160
+00:24:37,760 --> 00:24:44,140
+ Mentre Sotzas è al lavoro sul design, la macchina zero,
+
+161
+00:24:44,460 --> 00:24:50,800
+ viene trasferita da Barbaricina ad Ivrea e i lavori prendono due direzioni parallele.
+
+162
+00:24:50,800 --> 00:24:57,000
+ Il team di ingegneri di Mario avvia sia la costruzione di un secondo prototipo, la macchina
+
+163
+00:24:57,000 --> 00:25:04,680
+ 1V, ancora quasi esclusivamente a valvole, sia la progettazione del modello 1T, cioè
+
+164
+00:25:04,680 --> 00:25:07,640
+ la versione definitiva incentrata su transistor.
+
+165
+00:25:07,640 --> 00:25:14,420
+ La 1T è l'obiettivo finale del dipartimento, modello per la futura
+
+166
+00:25:14,420 --> 00:25:21,320
+ produzione in serie e è concepita per trattare grandi flussi di dati alfanumerici provenienti
+
+167
+00:25:21,320 --> 00:25:29,480
+ da origini diverse, registrati su supporti fisici diversi e funzionanti a velocità diverse.
+
+168
+00:25:29,480 --> 00:25:35,280
+ Tra apparecchiature di conversione da schede perforate a nastro magnetico, bande di carta
+
+169
+00:25:35,280 --> 00:25:42,220
+ perforata e stampanti, la 1T possiede una modularità estremamente avanzata per il mercato
+
+170
+00:25:42,220 --> 00:25:42,780
+ italiano.
+
+171
+00:25:42,780 --> 00:25:44,400
+ Non è l'unica che è stata realizzata per il mercato italiano.
+
+172
+00:25:44,400 --> 00:25:50,900
+ Non è la calcolatrice elettronica transistor del mondo, né l'unica con quel tipo di caratteristiche,
+
+173
+00:25:50,900 --> 00:25:55,760
+ ma è certamente al passo con i principali modelli in commercio della sua epoca.
+
+174
+00:25:55,760 --> 00:26:01,560
+ I prodotti Olivetti, però, hanno da sempre un'altra caratteristica fondamentale che li
+
+175
+00:26:01,560 --> 00:26:02,560
+ contraddistingue.
+
+176
+00:26:02,560 --> 00:26:09,740
+ Un nome evocativo e facile da ricordare, con un senso per il prodotto in sé, ma anche
+
+177
+00:26:09,740 --> 00:26:12,820
+ un richiamo a concetti più profondi.
+
+178
+00:26:12,820 --> 00:26:14,220
+ Una scelta.
+
+179
+00:26:14,360 --> 00:26:19,900
+ Così difficile per un progetto di questo calibro non può che essere affidata a Franco
+
+180
+00:26:19,900 --> 00:26:27,560
+ Fortini, poeta e intellettuale, già collaboratore dell'azienda di Ivrea, nonché ideatore di
+
+181
+00:26:27,560 --> 00:26:31,760
+ nomi per altri progetti famosissimi come la Lettera 22.
+
+182
+00:26:31,760 --> 00:26:38,060
+ Oltre all'estrema innovatività del nuovo calcolatore, fondamentale per l'azienda è
+
+183
+00:26:38,060 --> 00:26:44,040
+ anche la necessità di sottolineare la connessione tra uomo e macchina e, a tal scopo,
+
+184
+00:26:44,320 --> 00:26:47,380
+ il nome Elea appare la scelta migliore.
+
+185
+00:26:47,380 --> 00:26:52,860
+ Da una parte, acronimo di elaboratore elettronico aritmetico.
+
+186
+00:26:52,860 --> 00:26:59,000
+ Dall'altra, riferimento alla scuola filosofica della città di Elea, secondo cui
+
+187
+00:26:59,000 --> 00:27:05,220
+ lo sviluppo della conoscenza è possibile solo a partire da basi e premesse certe e
+
+188
+00:27:05,220 --> 00:27:11,740
+ quindi solo con le elaborazioni del pensiero tramite metodi matematici è possibile giungere
+
+189
+00:27:11,740 --> 00:27:14,040
+ alla verità e all'unicità dell'essere.
+
+190
+00:27:14,280 --> 00:27:19,500
+ La vecchia macchina zero viene quindi ribattezzata Elea 9001.
+
+191
+00:27:19,500 --> 00:27:28,460
+ La macchina 1V diventa Elea 9002, mentre la futura 1T, destinata al mercato, si chiamerà
+
+192
+00:27:28,460 --> 00:27:29,980
+ Elea 9003.
+
+193
+00:27:29,980 --> 00:27:36,360
+ Anche la scelta della parola elaboratore è significativa, perché si tratta di una macchina
+
+194
+00:27:36,360 --> 00:27:38,940
+ universale e lo si vuole far capire.
+
+195
+00:27:38,940 --> 00:27:44,240
+ Significativo, poi, è anche il fatto che da questo momento per i sistemi di elaborazione
+
+196
+00:27:44,240 --> 00:27:50,000
+ dei sistemi elettronici programmabili vengono utilizzate le parole al maschile calcolatore,
+
+197
+00:27:50,000 --> 00:27:53,380
+ elaboratore e, di lì a poco, computer.
+
+198
+00:27:53,380 --> 00:27:59,360
+ Tutto è ormai pronto per il lancio sul mercato, il primo ordine ufficiale è stato ricevuto
+
+199
+00:27:59,360 --> 00:28:00,620
+ ed è in lavorazione.
+
+200
+00:28:00,620 --> 00:28:06,500
+ Purtroppo, però, Adriano Olivetti non fa in tempo a vedere quel primo esemplare venduto
+
+201
+00:28:06,500 --> 00:28:11,820
+ di Elea 9003, perché muore il 27 febbraio 1960.
+
+202
+00:28:11,820 --> 00:28:14,200
+ Il primo calcolatore
+
+203
+00:28:14,200 --> 00:28:22,260
+ 9003 viene ufficialmente consegnato alla società Marzotto il 23 settembre 1960.
+
+204
+00:28:22,260 --> 00:28:29,820
+ L'unità centrale può elaborare 100.000 informazioni al secondo, eseguire fino a 10.000 operazioni
+
+205
+00:28:29,820 --> 00:28:35,940
+ al secondo, gestire fino a 20 unità di nastro magnetico, garantendo così l'elaborazione
+
+206
+00:28:35,940 --> 00:28:37,740
+ di grandi quantità di dati.
+
+207
+00:28:37,740 --> 00:28:44,160
+ Senza Adriano alla Olivetti vengono improvvisamente a mancare la visione e lo sguardo di un'unità
+
+208
+00:28:44,160 --> 00:28:45,800
+ aperto verso il futuro.
+
+209
+00:28:45,800 --> 00:28:51,760
+ Ma anche di questo argomento parleremo più approfonditamente in un prossimo episodio.
+
+210
+00:28:51,760 --> 00:28:58,360
+ Ad ogni modo, il nuovo presidente Pero e i nuovi vertici aziendali confermano la linea
+
+211
+00:28:58,360 --> 00:29:05,460
+ dell'elettronica, anche perché stanno arrivando nuovi ordini per l'Elea 9003, che prefigurano
+
+212
+00:29:05,460 --> 00:29:09,400
+ un potenziale rientro degli investimenti in tempi ragionevoli.
+
+213
+00:29:09,400 --> 00:29:14,120
+ Il secondo esemplare viene ordinato dal Monte dei Paschi di Siena.
+
+214
+00:29:14,120 --> 00:29:22,640
+ Viene costruito pezzo per pezzo e, nell'aprile del 1961, viene assemblato presso gli uffici
+
+215
+00:29:22,640 --> 00:29:24,260
+ direzionali della banca.
+
+216
+00:29:24,260 --> 00:29:26,420
+ Un anno e mezzo di lavoro.
+
+217
+00:29:26,420 --> 00:29:27,840
+ E non è finita.
+
+218
+00:29:27,840 --> 00:29:33,920
+ Alla fine sarà necessario convertire oltre un milione e centomila schede perforate su
+
+219
+00:29:33,920 --> 00:29:40,280
+ nastri magnetici per completare la transizione al nuovo sistema dei conti correnti, dei depositi
+
+220
+00:29:40,280 --> 00:29:44,080
+ al risparmio e di tutte le attività fino alle buste paga dei fondi.
+
+221
+00:29:44,080 --> 00:29:51,800
+ L'Elea 9003 ha bisogno di controlli e di manutenzione quotidiani e la Olivetti distacca
+
+222
+00:29:51,800 --> 00:29:58,280
+ a Siena un piccolo team di tecnici che ogni notte verifica il funzionamento di ogni parte
+
+223
+00:29:58,280 --> 00:30:04,120
+ del calcolatore, affinché la mattina dopo si possa ripartire senza problemi con il lavoro.
+
+224
+00:30:04,120 --> 00:30:06,480
+ Seguono poi altri ordini.
+
+225
+00:30:06,480 --> 00:30:13,260
+ In totale sono 35 gli esemplari prodotti e distribuiti tra banche, grandi aziende e enti
+
+226
+00:30:13,260 --> 00:30:13,860
+ pubblici.
+
+227
+00:30:14,040 --> 00:30:17,380
+ Nessun ordine o sostegno arriva dal governo.
+
+228
+00:30:17,380 --> 00:30:21,820
+ I ministeri continuano a preferire i prodotti IBM.
+
+229
+00:30:21,820 --> 00:30:27,220
+ Fuori dall'Italia, poi, l'Elea 9003 riscuota un discreto successo.
+
+230
+00:30:27,220 --> 00:30:35,880
+ Viene esposto a Mosca nel 1961, cosa che richiede la spedizione di ben 12 tonnellate di attrezzatura
+
+231
+00:30:35,880 --> 00:30:40,960
+ e le riviste tecniche americane e sovietiche ne parlano con entusiasmo.
+
+232
+00:30:40,960 --> 00:30:44,000
+ La diffusione sul mercato, seppur limitata, è una cosa che non è mai stata fatta.
+
+233
+00:30:44,000 --> 00:30:47,640
+ La diffusione sul mercato, seppur limitata, dimostra che negli anni 60 una piccola impresa
+
+234
+00:30:47,640 --> 00:30:53,660
+ italiana può ancora competere a livello globale nel campo dell'elettronica, malgrado gli
+
+235
+00:30:53,660 --> 00:30:59,720
+ ostacoli, le difficoltà e la necessità di remare controcorrente rispetto alle convinzioni
+
+236
+00:30:59,720 --> 00:31:00,520
+ nazionali.
+
+237
+00:31:00,520 --> 00:31:09,860
+ Dalla base della 9003 nasceranno poi il successivo modello 9004 e la serie 6000 e 4000, che
+
+238
+00:31:09,860 --> 00:31:11,800
+ avranno anch'esse una buona diffusione.
+
+239
+00:31:11,800 --> 00:31:13,700
+ In particolare la 4000.
+
+240
+00:31:13,960 --> 00:31:17,460
+ Vedrà oltre 40.000 esemplari prodotti.
+
+241
+00:31:17,460 --> 00:31:23,980
+ Dopo 15 anni, da quando Adriano Olivetti inizia a immaginare il passaggio all'elettronica
+
+242
+00:31:23,980 --> 00:31:31,180
+ per la sua azienda, l'Elea 9003 non è solo una macchina o un prodotto, è la dimostrazione
+
+243
+00:31:31,180 --> 00:31:35,460
+ che la forza delle idee può parlare il linguaggio del futuro.
+
+244
+00:31:35,460 --> 00:31:43,920
+ Bene, spero che questa storia ti sia piaciuta e ti abbia affascinato.
+
+245
+00:31:43,920 --> 00:31:48,180
+ Tanto quanto è piaciuto a me studiarla e raccontartela.
+
+246
+00:31:48,180 --> 00:31:54,380
+ Io ho sempre avuto un debole per la storia della Olivetti e mi piacerebbe cercare di
+
+247
+00:31:54,380 --> 00:31:56,480
+ produrre altri episodi sul tema.
+
+248
+00:31:56,480 --> 00:32:00,660
+ Mi interessa però sapere anche tu cosa ne pensi.
+
+249
+00:32:00,660 --> 00:32:06,440
+ Ti piace l'argomento, lo stile, la durata, la densità di informazioni?
+
+250
+00:32:06,440 --> 00:32:09,900
+ Si riesce a seguire senza troppe difficoltà?
+
+251
+00:32:09,900 --> 00:32:13,900
+ Scrivimi il tuo feedback a valeriochiocciola.it
+
+252
+00:32:13,900 --> 00:32:15,360
+ pensierincodice.it
+
+253
+00:32:15,360 --> 00:32:24,200
+ Se poi ti va di approfondire la storia dell'Elea 9003 trovi in descrizione i link affiliati
+
+254
+00:32:24,200 --> 00:32:31,640
+ Amazon ai libri che ho utilizzato come fonti e anche un link YouTube al documentario originale
+
+255
+00:32:31,640 --> 00:32:37,180
+ della Olivetti sulla serie Elea 9000 con la partecipazione dello stesso Mario Chu.
+
+256
+00:32:37,180 --> 00:32:43,180
+ Prima di lasciarti ti ricordo come sempre che Pensieri in Codice è un progetto indipendente
+
+257
+00:32:43,700 --> 00:32:46,060
+ che realizzo nel mio tempo libero.
+
+258
+00:32:46,060 --> 00:32:51,880
+ È senza pubblicità perché non mi va che veniate tracciati e quindi si basa totalmente
+
+259
+00:32:51,880 --> 00:32:53,960
+ sulla filosofia value for value.
+
+260
+00:32:53,960 --> 00:32:55,080
+ Cosa vuol dire?
+
+261
+00:32:55,080 --> 00:32:56,080
+ Semplice.
+
+262
+00:32:56,080 --> 00:33:03,140
+ Se ascolti il podcast con continuità, se ti intrattiene, se ti insegna qualcosa, allora
+
+263
+00:33:03,140 --> 00:33:09,960
+ vuol dire che ha un valore per te e io ti chiedo se ti va di restituire un po' di quel
+
+264
+00:33:09,960 --> 00:33:10,340
+ valore.
+
+265
+00:33:10,340 --> 00:33:13,140
+ I modi per farlo sono i soliti tre.
+
+266
+00:33:13,500 --> 00:33:15,400
+ Time, Talent and Treasure.
+
+267
+00:33:15,400 --> 00:33:16,280
+ Time.
+
+268
+00:33:16,280 --> 00:33:22,520
+ Puoi dedicare un po' del tuo tempo a far conoscere il podcast, parlarne con un amico,
+
+269
+00:33:22,520 --> 00:33:27,600
+ un collega, condividere l'episodio sui tuoi social o dove preferisci.
+
+270
+00:33:27,600 --> 00:33:31,240
+ Ogni nuovo ascoltatore è un grande aiuto.
+
+271
+00:33:31,240 --> 00:33:32,280
+ Talent.
+
+272
+00:33:32,280 --> 00:33:36,700
+ Sai fare qualcosa che pensi possa essere utile al progetto?
+
+273
+00:33:36,700 --> 00:33:43,300
+ Magari gestire i social, montare gli episodi, aiutarmi con la ricerca o partecipare al
+
+274
+00:33:43,300 --> 00:33:45,360
+ tuo episodio Community Edition?
+
+275
+00:33:45,360 --> 00:33:47,500
+ Scrivimi e parliamone.
+
+276
+00:33:47,500 --> 00:33:49,000
+ E infine Treasure.
+
+277
+00:33:49,000 --> 00:33:55,800
+ Se non hai tempo, ma vuoi comunque contribuire in qualche modo, puoi farlo con una piccola
+
+278
+00:33:55,800 --> 00:33:56,460
+ donazione.
+
+279
+00:33:56,460 --> 00:34:03,740
+ Nessuna cifra è troppo bassa e più che il valore economico in sé, un piccolo gesto
+
+280
+00:34:03,740 --> 00:34:07,440
+ del genere mi fa capire che apprezzi in qualche modo il mio lavoro.
+
+281
+00:34:07,440 --> 00:34:13,260
+ A questo proposito, come sempre, ringrazio i donatori ricorrenti che sostengono il po'
+
+282
+00:34:13,260 --> 00:34:18,640
+ ogni mese, Edoardo e Carlo e la new entry Christian.
+
+283
+00:34:18,640 --> 00:34:19,960
+ Grazie ragazzi.
+
+284
+00:34:19,960 --> 00:34:26,780
+ Un grazie specialissimo inoltre va a Giuseppe Pugliese che ha brillantemente curato il montaggio
+
+285
+00:34:26,780 --> 00:34:32,640
+ di questo episodio dandogli tutto un altro carattere e dimostrando ancora una volta le
+
+286
+00:34:32,640 --> 00:34:34,260
+ sue abilità di sound designer.
+
+287
+00:34:34,260 --> 00:34:40,760
+ Quindi, se anche tu vuoi contribuire, partecipare alla community o semplicemente contattarmi,
+
+288
+00:34:40,760 --> 00:34:43,020
+ trovi tutti i link sul sito Pensieri in Codice.
+
+289
+00:34:43,020 --> 00:34:45,460
+ Mi raccomando, con due i.
+
+290
+00:34:45,460 --> 00:34:49,480
+ C'è il gruppo Telegram, il canale, la mail, eccetera, eccetera.
+
+291
+00:34:49,480 --> 00:34:52,080
+ E direi che per oggi è tutto.
+
+292
+00:34:52,080 --> 00:34:58,820
+ Noi ci sentiamo al prossimo episodio e tu non dimenticare mai che un informatico risolve
+
+293
+00:34:58,820 --> 00:35:02,020
+ problemi, a volte anche usando il computer.
+
