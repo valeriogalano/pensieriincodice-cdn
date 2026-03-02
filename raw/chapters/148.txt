@@ -1,0 +1,10 @@
+0.000000	0.000000	Introduzione
+125.321164	125.321164	Ivrea e la Olivetti
+317.080321	317.080321	Michele Canepa e il viaggio in America
+573.055465	573.055465	Pisa, la scommessa accademica e Mario Tchou
+803.033133	803.033133	La villa di Barbaricina
+1052.786659	1052.786659	La sfida dei transistor
+1272.987498	1272.987498	Il design di Ettore Sottsass
+1478.078694	1478.078694	Nasce l'Elea 9003
+1692.524411	1692.524411	Dal laboratorio alla realtà
+1899.749692	1899.749692	Conclusione
