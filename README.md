@@ -1,15 +1,14 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/valeriogalano/pensieriincodice-cdn/blob/main/public/images/pensieriincodice-locandina.png" alt="Logo Progetto" width="150"/>
-  <h1>Pensieri In Codice - CDN</h1>
-  <p>
-    Una repository Content Delivery Network (CDN) per ospitare e servire asset statici come immagini, audio e altri file per il podcast <a href="https://pensieriincodice.it/">pensieriincodice.it</a>.
-  </p>
-  
+  <img src="https://cdn.pensieriincodice.it/images/pensieriincodice-locandina.png" alt="Logo Progetto" width="150"/>
+  <h1>Pensieri In Codice — CDN</h1>
+  <p>Repository CDN per ospitare e servire asset statici (immagini, audio, trascrizioni) del podcast <a href="https://pensieriincodice.it/">pensieriincodice.it</a>.</p>
   <p>
     <img src="https://img.shields.io/github/stars/valeriogalano/pensieriincodice-cdn?style=for-the-badge" alt="GitHub Stars"/>
     <img src="https://img.shields.io/github/forks/valeriogalano/pensieriincodice-cdn?style=for-the-badge" alt="GitHub Forks"/>
     <img src="https://img.shields.io/github/last-commit/valeriogalano/pensieriincodice-cdn?style=for-the-badge" alt="Last Commit"/>
-    <a href="https://pensieriincodice.it/sostieni" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/sostieni-Pensieri_in_codice-fb6400?style=for-the-badge" alt="Sostieni Pensieri in codice"></a>
+    <a href="https://pensieriincodice.it/sostieni" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.shields.io/badge/sostieni-Pensieri_in_codice-fb6400?style=for-the-badge" alt="Sostieni Pensieri in codice"/>
+    </a>
   </p>
 </div>
 
@@ -17,426 +16,255 @@
 
 ## Indice
 
-- [Scopo del Progetto](#scopo-del-progetto)
-- [Struttura della Repository](#struttura-della-repository)
-- [Generazione trascrizioni (in locale)](#generazione-trascrizioni-in-locale)
-- [Aggiunta di nuovi contenuti](#aggiunta-di-nuovi-contenuti)
-  - [Aggiunta capitoli](#aggiunta-capitoli)
-  - [Aggiunta cover](#aggiunta-cover)
-- [Aggiungere tag ID3 agli MP3](#aggiungere-tag-id3-agli-mp3)
+- [Come funziona](#come-funziona)
+- [Struttura della repository](#struttura-della-repository)
+- [Requisiti](#requisiti)
+- [Generazione trascrizioni](#generazione-trascrizioni)
+- [Aggiunta capitoli](#aggiunta-capitoli)
+- [Aggiunta cover](#aggiunta-cover)
+- [Tag ID3 per gli MP3](#tag-id3-per-gli-mp3)
 - [Contributi](#contributi)
 - [Importante](#importante)
 
 ---
 
-## Scopo del Progetto
+## Come funziona
 
-Questa repository funge da **CDN** per il podcast di [Pensieri in Codice](https://pensieriincodice.it/)
-un podcast a cura di [Valerio Galano](https://valeriogalano.it/). 
-
-L'obiettivo è di avere un unico punto centralizzato e versionato per la gestione di tutte le risorse statiche 
-(loghi, locandine, episodi, trascrizioni ecc.).
-
-Grazie ad alcune GitHub actions sono state aggiunte delle automazioni
-per facilitare alcune fasi del processo di sviluppo.
+Questa repository funge da punto centralizzato e versionato per tutte le risorse statiche del podcast. Grazie ad alcune GitHub Actions sono state aggiunte automazioni per facilitare le fasi del processo di produzione (conversione capitoli, generazione cover, tagging ID3).
 
 ---
 
-## Struttura della Repository
-
-La repository è organizzata in cartelle per mantenere l'ordine e facilitare la ricerca dei file.
+## Struttura della repository
 
 ```
 /
 ├── .github/
-│   └── workflows/                  # GitHub actions
+│   └── workflows/                  # GitHub Actions
 │
 ├── public/
-│   ├── chapters/                  # file json con i capitoli degli episodi
-│   ├── covers/                    # locandine episodi definitive
-│   ├── episodes/                  # file mp3 degli episodi
-│   ├── images/                    # per le immagini
-│   └── transcripts/               # trascrizioni episodi
+│   ├── chapters/                   # File JSON con i capitoli degli episodi
+│   ├── covers/                     # Locandine episodi definitive
+│   ├── episodes/                   # File MP3 degli episodi
+│   ├── images/                     # Immagini varie
+│   └── transcripts/                # Trascrizioni episodi (.srt)
 │
 ├── raw/
-│   ├── chapters/                  # file txt con i capitoli degli episodi
-│   └── covers/                    # locandine degli episodi da elaborare
+│   ├── chapters/                   # File .txt con i capitoli (input)
+│   └── covers/                     # Locandine da elaborare (input)
 │
 ├── utils/
-│   ├── chapters/                  # strumenti per i capitoli (txt -> json)
-│   ├── cover_formatter/           # usato nella GitHub action
-│   ├── id3_tagger/                # strumenti audio (es. ID3 tagger)
-│   └── transcripts/               # strumenti per generare trascrizioni
-│       └── models/                # modelli per whisper.cpp (scaricati al primo avvio)
+│   ├── chapters_converter/         # Converte capitoli da .txt a .json
+│   ├── cover_formatter/            # Formatta le cover (usato anche dalla GitHub Action)
+│   ├── id3_tagger/                 # Aggiunge tag ID3 agli MP3
+│   └── transcripts_generator/      # Genera trascrizioni con whisper.cpp
+│       └── models/                 # Modelli scaricati al primo avvio
 │
-└── README.md                      # questo file
-
+└── README.md
 ```
-
-## Generazione trascrizioni (in locale)
-
-La trascrizione avviene tramite lo script `utils/transcripts_generator/transcripts_generator.sh`, che sfrutta `whisper.cpp`.
-
-- Come funziona: legge i file `.mp3` in `public/episodes` e crea (se mancanti) i corrispondenti `.srt` in `public/transcripts`.
-- Modello usato: `ggml-large-v3` (italiano). Gli `.srt` esistenti vengono lasciati intatti.
-- Il modello viene scaricato automaticamente nella prima esecuzione in `utils/transcripts_generator/models/`.
-
-### Requisiti
-- `ffmpeg` installato nel sistema
-    - macOS: `brew install ffmpeg`
-    - Ubuntu/Debian: `sudo apt update && sudo apt install ffmpeg`
-- `curl` (per scaricare il modello al primo avvio)
-- Un binario `whisper` di `whisper.cpp` posizionato nella cartella `utils/`
-    - Opzione A (precompilato): scarica un binario dalla pagina release di whisper.cpp e rinominalo in `whisper`, poi mettilo in `utils/` e rendilo eseguibile: `chmod +x utils/whisper`
-    - Opzione B (compilazione):
-        - `git clone https://github.com/ggerganov/whisper.cpp`
-        - `cd whisper.cpp && make` (richiede un toolchain C/C++; su macOS `xcode-select --install`, su Ubuntu `sudo apt install build-essential`)
-        - copia il binario prodotto (`main`) in `utils/` e rinominalo `whisper`: `cp main ../utils/whisper && chmod +x ../utils/whisper`
-
-### Preparazione dei file
-- Copia gli episodi `.mp3` nella cartella `public/episodes`.
-- La cartella `public/transcripts` verrà creata automaticamente se assente.
-
-### Esecuzione
-Esegui dalla cartella `utils/transcripts_generator` (lo script usa percorsi relativi alla sua posizione):
-
-```bash
-cd utils/transcripts_generator
-./transcripts_generator.sh            # genera tutte le trascrizioni mancanti
-./transcripts_generator.sh PIC123     # genera solo per lo specifico episodio PIC123.mp3
-```
-
-Output atteso:
-- Alla prima esecuzione scarica `models/ggml-large-v3.bin`.
-- Converte temporaneamente gli MP3 in WAV, invoca `./whisper` e scrive gli `.srt` in `public/transcripts/`.
-- Non sovrascrive trascrizioni già presenti.
-
-### Troubleshooting
-- `permission denied`: esegui `chmod +x utils/transcripts_generator/transcripts_generator.sh utils/whisper`.
-- `./whisper: file o directory non esistente`: assicurati che il binario si chiami `whisper` e sia in `utils/`.
-- `ffmpeg` non trovato: installalo e riapri il terminale.
-- Errori di download del modello: verifica la connessione o riprova più tardi.
 
 ---
 
-## Aggiunta di nuovi contenuti
+## Requisiti
 
-### Aggiunta capitoli
+| Strumento | Utilizzo |
+|---|---|
+| `ffmpeg` | Conversione audio per le trascrizioni |
+| `whisper` (binario whisper.cpp) | Generazione trascrizioni |
+| `curl` | Download del modello al primo avvio |
+| PHP 5.6+ | Conversione capitoli da .txt a .json |
+| Python 3.9+ | Formattazione cover e tagging ID3 |
+| `pngquant` (opzionale) | Ottimizzazione PNG delle cover |
+| `mutagen` (pip) | Tagging ID3 degli MP3 |
 
-I file con i capitoli degli episodi vanno posizionati nella cartella `raw/chapters/` con la seguente nomenclatura:
-
-- **Nome file**: `<numero_episodio>.txt`
-- **Esempio**: `145.txt` per l'episodio 145
-
-Il file verrà automaticamente elaborato e convertito in formato JSON nella cartella `public/chapters/`.
-
-#### Convertire i capitoli in locale
-
-Questo progetto include uno script PHP che converte i file di capitoli in formato testo in file JSON compatibili con il player. Lo script rileva automaticamente eventuali URL presenti nelle righe dei capitoli e li inserisce nel JSON.
-
-##### Requisiti
-- PHP 5.6 o superiore (consigliato). Funziona anche con versioni precedenti purché `json_encode` sia disponibile.
-
-##### Dove mettere i file di input
-- Capitoli: `raw/chapters/{EPISODIO}.txt`
-    - Formato di ogni riga: `start end titolo [URL]`
-    - Esempi:
-        - `0.000000 168.000000 Intro`
-        - `924.312130 924.312130 Link al sito https://pensieriincodice.it` → aggiunge `url` al capitolo
-        - `168.000000 260.000000 Sezione con immagine https://example.com/cover.png` → aggiunge `img` al capitolo
-
-Note sul parsing URL:
-- Lo script cerca il primo URL `http://` o `https://` presente nella riga (in qualunque posizione dopo i tempi).
-- Se l'URL punta a un'immagine (`.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`, `.svg`), viene inserito nel campo `img`.
-- Negli altri casi viene inserito nel campo `url`.
-- L'URL, se presente, viene rimosso dal testo del titolo.
-- Se la riga contiene solo un link o solo un'immagine (cioè nessun altro testo oltre agli URL), il campo `title` viene omesso.
-
-Nota: `{EPISODIO}` è il numero dell'episodio (es. `145`).
-
-##### Output generato
-- I JSON vengono creati in `public/chapters/` con nome `PIC{EPISODIO}.json` (es. `public/chapters/PIC145.json`).
-
-##### Come eseguire lo script
-Dal root della repo:
+### Installazione ffmpeg
 
 ```bash
-php utils/chapters_converter/chapters_converter.php
+# macOS
+brew install ffmpeg
+
+# Ubuntu/Debian
+sudo apt update && sudo apt install ffmpeg
 ```
 
-Opzioni utili:
+---
 
-- `--force`: forza la rigenerazione anche se il JSON di output esiste già.
+## Generazione trascrizioni
+
+Le trascrizioni vengono generate tramite `utils/transcripts_generator/transcripts_generator.sh`, che usa `whisper.cpp`. Lo script legge i file `.mp3` in `public/episodes/` e genera i corrispondenti `.srt` in `public/transcripts/`, saltando quelli già presenti.
+
+### Installazione del binario whisper
+
+**Opzione A — binario precompilato:** scarica un binario dalla pagina release di whisper.cpp, rinominalo `whisper`, copialo in `utils/` e rendilo eseguibile:
+
+```bash
+chmod +x utils/whisper
+```
+
+**Opzione B — compilazione da sorgente:**
+
+```bash
+git clone https://github.com/ggerganov/whisper.cpp
+cd whisper.cpp && make
+cp main ../utils/whisper && chmod +x ../utils/whisper
+```
+
+### Esecuzione
+
+```bash
+cd utils/transcripts_generator
+
+# Genera tutte le trascrizioni mancanti
+./transcripts_generator.sh
+
+# Genera solo per un episodio specifico
+./transcripts_generator.sh PIC123
+```
+
+Alla prima esecuzione viene scaricato automaticamente il modello `ggml-large-v3` in `models/`.
+
+### Troubleshooting
+
+| Errore | Soluzione |
+|---|---|
+| `permission denied` | `chmod +x utils/transcripts_generator/transcripts_generator.sh utils/whisper` |
+| `./whisper: file o directory non esistente` | Verifica che il binario si chiami `whisper` e si trovi in `utils/` |
+| `ffmpeg` non trovato | Installalo e riapri il terminale |
+| Errore download modello | Verifica la connessione e riprova |
+
+---
+
+## Aggiunta capitoli
+
+I file di input vanno in `raw/chapters/` con nome `<numero_episodio>.txt`. Il formato di ogni riga è:
+
+```
+<start> <end> <titolo> [URL opzionale]
+```
 
 Esempi:
 
+```
+0.000000 168.000000 Intro
+924.312130 924.312130 Sito web https://pensieriincodice.it
+260.000000 300.000000 Sezione immagine https://example.com/cover.png
+```
+
+Se la riga contiene un URL a un'immagine (`.jpg`, `.png`, `.gif`, `.webp`, `.svg`), viene inserito nel campo `img`; altrimenti nel campo `url`. L'URL viene rimosso dal testo del titolo.
+
+### Conversione in locale
+
 ```bash
-# conversione standard (salta gli episodi già convertiti)
+# Conversione standard (salta gli episodi già convertiti)
 php utils/chapters_converter/chapters_converter.php
 
-# forza la rigenerazione di tutti i JSON
+# Forza la rigenerazione di tutti i JSON
 php utils/chapters_converter/chapters_converter.php --force
 ```
 
-Lo script:
-- scansiona `raw/chapters/` per tutti i file `.txt`;
-- per ogni riga, estrae `startTime`, `title` e, se presente, un URL (come `url` o `img` a seconda dell'estensione);
-- ordina i capitoli per `startTime` e salva in `public/chapters/PIC{EPISODIO}.json`.
+I file JSON vengono creati in `public/chapters/PIC{EPISODIO}.json`. Per rigenerare un episodio già convertito, elimina prima il file JSON corrispondente.
 
-##### Rigenerare un episodio già convertito
-Per evitare lavoro inutile, lo script salta i file la cui uscita JSON è già presente. Se modifichi i capitoli o aggiungi dei link e vuoi rigenerare il JSON:
-
-1. elimina il file `public/chapters/PIC{EPISODIO}.json` relativo;
-2. rilancia il comando:
-   ```bash
-   php utils/chapters_converter/chapters_converter.php
-   ```
-
-##### Esempio pratico
-Con il file `raw/chapters/145.txt` contenente una riga:
-
-```
-924.312130 924.312130 Qualche esempio https://pensieriincodice.it
-```
-
-il JSON `public/chapters/PIC145.json` conterrà, alla posizione `924.31213`, un capitolo con `title: "Qualche esempio"` e `url: "https://pensieriincodice.it"`.
-
-E se la riga fosse:
-
-```
-260.000000 300.000000 Sezione immagine https://example.com/img.png
-```
-
-nel capitolo verrebbe aggiunto `"img": "https://example.com/img.png"` al posto di `url`.
-
-##### Struttura del JSON
-Ogni file generato ha la forma:
+### Struttura del JSON generato
 
 ```json
 {
   "version": "1.2.0",
   "chapters": [
     { "startTime": 0, "title": "Intro" },
-    { "startTime": 924.31213, "title": "Qualche esempio", "url": "https://pensieriincodice.it" },
-    { "startTime": 260, "title": "Sezione immagine", "img": "https://example.com/img.png" },
-    { "startTime": 724.31213, "img": "https://example.com/only-image.png" },
-    { "startTime": 1024.5, "url": "https://example.com/only-link" }
+    { "startTime": 924.31213, "title": "Sito web", "url": "https://pensieriincodice.it" },
+    { "startTime": 260, "title": "Sezione immagine", "img": "https://example.com/cover.png" }
   ]
 }
 ```
 
+---
 
-### Aggiunta cover
+## Aggiunta cover
 
-Le cover degli episodi vanno posizionate nella cartella `raw/covers/` con la seguente nomenclatura:
+Le cover di input vanno in `raw/covers/` con la seguente nomenclatura:
 
-- **Cover standard**: `<numero_episodio>.png`
-- **Cover Community Edition**: `<numero_episodio>-ce.png`
+| File | Descrizione |
+|---|---|
+| `<numero>.png` | Cover standard dell'episodio |
+| `<numero>-ce.png` | Cover Community Edition dell'episodio |
 
-**Esempi**:
-- `145.png` per la cover standard dell'episodio 145
-- `145-ce.png` per la cover Community Edition dell'episodio 145
+Esempio: `145.png`, `145-ce.png`.
 
-Il suffisso `-ce` serve per distinguere le cover degli episodi Community Edition che differiscono da quelle regolari. I file verranno automaticamente elaborati e copiati nella cartella `public/covers/`.
-
-#### Generare le cover (in locale)
-
-Per generare le cover finali con il frame e il numero episodio, è disponibile uno script Python in `utils/cover_formatter`.
-
-##### Requisiti
-- Python 3.9+ (consigliato 3.10/3.11)
-- `pip` per installare le dipendenze
-- Connessione Internet (lo script scarica automaticamente il frame dal repository degli asset)
-- Opzionale: `pngquant` per ottimizzare i PNG finali
-  - macOS: `brew install pngquant`
-  - Ubuntu/Debian: `sudo apt update && sudo apt install pngquant`
-
-Le dipendenze Python specifiche del tool sono elencate in `utils/cover_formatter/requirements.txt` (include OpenCV e NumPy).
-
-##### Installazione dipendenze (una tantum)
-Esegui dalla cartella del formatter:
+### Generazione in locale
 
 ```bash
 cd utils/cover_formatter
-
-# (opzionale) ambiente virtuale
-python3 -m venv .venv
-source .venv/bin/activate   # su Windows: .venv\Scripts\activate
-
-# installa le dipendenze del formatter
 pip install -r requirements.txt
-```
 
-##### Preparazione input
-Metti le immagini sorgenti in `raw/covers/`. Sono accettati file `.png` o `.jpg` con questi nomi comuni:
-- `145.png` → episodio 145
-- `PIC145.png` → episodio 145
-- `145-ce.png` → episodio 145, tag `ce` (Community Edition)
-- `PIC145-ce.jpg` → episodio 145, tag `ce`
-
-Lo script rileva automaticamente:
-- il numero dell’episodio dal nome file (verrà scritto in alto a sinistra sulla cover);
-- il “tag” dopo il trattino (es. `-ce`) per selezionare il frame corretto.
-
-##### Esecuzione
-Lancia lo script dalla cartella `utils/cover_formatter` specificando la cartella delle immagini di input:
-
-```bash
-cd utils/cover_formatter
+# Generazione standard
 python main.py --images_dir ../../raw/covers
-```
 
-Output atteso:
-- Le cover finali vengono scritte in `public/covers/` con nome `PIC{EPISODIO}.png` (es. `public/covers/PIC145.png`).
-- Se `pngquant` è presente, i PNG vengono ottimizzati automaticamente.
-- Le cover già presenti in `public/covers/` vengono saltate (non vengono rigenerate).
-
-Note:
-- Esegui lo script dalla cartella `utils/cover_formatter` perché usa percorsi relativi per la cartella di output (`../../public/covers`).
-- Il numero episodio viene disegnato solo se nel nome file è presente almeno una cifra.
-- Il frame appropriato viene scaricato in base al tag del filename: ad esempio `145-ce.png` userà `frame-ce.png`.
-
-##### Usare un font personalizzato per il numero episodio
-
-È possibile usare un font `.otf`/`.ttf` personalizzato per disegnare il numero episodio in alto a sinistra. Se il font non è disponibile o Pillow fallisce, lo script torna automaticamente al font di OpenCV.
-
-Opzioni disponibili in `utils/cover_formatter/main.py`:
-
-- `--font_url`: URL HTTP(S) a un file font. Viene scaricato in una cartella temporanea e usato per il rendering.
-- `--font_path`: Percorso locale a un file font. Se specificati entrambi, ha precedenza `--font_path`.
-
-Esempi (da eseguire nella cartella `utils/cover_formatter`):
-
-```bash
-# Installazione requisiti (include Pillow)
-pip install -r requirements.txt
-
-# Usa il font "Courier 10 Pitch Regular" dal repo assets (link RAW)
-python main.py --images_dir "../../raw/covers" \
+# Con font personalizzato (da URL)
+python main.py --images_dir ../../raw/covers \
   --font_url "https://raw.githubusercontent.com/valeriogalano/pensieriincodice-assets/refs/heads/main/fonts/Courier%2010%20Pitch%20Regular.otf"
 
-# In alternativa, se hai il file localmente
-python main.py --images_dir "../../raw/covers" \
+# Con font personalizzato (locale)
+python main.py --images_dir ../../raw/covers \
   --font_path "/percorso/al/font/Courier 10 Pitch Regular.otf"
 ```
 
-Note:
-- Dimensione e spaziature del numero sono scalate in base alla cover (~3000px) e includono un contorno nero per leggibilità.
-- In caso di errore con il font, il processo non si interrompe: viene usato il font di OpenCV come fallback.
+Le cover finali vengono scritte in `public/covers/PIC{EPISODIO}.png`. Le cover già presenti vengono saltate.
 
-Pipeline GitHub Actions: la workflow è stata aggiornata per usare automaticamente il font sopra indicato passando `--font_url` allo step del formatter.
+---
 
-## Aggiungere tag ID3 agli MP3
+## Tag ID3 per gli MP3
 
-Questo repository include uno script Python per aggiungere automaticamente i tag ID3v2 ai file MP3 degli episodi che ne sono sprovvisti.
+Lo script aggiunge automaticamente i tag ID3v2 ai file MP3 privi di tag, impostando titolo, artista, album, genere e commento. I file già taggati vengono saltati.
 
-I tag verranno aggiunti automaticamente dalla pipeline.
-
-### Aggiunta tag ID3 manuale
-
-Se si desidera, si può eseguire lo script manualmente.
-
-#### Dove si trova
-- Script: `utils/id3_tagger/id3_tagger.py`
-
-#### Cosa fa
-- Legge tutti i file `*.mp3` in una cartella specificata con `--audio_dir`.
-- Se un file ha già tag ID3, lo salta automaticamente.
-- Per i file senza tag, imposta i campi principali con valori predefiniti:
-  - `Title (TIT2)`: "Episodio {NUMERO}" (il numero è estratto dal nome file, es. `PIC145.mp3` → 145). Se il numero non è reperibile, usa il nome file.
-  - `Artist (TPE1)`: "Valerio Galano"
-  - `Album (TALB)`: "Pensieri in codice"
-  - `Album Artist (TPE2)`: "Valerio Galano"
-  - `Genre (TCON)`: "Technology"
-  - `Comment (COMM)`: "Il podcast dove si ragiona da informatici" (lingua `ita`)
-- Opzionalmente incorpora una cover (fronte) se fornita con l’opzione `--cover`.
-
-#### Requisiti
-- Python 3.8+
-- `pip` per installare le dipendenze
-
-Installa la dipendenza necessaria (una tantum):
+### Esecuzione
 
 ```bash
+# Installazione dipendenza
 pip install mutagen
-```
 
-Se usi un ambiente virtuale:
+# Tagging standard
+python3 utils/id3_tagger/id3_tagger.py --audio_dir public/episodes
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate   # su Windows: .venv\Scripts\activate
-pip install mutagen
-```
-
-#### Preparazione file
-- Metti gli MP3 degli episodi in `public/episodes` (o in un’altra cartella a tua scelta) con una nomenclatura tipo `PIC145.mp3`, `PIC146.mp3`, ecc.
-- Se vuoi incorporare una cover, prepara un file PNG della cover dell’episodio.
-  - Nota: lo script imposta `mime='image/png'`, quindi usa preferibilmente cover in formato PNG.
-
-#### Esecuzione
-Esegui dal root della repo specificando la cartella con gli MP3:
-
-```bash
-python3 utils/audio/id3_tagger.py --audio_dir public/episodes
-```
-
-Con cover (stessa cover per tutti i file elaborati in quella run):
-
-```bash
-python3 utils/audio/id3_tagger.py \
+# Con cover (stessa immagine per tutti i file elaborati)
+python3 utils/id3_tagger/id3_tagger.py \
   --audio_dir public/episodes \
   --cover public/covers/PIC145.png
 ```
 
-Esempio con una cartella temporanea:
+### Troubleshooting
 
-```bash
-python3 utils/audio/id3_tagger.py --audio_dir /percorso/ai/tuoi/mp3
-```
+| Errore | Soluzione |
+|---|---|
+| `ModuleNotFoundError: No module named 'mutagen'` | `pip install mutagen` |
+| Permessi negati | Verifica che i file non siano aperti da altri programmi |
+| Cover non incorporata | Usa un file `.png` esistente e verifica il percorso |
 
-Output a console tipico:
-- `Skipping PIC145.mp3 (already has ID3 tags)` → file già taggato, saltato
-- `Adding ID3 tags to PIC146.mp3...` → tag aggiunti
-- Al termine stampa un riepilogo con `Processed`, `Skipped`, `Failed`.
+---
 
-#### Note e limitazioni
-- Estrazione numero episodio: avviene cercando le cifre nel nome file (es. `PIC123.mp3` → 123). Se non trova numeri, il titolo sarà il nome file.
-- Cover: l’opzione `--cover` applica la stessa immagine a tutti i file processati in quella esecuzione.
-- Lo script aggiunge i tag solo ai file che risultano privi di tag ID3; non sovrascrive tag esistenti.
+## Repository correlati
 
-#### Troubleshooting
-- Errore `ModuleNotFoundError: No module named 'mutagen'`:
-  - Soluzione: installa la dipendenza con `pip install mutagen` (nell’ambiente corretto).
-- Permessi negati o file in uso:
-  - Assicurati che i file MP3 non siano aperti da altri programmi e di avere permessi di scrittura nella cartella.
-- Cover non incorporata:
-  - Verifica il percorso passato a `--cover` e usa un file `.png` esistente.
+- [pensieriincodice-assets](https://github.com/valeriogalano/pensieriincodice-assets) — Sorgenti degli asset (frame, font, audio)
+- [pensieriincodice-website](https://github.com/valeriogalano/pensieriincodice-website) — Sito web Hugo del podcast
+
+---
 
 ## Contributi
 
-Se noti qualche problema o hai suggerimenti per migliorare l'organizzazione, sentiti libero di aprire una **Issue**
-e successivamente una **Pull Request**. Ogni contributo è ben accetto!
+Se noti qualche problema o hai suggerimenti, sentiti libero di aprire una **Issue** e successivamente una **Pull Request**. Ogni contributo è ben accetto!
 
 ---
 
 ## Importante
 
-Vorremmo mantenere questo repository aperto e gratuito per tutti,
-ma lo scraping del contenuto di questo repository NON È CONSENTITO.
-Se ritieni che questo lavoro ti sia utile e vuoi utilizzare qualche risorsa,
-ti preghiamo di citare come fonte il podcast e/o questo repository.
+Vorremmo mantenere questo repository aperto e gratuito per tutti, ma lo scraping del contenuto di questo repository **NON È CONSENTITO**. Se ritieni che questo lavoro ti sia utile e vuoi utilizzare qualche risorsa, ti preghiamo di citare come fonte il podcast e/o questo repository.
 
 ---
 
 <div align="center">
+  <p>Realizzato con ❤️ da <strong>Valerio Galano</strong></p>
   <p>
-    Realizzato con ❤️ da <strong>Valerio Galano</strong>
-  </p>
-  <p>
-    <a href="https://valeriogalano.it/">Sito Web</a> | 
-    <a href="https://daredevel.com/">Blog</a> | 
-    <a href="https://pensieriincodice.it/">Podcast</a> | 
+    <a href="https://valeriogalano.it/">Sito Web</a> |
+    <a href="https://daredevel.com/">Blog</a> |
+    <a href="https://pensieriincodice.it/">Podcast</a> |
     <a href="https://www.linkedin.com/in/valeriogalano/">LinkedIn</a>
   </p>
 </div>
