@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://cdn.pensieriincodice.it/images/pensieriincodice-locandina.png" alt="Logo Progetto" width="150"/>
-  <h1>Pensieri In Codice — CDN</h1>
+  <h1>Pensieri in codice — CDN</h1>
   <p>Repository CDN per ospitare e servire asset statici (immagini, audio, trascrizioni) del podcast <a href="https://pensieriincodice.it/">pensieriincodice.it</a>.</p>
   <p>
     <img src="https://img.shields.io/github/stars/valeriogalano/pensieriincodice-cdn?style=for-the-badge" alt="GitHub Stars"/>
