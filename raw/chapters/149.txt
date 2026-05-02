@@ -1,0 +1,12 @@
+0.000000	0.000000	Introduzione
+61.771641	61.771641	Un po' di novità
+330.301043	330.301043	La memoria non è un archivio
+587.148999	587.148999	Dimenticare è utile
+905.771793	905.771793	La memoria è una sintesi
+1064.977053	1064.977053	La memoria è ricostruttiva
+1299.964017	1299.964017	Rileggere è ricordare
+1670.169316	1670.169316	Memoria perfetta non è ricordo perfetto
+1811.755860	1811.755860	Sapere tutto è come non sapere nulla
+2107.240823	2107.240823	Quello che perdiamo quando non perdiamo nulla
+2331.618303	2331.618303	Elogio della dimenticanza (lettura di Jolanda Granato)
+2441.685937	2441.685937	Conclusione
