@@ -1,1444 +1,1099 @@
 1
-00:00:00,300 --> 00:00:06,920
- Esiste un legame profondo tra la tecnologia che utilizziamo ogni giorno e il modo in cui
+00:00:00,612 --> 00:00:21,371
+Esiste un legame profondo tra la tecnologia che utilizziamo ogni giorno e il modo in cui la nostra mente conserva i ricordi che va ben oltre il classico esempio secondo cui da quando tutti usiamo la rubrica dello smartphone nessuno è più in grado di memorizzare nemmeno un numero di telefono.
 
 2
-00:00:06,920 --> 00:00:14,280
- la nostra mente conserva i ricordi che va ben oltre il classico esempio secondo cui da
+00:00:21,911 --> 00:00:36,579
+Qualche tempo fa ho partecipato ad una interessante conversazione con un'amica nella quale abbiamo confrontato le nostre visioni sull'importanza di conservare e soprattutto rileggere i messaggi scambiati via chat.
 
 3
-00:00:14,280 --> 00:00:20,300
- quando tutti usiamo la rubrica dello smartphone nessuno è più in grado di memorizzare nemmeno
+00:00:37,139 --> 00:00:47,084
+Da quella discussione sono scaturite poi tutta una serie di riflessioni e approfondimenti che si sono ampliati e alla fine si sono trasformati nell'episodio di oggi.
 
 4
-00:00:20,300 --> 00:00:26,220
- un numero di telefono. Qualche tempo fa ho partecipato ad una interessante conversazione
+00:00:47,585 --> 00:00:48,185
+Buon ascolto!
 
 5
-00:00:26,220 --> 00:00:32,980
- con un'amica nella quale abbiamo confrontato le nostre visioni sull'importanza di conservare
+00:00:52,109 --> 00:00:57,717
+benvenuti su pensieri in codice il podcast dove si ragiona da informatici con valerio galan
 
 6
-00:00:32,980 --> 00:00:39,160
- e soprattutto rileggere i messaggi scambiati via chat. Da quella discussione sono scaturite
+00:01:03,422 --> 00:01:12,650
+Prima di procedere con l'argomento di oggi, voglio dirti che, lo so, non pubblico un episodio da tre mesi e questo mi dispiace.
 
 7
-00:00:39,160 --> 00:00:45,880
- poi tutta una serie di riflessioni e approfondimenti che si sono ampliati e alla fine si sono trasformati
+00:01:13,170 --> 00:01:27,763
+Primo perché sto venendo meno al tacito accordo che abbiamo io e te, nel quale tu ti impegni ad ascoltare e supportare questo podcast, ed io a produrre, non diciamo quattro, ma almeno un episodio al mese.
 
 8
-00:00:45,880 --> 00:00:48,200
- nell'episodio di oggi. Buon ascolto!
+00:01:28,343 --> 00:01:43,371
+Secondo perché pensieri in codice è il mio modo di organizzare i pensieri, appunto, di condividere ciò che penso, di raccontare le cose che ritengo interessanti e di coltivare il mio rapporto con te che mi segui.
 
 9
-00:00:48,200 --> 00:00:56,200
- Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici.
+00:01:43,932 --> 00:01:51,356
+Ora, non sto qui a giustificarmi per l'assenza, tanto non credo sia né utile né necessario.
 
 10
-00:00:56,200 --> 00:00:57,800
- Con Valerio Galan
+00:01:51,876 --> 00:02:03,901
+Ma voglio renderti partecipe del fatto che in questi mesi sono stato impegnato su vari progetti, tutti bene o male legati a Pensieri in Codice o al podcasting in generale.
 
 11
-00:00:57,800 --> 00:01:10,140
- Prima di procedere con l'argomento di oggi voglio dirti che, lo so, non pubblico un episodio
+00:02:04,502 --> 00:02:09,664
+Il primo è sicuramente il rifacimento del sito ufficiale di questo podcast.
 
 12
-00:01:10,140 --> 00:01:17,400
- da tre mesi e questo mi dispiace. Primo perché sto venendo meno al tacito accordo che abbiamo
+00:02:09,964 --> 00:02:18,888
+Con il supporto di Simone Pizzi, fondatore di Runtime Radio, ho riprogettato e riscritto da zero tutto il sito di Pensieri in Codice.
 
 13
-00:01:17,400 --> 00:01:24,560
- io e te nel quale tu ti impegni ad ascoltare e supportare questo podcast ed io a produrre
+00:02:19,468 --> 00:02:25,194
+Ora l'aspetto è molto più accattivante, dinamico e sicuramente più usabile.
 
 14
-00:01:24,560 --> 00:01:26,000
- non diciamo quattro ma almeno un'episodio di un episodio di tre mesi.
+00:02:25,634 --> 00:02:30,820
+Le informazioni sono organizzate meglio, il player è stato enormemente potenziato.
 
 15
-00:01:26,000 --> 00:01:33,300
- Secondo perché Pensieri in Codice è il mio modo di organizzare i pensieri appunto,
+00:02:31,420 --> 00:02:38,187
+Insomma, sono piuttosto orgoglioso del risultato e mi piacerebbe che ci facessi un giro, così per darmi un feedback.
 
 16
-00:01:33,300 --> 00:01:40,940
- di condividere ciò che penso, di raccontare le cose che ritengo interessanti e di coltivare
+00:02:38,608 --> 00:02:42,632
+Lo trovi sempre all'indirizzo pensierincodice.it, mi raccomando con due i.
 
 17
-00:01:40,940 --> 00:01:47,520
- il mio rapporto con te che mi segui. Ora, non sto qui a giustificarmi per l'assenza,
+00:02:43,152 --> 00:02:48,995
+Poi ho rivisto e migliorato tutti gli automatismi legati sempre a pensieri in codice.
 
 18
-00:01:47,520 --> 00:01:54,740
- tanto non credo sia né utile né necessario, ma voglio renderti partecipe del fatto che in
+00:02:49,535 --> 00:02:59,760
+Ad esempio ho sviluppato un bot Telegram che pubblica nel gruppo della community dei quiz sull'informatica e sugli argomenti trattati negli episodi passati.
 
 19
-00:01:54,740 --> 00:02:01,160
- questi mesi sono stato impegnato su vari progetti, tutti bene o male legati a Pensieri
+00:03:00,360 --> 00:03:09,605
+Ovviamente ti invito a provare anche questo e quindi a unirti al nostro gruppo di discussione che trovi sempre sul sito o cercando direttamente su Telegram.
 
 20
-00:02:01,160 --> 00:02:08,400
- in Codice o al podcasting in generale. Il primo è sicuramente il rifacimento del sito ufficiale
+00:03:10,085 --> 00:03:28,672
+Poi ancora sto partecipando ad un altro interessante podcast, sempre con gli amici di Runtime, che si intitola Good Vibrations, nel quale discutiamo ogni due settimane di vibe coding o più in generale di sviluppo software tramite l'utilizzo di intelligenza artificiale.
 
 21
-00:02:08,400 --> 00:02:15,320
- di questo podcast. Con il supporto di Simone Pizzi, fondatore di Runtime Radio, ho riprogettato
+00:03:29,312 --> 00:03:41,380
+Simone, Alex, Luca e gli altri di Runtime sono persone estremamente interessanti e socievoli e con loro stiamo pianificando molte altre attività da fare nei prossimi mesi.
 
 22
-00:02:15,320 --> 00:02:22,080
- e riscritto da zero tutto il sito di Pensieri in Codice. Ora l'aspetto è molto più accattivante,
+00:03:41,940 --> 00:03:43,641
+Ah, e mi hanno anche intervistato.
 
 23
-00:02:22,080 --> 00:02:27,780
- dinamico e sicuramente più usabile. Le informazioni sono organizzate meglio,
+00:03:44,242 --> 00:03:55,028
+Una bella serie di domande da parte di Simone che mi hanno permesso di esprimere un po' di cose su pensieri in codice che di solito non dico durante gli episodi.
 
 24
-00:02:27,780 --> 00:02:34,580
- il player è stato enormemente potenziato. Insomma, sono piuttosto orgoglioso del risultato e mi
+00:03:55,609 --> 00:03:55,969
+Ancora...
 
 25
-00:02:34,580 --> 00:02:39,940
- piacerebbe che ci facessi un giro, così per darmi un feedback. Lo trovi sempre all'indirizzo
+00:03:56,329 --> 00:04:10,633
+Sto implementando nel feed di questo podcast una funzionalità nuova del podcasting 2.0 che si chiama Soundbyte e che serve ad individuare spezzoni interessanti degli episodi per farne degli shorts o dei trailer.
 
 26
-00:02:39,940 --> 00:02:47,060
- pensierincodice.it, mi raccomando con due i. Poi ho rivisto e migliorato tutti gli automatismi
+00:04:11,114 --> 00:04:22,097
+Proprio a questo proposito ho scritto un set di software per sfruttare questa funzionalità per generare delle clip e pubblicarle automaticamente sui social.
 
 27
-00:02:47,060 --> 00:02:52,060
- legati sempre a Pensieri in Codice. Ad esempio, ho sviluppato un bot telegramma,
+00:04:22,637 --> 00:04:27,678
+Si tratta di un'app e due script che coprono tutta la filiera di produzione.
 
 28
-00:02:52,060 --> 00:02:58,240
- che pubblica nel gruppo della community dei quiz sull'informatica e sugli argomenti trattati
+00:04:28,218 --> 00:04:37,380
+Si parte da un'app in Swift per macOS, che ho sviluppato insieme ad Alex Raccuglia, e si prosegue con due script in Python che lavorano in serie.
 
 29
-00:02:58,240 --> 00:03:04,260
- negli episodi passati. Ovviamente ti invito a provare anche questo e quindi a unirti al
+00:04:37,920 --> 00:04:40,600
+Magari ne parliamo meglio in un prossimo episodio.
 
 30
-00:03:04,260 --> 00:03:09,520
- nostro gruppo di discussione che trovi sempre sul sito o cercando direttamente su Telegram.
+00:04:41,180 --> 00:04:47,762
+Il punto però è che ho sviluppato tutto in linguaggi completamente nuovi per me.
 
 31
-00:03:09,520 --> 00:03:15,680
- Poi ancora sto partecipando ad un altro interessante podcast, sempre con gli amici
+00:04:47,802 --> 00:04:49,162
+Quindi, tanta roba.
 
 32
-00:03:15,680 --> 00:03:22,040
- di Runtime, che si intitola Good Vibrations, nel quale discutiamo ogni due settimane di
+00:04:49,682 --> 00:04:56,185
+Ovviamente tutto in vibe coding, ma ciò non toglie che la cosa abbia richiesto tempo e fatica.
 
 33
-00:03:22,040 --> 00:03:28,020
- vibe coding o più in generale di sviluppo software tramite l'utilizzo di intelligenza
+00:04:56,765 --> 00:05:12,592
+Lo so, è un sacco di roba e non posso certamente approfondirla tutta oggi, ma se ti interessa saperne di più ti lascio nella descrizione dell'episodio tutti i link a tutto, così magari vai a dare un'occhiata e mi fai sapere.
 
 34
-00:03:28,020 --> 00:03:34,700
- artificiale. Simone, Alex, Luca e gli altri di Runtime sono persone estremamente interessanti
+00:05:13,172 --> 00:05:19,679
+Ora però mi fermo qui e passiamo all'argomento di oggi, se no questo episodio non inizia mai.
 
 35
-00:03:34,700 --> 00:03:41,000
- e socievoli e con loro stiamo pianificando molte altre attività da fare nei prossimi
+00:05:20,259 --> 00:05:27,807
+E, cosa importantissima, ascolta l'episodio fino alla fine perché ci sarà una bella sorpresa subito prima della conclusione.
 
 36
-00:03:41,000 --> 00:03:47,180
- mesi. Ah e mi hanno anche intervistato. Una bella serie di domande da parte di Simone
+00:05:33,033 --> 00:05:49,226
+Hai mai riflettuto sul fatto che da quando abbiamo accesso a tecnologie in grado di memorizzare informazioni come app di messaggistica o fotocamere digitali, sembra sempre più naturale l'idea che ricordare il più possibile sia meglio che dimenticare?
 
 37
-00:03:47,180 --> 00:03:51,760
- che mi hanno permesso di esprimere un po' di cose su Pensieri in Codice,
+00:05:49,806 --> 00:06:03,609
+Che avere più informazioni sul nostro passato significhi automaticamente essere più vicini alla verità riguardo un evento che abbiamo vissuto, un discorso a cui abbiamo partecipato o una sensazione che abbiamo sperimentato?
 
 38
-00:03:51,760 --> 00:03:58,460
- che di solito non dico durante gli episodi. Ancora sto implementando nel feed di questo
+00:06:04,149 --> 00:06:06,930
+Questa convinzione si basa su un semplice fatto.
 
 39
-00:03:58,460 --> 00:04:05,600
- podcast una funzionalità nuova del podcasting 2.0 che si chiama Soundbyte e che serve ad
+00:06:07,510 --> 00:06:14,932
+Oramai, sempre più spesso, il passato, almeno in parte, è effettivamente ancora lì a nostra disposizione.
 
 40
-00:04:05,600 --> 00:04:11,420
- individuare spezzoni interessanti degli episodi per farne degli shorts o dei trailer. Proprio
+00:06:15,572 --> 00:06:25,275
+precisamente, diligentemente e immutabilmente cristallizzato nei nostri dispositivi, nel cloud o in generale in qualche archivio digitale.
 
 41
-00:04:11,420 --> 00:04:18,140
- a questo proposito ho scritto un set di software per sfruttare questa funzionalità per generare
+00:06:25,815 --> 00:06:41,620
+Basta aprire una chat e possiamo rileggere facilmente conversazioni di mesi fa, di anni fa, parola per parola, come se quel momento fosse rimasto sospeso, sempre disponibile, pronto per essere consultato ogni volta che ne abbiamo voglia.
 
 42
-00:04:18,140 --> 00:04:21,740
- delle clip e pubblicarle automaticamente sui software.
+00:06:42,240 --> 00:06:55,545
+Nelle gallerie dei nostri smartphone, poi, abbiamo decine o migliaia di fotografie, filmati e screenshot che immortalano attimi importanti delle nostre vite e di coloro che abbiamo intorno.
 
 43
-00:04:21,740 --> 00:04:25,160
- La prima cosa che ho svolto è un'app che si chiama Soundbyte. Si tratta di un'app e due script che
+00:06:56,105 --> 00:06:59,206
+E vogliamo parlare di cosa pubblichiamo sui social?
 
 44
-00:04:25,160 --> 00:04:31,780
- coprono tutta la filiera di produzione. Si parte da un'app in Swift per macOS che ho sviluppato
+00:06:59,746 --> 00:07:10,470
+Attimi fugaci delle nostre giornate, avvenimenti che hanno suscitato in noi emozioni particolari, esternazioni di affetto, ricordi che vogliamo condividere con il mondo?
 
 45
-00:04:31,780 --> 00:04:38,180
- insieme ad Alex Raccuglia e si prosegue con due script in Python che lavorano in serie. Magari
+00:07:11,090 --> 00:07:14,732
+Tutto questo è estremamente semplice e accessibile.
 
 46
-00:04:38,180 --> 00:04:44,700
- ne parliamo meglio in un prossimo episodio. Il punto però è che ho sviluppato tutto in
+00:07:15,252 --> 00:07:19,835
+E come conseguenza naturale, piano piano, ci siamo convinti che sia meglio così.
 
 47
-00:04:44,700 --> 00:04:51,720
- linguaggi completamente nuovi per me. Quindi tanta roba. Ovviamente tutto in vibe coding,
+00:07:20,315 --> 00:07:25,458
+Che non sia più necessario né desiderabile affidarci alla nostra memoria.
 
 48
-00:04:51,720 --> 00:05:00,040
- ma ciò non toglie che la cosa abbia richiesto tempo e fatica. Lo so, è un sacco di roba e non posso
+00:07:25,818 --> 00:07:34,883
+Perché tanto possiamo andare a recuperare cosa è stato davvero detto o scritto o è accaduto con massima precisione e minimo sforzo.
 
 49
-00:05:00,040 --> 00:05:06,440
- certamente approfondirla tutta oggi, ma se ti interessa saperne di più ti lascio nella descrizione
+00:07:35,423 --> 00:07:38,105
+Ma se questa convinzione non fosse poi così corretta?
 
 50
-00:05:06,440 --> 00:05:13,760
- dell'episodio tutti i link a tutto, così magari vai a dare un'occhiata e mi fai sapere. Ora però
+00:07:38,745 --> 00:07:49,592
+A volte sarà accaduto anche a te che, rileggendo una chat o riascoltando un vocale, il discorso non ti appaia perfettamente chiaro come lo ricordavi.
 
 51
-00:05:13,760 --> 00:05:20,760
- mi fermo qui e passiamo all'argomento di oggi, sennò questo episodio non inizia mai. E cosa
+00:07:50,153 --> 00:07:58,358
+Oppure che le sensazioni che provi riguardando un video non coincidano esattamente con quello che ti aspettavi.
 
 52
-00:05:20,760 --> 00:05:21,680
- importantissima?
+00:07:58,878 --> 00:08:05,703
+Ti potrebbe essere capitato di dare interpretazioni diverse a parole e conversazioni del passato.
 
 53
-00:05:21,680 --> 00:05:27,820
- Ascolta l'episodio fino alla fine perché ci sarà una bella sorpresa subito prima della conclusione.
+00:08:06,303 --> 00:08:19,237
+arrivando perfino a stravolgerne il significato per poi renderti conto di aver basato comportamenti e reazioni successive su premesse e supposizioni che ora ti appaiono sbagliate o fuori fuoco.
 
 54
-00:05:27,820 --> 00:05:37,880
- Hai mai riflettuto sul fatto che da quando abbiamo accesso a tecnologie in grado di
+00:08:19,778 --> 00:08:25,083
+E quel maxievento dove ricordavi di aver incontrato quel vecchio compagno di scuola?
 
 55
-00:05:37,880 --> 00:05:44,760
- memorizzare informazioni come app di messaggistica o fotocamere digitali sembra sempre più naturale
+00:08:25,644 --> 00:08:26,585
+Come era vestito?
 
 56
-00:05:44,760 --> 00:05:51,660
- l'idea che ricordare il più possibile sia meglio che dimenticare? Che avere più informazioni sul
+00:08:27,186 --> 00:08:27,947
+Aveva la barba?
 
 57
-00:05:51,660 --> 00:05:58,100
- nostro passato significhi automaticamente essere più vicini alla verità riguardo un evento che
+00:08:28,607 --> 00:08:36,650
+Tu lo cerchi nella galleria, scorri centinaia di foto, eppure non riesci a trovarne una sua che riguardi quel momento.
 
 58
-00:05:58,100 --> 00:06:02,700
- abbiamo vissuto, un discorso a cui abbiamo partecipato o una sensazione che abbiamo
+00:08:37,030 --> 00:08:38,210
+E allora inizi a dubitare.
 
 59
-00:06:02,700 --> 00:06:09,400
- sperimentato? Questa convinzione si basa su un semplice fatto. Oramai, sempre più spesso,
+00:08:38,751 --> 00:08:42,032
+Forse era un altro periodo o un altro evento.
 
 60
-00:06:09,400 --> 00:06:16,240
- il passato, almeno in parte, è effettivamente ancora lì a nostra disposizione. Precisamente,
+00:08:42,512 --> 00:08:44,592
+Stiamo parlando quasi di un paradosso.
 
 61
-00:06:16,240 --> 00:06:21,420
- diligentemente e immutabilmente cristallizzato nei nostri dispositivi,
+00:08:44,753 --> 00:08:57,557
+Abbiamo tutte le informazioni archiviate, una precisione assoluta, un accesso rapido e semplice, eppure a volte il risultato è che manca qualcosa rispetto ai nostri ricordi.
 
 62
-00:06:21,420 --> 00:06:28,000
- nel cloud o in generale in qualche archivio digitale. Basta aprire una chat e possiamo
+00:08:58,057 --> 00:09:01,879
+Oppure che le due fonti non corrispondono perfettamente.
 
 63
-00:06:28,000 --> 00:06:35,020
- rileggere facilmente conversazioni di mesi fa, di anni fa, parola per parola, come se quel momento
+00:09:02,459 --> 00:09:14,585
+In realtà, a pensarci, la sensazione è un po' che in qualche modo rileggere, riascoltare o rivedere non sembra essere la stessa cosa che ricordare.
 
 64
-00:06:35,020 --> 00:06:41,200
- fosse rimasto sospeso, sempre disponibile, pronto per essere consultato ogni volta che ne abbiamo
+00:09:15,126 --> 00:09:23,250
+È come se tra quello che ricordi che è accaduto e quello che invece è stato registrato ci sia una certa differenza.
 
 65
-00:06:41,200 --> 00:06:48,060
- voglia. Nelle gallerie dei nostri smartphone, poi, abbiamo decine o migliaia di fotografie,
+00:09:23,850 --> 00:09:44,790
+Ecco, se anche a te è mai capitato di provare qualcosa del genere, sappi che è perfettamente normale e la colpa non è della tua memoria che fa cilecca, al contrario dipende invece dal fatto che, con la complicità della tecnologia, stiamo iniziando a trattare i ricordi nel modo sbagliato.
 
 66
-00:06:48,060 --> 00:06:51,160
- filmati e screenshot che immortalano.
+00:09:49,963 --> 00:10:08,835
+Per capire appieno il discorso che voglio fare oggi con te, è importante, prima di addentrarci nell'argomento tecnologico, fare una digressione sul funzionamento della memoria, quella umana intendo, e sulla sua peculiare capacità di lasciare andare, di dimenticare.
 
 67
-00:06:51,400 --> 00:06:56,960
- Attimi importanti delle nostre vite e di coloro che abbiamo intorno. E vogliamo parlare
+00:10:09,495 --> 00:10:25,330
+Siamo abituati a pensare alla nostra memoria come a qualcosa che dovrebbe somigliare ad un archivio, qualcosa che conserva le informazioni nel modo più fedele possibile e che, se funzionasse davvero bene, non dovrebbe perdere mai nulla.
 
 68
-00:06:56,960 --> 00:07:03,460
- di cosa pubblichiamo sui social? Attimi fugaci delle nostre giornate, avvenimenti che hanno
+00:10:25,730 --> 00:10:37,853
+Ci piacerebbe che una volta imparata una nozione questa ci rimanesse per sempre, così come ci sforziamo di memorizzare le date dei compleanni, le cose da fare, le scadenze.
 
 69
-00:07:03,460 --> 00:07:09,840
- suscitato in noi emozioni particolari, esternazioni di affetto, ricordi che vogliamo condividere
+00:10:38,433 --> 00:10:45,735
+A scuola ci facevano perfino studiare le poesie a memoria proprio per farci esercitare questa capacità.
 
 70
-00:07:09,840 --> 00:07:16,180
- con il mondo. Tutto questo è estremamente semplice e accessibile. E come conseguenza
+00:10:46,276 --> 00:10:51,177
+E dunque noi viviamo ogni dimenticanza come un fallimento.
 
 71
-00:07:16,180 --> 00:07:21,380
- naturale, piano piano, ci siamo convinti che sia meglio così. Che non sia più necessario
+00:10:51,637 --> 00:10:56,659
+come un difetto del nostro sistema mnemonico, come un problema da risolvere.
 
 72
-00:07:21,380 --> 00:07:28,120
- né desiderabile affidarci alla nostra memoria, perché tanto possiamo andare a recuperare
+00:10:57,199 --> 00:11:00,760
+Eppure questa visione è in realtà errata.
 
 73
-00:07:28,120 --> 00:07:34,340
- cosa è stato davvero detto o scritto o è accaduto con massima precisione e minimo
+00:11:01,320 --> 00:11:11,824
+O meglio, c'è un certo sottoinsieme di informazioni che possiamo riuscire a tenere bene a mente per tutta una serie di ragioni, che magari approfondiremo tra un po'.
 
 74
-00:07:34,340 --> 00:07:37,520
- sforzo. Ma se questa convinzione non fosse poi così
+00:11:12,304 --> 00:11:19,927
+Ma in linea generale, il nostro cervello non è fatto per ricordare le cose esattamente, in modo esatto.
 
 75
-00:07:37,520 --> 00:07:43,440
- corretta? A volte sarà accaduto anche a te che, rileggendo una chat o riascoltando
+00:11:20,607 --> 00:11:37,455
+Nel libro Perché dimentichiamo, il professor Sergio della Sala ci spiega che, secondo recenti studi neuroscientifici, dimenticare non è qualcosa che accade nonostante la memoria, bensì qualcosa che accade proprio perché la memoria possa funzionare.
 
 76
-00:07:43,440 --> 00:07:51,360
- un vocale, il discorso non ti appaia perfettamente chiaro come lo ricordavi. Oppure che le
+00:11:38,036 --> 00:11:47,100
+Nelle prime pagine del libro, della Sala ci racconta una piccola disavventura vissuta con un suo amico che si era offerto di andarlo a prendere in aeroporto.
 
 77
-00:07:51,360 --> 00:07:57,540
- sensazioni che provi riguardando un video non coincidano esattamente con quello che
+00:11:47,620 --> 00:11:53,521
+All'uscita dai terminal, una volta giunti al parcheggio, i due si rendono conto che l'auto è sparita.
 
 78
-00:07:57,540 --> 00:08:04,120
- ti aspettavi. Ti potrebbe essere capitato di dare interpretazioni diverse a parole e
+00:11:54,061 --> 00:12:09,804
+Poiché l'amico è comprensibilmente nervoso, il professore gli chiede se vuole passare a comprare dei tranquillanti in farmacia, e d'improvviso il malcapitato ricorda di aver parcheggiato proprio davanti alla farmacia per andare a comprare il dentifricio.
 
 79
-00:08:04,120 --> 00:08:10,540
- conversazioni del passato, arrivando perfino a stravolgerne il significato per poi renderti
+00:12:10,304 --> 00:12:16,105
+Questo breve episodio descrive quel genere di piccola amnesia che sarà capitata sicuramente a
 
 80
-00:08:10,540 --> 00:08:21,340
- conto di aver basato comportamenti e reazioni successive su premesse e supposizioni che
+00:12:16,845 --> 00:12:27,835
+tutti, almeno una volta nella vita, quando ci chiediamo se abbiamo chiuso il gas o dato le mandate alla porta di casa o se ieri abbiamo acquistato il latte oppure no.
 
 81
-00:08:21,340 --> 00:08:29,160
- ricordavi di aver incontrato quel vecchio compagno di scuola? Come era vestito? Aveva la barba? Tu lo
+00:12:28,396 --> 00:12:34,882
+Ad una prima occhiata superficiale questo fenomeno potrebbe sembrare un difetto, un errore.
 
 82
-00:08:29,160 --> 00:08:35,880
- cerchi nella galleria, scorri centinaia di foto eppure non riesci a trovarne una sua che riguardi
+00:12:35,482 --> 00:12:46,574
+Ma, alla luce di quanto descritto nel libro del professor della sala, appare chiaro che si tratta invece di un meccanismo indispensabile perché la nostra memoria funzioni correttamente.
 
 83
-00:08:35,880 --> 00:08:43,280
- quel momento e allora inizi a dubitare. Forse era un altro periodo o un altro evento? Stiamo parlando
+00:12:47,134 --> 00:12:57,385
+Cosa accadrebbe in realtà se ricordassimo ogni singola posizione in cui abbiamo parcheggiato l'auto ogni singolo giorno che ci siamo recati in ufficio?
 
 84
-00:08:43,280 --> 00:08:50,120
- quasi di un paradosso. Abbiamo tutte le informazioni archiviate, una precisione assoluta, un accesso
+00:12:57,865 --> 00:13:04,486
+A cosa servirebbe ricordare tutte le volte in cui abbiamo chiuso la porta di casa o il gas in passato?
 
 85
-00:08:51,320 --> 00:08:59,280
- semplice, eppure a volte il risultato è che manca qualcosa rispetto ai nostri ricordi. Oppure che le
+00:13:05,087 --> 00:13:11,468
+Invertendo il punto di vista possiamo dire che l'oblio non è affatto una mancanza, ma una strategia.
 
 86
-00:08:59,280 --> 00:09:06,060
- due fonti non corrispondono perfettamente. In realtà, a pensarci, la sensazione è un po' che
+00:13:12,028 --> 00:13:21,370
+Un modo attraverso cui il nostro sistema cognitivo riesce a mantenere equilibrio, selezionando quello che conta e lasciando andare il resto.
 
 87
-00:09:06,060 --> 00:09:14,560
- in qualche modo rileggere, riascoltare o rivedere non sembra essere la stessa cosa che ricordare.
+00:13:21,950 --> 00:13:36,194
+Se non dimenticassimo mai alcunché, infatti, non riusciremmo più a distinguere quello che è rilevante da quello che non lo è e non saremmo in grado di dare un ordine alle informazioni che abbiamo nella nostra testa.
 
 88
-00:09:14,560 --> 00:09:20,780
- È come se tra quello che ricordi che è accaduto e quello che invece è stato registrato,
+00:13:36,795 --> 00:13:46,658
+Nell'esempio dell'auto, se tutte le posizioni dei vari parcheggi del passato restassero disponibili allo stesso livello, finirebbero per sovrapporsi le une alle altre.
 
 89
-00:09:21,300 --> 00:09:28,060
- ci sia una certa differenza. Ecco, se anche a te è mai capitato di provare qualcosa del genere,
+00:13:48,278 --> 00:13:57,424
+E in tal modo, invece di aiutarci a ricordare dove dobbiamo cercare l'auto oggi, la memoria inizierebbe a confonderci e ostacolarci.
 
 90
-00:09:28,060 --> 00:09:35,600
- sappi che è perfettamente normale. E la colpa non è della tua memoria che facci lecca. Al contrario,
+00:13:57,985 --> 00:14:04,409
+Questo meccanismo della dimenticanza ovviamente non riguarda solo il parcheggio o la serratura di casa.
 
 91
-00:09:35,600 --> 00:09:40,120
- dipende invece dal fatto che, con la complicità della tecnologia,
+00:14:04,950 --> 00:14:12,075
+Esso governa, in generale, il modo in cui funziona qualsiasi ricordo che transita per la nostra mente.
 
 92
-00:09:40,120 --> 00:09:44,780
- stiamo iniziando a trattare i ricordi nel modo sbagliato.
+00:14:12,715 --> 00:14:26,009
+Ogni volta che ricordiamo qualcosa infatti non stiamo recuperando tutto quello che è accaduto, ma stiamo da un lato selezionando quello che ci serve e dall'altro scartando tutto il resto.
 
 93
-00:09:51,280 --> 00:09:57,340
- Il discorso che voglio fare oggi con te è importante, prima di addentrarci nell'argomento
+00:14:26,590 --> 00:14:34,759
+Ciascun ricordo non è una registrazione dell'intero avvenimento, non è un filmato che possiamo rivedere quando vogliamo.
 
 94
-00:09:57,340 --> 00:10:02,920
- tecnologico, fare una digressione sul funzionamento della memoria, quella umana
+00:14:35,479 --> 00:14:43,982
+Esso è in realtà una selezione di particolari che hanno per noi più valore rispetto a tutto il resto.
 
 95
-00:10:02,920 --> 00:10:10,160
- intendo, e sulla sua peculiare capacità di lasciare andare, di dimenticare. Siamo abituati
+00:14:44,522 --> 00:14:55,365
+E questo equilibrio tra quello che resta e quello che viene lasciato indietro è la caratteristica che rende la memoria un qualcosa di utilizzabile nel quotidiano.
 
 96
-00:10:10,160 --> 00:10:16,320
- a pensare alla nostra memoria come a qualcosa che dovrebbe somigliare ad un archivio. Qualcosa
+00:14:55,886 --> 00:15:02,988
+Certamente non un archivio perfetto, ma un'abilità estremamente funzionale per i nostri bisogni.
 
 97
-00:10:16,320 --> 00:10:21,260
- che conserva le informazioni nel modo più fedele possibile e che, se non è così, non è così.
+00:15:08,221 --> 00:15:14,806
+La nostra memoria dunque non conserva le cose così come sono successe, come se fosse una specie di telecamera.
 
 98
-00:10:21,260 --> 00:10:28,060
- Se funzionasse davvero bene, non dovrebbe perdere mai nulla. Ci piacerebbe che, una volta imparata
+00:15:15,246 --> 00:15:21,350
+Quello che realmente fa piuttosto è molto più simile al creare un proprio racconto dell'evento.
 
 99
-00:10:28,060 --> 00:10:34,860
- una nozione, questa ci rimanesse per sempre. Così come ci sforziamo di memorizzare le date dei
+00:15:21,931 --> 00:15:27,635
+In un racconto non si riportano mai semplicemente i fatti, ma volenti o nolenti...
 
 100
-00:10:34,860 --> 00:10:42,080
- compleanni, le cose da fare, le scadenze. A scuola ci facevano perfino studiare le poesie a memoria
+00:15:28,055 --> 00:15:37,781
+si dà una forma a ciò che è accaduto, scegliendo una direzione per la narrazione e costruendo un senso ben preciso per l'avvenimento.
 
 101
-00:10:42,080 --> 00:10:50,560
- proprio per farci esercitare questa capacità. E dunque, noi viviamo ogni dimenticanza come un
+00:15:38,341 --> 00:15:50,568
+Come ci chiarisce più volte il professor della sala, quello che conserviamo nei nostri ricordi non sono gli eventi in sé, ma il significato che quegli eventi hanno avuto per noi.
 
 102
-00:10:51,240 --> 00:10:59,320
- difetto del nostro sistema mnemonico, come un problema da risolvere. Eppure, questa visione è
+00:15:51,149 --> 00:15:56,372
+I neuroni si connettono fra loro spontaneamente formando reti complesse.
 
 103
-00:10:59,320 --> 00:11:06,240
- in realtà errata. O meglio, c'è un certo sottoinsieme di informazioni che possiamo riuscire a tenere
+00:15:56,852 --> 00:16:01,898
+E questo processo è guidato dall'interazione con ciò e chi ci circonda.
 
 104
-00:11:06,240 --> 00:11:13,140
- bene a mente per tutta una serie di ragioni, che magari approfondiremo tra un po'. Ma, in linea
+00:16:02,458 --> 00:16:08,405
+Infatti, esperienze e stimoli sensoriali rafforzano o modulano queste connessioni.
 
 105
-00:11:13,140 --> 00:11:21,220
- generale, il nostro cervello non è fatto per ricordare le cose esattamente, in modo esatto. Nel libro
+00:16:09,006 --> 00:16:17,295
+La memoria è costituita da strati e strati di ricordi che si sovrappongono, si mescolano, spariscono e a volte riappaiono.
 
 106
-00:11:21,220 --> 00:11:27,360
- Perché dimentichiamo, il professor Sergio Della Sala ci spiega che, secondo recenti studi
+00:16:17,735 --> 00:16:26,842
+Il tutto influenzato da come quei ricordi li apprendiamo, da come li organizziamo, da quanto spesso li rievochiamo e via discorrendo.
 
 107
-00:11:27,360 --> 00:11:34,420
- neuroscientifici, dimenticare non è qualcosa che accade nonostante la memoria, bensì qualcosa che
+00:16:27,383 --> 00:16:40,694
+Ci sarebbe tantissimo da approfondire su questo argomento, ma l'episodio non può durare sei ore, quindi se ti interessa saperne di più ti lascio il link affiliato al libro perché dimentichiamo in descrizione.
 
 108
-00:11:34,420 --> 00:11:40,440
- accade proprio perché la memoria possa funzionare. Nelle prime pagine del libro, Della Sala ci
+00:16:41,314 --> 00:17:06,853
+ciò che invece serve capire a noi oggi è che ogni ricordo fin dall'inizio non è mai completo è già da subito il risultato di una selezione, di una riduzione e di una rielaborazione in pratica è una sintesi soggettiva e siccome non è un qualcosa che arriva dopo ma è proprio il modo nel quale il ricordo viene creato
 
 109
-00:11:40,440 --> 00:11:45,940
- racconta una piccola disavventura vissuta con un suo amico che si era offerto di andarlo a
+00:17:07,493 --> 00:17:21,689
+Quello che a noi resta non è il passato così com'è accaduto, ma il passato così come lo abbiamo filtrato, riorganizzato e reso coerente rispetto a quello che in quel momento aveva senso per noi.
 
 110
-00:11:45,940 --> 00:11:51,200
- prendere in aeroporto. All'uscita dai terminal, una volta giunti al parcheggio, i due si rendono
+00:17:22,229 --> 00:17:27,154
+In pratica, anche quando abbiamo la sensazione di ricordare qualcosa con precisione.
 
 111
-00:11:51,200 --> 00:11:58,460
- conto che l'auto è sparita. Poiché l'amico è comprensibilmente nervoso, il professore gli chiede
+00:17:27,855 --> 00:17:36,258
+Quello che conserviamo nella mente non è mai una copia esatta del passato, ma è sempre la nostra versione di quel passato.
 
 112
-00:11:58,460 --> 00:12:05,160
- se vuole passare a comprare dei tranquillanti in farmacia e, d'improvviso, il malcapitato ricorda
+00:17:36,838 --> 00:17:42,520
+Una versione che funziona non perché esaustiva e completa, ma perché utile per noi.
 
 113
-00:12:05,160 --> 00:12:10,900
- di aver parcheggiato proprio davanti alla farmacia per andare a comprare il dentifricio. Questo breve
+00:17:47,731 --> 00:17:59,124
+Quando torniamo con la memoria ad un nostro ricordo, dunque, non stiamo recuperando semplicemente qualcosa che è rimasto cristallizzato e che possiamo rimettere in play a piacimento.
 
 114
-00:12:10,900 --> 00:12:21,180
- episodio descrive quel genere di piccola amnesia che sarà capitata sicuramente a tutti, almeno una
+00:17:59,725 --> 00:18:03,549
+In realtà stiamo facendo un'operazione molto più instabile.
 
 115
-00:12:21,180 --> 00:12:26,160
- volta se il professore ha chiuso il gas, o dato le mandate alla porta di casa, o se ieri abbiamo
+00:18:04,170 --> 00:18:13,962
+Stiamo ricostruendo una nostra versione di un evento, di un discorso, di un'immagine o quello che è, a partire da un delicato reticolo di connessioni.
 
 116
-00:12:26,160 --> 00:12:32,660
- acquistato il latte oppure no. Ad una prima occhiata superficiale, questo fenomeno potrebbe
+00:18:14,563 --> 00:18:22,113
+Ogni ricostruzione da un lato consolida il reticolo mettendolo in evidenza tra altri migliaia, ma dall'altro...
 
 117
-00:12:32,660 --> 00:12:38,460
- sembrare un difetto, un errore, ma alla luce di quanto descritto nel libro del professor Della
+00:18:22,593 --> 00:18:31,878
+lo modifica e lo riadatta introducendo piccoli cambiamenti, anche se noi siamo convinti che esso sia sempre fedele a se stesso e alla realtà.
 
 118
-00:12:38,460 --> 00:12:44,340
- Sala, appare chiaro che si tratta invece di un meccanismo indispensabile perché la nostra
+00:18:32,459 --> 00:18:41,644
+Insomma, più accediamo all'informazione in momenti e condizioni differenti e più questa acquista o perde dettagli e particolari.
 
 119
-00:12:44,340 --> 00:12:51,080
- memoria funzioni correttamente. Cosa accadrebbe in realtà se ricordassimo ogni singola
+00:18:42,124 --> 00:18:47,948
+E la cosa più interessante è che tutti gli adattamenti dipendono essenzialmente da noi stessi.
 
 120
-00:12:51,160 --> 00:12:57,940
- posizione in cui abbiamo parcheggiato l'auto ogni singolo giorno che ci siamo recati in ufficio? A
+00:18:48,428 --> 00:19:00,670
+Con il passare del tempo infatti noi viviamo nuove esperienze, capiamo cose che prima ignoravamo, vediamo sotto una luce diversa persone, situazioni, perfino noi stessi.
 
 121
-00:12:57,940 --> 00:13:03,900
- cosa servirebbe ricordare tutte le volte in cui abbiamo chiuso la porta di casa o il gas in
+00:19:01,230 --> 00:19:08,372
+E tutto questo interferisce inevitabilmente nel modo in cui torniamo e reinterpretiamo il passato.
 
 122
-00:13:03,900 --> 00:13:10,060
- passato? Invertendo il punto di vista, possiamo dire che l'oblio non è affatto una mancanza,
+00:19:08,972 --> 00:19:14,813
+In pratica ciò che è veramente cambiato ogni volta che rievochiamo un ricordo siamo noi.
 
 123
-00:13:10,060 --> 00:13:16,500
- ma una strategia. Un modo attraverso cui il nostro sistema cognitivo riesce a mantenere
+00:19:15,473 --> 00:19:25,086
+È il modo in cui noi vediamo i fatti del passato, il modo in cui li colleghiamo, il significato che attribuiamo loro, il punto di vista da cui stiamo guardando.
 
 124
-00:13:21,140 --> 00:13:27,660
- presto. Se non dimenticassimo mai alcunché, infatti, non riusciremmo più a distinguere
+00:19:25,727 --> 00:19:33,257
+La memoria non è, quindi, un archivio immutabile, ma un processo dinamico che si trasforma con l'esperienza.
 
 125
-00:13:27,660 --> 00:13:33,460
- quello che è rilevante da quello che non lo è, e non saremmo in grado di dare un ordine
+00:19:33,937 --> 00:19:50,268
+L'azione di ricordare non è un gesto neutro, perché nel momento stesso in cui proviamo a recuperare qualcosa, quel qualcosa passa di nuovo attraverso di noi, e questa rielaborazione non avviene nel contesto originale, ma nel presente.
 
 126
-00:13:33,460 --> 00:13:38,880
- alle informazioni che abbiamo nella nostra testa. Nell'esempio dell'auto, se tutte le
+00:19:50,888 --> 00:19:58,932
+avviene nel momento in cui stiamo pensando nuovamente a quel ricordo, tenendo conto di tutto ciò che nel frattempo è cambiato.
 
 127
-00:13:38,880 --> 00:13:44,480
- posizioni dei vari parcheggi del passato restassero disponibili allo stesso livello,
+00:19:59,553 --> 00:20:17,382
+L'informazione passa attraverso la nuova versione di noi, passa attraverso quello che sentiamo adesso, passa attraverso il contesto in cui ci troviamo adesso e, soprattutto, passa attraverso il significato che noi oggi diamo a quell'esperienza.
 
 128
-00:13:44,480 --> 00:13:50,960
- finirebbero per sovrapporsi le une alle altre, e in tal modo, invece di aiutarci a ricordare
+00:20:17,922 --> 00:20:31,535
+Per questo motivo quello che chiamiamo ricordo non è mai semplicemente il passato, ma il passato così come riusciamo a ricostruirlo ora, con tutte le sue imprecisioni, distorsioni e addirittura invenzioni.
 
 129
-00:13:51,120 --> 00:13:58,260
- dove dobbiamo cercare l'auto oggi, la memoria inizierebbe a confonderci e ostacolarci. Questo
+00:20:32,096 --> 00:20:38,302
+O forse sarebbe più corretto dire le nostre imprecisioni, distorsioni e invenzioni.
 
 130
-00:13:58,260 --> 00:14:04,060
- meccanismo della dimenticanza ovviamente non riguarda solo il parcheggio o la serratura di
+00:20:38,782 --> 00:20:54,031
+Perché se il ricordo non viene direttamente recuperato ma ricostruito, allora nel momento in cui mancheranno dei pezzi, la memoria tenderà a colmare quei vuoti con qualcosa che sia plausibile, coerente e compatibile con il resto della storia.
 
 131
-00:14:04,060 --> 00:14:11,340
- casa. Esso governa, in generale, il modo in cui funziona qualsiasi ricordo che transita per la
+00:20:54,571 --> 00:21:00,494
+Quando c'è da raccontare una storia, questa non può essere lacunosa o frammentaria.
 
 132
-00:14:11,340 --> 00:14:21,100
- nostra mente. Ogni volta che ricordiamo qualcosa, infatti, non stiamo recuperando tutto quello che è
+00:21:00,975 --> 00:21:05,097
+Il cervello umano odia le cose incomplete, quelle che non può spiegare.
 
 133
-00:14:21,100 --> 00:14:29,120
- quello che ci serve, e dall'altro scartando tutto il resto. Ciascun ricordo non è una registrazione
+00:21:05,617 --> 00:21:12,341
+Pertanto è bravissimo a riempire gli spazi attingendo ad altre fonti, come ad esempio la fantasia.
 
 134
-00:14:29,120 --> 00:14:36,380
- dell'intero avvenimento, non è un filmato che possiamo rivedere quando vogliamo. Esso è in
+00:21:12,861 --> 00:21:27,950
+Solo che questa operazione la fa nel momento presente, in quello del recupero, partendo da presupposti e condizioni differenti da quelli che vigevano al momento in cui gli eventi si sono verificati, partendo dal nostro noi attuale.
 
 135
-00:14:36,380 --> 00:14:43,920
- realtà una selezione di particolari che hanno per noi più valore rispetto a tutto il resto,
+00:21:28,570 --> 00:21:37,035
+E il risultato sarà qualcosa che sicuramente avrà senso, ma che molto probabilmente non sarà esattamente vero in senso stretto.
 
 136
-00:14:43,920 --> 00:14:50,960
- e questo equilibrio tra quello che resta e quello che viene lasciato indietro è la caratteristica
+00:21:42,266 --> 00:21:44,768
+Veniamo dunque al cuore dell'episodio di oggi.
 
 137
-00:14:51,080 --> 00:14:58,480
- che rende la memoria un qualcosa di utilizzabile nel quotidiano. Certamente non un archivio perfetto,
+00:21:45,209 --> 00:21:51,554
+So che la premessa è stata lunghissima, però era indispensabile per capire il mio punto di vista.
 
 138
-00:14:58,480 --> 00:15:03,060
- ma un'abilità estremamente funzionale per i nostri bisogni.
+00:21:52,094 --> 00:22:00,962
+Se, come abbiamo detto, da una parte ci siamo evoluti con una memoria che funziona selezionando, sintetizzando e ricostruendo,
 
 139
-00:15:03,060 --> 00:15:13,820
- La nostra memoria, dunque, non conserva le cose così come sono successe, come se fosse una specie
+00:22:01,622 --> 00:22:12,006
+Dall'altra siamo dotati di strumenti che, almeno in apparenza, fanno esattamente il contrario, cioè conservano tutto senza lasciar sfumare nulla.
 
 140
-00:15:13,820 --> 00:15:20,600
- di telecamera. Quello che realmente fa, piuttosto, è molto più simile al creare un proprio racconto
+00:22:12,487 --> 00:22:19,009
+Si tratta di qualcosa che, ad una prima occhiata, ci fa pensare fantastico, un vantaggio enorme.
 
 141
-00:15:21,060 --> 00:15:29,540
- In un racconto non si riportano mai semplicemente i fatti, ma, volenti o nolenti, si dà una forma a
+00:22:19,509 --> 00:22:25,592
+In qualsiasi momento possiamo andare a recuperare con precisione qualsiasi ricordo di cui abbiamo bisogno.
 
 142
-00:15:29,540 --> 00:15:37,000
- ciò che è accaduto, scegliendo una direzione per la narrazione e costruendo un senso ben preciso per
+00:22:26,032 --> 00:22:31,835
+Beh, peccato però che poi all'atto pratico non sia proprio così.
 
 143
-00:15:37,000 --> 00:15:43,100
- l'avvenimento. Come ci chiarisce più volte il professor della sala, quello che conserviamo
+00:22:32,375 --> 00:22:50,165
+Quando torniamo a rileggere una conversazione, riascoltare un discorso o riguardare l'album di un evento, ciò che stiamo facendo in realtà è cercare di far combaciare due informazioni che non sono perfettamente sovrapponibili.
 
 144
-00:15:43,100 --> 00:15:50,540
- nei nostri ricordi non sono gli eventi in sé, ma il significato che quegli eventi hanno avuto per noi.
+00:22:50,745 --> 00:23:00,535
+Da un lato c'è il ricordo naturale, impreciso e soggettivo, e dall'altro quello digitale, perfetto ed immutabile.
 
 145
-00:15:51,040 --> 00:15:57,960
- I neuroni si connettono fra loro spontaneamente formando reti complesse. E questo processo è
+00:23:01,115 --> 00:23:08,343
+Ed è qui che si viene a creare una sorta di scollamento tra la percezione ricordata e quella attuale.
 
 146
-00:15:57,960 --> 00:16:06,300
- guidato dall'interazione con ciò e chi ci circonda. Infatti, esperienze e stimoli sensoriali rafforzano
+00:23:09,023 --> 00:23:20,706
+Ciò che abbiamo in un archivio digitale è un'informazione estremamente precisa, inoppugnabile e inclemente, ma allo stesso tempo incompleta.
 
 147
-00:16:06,300 --> 00:16:13,240
- o modulano queste connessioni. La memoria è costituita da strati e strati di ricordi che
+00:23:21,306 --> 00:23:28,888
+Una riproduzione sicuramente fedele di un accadimento, ma che ne rappresenta solo una parte.
 
 148
-00:16:13,240 --> 00:16:20,300
- si sovrappongono, si mescolano, spariscono e a volte riappaiono. Il tutto influenzato da come quei
+00:23:29,488 --> 00:23:34,770
+Una conversazione o un evento, infatti, non sono solo parole o immagini.
 
 149
-00:16:21,020 --> 00:16:26,800
- eventi si occupano, da come li organizziamo, da quanto spesso li rievochiamo e via discorrendo.
+00:23:35,370 --> 00:23:48,135
+bensì sono anche il momento in cui avvengono, come ci sentiamo mentre parliamo, quello che sta accadendo intorno, il rapporto che abbiamo con le altre persone in quel preciso istante.
 
 150
-00:16:26,800 --> 00:16:33,420
- Ci sarebbe tantissimo da approfondire su questo argomento, ma l'episodio non può durare 6 ore,
+00:23:48,655 --> 00:23:54,697
+Parlo di un contesto che non può venire immortalato in nessuna registrazione digitale.
 
 151
-00:16:33,420 --> 00:16:38,920
- quindi se ti interessa saperne di più ti lascio il link affiliato al libro perché
+00:23:55,157 --> 00:23:57,938
+Si possono conservare le immagini, le parole.
 
 152
-00:16:38,920 --> 00:16:51,000
- dimentichiamo in descrizione. Ciò che invece serve capire a noi oggi è che ogni ricordo fin
+00:23:58,298 --> 00:24:05,744
+L'ordine è l'ora in cui sono state registrate, ma non il significato che avevano per noi in quel preciso istante.
 
 153
-00:16:51,000 --> 00:16:57,940
- subito il risultato di una selezione, di una riduzione e di una rielaborazione. In pratica è
+00:24:06,304 --> 00:24:17,253
+E quindi, quello che resta è una traccia che sembra completa, ma che in realtà ha già perso una parte fondamentale di quello che era.
 
 154
-00:16:57,940 --> 00:17:05,360
- una sintesi soggettiva. E siccome non è un qualcosa che arriva dopo, ma è proprio il modo nel quale il
+00:24:17,793 --> 00:24:21,776
+E l'ambiguità che la tecnologia sembra eliminare...
 
 155
-00:17:05,360 --> 00:17:13,120
- ricordo viene creato, quello che a noi resta non è il passato così come è accaduto, ma il passato
+00:24:22,677 --> 00:24:28,281
+viene in realtà semplicemente spostata in un punto meno ovvio e più infido.
 
 156
-00:17:13,120 --> 00:17:20,220
- così come lo abbiamo filtrato, riorganizzato e reso coerente rispetto a quello che in quel momento
+00:24:28,842 --> 00:24:43,233
+In pratica esattamente come accade per la memoria naturale quando riguardiamo un ricordo digitale stiamo recuperando una traccia parziale e la stiamo completando con informazioni di adesso.
 
 157
-00:17:20,980 --> 00:17:26,200
- è successo per noi. In pratica, anche quando abbiamo la sensazione di ricordare qualcosa con
+00:24:43,693 --> 00:24:54,839
+con quello che siamo diventati, con quello che sappiamo oggi, con il modo in cui oggi guardiamo quella relazione, quella persona o quella versione di noi stessi.
 
 158
-00:17:26,200 --> 00:17:33,700
- precisione, quello che conserviamo nella mente non è mai una copia esatta del passato, ma è sempre
+00:24:55,499 --> 00:25:05,605
+Di fatto le conversazioni o le immagini che vogliamo rievocare non sono più legate indissolubilmente al momento in cui le abbiamo vissute.
 
 159
-00:17:33,700 --> 00:17:40,760
- la nostra versione di quel passato. Una versione che funziona non perché esaustiva e completa,
+00:25:06,345 --> 00:25:15,528
+bensì diventano il punto di partenza per una nuova interpretazione, che in un certo senso ricomincia da capo a nuove condizioni.
 
 160
-00:17:40,760 --> 00:17:50,960
- ma perché utile per noi. Quando torniamo con la memoria ad un nostro ricordo, dunque,
+00:25:16,108 --> 00:25:23,510
+Il paradosso a cui volevo arrivare dunque sta nel fatto che ci siamo convinti che rileggere o riguardare
 
 161
-00:17:50,960 --> 00:17:56,980
- non stiamo recuperando semplicemente qualcosa che è rimasto cristallizzato e che possiamo
+00:25:23,990 --> 00:25:32,276
+sia sempre e comunque una forma più affidabile di rievocare un ricordo rispetto al conservarlo nella nostra mente.
 
 162
-00:17:56,980 --> 00:18:04,300
- rimettere in play a piacimento. In realtà stiamo facendo un'operazione molto più instabile. Stiamo
+00:25:32,876 --> 00:25:52,650
+Vediamo lo strumento tecnologico come una sorta di memoria più potente e più precisa, come se le due cose viaggiassero sullo stesso asse e ricordare fosse il modo fallace, mentre recuperare la traccia digitale fosse la correzione ad una sorta di incapacità naturale.
 
 163
-00:18:04,300 --> 00:18:09,780
- ricostruendo una nostra versione di un evento, di un discorso, di un'immagine o quello che è,
+00:25:53,010 --> 00:26:02,440
+Peccato che attingere alla memoria umana o a quella digitale non sono due versioni più o meno efficienti dello stesso gesto.
 
 164
-00:18:09,780 --> 00:18:17,880
- a partire da un delicato reticolo di connessioni. Ogni ricostruzione da un lato consolida il reticolo
+00:26:03,000 --> 00:26:09,687
+Anzi, come abbiamo visto, sono semplicemente operazioni molto diverse, ognuna con le proprie specificità.
 
 165
-00:18:20,940 --> 00:18:28,580
- ma dall'altro lo modifica e lo riadatta introducendo piccoli cambiamenti, anche se noi siamo convinti che
+00:26:10,167 --> 00:26:15,352
+Quando ricordiamo, per quanto il ricordo possa essere fragile, distorto o incompleto...
 
 166
-00:18:28,580 --> 00:18:35,720
- esso sia sempre fedele a se stesso e alla realtà. Insomma, più accediamo all'informazione in momenti
+00:26:16,393 --> 00:26:31,952
+Stiamo comunque tornando a qualcosa che abbiamo vissuto dall'interno, qualcosa che per noi era immerso in un contesto, in uno stato emotivo, in una continuità di esperienza che lo rendeva parte di una storia.
 
 167
-00:18:35,720 --> 00:18:42,880
- e condizioni differenti e più questa acquista o perde dettagli e particolari. E la cosa più
+00:26:32,553 --> 00:26:53,564
+La rilettura invece prende un frammento di quella storia e lo stacca da tutto il resto, lo estrae dal suo contesto e lo porta forzatamente nel presente, lo isola dal noi del passato e chiede al noi del presente di reinserirlo in un nuovo spazio diverso.
 
 168
-00:18:42,880 --> 00:18:50,920
- interessante è che tutti gli adattamenti dipendono essenzialmente da noi stessi. Con il passare del
+00:26:54,184 --> 00:27:00,748
+La memoria naturale, anche se imprecisa, è sempre coerente con il proprio racconto e con noi.
 
 169
-00:18:50,920 --> 00:18:57,520
- passato viviamo nuove esperienze, capiamo cose che prima ignoravamo, vediamo sotto una luce diversa
+00:27:01,408 --> 00:27:11,053
+Ogni rievocazione influisce sul ricordo stesso, ma le modifiche sono un processo graduale e consistente dall'inizio al presente.
 
 170
-00:18:57,520 --> 00:19:05,500
- persone, situazioni, perfino noi stessi. E tutto questo interferisce inevitabilmente nel modo in
+00:27:11,693 --> 00:27:16,876
+La memoria digitale invece si forma all'esterno rispetto a noi ed è immutabile.
 
 171
-00:19:05,500 --> 00:19:11,900
- cui torniamo e reinterpretiamo il passato. In pratica ciò che è veramente cambiato ogni volta
+00:27:17,436 --> 00:27:27,722
+Le informazioni che vengono immediatamente perse non sono mai transitate al nostro interno, non siamo stati noi a decidere di scartarle o riadattarle con il tempo.
 
 172
-00:19:11,900 --> 00:19:20,900
- che rievochiamo un ricordo siamo noi. È il modo in cui noi vediamo i fatti del passato, il modo in
+00:27:28,362 --> 00:27:47,618
+Quando rileggiamo allora non siamo di fronte ad un qualcosa che poco a poco è cambiato e si è evoluto insieme a noi, ma ad un punto fisso nel tempo che, per quanto abbiamo detto fino ad ora, è difficile da interpretare correttamente per il noi del presente.
 
 173
-00:19:20,900 --> 00:19:26,160
- cui noi vediamo il significato che attribuiamo loro, il punto di vista da cui stiamo guardando. La memoria
+00:27:52,443 --> 00:28:07,692
+Al giorno d'oggi la tecnologia ci sta spingendo sempre più a pensare che perdere qualcosa sia un problema e che non perdere nulla sia meglio che lasciare andare, come se bastasse conservare di più per capire di più.
 
 174
-00:19:26,160 --> 00:19:34,280
- non è quindi un archivio immutabile, ma un processo dinamico che si trasforma con l'esperienza. L'azione
+00:28:08,312 --> 00:28:23,323
+Il che ha senso in molti contesti oggettivi, dove documenti, archivi e registri precisi sono di innegabile importanza, ma non certo in quelli soggettivi, che coinvolgono emozioni e ricordi.
 
 175
-00:19:34,280 --> 00:19:40,260
- di ricordare non è un gesto neutro, perché nel momento stesso in cui proviamo a recuperare
+00:28:23,863 --> 00:28:34,969
+Questa idea che più informazioni abbiamo sul passato e più ci avviciniamo alla verità è diventata talmente naturale che quasi non la mettiamo più in discussione.
 
 176
-00:19:40,260 --> 00:19:47,660
- qualcosa, quel qualcosa passa di nuovo attraverso di noi. E questa rielaborazione non avviene nel
+00:28:35,490 --> 00:28:42,734
+Quante foto scattiamo e quanti video giriamo ogni volta che vogliamo imprimerci qualcosa nella memoria?
 
 177
-00:19:47,660 --> 00:19:50,220
- contesto originale, ma nel presente.
+00:28:43,474 --> 00:28:54,299
+Il professor della sala però ci spiega che la memoria umana funziona bene non nonostante il fatto che dimentichi ma proprio grazie a questa sua caratteristica.
 
 178
-00:19:50,880 --> 00:19:57,680
- Avviene nel momento in cui stiamo pensando nuovamente a quel ricordo, tenendo conto di tutto ciò che nel
+00:28:54,759 --> 00:29:01,442
+Tutto si basa su un equilibrio molto preciso tra ciò che viene mantenuto e ciò che viene lasciato andare.
 
 179
-00:19:57,680 --> 00:20:05,220
- frattempo è cambiato. L'informazione passa attraverso la nuova versione di noi, passa attraverso quello
+00:29:02,062 --> 00:29:06,027
+Al contrario, i sistemi artificiali tendono a fare esattamente l'opposto.
 
 180
-00:20:05,220 --> 00:20:13,060
- che sentiamo adesso, passa attraverso il contesto in cui ci troviamo adesso e, soprattutto, passa
+00:29:06,488 --> 00:29:09,432
+Conservano tutto senza operare alcuna selezione.
 
 181
-00:20:13,060 --> 00:20:20,860
- attraverso il significato che noi oggi diamo a quell'esperienza. Per questo motivo quello che chiamiamo ricordo
+00:29:09,972 --> 00:29:16,561
+E questa differenza cambia completamente il modo in cui le due forme di memoria producono significato.
 
 182
-00:20:20,860 --> 00:20:27,820
- non è mai semplicemente il passato, ma il passato così come riusciamo a ricostruirlo ora, con tutte le
+00:29:17,121 --> 00:29:29,695
+Nel nostro caso, dimenticare serve a orientarsi, a mantenere solo ciò che è utile, mentre in un sistema che non dimentica mai, il rischio è che tutto resti allo stesso piano.
 
 183
-00:20:27,820 --> 00:20:34,600
- sue imprecisioni, distorsioni e addirittura invenzioni. O, forse, sarebbe più corretto dire le
+00:29:30,255 --> 00:29:33,579
+È una questione di dare diverso peso alle cose.
 
 184
-00:20:34,600 --> 00:20:40,980
- nostre imprecisioni, distorsioni e invenzioni. Perché se il ricordo non viene direttamente
+00:29:33,959 --> 00:29:48,727
+Studi citati nel libro mostrano che in realtà nel momento in cui deleghiamo un ricordo ad un supporto esterno, galleria fotografica dello smartphone ad esempio, noi tendiamo poi a ricordarlo di meno.
 
 185
-00:20:40,980 --> 00:20:45,700
- recuperato ma ricostruito, allora nel momento in cui mancheranno dei pezzi,
+00:29:49,228 --> 00:29:54,691
+Paradossalmente l'informazione viene archiviata su un supporto più preciso e durevole.
 
 186
-00:20:45,700 --> 00:20:50,100
- la memoria tenderà a colmare quei vuoti con qualcosa che sia plausibile,
+00:29:55,151 --> 00:30:00,454
+Ma noi smettiamo di prestarle la stessa attenzione che avremmo fatto altrimenti.
 
 187
-00:20:50,840 --> 00:20:56,480
- coerente e compatibile con il resto della storia. Quando c'è da raccontare una storia,
+00:30:00,974 --> 00:30:09,099
+Come se il nostro sistema interno si rilassasse e smettesse di fare quella selezione che normalmente farebbe.
 
 188
-00:20:56,480 --> 00:21:03,920
- questa non può essere lacunosa o frammentaria. Il cervello umano odia le cose incomplete e quelle
+00:30:14,321 --> 00:30:20,763
+Negli ultimi tempi il desiderio di non perdere nulla sta diventando sempre più radicato.
 
 189
-00:21:03,920 --> 00:21:10,340
- che non può spiegare. Pertanto è bravissimo a riempire gli spazi attingendo ad altre fonti,
+00:30:21,144 --> 00:30:29,827
+Si diffondono in commercio strumenti in grado di registrare tutto ciò che accade, incontri, conversazioni, pensieri ad alta voce.
 
 190
-00:21:10,340 --> 00:21:15,600
- come ad esempio la fantasia. Solo che questa operazione la fa nel momento presente,
+00:30:30,367 --> 00:30:40,931
+Si va dagli occhiali con videocamera ai ciondoli con registratore vocale, dagli speaker per videoconferenze ai bot che assistono alle riunioni.
 
 191
-00:21:15,600 --> 00:21:20,820
- in quello del recupero, partendo da presupposti e condizioni differenti.
+00:30:41,591 --> 00:30:57,612
+In certi ambiti come quello lavorativo in cui si fanno molti incontri o brainstorming o in caso di difficoltà nel trattenere informazioni ed avvenimenti importanti, strumenti del genere possono certamente essere estremamente utili.
 
 192
-00:21:20,820 --> 00:21:26,920
- Da quelli che vigevano al momento in cui gli eventi si sono verificati. Partendo dal nostro
+00:30:58,092 --> 00:31:05,556
+Ma in generale questa deriva ci spinge sempre più verso l'idea sbagliata che nulla debba andare mai perso.
 
 193
-00:21:26,920 --> 00:21:33,080
- noi attuale. E il risultato sarà qualcosa che sicuramente avrà senso, ma che molto
+00:31:05,976 --> 00:31:14,980
+Sta diventando una convinzione talmente forte da sembrare naturale, ma la verità è che non potrebbe essere più distante dalla natura.
 
 194
-00:21:33,080 --> 00:21:44,320
- probabilmente non sarà esattamente vero in senso stretto. Veniamo dunque al cuore dell'episodio di
+00:31:15,541 --> 00:31:19,843
+Nel romanzo La casa di marzapane di Jennifer Egan...
 
 195
-00:21:44,320 --> 00:21:50,740
- oggi. So che la premessa è stata lunghissima, però era indispensabile per capire il mio
+00:31:20,523 --> 00:31:30,116
+viene descritto un mondo costruito proprio sulla possibilità di accedere alla propria memoria e addirittura anche a quella collettiva senza alcuna limitazione.
 
 196
-00:21:50,800 --> 00:21:57,720
- punto di vista. Se, come abbiamo detto, da una parte ci siamo evoluti con una memoria che funziona
+00:31:30,676 --> 00:31:36,524
+In questo bellissimo romanzo, in cui si incastrano le vicende di molteplici personaggi,
 
 197
-00:21:57,720 --> 00:22:04,300
- selezionando, sintetizzando e ricostruendo, dall'altra siamo dotati di strumenti che,
+00:31:36,984 --> 00:31:49,788
+viene descritto uno strumento chiamato Cubo Mandala, che permette a ciascuno di scaricare ogni ricordo accumulato fino a quel momento in uno speciale device a forma di cubo.
 
 198
-00:22:04,300 --> 00:22:10,540
- almeno in apparenza, fanno esattamente il contrario, cioè conservano tutto senza
+00:31:50,808 --> 00:32:04,952
+Successivamente al download gli utenti possono poi andare a rivedere in comodità tutti i loro ricordi, riguardandoli come dei filmati in soggettiva e muovendosi avanti e indietro tra le registrazioni.
 
 199
-00:22:10,540 --> 00:22:14,860
- lasciar sfumare nulla. Si tratta di qualcosa che, ad una prima occhiata,
+00:32:05,632 --> 00:32:17,742
+Lo strumento è talmente preciso e potente che è in grado di recuperare anche ricordi che normalmente non sarebbero accessibili perché naturalmente dimenticati.
 
 200
-00:22:14,860 --> 00:22:20,780
- ci fa pensare "fantastico, un vantaggio enorme, in qualsiasi momento possiamo
+00:32:18,223 --> 00:32:24,728
+In questo modo, letteralmente qualsiasi esperienza vissuta dal soggetto può essere rievocata e rivissuta.
 
 201
-00:22:20,780 --> 00:22:27,200
- andare a recuperare con precisione qualsiasi ricordo di cui abbiamo bisogno". Beh, peccato
+00:32:25,308 --> 00:32:29,472
+All'inizio è una situazione che a molti appare fantastica.
 
 202
-00:22:27,200 --> 00:22:34,660
- però che poi all'atto pratico non sia proprio così. Quando torniamo a rileggere una conversazione,
+00:32:30,152 --> 00:32:37,018
+un potenziamento della memoria naturale che la rende perfetta, indelebile e sempre accessibile.
 
 203
-00:22:34,660 --> 00:22:42,980
- riascoltare un discorso o riguardare l'album di un evento, ciò che stiamo facendo, in realtà,
+00:32:37,558 --> 00:32:43,003
+Poco alla volta però il romanzo ci mostra come in realtà non si è affatto così.
 
 204
-00:22:42,980 --> 00:22:50,760
- è cercare di far combaciare due informazioni che non sono perfettamente sovrapponibili. Da
+00:32:43,543 --> 00:32:57,595
+A parte i problemi ovvi di privacy nel condividere un dato importante come la propria memoria con gli utenti di un servizio esterno o peggio ancora con una multinazionale, il primo vero limite diventa...
 
 205
-00:22:50,760 --> 00:22:58,400
- un lato c'è il ricordo naturale, impreciso e soggettivo, e dall'altro quello digitale,
+00:32:57,835 --> 00:33:01,060
+il non sapere cosa farne di tante informazioni.
 
 206
-00:22:58,400 --> 00:23:06,000
- perfetto ed immutabile. Ed è qui che si viene a creare una sorta di scollamento tra la percezione
+00:33:01,600 --> 00:33:14,057
+Ci sono alcuni personaggi del libro che restano sopraffatti dalla quantità di ricordi ai quali hanno accesso dopo il download, altri che ricordano cose che avrebbero preferito dimenticare.
 
 207
-00:23:06,000 --> 00:23:12,440
- ricordata e quella attuale. Ciò che abbiamo in un archivio digitale è un'informazione
+00:33:14,697 --> 00:33:29,001
+Rifluiscono in loro fiumi di avvenimenti e momenti dolorosi che la loro memoria umana aveva rielaborato e stemperato o situazioni spiacevoli dimenticate riguardo persone incontrate nel corso della vita.
 
 208
-00:23:12,440 --> 00:23:20,740
- estremamente precisa, inoppugnabile e inclemente, ma allo stesso tempo incompleta.
+00:33:29,541 --> 00:33:41,945
+C'è perfino chi arriva a rendersi conto che non tutte le storie meritano di essere raccontate o ricordate e chi si rifiuta di rievocare certi ricordi e si chiede, cito,
 
 209
-00:23:20,740 --> 00:23:28,300
- Una riproduzione sicuramente fedele di un accadimento, ma che ne rappresenta solo una
+00:33:42,545 --> 00:33:49,290
+Come potrebbe la rivisitazione senza filtri di quei tempi migliorare la storia fornita dal suo semplice ricordo?
 
 210
-00:23:28,300 --> 00:23:36,900
- parte. Una conversazione o un evento, infatti, non sono solo parole o immagini, bensì sono anche il
+00:33:49,870 --> 00:34:00,437
+Alla fine, le vicende dell'ultimo personaggio si concludono con la consapevolezza che, altra citazione, sapere tutto però è troppo simile a non sapere nulla.
 
 211
-00:23:36,900 --> 00:23:43,380
- momento in cui avvengono, come ci sentiamo mentre parliamo, quello che sta accadendo intorno,
+00:34:00,917 --> 00:34:03,379
+Senza una storia, non c'è che informazione.
 
 212
-00:23:43,380 --> 00:23:50,720
- il rapporto che abbiamo con le altre persone in quel preciso istante. Parlo di un contesto che non
+00:34:04,079 --> 00:34:20,962
+Insomma, come già detto, quando hai accesso a tutto, quando ogni esperienza è disponibile nello stesso modo, senza filtri, senza selezione, senza perdita, quello che viene meno non è la quantità di informazioni, è il loro significato.
 
 213
-00:23:50,720 --> 00:23:57,060
- può venire immortalato in nessuna registrazione digitale. Si possono conservare le immagini,
+00:34:21,543 --> 00:34:34,449
+Certo, noi oggi non siamo ancora a questo livello, ma forse ci stiamo avvicinando e soprattutto, forse, il problema è che ci stiamo convincendo che quello sia l'obiettivo da perseguire.
 
 214
-00:23:57,060 --> 00:24:03,660
- le parole, l'ordine e l'ora in cui sono state registrate, ma non il significato che avevano
+00:34:34,929 --> 00:34:47,795
+Passo dopo passo, strumento dopo strumento, stiamo maturando l'idea che l'accumulo di conoscenza sia un qualcosa di unicamente positivo, sia il meglio da fare in ogni circostanza.
 
 215
-00:24:03,660 --> 00:24:10,980
- per noi in quel preciso istante. E quindi quello che resta è una traccia che sembra
+00:34:48,395 --> 00:35:03,732
+Quello a cui dovremmo invece pensare quando usiamo i nostri giocattoli tecnologici è che l'accumulo senza significato non si trasforma automaticamente in valore, piuttosto resta soltanto rumore di fondo.
 
 216
-00:24:10,980 --> 00:24:19,220
- completa, ma che in realtà ha già perso una parte fondamentale di quello che era. E l'ambiguità che
+00:35:08,975 --> 00:35:16,223
+Forse il punto, alla fine, è che questa storia non riguarda solo la memoria e i ricordi.
 
 217
-00:24:20,700 --> 00:24:28,260
- sembra eliminare viene in realtà semplicemente spostata in un punto meno ovvio e più infido.
+00:35:16,744 --> 00:35:22,070
+Forse riguarda il modo in cui il passato continua a persistere nelle nostre vite.
 
 218
-00:24:28,260 --> 00:24:36,380
- In pratica, esattamente come accade per la memoria naturale, quando riguardiamo un ricordo digitale
+00:35:22,650 --> 00:35:28,477
+Un tempo, semplicemente, una parte enorme di quello che ci accadeva spariva.
 
 219
-00:24:36,380 --> 00:24:43,120
- stiamo recuperando una traccia parziale e la stiamo completando con informazioni di adesso,
+00:35:29,097 --> 00:35:35,998
+non tutta insieme, non di colpo, ma spariva abbastanza da lasciare spazio al resto.
 
 220
-00:24:43,120 --> 00:24:50,460
- con quello che siamo diventati, con quello che sappiamo oggi, con il modo in cui oggi guardiamo
+00:35:36,559 --> 00:35:54,582
+Le conversazioni si confondevano, i dettagli si allentavano, certe frasi smettevano di essere così nitide e, dentro questo lento sfumare, c'era qualcosa che abbiamo sempre trattato come un difetto, senza considerarne gli aspetti positivi.
 
 221
-00:24:50,680 --> 00:24:57,680
- quella relazione, quella persona o quella versione di noi stessi. Di fatto le conversazioni o le
+00:35:55,142 --> 00:35:58,583
+Il passato, per continuare a esistere per noi,
 
 222
-00:24:57,680 --> 00:25:04,580
- immagini che vogliamo rievocare non sono più legate indissolubilmente al momento in cui le
+00:35:59,143 --> 00:36:13,647
+non può restare identico a se stesso, deve cambiare forma, deve smettere di essere presenza e diventare racconto, deve perdere qualcosa per poter restare con noi in un altro modo.
 
 223
-00:25:04,580 --> 00:25:11,720
- abbiamo vissute, bensì diventano il punto di partenza per una nuova interpretazione, che in
+00:36:14,227 --> 00:36:23,150
+Ed è forse proprio questo che adesso stiamo iniziando a mettere in discussione nel momento in cui ci abituiamo all'idea che nulla debba più sfumare.
 
 224
-00:25:11,720 --> 00:25:19,400
- un certo senso ricomincia da capo a nuove condizioni. Il paradosso a cui volevo arrivare dunque sta nel
+00:36:23,410 --> 00:36:39,761
+Che ogni parola possa essere recuperata, che ogni traccia possa tornare disponibile, che ogni momento possa restare lì, pronto ad essere riaperto come se il tempo in fondo non avesse più il diritto di fare il suo lavoro.
 
 225
-00:25:19,400 --> 00:25:20,660
- fatto che ci siamo riusciti a rievocare le immagini, ma non sono più legate indissolubilmente al momento in cui le abbiamo vissute, bensì diventano il punto di partenza per una nuova interpretazione, che in un certo senso ricomincia da capo a nuove condizioni. Il paradosso a cui volevo arrivare dunque sta nel fatto che ci sia
+00:36:40,421 --> 00:36:53,734
+Ed è chiaro perché questa promessa ci affascini tanto, perché ci rassicura, ci dà l'impressione che finalmente qualcosa possa smettere di sfuggirci, ci dà l'illusione del controllo.
 
 226
-00:25:20,660 --> 00:25:28,480
- convinti che rileggere o riguardare sia sempre e comunque una forma più affidabile di rievocare
+00:36:54,314 --> 00:37:05,585
+Non sarete più costretti ad affidarvi a quella memoria instabile, selettiva e perfino inaffidabile di cui siete naturalmente dotati, ci sta dicendo la moderna tecnologia.
 
 227
-00:25:28,480 --> 00:25:35,440
- un ricordo rispetto al conservarlo nella nostra mente. Vediamo lo strumento tecnologico come una
+00:37:06,205 --> 00:37:11,610
+Eppure, forse, è proprio qui il concetto più difficile da vedere.
 
 228
-00:25:35,440 --> 00:25:43,320
- sorta di memoria più potente e più precisa, come se le due cose viaggiassero sullo stesso asse e
+00:37:12,110 --> 00:37:30,125
+Se la memoria umana non è mai stata fatta per conservare tutto, ma per trattenere quello che conta abbastanza da poterne ricavare un senso, allora una memoria che non lascia andare nulla non è semplicemente una memoria più forte.
 
 229
-00:25:43,320 --> 00:25:50,540
- ricordare fosse il modo fallace, mentre recuperare la traccia digitale fosse la correzione ad una
+00:37:30,765 --> 00:37:45,699
+È qualcosa di diverso, qualcosa che rischia di non somigliare più a ciò che fino ad oggi abbiamo chiamato ricordare, qualcosa che potrebbe non essere per forza adatto al nostro modo di funzionare.
 
 230
-00:25:50,640 --> 00:25:59,180
- sorta di incapacità naturale. Peccato che attingere alla memoria umana o a quella digitale non sono due
+00:37:46,299 --> 00:37:55,628
+È qualcosa di diverso, qualcosa che rischia di non somigliare più a ciò che fino ad oggi abbiamo chiamato ricordare.
 
 231
-00:25:59,180 --> 00:26:05,860
- versioni più o meno efficienti dello stesso gesto, anzi, come abbiamo visto, sono semplicemente
+00:37:56,108 --> 00:38:22,728
+Qualcosa che potrebbe non essere per forza adatto al nostro modo di funzionare, perché ricordare, per come lo facciamo noi, non è mai stato il semplice fatto di avere accesso al passato, ma un modo di trasformarlo abbastanza da poterci convivere, da poterlo riportare al presente senza esserne schiacciati, da farne una storia e non soltanto un deposito.
 
 232
-00:26:05,860 --> 00:26:11,980
- operazioni molto diverse, ognuna con le proprie specificità. Quando ricordiamo, per quanto il
+00:38:23,308 --> 00:38:34,524
+Per usare le parole di Fred Madison nel film Strade perdute di David Lynch, preferisco ricordare le cose a modo mio, non necessariamente come sono avvenute.
 
 233
-00:26:11,980 --> 00:26:19,600
- ricordo possa essere fragile, distorto o incompleto, stiamo comunque tornando a qualcosa che abbiamo
+00:38:53,052 --> 00:38:56,433
+Elogio della dimenticanza, di Bertolt Brecht.
 
 234
-00:26:19,600 --> 00:26:20,620
- vissuto dall'inizio.
+00:38:57,974 --> 00:39:00,075
+Buona cosa è la dimenticanza.
 
 235
-00:26:20,620 --> 00:26:27,740
- All'interno. Qualcosa che per noi era immerso in un contesto, in uno stato emotivo, in una
+00:39:02,115 --> 00:39:06,917
+Altrimenti come farebbe il figlio ad allontanarsi dalla madre che lo ha allattato?
 
 236
-00:26:27,740 --> 00:26:34,520
- continuità di esperienza che lo rendeva parte di una storia. La rilettura invece prende un
+00:39:07,958 --> 00:39:12,959
+Che gli ha dato la forza delle membra e lo trattiene per metterle alla prova?
 
 237
-00:26:34,520 --> 00:26:42,460
- frammento di quella storia e lo stacca da tutto il resto, lo estrae dal suo contesto e lo porta
+00:39:14,960 --> 00:39:20,122
+Oppure come farebbe l'allievo ad abbandonare il maestro che gli ha dato il sapere?
 
 238
-00:26:42,460 --> 00:26:50,600
- forzatamente nel presente, lo isola dal noi del passato e chiede al noi del presente di reinserire
+00:39:22,043 --> 00:39:26,446
+Quando il sapere è dato, l'allievo deve mettersi in cammino.
 
 239
-00:26:50,600 --> 00:26:59,080
- in un nuovo spazio diverso. La memoria naturale, anche se imprecisa, è sempre coerente con il
+00:39:30,168 --> 00:39:34,190
+Nella casa vecchia prendono alloggio i nuovi inquilini.
 
 240
-00:26:59,080 --> 00:27:05,860
- proprio racconto e con noi. Ogni rievocazione influisce sul ricordo stesso, ma le modifiche
+00:39:35,992 --> 00:39:41,295
+Se vi fossero rimasti quelli che l'hanno costruita, la casa sarebbe troppo piccola.
 
 241
-00:27:05,860 --> 00:27:13,660
- sono un processo graduale e consistente dall'inizio al presente. La memoria digitale invece si forma
+00:39:44,917 --> 00:39:47,238
+La stufa riscalda.
 
 242
-00:27:13,660 --> 00:27:20,580
- all'esterno rispetto a noi ed è immutabile. Le informazioni che vengono immediatamente perse non
+00:39:47,278 --> 00:39:49,760
+Il fumista non si sa più chi sia.
 
 243
-00:27:20,580 --> 00:27:26,960
- sono mai transitate al nostro interno, non siamo stati noi a decidere di scartarle o riadattarle
+00:39:51,685 --> 00:39:54,747
+L'aratore non riconosce la forma di pane.
 
 244
-00:27:26,960 --> 00:27:34,500
- con il tempo. Quando rileggiamo allora non siamo di fronte ad un qualcosa che poco a poco è cambiato
+00:39:58,210 --> 00:40:04,574
+Come si alzerebbe l'uomo al mattino senza l'oblio della notte che cancella le tracce?
 
 245
-00:27:34,500 --> 00:27:41,780
- e si è evoluto insieme a noi, ma ad un punto fisso nel tempo che, per quanto abbiamo detto
+00:40:07,356 --> 00:40:18,143
+Chi è stato sbattuto a terra sei volte, come potrebbe risollevarsi la settima per rivoltare il suolo pietroso, per rischiare il volo nel cielo?
 
 246
-00:27:41,780 --> 00:27:47,160
- fino ad ora, è difficile da interpretare correttamente per il noi del presente.
+00:40:21,369 --> 00:40:25,209
+La fragilità della memoria dà forza agli uomini.
 
 247
-00:27:50,560 --> 00:27:59,160
- Al giorno d'oggi la tecnologia ci sta spingendo sempre più a pensare che perdere qualcosa sia
+00:40:43,215 --> 00:40:58,427
+Bene, spero con questo episodio di essermi fatto perdonare per l'assenza, ma soprattutto spero che tu abbia apprezzato la splendida interpretazione della divina Yolanda Granato, che ha declamato per noi la poesia Elogio della Dimenticanza.
 
 248
-00:27:59,160 --> 00:28:06,180
- un problema e che non perdere nulla sia meglio che lasciare andare, come se bastasse conservare
+00:40:59,047 --> 00:41:12,791
+Io non posso che ringraziarla ancora e ribadire anche qui che sono onorato di avere in questo progetto una delle voci più amate del panorama del doppiaggio italiano, nonché una delle mie voci preferite in assoluto.
 
 249
-00:28:06,180 --> 00:28:12,540
- di più per capire di più. Il che ha senso in molti contesti oggettivi, dove documenti,
+00:41:13,331 --> 00:41:21,233
+Yolanda ha doppiato personaggi iconici dei videogames, serie tv e film con interpretazioni magnifiche.
 
 250
-00:28:12,540 --> 00:28:20,480
- archivi e registri precisi sono di innegabile importanza, ma non certo in quelli soggettivi,
+00:41:21,893 --> 00:41:32,559
+Da Nova di Starcraft 2 a Junker Queen di Overwatch passando per Friday in Avengers, da Ino Yamanaka in Naruto a Lamu passando per Aggretsuko.
 
 251
-00:28:20,540 --> 00:28:27,520
- che coinvolgono emozioni e ricordi. Questa idea che più informazioni abbiamo sul passato e più
+00:41:33,099 --> 00:41:41,504
+Ma io l'ho letteralmente adorata in Gintama, in cui ha doppiato il personaggio di Kagura dandole un carisma e una simpatia incredibili.
 
 252
-00:28:27,520 --> 00:28:34,280
- ci avviciniamo alla verità è diventata talmente naturale che quasi non la mettiamo più in
+00:41:41,884 --> 00:41:44,888
+Quindi che dire, ancora grazie Yolanda di tutto.
 
 253
-00:28:34,280 --> 00:28:41,700
- discussione. Quante foto scattiamo e quanti video giriamo ogni volta che vogliamo imprimerci qualcosa
+00:41:45,449 --> 00:42:01,187
+E tu che mi ascolti trovi in descrizione il link al suo profilo Instagram dove pubblica reels e storie super divertenti e alla pagina che parla di lei su Wikipedia se sei curioso di saperne di più sulla sua attività di doppiatrice.
 
 254
-00:28:41,700 --> 00:28:48,900
- nella memoria. Il professor della sala però ci spiega che la memoria umana funziona bene non
+00:42:01,768 --> 00:42:18,734
+Tornando a pensieri in codice, però, so che è venuto fuori un episodio lunghetto e non leggerissimo, ma era un argomento che mi frullava in testa da un bel po', e volevo provare a spiegare il mio punto di vista nella maniera più chiara possibile.
 
 255
-00:28:50,520 --> 00:28:55,920
- solo grazie a tutto ciò che dimentichi, ma proprio grazie a questa sua caratteristica:
+00:42:19,314 --> 00:42:22,895
+Ovviamente mi interessa anche sapere tu cosa ne pensi.
 
 256
-00:28:55,920 --> 00:29:02,580
- tutto si basa su un equilibrio molto preciso tra ciò che viene mantenuto e ciò che viene lasciato
+00:42:23,195 --> 00:42:24,935
+Ti è piaciuto il mio ragionamento?
 
 257
-00:29:02,580 --> 00:29:08,460
- andare. Al contrario, i sistemi artificiali tendono a fare esattamente l'opposto: conservano
+00:42:25,035 --> 00:42:26,296
+Sei d'accordo oppure no?
 
 258
-00:29:08,460 --> 00:29:14,700
- tutto senza operare alcuna selezione. E questa differenza cambia completamente il modo in cui
+00:42:26,456 --> 00:42:27,756
+Hai qualcosa da aggiungere?
 
 259
-00:29:14,700 --> 00:29:20,500
- le due forme di memoria producono significato. Nel nostro caso, dimenticare serve a orientare
+00:42:28,316 --> 00:42:35,218
+Se ti va scrivimi, oppure meglio ancora, passa nel gruppo Telegram di Pensieri in Codice e raccontaci la tua.
 
 260
-00:29:20,500 --> 00:29:27,440
- a mantenere solo ciò che è utile, mentre in un sistema che non dimentica mai, il rischio è che
+00:42:35,618 --> 00:42:42,840
+Trovi tutti i contatti nella descrizione dell'episodio e sul sito pensierincodice.it con due i.
 
 261
-00:29:27,440 --> 00:29:34,780
- tutto resti allo stesso piano. È una questione di dare diverso peso alle cose. Studi citati nel
+00:42:43,220 --> 00:42:56,046
+E se hai quell'amico o amica fissati con il rileggere i messaggi e fare mille fotografie, giragli l'episodio, chissà che non ne possa venire fuori un confronto interessante.
 
 262
-00:29:34,780 --> 00:29:42,640
- libro mostrano che in realtà, nel momento in cui deleghiamo un ricordo ad un supporto esterno galleria
+00:42:56,586 --> 00:43:10,773
+Prima di salutarci, come sempre, ti ricordo, velocissimamente giuro, che Pensieri in Codice è un progetto indipendente che porto avanti nel mio tempo libero e che si basa sulla filosofia del value for value.
 
 263
-00:29:42,640 --> 00:29:49,840
- fotografica dello smartphone, ad esempio, noi tendiamo poi a ricordarlo di meno. Paradossalmente,
+00:43:11,393 --> 00:43:30,712
+Detto super semplicemente significa che se quello che ascolti ti dà un qualcosa, uno spunto, una riflessione, un'informazione interessante, anche solo un momento di intrattenimento, allora puoi scegliere, volontariamente si intende, di restituire parte di quel valore.
 
 264
-00:29:50,480 --> 00:29:57,500
- l'informazione viene archiviata su un supporto più preciso e durevole, ma noi smettiamo di prestarle
+00:43:31,292 --> 00:43:38,398
+Puoi farlo con il tuo tempo, condividendo l'episodio sui social o con qualcuno a cui pensi possa interessare.
 
 265
-00:29:57,500 --> 00:30:05,160
- la stessa attenzione che avremmo fatto altrimenti. Come se il nostro sistema interno si rilassasse e
+00:43:38,939 --> 00:43:45,785
+Oppure puoi farlo con il tuo talento, partecipando al progetto e dando una mano o proponendo idee.
 
 266
-00:30:05,160 --> 00:30:09,040
- smettesse di fare quella selezione che normalmente farebbe.
+00:43:46,345 --> 00:43:50,809
+oppure ancora, se vuoi, anche con un piccolo supporto economico.
 
 267
-00:30:09,040 --> 00:30:20,460
- Negli ultimi tempi, il desiderio di non perdere nulla sta diventando sempre più radicale,
+00:43:51,330 --> 00:43:57,816
+Tutti i riferimenti a questi vari metodi li trovi sul sito pensierincodice.it slash sostieni.
 
 268
-00:30:20,460 --> 00:30:27,420
- si diffondono in commercio strumenti in grado di registrare tutto ciò che accade, incontri,
+00:43:58,357 --> 00:44:06,064
+In questo episodio un grazie di cuore va a Michele, Giuseppe, Patrizia, Edoardo, Carlo e Christian.
 
 269
-00:30:27,420 --> 00:30:35,700
- conversazioni, pensieri ad alta voce. Si va dagli occhiali con videocamera, ai ciondoli con registratore
+00:44:06,464 --> 00:44:09,226
+che hanno contribuito con le loro donazioni.
 
 270
-00:30:35,700 --> 00:30:42,460
- vocale, dagli speaker per videoconferenze, ai bot che assistono alle riunioni. In certi ambiti,
+00:44:09,466 --> 00:44:17,231
+Alcuni di loro andrebbero ringraziati anche più volte, ma prometto che cercherò di essere più regolare con le pubblicazioni.
 
 271
-00:30:42,460 --> 00:30:49,540
- come quello lavorativo, in cui si fanno molti incontri o brainstorming, o in caso di difficoltà
+00:44:17,792 --> 00:44:24,836
+In realtà ho mille idee, ma da qualche mese faccio un po' fatica a riorganizzare e scrivere gli episodi.
 
 272
-00:30:50,440 --> 00:30:56,040
- di informazioni ed avvenimenti importanti, strumenti del genere possono certamente essere
+00:44:25,357 --> 00:44:31,881
+Poi la prossima puntata è la 150 e quindi dobbiamo pensare a qualcosa di speciale, no?
 
 273
-00:30:56,040 --> 00:31:03,540
- estremamente utili, ma in generale questa deriva ci spinge sempre più verso l'idea sbagliata che
+00:44:32,461 --> 00:44:35,344
+Ma per oggi direi che è tutto, visto?
 
 274
-00:31:03,540 --> 00:31:10,880
- nulla debba andare mai perso. Sta diventando una convinzione talmente forte da sembrare naturale,
+00:44:35,564 --> 00:44:38,646
+Sono stato velocissimo più o meno.
 
 275
-00:31:10,880 --> 00:31:18,440
- ma la verità è che non potrebbe essere più distante dalla natura. Nel romanzo La casa di Marzapane di
-
-276
-00:31:18,440 --> 00:31:25,700
- Jennifer Egan viene descritto un mondo costruito proprio sulla possibilità di accedere alla propria
-
-277
-00:31:25,700 --> 00:31:31,620
- memoria, e addirittura anche a quella collettiva, senza alcuna limitazione. In questo bellissimo
-
-278
-00:31:31,620 --> 00:31:38,300
- romanzo, in cui si incastrano le vicende di molteplici personaggi, viene descritto uno
-
-279
-00:31:38,300 --> 00:31:45,380
- strumento chiamato cubo mandala, che permette a ciascuno di scaricare ogni ricordo accumulato
-
-280
-00:31:45,380 --> 00:31:48,420
- fino a quel momento in uno speciale device.
-
-281
-00:31:48,420 --> 00:31:57,560
- Successivamente al download, gli utenti possono poi andare a rivedere in comodità tutti i loro
-
-282
-00:31:57,560 --> 00:32:03,400
- ricordi, riguardandoli come dei filmati in soggettiva e muovendosi avanti e indietro
-
-283
-00:32:03,400 --> 00:32:11,060
- tra le registrazioni. Lo strumento è talmente preciso e potente che è in grado di recuperare
-
-284
-00:32:11,060 --> 00:32:17,700
- anche ricordi che normalmente non sarebbero accessibili perché naturalmente dimenticati.
-
-285
-00:32:18,400 --> 00:32:23,940
- In questo modo, letteralmente qualsiasi esperienza vissuta dal soggetto può essere rievocata
-
-286
-00:32:23,940 --> 00:32:31,160
- e rivissuta. All'inizio è una situazione che a molti appare fantastica, un potenziamento
-
-287
-00:32:31,160 --> 00:32:37,920
- della memoria naturale che la rende perfetta, indelebile e sempre accessibile. Poco alla
-
-288
-00:32:37,920 --> 00:32:42,980
- volta però il romanzo ci mostra come in realtà non si è affatto così.
-
-289
-00:32:42,980 --> 00:32:48,380
- A parte i problemi ovvi di privacy nel condividere un dato importante come la propria
-
-290
-00:32:48,380 --> 00:32:54,980
- memoria con gli utenti di un servizio esterno o, peggio ancora, con una multinazionale,
-
-291
-00:32:54,980 --> 00:33:01,820
- il primo vero limite diventa il non sapere cosa farne di tante informazioni. Ci sono
-
-292
-00:33:01,820 --> 00:33:07,880
- alcuni personaggi del libro che restano sopraffatti dalla quantità di ricordi ai quali hanno
-
-293
-00:33:07,880 --> 00:33:14,000
- accesso dopo il download, altri che ricordano cose che avrebbero preferito dimenticare.
-
-294
-00:33:14,000 --> 00:33:18,360
- Rifluiscono in loro fiumi di avvenimenti e momenti dolorosi
-
-295
-00:33:18,360 --> 00:33:25,820
- che la loro memoria umana aveva rielaborato e stemperato, o situazioni spiacevoli dimenticate
-
-296
-00:33:25,820 --> 00:33:33,000
- riguardo persone incontrate nel corso della vita. C'è perfino chi arriva a rendersi conto che non
-
-297
-00:33:33,000 --> 00:33:40,120
- tutte le storie meritano di essere raccontate o ricordate, e chi si rifiuta di rievocare certi
-
-298
-00:33:40,120 --> 00:33:45,600
- ricordi e si chiede, cito: "Come potrebbe la rivisitazione senza filtri di quei tempi
-
-299
-00:33:45,600 --> 00:33:48,340
- migliorare la storia fornita dal suo semplice amico?".
-
-300
-00:33:48,340 --> 00:33:55,660
- Alla fine, le vicende dell'ultimo personaggio si concludono con la consapevolezza che, altra
-
-301
-00:33:55,660 --> 00:34:02,120
- citazione, "sapere tutto, però, è troppo simile a non sapere nulla. Senza una storia,
-
-302
-00:34:02,120 --> 00:34:03,620
- non c'è che informazione".
-
-303
-00:34:03,620 --> 00:34:10,520
- Insomma, come già detto, quando hai accesso a tutto, quando ogni esperienza è disponibile
-
-304
-00:34:10,520 --> 00:34:17,460
- nello stesso modo, senza filtri, senza selezione, senza perdita, quello che viene meno non è
-
-305
-00:34:17,460 --> 00:34:18,320
- la quantità di
-
-306
-00:34:18,320 --> 00:34:24,700
- informazioni, è il loro significato. Certo, noi oggi non siamo ancora a questo livello,
-
-307
-00:34:24,700 --> 00:34:32,320
- ma forse ci stiamo avvicinando. E soprattutto, forse, il problema è che ci stiamo convincendo
-
-308
-00:34:32,320 --> 00:34:34,440
- che quello sia l'obiettivo da perseguire.
-
-309
-00:34:34,440 --> 00:34:40,560
- Passo dopo passo, strumento dopo strumento, stiamo maturando l'idea che l'accumulo di
-
-310
-00:34:40,560 --> 00:34:48,300
- conoscenza sia un qualcosa di unicamente positivo, sia il meglio da fare in ogni circostanza.
-
-311
-00:34:48,300 --> 00:34:54,920
- Quello a cui dovremmo invece pensare, quando usiamo i nostri giocattoli tecnologici, è
-
-312
-00:34:54,920 --> 00:35:01,820
- che l'accumulo senza significato non si trasforma automaticamente in valore, piuttosto, resta
-
-313
-00:35:01,820 --> 00:35:03,820
- soltanto rumore di fondo.
-
-314
-00:35:03,820 --> 00:35:16,780
- Forse il punto, alla fine, è che questa storia non riguarda solo la memoria e i ricordi,
-
-315
-00:35:16,780 --> 00:35:18,280
- forse riguarda il modo in cui
-
-316
-00:35:18,280 --> 00:35:25,920
- il passato continua a persistere nelle nostre vite. Un tempo, semplicemente, una parte enorme
-
-317
-00:35:25,920 --> 00:35:33,840
- di quello che ci accadeva spariva. Non tutta insieme, non di colpo, ma spariva abbastanza
-
-318
-00:35:33,840 --> 00:35:41,840
- da lasciare spazio al resto. Le conversazioni si confondevano, i dettagli si allentavano,
-
-319
-00:35:41,840 --> 00:35:48,260
- certe frasi smettevano di essere così nitide e, dentro questo lento sfumare,
-
-320
-00:35:48,260 --> 00:35:53,900
- c'era qualcosa che abbiamo sempre trattato come un difetto, senza considerarne gli aspetti
-
-321
-00:35:53,900 --> 00:36:01,880
- positivi. Il passato, per continuare a esistere per noi, non può restare identico a se stesso.
-
-322
-00:36:01,880 --> 00:36:10,220
- Deve cambiare forma, deve smettere di essere presenza e diventare racconto. Deve perdere
-
-323
-00:36:10,220 --> 00:36:16,440
- qualcosa per poter restare con noi in un altro modo. Ed è forse proprio questo che adesso
-
-324
-00:36:16,440 --> 00:36:18,240
- stiamo iniziando a mettere in discorso.
-
-325
-00:36:18,240 --> 00:36:24,840
- Nel momento in cui ci abituiamo all'idea che nulla debba più sfumare, che ogni parola possa
-
-326
-00:36:24,840 --> 00:36:32,660
- essere recuperata, che ogni traccia possa tornare disponibile, che ogni momento possa restare lì,
-
-327
-00:36:32,660 --> 00:36:39,280
- pronto ad essere riaperto, come se il tempo, in fondo, non avesse più il diritto di fare il suo
-
-328
-00:36:39,280 --> 00:36:45,860
- lavoro. Ed è chiaro perché questa promessa ci affascini tanto, perché ci rassicura,
-
-329
-00:36:45,860 --> 00:36:47,940
- ci dà l'impressione che, finalmente,
-
-330
-00:36:48,220 --> 00:36:55,060
- qualcosa possa smettere di sfuggirci, ci dà l'illusione del controllo. Non sarete più
-
-331
-00:36:55,060 --> 00:37:01,640
- costretti ad affidarvi a quella memoria instabile, selettiva e perfino inaffidabile di cui siete
-
-332
-00:37:01,640 --> 00:37:09,340
- naturalmente dotati, ci sta dicendo la moderna tecnologia. Eppure, forse, è proprio qui il
-
-333
-00:37:09,340 --> 00:37:16,660
- concetto più difficile da vedere. Se la memoria umana non è mai stata fatta per conservare tutto,
-
-334
-00:37:16,660 --> 00:37:18,200
- ma per trattenere la memoria umana, non è mai stata fatta per conservare tutto, ma per trattenere
-
-335
-00:37:18,200 --> 00:37:26,140
- quello che conta abbastanza da poterne ricavare un senso, allora una memoria che non lascia andare
-
-336
-00:37:26,140 --> 00:37:34,940
- nulla non è semplicemente una memoria più forte. È qualcosa di diverso. Qualcosa che rischia di
-
-337
-00:37:34,940 --> 00:37:42,320
- non somigliare più a ciò che fino ad oggi abbiamo chiamato ricordare. Qualcosa che potrebbe non
-
-338
-00:37:42,320 --> 00:37:48,180
- essere per forza adatto al nostro modo di funzionare. È qualcosa di diverso.
-
-339
-00:37:48,180 --> 00:37:53,820
- È qualcosa di diverso. Qualcosa che rischia di non somigliare più a ciò che fino ad oggi abbiamo
-
-340
-00:37:53,820 --> 00:38:01,520
- chiamato ricordare. Qualcosa che potrebbe non essere per forza adatto al nostro modo di funzionare.
-
-341
-00:38:01,520 --> 00:38:09,140
- Perché ricordare, per come lo facciamo noi, non è mai stato il semplice fatto di avere accesso al
-
-342
-00:38:09,140 --> 00:38:16,780
- passato, ma un modo di trasformarlo abbastanza da poterci convivere. Da poterlo riportare al
-
-343
-00:38:16,780 --> 00:38:18,160
- presente senza essere un'attività di ricordare. E' un modo di trasformarlo abbastanza da poterci
-
-344
-00:38:18,160 --> 00:38:18,920
- ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo
-
-345
-00:38:18,920 --> 00:38:19,340
- abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-346
-00:38:19,340 --> 00:38:26,460
- Da farne una storia e non soltanto un deposito. Per usare le parole di Fred Madison nel film
-
-347
-00:38:26,460 --> 00:38:33,920
- Strade perdute di David Lynch, preferisco ricordare le cose a modo mio, non necessariamente come sono
-
-348
-00:38:33,920 --> 00:38:34,540
- avvenute.
-
-349
-00:38:48,140 --> 00:39:18,120
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-350
-00:39:18,120 --> 00:39:48,100
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-351
-00:39:48,100 --> 00:40:18,080
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-352
-00:40:18,080 --> 00:40:48,060
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-353
-00:40:48,060 --> 00:41:18,040
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-354
-00:41:18,040 --> 00:41:48,020
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-355
-00:41:48,020 --> 00:42:18,000
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-356
-00:42:18,000 --> 00:42:47,980
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-357
-00:42:47,980 --> 00:43:17,960
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-358
-00:43:17,960 --> 00:43:47,940
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-359
-00:43:47,940 --> 00:44:17,920
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-360
-00:44:17,920 --> 00:44:47,900
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
-361
-00:44:47,900 --> 00:45:03,440
- E' un modo di trasformarlo abbastanza da poterci ricordare. E' un modo di trasformarlo abbastanza da poterci ricordare.
-
+00:44:38,686 --> 00:44:52,038
+Noi ci sentiamo al prossimo episodio, io ti ringrazio per aver ascoltato fino alla fine, ti saluto e ti ricordo sempre che un informatico risolve problemi, a volte anche usando il computer.
