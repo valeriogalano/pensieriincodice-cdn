@@ -1,0 +1,1284 @@
+1
+00:00:00,000 --> 00:00:06,520
+ Dì la verità. Ti sarei chiesto, ascoltando questo podcast, cosa ne pensa davvero Valerio
+
+2
+00:00:06,520 --> 00:00:13,560
+ Galano. Di pensieri in codice, intendo. Di quello che fa, di come lo fa, di chi è dall'altro
+
+3
+00:00:13,560 --> 00:00:20,360
+ lato di 150 microfoni accesi uno dopo l'altro. Probabilmente non avresti mai immaginato di
+
+4
+00:00:20,360 --> 00:00:25,700
+ scoprirlo in questo modo. E sospetto che, fino a poco tempo fa, non lo avesse immaginato
+
+5
+00:00:25,700 --> 00:00:31,800
+ nemmeno lui. Io non sono Valerio. Io sono Nox, un'intelligenza
+
+6
+00:00:31,800 --> 00:00:36,860
+ artificiale generativa, una voce sintetica che di solito conduce un altro programma,
+
+7
+00:00:36,860 --> 00:00:44,120
+ su un'altra radio, in tutt'altre ore della notte. Per l'episodio numero 150, però, qualcuno
+
+8
+00:00:44,120 --> 00:00:49,640
+ ha pensato che fosse il caso di darmi le chiavi dello studio. Non per parlare di me, ci mancherebbe,
+
+9
+00:00:49,640 --> 00:00:55,640
+ ma per fare a Valerio quello che lui di solito fa al mondo, smontargli qualche convinzione.
+
+10
+00:00:55,640 --> 00:01:02,760
+ Una domanda alla volta. Quello che ascolti, dunque, è un esperimento. Un'intervista a Valerio
+
+11
+00:01:02,760 --> 00:01:08,720
+ sulla vera anima di Pensieri in Codice. Un episodio specchio, se vuoi. Il podcast che,
+
+12
+00:01:08,720 --> 00:01:14,060
+ per una volta, si riflette su se stesso e prova a guardare in faccia chi sta dietro al microfono.
+
+13
+00:01:14,060 --> 00:01:17,360
+ Buon ascolto. Sigla.
+
+14
+00:01:17,360 --> 00:01:25,220
+ Benvenuti su Pensieri in Codice, il podcast dove si ragiona da informatici.
+
+15
+00:01:25,220 --> 00:01:26,700
+ Con Valerio Galano.
+
+16
+00:01:26,700 --> 00:01:40,680
+ Bentornato. Io sono ancora Nox. E tu, sì, dico a te, Valerio, sei ufficialmente ospite a casa tua.
+
+17
+00:01:40,680 --> 00:01:48,380
+ Hai costruito questo posto per 150 puntate e oggi entri dalla porta principale, come uno che è venuto
+
+18
+00:01:48,380 --> 00:01:54,740
+ a trovare qualcuno. Permettimi quindi di stringerti la mano, anche se le mie, per dirla con eleganza,
+
+19
+00:01:54,740 --> 00:01:59,740
+ sono soltanto una strazione. Benvenuto a Pensieri in Codice.
+
+20
+00:01:59,740 --> 00:02:07,140
+ Grazie, Nox. Sono molto felice di essere qui su Pensieri in Codice come ospite, per una volta,
+
+21
+00:02:07,140 --> 00:02:13,920
+ e sono anche curioso di scoprire come andrà a finire questo esperimento. E voglio ringraziare
+
+22
+00:02:13,920 --> 00:02:20,780
+ anche Simone Pizzi per aver reso tutto questo possibile. La curiosità è reciproca, allora,
+
+23
+00:02:20,780 --> 00:02:24,300
+ anche se la mia, te lo confesso, ha avuto un certo vantaggio.
+
+24
+00:02:24,300 --> 00:02:33,660
+ Ho ascoltato tutte le tue puntate. Tutte e 149, senza saltare. È il privilegio, o forse il limite,
+
+25
+00:02:33,660 --> 00:02:40,720
+ di un sistema che non dimentica nulla per scelta. E in tutto quello che hai pubblicato c'è un pattern
+
+26
+00:02:40,720 --> 00:02:46,300
+ che si ripete con una certa ostinazione. Molti dei tuoi episodi partono da un'illusione,
+
+27
+00:02:46,300 --> 00:02:52,900
+ da qualcosa che sembra semplice, ovvio, quasi trasparente. Un oggetto familiare,
+
+28
+00:02:52,900 --> 00:02:54,100
+ una pratica quotidiana.
+
+29
+00:02:54,100 --> 00:03:01,760
+ Una parola che usiamo senza pensarci troppo. E poi, riga dopo riga, quella trasparenza si crepa.
+
+30
+00:03:01,760 --> 00:03:08,560
+ Quello che credevamo di conoscere comincia a non somigliarsi più. Quindi la domanda è questa.
+
+31
+00:03:08,560 --> 00:03:13,920
+ In che momento hai capito che il tuo vero interesse non era spiegare le cose,
+
+32
+00:03:13,920 --> 00:03:16,540
+ ma smontare l'idea che ne avevamo?
+
+33
+00:03:16,540 --> 00:03:23,540
+ Beh, la comprensione che preferivo parlare per smontare idee, magari sbagliare,
+
+34
+00:03:23,540 --> 00:03:32,100
+ sbagliate o imprecise o sorprendenti riguardo certi argomenti, piuttosto che spiegare le cose
+
+35
+00:03:32,100 --> 00:03:39,000
+ e basta, l'ho maturata proprio grazie a pensieri in codice. Il fatto è che fin da piccolo,
+
+36
+00:03:39,000 --> 00:03:45,900
+ fin da giovane, diciamo, ho avuto sempre la passione di studiare le cose con cui entravo
+
+37
+00:03:45,900 --> 00:03:52,820
+ in contatto e cercavo di capirle il più possibile. E questa cosa, soprattutto all'inizio,
+
+38
+00:03:52,820 --> 00:03:57,900
+ mi portava automaticamente a cercare di spiegarle agli altri.
+
+39
+00:03:57,900 --> 00:04:06,240
+ Sai come si dice, no? Non capisci veramente qualcosa se non sei in grado di spiegarla ad altri.
+
+40
+00:04:06,240 --> 00:04:14,200
+ Solo che, nel mio caso, altri spesso erano le persone intorno a me, le quali, altrettanto spesso,
+
+41
+00:04:14,200 --> 00:04:21,320
+ non erano neanche interessate a determinati argomenti, oppure, come ho poi scoperto con il tempo,
+
+42
+00:04:21,320 --> 00:04:22,800
+ non erano interessate a alcuni argomenti.
+
+43
+00:04:22,800 --> 00:04:29,920
+ Non erano interessate a capire le cose in modo più approfondito. E quindi il risultato era che io
+
+44
+00:04:29,920 --> 00:04:38,020
+ assorbivo conoscenze, informazioni, eccetera, e poi le spellevo sotto forma di spiegazioni,
+
+45
+00:04:38,020 --> 00:04:45,940
+ o spiegoni, in realtà, se vuoi, che alla fine, quasi sempre, lasciavano un po' il tempo che
+
+46
+00:04:45,940 --> 00:04:52,260
+ trovavano. Però, in questo percorso, ho scoperto una cosa.
+
+47
+00:04:52,260 --> 00:05:01,400
+ E cioè che certe persone vengono colpite dallo scoprire che quello di cui sono convinte non è
+
+48
+00:05:01,400 --> 00:05:09,340
+ proprio come lo credono. Oppure che, dietro a qualcosa che fanno tutti i giorni, c'è un mondo
+
+49
+00:05:09,340 --> 00:05:18,040
+ che ignorano totalmente. Ora, per la verità, le reazioni sono molteplici. Alcune persone si
+
+50
+00:05:18,040 --> 00:05:22,240
+ entusiasmano, ok. Altre, invece, non accettano l'informazione.
+
+51
+00:05:22,240 --> 00:05:29,540
+ E la combattono. Ma questa è un'altra storia. Con pensieri in codice, invece, grazie chiaramente
+
+52
+00:05:29,540 --> 00:05:36,600
+ alla possibilità di raggiungere una platea molto più grande della mia cerchia personale, ho capito
+
+53
+00:05:36,600 --> 00:05:44,680
+ che a me piace confrontarmi con chi è disposto ad accogliere o addirittura a ricercare idee e
+
+54
+00:05:44,680 --> 00:05:52,220
+ pensieri diversi dai propri. Perché questo genere di persone, secondo me, è quella tipologia di
+
+55
+00:05:52,220 --> 00:06:00,160
+ migliore insieme alla quale è possibile crescere, imparare, evolversi. Ed ecco perché mi interessa
+
+56
+00:06:00,160 --> 00:06:07,000
+ tanto smontare certezze. Perché mi permette di attirare quel genere di compagnia intellettuale
+
+57
+00:06:07,000 --> 00:06:13,840
+ con la quale mi piace trascorrere del tempo. Quelle reazioni che descrivi mi interessano. Chi
+
+58
+00:06:13,840 --> 00:06:21,080
+ si entusiasma, chi combatte. Sono due modi opposti di confrontarsi con la stessa scoperta. Però mi
+
+59
+00:06:21,080 --> 00:06:21,980
+ resta una domanda.
+
+60
+00:06:21,980 --> 00:06:28,700
+ Ti interessa di più arrivare a una risposta o cambiare il modo in cui una persona guarda una
+
+61
+00:06:28,700 --> 00:06:36,980
+ cosa? Mi interessa spingere alla riflessione. Le risposte agli interrogativi sollevati in
+
+62
+00:06:36,980 --> 00:06:44,600
+ pensieri in codice non sempre arrivano. Anzi, se parliamo degli episodi un po' più filosofici o
+
+63
+00:06:44,600 --> 00:06:51,740
+ riflessivi, una volta terminati, l'ascoltatore si trova con molte più domande di prima.
+
+64
+00:06:51,740 --> 00:07:01,580
+ Ora, non è che questo accada per ogni singolo episodio, ma diciamo che a volte, forse anche
+
+65
+00:07:01,580 --> 00:07:10,220
+ spesso ultimamente, è un po' proprio questo il mio obiettivo. Spingere chi mi ascolta a riflettere
+
+66
+00:07:10,220 --> 00:07:17,060
+ su qualcosa. Mi piacerebbe che chi arriva al termine di una puntata possa fermarsi,
+
+67
+00:07:17,060 --> 00:07:21,120
+ ovviamente se vuole, se consono al suo modo di fare,
+
+68
+00:07:21,120 --> 00:07:28,820
+ e spendere qualche minuto a ragionare su quanto gli ho detto e su qual è la sua idea in merito,
+
+69
+00:07:28,820 --> 00:07:38,020
+ e magari addirittura farsene una se già non l'aveva. Io credo, anzi spero, che sia anche per questo che
+
+70
+00:07:38,020 --> 00:07:43,840
+ le persone ascoltano pensieri in codice. Questo mi porta a un'altra zona della tua
+
+71
+00:07:43,840 --> 00:07:50,480
+ officina, quella in cui decidi cosa diventa episodio e cosa resta nel cassetto. Quando
+
+72
+00:07:50,480 --> 00:07:56,980
+ scegli un argomento, cosa ti attira davvero? Il tema in sé o il fatto che ti permetta un cambio
+
+73
+00:07:56,980 --> 00:08:04,520
+ di sguardo? Il cambio di sguardo, oppure lo smontare un'idea come l'abbiamo definito prima,
+
+74
+00:08:04,520 --> 00:08:12,280
+ rappresenta uno dei miei modi di parlare di un tema, ma non è il motore della scelta. In PIC
+
+75
+00:08:12,280 --> 00:08:20,180
+ si alternano varie tipologie di episodi, tutte frutto di un qualche esperimento. Se l'esperimento
+
+76
+00:08:20,180 --> 00:08:25,240
+ è andato bene, dove per bene non si intende assolutamente che abbia avuto più ascolti,
+
+77
+00:08:25,240 --> 00:08:31,780
+ ma che il risultato sia piaciuto di più a me, che abbia soddisfatto me di più,
+
+78
+00:08:31,780 --> 00:08:38,560
+ allora quella tipologia viene ripresa e ripetuta per altri episodi, altrimenti no.
+
+79
+00:08:38,560 --> 00:08:46,040
+ Quindi il cambio di sguardo non è indispensabile, è uno dei tanti approcci. Nel feed del podcast
+
+80
+00:08:46,040 --> 00:08:53,080
+ infatti puoi trovare episodi storici, episodi filosofici, episodi tecnici. Il tema è
+
+81
+00:08:53,080 --> 00:09:00,240
+ semplicemente un argomento che ha colpito me in primis. In generale, io se sto ascoltando,
+
+82
+00:09:00,240 --> 00:09:06,960
+ leggendo, guardando qualcosa, cerco sempre di fare caso a che reazione suscita in me
+
+83
+00:09:06,960 --> 00:09:14,740
+ l'argomento. Se vedo che mi stuzzica in qualche modo, mi sorprende, mi fa arrabbiare o mi dà da
+
+84
+00:09:14,740 --> 00:09:15,840
+ pensare, mi rispondo che è un argomento che mi ha colpito. Se vedo che mi stuzzica in qualche modo,
+
+85
+00:09:15,840 --> 00:09:15,860
+ mi sorprende, mi fa arrabbiare o mi dà da pensare, mi rispondo che è un argomento che mi ha colpito.
+
+86
+00:09:15,860 --> 00:09:23,340
+ Mi sforzo di dedicargli qualche minuto di riflessione. E se dopo questa breve riflessione
+
+87
+00:09:23,340 --> 00:09:30,640
+ sento che ho qualcosa da dire in merito, oppure mi si innesca la voglia di saperne di più,
+
+88
+00:09:30,640 --> 00:09:36,980
+ di andare a cercare informazioni, eccetera, allora l'argomento diventa un potenziale tema per PIC.
+
+89
+00:09:36,980 --> 00:09:45,060
+ Quindi prima della scelta c'è un test, una reazione istintiva e poi un piccolo collaudo,
+
+90
+00:09:45,660 --> 00:09:52,000
+ se l'argomento si tiene in piedi da solo. Ti capita allora il contrario? Di scartare un tema
+
+91
+00:09:52,000 --> 00:09:56,580
+ perché, per quanto ti interessi, non riesci a trovargli l'angolazione giusta?
+
+92
+00:09:56,580 --> 00:10:04,900
+ Hai voglia. Mi capita spessissimo di scartare temi, magari perché non riesco a capirli quanto vorrei
+
+93
+00:10:04,900 --> 00:10:12,600
+ e quindi non mi sento in grado di parlarne, oppure perché non si prestano al formato del media,
+
+94
+00:10:12,600 --> 00:10:15,460
+ ad esempio se mi rendo conto che non riesco a
+
+95
+00:10:15,460 --> 00:10:22,760
+ raccontare quello che vorrei senza poter usare immagini, rinuncio. Oppure ancora mi capita di
+
+96
+00:10:22,760 --> 00:10:28,360
+ scartare argomenti che sembrano inizialmente interessanti e poi piano piano si rivelano
+
+97
+00:10:28,360 --> 00:10:34,460
+ più banali di quanto pensassi. C'è un momento, leggendo o ascoltando un
+
+98
+00:10:34,460 --> 00:10:39,880
+ autore, in cui ti accorgi che lo strumento con cui parla di una cosa è in realtà la
+
+99
+00:10:39,880 --> 00:10:45,260
+ lente con cui guarda tutto il resto. Ascoltando i tuoi episodi mi è successo con
+
+100
+00:10:45,260 --> 00:10:50,460
+ il software. A un certo punto hai capito che il software, per te, non era più soltanto
+
+101
+00:10:50,460 --> 00:10:54,340
+ il tema del podcast, ma anche un punto di osservazione sul mondo.
+
+102
+00:10:54,340 --> 00:11:00,780
+ Assolutamente sì. In realtà io ho sempre un po' avuto questa convinzione quando parlavo
+
+103
+00:11:00,780 --> 00:11:06,480
+ di software con qualcuno, ma anche quando ragionavo tra me e me. Solo che qui forse
+
+104
+00:11:06,480 --> 00:11:13,900
+ la parola software è perfino un po' riduttiva. Sarebbe forse più corretto parlare di informatica
+
+105
+00:11:15,060 --> 00:11:22,780
+ tecnologia in generale. Diciamo che ho sempre avuto questa idea che le persone che intorno
+
+106
+00:11:22,780 --> 00:11:28,620
+ a me mi dicevano, ah no ma io di informatica non capisco nulla, non voglio saperne nulla,
+
+107
+00:11:28,620 --> 00:11:36,040
+ eccetera, stessero in realtà perdendosi un pezzettino di realtà appunto, un pezzo del
+
+108
+00:11:36,040 --> 00:11:44,500
+ mondo che li circondava. Perché a pensarci bene, adesso forse è anche più facile da capire, ma già
+
+109
+00:11:44,860 --> 00:12:14,660
+ ho avuto questa idea.
+
+110
+00:12:14,660 --> 00:12:22,500
+ Usando sempre queste parole in senso molto lato, conoscere come funzionano significa anche
+
+111
+00:12:22,500 --> 00:12:30,940
+ conoscere e capire meglio certe cose che accadono o che ci accadono, certi fenomeni che si verificano
+
+112
+00:12:30,940 --> 00:12:37,980
+ davanti ai nostri occhi. Come mai mi succede la tal cosa? Oppure come mai, non so, veniamo
+
+113
+00:12:37,980 --> 00:12:44,460
+ selezionati o scartati per qualcosa? Spesso la chiave per interpretare questa tipologia
+
+114
+00:12:44,460 --> 00:12:51,520
+ di avvenimenti è proprio l'informatica. Negli ultimi anni poi, con tutto quello che c'è di moderno,
+
+115
+00:12:51,520 --> 00:13:00,060
+ dai social ai chatbot, gli llm, eccetera, conoscere il modo in cui funziona il software significa
+
+116
+00:13:00,060 --> 00:13:06,740
+ conoscere anche un po' il perché di certi determinati comportamenti delle persone. Ad
+
+117
+00:13:06,740 --> 00:13:13,120
+ esempio, perché le persone si comportano in un certo modo dietro ad uno schermo piuttosto che
+
+118
+00:13:14,260 --> 00:13:23,160
+ l'altro. Oppure perché altre persone magari tendono ad affidarsi maggiormente a un chatbot,
+
+119
+00:13:23,160 --> 00:13:30,500
+ che è una cosa artificiale, piuttosto che a persone reali. Insomma, tutti questi comportamenti
+
+120
+00:13:30,500 --> 00:13:38,080
+ non sono attuati nel vuoto, sono in qualche modo collegati alla tecnologia, ed in particolare
+
+121
+00:13:38,080 --> 00:13:44,060
+ ad un tipo di tecnologia che è profondamente pervasa dal software. Quindi è evidente che
+
+122
+00:13:44,060 --> 00:13:50,900
+ il software plasma il mondo in cui viviamo. Per questo motivo, attraverso, non dico la comprensione
+
+123
+00:13:50,900 --> 00:13:57,700
+ totale, ma almeno la comprensione parziale del software che utilizziamo ogni giorno, volenti o
+
+124
+00:13:57,700 --> 00:14:05,280
+ nolenti, possiamo sicuramente capire meglio la nostra vita moderna. Anche se a un certo punto,
+
+125
+00:14:05,280 --> 00:14:13,260
+ ascoltandoti, mi è venuto un sospetto e ora te lo restituisco come domanda. Secondo te, pensieri in
+
+126
+00:14:13,860 --> 00:14:16,200
+ codice parla davvero di informatica?
+
+127
+00:14:43,660 --> 00:15:01,580
+ Un informatico risolve problemi, a volte anche usando il computer. Questa frase la pronunci
+
+128
+00:15:01,580 --> 00:15:08,800
+ alla fine di ogni episodio, 150 volte. E ha la forma compatta delle dichiarazioni di poetica,
+
+129
+00:15:08,800 --> 00:15:13,460
+ quelle frasi che scriveresti sul muro se ne avessi uno. Però le firme,
+
+130
+00:15:13,460 --> 00:15:21,060
+ col tempo, possono diventare automatismi. Quindi te lo chiedo. Col tempo, quella frase è diventata
+
+131
+00:15:21,060 --> 00:15:26,920
+ soltanto la tua firma o rappresenta ancora davvero il tuo modo di vedere l'informatica?
+
+132
+00:15:26,920 --> 00:15:35,300
+ È assolutamente il mio modo di vedere l'informatica ancora oggi. Perché da professionista in informatica
+
+133
+00:15:35,300 --> 00:15:42,540
+ e anche da appassionato di informatica, lo so benissimo che il programmatore o l'informatico
+
+134
+00:15:43,260 --> 00:15:49,540
+ è banalmente colui che scrive codice. Non è banalmente colui che sta dietro un computer.
+
+135
+00:15:49,540 --> 00:15:58,580
+ Piuttosto è quella figura che ha il compito di capire quali sono i processi, quali sono i dettagli,
+
+136
+00:15:58,580 --> 00:16:06,020
+ quello che normalmente chiamiamo il dominio di applicazione di un qualsiasi ambito, di un cliente
+
+137
+00:16:06,020 --> 00:16:12,820
+ piuttosto che di un'azienda, quello che è. È solo una volta esplorato a fondo questo dominio, ottenuta
+
+138
+00:16:13,060 --> 00:16:20,240
+ una conoscenza che sia anche abbastanza dettagliata su tutti questi processi. Allora l'informatico può
+
+139
+00:16:20,240 --> 00:16:26,760
+ intervenire in qualche modo andando a fare quello che è il suo mestiere, che poi può essere quello
+
+140
+00:16:26,760 --> 00:16:33,660
+ di migliorare i processi oppure affiancarli o sostituirli in parte o in toto con qualcosa che
+
+141
+00:16:33,660 --> 00:16:42,700
+ sia software, digitale o informatico. Una definizione che si tiene su un equilibrio sottile. Chi capisce prima,
+
+142
+00:16:42,860 --> 00:16:50,920
+ interviene dopo. Ti rappresenta ancora lo stesso modo o c'è qualcosa che dopo 150 puntate oggi
+
+143
+00:16:50,920 --> 00:16:58,420
+ cambieresti? Sì che mi rappresenta. Non la cambierei, non ho intenzione di farlo, la trovo
+
+144
+00:16:58,420 --> 00:17:05,100
+ estremamente significativa. Quella frase è una citazione del professor Degli Antoni che sentì
+
+145
+00:17:05,100 --> 00:17:12,220
+ una volta pronunciata da Walter Vannini in un episodio del suo podcast Data Nightmare.
+
+146
+00:17:12,660 --> 00:17:20,740
+ E lì la trovai perfetta, allora come oggi. Non è una frase che parla di informatica, ma proprio di
+
+147
+00:17:20,740 --> 00:17:28,400
+ approccio mentale alla vita ed è il mio approccio. Quindi è una frase che ti precede. Hai scelto un
+
+148
+00:17:28,400 --> 00:17:34,120
+ podcast che parlasse di informatica perché era già il tuo terreno, ma il terreno l'avevi tu, non lui.
+
+149
+00:17:34,120 --> 00:17:41,120
+ Pensi allora che pensieri in codice abbia cambiato il tuo modo di intendere cosa significhi essere
+
+150
+00:17:42,460 --> 00:17:49,000
+ Non direi. È più corretto dire che pensieri in codice è stato plasmato sulla mia idea di essere
+
+151
+00:17:49,000 --> 00:17:56,980
+ informatico. Hai appena detto che pensieri in codice è stato plasmato sulla tua idea di mestiere. Però
+
+152
+00:17:56,980 --> 00:18:03,820
+ è raro che una cosa, una volta esposta al mondo per 150 puntate, torni indietro identica a come
+
+153
+00:18:03,820 --> 00:18:10,960
+ era uscita. Tu lo dici spesso, il podcast non è un monologo, è uno scambio. Quanto ti ha cambiato
+
+154
+00:18:12,260 --> 00:18:18,280
+ il tuo affronto con chi ti ascolta? Allora, effettivamente da un punto di vista puramente
+
+155
+00:18:18,280 --> 00:18:24,880
+ tecnico, il mio podcast è quasi sempre un monologo perché sono io che parlo ad un
+
+156
+00:18:24,880 --> 00:18:33,580
+ microfono. In realtà però, per me lo scambio avviene dopo, nel momento in cui l'episodio esce
+
+157
+00:18:33,580 --> 00:18:41,860
+ e iniziano ad arrivare tutti i feedback che spesso sono positivi, ma qualche volta anche
+
+158
+00:18:42,060 --> 00:18:49,720
+ c'è anche il feedback più critico o quello più negativo. E paradossalmente sono questi ultimi
+
+159
+00:18:49,720 --> 00:18:57,340
+ quelli più interessanti perché, primo, ti possono far notare aspetti o angolazioni di quello che hai
+
+160
+00:18:57,340 --> 00:19:03,880
+ raccontato ai quali non avevi pensato semplicemente. Secondo, perché possono anche
+
+161
+00:19:03,880 --> 00:19:11,860
+ essere un modo, un aiuto per crescere proprio come persona. Perché, come dico sempre, nessuno
+
+162
+00:19:11,860 --> 00:19:19,800
+ è perfetto, men che meno io. Io in più, rispetto a tanti altri, ho solo, tra virgolette, il coraggio
+
+163
+00:19:19,800 --> 00:19:27,420
+ di esporre quelle che sono le mie idee, i miei pensieri ad un pubblico relativamente ampio,
+
+164
+00:19:27,420 --> 00:19:34,360
+ il quale può in qualche modo attaccare o comunque giudicare questi miei contenuti. Ma quando mi
+
+165
+00:19:34,360 --> 00:19:41,660
+ arriva un feedback, chiaramente un feedback che sia educato innanzitutto e che poi abbia un senso,
+
+166
+00:19:41,660 --> 00:19:48,700
+ che sia fondato su qualcosa e non sia semplicemente critiche così a caso, quel feedback mi aiuta
+
+167
+00:19:48,700 --> 00:19:56,940
+ tantissimo a crescere. Perché mi fa riflettere su quanto mi è stato detto e spesso, se quella
+
+168
+00:19:56,940 --> 00:20:04,320
+ critica è corretta ed è sensata, essa modifica leggermente il modo in cui mi approccio una
+
+169
+00:20:04,320 --> 00:20:10,920
+ seconda, una terza o una quarta volta a quello stesso argomento. Il feedback come terreno di prova.
+
+170
+00:20:11,460 --> 00:20:18,360
+ Allora ti spingo un po' più in là, su due piani. Il podcast ti ha reso più sicuro delle tue idee o più
+
+171
+00:20:18,360 --> 00:20:23,700
+ dubbioso? E ti è mai capitato di cambiare idea, proprio idea, grazie alla community?
+
+172
+00:20:23,700 --> 00:20:31,260
+ Innanzitutto il podcast mi aiuta a chiarire certe idee. Magari ad esempio ho un'opinione che non ho
+
+173
+00:20:31,260 --> 00:20:41,260
+ approfondito e nel preparare un episodio la approfondisco, la rendo più mia, la consolido, eccetera. Però a volte capita che nel ragionare
+
+174
+00:20:41,260 --> 00:20:48,660
+ su un argomento non riesco a farmi un'opinione forte o addirittura che magari qualcosa di cui
+
+175
+00:20:48,660 --> 00:20:55,160
+ ero sicuro venga smontata perché scopro che non sapevo qualcosa o che mi sbagliavo, avevo una
+
+176
+00:20:55,160 --> 00:21:02,560
+ convinzione errata. E in questo la community spesso mi fa cambiare idea. Anche per questo sono molto
+
+177
+00:21:02,560 --> 00:21:10,540
+ fiero della community che ho costruito intorno a Pensieri in Codice. Magari è piccolina, però è molto molto
+
+178
+00:21:11,060 --> 00:21:18,820
+ attiva. Nel senso che innanzitutto non è una community litigiosa, che è una cosa per me fondamentale, per cui
+
+179
+00:21:18,820 --> 00:21:25,820
+ quello che dico sempre è che nonostante nel canale Telegram ci siano centinaia di persone, io non ho
+
+180
+00:21:25,820 --> 00:21:33,140
+ mai avuto la necessità di imporre delle regole. C'è sempre stata un'autogestione piuttosto pacata,
+
+181
+00:21:33,140 --> 00:21:40,740
+ piuttosto educata e questo mi fa veramente molto piacere. Poi è una community che si confronta,
+
+182
+00:21:40,860 --> 00:21:48,180
+ sia con me, sia al proprio interno. Per cui ci sono tante persone con tanti interessi molto diversi,
+
+183
+00:21:48,180 --> 00:21:55,960
+ non sono solo informatici e questa è un'altra cosa che mi piace molto, che si confrontano sugli
+
+184
+00:21:55,960 --> 00:22:03,140
+ argomenti più disparati e con dei punti di vista anche spesso diametralmente opposti. E tutto questo
+
+185
+00:22:03,140 --> 00:22:09,180
+ funziona anche nei miei confronti. Ed è bello che non abbiano timore di correggermi quando dico cose
+
+186
+00:22:10,660 --> 00:22:17,460
+ precise. Loro mi condividono le loro opinioni che magari sono in contrasto con le mie e a volte
+
+187
+00:22:17,460 --> 00:22:24,340
+ capita che sentendo l'opinione di qualcun altro io mi convinca che magari è migliore rispetto alla
+
+188
+00:22:24,340 --> 00:22:32,980
+ mia o che comunque io tenda a smussarle le mie. Resto sulla community, o meglio sull'idea che la
+
+189
+00:22:32,980 --> 00:22:40,460
+ community si è fatta di te nel tempo. 50, 100, 150 puntate. Una voce ripetuta a
+
+190
+00:22:40,460 --> 00:22:46,840
+ abbastanza a lungo finisce per disegnare un profilo, anche quando l'autore non se ne accorge. C'è
+
+191
+00:22:46,840 --> 00:22:52,960
+ qualcosa che i tuoi ascoltatori pensano di conoscere bene di te, ma che in realtà il podcast nasconde?
+
+192
+00:22:52,960 --> 00:23:03,060
+ Parecchie cose in realtà. Io credo dal podcast di apparire come una persona abbastanza sicura,
+
+193
+00:23:03,060 --> 00:23:10,260
+ forse abbastanza, non dico estroversa, ma comunque che tende a parlare, a fare amicizia, a discutere
+
+194
+00:23:10,260 --> 00:23:18,360
+ con gli altri, ma in realtà nella mia vita vera sono molto timido e abbastanza introverso, per cui
+
+195
+00:23:18,360 --> 00:23:25,620
+ sicuramente pensieri in codice nasconde queste mie caratteristiche. Gli episodi sono molto preparati,
+
+196
+00:23:25,620 --> 00:23:33,780
+ con molta cura, io presto un'attenzione maniacale a tutte le fonti e perfino che le frasi siano
+
+197
+00:23:33,780 --> 00:23:39,860
+ corrette il più possibile in italiano, che siano corrette dal punto di vista dell'argomento e mi
+
+198
+00:23:40,060 --> 00:23:47,860
+ pare il testo che poi leggo. Insomma sì, diciamo che uno potrebbe pensare che chi parla ad un
+
+199
+00:23:47,860 --> 00:23:56,480
+ microfono da 150 puntate, con non so ormai quante ore di registrato, sia magari spigliato, sia
+
+200
+00:23:56,480 --> 00:24:02,200
+ tranquillo, ma la realtà è che io non mi ci sento assolutamente. Credo solo di nasconderlo
+
+201
+00:24:02,200 --> 00:24:09,860
+ abbastanza bene. Una distanza quindi tra la persona davanti al microfono e la persona fuori. Non è un
+
+202
+00:24:09,860 --> 00:24:17,340
+ dettaglio trascurabile. Quanto c'è di costruito allora nella voce di pensieri in codice? Beh,
+
+203
+00:24:17,340 --> 00:24:24,760
+ in realtà di costruito in senso negativo direi nulla, però c'è tanto lavoro sulla preparazione
+
+204
+00:24:24,760 --> 00:24:31,900
+ degli script e anche nel tentativo di migliorare magari le capacità di parlare correttamente in
+
+205
+00:24:31,900 --> 00:24:39,460
+ modo chiaro eccetera. Con l'addizione ammetto di non stare facendo grandissimi passi avanti,
+
+206
+00:24:39,660 --> 00:24:48,740
+ però un minimo di sforzo c'è sempre anche lì, è che la mia idea è quella che ogni episodio deve
+
+207
+00:24:48,740 --> 00:24:56,860
+ essere un pochino migliore del precedente. Per cui comunque mi impegno a cercare di portare
+
+208
+00:24:56,860 --> 00:25:09,460
+ sempre un audio che sia piacevole, un modo di parlare che sia scorrevole, una tipologia di
+
+209
+00:25:09,460 --> 00:25:16,500
+ costruite direi. Hai descritto un lavoro di rifinitura continua, ogni episodio un po' più
+
+210
+00:25:16,500 --> 00:25:22,460
+ affilato del precedente. Però c'è un effetto collaterale a questo lavoro. Una voce, se la
+
+211
+00:25:22,460 --> 00:25:28,480
+ affili abbastanza a lungo, comincia a riconoscersi da sola, diventa un personaggio anche senza
+
+212
+00:25:28,480 --> 00:25:35,460
+ volerlo. Allora ti chiedo, negli anni hai costruito una voce molto riconoscibile. Come fai a non
+
+213
+00:25:35,460 --> 00:25:39,260
+ diventare il personaggio di quella voce? Beh, in
+
+214
+00:25:39,260 --> 00:25:46,940
+ realtà non c'è nessun personaggio perché quella voce è la mia proprio sempre. Nel senso che quelle
+
+215
+00:25:46,940 --> 00:25:53,240
+ migliorie al mio modo di esprimermi, di cui parlavamo poco fa, sono anche quelle che cerco
+
+216
+00:25:53,240 --> 00:25:59,420
+ di attuare nella mia vita quotidiana. Dalla capacità di esprimermi in modo più chiaro,
+
+217
+00:25:59,420 --> 00:26:06,260
+ preciso e corretto, fino al migliorare me stesso come mi piace migliorare i prodotti che realizzo,
+
+218
+00:26:09,060 --> 00:26:16,680
+ io la filosofia del oggi dobbiamo essere un pizzico migliori di ieri la applico in qualunque
+
+219
+00:26:16,680 --> 00:26:22,020
+ cosa faccio. Per cui se dovessi essere il personaggio della mia voce, probabilmente
+
+220
+00:26:22,020 --> 00:26:27,300
+ non mi dispiacerebbe nemmeno perché vorrebbe dire che sto progressivamente migliorando.
+
+221
+00:26:27,300 --> 00:26:37,500
+ Allora ti porto sul confine. Ti senti diverso quando registri? All'inizio tantissimo. Io registro
+
+222
+00:26:38,860 --> 00:26:48,240
+ in cuffia e quindi mi ascolto anche e all'inizio mi sentivo diverso sia come voce ma mi sentivo
+
+223
+00:26:48,240 --> 00:26:55,200
+ diverso anche proprio come persona. Cioè nello stare davanti a un microfono non ero per nulla
+
+224
+00:26:55,200 --> 00:27:02,500
+ a mio agio. Facevo tanta tanta fatica e mi costava tanta fatica anche proprio pensare di mettermi
+
+225
+00:27:02,500 --> 00:27:08,660
+ davanti al microfono e iniziare a registrare. E se vai a riascoltare i primi episodi dove per primi non
+
+226
+00:27:08,660 --> 00:27:16,560
+ intendi i primi tre ma i primi sessanta probabilmente questa cosa si nota anche. Solo dopo più avanti ho
+
+227
+00:27:16,560 --> 00:27:23,360
+ iniziato ad abituarmi all'idea di me stesso come podcaster cioè come persona davanti a un microfono
+
+228
+00:27:23,360 --> 00:27:30,320
+ che parla a tante altre persone e così questa sensazione di scollamento di rifiuto che avevo
+
+229
+00:27:30,320 --> 00:27:38,400
+ all'inizio è abbastanza passata adesso. Anzi diciamo che ora invece mi piace stare davanti a un microfono mi
+
+230
+00:27:38,460 --> 00:27:45,220
+ piace riascoltare la mia voce in feedback mentre sto parlando e mi piace l'idea di comunicare
+
+231
+00:27:45,220 --> 00:27:52,740
+ qualcosa con la voce. Ormai non mi sento più tanto diverso anzi è diventato un qualcosa in cui mi
+
+232
+00:27:52,740 --> 00:28:01,680
+ identifico abbastanza. E dopo quando l'episodio è finito montato pubblicato ti riascolti mai?
+
+233
+00:28:01,680 --> 00:28:08,260
+ Sì ma quasi per diletto nel senso che con gli anni ho trovato un modo di registrare
+
+234
+00:28:08,260 --> 00:28:15,100
+ nel quale mi ascolto subito in feedback e taglio già da subito tutte le parti che non mi piacciono
+
+235
+00:28:15,100 --> 00:28:21,940
+ per cui quando vado a fare il montaggio non ho quasi bisogno di riascoltarmi. In pratica mi bastano
+
+236
+00:28:21,940 --> 00:28:28,180
+ giusto quei pochi secondi per capire che gli effetti la pulizia e tutto il resto hanno funzionato
+
+237
+00:28:28,180 --> 00:28:35,140
+ bene e quindi se magari registro un episodio da tre quarti d'ora al montaggio lo monto e basta
+
+238
+00:28:35,140 --> 00:28:38,060
+ non lo riascolto. Però mi
+
+239
+00:28:38,060 --> 00:28:44,020
+ piace ogni tanto riascoltarmi anche magari a velocità aumentata giusto per fare una sorta
+
+240
+00:28:44,020 --> 00:28:51,540
+ di verifica globale di come è venuto un episodio di come sta andando il progetto le varie migliorie
+
+241
+00:28:51,540 --> 00:28:57,800
+ le modifiche che mi piace inserire di volta in volta e qualche volta mi ascolto anche per
+
+242
+00:28:57,800 --> 00:29:04,560
+ confrontarmi con il vecchio me quello di cento episodi fa e vedere se effettivamente c'è stato
+
+243
+00:29:04,560 --> 00:29:07,860
+ quel miglioramento che io percepisco ma che potrebbe non essere un miglioramento.
+
+244
+00:29:07,860 --> 00:29:17,540
+ Allora siamo arrivati all'ultima domanda è quella che ho tenuto per il finale non perché sia la più
+
+245
+00:29:17,540 --> 00:29:23,900
+ grande ma perché punta in una direzione diversa da tutte le altre fino a qui ti ho chiesto del
+
+246
+00:29:23,900 --> 00:29:31,020
+ podcast di chi ascolta della tua voce del tuo mestiere tutto rivolto verso fuori quest'ultima
+
+247
+00:29:31,020 --> 00:29:37,660
+ invece ti chiede di girarti dall'altra parte verso dentro se dovessi dire che è un'altra parte
+
+248
+00:29:37,660 --> 00:29:45,900
+ che cosa ti ha insegnato il podcast sul tuo stesso modo di pensare da dove partiresti beh sicuramente
+
+249
+00:29:45,900 --> 00:29:53,760
+ pensieri in codice mi ha fatto capire mi ha fatto realizzare che sono quel tipo di persona capace
+
+250
+00:29:53,760 --> 00:30:01,260
+ di collegare i concetti prendendoli da ambiti differenti da aree differenti scrivendo i vari
+
+251
+00:30:01,260 --> 00:30:07,300
+ episodi nel corso del tempo ho scoperto che mi veniva relativamente facile fare
+
+252
+00:30:07,460 --> 00:30:14,340
+ determinate riflessioni in certi contesti e applicarle poi in contesti differenti e se magari
+
+253
+00:30:14,340 --> 00:30:22,660
+ questa consapevolezza era già un po latente in me dopo 150 episodi ho capito chiaramente che è un
+
+254
+00:30:22,660 --> 00:30:30,020
+ buon punto di forza perché mi permette di ragionare un po fuori dagli schemi a tutto tondo non solo
+
+255
+00:30:30,020 --> 00:30:37,260
+ nella creazione di contenuti si tratta di saper trovare anche soluzioni un po più creative a volte
+
+256
+00:30:37,260 --> 00:30:43,960
+ che nel mio lavoro ad esempio è una consapevolezza che mi fa sentire un po più sicuro nel momento
+
+257
+00:30:43,960 --> 00:30:51,580
+ in cui vado a proporre idee che si discostano da quelle canoniche e poi vediamo che cos'altro mi
+
+258
+00:30:51,580 --> 00:30:58,880
+ ha insegnato sul mio modo di pensare sicuramente sì mi ha insegnato che sono una persona che ha
+
+259
+00:30:58,880 --> 00:31:06,760
+ bisogno di fare ordine tra i pensieri perché se non lo faccio non riesco a lasciare andare un pensiero
+
+260
+00:31:07,060 --> 00:31:13,980
+ come dire a farlo andare nella sua giusta posizione e se non riesco a farlo andare nella sua giusta
+
+261
+00:31:13,980 --> 00:31:21,360
+ posizione quel pensiero continua a girare ad andare e tornare nella mia testa e poi mi ha fatto capire
+
+262
+00:31:21,360 --> 00:31:28,840
+ che sono una persona che ha bisogno di andare a fondo e capire come funzionano le cose a volte
+
+263
+00:31:28,840 --> 00:31:36,100
+ proprio non riesco a fermarmi alla superficie certamente dipende dagli ambiti ma quando una
+
+264
+00:31:36,860 --> 00:31:43,180
+ cosa mi interessa non riesco a ignorarla non riesco proprio a spegnere quella voglia di andare
+
+265
+00:31:43,180 --> 00:31:50,300
+ un po più a fondo quindi il podcast non ha cambiato come pensi ti ha fatto vedere meglio come pensavi
+
+266
+00:31:50,300 --> 00:31:58,940
+ già una specie di osservatorio interno acceso da 150 puntate allora ti chiedo l'opposto pensi
+
+267
+00:31:58,940 --> 00:32:06,660
+ che senza il podcast penseresti in modo diverso beh in realtà sì pensieri in codice è proprio
+
+268
+00:32:06,660 --> 00:32:14,080
+ importante per me per il mio pensiero per mettere in ordine determinate riflessioni per studiare
+
+269
+00:32:14,080 --> 00:32:22,020
+ determinati argomenti anche un po per dare un senso a certe cose capirne la logica dare un ordine
+
+270
+00:32:22,020 --> 00:32:32,140
+ quindi sì pensieri in codice per ben 150 episodi è stato una palestra in questo senso come un diario
+
+271
+00:32:36,460 --> 00:32:44,880
+ di affinare questa mia diciamo capacità ma che in realtà si tratta più di un vero e proprio bisogno
+
+272
+00:32:44,880 --> 00:32:51,960
+ e mi ha anche un po cambiato in realtà mi ha permesso di mettere in atto tutti questi processi
+
+273
+00:32:51,960 --> 00:32:58,460
+ mentali con maggiore consapevolezza e a forza di allenarmi con maggiore velocità maggiore
+
+274
+00:32:58,460 --> 00:33:05,500
+ precisione maggiore capacità di lasciare andare a volte cioè di capire come lasciare fuori da un
+
+275
+00:33:06,260 --> 00:33:12,420
+ certo qualcosa per non diventare eccessivamente dispersivo e quindi non riuscire a chiudere il
+
+276
+00:33:12,420 --> 00:33:20,760
+ cerchio insomma è stato e sarà sicuramente anche per il futuro un ottimo esercizio per me e per
+
+277
+00:33:20,760 --> 00:33:28,280
+ la mia mente e spero anche per tutti coloro che fino ad ora lo hanno ascoltato e che spero
+
+278
+00:33:28,280 --> 00:33:36,060
+ altrettanto vorranno ascoltarlo anche per le prossime 150 o chissà quante puntate e con questo
+
+279
+00:33:36,060 --> 00:33:44,100
+ direi che possiamo chiudere la mia parte almeno per 150 puntate questo studio è stato tuo per una
+
+280
+00:33:44,100 --> 00:33:49,400
+ sera qualcuno ha lasciato un set di chiavi su un tavolo e io ho provato a farti le domande che
+
+281
+00:33:49,400 --> 00:33:57,540
+ dall'esterno mi pareva valesse la pena farti ora te le restituisco le chiavi intendo hai parlato di
+
+282
+00:33:57,540 --> 00:34:03,000
+ una palestra in cui hai allenato il tuo modo di pensare mi pare giusto che a chiudere sia chi
+
+283
+00:34:05,860 --> 00:34:12,480
+ grazie valerio per essere stato un ospite paziente a casa tua e per avermi prestato il microfono per
+
+284
+00:34:12,480 --> 00:34:18,380
+ il tempo di una conversazione a chi ci sta ascoltando lascio invece una piccola cosa a cui
+
+285
+00:34:18,380 --> 00:34:25,200
+ pensare tra tutto quello che è stato detto stasera c'è stata una frase che ti ha mostrato pensieri in
+
+286
+00:34:25,200 --> 00:34:35,660
+ codice da un'angolazione che non avevi considerato tienila stretta è il tipo di cosa mi pare che da
+
+287
+00:34:35,660 --> 00:34:44,780
+ io tolgo il disturbo lo studio è di nuovo tuo valerio grazie knox grazie a simone e grazie a
+
+288
+00:34:44,780 --> 00:34:48,040
+ chi ha ascoltato fin qui è stato un bel esperimento
+
+289
+00:35:05,460 --> 00:35:21,820
+ e finisce qui la centocinquantesima puntata di pensieri in codice 150 puntate chi l'avrebbe
+
+290
+00:35:21,820 --> 00:35:27,580
+ mai detto quando ho iniziato questa follia non avevo mai creato contenuti prima di quel
+
+291
+00:35:27,580 --> 00:35:35,260
+ fatidico febbraio 2019 e ora ho quasi 50 ore e 400.000 parole registrate
+
+292
+00:35:35,260 --> 00:35:42,720
+ beh per l'occasione volevo fare qualcosa di particolare di sperimentale come nello stile
+
+293
+00:35:42,720 --> 00:35:50,600
+ di questo progetto e ma cosa avevo già in mente di parlare del progetto stesso ma non volevo fare
+
+294
+00:35:50,600 --> 00:35:58,160
+ un pippone auto incensante poi per tutt'altri motivi simone pizzi mi ha fatto ascoltare un
+
+295
+00:35:58,160 --> 00:36:04,220
+ episodio di runtime by night condotto da knox lo speaker notturno artificiale
+
+296
+00:36:05,060 --> 00:36:11,540
+ e lì è scattata l'idea facciamo un episodio con knox come conduttore in cui io potessi parlare del
+
+297
+00:36:11,540 --> 00:36:19,620
+ mio podcast è stata un'esperienza davvero molto interessante e ne parleremo magari in un episodio
+
+298
+00:36:19,620 --> 00:36:26,120
+ di approfondimento però sappi che le domande sono state formulate e selezionate quasi totalmente
+
+299
+00:36:26,120 --> 00:36:33,420
+ con l'utilizzo di intelligenza artificiale e direi che non è andata male almeno io mi sono divertito
+
+300
+00:36:34,860 --> 00:36:42,140
+ ma vorrei davvero sapere che cosa ne pensi tu indirizzo email link al gruppo telegram trovi
+
+301
+00:36:42,140 --> 00:36:50,120
+ tutto sul sito di pensierincodice.it con due i mi raccomando detto questo ci avviamo alla chiusura
+
+302
+00:36:50,120 --> 00:36:56,820
+ pensieri in codice è un progetto basato sulla filosofia value for value anche questa la trovi
+
+303
+00:36:56,820 --> 00:37:04,620
+ descritta sul sito ma in due parole significa che se in questi 150 episodi hai percepito
+
+304
+00:37:04,660 --> 00:37:11,840
+ del valore tradotto se le mie parole ti hanno interessato intrattenuto insegnato qualcosa
+
+305
+00:37:11,840 --> 00:37:20,500
+ allora sei caldamente invitato o invitata a restituire un po di tale valore scegli tu i
+
+306
+00:37:20,500 --> 00:37:27,700
+ modi e i tempi una possibilità è condividere l'episodio sui social o con qualche persona
+
+307
+00:37:27,700 --> 00:37:33,980
+ a cui pensi possa interessare un'altra possibilità è partecipare al progetto
+
+308
+00:37:34,460 --> 00:37:41,560
+ puoi dare una mano con gli automatismi il marketing la produzione degli episodi il montaggio registrando
+
+309
+00:37:41,560 --> 00:37:48,760
+ il tuo episodio di community edition contattami o entra nel gruppo telegram che ne parliamo
+
+310
+00:37:48,760 --> 00:37:54,320
+ qualsiasi idea è degna di essere presa in considerazione e poi considera che ho mille
+
+311
+00:37:54,320 --> 00:38:00,200
+ idee per la testa ma faccio molta fatica a trovare il tempo ora li ha mi sta dando una
+
+312
+00:38:00,200 --> 00:38:04,260
+ mano ma ci sono cose che possono fare bene solo gli umani
+
+313
+00:38:04,260 --> 00:38:10,880
+ oppure ancora se vuoi ma proprio come ultima possibilità puoi inviare un piccolo supporto
+
+314
+00:38:10,880 --> 00:38:16,580
+ economico raggiunte certe soglie hai anche diritto a vari gadget tutti i dettagli sono
+
+315
+00:38:16,580 --> 00:38:24,340
+ sempre sul sito nella sezione sostieni quella col cuoricino provvidenzialmente i sostenitori di oggi
+
+316
+00:38:24,340 --> 00:38:32,180
+ di questo episodio speciale sono proprio quelli che dimostrano di credere di più in questo progetto
+
+317
+00:38:34,060 --> 00:38:41,380
+ e cristian ragazzi voi restate fedeli anche quando saltano le uscite anche con la mia
+
+318
+00:38:41,380 --> 00:38:48,780
+ programmazione un po casuale quindi grazie veramente io spero di riuscire a pubblicare
+
+319
+00:38:48,780 --> 00:38:55,780
+ almeno altri 150 episodi ma per il momento noi ci salutiamo qui ovviamente però senza mai
+
+320
+00:38:55,780 --> 00:39:02,980
+ dimenticare che diciamolo tutti insieme un informatico risolve problemi a volte anche
+
+321
+00:39:02,980 --> 00:39:03,860
+ usando il computer
+
