@@ -1,18 +1,11 @@
 0.000000	0.000000	Introduzione
-86.700000	86.700000	Valerio ospite a casa sua
 144.300000	144.300000	Smontare le certezze
 381.980000	381.980000	Risposte o riflessioni?
 463.840000	463.840000	Come nasce un episodio
 654.340000	654.340000	Il software come punto di osservazione
-883.660000	883.660000	Pensieri in codice parla davvero di informatica?
 900.000000	900.000000	Un informatico risolve problemi
 1090.960000	1090.960000	Il confronto con chi ascolta
 1372.960000	1372.960000	La persona dietro il microfono
 1479.660000	1479.660000	La voce di Pensieri in codice
-1597.500000	1597.500000	Registrare e riascoltarsi
 1787.860000	1787.860000	Cosa il podcast ha insegnato a Valerio
-1926.660000	1926.660000	Pensare senza il podcast
-2036.060000	2036.060000	Nox restituisce le chiavi
 2105.460000	2105.460000	Conclusione
-2216.820000	2216.820000	Value for value
-2304.260000	2304.260000	Sostenitori e saluti
