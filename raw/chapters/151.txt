@@ -1,0 +1,11 @@
+0.000000	0.000000	Introduzione
+84.634797	84.634797	Un brevissimo ripasso
+277.424212	277.424212	Il declino del mio Second Brain
+652.782730	652.782730	L'evoluzione del mio Second Brain
+947.807540	947.807540	Il Second Brain è morto. Lunga vita al Second Brain
+1139.710666	1139.710666	Cosa non ha più senso archiviare
+1402.187906	1402.187906	Sappiamo più di quanto sappiamo dire
+1631.566239	1631.566239	Un diario scritto in due
+1942.367106	1942.367106	Impalcatura, non stampella
+2431.745270	2431.745270	Atterraggio: memoria condivisa uomo-IA
+2560.525097	2560.525097	Conclusione
