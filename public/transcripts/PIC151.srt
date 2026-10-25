@@ -1007,1197 +1007,1197 @@ e la seconda è che dargliela non è affatto semplice,
 perché nemmeno io riesco a spiegarla,
 
 253
-00:26:40,920 --> 00:26:46,800
+00:26:40,680 --> 00:26:46,560
 l'unico modo per trasferirla passa da discussioni, esempi e approssimazioni successive.
 
 254
-00:26:47,020 --> 00:26:53,740
+00:26:46,780 --> 00:26:53,500
 Ed è un limite, questo, che il modello, per quanto potente, non potrà mai superare da solo:
 
 255
-00:26:54,220 --> 00:27:02,000
+00:26:53,980 --> 00:27:01,760
 nessuna potenza gli farà mai sapere ciò che non ho mai comunicato e ciò che è solo nella mia testa.
 
 256
-00:27:04,000 --> 00:27:11,100
+00:27:03,760 --> 00:27:10,860
 Si tratta, quindi, di un limite che spetta a me superare, ed è qui che il Second Brain torna in gioco.
 
 257
-00:27:14,660 --> 00:27:21,040
+00:27:14,420 --> 00:27:20,800
 Il fatto che un modello non abbia le giuste informazioni per i nostri casi specifici
 
 258
-00:27:21,280 --> 00:27:24,860
+00:27:21,040 --> 00:27:24,620
 non significa che non sia possibile per noi dargliele.
 
 259
-00:27:25,220 --> 00:27:28,860
+00:27:24,980 --> 00:27:28,620
 Dobbiamo solo fare attenzione a non ricadere nel paradosso di Polanyi.
 
 260
-00:27:29,400 --> 00:27:38,320
+00:27:29,160 --> 00:27:38,080
 Abbiamo detto che il vero ostacolo è che noi stessi facciamo fatica a esprimere a parole il perché di molte delle nostre scelte.
 
 261
-00:27:38,760 --> 00:27:43,100
+00:27:38,520 --> 00:27:42,860
 Dovremmo fermarci, ricostruire il ragionamento e scriverlo,
 
 262
-00:27:43,460 --> 00:27:49,680
+00:27:43,220 --> 00:27:49,440
 e sappiamo benissimo che nel bel mezzo di un lavoro questa cosa non la fa nessuno.
 
 263
-00:27:50,180 --> 00:28:00,080
+00:27:49,940 --> 00:27:59,840
 Tuttavia, proprio quest'anno quattro ricercatori Cho, Funk, Gupta e Yang hanno pubblicato un paper dal titolo piuttosto interessante:
 
 264
-00:28:00,640 --> 00:28:05,460
+00:28:00,400 --> 00:28:05,220
 I modelli linguistici spiegano gli esperti meglio degli esperti stessi.
 
 265
-00:28:05,460 --> 00:28:12,340
+00:28:05,220 --> 00:28:12,100
 In pratica, dallo studio si evince che, osservando il modo in cui degli esperti svolgono il proprio lavoro,
 
 266
-00:28:12,860 --> 00:28:18,340
+00:28:12,620 --> 00:28:18,100
 un modello riesce a ricavare le regole che questi applicano senza rendersene conto,
 
 267
-00:28:18,340 --> 00:28:22,500
+00:28:18,100 --> 00:28:22,260
 e a descriverle meglio di quanto saprebbero fare loro stessi.
 
 268
-00:28:22,920 --> 00:28:27,160
+00:28:22,680 --> 00:28:26,920
 Che poi è esattamente ciò che Autor aveva previsto dodici anni fa.
 
 269
-00:28:27,680 --> 00:28:31,580
+00:28:27,440 --> 00:28:31,340
 Ora, io nel mio piccolo non ho condotto nessuno studio,
 
 270
-00:28:31,580 --> 00:28:35,520
+00:28:31,340 --> 00:28:35,280
 ma una cosa del genere la vedo accadere ogni giorno:
 
 271
-00:28:36,080 --> 00:28:44,220
+00:28:35,840 --> 00:28:43,980
 quando lavoro con un agente, le decisioni, i tagli i ripensamenti passano tutti dalla conversazione,
 
 272
-00:28:44,220 --> 00:28:50,720
+00:28:43,980 --> 00:28:50,480
 perché per fargli fare ciò che voglio sono costretto a discuterne con lui passami il termine.
 
 273
-00:28:51,220 --> 00:28:58,360
+00:28:50,980 --> 00:28:58,120
 E così, come ti raccontavo poco fa, l'ho istruito a tenere un diario direttamente nel mio Second Brain
 
 274
-00:28:58,360 --> 00:29:06,440
+00:28:58,120 --> 00:29:06,200
 e, in questo modo, mi sono reso conto che quel perché finisce scritto senza che io debba fermarmi a formularlo.
 
 275
-00:29:07,000 --> 00:29:14,020
+00:29:06,760 --> 00:29:13,780
 Mantenere un diario delle decisioni non è solo un ottimo modo per poter ricostruire in un secondo tempo
 
 276
-00:29:14,020 --> 00:29:20,020
+00:29:13,780 --> 00:29:19,780
 il senso delle scelte fatte e per identificare in dettaglio il perimetro del lavoro,
 
 277
-00:29:20,020 --> 00:29:26,160
+00:29:19,780 --> 00:29:25,920
 ma anche per ripercorrere quel lavoro ed estrarne delle regole di comportamento più generiche.
 
 278
-00:29:26,760 --> 00:29:33,280
+00:29:26,520 --> 00:29:33,040
 Sono capitate volte in cui ho iniziato un percorso con un'idea in mente e sono finito da tutt'altra parte,
 
 279
-00:29:33,420 --> 00:29:40,560
+00:29:33,180 --> 00:29:40,320
 oppure volte in cui ho creduto di aver bisogno di una cosa e poi ho capito che in realtà il problema era altrove.
 
 280
-00:29:41,160 --> 00:29:42,840
+00:29:40,920 --> 00:29:42,600
 Di' la verità: a te non capita mai?
 
 281
-00:29:42,840 --> 00:29:51,840
+00:29:42,600 --> 00:29:51,600
 Beh, Ho scoperto che dalla registrazione di questi eventi in un diario, non solo si può recuperare uno storico,
 
 282
-00:29:52,260 --> 00:29:59,660
+00:29:52,020 --> 00:29:59,420
 ma è anche possibile, tramite un modello linguistico, estrarre i comportamenti ripetuti nel bene e nel male.
 
 283
-00:30:00,220 --> 00:30:08,500
+00:29:59,980 --> 00:30:08,260
 Abitudini, pattern o anti-pattern, errori comuni. L'agente li evidenzia con passaggi del tipo
 
 284
-00:30:08,500 --> 00:30:14,220
+00:30:08,260 --> 00:30:13,980
 questo è lo stesso problema che abbiamo incontrato il giorno X sul progetto Y
 
 285
-00:30:14,220 --> 00:30:18,220
+00:30:13,980 --> 00:30:17,980
 oppure per questa operazione possiamo rifarci alla nota Z.
 
 286
-00:30:18,840 --> 00:30:24,300
+00:30:18,600 --> 00:30:24,060
 Una volta capito questo, ho anche deciso di cercare attivamente comportamenti ricorrenti
 
 287
-00:30:24,300 --> 00:30:28,380
+00:30:24,060 --> 00:30:28,140
 e usarli per creare regole di processo ben definite
 
 288
-00:30:28,780 --> 00:30:34,540
+00:30:28,540 --> 00:30:34,300
 che ora il mio agente segue ogni volta che ci troviamo davanti alla stessa tipologia di problema.
 
 289
-00:30:35,080 --> 00:30:42,320
+00:30:34,840 --> 00:30:42,080
 Ecco spiegato il motivo per cui le note contenenti decisioni fioccano molto più velocemente di prima nel mio Obsidian:
 
 290
-00:30:42,880 --> 00:30:47,780
+00:30:42,640 --> 00:30:47,540
 da una parte il Second Brain fornisce all'agente il perché che gli manca,
 
 291
-00:30:47,780 --> 00:30:53,820
+00:30:47,540 --> 00:30:53,580
 e dall'altra è l'agente stesso ad aiutarmi a tirarlo fuori dalla mia testa e scriverlo.
 
 292
-00:30:54,300 --> 00:31:00,360
+00:30:54,060 --> 00:31:00,120
 Tra l'altro, non sono certo il solo ad essere arrivato a queste conclusioni.
 
 293
-00:31:00,720 --> 00:31:07,600
+00:31:00,480 --> 00:31:07,360
 Sempre Tiago Forte a marzo di quest'anno ha annunciato sul suo blog quello che ha chiamato AI Second Brain.
 
 294
-00:31:08,220 --> 00:31:20,600
+00:31:07,980 --> 00:31:14,975
 Secondo l'autore, infatti, la gestione della conoscenza personale, il cosiddetto Personal Knowledge Management,
 
 295
-00:31:21,100 --> 00:31:27,940
+00:31:15,475 --> 00:31:22,315
 sta lasciando il posto alla gestione del contesto personale, cioè il Personal Context Management.
 
 296
-00:31:28,600 --> 00:31:34,560
+00:31:22,975 --> 00:31:28,935
 E il motivo dice Forte è che il nuovo collo di bottiglia non sono più le capacità dell'Intelligenza Artificiale,
 
 297
-00:31:35,560 --> 00:31:42,700
+00:31:29,935 --> 00:31:37,075
 ma la nostra abilità di fornirle l'informazione giusta al momento giusto per poter lavorare al meglio.
 
 298
-00:31:43,260 --> 00:31:47,560
+00:31:37,635 --> 00:31:41,935
 Insomma, si tratta dello stesso concetto di cui abbiamo parlato fino ad ora,
 
 299
-00:31:47,800 --> 00:31:50,820
+00:31:42,175 --> 00:31:45,195
 solo con un nome decisamente più elegante.
 
 300
-00:31:50,820 --> 00:31:54,420
+00:31:45,195 --> 00:31:48,795
 E devo dire che mi trovo molto d'accordo con Forte
 
 301
-00:31:54,740 --> 00:31:59,340
+00:31:49,115 --> 00:31:53,715
 ma, alla luce della mia esperienza, aggiungerei un piccolo dettaglio.
 
 302
-00:31:59,820 --> 00:32:03,960
+00:31:54,195 --> 00:31:58,335
 L'abilità di fornire all'agente l'informazione giusta al momento giusto,
 
 303
-00:32:04,100 --> 00:32:07,320
+00:31:58,475 --> 00:32:01,695
 infatti, io non la esercito più da solo.
 
 304
-00:32:07,920 --> 00:32:10,880
+00:32:02,295 --> 00:32:05,255
 Buona parte di quel contesto, come ti ho raccontato,
 
 305
-00:32:11,360 --> 00:32:14,460
+00:32:05,735 --> 00:32:08,835
 lo scrive l'agente stesso mentre lavoriamo.
 
 306
-00:32:14,460 --> 00:32:20,100
+00:32:08,835 --> 00:32:14,475
 E questo, come vedremo fra un attimo, è allo stesso tempo un enorme vantaggio
 
 307
-00:32:20,680 --> 00:32:21,940
+00:32:15,055 --> 00:32:16,315
 ma anche un bel rischio.
 
 308
-00:32:25,460 --> 00:32:28,340
+00:32:19,835 --> 00:32:22,715
 Un agente che scrive le note al mio posto
 
 309
-00:32:28,340 --> 00:32:32,700
+00:32:22,715 --> 00:32:27,075
 e che poi quelle stesse note se le va anche a rileggere è una gran comodità,
 
 310
-00:32:33,260 --> 00:32:38,520
+00:32:27,635 --> 00:32:32,895
 ma, al tempo stesso, accentua un potenziale rischio già presente nel Second Brain
 
 311
-00:32:38,520 --> 00:32:44,340
+00:32:32,895 --> 00:32:38,715
 ed è anche all'origine di un paio di problemi che prima semplicemente non esistevano.
 
 312
-00:32:44,940 --> 00:32:48,740
+00:32:39,315 --> 00:32:43,115
 Innanzitutto, un agente è in grado di produrre note ad una velocità
 
 313
-00:32:48,740 --> 00:32:51,660
+00:32:43,115 --> 00:32:46,035
 che io o tu non potremo mai raggiungere,
 
 314
-00:32:51,660 --> 00:32:56,420
+00:32:46,035 --> 00:32:50,795
 e quindi il pericolo di ritrovarsi con una discarica al posto di un archivio
 
 315
-00:32:56,420 --> 00:32:58,640
+00:32:50,795 --> 00:32:53,015
 diventa decisamente concreto.
 
 316
-00:32:59,120 --> 00:33:03,000
+00:32:53,495 --> 00:32:57,375
 Ed è un problema che non danneggia solo noi umani quando andiamo a rileggere.
 
 317
-00:33:03,560 --> 00:33:08,400
+00:32:57,935 --> 00:33:02,775
 Anthropic, in un articolo dedicato a quella che viene chiamata context engineering,
 
 318
-00:33:09,100 --> 00:33:14,440
+00:33:03,475 --> 00:33:08,815
 spiega che il contesto che si fornisce ad un modello è una risorsa limitata
 
 319
-00:33:14,440 --> 00:33:20,660
+00:33:08,815 --> 00:33:15,035
 e che, oltre a una certa soglia, più informazioni gli si danno e peggio riesce ad utilizzarle.
 
 320
-00:33:21,220 --> 00:33:25,000
+00:33:15,595 --> 00:33:19,375
 Tradotto: un Second Brain riempito senza criterio
 
 321
-00:33:25,000 --> 00:33:28,580
+00:33:19,375 --> 00:33:22,955
 finisce per peggiorare proprio l'agente che dovrebbe potenziare,
 
 322
-00:33:28,920 --> 00:33:31,620
+00:33:23,295 --> 00:33:25,995
 rendendo il contesto confusionario e diluito
 
 323
-00:33:31,620 --> 00:33:37,520
+00:33:25,995 --> 00:33:31,895
 e facendo sì che all'AI sfuggano dettagli importanti per il lavoro a favore di quelli inutili.
 
 324
-00:33:38,020 --> 00:33:43,040
+00:33:32,395 --> 00:33:37,415
 La soluzione, in questo caso, è la stessa che Tiago Forte suggeriva già nel suo libro,
 
 325
-00:33:43,220 --> 00:33:44,500
+00:33:37,595 --> 00:33:38,875
 ben prima degli agenti,
 
 326
-00:33:44,920 --> 00:33:48,440
+00:33:39,295 --> 00:33:42,815
 e cioè conservare solo ciò che ci colpisce davvero.
 
 327
-00:33:49,000 --> 00:33:51,420
+00:33:43,375 --> 00:33:45,795
 Vale per gli articoli che leggiamo tu o io
 
 328
-00:33:51,420 --> 00:33:55,360
+00:33:45,795 --> 00:33:49,735
 e vale, a maggior ragione, per le note che scrive il nostro agente.
 
 329
-00:33:55,960 --> 00:33:59,320
+00:33:50,335 --> 00:33:53,695
 La scelta delle informazioni da trattenere e consolidare
 
 330
-00:33:59,320 --> 00:34:05,440
+00:33:53,695 --> 00:33:59,815
 va fatta in base a ciò che non è già ovvio per chi quell'informazione la dovrà utilizzare.
 
 331
-00:34:05,960 --> 00:34:09,400
+00:34:00,335 --> 00:34:03,775
 Il passo avanti sta nell'acquisire la consapevolezza
 
 332
-00:34:09,400 --> 00:34:15,100
+00:34:03,775 --> 00:34:09,475
 che ora il soggetto utilizzatore non è più solo il proprietario del Second Brain,
 
 333
-00:34:15,320 --> 00:34:17,100
+00:34:09,695 --> 00:34:11,475
 ma anche tutti i suoi agenti.
 
 334
-00:34:17,600 --> 00:34:19,980
+00:34:11,975 --> 00:34:14,355
 Un problema, invece, che fino a questo momento
 
 335
-00:34:19,980 --> 00:34:22,860
+00:34:14,355 --> 00:34:17,235
 non faceva parte dei rischi da tenere presenti
 
 336
-00:34:22,860 --> 00:34:24,860
+00:34:17,235 --> 00:34:19,235
 quando si utilizzava un Second Brain,
 
 337
-00:34:25,080 --> 00:34:30,040
+00:34:19,455 --> 00:34:24,415
 ma che è preponderante nel mondo dell'Intelligenza Artificiale Generativa
 
 338
-00:34:30,560 --> 00:34:32,040
+00:34:24,935 --> 00:34:26,415
 è la fiducia cieca.
 
 339
-00:34:32,580 --> 00:34:34,580
+00:34:26,955 --> 00:34:28,955
 Nella provincia canadese dell'Ontario,
 
 340
-00:34:34,820 --> 00:34:39,220
+00:34:29,195 --> 00:34:33,595
 medici ed infermieri possono utilizzare dei sistemi di Intelligenza Artificiale
 
 341
-00:34:39,220 --> 00:34:41,700
+00:34:33,595 --> 00:34:36,075
 che scrivono le note cliniche al posto loro
 
 342
-00:34:41,700 --> 00:34:44,320
+00:34:36,075 --> 00:34:38,695
 a partire dalla registrazione della visita.
 
 343
-00:34:44,900 --> 00:34:48,740
+00:34:39,275 --> 00:34:43,115
 Quest'anno l'ufficio di revisione generale della provincia
 
 344
-00:34:48,740 --> 00:34:53,200
+00:34:43,115 --> 00:34:47,575
 ha pubblicato i risultati delle prove fatte su 20 di questi sistemi
 
 345
-00:34:53,560 --> 00:34:55,180
+00:34:47,935 --> 00:34:49,555
 tutti regolarmente approvati
 
 346
-00:34:55,720 --> 00:34:58,800
+00:34:50,095 --> 00:34:53,175
 e... non sono esattamente rassicuranti.
 
 347
-00:34:59,460 --> 00:35:03,040
+00:34:53,835 --> 00:34:57,415
 9 sistemi hanno inventato informazioni sui pazienti,
 
 348
-00:35:03,520 --> 00:35:06,740
+00:34:57,895 --> 00:35:01,115
 12 hanno riportato dati sbagliati sui farmaci
 
 349
-00:35:07,080 --> 00:35:11,760
+00:35:01,455 --> 00:35:06,135
 e ben 17 hanno tralasciato dettagli importanti sulla salute mentale.
 
 350
-00:35:11,920 --> 00:35:15,620
+00:35:06,295 --> 00:35:09,995
 Ora, questo è solo uno dei tanti esempi
 
 351
-00:35:15,780 --> 00:35:18,860
+00:35:10,155 --> 00:35:13,235
 e il mio agente non scrive cartelle cliniche per fortuna
 
 352
-00:35:19,360 --> 00:35:21,880
+00:35:13,735 --> 00:35:16,255
 ma fa esattamente lo stesso mestiere,
 
 353
-00:35:22,420 --> 00:35:26,000
+00:35:16,795 --> 00:35:20,375
 cioè prende appunti al posto di qualcuno
 
 354
-00:35:26,500 --> 00:35:27,680
+00:35:20,875 --> 00:35:22,055
 me. nello specifico.
 
 355
-00:35:28,080 --> 00:35:30,880
+00:35:22,455 --> 00:35:25,255
 E se sbaglia un sistema approvato per la sanità,
 
 356
-00:35:31,100 --> 00:35:34,340
+00:35:25,475 --> 00:35:28,715
 non vedo perché non dovrebbe sbagliare il mio Claude o il mio ChatGPT.
 
 357
-00:35:34,840 --> 00:35:36,960
+00:35:29,215 --> 00:35:31,335
 Almeno dal punto di vista teorico, quindi,
 
 358
-00:35:36,960 --> 00:35:41,280
+00:35:31,335 --> 00:35:35,655
 esiste la concreta possibilità che un errore finito in una nota
 
 359
-00:35:41,280 --> 00:35:43,780
+00:35:35,655 --> 00:35:38,155
 resti semplicemente archiviato,
 
 360
-00:35:44,080 --> 00:35:44,980
+00:35:38,455 --> 00:35:39,355
 nessuno lo scovi,
 
 361
-00:35:45,120 --> 00:35:48,640
+00:35:39,495 --> 00:35:43,015
 e questo divenga la base del lavoro successivo.
 
 362
-00:35:49,140 --> 00:35:53,680
+00:35:43,515 --> 00:35:48,055
 Certo potrei raccontarti che la soluzione è rileggere tutto di persona,
 
 363
-00:35:53,960 --> 00:35:56,640
+00:35:48,335 --> 00:35:51,015
 ma sarebbe una bugia: non avrebbe senso.
 
 364
-00:35:57,120 --> 00:35:58,120
+00:35:51,495 --> 00:35:52,495
 Non lo faccio io
 
 365
-00:35:58,220 --> 00:36:00,940
+00:35:52,595 --> 00:35:55,315
 per lo stesso motivo per cui prima non scrivevo
 
 366
-00:36:00,940 --> 00:36:02,940
+00:35:55,315 --> 00:35:57,315
 il perché di ogni singola scelta
 
 367
-00:36:02,940 --> 00:36:05,520
+00:35:57,315 --> 00:35:59,895
 e non consiglierei mai a te di farlo.
 
 368
-00:36:06,060 --> 00:36:08,720
+00:36:00,435 --> 00:36:03,095
 Le mie contromisure, in realtà, sono altre.
 
 369
-00:36:09,300 --> 00:36:10,720
+00:36:03,675 --> 00:36:05,095
 La prima sta a monte,
 
 370
-00:36:11,100 --> 00:36:15,120
+00:36:05,475 --> 00:36:09,495
 cioè nelle istruzioni che ho dato all'agente su come scrivere le note:
 
 371
-00:36:15,840 --> 00:36:19,960
+00:36:10,215 --> 00:36:14,335
 aggiornare un riassunto dello stato dell'arte e dell'attività in cima,
 
 372
-00:36:20,540 --> 00:36:25,280
+00:36:14,915 --> 00:36:19,655
 archiviare le decisioni accompagnate dal loro motivo mettendo data e ora
 
 373
-00:36:25,580 --> 00:36:30,040
+00:36:19,955 --> 00:36:24,415
 e non modificare mai il diario ma alimentarlo in coda.
 
 374
-00:36:30,040 --> 00:36:33,520
+00:36:24,415 --> 00:36:27,895
 In pratica, non controllo ogni singola nota,
 
 375
-00:36:33,700 --> 00:36:36,380
+00:36:28,075 --> 00:36:30,755
 ma controllo il modo in cui vengono scritte.
 
 376
-00:36:36,920 --> 00:36:40,360
+00:36:31,295 --> 00:36:34,735
 Così è possibile mantenere un estratto significativo
 
 377
-00:36:40,640 --> 00:36:44,460
+00:36:35,015 --> 00:36:38,835
 e, in caso di necessità, andare a rivedere tutti i passaggi
 
 378
-00:36:44,460 --> 00:36:47,700
+00:36:38,835 --> 00:36:42,075
 che hanno portato a determinate scelte o decisioni.
 
 379
-00:36:48,080 --> 00:36:50,520
+00:36:42,455 --> 00:36:44,895
 Poi, la seconda contromisura sta a valle:
 
 380
-00:36:51,080 --> 00:36:53,140
+00:36:45,455 --> 00:36:47,515
 ogni volta che riprendo un lavoro,
 
 381
-00:36:53,440 --> 00:36:55,820
+00:36:47,815 --> 00:36:50,195
 l'agente mi racconta dove eravamo rimasti,
 
 382
-00:36:56,140 --> 00:37:00,140
+00:36:50,515 --> 00:36:54,515
 e se ciò che mi dice non corrisponde a ciò che ricordo,
 
 383
-00:37:00,440 --> 00:37:03,160
+00:36:54,815 --> 00:36:57,535
 confligge in qualche modo con lo stato attuale
 
 384
-00:37:03,420 --> 00:37:05,020
+00:36:57,795 --> 00:36:59,395
 o semplicemente mi puzza,
 
 385
-00:37:05,600 --> 00:37:07,280
+00:36:59,975 --> 00:37:01,655
 indago prima di procedere.
 
 386
-00:37:07,780 --> 00:37:09,740
+00:37:02,155 --> 00:37:04,115
 So che può sembrare un controsenso
 
 387
-00:37:09,740 --> 00:37:14,560
+00:37:04,115 --> 00:37:08,935
 ma io non credo che queste note debbano essere precise alla virgola.
 
 388
-00:37:15,100 --> 00:37:16,440
+00:37:09,475 --> 00:37:10,815
 L'importante, secondo me,
 
 389
-00:37:16,540 --> 00:37:18,600
+00:37:10,915 --> 00:37:12,975
 è che siano sufficientemente corrette
 
 390
-00:37:18,600 --> 00:37:22,700
+00:37:12,975 --> 00:37:17,075
 per permettermi di estrarre alcune informazioni salienti
 
 391
-00:37:23,100 --> 00:37:24,180
+00:37:17,475 --> 00:37:18,555
 e spesso tecniche
 
 392
-00:37:24,640 --> 00:37:28,200
+00:37:19,015 --> 00:37:22,575
 che vanno poi integrate con quello che ho io nella testa.
 
 393
-00:37:28,660 --> 00:37:32,420
+00:37:23,035 --> 00:37:26,795
 Alla fine basta che siano un po' più precise e potenti
 
 394
-00:37:32,420 --> 00:37:34,620
+00:37:26,795 --> 00:37:28,995
 della mia semplice memoria
 
 395
-00:37:34,740 --> 00:37:37,380
+00:37:29,115 --> 00:37:31,755
 o degli appunti che potrei prendere in autonomia.
 
 396
-00:37:37,720 --> 00:37:41,080
+00:37:32,095 --> 00:37:35,455
 Insomma mi piace pensare di aver potenziato l'archivio
 
 397
-00:37:41,420 --> 00:37:44,420
+00:37:35,795 --> 00:37:38,795
 ma di essere ancora io a verificare e pilotare
 
 398
-00:37:44,420 --> 00:37:45,840
+00:37:38,795 --> 00:37:40,215
 quello che l'agente fa,
 
 399
-00:37:46,200 --> 00:37:48,620
+00:37:40,575 --> 00:37:42,995
 quindi non mi serve controllare il diario,
 
 400
-00:37:48,820 --> 00:37:52,080
+00:37:43,195 --> 00:37:46,455
 piuttosto le azioni che vengono messe in pratica.
 
 401
-00:37:52,080 --> 00:37:53,600
+00:37:46,455 --> 00:37:47,975
 sulla base di quelle informazioni.
 
 402
-00:37:54,160 --> 00:37:56,720
+00:37:48,535 --> 00:37:51,095
 Almeno oggi servo ancora a qualcosa,
 
 403
-00:37:56,840 --> 00:37:58,240
+00:37:51,215 --> 00:37:52,615
 poi in futuro chissà.
 
 404
-00:37:58,240 --> 00:38:01,620
+00:37:52,615 --> 00:37:55,995
 So benissimo che nessuna di queste due abitudini
 
 405
-00:38:01,620 --> 00:38:04,240
+00:37:55,995 --> 00:37:58,615
 rappresenta una difesa completa.
 
 406
-00:38:04,740 --> 00:38:05,940
+00:37:59,115 --> 00:38:00,315
 Un errore plausibile,
 
 407
-00:38:05,940 --> 00:38:08,600
+00:38:00,315 --> 00:38:02,975
 che non contraddice nulla di ciò che ricordo,
 
 408
-00:38:08,860 --> 00:38:11,620
+00:38:03,235 --> 00:38:05,995
 può restare lì indisturbato per sempre.
 
 409
-00:38:12,220 --> 00:38:15,120
+00:38:06,595 --> 00:38:09,495
 Ma per ora è il miglior compromesso che ho trovato.
 
 410
-00:38:15,640 --> 00:38:17,640
+00:38:10,015 --> 00:38:12,015
 Infine, il terzo problema
 
 411
-00:38:17,640 --> 00:38:20,240
+00:38:12,015 --> 00:38:14,615
 è forse anche il più subdolo,
 
 412
-00:38:20,560 --> 00:38:22,380
+00:38:14,935 --> 00:38:16,755
 perché non riguarda le note
 
 413
-00:38:22,620 --> 00:38:23,480
+00:38:16,995 --> 00:38:17,855
 ma chi le legge
 
 414
-00:38:23,720 --> 00:38:25,520
+00:38:18,095 --> 00:38:19,895
 cioè me te o noi.
 
 415
-00:38:26,040 --> 00:38:27,220
+00:38:20,415 --> 00:38:21,595
 All'inizio di quest'anno
 
 416
-00:38:27,420 --> 00:38:29,040
+00:38:21,795 --> 00:38:23,415
 Anthropic ha pubblicato uno studio
 
 417
-00:38:29,040 --> 00:38:31,540
+00:38:23,415 --> 00:38:25,915
 condotto su 52 sviluppatori
 
 418
-00:38:31,540 --> 00:38:35,040
+00:38:25,915 --> 00:38:29,415
 alle prese con una libreria che non avevano mai usato.
 
 419
-00:38:35,540 --> 00:38:36,600
+00:38:29,915 --> 00:38:30,975
 Alla fine del lavoro,
 
 420
-00:38:36,860 --> 00:38:39,840
+00:38:31,235 --> 00:38:34,215
 tutti sono stati sottoposti ad un test di comprensione
 
 421
-00:38:39,840 --> 00:38:42,140
+00:38:34,215 --> 00:38:36,515
 e si è visto che chi si era fatto aiutare
 
 422
-00:38:42,140 --> 00:38:43,760
+00:38:36,515 --> 00:38:38,135
 dall'Intelligenza Artificiale
 
 423
-00:38:43,760 --> 00:38:47,480
+00:38:38,135 --> 00:38:41,855
 ha totalizzato in media un punteggio di 50 su 100,
 
 424
-00:38:47,480 --> 00:38:51,800
+00:38:41,855 --> 00:38:46,175
 contro il 67 di chi aveva scritto il codice a mano.
 
 425
-00:38:52,480 --> 00:38:53,720
+00:38:46,855 --> 00:38:48,095
 Prevedibile, onestamente.
 
 426
-00:38:54,280 --> 00:38:56,480
+00:38:48,655 --> 00:38:50,855
 Ma Il dettaglio più utile, è un altro.
 
 427
-00:38:56,960 --> 00:38:58,780
+00:38:51,335 --> 00:38:53,155
 Tra quelli che avevano usato le AI,
 
 428
-00:38:59,140 --> 00:39:02,960
+00:38:53,515 --> 00:38:57,335
 chi le aveva chiesto anche di spiegargli i concetti
 
 429
-00:39:02,960 --> 00:39:04,980
+00:38:57,335 --> 00:38:59,355
 ha ottenuto buoni risultati,
 
 430
-00:39:05,440 --> 00:39:08,940
+00:38:59,815 --> 00:39:03,315
 mentre chi si era limitato a farle produrre il codice
 
 431
-00:39:08,940 --> 00:39:10,660
+00:39:03,315 --> 00:39:05,035
 è andato decisamente peggio.
 
 432
-00:39:11,160 --> 00:39:14,280
+00:39:05,535 --> 00:39:08,655
 Ecco, con un Second Brain scritto da un agente
 
 433
-00:39:14,480 --> 00:39:16,260
+00:39:08,855 --> 00:39:10,635
 il pericolo è identico.
 
 434
-00:39:16,780 --> 00:39:18,140
+00:39:11,155 --> 00:39:12,515
 Se smettiamo di seguire,
 
 435
-00:39:18,400 --> 00:39:20,140
+00:39:12,775 --> 00:39:14,515
 di capire e di decidere,
 
 436
-00:39:20,600 --> 00:39:23,560
+00:39:14,975 --> 00:39:17,935
 ci ritroviamo con un archivio perfettamente aggiornato
 
 437
-00:39:23,560 --> 00:39:26,320
+00:39:17,935 --> 00:39:20,695
 su un lavoro che non conosciamo più.
 
 438
-00:39:26,880 --> 00:39:28,740
+00:39:21,255 --> 00:39:23,115
 Rischiamo di andare in difficoltà
 
 439
-00:39:28,740 --> 00:39:31,400
+00:39:23,115 --> 00:39:25,775
 quando dobbiamo spiegare un risultato ottenuto
 
 440
-00:39:31,400 --> 00:39:35,360
+00:39:25,775 --> 00:39:29,735
 o quando dobbiamo lavorare nuovamente su un progetto.
 
 441
-00:39:35,820 --> 00:39:39,540
+00:39:30,195 --> 00:39:33,915
 Rischiamo di non avere contezza di ciò che abbiamo realizzato
 
 442
-00:39:39,540 --> 00:39:42,140
+00:39:33,915 --> 00:39:36,515
 e di perderne progressivamente il controllo.
 
 443
-00:39:42,660 --> 00:39:45,360
+00:39:37,035 --> 00:39:39,735
 Per me questa è la prospettiva peggiore.
 
 444
-00:39:45,680 --> 00:39:48,700
+00:39:40,055 --> 00:39:43,075
 Molto peggiore di sbagliare a rievocare il senso
 
 445
-00:39:48,700 --> 00:39:49,840
+00:39:43,075 --> 00:39:44,215
 di una decisione presa
 
 446
-00:39:49,840 --> 00:39:53,420
+00:39:44,215 --> 00:39:47,795
 o di qualsiasi rumore introdotto nei miei archivi.
 
 447
-00:39:53,560 --> 00:39:58,000
+00:39:47,935 --> 00:39:52,375
 Perfino Più pericolosa di un bug in un codice che va in crash.
 
 448
-00:39:58,580 --> 00:40:02,560
+00:39:52,955 --> 00:39:56,935
 Insomma, per riassumere un po' questo blocco con un'immagine,
 
 449
-00:40:02,860 --> 00:40:06,760
+00:39:57,235 --> 00:40:01,135
 mi piace pensare che un agente debba essere un'impalcatura
 
 450
-00:40:06,760 --> 00:40:08,420
+00:40:01,135 --> 00:40:02,795
 e non una stampella.
 
 451
-00:40:08,940 --> 00:40:12,740
+00:40:03,315 --> 00:40:07,115
 L'impalcatura sostiene qualcosa che sto costruendo io,
 
 452
-00:40:13,120 --> 00:40:17,600
+00:40:07,495 --> 00:40:11,975
 mentre la stampella sostituisce qualcosa che non funziona più bene.
 
 453
-00:40:17,600 --> 00:40:22,800
+00:40:11,975 --> 00:40:17,175
 E in concreto il principio del mio Second Brain è molto semplice:
 
 454
-00:40:23,180 --> 00:40:25,200
+00:40:17,555 --> 00:40:19,575
 l'agente scrive e rilegge,
 
 455
-00:40:25,520 --> 00:40:27,860
+00:40:19,895 --> 00:40:22,235
 ma il modo in cui lo fa lo decido io
 
 456
-00:40:27,860 --> 00:40:31,320
+00:40:22,235 --> 00:40:25,695
 e la comprensione di ciò che è stato fatto resta a me.
 
 457
-00:40:37,880 --> 00:40:41,440
+00:40:32,255 --> 00:40:35,815
 Quando nel 2023 ho costruito il mio Second Brain,
 
 458
-00:40:41,720 --> 00:40:43,760
+00:40:36,095 --> 00:40:38,135
 la domanda a cui cercavo di rispondere era
 
 459
-00:40:43,760 --> 00:40:45,360
+00:40:38,135 --> 00:40:39,735
 cosa devo ricordare?,
 
 460
-00:40:45,940 --> 00:40:47,420
+00:40:40,315 --> 00:40:41,795
 e la risposta era
 
 461
-00:40:47,420 --> 00:40:50,160
+00:40:41,795 --> 00:40:44,535
 più o meno tutto quello che mi interessa
 
 462
-00:40:50,160 --> 00:40:52,600
+00:40:44,535 --> 00:40:46,975
 e che la mia testa non riesce a trattenere.
 
 463
-00:40:53,120 --> 00:40:55,420
+00:40:47,495 --> 00:40:49,795
 Ora quella domanda è un po' cambiata,
 
 464
-00:40:55,700 --> 00:40:59,380
+00:40:50,075 --> 00:40:53,755
 perché buona parte di ciò che allora mi affannavo ad annotare,
 
 465
-00:40:59,860 --> 00:41:02,360
+00:40:54,235 --> 00:40:56,735
 oggi una macchina lo sa già,
 
 466
-00:41:02,360 --> 00:41:03,740
+00:40:56,735 --> 00:40:58,115
 e lo sa meglio di me.
 
 467
-00:41:04,240 --> 00:41:06,940
+00:40:58,615 --> 00:41:01,315
 Adesso la domanda giusta, secondo me, è diventata
 
 468
-00:41:06,940 --> 00:41:08,480
+00:41:01,315 --> 00:41:02,855
 cosa devo ricordare io
 
 469
-00:41:08,480 --> 00:41:11,880
+00:41:02,855 --> 00:41:06,255
 e cosa invece devo trasmettere all'agente di turno?
 
 470
-00:41:12,340 --> 00:41:15,860
+00:41:06,715 --> 00:41:10,235
 E la risposta è che io devo ricordare un po' meno
 
 471
-00:41:16,180 --> 00:41:18,800
+00:41:10,555 --> 00:41:13,175
 perché un agente può fare determinate cose
 
 472
-00:41:18,800 --> 00:41:22,060
+00:41:13,175 --> 00:41:16,435
 molto meglio di me senza usare i miei appunti
 
 473
-00:41:22,540 --> 00:41:25,300
+00:41:16,915 --> 00:41:19,675
 e devo invece contestualizzare di più
 
 474
-00:41:25,660 --> 00:41:28,740
+00:41:20,035 --> 00:41:23,115
 perché nessun modello potrà mai trovare altrove
 
 475
-00:41:28,740 --> 00:41:31,400
+00:41:23,115 --> 00:41:25,775
 le mie decisioni, i miei motivi,
 
 476
-00:41:31,400 --> 00:41:35,680
+00:41:25,775 --> 00:41:30,055
 le mie eccezioni e le particolarità di un mio cliente o progetto.
 
 477
-00:41:36,180 --> 00:41:38,860
+00:41:30,555 --> 00:41:33,235
 Il Second Brain, insomma, non è più soltanto
 
 478
-00:41:38,860 --> 00:41:40,640
+00:41:33,235 --> 00:41:35,015
 una biblioteca personale,
 
 479
-00:41:40,760 --> 00:41:44,420
+00:41:35,135 --> 00:41:38,795
 ma anche una memoria condivisa tra me e i miei agenti,
 
 480
-00:41:44,820 --> 00:41:46,580
+00:41:39,195 --> 00:41:40,955
 che io consulto per ricordare
 
 481
-00:41:46,580 --> 00:41:50,640
+00:41:40,955 --> 00:41:45,015
 e loro, invece, per capire con chi o cosa hanno a che fare.
 
 482
-00:41:51,200 --> 00:41:53,000
+00:41:45,575 --> 00:41:47,375
 E sai una cosa interessante?
 
 483
-00:41:53,460 --> 00:41:55,320
+00:41:47,835 --> 00:41:49,695
 Questa memoria condivisa digitale
 
 484
-00:41:55,320 --> 00:41:57,960
+00:41:49,695 --> 00:41:52,335
 funziona in modo molto simile a quella umana
 
 485
-00:41:57,960 --> 00:42:01,440
+00:41:52,335 --> 00:41:55,815
 di cui ti parlavo nell'episodio 149, intitolato
 
 486
-00:42:01,440 --> 00:42:03,920
+00:41:55,815 --> 00:41:58,295
 Quello che perdiamo quando non perdiamo nulla.
 
 487
-00:42:04,420 --> 00:42:06,340
+00:41:58,795 --> 00:42:00,715
 Qualche mese fa ti raccontavo
 
 488
-00:42:06,520 --> 00:42:08,240
+00:42:00,895 --> 00:42:02,615
 citando il professor Della Sala
 
 489
-00:42:08,580 --> 00:42:10,640
+00:42:02,955 --> 00:42:05,015
 che la nostra memoria funziona bene
 
 490
-00:42:10,640 --> 00:42:13,680
+00:42:05,015 --> 00:42:08,055
 non nonostante il fatto che dimentichi,
 
 491
-00:42:13,920 --> 00:42:16,700
+00:42:08,295 --> 00:42:11,075
 ma proprio perché seleziona ciò che conta
 
 492
-00:42:16,700 --> 00:42:18,200
+00:42:11,075 --> 00:42:12,575
 e lascia andare il resto.
 
 493
-00:42:18,780 --> 00:42:21,860
+00:42:13,155 --> 00:42:16,235
 Ecco, vale lo stesso per un Second Brain
 
 494
-00:42:21,860 --> 00:42:24,120
+00:42:16,235 --> 00:42:18,495
 e vale lo stesso per un agente.
 
 495
-00:42:24,580 --> 00:42:27,700
+00:42:18,955 --> 00:42:22,075
 Non è la quantità di cose che riesce a ricordare
 
 496
-00:42:27,800 --> 00:42:28,860
+00:42:22,175 --> 00:42:23,235
 a renderlo utile,
 
 497
-00:42:29,000 --> 00:42:32,920
+00:42:23,375 --> 00:42:27,295
 ma la bontà della scelta di cosa ricordare
 
 498
-00:42:32,920 --> 00:42:34,300
+00:42:27,295 --> 00:42:28,675
 e cosa consolidare.
 
 499
-00:42:34,800 --> 00:42:36,520
+00:42:29,175 --> 00:42:30,895
 E i criteri di questa scelta
 
 500
-00:42:36,820 --> 00:42:37,540
+00:42:31,195 --> 00:42:31,915
 almeno per ora
 
 501
-00:42:38,000 --> 00:42:40,040
+00:42:32,375 --> 00:42:34,415
 restano un lavoro per noi umani.
 
 502
-00:42:43,840 --> 00:42:45,240
+00:42:38,215 --> 00:42:39,615
 Bene, ce l'ho fatta,
 
 503
-00:42:45,320 --> 00:42:48,020
+00:42:39,695 --> 00:42:42,395
 siamo giunti alla fine anche di questo episodio.
 
 504
-00:42:48,360 --> 00:42:51,320
+00:42:42,735 --> 00:42:45,695
 Spero di averti portato un argomento interessante
 
 505
-00:42:51,620 --> 00:42:53,640
+00:42:45,995 --> 00:42:48,015
 magari non il solito che si vede ripetuto
 
 506
-00:42:53,640 --> 00:42:55,220
+00:42:48,015 --> 00:42:49,595
 centinaia di volte sui social
 
 507
-00:42:55,480 --> 00:42:59,100
+00:42:49,855 --> 00:42:53,475
 e di avertelo esposto nel modo più chiaro possibile.
 
 508
-00:42:59,720 --> 00:43:00,980
+00:42:54,095 --> 00:42:55,355
 Mi interessa, come sempre,
 
 509
-00:43:01,100 --> 00:43:02,540
+00:42:55,475 --> 00:42:56,915
 sapere tu cosa ne pensi.
 
 510
-00:43:02,700 --> 00:43:05,900
+00:42:57,075 --> 00:43:00,275
 Anche tu stai cambiando il modo in cui usi il tuo Second Brain?
 
 511
-00:43:06,120 --> 00:43:08,200
+00:43:00,495 --> 00:43:02,575
 O magari non ne hai mai avuto uno
 
 512
-00:43:08,200 --> 00:43:09,680
+00:43:02,575 --> 00:43:04,055
 e ti è venuta voglia di provarci?
 
 513
-00:43:10,100 --> 00:43:13,680
+00:43:04,475 --> 00:43:08,055
 Scrivimi a valeriochiocciolapensierincodice.it,
 
 514
-00:43:13,840 --> 00:43:15,140
+00:43:08,215 --> 00:43:09,515
 mi raccomando, con due i,
 
 515
-00:43:15,560 --> 00:43:18,280
+00:43:09,935 --> 00:43:12,655
 oppure passa dal gruppo Telegram di Pensieri in codice
 
 516
-00:43:18,280 --> 00:43:19,540
+00:43:12,655 --> 00:43:13,915
 e raccontaci la tua.
 
 517
-00:43:20,100 --> 00:43:22,920
+00:43:14,475 --> 00:43:17,295
 E se conosci qualcuno che prende appunti su tutto
 
 518
-00:43:22,920 --> 00:43:24,980
+00:43:17,295 --> 00:43:19,355
 o che, al contrario, ha smesso di farlo
 
 519
-00:43:24,980 --> 00:43:27,280
+00:43:19,355 --> 00:43:21,655
 da quando usa l'Intelligenza Artificiale,
 
 520
-00:43:27,520 --> 00:43:28,440
+00:43:21,895 --> 00:43:22,815
 giragli l'episodio.
 
 521
-00:43:28,940 --> 00:43:29,940
+00:43:23,315 --> 00:43:24,315
 Prima di salutarci,
 
 522
-00:43:30,020 --> 00:43:31,520
+00:43:24,395 --> 00:43:25,895
 ti ricordo che Pensieri in codice
 
 523
-00:43:31,520 --> 00:43:34,420
+00:43:25,895 --> 00:43:28,795
 è un progetto indipendente e senza pubblicità,
 
 524
-00:43:34,420 --> 00:43:36,640
+00:43:28,795 --> 00:43:31,015
 che porto avanti nel mio tempo libero
 
 525
-00:43:36,640 --> 00:43:39,820
+00:43:31,015 --> 00:43:34,195
 e che si basa sulla filosofia Value for Value.
 
 526
-00:43:41,880 --> 00:43:45,340
+00:43:36,255 --> 00:43:39,715
 Se quello che hai ascoltato ti ha dato qualcosa
 
 527
-00:43:45,640 --> 00:43:47,520
+00:43:40,015 --> 00:43:41,895
 uno spunto, una riflessione
 
 528
-00:43:47,520 --> 00:43:49,980
+00:43:41,895 --> 00:43:44,355
 o anche solo un momento di intrattenimento
 
 529
-00:43:50,480 --> 00:43:53,600
+00:43:44,855 --> 00:43:47,975
 puoi scegliere di restituire un po' di questo valore.
 
 530
-00:43:54,180 --> 00:43:55,680
+00:43:48,555 --> 00:43:50,055
 Puoi farlo con il tuo tempo,
 
 531
-00:43:56,040 --> 00:43:57,660
+00:43:50,415 --> 00:43:52,035
 condividendo l'episodio con qualcuno
 
 532
-00:43:57,660 --> 00:43:59,360
+00:43:52,035 --> 00:43:53,735
 a cui pensi possa interessare.
 
 533
-00:43:59,780 --> 00:44:00,860
+00:43:54,155 --> 00:43:55,235
 Con il tuo talento,
 
 534
-00:44:01,220 --> 00:44:02,840
+00:43:55,595 --> 00:43:57,215
 dando una mano al progetto
 
 535
-00:44:02,840 --> 00:44:05,760
+00:43:57,215 --> 00:44:00,135
 o proponendo un'idea per Community Edition.
 
 536
-00:44:05,760 --> 00:44:08,220
+00:44:00,135 --> 00:44:02,595
 Oppure con il tuo tesoro,
 
 537
-00:44:08,780 --> 00:44:11,000
+00:44:03,155 --> 00:44:05,375
 cioè con un piccolo supporto economico.
 
 538
-00:44:11,000 --> 00:44:15,960
+00:44:05,375 --> 00:44:10,335
 Trovi tutti i riferimenti su pensieriincodice.it/sostieni.
 
 539
-00:44:16,460 --> 00:44:17,460
+00:44:10,835 --> 00:44:11,835
 A questo proposito,
 
 540
-00:44:17,660 --> 00:44:20,120
+00:44:12,035 --> 00:44:14,495
 un grazie di cuore va a Edoardo,
 
 541
-00:44:20,400 --> 00:44:21,600
+00:44:14,775 --> 00:44:15,975
 Carlo e Cristian,
 
 542
-00:44:21,820 --> 00:44:25,080
+00:44:16,195 --> 00:44:19,455
 che continuano a sostenere il podcast ogni mese,
 
 543
-00:44:25,580 --> 00:44:26,360
+00:44:19,955 --> 00:44:20,735
 e ad Andrea,
 
 544
-00:44:26,780 --> 00:44:29,860
+00:44:21,155 --> 00:44:24,235
 che si è aggiunto con una donazione nei mesi scorsi.
 
 545
-00:44:30,380 --> 00:44:32,200
+00:44:24,755 --> 00:44:26,575
 Bene, per oggi è proprio tutto.
 
 546
-00:44:32,520 --> 00:44:35,140
+00:44:26,895 --> 00:44:29,515
 Io ti ringrazio per aver ascoltato fino alla fine,
 
 547
-00:44:35,440 --> 00:44:35,960
+00:44:29,815 --> 00:44:30,335
 ti saluto
 
 548
-00:44:36,220 --> 00:44:38,300
+00:44:30,595 --> 00:44:32,675
 e ti do appuntamento al prossimo episodio,
 
 549
-00:44:38,460 --> 00:44:39,720
+00:44:32,835 --> 00:44:34,095
 ricordandoti sempre che
 
 550
-00:44:39,720 --> 00:44:42,340
+00:44:34,095 --> 00:44:36,715
 un informatico risolve problemi,
 
 551
-00:44:42,680 --> 00:44:44,560
+00:44:37,055 --> 00:44:38,935
 a volte anche usando il computer.
