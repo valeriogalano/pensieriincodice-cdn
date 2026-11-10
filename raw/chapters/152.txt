@@ -1,0 +1,12 @@
+0.000000	0.000000	Introduzione
+157.828955	157.828955	La domanda giusta da porsi
+416.151276	416.151276	Cosa si intende per impatto ambientale (dell'AI)
+745.324632	745.324632	L'impatto dell'azienda nel suo complesso: la Carbon Footprint di Organizzazione
+1438.365995	1438.365995	Cosa ce ne facciamo della CFO
+1697.504429	1697.504429	L'impatto del prodotto: la Carbon Footprint di Prodotto e gli studi LCA
+2137.625536	2137.625536	Torniamo all'AI: le variabili in gioco
+2327.779187	2327.779187	Quindi, questi dati
+2827.652658	2827.652658	Non solo cambiamento climatico
+2971.419754	2971.419754	Do dei dati, anche se ho detto che non avrei dato dati
+3165.759778	3165.759778	Conclusioni e fonti utili
+3307.488282	3307.488282	Conclusione
